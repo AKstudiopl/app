@@ -759,26 +759,23 @@ body
     filter: drop-shadow(0 0 0.75rem black);
     transition: 1.5s;
   }
+
   .content iframe:hover
   {
     width: 432px;
     height: 288px;
-  }
-  .textcontent a:hover
-  {
-    width: 170px;
-  }
-  .textcontent a
-  {
-    width: 150px;
-    padding-left: 5px;
-    padding-right: 5px;
   }
 
   .content h2
   {
     font-size: 40px;
   }
+
+  .content a
+  {
+    width: 30%;
+  }
+
   .content h3
   {
     border-radius: 0 0px 30px 30px;
