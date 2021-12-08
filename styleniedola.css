@@ -652,9 +652,13 @@ body
 }
 
 @media only screen and (max-width: 700px) {
-
-
-
+  .footer #inst
+  {
+    position: relative;
+    float: right;
+    margin-left: 0;
+    margin-right: 5%;
+  }
   #header nav
   {
     float: left;
@@ -760,6 +764,18 @@ body
     width: 432px;
     height: 288px;
   }
+  .textcontent a
+  {
+    width: 150px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .textcontent a:hover
+  {
+    width: 150px;
+    padding-top: 5px;
+  }
   .content h2
   {
     font-size: 40px;
@@ -775,7 +791,12 @@ body
     width: 432px;
     margin-top: -50px;
   }
-
-
+  .footer #inst
+  {
+    position: relative;
+    float: right;
+    margin-left: 0;
+    margin-right: 5%;
+  }
 }
 /* MEDIA_END */
