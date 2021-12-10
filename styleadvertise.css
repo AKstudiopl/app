@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:&family=Comfortaa:wght@700&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cairo', sans-serif;
+}
+
+
+body
+  {
+
+  overflow-x: hidden;
+
+  }
+
+.topcontent
+  {
+      width: 100%;
+      z-index: -2;
+      background: #0f0c29;
+      clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 70%);
+      position: relative;
+  }
+
+.topcontent img
+  {
+      position: relative;
+      mix-blend-mode: overlay;
+      filter: grayscale(1);
+      margin: 0;
+      z-index: 2;
+      width: 100%;
+      clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 70%);
+  }
+
+.navbar
+{
+      position: absolute;
+      z-index: 3;
+      padding: 10px;
+      left: 50%;
+      top: 30%;
+      transform: translate(-50%, -30%);
+}
+
+.navbar h1
+{
+      color: #fff;
+      background-color: transparent;
+      font-size: 60px;
+}
+
+
+
+.toptext
+{
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  transform: rotateZ( 5deg ) ;
+  text-transform: lowercase;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+
+.centercontent
+  {
+      width: 100%;
+      z-index: -2;
+      background: #111111;
+      clip-path: polygon(0 15%, 100% 30%, 100% 69%, 0 75%);
+  }
+
+.centercontent img
+  {
+      position: relative;
+      mix-blend-mode: overlay;
+      filter: grayscale(1);
+      margin: 0;
+      z-index: 2;
+      width: 100%;
+      clip-path: polygon(0 15%, 100% 30%, 100% 69%, 0 75%);
+  }
