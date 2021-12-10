@@ -1,19 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo:&family=Comfortaa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 *
 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Cairo', sans-serif;
+  font-family: 'Source Sans 3', 'Audiowide', sans-serif;
 }
 
 
 body
   {
-
   overflow-x: hidden;
-
+  background: #07051a;
   }
+
+body::-webkit-scrollbar
+{
+    display: none;
+}
 
 .topcontent
   {
@@ -47,11 +52,23 @@ body
 
 .navbar h1
 {
+      font-family: 'Audiowide';
       color: #fff;
       background-color: transparent;
       font-size: 60px;
+      letter-spacing: 7px;
 }
 
+.navbar h2
+{
+      color: #2e2485;
+      background-color: transparent;
+      font-size: 20px;
+      text-align: center;
+      margin-top: -17px;
+      font-family: 'Audiowide';
+      letter-spacing: 7px;
+}
 
 
 .toptext
@@ -59,31 +76,63 @@ body
   text-align: center;
   font-size: 35px;
   font-weight: 700;
-  transform: rotateZ( 5deg ) ;
+  color: #fff;
   text-transform: lowercase;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
   margin-top: 30px;
   margin-bottom: 30px;
+  font-family: 'Cairo';
 }
 
-
+.toptext h1
+{
+  color: #2e2485;
+}
 
 .centercontent
   {
       width: 100%;
       z-index: -2;
-      background: #111111;
+      background: #0f0c29;
+      border-top: 8px #0f0c29 solid;
+      border-bottom: 3px #0f0c29 solid;
       clip-path: polygon(0 15%, 100% 30%, 100% 69%, 0 75%);
   }
 
 .centercontent img
   {
       position: relative;
-      mix-blend-mode: overlay;
-      filter: grayscale(1);
+      mix-blend-mode: screen;
+      filter: grayscale(1) brightness(80%) contrast(150%);
       margin: 0;
       z-index: 2;
       width: 100%;
       clip-path: polygon(0 15%, 100% 30%, 100% 69%, 0 75%);
+      transition: 1s;
+      animation-name: res;
+      animation-duration: 15s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
   }
+
+@keyframes res {
+    0%
+    {
+      clip-path: polygon(0 15%, 100% 30%, 100% 69%, 0 75%);
+    }
+    50%
+    {
+      clip-path: polygon(0 19%, 100% 30%, 100% 69%, 0 97%);
+      filter: grayscale(1) brightness(120%) contrast(150%);
+    }
+    100%
+    {
+      clip-path: polygon(0 15%, 100% 30%, 100% 69%, 0 75%);
+    }
+}
+
+.centercontent img:hover
+{
+  transform: translateX(-50px);
+}
