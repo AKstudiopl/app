@@ -36,8 +36,8 @@ body::-webkit-scrollbar
 .topcontent img
   {
       position: relative;
-      mix-blend-mode: overlay;
-      filter: grayscale(1);
+      mix-blend-mode: screen;
+      filter: grayscale(1) contrast(200%) brightness(10%);
       margin: 0;
       z-index: 2;
       width: 100%;
