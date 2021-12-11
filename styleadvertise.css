@@ -506,6 +506,7 @@ body::-webkit-scrollbar
       border-bottom: 2px #07051a50 solid;
       border-top: 2px #07051a50 solid;
       text-transform: none;
+      overflow: hidden;
       background-color: #0f0c29;
       font-size: 25px;
       text-align: center;
