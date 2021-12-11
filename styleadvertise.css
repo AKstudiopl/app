@@ -101,7 +101,7 @@ body::-webkit-scrollbar
 @keyframes in {
       0%
       {
-        filter: blur(25px) grayscale(1);
+        filter: blur(25px) grayscale(1) brightness(0%);
       }
       50%
       {
@@ -109,7 +109,7 @@ body::-webkit-scrollbar
       }
       100%
       {
-        filter: blur(0px) grayscale(0);
+        filter: blur(0px) grayscale(0) brightness(100%);
       }
 }
 
