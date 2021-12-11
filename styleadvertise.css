@@ -51,8 +51,33 @@ body::-webkit-scrollbar
       padding: 10px;
       left: 50%;
       top: 30%;
+      animation-name: headeron;
+      animation-duration: 5s;
+      animation-timing-function: ease-in-out;
       transform: translate(-50%, -30%);
 }
+
+@keyframes headeron {
+
+      0%
+      {
+        filter: opacity(0) blur(5px);
+      }
+
+      30%
+      {
+        filter: opacity(0) blur(3px);
+        letter-spacing: 25px;
+      }
+
+      100%
+      {
+        filter: opacity(1) blur(0px);
+        letter-spacing: 7px;
+      }
+
+}
+
 
 .navbar h1
 {
@@ -61,6 +86,9 @@ body::-webkit-scrollbar
       background-color: transparent;
       font-size: 60px;
       letter-spacing: 7px;
+      animation-name: headeron;
+      animation-duration: 5s;
+      animation-timing-function: ease-in-out;
 }
 
 .navbar h2
@@ -282,7 +310,7 @@ body::-webkit-scrollbar
     {
         position: relative;
         mix-blend-mode: screen;
-        filter: grayscale(1) brightness(40%) contrast(150%);
+        filter: grayscale(1) brightness(80%) contrast(180%);
         margin: 0;
         z-index: 2;
         width: 100%;
@@ -309,11 +337,236 @@ body::-webkit-scrollbar
 
 
 
+.imgcontent
+{
+      text-align: center;
+      font-size: 35px;
+      font-weight: 700;
+      color: #fff;
+      text-transform: lowercase;
+      margin-top: 30px;
+      margin-bottom: 60px;
+      font-family: 'Readex Pro';
+      width: 100%;
+}
+
+.imgslider
+{
+      margin-left: 10%;
+      margin-right: 10%;
+      width: 80%;
+      height: auto;
+      position: relative;
+}
+
+.imgcontent h1
+{
+      position: static;
+      color: #fff;
+      text-align: center;
+      padding-top:30px;
+      padding-bottom:30px;
+      margin-left: 10%;
+      margin-right: 10%;
+      font-size: 45px;
+      border-radius: 55px 55px 0 0;
+      text-transform: lowercase;
+      z-index: 4;
+      background: #0f0c29;
+      border-top: 3px #2e248520 solid;
+      border-bottom: 3px #2e248520 solid;
+      font-family: 'Readex Pro';
+}
 
 
+.imgcontent p
+{
+      position: static;
+      background: #0f0c29;
+      background-image: url('horizontalbackground.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: #fff;
+      text-align: center;
+      width: 80%;
+      height: auto;
+      padding-top: 40%;
+      margin-left: 10%;
+      margin-right: 10%;
+      font-size:15px;
+      margin-top: -9px;
+      border-radius:0 0 55px 55px;
+      text-transform: lowercase;
+      z-index: 4;
+      border-top: 3px #0f0c2930 solid;
+      border-bottom: 3px #0f0c29 solid;
+      font-family: 'Readex Pro';
+      animation-name: photo;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+}
+
+.imgcontent a
+{
+      position: relative;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      margin-left: 10%;
+      top: -60px;
+      margin-right: 10%;
+      font-size: 20px;
+      padding: 5px 40px;
+      border-radius: 35px 35px;
+      text-transform: lowercase;
+      background: rgba(7, 5, 26, 0.8);
+      border: 3px #07051a solid;
+      font-family: 'Readex Pro';
+      transition: 0.5s;
+}
+
+.imgcontent a:hover
+{
+      padding: 5px 40%;
+      margin-left: -10%;
+      margin-right: -10%;
+      letter-spacing: 3px;
+      background: rgba(7, 5, 26, 0.95);
+}
+
+@keyframes photo {
+
+      0%
+      {
+        background-image: url('horizontalbackground.jpg');
+      }
+      20%
+      {
+        background-image: url('horizontalbackground.jpg');
+      }
+      25%
+      {
+        background-image: url('Geralt.jpg');
+      }
+      45%
+      {
+        background-image: url('Geralt.jpg');
+      }
+      50%
+      {
+        background-image: url('topcontent.jpeg');
+      }
+      70%
+      {
+        background-image: url('topcontent.jpeg');
+      }
+      75%
+      {
+        background-image: url('wallpaper_2.png');
+      }
+      95%
+      {
+        background-image: url('wallpaper_2.png');
+      }
+}
 
 
+.bottomcontent2
+    {
+        width: 100%;
+        z-index: -2;
+        background: #0f0c29;
+        clip-path: polygon(0 32%, 100% 5%, 100% 100%, 0 85%);
+        border-top: 8px #0f0c29 solid;
+        border-bottom: 3px #0f0c29 solid;
+        margin-bottom: 1%;
+    }
 
+.bottomcontent2 img
+    {
+        position: relative;
+        mix-blend-mode: screen;
+        filter: grayscale(1) brightness(80%) contrast(130%);
+        margin: 0;
+        z-index: 2;
+        width: 100%;
+        clip-path: polygon(0 32%, 100% 5%, 100% 100%, 0 85%);
+        transition: 1s;
+    }
+
+.bottomcontenttext
+    {
+          position: relative;
+    }
+
+.bottomcontenttext h1
+{
+      color: #07051a;
+      font-family: 'Audiowide';
+      border-bottom: 2px #07051a50 solid;
+      border-top: 2px #07051a50 solid;
+      text-transform: none;
+      background-color: #0f0c29;
+      font-size: 25px;
+      text-align: center;
+      transform: rotate(5deg);
+      margin: 0;
+      width: 120%;
+      margin-left: -10%;
+}
+
+.bottomcontenttext span
+{
+  font-family: 'Audiowide';
+  animation-name: colorspan;
+  animation-duration: 5s;
+  color: #2e2485;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes colorspan {
+
+      0%
+      {
+        color: #2e2485;
+        filter: saturate(100%);
+      }
+      50%
+      {
+        color: #2e2485;
+        filter: saturate(150%);
+      }
+      100%
+      {
+        color: #2e2485;
+        filter: saturate(100%);
+      }
+}
+
+
+    .bottomcontent3
+        {
+            width: 100%;
+            z-index: -2;
+            background: #0f0c29;
+            clip-path: polygon(0 9%, 100% 24%, 100% 100%, 0 85%);
+            border-top: 8px #0f0c29 solid;
+            border-bottom: 3px #0f0c29 solid;
+            margin-top: -4%;
+        }
+
+    .bottomcontent3 img
+        {
+            position: relative;
+            mix-blend-mode: screen;
+            filter: grayscale(1) brightness(60%) contrast(140%);
+            margin: 0;
+            z-index: 2;
+            width: 100%;
+            clip-path: polygon(0 9%, 100% 24%, 100% 100%, 0 85%);
+            transition: 1s;
+        }
 
 
 
@@ -334,8 +587,10 @@ body::-webkit-scrollbar
 
 @media (min-width:768px)
 {
+
+
 .toptext
-  {
+{
     text-align: center;
     font-size: 35px;
 }
@@ -343,4 +598,12 @@ body::-webkit-scrollbar
 .toptext p
 {
   font-size: 20px;
+}
+
+.bottomcontenttext h1
+{
+      font-size:50px;
+      width: 120%;
+      margin-left: -10%;
+}
 }
