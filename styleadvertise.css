@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200&display=swap');
 *
 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Source Sans 3', 'Audiowide', sans-serif;
+  font-family: 'Source Sans 3', 'Audiowide', 'Readex Pro';
 }
 
 
@@ -13,6 +14,9 @@ body
   {
   overflow-x: hidden;
   background: #07051a;
+  animation-name: in;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
   }
 
 body::-webkit-scrollbar
@@ -73,21 +77,81 @@ body::-webkit-scrollbar
 
 .toptext
 {
-  text-align: center;
-  font-size: 35px;
-  font-weight: 700;
-  color: #fff;
-  text-transform: lowercase;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-family: 'Cairo';
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: lowercase;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Readex Pro';
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.toptext span
+{
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Readex Pro';
+}
+
+@keyframes in {
+      0%
+      {
+        filter: blur(25px) grayscale(1);
+      }
+      50%
+      {
+
+      }
+      100%
+      {
+        filter: blur(0px) grayscale(0);
+      }
+}
+
+@keyframes fadeout {
+      0%
+      {
+        letter-spacing: 5px;
+      }
+      50%
+      {
+        word-spacing: 3px;
+      }
+      100%
+      {
+        word-spacing: 0px;
+      }
 }
 
 .toptext h1
 {
-  color: #2e2485;
+    color: #2e2485;
+    animation-name: fadeout;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+
+.toptext p
+{
+  font-size: 20px;
+  padding: 20px;
+  font-family: 'Readex Pro';
+}
+
+.toptext1
+{
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.toptext2
+{
+    display: inline-block;
 }
 
 .centercontent
@@ -95,9 +159,9 @@ body::-webkit-scrollbar
       width: 100%;
       z-index: -2;
       background: #0f0c29;
+      clip-path: polygon(0 15%, 100% 30%, 100% 69%, 0 75%);
       border-top: 8px #0f0c29 solid;
       border-bottom: 3px #0f0c29 solid;
-      clip-path: polygon(0 15%, 100% 30%, 100% 69%, 0 75%);
   }
 
 .centercontent img
@@ -116,6 +180,117 @@ body::-webkit-scrollbar
       animation-iteration-count: infinite;
   }
 
+
+.bottomtext
+{
+      text-align: center;
+      font-size: 35px;
+      font-weight: 700;
+      color: #fff;
+      text-transform: lowercase;
+      margin-top: 30px;
+      margin-bottom: 60px;
+      font-family: 'Readex Pro';
+      width: 100%;
+}
+
+.bottomtext h1
+{
+      position: static;
+      color: #fff;
+      text-align: center;
+      padding-top:30px;
+      padding-bottom:30px;
+      margin-left: 10%;
+      margin-right: 10%;
+      font-size: 45px;
+      border-radius: 55px 55px 0 0;
+      text-transform: lowercase;
+      z-index: 4;
+      background: #0f0c29;
+      border-top: 3px #2e248520 solid;
+      border-bottom: 3px #2e248520 solid;
+      font-family: 'Readex Pro';
+}
+
+.bottomtext a
+{
+      position: static;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      padding: 15px 60px;
+      margin-left: 10%;
+      margin-right: 10%;
+      font-size: 20px;
+      border-radius: 0 0 35px 35px;
+      text-transform: lowercase;
+      z-index: 4;
+      background: #0f0c29;
+      border-top: 3px #2e248520 solid;
+      border-bottom: 3px #2e248520 solid;
+      font-family: 'Readex Pro';
+}
+
+.bottomtext img
+{
+      position: static;
+      color: #fff;
+      width: 80%;
+      text-align: center;
+      margin-left: 10%;
+      margin-right: 10%;
+      border-radius:0;
+      text-transform: lowercase;
+      z-index: 4;
+      background: #0f0c29;
+      font-family: 'Readex Pro';
+      filter: saturate(200%);
+}
+
+.bottomtext p
+{
+      position: static;
+      color: #fff;
+      text-align: center;
+      padding-top:30px;
+      padding-bottom:30px;
+      margin-left: 10%;
+      margin-right: 10%;
+      font-size:15px;
+      margin-top: -9px;
+      border-radius:0 0 55px 55px;
+      text-transform: lowercase;
+      z-index: 4;
+      background: #0f0c29;
+      border-top: 3px #2e248520 solid;
+      border-bottom: 3px #2e248520 solid;
+      font-family: 'Readex Pro';
+}
+
+.bottomcontent
+    {
+        width: 100%;
+        z-index: -2;
+        background: #0f0c29;
+        clip-path: polygon(0 25%, 100% 1%, 100% 100%, 0 75%);
+        border-top: 8px #0f0c29 solid;
+        border-bottom: 3px #0f0c29 solid;
+    }
+
+.bottomcontent img
+    {
+        position: relative;
+        mix-blend-mode: screen;
+        filter: grayscale(1) brightness(40%) contrast(150%);
+        margin: 0;
+        z-index: 2;
+        width: 100%;
+        clip-path: polygon(0 25%, 100% 1%, 100% 100%, 0 75%);
+        transition: 1s;
+    }
+
+
 @keyframes res {
     0%
     {
@@ -123,7 +298,7 @@ body::-webkit-scrollbar
     }
     50%
     {
-      clip-path: polygon(0 19%, 100% 30%, 100% 69%, 0 97%);
+      clip-path: polygon(0 17%, 100% 32%, 100% 68%, 0 73%);
       filter: grayscale(1) brightness(120%) contrast(150%);
     }
     100%
@@ -132,7 +307,40 @@ body::-webkit-scrollbar
     }
 }
 
-.centercontent img:hover
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:480px)
 {
-  transform: translateX(-50px);
+.toptext
+  {
+    text-align: center;
+    font-size: 20px;
+}
+
+.toptext p
+{
+  font-size: 15px;
+}
+
+@media (min-width:768px)
+{
+.toptext
+  {
+    text-align: center;
+    font-size: 35px;
+}
+
+.toptext p
+{
+  font-size: 20px;
 }
