@@ -512,8 +512,6 @@ body::-webkit-scrollbar
       text-align: center;
       transform: rotate(5deg);
       margin: 0;
-      width: 120%;
-      margin-left: -10%;
 }
 
 .bottomcontenttext span
