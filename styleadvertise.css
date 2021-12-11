@@ -497,7 +497,6 @@ body::-webkit-scrollbar
 .bottomcontenttext
     {
           position: relative;
-          overflow-x: hidden;
     }
 
 .bottomcontenttext h1
