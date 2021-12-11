@@ -602,7 +602,7 @@ body::-webkit-scrollbar
 .bottomcontenttext h1
 {
       font-size:50px;
-      width: 120%;
+      width: 100%;
       margin-left: -10%;
 }
 }
