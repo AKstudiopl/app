@@ -674,6 +674,9 @@ body::-webkit-scrollbar
             border-top: 8px #0f0c29 solid;
             border-bottom: 3px #0f0c29 solid;
             margin-top: -6%;
+            -webkit-box-shadow: inset 0px 0px 100px -43px rgba(0, 0, 0, 1);
+            -moz-box-shadow: inset 0px 0px 100px -43px rgba(0, 0, 0, 1);
+            box-shadow: inset 0px 0px 100px -43px rgba(0, 0, 0, 1);
         }
 
     .footershapecontent img
@@ -684,9 +687,6 @@ body::-webkit-scrollbar
             margin: 0;
             z-index: 2;
             width: 100%;
-            border-top: 8px #0f0c29 solid;
-            border-bottom: 3px #0f0c29 solid;
-            clip-path: polygon(0 21%, 100% 30%, 100% 100%, 0 100%);
             transition: 1s;
         }
 
@@ -712,6 +712,12 @@ body::-webkit-scrollbar
     color: #fff;
     font-weight: 500;
     font-family: 'Readex Pro';
+}
+
+.toptext3 img
+{
+  width: 100%;
+  border-radius: 35px;
 }
 
 @keyframes in {
@@ -756,6 +762,20 @@ body::-webkit-scrollbar
   margin-top: 200px;
 }
 
+.toptext3 h2
+{
+    color: #2e2485;
+    animation-name: fadeout;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    width: 100%;
+    text-align: center;
+    background: #0f0c29;
+    border: 3px #2e248530 solid;
+    border-radius: 0 0 35px 35px;
+    padding-top: 5%;
+    margin-top: -5%;
+}
 
 
 
@@ -775,6 +795,10 @@ body::-webkit-scrollbar
     text-align: center;
 }
 
+.toptext h2
+{
+  font-size: 60px;
+}
 .toptext p
 {
   font-size: 18px;
