@@ -24,21 +24,34 @@ body::-webkit-scrollbar
 #bodyanimation
 {
   animation-name: in;
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-timing-function: ease-in-out;
+}
+
+
+#loading
+{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 100%;
+  animation-name: displaying;
+  animation-duration: 3s;
+  opacity: 0;
+  animation-timing-function: ease-out;
 }
 
 .center
 {
-  position:sticky;
-  display: flex;
   z-index: 100;
   text-align: center;
-  justify-content: center;
   opacity: 0;
-  align-items: center;
   animation-name: displaying;
-  animation-duration: 3s;
+  animation-duration: 5s;
   margin-top: 0px;
   animation-timing-function: ease-out;
 }
@@ -48,21 +61,21 @@ body::-webkit-scrollbar
   {
     opacity: 1;
   }
-  80%
+  90%
   {
     opacity: 1;
+    top: 50%;
   }
   100%
   {
     opacity: 0;
+    top: -150%;
   }
 }
 
 .ring
 {
-  position: fixed;
-  margin-top: 50%;
-  background: #111;
+  background: #0f0c29;
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -83,6 +96,9 @@ body::-webkit-scrollbar
     transform: rotate(180deg);
     box-shadow: 1px 5px 2px #2e2485;
   }
+  90%
+  {
+  }
   100%
   {
     transform: rotate(360deg);
@@ -92,16 +108,19 @@ body::-webkit-scrollbar
 .center span
 {
   position: fixed;
-  margin-top: 50%;
-  font-size: 30px;
-  color: #2e2485;
+  z-index: 120;
+  font-size: 20px;
+  top: 100px;
+  color: #2e248580;
   text-transform: uppercase;
   font-family: 'Readex Pro';
   font-weight: 800;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .ring::before
 {
-  position: sticky;
   content: '';
   height: 100%;
   width: 100%;
