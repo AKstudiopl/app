@@ -15,117 +15,14 @@ body
   {
   overflow-x: hidden;
   background: #07051a;
+  animation-name: in;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
   }
 
 body::-webkit-scrollbar
 {
     display: none;
-}
-#bodyanimation
-{
-  animation-name: in;
-  animation-duration: 4s;
-  animation-timing-function: ease-in-out;
-}
-
-
-#loading
-{
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 100;
-  margin: 0 auto;
-  background: rgba(0, 0, 0, 0.9);
-  padding: 100%;
-  animation-name: displaying;
-  animation-duration: 3s;
-  opacity: 0;
-  animation-timing-function: ease-out;
-}
-
-.center
-{
-  z-index: 100;
-  text-align: center;
-  opacity: 0;
-  animation-name: displaying;
-  animation-duration: 5s;
-  margin-top: 0px;
-  animation-timing-function: ease-out;
-}
-
-@keyframes displaying {
-  0%
-  {
-    opacity: 1;
-  }
-  90%
-  {
-    opacity: 1;
-    top: 50%;
-  }
-  100%
-  {
-    opacity: 0;
-    top: -150%;
-  }
-}
-
-.ring
-{
-  background: #0f0c29;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  animation-name: ringrotate;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes ringrotate {
-  0%
-  {
-    transform: rotate(0deg);
-    box-shadow: 1px 5px 2px #2e2485;
-  }
-  50%
-  {
-    transform: rotate(180deg);
-    box-shadow: 1px 5px 2px #2e2485;
-  }
-  90%
-  {
-  }
-  100%
-  {
-    transform: rotate(360deg);
-    box-shadow: 1px 5px 2px #2e2485;
-  }
-}
-.center span
-{
-  position: fixed;
-  z-index: 120;
-  font-size: 20px;
-  top: 100px;
-  color: #2e248580;
-  text-transform: uppercase;
-  font-family: 'Readex Pro';
-  font-weight: 800;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-.ring::before
-{
-  content: '';
-  height: 100%;
-  width: 100%;
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
 }
 
 
@@ -261,11 +158,11 @@ body::-webkit-scrollbar
 @keyframes in {
       0%
       {
-        filter: blur(25px) grayscale(1) brightness(0%);
+        filter: blur(55px) grayscale(1) brightness(0%);
       }
       50%
       {
-
+        filter: blur(55px) grayscale(1) brightness(0%);
       }
       100%
       {
@@ -322,7 +219,7 @@ body::-webkit-scrollbar
       font-weight: 700;
       color: #fff;
       text-transform: uppercase;
-      margin-top: 30px;
+      margin-top: 60px;
       margin-bottom: 60px;
       font-family: 'Readex Pro';
       width: 100%;
@@ -340,6 +237,7 @@ body::-webkit-scrollbar
       font-size: 45px;
       border-radius: 55px 55px 0 0;
       text-transform: uppercase;
+      margin-bottom: -1%;
       z-index: 4;
       background: #0f0c29;
       border-top: 3px #2e248520 solid;
@@ -357,13 +255,22 @@ body::-webkit-scrollbar
       margin-left: 10%;
       margin-right: 10%;
       font-size: 20px;
-      border-radius: 0 0 35px 35px;
+      border-radius: 35px 35px;
       text-transform: uppercase;
       z-index: 4;
       background: #0f0c29;
       border-top: 3px #2e248520 solid;
       border-bottom: 3px #2e248520 solid;
       font-family: 'Readex Pro';
+      transition: 0.5s;
+}
+
+.bottomtext a:hover
+{
+  letter-spacing: 3px;
+  -webkit-box-shadow: inset 0px 0px 32px 0px rgba(0, 0, 4, 0.3);
+  -moz-box-shadow: inset 0px 0px 32px 0px rgba(0, 0, 4, 0.3);
+  box-shadow: inset 0px 0px 32px 0px rgba(0, 0, 4, 0.3);
 }
 
 .bottomtext img
@@ -387,7 +294,7 @@ body::-webkit-scrollbar
       position: static;
       color: #fff;
       text-align: center;
-      padding-top:30px;
+      padding-top:40px;
       padding-bottom:30px;
       margin-left: 10%;
       margin-right: 10%;
@@ -521,13 +428,13 @@ body::-webkit-scrollbar
       text-align: center;
       text-decoration: none;
       margin-left: 10%;
-      top: -60px;
+      top: -100px;
       margin-right: 10%;
       font-size: 20px;
       padding: 5px 40px;
       border-radius: 35px 35px;
       text-transform: uppercase;
-      background: rgba(7, 5, 26, 0.8);
+      background: rgba(7, 5, 26, 0.7);
       border: 3px #07051a solid;
       font-family: 'Readex Pro';
       transition: 0.5s;
@@ -535,11 +442,12 @@ body::-webkit-scrollbar
 
 .imgcontent a:hover
 {
-      padding: 5px 40%;
-      margin-left: -10%;
-      margin-right: -10%;
-      letter-spacing: 3px;
-      background: rgba(7, 5, 26, 0.95);
+  letter-spacing: 3px;
+  background: transparent;
+  padding: 5px 120px;
+  -webkit-box-shadow: 0px 0px 32px 0px rgba(0, 0, 4, 1);
+  -moz-box-shadow: 0px 0px 32px 0px rgba(0, 0, 4, 1);
+  box-shadow: 0px 0px 32px 0px rgba(0, 0, 4, 1);
 }
 
 @keyframes photo {
@@ -794,6 +702,48 @@ body::-webkit-scrollbar
             transition: 1s;
         }
 
+.toptext3 .lastone
+{
+        font-size: 50px;
+        padding-top: 60px;
+        padding-bottom: 10px;
+}
+
+.toptext3 .secphoto
+{
+  width: 45%;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.toptext3 .secphoto:last-child
+{
+  float: right;
+  margin-right: 5%;
+}
+
+.toptext3 .secphoto img
+{
+  border-radius:300px;
+  border: 3px #2e2485 solid;
+  filter: blur(3px) saturate(0);
+  transition: 0.5s;
+  opacity: 0.2;
+}
+
+.toptext3 .secphoto img:hover
+{
+  border-radius:30px;
+  border: 3px #2e2485 solid;
+  filter: blur(0px);
+  opacity: 1;
+}
+
+.toptext3 .secphoto img:hover:first-child + img:last-child
+{
+  border-radius:30px;
+  border: 3px #2e2485 solid;
+}
 
 .toptext
 {
