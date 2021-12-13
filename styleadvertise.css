@@ -213,7 +213,7 @@ body::-webkit-scrollbar
     text-align: center;
     font-weight: 700;
     color: #fff;
-    text-transform: lowercase;
+    text-transform: uppercase;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 30px;
@@ -321,7 +321,7 @@ body::-webkit-scrollbar
       font-size: 35px;
       font-weight: 700;
       color: #fff;
-      text-transform: lowercase;
+      text-transform: uppercase;
       margin-top: 30px;
       margin-bottom: 60px;
       font-family: 'Readex Pro';
@@ -339,7 +339,7 @@ body::-webkit-scrollbar
       margin-right: 10%;
       font-size: 45px;
       border-radius: 55px 55px 0 0;
-      text-transform: lowercase;
+      text-transform: uppercase;
       z-index: 4;
       background: #0f0c29;
       border-top: 3px #2e248520 solid;
@@ -358,7 +358,7 @@ body::-webkit-scrollbar
       margin-right: 10%;
       font-size: 20px;
       border-radius: 0 0 35px 35px;
-      text-transform: lowercase;
+      text-transform: uppercase;
       z-index: 4;
       background: #0f0c29;
       border-top: 3px #2e248520 solid;
@@ -394,7 +394,7 @@ body::-webkit-scrollbar
       font-size:15px;
       margin-top: -9px;
       border-radius:0 0 55px 55px;
-      text-transform: lowercase;
+      text-transform: uppercase;
       z-index: 4;
       background: #0f0c29;
       border-top: 3px #2e248520 solid;
@@ -449,7 +449,7 @@ body::-webkit-scrollbar
       font-size: 35px;
       font-weight: 700;
       color: #fff;
-      text-transform: lowercase;
+      text-transform: uppercase;
       margin-top: 30px;
       margin-bottom: 60px;
       font-family: 'Readex Pro';
@@ -504,7 +504,7 @@ body::-webkit-scrollbar
       font-size:15px;
       margin-top: -9px;
       border-radius:0 0 55px 55px;
-      text-transform: lowercase;
+      text-transform: uppercase;
       z-index: 4;
       border-top: 3px #0f0c2930 solid;
       border-bottom: 3px #0f0c29 solid;
@@ -526,7 +526,7 @@ body::-webkit-scrollbar
       font-size: 20px;
       padding: 5px 40px;
       border-radius: 35px 35px;
-      text-transform: lowercase;
+      text-transform: uppercase;
       background: rgba(7, 5, 26, 0.8);
       border: 3px #07051a solid;
       font-family: 'Readex Pro';
@@ -801,7 +801,7 @@ body::-webkit-scrollbar
     font-size: 35px;
     font-weight: 700;
     color: #fff;
-    text-transform: lowercase;
+    text-transform: none;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 30px;
