@@ -15,15 +15,100 @@ body
   {
   overflow-x: hidden;
   background: #07051a;
-  animation-name: in;
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
   }
 
 body::-webkit-scrollbar
 {
     display: none;
 }
+#bodyanimation
+{
+  animation-name: in;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+}
+
+.center
+{
+  position:sticky;
+  display: flex;
+  z-index: 100;
+  text-align: center;
+  justify-content: center;
+  opacity: 0;
+  align-items: center;
+  animation-name: displaying;
+  animation-duration: 3s;
+  margin-top: 0px;
+  animation-timing-function: ease-out;
+}
+
+@keyframes displaying {
+  0%
+  {
+    opacity: 1;
+  }
+  80%
+  {
+    opacity: 1;
+  }
+  100%
+  {
+    opacity: 0;
+  }
+}
+
+.ring
+{
+  position: fixed;
+  margin-top: 50%;
+  background: #111;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation-name: ringrotate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes ringrotate {
+  0%
+  {
+    transform: rotate(0deg);
+    box-shadow: 1px 5px 2px #2e2485;
+  }
+  50%
+  {
+    transform: rotate(180deg);
+    box-shadow: 1px 5px 2px #2e2485;
+  }
+  100%
+  {
+    transform: rotate(360deg);
+    box-shadow: 1px 5px 2px #2e2485;
+  }
+}
+.center span
+{
+  position: fixed;
+  margin-top: 50%;
+  font-size: 30px;
+  color: #2e2485;
+  text-transform: uppercase;
+  font-family: 'Readex Pro';
+  font-weight: 800;
+}
+.ring::before
+{
+  position: sticky;
+  content: '';
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
 
 .topcontent
   {
