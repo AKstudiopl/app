@@ -840,48 +840,141 @@ body::-webkit-scrollbar
             transition: 1s;
         }
 
-.toptext3 .lastone
-{
-        font-size: 50px;
-        padding-top: 60px;
-        padding-bottom: 10px;
-}
+        .imgcontent
+        {
+              text-align: center;
+              font-size: 35px;
+              font-weight: 700;
+              color: #fff;
+              text-transform: uppercase;
+              margin-top: 30px;
+              margin-bottom: 60px;
+              font-family: 'Readex Pro';
+              width: 100%;
+        }
 
-.toptext3 .secphoto
-{
-  width: 45%;
-  display: inline-block;
-  margin-top: 10px;
-}
+        .imgslider
+        {
+              margin-left: 10%;
+              margin-right: 10%;
+              width: 80%;
+              margin-top: 5%;
+              margin-bottom: 5%;
+              height: auto;
+              position: relative;
+        }
 
-.toptext3 .secphoto:last-child
-{
-  float: right;
-  margin-right: 5%;
-}
+        .imgcontent h1
+        {
+              position: static;
+              color: #fff;
+              text-align: center;
+              padding-top:30px;
+              padding-bottom:30px;
+              margin-left: 10%;
+              margin-right: 10%;
+              font-size: 45px;
+              border-radius: 55px 55px 0 0;
+              text-transform: lowercase;
+              z-index: 4;
+              background: #0f0c29;
+              border-top: 3px #2e248520 solid;
+              border-bottom: 3px #2e248520 solid;
+              font-family: 'Readex Pro';
+        }
 
-.toptext3 .secphoto img
-{
-  border-radius:300px;
-  border: 3px #2e2485 solid;
-  filter: blur(3px) saturate(0);
-  transition: 0.5s;
-  opacity: 0.2;
-}
 
-.toptext3 .secphoto img:hover
-{
-  border-radius:30px;
-  border: 3px #2e2485 solid;
-  filter: blur(0px);
-  opacity: 1;
-}
+        .imgcontent p
+        {
+              position: static;
+              background: #0f0c29;
+              background-image: url('Novigrad_North.png');
+              background-size: cover;
+              background-repeat: no-repeat;
+              color: #fff;
+              text-align: center;
+              width: 80%;
+              height: auto;
+              padding-top: 40%;
+              margin-left: 10%;
+              margin-right: 10%;
+              font-size:15px;
+              margin-top: -9px;
+              border-radius:0 0 55px 55px;
+              text-transform: uppercase;
+              z-index: 4;
+              border-top: 3px #0f0c2930 solid;
+              border-bottom: 3px #0f0c29 solid;
+              font-family: 'Readex Pro';
+              animation-name: photo1;
+              animation-duration: 20s;
+              animation-iteration-count: infinite;
+        }
 
-.toptext3 .secphoto img:hover:first-child + img:last-child
-{
-  border-radius:30px;
-  border: 3px #2e2485 solid;
-}
+        .imgcontent a
+        {
+              position: relative;
+              color: #fff;
+              text-align: center;
+              text-decoration: none;
+              margin-left: 10%;
+              top: -100px;
+              margin-right: 10%;
+              font-size: 20px;
+              padding: 5px 40px;
+              border-radius: 35px 35px;
+              text-transform: uppercase;
+              background: rgba(7, 5, 26, 0.7);
+              border: 3px #07051a solid;
+              font-family: 'Readex Pro';
+              transition: 0.5s;
+        }
+
+        .imgcontent a:hover
+        {
+          letter-spacing: 3px;
+          background: transparent;
+          padding: 5px 120px;
+          -webkit-box-shadow: 0px 0px 32px 0px rgba(0, 0, 4, 1);
+          -moz-box-shadow: 0px 0px 32px 0px rgba(0, 0, 4, 1);
+          box-shadow: 0px 0px 32px 0px rgba(0, 0, 4, 1);
+        }
+
+        @keyframes photo1 {
+
+              0%
+              {
+                background-image: url('Novigrad_North.png');
+              }
+              20%
+              {
+                background-image: url('Novigrad_North.png');
+              }
+              25%
+              {
+                background-image: url('ArdSkellig.png');
+              }
+              45%
+              {
+                background-image: url('ArdSkellig.png');
+              }
+              50%
+              {
+                background-image: url('White_Orchard.png');
+              }
+              70%
+              {
+                background-image: url('White_Orchard.png');
+              }
+              75%
+              {
+                background-image: url('ArdSkellig.png');
+              }
+              95%
+              {
+                background-image: url('ArdSkellig.png');
+              }
+        }
 
 .toptext
 {
@@ -972,8 +1065,77 @@ body::-webkit-scrollbar
 
 
 
+.youtubesrc
+{
+  position: relative;
+  margin-left: 10%;
+  margin-right: 80%;
+  width: 80%;
+  height: 600px;
+  background: #0f0c29;
+  border-radius: 35px;
+  border: 3px #2e248520 solid;
+  clip-path: polygon(0 18%, 100% 0%, 100% 84%, 0% 100%);
+  transition: 1s;
+  transition-timing-function: ease-in-out;
 
+}
 
+.youtubetext h1
+{
+  color: #2e2485;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+  background: #0f0c29;
+  font-size: 80px;
+  font-weight: 700;
+  float: left;
+  border-right: 3px #2e248530 solid;
+  border-left: 3px #2e248530 solid;
+}
+
+.youtubetext
+{
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+  padding: 10px;
+  margin-bottom: 105px;
+}
+
+.youtubesrc iframe
+{
+  position: relative;
+  margin-top: 50px;
+  margin-left: 10%;
+  height: 500px;
+  width: 80%;
+  border-radius: 45px;
+  border: 3px #2e2485 solid;
+  clip-path: polygon(0 18%, 100% 0%, 100% 84%, 0% 100%);
+  opacity: 1;
+  filter: brightness(80%);
+  transition: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+.youtubesrc iframe:hover
+{
+  opacity: 1;
+  filter: brightness(100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.youtubesrc:hover
+{
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.youtubesrc:hover iframe
+{
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+}
 
 @media only screen and (min-width:480px)
 {
