@@ -80,6 +80,13 @@ body::-webkit-scrollbar
     -webkit-box-shadow: 0px 0px 61px 3px rgba(46, 36, 133, 1);
     -moz-box-shadow: 0px 0px 61px 3px rgba(46, 36, 133, 1);
     box-shadow: 0px 0px 61px 3px rgba(46, 36, 133, 1);
+    opacity:0;
+  }
+  25%
+  {
+    -webkit-box-shadow: 0px 0px 61px 3px rgba(46, 36, 133, 1);
+    -moz-box-shadow: 0px 0px 61px 3px rgba(46, 36, 133, 1);
+    box-shadow: 0px 0px 61px 3px rgba(46, 36, 133, 1);
     opacity:1;
   }
   50%
