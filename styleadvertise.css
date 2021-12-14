@@ -15,14 +15,145 @@ body
   {
   overflow-x: hidden;
   background: #07051a;
-  animation-name: in;
-  animation-duration: 4s;
-  animation-timing-function: ease-in-out;
   }
 
 body::-webkit-scrollbar
 {
     display: none;
+}
+
+
+.loadingcontainer
+{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -300;
+  opacity: 0;
+  animation-name: load;
+  animation-duration: 4s;
+  backdrop-filter: blur(35px);
+  background: rgba(0, 0, 0, 0.5);
+  animation-timing-function:ease-out;
+}
+
+@keyframes load {
+  0%
+  {
+    z-index: 300;
+    opacity: 1;
+  }
+  75%
+  {
+    opacity: 1
+  }
+  100%
+  {
+    opacity: 0;
+    z-index: 300;
+  }
+}
+
+.cirlce
+{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #0f0c29;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation-duration: 3s;
+  animation-name: loadrot;
+  animation-timing-function: ease-in-out;
+  -webkit-box-shadow: 0px 0px 61px 3px rgba(46, 36, 133, 1);
+  -moz-box-shadow: 0px 0px 61px 3px rgba(46, 36, 133, 1);
+  box-shadow: 0px 0px 61px 3px rgba(46, 36, 133, 1);
+  border: 3px #2e2485 double;
+  opacity: 0;
+}
+
+@keyframes loadrot {
+  0%
+  {
+    -webkit-box-shadow: 0px 0px 61px 3px rgba(46, 36, 133, 1);
+    -moz-box-shadow: 0px 0px 61px 3px rgba(46, 36, 133, 1);
+    box-shadow: 0px 0px 61px 3px rgba(46, 36, 133, 1);
+    opacity:1;
+  }
+  50%
+  {
+    top: 50%;
+    -webkit-box-shadow: 0px 0px 94px 34px rgba(46, 36, 133, 1);
+    -moz-box-shadow: 0px 0px 94px 34px rgba(46, 36, 133, 1);
+    box-shadow: 0px 0px 94px 34px rgba(46, 36, 133, 1);
+    opacity: 1;
+  }
+  80%
+  {
+    opacity: 1;
+    top: 50%;
+    -webkit-box-shadow: 0px 0px 61px 3px rgba(46, 36, 133, 1);
+    -moz-box-shadow: 0px 0px 61px 3px rgba(46, 36, 133, 1);
+    box-shadow: 0px 0px 61px 3px rgba(46, 36, 133, 1);
+  }
+  100%
+  {
+    top: -50%;
+    -webkit-box-shadow: 0px 0px 61px 3px rgba(46, 36, 133, 1);
+    -moz-box-shadow: 0px 0px 61px 3px rgba(46, 36, 133, 1);
+    box-shadow: 0px 0px 61px 3px rgba(46, 36, 133, 1);
+    opacity: 0;
+  }
+}
+
+
+.loadingtext
+{
+  position: fixed;
+  color: #2e2485;
+  text-transform: uppercase;
+  font-size: 18px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation-duration: 3s;
+  animation-name: loadrottext;
+  animation-timing-function: ease-in-out;
+  opacity: 0;
+}
+
+@keyframes loadrottext {
+  0%
+  {
+    opacity: 1;
+  }
+  50%
+  {
+    top: 50%;
+  }
+  70%
+  {
+  letter-spacing: 0px;
+  color: #2e2485;
+  }
+  80%
+  {
+    top: 50%;
+  }
+  90%
+  {
+    filter: blur(0px);
+  }
+  100%
+  {
+    opacity: 1;
+    top: -50%;
+    letter-spacing: 20px;
+    color: #fff;
+    filter: blur(5px);
+  }
 }
 
 
