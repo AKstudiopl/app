@@ -157,7 +157,7 @@ body::-webkit-scrollbar
   {
     opacity: 1;
     top: -50%;
-    letter-spacing: 20px;
+    letter-spacing: 16px;
     color: #fff;
     filter: blur(5px);
   }
@@ -840,7 +840,7 @@ body::-webkit-scrollbar
             transition: 1s;
         }
 
-        .imgcontent
+        .imgcontent1
         {
               text-align: center;
               font-size: 35px;
@@ -853,7 +853,7 @@ body::-webkit-scrollbar
               width: 100%;
         }
 
-        .imgslider
+        .imgslider1
         {
               margin-left: 10%;
               margin-right: 10%;
@@ -864,7 +864,7 @@ body::-webkit-scrollbar
               position: relative;
         }
 
-        .imgcontent h1
+        .imgcontent1 h1
         {
               position: static;
               color: #fff;
@@ -884,7 +884,7 @@ body::-webkit-scrollbar
         }
 
 
-        .imgcontent p
+        .imgcontent1 p
         {
               position: static;
               background: #0f0c29;
@@ -911,7 +911,7 @@ body::-webkit-scrollbar
               animation-iteration-count: infinite;
         }
 
-        .imgcontent a
+        .imgcontent1 a
         {
               position: relative;
               color: #fff;
@@ -930,7 +930,7 @@ body::-webkit-scrollbar
               transition: 0.5s;
         }
 
-        .imgcontent a:hover
+        .imgcontent1 a:hover
         {
           letter-spacing: 3px;
           background: transparent;
@@ -1065,13 +1065,12 @@ body::-webkit-scrollbar
 
 
 
-.youtubesrc
+.ubdates
 {
   position: relative;
   margin-left: 10%;
   margin-right: 80%;
   width: 80%;
-  height: 600px;
   background: #0f0c29;
   border-radius: 35px;
   border: 3px #2e248520 solid;
@@ -1081,31 +1080,30 @@ body::-webkit-scrollbar
 
 }
 
-.youtubetext h1
+.ubdate h1
 {
   color: #2e2485;
   text-transform: uppercase;
   text-align: center;
   padding: 20px;
-  background: #0f0c29;
+  background: transparent;
   font-size: 80px;
-  font-weight: 700;
-  float: left;
+  font-weight: 300;
   border-right: 3px #2e248530 solid;
   border-left: 3px #2e248530 solid;
 }
 
-.youtubetext
+
+.ubdate span
 {
-  text-align: center;
-  width: 80%;
-  margin-left: 10%;
-  padding: 10px;
-  margin-bottom: 105px;
+  color: #fff;
+  font-weight: 100;
 }
 
-.youtubesrc iframe
+.ubdateinfo
 {
+  background-color: #0f0c29;
+  z-index: -2;
   position: relative;
   margin-top: 50px;
   margin-left: 10%;
@@ -1114,28 +1112,165 @@ body::-webkit-scrollbar
   border-radius: 45px;
   border: 3px #2e2485 solid;
   clip-path: polygon(0 18%, 100% 0%, 100% 84%, 0% 100%);
-  opacity: 1;
-  filter: brightness(80%);
   transition: 1s;
   transition-timing-function: ease-in-out;
+  -webkit-box-shadow: inset 0px 0px 75px -9px rgba(46, 36, 133, 1);
+  -moz-box-shadow: inset 0px 0px 75px -9px rgba(46, 36, 133, 1);
+  box-shadow: inset 0px 0px 75px -9px rgba(46, 36, 133, 1);
 }
 
-.youtubesrc iframe:hover
+.ubdateinfoimg
 {
-  opacity: 1;
-  filter: brightness(100%);
-  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  background-image: url('Novigrad_North.png');
+  position: relative;
+  background-blend-mode: overlay;
+  height: 500px;
+  width: 50%;
+  margin-bottom: 0;
+  border-radius: 45px;
+  transition: 1s;
+  z-index: 2;
+  transition-timing-function: ease-in-out;
+  animation-name: photo2;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
 }
 
-.youtubesrc:hover
-{
-    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+@keyframes photo2 {
+
+      0%
+      {
+        background-image: url('Novigrad_North.png');
+        filter: grayscale(1) blur(3px) brightness(10%);
+      }
+      20%
+      {
+        background-image: url('Novigrad_North.png');
+      }
+      25%
+      {
+        background-image: url('ArdSkellig.png');
+      }
+      45%
+      {
+        background-image: url('ArdSkellig.png');
+      }
+      50%
+      {
+        background-image: url('White_Orchard.png');
+      }
+      70%
+      {
+        background-image: url('White_Orchard.png');
+      }
+      75%
+      {
+        background-image: url('ArdSkellig.png');
+      }
+      100%
+      {
+        background-image: url('ArdSkellig.png');
+        filter: grayscale(1) blur(3px) brightness(10%);
+      }
 }
 
-.youtubesrc:hover iframe
+
+
+.ubdateinfotext h2
 {
-    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  z-index: 6;
 }
+
+.ubdateinfotextshape
+{
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  background-color: #0f0c29;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  border: 3px #2e2485 solid;
+  z-index: 6;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  border-radius: 315px;
+  -webkit-box-shadow: 0px 0px 75px -3px rgba(46, 36, 133, 1);
+  -moz-box-shadow: 0px 0px 75px -3px rgba(46, 36, 133, 1);
+  box-shadow: 0px 0px 75px -3px rgba(46, 36, 133, 1);
+}
+
+.ubdateinfo span
+{
+  color: #2e2485;
+}
+
+.shapeborder1
+{
+  background-image: linear-gradient(135deg, #2e2485, #0f0c29);
+  height: 100px;
+  filter: blur(0px);
+  width: 100px;
+  position: absolute;
+  right: 0;
+  margin-top: 60%;
+  border-radius: 100% 0% 55% 45% / 63% 100% 0% 37%;
+  -webkit-box-shadow: 0px 0px 75px 16px rgba(46, 36, 133, 1);
+  -moz-box-shadow: 0px 0px 75px 16px rgba(46, 36, 133, 1);
+  box-shadow: 0px 0px 75px 16px rgba(46, 36, 133, 1);
+}
+
+.shapeborder2
+{
+  background-image: linear-gradient(135deg, #0f0c29, #2e2485);
+  height: 100px;
+  filter: blur(0px);
+  width: 100px;
+  position: absolute;
+  left: 0;
+  margin-top: -40%;
+  border-radius: 52% 48% 100% 0% / 31% 48% 52% 69% ;
+  -webkit-box-shadow: 0px 0px 75px 16px rgba(46, 36, 133, 1);
+  -moz-box-shadow: 0px 0px 75px 16px rgba(46, 36, 133, 1);
+  box-shadow: 0px 0px 75px 16px rgba(46, 36, 133, 1);
+}
+
+.listofchange
+{
+  position: absolute;
+  top:50%;
+  left:100%;
+  transform:translate(-100%, -50%);
+  width: 50%;
+}
+
+.listofchange ul
+{
+  list-style-type: none;
+}
+.listofchange li
+{
+  color: #fff;
+  margin-left: 10%;
+  width: 100%;
+  font-size: 20px;
+  line-height: 2;
+  filter: blur(2px);
+}
+
+.listofchange:hover
+{
+  filter: blur(9px);
+}
+
 
 @media only screen and (min-width:480px)
 {
