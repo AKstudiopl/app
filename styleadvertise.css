@@ -1074,7 +1074,6 @@ body::-webkit-scrollbar
   background: #0f0c29;
   border-radius: 35px;
   border: 3px #2e248520 solid;
-  clip-path: polygon(0 18%, 100% 0%, 100% 84%, 0% 100%);
   transition: 1s;
   transition-timing-function: ease-in-out;
 
@@ -1100,177 +1099,209 @@ body::-webkit-scrollbar
   font-weight: 100;
 }
 
-.ubdateinfo
+#container2
 {
-  background-color: #0f0c29;
-  z-index: -2;
-  position: relative;
-  margin-top: 50px;
+  position: absolute;
+  overflow: hidden;
+  width: 40%;
   margin-left: 10%;
-  height: 500px;
-  width: 80%;
-  border-radius: 45px;
-  border: 3px #2e2485 solid;
-  clip-path: polygon(0 18%, 100% 0%, 100% 84%, 0% 100%);
-  transition: 1s;
-  transition-timing-function: ease-in-out;
-  -webkit-box-shadow: inset 0px 0px 75px -9px rgba(46, 36, 133, 1);
-  -moz-box-shadow: inset 0px 0px 75px -9px rgba(46, 36, 133, 1);
-  box-shadow: inset 0px 0px 75px -9px rgba(46, 36, 133, 1);
-}
-
-.ubdateinfoimg
-{
-  background-image: url('Novigrad_North.png');
-  position: relative;
+  left: 6px;
+  right: 6px;
+  background-color: #0f0c29;;
+  z-index: 3;
+  filter: grayscale(1) opacity(0.7);
+  background-image: url('The_Witcher_3monster_1.jpg');
   background-blend-mode: overlay;
+  border-right: 10px transparent solid;
+  -webkit-box-shadow: inset 0px 0px 43px -3px rgba(0, 0, 0, 1);
+  -moz-box-shadow: inset 0px 0px 43px -3px rgba(0, 0, 0, 1);
+  box-shadow: inset 0px 0px 43px -3px rgba(0, 0, 0, 1);
   height: 500px;
-  width: 50%;
-  margin-bottom: 0;
-  border-radius: 45px;
+  overflow-y: hidden;
   transition: 1s;
-  z-index: 2;
-  transition-timing-function: ease-in-out;
-  animation-name: photo2;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
 }
 
-@keyframes photo2 {
-
-      0%
-      {
-        background-image: url('Novigrad_North.png');
-        filter: grayscale(1) blur(3px) brightness(10%);
-      }
-      20%
-      {
-        background-image: url('Novigrad_North.png');
-      }
-      25%
-      {
-        background-image: url('ArdSkellig.png');
-      }
-      45%
-      {
-        background-image: url('ArdSkellig.png');
-      }
-      50%
-      {
-        background-image: url('White_Orchard.png');
-      }
-      70%
-      {
-        background-image: url('White_Orchard.png');
-      }
-      75%
-      {
-        background-image: url('ArdSkellig.png');
-      }
-      100%
-      {
-        background-image: url('ArdSkellig.png');
-        filter: grayscale(1) blur(3px) brightness(10%);
-      }
-}
-
-
-
-.ubdateinfotext h2
+.container:hover #container2
 {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #fff;
-  font-size: 25px;
-  text-transform: uppercase;
-  text-align: center;
-  width: 100%;
-  z-index: 6;
+  width: 20%;
 }
-
-.ubdateinfotextshape
+.buttonformore
 {
   position: absolute;
-  color: #fff;
-  font-size: 20px;
-  background-color: #0f0c29;
-  width: 50%;
-  padding: 10px;
-  text-align: center;
-  border: 3px #2e2485 solid;
-  z-index: 6;
-  top:50%;
-  left:50%;
-  transform:translate(-50%, -50%);
-  border-radius: 315px;
-  -webkit-box-shadow: 0px 0px 75px -3px rgba(46, 36, 133, 1);
-  -moz-box-shadow: 0px 0px 75px -3px rgba(46, 36, 133, 1);
-  box-shadow: 0px 0px 75px -3px rgba(46, 36, 133, 1);
+  margin-top: 11%;
+  z-index: 15;
+  left: 50%;
+  transform: translate(-50%);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: 0.5s;
+  background: #0f0c29;
+  border: 2px #2e2485 solid;
+  clip-path: polygon(0 18%, 100% 0%, 100% 84%, 0% 100%);
+  -webkit-box-shadow: inset 0px 0px 48px -34px rgba(46, 36, 133, 1);
+  -moz-box-shadow: inset 0px 0px 48px -34px rgba(46, 36, 133, 1);
+  box-shadow: inset 0px 0px 48px -34px rgba(46, 36, 133, 1);
+}
+.buttonformore a
+{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px;
+    clip-path: polygon(0 18%, 100% 0%, 100% 84%, 0% 100%);
+    transition: 1s;
+    letter-spacing: 3px;
+    transition-timing-function: ease-in-out;
+}
+.buttonformore a:hover
+{
+  letter-spacing: 5px;
+}
+.container:hover .buttonformore
+{
+  transition: 1s;
+  background: #2e248510;
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+  left: 30%;
+  backdrop-filter: blur(5px);
 }
 
-.ubdateinfo span
+.container
 {
-  color: #2e2485;
-}
-
-.shapeborder1
-{
-  background-image: linear-gradient(135deg, #2e2485, #0f0c29);
-  height: 100px;
-  filter: blur(0px);
-  width: 100px;
-  position: absolute;
-  right: 0;
-  margin-top: 60%;
-  border-radius: 100% 0% 55% 45% / 63% 100% 0% 37%;
-  -webkit-box-shadow: 0px 0px 75px 16px rgba(46, 36, 133, 1);
-  -moz-box-shadow: 0px 0px 75px 16px rgba(46, 36, 133, 1);
-  box-shadow: 0px 0px 75px 16px rgba(46, 36, 133, 1);
-}
-
-.shapeborder2
-{
-  background-image: linear-gradient(135deg, #0f0c29, #2e2485);
-  height: 100px;
-  filter: blur(0px);
-  width: 100px;
-  position: absolute;
-  left: 0;
-  margin-top: -40%;
-  border-radius: 52% 48% 100% 0% / 31% 48% 52% 69% ;
-  -webkit-box-shadow: 0px 0px 75px 16px rgba(46, 36, 133, 1);
-  -moz-box-shadow: 0px 0px 75px 16px rgba(46, 36, 133, 1);
-  box-shadow: 0px 0px 75px 16px rgba(46, 36, 133, 1);
+  position: static;
+  max-height: 500px;
+  overflow: hidden;
+  z-index: 5;
+  width: 80%;
+  background-color: #0f0c29;;
+  border-radius: 35px;
+  border: 5px #2e2485 solid;
+  -webkit-box-shadow: inset 0px 0px 43px -3px rgba(46, 36, 133, 1);
+  -moz-box-shadow: inset 0px 0px 43px -3px rgba(46, 36, 133, 1);
+  box-shadow: inset 0px 0px 43px -3px rgba(46, 36, 133, 1);
+  clip-path: polygon(0 18%, 100% 0%, 100% 84%, 0% 100%);
 }
 
 .listofchange
 {
-  position: absolute;
-  top:50%;
-  left:100%;
-  transform:translate(-100%, -50%);
-  width: 50%;
+  margin-top: 5%;
+  width: 30%;
+  float: right;
+  transform: skewy(-1.9deg);
+  margin-bottom: 5%;
+  color: #fff;
+  line-height: 2;
+  left: -5%;
+  padding-left: 30px;
 }
-
 .listofchange ul
 {
   list-style-type: none;
+  text-align: left;
 }
-.listofchange li
+
+.listofchangemore
+{
+  opacity: 0;
+  margin-top: 6%;
+  width: 30%;
+  float: right;
+  transform: skewy(-1.9deg) translateX(-50px);
+  margin-bottom: 5%;
+  color: #fff;
+  line-height: 2;
+  left: -5%;
+  transition: 1s;
+  filter: blur(5px);
+  z-index: 2;
+  transition-delay: 0.2s;
+  background: #2e248510;
+  border-radius: 35px;
+  padding-left: 30px;
+  border-top: 2px #2e2485 solid;
+  border-left: 2px #2e2485 solid;
+}
+.listofchangemore ul
+{
+  list-style-type: none;
+  text-align: left;
+}
+
+.container:hover .listofchangemore
+{
+  transform: skewy(-1.9deg) translateX(0px);
+  opacity: 1;
+  filter: blur(0px);
+  margin-left: -20%;
+  background: #2e248530;
+  -webkit-box-shadow: inset 0px 0px 48px -11px rgba(46, 36, 133, 1);
+  -moz-box-shadow: inset 0px 0px 48px -11px rgba(46, 36, 133, 1);
+  box-shadow: inset 0px 0px 48px -11px rgba(46, 36, 133, 1);
+}
+
+
+
+
+.footertext
+{
+  position: absolute;
+  margin-top: 30%;
+  width: 100%;
+  background: #0f0c29;
+  z-index: 1;
+  height: 350px;
+  margin-bottom: 0%;
+  -webkit-box-shadow: inset 0px 0px 56px -16px rgba(46, 36, 133, 1);
+  -moz-box-shadow: inset 0px 0px 56px -16px rgba(46, 36, 133, 1);
+  box-shadow: inset 0px 0px 56px -16px rgba(46, 36, 133, 1);
+  clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
+  text-align: center;
+}
+.footertext p
 {
   color: #fff;
-  margin-left: 10%;
-  width: 100%;
-  font-size: 20px;
-  line-height: 2;
-  filter: blur(2px);
+  margin-top: 90px;
+  text-align: center;
 }
 
-.listofchange:hover
+.footertext a
 {
-  filter: blur(9px);
+  color: #fff;
+  text-decoration: none;
 }
 
+.footertext ul
+{
+  list-style-type: none;
+}
+.footertext li
+{
+  width: 30%;
+  border: 30px;
+  margin-left:35%;
+  margin-right: 35%;
+}
+.footertext p
+{
+  color: #fff;
+  background-color: #07051a;;
+  border-radius: 35px;
+  padding: 20px;
+  font-size: 30px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0px 0px 56px -22px rgba(46, 36, 133, 1);
+  -moz-box-shadow: 0px 0px 56px -22px rgba(46, 36, 133, 1);
+  box-shadow: 0px 0px 56px -22px rgba(46, 36, 133, 1);
+}
+
+.footertext a
+{
+  color: #2e248580;
+  border-radius: 35px;
+  font-size: 20px;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
 
 @media only screen and (min-width:480px)
 {
