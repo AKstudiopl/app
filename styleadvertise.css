@@ -1126,6 +1126,7 @@ body::-webkit-scrollbar
   filter: grayscale(1) opacity(0.7);
   background-image: url('The_Witcher_3monster_1.jpg');
   background-blend-mode: overlay;
+  border-radius: 0 30%;
   border-right: 10px transparent solid;
   -webkit-box-shadow: inset 0px 0px 43px -3px rgba(0, 0, 0, 1);
   -moz-box-shadow: inset 0px 0px 43px -3px rgba(0, 0, 0, 1);
