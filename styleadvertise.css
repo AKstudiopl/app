@@ -15,8 +15,21 @@ body
   {
   overflow-x: hidden;
   background: #07051a;
+  animation: scrolllock;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
   }
 
+@keyframes scrolllock {
+  0%
+  {
+    overflow: hidden;
+  }
+  100%
+  {
+    overflow: hidden;
+  }
+}
 body::-webkit-scrollbar
 {
     display: none;
@@ -811,7 +824,7 @@ body::-webkit-scrollbar
         margin: 0;
         z-index: 2;
         width: 100%;
-        clip-path: polygon(100% 100%, 0 100%, 0 75%);
+        clip-path: polygon(0 5%, 100% 30%, 100% 95%, 0 85%);
         transition: 1s;
     }
 
@@ -1276,7 +1289,7 @@ body::-webkit-scrollbar
   font-size: 20px;
   color: #2e2485;
   margin-bottom: 30px;
-  font-weight: 900;
+  font-weight: 1000;
 }
 .footer-col ul li:not(:last-child)
 {
