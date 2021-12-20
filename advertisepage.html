@@ -2,6 +2,7 @@
 <html>
 <head>
       <meta charset="utf-8">
+      <meta name="theme-color" content="#0f0c29">
 		  <title>AK STUDIO | TEST</title>
 		  <link rel="stylesheet" href="styleadvertise.css">
       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -47,8 +48,28 @@
 <div class="bottomtext">
   <h1>Gameplay</h1>
   <img src="gamescreen.jpg">
-  <p><a href="#">About</a></p>
+  <p><a href="#" onclick="toggle()">About</a></p>
 </div>
+
+
+
+<div id="popupmessage">
+  <h1>Gameplay - Most insane change</h1>
+  <p>The climactic third game in the fantasy RPG series, The Witcher 3: Wild Hunt is a unique combination of a non-linear story and an open world -- a character-driven, non-linear story experience focused on player choice, tactical combat and a rich, living environment.</p>
+  <a href="#" onclick="toggle()">close <i class="far fa-times-circle"></i></a>
+</div>
+
+
+
+<script type="text/javascript">
+  function toggle()
+  {
+      var popupmessage = document.getElementById('popupmessage');
+      popupmessage.classList.toggle('active');
+  }
+</script>
+
+
 
 
 
