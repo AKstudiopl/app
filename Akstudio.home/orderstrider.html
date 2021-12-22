@@ -4,7 +4,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="theme-color" content="#121212">
-		  <title>STRIDER | HOME</title>
+		  <title>STRIDER | ORDER</title>
 		  <link rel="stylesheet" href="styleorder.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
       <script src="script.js" defer></script>
@@ -31,10 +31,10 @@
       </a>
       <div class="navbar-links">
         <ul>
-        <li><a href="#aboutus">About</a></li>
-        <li><a href="#">Portfolio</a></li>
+        <li><a href="homestrider.html">About</a></li>
+        <li><a href="portfolistrider.html">Portfolio</a></li>
         <li><a href="#">Contact</a></li>
-        <li><a href="#">Buy <i class="fas fa-shopping-cart"></i></a></li>
+        <li><a href="orderstrider.html">Buy <i class="fas fa-shopping-cart"></i></a></li>
         </ul>
       </div>
     </div>
@@ -43,25 +43,31 @@
 
 
 <div class="maintext">
-  <h1>Order <span>REQUEST</span></h1>
+  <h1></h1>
 </div>
 
 <div class="orderrequest">
+  <form action="https://formcarry.com/s/ZkEZdDvpjLx" method="POST">
   <label for="email"><i class="fas fa-at"></i> Email :</label>
-  <input type="email" name="mail"></input>
-  <label for="password"><i class="fas fa-lock"></i> Password :</label>
-  <input type="password" name="pass"></input>
-  <label for="password"><i class="fas fa-sign-in-alt"></i> Click to Registr</label>
-  <input type="submit" id="submitbtn" value="LOGIN">
+  <input type="email" name="mail" required></input>
+  <label for="text"><i class="far fa-envelope"></i> Message :</label>
+  <input type="text" name="message" id="message"></input>
+  <br>
+  <label for="password" class="terms">I confirm that I have read the <a href="#">Regulations</a> of the Shop and, I accept the provisions regarding a successful club. <i class="fas fa-check"></i></label>
+  <input type="checkbox" name="inf" required></input>
+  <br>
+  <label for="checkbox"><i class="fas fa-sign-in-alt"></i> Click To Confirm</label>
+  <input type="submit" id="submitbtn" value="SEND">
 </div>
+</form>
 
 <div class="registr">
-  <p>Dont have account?</p>
+  <p>Save ur time!</p>
   <a href="#">Sign Up! <i class="fas fa-user-plus"></i></a>
 </div>
 
 <div class="forgot">
-  <p>Cant log in?</p>
+  <p>Cant send message?</p>
   <a href="#">Help <i class="fas fa-hand-holding-medical"></i></a>
 </div>
 
@@ -84,7 +90,7 @@
             <li><a href="#">Hosting</a></li>
             <li><a href="#">Source</a></li>
             <li><a href="#">Problems</a></li>
-            <li><a href="mailto:akrylowicz5spt@gmail.com?subject=Ticket-Support" class="ticket"><i class="fas fa-comments"></i> Ticket</a></li>
+            <li><a href="ticketstrider.html" class="ticket"><i class="fas fa-comments"></i> Ticket</a></li>
           </ul>
         </div>
         <div class="footer-col">

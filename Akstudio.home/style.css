@@ -202,23 +202,29 @@ body::-webkit-scrollbar
 }
 .header img
 {
+  position: relative;
   width: 100%;
   filter: brightness(10%) grayscale(1);
   height: 100%;
 }
 .headertext {
-  position: absolute;
-  top: 50%;
+  position: relative;
+  background: transparent;
   z-index: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%);
   font-family: 'Inter';
   color: #fff;
   font-size: 80px;
   padding-left: 30px;
   padding-right: 30px;
+  text-align: center;
   border-right: 3px #9C3D54 solid;
   border-left: 3px #9C3D54 solid;
+  margin-bottom: 3px;
+  -webkit-box-shadow: inset 0px 0px 100px -93px rgba(156, 61, 84, 1);
+  -moz-box-shadow: inset 0px 0px 100px -93px rgba(156, 61, 84, 1);
+  box-shadow: inset 0px 0px 100px -93px rgba(156, 61, 84, 1);
 }
 .maincontent
 {
@@ -621,13 +627,6 @@ body::-webkit-scrollbar
     {
       font-size: 14px;
     }
-    .headertext {
-      position: absolute;
-      top: 10%;
-      left: 50%;
-      transform: translate(-50%, -10%);
-      font-size: 50px;
-    }
     .maincontent h2
     {
       font-size: 20px;
@@ -652,5 +651,9 @@ body::-webkit-scrollbar
     {
       width:100%;
       margin-left:0%;
+    }
+    .othersin h2
+    {
+      font-size: 35px;
     }
 }
