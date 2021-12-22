@@ -237,6 +237,15 @@ body::-webkit-scrollbar
   width: 60%;
   margin-left: 20%;
   margin-top: 20px;
+  border: 2px transparent solid;
+  transition: 0.3s;
+}
+.Portfolio a:hover
+{
+  background: transparent;
+  border: 2px #9C3D54 solid;
+  letter-spacing: 3px;
+  font-weight: 900;
 }
 .imgportfolio
 {
@@ -245,14 +254,63 @@ body::-webkit-scrollbar
 }
 .imgportfolio img
 {
-  width: 100%;
-  border-bottom: 1px #9C3D54 solid;
-  border-top: 1px #9C3D54 solid;
+  width: 30%;
+  margin-left: 10%;
   border-radius: 35px;
-  -webkit-box-shadow: 0px 0px 75px -11px #111111;
-  -moz-box-shadow: 0px 0px 75px -11px #111111;
-  box-shadow: 0px 0px 75px -11px #111111;
 }
+
+.description
+{
+  display:inline-block;
+  width: 50%;
+  margin-left: 10%;
+  float: right;
+  margin-top: -52%;
+}
+.description li
+{
+  list-style-type: none;
+  color: #fff;
+  font-size: 25px;
+  line-height: 2;
+  transition: 0.4s;
+}
+.imgportfolio1
+{
+  margin-top: 50px;
+  width: 100%;
+}
+.imgportfolio1 img
+{
+  width: 40%;
+  margin-left: 50%;
+  border-radius: 35px;
+}
+.description1
+{
+  width: 40%;
+  margin-right: 60%;
+  float: left;
+  margin-top: -52%;
+}
+.description1 li
+{
+  line-height: 2;
+  list-style-type: none;
+  color: #fff;
+  text-align: right;
+  font-size: 25px;
+}
+
+.description li:hover
+{
+  padding-left: 10px;
+  color: #9C3D54;
+}
+
+
+
+
 .footer
 {
   background-color: #191919;
@@ -414,5 +472,19 @@ body::-webkit-scrollbar
     {
       width:100%;
       margin-left:0%;
+    }
+    .description li
+    {
+      list-style-type: none;
+      color: #fff;
+      font-size: 15px;
+      line-height: 2;
+    }
+    .description1 li
+    {
+      list-style-type: none;
+      color: #fff;
+      font-size: 13px;
+      line-height: 2;
     }
 }
