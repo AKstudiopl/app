@@ -43,3 +43,17 @@ const progresbar = document.getElementsByClassName('progresbardone')[0]
 toggleProgresbar.addEventListener('click', () => {
   progresbar.classList.toggle('active')
 })
+
+const toggleButtonplaylsit = document.getElementsByClassName('playlistbtn')[0]
+const playlistopen = document.getElementsByClassName('menu_lastlistenings')[0]
+
+toggleButtonplaylsit.addEventListener('click', () => {
+  playlistopen.classList.toggle('active')
+})
+
+const toggleButtonsettings = document.getElementsByClassName('settingsbtn')[0]
+const settingsMenu = document.getElementsByClassName('menu_settings')[0]
+
+toggleButtonsettings.addEventListener('click', () => {
+  settingsMenu.classList.toggle('active')
+})
