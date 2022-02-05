@@ -6,13 +6,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root
+{
+  --main-bg-color: #ffffff;
+  --main-font-color: #ffffff;
+  --dark-bg-color: #111111;
+  --dark-font-color: #ffffff;
+}
 body
   {
   font-family:'Readex Pro', 'Inter', sans-serif;
   overflow-x: hidden;
-  background: #cccccc50;
-  animation: scrolllock#;
-  animation-duration: 3s;
+  background: var(--main-bg-color);
+  animation: scrolllock;
+  animation-duration: 1s;
   animation-timing-function: ease-out;
   scroll-behavior: smooth;
   }
@@ -40,8 +47,8 @@ body::-webkit-scrollbar
   height: 100%;
   z-index: -300;
   opacity: 0;
-  animation-name: load#;
-  animation-duration: 4s;
+  animation-name: load;
+  animation-duration: 1.5s;
   backdrop-filter: blur(45px);
   background: rgba(25, 25, 25, 0.8);
   animation-timing-function:ease-out;
@@ -483,7 +490,6 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 {
   color: #fff;
   font-size: 20px;
-  transition: 0.2s;
   text-decoration: none;
 }
 .menu_lastlistenings ul li a i
@@ -495,7 +501,9 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 .menu_lastlistenings ul li a:hover
 {
   color: rgba(0,183,255,1);
-  word-spacing: 5px;
+  word-spacing: 3px;
+  transition: 0s;
+  transition-timing-function: ease-in-out;
 }
 .menu_lastlistenings ul li a:hover i
 {
@@ -530,7 +538,6 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 {
   color: #fff;
   text-decoration: none;
-  transition: 0.2s;
   font-size:20px;
 }
 .menu_settings ul li a:hover
@@ -544,7 +551,10 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   height: 0;
   color: #ffffff00;
 }
-
+body.active
+{
+  background: #111;
+}
 
 
 

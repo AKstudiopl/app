@@ -18,7 +18,7 @@ body
   font-family:'Readex Pro', 'Inter', sans-serif;
   overflow-x: hidden;
   background: var(--main-bg-color);
-  animation: scrolllock#;
+  animation: scrolllock;
   animation-duration: 3s;
   animation-timing-function: ease-out;
   scroll-behavior: smooth;
@@ -47,7 +47,7 @@ body::-webkit-scrollbar
   height: 100%;
   z-index: -300;
   opacity: 0;
-  animation-name: load#;
+  animation-name: load;
   animation-duration: 4s;
   backdrop-filter: blur(45px);
   background: rgba(25, 25, 25, 0.8);
