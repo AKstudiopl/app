@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<head>
+    <title>ESL</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Deska windsurfingowa">
+    <link rel="stylesheet" href="style_home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#222222">
+    <link rel="shortcut icon" type="image" href="logoweb.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="script.js" defer></script>
+</head>
+<body class="night">
+
+
+<div class="load">
+  <img src="logo.png">
+</div>
+
+
+<div class="Settings-menu active">
+  <ul>
+    <li><a class="account-btn"><i class="fas fa-user"></i> Account</a></li>
+    <div class="login active">
+      <label for="mail"></label>
+      <input type="email" name="mail" placeholder="email">
+      <label for="pass"></label>
+      <input type="password" name="pass" placeholder="password">
+      <input type="submit">
+    </div>
+    <li><a href="mailto:striderstudio@gmail.com?subject=Ticket"><i class="fas fa-envelope"></i> Ticket</a></li>
+    <li><a href="#"><i class="fas fa-lock"></i> Privacy</a></li>
+    <li><a class="cookies-settings"><i class="fas fa-cookie-bite"></i> Cookies</a></li>
+    <li><i class="fas fa-times"></i></li>
+  </ul>
+</div>
+
+
+
+  <nav class="navbar">
+    <div class="navtitle">
+      <img src="logo.png">
+    </div>
+      <a class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+        <li><a href="#">About</a></li>
+        <li><a class="settings-btn">Settings</a></li>
+        <li><a id="play">Sound</a></li>
+        <audio id="player">
+          <source src='Jinco-Breathe.mp3' type='audio/mpeg'/>
+        </audio>
+        <li>
+          <div class="btn">
+            <a id="dark-change">Theme <i class="fas fa-adjust"></i></a>
+          </div>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+<div class="navgap"></div>
+
+
+<div class="Cookies accepted">
+  <h2><i class="fas fa-cookie-bite"></i> Cookies Consent</h2>
+  <p>Site is using cookies to provide necessary website functionality,
+     improve your experience and analyze our traffic. Feel free to check out our <a href="https://ec.europa.eu/info/cookies_en">Privacy Policy</a> and cookies usage</p>
+    <div class="accept-btn">
+      <a class="accept-btn-action"><i class="fas fa-check"></i></a>
+    </div>
+</div>
+
+
+<div class="homeview">
+  <div class="text">
+      <img src="logo.png">
+      <h2>Proffesional E-sport League</h2>
+      <a href="#">About</a>
+  </div>
+</div>
+
+<div class="set">
+  <h2>PGL Major Antwerp 2022</h2>
+  <ul>
+    <li>Prize Pool : $1,000,000 USD are spread among the teams</li>
+    <li>The New Challengers Stage</li>
+    <li>The New Legends  Stage</li>
+    <li>The New Champions Stage</li>
+    <img id="img1" src="VY4emyQ_VX_0kqz9UTqjOz.jpg">
+    <img id="img2" src="nN1d8HBlx72bl7jIA9ZioV.jpg">
+    <a href="#">Tournaments</a>
+  </ul>
+</div>
+
+<div class="imagecontainer">
+
+  <div class="fullscreenview">
+    <a class="fullscreen-btn"><i class="fas fa-expand"></i></a>
+  </div>
+
+  <div class="swiper">
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide"><img src="inSlu6IB9bZQaC3gyYKa66.jpg"></div>
+    <div class="swiper-slide"><img src="nN1d8HBlx72bl7jIA9ZioV.jpg"></div>
+    <div class="swiper-slide"><img src="VY4emyQ_VX_0kqz9UTqjOz.jpg"></div>
+    <div class="swiper-slide"><img src="inSlu6IB9bZQaC3gyYKa66.jpg"></div>
+    <div class="swiper-slide"><img src="nN1d8HBlx72bl7jIA9ZioV.jpg"></div>
+    <div class="swiper-slide"><img src="VY4emyQ_VX_0kqz9UTqjOz.jpg"></div>
+    <div class="swiper-slide"><img src="inSlu6IB9bZQaC3gyYKa66.jpg"></div>
+    <div class="swiper-slide"><img src="nN1d8HBlx72bl7jIA9ZioV.jpg"></div>
+    <div class="swiper-slide"><img src="VY4emyQ_VX_0kqz9UTqjOz.jpg"></div>
+    <div class="swiper-slide"><img src="inSlu6IB9bZQaC3gyYKa66.jpg"></div>
+    <div class="swiper-slide"><img src="nN1d8HBlx72bl7jIA9ZioV.jpg"></div>
+    <div class="swiper-slide"><img src="VY4emyQ_VX_0kqz9UTqjOz.jpg"></div>
+    ...
+  </div>
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+</div>
+
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+const swiper = new Swiper('.swiper', {
+
+loop: true,
+
+pagination: {
+  el: '.swiper-pagination',
+  clickable: true,
+},
+
+navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+},
+
+});
+</script>
+
+</body>
+</html>
