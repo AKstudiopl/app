@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 *
 {
@@ -9,7 +10,7 @@
 body
 {
   background: #DEE4E7;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans','Satisfy', sans-serif;
   color: #111;
 }
 body::-webkit-scrollbar {
@@ -314,9 +315,11 @@ body::-webkit-scrollbar {
 }
 .homeview h1
 {
-  font-size: 50px;
-  color: #1E212D;
+  font-size: 60px;
+  color: #00b4d8;
+  font-family: 'Satisfy';
   padding-left: 30px;
+  margin-bottom: -20px;
 }
 .homeview h1 span
 {
@@ -330,20 +333,26 @@ body::-webkit-scrollbar {
 }
 .homeview a
 {
-  background: #111;
-  padding: 10px 30px;
+  background: #0077b6;
+  padding: 15px 30px;
   border-radius: 25px;
   color: #fff;
   text-decoration:none;
-  border: 2px #222222 solid;
+  font-size: 20px;
   transition: 0.2s;
   top: 30px;
   margin-left: 30px;
 }
 .homeview a:hover
 {
-  background: #222222;
+  background: #023e8a;
   letter-spacing: 2px;
+}
+.homeview a:focus
+{
+  background: #48cae4;
+  letter-spacing: 2px;
+  font-weight: 800;
 }
 
 @keyframes carousel {
@@ -394,86 +403,73 @@ body::-webkit-scrollbar {
 {
   font-size: 72px;
 }
-
-@keyframes shine {
-  0%
-  {
-    background-position: 100% 100%;
-  }
-  50%
-  {
-    background-position: 0% 0%;
-  }
-  100%
-  {
-    background-position: 100% 100%;
-  }
-}
-
-.content-sources
+.swiper .swiper-pagination-bullet-active
 {
-  width: 100%;
+  padding: 0 10px;
+  border-radius: 5px;
+  background: #0077b6;
+  width: 25px;
 }
-
-.iframecontainer
+.swiper .swiper-pagination-bullet
 {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 56.25%;
-}
-.iframecontainer iframe
-{
-  width: 100%;
-  z-index: 0;
-  height: 100%;
+  padding: 0 10px;
+  border-radius: 5px;
+  background: #0077b6;
+  transition: 0.2s;
 }
 .set
 {
   background: #22222275;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
 }
-.set #img1
+.set img
 {
-  width: 100%;
-  clip-path: polygon(100% 0, 15% 22%, 100% 100%);
-  filter: opacity(0.1) grayscale(1);
+  width: 90%;
   transition: 0.3s;
+  margin: 0;
+  border-radius: 15px;
 }
-.set #img2
+.set .swiper-slide img
 {
-  width: 100%;
-  clip-path: polygon(0 5%, 0 85%, 94% 94%);
-  filter: opacity(0.1) grayscale(1);
-  margin-top: -52%;
-  transition: 0.3s;
-}
-.set #img1:hover
-{
-  filter: opacity(1) grayscale(0);
-}
-.set #img2:hover
-{
-  filter: opacity(1) grayscale(0);
+  border-bottom: 3px #0077b6 solid;
 }
 .set a
 {
   text-decoration: none;
   color: #DEE4E7;
-  background: #111;
-  padding: 10px 25px;
-  border-radius: 25px;
-  transition: 0.3s;
+  padding: 10px 50px;
+  border-radius: 25px 25px 0 0;
+  transition: 0.5s;
   border: 2px #222 solid;
 }
 .set a:hover
 {
-  letter-spacing: 2px;
   background: #222;
+  border-radius: 55px 55px 0 0;
+  letter-spacing: 2px;
+}
+.set .fast-description
+{
+  margin-top: -80px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+.set .fast-description h2
+{
+  width: 90%;
+  margin-left: 5%;
+  color: #0077b6;
+  padding-bottom: 15px;
+}
+.set .fast-description a
+{
+  background: #0077b6;
+  padding: 10 70px;
+  border: none;
 }
 .imagecontainer
 {
@@ -481,7 +477,6 @@ body::-webkit-scrollbar {
   margin-left: 10%;
   position: relative;
 }
-
 .imagecontainer.fullscreen
 {
   width: 100%;
@@ -505,8 +500,15 @@ body::-webkit-scrollbar {
 .fullscreenview a
 {
   color: #fff;
+  background: none;
+  border: none;
   text-decoration: none;
   cursor: pointer;
+}
+.fullscreenview a:hover
+{
+  border: none;
+  background: none;
 }
 .imagecontainer img
 {
