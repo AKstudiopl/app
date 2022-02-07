@@ -15,13 +15,13 @@
 
 
 <div class="load">
-  <img src="logo.png">
+  <h1>Shoooped</h1>
 </div>
 
 
 <div class="Settings-menu active">
   <ul>
-    <li><a class="account-btn"><i class="fas fa-user"></i> Account</a></li>
+    <li><a class="account-btn"><i class="fas fa-user"></i> Konto</a></li>
     <div class="login active">
       <label for="mail"></label>
       <input type="email" name="mail" placeholder="email">
@@ -30,7 +30,7 @@
       <input type="submit">
     </div>
     <li><a href="mailto:striderstudio@gmail.com?subject=Ticket"><i class="fas fa-envelope"></i> Ticket</a></li>
-    <li><a href="#"><i class="fas fa-lock"></i> Privacy</a></li>
+    <li><a href="#"><i class="fas fa-lock"></i> Polityka Marki</a></li>
     <li><a class="cookies-settings"><i class="fas fa-cookie-bite"></i> Cookies</a></li>
     <li><i class="fas fa-times"></i></li>
   </ul>
@@ -40,7 +40,7 @@
 
   <nav class="navbar">
     <div class="navtitle">
-      <img src="logo.png">
+      <h1>Shoooped</h1>
     </div>
       <a class="toggle-button">
       <span class="bar"></span>
@@ -49,15 +49,15 @@
       </a>
       <div class="navbar-links">
         <ul>
-        <li><a href="#">About</a></li>
-        <li><a class="settings-btn">Settings</a></li>
+        <li><a class="cart-btn">Koszyk <i class="fas fa-shopping-cart"></i></a></li>
         <li><a id="play">Sound</a></li>
         <audio id="player">
           <source src='Jinco-Breathe.mp3' type='audio/mpeg'/>
         </audio>
+        <li><a class="settings-btn">Ustawienia</a></li>
         <li>
           <div class="btn">
-            <a id="dark-change">Theme <i class="fas fa-adjust"></i></a>
+            <a id="dark-change">Motyw <i class="fas fa-adjust"></i></a>
           </div>
         </li>
         </ul>
@@ -80,52 +80,73 @@
 </div>
 
 
+<div class="cart active">
+  <h2>Koszyk <i class="fas fa-shopping-cart"></i></h2>
+  <div class="tabela">
+    <h3>Produkt</h3>
+    <h3>Cena</h3>
+  </div>
+  <div class="koszyk-1">
+    <p>Black mood t-shirt <span>x1</span></p>
+    <p><span>15.50$</span></p>
+  </div>
+  <div class="koszyk-1">
+    <p>Black Hoodie <span>x1</span></p>
+    <p><span>15.50$</span></p>
+  </div>
+  <div class="koszyk-1">
+    <p>Black Jeans <span>x1</span></p>
+    <p><span>15.50$</span></p>
+  </div>
+  <div class="koszyk-1">
+    <p>Black Jeans <span>x1</span></p>
+    <p><span>15.50$</span></p>
+  </div>
+  <div class="exit-cart-btn">
+  <a class="cart-btn-exit"><i class="far fa-times-circle"></i></a>
+  </div>
+</div>
+
+
 <div class="homeview">
   <div class="text">
       <h1>Shoooped<span>.com</span></h1>
       <h2>Online Shoping Never Was That Easy</h2>
-      <a href="#">Shop Now!</a>
+      <a href="#most-liked-products">Shop Now!</a>
   </div>
+</div>
+
+
+<div class="titles">
+  <h1>Most Liked</h1>
+  <h1><span>Products</span></h1>
 </div>
 
 <div class="set">
 
   <div class="swiper">
   <div class="swiper-wrapper">
+
     <div class="swiper-slide">
-      <img src="whiteshirtpng.png">
-      <div class="fast-description">
-      <h2>Witcher T-Shirt</h2>
-      <a href="#">Check</a>
-      </div>
+      <img src="imgssssssssssssssssssseses.jpg">
+        <div class="fast-description">
+          <h2>White T-shirt</h2>
+          <a class="exitbuttonaction">Check</a>
+        </div>
     </div>
     <div class="swiper-slide">
-      <img src="whiteshirtpng.png">
-      <div class="fast-description">
-      <h2>Witcher T-Shirt</h2>
-      <a href="#">Check</a>
-      </div>
+        <img src="Womans-Polo-Button-Down-Collar-T-Shirt-PSD-Mockups-1024x772.jpg">
+          <div class="fast-description">
+            <h2>Witcher T-Shirt</h2>
+            <a href="#">Check</a>
+        </div>
     </div>
     <div class="swiper-slide">
-      <img src="whiteshirtpng.png">
-      <div class="fast-description">
-      <h2>Witcher T-Shirt</h2>
-      <a href="#">Check</a>
-      </div>
-    </div>
-    <div class="swiper-slide">
-      <img src="whiteshirtpng.png">
-      <div class="fast-description">
-      <h2>Witcher T-Shirt</h2>
-      <a href="#">Check</a>
-      </div>
-    </div>
-    <div class="swiper-slide">
-      <img src="whiteshirtpng.png">
-      <div class="fast-description">
-      <h2>Witcher T-Shirt</h2>
-      <a href="#">Check</a>
-      </div>
+        <img src="Blank-Black-Hoodie-Clipart-Best.jpg">
+          <div class="fast-description">
+            <h2>Black Hoodie</h2>
+            <a class="exitbuttonaction1">Check</a>
+        </div>
     </div>
   </div>
 
@@ -137,31 +158,183 @@
 </div>
 
 
-<div class="imagecontainer">
+<div class="product">
 
-  <div class="fullscreenview">
-    <a class="fullscreen-btn"><i class="fas fa-expand"></i></a>
+  <div class="exit-button">
+    <a class="exitmenubutton"><i class="far fa-times-circle"></i></a>
   </div>
 
   <div class="swiper">
   <div class="swiper-wrapper">
 
-    <div class="swiper-slide"><img src="20220206_192132.jpg"></div>
-    <div class="swiper-slide"><img src="20220206_192028.jpg"></div>
-    <div class="swiper-slide"><img src="20220206_192112.jpg"></div>
+    <div class="swiper-slide">
+      <img src="imgssssssssssssssssssseses.jpg">
+    </div>
+    <div class="swiper-slide">
+        <img src="istockphoto-1280562095-170667a.jpg">
+    </div>
+    <div class="swiper-slide">
+        <img src="imageseeesssesesese.jpg">
+    </div>
   </div>
+
+  <div class="swiper-pagination"></div>
   <div class="swiper-button-prev"></div>
   <div class="swiper-button-next"></div>
+
+</div>
+  <div class="productdescription">
+  <h1>Witcher T-Shirt</h1>
+  <h2>35.50$</h2>
+  <ul>
+    <li>Standardowy krój</li>
+    <li>Kaptur ze sznurkiem do regulacji</li>
+    <li>Polar, 70% bawełna / 30% poliester pochodzący z recyklingu</li>
+    <li>Kieszeń kangurka</li>
+    <li>Dół i mankiety wykończone ściągaczem</li>
+    <li><a href="#">Zobacz Więcej</a></li>
+  </ul>
+    <div class="buy-btn">
+      <a href="#">Dodaj do <i class="fas fa-shopping-cart"></i></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="product 1">
+
+  <div class="exit-button">
+    <a class="exitmenubutton 1"><i class="far fa-times-circle"></i></a>
+  </div>
+
+  <div class="swiper">
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide">
+      <img src="Blank-Black-Hoodie-Clipart-Best.jpg">
+    </div>
+    <div class="swiper-slide">
+        <img src="41JiC3tJxWL._AC_UY879_.jpg">
+    </div>
+    <div class="swiper-slide">
+        <img src="imagessseaeaeaeaeaea.jpg">
+    </div>
+  </div>
+
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+</div>
+  <div class="productdescription">
+  <h1>Black Hoodie</h1>
+  <h2>47.50$</h2>
+  <ul>
+    <li>Standardowy krój</li>
+    <li>Kaptur ze sznurkiem do regulacji</li>
+    <li>Polar, 70% bawełna / 30% poliester pochodzący z recyklingu</li>
+    <li>Kieszeń kangurka</li>
+    <li>Dół i mankiety wykończone ściągaczem</li>
+    <li><a href="#">Zobacz Więcej</a></li>
+  </ul>
+    <div class="buy-btn">
+      <a href="#">Dodaj do <i class="fas fa-shopping-cart"></i></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="titles">
+  <h1>Black Mood</h1>
+  <h1><span>Style</span></h1>
+</div>
+
+<div class="set">
+
+  <div class="swiper">
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide">
+      <img src="imgssssssssssssssssssseses.jpg">
+        <div class="fast-description">
+          <h2>White T-shirt</h2>
+          <a class="exitbuttonaction">Check</a>
+        </div>
+    </div>
+    <div class="swiper-slide">
+        <img src="Womans-Polo-Button-Down-Collar-T-Shirt-PSD-Mockups-1024x772.jpg">
+          <div class="fast-description">
+            <h2>Witcher T-Shirt</h2>
+            <a href="#">Check</a>
+        </div>
+    </div>
+    <div class="swiper-slide">
+        <img src="Blank-Black-Hoodie-Clipart-Best.jpg">
+          <div class="fast-description">
+            <h2>Black Hoodie</h2>
+            <a class="exitbuttonaction1">Check</a>
+        </div>
+    </div>
+  </div>
+
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
 </div>
 </div>
 
+
+
+<div class="titles">
+  <h1>Summer Vibe</h1>
+  <h1><span>Collection</span></h1>
+</div>
+
+<div class="set">
+
+  <div class="swiper">
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide">
+      <img src="imgssssssssssssssssssseses.jpg">
+        <div class="fast-description">
+          <h2>White T-shirt</h2>
+          <a class="exitbuttonaction">Check</a>
+        </div>
+    </div>
+    <div class="swiper-slide">
+        <img src="Womans-Polo-Button-Down-Collar-T-Shirt-PSD-Mockups-1024x772.jpg">
+          <div class="fast-description">
+            <h2>Witcher T-Shirt</h2>
+            <a href="#">Check</a>
+        </div>
+    </div>
+    <div class="swiper-slide">
+        <img src="Blank-Black-Hoodie-Clipart-Best.jpg">
+          <div class="fast-description">
+            <h2>Black Hoodie</h2>
+            <a class="exitbuttonaction1">Check</a>
+        </div>
+    </div>
+  </div>
+
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+</div>
+</div>
 
 
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script>
 const swiper = new Swiper('.swiper', {
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+},
 
-loop: true,
 
 pagination: {
   el: '.swiper-pagination',

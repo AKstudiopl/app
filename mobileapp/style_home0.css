@@ -169,10 +169,13 @@ body::-webkit-scrollbar {
 }
 .navtitle
 {
-  font-size: 25px;
+  font-size: 30px;
   margin-left: 1rem;
-  font-family:'Satisfy';
-  color: #00b4d8;
+}
+.navtitle img
+{
+  width: 100px;
+  margin-top: 5px;
 }
 .navbar-links ul
 {
@@ -225,76 +228,6 @@ body::-webkit-scrollbar {
   width: 100%:auto;
   border-radius: 10px;
   background-color: #fff;
-}
-
-.cart
-{
-  width: 100vw;
-  background: rgba(34, 34, 34, 0.75);
-  backdrop-filter: blur(10px);
-  position: fixed;
-  z-index: 50;
-  transition: 0.5s;
-  transition-timing-function: ease-in-out;
-  margin-top: -300px;
-  padding-top: 15px;
-  border-bottom: 1px #0077b650 solid;
-}
-.cart.active
-{
-  visibility: visible;
-  margin: 0;
-    -webkit-box-shadow: 0px 0px 38px -12px rgba(0, 119, 182, 1);
-  -moz-box-shadow: 0px 0px 38px -12px rgba(0, 119, 182, 1);
-  box-shadow: 0px 0px 38px -12px rgba(0, 119, 182, 1);
-}
-.cart .koszyk-1
-{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-left: 15%;
-  width: 70%;
-  padding: 10px 0;
-  border-bottom: 2px #ffffff25 solid;
-}
-.cart .koszyk-1 span
-{
-  color: #0077b6;
-}
-.cart h2
-{
-  text-align: center;
-  padding-bottom: 15px;
-  color: #0077b6;
-  border-bottom: 2px #ffffff25 solid;
-  margin-bottom: 15px;
-}
-.cart .exit-cart-btn
-{
-  text-align: center;
-  font-size: 25px;
-  margin-bottom: -15px;
-  transition: 0.3s;
-}
-.cart .exit-cart-btn a
-{
-  transition: 0.3s;
-  color: #fff;
-  border-radius: 50%;
-}
-.cart .exit-cart-btn a:hover
-{
-  color: #0077b6;
-}
-.cart .tabela
-{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-left: 15%;
-  width: 70%;
-  border-bottom: 2px #ffffff25 solid;
 }
 .Cookies
 {
@@ -427,11 +360,11 @@ body::-webkit-scrollbar {
 @keyframes carousel {
   0%
   {
-    background-image: url('blur-blurred-background-boutique-clothes.jpg');
+    background-image: url('20220206_192112.jpg');
   }
   25%
   {
-    background-image: url('blur-blurred-background-boutique-clothes.jpg');
+    background-image: url('20220206_192112.jpg');
   }
   30%
   {
@@ -451,28 +384,20 @@ body::-webkit-scrollbar {
   }
   90%
   {
-    background-image: url('blur-blurred-background-boutique-clothes.jpg');
+    background-image: url('20220206_192112.jpg');
   }
   100%
   {
-    background-image: url('blur-blurred-background-boutique-clothes.jpg');
+    background-image: url('20220206_192112.jpg');
   }
 }
 .titles
 {
   text-align: center;
-  padding-bottom: 15px;
-  padding-top: 10px;
 }
 .titles h1
 {
-  margin-bottom: -25px;
-}
-.titles span
-{
   font-size: 40px;
-  font-family: 'Satisfy';
-  color: #0077b6;
 }
 .swiper .swiper-pagination-bullet-active
 {
@@ -605,103 +530,6 @@ body::-webkit-scrollbar {
 {
   color: #fff;
 }
-
-/** product **/
-.exit-button
-{
-  width: 90%;
-  padding-bottom: 15px;
-  text-align: right;
-}
-.exit-button a
-{
-  font-size: 25px;
-  color: #fff;
-}
-.product
-{
-  width: 100vw;
-  height: 100vh;
-  background: rgba(34, 34, 34, 0.98);
-  backdrop-filter: blur(5px);
-  position: fixed;
-  top: 0;
-  z-index: 50;
-  padding-top: 25px;
-  visibility: hidden;
-  transition: 0.3s;
-  margin-left: -100vw;
-  border-radius: 100%;
-}
-.product.active
-{
-  border-radius: 0;
-  visibility: visible;
-  margin-left: 0;
-}
-.product .productdescription
-{
-  margin-left: 10%;
-}
-.product .productdescription .options
-{
-  margin-top: 25px;
-  background: #fff;
-  color: #808080;
-}
-.product .productdescription h1
-{
-  color: #FFF;
-  word-spacing: 5px;
-}
-.product .productdescription h2
-{
-  color: #0077b6;
-}
-.product .productdescription ul
-{
-  list-style-type: none;
-  padding: 15px 0 30px 0;
-  color: #fff;
-}
-.product .productdescription ul a
-{
-  color: #0077b6;
-  text-decoration: underline;
-  transition: 0.3s;
-}
-.product .productdescription .buy-btn a
-{
-  background: #0077b6;
-  padding: 10px 30px;
-  border-radius: 25px;
-  color: #fff;
-  text-decoration:none;
-  font-size: 20px;
-  transition: 0.2s;
-}
-.product .productdescription a:hover
-{
-  background: #023e8a;
-  letter-spacing: 2px;
-}
-.product img
-{
-  width: 90%;
-  transition: 0.3s;
-  margin: 0;
-  border-radius: 15px;
-  margin-left: 5%;
-}
-.product .swiper
-{
-  width: 90%;
-  transition: 0.3s;
-  margin: 0;
-  border-radius: 15px;
-  margin-left: 5%;
-}
-
 @media (max-width: 500px)
 {
     .toggle-button

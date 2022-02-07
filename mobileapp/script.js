@@ -62,9 +62,45 @@ button.addEventListener("click", function(){
   }
 });
 
-const fullscreenButton = document.getElementsByClassName('fullscreen-btn')[0]
-const fullscreenImg = document.getElementsByClassName('imagecontainer')[0]
 
-fullscreenButton.addEventListener('click', () => {
-  fullscreenImg.classList.toggle('fullscreen')
+const checkBtn = document.getElementsByClassName('exitbuttonaction')[0]
+const checkScreen = document.getElementsByClassName('product')[0]
+
+checkBtn.addEventListener('click', () => {
+  checkScreen.classList.toggle('active')
+})
+
+const exitScreenBtn = document.getElementsByClassName('exitmenubutton')[0]
+const exitScreen = document.getElementsByClassName('product')[0]
+
+exitScreenBtn.addEventListener('click', () => {
+  exitScreen.classList.toggle('active')
+})
+
+const checkBtn1 = document.getElementsByClassName('exitbuttonaction1')[0]
+const checkScreen1 = document.getElementsByClassName('product 1')[0]
+
+checkBtn1.addEventListener('click', () => {
+  checkScreen1.classList.toggle('active')
+})
+
+const exitScreenBtn1 = document.getElementsByClassName('exitmenubutton 1')[0]
+const exitScreen1 = document.getElementsByClassName('product 1')[0]
+
+exitScreenBtn1.addEventListener('click', () => {
+  exitScreen1.classList.toggle('active')
+})
+
+const cartBtn = document.getElementsByClassName('cart-btn')[0]
+const cartMenu = document.getElementsByClassName('cart')[0]
+
+cartBtn.addEventListener('click', () => {
+  cartMenu.classList.toggle('active')
+})
+
+const cartBtnExit = document.getElementsByClassName('cart-btn-exit')[0]
+const cartMenuHide = document.getElementsByClassName('cart')[0]
+
+cartBtnExit.addEventListener('click', () => {
+  cartMenuHide.classList.toggle('active')
 })
