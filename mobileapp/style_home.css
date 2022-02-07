@@ -707,7 +707,10 @@ body::-webkit-scrollbar {
 }
 .product .productdescription
 {
-  margin-left: 10%;
+  padding-left: 15%;
+  overflow-y: scroll;
+  width: 70%;
+  height: 20%;
 }
 .product .productdescription .options
 {
@@ -715,14 +718,16 @@ body::-webkit-scrollbar {
   background: #fff;
   color: #808080;
 }
-.product .productdescription h1
+.product h1
 {
   color: #FFF;
   word-spacing: 5px;
+  margin-left: 10%;
 }
-.product .productdescription h2
+.product h2
 {
   color: #0077b6;
+  padding-left:10%;
 }
 .product .productdescription ul
 {
@@ -736,9 +741,14 @@ body::-webkit-scrollbar {
   text-decoration: underline;
   transition: 0.3s;
 }
-.product .productdescription .buy-btn a
+.product .buy-btn
+{
+  margin-top: 30px;
+}
+.product .buy-btn a
 {
   background: #0077b6;
+  margin-left: 7.5%;
   padding: 10px 30px;
   border-radius: 25px;
   color: #fff;
@@ -746,10 +756,22 @@ body::-webkit-scrollbar {
   font-size: 20px;
   transition: 0.2s;
 }
-.product .productdescription a:hover
+.product .buy-btn a:hover
 {
-  background: #023e8a;
   letter-spacing: 2px;
+  color: #fff;
+}
+.product .buy-btn i
+{
+  transition: 0.3s;
+}
+.product .buy-btn a:hover i
+{
+  transform: rotateY(180deg);
+}
+.product a:hover
+{
+  color: #0077b6;
 }
 .product img
 {
@@ -1069,17 +1091,9 @@ body::-webkit-scrollbar {
     margin-left: 35%;
     border-radius: 25px;
   }
-  .product img
-  {
-
-  }
   .product .swiper
   {
     width: 30%;
-  }
-  .product .productdescription
-  {
-    margin: 0% 7%;
   }
   .footer .newsletter
   {
@@ -1098,6 +1112,27 @@ body::-webkit-scrollbar {
   {
     width: 90%;
     margin-left: 5%;
+    border-radius: 25px;
+  }
+  .product .productdescription
+  {
+    padding-left: 10%;
+    overflow-y: scroll;
+    width: 30%;
+    height: 20%;
+  }
+  .product .productdescription::-webkit-scrollbar-thumb
+  {
+  background: #0077b6;
+  border-radius: 25px;
+  }
+  .product .productdescription::-webkit-scrollbar
+  {
+  width: 5px;
+  }
+  .product .productdescription::-webkit-scrollbar-track
+  {
+    background: #22222299;
     border-radius: 25px;
   }
 }
