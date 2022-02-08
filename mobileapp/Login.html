@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<head>
+    <title>Shooped | Login</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Deska windsurfingowa">
+    <link rel="stylesheet" href="style_home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#222222">
+    <link rel="shortcut icon" type="image" href="logoweb.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="script.js" defer></script>
+</head>
+<body class="night">
+
+
+<div class="load">
+  <h1>Shoooped</h1>
+</div>
+
+
+<div class="Settings-menu active">
+  <ul>
+    <li><a class="account-btn"><i class="fas fa-user"></i> Konto</a></li>
+    <div class="login active">
+      <label for="mail"></label>
+      <input type="email" name="mail" placeholder="email">
+      <label for="pass"></label>
+      <input type="password" name="pass" placeholder="password">
+      <input type="submit">
+    </div>
+    <li>
+      <a>
+        <div class="search-place">
+          <input type="text" placeholder="Szukaj">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+      </a>
+    </li>
+    <li><a href="mailto:striderstudio@gmail.com?subject=Ticket"><i class="fas fa-envelope"></i> Ticket</a></li>
+    <li><a href="#"><i class="fas fa-lock"></i> Polityka Marki</a></li>
+    <li><a id="play"><i class="fas fa-music"></i> Sound</a></li>
+    <audio id="player">
+      <source src='Jinco-Breathe.mp3' type='audio/mpeg'/>
+    </audio>
+    <li>
+      <div class="btn">
+        <a id="dark-change"><i class="fas fa-adjust"></i> Motyw</a>
+      </div>
+    </li>
+    <li><a class="cookies-settings"><i class="fas fa-cookie-bite"></i> Cookies</a></li>
+    <li><i class="far fa-times-circle"></i></li>
+  </ul>
+</div>
+
+
+
+  <nav class="navbar">
+    <div class="navtitle">
+      <h1>Shoooped</h1>
+    </div>
+      <a class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a class="settings-btn">Więcej</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+<div class="navgap"></div>
+
+
+<div class="Cookies accepted">
+  <h2><i class="fas fa-cookie-bite"></i> Cookies Consent</h2>
+  <p>Site is using cookies to provide necessary website functionality,
+     improve your experience and analyze our traffic. Feel free to check out our <a href="https://ec.europa.eu/info/cookies_en">Privacy Policy</a> and cookies usage</p>
+    <div class="accept-btn">
+      <a class="accept-btn-action"><i class="fas fa-check"></i></a>
+    </div>
+</div>
+
+
+
+<div class="login-page">
+  <h2>Login</h2>
+  <p>Enter Your Data</p>
+    <div class="login-input">
+      <input type="email" placeholder="email">
+      <input type="password" placeholder="Password">
+      <button type="submit"><i class="fas fa-sign-in-alt"></i></button>
+    </div>
+  <div class="regist-page">
+    <p>Dont have account?</p>
+    <a href="#">Registr!</a>
+  </div>
+</div>
+
+
+
+
+
+<div class="footer">
+    <h1>Shooped.com</h1>
+  <div class="Copyright">
+  <p>Shooped® i odpowiednie logo są zastrzeżonymi znakami towarowymi Shooped.com Wszelkie prawa zastrzeżone. Wszystkie inne znaki towarowe, znaki graficzne, logo i prawa autorskie są własnością ich odpowiednich właścicieli.</p>
+    <div class="socials-footer">
+      <a href=""><i class="fab fa-twitter"></i></a>
+      <a href=""><i class="fab fa-facebook-f"></i></a>
+      <a href=""><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+  <div class="newsletter">
+    <div class="titles">
+      <h1>Registr In</h1>
+      <h1><span>Newsletter</span></h1>
+    </div>
+    <label for="email">Mail</label>
+    <input type="email" placeholder="example@shooped.com">
+    <label for="">Phone Number</label>
+    <input type="tel" placeholder="+48">
+    <label for="submit">Registr</label>
+    <input type="submit">
+  </div>
+  <p>Copyright 2020-2022 by Refsnes Data. All Rights Reserved.</p>
+  <p>Site Created By Adam Kryłowicz</p>
+</div>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+const swiper = new Swiper('.swiper', {
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+},
+
+
+pagination: {
+  el: '.swiper-pagination',
+  clickable: true,
+},
+
+navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+},
+
+});
+</script>
+
+</body>
+</html>

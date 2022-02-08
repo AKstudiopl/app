@@ -20,7 +20,7 @@ toggleSettings.addEventListener('click', () => {
   menuSettings.classList.toggle('active')
 })
 
-const exitSettings = document.getElementsByClassName('fa-times')[0]
+const exitSettings = document.getElementsByClassName('fa-times-circle')[0]
 const menuexitSettings = document.getElementsByClassName('Settings-menu')[0]
 
 exitSettings.addEventListener('click', () => {

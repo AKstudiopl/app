@@ -38,12 +38,36 @@ body::-webkit-scrollbar {
 }
 .load h1
 {
-  color: #0077b6;
+  color: #fff;
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  animation-name: text-load;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes text-load {
+  0%
+  {
+    color: #0077b6;
+    letter-spacing: 0px;
+  }
+  50%
+  {
+    filter: blur(0px);
+  }
+  80%
+  {
+    color: #0077b6;
+  }
+  100%
+  {
+    color: #fff;
+    letter-spacing: 4px;
+  }
 }
 
 @keyframes content-load {
@@ -98,7 +122,7 @@ body::-webkit-scrollbar {
 .Settings-menu.active
 {
   visibility: hidden;
-  margin-top: -400px;
+  margin-top: -600px;
 }
 .Settings-menu ul
 {
@@ -110,6 +134,7 @@ body::-webkit-scrollbar {
 {
   list-style-type: none;
   padding: 1rem;
+  text-align: left;
 }
 .Settings-menu ul li a
 {
@@ -166,6 +191,43 @@ body::-webkit-scrollbar {
   border-bottom: 1px #797A7E50 solid;
   z-index: 50;
   backdrop-filter: blur(5px);
+}
+.Settings-menu li a input[type=text] {
+  font-size: 14px;
+  margin: 0;
+  border: 1px solid #ffffff50;
+  border-radius: 25px 0 0 25px;
+  float: left;
+  padding: 5px 0;
+  text-align: center;
+  width: 70%;
+  background: #f1f1f1;
+}
+.Settings-menu .search-place
+{
+  width: 100%;
+  padding-bottom: 30px;
+}
+.Settings-menu button {
+  float: left;
+  margin: 0;
+  width: 25%;
+  padding: 5px 10px;
+  border-radius:0 25px 25px 0;
+  background: #0077b6;
+  color: white;
+  font-size: 14px;
+  border: 1px solid #ffffff50;
+  border-left: none;
+  cursor: pointer;
+}
+.Settings-menu button:hover
+{
+  background: #023e8a;
+}
+.Settings-menu input:focus
+{
+  outline: none;
 }
 .navtitle
 {
@@ -699,6 +761,20 @@ body::-webkit-scrollbar {
   margin-left: -100vw;
   border-radius: 100%;
 }
+.product .productdescription::-webkit-scrollbar-thumb
+{
+background: #0077b6;
+border-radius: 25px;
+}
+.product .productdescription::-webkit-scrollbar
+{
+width: 5px;
+}
+.product .productdescription::-webkit-scrollbar-track
+{
+  background: #22222299;
+  border-radius: 25px;
+}
 .product.active
 {
   border-radius: 0;
@@ -865,7 +941,8 @@ body::-webkit-scrollbar {
 .review-container .viewbutton
 {
   text-align: center;
-  padding: 15px 0;
+  padding-bottom: 10px;
+  padding-top: 15px;
 }
 .review-container .viewbutton a
 {
@@ -874,7 +951,7 @@ body::-webkit-scrollbar {
   background: #0077b6;
   padding: 10px 30px;
   transition: 0.3s;
-  border-radius: 25px;
+  border-radius: 25px 25px 0 0 ;
 }
 .review-container .viewbutton a:hover
 {
@@ -964,6 +1041,69 @@ body::-webkit-scrollbar {
 {
   color: #fff;
   transform: scale(1.2);
+}
+
+
+/** Login-style **/
+.login-page
+{
+  width: 80%;
+  padding-right: 10%;
+  padding-left: 10%;
+  height: 50vh;
+  padding-top: 75px;
+  background: #22222250;
+  border-top: 1px #ffffff25 solid;
+  border-bottom: 1px #ffffff25 solid;
+}
+.regist-page a
+{
+  text-decoration: none;
+  color: #0077b6;
+}
+.login-page input
+{
+  font-size: 14px;
+  margin: 0;
+  border: 1px solid #ffffff50;
+  border-radius: 25px;
+  float: left;
+  padding: 5px 0;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+  background: #f1f1f1;
+}
+.login-page p
+{
+  color: #fff;
+}
+.login-page .search-place
+{
+  width: 100%;
+  padding-bottom: 30px;
+}
+.login-page button {
+  float: left;
+  margin: 0;
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius:25px;
+  background: #0077b6;
+  color: white;
+  font-size: 14px;
+  border: 1px solid #ffffff50;
+  border-left: none;
+  cursor: pointer;
+}
+.login-page button:hover
+{
+  background: #023e8a;
+}
+.login-page input:focus
+{
+  outline: none;
 }
 @media (max-width: 500px)
 {
@@ -1072,6 +1212,35 @@ body::-webkit-scrollbar {
     width: 80%;
     margin-left: 10%;
   }
+  .Settings-menu
+  {
+    width: 30vw;
+    text-align: center;
+    background: #22222290;
+    position: fixed;
+    z-index: 10;
+    right: 0px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+    height: 100vh;
+    margin-top: 55px;
+    transition-timing-function: ease-in-out;
+  }
+  .Settings-menu.active
+  {
+    visibility: hidden;
+    right: -30vw;
+    margin-top: 55px;
+  }
+  .Settings-menu ul
+  {
+    border: none;
+    margin: 0;
+  }
+  .Settings-menu ul li
+  {
+    border-bottom: 1px #797A7E50 solid;
+  }
 }
 @media (min-width: 951px)
 {
@@ -1134,5 +1303,30 @@ body::-webkit-scrollbar {
   {
     background: #22222299;
     border-radius: 25px;
+  }
+  .blog h1
+  {
+    font-size: 25px;
+  }
+  .blog p
+  {
+    font-size: 12px;
+  }
+  .review h1
+  {
+    font-size: 20px;
+  }
+  .Settings-menu
+  {
+    width: 20vw;
+  }
+  .cart
+  {
+    width: 20vw;
+  }
+  .footer p
+  {
+    width: 60%;
+    margin-left: 20%;
   }
 }
