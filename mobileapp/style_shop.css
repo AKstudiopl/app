@@ -12,9 +12,21 @@ body
   background: #DEE4E7;
   font-family: 'PT Sans','Satisfy', sans-serif;
   color: #111;
+  overflow-x: hidden;
 }
-body::-webkit-scrollbar {
-  display: none;
+body::-webkit-scrollbar-thumb
+{
+background: #0077b6;
+border-radius: 25px;
+}
+body::-webkit-scrollbar
+{
+width: 5px;
+}
+body::-webkit-scrollbar-track
+{
+  background: #22222200;
+  border-radius: 25px;
 }
 .night
 {
@@ -204,7 +216,7 @@ body::-webkit-scrollbar {
 .navtitle a
 {
   text-decoration: none;
-  color: #00b4d8;
+  color: #0077b6;
 }
 .Settings-menu li a input[type=text] {
   font-size: 14px;
@@ -248,7 +260,7 @@ body::-webkit-scrollbar {
   font-size: 25px;
   margin-left: 1rem;
   font-family:'Satisfy';
-  color: #0077b6;
+  color: #00b4d8;
 }
 .navbar-links ul
 {
@@ -502,212 +514,78 @@ body::-webkit-scrollbar {
 {
   padding-top: 76px;
 }
-.item
+.fast-menu
 {
-  width: 100%;
-  background: #22222250;
-  padding: 30px 0;
+  display: flex;
+  width: 60%;
+  margin-left: 20%;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-top: 1px #ffffff25 solid;
+  border-bottom: 1px #ffffff25 solid;
 }
-.item-container
+.fast-menu a
 {
-  width: 80%;
-  margin-left: 10%;
-}
-.item-description
-{
-  width: 80%;
-  margin-left: 10%;
-}
-.item-description h3
-{
-  padding-top: 20px;
-}
-.item-description ul
-{
-  list-style-type: none;
-  margin-left: 5%;
-}
-.item-description ul li
-{
-  padding: 2px 0;
-}
-.item-description .add-btn
-{
-  margin: 15px 0;
-}
-.item-description .option-btn
-{
-  padding: 10px 0 0 0;
-}
-.item-description .option-btn a
-{
-  background: #fff;
-  color: #0077b6;
-}
-.item-description .add-btn i
-{
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 10px;
   transition: 0.3s;
 }
-.item-description .add-btn a:hover i
+.fast-menu a:hover
 {
+  background: #0077b6;
+}
+.shop-container
+{
+  margin-top: 15px;
+  width: 80%;
+  margin-left: 10.5%;
+  display: grid;
+  grid-template-columns: repeat(5, 19%);
+  grid-gap: 1%;
+  grid-row-gap: 75px;
+}
+.shop-container .shop-item
+{
+  border-radius: 25px;
+  background: #22222250;
+  text-align: left;
+  transition: 0.4s;
+  border: 1px #ffffff25 solid;
+}
+.shop-container .shop-item:hover
+{
+  border: 1px #0077b6 solid;
+}
+.shop-container .shop-item:hover img
+{
+  border-radius: 25px;
+  border-bottom: 1px #ffffff25 solid;
   transform: rotateY(180deg);
 }
-.item-description h2
+.shop-container a
 {
+  text-decoration: none;
+  color: #fff;
+}
+.shop-container .shop-item h2, h3
+{
+  transition: 0.4s;
+  width: 90%;
+  margin-left: 5%;
+}
+.shop-container .shop-item h3
+{
+  padding-bottom: 5px;
+  margin-bottom: 10px;
   color: #0077b6;
 }
-.item-description .option-btn a:hover
-{
-  color: #fff;
-}
-.item-description a
-{
-  text-decoration: none;
-  color: #fff;
-  background: #0077b6;
-  padding: 10px 30px;
-  transition: 0.3s;
-  border-radius: 25px;
-  margin-bottom: 15px;
-}
-.item-description a:hover
-{
-  background: #023e8a;
-}
-.reviewfull
+.shop-container .shop-item img
 {
   width: 100%;
-}
-.reviewfull.more
-{
-  visibility: hidden;
-  transition: 0.1s;
-  opacity: 0;
-  height: 0;
-}
-.reviewfull.more.active
-{
-  visibility: visible;
-  opacity: 1;
-  height: auto;
-}
-.blog-container
-{
-  width: 90%;
-  margin-left: 5%;
-  background: #22222250;
-  border: 1px #ffffff25 solid;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.blog-container .blog
-{
-  width: 90%;
-  margin-left: 5%;
-}
-.blog-container .blog h2
-{
-  font-size: 20px;
-}
-.blog-container .blog p
-{
-  padding: 10px 0;
-}
-.blog-container .blog a
-{
-  text-decoration: none;
-  color: #0077b6;
-}
-.blog-container img
-{
-  width: 100%;
-}
-.review-container
-{
-  width: 90%;
-  margin-left: 5%;
-  background: #22222250;
-  border: 1px #ffffff25 solid;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.review-container .review
-{
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-.review-container .review img
-{
-  border-radius: 50%;
-  width: 20%;
-  margin-left: 40%;
-  padding: 10px 0;
-}
-.review-container .review h2
-{
-  font-size: 20px;
-  text-align: center;
-  padding-top: 10px;
-}
-.review-container .review i
-{
-  color: #0077b6;
-}
-.review-container .review .rate
-{
-  text-align: center;
-  padding-top: 5px;
-  letter-spacing: 5px;
-}
-.review-container .review p
-{
-  padding: 10px 0;
-}
-.review-container .viewbutton
-{
-  text-align: center;
-  padding-bottom: 30px;
-  padding-top: 15px;
-}
-.review-container .viewbutton a
-{
-  text-decoration: none;
-  color: #fff;
-  background: #0077b6;
-  padding: 10px 30px;
-  transition: 0.3s;
-  border-radius: 25px;
-  margin-bottom: 15px;
-}
-.review-container .viewbutton a:hover
-{
-  background: #023e8a;
-}
-.review-container img
-{
-  width: 100%;
-}
-.review-more
-{
-  text-align: center;
-  width: 100%;
-  padding-top: 10px;
-}
-.review-more a
-{
-  text-decoration: none;
-  color: #fff;
-  background: #0077b6;
-  padding: 10px 30px;
-  transition: 0.3s;
-  border-radius: 25px;
-  margin-bottom: 15px;
-  cursor: pointer;
-}
-.review-more a:hover
-{
-  background: #023e8a;
+  border-radius: 25px 25px 0 0;
+  transition: 0.4s;
+  border-bottom: 1px #ffffff25 solid;
 }
 .footer
 {
@@ -855,6 +733,18 @@ body::-webkit-scrollbar {
 }
 @media (max-width: 500px)
 {
+    .fast-menu
+    {
+      display: flex;
+      width: 90%;
+      margin-left: 5%;
+      justify-content: space-between;
+      padding: 5px 0;
+    }
+    .fast-menu a
+    {
+      font-size: 10px;
+    }
     .top-content::-webkit-scrollbar
     {
       height: 0px;
@@ -889,9 +779,27 @@ body::-webkit-scrollbar {
       display:flex;
       z-index: 30;
     }
+    .shop-container
+    {
+      width: 90%;
+      margin-left: 5%;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(1, 100%);
+      grid-row-gap: 25px;
+    }
 }
 @media (min-width: 501px)
 {
+  .shop-container
+  {
+    width: 90%;
+    margin-left: 5%;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-row-gap: 25px;
+  }
   .item
   {
     width: 80%;
@@ -994,6 +902,15 @@ body::-webkit-scrollbar {
 }
 @media (min-width: 951px)
 {
+  .shop-container
+  {
+    width: 80%;
+    margin-left: 10.5%;
+    display: grid;
+    grid-template-columns: repeat(5, 19%);
+    grid-gap: 1%;
+    grid-row-gap: 75px;
+  }
   .reviewfull
   {
     width: 50%;

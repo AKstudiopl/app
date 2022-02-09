@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<head>
+    <title>Shooped | Shop</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Deska windsurfingowa">
+    <link rel="stylesheet" href="style_shop.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#222222">
+    <link rel="shortcut icon" type="image" href="logoweb.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="script.js" defer></script>
+    <script src="scriptitem.js" defer></script>
+</head>
+<body class="night">
+
+
+<div class="load">
+  <h1>Shoooped</h1>
+</div>
+
+
+<div class="Settings-menu active">
+  <ul>
+    <li><a class="account-btn"><i class="fas fa-user"></i> Konto</a></li>
+    <div class="login active">
+      <label for="mail"></label>
+      <input type="email" name="mail" placeholder="email">
+      <label for="pass"></label>
+      <input type="password" name="pass" placeholder="password">
+      <input type="submit">
+    </div>
+    <li>
+      <a>
+        <div class="search-place">
+          <input type="text" placeholder="Szukaj">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+      </a>
+    </li>
+    <li><a href="mailto:striderstudio@gmail.com?subject=Ticket"><i class="fas fa-envelope"></i> Ticket</a></li>
+    <li><a href="#"><i class="fas fa-lock"></i> Polityka Marki</a></li>
+    <li><a id="play"><i class="fas fa-music"></i> Sound</a></li>
+    <audio id="player">
+      <source src='Jinco-Breathe.mp3' type='audio/mpeg'/>
+    </audio>
+    <li>
+      <div class="btn">
+        <a id="dark-change"><i class="fas fa-adjust"></i> Motyw</a>
+      </div>
+    </li>
+    <li><a class="cookies-settings"><i class="fas fa-cookie-bite"></i> Cookies</a></li>
+    <li><i class="far fa-times-circle"></i></li>
+  </ul>
+</div>
+
+
+
+  <nav class="navbar">
+    <div class="navtitle">
+      <h1><a href="home.html">Shoooped</a></h1>
+    </div>
+      <a class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a class="cart-btn"><i class="fas fa-shopping-cart"></i> Koszyk</a></li>
+        <li><a class="settings-btn">Więcej</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+<div class="Cookies accepted">
+  <h2><i class="fas fa-cookie-bite"></i> Cookies Consent</h2>
+  <p>Site is using cookies to provide necessary website functionality,
+     improve your experience and analyze our traffic. Feel free to check out our <a href="https://ec.europa.eu/info/cookies_en">Privacy Policy</a> and cookies usage</p>
+    <div class="accept-btn">
+      <a class="accept-btn-action"><i class="fas fa-check"></i></a>
+    </div>
+</div>
+
+
+<div class="cart">
+  <h2>Koszyk <i class="fas fa-shopping-cart"></i></h2>
+  <div class="tabela">
+    <h3>Produkt</h3>
+    <h3>Cena</h3>
+  </div>
+  <div class="koszyk-1">
+    <p>Black mood t-shirt <span>x1</span></p>
+    <p><span>15.50$</span></p>
+  </div>
+  <div class="koszyk-1">
+    <p>Black Hoodie <span>x1</span></p>
+    <p><span>15.50$</span></p>
+  </div>
+  <div class="koszyk-1">
+    <p>Black Jeans <span>x1</span></p>
+    <p><span>15.50$</span></p>
+  </div>
+  <div class="koszyk-1">
+    <p>Black Jeans <span>x1</span></p>
+    <p><span>15.50$</span></p>
+  </div>
+  <div class="order-btn">
+    <a href="#">Realizacja</a>
+  </div>
+  <div class="exit-cart-btn">
+  <a class="cart-btn-exit"><i class="far fa-times-circle"></i></a>
+  </div>
+</div>
+
+<div class="navgap"></div>
+
+
+<div class="titles">
+  <h1>See Our</h1>
+  <h1><span>Products</span></h1>
+</div>
+
+<div class="fast-menu">
+  <a href="#shoes">Shoes</a>
+  <a href="#hoodies">Hoodies</a>
+  <a href="#">T-Shirts</a>
+  <a href="#">Jeans</a>
+  <a href="#">Hats</a>
+  <a href="#">Socks</a>
+</div>
+
+<div class="titles">
+  <h1>Last</h1>
+  <h1><span>Bestsellers</span></h1>
+</div>
+
+<div class="shop-container">
+
+  <a href="home.html">
+  <div class="shop-item">
+    <img src="adidas_Ultraboost_DNA_x_LEGO(r)_Colors_Shoes_Czern_H67953_01_standard.jpg">
+    <h2>Adidas Ultraboost Dna</h2>
+    <h3>139.99$</h3>
+  </div>
+  </a>
+  <a href="home.html">
+  <div class="shop-item">
+    <img src="Forum_Exhibit_Low_Shoes_Bialy_GZ5389_01_standard.jpg">
+    <h2>Adidas Ultraboost Dna</h2>
+    <h3>139.99$</h3>
+  </div>
+  </a>
+  <a href="home.html">
+  <div class="shop-item">
+    <img src="U_Path_Run_Shoes_Czern_G27636_01_standard.jpg">
+    <h2>Adidas Ultraboost Dna</h2>
+    <h3>139.99$</h3>
+  </div>
+  </a>
+  <a href="home.html">
+  <div class="shop-item">
+    <img src="adidas_Ultraboost_DNA_x_LEGO(r)_Colors_Shoes_Czern_H67953_01_standard.jpg">
+    <h2>Adidas Ultraboost Dna</h2>
+    <h3>139.99$</h3>
+  </div>
+  </a>
+  <a href="home.html">
+  <div class="shop-item">
+    <img src="Forum_Exhibit_Low_Shoes_Bialy_GZ5389_01_standard.jpg">
+    <h2>Adidas Ultraboost Dna</h2>
+    <h3>139.99$</h3>
+  </div>
+  </a>
+
+</div>
+
+<div class="titles" id="shoes">
+  <h1>See Our</h1>
+  <h1><span>Shoes</span></h1>
+</div>
+
+<div class="shop-container">
+
+  <a href="home.html">
+  <div class="shop-item">
+    <img src="adidas_Ultraboost_DNA_x_LEGO(r)_Colors_Shoes_Czern_H67953_01_standard.jpg">
+    <h2>Adidas Ultraboost Dna</h2>
+    <h3>139.99$</h3>
+  </div>
+  </a>
+  <a href="home.html">
+  <div class="shop-item">
+    <img src="Forum_Exhibit_Low_Shoes_Bialy_GZ5389_01_standard.jpg">
+    <h2>Adidas Ultraboost Dna</h2>
+    <h3>139.99$</h3>
+  </div>
+  </a>
+  <a href="home.html">
+  <div class="shop-item">
+    <img src="U_Path_Run_Shoes_Czern_G27636_01_standard.jpg">
+    <h2>Adidas Ultraboost Dna</h2>
+    <h3>139.99$</h3>
+  </div>
+  </a>
+  <a href="home.html">
+  <div class="shop-item">
+    <img src="adidas_Ultraboost_DNA_x_LEGO(r)_Colors_Shoes_Czern_H67953_01_standard.jpg">
+    <h2>Adidas Ultraboost Dna</h2>
+    <h3>139.99$</h3>
+  </div>
+  </a>
+  <a href="home.html">
+  <div class="shop-item">
+    <img src="Forum_Exhibit_Low_Shoes_Bialy_GZ5389_01_standard.jpg">
+    <h2>Adidas Ultraboost Dna</h2>
+    <h3>139.99$</h3>
+  </div>
+  </a>
+  <a href="home.html">
+  <div class="shop-item">
+    <img src="adidas_Ultraboost_DNA_x_LEGO(r)_Colors_Shoes_Czern_H67953_01_standard.jpg">
+    <h2>Adidas Ultraboost Dna</h2>
+    <h3>139.99$</h3>
+  </div>
+  </a>
+  <a href="home.html">
+  <div class="shop-item">
+    <img src="adidas_Ultraboost_DNA_x_LEGO(r)_Colors_Shoes_Czern_H67953_01_standard.jpg">
+    <h2>Adidas Ultraboost Dna</h2>
+    <h3>139.99$</h3>
+  </div>
+  </a>
+  <a href="home.html">
+  <div class="shop-item">
+    <img src="adidas_Ultraboost_DNA_x_LEGO(r)_Colors_Shoes_Czern_H67953_01_standard.jpg">
+    <h2>Adidas Ultraboost Dna</h2>
+    <h3>139.99$</h3>
+  </div>
+  </a>
+  <a href="home.html">
+  <div class="shop-item">
+    <img src="adidas_Ultraboost_DNA_x_LEGO(r)_Colors_Shoes_Czern_H67953_01_standard.jpg">
+    <h2>Adidas Ultraboost Dna</h2>
+    <h3>139.99$</h3>
+  </div>
+  </a>
+  <a href="home.html">
+  <div class="shop-item">
+    <img src="adidas_Ultraboost_DNA_x_LEGO(r)_Colors_Shoes_Czern_H67953_01_standard.jpg">
+    <h2>Adidas Ultraboost Dna</h2>
+    <h3>139.99$</h3>
+  </div>
+  </a>
+  <a href="home.html">
+  <div class="shop-item">
+    <img src="adidas_Ultraboost_DNA_x_LEGO(r)_Colors_Shoes_Czern_H67953_01_standard.jpg">
+    <h2>Adidas Ultraboost Dna</h2>
+    <h3>139.99$</h3>
+  </div>
+  </a>
+  <a href="home.html">
+  <div class="shop-item">
+    <img src="adidas_Ultraboost_DNA_x_LEGO(r)_Colors_Shoes_Czern_H67953_01_standard.jpg">
+    <h2>Adidas Ultraboost Dna</h2>
+    <h3>139.99$</h3>
+  </div>
+  </a>
+  <a href="home.html">
+  <div class="shop-item">
+    <img src="adidas_Ultraboost_DNA_x_LEGO(r)_Colors_Shoes_Czern_H67953_01_standard.jpg">
+    <h2>Adidas Ultraboost Dna</h2>
+    <h3>139.99$</h3>
+  </div>
+  </a>
+  <a href="home.html">
+  <div class="shop-item">
+    <img src="adidas_Ultraboost_DNA_x_LEGO(r)_Colors_Shoes_Czern_H67953_01_standard.jpg">
+    <h2>Adidas Ultraboost Dna</h2>
+    <h3>139.99$</h3>
+  </div>
+  </a>
+  <a href="home.html">
+  <div class="shop-item">
+    <img src="adidas_Ultraboost_DNA_x_LEGO(r)_Colors_Shoes_Czern_H67953_01_standard.jpg">
+    <h2>Adidas Ultraboost Dna</h2>
+    <h3>139.99$</h3>
+  </div>
+  </a>
+
+</div>
+
+<div class="titles" id="hoodies">
+  <h1>See Our</h1>
+  <h1><span>Hoodies</span></h1>
+</div>
+
+<div class="shop-container">
+
+  <a href="home.html">
+  <div class="shop-item">
+    <img src="41JiC3tJxWL._AC_UY879_.jpg">
+    <h2>Adidas Black Mood</h2>
+    <h3>139.99$</h3>
+  </div>
+  </a>
+  <a href="home.html">
+  <div class="shop-item">
+    <img src="41JiC3tJxWL._AC_UY879_.jpg">
+    <h2>Adidas Black Mood</h2>
+    <h3>139.99$</h3>
+  </div>
+  </a>
+  <a href="home.html">
+  <div class="shop-item">
+    <img src="41JiC3tJxWL._AC_UY879_.jpg">
+    <h2>Adidas Black Mood</h2>
+    <h3>139.99$</h3>
+  </div>
+  </a>
+  <a href="home.html">
+  <div class="shop-item">
+    <img src="41JiC3tJxWL._AC_UY879_.jpg">
+    <h2>Adidas Black Mood</h2>
+    <h3>139.99$</h3>
+  </div>
+  </a>
+  <a href="home.html">
+  <div class="shop-item">
+    <img src="41JiC3tJxWL._AC_UY879_.jpg">
+    <h2>Adidas Black Mood</h2>
+    <h3>139.99$</h3>
+  </div>
+  </a>
+
+</div>
+
+
+<div class="footer">
+    <h1>Shooped.com</h1>
+  <div class="Copyright">
+  <p>Shooped® i odpowiednie logo są zastrzeżonymi znakami towarowymi Shooped.com Wszelkie prawa zastrzeżone. Wszystkie inne znaki towarowe, znaki graficzne, logo i prawa autorskie są własnością ich odpowiednich właścicieli.</p>
+    <div class="socials-footer">
+      <a href=""><i class="fab fa-twitter"></i></a>
+      <a href=""><i class="fab fa-facebook-f"></i></a>
+      <a href=""><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+  <div class="newsletter">
+    <div class="titles">
+      <h1>Registr In</h1>
+      <h1><span>Newsletter</span></h1>
+    </div>
+    <label for="email">Mail</label>
+    <input type="email" placeholder="example@shooped.com">
+    <label for="">Phone Number</label>
+    <input type="tel" placeholder="+48">
+    <label for="submit">Registr</label>
+    <input type="submit">
+  </div>
+  <p>Copyright 2020-2022 by Refsnes Data. All Rights Reserved.</p>
+  <p>Site Created By Adam Kryłowicz</p>
+</div>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+const swiper = new Swiper('.swiper', {
+  loop: true,
+
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+},
+
+
+pagination: {
+  el: '.swiper-pagination',
+  clickable: true,
+},
+
+navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+},
+
+});
+</script>
+
+</body>
+</html>

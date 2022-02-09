@@ -21,6 +21,22 @@ body::-webkit-scrollbar {
   background: #1E212D;
   color: #fff;
 }
+.night > .navbar
+{
+  background: #1E212D50;
+}
+.night > .Settings-menu
+{
+  background: #1E212D50;
+}
+.night > .navbar
+{
+  background: #1E212D;
+}
+.night > .cart
+{
+  background: #1E212D50;
+}
 .load
 {
   font-family:'Satisfy';
@@ -118,6 +134,7 @@ body::-webkit-scrollbar {
   z-index: 100;
   backdrop-filter: blur(10px);
   transition: 0.3s;
+  border-left: 1px #797A7E50 solid;
 }
 .Settings-menu.active
 {
@@ -186,7 +203,7 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(34, 34, 34, 0.75);
+  background: rgb(34, 34, 34);
   color: #fff;
   border-bottom: 1px #797A7E50 solid;
   z-index: 50;
@@ -239,7 +256,7 @@ body::-webkit-scrollbar {
 .navtitle a
 {
   text-decoration: none;
-  color: #00b4d8;
+  color: #0077b6;
 }
 .navbar-links ul
 {
@@ -467,7 +484,7 @@ body::-webkit-scrollbar {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background: rgba(34, 34, 34, 0.85);
+  background: rgba(34, 34, 34, 0.05);
 }
 .text
 {
