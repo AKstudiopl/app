@@ -46,3 +46,60 @@ const disableSettingsScreen = document.getElementsByClassName('settings-screen')
 disableSettingsBtn.addEventListener('click', () => {
   disableSettingsScreen.classList.remove('active')
 })
+
+list.onclick = function(e) {
+  e.preventDefault();
+
+  var elm = e.target;
+  var audio = document.getElementById('audio');
+
+  var source = document.getElementById('audioSource');
+  source.src = elm.getAttribute('data-value');
+
+
+  audio.load(); //call this to just preload the audio without playing
+  audio.play(); //call this to play the song right away
+};
+
+var button = document.getElementById("play-stop-main-btn-action");
+var audio = document.getElementById("audio");
+audio.loop = true;
+audio.volume = 0.2;
+
+
+button.addEventListener("click", function(){
+  if(audio.paused){
+    audio.play();
+  } else {
+    audio.pause();
+  }
+});
+
+const activePlayStopMusicbtn = document.getElementsByClassName('play-stop-main-btn')[0]
+const activeIconPlayStop = document.getElementsByClassName('fa-solid fa-play')[0]
+
+activePlayStopMusicbtn.addEventListener('click', () => {
+  activeIconPlayStop.classList.toggle('fa-play')
+  activeIconPlayStop.classList.toggle('fa-stop')
+})
+
+const hideMusicMenubtn = document.getElementsByClassName('hide-Music-Menu')[0]
+const musicMenuHide = document.getElementsByClassName('main-music')[0]
+
+hideMusicMenubtn.addEventListener('click', () => {
+  musicMenuHide.classList.toggle('active')
+})
+
+const showMusicMenubtn = document.getElementsByClassName('show-Music-Menu')[0]
+const musicMenuShow = document.getElementsByClassName('main-music')[0]
+
+showMusicMenubtn.addEventListener('click', () => {
+  musicMenuShow.classList.toggle('active')
+})
+
+const showCurrentPlaylist = document.getElementsByClassName('current-playlist-btn')[0]
+const currentPlaylist = document.getElementsByClassName('audio-src')[0]
+
+showCurrentPlaylist.addEventListener('click', () => {
+  currentPlaylist.classList.toggle('active')
+})

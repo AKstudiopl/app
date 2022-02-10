@@ -72,7 +72,10 @@
               <a>Ogranicza zużycie danych</a>
             </div>
             <div class="settings-screen-item-input">
-              <input type="radio" name="" value="">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
             </div>
         </div>
 
@@ -86,7 +89,10 @@
               <a>Odtwarza tylko pobrane utwory</a>
             </div>
             <div class="settings-screen-item-input">
-              <input type="radio" name="" value="">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
             </div>
         </div>
         <div class="settings-screen-item" id="input-style">
@@ -95,7 +101,10 @@
               <a>Pomiędzy utworami</a>
             </div>
             <div class="settings-screen-item-input">
-              <input type="radio" name="" value="">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
             </div>
         </div>
         <div class="settings-screen-item" id="input-style">
@@ -104,7 +113,10 @@
               <a>Odtwarzanie bez przerw</a>
             </div>
             <div class="settings-screen-item-input">
-              <input type="radio" name="" value="">
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+              </label>
             </div>
         </div>
         <div class="settings-screen-item" id="input-style">
@@ -113,7 +125,10 @@
               <a>Odtwarzaj Treści nieprzyzwoite</a>
             </div>
             <div class="settings-screen-item-input">
-              <input type="radio" name="" value="">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
             </div>
         </div>
         <div class="settings-screen-item" id="input-style">
@@ -122,7 +137,10 @@
               <a>Stały poziom głośności</a>
             </div>
             <div class="settings-screen-item-input">
-              <input type="radio" name="" value="">
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+              </label>
             </div>
         </div>
 
@@ -136,7 +154,10 @@
               <a>Aktywność widoczna tylko dla ciebie</a>
             </div>
             <div class="settings-screen-item-input">
-              <input type="radio" name="" value="">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
             </div>
         </div>
         <div class="settings-screen-item" id="input-style">
@@ -366,6 +387,90 @@
         </p>
     </div>
   </div>
+</div>
+
+<a class="show-Music-Menu">
+<div class="small-music">
+  <img src="ab67616d0000b273dd8408b50f45c66139f44ce2.jpg">
+  <div class="small-information">
+    <h1>Hall Of Fame</h1>
+    <p>The Script, will.i.am</p>
+  </div>
+</div>
+</a>
+
+<div class="main-music">
+
+  <div class="main-music-screen">
+
+    <div class="top-controls">
+      <a href="#" class="hide-Music-Menu"><i class="fa-solid fa-angle-down"></i></a>
+      <a href="#" id="title-sound">ODTWARZANIE Z WYNIKÓW WYSZUKIWANIA</a>
+      <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+    </div>
+
+    <div class="main-music-header">
+      <img src="ab67616d0000b273dd8408b50f45c66139f44ce2.jpg">
+    </div>
+
+    <div class="main-information">
+      <div class="main-information-title">
+        <h1>Hall Of Fame</h1>
+        <p>The Script, will.i.am</p>
+      </div>
+      <i class="fa-solid fa-heart"></i>
+    </div>
+
+    <div class="progress-bar">
+      <div class="progress-bar-done">
+      </div>
+    </div>
+
+    <div class="main-music-fast-navigation">
+        <div class="main-music-fast-navigation-more">
+          <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+        </div>
+      <a href="#"><i class="fa-solid fa-backward-step"></i></a>
+      <a id="play-stop-main-btn-action" class="play-stop-main-btn"><i class="fa-solid fa-play"></i></a>
+      <a href="#"><i class="fa-solid fa-forward-step"></i></a>
+        <div class="main-music-fast-navigation-more">
+          <a href="#"><i class="fa-solid fa-repeat"></i></a>
+        </div>
+    </div>
+
+    <div class="main-music-sec-nav">
+      <a href="#"><i class="fa-solid fa-desktop"></i></a>
+      <a href="#" class="current-playlist-btn"><i class="fa-solid fa-list"></i></a>
+    </div>
+  </div>
+
+  <div class="audio-src active">
+
+  <ul>
+    <h1>Obecna Playlista</h1>
+    <li>
+      <ul id="list">
+
+        <li>
+          <a href="#" data-value="audiosrc/CamilaCabelloHavana.mp3">
+            Camila Cabello - Havana
+          </a>
+        </li>
+
+        <li>
+          <a href="#" data-value="audiosrc/C-BooLDJ.mp3">
+            C-BooL - DJ Is Your Second Name
+          </a>
+        </li>
+
+      </ul>
+    </li>
+  </ul>
+
+  </div>
+
+<audio id="audio" controls="controls">
+  <source id="audioSource" src="audiosrc/CamilaCabelloHavana.mp3"></source>
 </div>
 
 
