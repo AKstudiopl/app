@@ -95,6 +95,12 @@ progressArea = wrapper.querySelector(".progress"),
 repeatBtn = wrapper.querySelector("#repeat"),
 shuffleBtn = wrapper.querySelector("#shuffle");
 
+const smallView = document.querySelector(".music-controls"),
+smallImg = smallView.querySelector(".music-img img"),
+smallName = smallView.querySelector(".music-title .fasttitle"),
+smallArtist = smallView.querySelector(".music-title .fastartist"),
+smallPlayStopbtn = smallView.querySelector("#smallplaystop");
+
 let musicIndex = 1;
 
 window.addEventListener("load", ()=>{
@@ -106,12 +112,21 @@ function loadMusic(indexNumb){
   musicArtist.innerText = allMusic[indexNumb - 1].artist;
   musicImg.src = `images/${allMusic[indexNumb - 1].src}.jpg`;
   mainAudio.src = `songs/${allMusic[indexNumb - 1].src}.mp3`;
+  smallName.innerText = allMusic[indexNumb - 1].name;
+  smallArtist.innerText = allMusic[indexNumb - 1].artist;
+  smallImg.src = `images/${allMusic[indexNumb - 1].src}.jpg`;
 }
+
+
+
+
 
 function playMusic(){
   wrapper.classList.add("paused");
   playstopButton.querySelector(".fa-solid").classList.remove("fa-play");
   playstopButton.querySelector(".fa-solid").classList.add("fa-stop");
+  smallPlayStopbtn.querySelector(".fa-solid").classList.remove("fa-play");
+  smallPlayStopbtn.querySelector(".fa-solid").classList.add("fa-stop");
   mainAudio.play();
 }
 
@@ -119,6 +134,8 @@ function pauseMusic(){
   wrapper.classList.remove("paused");
   playstopButton.querySelector(".fa-solid").classList.add("fa-play");
   playstopButton.querySelector(".fa-solid").classList.remove("fa-stop");
+  smallPlayStopbtn.querySelector(".fa-solid").classList.add("fa-play");
+  smallPlayStopbtn.querySelector(".fa-solid").classList.remove("fa-stop");
   mainAudio.pause();
 }
 
@@ -136,9 +153,14 @@ function prevMusic(){
   playMusic();
 }
 
+smallPlayStopbtn.addEventListener("click", ()=>{
+  const isMusicPlay = wrapper.classList.contains("paused");
+  isMusicPlay ? pauseMusic() : playMusic();
+  playingSong();
+});
+
 playstopButton.addEventListener("click", ()=>{
   const isMusicPlay = wrapper.classList.contains("paused");
-  //if isPlayMusic is true then call pauseMusic else call playMusic
   isMusicPlay ? pauseMusic() : playMusic();
   playingSong();
 });

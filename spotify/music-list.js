@@ -1,25 +1,25 @@
 let allMusic = [
 
   {
-      name: "Camila Cabello - Havana",
+      name: "Havana",
       artist: "Camila Cabello",
       img: "CamilaCabelloHavana",
-      src: "CamilaCabelloHavana"
+      src: "CamilaCabelloHavana",
   },
   {
-      name: "C-BooL - Dj is your second name",
+      name: "Dj Is Your Second Name",
       artist: "C-Bool , Giang Pham",
       img: "cjisyoursecondname-cover",
       src: "C-BooLDJ"
   },
   {
-      name: "C-BooL - Never Go Away",
+      name: "Never Go Away",
       artist: "C-Bool",
       img: "C-BooL-NeverGoAway",
       src: "C-BooL-NeverGoAway"
   },
   {
-      name: "Kevin Rudolf - Champions",
+      name: "Champions",
       artist: "Kevin Rudolf",
       img: "KevinRudolf-Champions",
       src: "KevinRudolf-Champions"
