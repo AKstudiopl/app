@@ -52,6 +52,7 @@ const musicMenuHide = document.getElementsByClassName('main-music')[0]
 
 hideMusicMenubtn.addEventListener('click', () => {
   musicMenuHide.classList.toggle('active')
+  topOption.classList.remove('active');
 })
 
 const showMusicMenubtn = document.getElementsByClassName('show-Music-Menu')[0]
@@ -69,10 +70,11 @@ showCurrentPlaylist.addEventListener('click', () => {
 })
 
 const favoritBtn = document.getElementsByClassName('fa-heart')[0]
+const favAlert = document.getElementsByClassName('fav-alert')[0]
 favoritBtn.addEventListener('click', () => {
   favoritBtn.classList.toggle('active')
+  favAlert.classList.toggle('active')
 })
-
 
 
 
@@ -156,13 +158,11 @@ function prevMusic(){
 smallPlayStopbtn.addEventListener("click", ()=>{
   const isMusicPlay = wrapper.classList.contains("paused");
   isMusicPlay ? pauseMusic() : playMusic();
-  playingSong();
 });
 
 playstopButton.addEventListener("click", ()=>{
   const isMusicPlay = wrapper.classList.contains("paused");
   isMusicPlay ? pauseMusic() : playMusic();
-  playingSong();
 });
 
 nextButton.addEventListener("click", ()=>{
@@ -236,3 +236,28 @@ function shuffle() {
   loadMusic(musicIndex);
   playMusic();
 }
+
+
+const topOptionBtn = document.getElementsByClassName('top-controls-more-btn')[0]
+const topOption = document.getElementsByClassName('top-controls-more')[0]
+topOptionBtn.addEventListener('click', () => {
+  topOption.classList.toggle('active');
+})
+
+const currentPlaylistBtn = document.getElementsByClassName('current-playlist-btn')[0]
+const topQueueMenuShow = document.getElementsByClassName('queue-container')[0]
+currentPlaylistBtn.addEventListener('click', () => {
+  topQueueMenuShow.classList.toggle('active');
+})
+
+const topQueue = document.getElementsByClassName('exit-queue')[0]
+const topQueueMenuHide = document.getElementsByClassName('queue-container')[0]
+topQueue.addEventListener('click', () => {
+  topQueueMenuHide.classList.remove('active');
+})
+
+const navbarSearchBtn = document.getElementsByClassName('navbar-bottom-btn-search')[0]
+const searchScreen = document.getElementsByClassName('search-container')[0]
+navbarSearchBtn.addEventListener('click', () => {
+  searchScreen.classList.toggle('active');
+})
