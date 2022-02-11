@@ -1,0 +1,6 @@
+button
+{
+  transform: scale(0.9);
+  opacity: 0.7
+}
+#1a1a1a
