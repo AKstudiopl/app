@@ -47,42 +47,6 @@ disableSettingsBtn.addEventListener('click', () => {
   disableSettingsScreen.classList.remove('active')
 })
 
-list.onclick = function(e) {
-  e.preventDefault();
-
-  var elm = e.target;
-  var audio = document.getElementById('audio');
-
-  var source = document.getElementById('audioSource');
-  source.src = elm.getAttribute('data-value');
-
-
-  audio.load(); //call this to just preload the audio without playing
-  audio.play(); //call this to play the song right away
-};
-
-var button = document.getElementById("play-stop-main-btn-action");
-var audio = document.getElementById("audio");
-audio.loop = true;
-audio.volume = 0.2;
-
-
-button.addEventListener("click", function(){
-  if(audio.paused){
-    audio.play();
-  } else {
-    audio.pause();
-  }
-});
-
-const activePlayStopMusicbtn = document.getElementsByClassName('play-stop-main-btn')[0]
-const activeIconPlayStop = document.getElementsByClassName('fa-solid fa-play')[0]
-
-activePlayStopMusicbtn.addEventListener('click', () => {
-  activeIconPlayStop.classList.toggle('fa-play')
-  activeIconPlayStop.classList.toggle('fa-stop')
-})
-
 const hideMusicMenubtn = document.getElementsByClassName('hide-Music-Menu')[0]
 const musicMenuHide = document.getElementsByClassName('main-music')[0]
 
@@ -103,3 +67,150 @@ const currentPlaylist = document.getElementsByClassName('audio-src')[0]
 showCurrentPlaylist.addEventListener('click', () => {
   currentPlaylist.classList.toggle('active')
 })
+
+const favoritBtn = document.getElementsByClassName('fa-heart')[0]
+favoritBtn.addEventListener('click', () => {
+  favoritBtn.classList.toggle('active')
+})
+
+
+
+
+
+
+
+
+
+
+const wrapper = document.querySelector(".main-music"),
+musicImg = wrapper.querySelector(".main-music-header img"),
+musicName = wrapper.querySelector(".main-information-title .name"),
+musicArtist = wrapper.querySelector(".main-information-title .artist"),
+mainAudio = wrapper.querySelector("#audio"),
+playstopButton = wrapper.querySelector("#play-stop-main-btn-action"),
+prevButton = wrapper.querySelector("#prev"),
+nextButton = wrapper.querySelector("#next"),
+progressBar = wrapper.querySelector(".progress-bar-done"),
+progressArea = wrapper.querySelector(".progress"),
+repeatBtn = wrapper.querySelector("#repeat"),
+shuffleBtn = wrapper.querySelector("#shuffle");
+
+let musicIndex = 1;
+
+window.addEventListener("load", ()=>{
+  loadMusic(musicIndex);
+})
+
+function loadMusic(indexNumb){
+  musicName.innerText = allMusic[indexNumb - 1].name;
+  musicArtist.innerText = allMusic[indexNumb - 1].artist;
+  musicImg.src = `images/${allMusic[indexNumb - 1].src}.jpg`;
+  mainAudio.src = `songs/${allMusic[indexNumb - 1].src}.mp3`;
+}
+
+function playMusic(){
+  wrapper.classList.add("paused");
+  playstopButton.querySelector(".fa-solid").classList.remove("fa-play");
+  playstopButton.querySelector(".fa-solid").classList.add("fa-stop");
+  mainAudio.play();
+}
+
+function pauseMusic(){
+  wrapper.classList.remove("paused");
+  playstopButton.querySelector(".fa-solid").classList.add("fa-play");
+  playstopButton.querySelector(".fa-solid").classList.remove("fa-stop");
+  mainAudio.pause();
+}
+
+function nextMusic(){
+  musicIndex++;
+  musicIndex > allMusic.length ? musicIndex = 1 : musicIndex = musicIndex;
+  loadMusic(musicIndex);
+  playMusic();
+}
+
+function prevMusic(){
+  musicIndex--;
+  musicIndex < 1 ? musicIndex = allMusic.length : musicIndex = musicIndex;
+  loadMusic(musicIndex);
+  playMusic();
+}
+
+playstopButton.addEventListener("click", ()=>{
+  const isMusicPlay = wrapper.classList.contains("paused");
+  //if isPlayMusic is true then call pauseMusic else call playMusic
+  isMusicPlay ? pauseMusic() : playMusic();
+  playingSong();
+});
+
+nextButton.addEventListener("click", ()=>{
+  nextMusic();
+});
+
+prevButton.addEventListener("click", ()=>{
+  prevMusic();
+});
+
+mainAudio.addEventListener("timeupdate", (e)=>{
+  const currentTime = e.target.currentTime;
+  const duration = e.target.duration;
+  let progressWidth = (currentTime / duration) * 100;
+  progressBar.style.width = `${progressWidth}%`;
+
+  let musicCurrentTime = wrapper.querySelector(".current-time"),
+  musicDuartion = wrapper.querySelector(".max-duration");
+  mainAudio.addEventListener("loadeddata", ()=>{
+    let mainAdDuration = mainAudio.duration;
+    let totalMin = Math.floor(mainAdDuration / 60);
+    let totalSec = Math.floor(mainAdDuration % 60);
+    if(totalSec < 10){
+      totalSec = `0${totalSec}`;
+    }
+    musicDuartion.innerText = `${totalMin}:${totalSec}`;
+  });
+
+  let currentMin = Math.floor(currentTime / 60);
+  let currentSec = Math.floor(currentTime % 60);
+  if(currentSec < 10){
+    currentSec = `0${currentSec}`;
+  }
+  musicCurrentTime.innerText = `${currentMin}:${currentSec}`;
+});
+
+progressBar.addEventListener("timeubdate", (e)=>{
+  const currentTime = e.target.currentTime;
+  const duration = e.target.duration;
+  let progressWidth = (currentTime / duration) * 100;
+})
+
+progressArea.addEventListener("click", (e)=>{
+  let progressWidth = progressArea.clientWidth;
+  let clickedOffsetX = e.offsetX;
+  let songDuration = mainAudio.duration;
+
+  mainAudio.currentTime = (clickedOffsetX / progressWidth) * songDuration;
+  playMusic();
+});
+
+repeatBtn.addEventListener("click", ()=>{
+  mainAudio.loop = true;
+  repeatBtn.classList.toggle('active');
+  shuffleBtn.classList.remove('active');
+});
+
+shuffleBtn.addEventListener("click", ()=>{
+  mainAudio.loop = false;
+  shuffleBtn.classList.toggle('active');
+  repeatBtn.classList.remove('active');
+  shuffle();
+});
+
+mainAudio.addEventListener("ended", ()=>{
+      nextMusic();
+});
+
+function shuffle() {
+  let musicIndex = Math.floor((Math.random() * allMusic.length) + 1);
+  loadMusic(musicIndex);
+  playMusic();
+}

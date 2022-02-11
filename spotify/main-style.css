@@ -376,13 +376,14 @@ input:checked + .slider:before {
   background: linear-gradient(180deg, rgb(9, 91, 121) 0%, rgb(24,24,24) 100%);
   width: 100vw;
   height: 100vh;
-  margin-bottom: -120vh;
-  visibility: hidden;
+  margin-left: 105vw;
+  visibility: visible;
+  transition: 0.4s;
 }
 .main-music.active
 {
   visibility: visible;
-  margin-bottom: 0vh;
+  margin-left: 0;
 }
 .top-controls
 {
@@ -425,6 +426,13 @@ input:checked + .slider:before {
 .main-information i
 {
   font-size: 25px;
+  transition: 0.3s;
+  color: #A7A7A775;
+}
+.main-information i.active
+{
+  color: #1DB954;
+  transform: scale(1.2);
 }
 .main-information-title h1
 {
@@ -434,10 +442,13 @@ input:checked + .slider:before {
 {
   color: #A7A7A775;
 }
-.progress-bar
+.progress
 {
   margin-left: 25px;
   margin-right: 25px;
+}
+.progress-bar
+{
   background: #A7A7A775;
   height: 3px;
   border-radius: 50px;
@@ -446,9 +457,15 @@ input:checked + .slider:before {
 .progress-bar-done
 {
   background: #1DB954;
-  width: 40%;
+  width: 0%;
   height: 3px;
   border-radius: 50px;
+}
+.timer
+{
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
 }
 .main-music-fast-navigation
 {
@@ -463,6 +480,20 @@ input:checked + .slider:before {
 {
   text-decoration: none;
   color: #fff;
+  transition: 0.2s;
+}
+.main-music-fast-navigation a:hover
+{
+  transform: scale(0.9);
+  opacity: 0.7
+}
+.fa-repeat.active
+{
+  color: #1DB954;
+}
+.fa-shuffle.active
+{
+  color: #1DB954;
 }
 .main-music-fast-navigation #play-stop-main-btn-action
 {
@@ -537,7 +568,7 @@ audio
 
 .bottom-gap
 {
-  height: 70px
+  height: 130px
 }
 .bad-device
 {
