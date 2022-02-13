@@ -9,15 +9,62 @@
 }
 body
 {
-  background: #DEE4E7;
+  background: #181818;
   font-family: 'PT Sans','Satisfy', sans-serif;
-  color: #111;
+  color: #fff;
   overflow-x: hidden;
 }
-body.night
+body.light
 {
-  background: #181818;
+  background: #cddafd;
+  color: #111;
+}
+body.light > .navbar-bottom
+{
+  background: #cddafd;
+  border-top: 1px #ffffff75 solid;
+}
+body.light > .navbar-bottom .navbar-bottom-btn a
+{
+  color: #11111180;
+}
+body.light > .navbar-bottom .navbar-bottom-btn.active > a
+{
   color: #fff;
+}
+body.light > .head-content
+{
+  background: linear-gradient(180deg, rgba(9,17,121,0.54338747099767986) 0%, rgba(205, 218, 253,1) 100%);
+}
+body.light > .settings-screen
+{
+  background: #cddafd;
+}
+body.light > .settings-screen .settings-screen-title
+{
+  background: #dfe7fd;
+  border-bottom: 2px #ffffff50 solid;
+}
+body.light > .settings-screen .settings-screen-title i
+{
+  color: #111;
+}
+body.light > .music-controls
+{
+  background: #cddafd75;
+  backdrop-filter: blur(5px);
+  border-top: 1px #ffffff75 solid;
+  border-bottom: 1px #ffffff75 solid;
+  color: #1DB954;
+}
+body.light > .search-container
+{
+  background: #dfe7fd;
+}
+
+body.light > .library-container
+{
+  background: #dfe7fd;
 }
 body::-webkit-scrollbar
 {
@@ -227,6 +274,88 @@ input:checked + .slider:before {
 {
   visibility: visible;
   right: 0;
+}
+.search-content
+{
+  padding: 10px 25px;
+  border-bottom: 1px #A7A7A725 solid;
+}
+.search-content h1
+{
+
+}
+.search-content  input[type=text] {
+  font-size: 14px;
+  margin: 0;
+  border: 1px solid #A7A7A725;
+  border-radius: 25px;
+  float: left;
+  padding: 5px 0;
+  text-align: center;
+  width: 75%;
+  background: transparent;
+  color: #fff;
+}
+.search-content  input[type=text]:focus
+{
+  border: 1px solid #1DB954;
+  outline: none;
+}
+.search-content button
+{
+  color: #fff;
+  background: #111;
+  border-radius: 25px;
+  border: 1px solid #A7A7A725;
+  width: 20%;
+}
+.search-content button:active
+{
+  background: #1DB954;
+}
+.search-content button i
+{
+  padding: 8px 0;
+}
+.search-bar
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.library-container
+{
+  position: fixed;
+  z-index: 0;
+  background: #1a1a1a;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  visibility: hidden;
+  transition: 1s;
+  right: -120vw;
+}
+.library-container.active
+{
+  visibility: visible;
+  right: 0;
+}
+.library-content
+{
+  padding: 10px 25px;
+}
+.library-content h1
+{
+  border-bottom: 1px #A7A7A725 solid;
+  padding: 0 0 10px 0;
+}
+.library-content .center-container
+{
+  padding-top: 15px;
+}
+.library-content .title
+{
+  padding-bottom: 15px;
 }
 /* CONTENT STYLE */
 

@@ -3,7 +3,7 @@ var darkMode = document.getElementById('dark-change');
 
 darkMode.addEventListener('click', function(){
     darkMode.classList.toggle('active');
-    content.classList.toggle('night');
+    content.classList.toggle('light');
 })
 
 const activeHomeBtn = document.getElementsByClassName('navbar-bottom-btn-home')[0]
@@ -259,5 +259,20 @@ topQueue.addEventListener('click', () => {
 const navbarSearchBtn = document.getElementsByClassName('navbar-bottom-btn-search')[0]
 const searchScreen = document.getElementsByClassName('search-container')[0]
 navbarSearchBtn.addEventListener('click', () => {
-  searchScreen.classList.toggle('active');
+  searchScreen.classList.add('active');
+  libraryScreen.classList.remove('active');
+})
+
+const navbarLibraryBtn = document.getElementsByClassName('navbar-bottom-btn-library')[0]
+const libraryScreen = document.getElementsByClassName('library-container')[0]
+navbarLibraryBtn.addEventListener('click', () => {
+  libraryScreen.classList.add('active');
+  searchScreen.classList.remove('active');
+})
+
+const homeBtn = document.getElementsByClassName('navbar-bottom-btn-home')[0]
+homeBtn.addEventListener('click', () => {
+  libraryScreen.classList.remove('active');
+  searchScreen.classList.remove('active');
+  disableSettingsScreen.classList.remove('active');
 })
