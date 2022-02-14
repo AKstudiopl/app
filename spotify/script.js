@@ -95,7 +95,11 @@ nextButton = wrapper.querySelector("#next"),
 progressBar = wrapper.querySelector(".progress-bar-done"),
 progressArea = wrapper.querySelector(".progress"),
 repeatBtn = wrapper.querySelector("#repeat"),
-shuffleBtn = wrapper.querySelector("#shuffle");
+shuffleBtn = wrapper.querySelector("#shuffle"),
+queueName = wrapper.querySelector(".queue-container .name"),
+queueImg = wrapper.querySelector(".queue-container img"),
+queueArtist = wrapper.querySelector(".queue-container .artist");
+
 
 const smallView = document.querySelector(".music-controls"),
 smallImg = smallView.querySelector(".music-img img"),
@@ -103,7 +107,7 @@ smallName = smallView.querySelector(".music-title .fasttitle"),
 smallArtist = smallView.querySelector(".music-title .fastartist"),
 smallPlayStopbtn = smallView.querySelector("#smallplaystop");
 
-let musicIndex = 1;
+let musicIndex = Math.floor((Math.random() * allMusic.length) + 1);
 
 window.addEventListener("load", ()=>{
   loadMusic(musicIndex);
@@ -215,7 +219,8 @@ progressArea.addEventListener("click", (e)=>{
 });
 
 repeatBtn.addEventListener("click", ()=>{
-  mainAudio.loop = true;
+  if (mainAudio.loop == false) {mainAudio.loop = true}
+    else {mainAudio.loop = false};
   repeatBtn.classList.toggle('active');
   shuffleBtn.classList.remove('active');
 });
@@ -232,7 +237,7 @@ mainAudio.addEventListener("ended", ()=>{
 });
 
 function shuffle() {
-  let musicIndex = Math.floor((Math.random() * allMusic.length) + 1);
+  musicIndex = Math.floor((Math.random() * allMusic.length) + 1);
   loadMusic(musicIndex);
   playMusic();
 }
@@ -276,3 +281,25 @@ homeBtn.addEventListener('click', () => {
   searchScreen.classList.remove('active');
   disableSettingsScreen.classList.remove('active');
 })
+
+
+function listMusic1(){
+  let musicIndex = 1;
+  loadMusic(musicIndex);
+  playMusic();
+}
+function listMusic2(){
+  let musicIndex = 2;
+  loadMusic(musicIndex);
+  playMusic();
+}
+function listMusic3(){
+  let musicIndex = 3;
+  loadMusic(musicIndex);
+  playMusic();
+}
+function listMusic4(){
+  let musicIndex = 4;
+  loadMusic(musicIndex);
+  playMusic();
+}
