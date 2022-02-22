@@ -53,6 +53,7 @@ const musicMenuHide = document.getElementsByClassName('main-music')[0]
 hideMusicMenubtn.addEventListener('click', () => {
   musicMenuHide.classList.toggle('active')
   topOption.classList.remove('active');
+    topQueueMenuShow.classList.remove('active');
 })
 
 const showMusicMenubtn = document.getElementsByClassName('show-Music-Menu')[0]
@@ -60,13 +61,6 @@ const musicMenuShow = document.getElementsByClassName('main-music')[0]
 
 showMusicMenubtn.addEventListener('click', () => {
   musicMenuShow.classList.toggle('active')
-})
-
-const showCurrentPlaylist = document.getElementsByClassName('current-playlist-btn')[0]
-const currentPlaylist = document.getElementsByClassName('audio-src')[0]
-
-showCurrentPlaylist.addEventListener('click', () => {
-  currentPlaylist.classList.toggle('active')
 })
 
 const favoritBtn = document.getElementsByClassName('fa-heart')[0]
@@ -252,7 +246,7 @@ topOptionBtn.addEventListener('click', () => {
 const currentPlaylistBtn = document.getElementsByClassName('current-playlist-btn')[0]
 const topQueueMenuShow = document.getElementsByClassName('queue-container')[0]
 currentPlaylistBtn.addEventListener('click', () => {
-  topQueueMenuShow.classList.toggle('active');
+  topQueueMenuShow.classList.add('active');
 })
 
 const topQueue = document.getElementsByClassName('exit-queue')[0]
@@ -283,23 +277,53 @@ homeBtn.addEventListener('click', () => {
 })
 
 
-function listMusic1(){
-  let musicIndex = 1;
-  loadMusic(musicIndex);
-  playMusic();
+const ulTag = wrapper.querySelector(".queue-item ul");
+for (let i = 0; i < allMusic.length; i++) {
+  let liTag = `<li li-index="${i + 1}" onclick="clicked(this)">
+                <div class="row" datavalue="songs/${allMusic[i].src}.mp3">
+                  <span>${allMusic[i].name}</span>
+                  <p>${allMusic[i].artist}</p>
+                </div>
+                <span id="${allMusic[i].src}" class="audio-duration-setup">3:40</span>
+                <audio class="${allMusic[i].src}" src="songs/${allMusic[i].src}.mp3"></audio>
+              </li>`;
+  ulTag.insertAdjacentHTML("beforeend", liTag);
+  let liAudioDuartionTag = ulTag.querySelector(`#${allMusic[i].src}`);
+  let liAudioTag = ulTag.querySelector(`.${allMusic[i].src}`);
+  liAudioTag.addEventListener("loadeddata", ()=>{
+    let duration = liAudioTag.duration;
+    let totalMin = Math.floor(duration / 60);
+    let totalSec = Math.floor(duration % 60);
+    if(totalSec < 10){
+      totalSec = `0${totalSec}`;
+    };
+    liAudioDuartionTag.innerText = `${totalMin}:${totalSec}`;
+    liAudioDuartionTag.setAttribute("t-duration", `${totalMin}:${totalSec}`);
+  });
 }
-function listMusic2(){
-  let musicIndex = 2;
-  loadMusic(musicIndex);
-  playMusic();
+
+function playingSong(){
+  const allLiTag = ulTag.querySelectorAll("li");
+  for (let j = 0; j < allLiTag.length; j++) {
+    let audioTag = allLiTag[j].querySelector(".audio-duration-setup");
+
+    if(allLiTag[j].classList.contains("playing")){
+      allLiTag[j].classList.remove("playing");
+      let adDuration = audioTag.getAttribute("t-duration");
+      audioTag.innerText = adDuration;
+    }
+    if(allLiTag[j].getAttribute("li-index") == musicIndex){
+      allLiTag[j].classList.add("playing");
+      audioTag.innerText = "Odtwarzam";
+    }
+    allLiTag[j].setAttribute("onclick", "clicked(this)");
+  }
 }
-function listMusic3(){
-  let musicIndex = 3;
+
+function clicked(element){
+  let getLiIndex = element.getAttribute("li-index");
+  musicIndex = getLiIndex;
   loadMusic(musicIndex);
   playMusic();
-}
-function listMusic4(){
-  let musicIndex = 4;
-  loadMusic(musicIndex);
-  playMusic();
+  playingSong();
 }
