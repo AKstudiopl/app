@@ -280,7 +280,7 @@ homeBtn.addEventListener('click', () => {
 const ulTag = wrapper.querySelector(".queue-item ul");
 for (let i = 0; i < allMusic.length; i++) {
   let liTag = `<li li-index="${i + 1}" onclick="clicked(this)">
-                <div class="row" datavalue="songs/${allMusic[i].src}.mp3">
+                <div class="row">
                   <span>${allMusic[i].name}</span>
                   <p>${allMusic[i].artist}</p>
                 </div>
@@ -314,7 +314,6 @@ function playingSong(){
     }
     if(allLiTag[j].getAttribute("li-index") == musicIndex){
       allLiTag[j].classList.add("playing");
-      audioTag.innerText = "Odtwarzam";
     }
     allLiTag[j].setAttribute("onclick", "clicked(this)");
   }
@@ -338,3 +337,41 @@ correctSoundBtn.addEventListener('click', () => {
 correctSoundExit.addEventListener('click', () => {
   correctSoundScreen.classList.remove('active')
 })
+
+
+const results = document.querySelector(".search-results");
+for (let i = 0; i < allMusic.length; i++) {
+  let result = `<li li-index="${i + 1}" onclick="clicked(this)">
+                <div class="result-box">
+                  <div class="result-box-cover">
+                  <h1 class="result-name">${allMusic[i].name}</h1>
+                  <p class="result-artist">${allMusic[i].artist}</p>
+                  </div>
+                </div>
+                <audio class="${allMusic[i].src}" src="songs/${allMusic[i].src}.mp3"></audio>
+              </li>`;
+  results.insertAdjacentHTML("beforeend", result);
+}
+
+
+function searchName() {
+  input = document.getElementById('search-item');
+  filter = input.value.toUpperCase();
+  ul = document.getElementsByClassName("search-results");
+  li = document.querySelectorAll('.search-results li');
+
+  for (i = 0; i < li.length; i++) {
+    nameResult = li[i].getElementsByClassName("result-name")[0];
+    nameResult = nameResult.textContent || nameResult.innerText;
+    if (nameResult.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+      li[i].style.visibility = "visible";
+    } else {
+      li[i].style.display = "none";
+      li[i].style.visibility = "hidden";
+    } if (input.value.length == 0)
+    {
+      li[i].style.visibility = "hidden";
+    }
+  }
+}

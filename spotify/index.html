@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <script src="script.js" defer></script>
+    <script src="searchscript.js" defer></script>
 </head>
 <body class="">
 
@@ -28,7 +29,7 @@
     </a>
   </div>
   <div class="navbar-bottom-btn 2">
-    <a href="#" class="navbar-bottom-btn-search">
+    <a href="#" class="navbar-bottom-btn-search" onclick="searchName()">
       <i class="fa-solid fa-magnifying-glass"></i>
         Wyszukaj
     </a>
@@ -172,32 +173,19 @@
 </div>
 
 <div class="search-container">
+
   <div class="search-content">
 
     <h1>Czego szukasz?</h1>
     <div class="search-bar">
-      <input type="text" placeholder="Wykonawcy, utwory">
-      <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <input type="text" id="search-item" placeholder="Wykonawcy, utwory" onkeyup="searchName()">
     </div>
 
   </div>
+
   <div class="search-results">
 
-      <div class="result-box">
-        <img src="images\CamilaCabelloHavana.jpg">
-          <div class="result-box-cover">
-          <h1>Havana</h1>
-          <p>Camila Cabello</p>
-          </div>
-      </div>
 
-      <div class="result-box">
-        <img src="images\C-BooLDJ.jpg">
-          <div class="result-box-cover">
-          <h1>C-bool</h1>
-          <p>Dj 2 name</p>
-          </div>
-      </div>
 
   </div>
 
