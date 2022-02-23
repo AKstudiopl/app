@@ -327,3 +327,14 @@ function clicked(element){
   playMusic();
   playingSong();
 }
+
+const correctSoundBtn = document.getElementsByClassName('device-screen-btn')[0]
+const correctSoundScreen = document.getElementsByClassName('device-screen')[0]
+const correctSoundExit = document.getElementsByClassName('device-screen-exit')[0]
+
+correctSoundBtn.addEventListener('click', () => {
+  correctSoundScreen.classList.add('active')
+})
+correctSoundExit.addEventListener('click', () => {
+  correctSoundScreen.classList.remove('active')
+})
