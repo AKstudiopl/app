@@ -102,7 +102,7 @@
               <a>Pomiędzy utworami</a>
             </div>
             <div class="settings-screen-item-input">
-              <label class="switch" onclick="easyTransition()">
+              <label class="switch" onclick="">
                 <input type="checkbox">
                 <span class="slider round"></span>
               </label>
@@ -179,7 +179,10 @@
     <h1>Czego szukasz?</h1>
     <div class="search-bar">
       <input type="text" id="search-item" placeholder="Wykonawcy, utwory" onkeyup="searchName()">
-    </div>
+        <div class="clear-btn">
+        <button type="button" id="clear-input-btn" onclick="ClearFields();searchName();"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+   </div>
 
   </div>
 
@@ -188,6 +191,7 @@
 
 
   </div>
+
 
 </div>
 
@@ -547,7 +551,7 @@
     <a class="show-Music-Menu">
 
           <div class="music-img">
-            <img src="images\C-BooL-NeverGoAway.jpg">
+            <img src="3099b3803ad9496896c43f22fe9be8c4.png">
           </div>
 
     </a>
@@ -580,7 +584,7 @@
     </div>
 
     <div class="main-music-header">
-      <img src="ab67616d0000b273dd8408b50f45c66139f44ce2.jpg">
+      <img src="ab67616d0000b273dd8408b50f45c66139f44ce2.jpg" ontouchend="nextMusic()">
     </div>
 
     <div class="main-information">

@@ -115,6 +115,7 @@ function loadMusic(indexNumb){
   smallName.innerText = allMusic[indexNumb - 1].name;
   smallArtist.innerText = allMusic[indexNumb - 1].artist;
   smallImg.src = `images/${allMusic[indexNumb - 1].src}.jpg`;
+  wrapper.style.backgroundImage = allMusic[indexNumb - 1].color;
 }
 
 
@@ -374,4 +375,8 @@ function searchName() {
       li[i].style.visibility = "hidden";
     }
   }
+}
+
+function ClearFields() {
+     input.value = "";
 }
