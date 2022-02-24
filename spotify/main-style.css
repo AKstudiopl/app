@@ -335,6 +335,35 @@ input:checked + .slider:before {
 {
   color: #1DB954;
 }
+.search-results.webkit-hidden::-webkit-scrollbar
+{
+  width: 0px;
+}
+.search-results::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.search-results::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.search-results::-webkit-scrollbar-thumb {
+  background: #1DB954;
+}
+
+/* Handle on hover */
+.search-results::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.search-results
+{
+  height:70vh;
+  overflow-y: scroll;
+  border-bottom: 1px #A7A7A725 solid;
+}
 .search-results li
 {
   list-style-type: none;

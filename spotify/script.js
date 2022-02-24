@@ -363,16 +363,19 @@ function searchName() {
 
   for (i = 0; i < li.length; i++) {
     nameResult = li[i].getElementsByClassName("result-name")[0];
+    webkitresults = document.getElementsByClassName("search-results")[0];
     nameResult = nameResult.textContent || nameResult.innerText;
     if (nameResult.toUpperCase().indexOf(filter) > -1) {
       li[i].style.display = "";
       li[i].style.visibility = "visible";
+      webkitresults.classList.remove("webkit-hidden");
     } else {
       li[i].style.display = "none";
       li[i].style.visibility = "hidden";
     } if (input.value.length == 0)
     {
       li[i].style.visibility = "hidden";
+      webkitresults.classList.add("webkit-hidden");
     }
   }
 }
