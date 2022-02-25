@@ -101,7 +101,7 @@ smallName = smallView.querySelector(".music-title .fasttitle"),
 smallArtist = smallView.querySelector(".music-title .fastartist"),
 smallPlayStopbtn = smallView.querySelector("#smallplaystop");
 
-let musicIndex = Math.floor((Math.random() * allMusic.length) + 1);
+var musicIndex = Math.floor((Math.random() * allMusic.length) + 1);
 
 window.addEventListener("load", ()=>{
   loadMusic(musicIndex);
@@ -117,10 +117,6 @@ function loadMusic(indexNumb){
   smallImg.src = `images/${allMusic[indexNumb - 1].src}.jpg`;
   wrapper.style.backgroundImage = allMusic[indexNumb - 1].color;
 }
-
-
-
-
 
 function playMusic(){
   wrapper.classList.add("paused");
@@ -383,3 +379,13 @@ function searchName() {
 function ClearFields() {
      input.value = "";
 }
+
+const artistProfileBtn = document.getElementsByClassName('head-content-item')[0]
+const artistProfile = document.getElementsByClassName('artist-card')[0]
+const artistProfileExit = document.getElementsByClassName('artist-exit')[0]
+artistProfileBtn.addEventListener('click', () => {
+  artistProfile.classList.add('active');
+})
+artistProfileExit.addEventListener('click', () => {
+    artistProfile.classList.remove('active');
+})

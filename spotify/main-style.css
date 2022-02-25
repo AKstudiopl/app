@@ -869,7 +869,6 @@ input:checked + .slider:before {
   width: 100%;
   visibility: hidden;
   border-top: 1px #A7A7A775 solid;
-  border-radius: 25px 0 0 0;
   transition: 0.5s;
   bottom: 0;
 }
@@ -913,6 +912,20 @@ input:checked + .slider:before {
   padding-left: 25px;
   padding: 15px 25px;
 }
+.queue-item ul::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+.queue-item ul::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.queue-item ul::-webkit-scrollbar-thumb {
+  background: #1DB954;
+}
+
 .queue-item
 {
   width: 100%;
@@ -924,6 +937,9 @@ input:checked + .slider:before {
 .queue-item ul
 {
   list-style-type: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 60vh;
 }
 .queue-item li
 {
@@ -1062,6 +1078,105 @@ input:checked + .slider:before {
 }
 /* Music Menu */
 
+
+/* Artist Menu Display */
+.artist-card
+{
+  width: 100vw;
+  position: fixed;
+  height: 100vh;
+  background: #111;
+  z-index: 15;
+  visibility: hidden;
+  bottom: -100vh;
+  transition: 0.5s;
+  border-radius: 25px;
+}
+.artist-card.active
+{
+  visibility: visible;
+  bottom: 0;
+  border-radius: 0px;
+}
+.artist-card img
+{
+  width: 60vw;
+  margin-left: 20vw;
+  margin-top: 15px;
+  border-radius: 50%;
+  padding: 2px;
+  background: #1DB954;
+  border: 1px #ffffff20 solid;
+}
+.artist-top-controls
+{
+  margin-top: 15px;
+  width: 90vw;
+  margin-left: 5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+.artist-top-controls a
+{
+  text-decoration: none;
+  color: #1DB954;
+}
+.artist-card-img
+{
+  border-top: 1px #ffffff20 solid;
+}
+.artist-main-info
+{
+  text-align: center;
+  border-bottom: 1px #ffffff20 solid;
+}
+.artist-main-info h1
+{
+  margin-bottom: -8px;
+}
+.artist-main-info p
+{
+  opacity: 0.5;
+}
+.artist-socials
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 1px #ffffff20 solid;
+}
+.artist-socials a
+{
+  text-decoration: none;
+  color: #1DB954;
+  padding: 5px;
+}
+.artist-info
+{
+  font-size: 10px;
+  padding-bottom: 15px;
+  padding-top: 5px;
+}
+.artist-title
+{
+  padding: 10px 0;
+  padding-left: 2vw;
+  border-bottom: 1px #ffffff20 solid;
+}
+.artist-last-upload
+{
+  text-align: left;
+}
+.artist-last-upload p
+{
+  padding: 10px 15px;
+  border-bottom: 1px #ffffff20 solid;
+}
+/* Artist Menu Display */
 .bottom-gap
 {
   height: 130px
