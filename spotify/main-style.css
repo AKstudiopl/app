@@ -1207,6 +1207,20 @@ input:checked + .slider:before {
 {
   margin-bottom: -8px;
 }
+.artist-main-info a
+{
+  color: #1DB954;
+  text-decoration: none;
+}
+.artist-main-info i
+{
+  padding: 5px;
+}
+.artist-main-info i:hover
+{
+  transform: scale(1.4);
+  color: #fff;
+}
 .artist-main-info p
 {
   opacity: 0.5;
