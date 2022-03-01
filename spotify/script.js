@@ -6,6 +6,11 @@ darkMode.addEventListener('click', function(){
     content.classList.toggle('light');
 })
 
+window.addEventListener("load", function () {
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden"; // class "loader hidden"
+});
+
 const activeHomeBtn = document.getElementsByClassName('navbar-bottom-btn-home')[0]
 const activeHomeScreen = document.getElementsByClassName('navbar-bottom-btn 1')[0]
 
