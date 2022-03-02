@@ -1093,33 +1093,42 @@ input:checked + .slider:before {
   color: #fff;
   cursor: pointer;
 }
-.device-item img
+.device-custom-item
 {
-  width: 150%;
-  margin-left: -25%;
-  margin-top: -25px;
-  opacity: 0.8;
-  filter: drop-shadow(0px 0px 40px rgba(29, 185, 84, 0.25));
-  transition: 0.3s;
-  animation: slowmove 10s ease infinite;
-  animation-delay: 3s;
+  display: flex;
+  flex-direction: column;
 }
-@keyframes slowmove {
-  0%
-  {
-    filter: drop-shadow(0px 0px 40px rgba(29, 185, 84, 0.25));
-    transform: rotate(0deg) scale(1);
-  }
-  50%
-  {
-    filter: drop-shadow(0px 0px 40px rgba(29, 185, 84, 0.35));
-    transform: rotate(5deg) scale(1.05);
-  }
-  100%
-  {
-    filter: drop-shadow(0px 0px 40px rgba(29, 185, 84, 0.25));
-    transform: rotate(0deg) scale(1);
-  }
+.device-custom-item label
+{
+  padding: 5px;
+}
+.move-label
+{
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  background: #ffffff50;
+  outline: none;
+  opacity: 0.7;
+  border-radius: 25px;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+.move-label::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 5px;
+  height: 15px;
+  border-radius: 25px;
+  background: #1DB954;
+  cursor: pointer;
+}
+.move-label::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #fff; /* Green background */
+  cursor: pointer; /* Cursor on hover */
 }
 .device-item p
 {

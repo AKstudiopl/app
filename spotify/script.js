@@ -121,6 +121,7 @@ function loadMusic(indexNumb){
   smallArtist.innerText = allMusic[indexNumb - 1].artist;
   smallImg.src = `images/${allMusic[indexNumb - 1].src}.jpg`;
   wrapper.style.backgroundImage = allMusic[indexNumb - 1].color;
+  mainAudio.volume = 0.5;
 }
 
 function playMusic(){
@@ -394,3 +395,7 @@ artistProfileBtn.addEventListener('click', () => {
 artistProfileExit.addEventListener('click', () => {
     artistProfile.classList.remove('active');
 })
+
+function setvolume(){
+  mainAudio.volume = document.getElementById("volumeslider").value;
+  }
