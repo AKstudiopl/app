@@ -120,7 +120,6 @@ function loadMusic(indexNumb){
   smallName.innerText = allMusic[indexNumb - 1].name;
   smallArtist.innerText = allMusic[indexNumb - 1].artist;
   smallImg.src = `images/${allMusic[indexNumb - 1].src}.jpg`;
-  wrapper.style.backgroundImage = allMusic[indexNumb - 1].color;
   mainAudio.volume = 0.5;
 }
 
@@ -398,4 +397,17 @@ artistProfileExit.addEventListener('click', () => {
 
 function setvolume(){
   mainAudio.volume = document.getElementById("volumeslider").value;
+}
+
+
+  function nameQuestion() {
+    inputName = document.getElementById('username');
+    namePlace = document.getElementById('nameUser');
+    namePlace.innerHTML = inputName.value;
   }
+
+  const nameAsk = document.getElementsByClassName('name-ask')[0]
+  const nameInputBtn = document.getElementsByClassName('usernameNext')[0]
+  nameInputBtn.addEventListener('click', () => {
+      nameAsk.classList.toggle('confirmed');
+  })

@@ -12,3 +12,9 @@ lightstyle
  #dfe7fd;
  #cddafd;
 }
+
+--background: #090608;
+--backgroundsecond: #0d090b;
+--color: #FFFFFF;
+--maincolor: #ED2B33;
+--maincolorhover: #D85A7F50;
