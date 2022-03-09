@@ -14,7 +14,7 @@
   --color: #DEE4EA;
   --maincolor: #1764CC;
   --maincolorhover: #4C97DE;
-  --border: 1px #09060850 solid;
+  --border: 1px #1764CC50 solid;
 }
 body
 {
@@ -189,7 +189,7 @@ body::-webkit-scrollbar
   text-align: center;
   display: flex;
   justify-content: space-between;
-  padding: 5px 0;
+  padding: 10px 0;
   transition: 0.3s;
 }
 .navbar-bottom .navbar-bottom-btn i
@@ -521,7 +521,7 @@ input:checked + .slider:before {
 {
   padding-left: 10px;
   padding-right: 10px;
-  background: linear-gradient(180deg, #04061a 0%, #040511 100%);
+  background: linear-gradient(180deg, #1764CC65 0%, #040511 100%);
 }
 .title h1
 {
@@ -635,12 +635,11 @@ input:checked + .slider:before {
 .music-controls
 {
   position: fixed;
-  bottom: 50px;
+  bottom: 60px;
   width: 100%;
   height: 60px;
   background: var(--backgroundsecond);
-  border-top: 1px #111 solid;
-  border-bottom: 1px #111 solid;
+  border-top: var(--border);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -690,8 +689,8 @@ input:checked + .slider:before {
   position: fixed;
   top: 0;
   z-index: 6;
-  background: rgb(9,6,8);
-  background: linear-gradient(0deg, rgba(9,6,8,1) 0%, rgba(13,9,11,1) 87%);
+  background: #040511;
+  background: linear-gradient(180deg, #1764CC -20%, #040511 100%);
   width: 100vw;
   height: 100vh;
   margin-left: 105vw;
@@ -810,8 +809,7 @@ input:checked + .slider:before {
 }
 .progress-bar-done
 {
-  background: rgb(237,43,51);
-  background: linear-gradient(90deg, rgba(237,43,51,1) 0%, rgba(216,90,127,1) 87%);
+  background: #4C97DE;
   width: 0%;
   height: 3px;
   border-radius: 50px;
@@ -820,7 +818,7 @@ input:checked + .slider:before {
 {
   display: flex;
   justify-content: space-between;
-  font-size: 11px;
+  font-size: 13px;
 }
 .main-music-fast-navigation
 {
@@ -1290,7 +1288,7 @@ input:checked + .slider:before {
   backdrop-filter: blur(10px);
   position: fixed;
   top: 0;
-  z-index: 90;
+  z-index: 20;
   width: 100%;
   height: 100%;
   display: flex;

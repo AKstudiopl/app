@@ -4,6 +4,7 @@ var darkMode = document.getElementById('dark-change');
 darkMode.addEventListener('click', function(){
     darkMode.classList.toggle('active');
     content.classList.toggle('light');
+    content.classList.toggle('dark');
 })
 
 window.addEventListener("load", function () {
@@ -110,6 +111,7 @@ var musicIndex = Math.floor((Math.random() * allMusic.length) + 1);
 
 window.addEventListener("load", ()=>{
   loadMusic(musicIndex);
+  checkQuestion();
 })
 
 function loadMusic(indexNumb){
@@ -399,13 +401,23 @@ function setvolume(){
   mainAudio.volume = document.getElementById("volumeslider").value;
 }
 
-
   function nameQuestion() {
     inputName = document.getElementById('username');
     namePlace = document.getElementById('nameUser');
     profilName = document.getElementById('profilName');
     namePlace.innerHTML = inputName.value;
     profilName.innerHTML = inputName.value;
+    localStorage.setItem("userData", inputName.value);
+  }
+  function checkQuestion(){
+    namePlace = document.getElementById('nameUser');
+    namePlace.innerHTML = localStorage.userData;
+    profilName.innerHTML = localStorage.userData;
+      if (localStorage.getItem("userData") === null) {
+        nameAsk.classList.remove('confirmed');
+    }else {
+        nameAsk.classList.add('confirmed');
+    }
   }
 
   const nameAsk = document.getElementsByClassName('name-ask')[0]

@@ -12,7 +12,7 @@
     <script src="script.js" defer></script>
     <script src="searchscript.js" defer></script>
 </head>
-<body class="">
+<body class="preference dark" onload="checkQuestion()">
 
   <div class="loader">
       <img src="Spotify_logo_without_text.png"/>
@@ -335,7 +335,7 @@
 <div class="head-content">
   <div class="head-content-top">
     <div class="title">
-      <h1>Dzień dobry, <span id="nameUser">Name</span></h1>
+      <h1>Dzień dobry, <span id="nameUser"></span></h1>
     </div>
     <a href="#" class="settings-action-btn">
       <i class="fa-solid fa-gear"></i>
@@ -710,7 +710,7 @@
 
 
 <div class="name-ask">
-  <h1>Jak się nazywasz?</h1>
+  <h1>Jak masz na imię?</h1>
   <input type="text" id="username" onchange="nameQuestion()" placeholder="- - -">
   <button type="submit" onclick="nameQuestion()" class="usernameNext" >Dalej</button>
 </div>
