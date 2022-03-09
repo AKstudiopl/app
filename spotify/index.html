@@ -61,7 +61,7 @@
         <div class="settings-screen-item">
           <img src="postmalone-222.png">
             <div class="settings-screen-item-description">
-              <h3>Adam Kowalski</h3>
+              <h3><span id="profilName"></span></h3>
               <a href="#">Pokaż profil <i class="fa-solid fa-angle-right"></i></a>
             </div>
         </div>
@@ -89,12 +89,12 @@
 
         <div class="settings-screen-item" id="input-style">
             <div class="settings-screen-item-description">
-              <h3>Jasny Motyw</h3>
-              <a>Odtwarza tylko pobrane utwory</a>
+              <h3>Ciemny Motyw</h3>
+              <a>Tryb przyjazny dla oczu</a>
             </div>
             <div class="settings-screen-item-input">
               <label class="switch">
-                <input type="checkbox" id="dark-change">
+                <input type="checkbox" id="dark-change" checked>
                 <span class="slider round"></span>
               </label>
             </div>
@@ -105,7 +105,7 @@
               <a>Pomiędzy utworami</a>
             </div>
             <div class="settings-screen-item-input">
-              <label class="switch" onclick="">
+              <label class="switch">
                 <input type="checkbox">
                 <span class="slider round"></span>
               </label>
@@ -711,7 +711,7 @@
 
 <div class="name-ask">
   <h1>Jak się nazywasz?</h1>
-  <input type="text" id="username" onchange="nameQuestion()" placeholder="Tomek">
+  <input type="text" id="username" onchange="nameQuestion()" placeholder="- - -">
   <button type="submit" onclick="nameQuestion()" class="usernameNext" >Dalej</button>
 </div>
 

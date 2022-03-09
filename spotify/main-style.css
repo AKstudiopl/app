@@ -9,11 +9,11 @@
 }
 :root
 {
-  --background: #090608;
-  --backgroundsecond: #0d090b;
-  --color: #FFFFFF;
-  --maincolor: #ED2B33;
-  --maincolorhover: #D85A7F;
+  --background: #040511;
+  --backgroundsecond: #04061a;
+  --color: #DEE4EA;
+  --maincolor: #1764CC;
+  --maincolorhover: #4C97DE;
   --border: 1px #09060850 solid;
 }
 body
@@ -358,7 +358,7 @@ input:checked + .slider:before {
 {
   position: fixed;
   z-index: 0;
-  background: #1a1a1a;
+  background: var(--background);
   top: 0;
   width: 100vw;
   height: 100vh;
@@ -485,7 +485,7 @@ input:checked + .slider:before {
 {
   position: fixed;
   z-index: 0;
-  background: #1a1a1a;
+  background: var(--background);
   top: 0;
   width: 100vw;
   height: 100vh;
@@ -521,7 +521,7 @@ input:checked + .slider:before {
 {
   padding-left: 10px;
   padding-right: 10px;
-  background: linear-gradient(180deg, #ED2B3320 0%, #090608 100%);
+  background: linear-gradient(180deg, #04061a 0%, #040511 100%);
 }
 .title h1
 {

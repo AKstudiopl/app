@@ -403,7 +403,9 @@ function setvolume(){
   function nameQuestion() {
     inputName = document.getElementById('username');
     namePlace = document.getElementById('nameUser');
+    profilName = document.getElementById('profilName');
     namePlace.innerHTML = inputName.value;
+    profilName.innerHTML = inputName.value;
   }
 
   const nameAsk = document.getElementsByClassName('name-ask')[0]
