@@ -105,7 +105,10 @@ const smallView = document.querySelector(".music-controls"),
 smallImg = smallView.querySelector(".music-img img"),
 smallName = smallView.querySelector(".music-title .fasttitle"),
 smallArtist = smallView.querySelector(".music-title .fastartist"),
+progressBarNavDone = smallView.querySelector(".music-controls-progresbar-done"),
+progressBarNav = smallView.querySelector(".music-controls-progresbar"),
 smallPlayStopbtn = smallView.querySelector("#smallplaystop");
+
 
 var musicIndex = Math.floor((Math.random() * allMusic.length) + 1);
 
@@ -180,6 +183,7 @@ mainAudio.addEventListener("timeupdate", (e)=>{
   const duration = e.target.duration;
   let progressWidth = (currentTime / duration) * 100;
   progressBar.style.width = `${progressWidth}%`;
+  progressBarNavDone.style.width = `${progressWidth}%`;
 
   let musicCurrentTime = wrapper.querySelector(".current-time"),
   musicDuartion = wrapper.querySelector(".max-duration");

@@ -374,12 +374,12 @@ input:checked + .slider:before {
 .search-content
 {
   padding: 10px 25px;
-  border-bottom: 1px #A7A7A725 solid;
+  border-bottom: var(--border);
 }
 .search-content  input[type=text] {
   font-size: 14px;
   margin: 0;
-  border: 1px solid #A7A7A725;
+  border: var(--border);
   border-radius: 25px;
   float: left;
   padding: 5px 0;
@@ -521,7 +521,7 @@ input:checked + .slider:before {
 {
   padding-left: 10px;
   padding-right: 10px;
-  background: linear-gradient(180deg, #1764CC65 0%, #040511 100%);
+  background: linear-gradient(180deg, #1764CC85 0%, #040511 100%);
 }
 .title h1
 {
@@ -631,15 +631,27 @@ input:checked + .slider:before {
 }
 /* navMusic Menu */
 
-
+.music-controls-progresbar
+{
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 60px);
+  right: 0;
+  height: 3px;
+  background: var(--backgroundsecond);
+}
+.music-controls-progresbar-done
+{
+  height: 3px;
+  background: var(--maincolor)
+}
 .music-controls
 {
   position: fixed;
-  bottom: 60px;
+  bottom: 61px;
   width: 100%;
   height: 60px;
   background: var(--backgroundsecond);
-  border-top: var(--border);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -689,8 +701,8 @@ input:checked + .slider:before {
   position: fixed;
   top: 0;
   z-index: 6;
-  background: #040511;
-  background: linear-gradient(180deg, #1764CC -20%, #040511 100%);
+  background: rgb(4,6,26);
+  background: linear-gradient(0deg, rgba(4,6,26,1) 0%, rgba(10,14,55,1) 100%);
   width: 100vw;
   height: 100vh;
   margin-left: 105vw;
