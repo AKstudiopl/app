@@ -340,7 +340,7 @@ const correctSoundScreen = document.getElementsByClassName('device-screen')[0]
 const correctSoundExit = document.getElementsByClassName('device-screen-exit')[0]
 
 correctSoundBtn.addEventListener('click', () => {
-  correctSoundScreen.classList.add('active')
+  correctSoundScreen.classList.toggle('active')
 })
 correctSoundExit.addEventListener('click', () => {
   correctSoundScreen.classList.remove('active')
@@ -428,4 +428,15 @@ function setvolume(){
   const nameInputBtn = document.getElementsByClassName('usernameNext')[0]
   nameInputBtn.addEventListener('click', () => {
       nameAsk.classList.toggle('confirmed');
+  })
+
+
+  const personalitem1 = document.getElementsByClassName('personal-item-1')[0]
+  const musicstyle1 = document.getElementsByClassName('music-style-item item-1')[0]
+  const musicstyle1exit = document.getElementsByClassName('music-1-exit')[0]
+  personalitem1.addEventListener('click', () => {
+      musicstyle1.classList.add('active');
+  })
+  musicstyle1exit.addEventListener('click', () => {
+      musicstyle1.classList.remove('active');
   })
