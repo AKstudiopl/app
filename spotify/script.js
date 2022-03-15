@@ -120,11 +120,11 @@ window.addEventListener("load", ()=>{
 function loadMusic(indexNumb){
   musicName.innerText = allMusic[indexNumb - 1].name;
   musicArtist.innerText = allMusic[indexNumb - 1].artist;
-  musicImg.src = `images/${allMusic[indexNumb - 1].src}.jpg`;
+  musicImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
   mainAudio.src = `songs/${allMusic[indexNumb - 1].src}.mp3`;
   smallName.innerText = allMusic[indexNumb - 1].name;
   smallArtist.innerText = allMusic[indexNumb - 1].artist;
-  smallImg.src = `images/${allMusic[indexNumb - 1].src}.jpg`;
+  smallImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
   mainAudio.volume = 0.5;
 }
 
