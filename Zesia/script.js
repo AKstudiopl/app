@@ -132,6 +132,12 @@ function loadMusic(indexNumb){
   smallArtist.innerText = allMusic[indexNumb - 1].artist;
   smallImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
   mainAudio.volume = document.getElementById("volumeslider").value;
+
+  if (wrapper.classList.contains('save-data')) {
+    musicImg.src = `3099b3803ad9496896c43f22fe9be8c4.png`;
+    smallImg.src = `3099b3803ad9496896c43f22fe9be8c4.png`;
+  }
+
 }
 
 function playMusic(){
@@ -379,16 +385,27 @@ function searchName() {
 
   for (i = 0; i < li.length; i++) {
     nameResult = li[i].getElementsByClassName("result-name")[0];
+    artistResult = li[i].getElementsByClassName("result-artist")[0];
     webkitresults = document.getElementsByClassName("search-results")[0];
     nameResult = nameResult.textContent || nameResult.innerText;
+    artistResult = artistResult.textContent || artistResult.innerText;
     if (nameResult.toUpperCase().indexOf(filter) > -1) {
       li[i].style.display = "";
       li[i].style.visibility = "visible";
       webkitresults.classList.remove("webkit-hidden");
-    } else {
+    }
+    else if (artistResult.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+      li[i].style.visibility = "visible";
+      webkitresults.classList.remove("webkit-hidden");
+    }
+    else {
       li[i].style.display = "none";
       li[i].style.visibility = "hidden";
-    } if (input.value.length == 0)
+    }
+
+
+    if (input.value.length == 0)
     {
       li[i].style.visibility = "hidden";
       webkitresults.classList.add("webkit-hidden");
@@ -458,4 +475,9 @@ function setvolume(){
   })
   musicstyle1exit.addEventListener('click', () => {
       musicstyle1.classList.remove('active');
+  })
+
+  const dataSwitch = document.getElementsByClassName('save-data')[0]
+  dataSwitch.addEventListener('click', () => {
+      wrapper.classList.toggle('save-data');
   })
