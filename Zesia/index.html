@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<head>
+    <title>Zesia</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Music Hits Great Chill">
+    <link rel="stylesheet" href="main-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#222222">
+    <link rel="shortcut icon" type="image" href="brandsources\20220320_150124.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="script.js" defer></script>
+    <script src="searchscript.js" defer></script>
+</head>
+<body class="preference dark" onload="checkQuestion()">
+
+  <div class="loader">
+      <img src="brandsources\20220320_150124.png"/>
+  </div>
+
+  <div class="bad-device">
+    <p>Your Device Don't Support Zesia App</p>
+    <img src="brandsources\20220320_150124.png"/>
+  </div>
+
+
+<div class="navbar-bottom">
+  <div class="navbar-bottom-btn 1 active">
+    <a href="#" class="navbar-bottom-btn-home">
+      <i class="fa-solid fa-house"></i>
+        Home
+    </a>
+  </div>
+  <div class="navbar-bottom-btn 2">
+    <a href="#" class="navbar-bottom-btn-search" onclick="searchName()">
+      <i class="fa-solid fa-magnifying-glass"></i>
+        Wyszukaj
+    </a>
+  </div>
+  <div class="navbar-bottom-btn 3">
+    <a href="#" class="navbar-bottom-btn-library">
+      <i class="fa-solid fa-bars"></i>
+        Biblioteka
+    </a>
+  </div>
+</div>
+
+
+<div class="settings-screen">
+    <div class="settings-screen-title">
+      <h1>
+        Ustawienia
+      </h1>
+      <a href="#" id="back-settigns-btn" class="setting-disable-btn">
+        <i class="fa-solid fa-angle-left"></i>
+      </a>
+    </div>
+
+    <div class="settings-screen-container">
+
+        <div class="settings-screen-item">
+          <img src="postmalone-222.png">
+            <div class="settings-screen-item-description">
+              <h3><span id="profilName"></span></h3>
+              <a href="#">Pokaż profil <i class="fa-solid fa-angle-right"></i></a>
+            </div>
+        </div>
+
+        <div class="settings-title">
+          <h3>Oszczędzanie Danych</h3>
+        </div>
+
+        <div class="settings-screen-item" id="input-style">
+            <div class="settings-screen-item-description">
+              <h3>Save Mode</h3>
+              <a>Ogranicza zużycie danych</a>
+            </div>
+            <div class="settings-screen-item-input">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </div>
+        </div>
+
+        <div class="settings-title">
+          <h3>Odtwarzanie</h3>
+        </div>
+
+        <div class="settings-screen-item" id="input-style">
+            <div class="settings-screen-item-description">
+              <h3>Ciemny Motyw</h3>
+              <a>Tryb przyjazny dla oczu</a>
+            </div>
+            <div class="settings-screen-item-input">
+              <label class="switch">
+                <input type="checkbox" id="dark-change" checked>
+                <span class="slider round"></span>
+              </label>
+            </div>
+        </div>
+        <div class="settings-screen-item" id="input-style">
+            <div class="settings-screen-item-description">
+              <h3>Płynne przejście</h3>
+              <a>Pomiędzy utworami</a>
+            </div>
+            <div class="settings-screen-item-input">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </div>
+        </div>
+        <div class="settings-screen-item" id="input-style">
+            <div class="settings-screen-item-description">
+              <h3>Bez przerw</h3>
+              <a>Odtwarzanie bez przerw</a>
+            </div>
+            <div class="settings-screen-item-input">
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+              </label>
+            </div>
+        </div>
+        <div class="settings-screen-item" id="input-style">
+            <div class="settings-screen-item-description">
+              <h3>Normalizacja Głośności</h3>
+              <a>Stały poziom głośności</a>
+            </div>
+            <div class="settings-screen-item-input">
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+              </label>
+            </div>
+        </div>
+
+        <div class="settings-title">
+          <h3>Społecznościowe</h3>
+        </div>
+
+        <div class="settings-screen-item" id="input-style">
+            <div class="settings-screen-item-description">
+              <h3>Sesja prywatna</h3>
+              <a>Aktywność widoczna tylko dla ciebie</a>
+            </div>
+            <div class="settings-screen-item-input">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </div>
+        </div>
+        <div class="settings-screen-item" id="input-style">
+            <div class="settings-screen-item-description">
+              <h3>Połącz konto</h3>
+              <a href="#">Facebook, Instagram, Twitter <i class="fa-solid fa-angle-right"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="search-container">
+
+  <div class="search-content">
+
+    <h1>Czego szukasz?</h1>
+    <div class="search-bar">
+      <input type="text" id="search-item" placeholder="Wykonawcy, utwory" onkeyup="searchName()">
+        <div class="clear-btn">
+        <button type="button" id="clear-input-btn" onclick="ClearFields();searchName();"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+   </div>
+
+  </div>
+
+  <div class="search-results">
+
+
+
+  </div>
+
+
+</div>
+
+
+<div class="library-container">
+
+  <div class="library-content">
+    <h1>
+      Twoje playlisty
+    </h1>
+
+    <div class="library-slider">
+
+      <div class="center-container">
+
+        <div class="center-container-scrollable">
+
+          <div class="center-container-item">
+            <img src="cover_640.jpg">
+            <h2>Alan Walker Podcast</h2>
+              <p>
+                Muzyka · Lifestyle · Concerts
+              </p>
+          </div>
+          <div class="center-container-item">
+            <img src="cover_640.jpg">
+            <h2>Alan Walker Podcast</h2>
+              <p>
+                Muzyka · Lifestyle · Concerts
+              </p>
+          </div>
+          <div class="center-container-item">
+            <img src="cover_640.jpg">
+            <h2>Alan Walker Podcast</h2>
+              <p>
+                Muzyka · Lifestyle · Concerts
+              </p>
+          </div>
+          <div class="center-container-item">
+            <img src="cover_640.jpg">
+            <h2>Alan Walker Podcast</h2>
+              <p>
+                Muzyka · Lifestyle · Concerts
+              </p>
+          </div>
+          <div class="center-container-item">
+            <img src="cover_640.jpg">
+            <h2>Alan Walker Podcast</h2>
+              <p>
+                Muzyka · Lifestyle · Concerts
+              </p>
+          </div>
+          <div class="center-container-item">
+            <img src="cover_640.jpg">
+            <h2>Alan Walker Podcast</h2>
+              <p>
+                Muzyka · Lifestyle · Concerts
+              </p>
+          </div>
+          <div class="center-container-item">
+            <img src="cover_640.jpg">
+            <h2>Alan Walker Podcast</h2>
+              <p>
+                Muzyka · Lifestyle · Concerts
+              </p>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="center-container">
+        <div class="title">
+          <h1>Ostatnio odtwarzane</h1>
+        </div>
+
+        <div class="center-container-scrollable">
+          <div class="center-container-item">
+            <img src="cover_640.jpg">
+            <h2>Alan Walker Podcast</h2>
+              <p>
+                Playlista
+              </p>
+          </div>
+          <div class="center-container-item">
+            <img src="cover_640.jpg">
+            <h2>Alan Walker Podcast</h2>
+              <p>
+                Playlista
+              </p>
+          </div>
+          <div class="center-container-item">
+            <img src="cover_640.jpg">
+            <h2>Alan Walker Podcast</h2>
+              <p>
+                Playlista
+              </p>
+          </div>
+          <div class="center-container-item">
+            <img src="cover_640.jpg">
+            <h2>Alan Walker Podcast</h2>
+              <p>
+                Playlista
+              </p>
+          </div>
+          <div class="center-container-item">
+            <img src="cover_640.jpg">
+            <h2>Alan Walker Podcast</h2>
+              <p>
+                Playlista
+              </p>
+          </div>
+          <div class="center-container-item">
+            <img src="cover_640.jpg">
+            <h2>Alan Walker Podcast</h2>
+              <p>
+                Playlista
+              </p>
+          </div>
+          <div class="center-container-item">
+            <img src="cover_640.jpg">
+            <h2>Alan Walker Podcast</h2>
+              <p>
+                Playlista
+              </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<div class="head-content">
+  <div class="head-content-top">
+    <div class="title">
+      <h1>Dzień dobry, <span id="nameUser"></span></h1>
+    </div>
+    <a href="#" class="settings-action-btn">
+      <i class="fa-solid fa-gear"></i>
+    </a>
+  </div>
+  <div class="head-content-container">
+    <div class="head-content-item">
+      <img src="cover_640.jpg">
+      <p>
+        Alan Walker
+      </p>
+    </div>
+    <div class="head-content-item">
+      <img src="Sabaton.jpg">
+      <p>
+        Sabaton
+      </p>
+    </div>
+    <div class="head-content-item">
+      <img src="postmalone-222.png">
+      <p>
+        Post Malone
+      </p>
+    </div>
+    <div class="head-content-item">
+      <img src="Juice-WRLD-2.jpg">
+      <p>
+        Juice WRLD
+      </p>
+    </div>
+    <div class="head-content-item">
+      <img src="eminemmainimg.jpg">
+      <p>
+        Eminem
+      </p>
+    </div>
+    <div class="head-content-item">
+      <img src="3099b3803ad9496896c43f22fe9be8c4.png">
+      <p>
+        Ulubione
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="personal-container">
+  <div class="title">
+    <h1>Twój styl</h1>
+  </div>
+
+  <div class="personal-container-items">
+    <div class="personal-item personal-item-1">
+      <h1>Vibe</h1>
+    </div>
+    <div class="personal-item" id="personal-item-2">
+      <h1>Chill</h1>
+    </div>
+    <div class="personal-item" id="personal-item-3">
+      <h1>Pop</h1>
+    </div>
+    <div class="personal-item" id="personal-item-4">
+      <h1>Electric</h1>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="center-container">
+  <div class="title">
+    <h1>Twoje Playlisty</h1>
+  </div>
+
+  <div class="center-container-scrollable">
+    <div class="center-container-item">
+      <img src="cover_640.jpg">
+      <h2>Alan Walker Podcast</h2>
+        <p>
+          Playlista
+        </p>
+    </div>
+    <div class="center-container-item">
+      <img src="cover_640.jpg">
+      <h2>Alan Walker Podcast</h2>
+        <p>
+          Playlista
+        </p>
+    </div>
+    <div class="center-container-item">
+      <img src="cover_640.jpg">
+      <h2>Alan Walker Podcast</h2>
+        <p>
+          Playlista
+        </p>
+    </div>
+    <div class="center-container-item">
+      <img src="cover_640.jpg">
+      <h2>Alan Walker Podcast</h2>
+        <p>
+          Playlista
+        </p>
+    </div>
+    <div class="center-container-item">
+      <img src="cover_640.jpg">
+      <h2>Alan Walker Podcast</h2>
+        <p>
+          Playlista
+        </p>
+    </div>
+    <div class="center-container-item">
+      <img src="cover_640.jpg">
+      <h2>Alan Walker Podcast</h2>
+        <p>
+          Playlista
+        </p>
+    </div>
+    <div class="center-container-item">
+      <img src="cover_640.jpg">
+      <h2>Alan Walker Podcast</h2>
+        <p>
+          Playlista
+        </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="center-container">
+  <div class="title">
+    <h1>Ulubieni Wykonwacy</h1>
+  </div>
+
+  <div class="center-container-scrollable">
+    <div class="center-container-item">
+      <img src="channels4_profile.jpg" id="main-avatar">
+      <h2>Alan Walker</h2>
+        <p>
+          Twórca
+        </p>
+    </div>
+    <div class="center-container-item">
+      <img src="postmalone-222.png" id="main-avatar">
+      <h2>Post Malone</h2>
+        <p>
+          Raper
+        </p>
+    </div>
+    <div class="center-container-item">
+      <img src="Juice-WRLD-2.jpg" id="main-avatar">
+      <h2>Juice WRLD</h2>
+        <p>
+          Raper
+        </p>
+    </div>
+    <div class="center-container-item">
+      <img src="Sabaton.jpg" id="main-avatar">
+      <h2>Sabaton</h2>
+        <p>
+          Zespół
+        </p>
+    </div>
+    <div class="center-container-item">
+      <img src="eminemmainimg.jpg" id="main-avatar">
+      <h2>Eminem</h2>
+        <p>
+          Raper
+        </p>
+    </div>
+  </div>
+</div>
+
+
+
+  <div class="music-controls">
+
+    <div class="music-controls-progresbar">
+      <div class="music-controls-progresbar-done">
+      </div>
+    </div>
+
+    <a class="show-Music-Menu">
+
+          <div class="music-img">
+            <img src="3099b3803ad9496896c43f22fe9be8c4.png">
+          </div>
+
+    </a>
+
+      <div class="music-title">
+        <h1><span class="fasttitle"></span></h1>
+        <p><span class="fastartist"></span></p>
+      </div>
+
+      <div class="music-icon">
+        <a id="smallplaystop"><i class="fa-solid fa-play"></i></a>
+      </div>
+
+  </div>
+
+<div class="main-music">
+
+  <div class="main-music-screen">
+
+    <div class="top-controls">
+      <a href="#" class="hide-Music-Menu"><i class="fa-solid fa-angle-left"></i></a>
+      <a href="#" id="title-sound">ODTWARZANIE Z WYNIKÓW WYSZUKIWANIA</a>
+      <a href="#" class="top-controls-more-btn"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+    </div>
+
+    <div class="top-controls-more">
+      <a href="#">Udostępnij</a>
+      <a href="#">Pomoc</a>
+      <a href="#">Zgłoś zawartość</a>
+    </div>
+
+    <div class="main-music-header">
+      <img src="ab67616d0000b273dd8408b50f45c66139f44ce2.jpg">
+    </div>
+
+    <div class="main-information">
+      <div class="main-information-title">
+        <h1 class="name"></h1>
+        <p class="artist"></p>
+      </div>
+      <i class="fa-solid fa-heart"></i>
+    </div>
+
+  <div class="progress">
+
+    <div class="progress-bar">
+      <div class="progress-bar-done">
+      </div>
+    </div>
+
+    <div class="timer">
+      <span class="current-time">0:00</span>
+      <span class="max-duration"></span>
+    </div>
+
+  </div>
+
+    <div class="main-music-fast-navigation">
+        <div class="main-music-fast-navigation-more">
+          <a><i id="shuffle" class="fa-solid fa-shuffle"></i></a>
+        </div>
+      <a href="#"><i id="prev" class="fa-solid fa-backward-step"></i></a>
+      <a id="play-stop-main-btn-action" class="play-stop-main-btn"><i class="fa-solid fa-play"></i></a>
+      <a href="#"><i id="next" class="fa-solid fa-forward-step"></i></a>
+        <div class="main-music-fast-navigation-more">
+          <a><i id="repeat" class="fa-solid fa-repeat"></i></a>
+        </div>
+    </div>
+
+    <div class="main-music-sec-nav">
+      <a class="device-screen-btn"><i class="fa-solid fa-headphones"></i></a>
+      <a class="current-playlist-btn"><i class="fa-solid fa-list"></i></a>
+    </div>
+
+    <div class="fav-alert">
+      <p>Utwór został dodany do <span>ulubionych</span></p>
+    </div>
+
+    <div class="device-screen">
+      <div class="device-main">
+      <h2>Korekcja dzwięku</h2>
+      <a class="device-screen-exit"><i class="fa-solid fa-angle-down"></i></a>
+      </div>
+        <div class="device-item">
+          <p>Dostosuj muzykę pod własną osobowość</p>
+            <div class="device-custom-item">
+              <label for="">Głośność</label>
+              <input type="range" onchange="setvolume()" onfocus="setvolume()" value="0.5" min=0 max=1 step=0.01 class="move-label" id="volumeslider">
+            </div>
+        </div>
+    </div>
+
+  </div>
+
+  <div class="queue-container">
+
+    <div class="queue-container-top">
+              <h3>Aktualnie Odtwarzane</h3>
+      <a href="#" class="exit-queue"><i class="fa-solid fa-angle-down"></i></a>
+    </div>
+
+    <div class="queue-item">
+        <ul>
+        </ul>
+    </div>
+
+  </div>
+
+    <div class="lyrics-button">
+      <a href="#" class="rateBtn"><i class="OpinieIcon fa-solid fa-angle-up"></i>Opinie</a>
+    </div>
+
+    <div class="lyrics">
+      <div class="lyrics-container">
+        <h1>Średnia ocena utworu</h1>
+        <p id="song-rate">
+        </p>
+        <a href="#"><i class="fa-solid fa-heart"></i> Oceń</a>
+      </div>
+    </div>
+
+  <audio id="audio" src=""></audio>
+
+
+</div>
+
+
+  <div class="artist-card">
+
+    <div class="artist-top-controls">
+      <p>Profil</p>
+      <a href="#" class="artist-exit"><i class="fa-solid fa-xmark"></i></a>
+    </div>
+
+
+    <div class="artist-card-img">
+      <img src="channels4_profile.jpg">
+    </div>
+
+    <div class="artist-main-info">
+      <h1>Alan Walker</h1>
+      <p>Twórca</p>
+      <a><i class="fa-solid fa-heart"></i></a>
+      <p class="artist-info">Alan Olav Walker – norweski producent muzyczny i DJ. Początkowo występował pod pseudonimem DJ Walkzz, pod którym wydawał single w latach 2012–2013.</p>
+
+    </div>
+
+    <div class="artist-socials">
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-twitch"></i></a>
+    </div>
+
+    <div class="artist-title">
+      <h3>Ostatnio dodane :</h3>
+    </div>
+
+    <div class="artist-last-upload">
+      <p>Alan Walker - Faded</p>
+      <p>Alan Walker - Alone</p>
+      <p>Alan Walker - Spectre</p>
+    </div>
+
+  </div>
+
+
+<div class="name-ask">
+  <h1>Jak masz na imię?</h1>
+  <input type="text" id="username" onchange="nameQuestion()" placeholder="- - -">
+  <button type="submit" onclick="nameQuestion()" class="usernameNext" >Dalej</button>
+</div>
+
+
+<div class="music-style-container">
+
+  <div class="music-style-item item-1">
+
+
+    <div class="music-style-item-controls">
+      <a href="#" class="music-1-exit"><i class="fa-solid fa-xmark"></i></a>
+    </div>
+
+    <div class="music-style-item-title">
+
+      <div class="music-style-item-title-color">
+          <h1>VIBE</h1>
+      </div>
+
+    </div>
+
+    <div class="music-style-item-content">
+      <h1>Poczuj swój styl w muzyce</h1>
+      <h2>Posłuchaj ulubionych utworów innych</h2>
+        <div class="music-style-option">
+          <p>Playlista polubiona przez : <span>15.356 słuchaczy</span></p>
+          <a href="#"><i class="fa-solid fa-heart"></i> Polub</a>
+        </div>
+      <p>Utwory :</p>
+
+        <ul>
+          <li>
+            Bebe Rexha - Say My Name
+            <a href="#"><img src="sources\equaliser-animated-green.f93a2ef4.gif"/></a>
+          </li>
+          <li>
+            Imagine Dragons - Whatever It Takes
+            <a href="#"><i class="fa-solid fa-play"></i></a>
+          </li>
+          <li>
+            Imagine Dragons - Whatever It Takes
+            <a href="#"><i class="fa-solid fa-play"></i></a>
+          </li>
+          <li>
+            Imagine Dragons - Whatever It Takes
+            <a href="#"><i class="fa-solid fa-play"></i></a>
+          </li>
+          <li>
+            Imagine Dragons - Whatever It Takes
+            <a href="#"><i class="fa-solid fa-play"></i></a>
+          </li>
+          <li>
+            Imagine Dragons - Whatever It Takes
+            <a href="#"><i class="fa-solid fa-play"></i></a>
+          </li>
+          <li>
+            Imagine Dragons - Whatever It Takes
+            <a href="#"><i class="fa-solid fa-play"></i></a>
+          </li>
+          <li>
+            Imagine Dragons - Whatever It Takes
+            <a href="#"><i class="fa-solid fa-play"></i></a>
+          </li>
+          <li>
+            Imagine Dragons - Whatever It Takes
+            <a href="#"><i class="fa-solid fa-play"></i></a>
+          </li>
+          <li>
+            Imagine Dragons - Whatever It Takes
+            <a href="#"><i class="fa-solid fa-play"></i></a>
+          </li>
+          <li>
+            Imagine Dragons - Whatever It Takes
+            <a href="#"><i class="fa-solid fa-play"></i></a>
+          </li>
+          <li>
+            Imagine Dragons - Whatever It Takes
+            <a href="#"><i class="fa-solid fa-play"></i></a>
+          </li>
+          <li>
+            Bebe Rexha - Say My Name
+            <a href="#"><i class="fa-solid fa-play"></i></a>
+          </li>
+          <li>
+            Imagine Dragons - Whatever It Takes
+            <a href="#"><i class="fa-solid fa-play"></i></a>
+          </li>
+          <li>
+            Imagine Dragons - Whatever It Takes
+            <a href="#"><i class="fa-solid fa-play"></i></a>
+          </li>
+          <li>
+            Imagine Dragons - Whatever It Takes
+            <a href="#"><i class="fa-solid fa-play"></i></a>
+          </li>
+          <li>
+            Imagine Dragons - Whatever It Takes
+            <a href="#"><i class="fa-solid fa-play"></i></a>
+          </li>
+          <li>
+            Imagine Dragons - Whatever It Takes
+            <a href="#"><i class="fa-solid fa-play"></i></a>
+          </li>
+          <li>
+            Imagine Dragons - Whatever It Takes
+            <a href="#"><i class="fa-solid fa-play"></i></a>
+          </li>
+          <li>
+            Imagine Dragons - Whatever It Takes
+            <a href="#"><i class="fa-solid fa-play"></i></a>
+          </li>
+          <li>
+            Imagine Dragons - Whatever It Takes
+            <a href="#"><i class="fa-solid fa-play"></i></a>
+          </li>
+          <li>
+            Imagine Dragons - Whatever It Takes
+            <a href="#"><i class="fa-solid fa-play"></i></a>
+          </li>
+          <li>
+            Imagine Dragons - Whatever It Takes
+            <a href="#"><i class="fa-solid fa-play"></i></a>
+          </li>
+          <li>
+            Imagine Dragons - Whatever It Takes
+            <a href="#"><i class="fa-solid fa-play"></i></a>
+          </li>
+        </ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="bottom-gap">
+</div>
+
+<script src="music-list.js">
+
+</script>
+</body>
+</html>
