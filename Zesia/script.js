@@ -113,6 +113,10 @@ smallPlayStopbtn = smallView.querySelector("#smallplaystop");
 
 var musicIndex = Math.floor((Math.random() * allMusic.length) + 1);
 
+function personalLIst() {
+  wrapper.classList.toggle('personal-Music');
+}
+
 window.addEventListener("load", ()=>{
   loadMusic(musicIndex);
   checkQuestion();
@@ -133,11 +137,34 @@ function loadMusic(indexNumb){
   smallImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
   mainAudio.volume = document.getElementById("volumeslider").value;
 
-  if (wrapper.classList.contains('save-data')) {
-    musicImg.src = `3099b3803ad9496896c43f22fe9be8c4.png`;
-    smallImg.src = `3099b3803ad9496896c43f22fe9be8c4.png`;
+  if (wrapper.classList.contains('personal-Music')) {
+    musicName.innerText = personalMusic[indexNumb - 1].name;
+    musicArtist.innerText = personalMusic[indexNumb - 1].artist;
+    musicImg.src = `images/${personalMusic[indexNumb - 1].img}.jpg`;
+    mainAudio.src = `songs/${personalMusic[indexNumb - 1].src}.mp3`;
+    songRate.innerText = personalMusic[indexNumb - 1].rate;
+    smallName.innerText = personalMusic[indexNumb - 1].name;
+    smallArtist.innerText = personalMusic[indexNumb - 1].artist;
+    smallImg.src = `images/${personalMusic[indexNumb - 1].img}.jpg`;
+    playMusic();
+  }
+  else {
+    musicName.innerText = allMusic[indexNumb - 1].name;
+    musicArtist.innerText = allMusic[indexNumb - 1].artist;
+    musicImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
+    mainAudio.src = `songs/${allMusic[indexNumb - 1].src}.mp3`;
+    songRate.innerText = allMusic[indexNumb - 1].rate;
+    smallName.innerText = allMusic[indexNumb - 1].name;
+    smallArtist.innerText = allMusic[indexNumb - 1].artist;
+    smallImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
   }
 
+
+
+    if (wrapper.classList.contains('save-data')) {
+      musicImg.src = `3099b3803ad9496896c43f22fe9be8c4.png`;
+      smallImg.src = `3099b3803ad9496896c43f22fe9be8c4.png`;
+    }
 }
 
 function playMusic(){
@@ -164,6 +191,9 @@ function nextMusic(){
   playingSong();
   if ( wrapper.classList.contains("shuffle")) {
     musicIndex = Math.floor((Math.random() * allMusic.length) + 1);
+  }
+  else if (wrapper.classList.contains("personal-Music")) {
+    musicIndex = Math.floor((Math.random() * personalMusic.length) + 1);
   }
   else {
     musicIndex++;
@@ -342,13 +372,67 @@ function playingSong(){
   }
 }
 
+function playingSongPersonal(){
+  const allLiPersonalTag = personalUl.querySelectorAll("li");
+  for (let j = 0; j < allLiPersonalTag.length; j++) {
+    let personalPlayIcon = allLiPersonalTag[j].querySelector(".playPersonal");
+
+    if(allLiPersonalTag[j].classList.contains("playing")){
+      allLiPersonalTag[j].classList.remove("playing");
+      personalPlayIcon.innerHTML = '<i class="fa-solid fa-play"></i>';
+    }
+    if(allLiPersonalTag[j].getAttribute("li-index") == musicIndex){
+      allLiPersonalTag[j].classList.add("playing");
+      personalPlayIcon.innerHTML = '<img src="sources/equaliser-animated-green.f93a2ef4.gif">';
+    }
+    allLiPersonalTag[j].setAttribute("onclick", "clicked(this)");
+  }
+}
+
 function clicked(element){
   let getLiIndex = element.getAttribute("li-index");
   musicIndex = getLiIndex;
   loadMusic(musicIndex);
   playMusic();
   playingSong();
+  playingSongPersonal()
 }
+
+
+
+
+
+const personalUl = document.querySelector(".music-style-item-content ul");
+for (let i = 0; i < personalMusic.length; i++) {
+  let liTag = `<li li-index="${i + 1}" onclick="clicked(this)">
+                  <div class="music-style-item-fast">
+                  <p>${personalMusic[i].artist} - ${personalMusic[i].name}</p>
+                  <span id="${allMusic[i].src}" class="audio-duration-setup">3:40</span>
+                  </div>
+                  <a class="playPersonal"><i class="fa-solid fa-play"></i></a>
+                  <audio class="${personalMusic[i].src}" src="songs/${personalMusic[i].src}.mp3"></audio>
+              </li>`;
+  personalUl.insertAdjacentHTML("beforeend", liTag);
+  let liAudioDuartionTag = personalUl.querySelector(`#${personalMusic[i].src}`);
+  let liAudioTag = personalUl.querySelector(`.${personalMusic[i].src}`);
+  liAudioTag.addEventListener("loadeddata", ()=>{
+    let duration = liAudioTag.duration;
+    let totalMin = Math.floor(duration / 60);
+    let totalSec = Math.floor(duration % 60);
+    if(totalSec < 10){
+      totalSec = `0${totalSec}`;
+    };
+    liAudioDuartionTag.innerText = `${totalMin}:${totalSec}`;
+    liAudioDuartionTag.setAttribute("t-duration", `${totalMin}:${totalSec}`);
+  });
+}
+
+
+
+
+
+
+
 
 const correctSoundBtn = document.getElementsByClassName('device-screen-btn')[0]
 const correctSoundScreen = document.getElementsByClassName('device-screen')[0]
@@ -417,12 +501,15 @@ function ClearFields() {
      input.value = "";
 }
 
-const artistProfileBtn = document.getElementsByClassName('head-content-item')[0]
 const artistProfile = document.getElementsByClassName('artist-card')[0]
 const artistProfileExit = document.getElementsByClassName('artist-exit')[0]
-artistProfileBtn.addEventListener('click', () => {
-  artistProfile.classList.add('active');
+
+document.querySelectorAll('.head-content-item').forEach(artistProfileBtn => {
+  artistProfileBtn.addEventListener('click', event => {
+    artistProfile.classList.add('active');
+  })
 })
+
 artistProfileExit.addEventListener('click', () => {
     artistProfile.classList.remove('active');
 })
@@ -467,14 +554,14 @@ function setvolume(){
   })
 
 
-  const personalitem1 = document.getElementsByClassName('personal-item-1')[0]
-  const musicstyle1 = document.getElementsByClassName('music-style-item item-1')[0]
-  const musicstyle1exit = document.getElementsByClassName('music-1-exit')[0]
-  personalitem1.addEventListener('click', () => {
-      musicstyle1.classList.add('active');
+  const personaDiv = document.querySelectorAll('.personal-item')[0]
+  const personalItem = document.querySelectorAll('.music-style-item')[0]
+  const musicstyleexit = document.querySelectorAll('.music-1-exit')[0]
+  personaDiv.addEventListener('click', () => {
+      personalItem.classList.add('active')
   })
-  musicstyle1exit.addEventListener('click', () => {
-      musicstyle1.classList.remove('active');
+  musicstyleexit.addEventListener('click', () => {
+      personalItem.classList.remove('active')
   })
 
   const dataSwitch = document.getElementsByClassName('save-data')[0]

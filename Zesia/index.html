@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <script src="script.js" defer></script>
-    <script src="searchscript.js" defer></script>
 </head>
 <body class="preference dark" onload="checkQuestion()">
 
@@ -379,17 +378,8 @@
   </div>
 
   <div class="personal-container-items">
-    <div class="personal-item personal-item-1">
+    <div class="personal-item personal-item" onclick="personalLIst()">
       <h1>Vibe</h1>
-    </div>
-    <div class="personal-item" id="personal-item-2">
-      <h1>Chill</h1>
-    </div>
-    <div class="personal-item" id="personal-item-3">
-      <h1>Pop</h1>
-    </div>
-    <div class="personal-item" id="personal-item-4">
-      <h1>Electric</h1>
     </div>
   </div>
 
@@ -533,7 +523,7 @@
 
     <div class="top-controls">
       <a href="#" class="hide-Music-Menu"><i class="fa-solid fa-angle-left"></i></a>
-      <a href="#" id="title-sound"><img src="brandsources\IMG_20220320_144711.png"/></a>
+      <a href="zesia.html" id="title-sound"><img src="brandsources\IMG_20220320_144711.png"/></a>
       <a href="#" class="top-controls-more-btn"><i class="fa-solid fa-ellipsis-vertical"></i></a>
     </div>
 
@@ -599,7 +589,7 @@
           <p>Dostosuj muzykę pod własną osobowość</p>
             <div class="device-custom-item">
               <label for="">Głośność</label>
-              <input type="range" onchange="setvolume()" onfocus="setvolume()" value="0.5" min=0 max=1 step=0.01 class="move-label" id="volumeslider">
+              <input type="range" onchange="setvolume()" onfocus="setvolume()" value="0.1" min=0 max=1 step=0.01 class="move-label" id="volumeslider">
             </div>
         </div>
     </div>
@@ -688,11 +678,11 @@
 
 <div class="music-style-container">
 
-  <div class="music-style-item item-1">
+  <div class="music-style-item">
 
 
     <div class="music-style-item-controls">
-      <a href="#" class="music-1-exit"><i class="fa-solid fa-xmark"></i></a>
+      <a href="#" class="music-1-exit" onclick="personalLIst()"><i class="fa-solid fa-xmark"></i></a>
     </div>
 
     <div class="music-style-item-title">
@@ -713,102 +703,9 @@
       <p>Utwory :</p>
 
         <ul>
-          <li>
-            Bebe Rexha - Say My Name
-            <a href="#"><img src="sources\equaliser-animated-green.f93a2ef4.gif"/></a>
-          </li>
-          <li>
-            Imagine Dragons - Whatever It Takes
-            <a href="#"><i class="fa-solid fa-play"></i></a>
-          </li>
-          <li>
-            Imagine Dragons - Whatever It Takes
-            <a href="#"><i class="fa-solid fa-play"></i></a>
-          </li>
-          <li>
-            Imagine Dragons - Whatever It Takes
-            <a href="#"><i class="fa-solid fa-play"></i></a>
-          </li>
-          <li>
-            Imagine Dragons - Whatever It Takes
-            <a href="#"><i class="fa-solid fa-play"></i></a>
-          </li>
-          <li>
-            Imagine Dragons - Whatever It Takes
-            <a href="#"><i class="fa-solid fa-play"></i></a>
-          </li>
-          <li>
-            Imagine Dragons - Whatever It Takes
-            <a href="#"><i class="fa-solid fa-play"></i></a>
-          </li>
-          <li>
-            Imagine Dragons - Whatever It Takes
-            <a href="#"><i class="fa-solid fa-play"></i></a>
-          </li>
-          <li>
-            Imagine Dragons - Whatever It Takes
-            <a href="#"><i class="fa-solid fa-play"></i></a>
-          </li>
-          <li>
-            Imagine Dragons - Whatever It Takes
-            <a href="#"><i class="fa-solid fa-play"></i></a>
-          </li>
-          <li>
-            Imagine Dragons - Whatever It Takes
-            <a href="#"><i class="fa-solid fa-play"></i></a>
-          </li>
-          <li>
-            Imagine Dragons - Whatever It Takes
-            <a href="#"><i class="fa-solid fa-play"></i></a>
-          </li>
-          <li>
-            Bebe Rexha - Say My Name
-            <a href="#"><i class="fa-solid fa-play"></i></a>
-          </li>
-          <li>
-            Imagine Dragons - Whatever It Takes
-            <a href="#"><i class="fa-solid fa-play"></i></a>
-          </li>
-          <li>
-            Imagine Dragons - Whatever It Takes
-            <a href="#"><i class="fa-solid fa-play"></i></a>
-          </li>
-          <li>
-            Imagine Dragons - Whatever It Takes
-            <a href="#"><i class="fa-solid fa-play"></i></a>
-          </li>
-          <li>
-            Imagine Dragons - Whatever It Takes
-            <a href="#"><i class="fa-solid fa-play"></i></a>
-          </li>
-          <li>
-            Imagine Dragons - Whatever It Takes
-            <a href="#"><i class="fa-solid fa-play"></i></a>
-          </li>
-          <li>
-            Imagine Dragons - Whatever It Takes
-            <a href="#"><i class="fa-solid fa-play"></i></a>
-          </li>
-          <li>
-            Imagine Dragons - Whatever It Takes
-            <a href="#"><i class="fa-solid fa-play"></i></a>
-          </li>
-          <li>
-            Imagine Dragons - Whatever It Takes
-            <a href="#"><i class="fa-solid fa-play"></i></a>
-          </li>
-          <li>
-            Imagine Dragons - Whatever It Takes
-            <a href="#"><i class="fa-solid fa-play"></i></a>
-          </li>
-          <li>
-            Imagine Dragons - Whatever It Takes
-            <a href="#"><i class="fa-solid fa-play"></i></a>
-          </li>
-          <li>
-            Imagine Dragons - Whatever It Takes
-            <a href="#"><i class="fa-solid fa-play"></i></a>
-          </li>
+
+
+
         </ul>
 
     </div>
@@ -819,6 +716,9 @@
 </div>
 
 <script src="music-list.js">
+</script>
+<script src="personal-list.js">
+</script>
 
 </script>
 </body>
