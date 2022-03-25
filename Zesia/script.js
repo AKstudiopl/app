@@ -162,8 +162,8 @@ function loadMusic(indexNumb){
 
 
     if (wrapper.classList.contains('save-data')) {
-      musicImg.src = `3099b3803ad9496896c43f22fe9be8c4.png`;
-      smallImg.src = `3099b3803ad9496896c43f22fe9be8c4.png`;
+      musicImg.src = `IMG_20220322_224333.jpg`;
+      smallImg.src = `IMG_20220322_224333.jpg`;
     }
 }
 
