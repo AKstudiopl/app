@@ -8,10 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#222222">
     <link rel="shortcut icon" type="image" href="brandsources\20220320_150124.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <script src="javascript\home-script.js" defer></script>
     <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
 </head>
 <body class="preference dark" onload="checkQuestion()">
 
@@ -103,15 +106,18 @@
   <div class="second-container">
     <div class="second-item">
       <img src="sources\inline_image_preview.jpg">
-      <h2>More than 200.000 active users</h2>
+      <div class="counter">200,000</div>
+      <h2>Of active users</h2>
     </div>
     <div class="second-item">
-      <img src="sources\inline_image_preview.jpg">
-      <h2>94% Users are recomending Zesia</h2>
+      <img src="sources\focused_258111938-stock-photo-portrait-happy-young-woman-listening.jpg">
+      <div class="counter">150,000</div>
+      <h2>Of users are recomending Zesia</h2>
     </div>
     <div class="second-item">
-      <img src="sources\inline_image_preview.jpg">
-      <h2>3.500 of unkown to world great Artists</h2>
+      <img src="sources\1_kontroler-dj-landscape1607081418_22465.jpg">
+      <div class="counter">3,500</div>
+      <h2>Of unkown to world Artists</h2>
     </div>
   </div>
 
@@ -141,7 +147,7 @@
   </div>
 
   <div class="second-top">
-    <p>How does it work?</p>
+    <p class="secondtopfontsize">How does it work?</p>
   </div>
 
   <div class="second-text-left">
@@ -149,6 +155,106 @@
   </div>
 
 
+<div class="work-showcase">
+
+  <div class="work-item">
+    <i class="fa-solid fa-robot"></i>
+    <h1>1. Our Algorithm are researching for good vibes songs with low amount of views</h1>
+    <div class="work-icon-background">
+      <i class="fa-solid fa-robot"></i>
+    </div>
+  </div>
+  <div class="work-item">
+    <i class="fa-solid fa-people-group"></i>
+    <h1>2. Then we are choosing from AI list songs that will be great for our platform</h1>
+    <div class="work-icon-background">
+      <i class="fa-solid fa-people-group"></i>
+    </div>
+  </div>
+  <div class="work-item">
+    <i class="fa-solid fa-cloud-arrow-up"></i>
+    <h1>3. Now our daily list of new songs are uploading to Zesia</h1>
+    <div class="work-icon-background">
+      <i class="fa-solid fa-cloud-arrow-up"></i>
+    </div>
+  </div>
+  <div class="work-item">
+    <i class="fa-solid fa-headphones-simple"></i>
+    <h1>4. That's all now you have your daily Zesia of music</h1>
+    <div class="work-icon-background">
+      <i class="fa-solid fa-headphones-simple"></i>
+    </div>
+  </div>
 </div>
+
+
+<div class="second-text-left text-left-top">
+  <p>Choose ur style with Zesia Choose ur style with Zesia Choose ur style with Zesia Choose ur style with Zesia Choose ur style with Zesia</p>
+</div>
+
+<div class="second-top">
+  <p class="secondtopfontsize">Start using now</p>
+</div>
+
+<div class="second-text-left">
+  <p>Choose ur style with Zesia Choose ur style with Zesia Choose ur style with Zesia Choose ur style with Zesia Choose ur style with Zesia</p>
+</div>
+
+</div>
+
+<div class="download-view">
+  <div class="download-1">
+    <img src="sources\iPhone-12-PNG-Image-File.png">
+    <div class="download-info">
+      <h1>Never stop listening</h1>
+      <p>Zesia is available on Web, Windows, iOS, Android</p>
+      <div class="download-buttons">
+        <a href="#"><img src="sources\1024px-Google_Play_Store_badge_EN.png"></a>
+        <a href="#"><img src="sources\appstorebutton.png"></a>
+      </div>
+    </div>
+  </div>
+  <div class="download-2">
+    <div class="download-2-info">
+      <h1>Have a music that will composed great with our platform?</h1>
+      <p>Get on Zesia to connect with fans, share your sounds, and grow your audience. What are you waiting for?</p>
+      <a href="#">Find out more</a>
+    </div>
+    <img src="sources\1_kontroler-dj-landscape1607081418_22465.jpg">
+  </div>
+</div>
+
+<div class="third-screen">
+
+  <div class="gallery-screen">
+
+    <div class="gallery-shape">
+      <p>Your Daily Zesia Of Music Your Daily Zesia Of Music</p>
+      <p>Your Daily Zesia Of Music Your Daily Zesia Of Music</p>
+      <p>Your Daily Zesia Of Music Your Daily Zesia Of Music</p>
+    </div>
+
+    <div class="gallery-item item-2">
+      <img src="sources\akstudiopl.github.io_Zesia_3.png">
+    </div>
+    <div class="gallery-item item-1">
+      <img src="sources\akstudiopl.github.io_Zesia_(iPhone 12 Pro).png">
+    </div>
+    <div class="gallery-item item-2">
+      <img src="sources\akstudiopl.github.io_Zesia_2.png">
+    </div>
+  </div>
+
+</div>
+
+
+<script>
+$(document).ready(function(){
+  $('.counter').counterUp({
+    delay: 25,
+    time: 3000
+  });
+});
+</script>
 </body>
 </html>
