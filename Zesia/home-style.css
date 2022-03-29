@@ -331,8 +331,8 @@ body.active
 }
 .second-container
 {
-  width: 70vw;
-  margin-left: 15vw;
+  width: 50vw;
+  margin-left: 25vw;
   display: grid;
   grid-template-columns: repeat(3, 32%);
   grid-gap: 2%;
@@ -366,8 +366,8 @@ body.active
 }
 .second-center-content
 {
-  width: 70vw;
-  margin-left: 15vw;
+  width: 50vw;
+  margin-left: 25vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -427,12 +427,13 @@ body.active
 {
   margin-top: 75px;
   margin-bottom: 75px;
-  width: 70vw;
-  margin-left: 15vw;
+  width: 50vw;
+  margin-left: 25vw;
   display: grid;
-  grid-template-columns: repeat(2, 49%);
-  grid-gap: 2%;
+  grid-template-columns: repeat(1, 50%);
+  grid-gap: 0%;
   grid-row-gap: 25px;
+  justify-content: center;
 }
 .work-item
 {
@@ -443,7 +444,7 @@ body.active
   justify-content: center;
   align-items:center;
   font-weight: 100;
-  padding: 10px;
+  padding: 30px 15px;
   border-top: var(--border);
 }
 .work-item i
@@ -462,14 +463,6 @@ body.active
   text-align: center;
   color: var(--color);
   z-index: 5;
-}
-.work-icon-background
-{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .work-icon-background i
 {
@@ -493,7 +486,7 @@ body.active
 }
 .download-1 img
 {
-  width: 40vw;
+  width: 25vw;
 }
 .download-info h1
 {
@@ -570,6 +563,7 @@ body.active
   display: flex;
   align-items: center;
   justify-content: center;
+  display: flex;
   width: 100vw;
 }
 .gallery-screen img
@@ -578,20 +572,35 @@ body.active
 }
 .gallery-item.item-1 img
 {
-  width: 25vw;
+  width: 15vw;
   -webkit-box-shadow: 0px 10px 38px -12px rgba(0, 0, 0, 1);
   -moz-box-shadow: 0px 10px 38px -12px rgba(0, 0, 0, 1);
   box-shadow: 0px 10px 38px -12px rgba(0, 0, 0, 1);
+  transition: 0.3s;
+  animation: bounce 2s infinite;
 }
+
 .gallery-item.item-2 img
 {
-  width: 22.5vw;
-  margin: -50px;
+  width: 12.5vw;
+  margin: -30px;
   z-index: -1;
   position: relative;
   -webkit-box-shadow: 0px 10px 38px -12px rgba(0, 0, 0, 1);
   -moz-box-shadow: 0px 10px 38px -12px rgba(0, 0, 0, 1);
   box-shadow: 0px 10px 38px -12px rgba(0, 0, 0, 1);
+}
+.rot-left
+{
+    transform: rotate(5deg);
+    z-index: -1;
+    position: relative;
+}
+.rot-right
+{
+    transform: rotate(-5deg);
+    z-index: -1;
+    position: relative;
 }
 .gallery-shape
 {
@@ -610,20 +619,18 @@ body.active
 }
 .gallery-shape p
 {
-  color: var(--maincolor);
+  color: var(--color);
   letter-spacing: 2px;
   width: 100vw;
-  opacity: 0.15;
-  font-size: 60px;
+  height: auto;
+  opacity: 1;
+  font-size: 250px;
   white-space: nowrap;
+  font-weight: 100;
   overflow: hidden;
   text-overflow: clip;
   text-align: center;
   text-transform: uppercase;
-}
-.gallery-screen:hover .gallery-shape
-{
-  background: var(--backgroundsecond);
 }
 .third-info
 {
@@ -653,15 +660,14 @@ body.active
 }
 .showcase-image img
 {
-  width: 80vw;
-  opacity: 0.4;
-  filter: grayscale(1);
+  height: 27vw;
+  opacity: 0.15;
 }
 .showcase-shape
 {
-  width: 80vw;
+  width: 40vw;
   position: absolute;
-  height: 54vw;
+  height: 27vw;
   background: rgb(222,228,234);
   background: radial-gradient(circle, rgba(222,228,234,0) 0%, rgba(222,228,234,1) 54%);
   display: flex;
@@ -679,8 +685,71 @@ body.active
   color: var(--background);
   font-size: 20px;
 }
-
-
+.footer
+{
+  background: var(--background);
+  margin-top: 75px;
+}
+.footer-container
+{
+  display: grid;
+  grid-template-columns: repeat(3, 25%);
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px 20vw;
+}
+.footer-container h1
+{
+  color: var(--color);
+  border-bottom: var(--border);
+  padding-bottom: 10px;
+}
+.footer-container ul
+{
+  list-style-type: none;
+  padding: 10px 0;
+}
+.footer-container ul li
+{
+  padding: 2px 0;
+}
+.footer-container ul li a
+{
+  color: var(--color);
+  text-decoration: none;
+  padding-left: 5px;
+  transition: 0.3s;
+}
+.footer-container ul li a:hover
+{
+  margin-left: 5px;
+  color: var(--maincolor);
+  border-left: var(--border);
+}
+.footer-end
+{
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: var(--backgroundsecond);
+}
+.footer-end p
+{
+  padding: 0 25px;
+  color: var(--maincolor);
+}
+.footer-end-images
+{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-end-images img
+{
+  height: 20px;
+  padding: 5px 0;
+}
 @media (max-width: 701px) {
   .main-view .main-image img
   {
@@ -779,5 +848,11 @@ body.active
   .gallery-shape p
   {
     color: var(--color);
+  }
+  .footer-container
+  {
+    display: grid;
+    grid-template-columns: repeat(1, 90%);
+    justify-content: space-between;
   }
 }

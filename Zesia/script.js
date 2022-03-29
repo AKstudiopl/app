@@ -290,8 +290,12 @@ mainAudio.addEventListener("ended", ()=>{
 
 
 const topOptionBtn = document.getElementsByClassName('top-controls-more-btn')[0]
+const topOptionExit = document.getElementsByClassName('exit-top-more-head')[0]
 const topOption = document.getElementsByClassName('top-controls-more')[0]
 topOptionBtn.addEventListener('click', () => {
+  topOption.classList.toggle('active')
+})
+topOptionExit.addEventListener('click', () => {
   topOption.classList.toggle('active');
 })
 
