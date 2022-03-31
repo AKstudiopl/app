@@ -99,6 +99,10 @@ shuffleBtn = wrapper.querySelector("#shuffle"),
 songRate = wrapper.querySelector(".lyrics-container #song-rate"),
 queueName = wrapper.querySelector(".queue-container .name"),
 queueImg = wrapper.querySelector(".queue-container img"),
+reviewArtist = wrapper.querySelector(".artist-review-artist"),
+reviewName = wrapper.querySelector(".artist-review-name"),
+reviewImg = wrapper.querySelector(".lyrics-container img"),
+musicBackgroundImage = wrapper.querySelector(".background-music-img img"),
 queueArtist = wrapper.querySelector(".queue-container .artist");
 
 
@@ -120,6 +124,7 @@ function personalLIst() {
 window.addEventListener("load", ()=>{
   loadMusic(musicIndex);
   checkQuestion();
+  loadShortcuts();
 })
 
 musicImg.addEventListener("click", ()=>{
@@ -130,11 +135,15 @@ function loadMusic(indexNumb){
   musicName.innerText = allMusic[indexNumb - 1].name;
   musicArtist.innerText = allMusic[indexNumb - 1].artist;
   musicImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
+  musicBackgroundImage.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
   mainAudio.src = `songs/${allMusic[indexNumb - 1].src}.mp3`;
   songRate.innerText = allMusic[indexNumb - 1].rate;
   smallName.innerText = allMusic[indexNumb - 1].name;
   smallArtist.innerText = allMusic[indexNumb - 1].artist;
   smallImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
+  reviewName.innerText = allMusic[indexNumb - 1].name;
+  reviewArtist.innerText = allMusic[indexNumb - 1].artist;
+  reviewImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
   mainAudio.volume = document.getElementById("volumeslider").value;
 
   if (wrapper.classList.contains('personal-Music')) {
@@ -567,6 +576,23 @@ function setvolume(){
   musicstyleexit.addEventListener('click', () => {
       personalItem.classList.remove('active')
   })
+
+function loadShortcuts() {
+
+  const topShourcutButton1 = document.getElementsByClassName('shortcut-1')[0]
+  const topShourcutButton2 = document.getElementsByClassName('shortcut-2')[0]
+  const topShourcutButton3 = document.getElementsByClassName('shortcut-3')[0]
+  topShourcutButton1.addEventListener('click', () => {
+      topShourcutButton1.classList.add('active')
+  })
+  topShourcutButton2.addEventListener('click', () => {
+    topShourcutButton2.classList.toggle('active');
+  })
+  topShourcutButton3.addEventListener('click', () => {
+    topShourcutButton3.classList.toggle('active');
+  })
+
+}
 
   const dataSwitch = document.getElementsByClassName('save-data')[0]
   dataSwitch.addEventListener('click', () => {

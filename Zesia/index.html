@@ -521,6 +521,10 @@
 
   <div class="main-music-screen">
 
+    <div class="background-music-img">
+      <img src="images\scaled-and-icy-b-iext104194001.jpg">
+    </div>
+
     <div class="top-controls">
       <a href="#" class="hide-Music-Menu"><i class="fa-solid fa-angle-left"></i></a>
       <a href="zesia.html" id="title-sound"><img src="brandsources\IMG_20220320_144711.png"/></a>
@@ -529,15 +533,36 @@
 
     <div class="top-controls-more">
       <div class="top-more-head">
-      <h1>Więcej</h1>
+      <h1>Opcje</h1>
       <i class="fa-solid fa-xmark exit-top-more-head"></i>
       </div>
-      <a href="#">Wykonawca</a>
-      <a href="#">Lubię to</a>
-      <a href="#">Udostępnij</a>
-      <a href="#">Ustaw czas odtwarzania</a>
-      <a href="#">Pomoc</a>
-      <a href="#">Zgłoś zawartość</a>
+      <div class="top-more-shortcut">
+        <div class="top-shortcut-item .shortcut-1">
+          <a class="shortcut-repeat-btn">
+            <i class="fa-solid fa-repeat"></i>
+            <p>Zapętl</p>
+          </a>
+        </div>
+        <div class="top-shortcut-item .shortcut-2">
+          <a class="shortcut-rate-btn">
+            <i class="fa-solid fa-angle-up"></i>
+            <p>Opinie</p>
+          </a>
+        </div>
+        <div class="top-shortcut-item .shortcut-3">
+          <a class="shortcut-shuffle-btn">
+            <i class="fa-solid fa-shuffle"></i>
+            <p>Losowe</p>
+          </a>
+        </div>
+      </div>
+      <div class="top-menu-list">
+      <a href="#"><i class="fa-solid fa-user-astronaut"></i> Wykonawca</a>
+      <a href="#"><i class="fa-solid fa-share-nodes"></i> Udostępnij</a>
+      <a href="#"><i class="fa-solid fa-hourglass"></i> Ustaw czas odtwarzania</a>
+      <a href="#"><i class="fa-solid fa-briefcase-medical"></i> Pomoc</a>
+      <a href="#"><i class="fa-solid fa-ticket"></i> Zgłoś zawartość</a>
+      </div>
     </div>
 
     <div class="main-music-header">
@@ -617,16 +642,24 @@
 
   </div>
 
-    <div class="lyrics-button">
-      <a href="#" class="rateBtn"><i class="OpinieIcon fa-solid fa-angle-up"></i>Opinie</a>
-    </div>
+  <div class="lyrics-button">
+    <a href="#" class="rateBtn"><i class="OpinieIcon fa-solid fa-angle-up"></i>Opinie</a>
+  </div>
 
     <div class="lyrics">
       <div class="lyrics-container">
-        <h1>Średnia ocena utworu</h1>
-        <p id="song-rate">
-        </p>
-        <a href="#"><i class="fa-solid fa-heart"></i> Oceń</a>
+        <img src="IMG_20220322_224333.jpg">
+        <div class="review-title">
+        <span class="artist-review-artist"></span>
+        <span> - </span>
+        <span class="artist-review-name"></span>
+        </div>
+        <div class="lyrics-top">
+          <p id="song-rate">
+          </p>
+          <a href="#"><i class="fa-solid fa-heart"></i> Oceń</a>
+        </div>
+        <h3>Oceny utworów pomagają wykonacy oraz słuchaczom na większą swobode działania</h3>
       </div>
     </div>
 
@@ -708,13 +741,9 @@
           <a href="#"><i class="fa-solid fa-heart"></i> Polub</a>
         </div>
       <p>Utwory :</p>
-
         <ul>
 
-
-
         </ul>
-
     </div>
   </div>
 </div>

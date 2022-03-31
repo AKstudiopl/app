@@ -10,6 +10,7 @@
     <link rel="shortcut icon" type="image" href="brandsources\20220320_150124.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="javascript\home-script.js" defer></script>
     <script src="script.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -30,11 +31,6 @@
   </div>
 
   <div class="navbar-menu">
-
-    <div class="nav-menu-top">
-    <img src="brandsources\IMG_20220320_144711.png">
-    <a class="nav-menu-exit"><i class="fa-solid fa-bars"></i></a>
-    </div>
 
     <div class="menu-line"></div>
 
@@ -225,14 +221,37 @@
 
 </div>
 
-<div class="images-showcase">
-  <div class="showcase-image">
-    <img src="brandsources\20220320_150124.png">
+
+
+<div class="slider-screen">
+
+  <!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+
+      <div class="swiper-slide">
+        <img src="sources\image-centersrco13fa.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="sources\image-centersrco13fa.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="sources\image-centersrco13fa.jpg" alt="">
+      </div>
+
+      <!-- Slides -->
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
   </div>
-  <div class="showcase-shape">
-    <img src="brandsources\IMG_20220320_144711.png">
-  </div>
+
 </div>
+
 
 <div class="download-view">
   <div class="download-1">
@@ -255,6 +274,7 @@
     <img src="sources\1_kontroler-dj-landscape1607081418_22465.jpg">
   </div>
 </div>
+
 
 
 <div class="footer">
@@ -306,6 +326,25 @@ $(document).ready(function(){
     time: 1500
   });
 });
+</script>
+
+<script>
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 </script>
 </body>
 </html>
