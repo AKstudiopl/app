@@ -124,7 +124,6 @@ function personalLIst() {
 window.addEventListener("load", ()=>{
   loadMusic(musicIndex);
   checkQuestion();
-  loadShortcuts();
 })
 
 musicImg.addEventListener("click", ()=>{
@@ -284,6 +283,7 @@ repeatBtn.addEventListener("click", ()=>{
   repeatBtn.classList.toggle('active');
   shuffleBtn.classList.remove('active');
   wrapper.classList.remove("shuffle");
+  wrapper.classList.toggle("repeat");
 });
 
 shuffleBtn.addEventListener("click", ()=>{
@@ -291,6 +291,7 @@ shuffleBtn.addEventListener("click", ()=>{
   shuffleBtn.classList.toggle('active');
   repeatBtn.classList.remove('active');
   wrapper.classList.toggle("shuffle");
+  wrapper.classList.remove("repeat");
 });
 
 mainAudio.addEventListener("ended", ()=>{
@@ -303,9 +304,13 @@ const topOptionExit = document.getElementsByClassName('exit-top-more-head')[0]
 const topOption = document.getElementsByClassName('top-controls-more')[0]
 topOptionBtn.addEventListener('click', () => {
   topOption.classList.toggle('active')
+  shortcutCheck();
+  rateBtn.style.visibility = "hidden";
 })
 topOptionExit.addEventListener('click', () => {
   topOption.classList.toggle('active');
+  shortcutCheck();
+  rateBtn.style.visibility = "visible";
 })
 
 const currentPlaylistBtn = document.getElementsByClassName('current-playlist-btn')[0]
@@ -564,6 +569,18 @@ function setvolume(){
       rateScreen.classList.toggle('active');
       rateIcon.classList.toggle('fa-angle-up');
       rateIcon.classList.toggle('fa-angle-down');
+      if (rateScreen.classList.contains('active')) {
+        topShourcutButtonRate.classList.add('active');
+      }
+      else {
+        topShourcutButtonRate.classList.remove('active');
+      }
+      if (topShourcutButtonRate.classList.contains('active')) {
+        rateBtn.style.visibility = "visible";
+      }
+      else {
+        rateBtn.style.visibility = "hidden";
+      }
   })
 
 
@@ -577,22 +594,78 @@ function setvolume(){
       personalItem.classList.remove('active')
   })
 
-function loadShortcuts() {
 
-  const topShourcutButton1 = document.getElementsByClassName('shortcut-1')[0]
-  const topShourcutButton2 = document.getElementsByClassName('shortcut-2')[0]
-  const topShourcutButton3 = document.getElementsByClassName('shortcut-3')[0]
-  topShourcutButton1.addEventListener('click', () => {
-      topShourcutButton1.classList.add('active')
-  })
-  topShourcutButton2.addEventListener('click', () => {
-    topShourcutButton2.classList.toggle('active');
-  })
-  topShourcutButton3.addEventListener('click', () => {
-    topShourcutButton3.classList.toggle('active');
-  })
-
+function shortcutCheck() {
+  if (wrapper.classList.contains("repeat")) {
+    mainAudio.loop = true;
+    topShourcutButtonRepeat.classList.add('active');
+    repeatBtn.classList.add('active');
+  }
+  else {
+    mainAudio.loop = false;
+    topShourcutButtonRepeat.classList.remove('active');
+    repeatBtn.classList.remove('active');
+  }
+  if (wrapper.classList.contains("shuffle")) {
+      shuffleBtn.classList.add('active');
+      topShourcutButtonShuffle.classList.add('active');
+      shuffleBtn.classList.add('active');
+  }
+  else {
+      topShourcutButtonShuffle.classList.remove('active');
+      shuffleBtn.classList.remove('active');
+  }
 }
+
+  const topShourcutButtonRepeat = document.querySelector('.shortcut-repeat')
+    topShourcutButtonRepeat.addEventListener('click', () => {
+      topShourcutButtonRepeat.classList.toggle('active');
+      if (topShourcutButtonRepeat.classList.contains('active')) {
+        mainAudio.loop = true;
+        repeatBtn.classList.add('active');
+        wrapper.classList.add("repeat");
+      }
+      else {
+        mainAudio.loop = false;
+        repeatBtn.classList.remove('active');
+        wrapper.classList.remove("repeat");
+      }
+      if (topShourcutButtonRepeat.classList.contains('active')) {
+        topShourcutButtonShuffle.classList.remove('active')
+        wrapper.classList.add("repeat");
+        wrapper.classList.remove("shuffle");
+      }
+  })
+
+  const topShourcutButtonRate = document.querySelector('.shortcut-rate')
+    topShourcutButtonRate.addEventListener('click', () => {
+      topShourcutButtonRate.classList.toggle('active');
+      rateScreen.classList.toggle('active');
+      if (topShourcutButtonRate.classList.contains('active')) {
+        rateBtn.style.visibility = "visible";
+      }
+      else {
+        rateBtn.style.visibility = "hidden";
+      }
+  })
+
+  const topShourcutButtonShuffle = document.querySelector('.shortcut-shuffle')
+    topShourcutButtonShuffle.addEventListener('click', () => {
+      topShourcutButtonShuffle.classList.toggle('active');
+      if (topShourcutButtonShuffle.classList.contains('active')) {
+        mainAudio.loop = false;
+        wrapper.classList.add("shuffle");
+        wrapper.classList.remove("repeat");
+      }
+      else {
+        wrapper.classList.remove("shuffle");
+      }
+      if (topShourcutButtonShuffle.classList.contains('active')) {
+        topShourcutButtonRepeat.classList.remove('active')
+        wrapper.classList.add("shuffle");
+        wrapper.classList.remove("repeat");
+      }
+  })
 
   const dataSwitch = document.getElementsByClassName('save-data')[0]
   dataSwitch.addEventListener('click', () => {
