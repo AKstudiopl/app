@@ -671,3 +671,18 @@ function shortcutCheck() {
   dataSwitch.addEventListener('click', () => {
       wrapper.classList.toggle('save-data');
   })
+
+  if ('mediaSession' in navigator) {
+  navigator.mediaSession.metadata = new MediaMetadata({
+    title: 'Unforgettable',
+    artist: 'Nat King Cole',
+    album: 'The Ultimate Collection (Remastered)',
+    artwork: [
+      { src: 'https://dummyimage.com/384x384', sizes: '384x384', type: 'image/png' },
+      { src: 'https://dummyimage.com/512x512', sizes: '512x512', type: 'image/png' },
+    ]
+  });
+
+  navigator.mediaSession.setActionHandler('previoustrack', prevMusic());
+  navigator.mediaSession.setActionHandler('nexttrack', nextMusic());
+}
