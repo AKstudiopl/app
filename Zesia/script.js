@@ -144,6 +144,8 @@ function loadMusic(indexNumb){
   reviewArtist.innerText = allMusic[indexNumb - 1].artist;
   reviewImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
   mainAudio.volume = document.getElementById("volumeslider").value;
+  MediaMetadata.title = allMusic[indexNumb - 1].name;
+  MediaMetadata.artist = allMusic[indexNumb - 1].artist;
 
   if (wrapper.classList.contains('personal-Music')) {
     musicName.innerText = personalMusic[indexNumb - 1].name;
@@ -675,7 +677,7 @@ function shortcutCheck() {
   if ('mediaSession' in navigator) {
 
       navigator.mediaSession.metadata = new MediaMetadata({
-      title: 'Never Gonna Give You Up',
+      title: '',
       artist: 'Rick Astley',
       album: 'Whenever You Need Somebody',
       artwork: [
@@ -688,8 +690,10 @@ function shortcutCheck() {
       ]
       });
 
-      navigator.mediaSession.setActionHandler('play', playMusic());
-      navigator.mediaSession.setActionHandler('pause', pauseMusic());
-      navigator.mediaSession.setActionHandler('previoustrack', prevMusic());
-      navigator.mediaSession.setActionHandler('nexttrack', nextMusic());
+      navigator.mediaSession.setActionHandler('play', function() {});
+      navigator.mediaSession.setActionHandler('pause', function() {});
+      navigator.mediaSession.setActionHandler('seekbackward', function() {});
+      navigator.mediaSession.setActionHandler('seekforward', function() {});
+      navigator.mediaSession.setActionHandler('previoustrack', function() {});
+      navigator.mediaSession.setActionHandler('nexttrack', function() {});
   }
