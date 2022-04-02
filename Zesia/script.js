@@ -124,6 +124,7 @@ function personalLIst() {
 window.addEventListener("load", ()=>{
   loadMusic(musicIndex);
   checkQuestion();
+  updateMetadata(musicIndex);
 })
 
 musicImg.addEventListener("click", ()=>{
@@ -144,8 +145,7 @@ function loadMusic(indexNumb){
   reviewArtist.innerText = allMusic[indexNumb - 1].artist;
   reviewImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
   mainAudio.volume = document.getElementById("volumeslider").value;
-  MediaMetadata.title = allMusic[indexNumb - 1].name;
-  MediaMetadata.artist = allMusic[indexNumb - 1].artist;
+
 
   if (wrapper.classList.contains('personal-Music')) {
     musicName.innerText = personalMusic[indexNumb - 1].name;
@@ -169,12 +169,36 @@ function loadMusic(indexNumb){
     smallImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
   }
 
-
-
     if (wrapper.classList.contains('save-data')) {
       musicImg.src = `IMG_20220322_224333.jpg`;
       smallImg.src = `IMG_20220322_224333.jpg`;
     }
+
+    console.log('Playing ' + allMusic[indexNumb - 1].name + ' track...');
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: allMusic[indexNumb - 1].name,
+      artist: allMusic[indexNumb - 1].artist,
+      artwork: [
+        allMusic[indexNumb - 1].img
+      ]
+    });
+
+}
+
+function updateMetadata() {
+
+  navigator.mediaSession.setActionHandler('play', function() {
+    playMusic();
+  });
+  navigator.mediaSession.setActionHandler('pause', function() {
+    pauseMusic();
+  });
+  navigator.mediaSession.setActionHandler('previoustrack', function() {
+    nextMusic();
+  });
+  navigator.mediaSession.setActionHandler('nexttrack', function() {
+    prevMusic();
+  });
 }
 
 function playMusic(){
@@ -673,33 +697,3 @@ function shortcutCheck() {
   dataSwitch.addEventListener('click', () => {
       wrapper.classList.toggle('save-data');
   })
-
-  if ('mediaSession' in navigator) {
-
-      navigator.mediaSession.metadata = new MediaMetadata({
-      title: '',
-      artist: 'Rick Astley',
-      album: 'Whenever You Need Somebody',
-      artwork: [
-          { src: 'https://dummyimage.com/96x96',   sizes: '96x96',   type: 'image/png' },
-          { src: 'https://dummyimage.com/128x128', sizes: '128x128', type: 'image/png' },
-          { src: 'https://dummyimage.com/192x192', sizes: '192x192', type: 'image/png' },
-          { src: 'https://dummyimage.com/256x256', sizes: '256x256', type: 'image/png' },
-          { src: 'https://dummyimage.com/384x384', sizes: '384x384', type: 'image/png' },
-          { src: 'https://dummyimage.com/512x512', sizes: '512x512', type: 'image/png' },
-      ]
-      });
-
-      navigator.mediaSession.setActionHandler('play', function() {
-        playMusic();
-      });
-      navigator.mediaSession.setActionHandler('pause', function() {
-        pauseMusic();
-      });
-      navigator.mediaSession.setActionHandler('previoustrack', function() {
-        nextMusic();
-      });
-      navigator.mediaSession.setActionHandler('nexttrack', function() {
-        prevMusic();
-      });
-  }
