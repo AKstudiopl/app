@@ -124,7 +124,6 @@ function personalLIst() {
 window.addEventListener("load", ()=>{
   loadMusic(musicIndex);
   checkQuestion();
-  updateMetadata(musicIndex);
 })
 
 musicImg.addEventListener("click", ()=>{
@@ -178,27 +177,30 @@ function loadMusic(indexNumb){
     navigator.mediaSession.metadata = new MediaMetadata({
       title: allMusic[indexNumb - 1].name,
       artist: allMusic[indexNumb - 1].artist,
-      artwork: [
-        allMusic[indexNumb - 1].img
-      ]
-    });
+      artwork:  [
+      { src: `images/${allMusic[indexNumb - 1].img}.jpg`, sizes: '96x96',   type: 'image/png' },
+      { src: `images/${allMusic[indexNumb - 1].img}.jpg`, sizes: '128x128', type: 'image/png' },
+      { src: `images/${allMusic[indexNumb - 1].img}.jpg`, sizes: '192x192', type: 'image/png' },
+      { src: `images/${allMusic[indexNumb - 1].img}.jpg`, sizes: '256x256', type: 'image/png' },
+      { src: `images/${allMusic[indexNumb - 1].img}.jpg`, sizes: '384x384', type: 'image/png' },
+      { src: `images/${allMusic[indexNumb - 1].img}.jpg`, sizes: '512x512', type: 'image/png' },
+                ]
+      });
 
-}
+      navigator.mediaSession.setActionHandler('play', function() {
+        playMusic();
+      });
+      navigator.mediaSession.setActionHandler('pause', function() {
+        pauseMusic();
+      });
+      navigator.mediaSession.setActionHandler('previoustrack', function() {
+        nextMusic();
+      });
+      navigator.mediaSession.setActionHandler('nexttrack', function() {
+        prevMusic();
+      });
 
-function updateMetadata() {
 
-  navigator.mediaSession.setActionHandler('play', function() {
-    playMusic();
-  });
-  navigator.mediaSession.setActionHandler('pause', function() {
-    pauseMusic();
-  });
-  navigator.mediaSession.setActionHandler('previoustrack', function() {
-    nextMusic();
-  });
-  navigator.mediaSession.setActionHandler('nexttrack', function() {
-    prevMusic();
-  });
 }
 
 function playMusic(){
