@@ -91,4 +91,11 @@ var allMusic = [
       img: "scaled-and-icy-b-iext104194001",
       rate: "72.8",
   },
+  {
+      name: "Kłótnia",
+      artist: "Evtis",
+      src: "Evtis-Kłótnia",
+      img: "IMG_20220322_224333",
+      rate: "92.8",
+  },
 ]
