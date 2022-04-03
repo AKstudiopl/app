@@ -556,12 +556,51 @@
           </a>
         </div>
       </div>
+      <div class="device-item">
+          <div class="device-custom-item">
+            <label for=""><i class="fa-solid fa-volume-high"></i> Głośność</label>
+            <input type="range" onchange="setvolume()" onfocus="setvolume()" value="0.1" min=0 max=1 step=0.01 class="move-label" id="volumeslider">
+          </div>
+      </div>
       <div class="top-menu-list">
       <a href="#"><i class="fa-solid fa-user-astronaut"></i> Wykonawca</a>
       <a href="#"><i class="fa-solid fa-share-nodes"></i> Udostępnij</a>
-      <a href="#"><i class="fa-solid fa-hourglass"></i> Ustaw czas odtwarzania</a>
+      <a href="#" class="timer-toggle"><i class="fa-solid fa-hourglass"></i> Ustaw czas odtwarzania</a>
       <a href="#"><i class="fa-solid fa-briefcase-medical"></i> Pomoc</a>
       <a href="#"><i class="fa-solid fa-ticket"></i> Zgłoś zawartość</a>
+      </div>
+    </div>
+
+    <div class="timer-view">
+      <div class="timer-title">
+        <div class="timer-title-font">
+          <p>Ustaw czas odtwarzania</p>
+          <p>Opcje podane w minutach</p>
+        </div>
+        <i class="fa-solid fa-xmark timer-exit"></i>
+      </div>
+      <div class="timer-option-container">
+        <div class="timer-item 10">
+          <a href="#">10</a>
+        </div>
+        <div class="timer-item">
+          <a href="#">20</a>
+        </div>
+        <div class="timer-item">
+          <a href="#">30</a>
+        </div>
+        <div class="timer-item">
+          <a href="#">40</a>
+        </div>
+        <div class="timer-item">
+          <a href="#">50</a>
+        </div>
+        <div class="timer-item">
+          <a href="#">60</a>
+        </div>
+      </div>
+      <div class="timer-title">
+        <p>Ustaw ręcznie</p>
       </div>
     </div>
 
@@ -604,7 +643,7 @@
     </div>
 
     <div class="main-music-sec-nav">
-      <a class="device-screen-btn"><i class="fa-solid fa-headphones"></i></a>
+      <a class="device-screen-btn"><i class="fa-solid fa-download"></i></a>
       <a class="current-playlist-btn"><i class="fa-solid fa-list"></i></a>
     </div>
 
@@ -614,16 +653,10 @@
 
     <div class="device-screen">
       <div class="device-main">
-      <h2>Korekcja dzwięku</h2>
+      <h2>Funkcja dostępna wkrótce!</h2>
       <a class="device-screen-exit"><i class="fa-solid fa-angle-down"></i></a>
       </div>
-        <div class="device-item">
-          <p>Dostosuj muzykę pod własną osobowość</p>
-            <div class="device-custom-item">
-              <label for="">Głośność</label>
-              <input type="range" onchange="setvolume()" onfocus="setvolume()" value="0.1" min=0 max=1 step=0.01 class="move-label" id="volumeslider">
-            </div>
-        </div>
+
     </div>
 
   </div>

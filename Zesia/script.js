@@ -173,7 +173,7 @@ function loadMusic(indexNumb){
       smallImg.src = `IMG_20220322_224333.jpg`;
     }
 
-    console.log('Playing ' + allMusic[indexNumb - 1].name + ' track...');
+
     navigator.mediaSession.metadata = new MediaMetadata({
       title: allMusic[indexNumb - 1].name,
       artist: allMusic[indexNumb - 1].artist,
@@ -697,5 +697,26 @@ function shortcutCheck() {
 
   const dataSwitch = document.getElementsByClassName('save-data')[0]
   dataSwitch.addEventListener('click', () => {
-      wrapper.classList.toggle('save-data');
+      wrapper.classList.toggle('save-data')
+  })
+
+  const timerToggle = document.getElementsByClassName('timer-toggle')[0]
+  const timerView = document.getElementsByClassName('timer-view')[0]
+  const timerExit = document.getElementsByClassName('timer-exit')[0]
+  timerToggle.addEventListener('click', () => {
+      timerView.classList.add('active');
+  })
+  timerExit.addEventListener('click', () => {
+      timerView.classList.remove('active');
+  })
+
+  const timerOptions = document.querySelector(".timer-option-container"),
+  timerItem = timerOptions.querySelector(".timer-item");
+
+
+  timerItem.addEventListener('click', () => {
+    setTimeout(
+      function() {
+        pauseMusic();
+      }, 600000);
   })
