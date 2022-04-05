@@ -500,6 +500,7 @@ body.active
 {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .download-1 img
 {
@@ -537,6 +538,7 @@ body.active
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 25px 0;
 }
 .download-2-info
 {
@@ -589,23 +591,24 @@ body.active
 }
 .gallery-item.item-1 img
 {
-  width: 15vw;
-  -webkit-box-shadow: 0px 10px 38px -12px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 0px 10px 38px -12px rgba(0, 0, 0, 1);
-  box-shadow: 0px 10px 38px -12px rgba(0, 0, 0, 1);
+  width: 35vw;
   transition: 0.3s;
-  animation: bounce 2s infinite;
 }
-
+.gallery-item.item-2
+{
+  position: relative;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: -30px;
+}
 .gallery-item.item-2 img
 {
-  width: 12.5vw;
-  margin: -30px;
+  width: 25vw;
   z-index: -1;
   position: relative;
-  -webkit-box-shadow: 0px 10px 38px -12px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 0px 10px 38px -12px rgba(0, 0, 0, 1);
-  box-shadow: 0px 10px 38px -12px rgba(0, 0, 0, 1);
+  margin: -35vw;
 }
 .rot-left
 {
@@ -769,21 +772,24 @@ body.active
 }
 .slider-screen
 {
-
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 15px 0;
+  width: 100vw;
 }
 .swiper
 {
   width: 50%;
-  border-radius: 225px;
-  aspect-ratio: 16 / 9;
+  border-radius: 5px;
 }
 .swiper-slide
 {
-  line-height: 0;
+  border-top: var(--border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: var(--border);
 }
 .swiper-slide img
 {
@@ -795,17 +801,16 @@ body.active
 }
 .swiper .swiper-pagination-bullet
 {
-  width: 15px;
+  width: 10px;
   height: 10px;
-  border-radius: 5px;
+  border-radius: 50%;
   transition: 0.2s;
 }
 .swiper .swiper-pagination-bullet-active
 {
-  background: var(--maincolor);
-  width: 30px;
-  border: 1px #ffffff25 solid;
+  background: var(--dark);
 }
+
 
 @media (max-width: 701px) {
   .main-view .main-image img
@@ -911,5 +916,9 @@ body.active
     display: grid;
     grid-template-columns: repeat(1, 90%);
     justify-content: space-between;
+  }
+  .swiper
+  {
+    width: 90%;
   }
 }

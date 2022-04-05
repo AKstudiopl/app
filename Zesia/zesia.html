@@ -198,13 +198,13 @@
     </div>
 
     <div class="gallery-item item-2 rot-right">
-      <img src="sources\akstudiopl.github.io_Zesia_3.png">
+      <img src="mockupsrc\threed_mockup(1).png">
     </div>
     <div class="gallery-item item-1">
-      <img src="sources\akstudiopl.github.io_Zesia_(iPhone 12 Pro).png">
+      <img src="mockupsrc\threed_mockup.png">
     </div>
     <div class="gallery-item item-2 rot-left">
-      <img src="sources\akstudiopl.github.io_Zesia_2.png">
+      <img src="mockupsrc\threed_mockup(2).png">
     </div>
   </div>
 
@@ -231,15 +231,23 @@
       <!-- Slides -->
 
       <div class="swiper-slide">
-        <img src="sources\image-centersrco13fa.jpg" alt="">
+        <img src="mockupsrc\threed_mockup.png">
       </div>
       <div class="swiper-slide">
-        <img src="sources\image-centersrco13fa.jpg" alt="">
+        <img src="mockupsrc\threed_mockup.png">
       </div>
       <div class="swiper-slide">
-        <img src="sources\image-centersrco13fa.jpg" alt="">
+        <img src="mockupsrc\threed_mockup.png">
       </div>
-
+      <div class="swiper-slide">
+        <img src="mockupsrc\threed_mockup.png">
+      </div>
+      <div class="swiper-slide">
+        <img src="mockupsrc\threed_mockup.png">
+      </div>
+      <div class="swiper-slide">
+        <img src="mockupsrc\threed_mockup.png">
+      </div>
       <!-- Slides -->
     </div>
     <!-- If we need pagination -->
@@ -252,9 +260,10 @@
 </div>
 
 
+
 <div class="download-view">
   <div class="download-1">
-    <img src="sources\iPhone-12-PNG-Image-File.png">
+    <img src="mockupsrc\download_mockup.png">
     <div class="download-info">
       <h1>Never stop listening</h1>
       <p>Zesia is available on Web, Windows, iOS, Android</p>
@@ -331,7 +340,9 @@ $(document).ready(function(){
   const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
+    slidesPerView: 3,
     loop: true,
+    autoplay: true,
 
     // If we need pagination
     pagination: {

@@ -902,7 +902,11 @@ input:checked + .slider:before {
   width: 100vw;
   height: 100%;
   top: 100vh;
-  background: var(--background);
+  background: rgb(4,5,17);
+  background: -webkit-linear-gradient(bottom, rgba(4,5,17,1) 17%, rgba(4,5,17,0.8352481617647058) 100%);
+  background: -o-linear-gradient(bottom, rgba(4,5,17,1) 17%, rgba(4,5,17,0.8352481617647058) 100%);
+  background: linear-gradient(to top, rgba(4,5,17,1) 17%, rgba(4,5,17,0.8352481617647058) 100%);
+  backdrop-filter: blur(5px);
   transition: 0.5s;
   visibility: hidden;
   z-index: 5;
@@ -919,6 +923,7 @@ input:checked + .slider:before {
   margin: 15px 15px;
   justify-content: space-between;
   align-items: center;
+  color: var(--color);
 }
 .timer-title i
 {
@@ -927,41 +932,56 @@ input:checked + .slider:before {
 }
 .timer-title-font
 {
+  margin: 0px 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  border-top: var(--border);
 }
 .timer-option-container
 {
-  margin: 15px 30px;
+  margin: 0px 30px;
   display: grid;
   grid-template-columns: repeat(2, 48%);
-  grid-gap: 4%;
-  padding-bottom: 15px;
-}
-.timer-item
-{
-
+  grid-column-gap: 4%;
+  grid-row-gap: 10px;
+  border-bottom: var(--border);
+  border-top: var(--border);
+  padding: 25px 0;
 }
 .timer-item a
 {
   text-decoration: none;
-  color: var(--color);
+  color: var(--maincolor);
   font-size: 30px;
-  background: var(--maincolor);
   padding: 10px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
   transition: 0.3s;
-  border: var(--border);
+  border-radius: 10px;
+  border: 1px #1764CC solid;
   font-weight: 900;
 }
 .timer-item a:hover
 {
   transform: scale(0.9);
-  background: var(--maincolorhover);
+  color: var(--color);
+}
+.timer-tip
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+}
+.timer-tip p
+{
+  color: var(--color);
+  opacity: 0.5;
+  font-size: 10px;
 }
 .main-music-header
 {
@@ -1495,6 +1515,19 @@ input:checked + .slider:before {
   padding-top: 5px;
   align-items: center;
 }
+.review-scroll
+{
+  width: calc(100vw - 30px);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow-x: scroll;
+}
+.review-item
+{
+  width: 30vw;
+  background: var(--background);
+}
 .background-music-img
 {
   position: absolute;
@@ -1503,7 +1536,7 @@ input:checked + .slider:before {
   z-index: -1;
   display: flex;
   justify-content: center;
-  align-items: center;c
+  align-items: center;
 }
 .background-music-img img
 {

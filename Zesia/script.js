@@ -169,8 +169,8 @@ function loadMusic(indexNumb){
   }
 
     if (wrapper.classList.contains('save-data')) {
-      musicImg.src = `IMG_20220322_224333.jpg`;
-      smallImg.src = `IMG_20220322_224333.jpg`;
+      musicImg.src = `maingif.gif`;
+      smallImg.src = `maingif.gif`;
     }
 
 
@@ -711,12 +711,67 @@ function shortcutCheck() {
   })
 
   const timerOptions = document.querySelector(".timer-option-container"),
-  timerItem = timerOptions.querySelector(".timer-item");
+  timerItem10 = timerOptions.querySelector("#timer10");
+  timerItem20 = timerOptions.querySelector("#timer20");
+  timerItem30 = timerOptions.querySelector("#timer30");
+  timerItem40 = timerOptions.querySelector("#timer40");
+  timerItem50 = timerOptions.querySelector("#timer50");
+  timerItem60 = timerOptions.querySelector("#timer60");
+  timerItem90 = timerOptions.querySelector("#timer90");
+  timerItem120 = timerOptions.querySelector("#timer120");
 
-
-  timerItem.addEventListener('click', () => {
+  timerItem10.addEventListener('click', () => {
     setTimeout(
       function() {
         pauseMusic();
       }, 600000);
+  })
+
+  timerItem20.addEventListener('click', () => {
+    setTimeout(
+      function() {
+        pauseMusic();
+      }, 1200000);
+  })
+
+  timerItem30.addEventListener('click', () => {
+    setTimeout(
+      function() {
+        pauseMusic();
+      }, 1800000);
+  })
+
+  timerItem40.addEventListener('click', () => {
+    setTimeout(
+      function() {
+        pauseMusic();
+      }, 2400000);
+  })
+
+  timerItem50.addEventListener('click', () => {
+    setTimeout(
+      function() {
+        pauseMusic();
+      }, 3000000);
+  })
+
+  timerItem60.addEventListener('click', () => {
+    setTimeout(
+      function() {
+        pauseMusic();
+      }, 3600000);
+  })
+
+  timerItem90.addEventListener('click', () => {
+    setTimeout(
+      function() {
+        pauseMusic();
+      }, 5400000);
+  })
+
+  timerItem120.addEventListener('click', () => {
+    setTimeout(
+      function() {
+        pauseMusic();
+      }, 7200000);
   })
