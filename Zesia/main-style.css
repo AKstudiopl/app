@@ -361,6 +361,28 @@ input:checked + .slider:before {
   visibility: visible;
   right: 0;
 }
+.search-filter
+{
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  display: flex;
+  border-bottom: var(--border);
+  padding: 5px 0;
+}
+.search-item
+{
+  color: var(--color);
+  border: var(--border);
+  padding: 5px 15px;
+  border-radius: 15px;
+  flex: 0 0 auto;
+  margin-left: 5px;
+  transition: 0.3s;
+}
+.search-item.checked
+{
+  background: var(--maincolor);
+}
 .search-content
 {
   padding: 10px 25px;
@@ -490,20 +512,24 @@ input:checked + .slider:before {
 }
 .library-content
 {
-  padding: 10px 25px;
+  padding: 10px 0;
+  padding-left: 10px;
 }
 .library-content h1
 {
   border-bottom: var(--border);
   padding: 0 0 10px 0;
 }
+.library-content h1:nth-last-child(1)
+{
+  border-top: var(--border);
+  border-bottom: none;
+  margin: 10px 0;
+}
+
 .library-content .center-container
 {
   padding-top: 15px;
-}
-.library-content .title
-{
-  padding-bottom: 15px;
 }
 /* CONTENT STYLE */
 
@@ -610,10 +636,6 @@ input:checked + .slider:before {
   color: var(--maincolor);
   font-size: 50px;
 }
-.center-container
-{
-  padding-left: 10px;
-}
 .center-container-scrollable
 {
   display: flex;
@@ -629,9 +651,9 @@ input:checked + .slider:before {
   flex: 0 0 auto;
   width: 35vw;
   margin-top: 1vh;
-  margin-left: 10px;
   display: inline-block;
   transition: 0.3s;
+  margin-right: 10px;
 }
 .center-container-item:hover
 {
@@ -998,6 +1020,32 @@ input:checked + .slider:before {
 .main-music-header img.active
 {
   filter: grayscale(1) opacity(0.5);
+}
+.main-music-header img.viral
+{
+  filter: opacity(0.0);
+}
+.main-music-video
+{
+  position: absolute;
+  margin-left: 0px;
+  z-index: -1;
+  margin-right: 18px;
+  opacity: 0;
+  visibility: hidden;
+}
+.main-music-video.viral
+{
+  opacity: 1;
+  visibility: visible;
+}
+.main-music-video video
+{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  transition: 0.5s;
+  filter: opacity(0.75);
 }
 .main-information
 {
@@ -1517,16 +1565,33 @@ input:checked + .slider:before {
 }
 .review-scroll
 {
-  width: calc(100vw - 30px);
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  overflow-x: scroll;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: calc(100vw - 30px);
 }
 .review-item
 {
-  width: 30vw;
-  background: var(--background);
+  flex: 0 0 auto;
+  border-radius: 15px;
+  padding: 20px 15px;
+  border: var(--border);
+  margin: 0 5px;
+  background: var(--backgroundsecond);
+}
+.review-stars
+{
+  color: var(--maincolor);
+  display: flex;
+  align-items: center;
+}
+.review-stars i
+{
+  font-size: 10px;
+}
+.review-stars span
+{
+  margin-right: 5px;
 }
 .background-music-img
 {

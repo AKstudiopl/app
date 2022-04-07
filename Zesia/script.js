@@ -88,6 +88,7 @@ const wrapper = document.querySelector(".main-music"),
 musicImg = wrapper.querySelector(".main-music-header img"),
 musicName = wrapper.querySelector(".main-information-title .name"),
 musicArtist = wrapper.querySelector(".main-information-title .artist"),
+musicViral = wrapper.querySelector(".main-music-video"),
 mainAudio = wrapper.querySelector("#audio"),
 playstopButton = wrapper.querySelector("#play-stop-main-btn-action"),
 prevButton = wrapper.querySelector("#prev"),
@@ -700,6 +701,13 @@ function shortcutCheck() {
       wrapper.classList.toggle('save-data')
   })
 
+  const viralSwitch = document.getElementsByClassName('viral-mode')[0]
+  viralSwitch.addEventListener('click', () => {
+      wrapper.classList.toggle('viral')
+      musicImg.classList.toggle('viral')
+      musicViral.classList.toggle('viral')
+  })
+
   const timerToggle = document.getElementsByClassName('timer-toggle')[0]
   const timerView = document.getElementsByClassName('timer-view')[0]
   const timerExit = document.getElementsByClassName('timer-exit')[0]
@@ -774,4 +782,11 @@ function shortcutCheck() {
       function() {
         pauseMusic();
       }, 7200000);
+  })
+
+
+  const searchFilter = document.querySelectorAll('.search-item').forEach(searchFilter => {
+    searchFilter.addEventListener('click', event => {
+      searchFilter.classList.toggle('checked');
+    })
   })
