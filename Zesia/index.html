@@ -294,6 +294,25 @@
       Ostatnie opinie
     </h1>
 
+    <div class="last-reviews">
+      <div class="review-item">
+        <p>Napisz swoją pierwszą opinie!</p>
+      </div>
+      <div class="review-item">
+        <p>Napisz swoją drugą opinie!</p>
+      </div>
+      <div class="review-item">
+        <p>Napisz swoją trzecią opinie!</p>
+      </div>
+    </div>
+
+    <div class="lucky-container">
+      <h2>Chcesz znalezć coś nowego?</h2>
+      <h2>Spróbuj użyć przycisku poniżej!</h2>
+      <p>Wybrano losowa piosenka zostanie odtworzona</p>
+      <a onclick="randomIndex()">Nowa Ulubiona Muzyka?</a>
+    </div>
+
   </div>
 </div>
 
@@ -549,12 +568,19 @@
       </div>
       <div class="top-menu-list">
       <a href="#"><i class="fa-solid fa-user-astronaut"></i> Wykonawca</a>
-      <a href="#"><i class="fa-solid fa-share-nodes"></i> Udostępnij</a>
+      <a href="#" class="copyUrl" onclick="copyUrlClipboard()"><i class="fa-solid fa-share-nodes"></i> Udostępnij</a>
       <a href="#" class="timer-toggle"><i class="fa-solid fa-hourglass"></i> Ustaw czas odtwarzania</a>
-      <a href="#"><i class="fa-solid fa-briefcase-medical"></i> Pomoc</a>
-      <a href="#"><i class="fa-solid fa-ticket"></i> Zgłoś zawartość</a>
+      <a href="https://akstudiopl.github.io/Zesia/zesia.html"><i class="fa-solid fa-briefcase-medical"></i> Pomoc</a>
+      <a href="https://akstudiopl.github.io/Zesia/zesia.html"><i class="fa-solid fa-ticket"></i> Zgłoś zawartość</a>
+      </div>
+
+      <div class="alert-container">
+          <div class="copy-alert">
+            <h1>Skopiowano!</h1>
+          </div>
       </div>
     </div>
+
 
     <div class="timer-view">
       <div class="timer-title">
@@ -566,7 +592,7 @@
         <p>Opcje podane w minutach</p>
       </div>
       <div class="timer-option-container">
-        <div class="timer-item 10" id="timer10">
+        <div class="timer-item" id="timer10">
           <a href="#">10</a>
         </div>
         <div class="timer-item" id="timer20">
@@ -822,6 +848,8 @@
 </script>
 <script src="personal-list.js">
 </script>
+
+<textarea id="pageurl">https://akstudiopl.github.io/Zesia/</textarea>
 
 </script>
 </body>

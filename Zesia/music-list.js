@@ -95,7 +95,7 @@ var allMusic = [
       name: "Kłótnia",
       artist: "Evtis",
       src: "Evtis-Kłótnia",
-      img: "IMG_20220322_224333",
+      img: "C-BooL-NeverGoAway",
       rate: "92.8",
   },
 ]

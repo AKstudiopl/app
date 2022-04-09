@@ -121,7 +121,12 @@ var musicIndex = Math.floor((Math.random() * allMusic.length) + 1);
 function personalLIst() {
   wrapper.classList.toggle('personal-Music');
 }
-
+function randomIndex() {
+  var musicIndex = Math.floor((Math.random() * allMusic.length) + 1);
+  loadMusic(musicIndex);
+  playingSong();
+  playMusic();
+}
 window.addEventListener("load", ()=>{
   loadMusic(musicIndex);
   checkQuestion();
@@ -718,6 +723,13 @@ function shortcutCheck() {
       timerView.classList.remove('active');
   })
 
+  const timerItems = document.querySelectorAll('.timer-item').forEach(timerItems => {
+    timerItems.addEventListener('click', event => {
+      timerView.classList.remove('active');
+    })
+  })
+
+
   const timerOptions = document.querySelector(".timer-option-container"),
   timerItem10 = timerOptions.querySelector("#timer10");
   timerItem20 = timerOptions.querySelector("#timer20");
@@ -790,3 +802,17 @@ function shortcutCheck() {
       searchFilter.classList.toggle('checked');
     })
   })
+
+function copyUrlClipboard(){
+  var copyText = document.getElementById("pageurl").value;
+  navigator.clipboard.writeText(copyText)
+}
+const copyUrlBtn = document.querySelector('.copyUrl')
+const alertCopy = document.querySelector('.copy-alert')
+copyUrlBtn.addEventListener('click', () => {
+    alertCopy.classList.add('active');
+    setTimeout(
+      function() {
+        alertCopy.classList.remove('active');
+      }, 2000);
+})
