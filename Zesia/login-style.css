@@ -24,6 +24,71 @@ body
   background: var(--backgroundsecond);
   font-family: 'Gruppo', sans-serif;
   color: #fff;
+  overflow: hidden;
+  width: 100vw;
+  max-height: 100vh;
+}
+.background-image
+{
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+}
+.background-image img
+{
+  filter: opacity(0.25) grayscale(1);
+  height: 100vh;
+  margin-left: -25vw;
+  max-width: 100vw;
+  object-fit: cover;
+}
+.background-shape
+{
+  background: rgb(4,6,26);
+  background: linear-gradient(90deg, rgba(4,6,26,0.4066001400560224) 0%, rgba(4,6,26,1) 46%);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+}
+.load-item
+{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  top: -100vh;
+  visibility: hidden;
+  transition: 0.5s;
+  transition-timing-function: ease-out;
+  animation-play-state: paused;
+  background: var(--backgroundsecond);
+}
+.load-item.active
+{
+  top: 0;
+  visibility: visible;
+}
+.load-item img
+{
+  width: 100px;
+  animation-name: bounce-6;
+  animation-timing-function: ease;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+@keyframes bounce-6 {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-100px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(-7px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
 }
 .screen
 {
@@ -31,7 +96,7 @@ body
   z-index: 1;
   width: 100vw;
   max-height: 100vh;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(1px);
   overflow: hidden;
 }
 .shape-1
@@ -89,11 +154,18 @@ body
     width: 100vw;
     height: 100vh;
 }
-.top-navigation
+.navigation
 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: absolute;
+  width: calc(100vw - 100px);
   top: 25px;
   left: 50px;
+}
+.top-navigation
+{
   display: flex;
   align-items: center;
 }
@@ -101,10 +173,20 @@ body
 {
   color: var(--color);
   text-decoration: none;
+  transition: 0.3s;
 }
-.top-navigation i
+.top-navigation a:hover
+{
+  transform: scale(0.9);
+  color: var(--maincolor);
+}
+.top-navigation .fa-arrow-left-long
 {
   padding-right: 15px;
+}
+.top-navigation .fa-arrow-right-long
+{
+  padding-left: 15px;
 }
 .main-container
 {
@@ -138,7 +220,7 @@ body
 }
 .sign-title p
 {
-  padding: 15px 0;
+  padding: 5px 0 15px 0;
   opacity: 0.5;
 }
 .footer
@@ -186,9 +268,9 @@ input[type=password] {
   color: var(--color);
 }
 .sign-inputs a {
-  background: var(--maincolor);
   outline: none;
   border:var(--border);
+  background: #1764CC25;
   text-decoration: none;
   text-align: center;
   border-radius:5px;
@@ -199,8 +281,26 @@ input[type=password] {
 }
 .sign-inputs a:hover
 {
-  background: var(--maincolorhover);
-  transform: scaleX(0.95);
+  border: 1px #1764CC solid;
+}
+.other-metods
+{
+  display: flex;
+  flex-direction: column;
+}
+.other-metods a
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  background: var(--backgroundsecond);
+  color: var(--color);
+}
+.other-metods a i
+{
+  padding: 0 10px;
+  font-size: 15px;
 }
 input[type=checkbox] {
   background: transparent;
@@ -219,5 +319,13 @@ input[type=checkbox] {
   margin: 15px 0;
 }
 ::placeholder {
-  color: var(--maincolor);
+  color: var(--color);
+  opacity: 0.25;
+}
+@media (min-width: 701px) {
+  .main-container
+  {
+    width: 40vw;
+    margin-left: 30vw;
+  }
 }

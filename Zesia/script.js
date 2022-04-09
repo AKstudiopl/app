@@ -121,12 +121,6 @@ var musicIndex = Math.floor((Math.random() * allMusic.length) + 1);
 function personalLIst() {
   wrapper.classList.toggle('personal-Music');
 }
-function randomIndex() {
-  var musicIndex = Math.floor((Math.random() * allMusic.length) + 1);
-  loadMusic(musicIndex);
-  playingSong();
-  playMusic();
-}
 window.addEventListener("load", ()=>{
   loadMusic(musicIndex);
   checkQuestion();
@@ -246,6 +240,13 @@ function nextMusic(){
 function prevMusic(){
   musicIndex--;
   musicIndex < 1 ? musicIndex = allMusic.length : musicIndex = musicIndex;
+  loadMusic(musicIndex);
+  playMusic();
+  playingSong();
+}
+
+function randomIndex() {
+  var musicIndex = Math.floor((Math.random() * allMusic.length) + 1);
   loadMusic(musicIndex);
   playMusic();
   playingSong();
