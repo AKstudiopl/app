@@ -242,8 +242,7 @@ body::-webkit-scrollbar
 {
   width: 100%;
   margin-left: 10px;
-  padding-top: 5px;
-  height: calc(85% - 125px);
+  height: calc(100vh - 168px);
   overflow-y: scroll;
 }
 .settings-screen-item
@@ -564,7 +563,8 @@ input:checked + .slider:before {
   justify-content: center;
   padding-top: 15px;
   border-top: var(--border);
-    border-bottom: var(--border);
+  border-bottom: var(--border);
+  margin-bottom: 15px;
 }
 .lucky-container h2
 {
@@ -588,7 +588,7 @@ input:checked + .slider:before {
   margin-bottom: 15px;
   transition: 0.3s;
 }
-.lucky-container a:hover,
+.lucky-container a:active,
 .lucky-container a:focus
 {
   transform: scale(0.95);

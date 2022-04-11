@@ -98,4 +98,18 @@ var allMusic = [
       img: "C-BooL-NeverGoAway",
       rate: "92.8",
   },
+  {
+      name: "Idziemy Po Swoje",
+      artist: "Szusty , Guralsko",
+      src: "donGURALesko-IdziemyPoSwojeSzUstyBlend",
+      img: "guralsko",
+      rate: "85.8",
+  },
+  {
+      name: "Legenda",
+      artist: "Szusty , Guralsko",
+      src: "donGURALesko-LegendaSzUstyBlend",
+      img: "guralsko",
+      rate: "85.8",
+  },
 ]

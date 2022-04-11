@@ -55,16 +55,16 @@ body.active
 }
 .navbar
 {
+  position: fixed;
   background: var(--color);
   width: 100vw;
   top: 0;
   display: flex;
-  z-index: 4;
+  z-index: 5;
   align-items: center;
   justify-content: space-around;
   padding-top: 20px;
   padding-bottom: 20px;
-  position: relative;
 }
 .navbar-btn a
 {
@@ -120,7 +120,7 @@ body.active
 .navbar-menu
 {
   position: fixed;
-  z-index: 3;
+  z-index: 5;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -303,7 +303,10 @@ body.active
 .first-view
 {
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .second-view
 {
@@ -810,8 +813,39 @@ body.active
 {
   background: var(--dark);
 }
-
-
+.ubdates
+{
+  width: 80vw;
+  margin-left: 10vw;
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.ubdate-item
+{
+  background: var(--backgroundsecond);
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: var(--border);
+}
+.ubdate-item h1
+{
+  color: var(--maincolor);
+}
+.ubdate-item p
+{
+  border-bottom: var(--border);
+  color: var(--color);
+  padding-bottom: 15px;
+}
+.ubdate-item ul
+{
+  list-style-type: none;
+  color: var(--color);
+  padding: 15px 0;
+}
 @media (max-width: 701px) {
   .main-view .main-image img
   {
