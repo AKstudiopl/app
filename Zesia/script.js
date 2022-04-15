@@ -550,6 +550,51 @@ function searchName() {
   }
 }
 
+function filterByName() {
+  if (filterStatus.classList.contains("Hip-Hop")) {
+    var result = allMusic.filter((x)=>x.style === "Hip-Hop");
+    console.log(result);
+  }
+  if (filterStatus.classList.contains("Energic")) {
+    var result = allMusic.filter((x)=>x.style === "Energic");
+    console.log(result);
+  }
+}
+
+function filterName(x) {
+  filterStatus = document.querySelector(".search-filter");
+  if (x==1)
+  {
+      filterStatus.classList.toggle("Hip-Hop");
+      filterByName();
+  }
+  if (x==2)
+  {
+      filterStatus.classList.toggle("Energic");
+      filterByName();
+  }
+  if (x==3)
+  {
+      filterStatus.classList.toggle("Workout");
+      filterByName();
+  }
+  if (x==4)
+  {
+      filterStatus.classList.toggle("Chill");
+      filterByName();
+  }
+  if (x==5)
+  {
+      filterStatus.classList.toggle("Sad-Lofi");
+      filterByName();
+  }
+  if (x==6)
+  {
+      filterStatus.classList.toggle("Rock");
+      filterByName();
+  }
+}
+
 function ClearFields() {
      input.value = "";
 }
@@ -708,10 +753,12 @@ function shortcutCheck() {
   })
 
   const viralSwitch = document.getElementsByClassName('viral-mode')[0]
+  const musicBackgroundViral = document.getElementsByClassName('background-music-img')[0]
   viralSwitch.addEventListener('click', () => {
       wrapper.classList.toggle('viral')
       musicImg.classList.toggle('viral')
       musicViral.classList.toggle('viral')
+      musicBackgroundViral.classList.toggle('viral')
   })
 
   const timerToggle = document.getElementsByClassName('timer-toggle')[0]
@@ -745,6 +792,7 @@ function shortcutCheck() {
     setTimeout(
       function() {
         pauseMusic();
+        alertTimer();
       }, 600000);
   })
 
@@ -752,6 +800,7 @@ function shortcutCheck() {
     setTimeout(
       function() {
         pauseMusic();
+        alertTimer();
       }, 1200000);
   })
 
@@ -759,6 +808,7 @@ function shortcutCheck() {
     setTimeout(
       function() {
         pauseMusic();
+        alertTimer();
       }, 1800000);
   })
 
@@ -766,6 +816,7 @@ function shortcutCheck() {
     setTimeout(
       function() {
         pauseMusic();
+        alertTimer();
       }, 2400000);
   })
 
@@ -773,6 +824,7 @@ function shortcutCheck() {
     setTimeout(
       function() {
         pauseMusic();
+        alertTimer();
       }, 3000000);
   })
 
@@ -780,6 +832,7 @@ function shortcutCheck() {
     setTimeout(
       function() {
         pauseMusic();
+        alertTimer();
       }, 3600000);
   })
 
@@ -787,6 +840,7 @@ function shortcutCheck() {
     setTimeout(
       function() {
         pauseMusic();
+        alertTimer();
       }, 5400000);
   })
 
@@ -794,6 +848,7 @@ function shortcutCheck() {
     setTimeout(
       function() {
         pauseMusic();
+        alertTimer();
       }, 7200000);
   })
 
@@ -808,6 +863,7 @@ function copyUrlClipboard(){
   var copyText = document.getElementById("pageurl").value;
   navigator.clipboard.writeText(copyText)
 }
+
 const copyUrlBtn = document.querySelector('.copyUrl')
 const alertCopy = document.querySelector('.copy-alert')
 copyUrlBtn.addEventListener('click', () => {
@@ -817,3 +873,18 @@ copyUrlBtn.addEventListener('click', () => {
         alertCopy.classList.remove('active');
       }, 2000);
 })
+
+function alertTimer(){
+  const alertTimer = document.querySelector(".timer-alert")
+        alertTimer.classList.add('active');
+        document.addEventListener('click', () => {
+          alertTimer.classList.remove('active');
+        })
+}
+
+function searchBarUse(){
+  activeLibraryScreen.classList.remove('active')
+  activeSearchScreen.classList.add('active')
+  activeHomeScreen.classList.remove('active')
+  searchScreen.classList.add('active')
+}
