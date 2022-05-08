@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="script.js" defer></script>
 </head>
-<body class="preference dark" onload="checkQuestion()">
+<body class="preference blue" onload="checkQuestion()">
 
   <div class="loader">
       <img src="brandsources\20220320_150124.png"/>
@@ -20,6 +20,25 @@
   <div class="bad-device">
     <p>Your Device Don't Support Zesia App</p>
     <img src="brandsources\20220320_150124.png"/>
+  </div>
+
+  <div class="login-popup">
+    <div class="login-top">
+      <img src="brandsources\IMG_20220320_144711.png">
+      <p>Login</p>
+    </div>
+    <div class="login-button">
+      <a href="#">Login With Google <i class="fa-solid fa-g"></i></a>
+      <a href="#">Login With Facebook <i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#">Login With Email Adress <i class="fa-solid fa-at"></i></a>
+    </div>
+    <div class="login-or">
+      <span></span><p>or</p><span></span>
+    </div>
+    <div class="quest-button">
+      <a href="#" class="questBtn">Continue as a quest</a>
+      <a href="#">Sign up <i class="fa-solid fa-angle-right"></i></a>
+    </div>
   </div>
 
 
@@ -60,8 +79,8 @@
         <div class="settings-screen-item">
           <img src="postmalone-222.png">
             <div class="settings-screen-item-description">
-              <h3><span id="profilName"></span></h3>
-              <a href="#">Pokaż profil <i class="fa-solid fa-angle-right"></i></a>
+              <h3>Gość <span id="profilName"></span></h3>
+              <a href="#" class="profile-settins-btn">Pokaż profil <i class="fa-solid fa-angle-right"></i></a>
             </div>
         </div>
 
@@ -529,7 +548,7 @@
 
     <div class="top-controls">
       <a href="#" class="hide-Music-Menu"><i class="fa-solid fa-angle-left"></i></a>
-      <a href="zesia.html" id="title-sound"><img src="brandsources\IMG_20220320_144711.png"/></a>
+      <a href="landing.html" id="title-sound"><img src="brandsources\IMG_20220320_144711.png"/></a>
       <a href="#" class="top-controls-more-btn"><i class="fa-solid fa-ellipsis-vertical"></i></a>
     </div>
 

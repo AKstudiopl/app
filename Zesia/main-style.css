@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap');
+
 
 *
 {
@@ -15,80 +16,23 @@
   --maincolor: #1764CC;
   --maincolorhover: #4C97DE;
   --border: 1px #1764CC50 solid;
+  --gradient: radial-gradient(circle, rgba(23,100,204,1) 0%, rgba(12,18,77,1) 39%, rgba(4,6,26,1) 85%);
+}
+:greentheme
+{
+  --maincolor: #A1D91F;
+  --maincolorhover: #1ed760;
+  --border: 1px #A1D91F50 solid;
+  --background: #121212;
+  --backgroundsecond: #242424;
+  --gradient: radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(36,36,36,1) 100%);
 }
 body
 {
   background: var(--background);
-  font-family: 'PT Sans','Satisfy', sans-serif;
+  font-family: 'PT Sans','Kanit', sans-serif;
   color: #fff;
   overflow-x: hidden;
-}
-body.light
-{
-  background: #cddafd;
-  color: #111;
-}
-body.light > .navbar-bottom
-{
-  background: #cddafd;
-  border-top: 1px #ffffff75 solid;
-}
-body.light > .navbar-bottom .navbar-bottom-btn a
-{
-  color: #11111180;
-}
-body.light > .navbar-bottom .navbar-bottom-btn.active > a
-{
-  color: var(--maincolor);
-}
-body.light > .head-content
-{
-  background: linear-gradient(180deg, rgba(9,17,121,0.54338747099767986) 0%, rgba(205, 218, 253,1) 100%);
-}
-body.light > .ings-screen
-{
-  background: #cddafd;
-}
-body.light > .settings-screen .settings-screen-title
-{
-  background: #dfe7fd;
-  border-bottom: 2px #ffffff50 solid;
-}
-body.light > .settings-screen .settings-screen-title i
-{
-  color: #111;
-}
-body.light > .music-controls
-{
-  background: #cddafd;
-  border-top: 1px #ffffff75 solid;
-  border-bottom: 1px #ffffff75 solid;
-  color: var(--maincolor);
-}
-body.light > .search-container
-{
-  background: #dfe7fd;
-}
-
-body.light > .library-container
-{
-  background: #dfe7fd;
-}
-body.light > .wrapper
-{
-  color: #fff;
-}
-body.light > .wrapper .queue-container
-{
-  background: #cddafd75;
-  backdrop-filter: blur(15px);
-  color: #111;
-}
-body.light > .wrapper .top-controls-more
-{
-  background: #cddafd75;
-  backdrop-filter: blur(15px);
-  color: #111;
 }
 body::-webkit-scrollbar
 {
@@ -156,6 +100,148 @@ body::-webkit-scrollbar
       transform: scale(1);
     }
 }
+.login-popup
+{
+  position: fixed;
+  visibility: hidden;
+  top: 100vh;
+  transition: 0.5s;
+  width: calc(100% - 30px);
+  padding: 0 15px;
+  height: 100%;
+  background: var(--backgroundsecond);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.login-popup.active
+{
+  visibility: visible;
+  top: 0;
+}
+.login-popup h1
+{
+  color: var(--color);
+}
+.login-popup p
+{
+  color: var(--maincolor);
+}
+.login-button
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-button a
+{
+  text-decoration: none;
+  color: var(--color);
+  border: 1px var(--maincolor) solid;
+  width: 100%;
+  text-align: center;
+  border-radius: 15px;
+  margin: 5px 0;
+  padding: 10px 0;
+  transition: 0.25s;
+}
+.login-popup a:active
+{
+  background: var(--maincolor);
+}
+.login-popup a:hover
+{
+  background: var(--maincolor);
+}
+.login-or
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 0;
+  line-height: 1;
+}
+.login-or span
+{
+  width: 100%;
+  height: 1px;
+  background: var(--color);
+}
+.login-or p
+{
+  padding: 0 10px;
+  color: var(--color);
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  font-family: 'Kanit';
+}
+.quest-button
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.quest-button a
+{
+  text-decoration: none;
+  color: var(--color);
+  border: 1px var(--maincolor) solid;
+  width: 100%;
+  text-align: center;
+  border-radius: 15px;
+  margin: 5px 0;
+  padding: 10px 0;
+  transition: 0.25s;
+}
+.sign-button
+{
+  margin: 10px 0;
+}
+.sign-button p
+{
+  line-height: 1;
+  color: var(--color);
+}
+.sign-button a
+{
+  line-height: 1;
+  transition: 0.25s;
+  text-decoration: none;
+  color: var(--maincolor);
+  display: flex;
+  align-items: center;
+}
+.sign-button a i
+{
+  padding-left: 5px;
+}
+.login-top
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.login-top p
+{
+  padding: 30px 0;
+  font-family: 'Kanit';
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.login-top img
+{
+  width: 35%;
+}
+
+
+
 .navbar-bottom
 {
   position: fixed;
@@ -344,7 +430,7 @@ input:checked + .slider:before {
 {
   border-radius: 10px;
   background: var(--backgroundsecond);
-  border: var(--border);
+  border: 1px var(--maincolor) solid;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -552,6 +638,11 @@ input:checked + .slider:before {
 .library-content .center-container
 {
   padding-top: 15px;
+  margin-left: 0px;
+}
+.center-container
+{
+  margin-left: 10px;
 }
 .last-reviews
 {
@@ -706,6 +797,7 @@ input:checked + .slider:before {
 }
 .personal-item
 {
+  border: 1px var(--maincolor) solid;
   background: var(--backgroundsecond);
   background-repeat: no-repeat;
   background-size: cover;
@@ -716,7 +808,6 @@ input:checked + .slider:before {
   display: flex;
   height: 100px;
   transition: 0.3s;
-  border: 1px #ffffff00 solid;
 }
 .personal-item:hover
 {
@@ -746,6 +837,10 @@ input:checked + .slider:before {
   display: inline-block;
   transition: 0.3s;
   margin-right: 10px;
+}
+.center-container .center-container-item:nth-child(1)
+{
+
 }
 .center-container-item:hover
 {
@@ -845,7 +940,7 @@ input:checked + .slider:before {
   top: 0;
   z-index: 6;
   background: rgb(23,100,204);
-  background: radial-gradient(circle, rgba(23,100,204,1) 0%, rgba(12,18,77,1) 39%, rgba(4,6,26,1) 85%);
+  background: var(--gradient);
   width: 100%;
   height: 100vh;
   margin-left: 105vw;
@@ -1286,7 +1381,7 @@ input:checked + .slider:before {
 }
 .progress-bar-done
 {
-  background: #4C97DE;
+  background: var(--maincolor);
   width: 0%;
   height: 3px;
   border-radius: 50px;

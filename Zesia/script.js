@@ -3,13 +3,29 @@ var darkMode = document.getElementById('dark-change');
 
 darkMode.addEventListener('click', function(){
     darkMode.classList.toggle('active');
-    content.classList.toggle('light');
-    content.classList.toggle('dark');
+    content.classList.toggle('green');
+    content.classList.toggle('blue');
+    if (content.classList.contains('green')) {
+        document.documentElement.style.setProperty('--maincolor', '#A1D91F');
+        document.documentElement.style.setProperty('--maincolorhover', '#1ed760');
+        document.documentElement.style.setProperty('--border', '1px #A1D91F50 solid');
+        document.documentElement.style.setProperty('--background', '#121212');
+        document.documentElement.style.setProperty('--backgroundsecond', '#242424');
+        document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(36,36,36,1) 100%)');
+    }
+    if (content.classList.contains('blue')) {
+        document.documentElement.style.setProperty('--maincolor', '#1764CC');
+        document.documentElement.style.setProperty('--maincolorhover', '#4C97DE');
+        document.documentElement.style.setProperty('--border', '1px #1764CC50 solid');
+        document.documentElement.style.setProperty('--background', '#040511');
+        document.documentElement.style.setProperty('--backgroundsecond', '#04061a');
+        document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, rgba(23,100,204,1) 0%, rgba(12,18,77,1) 39%, rgba(4,6,26,1) 85%)');
+    }
 })
 
 window.addEventListener("load", function () {
     const loader = document.querySelector(".loader");
-    loader.className += " hidden"; // class "loader hidden"
+    loader.className += " hidden";
 });
 
 const activeHomeBtn = document.getElementsByClassName('navbar-bottom-btn-home')[0]
@@ -888,3 +904,13 @@ function searchBarUse(){
   activeHomeScreen.classList.remove('active')
   searchScreen.classList.add('active')
 }
+
+const profileSettingsBtn = document.querySelector('.profile-settins-btn')
+const loginPopup = document.querySelector('.login-popup')
+const questSelectBtn = document.querySelector('.questBtn')
+profileSettingsBtn.addEventListener('click', () => {
+  loginPopup.classList.add('active')
+})
+questSelectBtn.addEventListener('click', () => {
+  loginPopup.classList.remove('active')
+})
