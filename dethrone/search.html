@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+    <title>Welcome</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Deska windsurfingowa">
+    <link rel="stylesheet" href="styledethrone.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleSearch.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111111">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <script src="script.js" defer></script>
+    <script src="searchScript.js" defer></script>
+    <script src="translated/searchlang.js" defer></script>
+</head>
+<body>
+
+  <div class="loader_bg">
+      <div class="loader"><img src="Untitled45.png"></div>
+  </div>
+
+<div class="navbar-vertical">
+  <a class="menu-toggle"><i class="fa-solid fa-bars"></i></a><h1><img onclick="homeBackup()" src="Untitled45.png" alt=""></h1><a class="settings-toggle"><i class="fa-solid fa-gear"></i></a>
+</div>
+
+<div class="navbar-horizontal">
+  <ul>
+    <li><a href="search.html"><button><i class="fa-solid fa-magnifying-glass"></i></button></a></li>
+    <li><a href="#" class="homeMenu">Home</a></li>
+    <li><a href="news.html" class="newsMenu">News</a></li>
+    <li><p class="helpMenu">HELP</p></li>
+    <li><a href="#" class="donationMenu">Donation</a></li>
+    <li><a href="#" class="joinMenu">Join</a></li>
+    <li><a href="#" class="issueMenu">Report a Issue</a></li>
+    <li><a href="#" class="aboutMenu">About Us</a></li>
+  </ul>
+</div>
+
+
+<div class="background-image">
+</div>
+
+<div class="container">
+    <div id="searchWrapper">
+        <input
+            type="text"
+            name="searchBar"
+            id="searchBar"
+            placeholder="Search by name, team"
+        />
+    </div>
+    <ul id="charactersList"></ul>
+</div>
+
+<div class="settings-popop hidden">
+
+  <div class="settings-content">
+    <h1 class="titleSettings">Settings<i id="settings-exit" class="fa-solid fa-caret-up"></i></h1>
+
+    <div class="options">
+
+      <div class="option-item">
+      <p class="settings1">Green Mode</p>
+        <label class="switch">
+          <input type="checkbox" id="theme-mode">
+          <span class="slider round" id="color-scheme"></span>
+        </label>
+      </div>
+
+      <div class="option-item">
+      <p class="settings2">Language</p>
+        <div class="lang-container">
+          <a href="#eng" onclick="engLanguage()" data-reload><img class="engLanguage active" src="https://www.hltv.org/img/static/flags/30x20/GB.gif"></a>
+          <a href="#pl" onclick="plLanguage()" data-reload><img class="plLanguage" class="" src="https://www.hltv.org/img/static/flags/30x20/PL.gif"></a>
+        </div>
+      </div>
+
+      <div class="option-item">
+      <p>Option Option</p>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+      <div class="option-item">
+      <p>Option Option Option</p>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 1000);
+</script>
+
+</body>
+</html>

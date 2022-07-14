@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<head>
+    <title>Welcome</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Deska windsurfingowa">
+    <link rel="stylesheet" href="styledethrone.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleNews.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111111">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <script src="script.js" defer></script>
+    <script src="newsScript.js" defer></script>
+    <script src="translated/searchlang.js" defer></script>
+</head>
+<body>
+
+  <div class="loader_bg">
+      <div class="loader"><img src="Untitled45.png"></div>
+  </div>
+
+<div class="navbar-vertical">
+  <a class="menu-toggle"><i class="fa-solid fa-bars"></i></a><h1><img onclick="homeBackup()" src="Untitled45.png" alt=""></h1><a class="settings-toggle"><i class="fa-solid fa-gear"></i></a>
+</div>
+
+<div class="navbar-horizontal">
+  <ul>
+    <li><a href="search.html"><button><i class="fa-solid fa-magnifying-glass"></i></button></a></li>
+    <li><a href="dethrone.html" class="homeMenu">Home</a></li>
+    <li><p class="helpMenu">HELP</p></li>
+    <li><a href="#" class="donationMenu">Donation</a></li>
+    <li><a href="#" class="joinMenu">Join</a></li>
+    <li><a href="#" class="issueMenu">Report a Issue</a></li>
+    <li><a href="#" class="aboutMenu">About Us</a></li>
+  </ul>
+</div>
+
+
+<div class="news-front">
+
+  <div class="news-title">
+    <p>Daily Dose Of</p>
+    <h1>NEWS</h1>
+  </div>
+
+  <div class="news-counter">
+
+    <div class="counter-item">
+      <h2>Tutorials</h2>
+      <p class="tutorials-counter"></p>
+    </div>
+
+    <div class="counter-item">
+      <h2>Posts</h2>
+      <p class="posts-counter"></p>
+    </div>
+
+    <div class="counter-item">
+      <h2>Blogs</h2>
+      <p class="blogs-counter"></p>
+    </div>
+
+  </div>
+
+  <div class="newscontainer" id="allNews">
+
+    <div class="top-news tutorial">
+      <img src="ss_d196d945c6170e9cadaf67a6dea675bd5fa7a046.1920x1080.jpg">
+
+      <div class="top-news-content">
+        <span>January 11, 2022</span>
+        <h1>Ancient mid changes, patches & smokebug fixes</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum explicabo ad animi tempora, facilis pariatur nesciunt delectus ullam facere. Tempora illum aliquid culpa suscipit odit voluptate minima accusamus dolorem, qui, rerum laborum sit vero, ex inventore. In tenetur, quod, explicabo omnis repellat qui sapiente ab nobis quia optio ad fuga.</p>
+        <p class="news-author">Author : Steven Kross</p>
+        <a class="news-like"><i class="fa-regular fa-heart"></i></a>
+      </div>
+
+    </div>
+
+    <div class="top-news blog">
+      <img src="https://img-cdn.hltv.org/gallerypicture/LvM899EhGClwH6DWUphnKu.jpg?ixlib=java-2.1.0&m=%2Fm.png&mw=107&mx=20&my=473&w=800&s=791f4e4207834557a95274d04d840696">
+
+      <div class="top-news-content">
+        <span>January 10, 2022</span>
+        <h1>Mouz in Finals</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum explicabo ad animi tempora, facilis pariatur nesciunt delectus ullam facere. Tempora illum aliquid culpa suscipit odit voluptate minima accusamus dolorem, qui, rerum laborum sit vero, ex inventore. In tenetur, quod, explicabo omnis repellat qui sapiente ab nobis quia optio ad fuga.</p>
+        <p class="news-author">Author : Steven Kross</p>
+        <a class="news-like"><i class="fa-regular fa-heart"></i></a>
+      </div>
+
+    </div>
+
+    <div class="top-news blog">
+      <img src="https://img-cdn.hltv.org/gallerypicture/zihl0xU1y6FombgJpHQlBW.jpg?ixlib=java-2.1.0&m=%2Fm.png&mw=107&mx=20&my=473&w=800&s=0dd135c94e8532df78b7ba819bbfda9b">
+
+      <div class="top-news-content">
+        <span>January 10, 2022</span>
+        <h1>Mouz in Finals</h1>
+        <p>Lrum explicabo ad a delectus ullam facere. Tempora illum aliquid culpa suscipit odit voluptate minima accusamus dolorem, qui, rerum laborum sit vero, ex inventore. In tenetur, quod, explicabo omnis repellat qui sapiente ab nobis quia optio ad fuga.</p>
+        <p class="news-author">Author : Steven Kross</p>
+        <a class="news-like"><i class="fa-regular fa-heart"></i></a>
+      </div>
+
+    </div>
+
+</div>
+
+
+<div class="settings-popop hidden">
+
+  <div class="settings-content">
+    <h1 class="titleSettings">Settings<i id="settings-exit" class="fa-solid fa-caret-up"></i></h1>
+
+    <div class="options">
+
+      <div class="option-item">
+      <p class="settings1">Green Mode</p>
+        <label class="switch">
+          <input type="checkbox" id="theme-mode">
+          <span class="slider round" id="color-scheme"></span>
+        </label>
+      </div>
+
+      <div class="option-item">
+      <p class="settings2">Language</p>
+        <div class="lang-container">
+          <a href="#eng" onclick="engLanguage()" data-reload><img class="engLanguage active" src="https://www.hltv.org/img/static/flags/30x20/GB.gif"></a>
+          <a href="#pl" onclick="plLanguage()" data-reload><img class="plLanguage" class="" src="https://www.hltv.org/img/static/flags/30x20/PL.gif"></a>
+        </div>
+      </div>
+
+      <div class="option-item">
+      <p>Option Option</p>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+      <div class="option-item">
+      <p>Option Option Option</p>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 1000);
+</script>
+
+</body>
+</html>
