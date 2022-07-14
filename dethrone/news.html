@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
     <script src="script.js" defer></script>
     <script src="newsScript.js" defer></script>
-    <script src="translated/searchlang.js" defer></script>
+    <script src="translated/newslang.js" defer></script>
+    <script async src="https://api.countapi.xyz/hit/dethrone.com/c3459349-007a-48b6-8060-ebdf19026945?callback=websiteVisits"></script>
 </head>
 <body>
 
@@ -46,20 +47,24 @@
   <div class="news-counter">
 
     <div class="counter-item">
-      <h2>Tutorials</h2>
+      <h2 class="tutorialsText">Tutorials</h2>
       <p class="tutorials-counter"></p>
     </div>
 
     <div class="counter-item">
-      <h2>Posts</h2>
+      <h2 class="postsText">Posts</h2>
       <p class="posts-counter"></p>
     </div>
 
     <div class="counter-item">
-      <h2>Blogs</h2>
+      <h2 class="blogsText">Blogs</h2>
       <p class="blogs-counter"></p>
     </div>
 
+  </div>
+
+  <div class="attention-box hidden">
+    <h1>Zwróć Uwagę, Wszystkie post dostępne są wyłącznie w języku angielskim</h1>
   </div>
 
   <div class="newscontainer" id="allNews">
@@ -72,7 +77,12 @@
         <h1>Ancient mid changes, patches & smokebug fixes</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum explicabo ad animi tempora, facilis pariatur nesciunt delectus ullam facere. Tempora illum aliquid culpa suscipit odit voluptate minima accusamus dolorem, qui, rerum laborum sit vero, ex inventore. In tenetur, quod, explicabo omnis repellat qui sapiente ab nobis quia optio ad fuga.</p>
         <p class="news-author">Author : Steven Kross</p>
-        <a class="news-like"><i class="fa-regular fa-heart"></i></a>
+
+        <div class="news-action">
+          <a class="news-like"><i class="fa-regular fa-heart"></i></a>
+          <span id="visits"></span>
+        </div>
+
       </div>
 
     </div>
@@ -84,8 +94,13 @@
         <span>January 10, 2022</span>
         <h1>Mouz in Finals</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum explicabo ad animi tempora, facilis pariatur nesciunt delectus ullam facere. Tempora illum aliquid culpa suscipit odit voluptate minima accusamus dolorem, qui, rerum laborum sit vero, ex inventore. In tenetur, quod, explicabo omnis repellat qui sapiente ab nobis quia optio ad fuga.</p>
-        <p class="news-author">Author : Steven Kross</p>
-        <a class="news-like"><i class="fa-regular fa-heart"></i></a>
+        <p class="news-author">Author : Phil Foden</p>
+
+        <div class="news-action">
+          <a class="news-like"><i class="fa-regular fa-heart"></i></a>
+          <span>15</span>
+        </div>
+
       </div>
 
     </div>
@@ -94,15 +109,156 @@
       <img src="https://img-cdn.hltv.org/gallerypicture/zihl0xU1y6FombgJpHQlBW.jpg?ixlib=java-2.1.0&m=%2Fm.png&mw=107&mx=20&my=473&w=800&s=0dd135c94e8532df78b7ba819bbfda9b">
 
       <div class="top-news-content">
-        <span>January 10, 2022</span>
-        <h1>Mouz in Finals</h1>
+        <span>January 9, 2022</span>
+        <h1>Cologne 2022</h1>
         <p>Lrum explicabo ad a delectus ullam facere. Tempora illum aliquid culpa suscipit odit voluptate minima accusamus dolorem, qui, rerum laborum sit vero, ex inventore. In tenetur, quod, explicabo omnis repellat qui sapiente ab nobis quia optio ad fuga.</p>
-        <p class="news-author">Author : Steven Kross</p>
-        <a class="news-like"><i class="fa-regular fa-heart"></i></a>
+        <p class="news-author">Author : Phil Foden</p>
+
+        <div class="news-action">
+          <a class="news-like"><i class="fa-regular fa-heart"></i></a>
+          <span>32</span>
+        </div>
+
       </div>
 
     </div>
 
+    <div class="top-news blog">
+      <img src="https://img-cdn.hltv.org/gallerypicture/rKvp7Bk9D0hdU8OZzmLEDL.jpg?ixlib=java-2.1.0&m=%2Fm.png&mw=213&mx=39&my=947&w=1600&s=9703913644651b7a57deb6882f49735a">
+
+      <div class="top-news-content">
+        <span>January 7, 2022</span>
+        <h1>Xgtz Interview</h1>
+        <p>Lrum explicabo ad a delectus ullam facere. Tempora illum aliquid culpa suscipit odit voluptate minima accusamus dolorem, qui, rerum laborum sit vero, ex inventore. In tenetur, quod, explicabo omnis repellat qui sapiente ab nobis quia optio ad fuga.</p>
+        <p class="news-author">Author : Phil Foden</p>
+
+        <div class="news-action">
+          <a class="news-like"><i class="fa-regular fa-heart"></i></a>
+          <span>21</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="top-news blog">
+      <img src="https://img-cdn.hltv.org/gallerypicture/aOJHNkyp7fVWiI_E-enzYf.jpg?ixlib=java-2.1.0&m=%2Fm.png&mw=107&mx=20&my=473&w=800&s=2c4325a577432d772a7609d8771adcef">
+
+      <div class="top-news-content">
+        <span>January 5, 2022</span>
+        <h1>Niko about roster changes</h1>
+        <p>Lrum explicabo ad a delectus ullam facere. Tempora illum aliquid culpa suscipit odit voluptate minima accusamus dolorem, qui, rerum laborum sit vero, ex inventore. In tenetur, quod, explicabo omnis repellat qui sapiente ab nobis quia optio ad fuga.</p>
+        <p class="news-author">Author : Stephan Franz</p>
+
+        <div class="news-action">
+          <a class="news-like"><i class="fa-regular fa-heart"></i></a>
+          <span>62</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="top-news tutorial hidden">
+      <img src="ss_d196d945c6170e9cadaf67a6dea675bd5fa7a046.1920x1080.jpg">
+
+      <div class="top-news-content">
+        <span>January 11, 2022</span>
+        <h1>Ancient mid changes, patches & smokebug fixes</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum explicabo ad animi tempora, facilis pariatur nesciunt delectus ullam facere. Tempora illum aliquid culpa suscipit odit voluptate minima accusamus dolorem, qui, rerum laborum sit vero, ex inventore. In tenetur, quod, explicabo omnis repellat qui sapiente ab nobis quia optio ad fuga.</p>
+        <p class="news-author">Author : Steven Kross</p>
+
+        <div class="news-action">
+          <a class="news-like"><i class="fa-regular fa-heart"></i></a>
+          <span>5</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="top-news tutorial hidden">
+      <img src="ss_d196d945c6170e9cadaf67a6dea675bd5fa7a046.1920x1080.jpg">
+
+      <div class="top-news-content">
+        <span>January 11, 2022</span>
+        <h1>Ancient mid changes, patches & smokebug fixes</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum explicabo ad animi tempora, facilis pariatur nesciunt delectus ullam facere. Tempora illum aliquid culpa suscipit odit voluptate minima accusamus dolorem, qui, rerum laborum sit vero, ex inventore. In tenetur, quod, explicabo omnis repellat qui sapiente ab nobis quia optio ad fuga.</p>
+        <p class="news-author">Author : Steven Kross</p>
+
+        <div class="news-action">
+          <a class="news-like"><i class="fa-regular fa-heart"></i></a>
+          <span>5</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="top-news tutorial hidden">
+      <img src="ss_d196d945c6170e9cadaf67a6dea675bd5fa7a046.1920x1080.jpg">
+
+      <div class="top-news-content">
+        <span>January 11, 2022</span>
+        <h1>Ancient mid changes, patches & smokebug fixes</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum explicabo ad animi tempora, facilis pariatur nesciunt delectus ullam facere. Tempora illum aliquid culpa suscipit odit voluptate minima accusamus dolorem, qui, rerum laborum sit vero, ex inventore. In tenetur, quod, explicabo omnis repellat qui Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum explicabo ad animi tempora, facilis pariatur nesciunt delectus ullam facere. Tempora illum aliquid culpa suscipit odit voluptate minima accusamus dolorem, qui, rerum laborum sit vero, ex inventore. In tenetur, quod, explicabo omnis repellat qui sapient sapiente ab nobis quia optio ad Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum explicabo ad animi tempora, facilis pariatur nesciunt delectus ullam facere. Tempora illum aliquid culpa suscipit odit voluptate minima accusamus dolorem, qui, rerum laborum sit vero, ex inventore. In tenetur, quod, explicabo omnis repellat qui sapient fuga.</p>
+        <p class="news-author">Author : Steven Kross</p>
+
+        <div class="news-action">
+          <a class="news-like"><i class="fa-regular fa-heart"></i></a>
+          <span>5</span>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+</div>
+
+<div class="news-more">
+
+  <div class="more-action">
+    <a href="#" class="fastBackBtn">Back</a>
+    <a id="loadMoreBtn" onclick="moreview()"><span class="loadmorecontent">Load More</span> (<span class="hiddenPostsAmount"></span>) <i class="fa-solid fa-rotate-right"></i></a>
+  </div>
+
+</div>
+
+<div class="footer-info">
+  <div class="news-title">
+    <p>Daily Dose Of</p>
+    <h1>NEWS</h1>
+  </div>
+
+  <div class="footer-content">
+
+    <ul>
+      <p>FaQ :</p>
+      <li>Posts are storage up to 90 days</li>
+      <li>Data is not avaible for public view</li>
+      <li>Posts contains images, links, text contents and personal data of authors</li>
+      <li>Coping Posts Content arent allowed</li>
+    </ul>
+
+    <ul>
+      <p>Authors :</p>
+      <li>Steven Kross</li>
+      <li>Stephan Franz</li>
+      <li>Phil Foden</li>
+      <li>Joshua Frencli</li>
+    </ul>
+
+    <ul>
+      <p>Links</p>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Mail</a></li>
+      <li><a href="#">Youtube</a></li>
+      <li><a href="#">Steam</a></li>
+    </ul>
+
+  </div>
 </div>
 
 

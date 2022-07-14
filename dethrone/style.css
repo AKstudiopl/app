@@ -123,6 +123,7 @@ body::-webkit-scrollbar
   bottom: 0;
   left: 0;
   max-width: 20%;
+  z-index: 5;
   height: calc(100% - 25px);
   display: flex;
   align-items: center;
@@ -254,6 +255,10 @@ body::-webkit-scrollbar
   text-transform: uppercase;
 }
 .menu_help
+{
+  text-transform: uppercase;
+}
+.helpMenu
 {
   text-transform: uppercase;
 }
