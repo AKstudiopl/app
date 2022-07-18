@@ -6,6 +6,8 @@ const cfgCrosshair = document.querySelector('.cfg-copy-clipboard .cfg-crosshair'
 const cfgViewmodel = document.querySelector('.cfg-copy-clipboard .cfg-viewmodel');
 const cfgBob = document.querySelector('.cfg-copy-clipboard .cfg-bob');
 const cfgLaunchOptions = document.querySelector('.cfg-copy-clipboard .cfg-launch_options');
+const ubdateDataBtn = document.querySelector('#ubdate_show_btn');
+const ubdateData = document.querySelector('.ubdate_data');
 
 btnCrosshairCopy.addEventListener('click', () => {
     navigator.clipboard.writeText(cfgCrosshair.textContent)
@@ -18,6 +20,10 @@ btnBobCopy.addEventListener('click', () => {
 })
 btnLaunchOptionsCopy.addEventListener('click', () => {
     navigator.clipboard.writeText(cfgLaunchOptions.textContent)
+})
+ubdateDataBtn.addEventListener('click', () => {
+    ubdateData.classList.toggle('active');
+    ubdateDataBtn.classList.toggle('active');
 })
 
 $(window).scroll(function() {

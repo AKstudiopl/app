@@ -326,12 +326,15 @@ body::-webkit-scrollbar
 .player-img
 {
   line-height: 1;
-  padding: 25px;
+  padding: 0;
 }
 .player-img img
 {
   width: 200px;
+  object-fit: contain;
   border-radius: 25px;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 .player-main
 {
@@ -345,7 +348,57 @@ body::-webkit-scrollbar
   color: var(--oceanic);
   padding-bottom: 5px;
   margin-bottom: 5px;
+  align-items: center;
+  display: flex;
   border-bottom: 2px var(--blue) solid;
+}
+.player-main h1 p
+{
+  margin-left: 10px;
+  font-size: 15px;
+  padding: 0;
+  line-height: 1;
+}
+.player-main h1 p i
+{
+  transition: 0.3s;
+}
+.player-main h1 p i:hover
+{
+  color: var(--oceanic);
+  transform: rotate(25deg);
+}
+.player-main h1 p i.active
+{
+  color: var(--oceanic);
+}
+.player-main h1 .ubdate_data
+{
+  border-top: 1px var(--oceanic) solid;
+  background: var(--);
+  color: var(--white);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+  font-size: 12px;
+  padding: 5px;
+  margin-top: 20px;
+  opacity: 0;
+  margin-left: 0px;
+  font-weight: 100;
+}
+.player-main h1 .ubdate_data::before
+{
+  content: 'Last Ubdate';
+  position: absolute;
+  margin-top: -22px;
+  font-size: 12px;
+}
+.player-main h1 .ubdate_data.active
+{
+  visibility: visible;
+  opacity: 1;
+  margin-left: 0px;
 }
 .player-main p
 {
@@ -427,6 +480,76 @@ body::-webkit-scrollbar
 {
   border: 1px transparent solid;
 }
+
+
+
+
+
+
+[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Position tooltip above the element */
+[data-tooltip]:before {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-bottom: -5px;
+  margin-left: -80px;
+  padding: 7px 6px;
+  width: 80px;
+  border: 1px var(--oceanic) solid;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: var(--aqua);
+  color: var(--oceanic);
+  content: attr(data-tooltip);
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -5px;
+  margin-bottom: -10px;
+  width: 0;
+  border-top: 5px solid  var(--oceanic);
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:active:before,
+[data-tooltip]:active:after {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+
+
+
 .player-title
 {
   display: flex;
@@ -1021,5 +1144,17 @@ input:checked + .slider:before {
   .navbar-horizontal ul li a
   {
     font-size: 12px;
+  }
+  .player-top img
+  {
+    width: 125px;
+    margin-right: 15px;
+    margin-left: 15px;
+    height: 100%;
+  }
+  .player-main
+  {
+    max-width: 100%;
+    overflow: hidden;
   }
 }
