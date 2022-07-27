@@ -105,8 +105,20 @@ function readMore(btn){
 
   function imageView(img){
     let fullPost = img.parentElement;
+    let divPost = fullPost.parentElement;
+    postDate = divPost.querySelector(".news-quick-date");
+    postAuthor = divPost.querySelector(".news-author");
+    imageExitbtn = fullPost.querySelector(".news-image-exit");
+    imageTitle = fullPost.querySelector(".news-image-title");
+    imageAuthor = fullPost.querySelector(".news-image-author");
+
     console.log(fullPost)
     if (fullPost.parentElement.classList.contains("read-more")) {
-      fullPost.parentElement.classList.toggle("fullscreen");
+      fullPost.parentElement.classList.add("fullscreen");
+      imageTitle.textContent = postDate.textContent;
+      imageAuthor.textContent = postAuthor.textContent;
     }
+    imageExitbtn.addEventListener('click', event => {
+        fullPost.parentElement.classList.remove("fullscreen");
+    })
   }

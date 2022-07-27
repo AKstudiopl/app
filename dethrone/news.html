@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <head>
-    <title>Welcome</title>
+    <title>News - Dethrone</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Deska windsurfingowa">
     <link rel="stylesheet" href="styledethrone.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleNews.css">
@@ -67,7 +66,7 @@
   </div>
 
   <div class="attention-box hidden">
-    <h1>Zwróć Uwagę, Wszystkie post dostępne są wyłącznie w języku angielskim</h1>
+    <h1>Wszystkie post dostępne są wyłącznie w języku angielskim</h1>
   </div>
 
   <div class="newscontainer" id="allNews">
@@ -77,13 +76,15 @@
       <div class="news-image">
       <img onclick="imageView(this)" src="ss_d196d945c6170e9cadaf67a6dea675bd5fa7a046.1920x1080.jpg">
       <div class="news-image-controls">
-        <p onclick="imageView(this)">[Press On Photo To Exit]</p>
-        <p>[Download]</p>
+        <p><i class="fa-brands fa-twitter"></i></p>
+        <span class="news-image-author"></span>
+        <span class="news-image-title"></span>
+        <p class="news-image-exit"><i class="fa-solid fa-xmark"></i></p>
       </div>
       </div>
 
       <div class="top-news-content">
-        <span>January 11, 2022</span>
+        <span class="news-quick-date">January 11, 2022</span>
         <h1>Ancient mid changes, patches & smokebug fixes</h1>
         <p class="news-quick-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum explicabo ad animi tempora, facilis pariatur nesciunt delectus ullam facere. Tempora illum aliquid culpa suscipit odit voluptate minima accusamus dolorem, qui, rerum laborum sit vero, ex inventore. In tenetur, quod, explicabo omnis repellat qui sapiente ab nobis quia optio ad fuga.</p>
         <p class="news-slower-content">consectetur adipisicing elit explicabo ad animi tempora, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea omnis, porro voluptatum. Quibusdam sequi eveniet atque excepturi deserunt distinctio aliquam voluptatibus accusantium odit possimus doloribus, pariatur necessitatibus assumenda iure aperiam nemo deleniti sint quis cumque, vitae repellendus eaque. Nam facere dignissimos laudantium beatae eos, iure ducimus harum voluptate ab.</p>
@@ -93,6 +94,7 @@
         <div class="news-action">
           <a class="news-like"><i class="fa-regular fa-heart"></i></a>
           <span id="visits"></span>
+          <span class="news-share"><i class="fa-solid fa-share"></i></span>
         </div>
 
       </div>
@@ -103,14 +105,16 @@
 
       <div class="news-image">
         <img onclick="imageView(this)" src="https://img-cdn.hltv.org/gallerypicture/LvM899EhGClwH6DWUphnKu.jpg?ixlib=java-2.1.0&m=%2Fm.png&mw=107&mx=20&my=473&w=800&s=791f4e4207834557a95274d04d840696">
-      <div class="news-image-controls">
-        <p onclick="imageView(this)">[Press On Photo To Exit]</p>
-        <p>[Download]</p>
-      </div>
+        <div class="news-image-controls">
+          <p><i class="fa-brands fa-twitter"></i></p>
+          <span class="news-image-author"></span>
+          <span class="news-image-title"></span>
+          <p class="news-image-exit"><i class="fa-solid fa-xmark"></i></p>
+        </div>
       </div>
 
       <div class="top-news-content">
-        <span>January 10, 2022</span>
+        <span class="news-quick-date">January 10, 2022</span>
         <h1>Mouz in Finals</h1>
         <p class="news-quick-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum explicabo ad animi tempora, facilis pariatur nesciunt delectus ullam facere. Tempora illum aliquid culpa suscipit odit voluptate minima accusamus dolorem, qui, rerum laborum sit vero, ex inventore. In tenetur, quod, explicabo omnis repellat qui sapiente ab nobis quia optio ad fuga.</p>
         <p class="news-slower-content">consectetur adipisicing elit explicabo ad animi tempora, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea omnis, porro voluptatum. Quibusdam sequi eveniet atque excepturi deserunt distinctio aliquam voluptatibus accusantium odit possimus doloribus, pariatur necessitatibus assumenda iure aperiam nemo deleniti sint quis cumque, vitae repellendus eaque. Nam facere dignissimos laudantium beatae eos, iure ducimus harum voluptate ab.</p>
@@ -120,6 +124,7 @@
         <div class="news-action">
           <a class="news-like"><i class="fa-regular fa-heart"></i></a>
           <span>15</span>
+          <span class="news-share"><i class="fa-solid fa-share"></i></span>
         </div>
 
       </div>
@@ -131,13 +136,15 @@
       <div class="news-image">
       <img onclick="imageView(this)" src="https://img-cdn.hltv.org/gallerypicture/zihl0xU1y6FombgJpHQlBW.jpg?ixlib=java-2.1.0&m=%2Fm.png&mw=107&mx=20&my=473&w=800&s=0dd135c94e8532df78b7ba819bbfda9b">
       <div class="news-image-controls">
-        <p onclick="imageView(this)">[Press On Photo To Exit]</p>
-        <p>[Download]</p>
+        <p><i class="fa-brands fa-twitter"></i></p>
+        <span class="news-image-author"></span>
+        <span class="news-image-title"></span>
+        <p class="news-image-exit"><i class="fa-solid fa-xmark"></i></p>
       </div>
       </div>
 
       <div class="top-news-content">
-        <span>January 9, 2022</span>
+        <span class="news-quick-date">January 9, 2022</span>
         <h1>Cologne 2022</h1>
         <p class="news-quick-content">Lrum explicabo ad a delectus ullam facere. Tempora illum aliquid culpa suscipit odit voluptate minima accusamus dolorem, qui, rerum laborum sit vero, ex inventore. In tenetur, quod, explicabo omnis repellat qui sapiente ab nobis quia optio ad fuga.</p>
         <p class="news-slower-content">consectetur adipisicing elit explicabo ad animi tempora, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea omnis, porro voluptatum. Quibusdam sequi eveniet atque excepturi deserunt distinctio aliquam voluptatibus accusantium odit possimus doloribus, pariatur necessitatibus assumenda iure aperiam nemo deleniti sint quis cumque, vitae repellendus eaque. Nam facere dignissimos laudantium beatae eos, iure ducimus harum voluptate ab.</p>
@@ -147,6 +154,7 @@
         <div class="news-action">
           <a class="news-like"><i class="fa-regular fa-heart"></i></a>
           <span>32</span>
+          <span class="news-share"><i class="fa-solid fa-share"></i></span>
         </div>
 
       </div>
@@ -158,22 +166,27 @@
       <div class="news-image">
       <img onclick="imageView(this)" src="https://img-cdn.hltv.org/gallerypicture/rKvp7Bk9D0hdU8OZzmLEDL.jpg?ixlib=java-2.1.0&m=%2Fm.png&mw=213&mx=39&my=947&w=1600&s=9703913644651b7a57deb6882f49735a">
       <div class="news-image-controls">
-        <p onclick="imageView(this)">[Press On Photo To Exit]</p>
-        <p>[Download]</p>
+        <p><i class="fa-brands fa-twitter"></i></p>
+        <span class="news-image-author"></span>
+        <span class="news-image-title"></span>
+        <p class="news-image-exit"><i class="fa-solid fa-xmark"></i></p>
       </div>
       </div>
 
       <div class="top-news-content">
-        <span>January 7, 2022</span>
+        <span class="news-quick-date">January 7, 2022</span>
         <h1>Xgtz Interview</h1>
         <p class="news-quick-content">Lrum explicabo ad a delectus ullam facere. Tempora illum aliquid culpa suscipit odit voluptate minima accusamus dolorem, qui, rerum laborum sit vero, ex inventore. In tenetur, quod, explicabo omnis repellat qui sapiente ab nobis quia optio ad fuga.</p>
-        <p class="news-slower-content">consectetur adipisicing elit explicabo ad animi tempora, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea omnis, porro voluptatum. Quibusdam sequi eveniet atque excepturi deserunt distinctio aliquam voluptatibus accusantium odit possimus doloribus, pariatur necessitatibus assumenda iure aperiam nemo deleniti sint quis cumque, vitae repellendus eaque. Nam facere dignissimos laudantium beatae eos, iure ducimus harum voluptate ab consectetur adipisicing elit explicabo ad animi tempora, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea omnis, porro voluptatum. Quibusdam sequi eveniet atque excepturi deserunt distinctio aliquam voluptatibus accusantium odit possimus doloribus, pariatur necessitatibus assumenda iure aperiam nemo deleniti sint quis cumque, vitae repellendus eaque. Nam facere dignissimos laudantium beatae eos, iure ducimus harum voluptate ab consectetur adipisicing elit explicabo ad animi tempora, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea omnis, porro voluptatum. Quibusdam sequi eveniet atque excepturi deserunt distinctio aliquam voluptatibus accusantium odit possimus doloribus, pariatur necessitatibus assumenda iure aperiam nemo deleniti sint quis cumque, vitae repellendus eaque. Nam facere dignissimos laudantium beatae eos, iure ducimus harum voluptate ab consectetur adipisicing elit explicabo ad animi tempora, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea omnis, porro voluptatum. Quibusdam sequi eveniet atque excepturi deserunt distinctio aliquam voluptatibus accusantium odit possimus doloribus, pariatur necessitatibus assumenda iure aperiam nemo deleniti sint quis cumque, vitae repellendus eaque. Nam facere dignissimos laudantium beatae eos, iure ducimus harum voluptate ab consectetur adipisicing elit explicabo ad animi tempora, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea omnis, porro voluptatum. Quibusdam sequi eveniet atque excepturi deserunt distinctio aliquam voluptatibus accusantium odit possimus doloribus, pariatur necessitatibus assumenda iure aperiam nemo deleniti sint quis cumque, vitae repellendus eaque. Nam facere dignissimos laudantium beatae eos, iure ducimus harum voluptate ab consectetur adipisicing elit explicabo ad animi tempora, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea omnis, porro voluptatum. Quibusdam sequi eveniet atque excepturi deserunt distinctio aliquam voluptatibus accusantium odit possimus doloribus, pariatur necessitatibus assumenda iure aperiam nemo deleniti sint quis cumque, vitae repellendus eaque. Nam facere dignissimos laudantium beatae eos, iure ducimus harum voluptate ab.</p>
+        <p class="news-slower-content">consectetur adipisicing elit explicabo ad animi tempora, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea omnis, porro voluptatum. Quibusdam sequi eveniet atque excepturi deserunt distinctio aliquam voluptatibus accusantium odit possimus doloribus, pariatur necessitatibus assumenda iure aperiam nemo deleniti sint quis cumque, vitae repellendus eaque. Nam facere dignissimos laudantium beatae eos, iure ducimus harum voluptate ab adipisicing elit. Tempore ea omnis, porro voluptatum. Quibusdam sequi eveniet atque excepturi deserunt distinctio aliquam voluptatibus accusantium odit possimus doloribus, pariatur necessitatibus assumenda iure aperiam nemo deleniti sint quis cumque, vitae repellendus eaque. Nam facere dignissimos laudantium beatae eos, iure ducimus harum voluptate ab consectetur adipisicing elit explicabo us doloribus, pariatur necessitatibus assumenda iure aperiam nemo deleniti sint quis cumque, vitae.</p>
+        <p class="news-slower-content-title">Xgtz About His Future</p>
+        <p class="news-slower-content">ad animi tempora, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea omnis, porro voluptatum. Quibusdam sequi eveniet atque excepturi deserunt distinctio aliquam voluptatibus accusantium odit possimus doloribus, pariatur necessitatibus assumenda iure aperiam nemo deleniti sint quis cumque, vitae repellendus eaque. Nam facere dignissimos laudantium beatae eos, iure ducimus harum voluptate ab consectetur adipisicing elit explicabo ad animi tempora, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea omnis, porro voluptatum. Quibusdam sequi eveniet atque excepturi deserunt distinctio aliquam voluptatibus accusantium odit possimus doloribus, pariatur necessitatibus assumenda iure aperiam nemo deleniti sint quis cumque, vitae repellendus eaque. Nam facere dignissimos laudantium beatae eos, iure ducimus harum voluptate ab consectetur adipisicing elit explicabo ad animi tempora, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea omnis, porro voluptatum. Quibusdam sequi eveniet atque excepturi deserunt distinctio aliquam voluptatibus accusantium odit possimus doloribus, pariatur necessitatibus assumenda iure aperiam nemo deleniti sint quis cumque, vitae repellendus eaque. Nam facere dignissimos laudantium beatae eos, iure ducimus harum voluptate ab consectetur adipisicing elit explicabo ad animi tempora, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea omnis, porro voluptatum. Quibusdam sequi eveniet atque excepturi deserunt distinctio aliquam voluptatibus accusantium odit possim</p>
         <a class="news-read-more-button" onclick="readMore(this)">Read More</a>
         <p class="news-author">Author : Phil Foden</p>
 
         <div class="news-action">
           <a class="news-like"><i class="fa-regular fa-heart"></i></a>
           <span>21</span>
+          <span class="news-share"><i class="fa-solid fa-share"></i></span>
         </div>
 
       </div>
@@ -183,16 +196,18 @@
     <div class="top-news blog">
 
       <div class="news-image">
-      <img src="https://img-cdn.hltv.org/gallerypicture/aOJHNkyp7fVWiI_E-enzYf.jpg?ixlib=java-2.1.0&m=%2Fm.png&mw=107&mx=20&my=473&w=800&s=2c4325a577432d772a7609d8771adcef">
+      <img onclick="imageView(this)" src="https://img-cdn.hltv.org/gallerypicture/aOJHNkyp7fVWiI_E-enzYf.jpg?ixlib=java-2.1.0&m=%2Fm.png&mw=107&mx=20&my=473&w=800&s=2c4325a577432d772a7609d8771adcef">
       <div class="news-image-controls">
-        <p onclick="imageView(this)">[Press On Photo To Exit]</p>
-        <p>[Download]</p>
+        <p><i class="fa-brands fa-twitter"></i></p>
+        <span class="news-image-author"></span>
+        <span class="news-image-title"></span>
+        <p class="news-image-exit"><i class="fa-solid fa-xmark"></i></p>
       </div>
       </div>
 
 
       <div class="top-news-content">
-        <span>January 5, 2022</span>
+        <span class="news-quick-date">January 5, 2022</span>
         <h1>Niko about roster changes</h1>
         <p class="news-quick-content">Lrum explicabo ad a delectus ullam facere. Tempora illum aliquid culpa suscipit odit voluptate minima accusamus dolorem, qui, rerum laborum sit vero, ex inventore. In tenetur, quod, explicabo omnis repellat qui sapiente ab nobis quia optio ad fuga.</p>
         <p class="news-slower-content">consectetur adipisicing elit explicabo ad animi tempora, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea omnis, porro voluptatum. Quibusdam sequi eveniet atque excepturi deserunt distinctio aliquam voluptatibus accusantium odit possimus doloribus, pariatur necessitatibus assumenda iure aperiam nemo deleniti sint quis cumque, vitae repellendus eaque. Nam facere dignissimos laudantium beatae eos, iure ducimus harum voluptate ab.</p>
@@ -202,6 +217,7 @@
         <div class="news-action">
           <a class="news-like"><i class="fa-regular fa-heart"></i></a>
           <span>62</span>
+          <span class="news-share"><i class="fa-solid fa-share"></i></span>
         </div>
 
       </div>
@@ -223,6 +239,7 @@
         <div class="news-action">
           <a class="news-like"><i class="fa-regular fa-heart"></i></a>
           <span>5</span>
+          <span class="news-share"><i class="fa-solid fa-share"></i></span>
         </div>
 
       </div>
@@ -244,6 +261,7 @@
         <div class="news-action">
           <a class="news-like"><i class="fa-regular fa-heart"></i></a>
           <span>5</span>
+          <span class="news-share"><i class="fa-solid fa-share"></i></span>
         </div>
 
       </div>
@@ -265,6 +283,7 @@
         <div class="news-action">
           <a class="news-like"><i class="fa-regular fa-heart"></i></a>
           <span>5</span>
+          <span class="news-share"><i class="fa-solid fa-share"></i></span>
         </div>
 
       </div>
@@ -286,6 +305,7 @@
         <div class="news-action">
           <a class="news-like"><i class="fa-regular fa-heart"></i></a>
           <span>5</span>
+          <span class="news-share"><i class="fa-solid fa-share"></i></span>
         </div>
 
       </div>
@@ -307,6 +327,7 @@
         <div class="news-action">
           <a class="news-like"><i class="fa-regular fa-heart"></i></a>
           <span>5</span>
+          <span class="news-share"><i class="fa-solid fa-share"></i></span>
         </div>
 
       </div>
@@ -328,6 +349,7 @@
         <div class="news-action">
           <a class="news-like"><i class="fa-regular fa-heart"></i></a>
           <span>5</span>
+          <span class="news-share"><i class="fa-solid fa-share"></i></span>
         </div>
 
       </div>
@@ -349,6 +371,7 @@
         <div class="news-action">
           <a class="news-like"><i class="fa-regular fa-heart"></i></a>
           <span>5</span>
+          <span class="news-share"><i class="fa-solid fa-share"></i></span>
         </div>
 
       </div>
@@ -370,6 +393,7 @@
         <div class="news-action">
           <a class="news-like"><i class="fa-regular fa-heart"></i></a>
           <span>5</span>
+          <span class="news-share"><i class="fa-solid fa-share"></i></span>
         </div>
 
       </div>
@@ -391,6 +415,7 @@
         <div class="news-action">
           <a class="news-like"><i class="fa-regular fa-heart"></i></a>
           <span>5</span>
+          <span class="news-share"><i class="fa-solid fa-share"></i></span>
         </div>
 
       </div>
