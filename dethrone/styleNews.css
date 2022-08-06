@@ -263,7 +263,7 @@
   display: grid;
   grid-template-columns: repeat(1, 100%);
   margin-left: 0;
-  animation: openUp 0.5s ease;
+  animation: openUp 0.25s ease;
 }
 .top-news.fullscreen .news-image
 {
