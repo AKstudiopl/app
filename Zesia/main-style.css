@@ -48,7 +48,7 @@ body::-webkit-scrollbar
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 140%;
     background: var(--background);
     display: flex;
     justify-content: center;
@@ -57,6 +57,7 @@ body::-webkit-scrollbar
 
 .loader > img {
     width: 150px;
+    margin-bottom: 40vh;
     animation: loaderlogo 1s;
     animation-iteration-count: infinite;
     animation-timing-function: ease;
@@ -891,7 +892,6 @@ input:checked + .slider:before {
   background: var(--backgroundsecond);
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   z-index: 5;
 }
@@ -914,6 +914,7 @@ input:checked + .slider:before {
 {
   text-align: left;
   width: 71%;
+  margin-left: 10px;
 }
 .music-icon i:hover
 {
@@ -989,8 +990,7 @@ input:checked + .slider:before {
   flex-direction: column;
   align-content: center;
   width: 100vw;
-  background: rgb(4,5,17);
-  background: linear-gradient(0deg, rgba(4,5,17,1) 17%, rgba(4,5,17,0.8352481617647058) 100%);
+  background: var(--backgroundsecond);
   border: 1px #A7A7A725 solid;
   transition: 0.3s;
   backdrop-filter: blur(5px);
@@ -1024,10 +1024,7 @@ input:checked + .slider:before {
 }
 .top-shortcut-item.active
 {
-  background: rgb(4,6,26);
-  background: -webkit-linear-gradient(bottom, rgba(4,6,26,0.9024720149253731) 0%, rgba(4,6,26,0) 50%, rgba(4,6,26,0.7860541044776119) 100%);
-  background: -o-linear-gradient(bottom, rgba(4,6,26,0.9024720149253731) 0%, rgba(4,6,26,0) 50%, rgba(4,6,26,0.7860541044776119) 100%);
-  background: linear-gradient(to top, rgba(4,6,26,0.9024720149253731) 0%, rgba(4,6,26,0) 50%, rgba(4,6,26,0.7860541044776119) 100%);
+
 }
 .top-shortcut-item:nth-child(2)
 {
@@ -1894,14 +1891,14 @@ input:checked + .slider:before {
   background: var(--backgroundsecond);
   z-index: 15;
   visibility: hidden;
-  bottom: -100vh;
+  top: 100vh;
   transition: 0.5s;
   border-radius: 25px;
 }
 .artist-card.active
 {
   visibility: visible;
-  bottom: 0;
+  top: 0;
   border-radius: 0px;
 }
 .artist-card img

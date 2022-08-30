@@ -38,3 +38,16 @@ counters.forEach((counter) => {
   };
   updateCount();
 });
+
+const arrowleft = document.querySelector('.social-buttons .fa-angles-left');
+const list = document.querySelector('.social-contianer');
+
+arrowleft.addEventListener('click', () => {
+  arrowleft.classList.add('active')
+  list.innerHTML = '<ul><li><i class="fa-solid fa-angles-up"></i> FRESTYLE</li><li><i class="fa-solid fa-angles-up"></i> CLEAR</li><li><i class="fa-solid fa-angles-up"></i> BEATBOX</li><li><i class="fa-solid fa-angles-up"></i> LOFI</li><li><i class="fa-solid fa-angles-up"></i> FUTURISTIC</li></ul>';
+})
+
+function displayPhrase()
+{
+    list.innerHTML = 'New Phrase';
+}

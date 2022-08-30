@@ -150,7 +150,7 @@ function loadMusic(indexNumb){
   musicName.innerText = allMusic[indexNumb - 1].name;
   musicArtist.innerText = allMusic[indexNumb - 1].artist;
   musicImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
-  musicBackgroundImage.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
+  musicBackgroundImage.src = `maingif.gif`;
   mainAudio.src = `songs/${allMusic[indexNumb - 1].src}.mp3`;
   songRate.innerText = allMusic[indexNumb - 1].rate;
   smallName.innerText = allMusic[indexNumb - 1].name;
