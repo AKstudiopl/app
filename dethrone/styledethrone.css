@@ -753,4 +753,10 @@ th, td:before {
     margin-left: 5%;
     grid-template-columns: repeat(1, 100%);
   }
+  .footer-content
+{
+  display: grid;
+  grid-template-columns: repeat(1, 90%);
+  justify-content: center;
+}
 }
