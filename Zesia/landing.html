@@ -1,349 +1,545 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <title>Zesia - Your Daily Zesia Of Music</title>
+    <title>Zesia - Your Daily Dose Of Music</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Music Hits Great Chill Zesia">
-    <link rel="stylesheet" href="landingStyle.css">
+    <link rel="stylesheet" href="styleLanding.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#222222">
     <link rel="shortcut icon" type="image" href="brandsources\20220320_150124.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
-    <script src="javascript\landingscript.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="mainLanding.js" defer></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 </head>
 <body>
 
-
-<div class="navbar">
-  <div class="navbar-logo">
-    <h1>ZESIA</h1>
-  </div>
-
-  <div class="navbar-menu">
-    <ul>
-      <li><a href="#">Discover</a></li>
-      <li><a href="#">Download</a></li>
-      <li><a href="#">Premium</a></li>
-      <span>|</span>
-      <li><a href="#">log In</a></li>
-      <li><a href="#">Sign In</a></li>
-    </ul>
-  </div>
-
-  <div class="navbar-toggle">
-    <a href="#"><i class="fa-solid fa-bars"></i></a>
-  </div>
-
+<div class="load-item active">
+  <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
 </div>
 
+  <div class="navbar">
 
-<div class="navbar-menu-mobile">
-  <div class="navbar-mobile-top">
-    <span></span><h1>ZESIA</h1><i class="fa-solid fa-xmark"></i>
-  </div>
-  <ul>
-    <span></span>
-    <li><a href="#">Discover</a></li>
-    <li><a href="#">Download</a></li>
-    <li><a href="#">Premium</a></li>
-    <span></span>
-    <li><a href="#">log In</a></li>
-    <li><a href="#">Sign In</a></li>
-  </ul>
-</div>
-
-<div class="nav-gap"></div>
-
-<div class="landing-screen">
-
-  <div class="landing-container-first">
-    <div class="shape">
-      <div class="shape-form"></div>
-      <div class="shape-arrow"></div>
+    <div class="navbar-title">
+      <img src="brandsources/IMG_20220320_144711.png" alt="">
     </div>
-    <h1>LIVE UR DAY WITH <span>MUSIC</span></h1>
-    <p>Make your day more lively with a variety of music that suits your mood, and try premium to get a variety of better features</p>
-    <div class="landing-buttons">
-      <a href="#">TRY PREMIUM <i class="fa-solid fa-caret-right"></i></a>
-      <a href="#">VIEW PLANS <i class="fa-solid fa-caret-right"></i></a>
+
+    <div class="navbar-menu">
+      <a href="#" class="in-use">Home</a>
+      <a href="#">App</a>
+      <a href="#">Activity</a>
+      <a href="#">How it Works?</a>
     </div>
+
+    <div class="navbar-action">
+      <a href="#">SIGN IN</a>
+      <a href="#">LOG IN</a>
+    </div>
+
+    <div class="navbar-toggle">
+      <a onclick="menuToggle()" class="navbarToggle"><i class="fa-solid fa-bars"></i></a>
+    </div>
+
+
   </div>
 
-  <div class="landing-container-second">
-    <div class="img-container">
-      <div class="img-top">
-        <img src="sources\Reasons-why-your-headphones-are-louder-on-one-side.jpg" alt="">
-      </div>
-      <img src="sources/image-centersrco13fa.jpg" alt="">
-      <div class="img-bottom">
-        <img src="sources\inline_image_preview.jpg" alt="">
+  <div class="navbar-menu-mobile">
+    <div class="mobile-title">
+      <h1>Zesia</h1>
+      <div class="navbar-toggle">
+        <a onclick="menuToggle()" class="navbarToggle"><i class="fa-solid fa-xmark"></i></a>
       </div>
     </div>
-  </div>
-
-</div>
-
-
-<div class="popular-screen">
-
-  <div class="popular-info">
-    <h1>POPULAR ON ZESIA, FROM ALL OVER THE WORLD</h1>
-    <p>Find the most heard and trending songs, enjoy them with milons of others users fromm all over the world, dont miss this oportunity</p>
-  </div>
-
-  <div class="popular-contanier">
-    <div class="popular-item">
-      <img src="sources\seedofjoy.png" alt="">
-      <h3>Marc Scibilia - On The Way</h3>
-    </div>
-    <div class="popular-item">
-      <img src="sources\seedofjoy.png" alt="">
-      <h3>David Guetta - Like I Do</h3>
-    </div>
-    <div class="popular-item">
-      <img src="sources\seedofjoy.png" alt="">
-      <h3>Jon Belion - All  Time Low</h3>
-    </div>
-  </div>
-
-  <div class="popular-button">
-    <div class="arrows">
-      <div class="arrow"></div>
-      <div class="arrow"></div>
-      <div class="arrow"></div>
-    </div>
-    <div class="shapeSec"></div>
-    <a href="#" onmouseover="arrowColor()" onmouseout="arrowColor()" class="actionBtn">LISTEN NOW</a>
-  </div>
-
-</div>
-
-<div class="social-screen">
-  <div class="left-text">
-    <h1>EXPLORE NOW! EXPLORE NOW! EXPLORE NOW! EXPLORE NOW! EXPLORE NOW! EXPLORE NOW! EXPLORE NOW! EXPLORE NOW! EXPLORE NOW! EXPLORE NOW! EXPLORE NOW! EXPLORE NOW!</h1>
-  </div>
-
-  <div class="social-info">
-    <h1>BROWESE ENTIRE MUSIC CATEGORY</h1>
-    <p>Find the most heard and trending songs, enjoy them with milons of others users fromm all over the world, dont miss this oportunity</p>
-  </div>
-
-  <div class="social-contianer">
-    <ul>
-      <li><i class="fa-solid fa-angles-up"></i> CLASSIC</li>
-      <li><i class="fa-solid fa-angles-up"></i> BLUES</li>
-      <li><i class="fa-solid fa-angles-up"></i> JAZZ</li>
-      <li><i class="fa-solid fa-angles-up"></i> METAL</li>
-      <li><i class="fa-solid fa-angles-up"></i> ALTERNATIVE</li>
-    </ul>
-  </div>
-
-  <div class="social-buttons">
-    <i class="fa-solid fa-angles-left" id="rightContent"></i>
-    <i class="fa-solid fa-angles-right"></i>
-  </div>
-
-</div>
-
-<div class="premier-screen">
-
-  <div class="premier-info">
-    <h1>BE A PART OF PREMIER SONGS WITH ARTISTS</h1>
-    <p>Watch the live premiere of a new song launched along with listeners & fans from around the world</p>
-  </div>
-
-  <div class="premiere-video">
-
-    <div class="video-contianer">
-      <h1>LIVE</h1>
-      <img src="sources\d2FjPTEwMjB4MS40OTkyNjc5MzU1Nzgz_src_10656-69285447_2416095141760298_1497417008898113536_o.jpg" alt="">
-    </div>
-
-  </div>
-
-  <div class="premier-buttons">
-    <a href="#">JOIN</a>
-  </div>
-
-</div>
-
-<div class="influencers-screen">
-
-
-  <div class="left-text">
-    <h1>EXPLORE NOW! EXPLORE NOW! EXPLORE NOW! EXPLORE NOW! EXPLORE NOW! EXPLORE NOW! EXPLORE NOW! EXPLORE NOW! EXPLORE NOW! EXPLORE NOW! EXPLORE NOW! EXPLORE NOW!</h1>
-  </div>
-
-
-  <div class="influencers-info">
-    <h1>READY TO ENJOY MUSIC FOR YOU?</h1>
-    <p>Join us and enjoy music from all the musicians all over the world, find the playlist that works best for you</p>
-    <div class="influencers-buttons">
-      <a href="#">TRY FOR FREE <i class="fa-solid fa-caret-right"></i></a>
-      <a href="#">VIEW PLANS <i class="fa-solid fa-caret-right"></i></a>
-    </div>
-  </div>
-
-
-  <div class="influencers-content">
-    <img src="sources\61d980464826740004290527.png" alt="">
-  </div>
-
-
-</div>
-
-
-<div class="finish-screen">
-
-
-  <div class="left-text">
-    <h1>EXPLORE NOW! EXPLORE NOW! EXPLORE NOW! EXPLORE NOW! EXPLORE NOW! EXPLORE NOW! EXPLORE NOW! EXPLORE NOW! EXPLORE NOW! EXPLORE NOW! EXPLORE NOW! EXPLORE NOW!</h1>
-  </div>
-
-
-  <div class="finish-info">
-    <h1>USERS FROM +<span class="count" data-target="100">0</span> COUNTRIES</h1>
-    <p>Comunnity thats growing up daily with more then 10.000 of new accounts</p>
-    <div class="finish-container">
-      <ul>
-        <li><span><i class="fa-solid fa-caret-up"></i></span>Poland</li>
-        <li><span><i class="fa-solid fa-caret-up"></i></span>Germany</li>
-        <li><span><i class="fa-solid fa-caret-up"></i></span>France</li>
-        <li><span><i class="fa-solid fa-caret-up"></i></span>United States</li>
-        <li><span><i class="fa-solid fa-caret-up"></i></span>United Kingdom</li>
-      </ul>
-    </div>
-    <div class="finish-buttons">
-      <a href="#">REGISTR NOW</a>
-    </div>
-  </div>
-
-</div>
-
-<div class="audio-screen">
-  <div class="audio-info">
-    <h1>Take your sound to the next level</h1>
-    <p>The highest available sound quality makes the music sound as authentic as when it was mastered and exactly as the artist intended.</p>
-  </div>
-
-  <div class="audio-container">
-    <div class="audio-item">
-<svg style="height: 200px; width: 200px; color: rgb(161, 217, 31);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-soundwave" viewBox="0 0 16 16"><rect width="100%" height="100%" fill="#0000"></rect> <path fill-rule="evenodd" d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z" fill="#A1D91F"></path> </svg>
-      <h1>Deep</h1>
-      <p>Innovative audio format, The best combination of sound quality, music selection and ease of use</p>
-    </div>
-
-    <div class="audio-item">
-        <svg style="height: 200px; width: 200px; color: rgb(161, 217, 31);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M381.9 388.2c-6.4 27.4-27.2 42.8-55.1 48-24.5 4.5-44.9 5.6-64.5-10.2-23.9-20.1-24.2-53.4-2.7-74.4 17-16.2 40.9-19.5 76.8-25.8 6-1.1 11.2-2.5 15.6-7.4 6.4-7.2 4.4-4.1 4.4-163.2 0-11.2-5.5-14.3-17-12.3-8.2 1.4-185.7 34.6-185.7 34.6-10.2 2.2-13.4 5.2-13.4 16.7 0 234.7 1.1 223.9-2.5 239.5-4.2 18.2-15.4 31.9-30.2 39.5-16.8 9.3-47.2 13.4-63.4 10.4-43.2-8.1-58.4-58-29.1-86.6 17-16.2 40.9-19.5 76.8-25.8 6-1.1 11.2-2.5 15.6-7.4 10.1-11.5 1.8-256.6 5.2-270.2.8-5.2 3-9.6 7.1-12.9 4.2-3.5 11.8-5.5 13.4-5.5 204-38.2 228.9-43.1 232.4-43.1 11.5-.8 18.1 6 18.1 17.6.2 344.5 1.1 326-1.8 338.5z" fill="#A1D91F"></path></svg>
-      <h1>Clear</h1>
-      <p>It allows you to listen to music in the lossless FLAC format, which provides strong and clear sound.</p>
-    </div>
-
-    <div class="audio-item">
-<svg style="height: 200px; width: 200px; color: rgb(161, 217, 31);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-badge-3d" viewBox="0 0 16 16"> <path d="M4.52 8.368h.664c.646 0 1.055.378 1.06.9.008.537-.427.919-1.086.919-.598-.004-1.037-.325-1.068-.756H3c.03.914.791 1.688 2.153 1.688 1.24 0 2.285-.66 2.272-1.798-.013-.953-.747-1.38-1.292-1.432v-.062c.44-.07 1.125-.527 1.108-1.375-.013-.906-.8-1.57-2.053-1.565-1.31.005-2.043.734-2.074 1.67h1.103c.022-.391.383-.751.936-.751.532 0 .928.33.928.813.004.479-.383.835-.928.835h-.632v.914zm3.606-3.367V11h2.189C12.125 11 13 9.893 13 7.985c0-1.894-.861-2.984-2.685-2.984H8.126zm1.187.967h.844c1.112 0 1.621.686 1.621 2.04 0 1.353-.505 2.02-1.621 2.02h-.844v-4.06z" fill="#A1D91F"></path> <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z" fill="#A1D91F"></path> </svg>      <h1>Bass</h1>
-      <p>Customizate on ur preferences, It is easily accessible and becomes a better solution</p>
-    </div>
-
-  </div>
-
-</div>
-
-<div class="end-screen">
-
-  <div class="end-info">
-    <h1>START USING NOW</h1>
-    <p>Create account, download app or use web app and start to chilling</p>
-    <div class="end-buttons">
-      <a href="#">REGISTR</a>
-      <a href="#">DOWNLOAD</a>
+    <a href="#" class="in-use">Home</a>
+    <a href="#">App</a>
+    <a href="#">Activity</a>
+    <a href="#">How it Works?</a>
+    <div class="navbar-action">
+      <a href="#">SIGN IN</a>
       <a href="#">LOG IN</a>
     </div>
   </div>
 
-  <div class="end-shape">
-    <div class="shape-first">
-      <img src="sources/image-centersrco13fa.jpg" alt="">
-    </div>
-    <div class="shape-first">
-      <img src="sources\Reasons-why-your-headphones-are-louder-on-one-side.jpg" alt="">
-    </div>
-    <div class="shape-first">
-      <img src="sources\inline_image_preview.jpg" alt="">
-    </div>
-  </div>
+  <div class="home-screen">
 
-</div>
+    <div class="home-screen-left">
+      <h1>Discover, listen, and relax in extraordinary style</h1>
+      <p>With pure love to music, we are presenting <span>Zesia</span>, ur daily dose of music</p>
+      <div class="home-screen-left-action">
+        <a href="#">Explore</a>
+        <a href="#">Sign In</a>
+      </div>
+      <div class="home-screen-left-data">
 
+        <div class="data-item">
+        <i class="fa-solid fa-chart-line"></i>
+          <div class="data-item-content">
+            <h1 class="num" data-val="150000">000</h1>
+            <p>Users on Zesia</p>
+          </div>
+        </div>
 
-<div class="footer">
-  <div class="footer-container">
+        <div class="data-item">
+        <i class="fa-solid fa-bolt"></i>
+          <div class="data-item-content">
+            <h1 class="num" data-val="15000">000</h1>
+            <p>New accounts per Week</p>
+          </div>
+        </div>
 
-  <div class="footer-item">
-    <div class="footer-title">
-      <h1>ZESIA</h1>
+      </div>
     </div>
-    <div class="footer-social">
-      <p>Zesia is your window for great music!</p>
-      <ul>
-        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fa-solid fa-at"></i></a></li>
-        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-      </ul>
-    </div>
-  </div>
 
-  <div class="footer-item">
-    <div class="footer-title">
-      <h1>Links</h1>
+    <div class="home-screen-right">
+      <img src="akstudiopl.github.io_Zesia_3_samsung-galaxys20-cloudblue-portrait.png">
     </div>
-    <div class="footer-content">
-      <ul>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Download</a></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Terms & Conditions</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="footer-item">
-    <div class="footer-title">
-      <h1>Contact Us</h1>
-    </div>
-    <div class="footer-content">
-      <ul>
-        <li>Address : (802) 649-1079 Norwich, Vermont(VT), 05055</li>
-        <li>Phone : +48 656 345 466</li>
-        <li>Mail : contact@zesia.com</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="footer-item">
-    <div class="footer-title">
-      <h1>Download</h1>
-    </div>
-    <div class="footer-content">
-      <ul>
-        <li><a href="#">Google Play</a></li>
-        <li><a href="#">App Store</a></li>
-        <li><a href="#">Microsoft Store</a></li>
-        <li><a href="#">Web App</a></li>
-      </ul>
-    </div>
-  </div>
 
   </div>
 
-  <div class="footer-bottom">
-    <p>Terms Of Use | Privacy Environmental Policy</p>
-    <p>Copyright &copy; 2022 Zesia, All Rights Reserved.</p>
+  <div class="content-btn">
+    <a href="#hotlist"><i class="fa-solid fa-arrow-down"></i></a>
   </div>
 
-</div>
+  <div class="hotlist-screen" id="hotlist">
 
+      <div class="hotlist-top">
+        <h1>Hot List</h1><a href="#">View all <i class="fa-solid fa-angle-right"></i></a>
+      </div>
+
+      <div class="hotlist-container">
+
+        <div class="hotlist-item">
+          <img src="czarno-na-bialym-b-iext97578038.jpg">
+          <div class="hotlist-item-info">
+            <h1>Czarno Na Białym</h1>
+            <p>1.3m views <a href="#">Gibbs</a></p>
+          </div>
+        </div>
+
+        <div class="hotlist-item">
+          <img src="sharks-imagine.jpg">
+          <div class="hotlist-item-info">
+            <h1>Sharks</h1>
+            <p>1.2m views <a href="#">Imagine Dragons</a></p>
+          </div>
+        </div>
+
+        <div class="hotlist-item">
+          <img src="billy-kid-w-iext110765493.jpg">
+          <div class="hotlist-item-info">
+            <h1>Billy Kid</h1>
+            <p>1.0m views <a href="#">ReTo</a></p>
+          </div>
+        </div>
+
+        <div class="hotlist-item">
+          <img src="b6618d666daeea87f12b21e8ee5c4ec0.649x649x1.jpg">
+          <div class="hotlist-item-info">
+            <h1>Kolorowych Snów</h1>
+            <p>0.9m views <a href="#">Tymek</a></p>
+          </div>
+        </div>
+
+      </div>
+
+  </div>
+
+  <div class="started-screen">
+
+    <div class="started-title">
+      <h1>Getting Started</h1>
+      <p>Follow this simply steps, and start ur Zesia</p>
+    </div>
+
+    <div class="started-container">
+
+      <div class="started-item">
+        <i class="fa-solid fa-user"></i>
+        <p>Create Your Account</p>
+      </div>
+
+      <div class="started-arrow">
+        <i class="fa-solid fa-angle-right"><i class="fa-solid fa-angle-right"></i></i>
+      </div>
+
+      <div class="started-item">
+        <i class="fa-solid fa-laptop"></i>
+        <p>Add ur device</p>
+      </div>
+
+      <div class="started-arrow">
+        <i class="fa-solid fa-angle-right"><i class="fa-solid fa-angle-right"></i></i>
+      </div>
+
+      <div class="started-item">
+        <i class="fa-solid fa-ear-listen"></i>
+        <p>Choose listening preferences</p>
+      </div>
+
+      <div class="started-arrow">
+        <i class="fa-solid fa-angle-right"><i class="fa-solid fa-angle-right"></i></i>
+      </div>
+
+      <div class="started-item">
+        <i class="fa-solid fa-heart"></i>
+        <p>Relax with Zesia</p>
+      </div>
+
+    </div>
+
+    <div class="started-action">
+      <a href="#">Registr Now</a>
+    </div>
+
+  </div>
+
+  <div class="download-screen">
+
+    <div class="download-left">
+      <div class="shape">
+        <img src="textureback.jpg">
+      </div>
+      <img src="mockupstock_imac2013_right.png">
+    </div>
+
+    <div class="download-right">
+      <h1>Ready to Collaborate?</h1>
+      <span>Make a Application for Artist, and be part of Zesia!</span>
+      <div class="download-action">
+        <a href="#">Application</a>
+        <a href="#">Rules</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="premium-screen">
+
+    <div class="premium-title">
+      <h1>THE DIFFERENCE</h1>
+      <p>" Everyday is easier with zesia "</p>
+    </div>
+
+    <div class="premium-table">
+
+      <div class="premium-item title">
+        <p>Free</p>
+        <p><a href="#">0$</a></p>
+      </div>
+      <div class="premium-item title">
+        <p>Premium</p>
+        <p><a href="#">4.99$</a></p>
+      </div>
+      <div class="premium-item title">
+        <p>Premium +</p>
+        <p><a href="#">7.99$</a></p>
+      </div>
+
+      <div class="premium-item data">
+        <p>Unlimited skips</p>
+      </div>
+      <div class="premium-item data">
+        <p>Unlimited skips</p>
+      </div>
+      <div class="premium-item data">
+        <p>Unlimited skips</p>
+      </div>
+
+      <div class="premium-item data">
+        <p>2 Ads Per Hour</p>
+      </div>
+      <div class="premium-item data">
+        <p>-</p>
+      </div>
+      <div class="premium-item data">
+        <p>-</p>
+      </div>
+
+      <div class="premium-item data">
+        <p>High quality audio</p>
+      </div>
+      <div class="premium-item data">
+        <p>High quality audio</p>
+      </div>
+      <div class="premium-item data">
+        <p>High quality audio</p>
+      </div>
+
+      <div class="premium-item data">
+        <p>Data save mode</p>
+      </div>
+      <div class="premium-item data">
+        <p>Data save mode</p>
+      </div>
+      <div class="premium-item data">
+        <p>Data save mode</p>
+      </div>
+
+      <div class="premium-item data">
+        <p>-</p>
+      </div>
+      <div class="premium-item data">
+        <p>Download music</p>
+      </div>
+      <div class="premium-item data">
+        <p>Download music</p>
+      </div>
+
+      <div class="premium-item data">
+        <p>-</p>
+      </div>
+      <div class="premium-item data">
+        <p>Offline mode</p>
+      </div>
+      <div class="premium-item data">
+        <p>Offline mode pro</p>
+      </div>
+
+      <div class="premium-item data">
+        <p>-</p>
+      </div>
+      <div class="premium-item data">
+        <p>-</p>
+      </div>
+      <div class="premium-item data">
+        <p>Special Content</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="gallery-screen">
+
+    <div class="gallery-title">
+      <h1>OURS USERS</h1>
+      <p>& their reviews</p>
+    </div>
+
+    <div class="container">
+        <div class="veiw-box">
+            <div id="testimonials">
+
+                <div class="user">
+                    <img src="images/user1.jpg" alt="">
+                    <p>Many people feel that there is a limited amount of abundance, wealth, or chance to succeed in life. Furthermore, there is a solid beleif that if one person succeeds, another must fail.</p>
+                    <h3>Riley Olie</h3>
+                </div>
+
+                <div class="user space">
+                    <img src="images/user2.jpg" alt="">
+                    <p>Many people feel that there is a limited amount of abundance, wealth, or chance to succeed in life. Furthermore, there is a solid beleif that if one person succeeds, another must fail.</p>
+                    <h3>Steve McCurry</h3>
+                </div>
+
+                <div class="user">
+                    <img src="images/user3.jpg" alt="">
+                    <p>Many people feel that there is a limited amount of abundance, wealth, or chance to succeed in life. Furthermore, there is a solid beleif that if one person succeeds, another must fail.</p>
+                    <h3>Merlin Nguyen</h3>
+                </div>
+
+
+            </div>
+
+            <div class="controls">
+                <span id="control1"></span>
+                <span id="control2" class="active"></span>
+                <span id="control3"></span>
+            </div>
+
+        </div>
+    </div>
+
+  </div>
+
+  <div class="social-screen">
+
+    <div class="social-title">
+      <h1>WATCH ZESIA RATES</h1>
+      <p>Start relax with zesia</p>
+    </div>
+
+    <div class="social-container">
+
+      <div class="bottom-social-container" id="socialContainer">
+        <div class="social-item">
+          <iframe src="https://www.youtube.com/embed/TsMqYvdk2Ec" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="social-item">
+          <iframe src="https://www.youtube.com/embed/mqnPXRDonfc" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="social-item">
+          <iframe src="https://www.youtube.com/embed/TXFJ16tWs8k" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="social-item hidden">
+          <iframe src="https://www.youtube.com/embed/TsMqYvdk2Ec" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="social-item hidden">
+          <iframe src="https://www.youtube.com/embed/mqnPXRDonfc" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="social-item hidden">
+          <iframe src="https://www.youtube.com/embed/TXFJ16tWs8k" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="social-item hidden">
+          <iframe src="https://www.youtube.com/embed/TsMqYvdk2Ec" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="social-item hidden">
+          <iframe src="https://www.youtube.com/embed/mqnPXRDonfc" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="social-item hidden">
+          <iframe src="https://www.youtube.com/embed/TXFJ16tWs8k" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="social-item hidden">
+          <iframe src="https://www.youtube.com/embed/TsMqYvdk2Ec" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="social-item hidden">
+          <iframe src="https://www.youtube.com/embed/mqnPXRDonfc" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="social-item hidden">
+          <iframe src="https://www.youtube.com/embed/TXFJ16tWs8k" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="started-action">
+        <a onclick="moreSocial()" class="socialCounter">View More (<span class="socialNumber"></span>)</a>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <div class="appstore-screen">
+
+    <div class="shape"></div>
+
+    <div class="appstore-left">
+
+      <div class="appstore-img">
+        <img src="mockuper.png">
+      </div>
+
+      <div class="appstore-img">
+        <img src="samsungmockup.png">
+      </div>
+
+      <div class="appstore-img">
+        <img src="mockupersec.png">
+      </div>
+
+      <div class="appstore-img">
+        <img src="mockuplenovo.png">
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <div class="blog-screen">
+
+    <div class="social-title">
+      <h1>UBDATES, NEWS & SALES</h1>
+      <p>Stay connected</p>
+    </div>
+
+    <div class="ubdates-top">
+      <h1>Latest news </h1>
+      <a href="ubdatelog.html">Ubdate Blog</a>
+    </div>
+
+    <div class="ubdt-container">
+
+      <div class="ubdt-item">
+          <h1>1.0.4 <span>02.09.2022</span></h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod quos sed molestiae culpa unde, tempora id, neque quas excepturi minima quaerat nesciunt esse natus modi.</p>
+          <a href="ubdatelog.html">View all</a>
+      </div>
+
+      <div class="ubdt-item">
+          <h1>1.0.3 <span>16.08.2022</span></h1>
+          <p>Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim temporibus mollitia reprehenderit ea expedita eveniet doloribus eos ipsa neque amet nisi, veritatis distinctio corporis inventore autem, cupiditate repudiandae quaerat, nemo. Excepturi fugiat consequuntur facilis labore in, dicta porro! Natus, at!adipisicing elit. Quod quos sed molestiae culpa unde, tempora id, neque quas excepturi minima quaerat nesciunt esse natus modi.</p>
+          <a href="ubdatelog.html">View all</a>
+      </div>
+
+      <div class="ubdt-item">
+          <h1>1.0.2 <span>02.08.2022</span></h1>
+          <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt corporis, velit minima veniam molestias expedita doloremque blanditiis, dolores, impedit minus libero saepe reprehenderit, doloribus tempore!, consectetur adipisicing elit. Quod quos sed molestiae culpa unde, tempora id, neque quas excepturi minima quaerat nesciunt esse natus modi.</p>
+          <a href="ubdatelog.html">View all</a>
+      </div>
+
+    </div>
+
+  </div>
+
+<footer>
+
+  <div class="footer-social">
+
+    <div class="footer-social-item">
+      <a href="#">
+      <i class="fa-brands fa-facebook"></i>
+      </a>
+    </div>
+    <div class="footer-social-item">
+      <a href="#">
+      <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+    <div class="footer-social-item">
+      <a href="#">
+      <i class="fa-brands fa-twitter"></i>
+      </a>
+    </div>
+    <div class="footer-social-item">
+      <a href="#">
+      <i class="fa-brands fa-youtube"></i>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="footer-links">
+
+    <div class="footer-links-item">
+      <a href="#">About us</a>
+    </div>
+
+    <div class="footer-links-item">
+      <a href="#">Jobs</a>
+    </div>
+
+    <div class="footer-links-item">
+      <a href="#">Blog</a>
+    </div>
+
+    <div class="footer-links-item">
+      <a href="#">Press</a>
+    </div>
+
+    <div class="footer-links-item">
+      <a href="#">FAQ</a>
+    </div>
+
+    <div class="footer-links-item">
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="footer-links-item">
+      <a href="#">Privacy policy</a>
+    </div>
+
+    <div class="footer-links-item">
+      <a href="#">Terms of Use</a>
+    </div>
+
+    <div class="footer-links-item">
+      <a href="#">Download</a>
+    </div>
+  </div>
+
+  <div class="footer-copyright">
+    <p>&copy; 2021-2022 Zesia Company | All Rights Reserved</p>
+  </div>
+
+</footer>
 
 
 </body>
