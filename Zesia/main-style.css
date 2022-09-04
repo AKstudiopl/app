@@ -13,10 +13,10 @@
   --background: #040511;
   --backgroundsecond: #04061a;
   --color: #DEE4EA;
-  --maincolor: #1764CC;
-  --maincolorhover: #4C97DE;
-  --border: 1px #1764CC50 solid;
-  --gradient: radial-gradient(circle, rgba(23,100,204,1) 0%, rgba(12,18,77,1) 39%, rgba(4,6,26,1) 85%);
+  --maincolor: #9B51E0;
+  --maincolorhover: #3081ED;
+  --border: 1px #9B51E0 solid;
+  --gradient: radial-gradient(circle, rgba(155, 81, 224,1) 0%,  rgba(4,6,26,1) 65%, rgba(4,6,26,1) 85%);
 }
 :greentheme
 {
