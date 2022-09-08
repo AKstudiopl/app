@@ -25,22 +25,6 @@ control3.onclick=function(){
     control3.classList.add("active");
 }
 
-let valueDisplays = document.querySelectorAll(".num");
-let interval = 1000;
-valueDisplays.forEach((valueDisplay) => {
-  let startValue = 0;
-  let endValue = parseInt(valueDisplay.getAttribute("data-val"));
-  let duration = Math.floor(interval / endValue);
-  let counter = setInterval(function () {
-    startValue += 300;
-    valueDisplay.textContent = startValue;
-    if (startValue == endValue) {
-      clearInterval(counter);
-    }
-  }, duration);
-});
-
-
   function more() {
     const amount = 3;
     const hiddenPosts = document.querySelectorAll(".social-item.hidden");
@@ -87,7 +71,7 @@ window.addEventListener('load', function() {
     const loadItem = document.querySelector(".load-item");
     const hiddenPostsPopup = document.querySelector(".socialNumber");
     hiddenPostsPopup.textContent = $('#socialContainer > .hidden').length;
-    loadItem.classList.toggle("active");
+    loadItem.classList.remove("active");
 })
 
 function menuToggle() {
