@@ -26,6 +26,22 @@ darkMode.addEventListener('click', function(){
 window.addEventListener("load", function () {
     const loader = document.querySelector(".loader");
     loader.className += " hidden";
+    if (content.classList.contains('green')) {
+        document.documentElement.style.setProperty('--maincolor', '#A1D91F');
+        document.documentElement.style.setProperty('--maincolorhover', '#1ed760');
+        document.documentElement.style.setProperty('--border', '1px #A1D91F50 solid');
+        document.documentElement.style.setProperty('--background', '#121212');
+        document.documentElement.style.setProperty('--backgroundsecond', '#242424');
+        document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(36,36,36,1) 100%)');
+    }
+    if (content.classList.contains('blue')) {
+        document.documentElement.style.setProperty('--maincolor', '#1764CC');
+        document.documentElement.style.setProperty('--maincolorhover', '#4C97DE');
+        document.documentElement.style.setProperty('--border', '1px #1764CC50 solid');
+        document.documentElement.style.setProperty('--background', '#040511');
+        document.documentElement.style.setProperty('--backgroundsecond', '#04061a');
+        document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, rgba(23,100,204,1) 0%, rgba(12,18,77,1) 39%, rgba(4,6,26,1) 85%)');
+    }
 });
 
 const activeHomeBtn = document.getElementsByClassName('navbar-bottom-btn-home')[0]
@@ -85,9 +101,11 @@ showMusicMenubtn.addEventListener('click', () => {
   musicMenuShow.classList.toggle('active')
 })
 
-const favoritBtn = document.getElementsByClassName('fa-heart')[0]
-const favAlert = document.getElementsByClassName('fav-alert')[0]
+const favoritBtn = document.querySelector('#heartBtnMain');
+const favAlert = document.querySelector('.fav-alert')
 favoritBtn.addEventListener('click', () => {
+  favoritBtn.classList.toggle('fa-regular')
+  favoritBtn.classList.toggle('fa-solid')
   favoritBtn.classList.toggle('active')
   favAlert.classList.toggle('active')
 })
@@ -144,6 +162,7 @@ window.addEventListener("load", ()=>{
 
 musicImg.addEventListener("click", ()=>{
   musicImg.classList.toggle('active');
+  showMusicMenubtn.classList.toggle('active');
 });
 
 function loadMusic(indexNumb){
@@ -356,12 +375,10 @@ const topOption = document.getElementsByClassName('top-controls-more')[0]
 topOptionBtn.addEventListener('click', () => {
   topOption.classList.toggle('active')
   shortcutCheck();
-  rateBtn.style.visibility = "hidden";
 })
 topOptionExit.addEventListener('click', () => {
   topOption.classList.toggle('active');
   shortcutCheck();
-  rateBtn.style.visibility = "visible";
 })
 
 const currentPlaylistBtn = document.getElementsByClassName('current-playlist-btn')[0]
@@ -644,6 +661,7 @@ function setvolume(){
     namePlace = document.getElementById('nameUser');
     namePlace.innerHTML = localStorage.userData;
     profilName.innerHTML = localStorage.userData;
+
       if (localStorage.getItem("userData") === null) {
         nameAsk.classList.remove('confirmed');
     }else {
@@ -651,32 +669,11 @@ function setvolume(){
     }
   }
 
+
   const nameAsk = document.getElementsByClassName('name-ask')[0]
   const nameInputBtn = document.getElementsByClassName('usernameNext')[0]
   nameInputBtn.addEventListener('click', () => {
       nameAsk.classList.toggle('confirmed');
-  })
-
-
-  const rateBtn = document.getElementsByClassName('rateBtn')[0]
-  const rateScreen = document.getElementsByClassName('lyrics')[0]
-  const rateIcon = document.getElementsByClassName('OpinieIcon')[0]
-  rateBtn.addEventListener('click', () => {
-      rateScreen.classList.toggle('active');
-      rateIcon.classList.toggle('fa-angle-up');
-      rateIcon.classList.toggle('fa-angle-down');
-      if (rateScreen.classList.contains('active')) {
-        topShourcutButtonRate.classList.add('active');
-      }
-      else {
-        topShourcutButtonRate.classList.remove('active');
-      }
-      if (topShourcutButtonRate.classList.contains('active')) {
-        rateBtn.style.visibility = "visible";
-      }
-      else {
-        rateBtn.style.visibility = "hidden";
-      }
   })
 
 
@@ -736,13 +733,6 @@ function shortcutCheck() {
   const topShourcutButtonRate = document.querySelector('.shortcut-rate')
     topShourcutButtonRate.addEventListener('click', () => {
       topShourcutButtonRate.classList.toggle('active');
-      rateScreen.classList.toggle('active');
-      if (topShourcutButtonRate.classList.contains('active')) {
-        rateBtn.style.visibility = "visible";
-      }
-      else {
-        rateBtn.style.visibility = "hidden";
-      }
   })
 
   const topShourcutButtonShuffle = document.querySelector('.shortcut-shuffle')
@@ -868,10 +858,14 @@ function shortcutCheck() {
       }, 7200000);
   })
 
-
+  const searchFiltersItems = document.querySelectorAll('.search-item');
   const searchFilter = document.querySelectorAll('.search-item').forEach(searchFilter => {
     searchFilter.addEventListener('click', event => {
       searchFilter.classList.toggle('checked');
+      let filterNumber = $('#filterBox > .checked').length;
+      if (filterNumber > 2) {
+        searchFilter.classList.toggle('checked');
+      }
     })
   })
 
