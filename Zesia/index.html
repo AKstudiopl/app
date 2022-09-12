@@ -80,7 +80,7 @@
           <img src="postmalone-222.png">
             <div class="settings-screen-item-description">
               <h3>Gość <span id="profilName"></span></h3>
-              <a href="#" class="profile-settins-btn">Pokaż profil <i class="fa-solid fa-angle-right"></i></a>
+              <a href="#" class="profile-settins-btn">Profilhead-content-item</a>
             </div>
         </div>
 
@@ -305,6 +305,12 @@
       <a onclick="randomIndex()">Nowa Ulubiona Muzyka?</a>
     </div>
 
+  <div class="library-settings-container">
+    <a href="#" class="librarySettingsBtn">Ustawienia</a>
+    <a href="#">Konto</a>
+    <a href="landing.html">Zesia</a>
+  </div>
+
   </div>
 </div>
 
@@ -317,7 +323,7 @@
         <h1>Witaj, <span id="nameUser"></span></h1>
       </div>
       <a href="#" class="settings-action-btn">
-        <i class="fa-solid fa-gear"></i>
+        <i class="fa-regular fa-user"></i>
       </a>
     </div>
     <div class="welcome-search-bar">
@@ -367,8 +373,10 @@
   </div>
 
   <div class="personal-container-items">
-    <div class="personal-item personal-item" onclick="personalLIst()">
-      <h1>Vibe</h1>
+    <div class="personal-item" onclick="personalLIst()">
+      <h1>POP</h1>
+      <img src="sources\897-8975430_postmalone-sticker-post-malone.png" alt="">
+      <h1>POP</h1>
     </div>
   </div>
 
@@ -430,6 +438,21 @@
       <h2>Dodaj Wykonawce</h2>
     </div>
   </div>
+</div>
+
+<div class="personal-container">
+  <div class="title">
+    <h1>Popularne</h1>
+  </div>
+
+  <div class="personal-container-items">
+    <div class="personal-item" onclick="personalLIst()">
+      <h1>DANCE</h1>
+      <img src="sources\da6y3zv-1bbb05f0-0de2-4abe-b2c5-c13df22eb887.png" alt="">
+      <h1>DANCE</h1>
+    </div>
+  </div>
+
 </div>
 
 
@@ -612,7 +635,7 @@
     </div>
 
     <div class="main-music-sec-nav">
-      <a class="device-screen-btn"><i class="fa-solid fa-download"></i></a>
+      <a class="device-screen-btn disabledStyle"><i class="fa-solid fa-download"></i></a>
       <a class="current-playlist-btn"><i class="fa-solid fa-list"></i></a>
     </div>
 
@@ -644,62 +667,6 @@
 
   </div>
 
-    <div class="lyrics">
-      <div class="lyrics-container">
-        <img src="IMG_20220322_224333.jpg">
-        <div class="review-title">
-        <span class="artist-review-artist"></span>
-        <span> - </span>
-        <span class="artist-review-name"></span>
-        </div>
-        <div class="lyrics-top">
-          <p id="song-rate">
-          </p>
-          <a href="#"><i class="fa-solid fa-heart"></i> Oceń</a>
-        </div>
-        <h3>Oceny utworów pomagają wykonacy oraz słuchaczom na większą swobode działania</h3>
-
-        <div class="review-scroll">
-          <div class="review-item">
-            <h2>Paul</h2>
-            <span>Like the vibe</span>
-            <div class="review-stars">
-              <span>5 / 5</span>
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-          </div>
-          <div class="review-item">
-            <h2>Paul</h2>
-            <span>Like the vibe</span>
-            <div class="review-stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-          </div>
-          <div class="review-item">
-            <h2>Paul</h2>
-            <span>Like the vibe</span>
-            <div class="review-stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-          </div>
-          <div class="review-item">
-            <h2>Paul</h2>
-            <span>Like the vibe</span>
-            <div class="review-stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-          </div>
-          <div class="review-item">
-            <h2>Paul</h2>
-            <span>Like the vibe</span>
-            <div class="review-stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
 
   <audio id="audio" src=""></audio>
 
@@ -764,21 +731,18 @@
     </div>
 
     <div class="music-style-item-title">
-
-      <div class="music-style-item-title-color">
-          <h1>VIBE</h1>
-      </div>
-
+      <h1>POP</h1>
+      <img src="sources\897-8975430_postmalone-sticker-post-malone.png" alt="">
+      <h1>POP</h1>
     </div>
 
     <div class="music-style-item-content">
       <h1>Poczuj swój styl w muzyce</h1>
       <h2>Posłuchaj ulubionych utworów innych</h2>
         <div class="music-style-option">
-          <p>Playlista polubiona przez : <span>15.356 słuchaczy</span></p>
-          <a href="#"><i class="fa-solid fa-heart"></i> Polub</a>
+          <p class="music-content-number">Playlista polubiona przez : <span>15, 356 Użytkowników</span></p>
+          <a href="#"><i class="fa-regular fa-heart"></i> Polub</a>
         </div>
-      <p>Utwory :</p>
         <ul>
 
         </ul>

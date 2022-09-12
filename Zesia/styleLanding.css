@@ -18,11 +18,11 @@ body
 }
 :root
 {
-  --primary-color: #9B51E0;
-  --secondary-color: #3081ED;
+  --primary-color: #A1D91F;
+  --secondary-color: #1ed760;
   --primary-font: #BCBCBC;
-  --primary-background: #1F1D2B;
-  --secondary-background: #9B51E025;
+  --primary-background: #242424;
+  --secondary-background: #121212;
   --transition: 0.25s;
 }
 .content-btn
@@ -45,7 +45,7 @@ body
   position: fixed;
   z-index: 100;
   margin-bottom: 100px;
-  filter: drop-shadow(0px 0px 50px #9B51E0);
+  filter: drop-shadow(0px 0px 50px #a1d91f);
 }
 .navbar
 {
@@ -78,12 +78,12 @@ body
 .navbar-menu a:hover
 {
   color: var(--secondary-color);
-  border-bottom: 1px #3081ED solid;
+  border-bottom: 1px #A1D91F solid;
 }
 .navbar-menu a.in-use
 {
   color: var(--secondary-color);
-  border-bottom: 1px #3081ED solid;
+  border-bottom: 1px #A1D91F solid;
 }
 .navbar-action
 {
@@ -99,7 +99,7 @@ body
   color: var(--primary-font);
   border-radius: 10px;
   text-decoration: none;
-  filter: drop-shadow(5px 5px 40px #3081ED);
+  filter: drop-shadow(5px 5px 40px #A1D91F);
 }
 .navbar-action a:nth-last-child(1)
 {
@@ -215,11 +215,11 @@ body
   color: #ffffff;
   font-size: 60px;
   line-height: 1;
-  filter: drop-shadow(5px 5px 100px #9B51E050);
+  filter: drop-shadow(5px 5px 100px #A1D91F50);
 }
 .home-screen-left span
 {
-  background: linear-gradient(93.51deg, #3081ED 2.84%, #3081ED 99.18%);
+  background: linear-gradient(93.51deg, #A1D91F 2.84%, #A1D91F 99.18%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -250,8 +250,8 @@ body
 }
 .home-screen-left-action a:nth-child(1)
 {
-  filter: drop-shadow(5px 5px 45px #9B51E050);
-  background: linear-gradient(93.51deg, #9B51E0 2.84%, #3081ED 99.18%);
+  filter: drop-shadow(5px 5px 45px #A1D91F50);
+  background: linear-gradient(93.51deg, #A1D91F 2.84%, #1ed760 99.18%);
   border: none;
   margin-right: 15px;
 }
@@ -273,10 +273,10 @@ body
 }
 .data-item i
 {
-  background: linear-gradient(93.51deg, #9B51E0 2.84%, #3081ED 99.18%);
+  background: linear-gradient(93.51deg, #A1D91F 2.84%, #1ed760 99.18%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(5px 5px 45px #9B51E050);
+  filter: drop-shadow(5px 5px 45px #A1D91F50);
   font-size: 30px;
 }
 .data-item-content
@@ -300,8 +300,10 @@ body
 }
 .home-screen-right img
 {
-  filter: drop-shadow(300px 125px 105px #9B51E050);
+  filter: drop-shadow(300px 125px 105px #A1D91F50);
   max-height: 800px;
+  filter: grayscale(1);
+
 }
 .hotlist-screen
 {
@@ -310,8 +312,8 @@ body
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: rgb(155,81,224);
-  background: linear-gradient(0deg, rgba(155,81,224,0.21772027220630374) 0%, rgba(31,29,43,1) 100%);
+  background: rgb(161,217,31);
+  background: linear-gradient(0deg, rgba(161,217,31,0.5011600928074246) 0%, rgba(36,36,36,1) 85%);
 }
 .hotlist-top
 {
@@ -390,8 +392,8 @@ body
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background: rgb(155,81,224);
-  background: linear-gradient(0deg, rgba(31,29,43,1) 0%, rgba(155,81,224,0.21772027220630374) 100%);
+  background: rgb(161,217,31);
+  background: linear-gradient(180deg, rgba(161,217,31,0.5011600928074246) 0%, rgba(36,36,36,1) 85%);
 }
 .started-title
 {
@@ -453,12 +455,12 @@ body
 }
 .started-item i
 {
-  background: linear-gradient(45deg, #9B51E0 35%, #3081ED 100%);
+  background: linear-gradient(93.51deg, #A1D91F 2.84%, #1ed760 99.18%);
   border: 1px #ffffff50 solid;
   padding: 40px;
   border-radius: 15px;
   font-size: 20px;
-  filter: drop-shadow(0px 0px 100px #9B51E0);
+  filter: drop-shadow(0px 0px 100px #A1D91F);
 }
 .started-arrow
 {
@@ -511,7 +513,7 @@ body
 {
   width: 450px;
   height: 350px;
-  background: linear-gradient(45deg, #9B51E0 35%, #3081ED 100%);
+  background: linear-gradient(93.51deg, #A1D91F 2.84%, #1ed760 99.18%);
   position: absolute;
   border-radius: 100px;
 }
@@ -526,7 +528,7 @@ body
 .download-left img
 {
   height: 500px;
-  filter: drop-shadow(0px 75px 50px #3081ED25);
+  filter: drop-shadow(0px 75px 50px #a1d91f50) grayscale(1);;
 }
 .download-right
 {
@@ -539,7 +541,7 @@ body
   color: #fff;
   margin-bottom: 0;
   font-size: 40px;
-  filter: drop-shadow(5px 5px 75px #9B51E0);
+  filter: drop-shadow(5px 5px 75px #a1d91f);
 }
 .download-action
 {
@@ -561,8 +563,8 @@ body
 }
 .download-action a:nth-child(1)
 {
-  filter: drop-shadow(5px 5px 145px #9B51E050);
-  background: linear-gradient(93.51deg, #9B51E0 2.84%, #3081ED 99.18%);
+  filter: drop-shadow(5px 5px 145px #A1D91F52);
+  background: linear-gradient(93.51deg, #A1D91F 2.84%, #1ed760 99.18%);
   border: none;
   margin-right: 15px;
 }
@@ -576,8 +578,7 @@ body
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgb(155,81,224);
-  background: radial-gradient(circle, rgba(155,81,224,0.05018382352941176) 0%, rgba(48,129,237,0) 44%);
+  background: var(--primary-background);
 }
 .premium-title
 {
@@ -618,14 +619,14 @@ body
   align-items: center;
   padding-left: 50px;
   padding-right: 50px;
-  filter: drop-shadow(5px 5px 50px #9B51E0);
+  filter: drop-shadow(5px 5px 50px #A1D91F);
   transition: var(--transition);
 }
 .premium-item.title
 {
   background: var(--primary-color);
   color: #fff;
-  filter: drop-shadow(5px 5px 50px #9B51E050);
+  filter: drop-shadow(5px 5px 50px #A1D91F50);
 }
 .premium-item.title a
 {
@@ -674,8 +675,8 @@ body
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgb(155,81,224);
-  background: linear-gradient(0deg, rgba(155,81,224,0.25) 0%, rgba(48,129,237,0) 100%);
+  background: rgb(161,217,31);
+  background: linear-gradient(0deg, rgba(161,217,31,0.25058004640371234) 0%, rgba(36,36,36,1) 85%);
 }
 .container{
     width: 100%;
@@ -781,13 +782,12 @@ body
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgb(155,81,224);
-  background: linear-gradient(0deg,rgba(48,129,237,0) 0%, rgba(155,81,224,0.25) 100%);
+  background: rgba(161,217,31, 0.5);
+  padding-bottom: 50px;
 }
 .social-title
 {
   text-align: center;
-  filter: drop-shadow(5px 5px 20px #1F1D2B);
 }
 .social-title h1
 {
@@ -862,6 +862,7 @@ body
   width: 100%;
   aspect-ratio: 20/9;
   overflow: hidden;
+  filter: grayscale(1);
 }
 .appstore-left img
 {
@@ -881,15 +882,14 @@ body
 {
   width: 100%;
   aspect-ratio: 20/9;
-  background: rgb(31,29,43);
-  background: linear-gradient(180deg, rgba(31,29,43,1) 20%, rgba(31,29,43,0.819765406162465) 100%);
+  background: rgba(161,217,31, 0.25);
   position: absolute;
   z-index: 25;
 }
 .blog-screen
 {
   width: 100%;
-  background: var(--secondary-background);
+  background: var(--primary-background);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -905,7 +905,7 @@ body
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 50px;
-  border-bottom: 1px var(--primary-background) solid;
+  border-bottom: 1px var(--secondary-background) solid;
   padding-bottom: 50px;
 }
 .ubdt-item
@@ -915,7 +915,7 @@ body
   color: var(--primary-font);
   padding: 15px;
   border-radius: 5px;
-  background: var(--primary-background);
+  background: var(--secondary-background);
   box-shadow: 0px 8px 30px -12px rgba(17, 17, 17, 0.5);
   border-bottom: 1px var(--primary-color) solid;
 }
@@ -926,7 +926,7 @@ body
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  border-bottom: 1px var(--secondary-background) solid;
+  border-bottom: 1px var(--primary-background) solid;
 }
 .ubdt-item h1 span
 {
@@ -949,8 +949,8 @@ body
   justify-content: space-between;
   color: #fff;
   margin-top: 25px;
-  border-bottom: 1px var(--primary-background) solid;
-  border-top: 1px var(--primary-background) solid;
+  border-bottom: 1px var(--secondary-background) solid;
+  border-top: 1px var(--secondary-background) solid;
 }
 .ubdates-top a
 {
@@ -981,7 +981,7 @@ body
 }
 
 footer {
-  background-color: var(--primary-background);
+  background-color: var(--secondary-background);
   color: var(--primary-font);
   width: 100%;
   font-size: 16px;
@@ -1087,8 +1087,6 @@ footer {
 .load-item
 {
   height: 100%;
-  max-width: 100%;
-  overflow: hidden;
   width: 100%;
   background: var(--primary-background);
   z-index: -2;
@@ -1105,7 +1103,7 @@ footer {
 .load-item.active
 {
   opacity: 1;
-  z-index: 10;
+  z-index: 50;
   margin-bottom: 0;
 }
 .socialCounter

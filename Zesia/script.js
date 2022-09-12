@@ -72,11 +72,16 @@ activeLibraryBtn.addEventListener('click', () => {
 })
 
 const activeSettingsBtn = document.getElementsByClassName('settings-action-btn')[0]
+const librarySettingsBtn = document.getElementsByClassName('librarySettingsBtn')[0]
 const activeSettingsScreen = document.getElementsByClassName('settings-screen')[0]
 
 activeSettingsBtn.addEventListener('click', () => {
   activeSettingsScreen.classList.add('active')
 })
+librarySettingsBtn.addEventListener('click', () => {
+  activeSettingsScreen.classList.add('active')
+})
+
 
 const disableSettingsBtn = document.getElementsByClassName('setting-disable-btn')[0]
 const disableSettingsScreen = document.getElementsByClassName('settings-screen')[0]
@@ -123,6 +128,7 @@ musicImg = wrapper.querySelector(".main-music-header img"),
 musicName = wrapper.querySelector(".main-information-title .name"),
 musicArtist = wrapper.querySelector(".main-information-title .artist"),
 musicViral = wrapper.querySelector(".main-music-video"),
+musicViralMp4 = wrapper.querySelector(".main-music-video video"),
 mainAudio = wrapper.querySelector("#audio"),
 playstopButton = wrapper.querySelector("#play-stop-main-btn-action"),
 prevButton = wrapper.querySelector("#prev"),
@@ -131,12 +137,8 @@ progressBar = wrapper.querySelector(".progress-bar-done"),
 progressArea = wrapper.querySelector(".progress"),
 repeatBtn = wrapper.querySelector("#repeat"),
 shuffleBtn = wrapper.querySelector("#shuffle"),
-songRate = wrapper.querySelector(".lyrics-container #song-rate"),
 queueName = wrapper.querySelector(".queue-container .name"),
 queueImg = wrapper.querySelector(".queue-container img"),
-reviewArtist = wrapper.querySelector(".artist-review-artist"),
-reviewName = wrapper.querySelector(".artist-review-name"),
-reviewImg = wrapper.querySelector(".lyrics-container img"),
 musicBackgroundImage = wrapper.querySelector(".background-music-img img"),
 queueArtist = wrapper.querySelector(".queue-container .artist");
 
@@ -171,22 +173,17 @@ function loadMusic(indexNumb){
   musicImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
   musicBackgroundImage.src = `maingif.gif`;
   mainAudio.src = `songs/${allMusic[indexNumb - 1].src}.mp3`;
-  songRate.innerText = allMusic[indexNumb - 1].rate;
   smallName.innerText = allMusic[indexNumb - 1].name;
   smallArtist.innerText = allMusic[indexNumb - 1].artist;
   smallImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
-  reviewName.innerText = allMusic[indexNumb - 1].name;
-  reviewArtist.innerText = allMusic[indexNumb - 1].artist;
-  reviewImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
   mainAudio.volume = document.getElementById("volumeslider").value;
-
+  musicViralMp4.pause();
 
   if (wrapper.classList.contains('personal-Music')) {
     musicName.innerText = personalMusic[indexNumb - 1].name;
     musicArtist.innerText = personalMusic[indexNumb - 1].artist;
     musicImg.src = `images/${personalMusic[indexNumb - 1].img}.jpg`;
     mainAudio.src = `songs/${personalMusic[indexNumb - 1].src}.mp3`;
-    songRate.innerText = personalMusic[indexNumb - 1].rate;
     smallName.innerText = personalMusic[indexNumb - 1].name;
     smallArtist.innerText = personalMusic[indexNumb - 1].artist;
     smallImg.src = `images/${personalMusic[indexNumb - 1].img}.jpg`;
@@ -197,7 +194,6 @@ function loadMusic(indexNumb){
     musicArtist.innerText = allMusic[indexNumb - 1].artist;
     musicImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
     mainAudio.src = `songs/${allMusic[indexNumb - 1].src}.mp3`;
-    songRate.innerText = allMusic[indexNumb - 1].rate;
     smallName.innerText = allMusic[indexNumb - 1].name;
     smallArtist.innerText = allMusic[indexNumb - 1].artist;
     smallImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
@@ -245,6 +241,7 @@ function playMusic(){
   smallPlayStopbtn.querySelector(".fa-solid").classList.remove("fa-play");
   smallPlayStopbtn.querySelector(".fa-solid").classList.add("fa-stop");
   mainAudio.play();
+  musicViralMp4.play();
 }
 
 function pauseMusic(){
@@ -254,6 +251,7 @@ function pauseMusic(){
   smallPlayStopbtn.querySelector(".fa-solid").classList.add("fa-play");
   smallPlayStopbtn.querySelector(".fa-solid").classList.remove("fa-stop");
   mainAudio.pause();
+  musicViralMp4.pause();
 }
 
 function nextMusic(){
