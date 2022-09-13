@@ -101,8 +101,12 @@ hideMusicMenubtn.addEventListener('click', () => {
 
 const showMusicMenubtn = document.getElementsByClassName('show-Music-Menu')[0]
 const musicMenuShow = document.getElementsByClassName('main-music')[0]
+const musicMenuShowSec = document.getElementsByClassName('music-title')[0]
 
 showMusicMenubtn.addEventListener('click', () => {
+  musicMenuShow.classList.toggle('active')
+})
+musicMenuShowSec.addEventListener('click', () => {
   musicMenuShow.classList.toggle('active')
 })
 
@@ -902,3 +906,28 @@ profileSettingsBtn.addEventListener('click', () => {
 questSelectBtn.addEventListener('click', () => {
   loginPopup.classList.remove('active')
 })
+
+artistCardTitle = document.querySelector(".artist-main-name");
+artistCardImage = document.querySelector(".artist-card-img img");
+artistCardBio = document.querySelector(".artist-info");
+
+function readMore(e){
+  let artistCard = e;
+
+  artistClickedName = artistCard.querySelector(".head-content-item-name");
+  artistClickedImg = artistCard.querySelector("img");
+  artistClickedBio = artistCard.querySelector(".head-content-item-data-bio");
+  artistClickedImgPng = artistCard.querySelector(".head-content-item .head-content-item-png");
+
+  if (artistClickedImgPng === null) {
+    artistCardImage.src = artistClickedImg.src;
+    artistCardImage.style.transform = "scale(2)";
+  }else {
+    artistCardImage.src = artistClickedImgPng.src;
+    artistCardImage.style.transform = "scale(1.3)";
+  }
+
+  artistCardTitle.innerText = artistClickedName.innerText;
+  artistCardBio.innerText = artistClickedBio.innerText;
+
+  }

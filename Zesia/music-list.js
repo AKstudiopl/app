@@ -7,6 +7,13 @@ var allMusic = [
       img: "CamilaCabelloHavana",
       style: "Energic",
       status: "",
+      lyrics: {
+        chorus: "Havana",
+        verse1: "O na na na na na ",
+        verse2: "O na na na na na ",
+        verse3: "O na na na na na ",
+        verse4: "O na na na na na ",
+      }
   },
   {
       name: "Dj Is Your Second Name",
