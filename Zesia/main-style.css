@@ -873,6 +873,10 @@ input:checked + .slider:before {
   transition: 0.3s;
   z-index: 0;
 }
+.personal-container.popularInApp
+{
+  margin-bottom: 140px;
+}
 .personal-item:hover
 {
   transform: scale(0.9);
