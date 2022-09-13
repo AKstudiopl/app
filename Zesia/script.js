@@ -107,12 +107,10 @@ showMusicMenubtn.addEventListener('click', () => {
 })
 
 const favoritBtn = document.querySelector('#heartBtnMain');
-const favAlert = document.querySelector('.fav-alert')
 favoritBtn.addEventListener('click', () => {
   favoritBtn.classList.toggle('fa-regular')
   favoritBtn.classList.toggle('fa-solid')
   favoritBtn.classList.toggle('active')
-  favAlert.classList.toggle('active')
 })
 
 
@@ -521,12 +519,15 @@ for (let i = 0; i < personalMusic.length; i++) {
 const correctSoundBtn = document.getElementsByClassName('device-screen-btn')[0]
 const correctSoundScreen = document.getElementsByClassName('device-screen')[0]
 const correctSoundExit = document.getElementsByClassName('device-screen-exit')[0]
-
+const menuLyricsBtn = document.getElementsByClassName('shortcut-rate-btn')[0]
 correctSoundBtn.addEventListener('click', () => {
   correctSoundScreen.classList.toggle('active')
 })
 correctSoundExit.addEventListener('click', () => {
   correctSoundScreen.classList.remove('active')
+})
+menuLyricsBtn.addEventListener('click', () => {
+  correctSoundScreen.classList.add('active')
 })
 
 
@@ -726,11 +727,6 @@ function shortcutCheck() {
         wrapper.classList.add("repeat");
         wrapper.classList.remove("shuffle");
       }
-  })
-
-  const topShourcutButtonRate = document.querySelector('.shortcut-rate')
-    topShourcutButtonRate.addEventListener('click', () => {
-      topShourcutButtonRate.classList.toggle('active');
   })
 
   const topShourcutButtonShuffle = document.querySelector('.shortcut-shuffle')
