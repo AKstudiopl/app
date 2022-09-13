@@ -873,9 +873,9 @@ input:checked + .slider:before {
   transition: 0.3s;
   z-index: 0;
 }
-.personal-container.popularInApp
+.personal-container.popular
 {
-  margin-bottom: 140px;
+  padding-bottom: 140px;
 }
 .personal-item:hover
 {
@@ -2125,6 +2125,7 @@ body.green .queue-item ul li img
   transition: 0.3s;
   top: 100vh;
   visibility: hidden;
+  left: 0;
 }
 
 .music-style-item.active
