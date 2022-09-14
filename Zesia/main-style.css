@@ -2172,10 +2172,10 @@ body.green .queue-item ul li img
   line-height: 1.25;
   position: absolute;
   z-index: 0;
+  font-weight: 100;
 }
 .music-style-item-title h1:last-child
 {
-  font-weight: 100;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px;
 }
