@@ -6,7 +6,7 @@ var allMusic = [
       src: "CamilaCabelloHavana",
       img: "CamilaCabelloHavana",
       style: "Energic",
-      status: "",
+      status: "nostatus",
       lyrics: {
         chorus: "Havana",
         verse1: "O na na na na na ",
@@ -21,7 +21,7 @@ var allMusic = [
       src: "C-BooLDJ",
       img: "C-BooLDJ",
       style: "Energic",
-      status: "",
+      status: "nostatus",
   },
   {
       name: "Never Go Away",
@@ -29,7 +29,7 @@ var allMusic = [
       src: "C-BooL-NeverGoAway",
       img: "C-BooL-NeverGoAway",
       style: "Energic",
-      status: "",
+      status: "nostatus",
   },
   {
       name: "Champions",
@@ -37,7 +37,7 @@ var allMusic = [
       src: "KevinRudolf-Champions",
       img: "KevinRudolf-Champions",
       style: "Energic",
-      status: "",
+      status: "nostatus",
   },
   {
       name: "Ride It",
@@ -45,7 +45,7 @@ var allMusic = [
       src: "DJRegard-Rideit",
       img: "DJRegard-Rideit",
       style: "Energic",
-      status: "",
+      status: "nostatus",
   },
   {
       name: "Choker",
@@ -53,7 +53,7 @@ var allMusic = [
       src: "twentyonepilots-Choker",
       img: "scaled-and-icy-b-iext104194001",
       style: "Energic",
-      status: "",
+      status: "nostatus",
   },
   {
       name: "The Outside",
@@ -61,7 +61,7 @@ var allMusic = [
       src: "TwentyOnePilots-TheOutside",
       img: "scaled-and-icy-b-iext104194001",
       style: "Energic",
-      status: "",
+      status: "nostatus",
   },
   {
       name: "Shy Away",
@@ -69,7 +69,7 @@ var allMusic = [
       src: "TwentyOnePilots-ShyAway",
       img: "scaled-and-icy-b-iext104194001",
       style: "Energic",
-      status: "",
+      status: "nostatus",
   },
   {
       name: "Saturday",
@@ -77,7 +77,7 @@ var allMusic = [
       src: "TwentyOnePilots-Saturday",
       img: "scaled-and-icy-b-iext104194001",
       style: "Energic",
-      status: "",
+      status: "nostatus",
   },
   {
       name: "Redecorate",
@@ -85,7 +85,7 @@ var allMusic = [
       src: "TwentyOnePilots-Redecorate",
       img: "scaled-and-icy-b-iext104194001",
       style: "Energic",
-      status: "",
+      status: "nostatus",
   },
   {
       name: "Never Take It",
@@ -93,7 +93,7 @@ var allMusic = [
       src: "TwentyOnePilots-NeverTakeIt",
       img: "scaled-and-icy-b-iext104194001",
       style: "Energic",
-      status: "",
+      status: "nostatus",
   },
   {
       name: "Mulberry Street",
@@ -101,7 +101,7 @@ var allMusic = [
       src: "TwentyOnePilots-MulberryStreet",
       img: "scaled-and-icy-b-iext104194001",
       style: "Energic",
-      status: "",
+      status: "nostatus",
   },
   {
       name: "Good Day",
@@ -109,7 +109,7 @@ var allMusic = [
       src: "TwentyOnePilots-GoodDay",
       img: "scaled-and-icy-b-iext104194001",
       style: "Energic Hip-Hop",
-      status: "",
+      status: "nostatus",
   },
   {
       name: "Kłótnia",
@@ -117,7 +117,7 @@ var allMusic = [
       src: "Evtis-Kłótnia",
       img: "C-BooL-NeverGoAway",
       style: "Hip-Hop",
-      status: "",
+      status: "nostatus",
   },
   {
       name: "Idziemy Po Swoje",
@@ -125,7 +125,7 @@ var allMusic = [
       src: "donGURALesko-IdziemyPoSwojeSzUstyBlend",
       img: "guralsko",
       style: "Hip-Hop",
-      status: "",
+      status: "nostatus",
   },
   {
       name: "Legenda",
@@ -133,6 +133,6 @@ var allMusic = [
       src: "donGURALesko-LegendaSzUstyBlend",
       img: "guralsko",
       style: "Hip-Hop",
-      status: "",
+      status: "nostatus",
   },
 ]

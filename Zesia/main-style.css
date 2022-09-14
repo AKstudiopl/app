@@ -108,10 +108,10 @@ body::-webkit-scrollbar
   visibility: hidden;
   top: 100vh;
   transition: 0.5s;
-  width: calc(100% - 30px);
-  padding: 0 15px;
+  width: calc(100% - 60px);
+  padding: 0 30px;
   height: 100%;
-  background: var(--backgroundsecond);
+  background: var(--background);
   z-index: 10;
   display: flex;
   justify-content: center;
@@ -142,21 +142,20 @@ body::-webkit-scrollbar
 {
   text-decoration: none;
   color: var(--color);
-  border: 1px var(--maincolor) solid;
+  border: 1px var(--backgroundsecond) solid;
   width: 100%;
   text-align: center;
-  border-radius: 15px;
+  border-radius: 5px;
   margin: 5px 0;
   padding: 10px 0;
   transition: 0.25s;
-}
-.login-popup a:active
-{
-  background: var(--maincolor);
+
 }
 .login-popup a:hover
 {
   background: var(--maincolor);
+  font-weight: 900;
+  color: var(--background);
 }
 .login-or
 {
@@ -164,8 +163,9 @@ body::-webkit-scrollbar
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 15px 0;
+  padding: 30px 0;
   line-height: 1;
+  opacity: 0.25;
 }
 .login-or span
 {
@@ -193,10 +193,10 @@ body::-webkit-scrollbar
 {
   text-decoration: none;
   color: var(--color);
-  border: 1px var(--maincolor) solid;
+  border: 1px var(--backgroundsecond) solid;
   width: 100%;
   text-align: center;
-  border-radius: 15px;
+  border-radius: 5px;
   margin: 5px 0;
   padding: 10px 0;
   transition: 0.25s;
@@ -597,6 +597,21 @@ input:checked + .slider:before {
 {
   opacity: 1;
 }
+.show-more-box
+{
+  border-bottom: var(--border);
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  justify-content: center;
+}
+.show-more-box p
+{
+  color: var(--color);
+  opacity: 0.5;
+  font-weight: 900;
+}
 .result-box
 {
   display: flex;
@@ -665,7 +680,6 @@ input:checked + .slider:before {
   padding-bottom: 10px;
   margin-bottom:5px;
   flex-direction: column;
-  font-family:'Press Start 2P';
 }
 .library-settings-container a
 {
@@ -1445,30 +1459,27 @@ input:checked + .slider:before {
   transition: 0.5s;
   transition-timing-function: ease-out;
   color:  var(--color);
+      border-radius: 50%;
 }
 .main-information i.active
 {
   color: var(--maincolor);
-  transform: scale(1.2);
   animation: wiggle;
-  animation-duration:2s;
-  animation-timing-function: ease-out;
+  animation-duration:0.75s;
+  animation-timing-function: ease;
 }
 @keyframes wiggle {
-    0% { transform: rotate(0deg) scale(1); }
+    0% { transform: rotate(0deg) scale(1);
+    color: var(--color); }
    50% { transform: rotate(0deg); }
-   65% { transform: rotate(10deg); }
+   65% {
+      transform: rotate(10deg)scale(1.5);
+      background: var(--maincolorhover);
+      border-radius: 50%;
+      color: var(--color);
+    }
    75% { transform: rotate(-10deg); }
-  100% { transform: rotate(0deg) scale(1.2); }
-}
-#secheart
-{
-  position: absolute;
-  margin-left: -28px;
-  z-index: -1;
-  color: var(--color);
-  font-size: 30px;
-  line-height: 0.94;
+  100% { transform: rotate(0deg) scale(1); }
 }
 .main-information-title h1
 {

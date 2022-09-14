@@ -28,16 +28,15 @@
       <p>Login</p>
     </div>
     <div class="login-button">
-      <a href="#">Login With Google <i class="fa-solid fa-g"></i></a>
-      <a href="#">Login With Facebook <i class="fa-brands fa-facebook-f"></i></a>
-      <a href="#">Login With Email Adress <i class="fa-solid fa-at"></i></a>
+      <a>Login With Google <i class="fa-solid fa-g"></i></a>
+      <a>Login With Facebook <i class="fa-brands fa-facebook-f"></i></a>
+      <a>Login With Email Adress <i class="fa-solid fa-at"></i></a>
     </div>
     <div class="login-or">
       <span></span><p>or</p><span></span>
     </div>
     <div class="quest-button">
-      <a href="#" class="questBtn">Continue as a quest</a>
-      <a href="#">Sign up <i class="fa-solid fa-angle-right"></i></a>
+      <a class="questBtn">Continue as a quest</a>
     </div>
   </div>
 
@@ -234,6 +233,10 @@
 
 
 
+    <div class="show-more-box">
+      <p>Pokaż więcej</p>
+    </div>
+
   </div>
 
 
@@ -244,7 +247,7 @@
 
   <div class="library-content">
     <h1>
-      Polubione utwory
+      Ostatnia aktywność
     </h1>
 
     <div class="library-slider">
@@ -264,7 +267,7 @@
             <i class="fa-solid fa-music"></i>
             <h2>Zobacz Wszystkie</h2>
           </div>
-          <div class="center-container-item">
+          <div class="center-container-item" onclick="viewSearchHomeItems()">
             <i class="fa-solid fa-plus"></i>
             <h2>Dodaj Utwór</h2>
           </div>
@@ -406,15 +409,15 @@
           Playlista
         </p>
     </div>
-    <div class="center-container-item">
+    <div class="center-container-item" onclick="viewSearchHomeItems()">
       <i class="fa-solid fa-plus"></i>
       <h2>Dodaj Playliste</h2>
     </div>
-    <div class="center-container-item">
+    <div class="center-container-item" onclick="viewSearchHomeItems()">
       <i class="fa-solid fa-plus"></i>
       <h2>Dodaj Playliste</h2>
     </div>
-    <div class="center-container-item">
+    <div class="center-container-item" onclick="viewSearchHomeItems()">
       <i class="fa-solid fa-plus"></i>
       <h2>Dodaj Playliste</h2>
     </div>
@@ -435,15 +438,15 @@
           Raper
         </p>
     </div>
-    <div class="center-container-item">
+    <div class="center-container-item" onclick="viewSearchHomeItems()">
       <i class="fa-solid fa-plus"></i>
       <h2>Dodaj Wykonawce</h2>
     </div>
-    <div class="center-container-item">
+    <div class="center-container-item" onclick="viewSearchHomeItems()">
       <i class="fa-solid fa-plus"></i>
       <h2>Dodaj Wykonawce</h2>
     </div>
-    <div class="center-container-item">
+    <div class="center-container-item" onclick="viewSearchHomeItems()">
       <i class="fa-solid fa-plus"></i>
       <h2>Dodaj Wykonawce</h2>
     </div>
@@ -507,9 +510,9 @@
     </div>
 
     <div class="top-controls">
-      <a href="#" class="hide-Music-Menu"><i class="fa-solid fa-angle-left"></i></a>
+      <a class="hide-Music-Menu"><i class="fa-solid fa-angle-left"></i></a>
       <a href="landing.html" id="title-sound"><img src="brandsources\IMG_20220320_144711.png"/></a>
-      <a href="#" class="top-controls-more-btn"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+      <a class="top-controls-more-btn"><i class="fa-solid fa-ellipsis-vertical"></i></a>
     </div>
 
     <div class="top-controls-more">
@@ -544,9 +547,9 @@
           </div>
       </div>
       <div class="top-menu-list">
-      <a href="#"><i class="fa-solid fa-user-astronaut"></i> Wykonawca</a>
-      <a href="#" class="copyUrl" onclick="copyUrlClipboard()"><i class="fa-solid fa-share-nodes"></i> Udostępnij</a>
-      <a href="#" class="timer-toggle"><i class="fa-solid fa-hourglass"></i> Ustaw czas odtwarzania</a>
+      <a><i class="fa-solid fa-user-astronaut"></i> Wykonawca</a>
+      <a class="copyUrl" onclick="copyUrlClipboard()"><i class="fa-solid fa-share-nodes"></i> Udostępnij</a>
+      <a class="timer-toggle"><i class="fa-solid fa-hourglass"></i> Ustaw czas odtwarzania</a>
       <a href="https://akstudiopl.github.io/Zesia/zesia.html"><i class="fa-solid fa-briefcase-medical"></i> Pomoc</a>
       <a href="https://akstudiopl.github.io/Zesia/zesia.html"><i class="fa-solid fa-ticket"></i> Zgłoś zawartość</a>
       </div>
@@ -570,28 +573,28 @@
       </div>
       <div class="timer-option-container">
         <div class="timer-item" id="timer10">
-          <a href="#">10</a>
+          <a>10</a>
         </div>
         <div class="timer-item" id="timer20">
-          <a href="#">20</a>
+          <a>20</a>
         </div>
         <div class="timer-item" id="timer30">
-          <a href="#">30</a>
+          <a >30</a>
         </div>
         <div class="timer-item" id="timer40">
-          <a href="#">40</a>
+          <a >40</a>
         </div>
         <div class="timer-item" id="timer50">
-          <a href="#">50</a>
+          <a>50</a>
         </div>
         <div class="timer-item" id="timer60">
-          <a href="#">60</a>
+          <a >60</a>
         </div>
         <div class="timer-item" id="timer90">
-          <a href="#">90</a>
+          <a>90</a>
         </div>
         <div class="timer-item" id="timer120">
-          <a href="#">120</a>
+          <a>120</a>
         </div>
       </div>
       <div class="timer-tip">
@@ -615,7 +618,7 @@
         <h1 class="name"></h1>
         <p class="artist"></p>
       </div>
-      <i id="heartBtnMain" class="fa-regular fa-heart"></i>
+      <i id="heartBtnMain" class="fa-regular fa-heart nonactive"></i>
     </div>
 
   <div class="progress">
@@ -636,9 +639,9 @@
         <div class="main-music-fast-navigation-more">
           <a><i id="shuffle" class="fa-solid fa-shuffle"></i></a>
         </div>
-      <a href="#"><i id="prev" class="fa-solid fa-backward-step"></i></a>
+      <a><i id="prev" class="fa-solid fa-backward-step"></i></a>
       <a id="play-stop-main-btn-action" class="play-stop-main-btn"><i class="fa-solid fa-play"></i></a>
-      <a href="#"><i id="next" class="fa-solid fa-forward-step"></i></a>
+      <a><i id="next" class="fa-solid fa-forward-step"></i></a>
         <div class="main-music-fast-navigation-more">
           <a><i id="repeat" class="fa-solid fa-repeat"></i></a>
         </div>
@@ -748,7 +751,7 @@ Havana, ooh-na-na (uh)
 
     <div class="queue-container-top">
               <h3>Aktualnie Odtwarzane</h3>
-      <a href="#" class="exit-queue"><i class="fa-solid fa-angle-down"></i></a>
+      <a class="exit-queue"><i class="fa-solid fa-angle-down"></i></a>
     </div>
 
     <div class="queue-item">
@@ -769,7 +772,7 @@ Havana, ooh-na-na (uh)
 
     <div class="artist-top-controls">
       <p>Profil</p>
-      <a href="#" class="artist-exit"><i class="fa-solid fa-xmark"></i></a>
+      <a class="artist-exit"><i class="fa-solid fa-xmark"></i></a>
     </div>
 
 
@@ -798,7 +801,7 @@ Havana, ooh-na-na (uh)
 
 
     <div class="music-style-item-controls">
-      <a href="#" class="music-1-exit" onclick="personalLIst()"><i class="fa-solid fa-xmark"></i></a>
+      <a class="music-1-exit" onclick="personalLIst()"><i class="fa-solid fa-xmark"></i></a>
     </div>
 
     <div class="music-style-item-title">
@@ -812,7 +815,7 @@ Havana, ooh-na-na (uh)
       <h2>Posłuchaj ulubionych utworów innych</h2>
         <div class="music-style-option">
           <p class="music-content-number">Playlista polubiona przez : <span>15, 356 Użytkowników</span></p>
-          <a href="#"><i class="fa-regular fa-heart"></i> Polub</a>
+          <a><i class="fa-regular fa-heart"></i> Polub</a>
         </div>
         <ul>
 
