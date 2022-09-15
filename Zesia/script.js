@@ -124,16 +124,43 @@ const exitFavoriteScreen = document.getElementsByClassName('library-favorite-exi
 
 showFavoriteScreen.addEventListener('click', () => {
   favortieScreen.classList.toggle('active')
+  favoriteLoadItems();
 })
 exitFavoriteScreen.addEventListener('click', () => {
   favortieScreen.classList.toggle('active')
 })
 
+function favoriteLoadItems() {
+
+  const resultsFAV = document.querySelector(".library-favorite-container");
+  var favoritIt = allMusic.filter(x => x.status === "favorite");
+  for (let i = 0; i < favoritIt.length; i++) {
+    let resultFAV =
+      `<div class="library-favorite-item" li-index="${favoritIt[i].id}" onclick="clickedSingle(this)">
+          <div class="library-favorite-data">
+            <h1>${favoritIt[i].name}</h1>
+            <span>${favoritIt[i].artist}</span>
+          </div>
+          <audio class="${favoritIt[i].src}" src="songs/${favoritIt[i].src}.mp3"></audio>
+         <i class="fa-heart fa-regular"></i>
+       </div>`;
+    resultsFAV.insertAdjacentHTML("afterbegin", resultFAV);
+  }
+  favoriteItemsNumber.innerText = $('.library-favorite-item').length;
+}
+
+function clickedSingle(element){
+  let getLiIndex = element.getAttribute("li-index");
+  let i = getLiIndex; i++;
+  musicIndex = i;
+  loadMusic(musicIndex);
+  playMusic();
+  playingSong();
+  playingSongPersonal()
+}
+
 const favoriteItemsNumber = document.querySelector('.library-favorite-items-number');
 const favoriteContainer = document.querySelector('.library-favorite-container');
-favoriteItems = favoriteContainer.querySelectorAll('.library-favorite-item');
-favoriteItemsNumber.innerText = favoriteItems.length;
-
 const wrapper = document.querySelector(".main-music"),
 musicImg = wrapper.querySelector(".main-music-header img"),
 musicName = wrapper.querySelector(".main-information-title .name"),
@@ -166,7 +193,7 @@ smallPlayStopbtn = smallView.querySelector("#smallplaystop");
 const favoritBtn = document.querySelector('#heartBtnMain');
 
 
-var musicIndex = Math.floor((Math.random() * allMusic.length) + 1);
+var musicIndex = 5;
 
 function personalLIst() {
   wrapper.classList.toggle('personal-Music');
@@ -181,26 +208,6 @@ musicImg.addEventListener("click", ()=>{
   showMusicMenubtn.classList.toggle('active');
 });
 
-function favoriteData(indexNumb){
-  if (favoritBtn.classList.contains('active')) {
-    allMusic[indexNumb - 1].status = "favorite"
-    musicStatusData.classList.add("active");
-  }
-  else if (favoritBtn.classList.contains('nonactive')) {
-    allMusic[indexNumb - 1].status = "nostatus"
-    musicStatusData.classList.remove("active");
-  }
-  console.log(allMusic[indexNumb - 1].status)
-
-}
-
-favoritBtn.addEventListener('click', () => {
-  favoritBtn.classList.toggle('fa-regular')
-  favoritBtn.classList.toggle('fa-solid')
-  favoritBtn.classList.toggle('active')
-  favoritBtn.classList.toggle('nonactive')
-})
-
 function loadMusic(indexNumb){
   musicName.innerText = allMusic[indexNumb - 1].name;
   musicArtist.innerText = allMusic[indexNumb - 1].artist;
@@ -214,28 +221,19 @@ function loadMusic(indexNumb){
   musicViralMp4.pause();
 
   favoritBtn.addEventListener('click', () => {
-    favoriteData(indexNumb);
+    if (allMusic[indexNumb - 1].status === "favorite") {
+      allMusic[indexNumb - 1].status = "nostatus";
+      favoritBtn.classList.remove('active')
+      favoritBtn.classList.remove('fa-solid')
+      favoritBtn.classList.add('fa-regular')
+    }else if (allMusic[indexNumb - 1].status === "nostatus") {
+      allMusic[indexNumb - 1].status = "favorite";
+      favoritBtn.classList.add('active')
+      favoritBtn.classList.add('fa-solid')
+      favoritBtn.classList.remove('fa-regular')
+    }
   })
 
-  if (wrapper.classList.contains('personal-Music')) {
-    musicName.innerText = personalMusic[indexNumb - 1].name;
-    musicArtist.innerText = personalMusic[indexNumb - 1].artist;
-    musicImg.src = `images/${personalMusic[indexNumb - 1].img}.jpg`;
-    mainAudio.src = `songs/${personalMusic[indexNumb - 1].src}.mp3`;
-    smallName.innerText = personalMusic[indexNumb - 1].name;
-    smallArtist.innerText = personalMusic[indexNumb - 1].artist;
-    smallImg.src = `images/${personalMusic[indexNumb - 1].img}.jpg`;
-    playMusic();
-  }
-  else {
-    musicName.innerText = allMusic[indexNumb - 1].name;
-    musicArtist.innerText = allMusic[indexNumb - 1].artist;
-    musicImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
-    mainAudio.src = `songs/${allMusic[indexNumb - 1].src}.mp3`;
-    smallName.innerText = allMusic[indexNumb - 1].name;
-    smallArtist.innerText = allMusic[indexNumb - 1].artist;
-    smallImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
-  }
 
     if (wrapper.classList.contains('save-data')) {
       musicImg.src = `maingif.gif`;
@@ -297,25 +295,8 @@ function nextMusic(){
   playMusic();
   playingSong();
 
-  if (musicStatusData.classList.contains("active")) {
-    musicStatusData.classList.remove("active");
-    favoritBtn.classList.remove('active')
-    favoritBtn.classList.remove('nonactive')
-    favoritBtn.classList.toggle('fa-regular')
-    favoritBtn.classList.toggle('fa-solid')
-  } else if (allMusic[musicIndex - 1].status === "favorite") {
-    favoritBtn.classList.add('active')
-    favoritBtn.classList.add('nonactive')
-    favoritBtn.classList.add('fa-solid')
-    favoritBtn.classList.remove('fa-regular')
-    musicStatusData.classList.add("active");
-  }
-
   if (wrapper.classList.contains("shuffle")) {
     musicIndex = Math.floor((Math.random() * allMusic.length) + 1);
-  }
-  else if (wrapper.classList.contains("personal-Music")) {
-    musicIndex = Math.floor((Math.random() * personalMusic.length) + 1);
   }
   else {
     musicIndex++;

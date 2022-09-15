@@ -7,13 +7,7 @@ var allMusic = [
       img: "CamilaCabelloHavana",
       style: "Energic",
       status: "nostatus",
-      lyrics: {
-        chorus: "Havana",
-        verse1: "O na na na na na ",
-        verse2: "O na na na na na ",
-        verse3: "O na na na na na ",
-        verse4: "O na na na na na ",
-      }
+      id: "0",
   },
   {
       name: "Dj Is Your Second Name",
@@ -22,6 +16,7 @@ var allMusic = [
       img: "C-BooLDJ",
       style: "Energic",
       status: "nostatus",
+      id: "1",
   },
   {
       name: "Never Go Away",
@@ -30,6 +25,7 @@ var allMusic = [
       img: "C-BooL-NeverGoAway",
       style: "Energic",
       status: "nostatus",
+      id: "2",
   },
   {
       name: "Champions",
@@ -38,6 +34,7 @@ var allMusic = [
       img: "KevinRudolf-Champions",
       style: "Workout",
       status: "nostatus",
+      id: "3",
   },
   {
       name: "Ride It",
@@ -46,6 +43,7 @@ var allMusic = [
       img: "DJRegard-Rideit",
       style: "Energic",
       status: "nostatus",
+      id: "4",
   },
   {
       name: "Choker",
@@ -54,6 +52,7 @@ var allMusic = [
       img: "scaled-and-icy-b-iext104194001",
       style: "Chill",
       status: "nostatus",
+      id: "5",
   },
   {
       name: "The Outside",
@@ -62,6 +61,7 @@ var allMusic = [
       img: "scaled-and-icy-b-iext104194001",
       style: "Chill",
       status: "nostatus",
+      id: "6",
   },
   {
       name: "Shy Away",
@@ -70,6 +70,7 @@ var allMusic = [
       img: "scaled-and-icy-b-iext104194001",
       style: "Chill",
       status: "nostatus",
+      id: "7",
   },
   {
       name: "Saturday",
@@ -78,6 +79,7 @@ var allMusic = [
       img: "scaled-and-icy-b-iext104194001",
       style: "Chill",
       status: "nostatus",
+      id: "8",
   },
   {
       name: "Redecorate",
@@ -86,6 +88,7 @@ var allMusic = [
       img: "scaled-and-icy-b-iext104194001",
       style: "Chill",
       status: "nostatus",
+      id: "9",
   },
   {
       name: "Never Take It",
@@ -94,6 +97,7 @@ var allMusic = [
       img: "scaled-and-icy-b-iext104194001",
       style: "Chill",
       status: "nostatus",
+      id: "10",
   },
   {
       name: "Mulberry Street",
@@ -102,6 +106,7 @@ var allMusic = [
       img: "scaled-and-icy-b-iext104194001",
       style: "Chill",
       status: "nostatus",
+      id: "11",
   },
   {
       name: "Good Day",
@@ -110,6 +115,7 @@ var allMusic = [
       img: "scaled-and-icy-b-iext104194001",
       style: "Chill",
       status: "nostatus",
+      id: "12",
   },
   {
       name: "Kłótnia",
@@ -118,6 +124,7 @@ var allMusic = [
       img: "C-BooL-NeverGoAway",
       style: "Hip-Hop",
       status: "nostatus",
+      id: "13",
   },
   {
       name: "Idziemy Po Swoje",
@@ -126,6 +133,7 @@ var allMusic = [
       img: "guralsko",
       style: "Workout",
       status: "nostatus",
+      id: "14",
   },
   {
       name: "Legenda",
@@ -134,5 +142,6 @@ var allMusic = [
       img: "guralsko",
       style: "Workout",
       status: "nostatus",
+      id: "15",
   },
 ]
