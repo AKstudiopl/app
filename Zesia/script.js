@@ -118,12 +118,21 @@ function viewSearchHomeItems(){
   libraryScreen.classList.remove('active');
 }
 
+const showFavoriteScreen = document.getElementsByClassName('favorite-library-show')[0]
+const favortieScreen = document.getElementsByClassName('library-favorite-screen')[0]
+const exitFavoriteScreen = document.getElementsByClassName('library-favorite-exit')[0]
 
+showFavoriteScreen.addEventListener('click', () => {
+  favortieScreen.classList.toggle('active')
+})
+exitFavoriteScreen.addEventListener('click', () => {
+  favortieScreen.classList.toggle('active')
+})
 
-
-
-
-
+const favoriteItemsNumber = document.querySelector('.library-favorite-items-number');
+const favoriteContainer = document.querySelector('.library-favorite-container');
+favoriteItems = favoriteContainer.querySelectorAll('.library-favorite-item');
+favoriteItemsNumber.innerText = favoriteItems.length;
 
 const wrapper = document.querySelector(".main-music"),
 musicImg = wrapper.querySelector(".main-music-header img"),
@@ -576,106 +585,57 @@ menuLyricsBtn.addEventListener('click', () => {
   correctSoundScreen.classList.add('active')
 })
 
-
-const results = document.querySelector(".search-results");
-for (let i = 0; i < allMusic.length; i++) {
-  let result = `<li li-index="${i + 1}" onclick="clicked(this)">
-                <div class="result-box">
-                  <div class="result-box-cover">
-                  <h1 class="result-name">${allMusic[i].name}</h1>
-                  <p class="result-artist">${allMusic[i].artist}</p>
-                  </div>
-                </div>
-                <audio class="${allMusic[i].src}" src="songs/${allMusic[i].src}.mp3"></audio>
-              </li>`;
-  results.insertAdjacentHTML("afterbegin", result);
-}
-
-
-function searchName() {
-  input = document.getElementById('search-item');
-  filter = input.value.toUpperCase();
-  ul = document.getElementsByClassName("search-results");
-  li = document.querySelectorAll('.search-results li');
-
-  for (i = 0; i < li.length; i++) {
-    nameResult = li[i].getElementsByClassName("result-name")[0];
-    artistResult = li[i].getElementsByClassName("result-artist")[0];
-    webkitresults = document.getElementsByClassName("search-results")[0];
-    nameResult = nameResult.textContent || nameResult.innerText;
-    artistResult = artistResult.textContent || artistResult.innerText;
-    if (nameResult.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-      li[i].style.visibility = "visible";
-      webkitresults.classList.remove("webkit-hidden");
+function clearFilterStatus(){
+  let boxes = document.querySelectorAll('.search-filter .search-item');
+    for (const box of boxes) {
+    box.classList.add('active');
     }
-    else if (artistResult.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-      li[i].style.visibility = "visible";
-      webkitresults.classList.remove("webkit-hidden");
-    }
-    else {
-      li[i].style.display = "none";
-      li[i].style.visibility = "hidden";
-    }
-
-
-    if (input.value.length == 0)
-    {
-      li[i].style.visibility = "hidden";
-      webkitresults.classList.add("webkit-hidden");
-    }
-  }
+  filterList();
 }
 
-function filterByName() {
-  if (filterStatus.classList.contains("Hip-Hop")) {
-    var result = allMusic.filter((x)=>x.style === "Hip-Hop");
-    console.log(result);
-  }
-  if (filterStatus.classList.contains("Energic")) {
-    var result = allMusic.filter((x)=>x.style === "Energic");
-    console.log(result);
-  }
+
+const [search,filter,results] = ["#search-item",".search-filter",".search-results"].map(sel=>document.querySelector(sel));
+results.innerHTML=allMusic.map((a,i)=>
+`<li li-index="${i + 1}" onclick="clicked(this)">
+  <div class="result-box">
+   <div class="result-box-cover">
+     <h1 class="result-name">${a.name}</h1>
+     <p class="result-artist">${a.artist}</p>
+   </div>
+  </div>
+  <audio class="songs/${a.src}.mp3"" src="songs/${a.src}.mp3">${a.src}.mp3"></audio>
+ </li>`).join("\n");
+
+// show which item was clicked:
+function clickedSearchResults(o){
+  console.log("Index "+o.getAttribute("li-index")+" was clicked.");
+  let getLiIndex = o.getAttribute("li-index");
+  mainIndex = getLiIndex;
+  loadMusic(mainIndex);
+  playMusic();
+  playingSong();
 }
 
-function filterName(x) {
-  filterStatus = document.querySelector(".search-filter");
-  if (x==1)
-  {
-      filterStatus.classList.toggle("Hip-Hop");
-      filterByName();
-  }
-  if (x==2)
-  {
-      filterStatus.classList.toggle("Energic");
-      filterByName();
-  }
-  if (x==3)
-  {
-      filterStatus.classList.toggle("Workout");
-      filterByName();
-  }
-  if (x==4)
-  {
-      filterStatus.classList.toggle("Chill");
-      filterByName();
-  }
-  if (x==5)
-  {
-      filterStatus.classList.toggle("Sad-Lofi");
-      filterByName();
-  }
-  if (x==6)
-  {
-      filterStatus.classList.toggle("Rock");
-      filterByName();
-  }
+// main filter function
+function filterList(){
+  // get all styles by collecting the textContent of .active buttons:
+  let styles=[...filter.querySelectorAll(".active")].map(b=>b.textContent),
+  // get current search string from input field:
+    srch=search.value.toLowerCase();
+  allMusic.forEach((m,i)=>{ // both conditions must be met: style and search pattern
+    results.children[i].style.display=(m.name+"|"+m.artist).toLowerCase().includes(srch)&&styles.includes(m.style)?"":"none";
+  })
 }
+// attach filterList() to input event of text-input and click event of style buttons:
+search.addEventListener("input",filterList);
+filter.onclick = ev =>{
+ if(ev.target.tagName == "BUTTON"){
+   ev.target.classList.toggle("active");
+   filterList()
+}};
+// do initial filtering:
+filterList()
 
-function ClearFields() {
-     input.value = "";
-}
 
 const artistProfile = document.getElementsByClassName('artist-card')[0]
 const artistProfileExit = document.getElementsByClassName('artist-exit')[0]
@@ -898,16 +858,15 @@ function shortcutCheck() {
       }, 7200000);
   })
 
-  const searchFiltersItems = document.querySelectorAll('.search-item');
-  const searchFilter = document.querySelectorAll('.search-item').forEach(searchFilter => {
-    searchFilter.addEventListener('click', event => {
-      searchFilter.classList.toggle('checked');
-      let filterNumber = $('#filterBox > .checked').length;
-      if (filterNumber > 2) {
-        searchFilter.classList.toggle('checked');
-      }
-    })
-  })
+  $(document).ready(function(){
+      $(".search-filter .search-item").click(function() {
+      $(".search-filter .search-item").not($(this)).removeClass('active');
+  });
+  });
+
+  $(".variation_form_section .select div").click(function() {
+  $(".variation_form_section .select div").not($(this)).removeClass('active');
+});
 
 function copyUrlClipboard(){
   var copyText = document.getElementById("pageurl").value;

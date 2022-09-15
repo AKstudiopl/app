@@ -36,7 +36,7 @@ var allMusic = [
       artist: "Kevin Rudolf",
       src: "KevinRudolf-Champions",
       img: "KevinRudolf-Champions",
-      style: "Energic",
+      style: "Workout",
       status: "nostatus",
   },
   {
@@ -52,7 +52,7 @@ var allMusic = [
       artist: "Twenty one pilots",
       src: "twentyonepilots-Choker",
       img: "scaled-and-icy-b-iext104194001",
-      style: "Energic",
+      style: "Chill",
       status: "nostatus",
   },
   {
@@ -60,7 +60,7 @@ var allMusic = [
       artist: "Twenty one pilots",
       src: "TwentyOnePilots-TheOutside",
       img: "scaled-and-icy-b-iext104194001",
-      style: "Energic",
+      style: "Chill",
       status: "nostatus",
   },
   {
@@ -68,7 +68,7 @@ var allMusic = [
       artist: "Twenty one pilots",
       src: "TwentyOnePilots-ShyAway",
       img: "scaled-and-icy-b-iext104194001",
-      style: "Energic",
+      style: "Chill",
       status: "nostatus",
   },
   {
@@ -76,7 +76,7 @@ var allMusic = [
       artist: "Twenty one pilots",
       src: "TwentyOnePilots-Saturday",
       img: "scaled-and-icy-b-iext104194001",
-      style: "Energic",
+      style: "Chill",
       status: "nostatus",
   },
   {
@@ -84,7 +84,7 @@ var allMusic = [
       artist: "Twenty one pilots",
       src: "TwentyOnePilots-Redecorate",
       img: "scaled-and-icy-b-iext104194001",
-      style: "Energic",
+      style: "Chill",
       status: "nostatus",
   },
   {
@@ -92,7 +92,7 @@ var allMusic = [
       artist: "Twenty one pilots",
       src: "TwentyOnePilots-NeverTakeIt",
       img: "scaled-and-icy-b-iext104194001",
-      style: "Energic",
+      style: "Chill",
       status: "nostatus",
   },
   {
@@ -100,7 +100,7 @@ var allMusic = [
       artist: "Twenty one pilots",
       src: "TwentyOnePilots-MulberryStreet",
       img: "scaled-and-icy-b-iext104194001",
-      style: "Energic",
+      style: "Chill",
       status: "nostatus",
   },
   {
@@ -108,7 +108,7 @@ var allMusic = [
       artist: "Twenty one pilots",
       src: "TwentyOnePilots-GoodDay",
       img: "scaled-and-icy-b-iext104194001",
-      style: "Energic Hip-Hop",
+      style: "Chill",
       status: "nostatus",
   },
   {
@@ -124,7 +124,7 @@ var allMusic = [
       artist: "Szusty , Guralsko",
       src: "donGURALesko-IdziemyPoSwojeSzUstyBlend",
       img: "guralsko",
-      style: "Hip-Hop",
+      style: "Workout",
       status: "nostatus",
   },
   {
@@ -132,7 +132,7 @@ var allMusic = [
       artist: "Szusty , Guralsko",
       src: "donGURALesko-LegendaSzUstyBlend",
       img: "guralsko",
-      style: "Hip-Hop",
+      style: "Workout",
       status: "nostatus",
   },
 ]

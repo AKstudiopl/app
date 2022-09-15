@@ -49,7 +49,7 @@
     </a>
   </div>
   <div class="navbar-bottom-btn 2">
-    <a href="#" class="navbar-bottom-btn-search" onclick="searchName()">
+    <a href="#" class="navbar-bottom-btn-search">
       <i class="fa-solid fa-magnifying-glass"></i>
         Wyszukaj
     </a>
@@ -198,34 +198,21 @@
 
     <h1>Czego szukasz?</h1>
     <div class="search-bar">
-      <input type="text" id="search-item" placeholder="Wykonawcy, utwory" onkeyup="searchName()">
-        <div class="clear-btn">
-        <button type="button" id="clear-input-btn" onclick="ClearFields();searchName();"><i class="fa-solid fa-xmark"></i></button>
-        </div>
-   </div>
+
+      <input type="text" id="search-item" placeholder="Wykonawcy, utwory">
+      <button type="button" id="clear-input-btn" onclick="search.value='';filterList();clearFilterStatus()"><i class="fa-solid fa-xmark"></i></button>
+     </div>
 
   </div>
 
   <div class="search-filter" id="filterBox">
 
-      <div class="search-item" onclick="filterName(1)">
-        <p>Hip-Hop</p>
-      </div>
-      <div class="search-item" onclick="filterName(2)">
-        <p>Energiczna</p>
-      </div>
-      <div class="search-item" onclick="filterName(3)">
-        <p>Workout</p>
-      </div>
-      <div class="search-item" onclick="filterName(4)">
-        <p>Chill</p>
-      </div>
-      <div class="search-item" onclick="filterName(5)">
-        <p>Sad-Lofi</p>
-      </div>
-      <div class="search-item" onclick="filterName(6)">
-        <p>Rock</p>
-      </div>
+    <button class="search-item active">Hip-Hop</button>
+    <button class="search-item active">Energic</button>
+    <button class="search-item active">Workout</button>
+    <button class="search-item active">Chill</button>
+    <button class="search-item active">Sad-Lofi</button>
+    <button class="search-item active">Rock</button>
 
   </div>
 
@@ -233,12 +220,7 @@
 
 
 
-    <div class="show-more-box">
-      <p>Pokaż więcej</p>
-    </div>
-
   </div>
-
 
 </div>
 
@@ -263,7 +245,7 @@
                 Gibbs
               </p>
           </div>
-          <div class="center-container-item">
+          <div class="center-container-item favorite-library-show">
             <i class="fa-solid fa-music"></i>
             <h2>Zobacz Wszystkie</h2>
           </div>
@@ -311,6 +293,52 @@
   </div>
 
   </div>
+</div>
+
+<div class="library-favorite-screen">
+
+  <div class="library-favorite-top">
+    <p>Biblioteka</p>
+    <i class="fa-solid fa-xmark library-favorite-exit"></i>
+  </div>
+
+  <div class="library-card-img">
+    <img src="48eab7f5-c8b8-4ccb-9de7-6c2163732ba1.png" class="artist-card-avatar" style="transform: scale(2);">
+  </div>
+
+  <div class="library-favorite-info">
+    <h1>Polubione Utwory</h1>
+    <p>Twoje polubione utwory : <span class="library-favorite-items-number">2</span><br> Zebrane w jedynm miejscu, ku twojej wygodzie.</p>
+  </div>
+
+  <div class="library-favorite-container">
+
+    <div class="library-favorite-item">
+      <li li-index="15" onclick="clicked(this)">
+        <h1>Idziemy Po Swoje</h1>
+        <span>Szusty , Guralsko</span>
+      </li>
+      <i class="fa-heart fa-regular"></i>
+    </div>
+
+    <div class="library-favorite-item">
+      <li li-index="5" onclick="clicked(this)">
+        <h1>Ride It</h1>
+        <span>DJ Regard</span>
+      </li>
+      <i class="fa-heart fa-regular"></i>
+    </div>
+
+    <div class="library-favorite-item">
+      <li li-index="1" onclick="clicked(this)">
+        <h1>Havana</h1>
+        <span>Camilla Cabello</span>
+      </li>
+      <i class="fa-heart fa-regular"></i>
+    </div>
+
+  </div>
+
 </div>
 
 
@@ -468,6 +496,25 @@
 
 </div>
 
+
+<div class="artist-card">
+
+  <div class="artist-top-controls">
+    <p>Profil</p>
+    <a class="artist-exit"><i class="fa-solid fa-xmark"></i></a>
+  </div>
+
+
+  <div class="artist-card-img">
+    <img src="channels4_profile.jpg" class="artist-card-avatar">
+  </div>
+
+  <div class="artist-main-info">
+    <h1 class="artist-main-name">User</h1>
+    <p class="artist-info">Alan Olav Walker – norweski producent muzyczny i DJ. Początkowo występował pod pseudonimem DJ Walkzz, pod którym wydawał single w latach 2012–2013.</p>
+  </div>
+
+</div>
 
 
   <div class="music-controls">
@@ -766,26 +813,6 @@ Havana, ooh-na-na (uh)
 
 
 </div>
-
-
-  <div class="artist-card">
-
-    <div class="artist-top-controls">
-      <p>Profil</p>
-      <a class="artist-exit"><i class="fa-solid fa-xmark"></i></a>
-    </div>
-
-
-    <div class="artist-card-img">
-      <img src="channels4_profile.jpg" class="artist-card-avatar">
-    </div>
-
-    <div class="artist-main-info">
-      <h1 class="artist-main-name">User</h1>
-      <p class="artist-info">Alan Olav Walker – norweski producent muzyczny i DJ. Początkowo występował pod pseudonimem DJ Walkzz, pod którym wydawał single w latach 2012–2013.</p>
-    </div>
-
-  </div>
 
 
 <div class="name-ask">
