@@ -59,14 +59,10 @@ body::-webkit-scrollbar
 .loader > img {
     width: 150px;
     margin-bottom: 40vh;
-    animation: loaderlogo 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
 }
 
 .loader.hidden > img {
     width: 150px;
-    animation: loadercolor 1s;
     animation-fill-mode: forwards;
 }
 .loader.hidden {
@@ -77,14 +73,14 @@ body::-webkit-scrollbar
 @keyframes fadeOut {
     100% {
         visibility: hidden;
-        transform: translateY(100vh);
+        opacity: 0;
     }
 }
 
 @keyframes loadercolor {
     100%
     {
-      transform: translateY(100vh);
+  
     }
 }
 
@@ -352,7 +348,6 @@ body::-webkit-scrollbar
 .settings-title
 {
   padding: 10px 0;
-  margin-top:
   border-bottom: 1px var(--backgroundsecond) solid;
 }
 .settings-screen-item h3
@@ -974,6 +969,29 @@ input:checked + .slider:before {
 {
   font-size: 20px;
 }
+.head-content .head-content-top-welcome i:first-child
+{
+  margin-right: 20px;
+}
+.head-content .head-content-top-welcome i:first-child p
+{
+  position:absolute;
+  background-color: var(--background);
+  z-index: 0;
+  width: 15px;
+  height: 15px;
+  color: var(--maincolor);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px var(--color) solid;
+  margin-top: -10px;
+  margin-left: 5px;
+  padding: 0px;
+  font-size: 10px;
+  border-radius: 50%;
+}
 .head-content-container
 {
   margin-top: 4vh;
@@ -1295,10 +1313,7 @@ input:checked + .slider:before {
   background: transparent;
   width: 33%;
 }
-.top-shortcut-item.active
-{
 
-}
 .top-shortcut-item:nth-child(2)
 {
   border-right: 1px var(--maincolor) solid;
@@ -1534,7 +1549,7 @@ input:checked + .slider:before {
 .main-music.paused .main-music-header img.active
 {
   animation-name: headerFirstOption;
-  animation-duration: 20s;
+  animation-duration: 50s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   border-radius: 50%;
@@ -1544,11 +1559,14 @@ input:checked + .slider:before {
 .main-music .main-music-header img.active
 {
   animation-name: headerFirstOption;
-  animation-duration: 20s;
+  animation-duration: 50s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-play-state: paused;
   border-radius: 50%;
+  -webkit-mask-image: url(1663347179820.png);
+  -webkit-mask-size: 100%;
+  filter: contrast(200%) grayscale(1) opacity(0.75);
 }
 .show-Music-Menu.active .music-img img
 {
@@ -1568,7 +1586,7 @@ input:checked + .slider:before {
 {
   width: 100%;
   transition: 0.5s;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 .main-music-header img.active
 {
@@ -1750,6 +1768,58 @@ input:checked + .slider:before {
 {
   opacity: 0.25;
 }
+.main-music-next-music
+{
+  width: 100%;
+  margin-top: 20px;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(150px);
+}
+.main-music-next-music.active
+{
+  animation-name: nextMusictooltip;
+  animation-duration: 3.5s;
+  opacity: 0;
+  transform: translateY(150px);
+}
+@keyframes nextMusictooltip {
+  0%
+  {
+    opacity: 1;
+    transform: translateX(-450px);
+  }
+  20%
+  {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  80%
+  {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  100%
+  {
+    opacity: 0;
+    transform: translateX(450px);
+  }
+}
+.next-music-item
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.next-music-info
+{
+  color: var(--color);
+}
+.next-music-title
+{
+  padding-left: 5px;
+  color: var(--maincolor);
+}
 .queue-container
 {
   position: fixed;
@@ -1851,11 +1921,6 @@ input:checked + .slider:before {
   overflow-y: scroll;
   overflow-x: hidden;
 }
-.queue-item li.playing
-{
-  background: #12121250;
-  backdrop=filter: blur(5px);
-}
 .queue-item li p
 {
   opacity: 0.5;
@@ -1893,21 +1958,38 @@ body.green .queue-item ul li img
 .device-screen
 {
   position: fixed;
-  z-index: 35;
+  z-index: 1;
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  height: 100%;
-  bottom: -100%;
-  background: var(--backgroundfade);
+  width: 90vw;
+  margin-left: 5vw;
+  height: 50vh;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  bottom: -49vh;
+  background: var(--background);
   backdrop-filter: blur(5px);
   transition: 0.3s;
-  visibility: hidden;
+  visibility: visible;
 }
 .device-screen.active
 {
   visibility: visible;
   bottom: 0;
+}
+.device-screen.fullscreen
+{
+  visibility: visible;
+  bottom: 0;
+  height: 100%;
+  width: 100vw;
+  margin-left: 0;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+.device-main-controls a
+{
+  margin-left: 20px;
 }
 .device-main
 {
@@ -1917,28 +1999,30 @@ body.green .queue-item ul li img
   justify-content: space-between;
   align-items: center;
   width: calc(100% - 40px);
-  margin-left: 20px;
-  margin-top: 15px;
+  border-bottom: 1px var(--backgroundsecond) solid;
+  padding: 20px 20px;
 }
 .device-main-title
 {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
 }
 .device-main-title h2
 {
-  font-family: 'Press Start 2P';
-  font-size: 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 100;;
 }
 .device-main-audio-data
 {
   display: flex;
   flex-direction: row;
-  font-size: 12px;
-  padding-top: 5px;
-  border-top: 1px var(--maincolor) solid;
-  margin-top: 5px;
+  font-size: 16px;
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px var(--maincolor) solid;
 }
 .device-main-audio-data span
 {
@@ -1951,37 +2035,48 @@ body.green .queue-item ul li img
 .device-lyrics-container
 {
   width: calc(100% - 40px);
-  margin: 40px 20px;
+  margin: 20px 20px;
   height: 80%;
   max-height: 80%;
   overflow-y: scroll;
+  -webkit-mask-image: -webkit-linear-gradient(black 80%, transparent 100%);
+  mask-image: -o-linear-gradient(black 80%, transparent 100%);
+  mask-image: linear-gradient(black 80%, transparent 100%);
+}
+.device-lyrics-nolyrics-alert
+{
+  width: 100%;
+  text-align: center;
+  color: var(--color);
+  display: none;
+}
+.device-lyrics-nolyrics-alert.active
+{
+  display: flex;
+}
+.device-lyrics-container p 
+{
+  padding: 20px 0;
+  border-bottom: 1px var(--backgroundsecond) solid;
+}
+.device-lyrics-container p:first-child
+{
+  padding-top: 0;
 }
 .lyrics-title
 {
   line-height: 1;
   font-size: 15px;
   color: var(--maincolor);
-  padding: 10px 0;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  font-family: 'Press Start 2P';
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.lyrics-item.onScreen
+.lyrics-title span
 {
-  color: var(--color);
-  border-left: 2px var(--maincolor) solid;
-  padding-left: 10px;
-}
-.lyrics-item.offScreen:hover
-{
-  color: var(--color);
-  border-left: 2px var(--maincolor) solid;
-  padding-left: 10px;
-  opacity: 1;
-}
-.lyrics-item.offScreen
-{
-  opacity: 0.5;
+  background-color: var(--backgroundsecond);
+  width: 50%;
+  height: 1px;
 }
 .lyrics-item
 {

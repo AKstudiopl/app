@@ -105,9 +105,11 @@ const musicMenuShowSec = document.getElementsByClassName('music-title')[0]
 
 showMusicMenubtn.addEventListener('click', () => {
   musicMenuShow.classList.toggle('active')
+  toggleSequence();
 })
 musicMenuShowSec.addEventListener('click', () => {
   musicMenuShow.classList.toggle('active')
+  toggleSequence();
 })
 
 function viewSearchHomeItems(){
@@ -197,6 +199,21 @@ shuffleBtn = wrapper.querySelector("#shuffle"),
 queueName = wrapper.querySelector(".queue-container .name"),
 queueImg = wrapper.querySelector(".queue-container img"),
 musicBackgroundImage = wrapper.querySelector(".background-music-img img"),
+musicNextTiptool = wrapper.querySelector(".main-music-next-music"),
+musicNextTitle = wrapper.querySelector(".main-music-next-music .next-music-title"),
+
+lyricsDataArtist = wrapper.querySelector(".device-main-audio-data .device-main-audio-data-artist"),
+lyricsDataTitle = wrapper.querySelector(".device-main-audio-data .device-main-audio-data-title"),
+lyricsDataVerse_1 = wrapper.querySelector(".device-lyrics-container .lyrics-item-number-verse-1"),
+lyricsDataVerse_2 = wrapper.querySelector(".device-lyrics-container .lyrics-item-number-verse-2"),
+lyricsDataVerse_3 = wrapper.querySelector(".device-lyrics-container .lyrics-item-number-verse-3"),
+lyricsDataVerse_4 = wrapper.querySelector(".device-lyrics-container .lyrics-item-number-verse-4"),
+lyricsDataVerse_5 = wrapper.querySelector(".device-lyrics-container .lyrics-item-number-verse-5"),
+lyricsDataVerse_6 = wrapper.querySelector(".device-lyrics-container .lyrics-item-number-verse-6"),
+lyricsDataVerse_7 = wrapper.querySelector(".device-lyrics-container .lyrics-item-number-verse-7"),
+lyricsDataVerse_8 = wrapper.querySelector(".device-lyrics-container .lyrics-item-number-verse-8"),
+lyricsNoDataAlert = wrapper.querySelector(".device-lyrics-nolyrics-alert"),
+
 queueArtist = wrapper.querySelector(".queue-container .artist");
 
 
@@ -232,6 +249,22 @@ favoritBtn.addEventListener('click', () => {
   loadMusic(indexNumb);
 })
 
+function lyricsSupport(){
+  lyricsDataVerse_1.innerText = allMusic[indexNumb - 1].lyrics.lyrics_verse_1;
+  lyricsDataVerse_2.innerText = allMusic[indexNumb - 1].lyrics.lyrics_verse_2;
+  lyricsDataVerse_3.innerText = allMusic[indexNumb - 1].lyrics.lyrics_verse_3;
+  lyricsDataVerse_4.innerText = allMusic[indexNumb - 1].lyrics.lyrics_verse_4;
+  lyricsDataVerse_5.innerText = allMusic[indexNumb - 1].lyrics.lyrics_verse_5;
+  lyricsDataVerse_6.innerText = allMusic[indexNumb - 1].lyrics.lyrics_verse_6;
+  lyricsDataVerse_7.innerText = allMusic[indexNumb - 1].lyrics.lyrics_verse_7;
+  lyricsDataVerse_8.innerText = allMusic[indexNumb - 1].lyrics.lyrics_verse_8;
+  if (lyricsDataVerse_1.innerText === ""){
+    lyricsNoDataAlert.classList.add("active");
+  }else{
+    lyricsNoDataAlert.classList.remove("active");
+  }
+}
+
 function loadMusic(indexNumb){
   musicName.innerText = allMusic[indexNumb - 1].name;
   musicArtist.innerText = allMusic[indexNumb - 1].artist;
@@ -241,6 +274,9 @@ function loadMusic(indexNumb){
   smallName.innerText = allMusic[indexNumb - 1].name;
   smallArtist.innerText = allMusic[indexNumb - 1].artist;
   smallImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
+  musicNextTitle.innerText = allMusic[indexNumb].name;
+  lyricsDataArtist.innerText = allMusic[indexNumb - 1].artist;
+  lyricsDataTitle.innerText = allMusic[indexNumb - 1].name;
   mainAudio.volume = document.getElementById("volumeslider").value;
   musicViralMp4.pause();
 
@@ -292,6 +328,7 @@ function loadMusic(indexNumb){
 
 }
 
+
 function playMusic(){
   wrapper.classList.add("paused");
   playstopButton.querySelector(".fa-solid").classList.remove("fa-play");
@@ -318,11 +355,26 @@ function nextMusic(){
     indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
   }
 
+  toggleSequence();
   indexNumb++;
   indexNumb > allMusic.length ? indexNumb = 1 : indexNumb = indexNumb;
   loadMusic(indexNumb);
   playMusic();
   playingSong();
+}
+
+function toggleSequence() {
+  if (musicNextTiptool.classList.contains("active"))
+  {
+    return;
+  } else{
+  setTimeout(() => {
+    musicNextTiptool.classList.toggle("active");
+  }, 1000)
+  setTimeout(() => {
+    musicNextTiptool.classList.toggle("active");
+  }, 5000)
+  }
 }
 
 function prevMusic(){
@@ -331,9 +383,10 @@ function prevMusic(){
     indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
   }
 
+  toggleSequence();
   indexNumb--;
   indexNumb < 1 ? indexNumb = allMusic.length : indexNumb = indexNumb;
-  loadMusic(musicIndex);
+  loadMusic(indexNumb);
   playMusic();
   playingSong();
 }
@@ -571,14 +624,21 @@ const correctSoundBtn = document.getElementsByClassName('device-screen-btn')[0]
 const correctSoundScreen = document.getElementsByClassName('device-screen')[0]
 const correctSoundExit = document.getElementsByClassName('device-screen-exit')[0]
 const menuLyricsBtn = document.getElementsByClassName('shortcut-rate-btn')[0]
+const menuLyricsFullscreen = document.getElementsByClassName('device-screen-fullscreen')[0]
 correctSoundBtn.addEventListener('click', () => {
   correctSoundScreen.classList.toggle('active')
+  lyricsSupport();
 })
 correctSoundExit.addEventListener('click', () => {
   correctSoundScreen.classList.remove('active')
+  correctSoundScreen.classList.remove('fullscreen');
 })
 menuLyricsBtn.addEventListener('click', () => {
   correctSoundScreen.classList.add('active')
+})
+menuLyricsFullscreen.addEventListener('click', () => {
+  correctSoundScreen.classList.toggle('fullscreen');
+  correctSoundScreen.classList.toggle('active');
 })
 
 const musicContenLike = document.getElementsByClassName('music-content-like')[0]
