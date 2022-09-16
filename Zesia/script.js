@@ -124,7 +124,6 @@ const exitFavoriteScreen = document.getElementsByClassName('library-favorite-exi
 
 showFavoriteScreen.addEventListener('click', () => {
   favortieScreen.classList.toggle('active')
-  favoriteLoadItems();
 })
 exitFavoriteScreen.addEventListener('click', () => {
   favortieScreen.classList.toggle('active')
@@ -134,17 +133,17 @@ function favoriteLoadItems() {
 
   const resultsFAV = document.querySelector(".library-favorite-container");
   var favoritIt = allMusic.filter(x => x.status === "favorite");
+  resultsFAV.innerHTML = "";
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
-      `<div class="library-favorite-item" li-index="${favoritIt[i].id}" onclick="clickedSingle(this)">
+      `<div class="library-favorite-item" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
           <div class="library-favorite-data">
             <h1>${favoritIt[i].name}</h1>
             <span>${favoritIt[i].artist}</span>
           </div>
-          <audio class="${favoritIt[i].src}" src="songs/${favoritIt[i].src}.mp3"></audio>
-         <i class="fa-heart fa-regular"></i>
+         <i onclick="clickedSingleDelete(this)" class="fa-heart fa-regular"></i>
        </div>`;
-    resultsFAV.insertAdjacentHTML("afterbegin", resultFAV);
+    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }
   favoriteItemsNumber.innerText = $('.library-favorite-item').length;
 }
@@ -156,7 +155,26 @@ function clickedSingle(element){
   loadMusic(musicIndex);
   playMusic();
   playingSong();
-  playingSongPersonal()
+  favoriteItemsNumber.innerText = $('.library-favorite-item').length;
+}
+
+function clickedSingleDelete(element){
+  let getLiIndex = element.parentElement.getAttribute("li-index");
+  let i = getLiIndex;
+  allMusic[i].status = "nostatus";
+  element.classList.add('fa-solid');
+  element.classList.add('fa-heart-crack');
+  element.classList.remove('fa-heart');
+  element.classList.remove('fa-regular');
+  element.classList.add('active');
+  element.parentElement.classList.add('active');
+  favoriteItemDel = element.parentElement;
+  setTimeout(deleteParent, 3000);
+  setTimeout(favoriteLoadItems, 4000);
+}
+
+function deleteParent(element){
+  favoriteItemDel.remove();
 }
 
 const favoriteItemsNumber = document.querySelector('.library-favorite-items-number');
@@ -189,17 +207,13 @@ smallArtist = smallView.querySelector(".music-title .fastartist"),
 progressBarNavDone = smallView.querySelector(".music-controls-progresbar-done"),
 progressBarNav = smallView.querySelector(".music-controls-progresbar"),
 smallPlayStopbtn = smallView.querySelector("#smallplaystop");
-
 const favoritBtn = document.querySelector('#heartBtnMain');
 
+var indexNumb = 5;
+musicIndex = indexNumb;
 
-var musicIndex = 5;
-
-function personalLIst() {
-  wrapper.classList.toggle('personal-Music');
-}
 window.addEventListener("load", ()=>{
-  loadMusic(musicIndex);
+  loadMusic(indexNumb);
   checkQuestion();
 })
 
@@ -207,6 +221,16 @@ musicImg.addEventListener("click", ()=>{
   musicImg.classList.toggle('active');
   showMusicMenubtn.classList.toggle('active');
 });
+
+favoritBtn.addEventListener('click', () => {
+  if (allMusic[indexNumb - 1].status === "favorite") {
+    allMusic[indexNumb - 1].status = "nostatus";
+  }else if (allMusic[indexNumb - 1].status === "nostatus") {
+    allMusic[indexNumb - 1].status = "favorite";
+  }
+  favoriteLoadItems();
+  loadMusic(indexNumb);
+})
 
 function loadMusic(indexNumb){
   musicName.innerText = allMusic[indexNumb - 1].name;
@@ -220,19 +244,17 @@ function loadMusic(indexNumb){
   mainAudio.volume = document.getElementById("volumeslider").value;
   musicViralMp4.pause();
 
-  favoritBtn.addEventListener('click', () => {
-    if (allMusic[indexNumb - 1].status === "favorite") {
-      allMusic[indexNumb - 1].status = "nostatus";
-      favoritBtn.classList.remove('active')
-      favoritBtn.classList.remove('fa-solid')
-      favoritBtn.classList.add('fa-regular')
-    }else if (allMusic[indexNumb - 1].status === "nostatus") {
-      allMusic[indexNumb - 1].status = "favorite";
-      favoritBtn.classList.add('active')
-      favoritBtn.classList.add('fa-solid')
-      favoritBtn.classList.remove('fa-regular')
-    }
-  })
+  if (allMusic[indexNumb - 1].status === "favorite") {
+    favoritBtn.classList.add('active')
+    favoritBtn.classList.add('fa-solid')
+    favoritBtn.classList.remove('fa-regular')
+  }
+  if (allMusic[indexNumb - 1].status === "nostatus") {
+    favoritBtn.classList.remove('active')
+    favoritBtn.classList.remove('fa-solid')
+    favoritBtn.classList.add('fa-regular')
+  }
+
 
 
     if (wrapper.classList.contains('save-data')) {
@@ -242,8 +264,8 @@ function loadMusic(indexNumb){
 
 
     navigator.mediaSession.metadata = new MediaMetadata({
-      title: allMusic[indexNumb - 1].name,
-      artist: allMusic[indexNumb - 1].artist,
+      title: allMusic[musicIndex - 1].name,
+      artist: allMusic[musicIndex - 1].artist,
       artwork:  [
       { src: `images/${allMusic[indexNumb - 1].img}.jpg`, sizes: '96x96',   type: 'image/png' },
       { src: `images/${allMusic[indexNumb - 1].img}.jpg`, sizes: '128x128', type: 'image/png' },
@@ -291,30 +313,34 @@ function pauseMusic(){
 }
 
 function nextMusic(){
-  loadMusic(musicIndex);
-  playMusic();
-  playingSong();
 
   if (wrapper.classList.contains("shuffle")) {
-    musicIndex = Math.floor((Math.random() * allMusic.length) + 1);
+    indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
   }
-  else {
-    musicIndex++;
-    musicIndex > allMusic.length ? musicIndex = 1 : musicIndex = musicIndex;
-  }
+
+  indexNumb++;
+  indexNumb > allMusic.length ? indexNumb = 1 : indexNumb = indexNumb;
+  loadMusic(indexNumb);
+  playMusic();
+  playingSong();
 }
 
 function prevMusic(){
-  musicIndex--;
-  musicIndex < 1 ? musicIndex = allMusic.length : musicIndex = musicIndex;
+  
+  if (wrapper.classList.contains("shuffle")) {
+    indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
+  }
+
+  indexNumb--;
+  indexNumb < 1 ? indexNumb = allMusic.length : indexNumb = indexNumb;
   loadMusic(musicIndex);
   playMusic();
   playingSong();
 }
 
 function randomIndex() {
-  var musicIndex = Math.floor((Math.random() * allMusic.length) + 1);
-  loadMusic(musicIndex);
+  var indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
+  loadMusic(indexNumb);
   playMusic();
   playingSong();
 }
@@ -490,59 +516,48 @@ function playingSong(){
   }
 }
 
-function playingSongPersonal(){
-  const allLiPersonalTag = personalUl.querySelectorAll("li");
-  for (let j = 0; j < allLiPersonalTag.length; j++) {
-    let personalPlayIcon = allLiPersonalTag[j].querySelector(".playPersonal");
-
-    if(allLiPersonalTag[j].classList.contains("playing")){
-      allLiPersonalTag[j].classList.remove("playing");
-      personalPlayIcon.innerHTML = '<i class="fa-solid fa-play"></i>';
-    }
-    if(allLiPersonalTag[j].getAttribute("li-index") == musicIndex){
-      allLiPersonalTag[j].classList.add("playing");
-      personalPlayIcon.innerHTML = '<img src="sources/equaliser-animated-green.f93a2ef4.gif">';
-    }
-    allLiPersonalTag[j].setAttribute("onclick", "clicked(this)");
-  }
-}
-
 function clicked(element){
   let getLiIndex = element.getAttribute("li-index");
   musicIndex = getLiIndex;
   loadMusic(musicIndex);
   playMusic();
   playingSong();
-  playingSongPersonal()
 }
 
 
 
+function styleContentAction() {
 
-
-const personalUl = document.querySelector(".music-style-item-content ul");
-for (let i = 0; i < personalMusic.length; i++) {
-  let liTag = `<li li-index="${i + 1}" onclick="clicked(this)">
-                  <div class="music-style-item-fast">
-                  <p>${personalMusic[i].artist} - ${personalMusic[i].name}</p>
-                  <span id="${allMusic[i].src}" class="audio-duration-setup">3:40</span>
-                  </div>
-                  <a class="playPersonal"><i class="fa-solid fa-play"></i></a>
-                  <audio class="${personalMusic[i].src}" src="songs/${personalMusic[i].src}.mp3"></audio>
-              </li>`;
-  personalUl.insertAdjacentHTML("beforeend", liTag);
-  let liAudioDuartionTag = personalUl.querySelector(`#${personalMusic[i].src}`);
-  let liAudioTag = personalUl.querySelector(`.${personalMusic[i].src}`);
-  liAudioTag.addEventListener("loadeddata", ()=>{
-    let duration = liAudioTag.duration;
-    let totalMin = Math.floor(duration / 60);
-    let totalSec = Math.floor(duration % 60);
-    if(totalSec < 10){
-      totalSec = `0${totalSec}`;
-    };
-    liAudioDuartionTag.innerText = `${totalMin}:${totalSec}`;
-    liAudioDuartionTag.setAttribute("t-duration", `${totalMin}:${totalSec}`);
-  });
+  const resultsFAV = document.querySelector(".music-style-item-container");
+  var favoritIt = allMusic.filter(x => x.style === "Pop");
+  resultsFAV.innerHTML = "";
+  for (let i = 0; i < favoritIt.length; i++) {
+    let resultFAV =
+      `<div class="music-style-container-item" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
+      <div class="music-style-item-artist-container">
+       <img src="images/${favoritIt[i].img}.jpg">
+          <div class="music-style-container-data">
+            <h1>${favoritIt[i].name}</h1>
+            <span>${favoritIt[i].artist}</span>
+          </div>
+        </div>
+        <span id="${favoritIt[i].src}" class="audio-duration-setup">3:40</span>
+        <audio class="${favoritIt[i].src}" src="songs/${favoritIt[i].src}.mp3"></audio>
+       </div>`;
+    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+    let liAudioDuartionTag = resultsFAV.querySelector(`#${favoritIt[i].src}`);
+    let liAudioTag = resultsFAV.querySelector(`.${favoritIt[i].src}`);
+    liAudioTag.addEventListener("loadeddata", ()=>{
+      let duration = liAudioTag.duration;
+      let totalMin = Math.floor(duration / 60);
+      let totalSec = Math.floor(duration % 60);
+      if(totalSec < 10){
+        totalSec = `0${totalSec}`;
+      };
+      liAudioDuartionTag.innerText = `${totalMin}:${totalSec}`;
+      liAudioDuartionTag.setAttribute("t-duration", `${totalMin}:${totalSec}`);
+    });
+  }
 }
 
 
@@ -564,6 +579,16 @@ correctSoundExit.addEventListener('click', () => {
 })
 menuLyricsBtn.addEventListener('click', () => {
   correctSoundScreen.classList.add('active')
+})
+
+const musicContenLike = document.getElementsByClassName('music-content-like')[0]
+musicContenLike.addEventListener('click', () => {
+  musicContenLike.classList.toggle('active')
+  if (musicContenLike.classList.contains("active")){
+    musicContenLike.innerHTML = '<i class="fa-regular fa-heart"></i> Polubiono';
+  }else{
+    musicContenLike.innerHTML = '<i class="fa-regular fa-heart"></i> Polub';
+  }
 })
 
 function clearFilterStatus(){

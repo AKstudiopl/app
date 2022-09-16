@@ -144,4 +144,13 @@ var allMusic = [
       status: "nostatus",
       id: "15",
   },
+  {
+    name: "Rockstar",
+    artist: "Post Malone",
+    src: "PostMalone-Rockstar",
+    img: "rockstar-w-iext111232885",
+    style: "Pop",
+    status: "nostatus",
+    id: "16",
+  },
 ]

@@ -718,6 +718,9 @@ input:checked + .slider:before {
   width: 100%;
   max-height: 25vh;
   overflow-y: scroll;
+  -webkit-mask-image: -webkit-linear-gradient(black 60%, transparent 100%);
+  mask-image: -o-linear-gradient(black 60%, transparent 100%);
+  mask-image: linear-gradient(black 60%, transparent 100%);
 }
 .last-reviews .review-item
 {
@@ -865,12 +868,46 @@ input:checked + .slider:before {
   border-bottom: 1px var(--backgroundsecond) solid;
   padding: 5px 15px;
   color: var(--color);
+  transition: 0.5s;
+}
+.library-favorite-item.active
+{
+  transition-delay: 2.5s;
+  margin-left: 100%;
+  transform: scaleY(0);
 }
 .library-favorite-item i
 {
   color: var(--maincolor);
   font-size: 20px;
+  transition: 0.5s;
 }
+.library-favorite-item i:hover
+{
+  color: var(--backgroundsecond);
+  font-size: 20px;
+}
+.library-favorite-item i.active
+{
+  transform: scale(1.5);
+  animation: wiggle2;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+}
+
+@keyframes wiggle2 {
+  0% { transform: rotate(0deg) scale(1);
+  color: var(--background); }
+ 50% { transform: rotate(0deg); }
+ 65% {
+    transform: rotate(360)scale(1.5);
+    background: var(--background);
+    color: var(--color);
+  }
+ 75% { transform: rotate(-10deg); }
+100% { transform: rotate(360deg) scale(1.5); }
+}
+
 .library-favorite-item:hover h1
 {
   color: var(--maincolor);
@@ -2238,7 +2275,6 @@ body.green .queue-item ul li img
   top: -150vh;
 }
 
-
 /* Style_pop_up*/
 
 .music-style-container
@@ -2306,7 +2342,7 @@ body.green .queue-item ul li img
 .music-style-item-title img
 {
   height: 220px;
-  filter: grayscale(1);
+  filter: grayscale(1) brightness(125%) contrast(140%);
 }
 .music-style-item-title h1
 {
@@ -2329,14 +2365,16 @@ body.green .queue-item ul li img
   align-items: center;
   width: calc(100% - 25px);
   padding-bottom: 25px;
+  line-height: 1;
   margin: 0;
 }
 .music-style-option p
 {
-  font-size: 15px;
+  font-size: 12px;
 }
 .music-style-option p span
 {
+  font-size: 12px;
   color: var(--maincolor);
 }
 .music-style-option a
@@ -2361,7 +2399,6 @@ body.green .queue-item ul li img
 }
 .music-style-item-content
 {
-  padding-left: 20px;
   padding-top: 50px;
   line-height: 1;
 }
@@ -2369,6 +2406,8 @@ body.green .queue-item ul li img
 {
   font-size: 30px;
   margin-bottom: 10px;
+  width: calc(100% - 40px);
+  margin-left: 20px;
 }
 .music-style-item-content h2
 {
@@ -2376,6 +2415,8 @@ body.green .queue-item ul li img
   font-size: 18px;
   font-weight: 100;
   margin-bottom: 35px;
+  width: calc(100% - 40px);
+  margin-left: 20px;
 }
 .music-content-number
 {
@@ -2383,11 +2424,86 @@ body.green .queue-item ul li img
   flex-direction: column;
   justify-content: center;
   font-size: 20px;
+  width: calc(100% - 40px);
+  margin-left: 20px;
 }
 .music-content-number span
 {
   font-size: 15px;
   margin-top: 5px;
+}
+.music-style-item-container
+{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: calc(50vh - 120px);
+  -webkit-mask-image: -webkit-linear-gradient(black 90%, transparent 100%);
+    mask-image: -o-linear-gradient(black 90%, transparent 100%);
+    mask-image: linear-gradient(black 90%, transparent 100%);
+}
+.music-content-like.active
+{
+  background-color: var(--maincolor);
+  color: var(--background);
+}
+.music-style-container-item
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-top:1px solid var(--backgroundsecond);
+  transition: 0.25s;
+}
+.music-style-container-item:nth-child(2)
+{
+  border-top:none;
+}
+.music-style-container-item:last-child
+{
+  border-bottom:1px solid var(--backgroundsecond);
+}
+.music-style-container-item:hover 
+{
+  background-color: var(--backgroundsecond);
+  border-left: 5px solid var(--maincolor);
+}
+.music-style-container-item .audio-duration-setup
+{
+  color: var(--maincolor);
+  padding-right: 20px;
+  font-size: 16px;
+}
+.music-style-container-item img 
+{
+  height: 60px;
+}
+.music-style-container-data
+{
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  padding-left: 15px;
+}
+.music-style-item-artist-container
+{
+  display: flex;
+  align-items: center;
+}
+.music-style-container-data h1
+{
+  font-size: 20px;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.music-style-container-data span
+{
+  color: var(--color);
+  opacity: 0.5;
 }
 .music-style-item-content ul
 {

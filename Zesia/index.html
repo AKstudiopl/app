@@ -22,6 +22,12 @@
     <img src="brandsources\20220320_150124.png"/>
   </div>
 
+  <div class="name-ask">
+    <h1>Jak masz na imię?</h1>
+    <input type="text" id="username" onchange="nameQuestion()" placeholder="- - -">
+    <button type="submit" onclick="nameQuestion()" class="usernameNext" >Dalej</button>
+  </div>
+
   <div class="login-popup">
     <div class="login-top">
       <img src="brandsources\IMG_20220320_144711.png">
@@ -43,19 +49,19 @@
 
 <div class="navbar-bottom">
   <div class="navbar-bottom-btn 1 active">
-    <a href="#" class="navbar-bottom-btn-home">
+    <a class="navbar-bottom-btn-home">
       <i class="fa-solid fa-house"></i>
         Home
     </a>
   </div>
   <div class="navbar-bottom-btn 2">
-    <a href="#" class="navbar-bottom-btn-search">
+    <a class="navbar-bottom-btn-search">
       <i class="fa-solid fa-magnifying-glass"></i>
         Wyszukaj
     </a>
   </div>
   <div class="navbar-bottom-btn 3">
-    <a href="#" class="navbar-bottom-btn-library">
+    <a class="navbar-bottom-btn-library">
       <i class="fa-solid fa-bars"></i>
         Biblioteka
     </a>
@@ -211,7 +217,7 @@
     <button class="search-item active">Energic</button>
     <button class="search-item active">Workout</button>
     <button class="search-item active">Chill</button>
-    <button class="search-item active">Sad-Lofi</button>
+    <button class="search-item active">Pop</button>
     <button class="search-item active">Rock</button>
 
   </div>
@@ -308,7 +314,7 @@
 
   <div class="library-favorite-info">
     <h1>Polubione Utwory</h1>
-    <p>Twoje polubione utwory : <span class="library-favorite-items-number">2</span><br> Zebrane w jedynm miejscu, ku twojej wygodzie.</p>
+    <p>Twoje polubione utwory : <span class="library-favorite-items-number">0</span><br> Zebrane w jedynm miejscu, ku twojej wygodzie.</p>
   </div>
 
   <div class="library-favorite-container">
@@ -392,7 +398,7 @@
   </div>
 
   <div class="personal-container-items">
-    <div class="personal-item" onclick="personalLIst()">
+    <div class="personal-item" onclick="styleContentAction()">
       <h1>POP</h1>
       <img src="sources\897-8975430_postmalone-sticker-post-malone.png" alt="">
       <h1>POP</h1>
@@ -575,8 +581,8 @@
       <a><i class="fa-solid fa-user-astronaut"></i> Wykonawca</a>
       <a class="copyUrl" onclick="copyUrlClipboard()"><i class="fa-solid fa-share-nodes"></i> Udostępnij</a>
       <a class="timer-toggle"><i class="fa-solid fa-hourglass"></i> Ustaw czas odtwarzania</a>
-      <a href="https://akstudiopl.github.io/Zesia/zesia.html"><i class="fa-solid fa-briefcase-medical"></i> Pomoc</a>
-      <a href="https://akstudiopl.github.io/Zesia/zesia.html"><i class="fa-solid fa-ticket"></i> Zgłoś zawartość</a>
+      <a href="https://akstudiopl.github.io/Zesia/landing.html"><i class="fa-solid fa-briefcase-medical"></i> Pomoc</a>
+      <a href="https://akstudiopl.github.io/Zesia/landing.html"><i class="fa-solid fa-ticket"></i> Zgłoś zawartość</a>
       </div>
 
       <div class="alert-container">
@@ -791,12 +797,6 @@ Havana, ooh-na-na (uh)
 
 
 </div>
-
-
-<div class="name-ask">
-  <h1>Jak masz na imię?</h1>
-  <input type="text" id="username" onchange="nameQuestion()" placeholder="- - -">
-  <button type="submit" onclick="nameQuestion()" class="usernameNext" >Dalej</button>
 </div>
 
 
@@ -806,7 +806,7 @@ Havana, ooh-na-na (uh)
 
 
     <div class="music-style-item-controls">
-      <a class="music-1-exit" onclick="personalLIst()"><i class="fa-solid fa-xmark"></i></a>
+      <a class="music-1-exit"><i class="fa-solid fa-xmark"></i></a>
     </div>
 
     <div class="music-style-item-title">
@@ -819,12 +819,12 @@ Havana, ooh-na-na (uh)
       <h1>Poczuj swój styl w muzyce</h1>
       <h2>Posłuchaj ulubionych utworów innych</h2>
         <div class="music-style-option">
-          <p class="music-content-number">Playlista polubiona przez : <span>15, 356 Użytkowników</span></p>
-          <a><i class="fa-regular fa-heart"></i> Polub</a>
+          <p class="music-content-number">Playlista polubiona przez : <span>155 Użytkowników</span></p>
+          <a class="music-content-like"><i class="fa-regular fa-heart"></i> Polub</a>
         </div>
-        <ul>
+        <div class="music-style-item-container">
 
-        </ul>
+        </div>
     </div>
   </div>
 </div>
