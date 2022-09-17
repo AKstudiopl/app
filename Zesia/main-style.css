@@ -1074,10 +1074,6 @@ input:checked + .slider:before {
   transition: 0.3s;
   z-index: 0;
 }
-.personal-container.popular
-{
-  padding-bottom: 140px;
-}
 .personal-item:hover
 {
   transform: scale(0.9);
@@ -1281,10 +1277,10 @@ input:checked + .slider:before {
   flex-direction: column;
   align-content: center;
   width: 100vw;
-  background: var(--backgroundsecond);
+  background: rgba(18, 18, 18, 0.85);
   border: 1px #A7A7A725 solid;
   transition: 0.3s;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(15px);
   padding: 5px 0;
 }
 .top-controls-more.active
@@ -1297,7 +1293,7 @@ input:checked + .slider:before {
   align-items: center;
   justify-content: space-between;
   margin: 10px 15px 0;
-  border-top: 1px var(--maincolor) solid;
+  border-top: 1px var(--backgroundsecond) solid;
 }
 .top-shortcut-item a
 {
@@ -1316,8 +1312,8 @@ input:checked + .slider:before {
 
 .top-shortcut-item:nth-child(2)
 {
-  border-right: 1px var(--maincolor) solid;
-  border-left: 1px var(--maincolor) solid;
+  border-right: 1px var(--backgroundsecond) solid;
+  border-left: 1px var(--backgroundsecond) solid;
 }
 .top-shortcut-item.active a
 {
@@ -1363,7 +1359,7 @@ input:checked + .slider:before {
 }
 .top-menu-list a:last-child
 {
-  border-bottom: 1px var(--maincolor) solid;
+  border-bottom: 1px var(--backgroundsecond) solid;
 }
 .top-menu-list a
 {
@@ -2105,7 +2101,7 @@ body.green .queue-item ul li img
   align-items: center;
   justify-content: center;
   margin: 0 15px;
-  border-top: 1px var(--maincolor) solid;
+  border-top: 1px var(--backgroundsecond) solid;
   padding: 15px 0;
 }
 .device-custom-item label
@@ -2390,7 +2386,6 @@ body.green .queue-item ul li img
   visibility: hidden;
   left: 0;
 }
-
 .music-style-item.active
 {
   visibility: visible;
@@ -2407,8 +2402,8 @@ body.green .queue-item ul li img
 .music-style-item-controls
 {
   text-align: right;
-  width: 96vw;
-  margin-top: 2vw;
+  width: calc(100% - 40px);
+  padding: 15px 20px;
   position: absolute;
   z-index: 10;
 }
@@ -2593,7 +2588,7 @@ body.green .queue-item ul li img
   font-size: 20px;
   width: 100%;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .music-style-container-data span
 {
@@ -2634,6 +2629,201 @@ body.green .queue-item ul li img
 {
   height: 18px;
   filter: hue-rotate(90deg);
+}
+
+.music-artist-container
+{
+  visibility: visible;
+  position: fixed;
+  z-index: 0;
+}
+.music-artist-item
+{
+  width: 100vw;
+  height: 100%;
+  background: var(--background);
+  position: fixed;
+  z-index: 5;
+  transition: 0.3s;
+  top: 150vh;
+}
+.music-artist-item.active
+{
+  top: 0;
+}
+.music-artist-item-controls
+{
+  text-align: right;
+  width: calc(100% - 40px);
+  padding: 10px 20px;
+  z-index: 10;
+  position:absolute;
+}
+.music-artist-item-controls a
+{
+  text-decoration: none;
+  color: var(--maincolor);
+  font-size: 20px;
+}
+.music-artist-item-controls a i 
+{
+  filter: drop-shadow(0px 0px 5px #121212);
+}
+.music-artist-item-title
+{
+  width: 100%;
+  height: 200px;
+  -webkit-mask-image: -webkit-linear-gradient(black, transparent);
+  mask-image: -o-linear-gradient(black, transparent);
+  mask-image: linear-gradient(black, transparent);
+}
+.music-artist-item-title img 
+{
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.music-artist-item-content
+{
+  padding-top: 50px;
+}
+.music-artist-item-content h1 
+{
+  font-size: 30px;
+  margin-bottom: 10px;
+  width: calc(100% - 40px);
+  margin-left: 20px;
+}
+.music-artist-item-content h2 {
+  color: var(--maincolor);
+  font-size: 18px;
+  font-weight: 100;
+  margin-bottom: 35px;
+  width: calc(100% - 40px);
+  margin-left: 20px;
+}
+.music-artist-option
+{
+  border-bottom: 1px var(--backgroundsecond) solid;
+  width: calc(100% - 40px);
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 25px;
+  line-height: 1;
+  font-size: 15px;
+  margin: 0;
+}
+.music-artist-number {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: calc(100% - 40px);
+}
+.music-artist-option p span {
+  font-size: 12px;
+  color: var(--maincolor);
+  margin-top: 5px;
+}
+.music-artist-option a {
+  text-decoration: none;
+  border: 1px var(--maincolor) solid;
+  display: flex;
+  border-radius: 2px;
+  justify-content: space-between;
+  padding: 10px 15px;
+  color: var(--maincolor);
+  font-size: 13px;
+  transition: 0.3s;
+}
+.music-artist-option a.active
+{
+  background-color: var(--maincolor);
+  color: var(--background);
+  animation-name: followAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+}
+.music-artist-option a.active i
+{
+  animation-name: followAnimationHeart;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-timing-function: ease;
+}
+@keyframes followAnimation {
+  30%
+  {
+    transform: scale(1);
+  }
+  50%
+  {
+    transform: scaleX(1.2) rotate(5deg);
+  }
+  70%
+  {
+    transform: scale(1);
+  }
+}
+@keyframes followAnimationHeart {
+  30%
+  {
+    transform: scale(1);
+  }
+  50%
+  {
+    transform: scale(1.5);
+  }
+  70%
+  {
+    transform: scale(1);
+  }
+}
+.music-artist-option a i {
+  padding-right: 5px;
+}
+.music-artist-content-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid var(--backgroundsecond);
+  transition: 0.25s;
+}
+.music-artist-content-item img {
+  height: 60px;
+}
+.music-artist-content-item:hover
+{
+  background: var(--backgroundsecond);
+  width: calc(100% - 5px);
+  border-left: 5px var(--maincolor) solid;
+}
+.music-artist-content-item-data
+{
+  line-height: 1;
+  padding-left: 15px;
+}
+.music-artist-content-item-data h1
+{
+  color: var(--color);
+  margin-bottom: 5px;
+  line-height: 1;
+  font-size: 20px;
+}
+.music-artist-content-item-data span
+{
+  color: var(--color);
+  opacity: 0.5;
+}
+.music-artist-content-container
+{
+  max-height: 40vh;
+  overflow-y: scroll;
+  -webkit-mask-image: -webkit-linear-gradient(black 90%, transparent 100%);
+  mask-image: -o-linear-gradient(black 90%, transparent 100%);
+  mask-image: linear-gradient(black 90%, transparent 100%);
 }
 /* Style_pop_up*/
 

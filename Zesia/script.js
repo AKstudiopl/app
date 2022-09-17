@@ -246,7 +246,16 @@ favoritBtn.addEventListener('click', () => {
     allMusic[indexNumb - 1].status = "favorite";
   }
   favoriteLoadItems();
-  loadMusic(indexNumb);
+  if (allMusic[indexNumb - 1].status === "favorite") {
+    favoritBtn.classList.add('active')
+    favoritBtn.classList.add('fa-solid')
+    favoritBtn.classList.remove('fa-regular')
+  }
+  if (allMusic[indexNumb - 1].status === "nostatus") {
+    favoritBtn.classList.remove('active')
+    favoritBtn.classList.remove('fa-solid')
+    favoritBtn.classList.add('fa-regular')
+  }
 })
 
 function lyricsSupport(){
@@ -274,11 +283,16 @@ function loadMusic(indexNumb){
   smallName.innerText = allMusic[indexNumb - 1].name;
   smallArtist.innerText = allMusic[indexNumb - 1].artist;
   smallImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
-  musicNextTitle.innerText = allMusic[indexNumb].name;
   lyricsDataArtist.innerText = allMusic[indexNumb - 1].artist;
   lyricsDataTitle.innerText = allMusic[indexNumb - 1].name;
   mainAudio.volume = document.getElementById("volumeslider").value;
   musicViralMp4.pause();
+
+  if(allMusic[indexNumb] === undefined){
+    musicNextTitle.innerText = allMusic[indexNumb - 1].name;
+  }else{
+    musicNextTitle.innerText = allMusic[indexNumb].name;
+  }
 
   if (allMusic[indexNumb - 1].status === "favorite") {
     favoritBtn.classList.add('active')
@@ -508,6 +522,7 @@ const navbarSearchBtn = document.getElementsByClassName('navbar-bottom-btn-searc
 const searchScreen = document.getElementsByClassName('search-container')[0]
 navbarSearchBtn.addEventListener('click', () => {
   searchScreen.classList.add('active');
+  favortieScreen.classList.remove('active')
   libraryScreen.classList.remove('active');
 })
 
@@ -515,6 +530,7 @@ const navbarLibraryBtn = document.getElementsByClassName('navbar-bottom-btn-libr
 const libraryScreen = document.getElementsByClassName('library-container')[0]
 navbarLibraryBtn.addEventListener('click', () => {
   libraryScreen.classList.add('active');
+  favortieScreen.classList.remove('active')
   searchScreen.classList.remove('active');
 })
 
@@ -522,6 +538,7 @@ const homeBtn = document.getElementsByClassName('navbar-bottom-btn-home')[0]
 homeBtn.addEventListener('click', () => {
   libraryScreen.classList.remove('active');
   searchScreen.classList.remove('active');
+  favortieScreen.classList.remove('active')
   disableSettingsScreen.classList.remove('active');
 })
 
@@ -757,6 +774,65 @@ function setvolume(){
   musicstyleexit.addEventListener('click', () => {
       personalItem.classList.remove('active')
   })
+
+  const musicArtistExit = document.querySelectorAll('.music-artist-exit')[0]
+  const musicArtistScreen = document.querySelectorAll('.music-artist-item')[0]
+  musicArtistExit.addEventListener('click', () => {
+    musicArtistScreen.classList.remove('active')
+  })
+
+  function artistScreenView(){
+    musicArtistScreen.classList.add('active')
+    musicMenuHide.classList.remove('active')
+    artistScreenDataLoad(indexNumb);
+  }
+
+  const artistContainer = document.querySelector(".music-artist-container"),
+  artistItemImg = artistContainer.querySelector(".music-artist-item-title img"),
+  artistItemTitle = artistContainer.querySelector(".music-artist-item-data-artist"),
+  artistItemFollow = artistContainer.querySelector(".music-artist-like"),
+  artistItemFollowers = artistContainer.querySelector(".music-artist-number-data");
+
+  artistItemFollow.addEventListener('click', () => {
+    artistItemFollow.classList.toggle('active')
+    if (artistItemFollow.classList.contains('active')){
+      artistItemFollow.innerHTML = '<i class="fa-solid fa-heart"></i> Obserwujesz';
+      artistItemFollowers.innerText = +artistItemFollowers.innerText +1;
+    } else{
+      artistItemFollow.innerHTML = '<i class="fa-regular fa-heart"></i> Obserwuj';
+      artistItemFollowers.innerText = +artistItemFollowers.innerText -1;
+    }
+  })
+
+  function artistScreenDataLoad(indexNumb){
+    artistItemTitle.innerText = allMusic[indexNumb - 1].artist;
+    artistItemImg.src = `artists/${allMusic[indexNumb - 1].avatar}.jpg`;
+
+    var randomnumber = Math.floor(Math.random() * 150000) + 1;
+    artistItemFollowers.innerText = randomnumber;
+
+    artistSongsDataLoad();
+  }
+
+  function artistSongsDataLoad() {
+
+    let artistNameData = artistItemTitle.innerText;
+
+    const resultsFAV = document.querySelector(".music-artist-content-container");
+    var favoritIt = allMusic.filter(x => x.artist === artistNameData);
+    resultsFAV.innerHTML = "";
+    for (let i = 0; i < favoritIt.length; i++) {
+      let resultFAV =
+        `<div class="music-artist-content-item" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
+          <img src="images/${favoritIt[i].img}.jpg">
+            <div class="music-artist-content-item-data">
+              <h1>${favoritIt[i].name}</h1>
+              <span>${favoritIt[i].artist}</span>
+            </div>
+         </div>`;
+      resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+    }
+  }
 
 
 function shortcutCheck() {

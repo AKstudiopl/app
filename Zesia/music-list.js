@@ -7,6 +7,7 @@ var allMusic = [
       img: "CamilaCabelloHavana",
       style: "Energic",
       status: "nostatus",
+      avatar: "41aeb62f0-c2321-f45bsf",
       id: "0",
       lyrics:{
         lyrics_verse_1: "",
@@ -27,11 +28,12 @@ var allMusic = [
   },
   {
       name: "Dj Is Your Second Name",
-      artist: "C-Bool , Giang Pham",
+      artist: "C-Bool",
       src: "C-BooLDJ",
       img: "C-BooLDJ",
       style: "Energic",
       status: "nostatus",
+      avatar: "41aeb62f0-c2321-f25bsf",
       id: "1",
       lyrics:{
         lyrics_verse_1: "",
@@ -57,6 +59,7 @@ var allMusic = [
       img: "C-BooL-NeverGoAway",
       style: "Energic",
       status: "nostatus",
+      avatar: "41aeb62f0-c2321-f25bsf",
       id: "2",
       lyrics:{
         lyrics_verse_1: "",
@@ -82,6 +85,7 @@ var allMusic = [
       img: "KevinRudolf-Champions",
       style: "Workout",
       status: "nostatus",
+      avatar: "41aeb62f0-c2321-f31bsf",
       id: "3",
       lyrics:{
         lyrics_verse_1: "",
@@ -107,6 +111,7 @@ var allMusic = [
       img: "DJRegard-Rideit",
       style: "Energic",
       status: "nostatus",
+      avatar: "41aeb62f0-c2321-f21bsf",
       id: "4",
       lyrics:{
         lyrics_verse_1: "Just lose control Ride it, ride it, come touch my soul Ride it, ride it, let me feel you Ride it, turn the lights down low Ride it, from head to toe Ride it, ride it, come touch my soul Ride it, ride it, let me feel you",
@@ -132,6 +137,7 @@ var allMusic = [
       img: "scaled-and-icy-b-iext104194001",
       style: "Chill",
       status: "nostatus",
+      avatar: "41aeb62f0-c2321-f22bsf",
       id: "5",
       lyrics:{
         lyrics_verse_1: "",
@@ -157,6 +163,7 @@ var allMusic = [
       img: "scaled-and-icy-b-iext104194001",
       style: "Chill",
       status: "nostatus",
+      avatar: "41aeb62f0-c2321-f22bsf",
       id: "6",
       lyrics:{
         lyrics_verse_1: "",
@@ -182,6 +189,7 @@ var allMusic = [
       img: "scaled-and-icy-b-iext104194001",
       style: "Chill",
       status: "nostatus",
+      avatar: "41aeb62f0-c2321-f22bsf",
       id: "7",
       lyrics:{
         lyrics_verse_1: "",
@@ -207,6 +215,7 @@ var allMusic = [
       img: "scaled-and-icy-b-iext104194001",
       style: "Chill",
       status: "nostatus",
+      avatar: "41aeb62f0-c2321-f22bsf",
       id: "8",
       lyrics:{
         lyrics_verse_1: "",
@@ -232,6 +241,7 @@ var allMusic = [
       img: "scaled-and-icy-b-iext104194001",
       style: "Chill",
       status: "nostatus",
+      avatar: "41aeb62f0-c2321-f22bsf",
       id: "9",
       lyrics:{
         lyrics_verse_1: "",
@@ -257,6 +267,7 @@ var allMusic = [
       img: "scaled-and-icy-b-iext104194001",
       style: "Chill",
       status: "nostatus",
+      avatar: "41aeb62f0-c2321-f22bsf",
       id: "10",
       lyrics:{
         lyrics_verse_1: "",
@@ -282,6 +293,7 @@ var allMusic = [
       img: "scaled-and-icy-b-iext104194001",
       style: "Chill",
       status: "nostatus",
+      avatar: "41aeb62f0-c2321-f22bsf",
       id: "11",
       lyrics:{
         lyrics_verse_1: "",
@@ -307,6 +319,7 @@ var allMusic = [
       img: "scaled-and-icy-b-iext104194001",
       style: "Chill",
       status: "nostatus",
+      avatar: "41aeb62f0-c2321-f22bsf",
       id: "12",
       lyrics:{
         lyrics_verse_1: "",
@@ -332,6 +345,7 @@ var allMusic = [
       img: "C-BooL-NeverGoAway",
       style: "Hip-Hop",
       status: "nostatus",
+      avatar: "41aeb62f0-c2321-f106bsf",
       id: "13",
       lyrics:{
         lyrics_verse_1: "",
@@ -357,6 +371,7 @@ var allMusic = [
       img: "guralsko",
       style: "Workout",
       status: "nostatus",
+      avatar: "41aeb62f0-c2321-f46bsf",
       id: "14",
       lyrics:{
         lyrics_verse_1: "",
@@ -382,6 +397,7 @@ var allMusic = [
       img: "guralsko",
       style: "Workout",
       status: "nostatus",
+      avatar: "41aeb62f0-c2321-f46bsf",
       id: "15",
       lyrics:{
         lyrics_verse_1: "",
@@ -408,6 +424,7 @@ var allMusic = [
     img: "rockstar-w-iext111232885",
     style: "Pop",
     status: "nostatus",
+    avatar: "41aeb62f0=c2321-f23bsf",
     id: "16",
     lyrics:{
       lyrics_verse_1: "",
@@ -433,6 +450,7 @@ var allMusic = [
     img: "ab67616d00001e021f86dffe512418a230887e69",
     style: "Rock",
     status: "nostatus",
+    avatar: "14235843737BeNz9sRRfK4jsYeLQ7t32Pg76m86w",
     id: "17",
     lyrics:{
       lyrics_verse_1: "",
@@ -458,6 +476,7 @@ var allMusic = [
     img: "ab67616d00001e021f86dffe512418a230887e69",
     style: "Rock",
     status: "nostatus",
+    avatar: "14235843737BeNz9sRRfK4jsYeLQ7t32Pg76m86w",
     id: "18",
     lyrics:{
       lyrics_verse_1: "",
@@ -483,6 +502,7 @@ var allMusic = [
     img: "tired-bones-w-iext52557958",
     style: "Energic",
     status: "nostatus",
+    avatar: "5cd42c454b86e992d288a65bd8a187b62151",
     id: "19",
     lyrics:{
       lyrics_verse_1: "",
@@ -503,11 +523,12 @@ var allMusic = [
   },
   {
     name: "Złap Za Broń",
-    artist: "TrzeciWymiar",
+    artist: "Trzeci Wymiar",
     src: "TrzeciWymiar-Złapzabroń",
     img: "6341ef2bd3abc2c21c6ee6466cb67d15.510x510x1",
     style: "Hip-Hop",
     status: "nostatus",
+    avatar: "41aeb62f0-c2321-f24bsf",
     id: "20",
     lyrics:{
       lyrics_verse_1: "",
@@ -533,6 +554,7 @@ var allMusic = [
     img: "ab67616d0000b27369cdca7b90ca8060e3525196",
     style: "Chill",
     status: "nostatus",
+    avatar: "41aeb62f0=c2321-f56bsf",
     id: "21",
     lyrics:{
       lyrics_verse_1: "",
@@ -558,6 +580,7 @@ var allMusic = [
     img: "ab67616d0000b273a57d3a2736f815d3cf358e37",
     style: "Workout",
     status: "nostatus",
+    avatar: "41aeb62f0=c2321-f57bsf",
     id: "22",
     lyrics:{
       lyrics_verse_1: "",
@@ -583,32 +606,8 @@ var allMusic = [
     img: "ab67616d0000b2738c77bcf5f5a227d270d23370",
     style: "Energic",
     status: "nostatus",
+    avatar: "41aeb62f0=c2321-f58bsf",
     id: "23",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
-  },
-  {
-    name: "In The Name Of Love",
-    artist: "Bebe Rexha",
-    src: "BebeRexha-InTheNameOfLove",
-    img: "ab67616d0000b2738c77bcf5f5a227d270d23370",
-    style: "Energic",
-    status: "nostatus",
-    id: "24",
     lyrics:{
       lyrics_verse_1: "",
       lyrics_verse_2: "",
