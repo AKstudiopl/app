@@ -153,8 +153,8 @@ function favoriteLoadItems() {
 function clickedSingle(element){
   let getLiIndex = element.getAttribute("li-index");
   let i = getLiIndex; i++;
-  musicIndex = i;
-  loadMusic(musicIndex);
+  indexNumb = i;
+  loadMusic(indexNumb);
   playMusic();
   playingSong();
   favoriteItemsNumber.innerText = $('.library-favorite-item').length;
@@ -588,8 +588,8 @@ function playingSong(){
 
 function clicked(element){
   let getLiIndex = element.getAttribute("li-index");
-  musicIndex = getLiIndex;
-  loadMusic(musicIndex);
+  indexNumb = getLiIndex;
+  loadMusic(indexNumb);
   playMusic();
   playingSong();
 }
@@ -693,8 +693,8 @@ results.innerHTML=allMusic.map((a,i)=>
 function clickedSearchResults(o){
   console.log("Index "+o.getAttribute("li-index")+" was clicked.");
   let getLiIndex = o.getAttribute("li-index");
-  mainIndex = getLiIndex;
-  loadMusic(mainIndex);
+  indexNumb = getLiIndex;
+  loadMusic(indexNumb);
   playMusic();
   playingSong();
 }
