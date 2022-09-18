@@ -8,6 +8,7 @@ var allMusic = [
       style: "Energic",
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f45bsf",
+      artist_img: "https://i.scdn.co/image/ab6761610000e5ebec05963eab63676a539fef13",
       id: "0",
       lyrics:{
         lyrics_verse_1: "",
@@ -34,6 +35,7 @@ var allMusic = [
       style: "Energic",
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f25bsf",
+      artist_img: "https://i.scdn.co/image/ab6761610000e5eb00a89c0f54687319c9a499de",
       id: "1",
       lyrics:{
         lyrics_verse_1: "",
@@ -60,6 +62,7 @@ var allMusic = [
       style: "Energic",
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f25bsf",
+      artist_img: "https://i.scdn.co/image/ab6761610000e5eb00a89c0f54687319c9a499de",
       id: "2",
       lyrics:{
         lyrics_verse_1: "",
@@ -86,6 +89,7 @@ var allMusic = [
       style: "Workout",
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f31bsf",
+      artist_img: "https://i.scdn.co/image/ab6761610000e5ebf977eaad9f10f82d6b3e3278",
       id: "3",
       lyrics:{
         lyrics_verse_1: "",
@@ -112,6 +116,7 @@ var allMusic = [
       style: "Energic",
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f21bsf",
+      artist_img: "https://i.scdn.co/image/ab6761610000e5ebf2463642042d6e99c687b42c",
       id: "4",
       lyrics:{
         lyrics_verse_1: "Just lose control Ride it, ride it, come touch my soul Ride it, ride it, let me feel you Ride it, turn the lights down low Ride it, from head to toe Ride it, ride it, come touch my soul Ride it, ride it, let me feel you",
@@ -138,6 +143,7 @@ var allMusic = [
       style: "Chill",
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f22bsf",
+      artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
       id: "5",
       lyrics:{
         lyrics_verse_1: "",
@@ -164,6 +170,7 @@ var allMusic = [
       style: "Chill",
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f22bsf",
+      artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
       id: "6",
       lyrics:{
         lyrics_verse_1: "",
@@ -190,6 +197,7 @@ var allMusic = [
       style: "Chill",
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f22bsf",
+      artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
       id: "7",
       lyrics:{
         lyrics_verse_1: "",
@@ -216,6 +224,7 @@ var allMusic = [
       style: "Chill",
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f22bsf",
+      artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
       id: "8",
       lyrics:{
         lyrics_verse_1: "",
@@ -242,6 +251,7 @@ var allMusic = [
       style: "Chill",
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f22bsf",
+      artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
       id: "9",
       lyrics:{
         lyrics_verse_1: "",
@@ -268,6 +278,7 @@ var allMusic = [
       style: "Chill",
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f22bsf",
+      artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
       id: "10",
       lyrics:{
         lyrics_verse_1: "",
@@ -294,6 +305,7 @@ var allMusic = [
       style: "Chill",
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f22bsf",
+      artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
       id: "11",
       lyrics:{
         lyrics_verse_1: "",
@@ -320,6 +332,7 @@ var allMusic = [
       style: "Chill",
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f22bsf",
+      artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
       id: "12",
       lyrics:{
         lyrics_verse_1: "",
@@ -346,6 +359,7 @@ var allMusic = [
       style: "Hip-Hop",
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f106bsf",
+      artist_img: "https://i.scdn.co/image/ab6761610000e5eb76a19046d32c54e79affd6a1",
       id: "13",
       lyrics:{
         lyrics_verse_1: "",
@@ -372,6 +386,7 @@ var allMusic = [
       style: "Workout",
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f46bsf",
+      artist_img: "https://i.scdn.co/image/ab6761610000e5eb4b346794a19f7adfcc244ee7",
       id: "14",
       lyrics:{
         lyrics_verse_1: "",
@@ -398,6 +413,7 @@ var allMusic = [
       style: "Workout",
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f46bsf",
+      artist_img: "https://i.scdn.co/image/ab6761610000e5eb4b346794a19f7adfcc244ee7",
       id: "15",
       lyrics:{
         lyrics_verse_1: "",
@@ -425,6 +441,7 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     avatar: "41aeb62f0=c2321-f23bsf",
+    artist_img: "https://i.scdn.co/image/ab6761610000e5ebb894ef9fa437b0389c5567cc",
     id: "16",
     lyrics:{
       lyrics_verse_1: "",
@@ -451,6 +468,7 @@ var allMusic = [
     style: "Rock",
     status: "nostatus",
     avatar: "14235843737BeNz9sRRfK4jsYeLQ7t32Pg76m86w",
+    artist_img: "https://i.scdn.co/image/ab6761610000e5ebd6e4988f56f08add19e0dd7b",
     id: "17",
     lyrics:{
       lyrics_verse_1: "",
@@ -477,6 +495,7 @@ var allMusic = [
     style: "Rock",
     status: "nostatus",
     avatar: "14235843737BeNz9sRRfK4jsYeLQ7t32Pg76m86w",
+    artist_img: "https://i.scdn.co/image/ab6761610000e5ebd6e4988f56f08add19e0dd7b",
     id: "18",
     lyrics:{
       lyrics_verse_1: "",
@@ -503,6 +522,7 @@ var allMusic = [
     style: "Energic",
     status: "nostatus",
     avatar: "5cd42c454b86e992d288a65bd8a187b62151",
+    artist_img: "https://i.scdn.co/image/ab6761610000e5eba6cbc503bf2aca8d539a7f92",
     id: "19",
     lyrics:{
       lyrics_verse_1: "",
@@ -529,6 +549,7 @@ var allMusic = [
     style: "Hip-Hop",
     status: "nostatus",
     avatar: "41aeb62f0-c2321-f24bsf",
+    artist_img: "https://i.scdn.co/image/ab67616d0000b273cb498bab77f77940c83145fa",
     id: "20",
     lyrics:{
       lyrics_verse_1: "",
@@ -555,6 +576,7 @@ var allMusic = [
     style: "Chill",
     status: "nostatus",
     avatar: "41aeb62f0=c2321-f56bsf",
+    artist_img: "https://i.scdn.co/image/2b9dc7ef187414be63e89488aef91f96c3e2170d",
     id: "21",
     lyrics:{
       lyrics_verse_1: "",
@@ -581,6 +603,7 @@ var allMusic = [
     style: "Workout",
     status: "nostatus",
     avatar: "41aeb62f0=c2321-f57bsf",
+    artist_img: "https://i.scdn.co/image/ab6761610000e5eb1fd54eb6e30d0bc8f633621e",
     id: "22",
     lyrics:{
       lyrics_verse_1: "",
@@ -607,6 +630,7 @@ var allMusic = [
     style: "Energic",
     status: "nostatus",
     avatar: "41aeb62f0=c2321-f58bsf",
+    artist_img: "https://i.scdn.co/image/ab6761610000e5ebabfac786f093c4da55c99d4e",
     id: "23",
     lyrics:{
       lyrics_verse_1: "",

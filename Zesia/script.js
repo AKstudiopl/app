@@ -791,8 +791,10 @@ function setvolume(){
   artistItemImg = artistContainer.querySelector(".music-artist-item-title img"),
   artistItemTitle = artistContainer.querySelector(".music-artist-item-data-artist"),
   artistItemFollow = artistContainer.querySelector(".music-artist-like"),
-  artistItemFollowers = artistContainer.querySelector(".music-artist-number-data");
-
+  artistItemFollowers = artistContainer.querySelector(".music-artist-number-data"),
+  artistCardBackgroundImg = artistContainer.querySelector(".music-artist-information-box"),
+  artistCardDataName = artistContainer.querySelector(".music-artist-information-bottom-name"),
+  artistCardDataBio = artistContainer.querySelector(".music-artist-information-bottom-bio");
   artistItemFollow.addEventListener('click', () => {
     artistItemFollow.classList.toggle('active')
     if (artistItemFollow.classList.contains('active')){
@@ -807,11 +809,24 @@ function setvolume(){
   function artistScreenDataLoad(indexNumb){
     artistItemTitle.innerText = allMusic[indexNumb - 1].artist;
     artistItemImg.src = `artists/${allMusic[indexNumb - 1].avatar}.jpg`;
+    artistCardDataName.innerText = allMusic[indexNumb - 1].artist;
+    artistCardBackgroundImg.style.backgroundImage = `url(${allMusic[indexNumb - 1].artist_img})`;
 
     var randomnumber = Math.floor(Math.random() * 150000) + 1;
     artistItemFollowers.innerText = randomnumber;
 
     artistSongsDataLoad();
+    fastLoadingPop();
+  }
+
+  function fastLoadingPop(){
+    const fastloader = document.querySelector(".fast-loader");
+    setTimeout(() => {
+      fastloader.classList.toggle("active");
+    }, 0000)
+    setTimeout(() => {
+      fastloader.classList.toggle("active");
+    }, 750)
   }
 
   function artistSongsDataLoad() {
@@ -823,7 +838,7 @@ function setvolume(){
     resultsFAV.innerHTML = "";
     for (let i = 0; i < favoritIt.length; i++) {
       let resultFAV =
-        `<div class="music-artist-content-item" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
+        `<div class="music-artist-content-item hidden" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
           <img src="images/${favoritIt[i].img}.jpg">
             <div class="music-artist-content-item-data">
               <h1>${favoritIt[i].name}</h1>
@@ -831,6 +846,32 @@ function setvolume(){
             </div>
          </div>`;
       resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+    }
+    
+    const hiddenPosts = document.querySelectorAll(".music-artist-content-item.hidden");
+    const artistTopListBtn = document.querySelector(".music-artist-content-btn"); 
+    if(hiddenPosts.length > 5){
+      artistSongsRemove();
+      artistTopListBtn.style.display = "flex";
+    }else{
+      for (const hiddenPost of hiddenPosts) {
+        hiddenPost.classList.remove('hidden');
+        artistTopListBtn.style.display = "none";
+      }
+    }
+  }
+
+  function artistSongsRemove() {
+    const amount = 5;
+    const hiddenPosts = document.querySelectorAll(".music-artist-content-item.hidden");
+    const remaining = hiddenPosts.length;
+    const artistTopListBtn = document.querySelector(".music-artist-content-btn"); 
+
+    if (remaining > 0) {
+      for (let i = 0; i < (remaining >= amount ? amount : remaining); i++) {
+        hiddenPosts[i].classList.remove("hidden");
+      }
+      artistTopListBtn.style.display = "none";
     }
   }
 
