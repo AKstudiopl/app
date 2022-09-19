@@ -817,6 +817,7 @@ function setvolume(){
 
     artistSongsDataLoad();
     fastLoadingPop();
+    filteredAlbums();
   }
 
   function fastLoadingPop(){
@@ -838,7 +839,7 @@ function setvolume(){
     resultsFAV.innerHTML = "";
     for (let i = 0; i < favoritIt.length; i++) {
       let resultFAV =
-        `<div class="music-artist-content-item hidden" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
+        `<div class="music-artist-content-item" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
           <img src="images/${favoritIt[i].img}.jpg">
             <div class="music-artist-content-item-data">
               <h1>${favoritIt[i].name}</h1>
@@ -848,33 +849,51 @@ function setvolume(){
       resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
     }
     
-    const hiddenPosts = document.querySelectorAll(".music-artist-content-item.hidden");
-    const artistTopListBtn = document.querySelector(".music-artist-content-btn"); 
-    if(hiddenPosts.length > 5){
-      artistSongsRemove();
-      artistTopListBtn.style.display = "flex";
+    const artistLibrary = document.querySelectorAll(".music-artist-content-item");
+    const artistLibraryBtn = document.querySelector(".music-artist-content-btn"); 
+
+    artistLibraryBtn.addEventListener('click', () => {
+      for (const artistLibraryItem of artistLibrary){
+        artistLibraryItem.classList.add('active')
+        artistLibraryBtn.style.display="none";
+      }
+      fastLoadingPop();
+    })
+
+    if (artistLibrary.length < 5){
+      artistLibraryBtn.style.display="none";
     }else{
-      for (const hiddenPost of hiddenPosts) {
-        hiddenPost.classList.remove('hidden');
-        artistTopListBtn.style.display = "none";
-      }
+      artistLibraryBtn.style.display="flex";
     }
   }
 
-  function artistSongsRemove() {
-    const amount = 5;
-    const hiddenPosts = document.querySelectorAll(".music-artist-content-item.hidden");
-    const remaining = hiddenPosts.length;
-    const artistTopListBtn = document.querySelector(".music-artist-content-btn"); 
 
-    if (remaining > 0) {
-      for (let i = 0; i < (remaining >= amount ? amount : remaining); i++) {
-        hiddenPosts[i].classList.remove("hidden");
-      }
-      artistTopListBtn.style.display = "none";
+function filteredAlbums(){
+
+    let artistNameData = artistItemTitle.innerText;
+
+    const resultsFAV = document.querySelector(".music-artist-information-albums");
+    var favoritIt = allMusic.filter(x => x.artist === artistNameData);
+    resultsFAV.innerHTML = "";
+    for (let i = 0; i < favoritIt.length; i++) {
+      let resultFAV =
+        `<div class="music-artist-information-albums-item" onclick="fastLoadingPop()" data-album='${favoritIt[i].album}'>
+            <img src="${favoritIt[i].album_cover}">
+            <p><span class="music-artist-information-albums-item-name">${favoritIt[i].album}</span> <span>${favoritIt[i].album_premiere}</span></p>
+         </div>`;
+      resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
     }
-  }
 
+    var productIds={};
+    $('.music-artist-information-albums-item').each(function(){
+        var prodId = $(this).attr('data-album');
+        if(productIds[prodId]){
+           $(this).remove();
+        }else{
+           productIds[prodId] = true;
+        }
+    });
+}
 
 function shortcutCheck() {
   if (wrapper.classList.contains("repeat")) {

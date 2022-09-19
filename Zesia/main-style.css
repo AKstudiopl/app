@@ -2787,15 +2787,29 @@ body.green .queue-item ul li img
   padding-right: 5px;
 }
 .music-artist-content-item {
-  display: flex;
+  display: none;
   align-items: center;
   width: 100%;
   border-bottom: 1px solid var(--backgroundsecond);
   transition: 0.25s;
 }
-.music-artist-content-item.hidden
+.music-artist-content-item:nth-child(-n+5)
 {
-  display: none;
+  display: flex;
+}
+.music-artist-content-item.active:nth-child(-n+50)
+{
+  display: flex;
+}
+.music-artist-content-container::-webkit-scrollbar-track {
+  background: var(--background);
+}
+.music-artist-content-container::-webkit-scrollbar-thumb {
+  background: var(--maincolor);
+  border-radius: 5px;
+}
+.music-artist-content-container::-webkit-scrollbar {
+  width: 5px;
 }
 .music-artist-content-item img {
   height: 60px;
@@ -2825,8 +2839,9 @@ body.green .queue-item ul li img
 }
 .music-artist-content-container
 {
-  max-height: 335px;
+  max-height: 366px;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 .music-artist-content-btn 
 {
@@ -2935,6 +2950,57 @@ body.green .queue-item ul li img
 {
   color: var(--maincolor);
 }
+.music-artist-information-albums
+{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: 100vw;
+  margin-left: -20px;
+}
+.music-artist-information-albums-item
+{
+  flex: 0 0 auto;
+  width: 35vw;
+  display: inline-block;
+  transition: 0.3s;
+  margin-right: 15px;
+  transition: 0.5s;
+  padding: 20px 0;
+}
+.music-artist-information-albums-item:hover
+{
+  transform: scale(0.95);
+}
+.music-artist-information-albums-item:first-child
+{
+  margin-left: 20px;
+}
+.music-artist-information-albums-item:last-child
+{
+  margin-right: 20px;
+}
+.music-artist-information-albums-item img
+{
+  border-radius: 5px;
+  width: 100%;
+}
+.music-artist-information-albums-item p 
+{
+  color: var(--color);
+  font-size: 15px;
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.music-artist-information-albums-item p span:last-child
+{
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+
+
 /* Style_pop_up*/
 
 textarea

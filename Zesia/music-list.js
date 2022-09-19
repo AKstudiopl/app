@@ -9,6 +9,9 @@ var allMusic = [
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f45bsf",
       artist_img: "https://i.scdn.co/image/ab6761610000e5ebec05963eab63676a539fef13",
+      album: "Camila",
+      album_cover: "https://i.scdn.co/image/ab67616d00001e026eb0b9e73adcf04e4ed3eca4",
+      album_premiere: "2018",
       id: "0",
       lyrics:{
         lyrics_verse_1: "",
@@ -36,6 +39,9 @@ var allMusic = [
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f25bsf",
       artist_img: "https://i.scdn.co/image/ab6761610000e5eb00a89c0f54687319c9a499de",
+      album: "Dj Is Your Second Name",
+      album_cover: "https://i.scdn.co/image/ab67616d0000b2734470a94060697a4265fb0e03",
+      album_premiere: "2017",
       id: "1",
       lyrics:{
         lyrics_verse_1: "",
@@ -63,6 +69,9 @@ var allMusic = [
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f25bsf",
       artist_img: "https://i.scdn.co/image/ab6761610000e5eb00a89c0f54687319c9a499de",
+      album: "Never Go Away",
+      album_cover: "https://i.scdn.co/image/ab67616d00001e0225a6f8a62f4d061ef61169c9",
+      album_premiere: "2016",
       id: "2",
       lyrics:{
         lyrics_verse_1: "",
@@ -90,6 +99,9 @@ var allMusic = [
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f31bsf",
       artist_img: "https://i.scdn.co/image/ab6761610000e5ebf977eaad9f10f82d6b3e3278",
+      album: "Champions",
+      album_cover: "https://i.scdn.co/image/ab67616d00001e02335815746144562adb8455b4",
+      album_premiere: "2012",
       id: "3",
       lyrics:{
         lyrics_verse_1: "",
@@ -117,6 +129,9 @@ var allMusic = [
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f21bsf",
       artist_img: "https://i.scdn.co/image/ab6761610000e5ebf2463642042d6e99c687b42c",
+      album: "Ride It",
+      album_cover: "https://i.scdn.co/image/ab67616d00001e025c27813ae019011fcb370c78",
+      album_premiere: "2019",
       id: "4",
       lyrics:{
         lyrics_verse_1: "Just lose control Ride it, ride it, come touch my soul Ride it, ride it, let me feel you Ride it, turn the lights down low Ride it, from head to toe Ride it, ride it, come touch my soul Ride it, ride it, let me feel you",
@@ -144,6 +159,9 @@ var allMusic = [
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f22bsf",
       artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
+      album: "Scaled And Icy",
+      album_cover: "https://i.scdn.co/image/ab67616d00001e0220b467550945fd123e00f0a5",
+      album_premiere: "2021",
       id: "5",
       lyrics:{
         lyrics_verse_1: "",
@@ -171,6 +189,9 @@ var allMusic = [
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f22bsf",
       artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
+      album: "Scaled And Icy",
+      album_cover: "https://i.scdn.co/image/ab67616d00001e0220b467550945fd123e00f0a5",
+      album_premiere: "2021",
       id: "6",
       lyrics:{
         lyrics_verse_1: "",
@@ -198,6 +219,9 @@ var allMusic = [
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f22bsf",
       artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
+      album: "Scaled And Icy",
+      album_cover: "https://i.scdn.co/image/ab67616d00001e0220b467550945fd123e00f0a5",
+      album_premiere: "2021",
       id: "7",
       lyrics:{
         lyrics_verse_1: "",
@@ -225,6 +249,9 @@ var allMusic = [
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f22bsf",
       artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
+      album: "Scaled And Icy",
+      album_cover: "https://i.scdn.co/image/ab67616d00001e0220b467550945fd123e00f0a5",
+      album_premiere: "2021",
       id: "8",
       lyrics:{
         lyrics_verse_1: "",
@@ -252,6 +279,9 @@ var allMusic = [
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f22bsf",
       artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
+      album: "Scaled And Icy",
+      album_cover: "https://i.scdn.co/image/ab67616d00001e0220b467550945fd123e00f0a5",
+      album_premiere: "2021",
       id: "9",
       lyrics:{
         lyrics_verse_1: "",
@@ -279,6 +309,9 @@ var allMusic = [
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f22bsf",
       artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
+      album: "Scaled And Icy",
+      album_cover: "https://i.scdn.co/image/ab67616d00001e0220b467550945fd123e00f0a5",
+      album_premiere: "2021",
       id: "10",
       lyrics:{
         lyrics_verse_1: "",
@@ -306,6 +339,9 @@ var allMusic = [
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f22bsf",
       artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
+      album: "Scaled And Icy",
+      album_cover: "https://i.scdn.co/image/ab67616d00001e0220b467550945fd123e00f0a5",
+      album_premiere: "2021",
       id: "11",
       lyrics:{
         lyrics_verse_1: "",
@@ -333,6 +369,9 @@ var allMusic = [
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f22bsf",
       artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
+      album: "Scaled And Icy",
+      album_cover: "https://i.scdn.co/image/ab67616d00001e0220b467550945fd123e00f0a5",
+      album_premiere: "2021",
       id: "12",
       lyrics:{
         lyrics_verse_1: "",
@@ -360,6 +399,9 @@ var allMusic = [
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f106bsf",
       artist_img: "https://i.scdn.co/image/ab6761610000e5eb76a19046d32c54e79affd6a1",
+      album: "Głosy",
+      album_cover: "https://i.scdn.co/image/ab6761610000e5eb76a19046d32c54e79affd6a1",
+      album_premiere: "2013",
       id: "13",
       lyrics:{
         lyrics_verse_1: "",
@@ -387,6 +429,9 @@ var allMusic = [
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f46bsf",
       artist_img: "https://i.scdn.co/image/ab6761610000e5eb4b346794a19f7adfcc244ee7",
+      album: "Idziemy Po Swoje",
+      album_cover: "https://i.scdn.co/image/ab67616d0000b273dd559af8356ea6b28a71a5fe",
+      album_premiere: "2009",
       id: "14",
       lyrics:{
         lyrics_verse_1: "",
@@ -414,6 +459,9 @@ var allMusic = [
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f46bsf",
       artist_img: "https://i.scdn.co/image/ab6761610000e5eb4b346794a19f7adfcc244ee7",
+      album: "Legenda",
+      album_cover: "https://i.scdn.co/image/ab67616d00001e0259b80ddc896cb493dc68e697",
+      album_premiere: "2010",
       id: "15",
       lyrics:{
         lyrics_verse_1: "",
@@ -442,6 +490,9 @@ var allMusic = [
     status: "nostatus",
     avatar: "41aeb62f0=c2321-f23bsf",
     artist_img: "https://i.scdn.co/image/ab6761610000e5ebb894ef9fa437b0389c5567cc",
+    album: "beerbongs & bentleys",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e02b1c4b76e23414c9f20242268",
+    album_premiere: "2018",
     id: "16",
     lyrics:{
       lyrics_verse_1: "",
@@ -469,6 +520,9 @@ var allMusic = [
     status: "nostatus",
     avatar: "14235843737BeNz9sRRfK4jsYeLQ7t32Pg76m86w",
     artist_img: "https://i.scdn.co/image/ab6761610000e5ebd6e4988f56f08add19e0dd7b",
+    album: "Mów mi dobrze",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e021f86dffe512418a230887e69",
+    album_premiere: "2009",
     id: "17",
     lyrics:{
       lyrics_verse_1: "",
@@ -496,6 +550,9 @@ var allMusic = [
     status: "nostatus",
     avatar: "14235843737BeNz9sRRfK4jsYeLQ7t32Pg76m86w",
     artist_img: "https://i.scdn.co/image/ab6761610000e5ebd6e4988f56f08add19e0dd7b",
+    album: "Mów mi dobrze",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e021f86dffe512418a230887e69",
+    album_premiere: "2009",
     id: "18",
     lyrics:{
       lyrics_verse_1: "",
@@ -523,6 +580,9 @@ var allMusic = [
     status: "nostatus",
     avatar: "5cd42c454b86e992d288a65bd8a187b62151",
     artist_img: "https://i.scdn.co/image/ab6761610000e5eba6cbc503bf2aca8d539a7f92",
+    album: "Lonely",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e021a2250d8502746a80d72da8d",
+    album_premiere: "2018",
     id: "19",
     lyrics:{
       lyrics_verse_1: "",
@@ -550,6 +610,9 @@ var allMusic = [
     status: "nostatus",
     avatar: "41aeb62f0-c2321-f24bsf",
     artist_img: "https://i.scdn.co/image/ab67616d0000b273cb498bab77f77940c83145fa",
+    album: "Złodzieje Czasu",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e02d922659188234fee83318fe7",
+    album_premiere: "2009",
     id: "20",
     lyrics:{
       lyrics_verse_1: "",
@@ -577,6 +640,9 @@ var allMusic = [
     status: "nostatus",
     avatar: "41aeb62f0=c2321-f56bsf",
     artist_img: "https://i.scdn.co/image/2b9dc7ef187414be63e89488aef91f96c3e2170d",
+    album: "The King's Son",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e02ec999a8391a2dcb970f69cb0",
+    album_premiere: "2015",
     id: "21",
     lyrics:{
       lyrics_verse_1: "",
@@ -604,6 +670,9 @@ var allMusic = [
     status: "nostatus",
     avatar: "41aeb62f0=c2321-f57bsf",
     artist_img: "https://i.scdn.co/image/ab6761610000e5eb1fd54eb6e30d0bc8f633621e",
+    album: "Start, GO",
+    album_cover: "https://i.scdn.co/image/ab67616d0000b273cfac68443715de902bd7ea53",
+    album_premiere: "2012",
     id: "22",
     lyrics:{
       lyrics_verse_1: "",
@@ -631,6 +700,9 @@ var allMusic = [
     status: "nostatus",
     avatar: "41aeb62f0=c2321-f58bsf",
     artist_img: "https://i.scdn.co/image/ab6761610000e5ebabfac786f093c4da55c99d4e",
+    album: "In The Name Of Love",
+    album_cover: "https://i.scdn.co/image/ab67616d0000b2738c77bcf5f5a227d270d23370",
+    album_premiere: "2016",
     id: "23",
     lyrics:{
       lyrics_verse_1: "",
