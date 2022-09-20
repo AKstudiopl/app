@@ -377,7 +377,7 @@
         Popularne utwory w twoim kraju oraz na świecie, najczęściej słuchane i wyszukiwane utwory.
       </span>
     </div>
-    <div class="head-content-item" onclick="readMore(this)">
+    <div class="head-content-item" onclick="favoriteLibraryScreen()">
       <img src="897fb9c3-72da-4ed8-9653-83e65af3768a.png">
       <p class="head-content-item-name">
         Ulubione
@@ -399,7 +399,8 @@
   </div>
 
   <div class="personal-container-items">
-    <div class="personal-item" onclick="styleContentAction()">
+    <div class="personal-item" onclick="clickedStyleContainer(this)">
+      <span>Pop</span>
       <h1>POP</h1>
       <img src="sources\897-8975430_postmalone-sticker-post-malone.png" alt="">
       <h1>POP</h1>
@@ -472,7 +473,8 @@
   </div>
 
   <div class="personal-container-items">
-    <div class="personal-item">
+    <div class="personal-item" onclick="clickedStyleContainer(this)">
+      <span>Energic</span>
       <h1>DANCE</h1>
       <img src="sources\da6y3zv-1bbb05f0-0de2-4abe-b2c5-c13df22eb887.png" alt="">
       <h1>DANCE</h1>
@@ -579,7 +581,7 @@
           </div>
       </div>
       <div class="top-menu-list">
-      <a><i class="fa-solid fa-user-astronaut"></i> Wykonawca</a>
+      <a onclick="artistScreenView()"><i class="fa-solid fa-user-astronaut"></i> Wykonawca</a>
       <a class="copyUrl" onclick="copyUrlClipboard()"><i class="fa-solid fa-share-nodes"></i> Udostępnij</a>
       <a class="timer-toggle"><i class="fa-solid fa-hourglass"></i> Ustaw czas odtwarzania</a>
       <a href="https://akstudiopl.github.io/Zesia/landing.html"><i class="fa-solid fa-briefcase-medical"></i> Pomoc</a>
@@ -881,10 +883,52 @@
       </div>
 
     </div>
+      
+    </div>
 
 
   </div>
 
+</div>
+
+<div class="music-artist-album-screen">
+
+  <div class="music-artist-album-screen-controls">
+    <p class="music-artist-album-screen-length-name">Album : <span>DJ Regard</span></p>
+    <a class="music-artist-album-screen-exit"><i class="fa-solid fa-xmark"></i></a>
+  </div>
+
+  <div class="music-artist-album-screen-top">
+
+    <div class="music-artist-album-screen-img-background">
+      <img src="https://i.scdn.co/image/ab6761610000e5ebec05963eab63676a539fef13">
+    </div>
+
+    <img class="music-artist-album-fast-data-img" src="https://i.scdn.co/image/ab67616d00001e025c27813ae019011fcb370c78">
+    <div class="music-artist-album-fast-data">
+      <p class="music-artist-album-fast-data-name">Ride It</p>
+      <span class="music-artist-album-fast-data-premiere">2019</span>
+    </div>
+  </div>
+
+  <div class="music-artist-album-screen-title">
+    <i class="fa-solid fa-list-ul"></i>
+    <p>Utworów : <span class="music-artist-album-screen-length"></span></p>
+  </div>
+
+  <div class="music-artist-album-screen-container">
+
+
+    <div class="music-artist-album-item">
+      <img src="images/scaled-and-icy-b-iext104194001.jpg">
+        <div class="music-artist-album-item-data">
+          <h1>Choker</h1>
+          <span>Twenty one pilots</span>
+        </div>
+     </div>
+
+
+  </div>
 </div>
 
 <div class="fast-loader">

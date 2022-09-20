@@ -125,8 +125,12 @@ const favortieScreen = document.getElementsByClassName('library-favorite-screen'
 const exitFavoriteScreen = document.getElementsByClassName('library-favorite-exit')[0]
 
 showFavoriteScreen.addEventListener('click', () => {
-  favortieScreen.classList.toggle('active')
+  favoriteLibraryScreen();
 })
+
+function favoriteLibraryScreen(){
+  favortieScreen.classList.add('active')
+}
 exitFavoriteScreen.addEventListener('click', () => {
   favortieScreen.classList.toggle('active')
 })
@@ -593,13 +597,20 @@ function clicked(element){
   playMusic();
   playingSong();
 }
-
-
-
-function styleContentAction() {
+function clickedStyleContainer(element){
+  const itemStyleData = element.querySelector(".personal-item span").innerText;
+  const itemTitleData = element.querySelector(".personal-item h1").innerText;
+  const itemImgData = element.querySelector(".personal-item img");
+  const screenTitle = document.querySelectorAll(".music-style-item-title h1");
+  const screenImg = document.querySelector(".music-style-item-title img");
+  for (const screenTitleItem of screenTitle) {
+    screenTitleItem.innerText = itemTitleData;
+  }
+  screenImg.src = itemImgData.src;
+  personalItem.classList.add('active');
 
   const resultsFAV = document.querySelector(".music-style-item-container");
-  var favoritIt = allMusic.filter(x => x.style === "Pop");
+  var favoritIt = allMusic.filter(x => x.style === itemStyleData);
   resultsFAV.innerHTML = "";
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
@@ -628,6 +639,10 @@ function styleContentAction() {
       liAudioDuartionTag.setAttribute("t-duration", `${totalMin}:${totalSec}`);
     });
   }
+}
+
+
+function styleContentAction() {
 }
 
 
@@ -724,9 +739,6 @@ const artistProfile = document.getElementsByClassName('artist-card')[0]
 const artistProfileExit = document.getElementsByClassName('artist-exit')[0]
 
 document.querySelectorAll('.head-content-item').forEach(artistProfileBtn => {
-  artistProfileBtn.addEventListener('click', event => {
-    artistProfile.classList.add('active');
-  })
 })
 
 artistProfileExit.addEventListener('click', () => {
@@ -768,9 +780,6 @@ function setvolume(){
   const personaDiv = document.querySelectorAll('.personal-item')[0]
   const personalItem = document.querySelectorAll('.music-style-item')[0]
   const musicstyleexit = document.querySelectorAll('.music-1-exit')[0]
-  personaDiv.addEventListener('click', () => {
-      personalItem.classList.add('active')
-  })
   musicstyleexit.addEventListener('click', () => {
       personalItem.classList.remove('active')
   })
@@ -785,6 +794,7 @@ function setvolume(){
     musicArtistScreen.classList.add('active')
     musicMenuHide.classList.remove('active')
     artistScreenDataLoad(indexNumb);
+    albumScreen.classList.remove('active');
   }
 
   const artistContainer = document.querySelector(".music-artist-container"),
@@ -877,9 +887,10 @@ function filteredAlbums(){
     resultsFAV.innerHTML = "";
     for (let i = 0; i < favoritIt.length; i++) {
       let resultFAV =
-        `<div class="music-artist-information-albums-item" onclick="fastLoadingPop()" data-album='${favoritIt[i].album}'>
-            <img src="${favoritIt[i].album_cover}">
-            <p><span class="music-artist-information-albums-item-name">${favoritIt[i].album}</span> <span>${favoritIt[i].album_premiere}</span></p>
+        `<div class="music-artist-information-albums-item" onclick="fastLoadingPop(); clickedSingleAlbum(this)" data-album='${favoritIt[i].album}'>
+            <img class="music-artist-information-albums-item-img" src="${favoritIt[i].album_cover}">
+            <img class="music-artist-information-albums-item-artist-img" style="display: none;" src="${favoritIt[i].artist_img}">
+            <p><span class="music-artist-information-albums-item-name">${favoritIt[i].album}</span> <span class="data-premiere">${favoritIt[i].album_premiere}</span></p>
          </div>`;
       resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
     }
@@ -894,6 +905,61 @@ function filteredAlbums(){
         }
     });
 }
+
+const albumScreenExit = document.querySelector(".music-artist-album-screen-exit");
+const albumScreen = document.querySelector(".music-artist-album-screen");
+const albumScreenTitle = document.querySelector(".music-artist-album-fast-data-name");
+const albumScreenPremiere = document.querySelector(".music-artist-album-fast-data-premiere");
+const albumScreenAlbumImg = document.querySelector(".music-artist-album-fast-data-img");
+const albumScreenArtistImg = document.querySelector(".music-artist-album-screen-img-background img");
+const albumScreenSongsNumber = document.querySelector(".music-artist-album-screen-length");
+const albumScreenAlbumText = document.querySelector(".music-artist-album-screen-length-name");
+albumScreenExit.addEventListener('click', () => {
+  albumScreen.classList.remove('active')
+})
+
+
+function clickedSingleAlbum(element){
+    const albumNameData = element.getAttribute("data-album");
+    const albumPremiereData = element.querySelector(".data-premiere");
+    const albumImgData = element.querySelector(".music-artist-information-albums-item-img");
+    const albumArtistImgData = element.querySelector(".music-artist-information-albums-item-artist-img");
+    albumScreen.classList.add("active");
+    albumScreenTitle.innerText = albumNameData;
+    albumScreenPremiere.innerText = albumPremiereData.innerText;
+    albumScreenAlbumImg.src = albumImgData.src;
+    albumScreenArtistImg.src = albumArtistImgData.src;
+    singleAlbumDataLoad();
+}
+
+function singleAlbumDataLoad(){
+
+  const albumNameData = document.querySelector(".music-artist-information-albums-item").getAttribute("data-album");
+  let albumName = albumNameData;
+
+  const resultsFAV = document.querySelector(".music-artist-album-screen-container");
+  var favoritIt = allMusic.filter(x => x.album === albumName);
+  resultsFAV.innerHTML = "";
+  for (let i = 0; i < favoritIt.length; i++) {
+    let resultFAV =
+      `<div class="music-artist-album-item" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
+          <img class="music-artist-information-albums-item-img" src="${favoritIt[i].album_cover}">
+            <div class="music-artist-album-item-data">
+                <h1>${favoritIt[i].name}</h1>
+                <span>${favoritIt[i].artist}</span>
+            </div>
+       </div>`;
+    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+    albumScreenSongsNumber.innerText = $('.music-artist-album-item').length;
+  }
+  let albumNumberSongs = $('.music-artist-album-item').length;
+  if(albumNumberSongs > 1){
+    albumScreenAlbumText.innerText = "Album";
+  }else if(albumNumberSongs = 1){
+    albumScreenAlbumText.innerText = "Singiel";
+  }
+}
+
 
 function shortcutCheck() {
   if (wrapper.classList.contains("repeat")) {
@@ -1116,7 +1182,7 @@ artistCardBio = document.querySelector(".artist-info");
 
 function readMore(e){
   let artistCard = e;
-
+  artistProfile.classList.add('active');
   artistClickedName = artistCard.querySelector(".head-content-item-name");
   artistClickedImg = artistCard.querySelector("img");
   artistClickedBio = artistCard.querySelector(".head-content-item-data-bio");

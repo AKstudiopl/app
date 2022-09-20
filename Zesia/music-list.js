@@ -640,7 +640,7 @@ var allMusic = [
     status: "nostatus",
     avatar: "41aeb62f0=c2321-f56bsf",
     artist_img: "https://i.scdn.co/image/2b9dc7ef187414be63e89488aef91f96c3e2170d",
-    album: "The King's Son",
+    album: "The King",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02ec999a8391a2dcb970f69cb0",
     album_premiere: "2015",
     id: "21",
