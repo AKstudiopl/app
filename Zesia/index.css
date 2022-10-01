@@ -1564,7 +1564,7 @@ input:checked + .slider:before {
   animation-iteration-count: infinite;
   animation-play-state: paused;
   border-radius: 50%;
-  -webkit-mask-image: url(1663347179820.png);
+  -webkit-mask-image: url(assets/1663347179820.png);
   -webkit-mask-size: 100%;
   filter: contrast(200%) grayscale(1) opacity(0.75);
 }
