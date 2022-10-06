@@ -369,7 +369,7 @@
         Amerykański raper, producent oraz aktor. Członek amerykańskiej grupy hiphopowej D12 oraz część duetu hiphopowego z Detroit – Bad Meets Evil, który tworzy wraz z Royce da 5'9". Piętnastokrotny zdobywca Nagrody Grammy oraz laureat Oscara
       </span>
     </div>
-    <div class="head-content-item" onclick="readMore(this)">
+    <div class="head-content-item" onclick="popularLoad()">
       <img src="assets\48eab7f5-c8b8-4ccb-9de7-6c2163732ba1.png">
       <p class="head-content-item-name">
         Popularne
@@ -862,7 +862,7 @@
         <p>Informacje</p>
       </div>
 
-      <div class="music-artist-information-box" onclick="fastLoadingPop()">
+      <div class="music-artist-information-box" onclick="fastLoadingPop(); loadBio();">
 
         <div class="music-artist-information-top">
           <p>Zweryfikowany Wykonawca</p>
@@ -892,6 +892,36 @@
   </div>
 
 </div>
+
+<div class="popular-music">
+  <div class="popular-controls">
+    <p>Popularne</p>
+    <a onclick="popularLoad()"><i class="fa-solid fa-xmark"></i></a>
+  </div>
+  <div class="popular-header-background">
+    <img src="https://lite-images-i.scdn.co/image/ab6765630000ba8a6c0833b93497d4423c9854c6" alt="">
+  </div>
+  <div class="popular-header">
+    <h1>Popularne</h1>
+    <a class="popular-content-like"><i class="fa-regular fa-heart"></i> Polub</a>
+  </div>
+  <div class="popular-title">
+    <p>Wyróżnione Utwory :</p>
+  </div>
+  <div class="music-artist-album-screen-title">
+    <i class="fa-solid fa-shuffle" onclick="popularDataLoad()"></i>
+    <p>Utworów : <span class="popular-content-length">1</span></p>
+  </div>
+
+
+  <div class="popular-container">
+
+
+  </div>
+
+  
+</div>
+
 
 <div class="music-artist-album-screen">
 
@@ -931,6 +961,56 @@
 
 
   </div>
+</div>
+
+<div class="music-artist-bio">
+
+  <div class="music-artist-bio-controls">
+    <p class="music-artist-bio-controls-data">Wykonawca</p>
+    <a onclick="loadBio()" class="music-artist-bio-exit"><i class="fa-solid fa-xmark"></i></a>
+  </div>
+
+  <div class="music-artist-bio-gallery">
+
+    <div id="container" class="container">
+      <div class="gallery" id="gallery">
+
+        <div class="card">
+          <img src="https://imageio.forbes.com/specials-images/imageserve/1133631758/0x0.jpg?format=jpg&width=1200" alt="">
+        </div>
+
+        <div class="card">
+        </div>
+
+        <div class="card">
+        </div>
+
+      </div>
+
+      <span class="btn prev"><i class="fa-solid fa-chevron-left"></i></span>
+      <span class="btn next"><i class="fa-solid fa-chevron-right"></i></span>
+  
+    </div>
+    
+  </div>
+
+  <div class="music-artist-bio-stats">
+    <p>226 456</p>
+    <span>Słuchaczy</span>
+  </div>
+
+  <div class="music-artist-bio-data">
+    <h1 class="music-artist-bio-data-name">Post Malone</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, amet at neque voluptates mollitia quibusdam tempora, nihil error officiis vitae accusamus sit maxime optio eius.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur odit repellat et. Distinctio, hic exercitationem!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, ad?</p>
+  </div>
+
+  <div class="music-artist-bio-social">
+    <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+    <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+  </div>
+
 </div>
 
 <div class="fast-loader">

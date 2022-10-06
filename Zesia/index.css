@@ -3156,6 +3156,282 @@ body.green .queue-item ul li img
   opacity: 0.5;
 }
 
+
+.popular-music
+{
+  position: fixed;
+  width: 100%;
+  max-height: calc(100vh - 121px);
+  height: calc(100vh - 121px);
+  top: 150vh;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background);
+}
+.popular-music.active
+{
+  top: 0;
+}
+.popular-controls
+{
+  width: calc(100% - 30px);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px var(--backgroundsecond) solid;
+}
+.popular-controls a 
+{
+  text-decoration: none;
+  color: var(--maincolor);
+}
+.popular-header-background
+{
+  width: 100%;
+  height: 25vh;
+  -webkit-mask-image: -webkit-linear-gradient(black, transparent);
+}
+.popular-header-background img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.popular-header
+{
+  width: calc(100% - 30px);
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  z-index: 5;
+}
+.popular-header h1
+{
+  font-size: 30px;
+}
+.popular-title
+{
+  padding-left: 15px;
+  border-bottom: 1px var(--backgroundsecond) solid;
+  padding-bottom: 15px;
+  color: var(--color);
+  opacity: 1;
+}
+.popular-content-like
+{
+    text-decoration: none;
+    border: 1px var(--maincolor) solid;
+    display: flex;
+    border-radius: 2px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    color: var(--maincolor);
+    font-size: 13px;
+    line-height: 1;
+    transition: 0.3s;
+}
+.popular-content-like i {
+  padding-right: 5px;
+}
+.popular-container
+{
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+.popular-item
+{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px var(--backgroundsecond) solid;
+  transition: 0.25s;
+}
+.popular-item:hover {
+  background-color: var(--backgroundsecond);
+  border-left: 5px solid var(--maincolor);
+  width: calc(100% - 5px);
+}
+.popular-item img
+{
+  padding-right: 15px;
+  height: 60px;
+}
+.popular-item h1
+{
+  font-size: 20px;
+  color: var(--color);
+}
+.popular-item p 
+{
+  color: var(--color);
+  opacity: 0.5;
+}
+.music-artist-bio
+{
+  position: fixed;
+  top: 150vh;
+  transition: 0.5s;
+  height: calc(100vh - 121px);
+  background: var(--background);
+  width: 100%;
+  overflow: scroll;
+}
+.music-artist-bio.active
+{
+  top: 0;
+}
+.music-artist-bio-controls
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 30px);
+  padding: 15px;
+  border-bottom: 1px var(--backgroundsecond) solid;
+}
+.music-artist-bio-controls a 
+{
+  color: var(--maincolor);
+}
+.music-artist-bio-gallery
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 30px);
+  padding: 15px;
+}
+.music-artist-bio-stats
+{
+  width: calc(100% - 30px);
+  padding: 15px;
+  border-top: 1px var(--backgroundsecond) solid;
+  border-bottom: 1px var(--backgroundsecond) solid;
+  line-height: 1;
+}
+.music-artist-bio-stats p
+{
+  font-size: 30px;
+}
+.music-artist-bio-data
+{
+  width: calc(100% - 30px);
+  padding: 15px;
+}
+.music-artist-bio-data p 
+{
+  padding: 10px 0;
+}
+.music-artist-bio-data h1
+{
+  color: var(--maincolor);
+}
+.music-artist-bio-stats span
+{
+  opacity: 0.5;
+}
+.music-artist-bio-social
+{
+  width: calc(100% - 30px);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px var(--backgroundsecond) solid;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+.music-artist-bio-social a 
+{
+  text-decoration: none;
+  color: var(--maincolor);
+  word-spacing: 5px;
+  margin: 5px;
+  line-height: 1;
+}
+
+/* Scroll styles */
+.gallery::-webkit-scrollbar {
+  height: 0px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.gallery {
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+  border-radius: 0.5rem;
+  gap: 12px;
+  scroll-snap-type: x mandatory;
+}
+
+/* Element */
+.card {
+  flex: 0 0 100%;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  background: linear-gradient(170deg, #121212, #242424);
+  scroll-snap-align: center;
+  opacity: 1;
+  transition: opacity 250ms linear;
+  aspect-ratio: 1/1;
+  width: 100%;
+  display: flex;
+}
+.card img
+{
+  width: 100%;
+  border-radius: 0.5rem;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (hover: hover) {
+  .card:hover {
+    opacity: 0.9;
+    transition: opacity 250ms linear;
+  }
+}
+
+.btn {
+  position: absolute;
+
+  top: 50%;
+  transform: translateY(-50%);
+
+  height: 30px;
+  width: 30px;
+
+  border-radius: 2px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  z-index: 1;
+  font-size: 30px;
+  color: var(--background);
+}
+
+.btn.next {
+  right: 0px;
+}
+
+.btn.prev {
+  left: 10px;
+}
+
+
+
 canvas {
   display: block;
   vertical-align: bottom;

@@ -804,6 +804,101 @@ function setvolume(){
     albumScreen.classList.remove('active');
   }
 
+  const popularPop = document.querySelector(".popular-music");
+  const popularCounter = document.querySelector(".popular-content-length");
+
+function popularLoad(){
+    popularPop.classList.toggle('active');
+    popularDataLoad();
+}
+
+  function popularDataLoad(){
+
+    const resultsFAV = document.querySelector(".popular-container");
+    var favoritIt = allMusic.filter(x => x.tag === "Popular");
+    resultsFAV.innerHTML = "";
+    for (let i = 0; i < favoritIt.length; i++) {
+      let resultFAV =
+        `<div class="popular-item" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
+          <img src="images/${favoritIt[i].img}.jpg">
+            <div class="popular-item-data">
+              <h1>${favoritIt[i].name}</h1>
+              <p>${favoritIt[i].artist}</p>
+            </div>
+         </div>`;
+      resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+    }
+
+      $(".popular-container").html($(".popular-container .popular-item").sort(function(){
+        return Math.random()-0.5;
+    }));
+
+    popularCounter.innerText = $('.popular-item').length;
+
+  }
+
+
+  const gallery = document.querySelector("#container");
+  const gallery_scroller = gallery.querySelector("#gallery");
+  const gallery_item_size = gallery.querySelector("div").clientWidth;
+  
+  gallery.querySelector(".btn.next").addEventListener("click", scrollToNextPage);
+  gallery.querySelector(".btn.prev").addEventListener("click", scrollToPrevPage);
+  
+  function scrollToNextPage() {
+    gallery_scroller.scrollBy({
+      top: 0,
+      left: gallery_item_size,
+      behavior: "smooth"
+    });
+  }
+  
+  function scrollToPrevPage() {
+    gallery_scroller.scrollBy({
+      top: 0,
+      left: -gallery_item_size,
+      behavior: "smooth"
+    });
+  }
+  
+  const bioCard = document.querySelector(".music-artist-bio");
+
+  function loadBio(){
+    bioCard.classList.toggle("active");
+    loadBioData();
+  }
+
+  function loadBioData(){
+    let artistData = artistItemTitle.innerText;
+    let artistDataName = document.querySelector(".music-artist-bio-data-name");
+    let artistDataNameTop = document.querySelector(".music-artist-bio-controls-data");
+    
+    artistDataName.innerText = artistData;
+    artistDataNameTop.innerText = artistData;
+
+    const resultsFAV = document.querySelector(".music-artist-bio-gallery .container .gallery");
+    var favoritIt = allMusic.filter(x => x.artist === artistData);
+    resultsFAV.innerHTML = "";
+    for (let i = 0; i < favoritIt.length; i++) {
+      let resultFAV =
+        `<div class="card">
+          <img src="artists/${favoritIt[i].avatar}.jpg">
+         </div>
+         <div class="card">
+          <img src="${favoritIt[i].artist_img}">
+         </div>
+         <div class="card">
+         <img src="${favoritIt[i].album_cover}">
+         </div>`;
+      resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+    }
+
+    const parent = document.querySelector(".container .gallery");
+    [...parent.children].slice(+3).forEach(parent.removeChild.bind(parent));
+
+  }
+
+
   const artistContainer = document.querySelector(".music-artist-container"),
   artistItemImg = artistContainer.querySelector(".music-artist-item-title img"),
   artistItemTitle = artistContainer.querySelector(".music-artist-item-data-artist"),
