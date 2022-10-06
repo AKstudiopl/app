@@ -1987,9 +1987,16 @@ body.green .queue-item ul li img
   border-top-right-radius: 0px;
   border-top-left-radius: 0px;
 }
-.device-main-controls a
+.device-main-controls 
 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   margin-left: 20px;
+}
+.device-main-controls a:first-child
+{
+  margin-right: 10px;
 }
 .device-main
 {
@@ -2028,6 +2035,12 @@ body.green .queue-item ul li img
 {
   padding: 0 5px;
 }
+.device-main-audio-data p
+{
+  text-overflow: ellipsis;
+  overflow: hidden; 
+  white-space: nowrap;
+}
 .device-main-audio-data p:last-child
 {
   color: var(--maincolor);
@@ -2056,12 +2069,18 @@ body.green .queue-item ul li img
 }
 .device-lyrics-container p 
 {
+  display: flex;
   padding: 20px 0;
   border-bottom: 1px var(--backgroundsecond) solid;
+  transition: 0.25s;
 }
 .device-lyrics-container p:first-child
 {
   padding-top: 0;
+}
+.device-lyrics-container p.inAction
+{
+  color: var(--maincolor);
 }
 .lyrics-title
 {
@@ -3136,6 +3155,56 @@ body.green .queue-item ul li img
   color: var(--color);
   opacity: 0.5;
 }
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+} /* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(18,18,18);
+  background: linear-gradient(0deg, rgba(18,18,18,1) 0%, rgba(36,36,36,1) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  opacity: .5;
+  -webkit-mask-image: -webkit-linear-gradient(transparent 50%, black 100%);
+} /* ---- stats.js ---- */
+.count-particles {
+  background: #000022;
+  position: absolute;
+  display: none;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13e8e9;
+  font-size: 0.8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+.js-count-particles {
+  font-size: .1em;
+}
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+
 
 /* Style_pop_up*/
 

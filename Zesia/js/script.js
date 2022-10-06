@@ -217,6 +217,7 @@ lyricsDataVerse_6 = wrapper.querySelector(".device-lyrics-container .lyrics-item
 lyricsDataVerse_7 = wrapper.querySelector(".device-lyrics-container .lyrics-item-number-verse-7"),
 lyricsDataVerse_8 = wrapper.querySelector(".device-lyrics-container .lyrics-item-number-verse-8"),
 lyricsNoDataAlert = wrapper.querySelector(".device-lyrics-nolyrics-alert"),
+lyricsAllVerses = wrapper.querySelectorAll(".device-lyrics-container p"),
 
 queueArtist = wrapper.querySelector(".queue-container .artist");
 
@@ -273,8 +274,14 @@ function lyricsSupport(){
   lyricsDataVerse_8.innerText = allMusic[indexNumb - 1].lyrics.lyrics_verse_8;
   if (lyricsDataVerse_1.innerText === ""){
     lyricsNoDataAlert.classList.add("active");
+    for (lyricsAllVerse of lyricsAllVerses) {
+      lyricsAllVerse.style.display = "none";
+    }
   }else{
     lyricsNoDataAlert.classList.remove("active");
+    for (lyricsAllVerse of lyricsAllVerses) {
+      lyricsAllVerse.style.display = "flex";
+    }
   }
 }
 

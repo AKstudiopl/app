@@ -10,6 +10,7 @@
     <link rel="shortcut icon" type="image" href="brandsources\20220320_150124.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="js/script.js" defer></script>
+    <script src="js/particles.js" defer></script>
 </head>
 <body class="preference green" onload="checkQuestion()">
 
@@ -253,7 +254,7 @@
           </div>
           <div class="center-container-item favorite-library-show">
             <i class="fa-solid fa-music"></i>
-            <h2>Zobacz Wszystkie</h2>
+            <h2>Polubione Utwory</h2>
           </div>
           <div class="center-container-item" onclick="viewSearchHomeItems()">
             <i class="fa-solid fa-plus"></i>
@@ -541,6 +542,7 @@
     </div>
     <div class="background-music-img">
       <img src="">
+      <!-- particles.js container --> <div id="particles-js"></div> <!-- stats - count particles --> <div class="count-particles"> <span class="js-count-particles">--</span> particles </div> <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     </div>
 
     <div class="top-controls">
@@ -719,7 +721,7 @@
           <span>Ten utwór obecnie nie posiada wprowadzonego tekstu</span>
         </div>
 
-        <p class="lyrics-item-number-verse-1"></p>
+        <p class="lyrics-item-number-verse-1 inAction"></p>
 
         <p class="lyrics-item-number-verse-2"></p>
 
