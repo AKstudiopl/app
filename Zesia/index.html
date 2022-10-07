@@ -253,12 +253,12 @@
               </p>
           </div>
           <div class="center-container-item favorite-library-show">
-            <i class="fa-solid fa-music"></i>
+            <i class="fa-solid fa-heart"></i>
             <h2>Polubione Utwory</h2>
           </div>
-          <div class="center-container-item" onclick="viewSearchHomeItems()">
+          <div class="center-container-item" onclick="createPlaylist()">
             <i class="fa-solid fa-plus"></i>
-            <h2>Dodaj Utwór</h2>
+            <h2>Utwórz Playliste</h2>
           </div>
 
         </div>
@@ -1001,14 +1001,34 @@
 
   <div class="music-artist-bio-data">
     <h1 class="music-artist-bio-data-name">Post Malone</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, amet at neque voluptates mollitia quibusdam tempora, nihil error officiis vitae accusamus sit maxime optio eius.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur odit repellat et. Distinctio, hic exercitationem!</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, ad?</p>
+    <p class="music-artist-bio-data-about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, amet at neque voluptates mollitia quibusdam tempora, nihil error officiis vitae accusamus sit maxime optio eius.</p>
   </div>
 
   <div class="music-artist-bio-social">
-    <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
-    <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+    <a class="music-artist-bio-social-instagram" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+    <a class="music-artist-bio-social-twitter" href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+    <a class="music-artist-bio-social-facebook" href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+  </div>
+
+</div>
+
+<div class="playlist">
+
+  <div class="playlist-content">
+
+    <div class="playlist-header">
+      <h1>Nazwij swoją playlistę</h1>
+    </div>
+
+    <div class="playlist-setup">
+      <input type="text" id="playlist-setup-name" minlength="3" maxlength="20" placeholder="Idealna playlista">
+    </div>
+
+    <div class="playlist-action">
+      <a class="playlist-action-back" onclick="createPlaylist()">Anuluj</a>
+      <a class="playlist-action-next" onclick="createItemPlaylist();createPlaylist()">Dalej</a>
+    </div>
+
   </div>
 
 </div>

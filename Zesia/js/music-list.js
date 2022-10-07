@@ -30,6 +30,12 @@ var allMusic = [
         lyrics_verse_13: "",
         lyrics_verse_14: ""
       },
+      bio: "Multi-Grammy nominated Cuban born singer/songwriter Camila Cabello released her debut solo album, CAMILA in January 2018 to rave reviews. It debuted at #1 on the Billboard 200 chart at the same time as her single “Havana” reached #1 on the Billboard Hot 100 chart, making her the first solo artist in nearly 15 years to reach the #1 spot on the Hot 100, Billboard 200 & Artist 100 charts in the same week. CAMILA launched its debut at #1 on 110 iTunes charts around the world, breaking the record for most #1 positions for a debut album in iTunes history. Camila also became the #1 artist on global Spotify. She released her RIAA 9x platinum smash hit “Havana,” in August 2017 where it obtained the #1 spot on the pop radio chart. “Havana” is the first song by a female artist to reach No. 1 on Billboard’s Adult Contemporary, Pop Songs & Rhythmic Songs charts in 22 years, has earned over 1.1 billion on-demand U.S. streams, according to Nielsen Music, & attained the longest run at No. 1 on Pop Songs for any song by a female artist since 2013. Havana became the most streamed song of all time by a female artist & was the number one song of 2018 globally. Her triple-platinum single “Never Be The Same,” was released in January 2018 & peaked in the top 10 of the Billboard Hot 100 chart. Camila became the first artist in history to have two multi-format number one singles as the first two singles from their debut album. In November 2018, she was named the new ambassador for Save the Children.",
+      social:{
+        instagram: "https://www.instagram.com/camila_cabello/",
+        twitter: "https://twitter.com/camila_cabello",
+        facebook: "https://www.facebook.com/camilacabello",
+      },
   },
   {
       name: "Dj Is Your Second Name",
@@ -59,6 +65,12 @@ var allMusic = [
         lyrics_verse_12: "",
         lyrics_verse_13: "",
         lyrics_verse_14: ""
+      },
+      bio: "C-BooL (Grzegorz Cebula) was born on May 30, 1981 in Pyskowice in Silesia (Poland). Polish DJ, music producer and owner of C-Wave Records. Associated with club music from an early age. Works as a DJ since 1998 and started producing music in 2002. Diamond, multi platinum and golden records producer of many radio hits like Never Go Away, DJ Is Your Second Name, Magic Symphony, Wonderland, Catch You, Fire In My Head, La La Love and older club classics like Would You Feel and House Baby. Two-time winner of the Eska Music Awards in the hit of the year category (2016 & 2017). No 1 Hits - Shazam Poland, Radio Airplay Poland Top 3 Hits Airplay Russia In his 23-year DJ career C-BooL performed in hundreds of clubs in Poland and abroad. His DJ sets were presented in countries such as Germany, Austria, Italy, Bulgaria & UK",
+      social:{
+        instagram: "",
+        twitter: "",
+        facebook: "https://www.facebook.com/cboolmusic",
       },
   },
   {
@@ -90,6 +102,12 @@ var allMusic = [
         lyrics_verse_13: "",
         lyrics_verse_14: ""
       },
+      bio: "C-BooL (Grzegorz Cebula) was born on May 30, 1981 in Pyskowice in Silesia (Poland). Polish DJ, music producer and owner of C-Wave Records. Associated with club music from an early age. Works as a DJ since 1998 and started producing music in 2002. Diamond, multi platinum and golden records producer of many radio hits like Never Go Away, DJ Is Your Second Name, Magic Symphony, Wonderland, Catch You, Fire In My Head, La La Love and older club classics like Would You Feel and House Baby. Two-time winner of the Eska Music Awards in the hit of the year category (2016 & 2017). No 1 Hits - Shazam Poland, Radio Airplay Poland Top 3 Hits Airplay Russia In his 23-year DJ career C-BooL performed in hundreds of clubs in Poland and abroad. His DJ sets were presented in countries such as Germany, Austria, Italy, Bulgaria & UK",
+      social:{
+        instagram: "",
+        twitter: "",
+        facebook: "https://www.facebook.com/cboolmusic",
+      },
   },
   {
       name: "Champions",
@@ -120,6 +138,12 @@ var allMusic = [
         lyrics_verse_13: "",
         lyrics_verse_14: ""
       },
+      bio: "A rocker running in rap circles, singer/songwriter/producer Kevin Rudolf worked on multiple hit songs before making his own bid for stardom as the first rock artist signed to rap label",
+      social:{
+        instagram: "https://www.instagram.com/kevinrudolf/?theme=dark",
+        twitter: "https://twitter.com/kevinrudolf",
+        facebook: "https://www.facebook.com/kevinrudolf/?eid=ARDXHcejUXCfQ99mrwayQUj_NWr41eTSTGWFhdYz-QCptcsP-JGRWgapKE7Cgfs8GlZ6wa9UK7Cud_oO",
+      }
   },
   {
       name: "Ride It",
@@ -150,6 +174,12 @@ var allMusic = [
         lyrics_verse_13: "",
         lyrics_verse_14: ""
       },
+      bio: "Kosovan DJ & Producer Regard built up over 1 million Subscribers through his series of deep house mixes, remixes and original tracks in support of LEAF Management signed since of 2012. In July 2019 Regard released his first official single 'Ride It' in the other label at Ministry of Sound and managed by LEAF Management. 'Ride It' became an international hit, taking the internet and TikTok by storm, achieving over ten top 10 single chart placements globally, including #2 in the UK where 'Ride It' is now Certified Multi-Platinum. Regard finished the 'Ride It' campaign with an amazing debut at Capital's Jingle Bell Ball, and on his first TV performance in UK at Top of The Pops. Regard remixing Dua Lipa's hit 'Don't Start Me Now at February. Regard has released the latest record 'Secrets' featuring with Raye by the end of April, while it's running very well as second record by Regard. Regard contacts: ",
+      social:{
+        instagram: "https://www.instagram.com/djregardofficial/?theme=dark",
+        twitter: "https://twitter.com/DardanRegard",
+        facebook: "https://www.facebook.com/DjRegardOfficial/",
+      }
   },
   {
       name: "Choker",
@@ -180,6 +210,12 @@ var allMusic = [
         lyrics_verse_13: "",
         lyrics_verse_14: ""
       },
+      bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
+      social:{
+        instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
+        twitter: "https://twitter.com/twentyonepilots",
+        facebook: "https://www.facebook.com/twentyonepilots",
+      }
   },
   {
       name: "The Outside",
@@ -211,6 +247,12 @@ var allMusic = [
         lyrics_verse_13: "",
         lyrics_verse_14: ""
       },
+      bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
+      social:{
+        instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
+        twitter: "https://twitter.com/twentyonepilots",
+        facebook: "https://www.facebook.com/twentyonepilots",
+      }
   },
   {
       name: "Shy Away",
@@ -241,6 +283,12 @@ var allMusic = [
         lyrics_verse_13: "",
         lyrics_verse_14: ""
       },
+      bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
+      social:{
+        instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
+        twitter: "https://twitter.com/twentyonepilots",
+        facebook: "https://www.facebook.com/twentyonepilots",
+      }
   },
   {
       name: "Saturday",
@@ -271,6 +319,12 @@ var allMusic = [
         lyrics_verse_13: "",
         lyrics_verse_14: ""
       },
+      bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
+      social:{
+        instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
+        twitter: "https://twitter.com/twentyonepilots",
+        facebook: "https://www.facebook.com/twentyonepilots",
+      }
   },
   {
       name: "Redecorate",
@@ -301,6 +355,12 @@ var allMusic = [
         lyrics_verse_13: "",
         lyrics_verse_14: ""
       },
+      bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
+      social:{
+        instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
+        twitter: "https://twitter.com/twentyonepilots",
+        facebook: "https://www.facebook.com/twentyonepilots",
+      }
   },
   {
       name: "Never Take It",
@@ -331,6 +391,12 @@ var allMusic = [
         lyrics_verse_13: "",
         lyrics_verse_14: ""
       },
+      bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
+      social:{
+        instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
+        twitter: "https://twitter.com/twentyonepilots",
+        facebook: "https://www.facebook.com/twentyonepilots",
+      }
   },
   {
       name: "Mulberry Street",
@@ -361,6 +427,12 @@ var allMusic = [
         lyrics_verse_13: "",
         lyrics_verse_14: ""
       },
+      bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
+      social:{
+        instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
+        twitter: "https://twitter.com/twentyonepilots",
+        facebook: "https://www.facebook.com/twentyonepilots",
+      }
   },
   {
       name: "Good Day",
@@ -391,6 +463,12 @@ var allMusic = [
         lyrics_verse_13: "",
         lyrics_verse_14: ""
       },
+      bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
+      social:{
+        instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
+        twitter: "https://twitter.com/twentyonepilots",
+        facebook: "https://www.facebook.com/twentyonepilots",
+      }
   },
   {
       name: "Kłótnia",
@@ -421,6 +499,12 @@ var allMusic = [
         lyrics_verse_13: "",
         lyrics_verse_14: ""
       },
+      bio: "",
+      social:{
+        instagram: "",
+        twitter: "",
+        facebook: "https://www.facebook.com/Evtis",
+      }
   },
   {
       name: "Idziemy Po Swoje",
@@ -451,6 +535,12 @@ var allMusic = [
         lyrics_verse_13: "",
         lyrics_verse_14: ""
       },
+      bio: "",
+      social:{
+        instagram: "https://www.instagram.com/szustyszesc/",
+        twitter: "",
+        facebook: "https://www.facebook.com/szustyblend",
+      }
   },
   {
       name: "Legenda",
@@ -482,7 +572,12 @@ var allMusic = [
         lyrics_verse_13: "",
         lyrics_verse_14: ""
       },
-      
+      bio: "",
+      social:{
+        instagram: "https://www.instagram.com/szustyszesc/",
+        twitter: "",
+        facebook: "https://www.facebook.com/szustyblend",
+      }
   },
   {
     name: "Rockstar",
@@ -514,6 +609,12 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
+    bio: "In 2016, he released the single Go Flex along with his official debut mixtape, August 26th. Months later, his first studio effort arrived. Stoney featured guests ranging from ",
+    social:{
+      instagram: "https://www.instagram.com/postmalone/",
+      twitter: "https://twitter.com/postmalone",
+      facebook: "https://www.facebook.com/postmalone",
+    }
   },
   {
     name: "Bez Znieczulenia",
@@ -544,6 +645,12 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
+    bio: "Originating in Skarżysko-Kamienna in 2001, Happysad is a popular Polish rock band distinguished by friendly melodies and reggae-influenced rhythms. Their debut album, Wszystko Jedno, was issued by ",
+    social:{
+      instagram: "https://www.instagram.com/happysadpl",
+      twitter: "",
+      facebook: "https://www.facebook.com/happysadpl",
+    }
   },
   {
     name: "Pętla",
@@ -575,6 +682,12 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
+    bio: "Originating in Skarżysko-Kamienna in 2001, Happysad is a popular Polish rock band distinguished by friendly melodies and reggae-influenced rhythms. Their debut album, Wszystko Jedno, was issued by ",
+    social:{
+      instagram: "https://www.instagram.com/happysadpl",
+      twitter: "",
+      facebook: "https://www.facebook.com/happysadpl",
+    }
   },
   {
     name: "Tired Bones",
@@ -605,6 +718,12 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
+    bio: "Lianny BOUDJADI (L.B.ONE) is a French Electronic DJ-Producer. In 2017 he produce Across The Water feat Laenz and will be #1 radio charts in Russia and Ukraine. French solo artist most playlisted on eastern countries radio, a second single will follow Tired Bones and will be Number one in 15 eastern countries.",
+    social:{
+      instagram: "https://www.instagram.com/DJLBONE",
+      twitter: "https://twitter.com/DJLBONE",
+      facebook: "https://www.facebook.com/djlbone/",
+    }
   },
   {
     name: "Złap Za Broń",
@@ -635,6 +754,12 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
+    bio: "",
+    social:{
+      instagram: "",
+      twitter: "",
+      facebook: "",
+    }
   },
   {
     name: "I'm Not Rich",
@@ -665,6 +790,12 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
+    bio: "",
+    social:{
+      instagram: "",
+      twitter: "",
+      facebook: "",
+    }
   },
   {
     name: "Invincible",
@@ -695,6 +826,12 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
+    bio: "Delivering lyrics with the speed of a bullet train, Cleveland rapper Machine Gun Kelly experienced a meteoric rise in late 2011 when he transitioned from grinding out self-released mixtapes to working with major labels. From there, the rapper skyrocketed to superstar status, with each of his albums charting in the Top Ten. A beef with , a film career, and even some reality show appearances would follow as the high-powered lyrical rap style of albums like 2019's Hotel Diablo morphed into a driving emo-rock sound on collaborations with  and on the -produced 2020 album Tickets to My Downfall, which topped the Billboard 200. Kelly worked alongside  again in 2022 on album number six, Mainstream Sellout.",
+    social:{
+      instagram: "https://www.instagram.com/machinegunkelly/",
+      twitter: "https://twitter.com/machinegunkelly",
+      facebook: "https://www.facebook.com/machinegunkellymusic",
+    }
   },
   {
     name: "In The Name Of Love",
@@ -726,6 +863,12 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
+    bio: "Rising as a songwriter for and , Brooklyn-born Bebe Rexha made her way from the studio to the stage, racking up hit singles with electronic artists (, , ), rappers (, , ), and even country duo , with whom she recorded the 2017 chart-topping country-pop crossover single Meant to Be. Although her work with other musicians has spanned genres, her own material centers on darker pop textures influenced by hip-hop and R&B, as heard on her debut, 2018's Expectations, and its 2021 follow-up Better Mistakes. Born Bleta Rexha in 1989, she began her musical journey at a young age. Performing in musicals from the age of four, she started to hone her skills in her early teens and was named Best Teen Songwriter at the National Academy of Recording Arts and Sciences annual Grammy Day event; she met a whole host of famous producers there. In 2010, Rexha was approached bys  to form the project , intended to reflects more experimental and electronic side. Rexha provided vocals for several EPs before she left the band in 2012 to embark on a solo career. She began uploading demos and acoustic covers to YouTube before signing with  in 2013.",
+    social:{
+      instagram: "https://www.instagram.com/beberexha",
+      twitter: "https://twitter.com/beberexha",
+      facebook: "https://www.facebook.com/beberexha",
+    }
   },
   {
     name: "One Last Time",
@@ -757,5 +900,11 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
+    bio: "Ariana Grande is perhaps the quintessential pop star of the last half of the 2010s, capturing the era's spirit and style. Emerging in 2013 with the hit single The Way, Grande initially appeared to be the heir to the throne of , due in part to her powerhouse vocals. With its  production, her debut Yours Truly underscored her debt to '90s R&B, but Grande quickly incorporated hip-hop and EDM into her music.",
+    social:{
+      instagram: "https://www.instagram.com/arianagrande/",
+      twitter: "",
+      facebook: "https://www.facebook.com/arianagrande",
+    }
   },
 ]

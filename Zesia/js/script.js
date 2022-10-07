@@ -872,7 +872,7 @@ function popularLoad(){
     let artistData = artistItemTitle.innerText;
     let artistDataName = document.querySelector(".music-artist-bio-data-name");
     let artistDataNameTop = document.querySelector(".music-artist-bio-controls-data");
-    
+
     artistDataName.innerText = artistData;
     artistDataNameTop.innerText = artistData;
 
@@ -891,6 +891,33 @@ function popularLoad(){
          <img src="${favoritIt[i].album_cover}">
          </div>`;
       resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+
+      if(favoritIt[i].social.instagram === "" ){
+        artistDataBioInstagram.style.display = "none";
+      }else{
+        artistDataBioInstagram.style.display = "flex";
+        artistDataBioInstagram.href = favoritIt[i].social.instagram;
+      }
+      
+      if(favoritIt[i].social.twitter === "" ){
+        artistDataBioTwitter.style.display = "none";
+      }else{
+        artistDataBioTwitter.style.display = "flex";
+        artistDataBioTwitter.href = favoritIt[i].social.twitter;
+      }
+
+      if(favoritIt[i].social.facebook === "" ){
+        artistDataBioFacebook.style.display = "none";
+      }else{
+        artistDataBioFacebook.style.display = "flex";
+        artistDataBioFacebook.href = favoritIt[i].social.facebook;
+      }
+
+      if(favoritIt[i].bio === "" ){
+        artistDataBio.innerText = "";
+      }else{
+        artistDataBio.innerText = favoritIt[i].bio;
+      }
     }
 
     const parent = document.querySelector(".container .gallery");
@@ -907,6 +934,12 @@ function popularLoad(){
   artistCardBackgroundImg = artistContainer.querySelector(".music-artist-information-box"),
   artistCardDataName = artistContainer.querySelector(".music-artist-information-bottom-name"),
   artistCardDataBio = artistContainer.querySelector(".music-artist-information-bottom-bio");
+
+  const artistDataBio = document.querySelector(".music-artist-bio-data-about");
+  const artistDataBioInstagram = document.querySelector(".music-artist-bio-social-instagram");
+  const artistDataBioTwitter = document.querySelector(".music-artist-bio-social-twitter");
+  const artistDataBioFacebook = document.querySelector(".music-artist-bio-social-facebook");
+
   artistItemFollow.addEventListener('click', () => {
     artistItemFollow.classList.toggle('active')
     if (artistItemFollow.classList.contains('active')){
@@ -1302,3 +1335,28 @@ function readMore(e) {
   artistCardBio.innerText = artistClickedBio.innerText;
 
   }
+
+const playlistsContainer = document.querySelector(".center-container-scrollable");
+const playlistCreateScreen = document.querySelector(".playlist");
+playlistTitleInputData = playlistCreateScreen.querySelector("#playlist-setup-name"),
+playlistTitleInputData = playlistCreateScreen.querySelector("#playlist-setup-name");
+
+function createPlaylist(){
+  playlistTitleInputData.value = "";
+  playlistCreateScreen.classList.toggle("active");
+}
+
+function createItemPlaylist(){
+  playlistTitleData = playlistTitleInputData.value;
+  var element = document.createElement("div");
+  element.classList.add('center-container-item');
+  element.innerHTML = '<i class="fa-solid fa-music"></i><h2 class="center-container-item-title-data"></h2>';
+  let playlistItemTitle = element.querySelector(".center-container-item-title-data");
+  playlistItemTitle.innerText = playlistTitleData;
+  playlistsContainer.appendChild(element); 
+  playlistTitleInputData.value = "";
+  if (playlistItemTitle.innerText.length < 3)
+  {
+    playlistItemTitle.innerText = "Playlista";
+  }
+}

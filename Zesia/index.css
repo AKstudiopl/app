@@ -3351,9 +3351,13 @@ body.green .queue-item ul li img
 {
   text-decoration: none;
   color: var(--maincolor);
-  word-spacing: 5px;
   margin: 5px;
   line-height: 1;
+  display: flex;
+}
+.music-artist-bio-social a i 
+{
+  padding-right: 10px;
 }
 
 /* Scroll styles */
@@ -3429,6 +3433,127 @@ body.green .queue-item ul li img
 .btn.prev {
   left: 10px;
 }
+
+.playlist
+{
+  position: fixed;
+  bottom: -150vh;
+  width: 100%;
+  background: var(--background);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  z-index: 3;
+  padding: 50px 0;
+  -webkit-mask-image: -webkit-linear-gradient(transparent 0%, black 15%);
+}
+.playlist.active
+{
+  bottom: 121px;
+  transition: 0.5s;
+}
+.playlist-content
+{
+  width: calc(100% - 30px);
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.playlist-header h1
+{
+  font-size: 25px;
+}
+.playlist-setup
+{
+  width: 100%;
+  margin: 20px 0;
+}
+.playlist-setup input
+{
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px var(--maincolor) solid;
+  font-size: 18px;
+  padding: 10px 0;
+  color: var(--color);
+}
+.playlist-action
+{
+  display: flex;
+  justify-content: space-between;
+}
+.playlist-action a 
+{
+  background: transparent;
+  border:1px solid var(--maincolor);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 10px 20px;
+  width: 30%;
+  color: var(--color);
+}
+.playlist-action a:first-child
+{
+  border:1px solid var(--backgroundsecond);
+}
+.playlist-image-setup
+{
+  display: flex;
+  margin: 20px 0;
+  width: 100%;
+}
+.playlist-image-setup-box
+{
+  width: 30vw;
+  background: var(--backgroundsecond);
+  aspect-ratio: 1/1;
+  position: relative;
+}
+.playlist-image-setup-box img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+.playlist-image-setup-box i
+{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--maincolor);
+  font-size: 200%;
+  width: 100%;
+}
+.playlist-image-setup-action
+{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.playlist-image-setup-action a 
+{
+  background: transparent;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: var(--color);
+  border: 1px var(--backgroundsecond) solid;
+}
+.playlist-image-setup-action a:first-child
+{
+  border-bottom: none;
+}
+.playlist-setup input:focus{
+  outline: none;
+}
+
 
 
 
