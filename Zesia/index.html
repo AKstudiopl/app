@@ -245,13 +245,6 @@
 
         <div class="center-container-scrollable">
 
-          <div class="center-container-item">
-            <img src="https://i.scdn.co/image/ab67616d00001e02baf819c1faaf472e0c109b4f">
-            <h2>Niewidzialny</h2>
-              <p>
-                Gibbs
-              </p>
-          </div>
           <div class="center-container-item favorite-library-show">
             <i class="fa-solid fa-heart"></i>
             <h2>Polubione Utwory</h2>
@@ -1030,6 +1023,109 @@
     </div>
 
   </div>
+
+</div>
+
+<div class="user_playlist">
+
+  <div class="user_playlist_controls">
+    <p class="user_playlist_controls_title">Playlista</p><i id="user_playlist_controls_exit" class="fa-solid fa-xmark library-favorite-exit"></i>
+  </div>
+
+  <div class="user_playlist_content">
+
+    <div class="user_playlist_content_image">
+      <img src="images/DJRegard-Rideit.jpg" alt="">
+      <img src="images/scaled-and-icy-b-iext104194001.jpg" alt="">
+      <img src="images/rockstar-w-iext111232885.jpg" alt="">
+      <img src="images/e63468347c14c9f580857daae877a005.jpg" alt="">
+    </div>
+
+    <div class="user_playlist_content_title">
+      <h1 class="user_playlist_content_title_data">Playlist</h1>
+      <p class="user_playlist_content_time"><span class="user_playlist_date"></span></p>
+      <div class="user_playlist_content_title_action">
+        <a onclick="deletePlaylistAlert()"><i class="fa-solid fa-trash"></i> Usuń</a>
+        <a><i class="fa-solid fa-play"></i> Odtwórz</a>
+      </div>
+    </div>
+
+    <div class="user_playlist_alert">
+      <p>Czy na pewno chcesz usunąć tą playlistę?</p>
+      <div class="user_playlist_alert_action">
+        <a onclick="deletePlaylistAlert()">Anuluj</a>
+        <a onclick="playlistRemove(this);deletePlaylistAlert()">Usuń</a>
+      </div>
+    </div>
+
+  <div class="user-scrollable-content">
+
+    <div class="user_playlist_content_header">
+      <p>Utwory :</p><p class="user_playlist_content_header_counter"></p>
+    </div>
+
+    <div class="user_playlist_content_list">
+
+      <div class="user_playlist_content_list_item">
+
+        <div class="user_playlist_content_list_item_main">
+        <img src="images/e63468347c14c9f580857daae877a005.jpg" alt="">
+          <div class="user_playlist_content_list_item_data">
+            <p>Last One Time</p>
+            <span>Ariana Grande</span>
+          </div>
+        </div>
+
+        <p class="user_playlist_content_item_option"><i class="fa-solid fa-ellipsis-vertical"></i></p>
+        
+      </div>
+
+    </div>
+
+    <div class="user_playlist_content_header">
+      <p>Może ci się spodobać :</p>
+    </div>
+
+    <div class="user_playlist_featured">
+
+      <div class="user_playlist_featured_item">
+        <div class="user_playlist_featured_item_main">
+            <img src="images/e63468347c14c9f580857daae877a005.jpg" alt="">
+              <div class="user_playlist_featured_item_main_data">
+                <p>Last One Time</p>
+                <span>Ariana Grande</span>
+              </div>         
+        </div>
+        <a class="user_playlist_featured_item_action">Dodaj</a>
+      </div>
+
+      <div class="user_playlist_featured_item">
+        <div class="user_playlist_featured_item_main">
+            <img src="images/e63468347c14c9f580857daae877a005.jpg" alt="">
+              <div class="user_playlist_featured_item_main_data">
+                <p>Last One Time</p>
+                <span>Ariana Grande</span>
+              </div>         
+        </div>
+        <a class="user_playlist_featured_item_action">Dodaj</a>
+      </div>
+
+      <div class="user_playlist_featured_item">
+        <div class="user_playlist_featured_item_main">
+            <img src="images/e63468347c14c9f580857daae877a005.jpg" alt="">
+              <div class="user_playlist_featured_item_main_data">
+                <p>Last One Time</p>
+                <span>Ariana Grande</span>
+              </div>         
+        </div>
+        <a class="user_playlist_featured_item_action">Dodaj</a>
+      </div>
+
+    </div>
+    
+  </div>
+
+</div>
 
 </div>
 

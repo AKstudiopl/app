@@ -3553,6 +3553,228 @@ body.green .queue-item ul li img
 .playlist-setup input:focus{
   outline: none;
 }
+.user_playlist
+{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 150vh;
+  background-color: var(--background);
+  transition: 0.5s;
+  z-index: 4;
+}
+.user_playlist.active
+{
+  top: 0;
+}
+.user_playlist_content
+{
+  width: calc(100% - 30px);
+  margin-left: 15px;
+}
+.user_playlist_controls
+{
+  padding: 15px 15px;
+  display: flex;
+  width: calc(100% - 30px);
+  justify-content: space-between;
+  border-bottom: 1px var(--backgroundsecond) solid;
+}
+.user_playlist_controls i 
+{
+  color: var(--maincolor);
+}
+.user_playlist_content_image
+{
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(2, 50%);
+  width: calc(100% + 30px);
+  margin-left: -15px;
+  -webkit-mask-image: -webkit-linear-gradient(black 0%, transparent 60%);
+}
+.user-scrollable-content
+{
+  overflow-y: scroll;
+  max-height: 47vh;
+  z-index: 5;
+  position: relative;
+}
+.user_playlist_content_time
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.user_playlist_content_time span
+{
+  opacity: 0.5;
+}
+.user_playlist_content_image img
+{
+  width: 50vw;
+  aspect-ratio: 1/1;
+}
+.user_playlist_content_title
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -65vw;
+  z-index: 5;
+  position: relative;
+}
+.user_playlist_content_title_action 
+{
+  display: flex;
+  color: var(--color);
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 15px;
+}
+.user_playlist_content_title_action a 
+{
+  border: 1px var(--backgroundsecond) solid;
+  padding: 15px 0;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user_playlist_content_title_action a i
+{
+  padding-right: 5px;
+}
+.user_playlist_content_header
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px var(--backgroundsecond) solid;
+}
+.user_playlist_content_list
+{
+  display: flex;
+  flex-direction: column;
+}
+.user_playlist_content_list_item
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px var(--backgroundsecond) solid;
+}
+.user_playlist_content_list_item img
+{
+  height: 60px;
+  aspect-ratio: 1/1;
+  margin-right: 10px;
+}
+.user_playlist_content_list_item_main
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color);
+}
+.user_playlist_content_list_item_data span
+{
+  font-size: 14px;
+  opacity: 0.5;
+}
+.user_playlist_content_item_option
+{
+  aspect-ratio: 1/1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  color: var(--color);
+}
+
+.user_playlist_alert
+{
+  position: absolute;
+  background-color: var(--background);
+  z-index: 10;
+  width: 100%;
+  border: 1px var(--backgroundsecond) solid;
+  margin-left: -15px;
+  bottom: -10vh;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  color: var(--color);
+  transition: 0.5s;
+}
+.user_playlist_alert.active
+{
+  bottom: 121px;
+}
+.user_playlist_alert_action
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  width: 90%;
+}
+.user_playlist_alert_action a 
+{
+  border: 1px var(--maincolor) solid;
+  padding: 10px 20px;
+}
+.user_playlist_featured
+{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 15px;
+}
+.user_playlist_featured_item
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px var(--backgroundsecond) solid;
+}
+.user_playlist_featured_item img
+{
+  height: 60px;
+  aspect-ratio: 1/1;
+  margin-right: 10px;
+}
+.user_playlist_featured_item_main
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color);
+}
+.user_playlist_featured_item_action
+{
+  background-color: var(--maincolor);
+  color: var(--background);
+  padding: 0px 20px;
+  height: 59px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.25s;
+}
+.user_playlist_featured_item_action:hover
+{
+  opacity: 0.5;
+  transform: scale(0.9);
+}
 
 
 

@@ -1350,13 +1350,132 @@ function createItemPlaylist(){
   playlistTitleData = playlistTitleInputData.value;
   var element = document.createElement("div");
   element.classList.add('center-container-item');
-  element.innerHTML = '<i class="fa-solid fa-music"></i><h2 class="center-container-item-title-data"></h2>';
+  element.innerHTML = '<i class="fa-solid fa-music" onclick="clickedPlaylist(this)"></i><span class="created-playlist-id" style="display:none;"></span><span class="created-playlist-date" style="display:none;"></span><h2 class="center-container-item-title-data"></h2>';
   let playlistItemTitle = element.querySelector(".center-container-item-title-data");
+  let playlistItemCreateDate = element.querySelector(".created-playlist-date");
+  let playlistItemId = element.querySelector(".created-playlist-id");
   playlistItemTitle.innerText = playlistTitleData;
-  playlistsContainer.appendChild(element); 
+  playlistsContainer.prepend(element); 
   playlistTitleInputData.value = "";
   if (playlistItemTitle.innerText.length < 3)
   {
     playlistItemTitle.innerText = "Playlista";
+  }
+
+  const date = new Date();
+  let day = date.getDate();
+  let month = date.getMonth() + 1;
+  let year = date.getFullYear();
+  let currentDate = `${day}-${month}-${year}`;
+
+  playlistItemId.innerText = playlistItemTitle.innerText;
+  playlistItemCreateDate.innerText = currentDate;
+}
+
+const playlistItemExit = document.querySelector("#user_playlist_controls_exit");
+const playlistItemScreen = document.querySelector(".user_playlist");
+const playlistItemControlsTitle = document.querySelector(".user_playlist_controls_title");
+
+const playlistItemTitleData = playlistItemScreen.querySelector(".user_playlist_content_title_data");
+playlistItemDate = playlistItemScreen.querySelector(".user_playlist_date");
+mainPlaylistData_counter = playlistItemScreen.querySelector(".user_playlist_content_header_counter");
+
+
+playlistItemExit.addEventListener('click', () => {
+  playlistItemScreen.classList.remove("active");
+})
+
+function clickedPlaylist(element){
+
+  let playlistData = element.parentElement;
+  mainPlaylistData = playlistData.querySelector(".center-container-item-title-data").innerText;
+  mainPlaylistData_date = playlistData.querySelector(".created-playlist-date").innerText;
+
+  playlistItemScreen.classList.add("active");
+  playlistItemTitleData.innerText = mainPlaylistData;
+  playlistItemControlsTitle.innerText = mainPlaylistData;
+  playlistItemDate.innerText = mainPlaylistData_date;
+  playlistContent();
+  playlistFeatured();
+}
+
+function playlistFeatured(){
+
+  const resultsFAV = document.querySelector(".user_playlist_featured");
+  var favoritIt = allMusic.filter(x => x.user_playlist_1 === "");
+  resultsFAV.innerHTML = "";
+  for (let i = 0; i < favoritIt.length; i++) {
+    let resultFAV =
+      `<div class="user_playlist_featured_item" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
+        <div class="user_playlist_featured_item_main">
+          <img src="images/${favoritIt[i].img}.jpg">
+            <div class="user_playlist_featured_item_main_data">
+                <p>${favoritIt[i].name}</p>
+                <span>${favoritIt[i].artist}</span>
+            </div>
+        </div>
+        <a class="user_playlist_featured_item_action" onclick="playlistItemAdd(this)">Dodaj</a>
+       </div>`;
+    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+  }
+
+}
+
+function playlistContent(element){
+
+  const resultsFAV = document.querySelector(".user_playlist_content_list");
+  var favoritIt = allMusic.filter(x => x.user_playlist_1 === mainPlaylistData);
+  resultsFAV.innerHTML = "";
+  for (let i = 0; i < favoritIt.length; i++) {
+    let resultFAV =
+      `<div class="user_playlist_content_list_item" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
+        <div class="user_playlist_content_list_item_main">
+          <img src="images/${favoritIt[i].img}.jpg">
+            <div class="user_playlist_content_list_item_data">
+                <p>${favoritIt[i].name}</p>
+                <span>${favoritIt[i].artist}</span>
+            </div>
+        </div>
+        <p class="user_playlist_content_item_option" onclick="playlistItemRemove(this)"><i class="fa-solid fa-trash"></i></p>
+       </div>`;
+    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+  }
+  mainPlaylistData_counter.innerText = $('.user_playlist_content_list_item').length;
+}
+
+const deleteAlert = document.querySelector(".user_playlist_alert");
+
+function deletePlaylistAlert(){
+  deleteAlert.classList.toggle("active");
+}
+
+function playlistItemAdd(element){
+  const playlistTitleAdd = playlistItemTitleData.innerText;
+  let getLiIndex = element.parentElement.getAttribute("li-index");
+  let i = getLiIndex;
+  allMusic[i].user_playlist_1 = playlistTitleAdd;
+  playlistContent();
+  playlistFeatured();
+}
+
+function playlistItemRemove(element){
+  const playlistTitleAdd = playlistItemTitleData.innerText;
+  let getLiIndex = element.parentElement.getAttribute("li-index");
+  let i = getLiIndex;
+  allMusic[i].user_playlist_1 = "";
+  playlistContent();
+  playlistFeatured();
+}
+
+function playlistRemove(element){
+  var aTags = document.querySelectorAll(".center-container-item");
+  let playlistPost = element.parentElement.parentElement.parentElement.parentElement;
+  playlistTitle = playlistPost.querySelector(".user_playlist_controls_title").innerText;
+
+  for (const a of aTags) {
+    if (a.textContent.includes(playlistTitle)) {
+      a.remove();
+      playlistItemScreen.classList.remove("active");
+    }
   }
 }

@@ -36,6 +36,7 @@ var allMusic = [
         twitter: "https://twitter.com/camila_cabello",
         facebook: "https://www.facebook.com/camilacabello",
       },
+      user_playlist_1: "",
   },
   {
       name: "Dj Is Your Second Name",
@@ -72,6 +73,7 @@ var allMusic = [
         twitter: "",
         facebook: "https://www.facebook.com/cboolmusic",
       },
+      user_playlist_1: "",
   },
   {
       name: "Never Go Away",
@@ -108,6 +110,7 @@ var allMusic = [
         twitter: "",
         facebook: "https://www.facebook.com/cboolmusic",
       },
+      user_playlist_1: "",
   },
   {
       name: "Champions",
@@ -143,7 +146,8 @@ var allMusic = [
         instagram: "https://www.instagram.com/kevinrudolf/?theme=dark",
         twitter: "https://twitter.com/kevinrudolf",
         facebook: "https://www.facebook.com/kevinrudolf/?eid=ARDXHcejUXCfQ99mrwayQUj_NWr41eTSTGWFhdYz-QCptcsP-JGRWgapKE7Cgfs8GlZ6wa9UK7Cud_oO",
-      }
+      },
+      user_playlist_1: "",
   },
   {
       name: "Ride It",
@@ -179,7 +183,8 @@ var allMusic = [
         instagram: "https://www.instagram.com/djregardofficial/?theme=dark",
         twitter: "https://twitter.com/DardanRegard",
         facebook: "https://www.facebook.com/DjRegardOfficial/",
-      }
+      },
+      user_playlist_1: "",
   },
   {
       name: "Choker",
@@ -215,7 +220,8 @@ var allMusic = [
         instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
         twitter: "https://twitter.com/twentyonepilots",
         facebook: "https://www.facebook.com/twentyonepilots",
-      }
+      },
+      user_playlist_1: "",
   },
   {
       name: "The Outside",
@@ -252,7 +258,8 @@ var allMusic = [
         instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
         twitter: "https://twitter.com/twentyonepilots",
         facebook: "https://www.facebook.com/twentyonepilots",
-      }
+      },
+      user_playlist_1: "",
   },
   {
       name: "Shy Away",
@@ -288,7 +295,8 @@ var allMusic = [
         instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
         twitter: "https://twitter.com/twentyonepilots",
         facebook: "https://www.facebook.com/twentyonepilots",
-      }
+      },
+      user_playlist_1: "",
   },
   {
       name: "Saturday",
@@ -324,7 +332,8 @@ var allMusic = [
         instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
         twitter: "https://twitter.com/twentyonepilots",
         facebook: "https://www.facebook.com/twentyonepilots",
-      }
+      },
+      user_playlist_1: "",
   },
   {
       name: "Redecorate",
@@ -360,7 +369,8 @@ var allMusic = [
         instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
         twitter: "https://twitter.com/twentyonepilots",
         facebook: "https://www.facebook.com/twentyonepilots",
-      }
+      },
+      user_playlist_1: "",
   },
   {
       name: "Never Take It",
@@ -396,7 +406,8 @@ var allMusic = [
         instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
         twitter: "https://twitter.com/twentyonepilots",
         facebook: "https://www.facebook.com/twentyonepilots",
-      }
+      },
+      user_playlist_1: "",
   },
   {
       name: "Mulberry Street",
@@ -432,7 +443,8 @@ var allMusic = [
         instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
         twitter: "https://twitter.com/twentyonepilots",
         facebook: "https://www.facebook.com/twentyonepilots",
-      }
+      },
+      user_playlist_1: "",
   },
   {
       name: "Good Day",
@@ -468,7 +480,8 @@ var allMusic = [
         instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
         twitter: "https://twitter.com/twentyonepilots",
         facebook: "https://www.facebook.com/twentyonepilots",
-      }
+      },
+      user_playlist_1: "",
   },
   {
       name: "Kłótnia",
@@ -504,7 +517,8 @@ var allMusic = [
         instagram: "",
         twitter: "",
         facebook: "https://www.facebook.com/Evtis",
-      }
+      },
+      user_playlist_1: "",
   },
   {
       name: "Idziemy Po Swoje",
@@ -540,7 +554,8 @@ var allMusic = [
         instagram: "https://www.instagram.com/szustyszesc/",
         twitter: "",
         facebook: "https://www.facebook.com/szustyblend",
-      }
+      },
+      user_playlist_1: "",
   },
   {
       name: "Legenda",
@@ -577,7 +592,8 @@ var allMusic = [
         instagram: "https://www.instagram.com/szustyszesc/",
         twitter: "",
         facebook: "https://www.facebook.com/szustyblend",
-      }
+      },
+      user_playlist_1: "",
   },
   {
     name: "Rockstar",
@@ -614,7 +630,8 @@ var allMusic = [
       instagram: "https://www.instagram.com/postmalone/",
       twitter: "https://twitter.com/postmalone",
       facebook: "https://www.facebook.com/postmalone",
-    }
+    },
+    user_playlist_1: "",
   },
   {
     name: "Bez Znieczulenia",
@@ -650,7 +667,8 @@ var allMusic = [
       instagram: "https://www.instagram.com/happysadpl",
       twitter: "",
       facebook: "https://www.facebook.com/happysadpl",
-    }
+    },
+    user_playlist_1: "",
   },
   {
     name: "Pętla",
@@ -687,7 +705,8 @@ var allMusic = [
       instagram: "https://www.instagram.com/happysadpl",
       twitter: "",
       facebook: "https://www.facebook.com/happysadpl",
-    }
+    },
+    user_playlist_1: "",
   },
   {
     name: "Tired Bones",
@@ -723,7 +742,8 @@ var allMusic = [
       instagram: "https://www.instagram.com/DJLBONE",
       twitter: "https://twitter.com/DJLBONE",
       facebook: "https://www.facebook.com/djlbone/",
-    }
+    },
+    user_playlist_1: "",
   },
   {
     name: "Złap Za Broń",
@@ -759,7 +779,8 @@ var allMusic = [
       instagram: "",
       twitter: "",
       facebook: "",
-    }
+    },
+    user_playlist_1: "",
   },
   {
     name: "I'm Not Rich",
@@ -795,7 +816,8 @@ var allMusic = [
       instagram: "",
       twitter: "",
       facebook: "",
-    }
+    },
+    user_playlist_1: "",
   },
   {
     name: "Invincible",
@@ -831,7 +853,8 @@ var allMusic = [
       instagram: "https://www.instagram.com/machinegunkelly/",
       twitter: "https://twitter.com/machinegunkelly",
       facebook: "https://www.facebook.com/machinegunkellymusic",
-    }
+    },
+    user_playlist_1: "",
   },
   {
     name: "In The Name Of Love",
@@ -868,7 +891,8 @@ var allMusic = [
       instagram: "https://www.instagram.com/beberexha",
       twitter: "https://twitter.com/beberexha",
       facebook: "https://www.facebook.com/beberexha",
-    }
+    },
+    user_playlist_1: "",
   },
   {
     name: "One Last Time",
@@ -905,6 +929,7 @@ var allMusic = [
       instagram: "https://www.instagram.com/arianagrande/",
       twitter: "",
       facebook: "https://www.facebook.com/arianagrande",
-    }
+    },
+    user_playlist_1: "",
   },
 ]
