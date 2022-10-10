@@ -51,6 +51,8 @@ activeHomeBtn.addEventListener('click', () => {
   activeLibraryScreen.classList.remove('active')
   activeSearchScreen.classList.remove('active')
   activeHomeScreen.classList.add('active')
+  playlistItemScreen.classList.remove("active")
+  playlistCreateScreen.classList.remove("active")
 })
 
 const activeSearchBtn = document.getElementsByClassName('navbar-bottom-btn-search')[0]
@@ -60,6 +62,11 @@ activeSearchBtn.addEventListener('click', () => {
   activeLibraryScreen.classList.remove('active')
   activeSearchScreen.classList.add('active')
   activeHomeScreen.classList.remove('active')
+  musicArtistScreen.classList.remove('active')
+  albumScreen.classList.remove('active')
+  bioCard.classList.remove("active")
+  playlistItemScreen.classList.remove("active")
+  playlistCreateScreen.classList.remove("active")
 })
 
 const activeLibraryBtn = document.getElementsByClassName('navbar-bottom-btn-library')[0]
@@ -69,6 +76,10 @@ activeLibraryBtn.addEventListener('click', () => {
   activeSearchScreen.classList.remove('active')
   activeHomeScreen.classList.remove('active')
   activeLibraryScreen.classList.add('active')
+  musicArtistScreen.classList.remove('active')
+  albumScreen.classList.remove('active')
+  bioCard.classList.remove("active")
+  playlistItemScreen.classList.remove("active")
 })
 
 const activeSettingsBtn = document.getElementsByClassName('settings-action-btn')[0]
@@ -1362,6 +1373,8 @@ function createItemPlaylist(){
     playlistItemTitle.innerText = "Playlista";
   }
 
+  localStorage.setItem('user_playlist_1', playlistTitleData);
+
   const date = new Date();
   let day = date.getDate();
   let month = date.getMonth() + 1;
@@ -1478,4 +1491,10 @@ function playlistRemove(element){
       playlistItemScreen.classList.remove("active");
     }
   }
+}
+
+function libraryPlaylistFast(){
+  activeLibraryScreen.classList.add('active');
+  libraryScreen.classList.add('active');
+  createPlaylist();
 }

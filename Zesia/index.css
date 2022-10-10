@@ -3633,6 +3633,7 @@ body.green .queue-item ul li img
   justify-content: space-between;
   width: 100%;
   margin-top: 15px;
+  padding-bottom: 15px;
 }
 .user_playlist_content_title_action a 
 {
@@ -3655,6 +3656,10 @@ body.green .queue-item ul li img
   padding: 15px 0;
   border-bottom: 1px var(--backgroundsecond) solid;
 }
+.user_playlist_content_header:first-child
+{
+  padding-top: 0;
+}
 .user_playlist_content_list
 {
   display: flex;
@@ -3666,6 +3671,11 @@ body.green .queue-item ul li img
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px var(--backgroundsecond) solid;
+  transition: 0.3s;
+}
+.user_playlist_content_list_item:hover
+{
+  opacity: 0.5;
 }
 .user_playlist_content_list_item img
 {
