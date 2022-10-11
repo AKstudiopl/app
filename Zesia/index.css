@@ -3648,6 +3648,25 @@ body.green .queue-item ul li img
 {
   padding-right: 5px;
 }
+.user_playlist_featured_action
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.user_playlist_featured_action a
+{
+  background: transparent;
+  border: 1px var(--maincolor) solid;
+  color: var(--maincolor);
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+.user_playlist_featured_action a:hover
+{
+  opacity: 0.5;
+}
 .user_playlist_content_header
 {
   display: flex;
@@ -3750,11 +3769,15 @@ body.green .queue-item ul li img
 }
 .user_playlist_featured_item
 {
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   border-bottom: 1px var(--backgroundsecond) solid;
+}
+.user_playlist_featured_item:nth-child(-n+5)
+{
+  display: flex;
 }
 .user_playlist_featured_item img
 {
