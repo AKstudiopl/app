@@ -242,8 +242,16 @@ progressBarNav = smallView.querySelector(".music-controls-progresbar"),
 smallPlayStopbtn = smallView.querySelector("#smallplaystop");
 const favoritBtn = document.querySelector('#heartBtnMain');
 
-var indexNumb = 5;
+var str = window.location.hash;
+const char = str[0];
+const replaced = str.replace(char, '');
+
+var indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
 musicIndex = indexNumb;
+
+if(replaced){
+  var indexNumb = replaced;
+}
 
 window.addEventListener("load", ()=>{
   loadMusic(indexNumb);
@@ -308,6 +316,7 @@ function loadMusic(indexNumb){
   lyricsDataArtist.innerText = allMusic[indexNumb - 1].artist;
   lyricsDataTitle.innerText = allMusic[indexNumb - 1].name;
   musicViralMp4.pause();
+  window.location.hash = indexNumb;
 
   if (localStorage.getItem("user_Volume") === null) {
     mainAudio.volume = document.getElementById("volumeslider").value;
@@ -1417,7 +1426,6 @@ const playlistItemTitleData = playlistItemScreen.querySelector(".user_playlist_c
 playlistItemDate = playlistItemScreen.querySelector(".user_playlist_date");
 mainPlaylistData_counter = playlistItemScreen.querySelector(".user_playlist_content_header_counter");
 
-
 playlistItemExit.addEventListener('click', () => {
   playlistItemScreen.classList.remove("active");
 })
@@ -1479,7 +1487,7 @@ function playlistContent(element){
                 <span>${favoritIt[i].artist}</span>
             </div>
         </div>
-        <p class="user_playlist_content_item_option" onclick="playlistItemRemove(this)"><i class="fa-solid fa-trash"></i></p>
+        <p class="user_playlist_content_item_option" onclick="playlistItemRemove(this)"><i class="fa-solid fa-ellipsis-vertical"></i></p>
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }
@@ -1529,23 +1537,12 @@ function libraryPlaylistFast(){
   createPlaylist();
 }
 
-const windowLinkData = window.location.hash;
-
-function currentHash() {
-  var str = window.location.hash;
-  const char = str[0];
-  const replaced = str.replace(char, '');
-  console.log(replaced);
-}
-
-var str = window.location.hash;
-const char = str[0];
-const replaced = str.replace(char, '');
-console.log(replaced);
-
-if(replaced){
-  alert("wpyte")
-  var indexNumb = replaced;
-}else{
-   alert("niewpyte")
+function shareSong(){
+  var shareLink = document.createElement('input'),
+  text = window.location.href;
+  document.body.appendChild(shareLink);
+  shareLink.value = text;
+  shareLink.select();
+  document.execCommand('copy');
+  document.body.removeChild(shareLink);
 }
