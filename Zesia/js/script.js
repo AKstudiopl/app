@@ -1111,6 +1111,44 @@ function clickedSingleAlbum(element){
     singleAlbumDataLoad();
 }
 
+function clickedSingleAlbumPlaylist(element){
+  const albumNameData = element.parentElement.parentElement.parentElement.id;
+  var albumName = allMusic[albumNameData].album;
+  var albumPremier = allMusic[albumNameData].album_premiere;
+  var albumAlbumImg = allMusic[albumNameData].album_cover;
+  var albumArtistImg = allMusic[albumNameData].artist_img;
+
+  albumScreen.classList.add("active");
+  albumScreenTitle.innerText = albumName;
+  albumScreenPremiere.innerText = albumPremier;
+  albumScreenAlbumImg.src = albumAlbumImg;
+  albumScreenArtistImg.src = albumArtistImg;
+
+  const resultsFAV = document.querySelector(".music-artist-album-screen-container");
+  var favoritIt = allMusic.filter(x => x.album === albumName);
+  resultsFAV.innerHTML = "";
+  for (let i = 0; i < favoritIt.length; i++) {
+    let resultFAV =
+      `<div class="music-artist-album-item" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
+          <img class="music-artist-information-albums-item-img" src="${favoritIt[i].album_cover}">
+            <div class="music-artist-album-item-data">
+                <h1>${favoritIt[i].name}</h1>
+                <span>${favoritIt[i].artist}</span>
+            </div>
+       </div>`;
+    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+    albumScreenSongsNumber.innerText = $('.music-artist-album-item').length;
+  }
+  let albumNumberSongs = $('.music-artist-album-item').length;
+  if(albumNumberSongs > 1){
+    albumScreenAlbumText.innerText = "Album";
+  }else if(albumNumberSongs = 1){
+    albumScreenAlbumText.innerText = "Singiel";
+  }
+
+  playlistItemOption.classList.remove("active");
+  playlistItemScreen.classList.remove("active");
+}
 function singleAlbumDataLoad(){
 
   const albumNameData = document.querySelector(".music-artist-information-albums-item").getAttribute("data-album");
@@ -1466,6 +1504,21 @@ function playlistFeatured(){
   }
 }
 
+function featuredHideShow(){
+  const featuredContent = document.querySelector(".user_playlist_featured");
+  const hideshow = document.querySelector(".user_playlist_content_header_featured_hide");
+  const featuredContentAction = document.querySelector(".user_playlist_featured_action");
+  featuredContent.classList.toggle("hidden");
+  if(featuredContent.classList.contains("hidden"))
+  {
+    hideshow.innerHTML = '<i class="fa-solid fa-chevron-down"></i>'
+    featuredContentAction.style.display="none";
+  }else{
+    hideshow.innerHTML = '<i class="fa-solid fa-chevron-up"></i>'
+    featuredContentAction.style.display="flex";
+  }
+}
+
 function playlistFeaturedRandom(){
   $(".user_playlist_featured").html($(".user_playlist_featured .user_playlist_featured_item").sort(function(){
     return Math.random()-0.5;
@@ -1487,7 +1540,7 @@ function playlistContent(element){
                 <span>${favoritIt[i].artist}</span>
             </div>
         </div>
-        <p class="user_playlist_content_item_option" onclick="playlistItemRemove(this)"><i class="fa-solid fa-ellipsis-vertical"></i></p>
+        <p class="user_playlist_content_item_option" onclick="playlistItemOptions(this)"><i class="fa-solid fa-ellipsis-vertical"></i></p>
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }
@@ -1505,15 +1558,6 @@ function playlistItemAdd(element){
   let getLiIndex = element.parentElement.getAttribute("li-index");
   let i = getLiIndex;
   allMusic[i].user_playlist_1 = playlistTitleAdd;
-  playlistContent();
-  playlistFeatured();
-}
-
-function playlistItemRemove(element){
-  const playlistTitleAdd = playlistItemTitleData.innerText;
-  let getLiIndex = element.parentElement.getAttribute("li-index");
-  let i = getLiIndex;
-  allMusic[i].user_playlist_1 = "";
   playlistContent();
   playlistFeatured();
 }
@@ -1545,4 +1589,69 @@ function shareSong(){
   shareLink.select();
   document.execCommand('copy');
   document.body.removeChild(shareLink);
+}
+
+const playlistItemOption = document.querySelector(".user_playlist_item_option");
+
+function playlistItemOptions(element){
+  playlistItemOption.classList.toggle("active");
+  const optionItemName = document.querySelector(".user_playlist_item_option_header_name");
+  const optionItemArtist = document.querySelector(".user_playlist_item_option_header_artist");
+  const optionItemImg = document.querySelector(".user_playlist_item_option_header img");
+  
+  let optionItem = element.parentElement;
+  let getLiIndex = element.parentElement.getAttribute("li-index");
+  const clickedItemImg = optionItem.querySelector(".user_playlist_content_list_item_main img")
+  const clickedItemName = optionItem.querySelector(".user_playlist_content_list_item_data p")
+  const clickedItemArtist = optionItem.querySelector(".user_playlist_content_list_item_data span")
+
+  optionItemName.innerText = clickedItemName.innerText;
+  optionItemArtist.innerText = clickedItemArtist.innerText;
+  optionItemImg.src = clickedItemImg.src;
+  playlistItemOption.id = getLiIndex;
+}
+
+function playlistItemOptionsExit(){
+  playlistItemOption.classList.remove("active");
+}
+
+function playlistItemRemove(element){
+  let getLiIndex = element.parentElement.parentElement.parentElement.id;
+  let i = getLiIndex;
+  allMusic[i].user_playlist_1 = "";
+  playlistContent();
+  playlistFeatured();
+  playlistItemOption.classList.remove("active");
+}
+
+function addFavoriteItem(element){
+  let getLiIndex = element.parentElement.parentElement.parentElement.id;
+  let i = getLiIndex;
+
+  if (allMusic[indexNumb - 1].status === "favorite") {
+    allMusic[indexNumb - 1].status = "nostatus";
+  }else if (allMusic[indexNumb - 1].status === "nostatus") {
+    allMusic[indexNumb - 1].status = "favorite";
+  }
+
+  favoriteLoadItems();
+  if (allMusic[indexNumb - 1].status === "favorite") {
+    favoritBtn.classList.add('active')
+    favoritBtn.classList.add('fa-solid')
+    favoritBtn.classList.remove('fa-regular')
+    element.innerHTML = '<i class="fa-solid fa-heart"></i> Polubiono';
+    element.parentElement.classList.add("active");
+  }
+  if (allMusic[indexNumb - 1].status === "nostatus") {
+    favoritBtn.classList.remove('active')
+    favoritBtn.classList.remove('fa-solid')
+    favoritBtn.classList.add('fa-regular')
+    element.innerHTML = '<i class="fa-regular fa-heart"></i> Dodaj Do Ulubionych'
+    element.parentElement.classList.remove("active");
+  }
+}
+
+function playlistSearchShow(){
+  const playlistInput = document.querySelector(".user_playlist_content_title_action_search");
+  playlistInput.classList.toggle("active");
 }

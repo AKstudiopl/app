@@ -1041,12 +1041,16 @@
       <img src="images/e63468347c14c9f580857daae877a005.jpg" alt="">
     </div>
 
+    <div class="user_playlist_content_title_action_search">
+      <input type="text" placeholder="Wyszukaj">
+    </div>
+
     <div class="user_playlist_content_title">
       <h1 class="user_playlist_content_title_data">Playlist</h1>
       <p class="user_playlist_content_time"><span class="user_playlist_date"></span></p>
       <div class="user_playlist_content_title_action">
         <a onclick="deletePlaylistAlert()"><i class="fa-solid fa-trash"></i> Usuń</a>
-        <a><i class="fa-solid fa-play"></i> Odtwórz</a>
+        <a onclick="playlistSearchShow()"><i class="fa-solid fa-magnifying-glass"></i> Szukaj</a>
       </div>
     </div>
 
@@ -1070,6 +1074,7 @@
 
     <div class="user_playlist_content_header">
       <p>Może ci się spodobać :</p>
+      <a class="user_playlist_content_header_featured_hide" onclick="featuredHideShow()"><i class="fa-solid fa-chevron-up"></i></a>
     </div>
 
     <div class="user_playlist_featured">
@@ -1078,6 +1083,42 @@
 
     <div class="user_playlist_featured_action">
       <a onclick="fastLoadingPop();playlistFeaturedRandom()">Odśwież</a>
+    </div>
+    
+  </div>
+
+  <div class="user_playlist_item_option">
+
+    <div class="user_playlist_item_option_controls" onclick="playlistItemOptionsExit()"></div>
+
+    <div class="user_playlist_item_option_header">
+      <img src="images/C-BooLDJ.jpg">
+      <p class="user_playlist_item_option_header_name">Heathens</p>
+      <span class="user_playlist_item_option_header_artist">Twenty One Pilots</span>
+    </div>
+
+    <div class="user_playlist_item_option_content">
+
+      <div class="user_playlist_item_option_content_item">
+        <p onclick="addFavoriteItem(this)"><i class="fa-regular fa-heart"></i> Dodaj Do Ulubionych</p>
+      </div>
+
+      <div class="user_playlist_item_option_content_item">
+        <p onclick="playlistItemRemove(this)"><i class="fa-solid fa-trash"></i> Usuń Z Playlisty</p>
+      </div>
+
+      <div class="user_playlist_item_option_content_item">
+        <p onclick="clickedSingleAlbumPlaylist(this);fastLoadingPop();"><i class="fa-solid fa-compact-disc"></i> Pokaż Album</p>
+      </div>
+
+      <div class="user_playlist_item_option_content_item">
+        <p onclick="artistScreenView()"><i class="fa-solid fa-user"></i> Pokaż Wykonawce</p>
+      </div>
+
+      <div class="user_playlist_item_option_content_item">
+        <p onclick="shareSong()"><i class="fa-solid fa-share-nodes"></i> Udostępnij</p>
+      </div>
+
     </div>
     
   </div>
