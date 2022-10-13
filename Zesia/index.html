@@ -342,25 +342,17 @@
 
 
   <div class="head-content-container">
-    <div class="head-content-item" onclick="readMore(this)">
+    <div class="head-content-item" onclick="artistFast(this)">
       <img src="artists\41aeb62f0=c2321-f23bsf.jpg">
-      <img src="sources\897-8975430_postmalone-sticker-post-malone.png" class="head-content-item-png">
       <p class="head-content-item-name">
         Post Malone
       </p>
-      <span class="head-content-item-data-bio">
-        Amerykański piosenkarz, raper, producent muzyczny oraz autor tekstów. Po wydaniu w lutym 2015 r. utworu „White Iverson”, który osiągnął ponad milion odtworzeń w serwisie SoundCloud, Malone podpisał kontrakt muzyczny z wytwórnią Republic Records.
-      </span>
     </div>
-    <div class="head-content-item" onclick="readMore(this)">
+    <div class="head-content-item" onclick="artistFast(this)">
       <img src="assets\eminemmainimg.jpg">
-      <img src="sources\Eminem-Transparent-PNG.png" class="head-content-item-png">
       <p class="head-content-item-name">
         Eminem
       </p>
-      <span class="head-content-item-data-bio">
-        Amerykański raper, producent oraz aktor. Członek amerykańskiej grupy hiphopowej D12 oraz część duetu hiphopowego z Detroit – Bad Meets Evil, który tworzy wraz z Royce da 5'9". Piętnastokrotny zdobywca Nagrody Grammy oraz laureat Oscara
-      </span>
     </div>
     <div class="head-content-item" onclick="popularLoad()">
       <img src="assets\48eab7f5-c8b8-4ccb-9de7-6c2163732ba1.png">
@@ -488,11 +480,11 @@
 
   <div class="artist-card-img">
     <img src="" class="artist-card-avatar">
+    <h1 class="artist-main-name">User</h1>
   </div>
 
   <div class="artist-main-info">
-    <h1 class="artist-main-name">User</h1>
-    <p class="artist-info">Alan Olav Walker – norweski producent muzyczny i DJ. Początkowo występował pod pseudonimem DJ Walkzz, pod którym wydawał single w latach 2012–2013.</p>
+    
   </div>
 
 </div>
@@ -689,6 +681,8 @@
     </div>
 
     <div class="device-screen">
+
+      <div class="device-exit"></div>
 
       <div class="device-main">
 
@@ -1042,7 +1036,7 @@
     </div>
 
     <div class="user_playlist_content_title_action_search">
-      <input type="text" placeholder="Wyszukaj">
+      <input type="text" placeholder="Wyszukaj" id="user_playlist_content_search">
     </div>
 
     <div class="user_playlist_content_title">
@@ -1050,7 +1044,7 @@
       <p class="user_playlist_content_time"><span class="user_playlist_date"></span></p>
       <div class="user_playlist_content_title_action">
         <a onclick="deletePlaylistAlert()"><i class="fa-solid fa-trash"></i> Usuń</a>
-        <a onclick="playlistSearchShow()"><i class="fa-solid fa-magnifying-glass"></i> Szukaj</a>
+        <a onclick="playlistSearchShow(this)"><i class="fa-solid fa-magnifying-glass"></i> Szukaj</a>
       </div>
     </div>
 

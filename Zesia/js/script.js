@@ -1397,7 +1397,8 @@ artistCardTitle = document.querySelector(".artist-main-name");
 artistCardImage = document.querySelector(".artist-card-img img");
 artistCardBio = document.querySelector(".artist-info");
 
-function readMore(e) {
+function artistFast(e) {
+  
   let artistCard = e;
   artistProfile.classList.add('active');
   artistClickedName = artistCard.querySelector(".head-content-item-name");
@@ -1405,16 +1406,8 @@ function readMore(e) {
   artistClickedBio = artistCard.querySelector(".head-content-item-data-bio");
   artistClickedImgPng = artistCard.querySelector(".head-content-item .head-content-item-png");
 
-  if (artistClickedImgPng === null) {
-    artistCardImage.src = artistClickedImg.src;
-    artistCardImage.style.transform = "scale(2)";
-  }else {
-    artistCardImage.src = artistClickedImgPng.src;
-    artistCardImage.style.transform = "scale(1.3)";
-  }
-
+  artistCardImage.src = artistClickedImg.src;
   artistCardTitle.innerText = artistClickedName.innerText;
-  artistCardBio.innerText = artistClickedBio.innerText;
 
   }
 
@@ -1651,7 +1644,30 @@ function addFavoriteItem(element){
   }
 }
 
-function playlistSearchShow(){
+function playlistSearchShow(element){
   const playlistInput = document.querySelector(".user_playlist_content_title_action_search");
   playlistInput.classList.toggle("active");
+  playlist_search.value = "";
+  filterListPlaylist();
+  element.classList.toggle("active")
+}
+
+playlist_search = document.getElementById('user_playlist_content_search');
+playlist_search_content = document.querySelector('.user_playlist_content_list');
+playlist_search.addEventListener("input",filterListPlaylist);
+
+// main filter function
+function filterListPlaylist(){
+  let input = playlist_search.value
+  input=input.toLowerCase();
+  let x = document.getElementsByClassName('user_playlist_content_list_item');
+    
+  for (i = 0; i < x.length; i++) { 
+      if (!x[i].innerHTML.toLowerCase().includes(input)) {
+          x[i].style.display="none";
+      }
+      else {
+          x[i].style.display="flex";                 
+      }
+  }
 }
