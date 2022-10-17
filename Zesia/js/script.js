@@ -1393,23 +1393,6 @@ questSelectBtn.addEventListener('click', () => {
   loginPopup.classList.remove('active')
 })
 
-artistCardTitle = document.querySelector(".artist-main-name");
-artistCardImage = document.querySelector(".artist-card-img img");
-artistCardBio = document.querySelector(".artist-info");
-
-function artistFast(e) {
-  
-  let artistCard = e;
-  artistProfile.classList.add('active');
-  artistClickedName = artistCard.querySelector(".head-content-item-name");
-  artistClickedImg = artistCard.querySelector("img");
-  artistClickedBio = artistCard.querySelector(".head-content-item-data-bio");
-  artistClickedImgPng = artistCard.querySelector(".head-content-item .head-content-item-png");
-
-  artistCardImage.src = artistClickedImg.src;
-  artistCardTitle.innerText = artistClickedName.innerText;
-
-  }
 
 const playlistsContainer = document.querySelector(".center-container-scrollable");
 const playlistCreateScreen = document.querySelector(".playlist");
@@ -1671,3 +1654,98 @@ function filterListPlaylist(){
       }
   }
 }
+
+artistCardTitle = document.querySelector(".artist-main-name");
+artistCardImage = document.querySelector(".artist-card-img img");
+artistCardBio = document.querySelector(".artist-info");
+artistCardCounter = document.querySelector(".artist-main-counter");
+
+function artistFast(e) {
+  
+  let artistCard = e;
+  artistProfile.classList.add('active');
+  artistClickedName = artistCard.querySelector(".head-content-item-name");
+  artistClickedImg = artistCard.querySelector("img");
+  artistClickedBio = artistCard.querySelector(".head-content-item-data-bio");
+  artistClickedImgPng = artistCard.querySelector(".head-content-item .head-content-item-png");
+
+  artistCardImage.src = artistClickedImg.src;
+  artistCardTitle.innerText = artistClickedName.innerText;
+  const artistDataName = artistClickedName.innerText;
+
+  const resultsData = document.querySelector(".artist-main-content");
+  var favoritIt = allMusic.filter(x => x.artist === artistDataName);
+  resultsData.innerHTML = "";
+  for (let i = 0; i < favoritIt.length; i++) {
+    let resultData =
+      `<div class="artist-main-content-item" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
+        <img src="images/${favoritIt[i].img}.jpg">
+        <div class="artist-main-content-item-data">
+                <p>${favoritIt[i].name}</p>
+                <span>${favoritIt[i].artist}</span>
+        </div>
+        <div class="artist-main-content-item-premiere">
+                <p>${favoritIt[i].album_premiere}</p>
+        </div>
+       </div>`;
+      resultsData.insertAdjacentHTML("beforeend", resultData);
+  }
+  artistCardCounter.innerText = $('.artist-main-content-item').length + " utworów";
+}
+
+function artistFastExit(){
+  artistProfile.classList.remove('active');
+}
+
+function sampleContent(){
+
+  const resultsData = document.querySelector(".artist-main-content");
+  var favoritIt = allMusic.filter(x => x.artist === artistDataName);
+  resultsData.innerHTML = "";
+  for (let i = 0; i < favoritIt.length; i++) {
+    let resultData =
+      `<div class="artist-main-content-item" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
+        <img src="images/${favoritIt[i].img}.jpg">
+        <div class="artist-main-content-item-data">
+                <p>${favoritIt[i].name}</p>
+                <span>${favoritIt[i].artist}</span>
+        </div>
+        <div class="artist-main-content-item-premiere">
+                <p>${favoritIt[i].album_premiere}</p>
+        </div>
+       </div>`;
+      resultsData.insertAdjacentHTML("beforeend", resultData);
+  }
+}
+
+var today = new Date();
+var time = today.getHours();
+const timeZoneText = document.querySelector(".timeZoneData");
+
+if (time < 18){
+  timeZoneText.innerText = "Dzień dobry"
+}
+if (time > 18){
+  timeZoneText.innerText = "Dobry wieczór"
+}
+
+const searchArtistFilter = document.querySelector(".search-option-artist");
+const searchTrackFilter = document.querySelector(".search-option-track");
+const searchFilters = document.querySelector(".search-filter");
+const aristsSearchResults = document.querySelector(".search-artist-results");
+
+searchTrackFilter.addEventListener('click', () => {
+  searchTrackFilter.classList.add('active')
+  searchArtistFilter.classList.remove('active')
+  searchFilters.style.display="flex";
+  results.style.display="block";
+  aristsSearchResults.style.display="none";
+})
+
+searchArtistFilter.addEventListener('click', () => {
+  searchArtistFilter.classList.add('active')
+  searchTrackFilter.classList.remove('active')
+  searchFilters.style.display="none";
+  results.style.display="none";
+  aristsSearchResults.style.display="flex";
+})

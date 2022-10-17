@@ -210,7 +210,13 @@
       <button type="button" id="clear-input-btn" onclick="search.value='';filterList();clearFilterStatus()"><i class="fa-solid fa-xmark"></i></button>
      </div>
 
+     <div class="search-option">
+      <a class="search-option-track active">Utwór</a>
+      <a class="search-option-artist">Artysta</a>
+    </div>
+
   </div>
+
 
   <div class="search-filter" id="filterBox">
 
@@ -226,6 +232,34 @@
   <div class="search-results">
 
 
+
+  </div>
+
+  <div class="search-artist-results" style="display:none;">
+
+    <div class="search-artist-item">
+
+      <div class="search-artist-item-img">
+        <img src="artists/41aeb62f0-c2321-f45bsf.jpg">
+      </div>
+      <div class="search-artist-item-data">
+        <p>Camilla Cabello</p>
+        <span>Wykonawca</span>
+      </div>
+
+    </div>
+    
+    <div class="search-artist-item">
+
+      <div class="search-artist-item-img">
+        <img src="artists/41aeb62f0=c2321-f58bsf.jpg">
+      </div>
+      <div class="search-artist-item-data">
+        <p>Bebe Rexha</p>
+        <span>Wykonawca</span>
+      </div>
+
+    </div>
 
   </div>
 
@@ -325,10 +359,9 @@
   <div class="head-content-top">
     <div class="head-content-top-welcome">
       <div class="title">
-        <h1>Witaj, <span id="nameUser"></span></h1>
+        <h1><p class="timeZoneData">Witaj,</p> <span id="nameUser"></span></h1>
       </div>
       <a>
-        <i class="fa-regular fa-bell"><p>1</p></i>
         <i class="fa-regular fa-user settings-action-btn"></i>
       </a>
     </div>
@@ -346,12 +379,6 @@
       <img src="artists\41aeb62f0=c2321-f23bsf.jpg">
       <p class="head-content-item-name">
         Post Malone
-      </p>
-    </div>
-    <div class="head-content-item" onclick="artistFast(this)">
-      <img src="assets\eminemmainimg.jpg">
-      <p class="head-content-item-name">
-        Eminem
       </p>
     </div>
     <div class="head-content-item" onclick="popularLoad()">
@@ -380,7 +407,7 @@
 
 
 <div class="personal-container">
-  <div class="title">
+  <div class="ui-title">
     <h1>Twój styl</h1>
   </div>
 
@@ -397,7 +424,7 @@
 
 
 <div class="center-container">
-  <div class="title">
+  <div class="ui-title">
     <h1>Ulubione Albumy</h1>
   </div>
 
@@ -426,7 +453,7 @@
 
 
 <div class="center-container">
-  <div class="title">
+  <div class="ui-title">
     <h1>Ulubieni Wykonwacy</h1>
   </div>
 
@@ -454,7 +481,7 @@
 </div>
 
 <div class="personal-container popular">
-  <div class="title">
+  <div class="ui-title">
     <h1>Popularne</h1>
   </div>
 
@@ -480,11 +507,20 @@
 
   <div class="artist-card-img">
     <img src="" class="artist-card-avatar">
-    <h1 class="artist-main-name">User</h1>
   </div>
 
   <div class="artist-main-info">
-    
+      <h1 class="artist-main-name">User</h1>
+      <span class="artist-main-counter">6 Utworów</span>
+  </div>
+
+  <div class="artist-main-action">
+    <a onclick="playMusic()">Odtwórz</a>
+    <a onclick="artistFastExit()">Schowaj</a>
+  </div>
+
+  <div class="artist-main-content">
+
   </div>
 
 </div>
@@ -853,12 +889,11 @@
 
         <div class="music-artist-information-top">
           <p>Zweryfikowany Wykonawca</p>
-          <span>15</span>
         </div>
 
         <div class="music-artist-information-bottom">
           <h1 class="music-artist-information-bottom-name"></h1>
-          <p class="music-artist-information-bottom-bio">Within five years of his debut, american rapper and singer/songwriter Post Malone went from genre novelty to certyfied</p>
+          <p class="music-artist-information-bottom-bio">Krótka informacja o artyście, albumach oraz początkach w muzyce</p>
         </div>
 
       </div>
