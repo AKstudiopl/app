@@ -424,6 +424,35 @@
 
 <div class="center-container">
   <div class="ui-title">
+    <h1>Polecane na Dziś</h1>
+  </div>
+
+  <div class="center-container-scrollable">
+    <div class="center-container-item">
+      <img src="artists\41aeb62f0=c2321-f23bsf.jpg" id="main-avatar">
+      <h2>Post Malone</h2>
+        <p>
+          Raper
+        </p>
+    </div>
+    <div class="center-container-item" onclick="viewSearchHomeItems()">
+      <i class="fa-solid fa-plus"></i>
+      <h2>Dodaj Wykonawce</h2>
+    </div>
+    <div class="center-container-item" onclick="viewSearchHomeItems()">
+      <i class="fa-solid fa-plus"></i>
+      <h2>Dodaj Wykonawce</h2>
+    </div>
+    <div class="center-container-item" onclick="viewSearchHomeItems()">
+      <i class="fa-solid fa-plus"></i>
+      <h2>Dodaj Wykonawce</h2>
+    </div>
+  </div>
+</div>
+
+
+<div class="center-container">
+  <div class="ui-title">
     <h1>Ulubione Albumy</h1>
   </div>
 
@@ -834,8 +863,14 @@
     </div>
 
     <div class="music-artist-option">
-      <p class="music-artist-number">Obserwujących : <span class="music-artist-number-data">0</span></p>
+      <p class="music-artist-number">Słuchacze w tym miesiącu : <span class="music-artist-number-data">0</span></p>
       <a class="music-artist-like"><i class="fa-regular fa-heart"></i> Obserwuj</a>
+    </div>
+
+    <div class="music-artist-menu">
+      <a class="active" id="music-artist-menu-popular">Popularne <span></span></a>
+      <a id="music-artist-menu-albums">Albumy <span></span></a>
+      <a id="music-artist-menu-about">Informacje <span></span></a>
     </div>
 
     <div class="music-artist-content-container">
@@ -851,19 +886,12 @@
     </div>
 
     <div class="music-artist-information">
-
-      <div class="music-artist-title">
-        <p>Albumy</p>
-      </div>
-
       <div class="music-artist-information-albums">
 
       </div>
+    </div>
 
-      <div class="music-artist-title">
-        <p>Informacje</p>
-      </div>
-
+    <div class="music-artist-information-screen">
       <div class="music-artist-information-box" onclick="fastLoadingPop(); loadBio();">
 
         <div class="music-artist-information-top">

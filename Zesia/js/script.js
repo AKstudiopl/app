@@ -843,6 +843,12 @@ function setvolume(){
     activeHomeScreen.classList.add('active')
     libraryScreen.classList.remove('active');
     searchScreen.classList.remove('active');
+    artistPopular.style.display="flex";
+    artistAlbums.style.display="none";
+    artistAbout.style.display="none";
+    artistMenuPopular.classList.add('active');
+    artistMenuAlbums.classList.remove('active');
+    artistMenuAbout.classList.remove('active');
   }
 
   const popularPop = document.querySelector(".popular-music");
@@ -1938,3 +1944,36 @@ function randomHomeArtist(){
   uiRandomArtistCardName.innerText = allMusic[indexNumb - 1].artist;
   uiRandomArtistCardImg.src = allMusic[indexNumb - 1].artist_img;
 }
+
+const artistMenuPopular = document.querySelector("#music-artist-menu-popular");
+const artistMenuAlbums = document.querySelector("#music-artist-menu-albums");
+const artistMenuAbout = document.querySelector("#music-artist-menu-about");
+const artistPopular = document.querySelector(".music-artist-content-container");
+const artistAlbums = document.querySelector(".music-artist-information");
+const artistAbout = document.querySelector(".music-artist-information-screen");
+
+artistMenuPopular.addEventListener('click', () => {
+  artistMenuPopular.classList.add('active');
+  artistMenuAlbums.classList.remove('active');
+  artistMenuAbout.classList.remove('active');
+  artistPopular.style.display="flex";
+  artistAlbums.style.display="none";
+  artistAbout.style.display="none";
+})
+artistMenuAlbums.addEventListener('click', () => {
+  artistMenuPopular.classList.remove('active')
+  artistMenuAlbums.classList.add('active')
+  artistMenuAbout.classList.remove('active')
+  artistPopular.style.display="none";
+  artistAlbums.style.display="flex";
+  artistAbout.style.display="none";
+})
+artistMenuAbout.addEventListener('click', () => {
+  artistMenuPopular.classList.remove('active')
+  artistMenuAlbums.classList.remove('active')
+  artistMenuAbout.classList.add('active')
+  artistPopular.style.display="none";
+  artistAlbums.style.display="none";
+  artistAbout.style.display="flex";
+})
+
