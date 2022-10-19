@@ -253,12 +253,16 @@ body::-webkit-scrollbar
   z-index: 5;
   width: calc(100% - 70px);
   padding: 0 35px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .navbar-bottom .navbar-bottom-btn
 {
   text-align: center;
   padding: 10px 0;
   transition: 0.3s;
+  position: relative;
+  z-index: 5;
 }
 .navbar-bottom .navbar-bottom-btn i
 {
@@ -465,7 +469,7 @@ input:checked + .slider:before {
   background: var(--background);
   top: 0;
   width: 100vw;
-  height: calc(100vh - 121px);
+  height: calc(100vh - 55px);
   visibility: hidden;
   transition: 1s;
   right: -120vw;
@@ -629,7 +633,7 @@ input:checked + .slider:before {
   flex-direction: column;
   width: calc(100% - 30px);
   margin-left: 15px;
-  max-height: calc(100vh - 280px);
+  max-height: calc(100vh - 220px);
   overflow: scroll;
 }
 .search-artist-item
@@ -724,7 +728,7 @@ input:checked + .slider:before {
   background: var(--background);
   top: 0;
   width: 100vw;
-  height: calc(100vh - 121px);
+  height: calc(100vh - 61px);
   visibility: hidden;
   transition: 1s;
   right: -120vw;
@@ -1255,26 +1259,30 @@ input:checked + .slider:before {
   bottom: 0;
   width: calc(100% - 60px);
   right: 0;
-  height: 3px;
+  height: 4px;
   background: var(--backgroundsecond);
 }
 .music-controls-progresbar-done
 {
   width: 0%;
-  height: 3px;
+  height: 4px;
   background: var(--maincolor)
 }
 .music-controls
 {
   position: fixed;
-  bottom: 61px;
-  width: 100%;
+  bottom: 75px;
+  width: 90%;
+  margin-left: 5%;
   height: 60px;
+  border-radius: 20px;
+  overflow: hidden;
   background: var(--backgroundsecond);
   display: flex;
   flex-direction: row;
   align-items: center;
   z-index: 5;
+  filter: drop-shadow(0px 10px 12px #000000);
 }
 .music-img
 {
@@ -1285,17 +1293,31 @@ input:checked + .slider:before {
 {
   width: 60px;
 }
+.music-icon
+{
+  height: 80%;
+  margin-right: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+  background: var(--background);
+  border-radius: 50%;
+  position: relative;
+  z-index: 0;
+}
 .music-icon i
 {
-  margin-right: 25px;
   font-size: 25px;
   transition: 0.2s;
+  color: var(--maincolor);
 }
 .music-title
 {
   text-align: left;
   width: 71%;
   margin-left: 10px;
+  line-height: 1.5;
 }
 .music-icon i:hover
 {
@@ -1658,10 +1680,6 @@ input:checked + .slider:before {
   -webkit-mask-size: 100%;
   filter: contrast(200%) grayscale(1) opacity(0.75);
 }
-.show-Music-Menu.active .music-img img
-{
-  filter: grayscale(1);
-}
 @keyframes headerFirstOption {
   0%
   {
@@ -1765,30 +1783,31 @@ input:checked + .slider:before {
 }
 .progress
 {
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-top: 30px;
 }
 .progress-bar
 {
   background: #A7A7A775;
-  height: 3px;
-  border-radius: 50px;
+  height: 6px;
+  width: 100%;
+  border-radius: 1px;
   margin-top: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .progress-bar-done
 {
   background: var(--maincolor);
   width: 0%;
-  height: 3px;
-  border-radius: 50px;
+  height: 6px;
 }
 .timer
 {
   display: flex;
   justify-content: space-between;
   font-size: 13px;
+  color: var(--color);
 }
 .main-music-fast-navigation
 {
@@ -1802,7 +1821,7 @@ input:checked + .slider:before {
 .main-music-fast-navigation a
 {
   text-decoration: none;
-  color: #fff;
+  color: var(--color);
   transition: 0.2s;
 }
 .main-music-fast-navigation a:hover
@@ -1824,7 +1843,7 @@ input:checked + .slider:before {
 }
 .main-music-fast-navigation #play-stop-main-btn-action
 {
-  background: #fff;
+  background: var(--color);;
   color: var(--backgroundsecond);
   height: 50px;
   width: 50px;
@@ -1852,7 +1871,7 @@ input:checked + .slider:before {
 .main-music-sec-nav a
 {
   text-decoration: none;
-  color: #fff;
+  color: var(--color);
 }
 .main-music-sec-nav a.disabledStyle
 {
@@ -2744,8 +2763,8 @@ body.green .queue-item ul li img
   width: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
-  max-height: calc(46vh - 120px);
-  height: calc(46vh - 120px);
+  max-height: calc(46vh - 60px);
+  height: calc(46vh - 140px);
   -webkit-mask-image: -webkit-linear-gradient(black 90%, transparent 100%);
     mask-image: -o-linear-gradient(black 90%, transparent 100%);
     mask-image: linear-gradient(black 90%, transparent 100%);
@@ -3121,6 +3140,13 @@ body.green .queue-item ul li img
   overflow-y: scroll;
   overflow-x: hidden;
   border-top: 1px var(--backgroundsecond) solid;
+  display: flex;
+  flex-direction: column;
+}
+.music-artist-content-screen
+{
+  display: flex;
+  flex-direction: column;
 }
 .music-artist-content-btn 
 {
@@ -3128,7 +3154,7 @@ body.green .queue-item ul li img
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 .music-artist-content-btn a 
 {
@@ -3693,7 +3719,10 @@ body.green .queue-item ul li img
 {
   position: fixed;
   bottom: -150vh;
-  width: 100%;
+  width: calc(100% - 30px);
+  margin-left: 15px;
+  border-radius: 15px;
+  border: 1px var(--backgroundsecond) solid;
   background: var(--background);
   backdrop-filter: blur(5px);
   display: flex;
@@ -3701,12 +3730,11 @@ body.green .queue-item ul li img
   justify-content: center;
   transition: 0.5s;
   z-index: 3;
-  padding: 50px 0;
-  -webkit-mask-image: -webkit-linear-gradient(transparent 0%, black 15%);
+  padding: 25px 0;
 }
 .playlist.active
 {
-  bottom: 121px;
+  bottom: 150px;
   transition: 0.5s;
 }
 .playlist-content
@@ -3749,6 +3777,7 @@ body.green .queue-item ul li img
   padding: 10px 20px;
   width: 30%;
   color: var(--color);
+  border-radius: 15px;
 }
 .playlist-action a:first-child
 {
@@ -4027,23 +4056,23 @@ body.green .queue-item ul li img
 {
   position: absolute;
   background-color: var(--background);
-  z-index: 10;
-  width: 100%;
+  z-index: 15;
+  width: calc(100% - 30px);
   border: 1px var(--backgroundsecond) solid;
-  margin-left: -15px;
   bottom: -10vh;
   padding: 15px 0;
+  height: 15vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border-radius: 5px;
+  border-radius: 15px;
   color: var(--color);
   transition: 0.5s;
 }
 .user_playlist_alert.active
 {
-  bottom: 121px;
+  bottom: 150px;
 }
 .user_playlist_alert_action
 {
@@ -4057,6 +4086,7 @@ body.green .queue-item ul li img
 {
   border: 1px var(--maincolor) solid;
   padding: 10px 20px;
+  border-radius: 15px;
 }
 .user_playlist_featured
 {

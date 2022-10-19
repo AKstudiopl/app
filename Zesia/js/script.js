@@ -1948,7 +1948,7 @@ function randomHomeArtist(){
 const artistMenuPopular = document.querySelector("#music-artist-menu-popular");
 const artistMenuAlbums = document.querySelector("#music-artist-menu-albums");
 const artistMenuAbout = document.querySelector("#music-artist-menu-about");
-const artistPopular = document.querySelector(".music-artist-content-container");
+const artistPopular = document.querySelector(".music-artist-content-screen");
 const artistAlbums = document.querySelector(".music-artist-information");
 const artistAbout = document.querySelector(".music-artist-information-screen");
 
@@ -1977,3 +1977,48 @@ artistMenuAbout.addEventListener('click', () => {
   artistAbout.style.display="flex";
 })
 
+smallView.addEventListener('touchstart', handleTouchStart, false);        
+smallView.addEventListener('touchmove', handleTouchMove, false);
+
+var xDown = null;                                                        
+var yDown = null;
+
+function getTouches(evt) {
+  return evt.touches ||             // browser API
+         evt.originalEvent.touches; // jQuery
+}                                                     
+                                                                         
+function handleTouchStart(evt) {
+    const firstTouch = getTouches(evt)[0];                                      
+    xDown = firstTouch.clientX;                                      
+    yDown = firstTouch.clientY;                                      
+};                                                
+                                                                         
+function handleTouchMove(evt) {
+    if ( ! xDown || ! yDown ) {
+        return;
+    }
+
+    var xUp = evt.touches[0].clientX;                                    
+    var yUp = evt.touches[0].clientY;
+
+    var xDiff = xDown - xUp;
+    var yDiff = yDown - yUp;
+                                                                         
+    if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
+        if ( xDiff > 0 ) {
+            nextMusic();
+        } else {
+            prevMusic();
+        }                       
+    } else {
+        if ( yDiff > 0 ) {
+            favoriteLibraryScreen();
+        } else { 
+
+        }                                                                 
+    }
+    /* reset values */
+    xDown = null;
+    yDown = null;                                             
+};
