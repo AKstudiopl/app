@@ -285,6 +285,7 @@ body::-webkit-scrollbar
   background: var(--background);
   visibility: hidden;
   transition: 0.3s;
+  top: 0;
   margin-left: -120vw;
 }
 .settings-screen.active
@@ -628,6 +629,8 @@ input:checked + .slider:before {
   flex-direction: column;
   width: calc(100% - 30px);
   margin-left: 15px;
+  max-height: calc(100vh - 280px);
+  overflow: scroll;
 }
 .search-artist-item
 {
@@ -1092,8 +1095,11 @@ input:checked + .slider:before {
 }
 .head-content-item:first-child p 
 {
-  font-size: 50px;
+  font-size: 40px;
   color: var(--color);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .head-content-item-data-bio
 {
@@ -2465,6 +2471,8 @@ body.green .queue-item ul li img
   display: flex;
   flex-direction: column;
   margin-top: 30px;
+  overflow-y: scroll;
+  max-height: 32.5vh;
 }
 .artist-main-content ul
 {
@@ -2473,7 +2481,13 @@ body.green .queue-item ul li img
 .artist-main-content-item
 {
   width: 100%;
+  transition: 0.25s;
   display: flex;
+}
+.artist-main-content-item:active
+{
+  transform: scale(0.9);
+  opacity: 0.5;
 }
 .artist-main-content-item img
 {
@@ -3804,12 +3818,21 @@ body.green .queue-item ul li img
   z-index: 5;
   position: relative;
 }
+.user_playlist_content_title.searchUse 
+{
+  margin-top: 0;
+}
+.user_playlist_content_image.searchUse 
+{
+  display: none;
+}
 .user_playlist_content_title_action_search
 {
   top: -25vh;
   transition: 0.5s;
   position: absolute;
   width: calc(100% - 30px);
+  z-index: 6;
 }
 .user_playlist_content_title_action_search.active
 {

@@ -83,7 +83,7 @@
     <div class="settings-screen-container">
 
         <div class="settings-screen-item">
-          <img src="sources\profile_avatar_gif.gif">
+          <img src="assets\897fb9c3-72da-4ed8-9653-83e65af3768a.png">
             <div class="settings-screen-item-description">
               <h3>Gość <span id="profilName"></span></h3>
               <a href="#" class="profile-settins-btn">Profil</a>
@@ -204,11 +204,16 @@
   <div class="search-content">
 
     <h1>Czego szukasz?</h1>
-    <div class="search-bar">
 
-      <input type="text" id="search-item" placeholder="Wykonawcy, utwory">
+    <div class="search-bar" id="search-bar-name">
+      <input type="text" id="search-item" placeholder="Utwory, Wykonwacy">
       <button type="button" id="clear-input-btn" onclick="search.value='';filterList();clearFilterStatus()"><i class="fa-solid fa-xmark"></i></button>
-     </div>
+    </div>
+
+    <div class="search-bar" id="search-bar-artist">
+      <input type="text" onchange="filterByArtist()" id="search-artist" placeholder="Wykonawcy">
+      <button type="button" id="clear-input-btn" onclick="searchArtist.value='';filterByArtist()"><i class="fa-solid fa-xmark"></i></button>
+    </div>
 
      <div class="search-option">
       <a class="search-option-track active">Utwór</a>
@@ -375,7 +380,7 @@
 
 
   <div class="head-content-container">
-    <div class="head-content-item" onclick="artistFast(this)">
+    <div class="head-content-item" id="head_content_item" onclick="artistFast(this)">
       <img src="artists\41aeb62f0=c2321-f23bsf.jpg">
       <p class="head-content-item-name">
         Post Malone
@@ -386,18 +391,12 @@
       <p class="head-content-item-name">
         Popularne
       </p>
-      <span class="head-content-item-data-bio">
-        Popularne utwory w twoim kraju oraz na świecie, najczęściej słuchane i wyszukiwane utwory.
-      </span>
     </div>
     <div class="head-content-item" onclick="favoriteLibraryScreen()">
       <img src="assets/897fb9c3-72da-4ed8-9653-83e65af3768a.png">
       <p class="head-content-item-name">
         Ulubione
       </p>
-      <span class="head-content-item-data-bio">
-        Twoje ulubione utwory zebrane w jedynm miejscu, ku twojej wygodzie. Miłego słuchania!
-      </span>
     </div>
   </div>
 </div>
@@ -515,7 +514,7 @@
   </div>
 
   <div class="artist-main-action">
-    <a onclick="playMusic()">Odtwórz</a>
+    <a onclick="clickedQueue()">Odtwórz</a>
     <a onclick="artistFastExit()">Schowaj</a>
   </div>
 
@@ -858,26 +857,6 @@
       </div>
 
       <div class="music-artist-information-albums">
-
-        <div class="music-artist-information-albums-item">
-          <img src="https://i.scdn.co/image/ab67616d00001e02d263500f1f97e978daa5ceb1">
-          <p><span class="music-artist-information-albums-item-name">Vessel</span> <span>2013</span></p>
-        </div>
-
-        <div class="music-artist-information-albums-item">
-          <img src="https://i.scdn.co/image/ab67616d00001e02d263500f1f97e978daa5ceb1">
-          <p><span class="music-artist-information-albums-item-name">Vessel</span> <span>2013</span></p>
-        </div>
-
-        <div class="music-artist-information-albums-item">
-          <img src="https://i.scdn.co/image/ab67616d00001e02d263500f1f97e978daa5ceb1">
-          <p><span class="music-artist-information-albums-item-name">Vessel</span> <span>2013</span></p>
-        </div>
-
-        <div class="music-artist-information-albums-item">
-          <img src="https://i.scdn.co/image/ab67616d00001e02d263500f1f97e978daa5ceb1">
-          <p><span class="music-artist-information-albums-item-name">Vessel</span> <span>2013</span></p>
-        </div>
 
       </div>
 
