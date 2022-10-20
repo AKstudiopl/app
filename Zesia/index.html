@@ -242,30 +242,15 @@
 
   <div class="search-artist-results" style="display:none;">
 
-    <div class="search-artist-item">
 
-      <div class="search-artist-item-img">
-        <img src="artists/41aeb62f0-c2321-f45bsf.jpg">
-      </div>
-      <div class="search-artist-item-data">
-        <p>Camilla Cabello</p>
-        <span>Wykonawca</span>
-      </div>
 
-    </div>
-    
-    <div class="search-artist-item">
+  </div>
 
-      <div class="search-artist-item-img">
-        <img src="artists/41aeb62f0=c2321-f58bsf.jpg">
-      </div>
-      <div class="search-artist-item-data">
-        <p>Bebe Rexha</p>
-        <span>Wykonawca</span>
-      </div>
-
-    </div>
-
+  <div class="search-noresults">
+    <img src="https://cdn-icons-png.flaticon.com/512/5969/5969711.png">
+    <p>Nie Znaleziono</p>
+    <span>" <span class="search-noresults-keyword"></span> "</span>
+    <p>Spróbuj ponownie, sprawdzając pisownie lub próbując innych słów kluczowych</p>
   </div>
 
 </div>
@@ -597,9 +582,12 @@
     </div>
 
     <div class="top-controls-more">
-      <div class="top-more-head">
-      <h1>Opcje</h1>
-      <i class="fa-solid fa-xmark exit-top-more-head"></i>
+      <div class="top-more-head exit-top-more-head">
+      </div>
+      <div class="top-more-head-image">
+        <img src="images/scaled-and-icy-b-iext104194001.jpg">
+        <p class="top-more-head-name"></p>
+        <p class="top-more-head-artist"></p>
       </div>
       <div class="top-more-shortcut">
         <div class="top-shortcut-item shortcut-repeat">
@@ -628,11 +616,10 @@
           </div>
       </div>
       <div class="top-menu-list">
-      <a onclick="artistScreenView();topOptionFastExit()"><i class="fa-solid fa-user-astronaut"></i> Wykonawca</a>
+      <a onclick="addFavoriteItem(this)"><i class="fa-regular fa-heart"></i> Dodaj Do Ulubionych</a>
+      <a onclick="artistScreenView();topOptionFastExit()"><i class="fa-solid fa-user"></i> Wykonawca</a>
       <a class="copyUrl" onclick="shareSong()"><i class="fa-solid fa-share-nodes"></i> Udostępnij</a>
-      <a class="timer-toggle"><i class="fa-solid fa-hourglass"></i> Ustaw czas odtwarzania</a>
-      <a href="zesia/"><i class="fa-solid fa-briefcase-medical"></i> Pomoc</a>
-      <a href="zesia/"><i class="fa-solid fa-ticket"></i> Zgłoś zawartość</a>
+      <a class="timer-toggle"><i class="fa-regular fa-clock"></i> Ustaw czas odtwarzania</a>
       </div>
 
       <div class="alert-container">
@@ -644,9 +631,7 @@
 
 
     <div class="timer-view">
-      <div class="timer-title">
-        <p>Czas odtwarzania</p>
-        <i class="fa-solid fa-xmark timer-exit"></i>
+      <div class="timer-title timer-exit">
       </div>
       <div class="timer-title-font">
         <p>Ustaw czas odtwarzania</p>

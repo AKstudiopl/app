@@ -215,6 +215,9 @@ shuffleBtn = wrapper.querySelector("#shuffle"),
 queueName = wrapper.querySelector(".queue-container .name"),
 queueImg = wrapper.querySelector(".queue-container img"),
 musicBackgroundImage = wrapper.querySelector(".background-music-img img"),
+musicTopOptionsImage = wrapper.querySelector(".top-more-head-image img"),
+musicTopOptionsName = wrapper.querySelector(".top-more-head-name"),
+musicTopOptionsArtist = wrapper.querySelector(".top-more-head-artist"),
 musicNextTiptool = wrapper.querySelector(".main-music-next-music"),
 musicNextTitle = wrapper.querySelector(".main-music-next-music .next-music-title"),
 
@@ -260,7 +263,6 @@ window.addEventListener("load", ()=>{
 })
 
 musicImg.addEventListener("click", ()=>{
-  musicImg.classList.toggle('active');
   showMusicMenubtn.classList.toggle('active');
 });
 
@@ -314,6 +316,10 @@ function loadMusic(indexNumb){
   smallName.innerText = allMusic[indexNumb - 1].name;
   smallArtist.innerText = allMusic[indexNumb - 1].artist;
   smallImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
+  musicTopOptionsName.innerText = allMusic[indexNumb - 1].name;
+  musicTopOptionsArtist.innerText = allMusic[indexNumb - 1].artist;
+  musicTopOptionsImage.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
+  topOption.setAttribute("id", allMusic[indexNumb - 1].id);
   lyricsDataArtist.innerText = allMusic[indexNumb - 1].artist;
   lyricsDataTitle.innerText = allMusic[indexNumb - 1].name;
   musicViralMp4.pause();
@@ -693,6 +699,7 @@ function styleContentAction() {
 const correctSoundBtn = document.getElementsByClassName('device-screen-btn')[0]
 const correctSoundScreen = document.getElementsByClassName('device-screen')[0]
 const correctSoundExit = document.getElementsByClassName('device-screen-exit')[0]
+const menuLyricsExit = document.getElementsByClassName('device-exit')[0]
 const menuLyricsBtn = document.getElementsByClassName('shortcut-rate-btn')[0]
 const menuLyricsFullscreen = document.getElementsByClassName('device-screen-fullscreen')[0]
 correctSoundBtn.addEventListener('click', () => {
@@ -700,6 +707,10 @@ correctSoundBtn.addEventListener('click', () => {
   lyricsSupport();
 })
 correctSoundExit.addEventListener('click', () => {
+  correctSoundScreen.classList.remove('active')
+  correctSoundScreen.classList.remove('fullscreen');
+})
+menuLyricsExit.addEventListener('click', () => {
   correctSoundScreen.classList.remove('active')
   correctSoundScreen.classList.remove('fullscreen');
 })
@@ -729,7 +740,8 @@ function clearFilterStatus(){
   filterList();
 }
 
-
+const searchNoResults = document.querySelector(".search-noresults");
+const searchNoResultsValue = document.querySelector(".search-noresults-keyword");
 const [search,filter,results] = ["#search-item",".search-filter",".search-results"].map(sel=>document.querySelector(sel));
 results.innerHTML=allMusic.map((a,i)=>
 `<li li-index="${i + 1}" onclick="clicked(this)">
@@ -760,7 +772,21 @@ function filterList(){
     srch=search.value.toLowerCase();
   allMusic.forEach((m,i)=>{ // both conditions must be met: style and search pattern
     results.children[i].style.display=(m.name+"|"+m.artist).toLowerCase().includes(srch)&&styles.includes(m.style)?"":"none";
+    results.children[i].classList.add=(m.name+"|"+m.artist).toLowerCase().includes(srch)&&styles.includes(m.style)?"":"searched";
   })
+
+  let xSearched = document.querySelector('.search-results');
+  console.log(xSearched.offsetHeight)
+  if(xSearched.offsetHeight < 10){
+    searchNoResults.style.display="flex";
+    searchNoResultsValue.innerText = search.value;
+    if(search.value === ""){
+      searchNoResults.style.display="none";
+    }
+  }else{
+    searchNoResults.style.display="none";
+  }
+  
 }
 // attach filterList() to input event of text-input and click event of style buttons:
 search.addEventListener("input",filterList);
@@ -1746,11 +1772,20 @@ var today = new Date();
 var time = today.getHours();
 const timeZoneText = document.querySelector(".timeZoneData");
 
+
 if (time < 18){
-  timeZoneText.innerText = "Dzień dobry"
+  var array = ["Dzień Dobry", "Miłego Dnia", "Jak Się Masz", "Miłego Słuchania"];
+  var index = Math.floor(Math.random() * array.length);
+  var timeZoneRandomText = array[index];
+
+  timeZoneText.innerText = timeZoneRandomText;
 }
 if (time > 17){
-  timeZoneText.innerText = "Dobry wieczór"
+  var array = ["Dobry Wieczór", "Miłego Słuchania", "Miłego Wieczoru"];
+  var index = Math.floor(Math.random() * array.length);
+  var timeZoneRandomText = array[index];
+
+  timeZoneText.innerText = timeZoneRandomText;
 }
 
 const searchArtistFilter = document.querySelector(".search-option-artist");
@@ -1770,6 +1805,8 @@ searchTrackFilter.addEventListener('click', () => {
   aristsSearchResults.style.display="none";
   searchBarArtist.style.display="none";
   searchBarName.style.display="flex";
+  searchArtist.value='';
+  filterList();
 })
 
 searchArtistFilter.addEventListener('click', () => {
@@ -1781,6 +1818,8 @@ searchArtistFilter.addEventListener('click', () => {
   searchBarArtist.style.display="flex";
   searchBarName.style.display="none";
   searchForArtist();
+  search.value='';
+  filterByArtist();
 })
 
 const searchArtist = document.querySelector("#search-artist");
@@ -1812,6 +1851,13 @@ function searchForArtist(){
         productIds[prodId] = true;
       }
   });
+
+  artistPopular.style.display="flex";
+  artistAlbums.style.display="none";
+  artistAbout.style.display="none";
+  artistMenuPopular.classList.add('active');
+  artistMenuAlbums.classList.remove('active');
+  artistMenuAbout.classList.remove('active');
 
   filterByArtist();
 }
@@ -1922,9 +1968,11 @@ function filterByArtist(){
   for (i = 0; i < x.length; i++) { 
       if (!x[i].innerHTML.toLowerCase().includes(input)) {
           x[i].style.display="none";
+          x[i].classList.remove("searched")
       }
       else {
-          x[i].style.display="flex";                 
+          x[i].style.display="flex";    
+          x[i].classList.add("searched")             
       }
   }
 
@@ -1932,6 +1980,14 @@ function filterByArtist(){
     for (i = 0; i < x.length; i++) { 
           x[i].style.display="none";
    }
+  }
+
+  let xSearched = document.getElementsByClassName('search-artist-item searched');
+  if(xSearched.length === 0){
+    searchNoResults.style.display="flex";
+    searchNoResultsValue.innerText = input;
+  }else{
+    searchNoResults.style.display="none";
   }
 }
 
@@ -1979,6 +2035,8 @@ artistMenuAbout.addEventListener('click', () => {
 
 smallView.addEventListener('touchstart', handleTouchStart, false);        
 smallView.addEventListener('touchmove', handleTouchMove, false);
+musicImg.addEventListener('touchstart', handleTouchStart, false);        
+musicImg.addEventListener('touchmove', handleTouchMove, false);
 
 var xDown = null;                                                        
 var yDown = null;
