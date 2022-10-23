@@ -218,6 +218,7 @@ musicBackgroundImage = wrapper.querySelector(".background-music-img img"),
 musicTopOptionsImage = wrapper.querySelector(".top-more-head-image img"),
 musicTopOptionsName = wrapper.querySelector(".top-more-head-name"),
 musicTopOptionsArtist = wrapper.querySelector(".top-more-head-artist"),
+musicTopOptionsFavorite = wrapper.querySelector(".top-menu-list-favorite"),
 musicNextTiptool = wrapper.querySelector(".main-music-next-music"),
 musicNextTitle = wrapper.querySelector(".main-music-next-music .next-music-title"),
 
@@ -277,11 +278,15 @@ favoritBtn.addEventListener('click', () => {
     favoritBtn.classList.add('active')
     favoritBtn.classList.add('fa-solid')
     favoritBtn.classList.remove('fa-regular')
+    musicTopOptionsFavorite.classList.add('active')
+    musicTopOptionsFavorite.innerHTML = '<i class="fa-solid fa-heart"></i> Polubiono';
   }
   if (allMusic[indexNumb - 1].status === "nostatus") {
     favoritBtn.classList.remove('active')
     favoritBtn.classList.remove('fa-solid')
     favoritBtn.classList.add('fa-regular')
+    musicTopOptionsFavorite.classList.remove('active')
+    musicTopOptionsFavorite.innerHTML = '<i class="fa-regular fa-heart"></i> Dodaj Do Ulubionych';
   }
 })
 
@@ -342,11 +347,15 @@ function loadMusic(indexNumb){
     favoritBtn.classList.add('active')
     favoritBtn.classList.add('fa-solid')
     favoritBtn.classList.remove('fa-regular')
+    musicTopOptionsFavorite.innerHTML = '<i class="fa-solid fa-heart"></i> Polubiono';
+    musicTopOptionsFavorite.classList.add('active')
   }
   if (allMusic[indexNumb - 1].status === "nostatus") {
     favoritBtn.classList.remove('active')
     favoritBtn.classList.remove('fa-solid')
     favoritBtn.classList.add('fa-regular')
+    musicTopOptionsFavorite.innerHTML = '<i class="fa-regular fa-heart"></i> Dodaj Do Ulubionych';
+    musicTopOptionsFavorite.classList.remove('active')
   }
 
 
@@ -776,7 +785,6 @@ function filterList(){
   })
 
   let xSearched = document.querySelector('.search-results');
-  console.log(xSearched.offsetHeight)
   if(xSearched.offsetHeight < 10){
     searchNoResults.style.display="flex";
     searchNoResultsValue.innerText = search.value;
@@ -820,15 +828,14 @@ function setvolume(){
   function nameQuestion() {
     inputName = document.getElementById('username');
     namePlace = document.getElementById('nameUser');
-    profilName = document.getElementById('profilName');
+    nameProfile = document.querySelector('.library-profile-data p')
     namePlace.innerHTML = inputName.value;
-    profilName.innerHTML = inputName.value;
+    nameProfile.innerText = inputName.value;
     localStorage.setItem("userData", inputName.value);
   }
   function checkQuestion(){
     namePlace = document.getElementById('nameUser');
     namePlace.innerHTML = localStorage.userData;
-    profilName.innerHTML = localStorage.userData;
 
       if (localStorage.getItem("userData") === null) {
         nameAsk.classList.remove('confirmed');
@@ -1309,15 +1316,13 @@ function shortcutCheck() {
   timerItem40 = timerOptions.querySelector("#timer40");
   timerItem50 = timerOptions.querySelector("#timer50");
   timerItem60 = timerOptions.querySelector("#timer60");
-  timerItem90 = timerOptions.querySelector("#timer90");
-  timerItem120 = timerOptions.querySelector("#timer120");
 
   timerItem10.addEventListener('click', () => {
     setTimeout(
       function() {
         pauseMusic();
         alertTimer();
-      }, 600000);
+      }, 30000);
   })
 
   timerItem20.addEventListener('click', () => {
@@ -1325,7 +1330,7 @@ function shortcutCheck() {
       function() {
         pauseMusic();
         alertTimer();
-      }, 1200000);
+      }, 600000);
   })
 
   timerItem30.addEventListener('click', () => {
@@ -1333,7 +1338,7 @@ function shortcutCheck() {
       function() {
         pauseMusic();
         alertTimer();
-      }, 1800000);
+      }, 900000);
   })
 
   timerItem40.addEventListener('click', () => {
@@ -1341,7 +1346,7 @@ function shortcutCheck() {
       function() {
         pauseMusic();
         alertTimer();
-      }, 2400000);
+      }, 1800000);
   })
 
   timerItem50.addEventListener('click', () => {
@@ -1349,7 +1354,7 @@ function shortcutCheck() {
       function() {
         pauseMusic();
         alertTimer();
-      }, 3000000);
+      }, 2700000);
   })
 
   timerItem60.addEventListener('click', () => {
@@ -1358,22 +1363,6 @@ function shortcutCheck() {
         pauseMusic();
         alertTimer();
       }, 3600000);
-  })
-
-  timerItem90.addEventListener('click', () => {
-    setTimeout(
-      function() {
-        pauseMusic();
-        alertTimer();
-      }, 5400000);
-  })
-
-  timerItem120.addEventListener('click', () => {
-    setTimeout(
-      function() {
-        pauseMusic();
-        alertTimer();
-      }, 7200000);
   })
 
   $(document).ready(function(){
@@ -1415,16 +1404,6 @@ function searchBarUse(){
   activeHomeScreen.classList.remove('active')
   searchScreen.classList.add('active')
 }
-
-const profileSettingsBtn = document.querySelector('.profile-settins-btn')
-const loginPopup = document.querySelector('.login-popup')
-const questSelectBtn = document.querySelector('.questBtn')
-profileSettingsBtn.addEventListener('click', () => {
-  loginPopup.classList.add('active')
-})
-questSelectBtn.addEventListener('click', () => {
-  loginPopup.classList.remove('active')
-})
 
 
 const playlistsContainer = document.querySelector(".center-container-scrollable");
@@ -1831,7 +1810,7 @@ function searchForArtist(){
   resultsData.innerHTML = "";
   for (let i = 0; i < favoritIt.length; i++) {
     let resultData =
-      `<div class="search-artist-item" data-id='${favoritIt[i].id}' data-artist='${favoritIt[i].artist}' onclick="artistScreenSearchBar(this);">
+      `<div class="search-artist-item" data-id='${favoritIt[i].id}' data-artist='${favoritIt[i].artist}' onclick="fastLoadingPop();artistScreenSearchBar(this);">
         <div class="search-artist-item-img">
           <img src="${favoritIt[i].artist_img}">
         </div>
@@ -1864,7 +1843,6 @@ function searchForArtist(){
 
 function artistScreenSearchBar(element){
   var dataAttribute = element.getAttribute('data-id');
-  console.log(dataAttribute)
   musicArtistScreen.classList.add('active')
   musicMenuHide.classList.remove('active')
   albumScreen.classList.remove('active');
@@ -2080,3 +2058,144 @@ function handleTouchMove(evt) {
     xDown = null;
     yDown = null;                                             
 };
+
+function favoriteItemOption(){
+  if (allMusic[indexNumb - 1].status === "favorite") {
+    allMusic[indexNumb - 1].status = "nostatus";
+  }else if (allMusic[indexNumb - 1].status === "nostatus") {
+    allMusic[indexNumb - 1].status = "favorite";
+  }
+  if (allMusic[indexNumb - 1].status === "favorite") {
+    musicTopOptionsFavorite.innerHTML = '<i class="fa-solid fa-heart"></i> Polubiono';
+    musicTopOptionsFavorite.classList.add('active')
+    favoritBtn.classList.add('active')
+    favoritBtn.classList.add('fa-solid')
+    favoritBtn.classList.remove('fa-regular')
+  }
+  if (allMusic[indexNumb - 1].status === "nostatus") {
+    musicTopOptionsFavorite.innerHTML = '<i class="fa-regular fa-heart"></i> Dodaj Do Ulubionych'
+    musicTopOptionsFavorite.classList.remove('active')
+    favoritBtn.classList.remove('active')
+    favoritBtn.classList.remove('fa-solid')
+    favoritBtn.classList.add('fa-regular')
+  }
+    
+  favoriteLoadItems();
+}
+
+const newsArtistsSmallViewAction = document.querySelector(".news_artists_header_hide_action");
+
+newsArtistsSmallViewAction.addEventListener('click', () => {
+  smallView.classList.toggle('news-hide');
+  if(smallView.classList.contains('news-hide')){
+    newsArtistsSmallViewAction.style.color="var(--color)";
+    newsArtistsSmallViewAction.style.opacity="0.5";
+  }else{
+    newsArtistsSmallViewAction.style.color="var(--maincolor)";
+    newsArtistsSmallViewAction.style.opacity="1";
+  }
+})
+
+function newsArtistsScreen(){
+  newsScreen.classList.toggle("active");
+  if(newsScreen.classList.contains("active")){
+    fastLoadingPop();
+    newsDataLoad();
+  }
+  if(smallView.classList.contains('news-hide')){
+    smallView.classList.remove('news-hide');
+    newsArtistsSmallViewAction.style.color="var(--maincolor)";
+    newsArtistsSmallViewAction.style.opacity="1";
+  }
+}
+const newsScreen = document.querySelector(".news_artists_screen"),
+newsScreenTodayDate = newsScreen.querySelector(".news_artists_date");
+newsScreenFilterNew = newsScreen.querySelector(".news_artists_filter_new");
+newsScreenFilterFollowed = newsScreen.querySelector(".news_artists_filter_followed");
+newsScreenFilterPopular = newsScreen.querySelector(".news_artists_filter_popular");
+
+newsScreenFilterNew.addEventListener('click', () => {
+  newsScreenFilterNew.classList.add("active");
+  newsScreenFilterFollowed.classList.remove("active");
+  newsScreenFilterPopular.classList.remove("active");
+  newsDataLoad();
+  fastLoadingPop();
+})
+newsScreenFilterFollowed.addEventListener('click', () => {
+  newsScreenFilterNew.classList.remove("active");
+  newsScreenFilterFollowed.classList.add("active");
+  newsScreenFilterPopular.classList.remove("active");
+  newsFollowedDataLoad();
+  fastLoadingPop();
+})
+newsScreenFilterPopular.addEventListener('click', () => {
+  newsScreenFilterNew.classList.remove("active");
+  newsScreenFilterFollowed.classList.remove("active");
+  newsScreenFilterPopular.classList.add("active");
+  newsPopularDataLoad();
+  fastLoadingPop();
+})
+
+var event = new Date();
+var options = { weekday: 'long', month: 'long', day: 'numeric' };
+
+newsScreenTodayDate.innerText = event.toLocaleDateString('en-us', options) + "th";
+
+var newsIndex = allPosts.length;
+
+function newsDataLoad(){
+
+  const resultsData = document.querySelector(".news_artists_content");
+  resultsData.innerHTML = "";
+  for (let i = 0; i < allPosts.length; i++) {
+    let resultData =
+      `<div class="news_artists_content_item">
+      <img class="news_artists_content_item_background" src="${allPosts[i].artist_img}">
+        <div class="news_artists_content_item_data">
+          <h1>${allPosts[i].post_title}</h1>
+          <p class="news_artists_content_item_data_main">${allPosts[i].post_content}</p>
+          <div class="news_artists_content_item_action">
+            <a href="${allPosts[i].post_link}">Odtwórz</a>
+            <p><span>${allPosts[i].autor_name}</span><span>${allPosts[i].add_date}</span></p>
+          </div>
+        </div>
+    </div>`;
+    resultsData.insertAdjacentHTML("beforeend", resultData);
+  }
+}
+function newsFollowedDataLoad(){
+
+  const resultsData = document.querySelector(".news_artists_content");
+  var favoritIndex = allPosts.filter(x => x.artist_status === "followed");
+  resultsData.innerHTML = "";
+  for (let i = 0; i < favoritIndex.length; i++) {
+    let resultData =
+      `<div class="news_artists_content_item">
+      <img class="news_artists_content_item_background" src="${favoritIndex[i].artist_img}">
+        <div class="news_artists_content_item_data">
+          <h1>${favoritIndex[i].post_title}</h1>
+          <p class="news_artists_content_item_data_main">${favoritIndex[i].post_content}</p>
+          <p><span>${favoritIndex[i].autor_name}</span><span>${favoritIndex[i].add_date}</span></p>
+        </div>
+    </div>`;
+      resultsData.insertAdjacentHTML("beforeend", resultData);
+  }
+}
+function newsPopularDataLoad(){
+
+  const resultsData = document.querySelector(".news_artists_content");
+  var favoritIndex = allPosts.filter(x => x.popular_status === "popular");
+  resultsData.innerHTML = "";
+  for (let i = 0; i < favoritIndex.length; i++) {
+    let resultData =
+      `<div class="news_artists_content_item">
+      <img class="news_artists_content_item_background" src="${favoritIndex[i].artist_img}">
+        <div class="news_artists_content_item_data">
+          <h1>${favoritIndex[i].post_title}</h1>
+          <p class="news_artists_content_item_data_main">${favoritIndex[i].post_content}</p>
+          <p><span>${favoritIndex[i].autor_name}</span><span>${favoritIndex[i].add_date}</span></p>
+        </div>
+    </div>`;
+      resultsData.insertAdjacentHTML("beforeend", resultData);
+  }
+}

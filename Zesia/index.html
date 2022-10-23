@@ -29,24 +29,6 @@
     <button type="submit" onclick="nameQuestion()" class="usernameNext" >Dalej</button>
   </div>
 
-  <div class="login-popup">
-    <div class="login-top">
-      <img src="brandsources\IMG_20220320_144711.png">
-      <p>Login</p>
-    </div>
-    <div class="login-button">
-      <a>Login With Google <i class="fa-solid fa-g"></i></a>
-      <a>Login With Facebook <i class="fa-brands fa-facebook-f"></i></a>
-      <a>Login With Email Adress <i class="fa-solid fa-at"></i></a>
-    </div>
-    <div class="login-or">
-      <span></span><p>or</p><span></span>
-    </div>
-    <div class="quest-button">
-      <a class="questBtn">Continue as a quest</a>
-    </div>
-  </div>
-
 
 <div class="navbar-bottom">
   <div class="navbar-bottom-btn 1 active">
@@ -82,16 +64,9 @@
 
     <div class="settings-screen-container">
 
-        <div class="settings-screen-item">
-          <img src="assets\897fb9c3-72da-4ed8-9653-83e65af3768a.png">
-            <div class="settings-screen-item-description">
-              <h3>Gość <span id="profilName"></span></h3>
-              <a href="#" class="profile-settins-btn">Profil</a>
-            </div>
-        </div>
-
         <div class="settings-title">
           <h3>Oszczędzanie Danych</h3>
+          <i class="fa-solid fa-tower-broadcast"></i>
         </div>
 
         <div class="settings-screen-item" id="input-style">
@@ -109,6 +84,7 @@
 
         <div class="settings-title">
           <h3>Odtwarzanie</h3>
+          <i class="fa-solid fa-headphones"></i>
         </div>
 
         <div class="settings-screen-item" id="input-style">
@@ -174,6 +150,7 @@
 
         <div class="settings-title">
           <h3>Społecznościowe</h3>
+          <i class="fa-solid fa-hashtag"></i>
         </div>
 
         <div class="settings-screen-item" id="input-style">
@@ -259,9 +236,22 @@
 <div class="library-container">
 
   <div class="library-content">
+
+
     <h1>
       Ostatnia aktywność
     </h1>
+
+    <div class="library-profile">
+      <img src="images/scaled-and-icy-b-iext104194001.jpg" alt="">
+      <div class="library-profile-data">
+        <p>Profil</p>
+        <span>Pokaż profil</span>
+      </div>
+      <div class="library-profile-background">
+      </div>
+    </div>
+
 
     <div class="library-slider">
 
@@ -289,6 +279,9 @@
     </h1>
 
     <div class="last-reviews">
+      <div class="review-item-action">
+        <a class="review-item-title" onclick="newsArtistsScreen()">Pokaż wszystko</a>
+      </div>
       <div class="review-item">
         <a class="review-item-title">Tymek</a>
         <p class="review-item-info">Album <a href="#">"Rekonesans"</a> już dostępny na platformie!</p>
@@ -352,7 +345,7 @@
         <h1><p class="timeZoneData">Witaj,</p> <span id="nameUser"></span></h1>
       </div>
       <a>
-        <i class="fa-regular fa-user settings-action-btn"></i>
+        <i class="fa-solid fa-gear settings-action-btn"></i>
       </a>
     </div>
     <div class="welcome-search-bar">
@@ -616,7 +609,7 @@
           </div>
       </div>
       <div class="top-menu-list">
-      <a onclick="addFavoriteItem(this)"><i class="fa-regular fa-heart"></i> Dodaj Do Ulubionych</a>
+      <a onclick="favoriteItemOption()" class="top-menu-list-favorite"><i class="fa-regular fa-heart"></i> Dodaj Do Ulubionych</a>
       <a onclick="artistScreenView();topOptionFastExit()"><i class="fa-solid fa-user"></i> Wykonawca</a>
       <a class="copyUrl" onclick="shareSong()"><i class="fa-solid fa-share-nodes"></i> Udostępnij</a>
       <a class="timer-toggle"><i class="fa-regular fa-clock"></i> Ustaw czas odtwarzania</a>
@@ -634,33 +627,26 @@
       <div class="timer-title timer-exit">
       </div>
       <div class="timer-title-font">
-        <p>Ustaw czas odtwarzania</p>
-        <p>Opcje podane w minutach</p>
+        <p>Zatrzymaj odtwarzanie za</p>
       </div>
       <div class="timer-option-container">
         <div class="timer-item" id="timer10">
-          <a>10</a>
+          <a>5 min</a>
         </div>
         <div class="timer-item" id="timer20">
-          <a>20</a>
+          <a>10 min</a>
         </div>
         <div class="timer-item" id="timer30">
-          <a >30</a>
+          <a>15 min</a>
         </div>
         <div class="timer-item" id="timer40">
-          <a >40</a>
+          <a>30 min</a>
         </div>
         <div class="timer-item" id="timer50">
-          <a>50</a>
+          <a>45 min</a>
         </div>
         <div class="timer-item" id="timer60">
-          <a >60</a>
-        </div>
-        <div class="timer-item" id="timer90">
-          <a>90</a>
-        </div>
-        <div class="timer-item" id="timer120">
-          <a>120</a>
+          <a>60 min</a>
         </div>
       </div>
       <div class="timer-tip">
@@ -1143,6 +1129,67 @@
   </div>
 
 </div>
+</div>
+
+
+<div class="user_mood_screen">
+
+  <div class="user_mood_header">
+    <img src="https://cdn-icons-png.flaticon.com/512/1791/1791296.png">
+    <p class="user_mood_header_text">Przygotowaliśmy dla ciebie składanke specjalnie pod twój humor</p>
+    <span>Miłego Słuchania</span>
+  </div>
+
+</div>
+
+<div class="news_artists_screen">
+  <div class="news_artists_option">
+    <p>Nowości</p>
+    <i class="fa-solid fa-xmark library-favorite-exit" onclick="newsArtistsScreen()"></i>
+  </div>
+  <div class="news_artists_header">
+    
+    <div class="news_artists_header_title">
+      <div class="news_artists_header_data">
+        <span class="news_artists_date">Friday, June 16th</span>
+        <p>Daily feed</p>
+      </div>
+      <i class="fa-solid fa-eye-slash news_artists_header_hide_action"></i>
+    </div>
+
+    <div class="news_artists_filter">
+      <a class="news_artists_filter_new active">Najnowsze</a>
+      <a class="news_artists_filter_followed">Ulubione</a>
+      <span></span>
+      <a class="news_artists_filter_popular">Popularne</a>
+    </div>
+
+  </div>
+
+  <div class="news_artists_content">
+
+    <div class="news_artists_content_item">
+      <img class="news_artists_content_item_background" src="https://i.scdn.co/image/ab6761610000e5ebec05963eab63676a539fef13">
+      <div class="news_artists_content_item_data">
+        <h1>New Song</h1>
+        <p class="news_artists_content_item_data_main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis magnam nulla, itaque est ipsam vel maxime incidunt eos, laborum accusamus at inventore porro? Quaerat, labore?</p>
+        <p><span>Camilla Cabello</span><span>Friday, June 16th</span></p>
+      </div>
+    </div>
+    
+    <div class="news_artists_content_item">
+      <img class="news_artists_content_item_background" src="https://i.scdn.co/image/ab6761610000e5ebabfac786f093c4da55c99d4e">
+      <div class="news_artists_content_item_data">
+        <h1>New Album</h1>
+        <p class="news_artists_content_item_data_main">Lorem ipsum ipsumipsumipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae fugit tempora eveniet ut nesciunt! sit amet, consectetur adipisicing elit. Nobis magnam nulla, itaque est ipsam vel maxime incidunt eos, laborum accusamus at inventore porro? Quaerat, labore?</p>
+        <div class="news_artists_content_item_action">
+          <a>Odtwórz</a>
+          <p><span>Camilla Cabello</span><span>Friday, June 16th</span></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
 
 </div>
 
@@ -1155,7 +1202,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/music-list.js"></script>
+<script src="js/news-list.js"></script>
 
-</script>
 </body>
 </html>
