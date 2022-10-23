@@ -237,12 +237,11 @@
 
   <div class="library-content">
 
-
     <h1>
-      Ostatnia aktywność
+      Profil
     </h1>
 
-    <div class="library-profile">
+    <div class="library-profile" onclick="loadUserProfile();fastLoadingPop();">
       <img src="images/scaled-and-icy-b-iext104194001.jpg" alt="">
       <div class="library-profile-data">
         <p>Profil</p>
@@ -252,6 +251,9 @@
       </div>
     </div>
 
+    <h1>
+      Ostatnia aktywność
+    </h1>
 
     <div class="library-slider">
 
@@ -278,10 +280,11 @@
       Ostatnie Nowości
     </h1>
 
+    <div class="review-item-action">
+      <a class="review-item-title" onclick="newsArtistsScreen()">Pokaż wszystko</a>
+    </div>
+
     <div class="last-reviews">
-      <div class="review-item-action">
-        <a class="review-item-title" onclick="newsArtistsScreen()">Pokaż wszystko</a>
-      </div>
       <div class="review-item">
         <a class="review-item-title">Tymek</a>
         <p class="review-item-info">Album <a href="#">"Rekonesans"</a> już dostępny na platformie!</p>
@@ -305,7 +308,7 @@
 
   <div class="library-settings-container">
     <a href="#" class="librarySettingsBtn">Ustawienia</a>
-    <a href="#">Konto</a>
+    <a onclick="loadUserProfile();fastLoadingPop();">Konto</a>
     <a href="zesia/">Zesia</a>
   </div>
 
@@ -512,8 +515,8 @@
   </div>
 
   <div class="artist-main-info">
-      <h1 class="artist-main-name">User</h1>
-      <span class="artist-main-counter">6 Utworów</span>
+      <h1 class="artist-main-name"></h1>
+      <span class="artist-main-counter"></span>
   </div>
 
   <div class="artist-main-action">
@@ -1147,8 +1150,8 @@
     <p>Nowości</p>
     <i class="fa-solid fa-xmark library-favorite-exit" onclick="newsArtistsScreen()"></i>
   </div>
+
   <div class="news_artists_header">
-    
     <div class="news_artists_header_title">
       <div class="news_artists_header_data">
         <span class="news_artists_date">Friday, June 16th</span>
@@ -1163,30 +1166,58 @@
       <span></span>
       <a class="news_artists_filter_popular">Popularne</a>
     </div>
-
   </div>
 
-  <div class="news_artists_content">
+  <div class="news_artists_content"></div>
 
-    <div class="news_artists_content_item">
-      <img class="news_artists_content_item_background" src="https://i.scdn.co/image/ab6761610000e5ebec05963eab63676a539fef13">
-      <div class="news_artists_content_item_data">
-        <h1>New Song</h1>
-        <p class="news_artists_content_item_data_main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis magnam nulla, itaque est ipsam vel maxime incidunt eos, laborum accusamus at inventore porro? Quaerat, labore?</p>
-        <p><span>Camilla Cabello</span><span>Friday, June 16th</span></p>
-      </div>
+</div>
+
+<div class="user_profile_screen">
+
+  <div class="user_profile_controls">
+    <i onclick="loadUserProfile()" class="fa-solid fa-xmark"></i>
+  </div>
+
+  <div class="user_profile_image">
+    <img src="https://i.scdn.co/image/ab6775700000ee856c0b558345470acbb51c1dd2">
+  </div>
+
+  <div class="user_profile_header_content">
+    <p class="user_profile_header_content_name">Name</p>
+    <p class="user_profile_header_content_date">Dołączył/a : <span>Sunday, October 23th</span></p>
+
+    <div class="user_profile_header_content_action">
+      <a><i class="fa-solid fa-pen"></i> Edytuj</a>
+      <a class="user_profile_action_search"><i class="fa-solid fa-search"></i> Szukaj</a>
     </div>
-    
-    <div class="news_artists_content_item">
-      <img class="news_artists_content_item_background" src="https://i.scdn.co/image/ab6761610000e5ebabfac786f093c4da55c99d4e">
-      <div class="news_artists_content_item_data">
-        <h1>New Album</h1>
-        <p class="news_artists_content_item_data_main">Lorem ipsum ipsumipsumipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae fugit tempora eveniet ut nesciunt! sit amet, consectetur adipisicing elit. Nobis magnam nulla, itaque est ipsam vel maxime incidunt eos, laborum accusamus at inventore porro? Quaerat, labore?</p>
-        <div class="news_artists_content_item_action">
-          <a>Odtwórz</a>
-          <p><span>Camilla Cabello</span><span>Friday, June 16th</span></p>
-        </div>
+
+    <div class="user_profile_header_content_search active">
+      <input type="text" placeholder="Szukaj..." id="user_profile_search_bar">
+    </div>
+
+    <div class="user_profile_header_menu">
+        <p class="user_profile_header_filter_by_favorite active">Polubione <span></span></p>
+        <p class="user_profile_header_filter_by_playlist">Playlisty <span></span></p>
+        <p class="user_profile_header_filter_by_followed">Obserwuje <span></span></p>
+    </div>
+  </div>
+
+  <div class="user_profile_content">
+
+    <div class="user_profile_content_item_song">
+      <div class="user_profile_content_item_song_data">
+        <p>In The Name Of Love</p>
+        <span>Bebe Rexha</span>
       </div>
+      <i class="fa-heart fa-solid"></i>
+    </div>
+
+    <div class="user_profile_content_item_song">
+      <div class="user_profile_content_item_song_data">
+        <p>One Last Time</p>
+        <span>Ariana Grande</span>
+      </div>
+      <i class="fa-heart fa-solid"></i>
     </div>
 
   </div>

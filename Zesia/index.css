@@ -805,7 +805,6 @@ input:checked + .slider:before {
   background: var(--backgroundsecond);
   border-radius: 5px;
   transition: 0.25s;
-  margin-bottom: -15px;
 }
 .library-profile:active
 {
@@ -817,14 +816,6 @@ input:checked + .slider:before {
   width: 25vw;
   border-radius: 5px;
   margin-right: auto;
-}
-.library-profile .library-profile-shape
-{
-  background: var(--maincolor);
-  height: 25vw;
-  clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 100% 100%, 71% 50%, 100% 0);
-  border-radius: 5px;
-  width: 150px;
 }
 .library-profile-data
 {
@@ -924,9 +915,8 @@ input:checked + .slider:before {
 }
 .review-item-action
 {
-  width: calc(100% - 10px);
-  margin-left: 5px;
-  margin-top: 15px;
+  width: 100%;
+  border-bottom: 2px var(--backgroundsecond) solid;
 }
 .review-item-action a 
 {
@@ -940,6 +930,7 @@ input:checked + .slider:before {
   padding: 10px 20px;
   border-radius: 15px;
   transition: 0.3s;
+  max-width: calc(100% - 40px);
 }
 .review-item-action a:active
 {
@@ -2458,17 +2449,45 @@ body.green .queue-item ul li img
   flex: 0 0 auto;
   border-radius: 15px;
   padding: 20px 15px;
-  border: var(--border);
+  border: 2px var(--backgroundsecond) solid;
   margin: 0 5px;
-  background: var(--backgroundsecond);
+  background: var(--background);
   display: flex;
   justify-content: center;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
 }
 .review-item-title
 {
   font-weight: 900;
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+.review-item img
+{
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+  z-index: 0;
+  margin-left: -15px;
+
+  -webkit-mask-image: -webkit-linear-gradient(140deg,black 0%, transparent 75%);
+}
+.review-item-info
+{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  line-clamp: 3; 
+  -webkit-box-orient: vertical;
+  z-index: 1;
 }
 .review-item-info a
 {
@@ -4526,14 +4545,12 @@ body.green .queue-item ul li img
   margin-bottom: 10px;
   padding: 10px 0;
   line-height: 1;
-  border-bottom: 1px var(--background) solid;
   color: var(--maincolor);
   text-align: left;
 }
 .news_artists_content_item_data .news_artists_content_item_data_main
 {
   padding-bottom: 10px;
-  border-bottom: 1px var(--background) solid;
   text-align: left;
 }
 .news_artists_content_item_data p:last-child
@@ -4579,7 +4596,210 @@ body.green .queue-item ul li img
 {
   color: var(--maincolor);
 }
-
+.user_profile_screen
+{
+  width: 100%;
+  height: 100vh;
+  background: var(--background);
+  position: fixed;
+  top: 120vh;
+  z-index: 4;
+  transition: 0.3s;
+}
+.user_profile_screen.active
+{
+  top: 0;
+}
+.user_profile_controls
+{
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  width: calc(100% - 40px);
+  padding: 10px 20px;
+  color: var(--maincolor);
+  align-items: center;
+  z-index: 1;
+}
+.user_profile_controls i 
+{
+  font-size: 20px;
+  line-height: 1.5;
+  filter: drop-shadow(0px 0px 5px #121212);
+}
+.user_profile_image img
+{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  -webkit-mask-image: -webkit-linear-gradient(black, transparent);
+} 
+.user_profile_header_content
+{
+  margin-top: -80px;
+  width:calc(100% - 30px);
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 5;
+  position: relative;
+  line-height: 1;
+}
+.user_profile_header_content_name
+{
+  font-size: 40px;
+  margin-bottom: 20px;
+  line-height: 1; 
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.user_profile_header_content a 
+{
+  text-decoration: none;
+  border: 1px var(--maincolor) solid;
+  display: flex;
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  color: var(--maincolor);
+  font-size: 13px;
+  transition: 0.3s;
+  line-height: 1;
+  margin-bottom: 20px;
+  width: 50%;
+}
+.user_profile_header_content a i {
+  padding-right: 5px;
+}
+.user_profile_header_menu
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 20px;
+  color: var(--color);
+}
+.user_profile_header_content_date
+{
+  opacity: 0.5;
+  color: var(--color);
+  padding-bottom:20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+.user_profile_header_menu p
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+.user_profile_header_menu p.active
+{
+  opacity: 1;
+}
+.user_profile_header_menu p.active span {
+  width: 8vw;
+  height: 2px;
+  background-color: var(--color);
+  margin-top: 10px;
+}
+.user_profile_header_menu p span {
+  width: 0vw;
+  transition: 0.25s;
+  height: 2px;
+  background-color: var(--color);
+  margin-top: 10px;
+}
+.user_profile_header_content_action
+{
+  display: flex;
+  justify-content:center;
+  width: 100%;
+}
+.user_profile_header_content_action a:last-child
+{
+  margin-left: 10px;
+}
+.user_profile_header_content_search
+{
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: -10px;
+  transition: 0.3s;
+  height: 35px;
+}
+.user_profile_header_content_search.active
+{
+  height: 0;
+  overflow: hidden;
+  margin-top: -20px;
+  opacity: 0;
+}
+.user_profile_header_content_search input
+{
+  width: calc(100% - 20px);
+  color: var(--color);
+  border-radius: 15px;
+  height: 33px;
+  border: 1px var(--backgroundsecond) solid;
+  background: transparent;
+  padding: 0 10px;
+}
+.user_profile_header_content_search input:focus
+{
+  outline: none;
+  border: 1px var(--maincolor) solid;
+}
+.user_profile_content
+{
+  max-height: 35.5vh;
+  overflow-y: scroll;
+  width: 100%;
+  border-bottom: 1px var(--backgroundsecond) solid;
+}
+.user_profile_content_item_song
+{
+  display: flex;
+  width: calc(100% - 30px);
+  padding: 10px 15px;
+  border-top: 1px var(--backgroundsecond) solid;
+  color: var(--color);
+  align-items: center;
+  transition: 0.3s;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.user_profile_content_item_song.active
+{
+  transform: scaleY(0);
+  opacity: 0;
+  transition: 0.75s;
+}
+.user_profile_content_item_song:active
+{
+  opacity: 0.5;
+}
+.user_profile_content_item_song i 
+{
+  color: var(--maincolor);
+  font-size: 20px;
+}
+.user_profile_content_item_song span
+{
+  opacity: 0.5;
+  font-size: 14px;
+}
 canvas {
   display: block;
   vertical-align: bottom;

@@ -81,6 +81,7 @@ activeLibraryBtn.addEventListener('click', () => {
   albumScreen.classList.remove('active')
   bioCard.classList.remove("active")
   playlistItemScreen.classList.remove("active")
+  libraryLastPosts();
 })
 
 const activeSettingsBtn = document.getElementsByClassName('settings-action-btn')[0]
@@ -358,7 +359,8 @@ function loadMusic(indexNumb){
     musicTopOptionsFavorite.classList.remove('active')
   }
 
-
+  const nameProfile = document.querySelector('.library-profile-data p');
+  nameProfile.innerText = localStorage.userData;
 
     if (wrapper.classList.contains('save-data')) {
       musicImg.src = `assets/maingif.gif`;
@@ -824,12 +826,9 @@ function setvolume(){
   localStorage.setItem("user_Volume", mainAudio.volume);
   console.log(currentVolume);
 }
-
   function nameQuestion() {
     inputName = document.getElementById('username');
     namePlace = document.getElementById('nameUser');
-    nameProfile = document.querySelector('.library-profile-data p')
-    namePlace.innerHTML = inputName.value;
     nameProfile.innerText = inputName.value;
     localStorage.setItem("userData", inputName.value);
   }
@@ -2155,7 +2154,7 @@ function newsDataLoad(){
           <h1>${allPosts[i].post_title}</h1>
           <p class="news_artists_content_item_data_main">${allPosts[i].post_content}</p>
           <div class="news_artists_content_item_action">
-            <a href="${allPosts[i].post_link}">Odtwórz</a>
+            <a onclick="ubdatedHrefLinkTo()" href="${allPosts[i].post_link}">Odtwórz</a>
             <p><span>${allPosts[i].autor_name}</span><span>${allPosts[i].add_date}</span></p>
           </div>
         </div>
@@ -2199,3 +2198,99 @@ function newsPopularDataLoad(){
       resultsData.insertAdjacentHTML("beforeend", resultData);
   }
 }
+
+function libraryLastPosts(){
+
+  const resultsData = document.querySelector(".last-reviews");
+  var favoritIndex = allPosts;
+  resultsData.innerHTML = "";
+  for (let i = 0; i < 3; i++) {
+    let resultData =
+      `<div class="review-item">
+          <img src="${favoritIndex[i].artist_img}">
+          <a class="review-item-title">${favoritIndex[i].autor_name}</a>
+          <p class="review-item-info">${favoritIndex[i].post_content}</p>
+      </div>`;
+      resultsData.insertAdjacentHTML("beforeend", resultData);
+  }
+}
+
+function ubdatedHrefLinkTo(){
+  var str = window.location.hash;
+  const char = str[0];
+  const replaced = str.replace(char, '');
+  var indexNumb = replaced;
+  loadMusic(indexNumb);
+}
+
+const searchProfileBy = document.querySelector("#user_profile_search_bar");
+const userProfile = document.querySelector(".user_profile_screen");
+searchProfileBy.addEventListener('input', filterByArtist);
+
+function filterByArtist(){
+  let input = searchProfileBy.value
+  input=input.toLowerCase();
+  let x = document.getElementsByClassName('user_profile_content_item_song');
+  let xData = document.getElementsByClassName('user_profile_content_item_song_data');
+    
+  for (i = 0; i < x.length; i++) { 
+      if (!xData[i].innerHTML.toLowerCase().includes(input)) {
+          x[i].style.display="none";
+          x[i].classList.remove("searched")
+      }
+      else {
+          x[i].style.display="flex";    
+          x[i].classList.add("searched")             
+      }
+  }
+}
+
+function loadUserProfile(){
+  userProfile.classList.toggle("active");
+  favoriteLoadItems();
+  document.querySelector(".user_profile_header_content_name").innerText = localStorage.userData;
+}
+
+function favoriteLoadItems() {
+
+  const resultsFAV = document.querySelector(".user_profile_content");
+  var favoritIt = allMusic.filter(x => x.status === "favorite");
+  resultsFAV.innerHTML = "";
+  for (let i = 0; i < favoritIt.length; i++) {
+    let resultFAV =
+      `<div class="user_profile_content_item_song" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
+          <div class="user_profile_content_item_song_data">
+            <p>${favoritIt[i].name}</p>
+            <span>${favoritIt[i].artist}</span>
+          </div>
+         <i onclick="clickedSingleDelete(this)" class="fa-heart fa-solid"></i>
+       </div>`;
+    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+  }
+  favoriteItemsNumber.innerText = $('.library-favorite-item').length;
+}
+
+const userProfileActionSearch = document.querySelector(".user_profile_action_search");
+userProfileActionSearch.addEventListener('click', () => {
+  searchProfileBy.parentElement.classList.toggle("active");
+})
+
+const userProfileFilterFavorite = document.querySelector(".user_profile_header_filter_by_favorite");
+const userProfileFilterPlaylist = document.querySelector(".user_profile_header_filter_by_playlist");
+const userProfileFilterFollowed = document.querySelector(".user_profile_header_filter_by_followed");
+
+userProfileFilterFavorite.addEventListener('click', () => {
+  userProfileFilterFavorite.classList.add("active");
+  userProfileFilterPlaylist.classList.remove("active");
+  userProfileFilterFollowed.classList.remove("active");
+})
+userProfileFilterPlaylist.addEventListener('click', () => {
+  userProfileFilterFavorite.classList.remove("active");
+  userProfileFilterPlaylist.classList.add("active");
+  userProfileFilterFollowed.classList.remove("active");
+})
+userProfileFilterFollowed.addEventListener('click', () => {
+  userProfileFilterFavorite.classList.remove("active");
+  userProfileFilterPlaylist.classList.remove("active");
+  userProfileFilterFollowed.classList.add("active");
+})

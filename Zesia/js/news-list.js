@@ -19,7 +19,7 @@ var allPosts = [
       post_content: "Lorem Ipsum ansteda momentum specifucus optimus primeusLorem Ipsum ansteda momentum specifucus optimus primeusLorem Ipsum ansteda momentum specifucus optimus primeusLorem Ipsum ansteda momentum specifucus optimus primeus",
       post_link: "#24",
       category: "none",
-      popular_status: "none",
+      popular_status: "popular",
   },
   
   {
