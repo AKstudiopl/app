@@ -4780,6 +4780,58 @@ body.green .queue-item ul li img
   justify-content: space-between;
   overflow: hidden;
 }
+.user_profile_content_item_song.artist
+{
+  justify-content: flex-start;
+  padding: 0px 15px;
+  margin-left: -15px;
+  padding-right: 30px;
+  height: 73px;
+  position: relative;
+  overflow: hidden;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+.user_profile_content_item_song.artist h1
+{
+  position: absolute;
+  z-index: -2;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 100;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+  color: var(--backgroundsecond);
+  font-size: 40px;
+  width: 100vw;
+  margin-left: 25%;
+  -webkit-mask-image: -webkit-linear-gradient(320deg,transparent 0%, black 100%);
+}
+.user_profile_content_item_song.artist .user_profile_content_item_song_data 
+{
+  padding-left: 15px;
+  font-size: 25px;
+  color: var(--color);
+}
+.user_profile_content_item_song.artist i
+{
+  margin-left: auto;
+  margin-right: -15px;
+}
+.user_profile_content_item_song.artist img
+{
+  height: 100%;
+  aspect-ratio: 3/1;
+  object-fit: cover;
+  z-index: -1;
+  position: absolute;
+  -webkit-mask-image: -webkit-linear-gradient(320deg,black 0%, transparent 75%);
+}
 .user_profile_content_item_song.active
 {
   transform: scaleY(0);
@@ -4922,7 +4974,6 @@ textarea
   justify-content: center;
   visibility: hidden;
   opacity: 0;
-  transition: 0.1s;
 }
 .fast-loader.active
 {

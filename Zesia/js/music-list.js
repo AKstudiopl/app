@@ -3,11 +3,14 @@ var allMusic = [
   {
       name: "Havana",
       artist: "Camila Cabello",
+      artist_status: "none",
+
       src: "CamilaCabelloHavana",
       img: "CamilaCabelloHavana",
       style: "Energic",
       status: "nostatus",
       tag: "Popular",
+
       avatar: "41aeb62f0-c2321-f45bsf",
       artist_img: "https://i.scdn.co/image/ab6761610000e5ebec05963eab63676a539fef13",
       album: "Camila",
@@ -41,6 +44,8 @@ var allMusic = [
   {
       name: "Dj Is Your Second Name",
       artist: "C-Bool",
+      artist_status: "none",
+      
       src: "C-BooLDJ",
       img: "C-BooLDJ",
       style: "Energic",
@@ -78,6 +83,8 @@ var allMusic = [
   {
       name: "Never Go Away",
       artist: "C-Bool",
+      artist_status: "none",
+
       src: "C-BooL-NeverGoAway",
       img: "C-BooL-NeverGoAway",
       style: "Energic",
@@ -115,6 +122,8 @@ var allMusic = [
   {
       name: "Champions",
       artist: "Kevin Rudolf",
+      artist_status: "none",
+
       src: "KevinRudolf-Champions",
       img: "KevinRudolf-Champions",
       style: "Workout",
@@ -152,6 +161,8 @@ var allMusic = [
   {
       name: "Ride It",
       artist: "DJ Regard",
+      artist_status: "none",
+
       src: "DJRegard-Rideit",
       img: "DJRegard-Rideit",
       style: "Energic",
@@ -189,6 +200,8 @@ var allMusic = [
   {
       name: "Choker",
       artist: "Twenty one pilots",
+      artist_status: "none",
+
       src: "twentyonepilots-Choker",
       img: "scaled-and-icy-b-iext104194001",
       style: "Chill",
@@ -226,6 +239,8 @@ var allMusic = [
   {
       name: "The Outside",
       artist: "Twenty one pilots",
+      artist_status: "none",
+
       src: "TwentyOnePilots-TheOutside",
       img: "scaled-and-icy-b-iext104194001",
       style: "Chill",
@@ -264,6 +279,8 @@ var allMusic = [
   {
       name: "Shy Away",
       artist: "Twenty one pilots",
+      artist_status: "none",
+
       src: "TwentyOnePilots-ShyAway",
       img: "scaled-and-icy-b-iext104194001",
       style: "Chill",
@@ -301,6 +318,8 @@ var allMusic = [
   {
       name: "Saturday",
       artist: "Twenty one pilots",
+      artist_status: "none",
+
       src: "TwentyOnePilots-Saturday",
       img: "scaled-and-icy-b-iext104194001",
       style: "Chill",
@@ -338,6 +357,8 @@ var allMusic = [
   {
       name: "Redecorate",
       artist: "Twenty one pilots",
+      artist_status: "none",
+
       src: "TwentyOnePilots-Redecorate",
       img: "scaled-and-icy-b-iext104194001",
       style: "Chill",
@@ -375,6 +396,8 @@ var allMusic = [
   {
       name: "Never Take It",
       artist: "Twenty one pilots",
+      artist_status: "none",
+
       src: "TwentyOnePilots-NeverTakeIt",
       img: "scaled-and-icy-b-iext104194001",
       style: "Chill",
@@ -412,6 +435,8 @@ var allMusic = [
   {
       name: "Mulberry Street",
       artist: "Twenty one pilots",
+      artist_status: "none",
+
       src: "TwentyOnePilots-MulberryStreet",
       img: "scaled-and-icy-b-iext104194001",
       style: "Chill",
@@ -449,6 +474,8 @@ var allMusic = [
   {
       name: "Good Day",
       artist: "Twenty one pilots",
+      artist_status: "none",
+
       src: "TwentyOnePilots-GoodDay",
       img: "scaled-and-icy-b-iext104194001",
       style: "Chill",
@@ -486,6 +513,8 @@ var allMusic = [
   {
       name: "Kłótnia",
       artist: "Evtis",
+      artist_status: "none",
+
       src: "Evtis-Kłótnia",
       img: "C-BooL-NeverGoAway",
       style: "Hip-Hop",
@@ -523,6 +552,8 @@ var allMusic = [
   {
       name: "Idziemy Po Swoje",
       artist: "Szusty",
+      artist_status: "none",
+
       src: "donGURALesko-IdziemyPoSwojeSzUstyBlend",
       img: "guralsko",
       style: "Workout",
@@ -560,6 +591,8 @@ var allMusic = [
   {
       name: "Legenda",
       artist: "Szusty",
+      artist_status: "none",
+
       src: "donGURALesko-LegendaSzUstyBlend",
       img: "guralsko",
       style: "Workout",
@@ -598,6 +631,8 @@ var allMusic = [
   {
     name: "Rockstar",
     artist: "Post Malone",
+    artist_status: "none",
+
     src: "PostMalone-Rockstar",
     img: "rockstar-w-iext111232885",
     style: "Pop",
@@ -636,6 +671,8 @@ var allMusic = [
   {
     name: "Bez Znieczulenia",
     artist: "Happysad",
+    artist_status: "none",
+
     src: "Happysad-Bezznieczulenia",
     img: "ab67616d00001e021f86dffe512418a230887e69",
     style: "Rock",
@@ -673,6 +710,8 @@ var allMusic = [
   {
     name: "Pętla",
     artist: "Happysad",
+    artist_status: "none",
+
     src: "Happysad-Pętla",
     img: "ab67616d00001e021f86dffe512418a230887e69",
     style: "Rock",
@@ -711,6 +750,8 @@ var allMusic = [
   {
     name: "Tired Bones",
     artist: "L.B.ONE",
+    artist_status: "none",
+
     src: "LBONE-TiredBones",
     img: "tired-bones-w-iext52557958",
     style: "Energic",
@@ -748,6 +789,8 @@ var allMusic = [
   {
     name: "Złap Za Broń",
     artist: "Trzeci Wymiar",
+    artist_status: "none",
+
     src: "TrzeciWymiar-Złapzabroń",
     img: "6341ef2bd3abc2c21c6ee6466cb67d15.510x510x1",
     style: "Hip-Hop",
@@ -785,6 +828,8 @@ var allMusic = [
   {
     name: "I'm Not Rich",
     artist: "The King's Son",
+    artist_status: "none",
+
     src: "TheKingsSon-ImNotRich",
     img: "ab67616d0000b27369cdca7b90ca8060e3525196",
     style: "Chill",
@@ -822,6 +867,8 @@ var allMusic = [
   {
     name: "Invincible",
     artist: "MGK",
+    artist_status: "none",
+
     src: "MGK-Invincible",
     img: "ab67616d0000b273a57d3a2736f815d3cf358e37",
     style: "Workout",
@@ -859,6 +906,8 @@ var allMusic = [
   {
     name: "In The Name Of Love",
     artist: "Bebe Rexha",
+    artist_status: "none",
+
     src: "BebeRexha-InTheNameOfLove",
     img: "ab67616d0000b2738c77bcf5f5a227d270d23370",
     style: "Energic",
@@ -866,6 +915,7 @@ var allMusic = [
     tag: "Popular",
     avatar: "41aeb62f0=c2321-f58bsf",
     artist_img: "https://i.scdn.co/image/ab6761610000e5ebabfac786f093c4da55c99d4e",
+    artist_gallery_1: "https://pbs.twimg.com/media/FZgNdvgVEAA7MLZ?format=jpg&name=large",
     album: "In The Name Of Love",
     album_cover: "https://i.scdn.co/image/ab67616d0000b2738c77bcf5f5a227d270d23370",
     album_premiere: "2016",
@@ -897,13 +947,15 @@ var allMusic = [
   {
     name: "One Last Time",
     artist: "Ariana Grande",
+    artist_status: "none",
+    
     src: "ArianaGrande-OneLastTime",
     img: "e63468347c14c9f580857daae877a005",
     style: "Energic",
     status: "nostatus",
     tag: "Popular",
     avatar: "ab67616d30590b273a25d3a2736f815d3cf358e37",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5ebcdce7620dc940db079bf4952",
+    artist_img: "https://i.scdn.co/image/d6a339d026361ec7f4daeac7126ce0f90662077a",
     album: "Me Everything",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02deec12a28d1e336c5052e9aa",
     album_premiere: "2014",
@@ -929,6 +981,86 @@ var allMusic = [
       instagram: "https://www.instagram.com/arianagrande/",
       twitter: "",
       facebook: "https://www.facebook.com/arianagrande",
+    },
+    user_playlist_1: "",
+  },
+  {
+    name: "Friends",
+    artist: "Anne Marie",
+    artist_status: "none",
+    
+    src: "Anne-Marie-Friends",
+    img: "ab67616d00001e02569f6annemarie4493ca55cd96fdee412",
+    style: "Energic",
+    status: "nostatus",
+    tag: "Popular",
+    avatar: "3eff83c2098be9b7ebb770bca30ef66c21515",
+    artist_img: "https://i.scdn.co/image/ab67616d00001e02a4dfacd3df2243b194f9e0a3",
+    album: "F.R.I.E.N.D.S",
+    album_cover: "https://i.scdn.co/image/ab67616d0000b273569f64493ca55cd96fdee412",
+    album_premiere: "2018",
+    id: "25",
+    lyrics:{
+      lyrics_verse_1: "",
+      lyrics_verse_2: "",
+      lyrics_verse_3: "",
+      lyrics_verse_4: "",
+      lyrics_verse_5: "",
+      lyrics_verse_6: "",
+      lyrics_verse_7: "",
+      lyrics_verse_8: "",
+      lyrics_verse_9: "",
+      lyrics_verse_10: "",
+      lyrics_verse_11: "",
+      lyrics_verse_12: "",
+      lyrics_verse_13: "",
+      lyrics_verse_14: ""
+    },
+    bio: "Anne-Marie’s rise to stardom has been nothing short of meteoric. A former 3 x world karate champion and West End child star turned multi-platinum-selling artist, Anne-Marie has gone onto become one of the world’s most-loved and successful pop stars of our times",
+    social:{
+      instagram: "",
+      twitter: "",
+      facebook: "",
+    },
+    user_playlist_1: "",
+  },
+  {
+    name: "Lovely",
+    artist: "Billie Eilish",
+    artist_status: "none",
+    
+    src: "BillieEilish-Lovely",
+    img: "ab67616d00001e028abille3f0a3ca7929dea23cd274cb",
+    style: "Pop",
+    status: "nostatus",
+    tag: "Popular",
+    avatar: "ab6761elish6d0000b27bille3a57d3a2736f815d3cf358e37",
+    artist_img: "https://i.scdn.co/image/ab6761670000ecd474ab55d1d4b65d7f305d048b",
+    album: "lovely",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e028a3f0a3ca7929dea23cd274c",
+    album_premiere: "2018",
+    id: "26",
+    lyrics:{
+      lyrics_verse_1: "",
+      lyrics_verse_2: "",
+      lyrics_verse_3: "",
+      lyrics_verse_4: "",
+      lyrics_verse_5: "",
+      lyrics_verse_6: "",
+      lyrics_verse_7: "",
+      lyrics_verse_8: "",
+      lyrics_verse_9: "",
+      lyrics_verse_10: "",
+      lyrics_verse_11: "",
+      lyrics_verse_12: "",
+      lyrics_verse_13: "",
+      lyrics_verse_14: ""
+    },
+    bio: "With the release of her highly anticipated sophomore album ‘Happier Than Ever,’ the 19-year-old Los Angeles native remains one of the biggest stars to emerge in the 21st century. Since the release of her debut single “ocean eyes” in 2015, Eilish continues to shatter the ceiling of music with her genre-defying sound. Fast forward from her humble breakout, her album WHEN WE ALL FALL ASLEEP, WHERE DO WE GO? debuted at No. 1 on the Billboard 200 in the U.S as well as 17 additional countries around the world upon release in 2019, and was the most streamed album of that year. WHEN WE ALL FALL ASLEEP, WHERE DO WE GO? was written, produced and recorded entirely by Billie Eilish and brother FINNEAS in their childhood home of Los Angeles. Billie Eilish went on to make history as the youngest artist to receive nominations and win in all the major categories at the 62nd GRAMMY® Awards, receiving an award for Best New Artist, Album of the Year, Record of the Year, Song of the Year, and Best Pop Vocal Album. Billie Eilish is also the youngest artist to write and record an official James Bond theme song, ‘No Time To Die.’ Most recently, Billie Eilish was nominated for four additional awards at the 63rd Annual GRAMMY Awards in 2021, and took home both Record of the Year for 'everything i wanted,' and Best Song Written For Visual Media for 'No Time To Die.’ Billie Eilish’s latest album ‘Happier Than Ever’ was written by Billie and her brother FINNEAS, who also produced the album.",
+    social:{
+      instagram: "https://www.instagram.com/billieeilish/",
+      twitter: "https://twitter.com/billieeilish",
+      facebook: "https://www.facebook.com/billieeilish",
     },
     user_playlist_1: "",
   },

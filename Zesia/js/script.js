@@ -881,6 +881,7 @@ function setvolume(){
     artistMenuPopular.classList.add('active');
     artistMenuAlbums.classList.remove('active');
     artistMenuAbout.classList.remove('active');
+    checkFollowStatus();
   }
 
   const popularPop = document.querySelector(".popular-music");
@@ -966,6 +967,9 @@ function popularLoad(){
          <div class="card">
           <img src="${favoritIt[i].artist_img}">
          </div>
+         <div class="card" crossorigin="anonymous">
+         <img src="${favoritIt[i].artist_gallery_1}||${favoritIt[i].avatar}">
+         </div>
          <div class="card">
          <img src="${favoritIt[i].album_cover}">
          </div>`;
@@ -1000,7 +1004,7 @@ function popularLoad(){
     }
 
     const parent = document.querySelector(".container .gallery");
-    [...parent.children].slice(+3).forEach(parent.removeChild.bind(parent));
+    [...parent.children].slice(+5).forEach(parent.removeChild.bind(parent));
 
   }
 
@@ -1031,6 +1035,17 @@ function popularLoad(){
   })
 
   function artistScreenDataLoad(indexNumb){
+    var str = window.location.hash;
+    const char = str[0];
+    const replaced = str.replace(char, '');
+
+    var indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
+    musicIndex = indexNumb;
+
+    if(replaced){
+      var indexNumb = replaced;
+    }
+
     artistItemTitle.innerText = allMusic[indexNumb - 1].artist;
     artistItemImg.src = `artists/${allMusic[indexNumb - 1].avatar}.jpg`;
     artistCardDataName.innerText = allMusic[indexNumb - 1].artist;
@@ -1809,7 +1824,7 @@ function searchForArtist(){
   resultsData.innerHTML = "";
   for (let i = 0; i < favoritIt.length; i++) {
     let resultData =
-      `<div class="search-artist-item" data-id='${favoritIt[i].id}' data-artist='${favoritIt[i].artist}' onclick="fastLoadingPop();artistScreenSearchBar(this);">
+      `<div class="search-artist-item" data-id='${favoritIt[i].id}' data-artist='${favoritIt[i].artist}' onclick="artistScreenSearchBar(this);">
         <div class="search-artist-item-img">
           <img src="${favoritIt[i].artist_img}">
         </div>
@@ -1851,18 +1866,20 @@ function artistScreenSearchBar(element){
   activeHomeScreen.classList.add('active')
   libraryScreen.classList.remove('active');
   searchScreen.classList.remove('active');
+  newsScreen.classList.remove("active");
+  fastLoadingPop();
 
+  currentIndexNumb = indexNumb;
   indexNumb = dataAttribute;
+
   artistItemTitle.innerText = allMusic[indexNumb].artist;
   artistItemImg.src = `artists/${allMusic[indexNumb].avatar}.jpg`;
   artistCardDataName.innerText = allMusic[indexNumb].artist;
   artistCardBackgroundImg.style.backgroundImage = `url(${allMusic[indexNumb].artist_img})`;
   var randomnumber = Math.floor(Math.random() * 150000) + 1;
   artistItemFollowers.innerText = randomnumber;
-
   
   let artistNameData = artistItemTitle.innerText;
-
   const resultsFAV = document.querySelector(".music-artist-content-container");
   var favoritIt = allMusic.filter(x => x.artist === artistNameData);
   resultsFAV.innerHTML = "";
@@ -1877,6 +1894,10 @@ function artistScreenSearchBar(element){
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }
+
+  indexNumb = currentIndexNumb;
+
+  checkFollowStatus();
 
   $(".music-artist-content-container").html($(".music-artist-content-container .music-artist-content-item").sort(function(){
     return Math.random()-0.5;
@@ -2155,7 +2176,7 @@ function newsDataLoad(){
           <p class="news_artists_content_item_data_main">${allPosts[i].post_content}</p>
           <div class="news_artists_content_item_action">
             <a onclick="ubdatedHrefLinkTo()" href="${allPosts[i].post_link}">Odtwórz</a>
-            <p><span>${allPosts[i].autor_name}</span><span>${allPosts[i].add_date}</span></p>
+            <p><span data-id='${allPosts[i].id}' onclick="artistScreenSearchBar(this)">${allPosts[i].autor_name}</span><span>${allPosts[i].add_date}</span></p>
           </div>
         </div>
     </div>`;
@@ -2174,7 +2195,7 @@ function newsFollowedDataLoad(){
         <div class="news_artists_content_item_data">
           <h1>${favoritIndex[i].post_title}</h1>
           <p class="news_artists_content_item_data_main">${favoritIndex[i].post_content}</p>
-          <p><span>${favoritIndex[i].autor_name}</span><span>${favoritIndex[i].add_date}</span></p>
+          <p><span data-id='${favoritIndex[i].id}' onclick="artistScreenSearchBar(this)">${favoritIndex[i].autor_name}</span><span>${favoritIndex[i].add_date}</span></p>
         </div>
     </div>`;
       resultsData.insertAdjacentHTML("beforeend", resultData);
@@ -2192,7 +2213,7 @@ function newsPopularDataLoad(){
         <div class="news_artists_content_item_data">
           <h1>${favoritIndex[i].post_title}</h1>
           <p class="news_artists_content_item_data_main">${favoritIndex[i].post_content}</p>
-          <p><span>${favoritIndex[i].autor_name}</span><span>${favoritIndex[i].add_date}</span></p>
+          <p><span data-id='${favoritIndex[i].id}' onclick="artistScreenSearchBar(this)">${favoritIndex[i].autor_name}</span><span>${favoritIndex[i].add_date}</span></p>
         </div>
     </div>`;
       resultsData.insertAdjacentHTML("beforeend", resultData);
@@ -2225,9 +2246,9 @@ function ubdatedHrefLinkTo(){
 
 const searchProfileBy = document.querySelector("#user_profile_search_bar");
 const userProfile = document.querySelector(".user_profile_screen");
-searchProfileBy.addEventListener('input', filterByArtist);
+searchProfileBy.addEventListener('input', filterInProfile);
 
-function filterByArtist(){
+function filterInProfile(){
   let input = searchProfileBy.value
   input=input.toLowerCase();
   let x = document.getElementsByClassName('user_profile_content_item_song');
@@ -2247,6 +2268,9 @@ function filterByArtist(){
 
 function loadUserProfile(){
   userProfile.classList.toggle("active");
+  userProfileFilterFavorite.classList.add("active");
+  userProfileFilterPlaylist.classList.remove("active");
+  userProfileFilterFollowed.classList.remove("active");
   favoriteLoadItems();
   document.querySelector(".user_profile_header_content_name").innerText = localStorage.userData;
 }
@@ -2283,6 +2307,7 @@ userProfileFilterFavorite.addEventListener('click', () => {
   userProfileFilterFavorite.classList.add("active");
   userProfileFilterPlaylist.classList.remove("active");
   userProfileFilterFollowed.classList.remove("active");
+  favoriteLoadItems();
 })
 userProfileFilterPlaylist.addEventListener('click', () => {
   userProfileFilterFavorite.classList.remove("active");
@@ -2293,4 +2318,67 @@ userProfileFilterFollowed.addEventListener('click', () => {
   userProfileFilterFavorite.classList.remove("active");
   userProfileFilterPlaylist.classList.remove("active");
   userProfileFilterFollowed.classList.add("active");
+  followedArtistsContent();
 })
+
+function followArtist(){
+  var followName = artistItemTitle.innerText;
+  var followFilter = allMusic.filter(x => x.artist === followName);
+
+  for (let i = 0; i < followFilter.length; i++) {
+
+    if (followFilter[i].artist_status === "followed") {
+      followFilter[i].artist_status = "none";
+    }else if (followFilter[i].artist_status === "none") {
+      followFilter[i].artist_status = "followed";
+    }
+
+  }
+}
+
+function checkFollowStatus(){
+  var followName = artistItemTitle.innerText;
+  var followFilter = allMusic.filter(x => x.artist === followName);
+
+  for (let i = 0; i < followFilter.length; i++) {
+    if (followFilter[i].artist_status === "followed") {
+      artistItemFollow.innerHTML = '<i class="fa-solid fa-heart"></i> Obserwujesz';
+      artistItemFollowers.innerText = +artistItemFollowers.innerText +1;
+      artistItemFollow.classList.add("active");
+    }else if (followFilter[i].artist_status === "none") {
+      artistItemFollow.innerHTML = '<i class="fa-regular fa-heart"></i> Obserwuj';
+      artistItemFollow.classList.remove("active");
+      artistItemFollowers.innerText = +artistItemFollowers.innerText -1;
+    }}
+
+}
+
+function followedArtistsContent() {
+
+  const resultsFAV = document.querySelector(".user_profile_content");
+  var favoritIt = allMusic.filter(x => x.artist_status === "followed");
+  resultsFAV.innerHTML = "";
+  for (let i = 0; i < favoritIt.length; i++) {
+    let resultFAV =
+      `<div class="user_profile_content_item_song artist" artist-data='${favoritIt[i].artist}'>
+          <img src="${favoritIt[i].artist_img}">
+          <h1>${favoritIt[i].artist}</h1>
+          <div class="user_profile_content_item_song_data">
+            <p>${favoritIt[i].artist}</p>
+          </div>
+         <i onclick="clickedSingleDelete(this)" class="fa-heart fa-solid"></i>
+       </div>`;
+    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+  }
+  favoriteItemsNumber.innerText = $('.library-favorite-item').length;
+
+  var productIds={};
+  $('.user_profile_content_item_song').each(function(){
+      var prodId = $(this).attr('artist-data');
+      if(productIds[prodId]){
+        $(this).remove();
+      }else{
+        productIds[prodId] = true;
+      }
+  });
+}
