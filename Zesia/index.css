@@ -4852,6 +4852,39 @@ body.green .queue-item ul li img
   opacity: 0.5;
   font-size: 14px;
 }
+.user_profile_content_friends
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color);
+  padding: 15px 0;
+}
+.user_profile_content_friends p
+{
+  font-size: 20px;
+}
+.user_profile_content_friends span
+{
+  opacity: 0.5;
+  font-size: 14px;
+}
+.user_profile_content_friends a
+{
+  border-radius: 15px;
+  margin-top: 15px;
+  transition: 0.3s;
+  padding: 10px 30px;
+  color: var(--background);
+  background: var(--maincolor);
+}
+.user_profile_content_friends a:active
+{
+  opacity: 0.5;
+  transform: scale(0.9);
+}
+
 canvas {
   display: block;
   vertical-align: bottom;

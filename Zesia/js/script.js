@@ -54,6 +54,7 @@ activeHomeBtn.addEventListener('click', () => {
   activeHomeScreen.classList.add('active')
   playlistItemScreen.classList.remove("active")
   playlistCreateScreen.classList.remove("active")
+  userProfile.classList.remove("active")
 })
 
 const activeSearchBtn = document.getElementsByClassName('navbar-bottom-btn-search')[0]
@@ -68,6 +69,7 @@ activeSearchBtn.addEventListener('click', () => {
   bioCard.classList.remove("active")
   playlistItemScreen.classList.remove("active")
   playlistCreateScreen.classList.remove("active")
+  userProfile.classList.remove("active")
 })
 
 const activeLibraryBtn = document.getElementsByClassName('navbar-bottom-btn-library')[0]
@@ -81,6 +83,7 @@ activeLibraryBtn.addEventListener('click', () => {
   albumScreen.classList.remove('active')
   bioCard.classList.remove("active")
   playlistItemScreen.classList.remove("active")
+  userProfile.classList.remove("active")
   libraryLastPosts();
 })
 
@@ -882,6 +885,7 @@ function setvolume(){
     artistMenuAlbums.classList.remove('active');
     artistMenuAbout.classList.remove('active');
     checkFollowStatus();
+    bioCard.classList.remove("active");
   }
 
   const popularPop = document.querySelector(".popular-music");
@@ -948,6 +952,12 @@ function popularLoad(){
     loadBioData();
   }
 
+  function removeThis(element){
+    if(element.getAttribute('src') == "undefined"){
+      element.parentElement.remove();
+    }
+  }
+
   function loadBioData(){
     let artistData = artistItemTitle.innerText;
     let artistDataName = document.querySelector(".music-artist-bio-data-name");
@@ -961,19 +971,38 @@ function popularLoad(){
     resultsFAV.innerHTML = "";
     for (let i = 0; i < favoritIt.length; i++) {
       let resultFAV =
-        `<div class="card">
-          <img src="artists/${favoritIt[i].avatar}.jpg">
+        `<div class="card" data-src='${favoritIt[i].avatar}'>
+          <img src="artists/${favoritIt[i].avatar}.jpg" onerror="removeThis(this)">
          </div>
-         <div class="card">
-          <img src="${favoritIt[i].artist_img}">
+         <div class="card"  data-src='${favoritIt[i].artist_img}'>
+          <img src="${favoritIt[i].artist_img}" onerror="removeThis(this)">
          </div>
-         <div class="card" crossorigin="anonymous">
-         <img src="${favoritIt[i].artist_gallery_1}||${favoritIt[i].avatar}">
+         <div class="card"  data-src='${favoritIt[i].gallery_img_1}'>
+         <img src="${favoritIt[i].gallery_img_1}" onerror="removeThis(this)">
          </div>
-         <div class="card">
-         <img src="${favoritIt[i].album_cover}">
+         <div class="card"  data-src='${favoritIt[i].gallery_img_2}'>
+         <img src="${favoritIt[i].gallery_img_2}" onerror="removeThis(this)">
+         </div>
+         <div class="card"  data-src='${favoritIt[i].gallery_img_3}'>
+         <img src="${favoritIt[i].gallery_img_3}" onerror="removeThis(this)">
+         </div>
+         <div class="card"  data-src='${favoritIt[i].gallery_img_4}'>
+         <img src="${favoritIt[i].gallery_img_4}" onerror="removeThis(this)">
+         </div>
+         <div class="card"  data-src='${favoritIt[i].gallery_img_5}'>
+         <img src="${favoritIt[i].gallery_img_5}" onerror="removeThis(this)">
          </div>`;
       resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+
+      var productIds={};
+      $('.card').each(function(){
+          var prodId = $(this).attr('data-src');
+          if(productIds[prodId]){
+             $(this).remove();
+          }else{
+             productIds[prodId] = true;
+          }
+      });
 
       if(favoritIt[i].social.instagram === "" ){
         artistDataBioInstagram.style.display = "none";
@@ -1002,9 +1031,6 @@ function popularLoad(){
         artistDataBio.innerText = favoritIt[i].bio;
       }
     }
-
-    const parent = document.querySelector(".container .gallery");
-    [...parent.children].slice(+5).forEach(parent.removeChild.bind(parent));
 
   }
 
@@ -1441,7 +1467,7 @@ function createItemPlaylist(){
   playlistItemTitle.innerText = playlistTitleData;
   playlistsContainer.prepend(element); 
   playlistTitleInputData.value = "";
-  if (playlistItemTitle.innerText.length < 3)
+  if (playlistItemTitle.innerText.length < 2)
   {
     playlistItemTitle.innerText = "Playlista";
   }
@@ -1867,6 +1893,7 @@ function artistScreenSearchBar(element){
   libraryScreen.classList.remove('active');
   searchScreen.classList.remove('active');
   newsScreen.classList.remove("active");
+  bioCard.classList.remove("active");
   fastLoadingPop();
 
   currentIndexNumb = indexNumb;
@@ -2313,6 +2340,7 @@ userProfileFilterPlaylist.addEventListener('click', () => {
   userProfileFilterFavorite.classList.remove("active");
   userProfileFilterPlaylist.classList.add("active");
   userProfileFilterFollowed.classList.remove("active");
+  createdPlaylistsContent();
 })
 userProfileFilterFollowed.addEventListener('click', () => {
   userProfileFilterFavorite.classList.remove("active");
@@ -2353,6 +2381,22 @@ function checkFollowStatus(){
 
 }
 
+function createdPlaylistsContent() {
+
+  const resultsFAV = document.querySelector(".user_profile_content");
+
+  var favoritIt = allMusic.filter(x => x.user_playlist_1 != "");
+  resultsFAV.innerHTML = "";
+  let resultFAV =
+      `<div class="user_profile_content_friends" id="user_friend_list_0">
+            <p>Twoja Lista Znajomych Jest Pusta</p>
+            <span>Połącz Swoje Social Media, Aby Uzyskać Propozycje</span>
+            <a>Ustawienia</a>
+       </div>`;
+  resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+
+}
+
 function followedArtistsContent() {
 
   const resultsFAV = document.querySelector(".user_profile_content");
@@ -2370,7 +2414,6 @@ function followedArtistsContent() {
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }
-  favoriteItemsNumber.innerText = $('.library-favorite-item').length;
 
   var productIds={};
   $('.user_profile_content_item_song').each(function(){
