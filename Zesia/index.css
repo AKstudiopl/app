@@ -1387,7 +1387,6 @@ input:checked + .slider:before {
   width: calc(100% - 60px);
   right: 0;
   height: 4px;
-  background: var(--backgroundsecond);
 }
 .music-controls-progresbar-done
 {
@@ -1415,6 +1414,24 @@ input:checked + .slider:before {
 .music-controls.news-hide
 {
   bottom: 0;
+}
+.music-controls-background
+{
+  position: absolute;
+  z-index: -1;
+  background-size: cover;
+  background-position: bottom;
+  height: 100%;
+  width: 100vw;
+  background-image: url('images/CamilaCabelloHavana.jpg');
+  filter: blur(10px);
+  opacity: 0.5;
+  -webkit-mask-image: -webkit-linear-gradient(160deg,transparent 25%, black 100%);
+  transition: 1s;
+}
+.music-controls-background.active
+{
+  opacity: 0;
 }
 .music-img
 {
@@ -1449,7 +1466,6 @@ input:checked + .slider:before {
   text-align: left;
   width: 71%;
   margin-left: 10px;
-  line-height: 1.5;
 }
 .music-icon i:active
 {
@@ -1459,11 +1475,13 @@ input:checked + .slider:before {
 .music-title h1
 {
   font-size: 20px;
+  color: var(--color);
   margin-bottom: -5px;
 }
 .music-title p
 {
-  color: #A7A7A775;
+  color: var(--color);
+  opacity: 0.5;
 }
 
 
@@ -1482,6 +1500,7 @@ input:checked + .slider:before {
   margin-left: 105vw;
   visibility: visible;
   transition: 0.4s;
+  overflow: hidden;
 }
 .main-music.active
 {
@@ -1972,12 +1991,12 @@ input:checked + .slider:before {
 {
   text-decoration: none;
   color: var(--color);
-  transition: 0.2s;
+  transition: 0.3s;
 }
-.main-music-fast-navigation a:hover
+.main-music-fast-navigation a:active
 {
   transform: scale(0.9);
-  opacity: 0.7
+  opacity: 0.5;
 }
 .fa-repeat.active
 {
@@ -2022,10 +2041,12 @@ input:checked + .slider:before {
 {
   text-decoration: none;
   color: var(--color);
+  transition: 0.3s;
 }
-.main-music-sec-nav a.disabledStyle
+.main-music-sec-nav a:active
 {
-  opacity: 0.25;
+  transform: scale(0.9);
+  opacity: 0.5;
 }
 .main-music-next-music
 {
@@ -2046,14 +2067,13 @@ input:checked + .slider:before {
   0%
   {
     opacity: 1;
-    transform: translateX(-450px);
   }
   20%
   {
     transform: translateX(0px);
     opacity: 1;
   }
-  80%
+  70%
   {
     transform: translateX(0px);
     opacity: 1;
@@ -2061,7 +2081,6 @@ input:checked + .slider:before {
   100%
   {
     opacity: 0;
-    transform: translateX(450px);
   }
 }
 .next-music-item
@@ -2084,15 +2103,15 @@ input:checked + .slider:before {
   position: fixed;
   z-index: 16;
   bottom: -100vh;
-  background: var(--backgroundsecond);
+  background: var(--background);
   width: 100%;
   border-radius: 2px 2px 0 0;
   visibility: hidden;
-  transition: 0.5s;
+  transition: 0.3s;
   overflow-y: scroll;
-  -webkit-mask-image: -webkit-linear-gradient(black 90%, transparent 100%);
-  mask-image: -o-linear-gradient(black 90%, transparent 100%);
-  mask-image: linear-gradient(black 90%, transparent 100%);
+  height: 100vh;
+  overflow: hidden;
+  -webkit-mask-image: -webkit-linear-gradient(#11111190 0%, black 16%);
 }
 .queue-container a
 {
@@ -2108,36 +2127,39 @@ input:checked + .slider:before {
   visibility: visible;
   bottom: 0;
 }
+.queue-head
+{
+  width: 100%;
+  height: 15vh;
+  background: var(--background);
+}
 .queue-container-top
 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  padding-right: 25px;
-  padding-left: 25px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background: var(--backgroundsecond);
+  padding-right: 15px;
+  padding-left: 15px;
+  height: 50px;
+  background: var(--background);
   z-index: 30;
   top: 0;
   position: sticky;
-  border-bottom: 1px var(--background) solid;
+  border-bottom: 1px var(--backgroundsecond) solid;
 }
 .queue-container-top i
 {
-  font-size: 30px;
+  font-size:20px;
 }
 .queue-container-top a
 {
   text-decoration: none;
   color: #fff;
 }
-.queue-container h1
+.queue-container-top h3
 {
-  font-size: 25px;
-  padding-left: 25px;
-  padding: 15px 25px;
+  font-size: 16px;
 }
 .queue-item ul::-webkit-scrollbar {
   width: 3px;
@@ -2155,7 +2177,8 @@ input:checked + .slider:before {
 
 .queue-item
 {
-  width: 100%;
+  width: calc(100% - 30px);
+  margin-left: 15px;
   display: flex;
   padding: 1px 0;
   transition: 0.3s;
@@ -2164,7 +2187,8 @@ input:checked + .slider:before {
 .queue-item ul
 {
   list-style-type: none;
-  height: 60vh;
+  height: calc(85vh - 52px);
+  width:100%;
 }
 .queue-item li
 {
@@ -2173,9 +2197,7 @@ input:checked + .slider:before {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 97.5vw;
-  padding-right: 5px;
-  padding-left: 5px;
+  width: 100%;
   transition: 0.3s;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -2187,22 +2209,14 @@ input:checked + .slider:before {
 .queue-item li.playing
 {
   color: var(--maincolor);
-  border-left: 3px var(--maincolor) solid;
 }
-.queue-item li:hover .audio-duration-setup
+.queue-item li:active
 {
-  padding-right: 5px;
+  opacity: 0.5;
 }
 .queue-item li.playing > .audio-duration-setup
 {
   padding-right: 10px;
-}
-.queue-item-main
-{
-  margin-left: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 body.blue .queue-item ul li img
 {
@@ -2529,8 +2543,7 @@ body.green .queue-item ul li img
   height: 100vh;
   width: 100vw;
   object-fit: cover;
-  opacity: 0.08;
-  filter: grayscale(1) blur(5px);
+
 }
 /* Music Menu */
 
@@ -3761,11 +3774,7 @@ body.green .queue-item ul li img
 }
 .music-artist-bio-gallery
 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: calc(100% - 30px);
-  padding: 15px;
+width: 100%;
 }
 .music-artist-bio-stats
 {
@@ -3833,7 +3842,6 @@ body.green .queue-item ul li img
   display: flex;
   overflow-x: scroll;
   width: 100%;
-  border-radius: 0.5rem;
   gap: 12px;
   scroll-snap-type: x mandatory;
 }
@@ -3841,7 +3849,6 @@ body.green .queue-item ul li img
 /* Element */
 .card {
   flex: 0 0 100%;
-  border-radius: 0.5rem;
   color: #ffffff;
   background: linear-gradient(170deg, #121212, #242424);
   scroll-snap-align: center;
@@ -3854,17 +3861,10 @@ body.green .queue-item ul li img
 .card img
 {
   width: 100%;
-  border-radius: 0.5rem;
+  aspect-ratio: 1/1;
   height: 100%;
   object-fit: cover;
   object-position: center;
-}
-
-@media (hover: hover) {
-  .card:hover {
-    opacity: 0.9;
-    transition: opacity 250ms linear;
-  }
 }
 
 .btn {
@@ -3882,7 +3882,8 @@ body.green .queue-item ul li img
 
   z-index: 1;
   font-size: 30px;
-  color: var(--background);
+  color: var(--color);
+
 }
 
 .btn.next {

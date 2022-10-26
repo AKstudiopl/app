@@ -199,6 +199,7 @@ function deleteParent(element){
   favoriteItemDel.remove();
 }
 
+
 const favoriteItemsNumber = document.querySelector('.library-favorite-items-number');
 const favoriteContainer = document.querySelector('.library-favorite-container');
 const wrapper = document.querySelector(".main-music"),
@@ -207,7 +208,6 @@ musicName = wrapper.querySelector(".main-information-title .name"),
 musicStatusData = wrapper.querySelector(".main-information"),
 musicArtist = wrapper.querySelector(".main-information-title .artist"),
 musicViral = wrapper.querySelector(".main-music-video"),
-musicViralMp4 = wrapper.querySelector(".main-music-video video"),
 mainAudio = wrapper.querySelector("#audio"),
 playstopButton = wrapper.querySelector("#play-stop-main-btn-action"),
 prevButton = wrapper.querySelector("#prev"),
@@ -243,6 +243,7 @@ queueArtist = wrapper.querySelector(".queue-container .artist");
 
 
 const smallView = document.querySelector(".music-controls"),
+smallBackgroundImg = smallView.querySelector(".music-controls-background"),
 smallImg = smallView.querySelector(".music-img img"),
 smallName = smallView.querySelector(".music-title .fasttitle"),
 smallArtist = smallView.querySelector(".music-title .fastartist"),
@@ -320,19 +321,24 @@ function loadMusic(indexNumb){
   musicName.innerText = allMusic[indexNumb - 1].name;
   musicArtist.innerText = allMusic[indexNumb - 1].artist;
   musicImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
-  musicBackgroundImage.src = `assets/maingif.gif`;
   mainAudio.src = `songs/${allMusic[indexNumb - 1].src}.mp3`;
   smallName.innerText = allMusic[indexNumb - 1].name;
   smallArtist.innerText = allMusic[indexNumb - 1].artist;
   smallImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
+  smallBackgroundImg.style.backgroundImage = `url(images/${allMusic[indexNumb - 1].img}.jpg)`;
   musicTopOptionsName.innerText = allMusic[indexNumb - 1].name;
   musicTopOptionsArtist.innerText = allMusic[indexNumb - 1].artist;
   musicTopOptionsImage.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
   topOption.setAttribute("id", allMusic[indexNumb - 1].id);
   lyricsDataArtist.innerText = allMusic[indexNumb - 1].artist;
   lyricsDataTitle.innerText = allMusic[indexNumb - 1].name;
-  musicViralMp4.pause();
   window.location.hash = indexNumb;
+
+  smallBackgroundImg.classList.add("active");
+  setTimeout(() => {
+    smallBackgroundImg.classList.remove("active");
+  }, 500)
+  
 
   if (localStorage.getItem("user_Volume") === null) {
     mainAudio.volume = document.getElementById("volumeslider").value;
@@ -408,7 +414,6 @@ function playMusic(){
   smallPlayStopbtn.querySelector(".fa-solid").classList.remove("fa-play");
   smallPlayStopbtn.querySelector(".fa-solid").classList.add("fa-stop");
   mainAudio.play();
-  musicViralMp4.play();
 }
 
 function pauseMusic(){
@@ -418,7 +423,6 @@ function pauseMusic(){
   smallPlayStopbtn.querySelector(".fa-solid").classList.add("fa-play");
   smallPlayStopbtn.querySelector(".fa-solid").classList.remove("fa-stop");
   mainAudio.pause();
-  musicViralMp4.pause();
 }
 
 function nextMusic(){
@@ -575,8 +579,12 @@ currentPlaylistBtn.addEventListener('click', () => {
 })
 
 const topQueue = document.getElementsByClassName('exit-queue')[0]
+const topHeadQueue = document.getElementsByClassName('queue-head')[0]
 const topQueueMenuHide = document.getElementsByClassName('queue-container')[0]
 topQueue.addEventListener('click', () => {
+  topQueueMenuHide.classList.remove('active');
+})
+topHeadQueue.addEventListener('click', () => {
   topQueueMenuHide.classList.remove('active');
 })
 
@@ -2425,3 +2433,27 @@ function followedArtistsContent() {
       }
   });
 }
+
+const DOMINANT_COLOR_QUALITY = 5;
+
+const image = document.querySelector(".music-img img");
+const mainMusicBackgroundGradient = document.querySelector(".background-music-img")
+const colorThief = new ColorThief();
+
+const getRandomNumber = (max = 10) => Math.round(Math.random() * max);
+
+const rgbToHex = (r, g, b) => '#' + [r, g, b].map(x => {
+  const hex = x.toString(16)
+  return hex.length === 1 ? '0' + hex : hex
+}).join('');
+
+
+image.addEventListener('load', () => {
+  const hexColor = rgbToHex(...colorThief.getColor(image, DOMINANT_COLOR_QUALITY));
+  mainMusicBackgroundGradient.style.background = 
+  "radial-gradient(" 
+  + hexColor
+  + ", " 
+  + "rgba(18,18,18,1) 100%"
+  + ")";
+});

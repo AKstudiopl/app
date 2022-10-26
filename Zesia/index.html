@@ -10,7 +10,6 @@
     <link rel="shortcut icon" type="image" href="brandsources\20220320_150124.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="js/script.js" defer></script>
-    <script src="js/particles.js" defer></script>
 </head>
 <body class="preference green" onload="checkQuestion()">
 
@@ -533,6 +532,8 @@
 
   <div class="music-controls">
 
+    <div class="music-controls-background"></div>
+
     <div class="music-controls-progresbar">
       <div class="music-controls-progresbar-done">
       </div>
@@ -561,14 +562,7 @@
 
   <div class="main-music-screen">
 
-
-    <div class="main-music-video">
-      <video src="assets\videoplaybackgot.mp4" autoplay muted loop></video>
-      <div class="video-viral-gradient"></div>
-    </div>
     <div class="background-music-img">
-      <img src="">
-      <!-- particles.js container --> <div id="particles-js"></div> <!-- stats - count particles --> <div class="count-particles"> <span class="js-count-particles">--</span> particles </div> <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
     </div>
 
     <div class="top-controls">
@@ -763,6 +757,8 @@
   </div>
 
   <div class="queue-container">
+
+    <div class="queue-head"></div>
 
     <div class="queue-container-top">
               <h3>Aktualnie Odtwarzane</h3>
@@ -975,16 +971,6 @@
 
     <div id="container" class="container">
       <div class="gallery" id="gallery">
-
-        <div class="card">
-          <img src="https://imageio.forbes.com/specials-images/imageserve/1133631758/0x0.jpg?format=jpg&width=1200" alt="">
-        </div>
-
-        <div class="card">
-        </div>
-
-        <div class="card">
-        </div>
 
       </div>
 
@@ -1232,6 +1218,7 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
 <script src="js/music-list.js"></script>
 <script src="js/news-list.js"></script>
 
