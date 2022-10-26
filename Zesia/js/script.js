@@ -378,8 +378,8 @@ function loadMusic(indexNumb){
 
 
     navigator.mediaSession.metadata = new MediaMetadata({
-      title: allMusic[musicIndex - 1].name,
-      artist: allMusic[musicIndex - 1].artist,
+      title: allMusic[indexNumb - 1].name,
+      artist: allMusic[indexNumb - 1].artist,
       artwork:  [
       { src: `images/${allMusic[indexNumb - 1].img}.jpg`, sizes: '96x96',   type: 'image/png' },
       { src: `images/${allMusic[indexNumb - 1].img}.jpg`, sizes: '128x128', type: 'image/png' },
