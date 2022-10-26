@@ -224,6 +224,7 @@ musicTopOptionsName = wrapper.querySelector(".top-more-head-name"),
 musicTopOptionsArtist = wrapper.querySelector(".top-more-head-artist"),
 musicTopOptionsFavorite = wrapper.querySelector(".top-menu-list-favorite"),
 musicNextTiptool = wrapper.querySelector(".main-music-next-music"),
+musicImgNext = wrapper.querySelector(".main-music-header-back"),
 musicNextTitle = wrapper.querySelector(".main-music-next-music .next-music-title"),
 
 lyricsDataArtist = wrapper.querySelector(".device-main-audio-data .device-main-audio-data-artist"),
@@ -320,7 +321,6 @@ function lyricsSupport(){
 function loadMusic(indexNumb){
   musicName.innerText = allMusic[indexNumb - 1].name;
   musicArtist.innerText = allMusic[indexNumb - 1].artist;
-  musicImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
   mainAudio.src = `songs/${allMusic[indexNumb - 1].src}.mp3`;
   smallName.innerText = allMusic[indexNumb - 1].name;
   smallArtist.innerText = allMusic[indexNumb - 1].artist;
@@ -338,6 +338,28 @@ function loadMusic(indexNumb){
   setTimeout(() => {
     smallBackgroundImg.classList.remove("active");
   }, 500)
+
+  musicImg.classList.add("animation-next");
+  musicBackgroundViral.classList.add("in_Change");
+
+  setTimeout(() => {
+    musicImg.classList.remove("animation-next");
+  }, 500)
+
+  setTimeout(() => {
+    musicBackgroundViral.classList.remove("in_Change");
+  }, 1000)
+
+
+  if (wrapper.classList.contains('save-data')) {
+    musicImg.src="assets/897fb9c3-72da-4ed8-9653-83e65af3768a.png";
+    smallImg.src="assets/897fb9c3-72da-4ed8-9653-83e65af3768a.png";
+    smallBackgroundImg.style.backgroundImage = 'url("assets/897fb9c3-72da-4ed8-9653-83e65af3768a.png")';
+  }else{
+    setTimeout(() => {
+      musicImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
+    }, 500)
+  }
   
 
   if (localStorage.getItem("user_Volume") === null) {
@@ -371,10 +393,6 @@ function loadMusic(indexNumb){
   const nameProfile = document.querySelector('.library-profile-data p');
   nameProfile.innerText = localStorage.userData;
 
-    if (wrapper.classList.contains('save-data')) {
-      musicImg.src = `assets/maingif.gif`;
-      smallImg.src = `assets/maingif.gif`;
-    }
 
 
     navigator.mediaSession.metadata = new MediaMetadata({
@@ -1902,6 +1920,7 @@ function artistScreenSearchBar(element){
   searchScreen.classList.remove('active');
   newsScreen.classList.remove("active");
   bioCard.classList.remove("active");
+  userProfile.classList.toggle("active");
   fastLoadingPop();
 
   currentIndexNumb = indexNumb;
@@ -2412,7 +2431,7 @@ function followedArtistsContent() {
   resultsFAV.innerHTML = "";
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
-      `<div class="user_profile_content_item_song artist" artist-data='${favoritIt[i].artist}'>
+      `<div class="user_profile_content_item_song artist" onclick="artistScreenSearchBar(this);" artist-data='${favoritIt[i].id}'>
           <img src="${favoritIt[i].artist_img}">
           <h1>${favoritIt[i].artist}</h1>
           <div class="user_profile_content_item_song_data">
@@ -2450,7 +2469,7 @@ const rgbToHex = (r, g, b) => '#' + [r, g, b].map(x => {
 
 image.addEventListener('load', () => {
   const hexColor = rgbToHex(...colorThief.getColor(image, DOMINANT_COLOR_QUALITY));
-  mainMusicBackgroundGradient.style.background = 
+  musicImg.style.color = hexColor;
   "radial-gradient(" 
   + hexColor
   + ", " 
