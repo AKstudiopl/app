@@ -2469,8 +2469,8 @@ const rgbToHex = (r, g, b) => '#' + [r, g, b].map(x => {
 
 image.addEventListener('load', () => {
   const hexColor = rgbToHex(...colorThief.getColor(image, DOMINANT_COLOR_QUALITY));
-  musicImg.style.color = hexColor;
-  "radial-gradient(" 
+  musicBackgroundViral.style.background =
+  "linear-gradient(" 
   + hexColor
   + ", " 
   + "rgba(18,18,18,1) 100%"

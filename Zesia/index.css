@@ -1966,9 +1966,10 @@ input:checked + .slider:before {
   background: #A7A7A775;
   height: 6px;
   width: 100%;
-  border-radius: 1px;
   margin-top: 10px;
   margin-bottom: 10px;
+  border-radius: 3px;
+  overflow: hidden;
 }
 .progress-bar-done
 {
