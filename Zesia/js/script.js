@@ -453,13 +453,15 @@ function nextMusic(){
   indexNumb++;
   indexNumb > allMusic.length ? indexNumb = 1 : indexNumb = indexNumb;
   loadMusic(indexNumb);
-  playMusic();
+  setTimeout(() => {
+    playMusic();
+  }, 500)
   playingSong();
 }
 
 function toggleSequence() {
   if (musicNextTiptool.classList.contains("active"))
-  {
+  {musicNextTiptool.classList.remove("active")
     return;
   } else{
   setTimeout(() => {
@@ -481,7 +483,9 @@ function prevMusic(){
   indexNumb--;
   indexNumb < 1 ? indexNumb = allMusic.length : indexNumb = indexNumb;
   loadMusic(indexNumb);
-  playMusic();
+  setTimeout(() => {
+    playMusic();
+  }, 500)
   playingSong();
 }
 
@@ -741,27 +745,19 @@ const correctSoundScreen = document.getElementsByClassName('device-screen')[0]
 const correctSoundExit = document.getElementsByClassName('device-screen-exit')[0]
 const menuLyricsExit = document.getElementsByClassName('device-exit')[0]
 const menuLyricsBtn = document.getElementsByClassName('shortcut-rate-btn')[0]
-const menuLyricsFullscreen = document.getElementsByClassName('device-screen-fullscreen')[0]
 correctSoundBtn.addEventListener('click', () => {
-  correctSoundScreen.classList.toggle('active')
+  correctSoundScreen.classList.toggle('fullscreen')
   lyricsSupport();
 })
 correctSoundExit.addEventListener('click', () => {
-  correctSoundScreen.classList.remove('active')
   correctSoundScreen.classList.remove('fullscreen');
 })
 menuLyricsExit.addEventListener('click', () => {
-  correctSoundScreen.classList.remove('active')
   correctSoundScreen.classList.remove('fullscreen');
 })
 menuLyricsBtn.addEventListener('click', () => {
-  correctSoundScreen.classList.add('active')
+  correctSoundScreen.classList.add('fullscreen')
 })
-menuLyricsFullscreen.addEventListener('click', () => {
-  correctSoundScreen.classList.toggle('fullscreen');
-  correctSoundScreen.classList.toggle('active');
-})
-
 const musicContenLike = document.getElementsByClassName('music-content-like')[0]
 musicContenLike.addEventListener('click', () => {
   musicContenLike.classList.toggle('active')
@@ -1877,7 +1873,8 @@ function searchForArtist(){
   for (let i = 0; i < favoritIt.length; i++) {
     let resultData =
       `<div class="search-artist-item" data-id='${favoritIt[i].id}' data-artist='${favoritIt[i].artist}' onclick="artistScreenSearchBar(this);">
-        <div class="search-artist-item-img">
+       <img class="search-artist-item-background" src="artists/${favoritIt[i].avatar}.jpg">
+       <div class="search-artist-item-img">
           <img src="${favoritIt[i].artist_img}">
         </div>
         <div class="search-artist-item-data">
@@ -1920,7 +1917,7 @@ function artistScreenSearchBar(element){
   searchScreen.classList.remove('active');
   newsScreen.classList.remove("active");
   bioCard.classList.remove("active");
-  userProfile.classList.toggle("active");
+  userProfile.classList.remove("active");
   fastLoadingPop();
 
   currentIndexNumb = indexNumb;
