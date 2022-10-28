@@ -3,6 +3,7 @@ var allMusic = [
   {
       name: "Havana",
       artist: "Camila Cabello",
+      colaboration: "",
       artist_status: "none",
 
       src: "CamilaCabelloHavana",
@@ -49,6 +50,7 @@ var allMusic = [
   {
       name: "Dj Is Your Second Name",
       artist: "C-Bool",
+      colaboration: "Giang Pham",
       artist_status: "none",
       
       src: "C-BooLDJ",
@@ -94,6 +96,7 @@ var allMusic = [
   {
       name: "Never Go Away",
       artist: "C-Bool",
+      colaboration: "Giang Pham",
       artist_status: "none",
 
       src: "C-BooL-NeverGoAway",
@@ -139,6 +142,7 @@ var allMusic = [
   {
       name: "Champions",
       artist: "Kevin Rudolf",
+      colaboration: "",
       artist_status: "none",
 
       src: "KevinRudolf-Champions",
@@ -184,6 +188,7 @@ var allMusic = [
   {
       name: "Ride It",
       artist: "DJ Regard",
+      colaboration: "",
       artist_status: "none",
 
       src: "DJRegard-Rideit",
@@ -229,6 +234,7 @@ var allMusic = [
   {
       name: "Choker",
       artist: "Twenty one pilots",
+      colaboration: "",
       artist_status: "none",
 
       src: "twentyonepilots-Choker",
@@ -274,6 +280,7 @@ var allMusic = [
   {
       name: "The Outside",
       artist: "Twenty one pilots",
+      colaboration: "",
       artist_status: "none",
 
       src: "TwentyOnePilots-TheOutside",
@@ -320,6 +327,7 @@ var allMusic = [
   {
       name: "Shy Away",
       artist: "Twenty one pilots",
+      colaboration: "",
       artist_status: "none",
 
       src: "TwentyOnePilots-ShyAway",
@@ -365,6 +373,7 @@ var allMusic = [
   {
       name: "Saturday",
       artist: "Twenty one pilots",
+      colaboration: "",
       artist_status: "none",
 
       src: "TwentyOnePilots-Saturday",
@@ -410,6 +419,7 @@ var allMusic = [
   {
       name: "Redecorate",
       artist: "Twenty one pilots",
+      colaboration: "",
       artist_status: "none",
 
       src: "TwentyOnePilots-Redecorate",
@@ -455,6 +465,7 @@ var allMusic = [
   {
       name: "Never Take It",
       artist: "Twenty one pilots",
+      colaboration: "",
       artist_status: "none",
 
       src: "TwentyOnePilots-NeverTakeIt",
@@ -500,6 +511,7 @@ var allMusic = [
   {
       name: "Mulberry Street",
       artist: "Twenty one pilots",
+      colaboration: "",
       artist_status: "none",
 
       src: "TwentyOnePilots-MulberryStreet",
@@ -545,6 +557,7 @@ var allMusic = [
   {
       name: "Good Day",
       artist: "Twenty one pilots",
+      colaboration: "",
       artist_status: "none",
 
       src: "TwentyOnePilots-GoodDay",
@@ -590,6 +603,7 @@ var allMusic = [
   {
       name: "Kłótnia",
       artist: "Evtis",
+      colaboration: "",
       artist_status: "none",
 
       src: "Evtis-Kłótnia",
@@ -635,6 +649,7 @@ var allMusic = [
   {
       name: "Idziemy Po Swoje",
       artist: "Szusty",
+      colaboration: "DonGuralsko",
       artist_status: "none",
 
       src: "donGURALesko-IdziemyPoSwojeSzUstyBlend",
@@ -674,6 +689,7 @@ var allMusic = [
   {
       name: "Legenda",
       artist: "Szusty",
+      colaboration: "DonGuralsko",
       artist_status: "none",
 
       src: "donGURALesko-LegendaSzUstyBlend",
@@ -720,6 +736,7 @@ var allMusic = [
   {
     name: "Rockstar",
     artist: "Post Malone",
+    colaboration: "",
     artist_status: "none",
 
     src: "PostMalone-Rockstar",
@@ -766,6 +783,7 @@ var allMusic = [
   {
     name: "Bez Znieczulenia",
     artist: "Happysad",
+    colaboration: "",
     artist_status: "none",
 
     src: "Happysad-Bezznieczulenia",
@@ -811,6 +829,7 @@ var allMusic = [
   {
     name: "Pętla",
     artist: "Happysad",
+    colaboration: "",
     artist_status: "none",
 
     src: "Happysad-Pętla",
@@ -857,6 +876,7 @@ var allMusic = [
   {
     name: "Tired Bones",
     artist: "L.B.ONE",
+    colaboration: "Leanz",
     artist_status: "none",
 
     src: "LBONE-TiredBones",
@@ -902,6 +922,7 @@ var allMusic = [
   {
     name: "Złap Za Broń",
     artist: "Trzeci Wymiar",
+    colaboration: "",
     artist_status: "none",
 
     src: "TrzeciWymiar-Złapzabroń",
@@ -947,6 +968,7 @@ var allMusic = [
   {
     name: "I'm Not Rich",
     artist: "The King's Son",
+    colaboration: "Shaggy",
     artist_status: "none",
 
     src: "TheKingsSon-ImNotRich",
@@ -992,6 +1014,7 @@ var allMusic = [
   {
     name: "Invincible",
     artist: "MGK",
+    colaboration: "Ester Dean",
     artist_status: "none",
 
     src: "MGK-Invincible",
@@ -1037,6 +1060,7 @@ var allMusic = [
   {
     name: "In The Name Of Love",
     artist: "Bebe Rexha",
+    colaboration: "",
     artist_status: "none",
 
     src: "BebeRexha-InTheNameOfLove",
@@ -1083,6 +1107,7 @@ var allMusic = [
   {
     name: "One Last Time",
     artist: "Ariana Grande",
+    colaboration: "",
     artist_status: "none",
     
     src: "ArianaGrande-OneLastTime",
@@ -1129,8 +1154,10 @@ var allMusic = [
   {
     name: "Friends",
     artist: "Anne Marie",
+    colaboration: "Marshmallow",
     artist_status: "none",
     
+    src: "https://drive.google.com/uc?export=view&id=1RxwKmEO9tK6m3WFxX5BMrZNHTftqi5zG",
     src: "Anne-Marie-Friends",
     img: "ab67616d00001e02569f6annemarie4493ca55cd96fdee412",
     style: "Energic",
@@ -1175,6 +1202,7 @@ var allMusic = [
   {
     name: "Lovely",
     artist: "Billie Eilish",
+    colaboration: "Khalid",
     artist_status: "none",
     
     src: "BillieEilish-Lovely",
@@ -1221,6 +1249,7 @@ var allMusic = [
   {
     name: "Symphony",
     artist: "Clean Bandit",
+    colaboration: "Zara Larrson",
     artist_status: "none",
     
     src: "CleanBandit-Symphony",
@@ -1261,6 +1290,194 @@ var allMusic = [
       instagram: "https://www.instagram.com/cleanbandit/",
       twitter: "https://twitter.com/cleanbandit",
       facebook: "https://www.facebook.com/cleanbandit",
+    },
+    user_playlist_1: "",
+  },
+  {
+    name: "Radioactive",
+    artist: "Imagine Dragons",
+    colaboration: "",
+    artist_status: "none",
+    
+    src: "ImagineDragonsRadioactive",
+    img: "effimagineR-dragons-5966452-1407607955-4124",
+    style: "Pop",
+    status: "nostatus",
+    tag: "",
+    avatar: "MC43MzkxNjEwimagineMCAxNjI1Mzg5Njc2sef",
+    artist_img: "https://i.scdn.co/image/ab6761670000ecd4b33c0ac2fda166767b9dbc1a",
+    gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd4efe8ca4b5dc7ac9030ce4d59",
+    gallery_img_2: "https://i.scdn.co/image/ab6761670000ecd44e31fd349dd7c17a93cc4598",
+    gallery_img_3: "https://pbs.twimg.com/media/Fc4GtsiWYAIwTcF?format=jpg&name=large",
+    gallery_img_4: "https://pbs.twimg.com/media/Fc4GtshWIAIl2nU?format=jpg&name=large",
+    gallery_img_5: "https://pbs.twimg.com/media/Fc4GtsoXwAEudCM?format=jpg&name=large",
+
+    album: "Night Visions",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e02407bd04707c463bbb3410737",
+    album_premiere: "2012",
+    id: "28",
+    lyrics:{
+      lyrics_verse_1: "",
+      lyrics_verse_2: "",
+      lyrics_verse_3: "",
+      lyrics_verse_4: "",
+      lyrics_verse_5: "",
+      lyrics_verse_6: "",
+      lyrics_verse_7: "",
+      lyrics_verse_8: "",
+      lyrics_verse_9: "",
+      lyrics_verse_10: "",
+      lyrics_verse_11: "",
+      lyrics_verse_12: "",
+      lyrics_verse_13: "",
+      lyrics_verse_14: ""
+    },
+    bio: "Formed in 2009, Imagine Dragons first revealed their emotionally charged and inventive sensibilities with a series of independently released EPs that earned them grassroots following. Signed to KIDinaKORNER/Interscope by hitmaking producer Alex Da Kid, the band greatly expanded their fanbase with the release of their multi-platinum breakthrough single “It’s Time” (featured on the 2012 EP Continued Silence). With their past hits also including “Radioactive” (a diamond-selling smash that won Best Rock Performance at the 2014 Grammy Awards), Imagine Dragons went on to see Smoke + Mirrors debut at #1 on the Billboard Top 200 album chart upon its release in early 2015.",
+    social:{
+      instagram: "https://www.instagram.com/imaginedragons/",
+      twitter: "https://twitter.com/Imaginedragons",
+      facebook: "https://www.facebook.com/ImagineDragons",
+    },
+    user_playlist_1: "",
+  },
+  {
+    name: "Beliver",
+    artist: "Imagine Dragons",
+    colaboration: "",
+    artist_status: "none",
+    
+    src: "ImagineDragonsBeliever",
+    img: "ab67616d0imagine000b273a57d3adra2736f815d3gonscf358e37",
+    style: "Pop",
+    status: "nostatus",
+    tag: "",
+    avatar: "MC43MzkxNjEwimagineMCAxNjI1Mzg5Njc2sef",
+    artist_img: "https://i.scdn.co/image/ab6761670000ecd4b33c0ac2fda166767b9dbc1a",
+    gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd4efe8ca4b5dc7ac9030ce4d59",
+    gallery_img_2: "https://i.scdn.co/image/ab6761670000ecd44e31fd349dd7c17a93cc4598",
+    gallery_img_3: "https://pbs.twimg.com/media/Fc4GtsiWYAIwTcF?format=jpg&name=large",
+    gallery_img_4: "https://pbs.twimg.com/media/Fc4GtshWIAIl2nU?format=jpg&name=large",
+    gallery_img_5: "https://pbs.twimg.com/media/Fc4GtsoXwAEudCM?format=jpg&name=large",
+
+    album: "Evolve",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e025675e83f707f1d7271e5cf8a",
+    album_premiere: "2017",
+    id: "29",
+    lyrics:{
+      lyrics_verse_1: "",
+      lyrics_verse_2: "",
+      lyrics_verse_3: "",
+      lyrics_verse_4: "",
+      lyrics_verse_5: "",
+      lyrics_verse_6: "",
+      lyrics_verse_7: "",
+      lyrics_verse_8: "",
+      lyrics_verse_9: "",
+      lyrics_verse_10: "",
+      lyrics_verse_11: "",
+      lyrics_verse_12: "",
+      lyrics_verse_13: "",
+      lyrics_verse_14: ""
+    },
+    bio: "Formed in 2009, Imagine Dragons first revealed their emotionally charged and inventive sensibilities with a series of independently released EPs that earned them grassroots following. Signed to KIDinaKORNER/Interscope by hitmaking producer Alex Da Kid, the band greatly expanded their fanbase with the release of their multi-platinum breakthrough single “It’s Time” (featured on the 2012 EP Continued Silence). With their past hits also including “Radioactive” (a diamond-selling smash that won Best Rock Performance at the 2014 Grammy Awards), Imagine Dragons went on to see Smoke + Mirrors debut at #1 on the Billboard Top 200 album chart upon its release in early 2015.",
+    social:{
+      instagram: "https://www.instagram.com/imaginedragons/",
+      twitter: "https://twitter.com/Imaginedragons",
+      facebook: "https://www.facebook.com/ImagineDragons",
+    },
+    user_playlist_1: "",
+  },
+  {
+    name: "Bleeding Out",
+    artist: "Imagine Dragons",
+    colaboration: "",
+    artist_status: "none",
+    
+    src: "ImagineDragonsBleedingOut",
+    img: "6ef9bc2988b796965f42098c459a83a6",
+    style: "Pop",
+    status: "nostatus",
+    tag: "",
+    avatar: "MC43MzkxNjEwimagineMCAxNjI1Mzg5Njc2sef",
+    artist_img: "https://i.scdn.co/image/ab6761670000ecd4b33c0ac2fda166767b9dbc1a",
+    gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd4efe8ca4b5dc7ac9030ce4d59",
+    gallery_img_2: "https://i.scdn.co/image/ab6761670000ecd44e31fd349dd7c17a93cc4598",
+    gallery_img_3: "https://pbs.twimg.com/media/Fc4GtsiWYAIwTcF?format=jpg&name=large",
+    gallery_img_4: "https://pbs.twimg.com/media/Fc4GtshWIAIl2nU?format=jpg&name=large",
+    gallery_img_5: "https://pbs.twimg.com/media/Fc4GtsoXwAEudCM?format=jpg&name=large",
+
+    album: "Evolve",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e025675e83f707f1d7271e5cf8a",
+    album_premiere: "2017",
+    id: "30",
+    lyrics:{
+      lyrics_verse_1: "",
+      lyrics_verse_2: "",
+      lyrics_verse_3: "",
+      lyrics_verse_4: "",
+      lyrics_verse_5: "",
+      lyrics_verse_6: "",
+      lyrics_verse_7: "",
+      lyrics_verse_8: "",
+      lyrics_verse_9: "",
+      lyrics_verse_10: "",
+      lyrics_verse_11: "",
+      lyrics_verse_12: "",
+      lyrics_verse_13: "",
+      lyrics_verse_14: ""
+    },
+    bio: "Formed in 2009, Imagine Dragons first revealed their emotionally charged and inventive sensibilities with a series of independently released EPs that earned them grassroots following. Signed to KIDinaKORNER/Interscope by hitmaking producer Alex Da Kid, the band greatly expanded their fanbase with the release of their multi-platinum breakthrough single “It’s Time” (featured on the 2012 EP Continued Silence). With their past hits also including “Radioactive” (a diamond-selling smash that won Best Rock Performance at the 2014 Grammy Awards), Imagine Dragons went on to see Smoke + Mirrors debut at #1 on the Billboard Top 200 album chart upon its release in early 2015.",
+    social:{
+      instagram: "https://www.instagram.com/imaginedragons/",
+      twitter: "https://twitter.com/Imaginedragons",
+      facebook: "https://www.facebook.com/ImagineDragons",
+    },
+    user_playlist_1: "",
+  },
+  {
+    name: "Bad Liar",
+    artist: "Imagine Dragons",
+    colaboration: "",
+    artist_status: "none",
+    
+    src: "ImagineDragonsBadLiar",
+    img: "6ef9bc2988b7969bad65f42098liarc459a83a6",
+    style: "Pop",
+    status: "nostatus",
+    tag: "",
+    avatar: "MC43MzkxNjEwimagineMCAxNjI1Mzg5Njc2sef",
+    artist_img: "https://i.scdn.co/image/ab6761670000ecd4b33c0ac2fda166767b9dbc1a",
+    gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd4efe8ca4b5dc7ac9030ce4d59",
+    gallery_img_2: "https://i.scdn.co/image/ab6761670000ecd44e31fd349dd7c17a93cc4598",
+    gallery_img_3: "https://pbs.twimg.com/media/Fc4GtsiWYAIwTcF?format=jpg&name=large",
+    gallery_img_4: "https://pbs.twimg.com/media/Fc4GtshWIAIl2nU?format=jpg&name=large",
+    gallery_img_5: "https://pbs.twimg.com/media/Fc4GtsoXwAEudCM?format=jpg&name=large",
+
+    album: "Origins",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e02da6f73a25f4c79d0e6b4a8bd",
+    album_premiere: "2018",
+    id: "31",
+    lyrics:{
+      lyrics_verse_1: "",
+      lyrics_verse_2: "",
+      lyrics_verse_3: "",
+      lyrics_verse_4: "",
+      lyrics_verse_5: "",
+      lyrics_verse_6: "",
+      lyrics_verse_7: "",
+      lyrics_verse_8: "",
+      lyrics_verse_9: "",
+      lyrics_verse_10: "",
+      lyrics_verse_11: "",
+      lyrics_verse_12: "",
+      lyrics_verse_13: "",
+      lyrics_verse_14: ""
+    },
+    bio: "Formed in 2009, Imagine Dragons first revealed their emotionally charged and inventive sensibilities with a series of independently released EPs that earned them grassroots following. Signed to KIDinaKORNER/Interscope by hitmaking producer Alex Da Kid, the band greatly expanded their fanbase with the release of their multi-platinum breakthrough single “It’s Time” (featured on the 2012 EP Continued Silence). With their past hits also including “Radioactive” (a diamond-selling smash that won Best Rock Performance at the 2014 Grammy Awards), Imagine Dragons went on to see Smoke + Mirrors debut at #1 on the Billboard Top 200 album chart upon its release in early 2015.",
+    social:{
+      instagram: "https://www.instagram.com/imaginedragons/",
+      twitter: "https://twitter.com/Imaginedragons",
+      facebook: "https://www.facebook.com/ImagineDragons",
     },
     user_playlist_1: "",
   },

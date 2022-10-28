@@ -1169,12 +1169,48 @@ input:checked + .slider:before {
   font-weight: 100;
   margin: 20px 0;
   line-height: 1;
+  margin-left: 10px;
+}
+.personal-container .ui-title
+{
+  margin-left: -10px;
 }
 .head-content
 {
   padding-left: 10px;
   padding-right: 10px;
   background: var(--background);
+}
+.head_ui_color
+{
+  background: var(--maincolor);
+  width: 100%;
+  height: 200px;
+  margin-left: -10px;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  opacity: 0.25;
+  animation-name: opacityChange;
+  animation-timing-function: linear;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  -webkit-mask-image: -webkit-linear-gradient(250deg,black 0%, transparent 50%);
+}
+
+@keyframes opacityChange {
+  0%
+  {
+    opacity: 0.25;
+  }
+  50%
+  {
+    opacity: 0.15;
+  }
+  100%
+  {
+    opacity: 0.25;
+  }
 }
 .title:first-child h1
 {
@@ -1200,6 +1236,8 @@ input:checked + .slider:before {
   justify-content: center;
   flex-direction: column;
   margin-top: 30px;
+  z-index:0;
+  position: relative;
 }
 .head-content .head-content-top-welcome
 {
@@ -1235,6 +1273,7 @@ input:checked + .slider:before {
   height: 120px;
   align-items: center;
   justify-content: center;
+  background: var(--maincolor);
   overflow: hidden;
 }
 .head-content-item:first-child img {
@@ -1243,8 +1282,10 @@ input:checked + .slider:before {
   object-fit: cover;
   position: absolute;
   z-index: 0;
-  -webkit-mask-image: -webkit-linear-gradient(black 0%, transparent 100%);
-  opacity: 0.75;
+  mix-blend-mode: darken;
+  -webkit-filter: grayscale(100%) contrast(1.2);
+  filter: grayscale(100%) contrast(1);
+  -webkit-mask-image: -webkit-linear-gradient(black 50%, transparent 100%);
 }
 .head-content-item:first-child:hover img
 {
@@ -1257,6 +1298,7 @@ input:checked + .slider:before {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  position: absolute;
 }
 .head-content-item-data-bio
 {
@@ -1421,7 +1463,10 @@ input:checked + .slider:before {
 {
   width: 0%;
   height: 4px;
-  background: var(--maincolor)
+  background: var(--maincolor);
+  transition: 0.25s;
+  border-radius: 0 2px 2px 0;
+  filter: drop-shadow(10px 0px 5px var(--maincolor));
 }
 .music-controls
 {
@@ -1507,12 +1552,13 @@ input:checked + .slider:before {
   color: var(--color);
   margin-bottom: -5px;
 }
-.music-title p
+.music-title .fastartist
 {
   color: var(--color);
   opacity: 0.5;
+  max-width: 5px;
+  overflow: hidden;
 }
-
 
 /* mainMusic Menu */
 
@@ -1880,6 +1926,7 @@ input:checked + .slider:before {
 {
   width: 100%;
   transition: 0.5s;
+  aspect-ratio: 1/1;
   border-radius: 5px;
 }
 .main-information
@@ -1911,7 +1958,7 @@ input:checked + .slider:before {
    50% { transform: rotate(0deg); }
    65% {
       transform: rotate(10deg)scale(1.5);
-      background: var(--maincolorhover);
+      background: var(--maincolor);
       border-radius: 50%;
       padding: 10px;
       margin-right: -10px;
@@ -2221,10 +2268,11 @@ body.green .queue-item ul li img
   z-index: 1;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 100%;  
+  height: 100vh;
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
-  bottom: -60vh;
+  bottom: -100vh;
   background: var(--background);
   backdrop-filter: blur(5px);
   transition: 0.5s;
@@ -2241,7 +2289,7 @@ body.green .queue-item ul li img
   border-top-left-radius: 0px;
   -webkit-mask-image: -webkit-linear-gradient(#11111190 0%, black 15%);
 }
-.device-screen.fullscreen .device-exit
+.device-screen .device-exit
 {
   width: 100%;
   background-color: var(--background);
@@ -2565,19 +2613,20 @@ body.green .queue-item ul li img
   height: 100%;
   width: 100%;
   object-fit: cover;
+  mix-blend-mode: darken;
+  -webkit-filter: grayscale(100%) contrast(1.2);
+  filter: grayscale(100%) contrast(1);
 }
 .artist-card-img
 {
-  background-image: url("assets/textureback.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
   height: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background-color: var(--maincolor);
+
 }
 .artist-top-controls
 {
@@ -2585,6 +2634,7 @@ body.green .queue-item ul li img
   flex-direction: row;
   justify-content: space-between;
   width: calc(100% - 30px);
+  z-index: 5;
   padding: 15px 15px;
   filter: drop-shadow(0px 0px 5px #121212);
   position: absolute;

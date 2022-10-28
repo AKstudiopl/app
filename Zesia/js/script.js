@@ -320,10 +320,17 @@ function lyricsSupport(){
 
 function loadMusic(indexNumb){
   musicName.innerText = allMusic[indexNumb - 1].name;
-  musicArtist.innerText = allMusic[indexNumb - 1].artist;
+  if(allMusic[indexNumb - 1].colaboration != ""){
+    musicArtist.innerText = allMusic[indexNumb - 1].artist + ", " + allMusic[indexNumb - 1].colaboration;
+  }else{
+    musicArtist.innerText = allMusic[indexNumb - 1].artist;
+  }
   mainAudio.src = `songs/${allMusic[indexNumb - 1].src}.mp3`;
   smallName.innerText = allMusic[indexNumb - 1].name;
   smallArtist.innerText = allMusic[indexNumb - 1].artist;
+  if(allMusic[indexNumb - 1].colaboration != ""){
+    smallArtist.innerText = allMusic[indexNumb - 1].artist + ", " + allMusic[indexNumb - 1].colaboration;
+  }
   smallImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
   smallBackgroundImg.style.backgroundImage = `url(images/${allMusic[indexNumb - 1].img}.jpg)`;
   musicTopOptionsName.innerText = allMusic[indexNumb - 1].name;
@@ -1210,7 +1217,28 @@ function clickedSingleAlbum(element){
     albumScreenPremiere.innerText = albumPremiereData.innerText;
     albumScreenAlbumImg.src = albumImgData.src;
     albumScreenArtistImg.src = albumArtistImgData.src;
-    singleAlbumDataLoad();
+
+    const resultsFAV = document.querySelector(".music-artist-album-screen-container");
+    var favoritIt = allMusic.filter(x => x.album === albumNameData);
+    resultsFAV.innerHTML = "";
+    for (let i = 0; i < favoritIt.length; i++) {
+      let resultFAV =
+        `<div class="music-artist-album-item" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
+            <img class="music-artist-information-albums-item-img" src="${favoritIt[i].album_cover}">
+              <div class="music-artist-album-item-data">
+                  <h1>${favoritIt[i].name}</h1>
+                  <span>${favoritIt[i].artist}</span>
+              </div>
+         </div>`;
+      resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+      albumScreenSongsNumber.innerText = $('.music-artist-album-item').length;
+    }
+    let albumNumberSongs = $('.music-artist-album-item').length;
+    if(albumNumberSongs > 1){
+      albumScreenAlbumText.innerText = "Album";
+    }else if(albumNumberSongs = 1){
+      albumScreenAlbumText.innerText = "Singiel";
+    }
 }
 
 function clickedSingleAlbumPlaylist(element){
@@ -1250,33 +1278,6 @@ function clickedSingleAlbumPlaylist(element){
 
   playlistItemOption.classList.remove("active");
   playlistItemScreen.classList.remove("active");
-}
-function singleAlbumDataLoad(){
-
-  const albumNameData = document.querySelector(".music-artist-information-albums-item").getAttribute("data-album");
-  let albumName = albumNameData;
-
-  const resultsFAV = document.querySelector(".music-artist-album-screen-container");
-  var favoritIt = allMusic.filter(x => x.album === albumName);
-  resultsFAV.innerHTML = "";
-  for (let i = 0; i < favoritIt.length; i++) {
-    let resultFAV =
-      `<div class="music-artist-album-item" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
-          <img class="music-artist-information-albums-item-img" src="${favoritIt[i].album_cover}">
-            <div class="music-artist-album-item-data">
-                <h1>${favoritIt[i].name}</h1>
-                <span>${favoritIt[i].artist}</span>
-            </div>
-       </div>`;
-    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
-    albumScreenSongsNumber.innerText = $('.music-artist-album-item').length;
-  }
-  let albumNumberSongs = $('.music-artist-album-item').length;
-  if(albumNumberSongs > 1){
-    albumScreenAlbumText.innerText = "Album";
-  }else if(albumNumberSongs = 1){
-    albumScreenAlbumText.innerText = "Singiel";
-  }
 }
 
 
@@ -2428,7 +2429,7 @@ function followedArtistsContent() {
   resultsFAV.innerHTML = "";
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
-      `<div class="user_profile_content_item_song artist" onclick="artistScreenSearchBar(this);" artist-data='${favoritIt[i].id}'>
+      `<div class="user_profile_content_item_song artist" onclick="artistScreenSearchBar(this);" artist-data='${favoritIt[i].artist}'>
           <img src="${favoritIt[i].artist_img}">
           <h1>${favoritIt[i].artist}</h1>
           <div class="user_profile_content_item_song_data">
@@ -2473,3 +2474,5 @@ image.addEventListener('load', () => {
   + "rgba(18,18,18,1) 100%"
   + ")";
 });
+
+
