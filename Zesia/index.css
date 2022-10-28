@@ -1920,7 +1920,8 @@ input:checked + .slider:before {
 }
 .main-music-header .header-shadow
 {
-  width: 100%;
+  width: 120%;
+  margin-left: -10%;
   z-index: -1;
   margin-top: -20px;
   position: absolute;
@@ -1942,6 +1943,7 @@ input:checked + .slider:before {
   transform:rotateX(20deg) rotateY(0deg) translateX(0vh) scale(0.9);
   filter: blur(15px);
   opacity: 0;
+  margin-top: 75px;
 }
 .main-music-header img
 {
