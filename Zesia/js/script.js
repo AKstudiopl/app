@@ -219,6 +219,9 @@ repeatBtn = wrapper.querySelector("#repeat"),
 shuffleBtn = wrapper.querySelector("#shuffle"),
 queueName = wrapper.querySelector(".queue-container .name"),
 queueImg = wrapper.querySelector(".queue-container img"),
+queueCurrentImg = wrapper.querySelector(".queue-current-item img"),
+queueCurrentTrack = wrapper.querySelector(".queue-current-data p"),
+queueCurrentArtist = wrapper.querySelector(".queue-current-data span"),
 musicBackgroundImage = wrapper.querySelector(".background-music-img img"),
 musicTopOptionsImage = wrapper.querySelector(".top-more-head-image img"),
 musicTopOptionsName = wrapper.querySelector(".top-more-head-name"),
@@ -251,15 +254,49 @@ smallName = smallView.querySelector(".music-title .fasttitle"),
 smallArtist = smallView.querySelector(".music-title .fastartist"),
 progressBarNavDone = smallView.querySelector(".music-controls-progresbar-done"),
 progressBarNav = smallView.querySelector(".music-controls-progresbar"),
+leftTime = smallView.querySelector(".music-icon-timer");
 smallPlayStopbtn = smallView.querySelector("#smallplaystop");
 const favoritBtn = document.querySelector('#heartBtnMain');
+const filterData = document.querySelector('.filter-data-bar');
+
+filterData.id = "album";
+filterData.setAttribute("Data", "Origins");
+var filteredAllMusic = "";
+
+var observerObject = new MutationObserver(function(mutations) {
+  mutations.forEach(function(mutation) {
+    if (mutation.type === "attributes") {
+
+      let filterOption = filterData.id;
+      let filterOptionData = filterData.getAttribute("Data");
+
+      if(filterOption === "artist"){
+        filteredAllMusic = allMusic.filter(x => x.artist === filterOptionData);
+      }
+      if(filterOption === "style"){
+        filteredAllMusic = allMusic.filter(x => x.style === filterOptionData);
+      }
+      if(filterOption === "name"){
+        filteredAllMusic = allMusic.filter(x => x.name === filterOptionData);
+      }
+      if(filterOption === "album"){
+        filteredAllMusic = allMusic.filter(x => x.album === filterOptionData);
+      }
+
+      queueList();
+    }
+  });
+});
+
+observerObject.observe(filterData, {
+  attributes: true
+});
 
 var str = window.location.hash;
 const char = str[0];
 const replaced = str.replace(char, '');
 
 var indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
-musicIndex = indexNumb;
 
 if(replaced){
   var indexNumb = replaced;
@@ -334,13 +371,15 @@ function loadMusic(indexNumb){
   }
   smallImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
   smallBackgroundImg.style.backgroundImage = `url(images/${allMusic[indexNumb - 1].img}.jpg)`;
-  musicImgShadow.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
   musicTopOptionsName.innerText = allMusic[indexNumb - 1].name;
   musicTopOptionsArtist.innerText = allMusic[indexNumb - 1].artist;
   musicTopOptionsImage.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
   topOption.setAttribute("id", allMusic[indexNumb - 1].id);
   lyricsDataArtist.innerText = allMusic[indexNumb - 1].artist;
   lyricsDataTitle.innerText = allMusic[indexNumb - 1].name;
+  queueCurrentImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
+  queueCurrentTrack.innerText = allMusic[indexNumb - 1].name;
+  queueCurrentArtist.innerText = allMusic[indexNumb - 1].artist;
   window.location.hash = indexNumb;
 
   smallBackgroundImg.classList.add("active");
@@ -369,6 +408,7 @@ function loadMusic(indexNumb){
   }else{
     setTimeout(() => {
       musicImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
+      musicImgShadow.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
     }, 500)
   }
   
@@ -431,8 +471,6 @@ function loadMusic(indexNumb){
       navigator.mediaSession.setActionHandler('nexttrack', function() {
         prevMusic();
       });
-
-
 }
 
 
@@ -443,6 +481,12 @@ function playMusic(){
   smallPlayStopbtn.querySelector(".fa-solid").classList.remove("fa-play");
   smallPlayStopbtn.querySelector(".fa-solid").classList.add("fa-stop");
   mainAudio.play();
+  setTimeout(() => {
+    leftTime.classList.add("active");
+    setTimeout(() => {
+      leftTime.classList.remove("active");
+    }, 5000)
+  }, 5000)
 }
 
 function pauseMusic(){
@@ -459,15 +503,15 @@ function nextMusic(){
   if (wrapper.classList.contains("shuffle")) {
     indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
   }
-
-  toggleSequence();
-  indexNumb++;
-  indexNumb > allMusic.length ? indexNumb = 1 : indexNumb = indexNumb;
-  loadMusic(indexNumb);
-  setTimeout(() => {
-    playMusic();
-  }, 500)
-  playingSong();
+    toggleSequence();
+    indexNumb++;
+    indexNumb > allMusic.length ? indexNumb = 1 : indexNumb = indexNumb;
+    loadMusic(indexNumb);
+    setTimeout(() => {
+      playMusic();
+    }, 500)
+    playingSong();
+    leftTime.classList.remove("active");
 }
 
 function toggleSequence() {
@@ -498,6 +542,7 @@ function prevMusic(){
     playMusic();
   }, 500)
   playingSong();
+  leftTime.classList.remove("active");
 }
 
 function randomIndex() {
@@ -549,7 +594,22 @@ mainAudio.addEventListener("timeupdate", (e)=>{
   if(currentSec < 10){
     currentSec = `0${currentSec}`;
   }
+
+  maxDuration = mainAudio.duration;
+  musicLeftTime = maxDuration - currentTime;
+  let totalMin = Math.floor(musicLeftTime / 60);
+  let totalSec = Math.floor(musicLeftTime % 60);
+  if(totalSec < 10){
+    totalSec = `0${totalSec}`;
+  }
+  totalMin = `- ${totalMin}`;
   musicCurrentTime.innerText = `${currentMin}:${currentSec}`;
+  if(leftTime.classList.contains("active")){
+    leftTime.innerText = `${totalMin}:${totalSec}`;
+  }else{
+    leftTime.innerText = "-0:00";
+  }
+
 });
 
 progressBar.addEventListener("timeubdate", (e)=>{
@@ -646,47 +706,38 @@ homeBtn.addEventListener('click', () => {
 })
 
 
-const ulTag = wrapper.querySelector(".queue-item ul");
-for (let i = 0; i < allMusic.length; i++) {
-  let liTag = `<li li-index="${i + 1}" onclick="clicked(this)">
-                <div class="row">
-                  <span>${allMusic[i].name}</span>
-                  <p>${allMusic[i].artist}</p>
-                </div>
-                <span id="${allMusic[i].src}" class="audio-duration-setup">3:40</span>
-                <audio class="${allMusic[i].src}" src="songs/${allMusic[i].src}.mp3"></audio>
-              </li>`;
-  ulTag.insertAdjacentHTML("beforeend", liTag);
-  let liAudioDuartionTag = ulTag.querySelector(`#${allMusic[i].src}`);
-  let liAudioTag = ulTag.querySelector(`.${allMusic[i].src}`);
-  liAudioTag.addEventListener("loadeddata", ()=>{
-    let duration = liAudioTag.duration;
-    let totalMin = Math.floor(duration / 60);
-    let totalSec = Math.floor(duration % 60);
-    if(totalSec < 10){
-      totalSec = `0${totalSec}`;
-    };
-    liAudioDuartionTag.innerText = `${totalMin}:${totalSec}`;
-    liAudioDuartionTag.setAttribute("t-duration", `${totalMin}:${totalSec}`);
-  });
+function queueList(){
+  const ulTag = wrapper.querySelector(".queue-item ul");
+  for (let i = 0; i < filteredAllMusic.length; i++) {
+    let liTag = `<li li-index="${filteredAllMusic[i].id}" onclick="clickedQueueList(this)">
+                  <div class="row">
+                    <span>${filteredAllMusic[i].name}</span>
+                    <p>${filteredAllMusic[i].artist}</p>
+                  </div>
+                </li>`;
+    ulTag.insertAdjacentHTML("beforeend", liTag);
+    var productIds={};
+    $('.queue-item ul li').each(function(){
+        var prodId = $(this).attr('li-index');
+        if(productIds[prodId]){
+           $(this).remove();
+        }else{
+           productIds[prodId] = true;
+        }
+    });
+}
 }
 
 function playingSong(){
-  const allLiTag = ulTag.querySelectorAll("li");
-  for (let j = 0; j < allLiTag.length; j++) {
-    let audioTag = allLiTag[j].querySelector(".audio-duration-setup");
+}
 
-    if(allLiTag[j].classList.contains("playing")){
-      allLiTag[j].classList.remove("playing");
-      let adDuration = audioTag.getAttribute("t-duration");
-      audioTag.innerText = adDuration;
-    }
-    if(allLiTag[j].getAttribute("li-index") == musicIndex){
-      allLiTag[j].classList.add("playing");
-      audioTag.innerHTML = '<img src="sources/equaliser-animated-green.f93a2ef4.gif">';
-    }
-    allLiTag[j].setAttribute("onclick", "clicked(this)");
-  }
+function clickedQueueList(element){
+  let getLiIndex = element.getAttribute("li-index");
+  indexNumb = getLiIndex;
+  indexNumb == indexNumb++
+  loadMusic(indexNumb);
+  playMusic();
+  playingSong();
 }
 
 function clicked(element){
@@ -1100,7 +1151,7 @@ function popularLoad(){
     const replaced = str.replace(char, '');
 
     var indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
-    musicIndex = indexNumb;
+    indexNumb = indexNumb;
 
     if(replaced){
       var indexNumb = replaced;
@@ -1813,13 +1864,10 @@ function artistFast(e) {
 const artisActionUI = document.querySelector(".artist-main-action");
 
 function clickedQueue(){
-  const queueData = document.querySelector(".artist-main-content-item");
-  let getLiIndex = queueData.getAttribute("li-index");
-  let i = getLiIndex; i++;
-  indexNumb = i;
+  let filterName = artistCardTitle.innerText;
+  filterData.id = "artist";
+  filterData.setAttribute("Data", filterName);
   loadMusic(indexNumb);
-  playMusic();
-  playingSong();
 }
 
 
@@ -2125,14 +2173,22 @@ const artistMenuAbout = document.querySelector("#music-artist-menu-about");
 const artistPopular = document.querySelector(".music-artist-content-screen");
 const artistAlbums = document.querySelector(".music-artist-information");
 const artistAbout = document.querySelector(".music-artist-information-screen");
+const featuredLibrary = document.querySelectorAll(".music-artist-content-item-featured");
 const featuredContainer = document.querySelector(".music-artist-item-featured");
 
 artistMenuPopular.addEventListener('click', () => {
+  artistsSongsFeaturedLoad();
   artistMenuPopular.classList.add('active');
   artistMenuAlbums.classList.remove('active');
   artistMenuAbout.classList.remove('active');
   artistPopular.style.display="flex";
-  featuredContainer.style.display="flex";
+
+  if (featuredLibrary.length < 1){
+    featuredContainer.style.display="none";
+  }else{
+    featuredContainer.style.display="flex";
+  }
+
   artistAlbums.style.display="none";
   artistAbout.style.display="none";
 })
@@ -2395,11 +2451,11 @@ function loadUserProfile(){
   userProfileFilterFavorite.classList.add("active");
   userProfileFilterPlaylist.classList.remove("active");
   userProfileFilterFollowed.classList.remove("active");
-  favoriteLoadItems();
+  favoriteLoadItemsProfile();
   document.querySelector(".user_profile_header_content_name").innerText = localStorage.userData;
 }
 
-function favoriteLoadItems() {
+function favoriteLoadItemsProfile() {
 
   const resultsFAV = document.querySelector(".user_profile_content");
   var favoritIt = allMusic.filter(x => x.status === "favorite");
@@ -2431,7 +2487,7 @@ userProfileFilterFavorite.addEventListener('click', () => {
   userProfileFilterFavorite.classList.add("active");
   userProfileFilterPlaylist.classList.remove("active");
   userProfileFilterFollowed.classList.remove("active");
-  favoriteLoadItems();
+  favoriteLoadItemsProfile();
 })
 userProfileFilterPlaylist.addEventListener('click', () => {
   userProfileFilterFavorite.classList.remove("active");

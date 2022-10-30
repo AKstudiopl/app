@@ -320,13 +320,16 @@
     <i class="fa-solid fa-xmark library-favorite-exit"></i>
   </div>
 
-  <div class="library-card-img">
-    <img src="" class="artist-card-avatar">
+  <div class="library-favorite-top-header">
+    <i class="fa-regular fa-heart"></i>
+    <i class="fa-regular fa-heart back-header"></i>
+    <i class="fa-regular fa-heart back-header last"></i>
   </div>
 
   <div class="library-favorite-info">
     <h1>Polubione Utwory</h1>
-    <p>Twoje polubione utwory : <span class="library-favorite-items-number">0</span><br> Zebrane w jedynm miejscu, ku twojej wygodzie.</p>
+    <p>Twoje polubione utwory : <span class="library-favorite-items-number">0</span></p>
+    <p>Zebrane w jedynm miejscu, ku twojej wygodzie.</p>
   </div>
 
   <div class="library-favorite-container">
@@ -549,6 +552,7 @@
 
       <div class="music-icon">
         <a id="smallplaystop"><i class="fa-solid fa-play"></i></a>
+        <span class="music-icon-timer"></span>
       </div>
 
   </div>
@@ -759,6 +763,14 @@
     <div class="queue-container-top">
               <h3>Aktualnie Odtwarzane</h3>
       <a class="exit-queue"><i class="fa-solid fa-angle-down"></i></a>
+    </div>
+
+    <div class="queue-current-item">
+      <img src="images/scaled-and-icy-b-iext104194001.jpg" alt="">
+      <div class="queue-current-data">
+        <p>Title</p>
+        <span>Artist</span>
+      </div>
     </div>
 
     <div class="queue-item">
@@ -1208,6 +1220,9 @@
 </div>
 
 <div class="bottom-gap">
+</div>
+
+<div class="filter-data-bar" style="display: none;">
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

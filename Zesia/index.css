@@ -1036,39 +1036,62 @@ input:checked + .slider:before {
 {
   color: var(--maincolor);
 }
-.library-card-img img
+.library-favorite-top-header
 {
-  height: 25vh;
+  width: 100%;
+  height: 15vh;
+  background: var(--maincolor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
-.library-card-img
+.library-favorite-top-header i 
 {
-  background-image: url(assets/textureback.jpg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      -webkit-mask-image: -webkit-linear-gradient(black, transparent);
-      mask-image: -o-linear-gradient(black, transparent);
-      mask-image: linear-gradient(black, transparent);
+  color: var(--background);
+  font-size: 75px;
+  z-index: 5;
+}
+.library-favorite-top-header .back-header
+{
+  position: absolute;
+  font-size: 250px;
+  z-index: 0;
+  color: var(--background);
+  filter: blur(15px);
+  opacity: 0.5;
+}
+.library-favorite-top-header .back-header.last
+{
+  font-size: 500px;
 }
 .library-favorite-info
 {
   width: calc(100% - 30px);
   padding: 15px 15px;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   border-bottom: 1px var(--backgroundsecond) solid;
 }
 .library-favorite-info h1
 {
   color: var(--maincolor);
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   line-height: 1;
 }
 .library-favorite-info p
 {
+  font-size: 16px;
+}
+.library-favorite-info p:last-child
+{
   font-size: 12px;
+  opacity: 0.5;
+  line-height: 1.5;
 }
 .library-favorite-items-number
 {
@@ -1079,7 +1102,7 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height:40%;
+  height:57vh;
   overflow-y: scroll;
   -webkit-mask-image: -webkit-linear-gradient(black 90%, transparent 100%);
   mask-image: -o-linear-gradient(black 90%, transparent 100%);
@@ -1089,6 +1112,10 @@ input:checked + .slider:before {
 {
   display: flex;
   flex-direction: column;
+}
+.library-favorite-item:last-child
+{
+  margin-bottom: 70px;
 }
 .library-favorite-item
 {
@@ -1523,6 +1550,11 @@ input:checked + .slider:before {
 {
   width: 60px;
 }
+#smallplaystop
+{
+  position: relative;
+  z-index: 5;
+}
 .music-icon
 {
   height: 80%;
@@ -1534,13 +1566,42 @@ input:checked + .slider:before {
   background: var(--background);
   border-radius: 50%;
   position: relative;
-  z-index: 0;
+  z-index: 5;
 }
 .music-icon i
 {
   font-size: 25px;
   transition: 0.2s;
   color: var(--maincolor);
+}
+.music-icon-timer
+{
+  position: absolute;
+  height: 80%;
+  aspect-ratio: 1/1;
+  z-index: -1;
+  display: flex;
+  margin-right: 300px;
+  visibility: hidden;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 1;
+  border-radius: 15px;
+  color: var(--maincolor);
+  transition: 0.5s;
+  opacity: 0;
+  transform: scaleY(0);
+  margin-right: 100px;
+}
+.music-icon-timer.active 
+{
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+  transition: 0.5s;
+  filter: drop-shadow(0px 0px 10px var(--maincolor));
 }
 .music-title
 {
@@ -1558,6 +1619,10 @@ input:checked + .slider:before {
   font-size: 20px;
   color: var(--color);
   margin-bottom: -5px;
+  max-width: 45vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .music-title .fastartist
 {
@@ -2244,7 +2309,7 @@ input:checked + .slider:before {
 .queue-item ul
 {
   list-style-type: none;
-  height: calc(85vh - 52px);
+  height: 69vh;
   width:100%;
 }
 .queue-item li
@@ -2284,6 +2349,37 @@ body.green .queue-item ul li img
 {
   height: 20px;
   filter: hue-rotate(320deg);
+}
+.queue-current-item
+{
+  display: flex;
+  width: calc(100% - 30px);
+  margin-left: 15px;
+  border-bottom: 1px var(--backgroundsecond) solid;
+  margin-bottom: 15px;
+}
+.queue-current-item img
+{
+  height: 60px;
+}
+.queue-current-data
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+}
+.queue-current-data p 
+{
+  color: var(--color);
+  font-size: 18px;
+  font-weight: 900;
+}
+.queue-current-data span
+{
+  color: var(--color);
+  opacity: 0.5;
+  font-size: 16px;
 }
 .device-screen
 {
@@ -2633,7 +2729,7 @@ body.green .queue-item ul li img
 }
 .artist-card-img img
 {
-  height: 100%;
+  height: 40vh;
   width: 100%;
   object-fit: cover;
   mix-blend-mode: darken;
