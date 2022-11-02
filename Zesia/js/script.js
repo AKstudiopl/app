@@ -174,7 +174,6 @@ function clickedSingle(element){
   let getLiIndex = element.getAttribute("li-index");
   indexNumb = getLiIndex;indexNumb--;
   allMusic = allMusicView.filter(x => x.status !== "");
-  queueList();
   loadMusic(indexNumb);
   nextMusic();
   playMusic();
@@ -268,7 +267,6 @@ const replaced = str.replace(char, '');
 var indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
 
 var allMusicView = allMusic.filter(x => x.artist !== "");
-var indexNumbFiltered = Math.floor((Math.random() * allMusicView.length) + 1);
 
 if(replaced){
   var indexNumb = replaced;
@@ -438,32 +436,35 @@ function loadMusic(indexNumb){
 
       leftTime.classList.remove("active");
 
-      queueCurrentImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
-      queueCurrentTrack.innerText = allMusic[indexNumb - 1].name;
-      queueCurrentArtist.innerText = allMusic[indexNumb - 1].artist;
+      queueCurrentImg.parentElement.classList.add("active");
+      setTimeout(() => {
+        queueCurrentImg.parentElement.classList.remove("active");
+        queueCurrentImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
+        queueCurrentTrack.innerText = allMusic[indexNumb - 1].name;
+        queueCurrentArtist.innerText = allMusic[indexNumb - 1].artist;
+      }, 500)
 
-        const resultsFAV = wrapper.querySelector(".queue-item ul");
-        var favoritIt = allMusic;
-        resultsFAV.innerHTML = "";
-        for (let i = 0; i < favoritIt.length; i++) {
-          let resultFAV = `<li li-index="${allMusic[i].id}" onclick="clicked(this)">
-          <div class="row">
-            <span>${allMusic[i].name}</span>
-            <p>${allMusic[i].artist}</p>
-          </div>
-        </li>`;
-          resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
-        }
-        
-        var productIds={};
-        $('.queue-item ul li').each(function(){
-            var prodId = $(this).attr('li-index');
-            if(productIds[prodId]){
-               $(this).remove();
-            }else{
-               productIds[prodId] = true;
-            }
-        });
+      queueDataLoad();
+}
+
+function queueDataLoad(){
+  const resultsFAV = wrapper.querySelector(".queue-item ul");
+  resultsFAV.innerHTML = "";
+  for (let i = 0; i < allMusic.length; i++) {
+    let resultFAV = `<li li-index="${i + 1}" onclick="clickedQueueItem(this)">
+    <div class="row">
+      <span>${allMusic[i].name}</span>
+      <p>${allMusic[i].artist}</p>
+    </div>
+  </li>`;
+    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+  }
+}
+
+function clickedQueueItem(element){
+  let getLiIndex = element.getAttribute("li-index");
+  indexNumb = getLiIndex;
+  loadMusic(indexNumb);
 }
 
 
@@ -696,9 +697,6 @@ homeBtn.addEventListener('click', () => {
   disableSettingsScreen.classList.remove('active');
 })
 
-
-function queueList(){
-}
 
 function playingSong(){
 }
@@ -1214,9 +1212,7 @@ function popularLoad(){
     {
       featuredContainer.style.display="flex";
     }
-  };
-
-  }
+  }}
 
 
 function filteredAlbums(){
@@ -1732,10 +1728,10 @@ function addFavoriteItem(element){
   let getLiIndex = element.parentElement.parentElement.parentElement.id;
   let i = getLiIndex;
 
-  if (allMusicView[indexNumb - 1].status === "favorite") {
-    allMusicView[indexNumb - 1].status = "nostatus";
-  }else if (allMusicView[indexNumb - 1].status === "nostatus") {
-    allMusicView[indexNumb - 1].status = "favorite";
+  if (allMusic[indexNumb - 1].status === "favorite") {
+    allMusic[indexNumb - 1].status = "nostatus";
+  }else if (allMusic[indexNumb - 1].status === "nostatus") {
+    allMusic[indexNumb - 1].status = "favorite";
   }
 
   favoriteLoadItems();
@@ -1830,7 +1826,6 @@ const artisActionUI = document.querySelector(".artist-main-action");
 function clickedQueue(){
   let filterName = artistCardTitle.innerText;
   allMusic = allMusic.filter(x => x.artist === filterName);
-  queueList();
   indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
   loadMusic(indexNumb);
   playMusic();
@@ -2120,7 +2115,6 @@ const featuredLibrary = document.querySelectorAll(".music-artist-content-item-fe
 const featuredContainer = document.querySelector(".music-artist-item-featured");
 
 artistMenuPopular.addEventListener('click', () => {
-  artistsSongsFeaturedLoad();
   artistMenuPopular.classList.add('active');
   artistMenuAlbums.classList.remove('active');
   artistMenuAbout.classList.remove('active');
@@ -2134,6 +2128,7 @@ artistMenuPopular.addEventListener('click', () => {
 
   artistAlbums.style.display="none";
   artistAbout.style.display="none";
+  artistSongsDataLoad();
 })
 artistMenuAlbums.addEventListener('click', () => {
   artistMenuPopular.classList.remove('active')
@@ -2550,7 +2545,6 @@ function changeCurrentQueueBySearchBar(element){
   let getLiIndex = element.getAttribute("li-index");
   indexNumb = getLiIndex;
   allMusic = allMusicView.filter(x => x.name !== "");
-  queueList();
   loadMusic(indexNumb);
   playMusic();
 }
