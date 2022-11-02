@@ -276,6 +276,7 @@ body::-webkit-scrollbar
   color: #A7A7A750;
   display: flex;
   flex-direction: column;
+  transition: 0.3s;
   justify-content: space-between;
 }
 .navbar-bottom-btn.active > a
@@ -332,7 +333,7 @@ body::-webkit-scrollbar
 }
 .settings-screen-container
 {
-  width: calc(100% - 30px);
+  width: calc(100% - 15px);
   margin-left: 15px;
   height: calc(100vh - 168px);
   overflow-y: scroll;
@@ -367,6 +368,7 @@ body::-webkit-scrollbar
   font-family: 'Saira';
   color: var(--color);
   font-size: 16px;
+  width:calc(100% - 15px);
 }
 .settings-screen-item h3
 {
@@ -501,6 +503,7 @@ input:checked + .slider:before {
   display: flex;
   border-bottom:  2px var(--backgroundsecond) solid;
   padding: 8px 0;
+  -webkit-mask-image: -webkit-linear-gradient(180deg, transparent 0%, black 10%, black 90%, transparent 100%);
 }
 .search-item
 {
@@ -1999,13 +2002,13 @@ input:checked + .slider:before {
 .main-music-header .header-shadow img
 {
   aspect-ratio: 1 / 0.5;
-  transform: rotateX(20deg) rotateY(0deg);
+  transform: rotateX(20deg) rotateY(180deg) rotate(180deg);
   transform-style: preserve-3d;
   transition: 0.5s;
 }
 .main-music-header .header-shadow img.animation-next
 {
-  transform:rotateX(20deg) rotateY(0deg) translateX(0vh) scale(0.9);
+  transform:rotateX(20deg) rotateY(180deg) translateX(0vh) scale(0.9) rotate(180deg);
   filter: blur(15px);
   opacity: 0;
   margin-top: 75px;
@@ -2353,21 +2356,37 @@ body.green .queue-item ul li img
 .queue-current-item
 {
   display: flex;
-  width: calc(100% - 30px);
-  margin-left: 15px;
+  width:100%;
   border-bottom: 1px var(--backgroundsecond) solid;
   margin-bottom: 15px;
   transition: 0.5s;
+  align-items: center;
+  position: relative;
 }
 .queue-current-item.active
 {
   opacity: 0.5;
   transition: 0;
-  border-bottom: 1px var(--color) solid;
 }
 .queue-current-item img
 {
   height: 60px;
+  z-index: 5;
+}
+.queue-current-item .queue-gif
+{
+  position: absolute;
+  width: 100%;
+  margin-left: auto;
+  background-position: center;
+  background-repeat: repeat-x;
+  height: 60px;
+  background-size: contain;
+  background-image: url("sources/equaliser-animated-green.f93a2ef4.gif");
+  -webkit-mask-image: -webkit-linear-gradient(300deg, transparent 40%, black 100%);
+  opacity: 0.5;
+  z-index: 0;
+  filter: blur(7px) hue-rotate(-25deg);
 }
 .queue-current-data
 {
@@ -2375,6 +2394,7 @@ body.green .queue-item ul li img
   flex-direction: column;
   justify-content: center;
   padding-left: 10px;
+  z-index: 5;
 }
 .queue-current-data p 
 {
@@ -3305,6 +3325,21 @@ body.green .queue-item ul li img
   font-size: 15px;
   margin: 0;
 }
+.music-artist-option-action
+{
+  display: flex;
+  gap: 10px;
+}
+.music-artist-option-action .music-artist-queue-btn:active
+{
+  transform: scale(0.9);
+  opacity: 0.5;
+}
+.music-artist-option-action .music-artist-queue-btn i 
+{
+  margin: 0;
+  padding: 0;
+}
 .music-artist-number {
   display: flex;
   flex-direction: row;
@@ -3797,9 +3832,31 @@ body.green .queue-item ul li img
   opacity: 0.5;
   line-height: 1.5;
 }
+.music-artist-album-action a 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background: var(--maincolor);
+  border-radius: 15px;
+  color: var(--background);
+  font-size: 16px;
+  transition: 0.3s;
+}
+.music-artist-album-action a:active
+{
+  transform: scale(0.9);
+  opacity: 0.5;
+}
+.music-artist-album-action i 
+{
+  color: var(--background);
+  margin-left: 10px;
+}
 .music-artist-album-screen-title
 {
-  padding: 15px 20px;
+  padding: 10px 20px;
   border-bottom: 1px var(--backgroundsecond) solid;
   display: flex;
   align-items: center;
@@ -3835,8 +3892,7 @@ body.green .queue-item ul li img
 {
   display: flex;
   flex-direction: column;
-  height: 55vh;
-  max-height: 55vh;
+  max-height: 62vh;
   overflow-y: scroll;
   -webkit-mask-image: -webkit-linear-gradient(black 90%, transparent 100%);
   mask-image: -o-linear-gradient(black 90%, transparent 100%);
@@ -3849,6 +3905,10 @@ body.green .queue-item ul li img
   width: 100%;
   border-bottom: 1px solid var(--backgroundsecond);
   transition: 0.25s;
+}
+.music-artist-album-item:last-child
+{
+  margin-bottom: 80px;
 }
 .music-artist-album-item:hover
 {

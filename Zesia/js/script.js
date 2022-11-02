@@ -55,6 +55,8 @@ activeHomeBtn.addEventListener('click', () => {
   playlistItemScreen.classList.remove("active")
   playlistCreateScreen.classList.remove("active")
   userProfile.classList.remove("active")
+  popularPop.classList.remove('active')
+  artistProfile.classList.remove('active')
 })
 
 const activeSearchBtn = document.getElementsByClassName('navbar-bottom-btn-search')[0]
@@ -70,6 +72,8 @@ activeSearchBtn.addEventListener('click', () => {
   playlistItemScreen.classList.remove("active")
   playlistCreateScreen.classList.remove("active")
   userProfile.classList.remove("active")
+  popularPop.classList.remove('active')
+  artistProfile.classList.remove('active')
 })
 
 const activeLibraryBtn = document.getElementsByClassName('navbar-bottom-btn-library')[0]
@@ -84,6 +88,8 @@ activeLibraryBtn.addEventListener('click', () => {
   bioCard.classList.remove("active")
   playlistItemScreen.classList.remove("active")
   userProfile.classList.remove("active")
+  popularPop.classList.remove('active')
+  artistProfile.classList.remove('active')
   libraryLastPosts();
 })
 
@@ -134,6 +140,8 @@ function viewSearchHomeItems(){
   activeHomeScreen.classList.remove('active')
   searchScreen.classList.add('active');
   libraryScreen.classList.remove('active');
+  popularPop.classList.remove('active');
+  artistProfile.classList.remove('active');
 }
 
 const showFavoriteScreen = document.getElementsByClassName('favorite-library-show')[0]
@@ -158,7 +166,7 @@ function favoriteLoadItems() {
   resultsFAV.innerHTML = "";
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
-      `<div class="library-favorite-item" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
+      `<div class="library-favorite-item" li-index='${favoritIt[i].id}' onclick="favoritesQueue()">
           <div class="library-favorite-data">
             <h1>${favoritIt[i].name}</h1>
             <span>${favoritIt[i].artist}</span>
@@ -804,14 +812,13 @@ const searchNoResults = document.querySelector(".search-noresults");
 const searchNoResultsValue = document.querySelector(".search-noresults-keyword");
 const [search,filter,results] = ["#search-item",".search-filter",".search-results"].map(sel=>document.querySelector(sel));
 results.innerHTML=allMusicView.map((a,i)=>
-`<li li-index="${i + 1}" onclick="changeCurrentQueueBySearchBar(this);">
+`<li li-index="${i + 1}" onclick="resultItemQueue(this);">
   <div class="result-box">
    <div class="result-box-cover">
      <h1 class="result-name">${a.name}</h1>
      <p class="result-artist">${a.artist}</p>
    </div>
   </div>
-  <audio class="songs/${a.src}.mp3"" src="songs/${a.src}.mp3">${a.src}.mp3"></audio>
  </li>`).join("\n");
 
 // show which item was clicked:
@@ -822,6 +829,39 @@ function clickedSearchResults(o){
   loadMusic(indexNumb);
   playMusic();
   playingSong();
+}
+
+function resultItemQueue(element){
+  let itemNameData = element.querySelector(".result-name").innerText;
+  allMusic = allMusicView.filter(x => x.name === itemNameData);
+  indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
+  loadMusic(indexNumb);
+  playMusic();
+}
+
+function artistQueue(element){
+  let artistData = element.parentElement.parentElement.parentElement;
+  itemArtistData = artistData.querySelector(".music-artist-item-data-artist").innerText;
+  allMusic = allMusicView.filter(x => x.artist === itemArtistData);
+  indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
+  loadMusic(indexNumb);
+  playMusic();
+}
+
+function albumQueue(element){
+  let albumData = element.parentElement.parentElement.parentElement;
+  itemAlbumData = albumData.querySelector(".music-artist-album-fast-data-name").innerText;
+  allMusic = allMusicView.filter(x => x.album === itemAlbumData);
+  indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
+  loadMusic(indexNumb);
+  playMusic();
+}
+
+function favoritesQueue(){
+  allMusic = allMusicView.filter(x => x.status === "favorite");
+  indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
+  loadMusic(indexNumb);
+  playMusic();
 }
 
 // main filter function
@@ -2400,7 +2440,7 @@ function favoriteLoadItemsProfile() {
   resultsFAV.innerHTML = "";
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
-      `<div class="user_profile_content_item_song" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
+      `<div class="user_profile_content_item_song" li-index='${favoritIt[i].id}' onclick="favoritesQueue();">
           <div class="user_profile_content_item_song_data">
             <p>${favoritIt[i].name}</p>
             <span>${favoritIt[i].artist}</span>

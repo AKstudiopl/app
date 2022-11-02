@@ -65,7 +65,7 @@
 
         <div class="settings-title">
           <h3>Oszczędzanie Danych</h3>
-          <i class="fa-solid fa-tower-broadcast"></i>
+          <i class="fa-solid fa-angle-down"></i>
         </div>
 
         <div class="settings-screen-item" id="input-style">
@@ -83,7 +83,7 @@
 
         <div class="settings-title">
           <h3>Odtwarzanie</h3>
-          <i class="fa-solid fa-headphones"></i>
+          <i class="fa-solid fa-angle-down"></i>
         </div>
 
         <div class="settings-screen-item" id="input-style">
@@ -149,7 +149,7 @@
 
         <div class="settings-title">
           <h3>Społecznościowe</h3>
-          <i class="fa-solid fa-hashtag"></i>
+          <i class="fa-solid fa-angle-down"></i>
         </div>
 
         <div class="settings-screen-item" id="input-style">
@@ -766,11 +766,12 @@
     </div>
 
     <div class="queue-current-item">
-      <img src="images/scaled-and-icy-b-iext104194001.jpg" alt="">
+      <img src="images/scaled-and-icy-b-iext104194001.jpg">
       <div class="queue-current-data">
         <p>Title</p>
         <span>Artist</span>
       </div>
+      <div class="queue-gif"></div>
     </div>
 
     <div class="queue-item">
@@ -838,7 +839,10 @@
 
     <div class="music-artist-option">
       <p class="music-artist-number">Słuchacze w tym miesiącu : <span class="music-artist-number-data">0</span></p>
-      <a onclick="followArtist()" class="music-artist-like"><i class="fa-regular fa-heart"></i> Obserwuj</a>
+      <div class="music-artist-option-action">
+        <a onclick="followArtist();" class="music-artist-like"><i class="fa-regular fa-heart"></i> Obserwuj</a>
+        <a onclick="artistQueue(this);" class="music-artist-queue-btn"><i class="fa-solid fa-play"></i></a>
+      </div>
     </div>
 
     <div class="music-artist-menu">
@@ -952,6 +956,7 @@
     </div>
 
     <img class="music-artist-album-fast-data-img" src="">
+
     <div class="music-artist-album-fast-data">
       <p class="music-artist-album-fast-data-name">DATA</p>
       <span class="music-artist-album-fast-data-premiere">DATA</span>
@@ -959,7 +964,9 @@
   </div>
 
   <div class="music-artist-album-screen-title">
-    <i class="fa-solid fa-list-ul"></i>
+    <div class="music-artist-album-action">
+      <a onclick="albumQueue(this);">Odtwórz <i class="fa-solid fa-play"></i></a>
+    </div>
     <p>Utworów : <span class="music-artist-album-screen-length"></span></p>
   </div>
 
