@@ -1114,18 +1114,18 @@ function popularLoad(){
     const char = str[0];
     const replaced = str.replace(char, '');
 
-    var indexNumb = Math.floor((Math.random() * allMusicView.length) + 1);
+    var indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
     indexNumb = indexNumb;
 
     if(replaced){
       var indexNumb = replaced;
     }
 
-    artistItemTitle.innerText = allMusicView[indexNumb - 1].artist;
-    artistItemImg.src = `artists/${allMusicView[indexNumb - 1].avatar}.jpg`;
-    artistCardDataName.innerText = allMusicView[indexNumb - 1].artist;
-    artistCardBackgroundImg.style.backgroundImage = `url(${allMusicView[indexNumb - 1].artist_img})`;
-    artistItemFeatured.innerText = allMusicView[indexNumb - 1].artist;
+    artistItemTitle.innerText = allMusic[indexNumb - 1].artist;
+    artistItemImg.src = `artists/${allMusic[indexNumb - 1].avatar}.jpg`;
+    artistCardDataName.innerText = allMusic[indexNumb - 1].artist;
+    artistCardBackgroundImg.style.backgroundImage = `url(${allMusic[indexNumb - 1].artist_img})`;
+    artistItemFeatured.innerText = allMusic[indexNumb - 1].artist;
 
     var randomnumber = Math.floor(Math.random() * 150000) + 1;
     artistItemFollowers.innerText = randomnumber;
@@ -1661,7 +1661,7 @@ function playlistItemAdd(element){
   const playlistTitleAdd = playlistItemTitleData.innerText;
   let getLiIndex = element.parentElement.getAttribute("li-index");
   let i = getLiIndex;
-  allMusicView[i].user_playlist_1 = playlistTitleAdd;
+  allMusicView[i - 1].user_playlist_1 = playlistTitleAdd;
   playlistContent();
   playlistFeatured();
 }
@@ -1722,7 +1722,7 @@ function playlistItemOptionsExit(){
 function playlistItemRemove(element){
   let getLiIndex = element.parentElement.parentElement.parentElement.id;
   let i = getLiIndex;
-  allMusicView[i].user_playlist_1 = "";
+  allMusicView[i - 1].user_playlist_1 = "";
   playlistContent();
   playlistFeatured();
   playlistItemOption.classList.remove("active");
@@ -1951,6 +1951,7 @@ function artistScreenSearchBar(element){
 
   currentIndexNumb = indexNumb;
   indexNumb = dataAttribute;
+  indexNumb--;
 
   artistItemTitle.innerText = allMusicView[indexNumb].artist;
   artistItemImg.src = `artists/${allMusicView[indexNumb].avatar}.jpg`;
