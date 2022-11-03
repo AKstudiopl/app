@@ -864,6 +864,15 @@ function favoritesQueue(){
   playMusic();
 }
 
+function styleQueue(element){
+  let styleItem = element.parentElement.parentElement.parentElement;
+  let styleData = styleItem.querySelector(".music-style-item-title").id
+  allMusic = allMusicView.filter(x => x.style === styleData);
+  indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
+  loadMusic(indexNumb);
+  playMusic();
+}
+
 // main filter function
 function filterList(){
   // get all styles by collecting the textContent of .active buttons:
@@ -2493,6 +2502,7 @@ function followArtist(){
     }
 
   }
+  homeFavortiesArtists();
 }
 
 function checkFollowStatus(){
@@ -2556,6 +2566,34 @@ function followedArtistsContent() {
       }
   });
 }
+
+
+function homeFavortiesArtists() {
+
+  const resultsFAV = document.querySelector(".favorites-artists-container .center-container-scrollable");
+  var favoritIt = allMusicView.filter(x => x.artist_status === "followed");
+  resultsFAV.innerHTML = "";
+  for (let i = 0; i < favoritIt.length; i++) {
+    let resultFAV =
+      `<div class="center-container-item" onclick="artistScreenSearchBar(this);" artist-data='${favoritIt[i].artist}'>
+          <img src="${favoritIt[i].artist_img}">
+          <h2>${favoritIt[i].artist}</h2>
+          <p>Zweryfikowany</p>
+       </div>`;
+    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+  }
+
+  var productIds={};
+  $('.favorites-artists-container .center-container-scrollable .center-container-item').each(function(){
+      var prodId = $(this).attr('artist-data');
+      if(productIds[prodId]){
+        $(this).remove();
+      }else{
+        productIds[prodId] = true;
+      }
+  });
+}
+
 
 const DOMINANT_COLOR_QUALITY = 5;
 

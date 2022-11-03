@@ -454,19 +454,12 @@
 </div>
 
 
-<div class="center-container">
+<div class="center-container favorites-artists-container">
   <div class="ui-title">
     <h1>Ulubieni Wykonwacy</h1>
   </div>
 
   <div class="center-container-scrollable">
-    <div class="center-container-item">
-      <img src="artists\41aeb62f0=c2321-f23bsf.jpg" id="main-avatar">
-      <h2>Post Malone</h2>
-        <p>
-          Raper
-        </p>
-    </div>
     <div class="center-container-item" onclick="viewSearchHomeItems()">
       <i class="fa-solid fa-plus"></i>
       <h2>Dodaj Wykonawce</h2>
@@ -480,22 +473,6 @@
       <h2>Dodaj Wykonawce</h2>
     </div>
   </div>
-</div>
-
-<div class="personal-container popular">
-  <div class="ui-title">
-    <h1>Popularne</h1>
-  </div>
-
-  <div class="personal-container-items">
-    <div class="personal-item" onclick="clickedStyleContainer(this)">
-      <span>Energic</span>
-      <h1>DANCE</h1>
-      <img src="sources\da6y3zv-1bbb05f0-0de2-4abe-b2c5-c13df22eb887.png" alt="">
-      <h1>DANCE</h1>
-    </div>
-  </div>
-
 </div>
 
 
@@ -798,17 +775,17 @@
       <a class="music-1-exit"><i class="fa-solid fa-xmark"></i></a>
     </div>
 
-    <div class="music-style-item-title">
-      <h1>POP</h1>
+    <div class="music-style-item-title" id="Pop">
+      <h1>Pop</h1>
       <img src="sources\897-8975430_postmalone-sticker-post-malone.png" alt="">
-      <h1>POP</h1>
+      <h1>Pop</h1>
     </div>
 
     <div class="music-style-item-content">
       <h1>Poczuj swój styl w muzyce</h1>
       <h2>Posłuchaj ulubionych utworów innych</h2>
         <div class="music-style-option">
-          <p class="music-content-number">Playlista polubiona przez : <span>155 Użytkowników</span></p>
+          <a class="music-content-queue" onclick="styleQueue(this);"><i class="fa-solid fa-play"></i></a>
           <a class="music-content-like"><i class="fa-regular fa-heart"></i> Polub</a>
         </div>
         <div class="music-style-item-container">
