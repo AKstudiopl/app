@@ -817,7 +817,7 @@ results.innerHTML=allMusicView.map((a,i)=>
   <div class="result-box">
    <div class="result-box-cover">
      <h1 class="result-name">${a.name}</h1>
-     <p class="result-artist">${a.artist}<span>, ${a.colaboration}</span></p>
+     <p class="result-artist">${a.artist}</p>
    </div>
   </div>
  </li>`).join("\n");
