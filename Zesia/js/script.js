@@ -275,6 +275,7 @@ const replaced = str.replace(char, '');
 var indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
 
 var allMusicView = allMusic.filter(x => x.artist !== "");
+var indexNumbAll = allMusicView.length;
 
 if(replaced){
   var indexNumb = replaced;
@@ -351,7 +352,7 @@ function loadMusic(indexNumb){
   topOption.setAttribute("id", allMusic[indexNumb - 1].id);
   lyricsDataArtist.innerText = allMusic[indexNumb - 1].artist;
   lyricsDataTitle.innerText = allMusic[indexNumb - 1].name;
-  window.location.hash = indexNumb;
+  window.location.hash = allMusic[indexNumb - 1].id;
 
   smallBackgroundImg.classList.add("active");
   setTimeout(() => {
@@ -843,7 +844,7 @@ function resultItemQueue(element){
 function artistQueue(element){
   let artistData = element.parentElement.parentElement.parentElement;
   itemArtistData = artistData.querySelector(".music-artist-item-data-artist").innerText;
-  allMusic = allMusicView.filter(x => x.artist === itemArtistData);
+  allMusic = allMusicView.filter(x => x.artist === itemArtistData || x.colaboration === itemArtistData);
   indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
   loadMusic(indexNumb);
   playMusic();
@@ -860,6 +861,9 @@ function albumQueue(element){
 
 function favoritesQueue(){
   allMusic = allMusicView.filter(x => x.status === "favorite");
+  if(allMusic.length < 1){
+    allMusic = allMusicView;
+  }
   indexNumb = 1;
   loadMusic(indexNumb);
   playMusic();
@@ -883,6 +887,16 @@ function popularQueue(){
 
 function heartActive(element){
   element.classList.add("active");
+}
+
+function searchFavorite(element){
+  let favInputContainer = document.querySelector(".library-favorite-search")
+  element.classList.toggle("active");
+  if(element.classList.contains("active")){
+    favInputContainer.classList.add("active")
+  }else{
+    favInputContainer.classList.remove("active")
+  }
 }
 
 // main filter function
@@ -2006,6 +2020,8 @@ function artistScreenSearchBar(element){
   currentIndexNumb = indexNumb;
   indexNumb = dataAttribute;
   indexNumb--;
+  
+  
 
   artistItemTitle.innerText = allMusicView[indexNumb].artist;
   artistItemImg.src = `artists/${allMusicView[indexNumb].avatar}.jpg`;
@@ -2555,7 +2571,7 @@ function followedArtistsContent() {
   resultsFAV.innerHTML = "";
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
-      `<div class="user_profile_content_item_song artist" onclick="artistScreenSearchBar(this);" artist-data='${favoritIt[i].artist}'>
+      `<div class="user_profile_content_item_song artist" onclick="artistScreenSearchBar(this);" data-id="${favoritIt[i].id}" artist-data='${favoritIt[i].artist}'>
           <img src="${favoritIt[i].artist_img}">
           <h1>${favoritIt[i].artist}</h1>
           <div class="user_profile_content_item_song_data">
@@ -2585,7 +2601,7 @@ function homeFavortiesArtists() {
   resultsFAV.innerHTML = "";
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
-      `<div class="center-container-item" onclick="artistScreenSearchBar(this);" artist-data='${favoritIt[i].artist}'>
+      `<div class="center-container-item" onclick="artistScreenSearchBar(this);" data-id='${favoritIt[i].id}' artist-data='${favoritIt[i].artist}'>
           <img src="artists/${favoritIt[i].avatar}.jpg">
           <h2>${favoritIt[i].artist}</h2>
           <p>Zweryfikowany</p>

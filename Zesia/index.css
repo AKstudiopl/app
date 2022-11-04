@@ -618,21 +618,14 @@ input:checked + .slider:before {
 }
 .search-results
 {
-  max-height: calc(100vh - 300px);
+  max-height: 58vh;
   overflow-y: scroll;
   border-bottom: 1px var(--backgroundsecond) solid;
-  -webkit-mask-image: -webkit-linear-gradient(black 90%, transparent 100%);
-  mask-image: -o-linear-gradient(black 90%, transparent 100%);
-  mask-image: linear-gradient(black 90%, transparent 100%);
 }
 .search-results li
 {
   list-style-type: none;
   -webkit-mask-image: -webkit-linear-gradient(360deg, black 75%, transparent 100%);
-}
-.search-results li:last-child
-{
-  margin-bottom: 50px;
 }
 .search-results li:hover h1
 {
@@ -792,8 +785,89 @@ input:checked + .slider:before {
   height: 60px;
   padding-right: 20px;
 }
-
-
+.library-favorite-search
+{
+  width: 100%;
+  background: var(--background);
+  height: 0px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  overflow: hidden;
+  opacity: 0;
+  border-radius: 15px;
+}
+.library-favorite-search.active
+{
+  opacity: 1;
+  height: 88px;
+}
+.library-favorite-search p 
+{
+  color: var(--color);
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.library-favorite-search input[type=text] {
+  font-size: 14px;
+  margin: 0;
+  border: 1px var(--maincolor) solid;
+  border-radius: 10px;
+  float: left;
+  padding: 10px 0;
+  text-align: center;
+  width: calc(100% - 30px);
+  background: var(--background);
+  color: var(--color);
+}
+.library-favorite-search input[type=text]:focus
+{
+  outline: none;
+}
+.favorites-action
+{
+  border-bottom: 1px var(--backgroundsecond) solid;
+  padding-bottom: 15px;
+  border-top: 1px var(--backgroundsecond) solid;
+  padding-top: 15px;
+  color: var(--color);
+  opacity: 1;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: flex;
+  justify-content: space-between;
+  max-width: calc(100% - 30px);
+  width: calc(100% - 30px);
+}
+.favorites-action a 
+{
+  text-decoration: none;
+  border: 1px var(--maincolor) solid;
+  display: flex;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  padding: 10px 0px;
+  line-height: 1;
+  color: var(--maincolor);
+  font-size: 16px;
+  line-height: 1;
+  transition: 0.3s;
+}
+.favorites-action a.active 
+{
+  background: var(--maincolor);
+  color: var(--background);
+}
+.favorites-action a:active
+{
+  transform: scale(0.9);
+  opacity: 0.5;
+}
 .library-container
 {
   position: fixed;
@@ -801,7 +875,7 @@ input:checked + .slider:before {
   background: var(--background);
   top: 0;
   width: 100vw;
-  height: calc(100vh - 61px);
+  height: calc(100vh - 55px);
   visibility: hidden;
   transition: 1s;
   right: -120vw;
@@ -1079,7 +1153,6 @@ input:checked + .slider:before {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px var(--backgroundsecond) solid;
 }
 .library-favorite-info h1
 {
@@ -1100,7 +1173,7 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height:57vh;
+  height:51vh;
   overflow-y: scroll;
   -webkit-mask-image: -webkit-linear-gradient(black 90%, transparent 100%);
   mask-image: -o-linear-gradient(black 90%, transparent 100%);
@@ -2828,6 +2901,7 @@ body.green .queue-item ul li img
   width: calc(100% - 30px);
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-left: 15px;
   margin-top: 15px;
 }
@@ -2837,17 +2911,12 @@ body.green .queue-item ul li img
   background-color: var(--background);
   border: 1px var(--maincolor) solid;
   padding: 10px 0;
-  width: 48%;
+  width: 45%;
   line-height: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 25px;
-}
-.artist-main-action a:first-child
-{
-  width: 25%;
-  margin-right: 10px;
 }
 .artist-main-action a:last-child
 {
@@ -3622,6 +3691,7 @@ body.green .queue-item ul li img
   font-weight: 100;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px;
+  text-align: center;
   line-height: 1;
   width: 100%;
   opacity: 1;
@@ -3702,22 +3772,11 @@ body.green .queue-item ul li img
   color: var(--color);
   padding: 15px 15px;
   width: calc(100% - 30px);
+  font-weight: 900;
   display: flex;
   justify-content: space-between;
-  color: var(--color);
-}
-.music-artist-information-top span
-{
-  background-color: var(--maincolor);
-  color: var(--color);
-  font-weight: 900;
-  padding: 15px;
-  margin-top: -15px;
-  margin-right: -15px;
-  border: 1px var(--color) solid;
-  border-top: none;
-  border-right: none;;
-  border-radius: 0 10px 0 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .music-artist-information-bottom
 {
