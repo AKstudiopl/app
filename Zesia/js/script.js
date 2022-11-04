@@ -642,6 +642,7 @@ shuffleBtn.addEventListener("click", ()=>{
   repeatBtn.classList.remove('active');
   wrapper.classList.toggle("shuffle");
   wrapper.classList.remove("repeat");
+  
 });
 
 mainAudio.addEventListener("ended", ()=>{
@@ -816,7 +817,7 @@ results.innerHTML=allMusicView.map((a,i)=>
   <div class="result-box">
    <div class="result-box-cover">
      <h1 class="result-name">${a.name}</h1>
-     <p class="result-artist">${a.artist}</p>
+     <p class="result-artist">${a.artist}<span>, ${a.colaboration}</span></p>
    </div>
   </div>
  </li>`).join("\n");
@@ -859,7 +860,7 @@ function albumQueue(element){
 
 function favoritesQueue(){
   allMusic = allMusicView.filter(x => x.status === "favorite");
-  indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
+  indexNumb = 1;
   loadMusic(indexNumb);
   playMusic();
 }
@@ -871,6 +872,17 @@ function styleQueue(element){
   indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
   loadMusic(indexNumb);
   playMusic();
+}
+
+function popularQueue(){
+  allMusic = allMusicView.filter(x => x.tag === "Popular");
+  indexNumb = 1;
+  loadMusic(indexNumb);
+  playMusic();
+}
+
+function heartActive(element){
+  element.classList.add("active");
 }
 
 // main filter function
@@ -985,6 +997,7 @@ function setvolume(){
 
   const popularPop = document.querySelector(".popular-music");
   const popularCounter = document.querySelector(".popular-content-length");
+  const popularBackgroundImg = document.querySelector(".popular-header-background img")
 
 function popularLoad(){
     popularPop.classList.toggle('active');
@@ -992,9 +1005,10 @@ function popularLoad(){
 }
 
   function popularDataLoad(){
-
     const resultsFAV = document.querySelector(".popular-container");
     var favoritIt = allMusicView.filter(x => x.tag === "Popular");
+    let randomIndex = Math.floor((Math.random() * favoritIt.length) + 1);
+    popularBackgroundImg.src = favoritIt[randomIndex].gallery_img_1;
     resultsFAV.innerHTML = "";
     for (let i = 0; i < favoritIt.length; i++) {
       let resultFAV =
@@ -1007,10 +1021,6 @@ function popularLoad(){
          </div>`;
       resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
     }
-
-      $(".popular-container").html($(".popular-container .popular-item").sort(function(){
-        return Math.random()-0.5;
-    }));
 
     popularCounter.innerText = $('.popular-item').length;
 
@@ -2576,7 +2586,7 @@ function homeFavortiesArtists() {
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
       `<div class="center-container-item" onclick="artistScreenSearchBar(this);" artist-data='${favoritIt[i].artist}'>
-          <img src="${favoritIt[i].artist_img}">
+          <img src="artists/${favoritIt[i].avatar}.jpg">
           <h2>${favoritIt[i].artist}</h2>
           <p>Zweryfikowany</p>
        </div>`;

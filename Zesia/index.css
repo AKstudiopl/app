@@ -628,6 +628,7 @@ input:checked + .slider:before {
 .search-results li
 {
   list-style-type: none;
+  -webkit-mask-image: -webkit-linear-gradient(360deg, black 75%, transparent 100%);
 }
 .search-results li:last-child
 {
@@ -1090,12 +1091,6 @@ input:checked + .slider:before {
 {
   font-size: 16px;
 }
-.library-favorite-info p:last-child
-{
-  font-size: 12px;
-  opacity: 0.5;
-  line-height: 1.5;
-}
 .library-favorite-items-number
 {
   color: var(--maincolor);
@@ -1480,6 +1475,8 @@ input:checked + .slider:before {
 .center-container .center-container-item img
 {
   width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
   border-radius: 5px;
 }
 #main-avatar
@@ -2831,24 +2828,31 @@ body.green .queue-item ul li img
   width: calc(100% - 30px);
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin-left: 15px;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 .artist-main-action a 
 {
-  color: var(--background);
-  background-color: var(--maincolor);
-  padding: 15px 0;
+  color: var(--maincolor);
+  background-color: var(--background);
+  border: 1px var(--maincolor) solid;
+  padding: 10px 0;
   width: 48%;
+  line-height: 1;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 25px;
+}
+.artist-main-action a:first-child
+{
+  width: 25%;
+  margin-right: 10px;
 }
 .artist-main-action a:last-child
 {
-  background: var(--backgroundsecond);
-  color: var(--maincolor);
+  background: var(--maincolor);
+  color: var(--background);
 }
 .artist-main-content
 {
@@ -2856,9 +2860,9 @@ body.green .queue-item ul li img
   margin-left: 15px;
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 15px;
   overflow-y: scroll;
-  max-height: 32.5vh;
+  max-height: 38vh;
 }
 .artist-main-content ul
 {
@@ -2869,6 +2873,10 @@ body.green .queue-item ul li img
   width: 100%;
   transition: 0.25s;
   display: flex;
+}
+.artist-main-content-item:last-child
+{
+  margin-bottom: 35px;
 }
 .artist-main-content-item:active
 {
@@ -3970,7 +3978,12 @@ body.green .queue-item ul li img
 .popular-header-background
 {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 25vh;
+  position: relative;
+  background-color: var(--maincolor);
   -webkit-mask-image: -webkit-linear-gradient(black, transparent);
 }
 .popular-header-background img
@@ -3978,46 +3991,68 @@ body.green .queue-item ul li img
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index: 0;
   object-position: center;
+  mix-blend-mode: darken;
+  -webkit-filter: grayscale(100%) contrast(1.2);
+  filter: grayscale(100%) contrast(1);
 }
 .popular-header
 {
-  width: calc(100% - 30px);
-  padding: 15px;
+  position: absolute;
+  height: 25vh;
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   z-index: 5;
-}
-.popular-header h1
-{
-  font-size: 30px;
+  text-transform: uppercase;
+  margin-top: 51px;
+  font-size: 50px;
+  font-weight: 100;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+  color: var(--maincolor);
 }
 .popular-title
 {
-  padding-left: 15px;
   border-bottom: 1px var(--backgroundsecond) solid;
   padding-bottom: 15px;
+  border-top: 1px var(--backgroundsecond) solid;
+  padding-top: 15px;
   color: var(--color);
   opacity: 1;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: flex;
+  justify-content: space-between;
+  max-width: calc(100% - 30px);
 }
 .popular-content-like
 {
     text-decoration: none;
     border: 1px var(--maincolor) solid;
     display: flex;
-    border-radius: 2px;
-    justify-content: space-between;
+    border-radius: 15px;
+    justify-content: center;
     align-items: center;
-    padding: 10px 15px;
+    width: 45%;
+    padding: 10px 0px;
+    line-height: 1;
     color: var(--maincolor);
-    font-size: 13px;
+    font-size: 16px;
     line-height: 1;
     transition: 0.3s;
 }
-.popular-content-like i {
-  padding-right: 5px;
+.popular-content-like.active 
+{
+  background: var(--maincolor);
+  color: var(--background);
+}
+.popular-content-like:active
+{
+  transform: scale(0.9);
+  opacity: 0.5;
 }
 .popular-container
 {

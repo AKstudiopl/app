@@ -329,7 +329,6 @@
   <div class="library-favorite-info">
     <h1>Polubione Utwory</h1>
     <p>Twoje polubione utwory : <span class="library-favorite-items-number">0</span></p>
-    <p>Zebrane w jedynm miejscu, ku twojej wygodzie.</p>
   </div>
 
   <div class="library-favorite-container">
@@ -494,7 +493,7 @@
   </div>
 
   <div class="artist-main-action">
-    <a onclick="clickedQueue()">Odtwórz</a>
+    <a onclick="clickedQueue()"><i class="fa-solid fa-play"></i></a>
     <a onclick="artistFastExit()">Schowaj</a>
   </div>
 
@@ -895,17 +894,17 @@
     <a onclick="popularLoad()"><i class="fa-solid fa-xmark"></i></a>
   </div>
   <div class="popular-header-background">
-    <img src="https://lite-images-i.scdn.co/image/ab6765630000ba8a6c0833b93497d4423c9854c6" alt="">
+    <img src="" alt="">
   </div>
-  <div class="popular-header">
-    <h1>Popularne</h1>
-    <a class="popular-content-like"><i class="fa-regular fa-heart"></i> Polub</a>
-  </div>
+
+  <h1 class="popular-header">Popularne</h1>
+
   <div class="popular-title">
-    <p>Wyróżnione Utwory :</p>
+    <a class="popular-content-like" onclick="heartActive(this)"><i class="fa-regular fa-heart"></i></a>
+    <a class="popular-content-like" onclick="popularQueue()"><i class="fa-solid fa-play"></i></a>
   </div>
   <div class="music-artist-album-screen-title">
-    <i class="fa-solid fa-shuffle" onclick="popularDataLoad()"></i>
+    <i class="fa-solid fa-list-ol"></i>
     <p>Utworów : <span class="popular-content-length">1</span></p>
   </div>
 
