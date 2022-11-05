@@ -2744,3 +2744,84 @@ function clickedMixItem(element){
 function dailyMixExit(){
   dailyUserMixScreen.classList.remove("active")
 }
+
+const artistsForFans = document.querySelector(".more_from_artists"),
+artistsForFansTitle = artistsForFans.querySelector(".more_from_artists_header p"),
+artistsForFansDescription = artistsForFans.querySelector(".more_from_artists_header span"),
+artistsForFansImg = artistsForFans.querySelector(".more_from_artists_header img"),
+artistsForFansBackground = artistsForFans.querySelector(".artists_header_background_img");
+
+
+function moreFromArtists(element){
+  artistsForFans.classList.add("active");
+  itemDescription = element.querySelector(".artist-more-description").innerText;
+  itemImgSrc = element.querySelector("img").src;
+  itemArtistData = element.querySelector(".artist-more-cover-data-artist").innerText;
+
+  artistsForFansTitle.innerText = element.id;
+  artistsForFansDescription.innerText = itemDescription;
+  artistsForFansImg.src = itemImgSrc;
+  artistsForFansBackground.src = itemImgSrc;
+  artistsForFansTitle.id = itemArtistData;
+
+  const resultsFAV = document.querySelector(".more_from_artists_content");
+  var favoritIt = allMusicView.filter(x => x.artist === itemArtistData || x.colaboration === itemArtistData);
+  resultsFAV.innerHTML = "";
+  for (let i = 0; i < favoritIt.length; i++) {
+    let resultFAV =
+      `<div class="more_from_artists_item" li-index='${i}' onclick="clickedMixItem(this)">
+       <img src="images/${favoritIt[i].img}.jpg">
+          <div class="more_from_artists_item_data">
+            <p>${favoritIt[i].name}</p>
+            <span>${favoritIt[i].artist}</span>
+          </div>
+       </div>`;
+    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+  }
+}
+
+function moreFromArtistsExit(){
+  artistsForFans.classList.remove("active")
+}
+
+function moreFromArtistQueue(element){
+  let artistData = artistsForFansTitle.id;
+  allMusic = allMusicView.filter(x => x.artist === artistData || x.colaboration === artistData );
+  indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
+  loadMusic(indexNumb);
+  playMusic();
+}
+
+function clickedAlbumFromArtistMore(element){
+  const albumNameData = element.getAttribute("data-album");
+  const albumPremiereData = element.querySelector("p");
+  const albumImgData = element.querySelector("img");
+
+  albumScreen.classList.add("active");
+  albumScreenTitle.innerText = albumNameData;
+  albumScreenPremiere.innerText = albumPremiereData.innerText;
+  albumScreenAlbumImg.src = albumImgData.src;
+  albumScreenArtistImg.src = albumImgData.src;
+
+  const resultsFAV = document.querySelector(".music-artist-album-screen-container");
+  var favoritIt = allMusicView.filter(x => x.album === albumNameData);
+  resultsFAV.innerHTML = "";
+  for (let i = 0; i < favoritIt.length; i++) {
+    let resultFAV =
+      `<div class="music-artist-album-item" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
+          <img class="music-artist-information-albums-item-img" src="${favoritIt[i].album_cover}">
+            <div class="music-artist-album-item-data">
+                <h1>${favoritIt[i].name}</h1>
+                <span>${favoritIt[i].artist}</span>
+            </div>
+       </div>`;
+    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+    albumScreenSongsNumber.innerText = $('.music-artist-album-item').length;
+  }
+  let albumNumberSongs = $('.music-artist-album-item').length;
+  if(albumNumberSongs > 1){
+    albumScreenAlbumText.innerText = "Album";
+  }else if(albumNumberSongs = 1){
+    albumScreenAlbumText.innerText = "Singiel";
+  }
+}
