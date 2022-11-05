@@ -463,8 +463,13 @@ input:checked + .slider:before {
   align-items: center;
   justify-content: space-around;
   line-height: 1;
+  transition: 0.3s;
   padding: 15px 0;
   margin-top: 3vh;
+}
+.welcome-search-bar a:active
+{
+  transform: scale(0.9);
 }
 .head-content .welcome-search-bar a i {
     padding-top: 0px;
@@ -2397,15 +2402,11 @@ input:checked + .slider:before {
   overflow-y: scroll;
   overflow-x: hidden;
 }
-.queue-item li p
+.queue-item li:hover
 {
   opacity: 0.5;
 }
-.queue-item li.playing
-{
-  color: var(--maincolor);
-}
-.queue-item li:active
+.queue-item li p
 {
   opacity: 0.5;
 }
@@ -2447,16 +2448,18 @@ body.green .queue-item ul li img
 {
   position: absolute;
   width: 100%;
-  margin-left: auto;
-  background-position: center;
-  background-repeat: repeat-x;
   height: 60px;
-  background-size: contain;
-  background-image: url("sources/equaliser-animated-green.f93a2ef4.gif");
-  -webkit-mask-image: -webkit-linear-gradient(300deg, transparent 40%, black 100%);
+  background-size: cover;
+  -webkit-mask-image: -webkit-linear-gradient(300deg, transparent 50%, black 100%);
   opacity: 0.5;
+  object-fit: contain;
   z-index: 0;
-  filter: blur(7px) hue-rotate(-25deg);
+  filter: blur(1px);
+}
+.queue-current-item .queue-gif img
+{
+  width: 100%;
+  object-fit: cover;
 }
 .queue-current-data
 {
@@ -3741,7 +3744,7 @@ body.green .queue-item ul li img
   background: var(--backgroundsecond);
   background-position: center;
   background-size: cover;
-  border-radius: 10px;
+  border-radius: 25px;
   transition: 0.5s;
   display: flex;
   flex-direction: column;
@@ -3768,7 +3771,6 @@ body.green .queue-item ul li img
 }
 .music-artist-information-top
 {
-  background: linear-gradient(0deg, rgba(18,18,18,0) 0%, rgba(18,18,18,0.5) 75%);
   color: var(--color);
   padding: 15px 15px;
   width: calc(100% - 30px);
@@ -3780,7 +3782,9 @@ body.green .queue-item ul li img
 }
 .music-artist-information-bottom
 {
-  background: linear-gradient(180deg, rgba(18,18,18,0) 0%, rgba(18,18,18,1) 75%);
+  background: linear-gradient(180deg, rgba(18,18,18,0) 0%, rgba(18,18,18,0.9) 75%);
+  -webkit-mask-image: -webkit-linear-gradient(transparent 0%, black 35%);
+  backdrop-filter: blur(5px);
   color: var(--color);
   padding: 15px 15px;
   color: var(--color);
@@ -3791,10 +3795,11 @@ body.green .queue-item ul li img
   text-overflow: ellipsis;
   white-space: nowrap;
   color: var(--color);
+  opacity: 0.5;
 }
 .music-artist-information-bottom h1
 {
-  color: var(--maincolor);
+  color: var(--color);
 }
 .music-artist-information-albums
 {
@@ -3906,10 +3911,11 @@ body.green .queue-item ul li img
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 20px;
-  background: var(--maincolor);
-  border-radius: 15px;
-  color: var(--background);
+  height: 58px;
+  aspect-ratio: 1/1;
+  background: var(--background);
+  color: var(--maincolor);
+  border: 1px var(--maincolor) solid;
   font-size: 16px;
   transition: 0.3s;
 }
@@ -3918,18 +3924,17 @@ body.green .queue-item ul li img
   transform: scale(0.9);
   opacity: 0.5;
 }
-.music-artist-album-action i 
-{
-  color: var(--background);
-  margin-left: 10px;
-}
 .music-artist-album-screen-title
 {
-  padding: 10px 20px;
+  padding-right: 10px;
   border-bottom: 1px var(--backgroundsecond) solid;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: var(--color);
+}
+.music-artist-album-screen-title p 
+{
   color: var(--color);
 }
 .music-artist-album-screen-img-background
@@ -5298,6 +5303,107 @@ width: 100%;
   opacity: 0.5;
   transform: scale(0.9);
 }
+.daily_user_mix
+{
+  width: 100%;
+  height: 100vh;
+  background: var(--background);
+  position: fixed;
+  top: 100vh;
+  transition: 0.3s;
+}
+.daily_user_mix.active
+{
+  top: 0;
+}
+.daily_user_mix_option
+{
+  width: calc(100% - 30px);
+  padding: 15px 15px;
+  display: flex;
+  justify-content: flex-end;
+  color: var(--color);
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+.daily_user_mix_header
+{
+  width: 100%;
+  height: 25vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1;
+}
+.daily_user_mix_header_background
+{
+  display: grid;
+  position: absolute;
+  z-index: -1;
+  grid-template-columns: repeat(2, 50%);
+  height: 25vh;
+  max-height: 25vh;
+  -webkit-mask-image: -webkit-linear-gradient(black 0%, transparent 80%);
+  background-color: var(--maincolor);
+}
+.daily_user_mix_header_background img
+{
+  height: 25vh;
+  mix-blend-mode: darken;
+  -webkit-filter: grayscale(100%) contrast(1.2);
+  filter: grayscale(100%) contrast(1);
+}
+.daily_user_mix_header p 
+{
+  text-transform: uppercase;
+  color: var(--color);
+  font-size: 75px;
+}
+.daily_user_mix_header span
+{
+  color: var(--color);
+  opacity: 0.5;
+  font-size: 12px;
+}
+.daily_user_mix_content
+{
+  width: 100%;
+  max-height: 61vh;
+  overflow: scroll;
+}
+.daily_user_mix_content_item
+{
+  display: flex;
+  align-items: center;
+}
+.daily_user_mix_content_item:last-child
+{
+  margin-bottom: 100px;
+}
+.daily_user_mix_content_item img
+{
+  height: 60px;
+}
+.daily_user_mix_content_item_data
+{
+  margin-left: 10px;
+}
+.daily_user_mix_content_item_data p 
+{
+  color: var(--color);
+  font-weight: 900;
+}
+.daily_user_mix_content_item_data span
+{
+  color: var(--color);
+  opacity: 0.5;
+}
+
+
 
 /* Style_pop_up*/
 

@@ -421,17 +421,17 @@
   </div>
 
   <div class="center-container-scrollable">
-    <div class="center-container-item mix" onclick="viewSearchHomeItems()">
-      <i class="fa-solid fa-ear-listen"></i>
-      <h2>Mix #1</h2>
+    <div class="center-container-item" onclick="dailyMixClicked(this)">
+      <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5ebc7e10fe95137876f2ee03fc7/1/pl/large" alt="">
+      <h2>Mix 1</h2>
     </div>
-    <div class="center-container-item" onclick="viewSearchHomeItems()">
-      <i class="fa-solid fa-ear-listen"></i>
-      <h2>Mix #2</h2>
+    <div class="center-container-item" onclick="dailyMixClicked(this)">
+      <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb6567299e3c53cf2a250fbdce/2/pl/large" alt="">
+      <h2>Mix 2</h2>
     </div>
-    <div class="center-container-item" onclick="viewSearchHomeItems()">
-      <i class="fa-solid fa-ear-listen"></i>
-      <h2>Mix #3</h2>
+    <div class="center-container-item" onclick="dailyMixClicked(this)">
+      <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb520965dc4c8dd6752169ccbe/3/pl/large" alt="">
+      <h2>Mix 3</h2>
     </div>
   </div>
 </div>
@@ -756,7 +756,9 @@
         <p>Title</p>
         <span>Artist</span>
       </div>
-      <div class="queue-gif"></div>
+      <div class="queue-gif">
+        <img src="">
+      </div>
     </div>
 
     <div class="queue-item">
@@ -950,7 +952,7 @@
 
   <div class="music-artist-album-screen-title">
     <div class="music-artist-album-action">
-      <a onclick="albumQueue(this);">Odtwórz <i class="fa-solid fa-play"></i></a>
+      <a onclick="albumQueue(this);"><i class="fa-solid fa-play"></i></a>
     </div>
     <p>Utworów : <span class="music-artist-album-screen-length"></span></p>
   </div>
@@ -1204,6 +1206,46 @@
         <span>Ariana Grande</span>
       </div>
       <i class="fa-heart fa-solid"></i>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="daily_user_mix">
+
+  <div class="daily_user_mix_option">
+    <i onclick="dailyMixExit()" class="fa-solid fa-xmark"></i>
+  </div>
+
+  <div class="daily_user_mix_data" style="display: none;">
+    <span class="data_1"></span>
+    <span class="data_2"></span>
+    <span class="data_3"></span>
+  </div>
+
+  <div class="daily_user_mix_header">
+    <div class="daily_user_mix_header_background">
+      <img class="daily_user_mix_background_1" src="images/effimagineR-dragons-5966452-1407607955-4124.jpg" class="">
+      <img class="daily_user_mix_background_2" src="images/effimagineR-dragons-5966452-1407607955-4124.jpg" class="">
+    </div>
+    <p></p>
+    <span>Imagine Dragons, Twenty One Pilots, NF</span>  
+  </div>
+
+  <div class="popular-title">
+    <a class="popular-content-like" onclick="heartActive(this)"><i class="fa-regular fa-heart"></i></a>
+    <a class="popular-content-like" onclick="mixQueue()"><i class="fa-solid fa-play"></i></a>
+  </div>
+
+  <div class="daily_user_mix_content">
+
+    <div class="daily_user_mix_content_item">
+      <img src="images/scaled-and-icy-b-iext104194001.jpg">
+      <div class="daily_user_mix_content_item_data">
+        <p>The Outside</p>
+        <span>Twenty</span>
+      </div>
     </div>
 
   </div>

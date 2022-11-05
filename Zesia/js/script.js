@@ -231,6 +231,7 @@ queueImg = wrapper.querySelector(".queue-container img"),
 queueCurrentImg = wrapper.querySelector(".queue-current-item img"),
 queueCurrentTrack = wrapper.querySelector(".queue-current-data p"),
 queueCurrentArtist = wrapper.querySelector(".queue-current-data span"),
+queueCurrentBackgroundImg = wrapper.querySelector(".queue-gif img");
 musicBackgroundImage = wrapper.querySelector(".background-music-img img"),
 musicTopOptionsImage = wrapper.querySelector(".top-more-head-image img"),
 musicTopOptionsName = wrapper.querySelector(".top-more-head-name"),
@@ -451,6 +452,8 @@ function loadMusic(indexNumb){
         queueCurrentImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
         queueCurrentTrack.innerText = allMusic[indexNumb - 1].name;
         queueCurrentArtist.innerText = allMusic[indexNumb - 1].artist;
+        queueCurrentBackgroundImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
+        
       }, 500)
 
       queueDataLoad();
@@ -1185,18 +1188,18 @@ function popularLoad(){
     const char = str[0];
     const replaced = str.replace(char, '');
 
-    var indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
+    var indexNumb = allMusic[indexNumb - 1].id;
     indexNumb = indexNumb;
 
     if(replaced){
       var indexNumb = replaced;
     }
 
-    artistItemTitle.innerText = allMusic[indexNumb - 1].artist;
-    artistItemImg.src = `artists/${allMusic[indexNumb - 1].avatar}.jpg`;
-    artistCardDataName.innerText = allMusic[indexNumb - 1].artist;
-    artistCardBackgroundImg.style.backgroundImage = `url(${allMusic[indexNumb - 1].artist_img})`;
-    artistItemFeatured.innerText = allMusic[indexNumb - 1].artist;
+    artistItemTitle.innerText = allMusicView[indexNumb - 1].artist;
+    artistItemImg.src = `artists/${allMusicView[indexNumb - 1].avatar}.jpg`;
+    artistCardDataName.innerText = allMusicView[indexNumb - 1].artist;
+    artistCardBackgroundImg.style.backgroundImage = `url(${allMusicView[indexNumb - 1].artist_img})`;
+    artistItemFeatured.innerText = allMusicView[indexNumb - 1].artist;
 
     var randomnumber = Math.floor(Math.random() * 150000) + 1;
     artistItemFollowers.innerText = randomnumber;
@@ -2651,4 +2654,93 @@ function changeCurrentQueueBySearchBar(element){
   allMusic = allMusicView.filter(x => x.name !== "");
   loadMusic(indexNumb);
   playMusic();
+}
+
+const dailyUserMixScreen = document.querySelector(".daily_user_mix"),
+dailyUserTitle = dailyUserMixScreen.querySelector(".daily_user_mix_header p"),
+dailyUserBackgroundImg_1 = dailyUserMixScreen.querySelector(".daily_user_mix_background_1"),
+dailyUserBackgroundImg_2 = dailyUserMixScreen.querySelector(".daily_user_mix_background_2"),
+dailyUserData1 = dailyUserMixScreen.querySelector(".daily_user_mix_data .data_1"),
+dailyUserData2 = dailyUserMixScreen.querySelector(".daily_user_mix_data .data_2"),
+dailyUserData3 = dailyUserMixScreen.querySelector(".daily_user_mix_data .data_3"),
+dailyUserArtists = dailyUserMixScreen.querySelector(".daily_user_mix_header span");
+
+function dailyMixClicked(element){
+  fastLoadingPop();
+  dailyUserMixScreen.classList.add("active")
+  dailyMixItemImg = element.querySelector(".center-container-item img");
+  dailyMixData = element.querySelector(".center-container-item h2").innerText;
+  dailyUserTitle.innerText = dailyMixData;
+  
+  if(dailyUserTitle.innerText === "MIX 1"){
+    mixData1 = "Imagine Dragons";
+    mixData2 = "Twenty one pilots";
+    mixData3 = "Zara Larsson";
+  }else if(dailyUserTitle.innerText === "MIX 2"){
+    mixData1 = "Against The Current";
+    mixData2 = "DJ Regard";
+    mixData3 = "Anne Marie";
+  }else if(dailyUserTitle.innerText === "MIX 3"){
+    mixData1 = "NF";
+    mixData2 = "Post Malone";
+    mixData3 = "Kevin Rudolf";
+  }
+
+  dailyUserArtists.innerText = mixData1 + ", " + mixData2 + ", " + mixData3;
+
+
+  const resultsFAV = document.querySelector(".daily_user_mix_content");
+  var favoritIt = allMusicView.filter(x => x.artist === mixData1 || x.artist === mixData2 || x.artist === mixData3);
+  resultsFAV.innerHTML = "";
+  for (let i = 0; i < favoritIt.length; i++) {
+    let resultFAV =
+      `<div class="daily_user_mix_content_item" li-index='${i}' onclick="clickedMixItem(this)">
+       <img src="images/${favoritIt[i].img}.jpg">
+          <div class="daily_user_mix_content_item_data">
+            <p>${favoritIt[i].name}</p>
+            <span>${favoritIt[i].artist}</span>
+          </div>
+       </div>`;
+    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+  }
+
+  var randomImg1 = Math.floor((Math.random() * favoritIt.length) + 1);
+  var randomImg2 = Math.floor((Math.random() * favoritIt.length) + 1);
+  dailyUserBackgroundImg_1.src = favoritIt[randomImg1].album_cover;
+  dailyUserBackgroundImg_2.src = favoritIt[randomImg2].album_cover;
+
+  dailyUserData1.innerText = mixData1;
+  dailyUserData2.innerText = mixData2;
+  dailyUserData3.innerText = mixData3;
+
+  setTimeout(() => {
+    dailyMixItemImg.src = `images/${favoritIt[randomImg1].img}.jpg`;
+  }, 500)
+
+  $(".daily_user_mix_content").html($(".daily_user_mix_content_item").sort(function(){
+    return Math.random()-0.5;
+  }));
+}
+
+function mixQueue(){
+  mixData1 = dailyUserData1.innerText;
+  mixData2 = dailyUserData2.innerText;
+  mixData3 = dailyUserData3.innerText;
+  allMusic = allMusicView.filter(x => x.artist === mixData1 || x.artist === mixData2 || x.artist === mixData3);
+  indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
+  loadMusic(indexNumb);
+  playMusic();
+}
+
+function clickedMixItem(element){
+  mixQueue();
+  let getLiIndex = element.getAttribute("li-index");
+  indexNumb = getLiIndex;
+  loadMusic(indexNumb);
+  nextMusic();
+  playMusic();
+}
+
+function dailyMixExit(){
+  dailyUserMixScreen.classList.remove("active")
 }
