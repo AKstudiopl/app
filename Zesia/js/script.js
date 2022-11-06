@@ -2532,6 +2532,7 @@ function followArtist(){
 
   }
   homeFavortiesArtists();
+  moreFromArtistGlobal();
 }
 
 function checkFollowStatus(){
@@ -2694,7 +2695,7 @@ function dailyMixClicked(element){
   resultsFAV.innerHTML = "";
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
-      `<div class="daily_user_mix_content_item" li-index='${i}' onclick="clickedMixItem(this)">
+      `<div class="daily_user_mix_content_item" li-index='${favoritIt[i].id}' onclick="clickedMixItem(this)">
        <img src="images/${favoritIt[i].img}.jpg">
           <div class="daily_user_mix_content_item_data">
             <p>${favoritIt[i].name}</p>
@@ -2733,9 +2734,9 @@ function mixQueue(){
 }
 
 function clickedMixItem(element){
-  mixQueue();
   let getLiIndex = element.getAttribute("li-index");
-  indexNumb = getLiIndex;
+  allMusic = allMusicView;
+  indexNumb = getLiIndex;indexNumb--;
   loadMusic(indexNumb);
   nextMusic();
   playMusic();
@@ -2769,7 +2770,7 @@ function moreFromArtists(element){
   resultsFAV.innerHTML = "";
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
-      `<div class="more_from_artists_item" li-index='${i}' onclick="clickedMixItem(this)">
+      `<div class="more_from_artists_item" li-index='${favoritIt[i].id}' onclick="clickedMixItem(this)">
        <img src="images/${favoritIt[i].img}.jpg">
           <div class="more_from_artists_item_data">
             <p>${favoritIt[i].name}</p>
@@ -2824,4 +2825,91 @@ function clickedAlbumFromArtistMore(element){
   }else if(albumNumberSongs = 1){
     albumScreenAlbumText.innerText = "Singiel";
   }
+}
+
+const moreFromArtistGlobalData = document.querySelector(".artist-more-profile-data");
+const thisIsArtistBox = document.querySelector(".center-container-item.artist-more"),
+thisIsArtistBoxDescriptionArtist = document.querySelector(".artist-more-description-artist");
+thisIsArtistBoxImg = thisIsArtistBox.querySelector("img");
+const thisIsArtistBoxArtistTitle = document.querySelector(".artist-more-cover-data-artist");
+const top100ArtistBox = document.querySelector(".center-container-item.top-list");
+const top100ArtistImg = document.querySelector(".center-container-item.top-list img");
+const moreFromArtistContainer = document.querySelector("#followed-random-artist-content");
+
+function moreFromArtistGlobal(){
+
+  var moreFromArtistFollowed = allMusicView.filter(x => x.artist_status === "followed");
+  var artistIndex = Math.floor((Math.random() * moreFromArtistFollowed.length) + 1);
+  moreFromArtistGlobalData.innerText = moreFromArtistFollowed[artistIndex].artist;
+  thisIsArtistBox.id = moreFromArtistFollowed[artistIndex].artist;
+  thisIsArtistBoxArtistTitle.innerText = moreFromArtistFollowed[artistIndex].artist;
+  thisIsArtistBoxImg.src = moreFromArtistFollowed[artistIndex].gallery_img_1;
+  thisIsArtistBoxDescriptionArtist.innerText = moreFromArtistFollowed[artistIndex].artist;
+
+  top100ArtistImg.src = moreFromArtistFollowed[artistIndex].gallery_img_2;
+  top100ArtistBox.id = moreFromArtistFollowed[artistIndex].artist;
+
+  moreFromArtistContainer.classList.remove("active");
+
+  moreFromArtistGlobalAlbums();
+}
+
+function moreFromArtistGlobalAlbums(){
+
+  let artistNameData = thisIsArtistBoxArtistTitle.innerText;
+
+  const resultsFAV = document.querySelector(".artist-more-album");
+  var favoritIt = allMusicView.filter(x => x.artist === artistNameData);
+  resultsFAV.innerHTML = "";
+  for (let i = 0; i < favoritIt.length; i++) {
+    let resultFAV =
+      `<div class="center-container-item" onclick="fastLoadingPop(); clickedAlbumFromArtistMore(this)" data-album='${favoritIt[i].album}'>
+          <img src="${favoritIt[i].album_cover}">
+          <h2>${favoritIt[i].album}</h2>
+          <p>${favoritIt[i].album_premiere}</p>
+       </div>`;
+    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+  }
+
+  var productIds={};
+  $('.artist-more-album .center-container-item').each(function(){
+      var prodId = $(this).attr('data-album');
+      if(productIds[prodId]){
+         $(this).remove();
+      }else{
+         productIds[prodId] = true;
+      }
+  });
+}
+
+const topListHits = document.querySelector(".top_list_hits");
+const topListHitsArtist = document.querySelector(".top_list_hits_header_artist");
+const topListHitsImg = document.querySelector(".top_list_hits_header_background_img");
+
+function topListShow(element){
+  topListHits.classList.add("active");
+
+  topListHitsArtist.innerText = element.id;
+  topListHitsImg.src = element.querySelector("img").src;
+
+  topListData = topListHits.id;
+
+  const resultsFAV = document.querySelector(".top_list_hits_content");
+  var favoritIt = allMusicView;
+  resultsFAV.innerHTML = "";
+  for (let i = 0; i < favoritIt.length; i++) {
+    let resultFAV =
+      `<div class="top_list_hits_item" li-index='${favoritIt[i].id}' onclick="clickedMixItem(this)">
+       <img src="images/${favoritIt[i].img}.jpg">
+          <div class="top_list_hits_item_data">
+            <p>${favoritIt[i].name}</p>
+            <span>${favoritIt[i].artist}</span>
+          </div>
+       </div>`;
+    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+  }
+}
+
+function topListHide(){
+  topListHits.classList.remove("active");
 }

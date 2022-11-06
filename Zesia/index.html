@@ -442,7 +442,7 @@
     <h1>Jak Się Dzisiaj Czujesz?</h1>
   </div>
 
-  <div class="center-container-scrollable">
+  <div class="center-container-scrollable emo-items">
     <div class="center-container-item">
       <img src="https://cdn-icons-png.flaticon.com/512/1791/1791311.png" alt="">
     </div>
@@ -483,24 +483,24 @@
   </div>
 </div>
 
-<div class="center-container">
+<div class="center-container active" id="followed-random-artist-content">
   <div class="ui-title">
-    <h1>Więcej od <span>Against The Current</span></h1>
+    <h1>Więcej od <span class="artist-more-profile-data">Against The Current</span></h1>
   </div>
 
   <div class="center-container-scrollable">
 
-    <div class="center-container-item artist-more" onclick="moreFromArtists(this)"  id="This Is Against The Current">
+    <div class="center-container-item artist-more" onclick="moreFromArtists(this)" id="This Is Against The Current">
       <div class="artist-more-cover">
         <div class="artist-more-cover-data">
           <span>This Is <p class="artist-more-cover-data-artist">Against The Current</p></span>
         </div>
         <img src="https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large" alt="">
       </div>
-      <p class="artist-more-description">This is Against The Current. Wszystkie Najważniejsze utwory zebrane w jednej wyjątkowej playliscie</p>
+      <p class="artist-more-description">This is <span class="artist-more-description-artist">Against The Current</span>. Wszystkie Najważniejsze utwory zebrane w jednej wyjątkowej playliscie</p>
     </div>
 
-    <div class="center-container-item top-list">
+    <div class="center-container-item top-list" id="" onclick="topListShow(this)">
       <div class="top-list-cover">
         <div class="top-list-cover-data">
           <span>Top<p>100</p></span>
@@ -510,16 +510,20 @@
       <p>Najczęsciej słuchane piosenki w tym tygodniu.</p>
     </div>
 
-    <div class="center-container-item" onclick="fastLoadingPop(); clickedAlbumFromArtistMore(this)" data-album="Fever">
-      <img src="https://i.scdn.co/image/ab67616d00001e02186660bbf3b0dd9a5195e182" alt="">
-      <h2>Fever</h2>
-      <p>2021</p>
-    </div>
+    <div class="artist-more-album">
 
-    <div class="center-container-item" onclick="fastLoadingPop(); clickedAlbumFromArtistMore(this)" data-album="Wildfire">
-      <img src="https://i.scdn.co/image/ab67616d00001e02e6e663bf89c9e0b748100b77" alt="">
-      <h2>Widlfire</h2>
-      <p>2022</p>
+      <div class="center-container-item" onclick="fastLoadingPop(); clickedAlbumFromArtistMore(this)" data-album="Fever">
+        <img src="https://i.scdn.co/image/ab67616d00001e02186660bbf3b0dd9a5195e182" alt="">
+        <h2>Fever</h2>
+        <p>2021</p>
+      </div>
+  
+      <div class="center-container-item" onclick="fastLoadingPop(); clickedAlbumFromArtistMore(this)" data-album="Wildfire">
+        <img src="https://i.scdn.co/image/ab67616d00001e02e6e663bf89c9e0b748100b77" alt="">
+        <h2>Widlfire</h2>
+        <p>2022</p>
+      </div>
+
     </div>
 
   </div>
@@ -1314,6 +1318,30 @@
   </div>
 
   <div class="more_from_artists_content">
+
+  </div>
+
+</div>
+
+<div class="top_list_hits">
+
+  <div class="top_list_hits_controls">
+    <i onclick="topListHide()" class="fa-solid fa-xmark"></i>
+  </div>
+
+  <div class="top_list_hits_header">
+    <p>TOP 100</p>
+    <span class="top_list_hits_header_artist">Against The Current</span>
+  </div>
+
+  <img class="top_list_hits_header_background_img" src="images/rockstar-w-iext111232885.jpg">
+
+  <div class="popular-title">
+    <a class="popular-content-like" onclick="heartActive(this)"><i class="fa-regular fa-heart"></i></a>
+    <a class="popular-content-like" onclick="moreFromArtistQueue(this)"><i class="fa-solid fa-play"></i></a>
+  </div>
+
+  <div class="top_list_hits_content">
 
   </div>
 
