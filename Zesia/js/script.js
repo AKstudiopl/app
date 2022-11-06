@@ -2835,11 +2835,13 @@ const thisIsArtistBoxArtistTitle = document.querySelector(".artist-more-cover-da
 const top100ArtistBox = document.querySelector(".center-container-item.top-list");
 const top100ArtistImg = document.querySelector(".center-container-item.top-list img");
 const moreFromArtistContainer = document.querySelector("#followed-random-artist-content");
+const radioBox = document.querySelector(".center-container-item.radio-box");
+const radioBoxImg = document.querySelector(".center-container-item.radio-box img");
 
 function moreFromArtistGlobal(){
 
   var moreFromArtistFollowed = allMusicView.filter(x => x.artist_status === "followed");
-  var artistIndex = Math.floor((Math.random() * moreFromArtistFollowed.length) + 1);
+  var artistIndex = Math.floor((Math.random() * moreFromArtistFollowed.length));
   moreFromArtistGlobalData.innerText = moreFromArtistFollowed[artistIndex].artist;
   thisIsArtistBox.id = moreFromArtistFollowed[artistIndex].artist;
   thisIsArtistBoxArtistTitle.innerText = moreFromArtistFollowed[artistIndex].artist;
@@ -2848,6 +2850,9 @@ function moreFromArtistGlobal(){
 
   top100ArtistImg.src = moreFromArtistFollowed[artistIndex].gallery_img_2;
   top100ArtistBox.id = moreFromArtistFollowed[artistIndex].artist;
+
+  radioBox.id = moreFromArtistFollowed[artistIndex].artist;
+  radioBoxImg.src = moreFromArtistFollowed[artistIndex].gallery_img_4;
 
   moreFromArtistContainer.classList.remove("active");
 
@@ -2912,4 +2917,55 @@ function topListShow(element){
 
 function topListHide(){
   topListHits.classList.remove("active");
+}
+
+const radioScreen = document.querySelector(".radio_screen");
+const radioArtist = document.querySelector(".radio_screen_header span span");
+const radioImg = document.querySelector(".radio_screen_background_img");
+const radioUiImg = document.querySelector(".radio_screen_background img");
+
+function radioLoad(element){
+  radioScreen.classList.add("active");
+  console.log(element.id)
+
+  radioScreen.id = element.id;
+  radioArtist.innerText = element.id;
+  radioImg.src = element.querySelector("img").src;
+  radioUiImg.src = element.querySelector("img").src;
+
+  radioArtistData = element.id;
+  var artistCategoryFilter = allMusicView.filter(x => x.artist === radioArtistData);
+  radioCategoryData = artistCategoryFilter[0].style;
+
+  const resultsFAV = document.querySelector(".radio_screen_content");
+  var favoritIt = allMusicView.filter(x => x.artist === radioArtistData || x.style === radioCategoryData || x.colaboration === radioArtistData || x.status === "favorite");
+  resultsFAV.innerHTML = "";
+  for (let i = 0; i < favoritIt.length; i++) {
+    let resultFAV =
+      `<div class="radio_screen_item" li-index='${favoritIt[i].id}' onclick="clickedMixItem(this)">
+       <img src="images/${favoritIt[i].img}.jpg">
+          <div class="radio_screen_item_data">
+            <p>${favoritIt[i].name}</p>
+            <span>${favoritIt[i].artist}</span>
+          </div>
+       </div>`;
+    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+  }
+  $(".radio_screen_content").html($(".radio_screen_item").sort(function(){
+    return Math.random()-0.5;
+}));
+}
+
+function radioHide(){
+  radioScreen.classList.remove("active");
+}
+
+function radioOn(){
+  radioArtistData = radioScreen.id;
+  var artistCategoryFilter = allMusicView.filter(x => x.artist === radioArtistData);
+  radioCategoryData = artistCategoryFilter[0].style;
+  allMusic = allMusicView.filter(x => x.artist === radioArtistData || x.style === radioCategoryData || x.colaboration === radioArtistData || x.status === "favorite");
+  indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
+  loadMusic(indexNumb);
+  playMusic();
 }

@@ -2140,7 +2140,7 @@ var allMusic = [
     gallery_img_1: "https://pbs.twimg.com/media/FfYo9bUWIAI3pNq?format=jpg&name=large",
     gallery_img_2: "https://pbs.twimg.com/media/FfYo9bUX0AAtOz5?format=jpg&name=large",
     gallery_img_3: "https://pbs.twimg.com/media/FaF-EVDX0AIk-g2?format=jpg&name=medium",
-    gallery_img_4: "https://pbs.twimg.com/media/FY4Gs0gWYAEoXos?format=jpg&name=large",
+    gallery_img_4: "https://pbs.twimg.com/media/Fg6VojRXEAYF-J4?format=jpg&name=medium",
     gallery_img_5: "https://pbs.twimg.com/media/FUgIUrvXEAIZHHk?format=jpg&name=large",
 
     album: "Camila",
