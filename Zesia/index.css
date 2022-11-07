@@ -773,22 +773,19 @@ input:checked + .slider:before {
   flex-direction: row;
   align-items: center;
   border-bottom: var(--border);
-  padding: 5px 0;
+}
+.result-box img
+{
+  height: 58px;
+  padding-right:10px;
 }
 .result-box h1
 {
   font-size: 20px;
-  padding-left: 10px;
 }
 .result-box p
 {
   opacity: 0.5;
-  padding-left: 10px;
-}
-.result-box img
-{
-  height: 60px;
-  padding-right: 20px;
 }
 .library-favorite-search
 {
@@ -803,7 +800,6 @@ input:checked + .slider:before {
   transition: 0.3s;
   overflow: hidden;
   opacity: 0;
-  border-radius: 15px;
 }
 .library-favorite-search.active
 {
@@ -5859,7 +5855,7 @@ width: 100%;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  -webkit-mask-image: -webkit-linear-gradient(360deg, black 0%, transparent 100%);
+  -webkit-mask-image: -webkit-linear-gradient(90deg, black 0%, transparent 60%);
   filter: blur(15px);
   opacity: 0.25;
 }

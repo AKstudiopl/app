@@ -208,6 +208,7 @@
     <button class="search-item active">Chill</button>
     <button class="search-item active">Pop</button>
     <button class="search-item active">Rock</button>
+    <button class="search-item active">Soundtrack</button>
 
   </div>
 
@@ -521,7 +522,7 @@
           <div class="radio-box-shape"></div>
           <div class="radio-box-shape"></div>
         </div>
-        <img src="https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large" alt="">
+        <img src="https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large">
       </div>
       <p>Najczęsciej słuchane piosenki w tym tygodniu.</p>
     </div>
@@ -856,9 +857,9 @@
     <div class="music-style-item-content">
       <h1>Poczuj swój styl w muzyce</h1>
       <h2>Posłuchaj ulubionych utworów innych</h2>
-        <div class="music-style-option">
-          <a class="music-content-queue" onclick="styleQueue(this);"><i class="fa-solid fa-play"></i></a>
-          <a class="music-content-like"><i class="fa-regular fa-heart"></i> Polub</a>
+        <div class="popular-title">
+          <a class="popular-content-like" onclick="heartActive(this)"><i class="fa-regular fa-heart"></i></a>
+          <a class="popular-content-like" onclick="styleQueue(this)"><i class="fa-solid fa-play"></i></a>
         </div>
         <div class="music-style-item-container">
 

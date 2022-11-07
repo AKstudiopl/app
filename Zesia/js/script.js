@@ -795,15 +795,7 @@ menuLyricsExit.addEventListener('click', () => {
 menuLyricsBtn.addEventListener('click', () => {
   correctSoundScreen.classList.add('fullscreen')
 })
-const musicContenLike = document.getElementsByClassName('music-content-like')[0]
-musicContenLike.addEventListener('click', () => {
-  musicContenLike.classList.toggle('active')
-  if (musicContenLike.classList.contains("active")){
-    musicContenLike.innerHTML = '<i class="fa-regular fa-heart"></i> Polubiono';
-  }else{
-    musicContenLike.innerHTML = '<i class="fa-regular fa-heart"></i> Polub';
-  }
-})
+
 
 function clearFilterStatus(){
   let boxes = document.querySelectorAll('.search-filter .search-item');
@@ -819,6 +811,7 @@ const [search,filter,results] = ["#search-item",".search-filter",".search-result
 results.innerHTML=allMusicView.map((a,i)=>
 `<li li-index="${i + 1}" onclick="resultItemQueue(this);">
   <div class="result-box">
+   <img src="images/${a.img}.jpg">
    <div class="result-box-cover">
      <h1 class="result-name">${a.name}</h1>
      <p class="result-artist">${a.artist}</p>
@@ -2926,7 +2919,6 @@ const radioUiImg = document.querySelector(".radio_screen_background img");
 
 function radioLoad(element){
   radioScreen.classList.add("active");
-  console.log(element.id)
 
   radioScreen.id = element.id;
   radioArtist.innerText = element.id;
