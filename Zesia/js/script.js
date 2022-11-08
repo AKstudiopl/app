@@ -457,6 +457,7 @@ function loadMusic(indexNumb){
       }, 500)
 
       queueDataLoad();
+      overflowingText();
 }
 
 function queueDataLoad(){
@@ -2662,7 +2663,7 @@ dailyUserArtists = dailyUserMixScreen.querySelector(".daily_user_mix_header span
 function dailyMixClicked(element){
   fastLoadingPop();
   dailyUserMixScreen.classList.add("active")
-  dailyMixItemImg = element.querySelector(".center-container-item img");
+  dailyMixItemImg = element.querySelector(".center-container-item .dailyMixImg");
   dailyMixData = element.querySelector(".center-container-item h2").innerText;
   dailyUserTitle.innerText = dailyMixData;
   
@@ -2708,7 +2709,7 @@ function dailyMixClicked(element){
   dailyUserData3.innerText = mixData3;
 
   setTimeout(() => {
-    dailyMixItemImg.src = `images/${favoritIt[randomImg1].img}.jpg`;
+    dailyMixItemImg.src = favoritIt[randomImg2].gallery_img_1;
   }, 500)
 
   $(".daily_user_mix_content").html($(".daily_user_mix_content_item").sort(function(){
@@ -2960,4 +2961,15 @@ function radioOn(){
   indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
   loadMusic(indexNumb);
   playMusic();
+}
+
+let container2 = document.querySelector(".main-information-title");
+let text2 = document.querySelector(".main-information-title h1");
+
+function overflowingText(){
+  if (container2.clientWidth < text2.clientWidth) {
+    text2.classList.add("animate");
+  }else{
+    text2.classList.remove("animate");
+  }
 }

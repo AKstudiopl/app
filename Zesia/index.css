@@ -2095,6 +2095,17 @@ input:checked + .slider:before {
   aspect-ratio: 1/1;
   border-radius: 5px;
 }
+.main-music-header img.test
+{
+  width: 100%;
+  margin-left: -20px;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+  -webkit-mask-image: -webkit-linear-gradient(black 0%, transparent 80%);
+}
 .main-information
 {
   margin-left: 20px;
@@ -2133,9 +2144,41 @@ input:checked + .slider:before {
    75% { transform: rotate(-10deg); }
   100% { transform: rotate(0deg) scale(1); }
 }
+.main-information-title
+{
+  overflow: hidden;
+  width: 100%;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: visible;
+  position: relative;
+  -webkit-mask-image: -webkit-linear-gradient(0deg, black 80%, transparent 95%);
+}
 .main-information-title h1
 {
   font-size: 25px;
+  display: inline-block;
+}
+.main-information-title h1.animate {
+  position: relative;
+  animation: leftright 10s infinite alternate ease-in-out;
+}
+@keyframes leftright {
+  0%,
+  20% {
+    transform: translateX(0%);
+    left: 0%;
+  }
+  40%,
+  60% {
+    transform: translateX(-160%);
+    left: 160%;
+  }
+  80%,
+  100% {
+    transform: translateX(0%);
+    left: 0%;
+  }
 }
 .main-information-title p
 {
@@ -5962,8 +6005,18 @@ width: 100%;
   color: var(--color);
   opacity: 0.5;
 }
-
-
+#dailyMixContainer .dailyMixCover
+{
+  position: absolute;
+  filter: invert(1) contrast(70%);
+  border-radius: 5px;
+}
+#dailyMixContainer .center-container-item
+{
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
 /* Style_pop_up*/
 
 textarea
