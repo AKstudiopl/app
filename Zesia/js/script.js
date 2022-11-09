@@ -458,6 +458,7 @@ function loadMusic(indexNumb){
 
       queueDataLoad();
       overflowingText();
+      moreFromArtists();
 }
 
 function queueDataLoad(){
@@ -2013,6 +2014,7 @@ function artistScreenSearchBar(element){
   bioCard.classList.remove("active");
   userProfile.classList.remove("active");
   fastLoadingPop();
+  artistSongsDataLoad();
 
   currentIndexNumb = indexNumb;
   indexNumb = dataAttribute;
@@ -2710,6 +2712,9 @@ function dailyMixClicked(element){
 
   setTimeout(() => {
     dailyMixItemImg.src = favoritIt[randomImg2].gallery_img_1;
+    if(dailyMixItemImg.src = "https://i.scdn.co/image/ab67706c0000bebb282fbddcc3f29db9ecbbc1a0"){
+      dailyMixItemImg.src = favoritIt[randomImg1].gallery_img_1;
+    }
   }, 500)
 
   $(".daily_user_mix_content").html($(".daily_user_mix_content_item").sort(function(){
@@ -2972,4 +2977,34 @@ function overflowingText(){
   }else{
     text2.classList.remove("animate");
   }
+}
+
+
+function moreFromArtists(){
+
+  resultsFAV = document.querySelector(".center-container.popular-artists-container .center-container-scrollable");
+  var favoritIt = allMusicView.filter(x => x.tag === "Popular");
+  resultsFAV.innerHTML = "";
+  for (let i = 0; i < favoritIt.length; i++) {
+    let resultFAV =
+      `<div class="center-container-item popular-artist" data-id='${favoritIt[i].id}' data-artist='${favoritIt[i].artist}' onclick="artistScreenSearchBar(this);">
+       <img src="artists/${favoritIt[i].avatar}.jpg">
+       <h2>${favoritIt[i].artist}</h2>
+       </div>`;
+    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+  }
+
+  $(".center-container.popular-artists-container .center-container-scrollable").html($(".center-container-item.popular-artist").sort(function(){
+    return Math.random()-0.5;
+}));
+
+  var productIds={};
+  $('.center-container.popular-artists-container .center-container-scrollable .center-container-item').each(function(){
+      var prodId = $(this).attr('data-artist');
+      if(productIds[prodId]){
+         $(this).remove();
+      }else{
+         productIds[prodId] = true;
+      }
+  });
 }

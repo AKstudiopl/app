@@ -489,19 +489,19 @@
 
 <div class="center-container active" id="followed-random-artist-content">
   <div class="ui-title">
-    <h1>Więcej od <span class="artist-more-profile-data">Against The Current</span></h1>
+    <h1>Więcej od <span class="artist-more-profile-data"></span></h1>
   </div>
 
   <div class="center-container-scrollable">
 
-    <div class="center-container-item artist-more" onclick="moreFromArtists(this)" id="This Is Against The Current">
+    <div class="center-container-item artist-more" onclick="moreFromArtists(this)" id="">
       <div class="artist-more-cover">
         <div class="artist-more-cover-data">
-          <span>This Is <p class="artist-more-cover-data-artist">Against The Current</p></span>
+          <span>This Is <p class="artist-more-cover-data-artist"></p></span>
         </div>
         <img src="https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large" alt="">
       </div>
-      <p class="artist-more-description">This is <span class="artist-more-description-artist">Against The Current</span>. Wszystkie Najważniejsze utwory zebrane w jednej wyjątkowej playliscie</p>
+      <p class="artist-more-description">This is <span class="artist-more-description-artist"></span>. Wszystkie Najważniejsze utwory zebrane w jednej wyjątkowej playliscie</p>
     </div>
 
     <div class="center-container-item top-list" id="" onclick="topListShow(this)">
@@ -532,23 +532,31 @@
 
     <div class="artist-more-album">
 
-      <div class="center-container-item" onclick="fastLoadingPop(); clickedAlbumFromArtistMore(this)" data-album="Fever">
-        <img src="https://i.scdn.co/image/ab67616d00001e02186660bbf3b0dd9a5195e182" alt="">
-        <h2>Fever</h2>
-        <p>2021</p>
-      </div>
-  
-      <div class="center-container-item" onclick="fastLoadingPop(); clickedAlbumFromArtistMore(this)" data-album="Wildfire">
-        <img src="https://i.scdn.co/image/ab67616d00001e02e6e663bf89c9e0b748100b77" alt="">
-        <h2>Widlfire</h2>
-        <p>2022</p>
-      </div>
-
     </div>
 
   </div>
 </div>
 
+<div class="center-container popular-artists-container">
+  <div class="ui-title">
+    <h1>Popularni Wykonwacy</h1>
+  </div>
+
+  <div class="center-container-scrollable">
+    <div class="center-container-item" onclick="viewSearchHomeItems()">
+      <i class="fa-solid fa-plus"></i>
+      <h2>Dodaj Wykonawce</h2>
+    </div>
+    <div class="center-container-item" onclick="viewSearchHomeItems()">
+      <i class="fa-solid fa-plus"></i>
+      <h2>Dodaj Wykonawce</h2>
+    </div>
+    <div class="center-container-item" onclick="viewSearchHomeItems()">
+      <i class="fa-solid fa-plus"></i>
+      <h2>Dodaj Wykonawce</h2>
+    </div>
+  </div>
+</div>
 
 <div class="artist-card">
 
