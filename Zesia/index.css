@@ -6102,3 +6102,14 @@ textarea
     visibility: visible;
   }
 }
+
+@media (max-height: 500px) {
+  .navbar-bottom
+  {
+    right: 100vw;
+  }
+  .music-controls
+  {
+    right: 100vw;
+  }
+}
