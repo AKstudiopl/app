@@ -150,6 +150,7 @@ const exitFavoriteScreen = document.getElementsByClassName('library-favorite-exi
 
 showFavoriteScreen.addEventListener('click', () => {
   favoriteLibraryScreen();
+  checkLocalStorageData();
 })
 
 function favoriteLibraryScreen(){
@@ -192,7 +193,10 @@ function clickedSingle(element){
 function clickedSingleDelete(element){
   let getLiIndex = element.parentElement.getAttribute("li-index");
   let i = getLiIndex;
-  allMusicView[i].status = "nostatus";
+  allMusicView[i - 1].status = "nostatus";
+
+  localStorage.setItem(allMusicView[i - 1].id, "nostatus");
+
   element.classList.add('fa-solid');
   element.classList.add('fa-heart-crack');
   element.classList.remove('fa-heart');
@@ -294,8 +298,10 @@ musicImg.addEventListener("click", ()=>{
 favoritBtn.addEventListener('click', () => {
   if (allMusic[indexNumb - 1].status === "favorite") {
     allMusic[indexNumb - 1].status = "nostatus";
+    localStorage.setItem(allMusic[indexNumb - 1].id, allMusic[indexNumb - 1].status);
   }else if (allMusic[indexNumb - 1].status === "nostatus") {
     allMusic[indexNumb - 1].status = "favorite";
+    localStorage.setItem(allMusic[indexNumb - 1].id, allMusic[indexNumb - 1].status);
   }
   favoriteLoadItems();
   if (allMusic[indexNumb - 1].status === "favorite") {
@@ -458,7 +464,6 @@ function loadMusic(indexNumb){
 
       queueDataLoad();
       overflowingText();
-      moreFromArtists();
 }
 
 function queueDataLoad(){
@@ -2459,6 +2464,8 @@ function filterInProfile(){
 }
 
 function loadUserProfile(){
+  checkLocalStorageData();
+  checkLocalStorageDataArtist();
   userProfile.classList.toggle("active");
   userProfileFilterFavorite.classList.add("active");
   userProfileFilterPlaylist.classList.remove("active");
@@ -2522,8 +2529,10 @@ function followArtist(){
 
     if (followFilter[i].artist_status === "followed") {
       followFilter[i].artist_status = "none";
+      localStorage.setItem(followFilter[i].artist, followFilter[i].artist_status)
     }else if (followFilter[i].artist_status === "none") {
       followFilter[i].artist_status = "followed";
+      localStorage.setItem(followFilter[i].artist, followFilter[i].artist_status)
     }
 
   }
@@ -2577,7 +2586,7 @@ function followedArtistsContent() {
           <div class="user_profile_content_item_song_data">
             <p>${favoritIt[i].artist}</p>
           </div>
-         <i onclick="clickedSingleDelete(this)" class="fa-heart fa-solid"></i>
+         <i class="fa-heart fa-solid"></i>
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }
@@ -2595,7 +2604,6 @@ function followedArtistsContent() {
 
 
 function homeFavortiesArtists() {
-
   const resultsFAV = document.querySelector(".favorites-artists-container .center-container-scrollable");
   var favoritIt = allMusicView.filter(x => x.artist_status === "followed");
   resultsFAV.innerHTML = "";
@@ -2837,6 +2845,19 @@ const moreFromArtistContainer = document.querySelector("#followed-random-artist-
 const radioBox = document.querySelector(".center-container-item.radio-box");
 const radioBoxImg = document.querySelector(".center-container-item.radio-box img");
 
+
+checkArtistsNumber();
+
+function checkArtistsNumber(){
+  checkLocalStorageDataArtist();
+
+  var moreFromArtistFollowed = allMusicView.filter(x => x.artist_status === "followed");
+  if(moreFromArtistFollowed.length > 0){
+    moreFromArtistGlobal();
+    homeFavortiesArtists();
+  }
+}
+
 function moreFromArtistGlobal(){
 
   var moreFromArtistFollowed = allMusicView.filter(x => x.artist_status === "followed");
@@ -3008,3 +3029,45 @@ function moreFromArtists(){
       }
   });
 }
+
+function saveUserData(){
+  localStorage.setItem("user_Volume", mainAudio.volume);
+}
+
+function checkLocalStorageData(){
+
+  var followFilter = allMusicView;
+
+  for (let i = 0; i < followFilter.length; i++) {
+
+    if (localStorage.getItem(followFilter[i].id) === null) {
+  
+    }else if (localStorage.getItem(followFilter[i].id) === "favorite"){
+      followFilter[i].status = "favorite";
+    }else if (localStorage.getItem(followFilter[i].id) === "nostatus"){
+      followFilter[i].status = "nostatus";
+    }
+
+  }
+  favoriteLoadItems();
+}
+
+function checkLocalStorageDataArtist(){
+
+  var followFilter = allMusicView;
+
+  for (let i = 0; i < followFilter.length; i++) {
+
+    if (localStorage.getItem(followFilter[i].artist) === null) {
+  
+    }else if (localStorage.getItem(followFilter[i].artist) === "followed"){
+      followFilter[i].artist_status = "followed";
+    }else if (localStorage.getItem(followFilter[i].artist) === "none"){
+      followFilter[i].artist_status = "none";
+    }
+
+  }
+  followedArtistsContent();
+}
+
+moreFromArtists();
