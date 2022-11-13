@@ -4,7 +4,9 @@ var allMusic = [
       artist: "C-Bool",
       colaboration: "Giang Pham",
       artist_status: "none",
-      
+      language: "eng",
+      country: "pl",
+
       src: "C-BooLDJ",
       img: "C-BooLDJ",
       style: "Energic",
@@ -50,7 +52,9 @@ var allMusic = [
       artist: "C-Bool",
       colaboration: "Giang Pham",
       artist_status: "none",
-
+      language: "eng",
+      country: "pl",
+      
       src: "C-BooL-NeverGoAway",
       img: "C-BooL-NeverGoAway",
       style: "Energic",
@@ -96,6 +100,8 @@ var allMusic = [
       artist: "Kevin Rudolf",
       colaboration: "",
       artist_status: "none",
+      language: "eng",
+      country: "usa",
 
       src: "KevinRudolf-Champions",
       img: "KevinRudolf-Champions",
@@ -142,7 +148,9 @@ var allMusic = [
       artist: "DJ Regard",
       colaboration: "",
       artist_status: "none",
-
+      language: "eng",
+      country: "kos",
+      
       src: "DJRegard-Rideit",
       img: "DJRegard-Rideit",
       style: "Energic",
@@ -188,7 +196,9 @@ var allMusic = [
       artist: "Twenty one pilots",
       colaboration: "",
       artist_status: "none",
-
+      language: "eng",
+      country: "usa",
+      
       src: "twentyonepilots-Choker",
       img: "scaled-and-icy-b-iext104194001",
       style: "Chill",
@@ -234,7 +244,9 @@ var allMusic = [
       artist: "Twenty one pilots",
       colaboration: "",
       artist_status: "none",
-
+      language: "eng",
+      country: "usa",
+      
       src: "TwentyOnePilots-TheOutside",
       img: "scaled-and-icy-b-iext104194001",
       style: "Chill",
@@ -281,7 +293,9 @@ var allMusic = [
       artist: "Twenty one pilots",
       colaboration: "",
       artist_status: "none",
-
+      language: "eng",
+      country: "usa",
+      
       src: "TwentyOnePilots-ShyAway",
       img: "scaled-and-icy-b-iext104194001",
       style: "Chill",
@@ -327,7 +341,9 @@ var allMusic = [
       artist: "Twenty one pilots",
       colaboration: "",
       artist_status: "none",
-
+      language: "eng",
+      country: "usa",
+      
       src: "TwentyOnePilots-Saturday",
       img: "scaled-and-icy-b-iext104194001",
       style: "Chill",
@@ -373,7 +389,9 @@ var allMusic = [
       artist: "Twenty one pilots",
       colaboration: "",
       artist_status: "none",
-
+      language: "eng",
+      country: "usa",
+      
       src: "TwentyOnePilots-Redecorate",
       img: "scaled-and-icy-b-iext104194001",
       style: "Chill",
@@ -419,7 +437,9 @@ var allMusic = [
       artist: "Twenty one pilots",
       colaboration: "",
       artist_status: "none",
-
+      language: "eng",
+      country: "usa",
+      
       src: "TwentyOnePilots-NeverTakeIt",
       img: "scaled-and-icy-b-iext104194001",
       style: "Chill",
@@ -465,6 +485,8 @@ var allMusic = [
       artist: "Twenty one pilots",
       colaboration: "",
       artist_status: "none",
+      language: "eng",
+      country: "usa",
 
       src: "TwentyOnePilots-MulberryStreet",
       img: "scaled-and-icy-b-iext104194001",
@@ -511,6 +533,8 @@ var allMusic = [
       artist: "Twenty one pilots",
       colaboration: "",
       artist_status: "none",
+      language: "eng",
+      country: "usa",
 
       src: "TwentyOnePilots-GoodDay",
       img: "scaled-and-icy-b-iext104194001",
@@ -557,6 +581,8 @@ var allMusic = [
       artist: "Evtis",
       colaboration: "",
       artist_status: "none",
+      language: "pl",
+      country: "pl",
 
       src: "Evtis-Kłótnia",
       img: "C-BooL-NeverGoAway",
@@ -603,6 +629,8 @@ var allMusic = [
       artist: "Szusty",
       colaboration: "DonGuralsko",
       artist_status: "none",
+      language: "pl",
+      country: "pl",
 
       src: "donGURALesko-IdziemyPoSwojeSzUstyBlend",
       img: "guralsko",
@@ -643,6 +671,8 @@ var allMusic = [
       artist: "Szusty",
       colaboration: "DonGuralsko",
       artist_status: "none",
+      language: "pl",
+      country: "pl",
 
       src: "donGURALesko-LegendaSzUstyBlend",
       img: "guralsko",
@@ -690,6 +720,8 @@ var allMusic = [
     artist: "Post Malone",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "PostMalone-Rockstar",
     img: "rockstar-w-iext111232885",
@@ -737,6 +769,8 @@ var allMusic = [
     artist: "Happysad",
     colaboration: "",
     artist_status: "none",
+    language: "pl",
+    country: "pl",
 
     src: "Happysad-Bezznieczulenia",
     img: "ab67616d00001e021f86dffe512418a230887e69",
@@ -783,6 +817,8 @@ var allMusic = [
     artist: "Happysad",
     colaboration: "",
     artist_status: "none",
+    language: "pl",
+    country: "pl",
 
     src: "Happysad-Pętla",
     img: "ab67616d00001e021f86dffe512418a230887e69",
@@ -830,6 +866,8 @@ var allMusic = [
     artist: "L.B.ONE",
     colaboration: "Leanz",
     artist_status: "none",
+    language: "eng",
+    country: "fr",
 
     src: "LBONE-TiredBones",
     img: "tired-bones-w-iext52557958",
@@ -876,6 +914,8 @@ var allMusic = [
     artist: "Trzeci Wymiar",
     colaboration: "",
     artist_status: "none",
+    language: "pl",
+    country: "pl",
 
     src: "TrzeciWymiar-Złapzabroń",
     img: "6341ef2bd3abc2c21c6ee6466cb67d15.510x510x1",
@@ -922,6 +962,8 @@ var allMusic = [
     artist: "The King's Son",
     colaboration: "Shaggy",
     artist_status: "none",
+    language: "eng",
+    country: "Caribe",
 
     src: "TheKingsSon-ImNotRich",
     img: "ab67616d0000b27369cdca7b90ca8060e3525196",
@@ -968,6 +1010,8 @@ var allMusic = [
     artist: "MGK",
     colaboration: "Ester Dean",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "MGK-Invincible",
     img: "ab67616d0000b273a57d3a2736f815d3cf358e37",
@@ -1014,6 +1058,8 @@ var allMusic = [
     artist: "Bebe Rexha",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "BebeRexha-InTheNameOfLove",
     img: "ab67616d0000b2738c77bcf5f5a227d270d23370",
@@ -1061,6 +1107,8 @@ var allMusic = [
     artist: "Ariana Grande",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
     
     src: "ArianaGrande-OneLastTime",
     img: "e63468347c14c9f580857daae877a005",
@@ -1108,6 +1156,8 @@ var allMusic = [
     artist: "Anne Marie",
     colaboration: "Marshmallow",
     artist_status: "none",
+    language: "eng",
+    country: "uk",
     
     src: "https://drive.google.com/uc?export=view&id=1RxwKmEO9tK6m3WFxX5BMrZNHTftqi5zG",
     src: "Anne-Marie-Friends",
@@ -1156,6 +1206,8 @@ var allMusic = [
     artist: "Billie Eilish",
     colaboration: "Khalid",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
     
     src: "BillieEilish-Lovely",
     img: "ab67616d00001e028abille3f0a3ca7929dea23cd274cb",
@@ -1203,6 +1255,8 @@ var allMusic = [
     artist: "Clean Bandit",
     colaboration: "Zara Larsson",
     artist_status: "none",
+    language: "eng",
+    country: "uk",
     
     src: "CleanBandit-Symphony",
     img: "ab67616d000clean01e0237fb0680110fbb107740de5d",
@@ -1250,6 +1304,8 @@ var allMusic = [
     artist: "Imagine Dragons",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
     
     src: "ImagineDragonsRadioactive",
     img: "effimagineR-dragons-5966452-1407607955-4124",
@@ -1297,6 +1353,8 @@ var allMusic = [
     artist: "Imagine Dragons",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
     
     src: "ImagineDragonsBeliever",
     img: "ab67616d0imagine000b273a57d3adra2736f815d3gonscf358e37",
@@ -1344,6 +1402,8 @@ var allMusic = [
     artist: "Imagine Dragons",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
     
     src: "ImagineDragonsBleedingOut",
     img: "6ef9bc2988b796965f42098c459a83a6",
@@ -1391,6 +1451,8 @@ var allMusic = [
     artist: "Imagine Dragons",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
     
     src: "ImagineDragonsBadLiar",
     img: "6ef9bc2988b7969bad65f42098liarc459a83a6",
@@ -1438,6 +1500,8 @@ var allMusic = [
     artist: "Kygo",
     colaboration: "Imagine Dragons",
     artist_status: "none",
+    language: "eng",
+    country: "no",
     
     src: "KygoImagineDragonsBornToBeYours",
     img: "ab67616d0000b27337084df74688999caf0cbb9f",
@@ -1485,6 +1549,8 @@ var allMusic = [
     artist: "Twenty one pilots",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "twentyonepilotsJumpsuit",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
@@ -1531,6 +1597,8 @@ var allMusic = [
     artist: "Twenty one pilots",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "TwentyOnePilotsLevitate",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
@@ -1577,6 +1645,8 @@ var allMusic = [
     artist: "Twenty one pilots",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "TwentyOnePilotsMorph",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
@@ -1623,6 +1693,8 @@ var allMusic = [
     artist: "Twenty one pilots",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "TwentyOnePilotsMyBlood",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
@@ -1669,6 +1741,8 @@ var allMusic = [
     artist: "Twenty one pilots",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "twentyonepilotsChlorine",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
@@ -1715,6 +1789,8 @@ var allMusic = [
     artist: "Twenty one pilots",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "twentyonepilotsSmithereens",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
@@ -1761,6 +1837,8 @@ var allMusic = [
     artist: "Twenty one pilots",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "twentyonepilotsNeonGravestones",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
@@ -1807,6 +1885,8 @@ var allMusic = [
     artist: "Twenty one pilots",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "twentyonepilotsTheHype",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
@@ -1853,6 +1933,8 @@ var allMusic = [
     artist: "Twenty one pilots",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "twentyonepilotsNicoAndTheNiners",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
@@ -1899,6 +1981,8 @@ var allMusic = [
     artist: "Twenty one pilots",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "twentyonepilotsCutMyLip",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
@@ -1945,6 +2029,8 @@ var allMusic = [
     artist: "Twenty one pilots",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "twentyonepilotsBandito",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
@@ -1991,6 +2077,8 @@ var allMusic = [
     artist: "Twenty one pilots",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "twentyonepilotsPetCheetah",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
@@ -2037,6 +2125,8 @@ var allMusic = [
     artist: "Twenty one pilots",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "twentyonepilotsLegend",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
@@ -2083,6 +2173,8 @@ var allMusic = [
     artist: "Twenty one pilots",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "twentyonepilotsLeaveTheCity",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
@@ -2129,6 +2221,8 @@ var allMusic = [
     artist: "Camila Cabello",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "CamilaCabelloHavana",
     img: "CamilaCabelloHavana",
@@ -2176,6 +2270,8 @@ var allMusic = [
     artist: "Twenty one pilots",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "TwentyOnePilotsFormidable",
     img: "scaled-and-icy-b-iext104194001",
@@ -2222,6 +2318,8 @@ var allMusic = [
     artist: "Twenty one pilots",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "TwentyOnePilotsBounceMan",
     img: "scaled-and-icy-b-iext104194001",
@@ -2268,6 +2366,8 @@ var allMusic = [
     artist: "Twenty one pilots",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "TwentyOnePilotsNoChances",
     img: "scaled-and-icy-b-iext104194001",
@@ -2314,6 +2414,8 @@ var allMusic = [
     artist: "Twenty one pilots",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "TwentyOnePilotsHeavydirtysoul",
     img: "ab67616d00001e02de03bfc2991fd5bcfde65ba3",
@@ -2361,6 +2463,8 @@ var allMusic = [
     artist: "Zara Larsson",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "se",
 
     src: "ZaraLarssonAin'tMyFault",
     img: "ab67616d00001e029e1683774b22648f4f178ed3",
@@ -2408,6 +2512,8 @@ var allMusic = [
     artist: "Against The Current",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "AgainstTheCurrent-Wildfire",
     img: "ab67616d00against001e02e6e663bf89c9e0b748100b77",
@@ -2455,6 +2561,8 @@ var allMusic = [
     artist: "Against The Current",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "AgainsttheCurrent-thatwon'tsaveus",
     img: "ab67616d0000aga1e02186660bbf3b0ddcurrent9a5195e182",
@@ -2502,6 +2610,8 @@ var allMusic = [
     artist: "Against The Current",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "AgainstTheCurrent-weapon",
     img: "ab67616d0000aga1e02186660bbf3b0ddcurrent9a5195e182",
@@ -2549,6 +2659,8 @@ var allMusic = [
     artist: "Against The Current",
     colaboration: "guardin",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "AgainstTheCurrent-again&again",
     img: "ab67616d0000aga1e02186660bbf3b0ddcurrent9a5195e182",
@@ -2596,6 +2708,8 @@ var allMusic = [
     artist: "Against The Current",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "AgainstTheCurrent-jump",
     img: "ab67616d0000aga1e02186660bbf3b0ddcurrent9a5195e182",
@@ -2643,6 +2757,8 @@ var allMusic = [
     artist: "Against The Current",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "AgainstTheCurrent-shatter",
     img: "ab67616d0000aga1e02186660bbf3b0ddcurrent9a5195e182",
@@ -2690,6 +2806,8 @@ var allMusic = [
     artist: "Against The Current",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "AgainstTheCurrent-burnitdown",
     img: "ab67616d0000aga1e02186660bbf3b0ddcurrent9a5195e182",
@@ -2737,6 +2855,8 @@ var allMusic = [
     artist: "Against The Current",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "AgainstTheCurrent-lullaby",
     img: "ab67616d0000aga1e02186660bbf3b0ddcurrent9a5195e182",
@@ -2784,6 +2904,8 @@ var allMusic = [
     artist: "Against The Current",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "AgainstTheCurrent-weapon-acoustic",
     img: "ab67616d00001e0270aceaa21668839917e839bc",
@@ -2831,6 +2953,8 @@ var allMusic = [
     artist: "Against The Current",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "AgainstTheCurrent-LegendsNeverDie",
     img: "ab6761die6d000never01e02cb5ec46d6f1legendsd2cf8d36d3663",
@@ -2878,6 +3002,8 @@ var allMusic = [
     artist: "NF",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "NF-MyStress",
     img: "artnfworks-1sYqk3myIyfIdSfbstresssa-zQVByA-t500x500",
@@ -2925,6 +3051,8 @@ var allMusic = [
     artist: "NF",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "NF–TheSearch",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
@@ -2972,6 +3100,8 @@ var allMusic = [
     artist: "NF",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "NF-LeaveMeAlone",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
@@ -3019,6 +3149,8 @@ var allMusic = [
     artist: "NF",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "NF-Change",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
@@ -3066,6 +3198,8 @@ var allMusic = [
     artist: "NF",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "NF-Nate",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
@@ -3113,6 +3247,8 @@ var allMusic = [
     artist: "Howard Shore",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "ca",
 
     src: "HowardShore-TheBattleOfThePelennorFields",
     img: "ab67616d00001e02howard2b4d071fshore7824b2c60c3b85cd",
@@ -3160,6 +3296,8 @@ var allMusic = [
     artist: "Avicii",
     colaboration: "Sandro Cavazza",
     artist_status: "none",
+    language: "eng",
+    country: "se",
 
     src: "Avicii-WithoutYou",
     img: "ab67616d00001e02a2without6cc58b4d64c2eceyou3376389",
@@ -3207,6 +3345,8 @@ var allMusic = [
     artist: "NF",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "NF-Time",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
@@ -3254,6 +3394,8 @@ var allMusic = [
     artist: "NF",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "NF-Returns",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
@@ -3301,6 +3443,8 @@ var allMusic = [
     artist: "NF",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "NF-WhenIGrowUp",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
@@ -3348,6 +3492,8 @@ var allMusic = [
     artist: "NF",
     colaboration: "Sasha Sloan",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "NF-Only",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
@@ -3395,6 +3541,8 @@ var allMusic = [
     artist: "NF",
     colaboration: "Sasha Sloan",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "NF-LetMeGo",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
@@ -3442,6 +3590,8 @@ var allMusic = [
     artist: "NF",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "NF-HateMyself",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
@@ -3489,6 +3639,8 @@ var allMusic = [
     artist: "NF",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "NF-IMissTheDays",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
@@ -3536,6 +3688,8 @@ var allMusic = [
     artist: "NF",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "NF-NoExcuses",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
@@ -3583,6 +3737,8 @@ var allMusic = [
     artist: "NF",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "NF-LikeThis",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
@@ -3630,6 +3786,8 @@ var allMusic = [
     artist: "NF",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "NF-Options",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
@@ -3677,6 +3835,8 @@ var allMusic = [
     artist: "NF",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "NF-Why",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
@@ -3724,6 +3884,8 @@ var allMusic = [
     artist: "NF",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "NF-Thinking",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
@@ -3771,6 +3933,8 @@ var allMusic = [
     artist: "NF",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "NF-Trauma",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
@@ -3818,6 +3982,8 @@ var allMusic = [
     artist: "Filatov & Karas",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "ru",
 
     src: "Filatov&Karas-Dontbesoshy",
     img: "ab67616d00001edont029fa97bd8ebeso5926a4d4shy5031497",
@@ -3865,6 +4031,8 @@ var allMusic = [
     artist: "Filatov & Karas",
     colaboration: "Busy Reno",
     artist_status: "none",
+    language: "eng",
+    country: "ru",
 
     src: "Filatov&Karas-AuRevoir",
     img: "ab67616d0000aurevoir1e02633f46784e8a4c40fc22f009",
@@ -3912,6 +4080,8 @@ var allMusic = [
     artist: "Filatov & Karas",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "ru",
 
     src: "Filatov&Karas-TimeWontWait",
     img: "ab6761wait6d00001e02time78b7a4e605abwont1521ab6b6forus393",
@@ -3959,6 +4129,8 @@ var allMusic = [
     artist: "Tove Lo",
     colaboration: "Hippie Sabotage",
     artist_status: "none",
+    language: "eng",
+    country: "se",
 
     src: "ToveLo-Habits",
     img: "fde27675fc056tovelof2e0422c6eahabbits9c603eb9",
@@ -4006,6 +4178,8 @@ var allMusic = [
     artist: "Nicki Minaj",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "usa",
 
     src: "NickiMinaj-PoundTheAlarm",
     img: "ab67616d00001e0nicki2ef9ad61e2a4f15alarm606fd4ab15",
@@ -4053,6 +4227,8 @@ var allMusic = [
     artist: "futurebae",
     colaboration: "",
     artist_status: "none",
+    language: "de",
+    country: "de",
 
     src: "Fensterbank",
     img: "ab67616d000fenster01e02aaa43ad24b4665b7c4985f4b",
@@ -4100,6 +4276,8 @@ var allMusic = [
     artist: "Dua Lipa",
     colaboration: "",
     artist_status: "none",
+    language: "eng",
+    country: "uk",
 
     src: "DuaLipa-Physical",
     img: "ab67616d00001e0physical2bd26ede1ae69327010d49946",
@@ -4134,11 +4312,60 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "genrefluides feuerwerk mit hang zum perlwein",
+    bio: "Global pop superstar Dua Lipa released Future Nostalgia, her #1 UK sophomore album, this year to worldwide acclaim. It is one of the best reviewed albums of 2020 and debuted in the top 5 of the Billboard 200 Album Chart. Upon release, Future Nostalgia was the most streamed album in a day by a British female artist globally in Spotify history and has over 4.5 billion streams to date. Dua is the biggest female artist in the world on Spotify and is currently the third biggest artist overall with nearly 60 million monthly listeners. The album’s certified platinum lead single “Don’t Start Now” is a worldwide hit with one billion streams on Spotify alone, and a #2 spot on the Billboard Hot 100, a career high for the pop star. The track also broke her personal best record of weeks at #1 at US Top 40 radio. Dua followed the success of “Don’t Start Now” by releasing smash UK single “Physical,” and her US Top 40 #1 “Break My Heart.” Most recently, Future Nostalgia was shortlisted for UK’s prestigious Mercury Prize. Future Nostalgia is the follow up to Dua’s eponymous 2017 debut, which is certified platinum and spawned 6 platinum tracks. She made BRIT Award history in 2018 by becoming the first female artist to pick up five nominations, with two wins for British Breakthrough Act and British Female Solo Artist, and received two Grammy awards for Best New Artist and Best Dance Recording in early 2019.",
     social:{
       instagram: "https://www.instagram.com/DuaLipa/",
       twitter: "https://twitter.com/DuaLipa",
       facebook: "https://www.facebook.com/DuaLipa",
+    },
+    user_playlist_1: "",
+  },
+  {
+    name: "Bang Bang",
+    artist: "Rita Ora",
+    colaboration: "Imbanek",
+    artist_status: "none",
+    language: "eng",
+    country: "al",
+
+    src: "RitaOra–BangBang",
+    img: "ab67706c0bang000bebb159175f1bang5bfffa26739ca4f3",
+    style: "Pop",
+    status: "nostatus",
+    tag: "Popular",
+    avatar: "1255cd42c454b8rita12156e992d288a6ora2bd8a187b62151",
+    artist_img: "https://i.scdn.co/image/ab6761860000101600654561de9c7db64fb9fbe1",
+    gallery_img_1: "https://pbs.twimg.com/media/E9IvAkeWEAIcI0_?format=jpg&name=medium",
+    gallery_img_2: "https://i.scdn.co/image/b873242eaff254187086e4caa00047300b4276f8",
+    gallery_img_3: "https://pbs.twimg.com/media/ElxKwQ_WkAY48TP?format=jpg&name=medium",
+    gallery_img_4: "https://i.scdn.co/image/2e5d776f02337d77aac60aa00419b3a16a09ac3f",
+    gallery_img_5: "https://pbs.twimg.com/media/FhDMXwKXoAEy2u1?format=jpg&name=large",
+
+    album: "Bang EP",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e0207dd4fdbc93d932ff72a4be0",
+    album_premiere: "2021",
+    id: "90",
+    lyrics:{
+      lyrics_verse_1: "",
+      lyrics_verse_2: "",
+      lyrics_verse_3: "",
+      lyrics_verse_4: "",
+      lyrics_verse_5: "",
+      lyrics_verse_6: "",
+      lyrics_verse_7: "",
+      lyrics_verse_8: "",
+      lyrics_verse_9: "",
+      lyrics_verse_10: "",
+      lyrics_verse_11: "",
+      lyrics_verse_12: "",
+      lyrics_verse_13: "",
+      lyrics_verse_14: ""
+    },
+    bio: "Rita Ora is an international critically acclaimed singer-songwriter with four #1 UK singles and holds the record for the most Top 10 singles for a British female artist in the UK in history with a total of 13. In 2021, she launched the global collaboration Bang, with GRAMMY nominated Kazakh DJ and record producer Imanbek. Written and produced over Zoom by Rita and Imanbek and featuring David Guetta, Gunna and Argentinian rapper KHEA, the four track EP is a mix of modern pop, 80s and 90s club culture and floor-filling house. The EP is the follow up to her album Phoenix, which has amassed over 3.7 billion streams worldwide, spawned 3 platinum singles and includes “Lonely Together,” her collaboration with Avicii which won “Best Dance” VMA at the MTV Video Music Awards. In addition, her debut album, Ora, debuted at #1 on the UK charts and was certified platinum.",
+    social:{
+      instagram: "https://www.instagram.com/ritaora/",
+      twitter: "https://twitter.com/RitaOra",
+      facebook: "https://www.facebook.com/ritaora",
     },
     user_playlist_1: "",
   },

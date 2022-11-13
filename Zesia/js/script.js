@@ -2760,7 +2760,7 @@ artistsForFansImg = artistsForFans.querySelector(".more_from_artists_header img"
 artistsForFansBackground = artistsForFans.querySelector(".artists_header_background_img");
 
 
-function moreFromArtists(element){
+function thisIsArtistItem(element){
   artistsForFans.classList.add("active");
   itemDescription = element.querySelector(".artist-more-description").innerText;
   itemImgSrc = element.querySelector("img").src;
