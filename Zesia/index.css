@@ -506,9 +506,12 @@ input:checked + .slider:before {
   flex-wrap: nowrap;
   overflow-x: auto;
   display: flex;
-  border-bottom:  2px var(--backgroundsecond) solid;
+  border-bottom: 2px var(--backgroundsecond) solid;
   padding: 8px 0;
-  -webkit-mask-image: -webkit-linear-gradient(180deg, transparent 0%, black 10%, black 90%, transparent 100%);
+  position: relative;
+  width: calc(100% - 58px);
+  margin-left: 58px;
+  -webkit-mask-image: -webkit-linear-gradient(360deg, black 90%, transparent 100%);
 }
 .search-item
 {
@@ -523,11 +526,11 @@ input:checked + .slider:before {
 }
 .search-item:last-child
 {
-  margin-right: 25px;
+  margin-right: 10px;
 }
 .search-item:first-child
 {
-  margin-left: 25px;
+  margin-left: 10px;
 }
 .search-item.active
 {
@@ -6018,6 +6021,130 @@ width: 100%;
   border-radius: 5px;
   overflow: hidden;
 }
+.search-filter-more
+{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+  height: 51px;
+  width: 58px;
+  background: var(--background);
+  border-right: 2px var(--backgroundsecond) solid;
+  color: var(--maincolor);
+  margin-right: 5px;
+  z-index: 5;
+}
+.search-filter-more.active
+{
+  visibility: hidden;
+}
+.filter-menu
+{
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+  background: var(--background);
+  padding-bottom: 15px;
+  border-bottom: 2px var(--backgroundsecond) solid;
+  color: var(--color);
+  transition: 0.5s;
+  margin-top: -120vh;
+  top: 0;
+  height: 95vh;
+}
+.filter-menu.active
+{
+  margin-top: 0;
+}
+.filter-menu-top
+{
+  display: flex;
+  width: calc(100% - 30px);
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px var(--backgroundsecond) solid;
+}
+.filter-menu-top p 
+{
+  text-transform: uppercase;
+  color: var(--color);
+}
+.filter-menu-top i 
+{
+  font-size: 20px;
+  color: var(--maincolor);
+}
+.filter-menu-option
+{
+  width: 100%;
+  padding-top:15px;
+}
+.filter-menu-option p
+{
+  margin-left: 15px;
+}
+.filter-menu-option-scrollable
+{
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  display: flex;
+  margin-top: 5px;
+  width: 100%;
+}
+.filter-menu-option-scrollable-item
+{
+  flex: 0 0 auto;
+  background-color: var(--backgroundsecond);
+  padding: 10px 30px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.filter-menu-option-scrollable-item p 
+{
+  color: var(--color);
+  margin: 0;
+}
+.filter-menu-option-scrollable-item:first-child
+{
+  margin-left: 15px;
+}
+.filter-menu-action
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 30px);
+  padding:0 15px;
+  padding-top: 15px;
+  margin-top: 15px;
+  border-top: 2px var(--backgroundsecond) solid;
+}
+.filter-menu-action a 
+{
+  border-radius: 10px;
+  width: 48%;
+  padding: 10px 0;
+  background: var(--backgroundsecond);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.filter-menu-action a:active
+{
+  opacity: 0.5;
+  transform: scale(0.9);
+}
+.filter-menu-action a:last-child
+{
+  background: var(--maincolor);
+  color: var(--background);
+}
+
 /* Style_pop_up*/
 
 textarea

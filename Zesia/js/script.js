@@ -1948,6 +1948,7 @@ searchTrackFilter.addEventListener('click', () => {
   searchBarName.style.display="flex";
   searchArtist.value='';
   filterList();
+  filterMenuBtn.classList.remove("active");
 })
 
 searchArtistFilter.addEventListener('click', () => {
@@ -1961,6 +1962,8 @@ searchArtistFilter.addEventListener('click', () => {
   searchForArtist();
   search.value='';
   filterByArtist();
+  filterMenu.classList.remove("active");
+  filterMenuBtn.classList.add("active");
 })
 
 const searchArtist = document.querySelector("#search-artist");
@@ -3071,3 +3074,10 @@ function checkLocalStorageDataArtist(){
 }
 
 moreFromArtists();
+
+const filterMenu = document.querySelector(".filter-menu");
+const filterMenuBtn = document.querySelector(".search-filter-more");
+
+function filterMenuOn(){
+  filterMenu.classList.toggle("active");
+}
