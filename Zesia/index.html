@@ -184,7 +184,7 @@
 
     <div class="search-bar" id="search-bar-name">
       <input type="text" id="search-item" placeholder="Utwory, Wykonwacy">
-      <button type="button" id="clear-input-btn" onclick="search.value='';filterList();clearFilterStatus()"><i class="fa-solid fa-xmark"></i></button>
+      <button type="button" id="clear-input-btn" onclick="search.value='';filterList();clearFilterStatus();resetCustomFilter();"><i class="fa-solid fa-xmark"></i></button>
     </div>
 
     <div class="search-bar" id="search-bar-artist">
@@ -211,7 +211,7 @@
     <div class="filter-menu-option">
       <p>Gatunek</p>
 
-      <div class="filter-menu-option-scrollable">
+      <div class="filter-menu-option-scrollable style">
 
         <div class="filter-menu-option-scrollable-item"><p>Hip-Hop</p></div>
         <div class="filter-menu-option-scrollable-item"><p>Energic</p></div>
@@ -228,13 +228,13 @@
     <div class="filter-menu-option">
       <p>Język</p>
 
-      <div class="filter-menu-option-scrollable">
+      <div class="filter-menu-option-scrollable language">
 
-        <div class="filter-menu-option-scrollable-item"><p>Angielski</p></div>
-        <div class="filter-menu-option-scrollable-item"><p>Polski</p></div>
-        <div class="filter-menu-option-scrollable-item"><p>Niemiecki</p></div>
-        <div class="filter-menu-option-scrollable-item"><p>Francuski</p></div>
-        <div class="filter-menu-option-scrollable-item"><p>Włoski</p></div>
+        <div class="filter-menu-option-scrollable-item" id="eng"><p>Angielski</p></div>
+        <div class="filter-menu-option-scrollable-item" id="pl"><p>Polski</p></div>
+        <div class="filter-menu-option-scrollable-item" id="de"><p>Niemiecki</p></div>
+        <div class="filter-menu-option-scrollable-item" id="fr"><p>Francuski</p></div>
+        <div class="filter-menu-option-scrollable-item" id="it"><p>Włoski</p></div>
 
       </div>
 
@@ -243,17 +243,18 @@
     <div class="filter-menu-option">
       <p>Kraj</p>
       
-      <div class="filter-menu-option-scrollable">
+      <div class="filter-menu-option-scrollable country">
 
-        <div class="filter-menu-option-scrollable-item"><p>Wielka Brytania</p></div>
-        <div class="filter-menu-option-scrollable-item"><p>Stany Zjednoczone</p></div>
-        <div class="filter-menu-option-scrollable-item"><p>Niemcy</p></div>
-        <div class="filter-menu-option-scrollable-item"><p>Polska</p></div>
-        <div class="filter-menu-option-scrollable-item"><p>Francja</p></div>
-        <div class="filter-menu-option-scrollable-item"><p>Rosja</p></div>
-        <div class="filter-menu-option-scrollable-item"><p>Albania</p></div>
-        <div class="filter-menu-option-scrollable-item"><p>Kosovo</p></div>
-        <div class="filter-menu-option-scrollable-item"><p>Inny</p></div>
+        <div class="filter-menu-option-scrollable-item" id="non-selected"><p>Brak</p></div>
+        <div class="filter-menu-option-scrollable-item" id="uk"><p>Wielka Brytania</p></div>
+        <div class="filter-menu-option-scrollable-item" id="usa"><p>Stany Zjednoczone</p></div>
+        <div class="filter-menu-option-scrollable-item" id="de"><p>Niemcy</p></div>
+        <div class="filter-menu-option-scrollable-item" id="pl"><p>Polska</p></div>
+        <div class="filter-menu-option-scrollable-item" id="fr"><p>Francja</p></div>
+        <div class="filter-menu-option-scrollable-item" id="ru"><p>Rosja</p></div>
+        <div class="filter-menu-option-scrollable-item" id="al"><p>Albania</p></div>
+        <div class="filter-menu-option-scrollable-item" id="kos"><p>Kosovo</p></div>
+        <div class="filter-menu-option-scrollable-item" id="other"><p>Inny</p></div>
 
       </div>
       
@@ -262,19 +263,20 @@
     <div class="filter-menu-option">
       <p>Dodatkowe Tagi</p>
       
-      <div class="filter-menu-option-scrollable">
+      <div class="filter-menu-option-scrollable tag">
 
-        <div class="filter-menu-option-scrollable-item"><p>Popularne</p></div>
-        <div class="filter-menu-option-scrollable-item"><p>Nowości</p></div>
-        <div class="filter-menu-option-scrollable-item"><p>Polubione</p></div>
+        <div class="filter-menu-option-scrollable-item" id="non-selected"><p>Brak</p></div>
+        <div class="filter-menu-option-scrollable-item" id="Popular"><p>Popularne</p></div>
+        <div class="filter-menu-option-scrollable-item" id="Newest"><p>Nowości</p></div>
+        <div class="filter-menu-option-scrollable-item" id="favorite"><p>Polubione</p></div>
 
       </div>
       
     </div>
 
     <div class="filter-menu-action">
-      <a>Resetuj</a>
-      <a>Szukaj</a>
+      <a onclick="resetCustomFilter()">Resetuj</a>
+      <a onclick="applyCustomFilter()">Szukaj</a>
     </div>
 
   </div>

@@ -815,7 +815,9 @@ function clearFilterStatus(){
 const searchNoResults = document.querySelector(".search-noresults");
 const searchNoResultsValue = document.querySelector(".search-noresults-keyword");
 const [search,filter,results] = ["#search-item",".search-filter",".search-results"].map(sel=>document.querySelector(sel));
-results.innerHTML=allMusicView.map((a,i)=>
+searchMusicContent = allMusicView;
+
+results.innerHTML=searchMusicContent.map((a,i)=>
 `<li li-index="${i + 1}" onclick="resultItemQueue(this);">
   <div class="result-box">
    <img src="images/${a.img}.jpg">
@@ -908,7 +910,7 @@ function filterList(){
   let styles=[...filter.querySelectorAll(".active")].map(b=>b.textContent),
   // get current search string from input field:
     srch=search.value.toLowerCase();
-    allMusicView.forEach((m,i)=>{ // both conditions must be met: style and search pattern
+    searchMusicContent.forEach((m,i)=>{ // both conditions must be met: style and search pattern
     results.children[i].style.display=(m.name+"|"+m.artist).toLowerCase().includes(srch)&&styles.includes(m.style)?"":"none";
     results.children[i].classList.add=(m.name+"|"+m.artist).toLowerCase().includes(srch)&&styles.includes(m.style)?"":"searched";
   })
@@ -3080,4 +3082,90 @@ const filterMenuBtn = document.querySelector(".search-filter-more");
 
 function filterMenuOn(){
   filterMenu.classList.toggle("active");
+}
+
+$('.filter-menu-option-scrollable.style .filter-menu-option-scrollable-item').click(function() {
+  $('.filter-menu-option-scrollable.style .filter-menu-option-scrollable-item').not($(this)).removeClass('active');
+  $(this).addClass('active');
+});
+
+$('.filter-menu-option-scrollable.language .filter-menu-option-scrollable-item').click(function() {
+  $('.filter-menu-option-scrollable.language .filter-menu-option-scrollable-item').not($(this)).removeClass('active');
+  $(this).addClass('active');
+});
+
+$('.filter-menu-option-scrollable.country .filter-menu-option-scrollable-item').click(function() {
+  $('.filter-menu-option-scrollable.country .filter-menu-option-scrollable-item').not($(this)).removeClass('active');
+  $(this).addClass('active');
+});
+
+$('.filter-menu-option-scrollable.tag .filter-menu-option-scrollable-item').click(function() {
+  $('.filter-menu-option-scrollable.tag .filter-menu-option-scrollable-item').not($(this)).removeClass('active');
+  $(this).addClass('active');
+});
+
+function applyCustomFilter(){
+  let filterCategoryData = document.querySelector(".filter-menu-option-scrollable.style .filter-menu-option-scrollable-item.active p");
+  let filterLanguageData = document.querySelector(".filter-menu-option-scrollable.language .filter-menu-option-scrollable-item.active");
+  let filterCountryData = document.querySelector(".filter-menu-option-scrollable.country .filter-menu-option-scrollable-item.active");
+  let filterTagData = document.querySelector(".filter-menu-option-scrollable.tag .filter-menu-option-scrollable-item.active");
+
+  if (filterCategoryData != null){
+    searchMusicContent = searchMusicContent.filter(x => x.style === filterCategoryData.innerText);
+  }
+
+  if (filterLanguageData != null){
+    searchMusicContent = searchMusicContent.filter(x => x.language === filterLanguageData.id);
+  }
+
+  if (filterCountryData != null){
+    if(filterCountryData.id = "non-selected"){
+      searchMusicContent = searchMusicContent;
+    }else{
+      searchMusicContent = searchMusicContent.filter(x => x.country === filterCountryData.id);
+    }
+  }
+
+  if (filterTagData != null){
+    if(filterTagData.id === "non-selected"){
+      searchMusicContent = searchMusicContent;
+    }else if(filterTagData.id === "favorite"){
+      searchMusicContent = searchMusicContent.filter(x => x.status === "favorite");
+    }else{
+      searchMusicContent = searchMusicContent.filter(x => x.tag === filterTagData.id);
+    }
+  }
+
+  results.innerHTML=searchMusicContent.map((a,i)=>
+  `<li li-index="${i + 1}" onclick="resultItemQueue(this);">
+    <div class="result-box">
+    <img src="images/${a.img}.jpg">
+    <div class="result-box-cover">
+      <h1 class="result-name">${a.name}</h1>
+      <p class="result-artist">${a.artist}</p>
+    </div>
+    </div>
+  </li>`).join("\n");
+}
+
+function resetCustomFilter(){
+  searchMusicContent = allMusicView;
+
+  var elements = document.querySelectorAll(".filter-menu-option-scrollable .filter-menu-option-scrollable-item")
+  for (var i = 0; i < elements.length; i++) {
+      elements[i].classList.remove('active');
+  }
+
+  results.innerHTML=searchMusicContent.map((a,i)=>
+  `<li li-index="${i + 1}" onclick="resultItemQueue(this);">
+    <div class="result-box">
+     <img src="images/${a.img}.jpg">
+     <div class="result-box-cover">
+       <h1 class="result-name">${a.name}</h1>
+       <p class="result-artist">${a.artist}</p>
+     </div>
+    </div>
+   </li>`).join("\n");
+
+   clearFilterStatus()
 }
