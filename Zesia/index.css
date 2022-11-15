@@ -3980,6 +3980,10 @@ body.green .queue-item ul li img
   justify-content: space-between;
   color: var(--color);
 }
+.popular-music .music-artist-album-screen-title
+{
+  padding: 10px;
+}
 .music-artist-album-screen-title p 
 {
   color: var(--color);
@@ -5635,10 +5639,11 @@ width: 100%;
 }
 .more_from_artists_header span
 {
-  opacity: 0.5;
   max-width: 60%;
   font-size: 12px;
   margin-bottom: 15px;
+  z-index: 1;
+  color: var(--color);
 }
 .more_from_artists_controls
 {

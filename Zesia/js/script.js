@@ -282,6 +282,8 @@ var indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
 var allMusicView = allMusic.filter(x => x.artist !== "");
 var indexNumbAll = allMusicView.length;
 
+checkLocalStorageData();
+
 if(replaced){
   var indexNumb = replaced;
 }
@@ -419,9 +421,6 @@ function loadMusic(indexNumb){
     musicTopOptionsFavorite.innerHTML = '<i class="fa-regular fa-heart"></i> Dodaj Do Ulubionych';
     musicTopOptionsFavorite.classList.remove('active')
   }
-
-  const nameProfile = document.querySelector('.library-profile-data p');
-  nameProfile.innerText = localStorage.userData;
 
 
     navigator.mediaSession.metadata = new MediaMetadata({
@@ -955,11 +954,23 @@ function setvolume(){
   localStorage.setItem("user_Volume", mainAudio.volume);
   console.log(currentVolume);
 }
+
+const nameUserScreen = document.querySelector(".user_profile_header_content_date span");
+
   function nameQuestion() {
+    const nameProfile = document.querySelector('.library-profile-data p');
     inputName = document.getElementById('username');
     namePlace = document.getElementById('nameUser');
-    nameProfile.innerText = inputName.value;
     localStorage.setItem("userData", inputName.value);
+    nameProfile.innerText = localStorage.userData;
+
+    const date = new Date();
+    let day = date.getDate();
+    let month = date.getMonth() + 1;
+    let year = date.getFullYear();
+    let currentDate = new Date().toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"});
+    localStorage.setItem("userCreatedData", currentDate);
+    nameUserScreen.innerText = currentDate;
   }
   function checkQuestion(){
     namePlace = document.getElementById('nameUser');
@@ -967,9 +978,13 @@ function setvolume(){
 
       if (localStorage.getItem("userData") === null) {
         nameAsk.classList.remove('confirmed');
-    }else {
-        nameAsk.classList.add('confirmed');
-    }
+      }else {
+          nameAsk.classList.add('confirmed');
+      }
+      if(localStorage.getItem("userCreatedData") != null){
+        let currentDate = localStorage.getItem("userCreatedData");
+        nameUserScreen.innerText = currentDate;
+      } 
   }
 
 
@@ -3110,6 +3125,8 @@ function applyCustomFilter(){
   let filterCountryData = document.querySelector(".filter-menu-option-scrollable.country .filter-menu-option-scrollable-item.active");
   let filterTagData = document.querySelector(".filter-menu-option-scrollable.tag .filter-menu-option-scrollable-item.active");
 
+  searchMusicContent = allMusicView;
+
   if (filterCategoryData != null){
     searchMusicContent = searchMusicContent.filter(x => x.style === filterCategoryData.innerText);
   }
@@ -3146,6 +3163,8 @@ function applyCustomFilter(){
     </div>
     </div>
   </li>`).join("\n");
+
+  filterMenu.classList.remove("active");
 }
 
 function resetCustomFilter(){
