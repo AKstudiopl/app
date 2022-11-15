@@ -3599,14 +3599,26 @@ body.green .queue-item ul li img
   width: 100%;
   border-bottom: 1px solid var(--backgroundsecond);
   transition: 0.25s;
+  height: 60px;
 }
-.music-artist-content-item:nth-child(-n+5)
+.music-artist-content-item:nth-child(-n+10)
 {
   display: flex;
 }
 .music-artist-content-item.active:nth-child(-n+50)
 {
   display: flex;
+}
+.music-artist-content-item h1
+{
+  color: var(--color);
+  opacity: 0.5;
+  margin: 20px;
+}
+.music-artist-content-item-data h1
+{
+  margin: 0;
+  opacity: 1;
 }
 .music-artist-content-container::-webkit-scrollbar-track {
   background: var(--background);
@@ -3630,7 +3642,6 @@ body.green .queue-item ul li img
 .music-artist-content-item-data
 {
   line-height: 1;
-  padding-left: 15px;
 }
 .music-artist-content-item-data h1
 {
@@ -3672,8 +3683,6 @@ body.green .queue-item ul li img
 
 .music-artist-content-container
 {
-  max-height: 366px;
-  overflow-y: scroll;
   overflow-x: hidden;
   border-top: 1px var(--backgroundsecond) solid;
   display: flex;
@@ -3796,6 +3805,7 @@ body.green .queue-item ul li img
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 15px;
 }
 .music-artist-information-join-data
 {
@@ -6017,8 +6027,15 @@ width: 100%;
 #dailyMixContainer .dailyMixCover
 {
   position: absolute;
-  filter: invert(1) contrast(70%);
   border-radius: 5px;
+}
+#dailyMixContainer .center-container-item:nth-child(2) .dailyMixCover
+{
+  filter: hue-rotate(95deg) grayscale(1);
+}
+#dailyMixContainer .center-container-item:nth-child(1) .dailyMixCover
+{
+  filter: hue-rotate(260deg) saturate(150%);
 }
 #dailyMixContainer .center-container-item
 {

@@ -1246,7 +1246,7 @@ function popularLoad(){
     for (let i = 0; i < favoritIt.length; i++) {
       let resultFAV =
         `<div class="music-artist-content-item" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
-          <img src="images/${favoritIt[i].img}.jpg">
+          <h1>${i + 1}</h1>
             <div class="music-artist-content-item-data">
               <h1>${favoritIt[i].name}</h1>
               <span>${favoritIt[i].artist}</span>
@@ -1258,7 +1258,6 @@ function popularLoad(){
     artistsSongsFeaturedLoad();
 
     $(".music-artist-content-container").html($(".music-artist-content-container .music-artist-content-item").sort(function(){
-      return Math.random()-0.5;
   }));
 
   function artistsSongsFeaturedLoad() {
@@ -1279,31 +1278,15 @@ function popularLoad(){
          </div>`;
       resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
     }
-    const artistLibrary = document.querySelectorAll(".music-artist-content-item");
-    const artistLibraryBtn = document.querySelector(".music-artist-content-btn"); 
+    
     const featuredLibrary = document.querySelectorAll(".music-artist-content-item-featured");
     const featuredContainer = document.querySelector(".music-artist-item-featured");
-
-    artistLibraryBtn.addEventListener('click', () => {
-      for (const artistLibraryItem of artistLibrary){
-        artistLibraryItem.classList.add('active')
-        artistLibraryBtn.style.display="none";
-      }
-      fastLoadingPop();
-    })
-
-    if (artistLibrary.length < 5){
-      artistLibraryBtn.style.display="none";
-    }else
-    {
-      artistLibraryBtn.style.display="flex";
-    }
 
     if (featuredLibrary.length < 1){
       featuredContainer.style.display="none";
     }else
     {
-      featuredContainer.style.display="flex";
+      featuredContainer.style.display="none";
     }
   }}
 
@@ -2061,7 +2044,7 @@ function artistScreenSearchBar(element){
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
       `<div class="music-artist-content-item" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
-        <img src="images/${favoritIt[i].img}.jpg">
+        <h1>${i + 1}</h1>
           <div class="music-artist-content-item-data">
             <h1>${favoritIt[i].name}</h1>
             <span>${favoritIt[i].artist}</span>
@@ -2076,11 +2059,11 @@ function artistScreenSearchBar(element){
   artistsSongsSearchBarFeaturedLoad();
 
   $(".music-artist-content-container").html($(".music-artist-content-container .music-artist-content-item").sort(function(){
-    return Math.random()-0.5;
 }));
 
 function artistsSongsSearchBarFeaturedLoad() {
   let artistNameData = artistItemTitle.innerText;
+  artistItemFeatured.innerText = document.querySelector(".music-artist-item-data-artist").innerText;
 
   const resultsFAV = document.querySelector(".featured-content");
   var favoritIt = allMusicView.filter(x => x.colaboration === artistNameData);
@@ -2096,25 +2079,8 @@ function artistsSongsSearchBarFeaturedLoad() {
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }
-  const artistLibrary = document.querySelectorAll(".music-artist-content-item");
-  const artistLibraryBtn = document.querySelector(".music-artist-content-btn"); 
   const featuredLibrary = document.querySelectorAll(".music-artist-content-item-featured");
   const featuredContainer = document.querySelector(".music-artist-item-featured");
-
-  artistLibraryBtn.addEventListener('click', () => {
-    for (const artistLibraryItem of artistLibrary){
-      artistLibraryItem.classList.add('active')
-      artistLibraryBtn.style.display="none";
-    }
-    fastLoadingPop();
-  })
-
-  if (artistLibrary.length < 5){
-    artistLibraryBtn.style.display="none";
-  }else
-  {
-    artistLibraryBtn.style.display="flex";
-  }
 
   if (featuredLibrary.length < 1){
     featuredContainer.style.display="none";
@@ -2214,6 +2180,35 @@ const featuredLibrary = document.querySelectorAll(".music-artist-content-item-fe
 const featuredContainer = document.querySelector(".music-artist-item-featured");
 
 artistMenuPopular.addEventListener('click', () => {
+  artistSongsDataLoad();
+
+  let artistNameData = artistItemTitle.innerText;
+  artistItemFeatured.innerText = document.querySelector(".music-artist-item-data-artist").innerText;
+
+  const resultsFAV = document.querySelector(".featured-content");
+  var favoritIt = allMusicView.filter(x => x.colaboration === artistNameData);
+  resultsFAV.innerHTML = "";
+  for (let i = 0; i < favoritIt.length; i++) {
+    let resultFAV =
+      `<div class="music-artist-content-item-featured" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
+        <img src="images/${favoritIt[i].img}.jpg">
+          <div class="music-artist-content-item-data-featured">
+            <h1>${favoritIt[i].name}</h1>
+            <span>${favoritIt[i].artist}, ${favoritIt[i].colaboration}</span>
+          </div>
+       </div>`;
+    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+  }
+  
+  const featuredLibrary = document.querySelectorAll(".music-artist-content-item-featured");
+  const featuredContainer = document.querySelector(".music-artist-item-featured");
+
+  if (featuredLibrary.length < 1){
+    featuredContainer.style.display="none";
+  }else
+  {
+    featuredContainer.style.display="flex";
+  }
   artistMenuPopular.classList.add('active');
   artistMenuAlbums.classList.remove('active');
   artistMenuAbout.classList.remove('active');
@@ -2227,7 +2222,6 @@ artistMenuPopular.addEventListener('click', () => {
 
   artistAlbums.style.display="none";
   artistAbout.style.display="none";
-  artistSongsDataLoad();
 })
 artistMenuAlbums.addEventListener('click', () => {
   artistMenuPopular.classList.remove('active')
@@ -2632,7 +2626,7 @@ function homeFavortiesArtists() {
       `<div class="center-container-item" onclick="artistScreenSearchBar(this);" data-id='${favoritIt[i].id}' artist-data='${favoritIt[i].artist}'>
           <img src="artists/${favoritIt[i].avatar}.jpg">
           <h2>${favoritIt[i].artist}</h2>
-          <p>Zweryfikowany</p>
+          <p>Zweryfikowano</p>
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }
