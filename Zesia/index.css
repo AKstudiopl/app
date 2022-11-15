@@ -3614,6 +3614,8 @@ body.green .queue-item ul li img
   color: var(--color);
   opacity: 0.5;
   margin: 20px;
+  font-weight: 100;
+  font-size: 25px;
 }
 .music-artist-content-item-data h1
 {
