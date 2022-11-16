@@ -380,13 +380,6 @@
       </div>
     </div>
 
-    <div class="lucky-container">
-      <h2>Chcesz znalezć coś nowego?</h2>
-      <h2>Spróbuj użyć przycisku poniżej!</h2>
-      <p>Wybrano losowa piosenka zostanie odtworzona</p>
-      <a onclick="randomIndex()">Nowa Ulubiona Muzyka?</a>
-    </div>
-
   <div class="library-settings-container">
     <a href="#" class="librarySettingsBtn">Ustawienia</a>
     <a onclick="loadUserProfile();fastLoadingPop();">Konto</a>
@@ -599,17 +592,12 @@
     <div class="center-container-item radio-box" id="" onclick="radioLoad(this)">
       <div class="radio-box-cover">
         <div class="radio-box-cover-data">
-          <span><p>RADIO</p></span>
-          <span><p>RADIO</p></span>
-          <span><p>RADIO</p></span>
+          <img src="assets/layered-waves-haikei.png" alt="">
+          <p>RADIO</p>
         </div>
-        <div class="radio-box-shapes">
-          <div class="radio-box-shape"></div>
-          <div class="radio-box-shape"></div>
-        </div>
-        <img src="https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large">
+        <img src="https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large" id="radio-box-img">
       </div>
-      <p>Najczęsciej słuchane piosenki w tym tygodniu.</p>
+      <p>Radio, bieżąco aktualizowana list na podstawie artystów</p>
     </div>
 
     <div class="artist-more-album">
@@ -1320,7 +1308,7 @@
     <p class="user_profile_header_content_date">Dołączył/a : <span>Sunday, October 23th</span></p>
 
     <div class="user_profile_header_content_action">
-      <a><i class="fa-solid fa-share-nodes"></i> Udostępnij</a>
+      <a onclick="errorPop()"><i class="fa-solid fa-share-nodes"></i> Udostępnij</a>
       <a class="user_profile_action_search"><i class="fa-solid fa-search"></i> Szukaj</a>
     </div>
 
@@ -1460,11 +1448,15 @@
     <p>RADIO</p>
     <span>with : <span></span></span>
   </div>
-  
-  <img class="radio_screen_background_img" src="https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large">
+
+  <div class="radio_screen_background_img">
+    <img src="https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large">
+  </div>
+
+  <img src="assets/layered-waves-haikei.png" class="radio_screen_background_asset">
 
   <div class="popular-title">
-    <a class="popular-content-like" onclick="heartActive(this)"><i class="fa-solid fa-tower-broadcast"></i></a>
+    <a class="popular-content-like" onclick="heartActive(this);errorPop()"><i class="fa-solid fa-tower-broadcast"></i></a>
     <a class="popular-content-like" onclick="radioOn()"><i class="fa-solid fa-play"></i></a>
   </div>
 
@@ -1472,6 +1464,15 @@
 
   </div>
 
+</div>
+
+<div class="error_popup">
+  <i class="fa-solid fa-rocket"></i>
+  <div class="error_content">
+    <p>Houston, we have a problem</p>
+    <span>This feature is currently not available, try again later</span>
+  </div>
+  <i onclick="errorPop()" class="fa-solid fa-xmark"></i>
 </div>
 
 <div class="fast-loader">

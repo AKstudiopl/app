@@ -5831,6 +5831,11 @@ width: 100%;
 .radio-box-cover
 {
   position: relative;
+  background: var(--maincolor);
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 5px;
+  z-index: 0;
 }
 .center-container-item.radio-box .radio-box-cover-data
 {
@@ -5844,6 +5849,12 @@ width: 100%;
   justify-content: center;
   font-style: italic;
 }
+.center-container-item.radio-box .radio-box-cover-data img
+{
+  width: 100%;
+  z-index: 1;
+  height: 100%;
+}
 .radio-box-shapes
 {
   width: 100%;
@@ -5854,6 +5865,16 @@ width: 100%;
   justify-content: space-between;
   flex-direction: column;
   overflow: hidden;
+}
+#radio-box-img
+{
+  mix-blend-mode: darken;
+  filter: grayscale(50%);
+  z-index: 1;
+}
+.center-container-item.radio-box p
+{
+  margin-top: 5px;
 }
 .radio-box-shape
 {
@@ -5869,28 +5890,14 @@ width: 100%;
 {
   clip-path: polygon(100% 0, 0% 100%, 100% 100%);
 }
-.center-container-item.radio-box .radio-box-cover-data span
-{
-  width: 100%;
-  text-align: center;
-  margin-left: -10px;
-}
-.center-container-item.radio-box .radio-box-cover-data span:nth-child(1){
-  -webkit-mask-image: -webkit-linear-gradient(black 0%, transparent 80%);
-}
-.center-container-item.radio-box .radio-box-cover-data span:nth-child(3){
-  -webkit-mask-image: -webkit-linear-gradient(transparent 20%, black 100%);
-}
-.center-container-item.radio-box .radio-box-cover-data span:nth-child(2) p{
-  color: var(--color);
-}
 .center-container-item.radio-box .radio-box-cover-data p 
 {
-  font-weight: 100;
-  color: var(--background);
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px;
-  font-size: 40px;
+  position: absolute;
+  bottom: 7%;
+  color: var(--color);
+  z-index: 1;
+  font-size: 30px;
+  font-weight: 900;
 }
 
 
@@ -5955,6 +5962,28 @@ width: 100%;
   font-size: 18px;
 }
 .radio_screen_background_img
+{
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  top: 0;
+  height: 50vw;
+  object-position: top;
+  z-index: -1;
+  background: var(--maincolor);
+}
+.radio_screen_background_img img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  z-index: -1;
+  mix-blend-mode: darken;
+  filter: grayscale(100%);
+  z-index: 1;
+}
+.radio_screen_background_asset
 {
   position: absolute;
   width: 100%;
@@ -6179,6 +6208,52 @@ width: 100%;
 {
   margin-left: 5px;
 }
+.error_popup
+{
+  transition: 0.5s;
+  z-index: 10;
+  position: fixed;
+  bottom: -15vh;
+  width: calc(100% - 50px);
+  margin-left: 15px;
+  background: var(--background);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 10px;
+  color: var(--color);
+  border: 1px var(--backgroundsecond) solid;
+}
+.error_popup.active
+{
+  bottom: 150px;
+}
+.error_content
+{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.error_popup i
+{
+  font-size: 20px;
+}
+.error_popup i:first-child
+{
+  color: var(--maincolor);
+}
+.error_content p
+{
+  color: var(--maincolor);
+  font-size: 18px;
+}
+.error_content span
+{
+  font-size: 12px;
+  opacity: 0.5;
+}
+
 /* Style_pop_up*/
 
 textarea

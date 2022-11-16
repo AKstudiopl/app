@@ -1608,12 +1608,12 @@ function createItemPlaylist(){
   playlistTitleData = playlistTitleInputData.value;
   var element = document.createElement("div");
   element.classList.add('center-container-item');
-  element.innerHTML = '<i class="fa-solid fa-music" onclick="clickedPlaylist(this)"></i><span class="created-playlist-id" style="display:none;"></span><span class="created-playlist-date" style="display:none;"></span><h2 class="center-container-item-title-data"></h2>';
+  element.innerHTML = '<img src="assets/albumsamplegraphic.png" onclick="clickedPlaylist(this)"></img><span class="created-playlist-id" style="display:none;"></span><span class="created-playlist-date" style="display:none;"></span><h2 class="center-container-item-title-data"></h2>';
   let playlistItemTitle = element.querySelector(".center-container-item-title-data");
   let playlistItemCreateDate = element.querySelector(".created-playlist-date");
   let playlistItemId = element.querySelector(".created-playlist-id");
   playlistItemTitle.innerText = playlistTitleData;
-  playlistsContainer.prepend(element); 
+  playlistsContainer.append(element); 
   playlistTitleInputData.value = "";
   if (playlistItemTitle.innerText.length < 2)
   {
@@ -2857,7 +2857,7 @@ const top100ArtistBox = document.querySelector(".center-container-item.top-list"
 const top100ArtistImg = document.querySelector(".center-container-item.top-list img");
 const moreFromArtistContainer = document.querySelector("#followed-random-artist-content");
 const radioBox = document.querySelector(".center-container-item.radio-box");
-const radioBoxImg = document.querySelector(".center-container-item.radio-box img");
+const radioBoxImg = document.querySelector(".center-container-item.radio-box #radio-box-img");
 
 
 checkArtistsNumber();
@@ -2955,16 +2955,14 @@ function topListHide(){
 
 const radioScreen = document.querySelector(".radio_screen");
 const radioArtist = document.querySelector(".radio_screen_header span span");
-const radioImg = document.querySelector(".radio_screen_background_img");
-const radioUiImg = document.querySelector(".radio_screen_background img");
+const radioImg = document.querySelector(".radio_screen_background_img img");
 
 function radioLoad(element){
   radioScreen.classList.add("active");
 
   radioScreen.id = element.id;
   radioArtist.innerText = element.id;
-  radioImg.src = element.querySelector("img").src;
-  radioUiImg.src = element.querySelector("img").src;
+  radioImg.src = element.querySelector("#radio-box-img").src;
 
   radioArtistData = element.id;
   var artistCategoryFilter = allMusicView.filter(x => x.artist === radioArtistData);
@@ -3181,4 +3179,8 @@ function resetCustomFilter(){
    </li>`).join("\n");
 
    clearFilterStatus()
+}
+
+function errorPop(){
+  document.querySelector(".error_popup").classList.toggle("active");
 }
