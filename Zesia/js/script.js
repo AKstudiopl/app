@@ -167,7 +167,7 @@ function favoriteLoadItems() {
   resultsFAV.innerHTML = "";
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
-      `<div class="library-favorite-item" li-index='${favoritIt[i].id}' onclick="favoritesQueue()">
+      `<div class="library-favorite-item" li-index='${favoritIt[i].id}' onclick="favoritesQueue();clickedSingle(this)">
           <div class="library-favorite-data">
             <h1>${favoritIt[i].name}</h1>
             <span>${favoritIt[i].artist}</span>
@@ -235,7 +235,8 @@ queueImg = wrapper.querySelector(".queue-container img"),
 queueCurrentImg = wrapper.querySelector(".queue-current-item img"),
 queueCurrentTrack = wrapper.querySelector(".queue-current-data p"),
 queueCurrentArtist = wrapper.querySelector(".queue-current-data span"),
-queueCurrentBackgroundImg = wrapper.querySelector(".queue-gif img");
+queueCurrentBackgroundImg = wrapper.querySelector(".queue-gif img"),
+musicTopOptionsRadio = wrapper.querySelector(".top-menu-list-radio-item"),
 musicBackgroundImage = wrapper.querySelector(".background-music-img img"),
 musicTopOptionsImage = wrapper.querySelector(".top-more-head-image img"),
 musicTopOptionsName = wrapper.querySelector(".top-more-head-name"),
@@ -358,6 +359,7 @@ function loadMusic(indexNumb){
   musicTopOptionsName.innerText = allMusic[indexNumb - 1].name;
   musicTopOptionsArtist.innerText = allMusic[indexNumb - 1].artist;
   musicTopOptionsImage.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
+  musicTopOptionsRadio.id = allMusic[indexNumb - 1].artist;
   topOption.setAttribute("id", allMusic[indexNumb - 1].id);
   lyricsDataArtist.innerText = allMusic[indexNumb - 1].artist;
   lyricsDataTitle.innerText = allMusic[indexNumb - 1].name;
@@ -1608,7 +1610,7 @@ function createItemPlaylist(){
   playlistTitleData = playlistTitleInputData.value;
   var element = document.createElement("div");
   element.classList.add('center-container-item');
-  element.innerHTML = '<img src="assets/albumsamplegraphic.png" onclick="clickedPlaylist(this)"></img><span class="created-playlist-id" style="display:none;"></span><span class="created-playlist-date" style="display:none;"></span><h2 class="center-container-item-title-data"></h2>';
+  element.innerHTML = '<img src="assets/albumsamplegraphic.png" onclick="clickedPlaylist(this)"></img><span class="created-playlist-id" style="display:none;"></span><span class="created-playlist-date" style="display:none;"></span><h2 onclick="clickedPlaylist(this)" class="center-container-item-title-data"></h2>';
   let playlistItemTitle = element.querySelector(".center-container-item-title-data");
   let playlistItemCreateDate = element.querySelector(".created-playlist-date");
   let playlistItemId = element.querySelector(".created-playlist-id");
@@ -2962,7 +2964,13 @@ function radioLoad(element){
 
   radioScreen.id = element.id;
   radioArtist.innerText = element.id;
-  radioImg.src = element.querySelector("#radio-box-img").src;
+  if(!element.querySelector("#radio-box-img")){
+    radioImg.src = allMusic[indexNumb - 1].gallery_img_5;
+    wrapper.classList.remove("active");
+    topOption.classList.remove('active');
+  }else{
+    radioImg.src = element.querySelector("#radio-box-img").src
+  }
 
   radioArtistData = element.id;
   var artistCategoryFilter = allMusicView.filter(x => x.artist === radioArtistData);

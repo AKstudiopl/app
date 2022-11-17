@@ -6253,7 +6253,42 @@ width: 100%;
   font-size: 12px;
   opacity: 0.5;
 }
-
+.library-slider .center-container-scrollable
+{
+  flex-direction: column;
+  flex-wrap: unset;
+  overflow-x: scroll;
+  max-height: 55vh;
+}
+.library-slider .center-container-item:first-child {
+  margin-left: 0px;
+}
+.library-slider .center-container-scrollable .center-container-item
+{
+  width: 100%;
+  height: 15vw;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.library-slider .center-container-scrollable .center-container-item h2
+{
+  margin-left: 10px;
+  width: 100%;
+}
+.library-slider .center-container-scrollable .center-container-item img
+{
+  height: 100%;
+  width: auto;
+  aspect-ratio: 1/1;
+}
+.library-slider .center-container-scrollable .center-container-item i {
+  background: var(--backgroundsecond);
+  height: 100%;
+  width: auto;
+  border-radius: 5px;
+}
 /* Style_pop_up*/
 
 textarea
