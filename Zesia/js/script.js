@@ -463,6 +463,14 @@ function loadMusic(indexNumb){
         
       }, 500)
 
+      
+      if (localStorage.getItem("lastViewedAlbum_2").length > 0) {
+          uiLastViewedAlbumsLoad();
+      }else{
+          uiLastViewedAlbum_1.style.display="none";
+          uiLastViewedAlbum_2.style.display="none";
+      }
+
       queueDataLoad();
       overflowingText();
 }
@@ -1345,6 +1353,14 @@ function clickedSingleAlbum(element){
     albumScreenAlbumImg.src = albumImgData.src;
     albumScreenArtistImg.src = albumImgData.src;
 
+    let lastViewedAlbum = localStorage.getItem("lastViewedAlbum_1");
+    localStorage.setItem("lastViewedAlbum_2", lastViewedAlbum)
+    localStorage.setItem("lastViewedAlbum_1", albumNameData)
+    
+    if(albumNameData === lastViewedAlbum){
+      localStorage.setItem("lastViewedAlbum_2", "")
+    }
+
     const resultsFAV = document.querySelector(".music-artist-album-screen-container");
     var favoritIt = allMusicView.filter(x => x.album === albumNameData);
     resultsFAV.innerHTML = "";
@@ -1365,6 +1381,13 @@ function clickedSingleAlbum(element){
       albumScreenAlbumText.innerText = "Album";
     }else if(albumNumberSongs = 1){
       albumScreenAlbumText.innerText = "Singiel";
+    }
+
+    if (localStorage.getItem("lastViewedAlbum_2").length > 0) {
+      uiLastViewedAlbumsLoad();
+    }else{
+        uiLastViewedAlbum_1.style.display="none";
+        uiLastViewedAlbum_2.style.display="none";
     }
 }
 
@@ -2172,6 +2195,32 @@ function randomHomeArtist(){
   uiRandomArtistCardImg.src = allMusicView[indexNumb - 1].artist_img;
 }
 
+const uiLastViewedAlbum_1 = document.querySelector("#head_content_album_1");
+const uiLastViewedAlbum_2 = document.querySelector("#head_content_album_2");
+
+function uiLastViewedAlbumsLoad(){
+  let lastAlbum_1 = localStorage.getItem("lastViewedAlbum_1");
+  let lastAlbum_2 = localStorage.getItem("lastViewedAlbum_2");
+
+  uiLastViewedAlbum_1.style.display="flex";
+  uiLastViewedAlbum_2.style.display="flex";
+
+  var lastAlbumImgSrc_1 = allMusicView.filter(x => x.album === lastAlbum_1);
+  var lastAlbumImgSrc_2 = allMusicView.filter(x => x.album === lastAlbum_2);
+
+  uiLastViewedAlbum_1.querySelector("p").innerText = lastAlbumImgSrc_1[0].album_premiere;
+  uiLastViewedAlbum_1.querySelector(".data-title").innerText = lastAlbum_1;
+  uiLastViewedAlbum_1.querySelector("img").src = lastAlbumImgSrc_1[0].album_cover;
+  uiLastViewedAlbum_1.querySelector(".head-content-item-background").src = lastAlbumImgSrc_1[0].album_cover;
+  uiLastViewedAlbum_1.setAttribute("data-album", lastAlbum_1);
+
+  uiLastViewedAlbum_2.querySelector("p").innerText = lastAlbumImgSrc_2[0].album_premiere;
+  uiLastViewedAlbum_2.querySelector(".data-title").innerText = lastAlbum_2;
+  uiLastViewedAlbum_2.querySelector("img").src = lastAlbumImgSrc_2[0].album_cover
+  uiLastViewedAlbum_2.querySelector(".head-content-item-background").src = lastAlbumImgSrc_2[0].album_cover;
+  uiLastViewedAlbum_2.setAttribute("data-album", lastAlbum_2);
+}
+
 const artistMenuPopular = document.querySelector("#music-artist-menu-popular");
 const artistMenuAlbums = document.querySelector("#music-artist-menu-albums");
 const artistMenuAbout = document.querySelector("#music-artist-menu-about");
@@ -2842,11 +2891,19 @@ function clickedAlbumFromArtistMore(element){
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
     albumScreenSongsNumber.innerText = $('.music-artist-album-item').length;
   }
+  
   let albumNumberSongs = $('.music-artist-album-item').length;
   if(albumNumberSongs > 1){
     albumScreenAlbumText.innerText = "Album";
   }else if(albumNumberSongs = 1){
     albumScreenAlbumText.innerText = "Singiel";
+  }
+
+  if (localStorage.getItem("lastViewedAlbum_2").length > 0) {
+    uiLastViewedAlbumsLoad();
+  }else{
+      uiLastViewedAlbum_1.style.display="none";
+      uiLastViewedAlbum_2.style.display="none";
   }
 }
 
