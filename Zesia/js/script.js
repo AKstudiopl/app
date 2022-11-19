@@ -464,11 +464,13 @@ function loadMusic(indexNumb){
       }, 500)
 
       
-      if (localStorage.getItem("lastViewedAlbum_2").length > 0) {
+      if(localStorage.hasOwnProperty("lastViewedAlbum_2")){
+        if (localStorage.getItem("lastViewedAlbum_2").length > 0) {
           uiLastViewedAlbumsLoad();
-      }else{
-          uiLastViewedAlbum_1.style.display="none";
-          uiLastViewedAlbum_2.style.display="none";
+        }else{
+            uiLastViewedAlbum_1.style.display="none";
+            uiLastViewedAlbum_2.style.display="none";
+        }
       }
 
       queueDataLoad();
@@ -493,6 +495,7 @@ function clickedQueueItem(element){
   let getLiIndex = element.getAttribute("li-index");
   indexNumb = getLiIndex;
   loadMusic(indexNumb);
+  playMusic();
 }
 
 
@@ -1291,12 +1294,10 @@ function popularLoad(){
     
     const featuredLibrary = document.querySelectorAll(".music-artist-content-item-featured");
     const featuredContainer = document.querySelector(".music-artist-item-featured");
-
     if (featuredLibrary.length < 1){
-      featuredContainer.style.display="none";
-    }else
-    {
-      featuredContainer.style.display="none";
+      featuredContainer.style.visibility="hidden";
+    }else{
+      featuredContainer.style.visibility="visible";
     }
   }}
 
@@ -2108,10 +2109,10 @@ function artistsSongsSearchBarFeaturedLoad() {
   const featuredContainer = document.querySelector(".music-artist-item-featured");
 
   if (featuredLibrary.length < 1){
-    featuredContainer.style.display="none";
+    featuredContainer.style.visibility="hidden";
   }else
   {
-    featuredContainer.style.display="flex";
+    featuredContainer.style.visibility="visible";
   }
 };
 
@@ -2255,22 +2256,15 @@ artistMenuPopular.addEventListener('click', () => {
   const featuredContainer = document.querySelector(".music-artist-item-featured");
 
   if (featuredLibrary.length < 1){
-    featuredContainer.style.display="none";
+    featuredContainer.style.visibility="hidden";
   }else
   {
-    featuredContainer.style.display="flex";
+    featuredContainer.style.visibility="visible";
   }
   artistMenuPopular.classList.add('active');
   artistMenuAlbums.classList.remove('active');
   artistMenuAbout.classList.remove('active');
   artistPopular.style.display="flex";
-
-  if (featuredLibrary.length < 1){
-    featuredContainer.style.display="none";
-  }else{
-    featuredContainer.style.display="flex";
-  }
-
   artistAlbums.style.display="none";
   artistAbout.style.display="none";
 })
@@ -3193,10 +3187,9 @@ function applyCustomFilter(){
   }
 
   if (filterCountryData != null){
-    if(filterCountryData.id = "non-selected"){
-      searchMusicContent = searchMusicContent;
-    }else{
-      searchMusicContent = searchMusicContent.filter(x => x.country === filterCountryData.id);
+    searchMusicContent = searchMusicContent.filter(x => x.country === filterCountryData.id);
+    if(filterCountryData.id === "non-selected"){
+      searchMusicContent = allMusicView;
     }
   }
 

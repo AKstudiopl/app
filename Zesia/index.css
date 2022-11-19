@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap');
 
 *
 {
@@ -29,7 +30,7 @@
 body
 {
   background: var(--background);
-  font-family: 'PT Sans','Saira', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   color: #fff;
   overflow-x: hidden;
 }
@@ -295,16 +296,16 @@ body::-webkit-scrollbar
   height: 100vh;
   position: fixed;
   background: var(--background);
-  visibility: hidden;
-  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
   top: 0;
-  margin-left: -120vw;
+  margin-top: 120vh;
+  z-index: 3;
 }
 .settings-screen.active
 {
-  margin-left: 0;
-  visibility: visible;
-  z-index: 3;
+  margin-top: 0;
 }
 .settings-screen .settings-screen-title
 {
@@ -372,6 +373,7 @@ body::-webkit-scrollbar
   color: var(--color);
   font-size: 16px;
   width:calc(100% - 15px);
+  font-family: 'Darker Grotesque';
 }
 .settings-screen-item h3
 {
