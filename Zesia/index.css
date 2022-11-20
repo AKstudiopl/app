@@ -46,7 +46,7 @@ img
   pointer-events: none;
   user-select: none;
 }
-p, span, h1, h3, a
+p, span, h1, h3, a, i
 {
   user-select: none;
 }
