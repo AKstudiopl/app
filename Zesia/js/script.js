@@ -3271,3 +3271,5 @@ function toggleFullScreen(element) {
     localStorage.setItem("FS_MODE", "OFF");
   }
 }
+
+window.scrollTo(0,1); 
