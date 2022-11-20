@@ -82,6 +82,19 @@
             </div>
         </div>
 
+        <div class="settings-screen-item" id="input-style">
+          <div class="settings-screen-item-description">
+            <h3>Tryb Ciemny Amoled</h3>
+            <a>Zmniejszać zużycie energii</a>
+          </div>
+          <div class="settings-screen-item-input">
+            <label class="switch">
+              <input type="checkbox" class="save-data">
+              <span class="slider round"></span>
+            </label>
+          </div>
+      </div>
+
         <div class="settings-title">
           <h3>Odtwarzanie</h3>
           <i>Nowość</i>
@@ -89,12 +102,12 @@
 
         <div class="settings-screen-item" id="input-style">
             <div class="settings-screen-item-description">
-              <h3>Nowy Motyw</h3>
-              <a>Tryb przyjazny dla oczu</a>
+              <h3>Tryb Ciemny</h3>
+              <a>Tryb przyjazny dla oczu i baterii</a>
             </div>
             <div class="settings-screen-item-input">
               <label class="switch">
-                <input type="checkbox" id="dark-change" checked>
+                <input onchange="fastLoadingPop()" type="checkbox" id="dark-change" checked>
                 <span class="slider round"></span>
               </label>
             </div>
@@ -166,11 +179,30 @@
             </div>
         </div>
         <div class="settings-screen-item" id="input-style">
+          <div class="settings-screen-item-description">
+            <h3>Powiadomienia</h3>
+            <a>Zezwól na powiadomienia</a>
+          </div>
+          <div class="settings-screen-item-input">
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+      </div>
+      <div class="settings-screen-item" id="input-style">
             <div class="settings-screen-item-description">
               <h3>Połącz konto</h3>
               <a href="#">Facebook, Instagram, Twitter <i class="fa-solid fa-angle-right"></i></a>
             </div>
+      </div>
+
+      <div class="settings-screen-item" id="input-style">
+        <div class="settings-screen-item-description">
+          <h3>Pomoc Techniczna</h3>
+          <a href="#">Uzyskaj pomoc od nas i forum</a>
         </div>
+    </div>
 
     </div>
 
@@ -662,6 +694,35 @@
     <div class="center-container-item" onclick="viewSearchHomeItems()">
       <i class="fa-solid fa-plus"></i>
       <h2>Dodaj Wykonawce</h2>
+    </div>
+  </div>
+</div>
+
+<div class="center-container">
+  <div class="ui-title">
+    <h1>Playlisty na czasie</h1>
+  </div>
+
+  <div class="center-container-scrollable" id="dailyMixContainer">
+    <div class="center-container-item" onclick="fastLoadingPop()">
+      <img src="https://i.scdn.co/image/ab67706f000000021c2ed26bc4f49008f2d0f7fc" class="dailyMixCover">
+      <img src="https://i.scdn.co/image/ab67706f000000021c2ed26bc4f49008f2d0f7fc" class="dailyMixImg">
+      <h2>Idą Święta</h2>
+    </div>
+    <div class="center-container-item" onclick="fastLoadingPop()">
+      <img src="https://i.scdn.co/image/ab67706f00000002bc9438e3a6ff78076f8b1405" class="dailyMixCover">
+      <img src="https://i.scdn.co/image/ab67706f00000002bc9438e3a6ff78076f8b1405" class="dailyMixImg">
+      <h2>Sleep</h2>
+    </div>
+    <div class="center-container-item" onclick="fastLoadingPop()">
+      <img src="https://i.scdn.co/image/ab67706f00000002abaf6c3c6a4b29f8a4565a86" class="dailyMixCover">
+      <img src="https://i.scdn.co/image/ab67706f00000002abaf6c3c6a4b29f8a4565a86" class="dailyMixImg">
+      <h2>lofi Beats</h2>
+    </div>
+    <div class="center-container-item" onclick="fastLoadingPop()">
+      <img src="https://charts-images.scdn.co/assets_generated/locale_pl/regional/weekly/region_pl_default.jpg" class="dailyMixCover">
+      <img src="https://charts-images.scdn.co/assets_generated/locale_pl/regional/weekly/region_pl_default.jpg" class="dailyMixImg">
+      <h2>Top Utwory Polska</h2>
     </div>
   </div>
 </div>

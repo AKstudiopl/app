@@ -14,12 +14,12 @@ darkMode.addEventListener('click', function(){
         document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(36,36,36,1) 100%)');
     }
     if (content.classList.contains('blue')) {
-        document.documentElement.style.setProperty('--maincolor', '#1764CC');
-        document.documentElement.style.setProperty('--maincolorhover', '#4C97DE');
-        document.documentElement.style.setProperty('--border', '1px #1764CC50 solid');
-        document.documentElement.style.setProperty('--background', '#040511');
-        document.documentElement.style.setProperty('--backgroundsecond', '#04061a');
-        document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, rgba(23,100,204,1) 0%, rgba(12,18,77,1) 39%, rgba(4,6,26,1) 85%)');
+        document.documentElement.style.setProperty('--maincolor', '#A1D91F');
+        document.documentElement.style.setProperty('--maincolorhover', '#1ed760');
+        document.documentElement.style.setProperty('--border', '1px #A1D91F50 solid');
+        document.documentElement.style.setProperty('--background', '#484b6a');
+        document.documentElement.style.setProperty('--backgroundsecond', '#9394a5');
+        document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(36,36,36,1) 100%)');
     }
 })
 
@@ -709,8 +709,9 @@ const navbarSearchBtn = document.getElementsByClassName('navbar-bottom-btn-searc
 const searchScreen = document.getElementsByClassName('search-container')[0]
 navbarSearchBtn.addEventListener('click', () => {
   searchScreen.classList.add('active');
-  favortieScreen.classList.remove('active')
+  favortieScreen.classList.remove('active');
   libraryScreen.classList.remove('active');
+  disableSettingsScreen.classList.remove('active');
 })
 
 const navbarLibraryBtn = document.getElementsByClassName('navbar-bottom-btn-library')[0]
@@ -719,6 +720,7 @@ navbarLibraryBtn.addEventListener('click', () => {
   libraryScreen.classList.add('active');
   favortieScreen.classList.remove('active')
   searchScreen.classList.remove('active');
+  disableSettingsScreen.classList.remove('active');
 })
 
 const homeBtn = document.getElementsByClassName('navbar-bottom-btn-home')[0]
