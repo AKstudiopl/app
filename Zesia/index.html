@@ -58,7 +58,7 @@
         Ustawienia
       </h1>
       <a href="#" id="back-settigns-btn" class="setting-disable-btn">
-        <i class="fa-solid fa-angle-down"></i>
+        <i class="fa-solid fa-xmark"></i>
       </a>
     </div>
 
@@ -89,7 +89,7 @@
           </div>
           <div class="settings-screen-item-input">
             <label class="switch">
-              <input type="checkbox" class="save-data">
+              <input type="checkbox" oninput="amoledMode()" class="save-data">
               <span class="slider round"></span>
             </label>
           </div>
@@ -185,7 +185,7 @@
           </div>
           <div class="settings-screen-item-input">
             <label class="switch">
-              <input type="checkbox">
+              <input type="checkbox" onclick="notificationCheck()">
               <span class="slider round"></span>
             </label>
           </div>
@@ -399,18 +399,6 @@
     </div>
 
     <div class="last-reviews">
-      <div class="review-item">
-        <a class="review-item-title">Tymek</a>
-        <p class="review-item-info">Album <a href="#">"Rekonesans"</a> już dostępny na platformie!</p>
-      </div>
-      <div class="review-item">
-        <a class="review-item-title">Avicii</a>
-        <p class="review-item-info">Singiel <a href="#">"Fades Away"</a> z premierą dziś o 20!</p>
-      </div>
-      <div class="review-item">
-        <a class="review-item-title">Marshmello </a>
-        <p class="review-item-info">Przedpriemierowy <a href="#">"Happier"</a> dostępny do odsłuchu!</p>
-      </div>
     </div>
 
   <div class="library-settings-container">

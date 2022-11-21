@@ -21,7 +21,45 @@ darkMode.addEventListener('click', function(){
         document.documentElement.style.setProperty('--backgroundsecond', '#9394a5');
         document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(36,36,36,1) 100%)');
     }
+    if (content.classList.contains('amoled')) {
+      document.documentElement.style.setProperty('--maincolor', '#A1D91F');
+      document.documentElement.style.setProperty('--maincolorhover', '#1ed760');
+      document.documentElement.style.setProperty('--border', '1px #A1D91F50 solid');
+      document.documentElement.style.setProperty('--background', '#111111');
+      document.documentElement.style.setProperty('--backgroundsecond', '#242424');
+      document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(36,36,36,1) 100%)');
+  }
 })
+
+function amoledMode(){
+  content.classList.toggle('green');
+  content.classList.toggle('amoled');
+
+  if (content.classList.contains('green')) {
+    document.documentElement.style.setProperty('--maincolor', '#A1D91F');
+    document.documentElement.style.setProperty('--maincolorhover', '#1ed760');
+    document.documentElement.style.setProperty('--border', '1px #A1D91F50 solid');
+    document.documentElement.style.setProperty('--background', '#121212');
+    document.documentElement.style.setProperty('--backgroundsecond', '#242424');
+    document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(36,36,36,1) 100%)');
+  }
+  if (content.classList.contains('blue')) {
+      document.documentElement.style.setProperty('--maincolor', '#A1D91F');
+      document.documentElement.style.setProperty('--maincolorhover', '#1ed760');
+      document.documentElement.style.setProperty('--border', '1px #A1D91F50 solid');
+      document.documentElement.style.setProperty('--background', '#484b6a');
+      document.documentElement.style.setProperty('--backgroundsecond', '#9394a5');
+      document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(36,36,36,1) 100%)');
+  }
+  if (content.classList.contains('amoled')) {
+    document.documentElement.style.setProperty('--maincolor', '#A1D91F');
+    document.documentElement.style.setProperty('--maincolorhover', '#1ed760');
+    document.documentElement.style.setProperty('--border', '1px #A1D91F50 solid');
+    document.documentElement.style.setProperty('--background', '#111111');
+    document.documentElement.style.setProperty('--backgroundsecond', '#242424');
+    document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(36,36,36,1) 100%)');
+  }
+}
 
 window.addEventListener("load", function () {
     const loader = document.querySelector(".loader");
@@ -3284,4 +3322,18 @@ function volumeUp(){
     mainAudio.volume = mainAudio.volume + 0.1;
   }
   localStorage.setItem("user_Volume", mainAudio.volume);
+}
+
+function notificationCheck(){
+  if (Notification.permission !== 'granted')
+  Notification.requestPermission();
+ else {
+  var notification = new Notification('Notification title', {
+   icon: 'http://cdn.sstatic.net/stackexchange/img/logos/so/so-icon.png',
+   body: 'Hey there! You\'ve been notified!',
+  });
+  notification.onclick = function() {
+   window.open('http://stackoverflow.com/a/13328397/1269037');
+  };
+ }
 }
