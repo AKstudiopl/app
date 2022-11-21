@@ -826,18 +826,12 @@
           </a>
         </div>
       </div>
-      <div class="device-item">
-          <div class="device-custom-item">
-            <label for=""><i class="fa-solid fa-volume-high"></i> Głośność</label>
-            <input type="range" onchange="setvolume()" value="1" min=0 max=1 step=0.01 class="move-label" id="volumeslider">
-          </div>
-      </div>
       <div class="top-menu-list">
-      <a onclick="favoriteItemOption()" class="top-menu-list-favorite"><i class="fa-regular fa-heart"></i> Dodaj Do Ulubionych</a>
-      <a onclick="artistScreenView();topOptionFastExit()"><i class="fa-solid fa-user"></i> Wykonawca</a>
-      <a class="copyUrl" onclick="shareSong()"><i class="fa-solid fa-share-nodes"></i> Udostępnij</a>
-      <a class="timer-toggle"><i class="fa-regular fa-clock"></i> Ustaw czas odtwarzania</a>
-      <a class="top-menu-list-radio-item" onclick="radioLoad(this)"><i class="fa-solid fa-tower-broadcast"></i> Radio Wykonawcy</a>
+      <a class="top-menu-list-volume"><i onclick="volumeDown()" class="fa-solid fa-volume-low"></i><span> Głośność</span><i onclick="volumeUp()" class="fa-solid fa-volume-high"></i></a>
+      <a onclick="favoriteItemOption()" class="top-menu-list-favorite"><i class="fa-regular fa-heart"></i><span> Dodaj Do Ulubionych</span></a>      <a onclick="artistScreenView();topOptionFastExit()"><i class="fa-solid fa-user"></i><span> Wykonawca</span></a>
+      <a class="copyUrl" onclick="shareSong()"><i class="fa-solid fa-share-nodes"></i><span> Udostępnij</span></a>
+      <a class="timer-toggle"><i class="fa-regular fa-clock"></i><span> Ustaw czas odtwarzania</span></a>
+      <a class="top-menu-list-radio-item" onclick="radioLoad(this)"><i class="fa-solid fa-tower-broadcast"></i><span> Radio Wykonawcy</span></a>
       </div>
 
       <div class="alert-container">

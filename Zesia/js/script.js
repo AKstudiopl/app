@@ -312,14 +312,14 @@ favoritBtn.addEventListener('click', () => {
     favoritBtn.classList.add('fa-solid')
     favoritBtn.classList.remove('fa-regular')
     musicTopOptionsFavorite.classList.add('active')
-    musicTopOptionsFavorite.innerHTML = '<i class="fa-solid fa-heart"></i> Polubiono';
+    musicTopOptionsFavorite.innerHTML = '<i class="fa-solid fa-heart"></i><span> Polubiono</span>';
   }
   if (allMusic[indexNumb - 1].status === "nostatus") {
     favoritBtn.classList.remove('active')
     favoritBtn.classList.remove('fa-solid')
     favoritBtn.classList.add('fa-regular')
     musicTopOptionsFavorite.classList.remove('active')
-    musicTopOptionsFavorite.innerHTML = '<i class="fa-regular fa-heart"></i> Dodaj Do Ulubionych';
+    musicTopOptionsFavorite.innerHTML = '<i class="fa-regular fa-heart"></i><span> Dodaj Do Ulubionych</span>';
   }
 })
 
@@ -365,6 +365,10 @@ function loadMusic(indexNumb){
   lyricsDataTitle.innerText = allMusic[indexNumb - 1].name;
   window.location.hash = allMusic[indexNumb - 1].id;
 
+  if (localStorage.getItem("user_Volume") != null) {
+    mainAudio.volume = localStorage.getItem("user_Volume");
+  }
+
   smallBackgroundImg.classList.add("active");
   setTimeout(() => {
     smallBackgroundImg.classList.remove("active");
@@ -397,10 +401,7 @@ function loadMusic(indexNumb){
   
 
   if (localStorage.getItem("user_Volume") === null) {
-    mainAudio.volume = document.getElementById("volumeslider").value;
-  }else{
-    mainAudio.volume = currentVolume;
-    document.getElementById("volumeslider").value = currentVolume;
+    mainAudio.volume = 1;
   }
 
   if(allMusic[indexNumb] === undefined){
@@ -413,14 +414,14 @@ function loadMusic(indexNumb){
     favoritBtn.classList.add('active')
     favoritBtn.classList.add('fa-solid')
     favoritBtn.classList.remove('fa-regular')
-    musicTopOptionsFavorite.innerHTML = '<i class="fa-solid fa-heart"></i> Polubiono';
+    musicTopOptionsFavorite.innerHTML = '<i class="fa-solid fa-heart"></i><span> Polubiono</span>';
     musicTopOptionsFavorite.classList.add('active')
   }
   if (allMusic[indexNumb - 1].status === "nostatus") {
     favoritBtn.classList.remove('active')
     favoritBtn.classList.remove('fa-solid')
     favoritBtn.classList.add('fa-regular')
-    musicTopOptionsFavorite.innerHTML = '<i class="fa-regular fa-heart"></i> Dodaj Do Ulubionych';
+    musicTopOptionsFavorite.innerHTML = '<i class="fa-solid fa-heart"></i><span> Dodaj Do Ulubionych</span>';
     musicTopOptionsFavorite.classList.remove('active')
   }
 
@@ -963,13 +964,6 @@ artistProfileExit.addEventListener('click', () => {
 })
 
 const currentVolume = localStorage.getItem('user_Volume');
-
-function setvolume(){
-  mainAudio.volume = document.getElementById("volumeslider").value;
-  localStorage.setItem("user_Volume", mainAudio.volume);
-  console.log(currentVolume);
-}
-
 const nameUserScreen = document.querySelector(".user_profile_header_content_date span");
 
   function nameQuestion() {
@@ -2344,14 +2338,14 @@ function favoriteItemOption(){
     allMusic[indexNumb - 1].status = "favorite";
   }
   if (allMusic[indexNumb - 1].status === "favorite") {
-    musicTopOptionsFavorite.innerHTML = '<i class="fa-solid fa-heart"></i> Polubiono';
+    musicTopOptionsFavorite.innerHTML = '<i class="fa-solid fa-heart"></i><span> Polubiono</span>';
     musicTopOptionsFavorite.classList.add('active')
     favoritBtn.classList.add('active')
     favoritBtn.classList.add('fa-solid')
     favoritBtn.classList.remove('fa-regular')
   }
   if (allMusic[indexNumb - 1].status === "nostatus") {
-    musicTopOptionsFavorite.innerHTML = '<i class="fa-regular fa-heart"></i> Dodaj Do Ulubionych'
+    musicTopOptionsFavorite.innerHTML = '<i class="fa-solid fa-heart"></i><span> Dodaj Do Ulubionych</span>';
     musicTopOptionsFavorite.classList.remove('active')
     favoritBtn.classList.remove('active')
     favoritBtn.classList.remove('fa-solid')
@@ -3274,4 +3268,20 @@ function toggleFullScreen(element) {
   }
 }
 
-window.scrollTo(0,1); 
+function volumeDown(){
+  if(mainAudio.volume < 0.15){
+    mainAudio.volume = 0;
+  }else{
+    mainAudio.volume = mainAudio.volume - 0.1;
+  }
+  localStorage.setItem("user_Volume", mainAudio.volume);
+}
+
+function volumeUp(){
+  if(mainAudio.volume > 0.95){
+    mainAudio.volume = 1;
+  }else{
+    mainAudio.volume = mainAudio.volume + 0.1;
+  }
+  localStorage.setItem("user_Volume", mainAudio.volume);
+}
