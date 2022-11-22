@@ -25,7 +25,7 @@ darkMode.addEventListener('click', function(){
       document.documentElement.style.setProperty('--maincolor', '#A1D91F');
       document.documentElement.style.setProperty('--maincolorhover', '#1ed760');
       document.documentElement.style.setProperty('--border', '1px #A1D91F50 solid');
-      document.documentElement.style.setProperty('--background', '#111111');
+      document.documentElement.style.setProperty('--background', '#000000');
       document.documentElement.style.setProperty('--backgroundsecond', '#242424');
       document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(36,36,36,1) 100%)');
   }
@@ -511,7 +511,6 @@ function loadMusic(indexNumb){
             uiLastViewedAlbum_2.style.display="none";
         }
       }
-
       queueDataLoad();
       overflowingText();
 }
@@ -708,7 +707,11 @@ shuffleBtn.addEventListener("click", ()=>{
 });
 
 mainAudio.addEventListener("ended", ()=>{
-      nextMusic();
+  nextMusic();
+
+  var trackFinished = localStorage.getItem("trSts") || 0;
+  trackFinished++;
+  localStorage.setItem("trSts", trackFinished)
 });
 
 
@@ -2657,13 +2660,29 @@ function createdPlaylistsContent() {
   var favoritIt = allMusicView.filter(x => x.user_playlist_1 != "");
   resultsFAV.innerHTML = "";
   let resultFAV =
-      `<div class="user_profile_content_friends" id="user_friend_list_0">
+      `<div class="user_profile_content_dailyStats">
+      <div class="user_profile_content_dailyStats_item">
+        <p>Dotychczas przesłuchałeś</p>
+        <span class="user_profile_content_dailyStats_item_total">0</span>
+      </div>
+      <div class="user_profile_content_dailyStats_item">
+        <p>Dziś przesłuchałeś</p>
+        <span class="user_profile_content_dailyStats_item_today">Wkrótce</span>
+      </div>
+      <div class="user_profile_content_dailyStats_item">
+        <p>Ostatnio przeglądany album</p>
+        <span class="user_profile_content_dailyStats_item_album">0</span>
+      </div>
+      </div>
+      <div class="user_profile_content_friends" id="user_friend_list_0">
             <p>Twoja Lista Znajomych Jest Pusta</p>
             <span>Połącz Swoje Social Media, Aby Uzyskać Propozycje</span>
             <a>Ustawienia</a>
        </div>`;
   resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
 
+  document.querySelector(".user_profile_content_dailyStats_item_total").innerText = localStorage.getItem("trSts");
+  document.querySelector(".user_profile_content_dailyStats_item_album").innerText = localStorage.getItem("lastViewedAlbum_1") || "Brak Danych";
 }
 
 function followedArtistsContent() {
