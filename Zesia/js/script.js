@@ -880,6 +880,7 @@ results.innerHTML=searchMusicContent.map((a,i)=>
    <div class="result-box-cover">
      <h1 class="result-name">${a.name}</h1>
      <p class="result-artist">${a.artist}</p>
+     <p class="result-artist" style="display:none;">${a.album}</p>
    </div>
   </div>
  </li>`).join("\n");
@@ -967,7 +968,7 @@ function filterList(){
   // get current search string from input field:
     srch=search.value.toLowerCase();
     searchMusicContent.forEach((m,i)=>{ // both conditions must be met: style and search pattern
-    results.children[i].style.display=(m.name+"|"+m.artist).toLowerCase().includes(srch)&&styles.includes(m.style)?"":"none";
+    results.children[i].style.display=(m.name+"|"+m.artist+"|"+m.album).toLowerCase().includes(srch)&&styles.includes(m.style)?"":"none";
     results.children[i].classList.add=(m.name+"|"+m.artist).toLowerCase().includes(srch)&&styles.includes(m.style)?"":"searched";
   })
 
@@ -1350,7 +1351,6 @@ function filteredAlbums(){
       let resultFAV =
         `<div class="music-artist-information-albums-item" onclick="fastLoadingPop(); clickedSingleAlbum(this)" data-album='${favoritIt[i].album}'>
             <img class="music-artist-information-albums-item-img" src="${favoritIt[i].album_cover}">
-            <img class="music-artist-information-albums-item-artist-img" style="display: none;" src="${favoritIt[i].artist_img}">
             <p><span class="music-artist-information-albums-item-name">${favoritIt[i].album}</span> <span class="data-premiere">${favoritIt[i].album_premiere}</span></p>
          </div>`;
       resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
@@ -2310,7 +2310,7 @@ artistMenuAlbums.addEventListener('click', () => {
   artistMenuAlbums.classList.add('active')
   artistMenuAbout.classList.remove('active')
   artistPopular.style.display="none";
-  featuredContainer.style.display="none";
+  featuredContainer.style.visibility="hidden";
   artistAlbums.style.display="flex";
   artistAbout.style.display="none";
 })
@@ -2319,7 +2319,7 @@ artistMenuAbout.addEventListener('click', () => {
   artistMenuAlbums.classList.remove('active')
   artistMenuAbout.classList.add('active')
   artistPopular.style.display="none";
-  featuredContainer.style.display="none";
+  featuredContainer.style.visibility="hidden";
   artistAlbums.style.display="none";
   artistAbout.style.display="flex";
 })
@@ -2656,8 +2656,6 @@ function checkFollowStatus(){
 function createdPlaylistsContent() {
 
   const resultsFAV = document.querySelector(".user_profile_content");
-
-  var favoritIt = allMusicView.filter(x => x.user_playlist_1 != "");
   resultsFAV.innerHTML = "";
   let resultFAV =
       `<div class="user_profile_content_dailyStats">
@@ -2681,7 +2679,7 @@ function createdPlaylistsContent() {
        </div>`;
   resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
 
-  document.querySelector(".user_profile_content_dailyStats_item_total").innerText = localStorage.getItem("trSts");
+  document.querySelector(".user_profile_content_dailyStats_item_total").innerText = localStorage.getItem("trSts") || 0;
   document.querySelector(".user_profile_content_dailyStats_item_album").innerText = localStorage.getItem("lastViewedAlbum_1") || "Brak Danych";
 }
 
@@ -3344,15 +3342,12 @@ function volumeUp(){
 }
 
 function notificationCheck(){
-  if (Notification.permission !== 'granted')
-  Notification.requestPermission();
- else {
-  var notification = new Notification('Notification title', {
-   icon: 'http://cdn.sstatic.net/stackexchange/img/logos/so/so-icon.png',
-   body: 'Hey there! You\'ve been notified!',
+  navigator.serviceWorker.register('js/sw.js');
+  Notification.requestPermission(function(result) {
+    if (result === 'granted') {
+      navigator.serviceWorker.ready.then(function(registration) {
+        registration.showNotification('Notification with ServiceWorker');
+      });
+    }
   });
-  notification.onclick = function() {
-   window.open('http://stackoverflow.com/a/13328397/1269037');
-  };
- }
 }

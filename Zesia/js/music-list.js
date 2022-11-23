@@ -6,6 +6,7 @@ var allMusic = [
       artist_status: "none",
       language: "eng",
       country: "pl",
+      artist_id: "1",
 
       src: "C-BooLDJ",
       img: "C-BooLDJ",
@@ -54,6 +55,7 @@ var allMusic = [
       artist_status: "none",
       language: "eng",
       country: "pl",
+      artist_id: "1",
       
       src: "C-BooL-NeverGoAway",
       img: "C-BooL-NeverGoAway",
@@ -102,6 +104,7 @@ var allMusic = [
       artist_status: "none",
       language: "eng",
       country: "usa",
+      artist_id: "2",
 
       src: "KevinRudolf-Champions",
       img: "KevinRudolf-Champions",
@@ -150,6 +153,7 @@ var allMusic = [
       artist_status: "none",
       language: "eng",
       country: "kos",
+      artist_id: "3",
       
       src: "DJRegard-Rideit",
       img: "DJRegard-Rideit",
@@ -198,6 +202,7 @@ var allMusic = [
       artist_status: "none",
       language: "eng",
       country: "usa",
+      artist_id: "4",
       
       src: "twentyonepilots-Choker",
       img: "scaled-and-icy-b-iext104194001",
@@ -246,6 +251,7 @@ var allMusic = [
       artist_status: "none",
       language: "eng",
       country: "usa",
+      artist_id: "4",
       
       src: "TwentyOnePilots-TheOutside",
       img: "scaled-and-icy-b-iext104194001",
@@ -295,6 +301,7 @@ var allMusic = [
       artist_status: "none",
       language: "eng",
       country: "usa",
+      artist_id: "4",
       
       src: "TwentyOnePilots-ShyAway",
       img: "scaled-and-icy-b-iext104194001",
@@ -343,6 +350,7 @@ var allMusic = [
       artist_status: "none",
       language: "eng",
       country: "usa",
+      artist_id: "4",
       
       src: "TwentyOnePilots-Saturday",
       img: "scaled-and-icy-b-iext104194001",
@@ -391,6 +399,7 @@ var allMusic = [
       artist_status: "none",
       language: "eng",
       country: "usa",
+      artist_id: "4",
       
       src: "TwentyOnePilots-Redecorate",
       img: "scaled-and-icy-b-iext104194001",
@@ -439,6 +448,7 @@ var allMusic = [
       artist_status: "none",
       language: "eng",
       country: "usa",
+      artist_id: "4",
       
       src: "TwentyOnePilots-NeverTakeIt",
       img: "scaled-and-icy-b-iext104194001",
@@ -487,6 +497,7 @@ var allMusic = [
       artist_status: "none",
       language: "eng",
       country: "usa",
+      artist_id: "4",
 
       src: "TwentyOnePilots-MulberryStreet",
       img: "scaled-and-icy-b-iext104194001",
@@ -535,6 +546,7 @@ var allMusic = [
       artist_status: "none",
       language: "eng",
       country: "usa",
+      artist_id: "4",
 
       src: "TwentyOnePilots-GoodDay",
       img: "scaled-and-icy-b-iext104194001",
@@ -583,6 +595,7 @@ var allMusic = [
       artist_status: "none",
       language: "pl",
       country: "pl",
+      artist_id: "5",
 
       src: "Evtis-Kłótnia",
       img: "C-BooL-NeverGoAway",
@@ -631,6 +644,7 @@ var allMusic = [
       artist_status: "none",
       language: "pl",
       country: "pl",
+      artist_id: "6",
 
       src: "donGURALesko-IdziemyPoSwojeSzUstyBlend",
       img: "guralsko",
@@ -673,6 +687,7 @@ var allMusic = [
       artist_status: "none",
       language: "pl",
       country: "pl",
+      artist_id: "6",
 
       src: "donGURALesko-LegendaSzUstyBlend",
       img: "guralsko",
@@ -722,6 +737,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "7",
 
     src: "PostMalone-Rockstar",
     img: "rockstar-w-iext111232885",
@@ -771,7 +787,8 @@ var allMusic = [
     artist_status: "none",
     language: "pl",
     country: "pl",
-
+    artist_id: "8",
+    
     src: "Happysad-Bezznieczulenia",
     img: "ab67616d00001e021f86dffe512418a230887e69",
     style: "Rock",
@@ -819,6 +836,7 @@ var allMusic = [
     artist_status: "none",
     language: "pl",
     country: "pl",
+    artist_id: "8",
 
     src: "Happysad-Pętla",
     img: "ab67616d00001e021f86dffe512418a230887e69",
@@ -868,7 +886,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "fr",
-
+    artist_id: "9",
+    
     src: "LBONE-TiredBones",
     img: "tired-bones-w-iext52557958",
     style: "Energic",
@@ -916,6 +935,7 @@ var allMusic = [
     artist_status: "none",
     language: "pl",
     country: "pl",
+    artist_id: "10",
 
     src: "TrzeciWymiar-Złapzabroń",
     img: "6341ef2bd3abc2c21c6ee6466cb67d15.510x510x1",
@@ -964,6 +984,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "Caribe",
+    artist_id: "11",
 
     src: "TheKingsSon-ImNotRich",
     img: "ab67616d0000b27369cdca7b90ca8060e3525196",
@@ -1012,6 +1033,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "12",
 
     src: "MGK-Invincible",
     img: "ab67616d0000b273a57d3a2736f815d3cf358e37",
@@ -1060,6 +1082,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "13",
 
     src: "BebeRexha-InTheNameOfLove",
     img: "ab67616d0000b2738c77bcf5f5a227d270d23370",
@@ -1109,7 +1132,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-    
+    artist_id: "14",
+
     src: "ArianaGrande-OneLastTime",
     img: "e63468347c14c9f580857daae877a005",
     style: "Energic",
@@ -1158,7 +1182,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "uk",
-    
+    artist_id: "15",
+
     src: "https://drive.google.com/uc?export=view&id=1RxwKmEO9tK6m3WFxX5BMrZNHTftqi5zG",
     src: "Anne-Marie-Friends",
     img: "ab67616d00001e02569f6annemarie4493ca55cd96fdee412",
@@ -1208,7 +1233,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-    
+    artist_id: "16",
+
     src: "BillieEilish-Lovely",
     img: "ab67616d00001e028abille3f0a3ca7929dea23cd274cb",
     style: "Pop",
@@ -1257,7 +1283,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "uk",
-    
+    artist_id: "17",
+
     src: "CleanBandit-Symphony",
     img: "ab67616d000clean01e0237fb0680110fbb107740de5d",
     style: "Energic",
@@ -1306,7 +1333,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-    
+    artist_id: "18",
+
     src: "ImagineDragonsRadioactive",
     img: "effimagineR-dragons-5966452-1407607955-4124",
     style: "Pop",
@@ -1355,7 +1383,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-    
+    artist_id: "18",
+
     src: "ImagineDragonsBeliever",
     img: "ab67616d0imagine000b273a57d3adra2736f815d3gonscf358e37",
     style: "Pop",
@@ -1404,7 +1433,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-    
+    artist_id: "18",
+
     src: "ImagineDragonsBleedingOut",
     img: "6ef9bc2988b796965f42098c459a83a6",
     style: "Pop",
@@ -1453,7 +1483,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-    
+    artist_id: "18",
+
     src: "ImagineDragonsBadLiar",
     img: "6ef9bc2988b7969bad65f42098liarc459a83a6",
     style: "Pop",
@@ -1502,7 +1533,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "no",
-    
+    artist_id: "19",
+
     src: "KygoImagineDragonsBornToBeYours",
     img: "ab67616d0000b27337084df74688999caf0cbb9f",
     style: "Chill",
@@ -1551,6 +1583,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "4",
+
 
     src: "twentyonepilotsJumpsuit",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
@@ -1599,6 +1633,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "4",
 
     src: "TwentyOnePilotsLevitate",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
@@ -1647,6 +1682,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "4",
 
     src: "TwentyOnePilotsMorph",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
@@ -1695,6 +1731,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "4",
 
     src: "TwentyOnePilotsMyBlood",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
@@ -1743,6 +1780,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "4",
 
     src: "twentyonepilotsChlorine",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
@@ -1791,6 +1829,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "4",
 
     src: "twentyonepilotsSmithereens",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
@@ -1839,6 +1878,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "4",
 
     src: "twentyonepilotsNeonGravestones",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
@@ -1887,6 +1927,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "4",
 
     src: "twentyonepilotsTheHype",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
@@ -1935,6 +1976,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "4",
 
     src: "twentyonepilotsNicoAndTheNiners",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
@@ -1983,6 +2025,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "4",
 
     src: "twentyonepilotsCutMyLip",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
@@ -2031,6 +2074,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "4",
 
     src: "twentyonepilotsBandito",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
@@ -2079,6 +2123,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "4",
 
     src: "twentyonepilotsPetCheetah",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
@@ -2127,6 +2172,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "4",
 
     src: "twentyonepilotsLegend",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
@@ -2175,6 +2221,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "4",
 
     src: "twentyonepilotsLeaveTheCity",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
@@ -2223,6 +2270,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "4",
 
     src: "CamilaCabelloHavana",
     img: "CamilaCabelloHavana",
@@ -2272,6 +2320,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "4",
 
     src: "TwentyOnePilotsFormidable",
     img: "scaled-and-icy-b-iext104194001",
@@ -2320,6 +2369,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "4",
 
     src: "TwentyOnePilotsBounceMan",
     img: "scaled-and-icy-b-iext104194001",
@@ -2368,6 +2418,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "4",
 
     src: "TwentyOnePilotsNoChances",
     img: "scaled-and-icy-b-iext104194001",
@@ -2416,6 +2467,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "4",
 
     src: "TwentyOnePilotsHeavydirtysoul",
     img: "ab67616d00001e02de03bfc2991fd5bcfde65ba3",
@@ -2465,6 +2517,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "se",
+    artist_id: "20",
 
     src: "ZaraLarssonAin'tMyFault",
     img: "ab67616d00001e029e1683774b22648f4f178ed3",
@@ -2514,6 +2567,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "21",
 
     src: "AgainstTheCurrent-Wildfire",
     img: "ab67616d00against001e02e6e663bf89c9e0b748100b77",
@@ -2563,6 +2617,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "21",
 
     src: "AgainsttheCurrent-thatwon'tsaveus",
     img: "ab67616d0000aga1e02186660bbf3b0ddcurrent9a5195e182",
@@ -2612,6 +2667,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "21",
 
     src: "AgainstTheCurrent-weapon",
     img: "ab67616d0000aga1e02186660bbf3b0ddcurrent9a5195e182",
@@ -2661,7 +2717,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-
+    artist_id: "21",
+    
     src: "AgainstTheCurrent-again&again",
     img: "ab67616d0000aga1e02186660bbf3b0ddcurrent9a5195e182",
     style: "Rock",
@@ -2710,6 +2767,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "21",
 
     src: "AgainstTheCurrent-jump",
     img: "ab67616d0000aga1e02186660bbf3b0ddcurrent9a5195e182",
@@ -2759,6 +2817,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "21",
 
     src: "AgainstTheCurrent-shatter",
     img: "ab67616d0000aga1e02186660bbf3b0ddcurrent9a5195e182",
@@ -2808,6 +2867,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "21",
 
     src: "AgainstTheCurrent-burnitdown",
     img: "ab67616d0000aga1e02186660bbf3b0ddcurrent9a5195e182",
@@ -2857,6 +2917,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "21",
 
     src: "AgainstTheCurrent-lullaby",
     img: "ab67616d0000aga1e02186660bbf3b0ddcurrent9a5195e182",
@@ -2906,6 +2967,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "21",
 
     src: "AgainstTheCurrent-weapon-acoustic",
     img: "ab67616d00001e0270aceaa21668839917e839bc",
@@ -2955,6 +3017,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "21",
 
     src: "AgainstTheCurrent-LegendsNeverDie",
     img: "ab6761die6d000never01e02cb5ec46d6f1legendsd2cf8d36d3663",
@@ -3004,7 +3067,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-
+    artist_id: "22",
+    
     src: "NF-MyStress",
     img: "artnfworks-1sYqk3myIyfIdSfbstresssa-zQVByA-t500x500",
     style: "Hip-Hop",
@@ -3053,7 +3117,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-
+    artist_id: "22",
+    
     src: "NF–TheSearch",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
     style: "Hip-Hop",
@@ -3102,7 +3167,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-
+    artist_id: "22",
+    
     src: "NF-LeaveMeAlone",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
     style: "Hip-Hop",
@@ -3151,7 +3217,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-
+    artist_id: "22",
+    
     src: "NF-Change",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
     style: "Hip-Hop",
@@ -3200,7 +3267,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-
+    artist_id: "22",
+    
     src: "NF-Nate",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
     style: "Hip-Hop",
@@ -3249,7 +3317,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "ca",
-
+    artist_id: "22",
+    
     src: "HowardShore-TheBattleOfThePelennorFields",
     img: "ab67616d00001e02howard2b4d071fshore7824b2c60c3b85cd",
     style: "Soundtrack",
@@ -3298,7 +3367,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "se",
-
+    artist_id: "22",
+    
     src: "Avicii-WithoutYou",
     img: "ab67616d00001e02a2without6cc58b4d64c2eceyou3376389",
     style: "Energic",
@@ -3347,7 +3417,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-
+    artist_id: "22",
+    
     src: "NF-Time",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
     style: "Hip-Hop",
@@ -3396,7 +3467,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-
+    artist_id: "22",
+    
     src: "NF-Returns",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
     style: "Hip-Hop",
@@ -3445,7 +3517,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-
+    artist_id: "22",
+    
     src: "NF-WhenIGrowUp",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
     style: "Hip-Hop",
@@ -3494,7 +3567,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-
+    artist_id: "22",
+    
     src: "NF-Only",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
     style: "Hip-Hop",
@@ -3543,7 +3617,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-
+    artist_id: "22",
+    
     src: "NF-LetMeGo",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
     style: "Hip-Hop",
@@ -3592,7 +3667,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-
+    artist_id: "22",
+    
     src: "NF-HateMyself",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
     style: "Hip-Hop",
@@ -3641,7 +3717,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-
+    artist_id: "22",
+    
     src: "NF-IMissTheDays",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
     style: "Hip-Hop",
@@ -3690,7 +3767,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-
+    artist_id: "22",
+    
     src: "NF-NoExcuses",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
     style: "Hip-Hop",
@@ -3739,7 +3817,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-
+    artist_id: "22",
+    
     src: "NF-LikeThis",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
     style: "Hip-Hop",
@@ -3788,7 +3867,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-
+    artist_id: "22",
+    
     src: "NF-Options",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
     style: "Hip-Hop",
@@ -3837,7 +3917,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-
+    artist_id: "22",
+    
     src: "NF-Why",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
     style: "Hip-Hop",
@@ -3886,7 +3967,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-
+    artist_id: "22",
+    
     src: "NF-Thinking",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
     style: "Hip-Hop",
@@ -3935,7 +4017,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-
+    artist_id: "22",
+    
     src: "NF-Trauma",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
     style: "Hip-Hop",
@@ -3984,7 +4067,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "ru",
-
+    artist_id: "23",
+    
     src: "Filatov&Karas-Dontbesoshy",
     img: "ab67616d00001edont029fa97bd8ebeso5926a4d4shy5031497",
     style: "Pop",
@@ -4033,7 +4117,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "ru",
-
+    artist_id: "23",
+    
     src: "Filatov&Karas-AuRevoir",
     img: "ab67616d0000aurevoir1e02633f46784e8a4c40fc22f009",
     style: "Pop",
@@ -4082,7 +4167,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "ru",
-
+    artist_id: "23",
+    
     src: "Filatov&Karas-TimeWontWait",
     img: "ab6761wait6d00001e02time78b7a4e605abwont1521ab6b6forus393",
     style: "Pop",
@@ -4131,7 +4217,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "se",
-
+    artist_id: "24",
+    
     src: "ToveLo-Habits",
     img: "fde27675fc056tovelof2e0422c6eahabbits9c603eb9",
     style: "Pop",
@@ -4180,7 +4267,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-
+    artist_id: "25",
+    
     src: "NickiMinaj-PoundTheAlarm",
     img: "ab67616d00001e0nicki2ef9ad61e2a4f15alarm606fd4ab15",
     style: "Pop",
@@ -4229,6 +4317,7 @@ var allMusic = [
     artist_status: "none",
     language: "de",
     country: "de",
+    artist_id: "26",
 
     src: "Fensterbank",
     img: "ab67616d000fenster01e02aaa43ad24b4665b7c4985f4b",
@@ -4278,6 +4367,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "uk",
+    artist_id: "27",
 
     src: "DuaLipa-Physical",
     img: "ab67616d00001e0physical2bd26ede1ae69327010d49946",
@@ -4327,7 +4417,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "al",
-
+    artist_id: "28",
+    
     src: "RitaOra–BangBang",
     img: "ab67706c0bang000bebb159175f1bang5bfffa26739ca4f3",
     style: "Pop",
@@ -4376,7 +4467,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-
+    artist_id: "29",
+    
     src: "TechN9ne-TillIDie",
     img: "6ef9bc2988techb796965fn9ne42098c459tillidiea83a6emi",
     style: "Workout",
@@ -4425,7 +4517,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-
+    artist_id: "30",
+    
     src: "Meiko-LeaveTheLightsOn",
     img: "ab67616d0lights0001e028febond52b7450b8eleaveba3a0dc51",
     style: "Chill",
@@ -4474,7 +4567,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-
+    artist_id: "21",
+    
     src: "AgainstTheCurrent-StrangersAgain",
     img: "ab67616dpastlives00001e02bd92d2e8f66f88864ce5e01e",
     style: "Rock",
@@ -4523,7 +4617,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-
+    artist_id: "21",
+    
     src: "AgainstTheCurrent-TheFuss",
     img: "ab67616dpastlives00001e02bd92d2e8f66f88864ce5e01e",
     style: "Rock",
@@ -4572,7 +4667,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-
+    artist_id: "21",
+    
     src: "AgainstTheCurrent-ILikeTheWay",
     img: "ab67616dpastlives00001e02bd92d2e8f66f88864ce5e01e",
     style: "Rock",
@@ -4621,7 +4717,8 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-
+    artist_id: "21",
+    
     src: "AgainstTheCurrent-Roses",
     img: "ab67616d00001e029din92c1661f5oura7784808fbonesabdb",
     style: "Rock",
@@ -4670,6 +4767,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "19",
 
     src: "ImagineDragons-IDontLikeMyself",
     img: "6ef9bclike2988b796965idontf42098c459a8myslef3a6",
@@ -4719,6 +4817,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "19",
 
     src: "ImagineDragons-Symphony",
     img: "6ef9bc29symphony88b7969bad65f42098liarc459a83a6",
@@ -4768,6 +4867,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "19",
 
     src: "ImagineDragons-HigherGround",
     img: "6ef92156higer796965f42098cground459a83a6",
@@ -4817,6 +4917,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
+    artist_id: "31",
 
     src: "Bazanji-Loner",
     img: "ab67616d00001e0loner2ab1f263468c61a8c1b67ddd4",
