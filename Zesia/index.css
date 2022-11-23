@@ -1122,7 +1122,7 @@ input:checked + .slider:before {
 }
 .review-item-action a 
 {
-  font-weight: 100;
+  font-weight: 900;
   background: var(--maincolor);
   color: var(--background);
   display: flex;
