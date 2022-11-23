@@ -2664,23 +2664,24 @@ function createdPlaylistsContent() {
         <span class="user_profile_content_dailyStats_item_total">0</span>
       </div>
       <div class="user_profile_content_dailyStats_item">
-        <p>Dziś przesłuchałeś</p>
-        <span class="user_profile_content_dailyStats_item_today">Wkrótce</span>
+        <p>Polubione utwory</p>
+        <span class="user_profile_content_dailyStats_item_artists">0</span>
       </div>
       <div class="user_profile_content_dailyStats_item">
-        <p>Ostatnio przeglądany album</p>
+        <p>Ostatni album</p>
         <span class="user_profile_content_dailyStats_item_album">0</span>
       </div>
       </div>
       <div class="user_profile_content_friends" id="user_friend_list_0">
-            <p>Twoja Lista Znajomych Jest Pusta</p>
-            <span>Połącz Swoje Social Media, Aby Uzyskać Propozycje</span>
-            <a>Ustawienia</a>
+        <p>Twoja Lista Znajomych Jest Pusta</p>
+        <span>Połącz Swoje Social Media, Aby Uzyskać Propozycje</span>
+        <a>Ustawienia</a>
        </div>`;
   resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
 
   document.querySelector(".user_profile_content_dailyStats_item_total").innerText = localStorage.getItem("trSts") || 0;
   document.querySelector(".user_profile_content_dailyStats_item_album").innerText = localStorage.getItem("lastViewedAlbum_1") || "Brak Danych";
+  document.querySelector(".user_profile_content_dailyStats_item_artists").innerText = allMusicView.filter(x => x.status === "favorite").length;
 }
 
 function followedArtistsContent() {
