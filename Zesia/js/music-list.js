@@ -19,7 +19,8 @@ var allMusic = [
       gallery_img_3: "https://pbs.twimg.com/media/FFnM392XEA0h-YH?format=jpg&name=large",
       gallery_img_4: "",
       gallery_img_5: "",
-
+      canvas: "",
+      
       album: "Dj Is Your Second Name",
       album_cover: "https://i.scdn.co/image/ab67616d0000b2734470a94060697a4265fb0e03",
       album_premiere: "2017",
@@ -68,7 +69,8 @@ var allMusic = [
       gallery_img_3: "https://pbs.twimg.com/media/FFnM392XEA0h-YH?format=jpg&name=large",
       gallery_img_4: "",
       gallery_img_5: "",
-
+      canvas: "",
+      
       album: "Never Go Away",
       album_cover: "https://i.scdn.co/image/ab67616d00001e0225a6f8a62f4d061ef61169c9",
       album_premiere: "2016",
@@ -117,6 +119,7 @@ var allMusic = [
       gallery_img_3: "",
       gallery_img_4: "",
       gallery_img_5: "",
+      canvas: "",
 
       album: "Champions",
       album_cover: "https://i.scdn.co/image/ab67616d00001e02335815746144562adb8455b4",
@@ -166,7 +169,8 @@ var allMusic = [
       gallery_img_3: "",
       gallery_img_4: "",
       gallery_img_5: "",
-      
+      canvas: "https://v16-webapp.tiktok.com/26d613746f58607100883338bf8e5eca/637fdabf/video/tos/maliva/tos-maliva-ve-0068c800-us/f11ee0500184493c9422d5326c92cf57/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=1594&bt=797&cs=0&ds=3&ft=4b~OyMeQ8Zmo0rkYm64jVdYRZpWrKsdm&mime_type=video_mp4&qs=0&rc=Omc1ZTY6PGdpOWlmOjVlNEBpM2hzazw6Zmk1PDMzNzczM0A2MjRjY2EtXzIxYmEyLmEwYSMubjBycjRfam5gLS1kMTZzcw%3D%3D&l=2022112414571001021702821611AD183B&btag=80000",
+
       album: "Ride It",
       album_cover: "https://i.scdn.co/image/ab67616d00001e025c27813ae019011fcb370c78",
       album_premiere: "2019",
@@ -215,6 +219,7 @@ var allMusic = [
       gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
       gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
       gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
+      canvas: "https://v16-webapp.tiktok.com/66ccea1b289fad9d2dc275ffae2029e3/637fda8f/video/tos/useast2a/tos-useast2a-pve-0068/f39f5a881639487a9b769aea98cf901d/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=2218&bt=1109&cs=0&ds=3&ft=4b~OyMeQ8Zmo0OUYm64jVI2_JpWrKsdm&mime_type=video_mp4&qs=0&rc=N2Q6aTtpOjxkNTo0MzdnaUBpamh1M2Q6ZnlrOzMzNzczM0A2Yl80NTA0XjUxMDFjMjJhYSNfXl9scjRvZG5gLS1kMTZzcw%3D%3D&l=2022112414555801019204515704AC35B4&btag=80000",
       
       album: "Scaled And Icy",
       album_cover: "https://i.scdn.co/image/ab67616d00001e0220b467550945fd123e00f0a5",
@@ -265,6 +270,7 @@ var allMusic = [
       gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
       gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
       gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
+      canvas: "https://v16-webapp.tiktok.com/66ccea1b289fad9d2dc275ffae2029e3/637fda8f/video/tos/useast2a/tos-useast2a-pve-0068/f39f5a881639487a9b769aea98cf901d/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=2218&bt=1109&cs=0&ds=3&ft=4b~OyMeQ8Zmo0OUYm64jVI2_JpWrKsdm&mime_type=video_mp4&qs=0&rc=N2Q6aTtpOjxkNTo0MzdnaUBpamh1M2Q6ZnlrOzMzNzczM0A2Yl80NTA0XjUxMDFjMjJhYSNfXl9scjRvZG5gLS1kMTZzcw%3D%3D&l=2022112414555801019204515704AC35B4&btag=80000",
       
       album: "Scaled And Icy",
       album_cover: "https://i.scdn.co/image/ab67616d00001e0220b467550945fd123e00f0a5",
@@ -314,6 +320,7 @@ var allMusic = [
       gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
       gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
       gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
+      canvas: "https://v16-webapp.tiktok.com/66ccea1b289fad9d2dc275ffae2029e3/637fda8f/video/tos/useast2a/tos-useast2a-pve-0068/f39f5a881639487a9b769aea98cf901d/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=2218&bt=1109&cs=0&ds=3&ft=4b~OyMeQ8Zmo0OUYm64jVI2_JpWrKsdm&mime_type=video_mp4&qs=0&rc=N2Q6aTtpOjxkNTo0MzdnaUBpamh1M2Q6ZnlrOzMzNzczM0A2Yl80NTA0XjUxMDFjMjJhYSNfXl9scjRvZG5gLS1kMTZzcw%3D%3D&l=2022112414555801019204515704AC35B4&btag=80000",
       
       album: "Scaled And Icy",
       album_cover: "https://i.scdn.co/image/ab67616d00001e0220b467550945fd123e00f0a5",
@@ -363,6 +370,7 @@ var allMusic = [
       gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
       gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
       gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
+      canvas: "https://v16-webapp.tiktok.com/66ccea1b289fad9d2dc275ffae2029e3/637fda8f/video/tos/useast2a/tos-useast2a-pve-0068/f39f5a881639487a9b769aea98cf901d/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=2218&bt=1109&cs=0&ds=3&ft=4b~OyMeQ8Zmo0OUYm64jVI2_JpWrKsdm&mime_type=video_mp4&qs=0&rc=N2Q6aTtpOjxkNTo0MzdnaUBpamh1M2Q6ZnlrOzMzNzczM0A2Yl80NTA0XjUxMDFjMjJhYSNfXl9scjRvZG5gLS1kMTZzcw%3D%3D&l=2022112414555801019204515704AC35B4&btag=80000",
       
       album: "Scaled And Icy",
       album_cover: "https://i.scdn.co/image/ab67616d00001e0220b467550945fd123e00f0a5",
@@ -412,6 +420,7 @@ var allMusic = [
       gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
       gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
       gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
+      canvas: "https://v16-webapp.tiktok.com/66ccea1b289fad9d2dc275ffae2029e3/637fda8f/video/tos/useast2a/tos-useast2a-pve-0068/f39f5a881639487a9b769aea98cf901d/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=2218&bt=1109&cs=0&ds=3&ft=4b~OyMeQ8Zmo0OUYm64jVI2_JpWrKsdm&mime_type=video_mp4&qs=0&rc=N2Q6aTtpOjxkNTo0MzdnaUBpamh1M2Q6ZnlrOzMzNzczM0A2Yl80NTA0XjUxMDFjMjJhYSNfXl9scjRvZG5gLS1kMTZzcw%3D%3D&l=2022112414555801019204515704AC35B4&btag=80000",
       
       album: "Scaled And Icy",
       album_cover: "https://i.scdn.co/image/ab67616d00001e0220b467550945fd123e00f0a5",
@@ -461,6 +470,7 @@ var allMusic = [
       gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
       gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
       gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
+      canvas: "https://v16-webapp.tiktok.com/66ccea1b289fad9d2dc275ffae2029e3/637fda8f/video/tos/useast2a/tos-useast2a-pve-0068/f39f5a881639487a9b769aea98cf901d/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=2218&bt=1109&cs=0&ds=3&ft=4b~OyMeQ8Zmo0OUYm64jVI2_JpWrKsdm&mime_type=video_mp4&qs=0&rc=N2Q6aTtpOjxkNTo0MzdnaUBpamh1M2Q6ZnlrOzMzNzczM0A2Yl80NTA0XjUxMDFjMjJhYSNfXl9scjRvZG5gLS1kMTZzcw%3D%3D&l=2022112414555801019204515704AC35B4&btag=80000",
       
       album: "Scaled And Icy",
       album_cover: "https://i.scdn.co/image/ab67616d00001e0220b467550945fd123e00f0a5",
@@ -510,7 +520,8 @@ var allMusic = [
       gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
       gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
       gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
-
+      canvas: "https://v16-webapp.tiktok.com/66ccea1b289fad9d2dc275ffae2029e3/637fda8f/video/tos/useast2a/tos-useast2a-pve-0068/f39f5a881639487a9b769aea98cf901d/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=2218&bt=1109&cs=0&ds=3&ft=4b~OyMeQ8Zmo0OUYm64jVI2_JpWrKsdm&mime_type=video_mp4&qs=0&rc=N2Q6aTtpOjxkNTo0MzdnaUBpamh1M2Q6ZnlrOzMzNzczM0A2Yl80NTA0XjUxMDFjMjJhYSNfXl9scjRvZG5gLS1kMTZzcw%3D%3D&l=2022112414555801019204515704AC35B4&btag=80000",
+      
       album: "Scaled And Icy",
       album_cover: "https://i.scdn.co/image/ab67616d00001e0220b467550945fd123e00f0a5",
       album_premiere: "2021",
@@ -559,6 +570,7 @@ var allMusic = [
       gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
       gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
       gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
+      canvas: "https://v16-webapp.tiktok.com/66ccea1b289fad9d2dc275ffae2029e3/637fda8f/video/tos/useast2a/tos-useast2a-pve-0068/f39f5a881639487a9b769aea98cf901d/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=2218&bt=1109&cs=0&ds=3&ft=4b~OyMeQ8Zmo0OUYm64jVI2_JpWrKsdm&mime_type=video_mp4&qs=0&rc=N2Q6aTtpOjxkNTo0MzdnaUBpamh1M2Q6ZnlrOzMzNzczM0A2Yl80NTA0XjUxMDFjMjJhYSNfXl9scjRvZG5gLS1kMTZzcw%3D%3D&l=2022112414555801019204515704AC35B4&btag=80000",
 
       album: "Scaled And Icy",
       album_cover: "https://i.scdn.co/image/ab67616d00001e0220b467550945fd123e00f0a5",
@@ -608,6 +620,7 @@ var allMusic = [
       gallery_img_3: "",
       gallery_img_4: "",
       gallery_img_5: "",
+      canvas: "",
 
       album: "Głosy",
       album_cover: "https://i.scdn.co/image/ab6761610000e5eb76a19046d32c54e79affd6a1",
@@ -652,6 +665,13 @@ var allMusic = [
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f46bsf",
       artist_img: "https://i.scdn.co/image/ab6761610000e5eb4b346794a19f7adfcc244ee7",
+      gallery_img_1: "",
+      gallery_img_2: "",
+      gallery_img_3: "",
+      gallery_img_4: "",
+      gallery_img_5: "",
+      canvas: "https://v16-webapp.tiktok.com/a81caf38f457a384ce3f3f0001348102/637fd9f4/video/tos/maliva/tos-maliva-ve-0068c799-us/2ae45f3fb6a8478bbc939296c2125963/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=1272&bt=636&cs=0&ds=3&ft=4b~OyMeQ8Zmo0tWYm64jV86gZpWrKsdm&mime_type=video_mp4&qs=0&rc=Ojw7OTk8ZDZpPDQ8ZzxpPEBpM2tmOzs6Zms8ZzMzZzczNEBgYTEzMjNeNTExYy9fL2I2YSNmX2AvcjRfcXFgLS1kMS9zcw%3D%3D&l=2022112414534601018909006621AD0A01&btag=80000",
+
       album: "Idziemy Po Swoje",
       album_cover: "https://i.scdn.co/image/ab67616d0000b273dd559af8356ea6b28a71a5fe",
       album_premiere: "2009",
@@ -701,6 +721,7 @@ var allMusic = [
       gallery_img_3: "",
       gallery_img_4: "",
       gallery_img_5: "",
+      canvas: "https://v16-webapp.tiktok.com/ab507c390cca51cee40f486a214c2839/637fd9d4/video/tos/useast2a/tos-useast2a-ve-0068c003/472a97737c0c46ec81017ec7e3764daa/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=1972&bt=986&cs=0&ds=3&ft=4b~OyMeQ8Zmo0LWYm64jVVN4ZpWrKsdm&mime_type=video_mp4&qs=0&rc=ZWc0PDo4ZDM3ZDM3ZGdpO0BpajNzazg6Znh0OzMzNzczM0BfNF40NDNeNTAxLTY2NWI2YSNkYmZxcjRvZHBgLS1kMTZzcw%3D%3D&l=2022112414530901021708720007AF9B29&btag=80000",
 
       album: "Legenda",
       album_cover: "https://i.scdn.co/image/ab67616d00001e0259b80ddc896cb493dc68e697",
@@ -751,6 +772,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/Fcabj0FWIAAKT6-?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FcVS25OXEAAjjk2?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/EsshuO_W8AEl9xh?format=jpg&name=medium",
+    canvas: "https://v16-webapp.tiktok.com/ec7fb39e8341da98338b7d097cdeaa83/637fd96b/video/tos/useast2a/tos-useast2a-ve-0068c001/6db4ecdfe5f2427b88df4e114c1804e6/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=1552&bt=776&cs=0&ds=3&ft=4b~OyMeQ8Zmo01bYm64jVligZpWrKsdm&mime_type=video_mp4&qs=0&rc=NmYzZzQ8ZjRkNjM4OTk5PEBpamh5aDo6ZmxmZjMzNzczM0BgLjRjMjFeX2IxNV8tMDEvYSMzbmQxcjQwaG1gLS1kMTZzcw%3D%3D&l=2022112414513701019216316301AE69F0&btag=80000",
 
     album: "beerbongs & bentleys",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02b1c4b76e23414c9f20242268",
@@ -800,7 +822,8 @@ var allMusic = [
     gallery_img_3: "https://i.scdn.co/image/ab6761670000ecd41cdc2f67482deca920508a7d",
     gallery_img_4: "https://i.scdn.co/image/ab6761670000ecd4e13d018bba5753b76bc6716b",
     gallery_img_5: "https://i.scdn.co/image/1e7662d67812f4b177c3a03e2f2352ab900e16b4",
-
+    canvas: "",
+    
     album: "Mów mi dobrze",
     album_cover: "https://i.scdn.co/image/ab67616d00001e021f86dffe512418a230887e69",
     album_premiere: "2009",
@@ -850,7 +873,8 @@ var allMusic = [
     gallery_img_3: "https://i.scdn.co/image/ab6761670000ecd41cdc2f67482deca920508a7d",
     gallery_img_4: "https://i.scdn.co/image/ab6761670000ecd4e13d018bba5753b76bc6716b",
     gallery_img_5: "https://i.scdn.co/image/1e7662d67812f4b177c3a03e2f2352ab900e16b4",
-
+    canvas: "",
+    
     album: "Mów mi dobrze",
     album_cover: "https://i.scdn.co/image/ab67616d00001e021f86dffe512418a230887e69",
     album_premiere: "2009",
@@ -899,6 +923,7 @@ var allMusic = [
     gallery_img_3: "",
     gallery_img_4: "",
     gallery_img_5: "",
+    canvas: "",
 
     album: "Lonely",
     album_cover: "https://i.scdn.co/image/ab67616d00001e021a2250d8502746a80d72da8d",
@@ -948,6 +973,7 @@ var allMusic = [
     gallery_img_3: "",
     gallery_img_4: "",
     gallery_img_5: "",
+    canvas: "",
 
     album: "Złodzieje Czasu",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02d922659188234fee83318fe7",
@@ -997,6 +1023,7 @@ var allMusic = [
     gallery_img_3: "",
     gallery_img_4: "",
     gallery_img_5: "",
+    canvas: "",
 
     album: "The King",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02ec999a8391a2dcb970f69cb0",
@@ -1046,7 +1073,8 @@ var allMusic = [
     gallery_img_3: "",
     gallery_img_4: "",
     gallery_img_5: "",
-
+    canvas: "",
+    
     album: "Start, GO",
     album_cover: "https://i.scdn.co/image/ab67616d0000b273cfac68443715de902bd7ea53",
     album_premiere: "2012",
@@ -1096,6 +1124,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FdxDrgOVUAELbYS?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FZgNdvgVEAA7MLZ?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/FGlY0TlVIAAhtb1?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/add1b01232f12f4abf3ed1298785807a/637fd8a5/video/tos/useast2a/tos-useast2a-ve-0068c001/4ade849cbab449bd9300bf2c729c6e7b/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=1334&bt=667&cs=0&ds=3&ft=4b~OyMeQ8Zmo0QHYm64jVCHJJpWrKsdm&mime_type=video_mp4&qs=0&rc=NDNoaGk3ZWhnZDs2ZWg1NEBpM2lmdmU6ZjZpZDMzNzczM0A1L2A2XzVhXjIxLzM1YDFhYSNgLXBxcjRfZ2hgLS1kMTZzcw%3D%3D&l=2022112414480901021709409110AB6E23&btag=80000",
 
     album: "In The Name Of Love",
     album_cover: "https://i.scdn.co/image/ab67616d0000b2738c77bcf5f5a227d270d23370",
@@ -1146,6 +1175,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FeGafYTWAAMNDSQ?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FbWeVmdWYAYn_qp?format=jpg&name=medium",
     gallery_img_5: "https://pbs.twimg.com/media/FYQoYGfWAAMZAdu?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/b3cc80cc3b2c034043839921d12149c5/637fd87d/video/tos/useast2a/tos-useast2a-ve-0068c003/52bf603543734318957b08b7b61fca03/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=1926&bt=963&cs=0&ds=2&ft=4b~OyMeQ8Zmo0.HYm64jVZ8BDpWrKsdm&mime_type=video_mp4&qs=0&rc=Mzc5OGRlZzo6PDZpaDtmZEBpanZuOzg6ZnY7ZjMzNzczM0AvMmAtNmIwXjExNi4wLS5jYSNlNmplcjQwbjBgLS1kMTZzcw%3D%3D&l=2022112414473101021711916716ACEE2D&btag=80000",
 
     album: "Me Everything",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02deec12a28d1e336c5052e9aa",
@@ -1197,6 +1227,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FbLEkrrUsAI6rQ7?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FatHfMAX0AE81An?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/FWwUwCHXwAIMPqx?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/09db38976a911ec3f16fb2f37fab8eb3/637fd886/video/tos/useast2a/tos-useast2a-pve-0037-aiso/52d2a5f8c07941d0ae169f00400afa90/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=3042&bt=1521&cs=0&ds=3&ft=4b~OyMeQ8Zmo0a-Ym64jV2E_JpWrKsdm&mime_type=video_mp4&qs=0&rc=MzhkNTk5ZzY5Nmc1OzZmaUBpam1rdjg6Zm40PDMzZjgzM0BfMy0yMV8vX2ExL2MvLy01YSNgZmtfcjQwa2JgLS1kL2Nzcw%3D%3D&l=2022112414470401021709409110AB404B&btag=80000",
 
     album: "F.R.I.E.N.D.S",
     album_cover: "https://i.scdn.co/image/ab67616d0000b273569f64493ca55cd96fdee412",
@@ -1247,6 +1278,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FfsVRTTXEAAHgJO?format=jpg&name=900x900",
     gallery_img_4: "https://pbs.twimg.com/media/FfyJjAiXgAIx90K?format=jpg&name=medium",
     gallery_img_5: "https://pbs.twimg.com/media/FfimZTCXkAAF95m?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/9d43fba70e59c7f748188e676c1baffe/637fd829/video/tos/useast2a/tos-useast2a-ve-0068c004/86bd0c8e2b8a4bdb87ee4a52683833d6/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=2100&bt=1050&cs=0&ds=3&ft=4b~OyMeQ8Zmo051Ym64jVkqnZpWrKsdm&mime_type=video_mp4&qs=0&rc=NGY3O2Y1NDs3NmY7NTM6N0BpamlyOnJueXZ5eTMzOjczM0AyMi4xMzUzNTIxYl9hLy00YSNqaDVvYHMwb2dfLS1eMTZzcw%3D%3D&l=2022112414461501021402903726B1177B&btag=80000",
 
     album: "lovely",
     album_cover: "https://i.scdn.co/image/ab67616d00001e028a3f0a3ca7929dea23cd274c",
@@ -1297,6 +1329,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FffWVWTacAAEebR?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FV2ozDmWQAA-GqQ?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/FNV2sN3XMAIslwU?format=jpg&name=large",
+    canvas: "",
 
     album: "What Is Love?",
     album_cover: "https://i.scdn.co/image/ab67616d00001e0237fb0680110fbb107740de5d",
@@ -1347,6 +1380,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/Fc4GtsiWYAIwTcF?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/Fc4GtshWIAIl2nU?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/Fc4GtsoXwAEudCM?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/d92cfcabf66ce369626e60b97e684369/637fd7bf/video/tos/useast2a/tos-useast2a-ve-0068c003/71dfc11c12b94e6985873fdebe1b327a/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=2322&bt=1161&cs=0&ds=3&ft=IecA0ogfD12NvWgX2ZIxRRG_WlJG-UjNSaHpi9&mime_type=video_mp4&qs=0&rc=aTg8ODdpOTNnN2llNDQ5PEBpM3ZpeGQ6ZmY0ZzMzNzczM0A1XjMxYzQzXmMxYC0uNl8wYSNzbjAtcjRvNjRgLS1kMTZzcw%3D%3D&l=2022112414440501019018615124AB1EDF&btag=80000",
 
     album: "Night Visions",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02407bd04707c463bbb3410737",
@@ -1397,6 +1431,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/Fc4GtsiWYAIwTcF?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/Fc4GtshWIAIl2nU?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/Fc4GtsoXwAEudCM?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/6e854c10ff3b96b34d4b92cc9d415211/637fd744/video/tos/useast2a/tos-useast2a-ve-0068c002/o8qrztDcChikUYdYtQxofAtaIdITA9ZqlgEBI9/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=2130&bt=1065&cs=0&ds=3&ft=4b~OyMeQ8Zmo0huYm64jVvoRZpWrKsdm&mime_type=video_mp4&qs=0&rc=OTlkOjRnOTY3PDdnaGk1ZEBpM3I0dTY6Zmg6ZzMzNzczM0AzNTRjLV4yNTExLzQwYC4tYSNpZjZqcjRfXmFgLS1kMTZzcw%3D%3D&l=2022112414422801021402903811AE3954&btag=80000",
 
     album: "Evolve",
     album_cover: "https://i.scdn.co/image/ab67616d00001e025675e83f707f1d7271e5cf8a",
@@ -1447,6 +1482,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/Fc4GtsiWYAIwTcF?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/Fc4GtshWIAIl2nU?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/Fc4GtsoXwAEudCM?format=jpg&name=large",
+    canvas: "",
 
     album: "Evolve",
     album_cover: "https://i.scdn.co/image/ab67616d00001e025675e83f707f1d7271e5cf8a",
@@ -1497,6 +1533,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/Fc4GtsiWYAIwTcF?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/Fc4GtshWIAIl2nU?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/Fc4GtsoXwAEudCM?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/37aaeb7e14b14e96acc3abe1ab5fc924/637fd6c1/video/tos/useast2a/tos-useast2a-pve-0037-aiso/c2b6f1ebea94490dbfbc47e189652de7/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=1866&bt=933&cs=0&ds=3&ft=4b~OyMeQ8Zmo0IiYm64jV47cDpWrKsdm&mime_type=video_mp4&qs=0&rc=aDw2PDczZTo1PDM1NWc0OkBpM3ltPDU6Zms8ZDMzZjczM0AtYDBgNmIzXjYxNjEzLzUzYSNvXmZicjRvZ2ZgLS1kMWNzcw%3D%3D&l=202211241439490102140290311DAFECE4&btag=80000",
 
     album: "Origins",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02da6f73a25f4c79d0e6b4a8bd",
@@ -1547,6 +1584,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/Eou5qZ0XIAYROuq?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/EiImFeoXkAAZEz0?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/EdI7r9yXgAAA0gz?format=jpg&name=large",
+    canvas: "",
 
     album: "Born To Be Yours",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02d355c4cf741193b97849af1a",
@@ -1597,6 +1635,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/e1a2350408cf8cf1e70f214e52effa0c/637fd611/video/tos/maliva/tos-maliva-ve-0068c799-us/8205bf0acfcc4706aa18da62d850ae24/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=4394&bt=2197&cs=0&ds=3&ft=4b~OyMeQ8Zmo05OYm64jVDAHZpWrKsdm&mime_type=video_mp4&qs=0&rc=ZGlpZGUzNWZnODo2Nzk7ZkBpajRtMzc6Zm9mZTMzZzgzNEAwMjVfLjEvNTExM2MuMTMyYSNhYnBvcjQwLmFgLS1kLy9zcw%3D%3D&l=202211241436390102230831570FAE7DF9&btag=80000",
     
     album: "Trench",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02768828c6867cd0472fc84e4d",
@@ -1646,6 +1685,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/e1a2350408cf8cf1e70f214e52effa0c/637fd611/video/tos/maliva/tos-maliva-ve-0068c799-us/8205bf0acfcc4706aa18da62d850ae24/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=4394&bt=2197&cs=0&ds=3&ft=4b~OyMeQ8Zmo05OYm64jVDAHZpWrKsdm&mime_type=video_mp4&qs=0&rc=ZGlpZGUzNWZnODo2Nzk7ZkBpajRtMzc6Zm9mZTMzZzgzNEAwMjVfLjEvNTExM2MuMTMyYSNhYnBvcjQwLmFgLS1kLy9zcw%3D%3D&l=202211241436390102230831570FAE7DF9&btag=80000",
     
     album: "Trench",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02768828c6867cd0472fc84e4d",
@@ -1695,6 +1735,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/e1a2350408cf8cf1e70f214e52effa0c/637fd611/video/tos/maliva/tos-maliva-ve-0068c799-us/8205bf0acfcc4706aa18da62d850ae24/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=4394&bt=2197&cs=0&ds=3&ft=4b~OyMeQ8Zmo05OYm64jVDAHZpWrKsdm&mime_type=video_mp4&qs=0&rc=ZGlpZGUzNWZnODo2Nzk7ZkBpajRtMzc6Zm9mZTMzZzgzNEAwMjVfLjEvNTExM2MuMTMyYSNhYnBvcjQwLmFgLS1kLy9zcw%3D%3D&l=202211241436390102230831570FAE7DF9&btag=80000",
     
     album: "Trench",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02768828c6867cd0472fc84e4d",
@@ -1744,6 +1785,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/e1a2350408cf8cf1e70f214e52effa0c/637fd611/video/tos/maliva/tos-maliva-ve-0068c799-us/8205bf0acfcc4706aa18da62d850ae24/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=4394&bt=2197&cs=0&ds=3&ft=4b~OyMeQ8Zmo05OYm64jVDAHZpWrKsdm&mime_type=video_mp4&qs=0&rc=ZGlpZGUzNWZnODo2Nzk7ZkBpajRtMzc6Zm9mZTMzZzgzNEAwMjVfLjEvNTExM2MuMTMyYSNhYnBvcjQwLmFgLS1kLy9zcw%3D%3D&l=202211241436390102230831570FAE7DF9&btag=80000",
     
     album: "Trench",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02768828c6867cd0472fc84e4d",
@@ -1793,6 +1835,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/e1a2350408cf8cf1e70f214e52effa0c/637fd611/video/tos/maliva/tos-maliva-ve-0068c799-us/8205bf0acfcc4706aa18da62d850ae24/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=4394&bt=2197&cs=0&ds=3&ft=4b~OyMeQ8Zmo05OYm64jVDAHZpWrKsdm&mime_type=video_mp4&qs=0&rc=ZGlpZGUzNWZnODo2Nzk7ZkBpajRtMzc6Zm9mZTMzZzgzNEAwMjVfLjEvNTExM2MuMTMyYSNhYnBvcjQwLmFgLS1kLy9zcw%3D%3D&l=202211241436390102230831570FAE7DF9&btag=80000",
     
     album: "Trench",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02768828c6867cd0472fc84e4d",
@@ -1842,6 +1885,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/e1a2350408cf8cf1e70f214e52effa0c/637fd611/video/tos/maliva/tos-maliva-ve-0068c799-us/8205bf0acfcc4706aa18da62d850ae24/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=4394&bt=2197&cs=0&ds=3&ft=4b~OyMeQ8Zmo05OYm64jVDAHZpWrKsdm&mime_type=video_mp4&qs=0&rc=ZGlpZGUzNWZnODo2Nzk7ZkBpajRtMzc6Zm9mZTMzZzgzNEAwMjVfLjEvNTExM2MuMTMyYSNhYnBvcjQwLmFgLS1kLy9zcw%3D%3D&l=202211241436390102230831570FAE7DF9&btag=80000",
     
     album: "Trench",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02768828c6867cd0472fc84e4d",
@@ -1891,6 +1935,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/e1a2350408cf8cf1e70f214e52effa0c/637fd611/video/tos/maliva/tos-maliva-ve-0068c799-us/8205bf0acfcc4706aa18da62d850ae24/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=4394&bt=2197&cs=0&ds=3&ft=4b~OyMeQ8Zmo05OYm64jVDAHZpWrKsdm&mime_type=video_mp4&qs=0&rc=ZGlpZGUzNWZnODo2Nzk7ZkBpajRtMzc6Zm9mZTMzZzgzNEAwMjVfLjEvNTExM2MuMTMyYSNhYnBvcjQwLmFgLS1kLy9zcw%3D%3D&l=202211241436390102230831570FAE7DF9&btag=80000",
     
     album: "Trench",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02768828c6867cd0472fc84e4d",
@@ -1940,6 +1985,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/e1a2350408cf8cf1e70f214e52effa0c/637fd611/video/tos/maliva/tos-maliva-ve-0068c799-us/8205bf0acfcc4706aa18da62d850ae24/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=4394&bt=2197&cs=0&ds=3&ft=4b~OyMeQ8Zmo05OYm64jVDAHZpWrKsdm&mime_type=video_mp4&qs=0&rc=ZGlpZGUzNWZnODo2Nzk7ZkBpajRtMzc6Zm9mZTMzZzgzNEAwMjVfLjEvNTExM2MuMTMyYSNhYnBvcjQwLmFgLS1kLy9zcw%3D%3D&l=202211241436390102230831570FAE7DF9&btag=80000",
     
     album: "Trench",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02768828c6867cd0472fc84e4d",
@@ -1989,6 +2035,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/e1a2350408cf8cf1e70f214e52effa0c/637fd611/video/tos/maliva/tos-maliva-ve-0068c799-us/8205bf0acfcc4706aa18da62d850ae24/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=4394&bt=2197&cs=0&ds=3&ft=4b~OyMeQ8Zmo05OYm64jVDAHZpWrKsdm&mime_type=video_mp4&qs=0&rc=ZGlpZGUzNWZnODo2Nzk7ZkBpajRtMzc6Zm9mZTMzZzgzNEAwMjVfLjEvNTExM2MuMTMyYSNhYnBvcjQwLmFgLS1kLy9zcw%3D%3D&l=202211241436390102230831570FAE7DF9&btag=80000",
     
     album: "Trench",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02768828c6867cd0472fc84e4d",
@@ -2038,6 +2085,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/e1a2350408cf8cf1e70f214e52effa0c/637fd611/video/tos/maliva/tos-maliva-ve-0068c799-us/8205bf0acfcc4706aa18da62d850ae24/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=4394&bt=2197&cs=0&ds=3&ft=4b~OyMeQ8Zmo05OYm64jVDAHZpWrKsdm&mime_type=video_mp4&qs=0&rc=ZGlpZGUzNWZnODo2Nzk7ZkBpajRtMzc6Zm9mZTMzZzgzNEAwMjVfLjEvNTExM2MuMTMyYSNhYnBvcjQwLmFgLS1kLy9zcw%3D%3D&l=202211241436390102230831570FAE7DF9&btag=80000",
     
     album: "Trench",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02768828c6867cd0472fc84e4d",
@@ -2087,6 +2135,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/e1a2350408cf8cf1e70f214e52effa0c/637fd611/video/tos/maliva/tos-maliva-ve-0068c799-us/8205bf0acfcc4706aa18da62d850ae24/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=4394&bt=2197&cs=0&ds=3&ft=4b~OyMeQ8Zmo05OYm64jVDAHZpWrKsdm&mime_type=video_mp4&qs=0&rc=ZGlpZGUzNWZnODo2Nzk7ZkBpajRtMzc6Zm9mZTMzZzgzNEAwMjVfLjEvNTExM2MuMTMyYSNhYnBvcjQwLmFgLS1kLy9zcw%3D%3D&l=202211241436390102230831570FAE7DF9&btag=80000",
     
     album: "Trench",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02768828c6867cd0472fc84e4d",
@@ -2136,6 +2185,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/e1a2350408cf8cf1e70f214e52effa0c/637fd611/video/tos/maliva/tos-maliva-ve-0068c799-us/8205bf0acfcc4706aa18da62d850ae24/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=4394&bt=2197&cs=0&ds=3&ft=4b~OyMeQ8Zmo05OYm64jVDAHZpWrKsdm&mime_type=video_mp4&qs=0&rc=ZGlpZGUzNWZnODo2Nzk7ZkBpajRtMzc6Zm9mZTMzZzgzNEAwMjVfLjEvNTExM2MuMTMyYSNhYnBvcjQwLmFgLS1kLy9zcw%3D%3D&l=202211241436390102230831570FAE7DF9&btag=80000",
     
     album: "Trench",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02768828c6867cd0472fc84e4d",
@@ -2185,6 +2235,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/e1a2350408cf8cf1e70f214e52effa0c/637fd611/video/tos/maliva/tos-maliva-ve-0068c799-us/8205bf0acfcc4706aa18da62d850ae24/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=4394&bt=2197&cs=0&ds=3&ft=4b~OyMeQ8Zmo05OYm64jVDAHZpWrKsdm&mime_type=video_mp4&qs=0&rc=ZGlpZGUzNWZnODo2Nzk7ZkBpajRtMzc6Zm9mZTMzZzgzNEAwMjVfLjEvNTExM2MuMTMyYSNhYnBvcjQwLmFgLS1kLy9zcw%3D%3D&l=202211241436390102230831570FAE7DF9&btag=80000",
     
     album: "Trench",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02768828c6867cd0472fc84e4d",
@@ -2234,6 +2285,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/e1a2350408cf8cf1e70f214e52effa0c/637fd611/video/tos/maliva/tos-maliva-ve-0068c799-us/8205bf0acfcc4706aa18da62d850ae24/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=4394&bt=2197&cs=0&ds=3&ft=4b~OyMeQ8Zmo05OYm64jVDAHZpWrKsdm&mime_type=video_mp4&qs=0&rc=ZGlpZGUzNWZnODo2Nzk7ZkBpajRtMzc6Zm9mZTMzZzgzNEAwMjVfLjEvNTExM2MuMTMyYSNhYnBvcjQwLmFgLS1kLy9zcw%3D%3D&l=202211241436390102230831570FAE7DF9&btag=80000",
     
     album: "Trench",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02768828c6867cd0472fc84e4d",
@@ -2284,7 +2336,8 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FaF-EVDX0AIk-g2?format=jpg&name=medium",
     gallery_img_4: "https://pbs.twimg.com/media/Fg6VojRXEAYF-J4?format=jpg&name=medium",
     gallery_img_5: "https://pbs.twimg.com/media/FUgIUrvXEAIZHHk?format=jpg&name=large",
-
+    canvas: "https://v16-webapp.tiktok.com/04204fa5887a7ac6fa14760c52017b56/637fd633/video/tos/useast2a/tos-useast2a-pve-0037c001-aiso/db09a803bb464cd493ecc2441738c7a5/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=2062&bt=1031&cs=0&ds=3&ft=4b~OyMeQ8Zmo0nRYm64jVMx1ZpWrKsdm&mime_type=video_mp4&qs=0&rc=OTs8NGRoZmczOjk6ZzNoZkBpMzZvcjQ6ZjtrPDMzZjgzM0AuYjReYDFiXzYxMDVeNTYvYSMzX2YvcjRvMnJgLS1kL2Nzcw%3D%3D&l=2022112414374101019205807720AE1F8B&btag=80000",
+    
     album: "Camila",
     album_cover: "https://i.scdn.co/image/ab67616d00001e026eb0b9e73adcf04e4ed3eca4",
     album_premiere: "2018",
@@ -2333,7 +2386,8 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
-
+    canvas: "https://v16-webapp.tiktok.com/e1a2350408cf8cf1e70f214e52effa0c/637fd611/video/tos/maliva/tos-maliva-ve-0068c799-us/8205bf0acfcc4706aa18da62d850ae24/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=4394&bt=2197&cs=0&ds=3&ft=4b~OyMeQ8Zmo05OYm64jVDAHZpWrKsdm&mime_type=video_mp4&qs=0&rc=ZGlpZGUzNWZnODo2Nzk7ZkBpajRtMzc6Zm9mZTMzZzgzNEAwMjVfLjEvNTExM2MuMTMyYSNhYnBvcjQwLmFgLS1kLy9zcw%3D%3D&l=202211241436390102230831570FAE7DF9&btag=80000",
+    
     album: "Scaled And Icy",
     album_cover: "https://i.scdn.co/image/ab67616d00001e0220b467550945fd123e00f0a5",
     album_premiere: "2021",
@@ -2382,7 +2436,8 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
-
+    canvas: "https://v16-webapp.tiktok.com/e1a2350408cf8cf1e70f214e52effa0c/637fd611/video/tos/maliva/tos-maliva-ve-0068c799-us/8205bf0acfcc4706aa18da62d850ae24/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=4394&bt=2197&cs=0&ds=3&ft=4b~OyMeQ8Zmo05OYm64jVDAHZpWrKsdm&mime_type=video_mp4&qs=0&rc=ZGlpZGUzNWZnODo2Nzk7ZkBpajRtMzc6Zm9mZTMzZzgzNEAwMjVfLjEvNTExM2MuMTMyYSNhYnBvcjQwLmFgLS1kLy9zcw%3D%3D&l=202211241436390102230831570FAE7DF9&btag=80000",
+    
     album: "Scaled And Icy",
     album_cover: "https://i.scdn.co/image/ab67616d00001e0220b467550945fd123e00f0a5",
     album_premiere: "2021",
@@ -2431,7 +2486,8 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
-
+    canvas: "https://v16-webapp.tiktok.com/e1a2350408cf8cf1e70f214e52effa0c/637fd611/video/tos/maliva/tos-maliva-ve-0068c799-us/8205bf0acfcc4706aa18da62d850ae24/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=4394&bt=2197&cs=0&ds=3&ft=4b~OyMeQ8Zmo05OYm64jVDAHZpWrKsdm&mime_type=video_mp4&qs=0&rc=ZGlpZGUzNWZnODo2Nzk7ZkBpajRtMzc6Zm9mZTMzZzgzNEAwMjVfLjEvNTExM2MuMTMyYSNhYnBvcjQwLmFgLS1kLy9zcw%3D%3D&l=202211241436390102230831570FAE7DF9&btag=80000",
+    
     album: "Scaled And Icy",
     album_cover: "https://i.scdn.co/image/ab67616d00001e0220b467550945fd123e00f0a5",
     album_premiere: "2021",
@@ -2481,6 +2537,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/e1a2350408cf8cf1e70f214e52effa0c/637fd611/video/tos/maliva/tos-maliva-ve-0068c799-us/8205bf0acfcc4706aa18da62d850ae24/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=4394&bt=2197&cs=0&ds=3&ft=4b~OyMeQ8Zmo05OYm64jVDAHZpWrKsdm&mime_type=video_mp4&qs=0&rc=ZGlpZGUzNWZnODo2Nzk7ZkBpajRtMzc6Zm9mZTMzZzgzNEAwMjVfLjEvNTExM2MuMTMyYSNhYnBvcjQwLmFgLS1kLy9zcw%3D%3D&l=202211241436390102230831570FAE7DF9&btag=80000",
 
     album: "Blurryface",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02de03bfc2991fd5bcfde65ba3",
@@ -2531,6 +2588,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FQ4-T9oUUAEKKwl?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/EmL8r9gVgAE6eB-?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/Ejv3ysUWkAAXpoN?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/82748751194e6aaebdb888ad17427672/637fd55b/video/tos/useast2a/tos-useast2a-ve-0068c003/28f44245889240bbb2258d4ac5a4d193/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=2242&bt=1121&cs=0&ds=3&ft=-ElcomaRPD12NVvi18-UxqcFhYKt3wv25NcAV&mime_type=video_mp4&qs=0&rc=OmRmPDU4Nzw3NmU3O2RpZ0BpMzxmbWQ6ZjtlOzMzNzczM0AvNWItMy02XjMxNTZhXmEuYSNhb2xgcjRvaV9gLS1kMTZzcw%3D%3D&l=2022112414332801019206116308AA269B&btag=80000",
 
     album: "So Good",
     album_cover: "https://i.scdn.co/image/ab67616d00001e029e1683774b22648f4f178ed3",
@@ -2581,6 +2639,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/Et7eALxVcAEyxo-?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/c77b5cd053e05f3cc91c585bf0c69bd7/637fd43a/video/tos/alisg/tos-alisg-pve-0037/b5070780eac94af9bc6516cc4383b55e/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C0%7C0&br=2302&bt=1151&cs=0&ds=3&ft=4b~OyMeQ8Zmo0Oppm64jVK~RZpWrKsdm&mime_type=video_mp4&qs=0&rc=NTMzaTk7PGhmN2k3OWc3NUBpamp1cztxczhodjMzNzgzM0AuYzRgMy41NV4xNTEuXzM0YSNtcGZpYmdfXjJfLS1fLzRzcw%3D%3D&l=2022112414291901021402901902AAF21C&btag=80000",
 
     album: "Wildfire",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02e6e663bf89c9e0b748100b77",
@@ -2631,6 +2690,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/Et7eALxVcAEyxo-?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/1602f5d461d899e87037f4436eae9a2c/637fd347/video/tos/useast2a/tos-useast2a-ve-0068c002/8ee8a8b172c246b48b53ce76ee2969e8/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=1946&bt=973&cs=0&ds=3&ft=4b~OyMeQ8Zmo02Gpm64jVz~DZpWrKsdm&mime_type=video_mp4&qs=0&rc=PGdlNTlkaDdnZDVmZzk8PEBpand0bWxvajxvNDMzNjczM0A1Y19jNC40NmIxY14zNTUuYSNfMi8vcl8xXzFgLS0yMTZzcw%3D%3D&l=2022112414252201019205721324AA806F&btag=80000",
 
     album: "Fever",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02186660bbf3b0dd9a5195e182",
@@ -2681,6 +2741,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/Et7eALxVcAEyxo-?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/1602f5d461d899e87037f4436eae9a2c/637fd347/video/tos/useast2a/tos-useast2a-ve-0068c002/8ee8a8b172c246b48b53ce76ee2969e8/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=1946&bt=973&cs=0&ds=3&ft=4b~OyMeQ8Zmo02Gpm64jVz~DZpWrKsdm&mime_type=video_mp4&qs=0&rc=PGdlNTlkaDdnZDVmZzk8PEBpand0bWxvajxvNDMzNjczM0A1Y19jNC40NmIxY14zNTUuYSNfMi8vcl8xXzFgLS0yMTZzcw%3D%3D&l=2022112414252201019205721324AA806F&btag=80000",
 
     album: "Fever",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02186660bbf3b0dd9a5195e182",
@@ -2731,6 +2792,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/Et7eALxVcAEyxo-?format=jpg&name=large",
+    canvas: "",
 
     album: "Fever",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02186660bbf3b0dd9a5195e182",
@@ -2781,6 +2843,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/Et7eALxVcAEyxo-?format=jpg&name=large",
+    canvas: "",
 
     album: "Fever",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02186660bbf3b0dd9a5195e182",
@@ -2831,7 +2894,8 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/Et7eALxVcAEyxo-?format=jpg&name=large",
-
+    canvas: "",
+    
     album: "Fever",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02186660bbf3b0dd9a5195e182",
     album_premiere: "2021",
@@ -2881,6 +2945,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/Et7eALxVcAEyxo-?format=jpg&name=large",
+    canvas: "",
 
     album: "Fever",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02186660bbf3b0dd9a5195e182",
@@ -2931,6 +2996,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/Et7eALxVcAEyxo-?format=jpg&name=large",
+    canvas: "",
 
     album: "Fever",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02186660bbf3b0dd9a5195e182",
@@ -2981,6 +3047,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/Et7eALxVcAEyxo-?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/1602f5d461d899e87037f4436eae9a2c/637fd347/video/tos/useast2a/tos-useast2a-ve-0068c002/8ee8a8b172c246b48b53ce76ee2969e8/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=1946&bt=973&cs=0&ds=3&ft=4b~OyMeQ8Zmo02Gpm64jVz~DZpWrKsdm&mime_type=video_mp4&qs=0&rc=PGdlNTlkaDdnZDVmZzk8PEBpand0bWxvajxvNDMzNjczM0A1Y19jNC40NmIxY14zNTUuYSNfMi8vcl8xXzFgLS0yMTZzcw%3D%3D&l=2022112414252201019205721324AA806F&btag=80000",
 
     album: "weapon (acoustic)",
     album_cover: "https://i.scdn.co/image/ab67616d00001e0270aceaa21668839917e839bc",
@@ -3031,6 +3098,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/Et7eALxVcAEyxo-?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/3f8b3a7cea99201897a9f279d3f0c5ce/637fd352/video/tos/maliva/tos-maliva-ve-0068c799-us/5551cec9aba04243ae49deb234d1e6fa/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=2756&bt=1378&cs=0&ds=3&ft=4b~OyMeQ8Zmo02Gpm64jVz~DZpWrKsdm&mime_type=video_mp4&qs=0&rc=OzpkOTpnOTo7aTM3ZDVnaUBpam50NTc6ZjpkZzMzZzczNEAzNmFiMWBhNjExLTQtX2NeYSNhcm9jcjRvL2dgLS1kMS9zcw%3D%3D&l=2022112414252201019205721324AA806F&btag=80000",
 
     album: "Legends Never Die",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02cb5ec46d6f1d2cf8d36d3663",
@@ -3081,6 +3149,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/8d8e60fafb908937914c6a17923988b8/637fc607/video/tos/useast2a/tos-useast2a-ve-0068c002/oIDb0EQOIhNy6nCgAGxCgzwAsUoPkCyNoAXfNI/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=1588&bt=794&cs=0&ds=3&ft=4b~OyMeQ8Zmo0fRpm64jVCHJJpWrKsdm&mime_type=video_mp4&qs=0&rc=ZmlpZjU0ZDpkZGc2OGc8OUBpM2c7bTc6Zmc0ZzMzNzczM0AvNC9fYjJhNl8xYy1hNmIxYSM0MXJfcjRnaGRgLS1kMTZzcw%3D%3D&l=2022112413284301018919504221A7661D&btag=80000",
 
     album: "The Search",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02942a0c9ac8f1def7c8805044",
@@ -3118,7 +3187,8 @@ var allMusic = [
     language: "eng",
     country: "usa",
     artist_id: "22",
-    
+    canvas: "",
+
     src: "NF–TheSearch",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
     style: "Hip-Hop",
@@ -3131,6 +3201,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+    canvas: "",
 
     album: "The Search",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02942a0c9ac8f1def7c8805044",
@@ -3181,6 +3252,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+    canvas: "",
 
     album: "The Search",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02942a0c9ac8f1def7c8805044",
@@ -3231,6 +3303,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+    canvas: "",
 
     album: "The Search",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02942a0c9ac8f1def7c8805044",
@@ -3281,6 +3354,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+    canvas: "",
 
     album: "The Search",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02942a0c9ac8f1def7c8805044",
@@ -3331,6 +3405,7 @@ var allMusic = [
     gallery_img_3: "",
     gallery_img_4: "",
     gallery_img_5: "",
+    canvas: "",
 
     album: "The Lord of the Rings - The Return of the King",
     album_cover: "https://i.scdn.co/image/ab67616d00001e022b4d071f7824b2c60c3b85cd",
@@ -3368,6 +3443,7 @@ var allMusic = [
     language: "eng",
     country: "se",
     artist_id: "22",
+    canvas: "https://v16-webapp.tiktok.com/e401fe8e123708edbef37cb575be62b5/637fdb5b/video/tos/useast2a/tos-useast2a-pve-0037-aiso/da2c38e5a6b0458babfa316c0fbf2960/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=542&bt=271&cs=0&ds=3&ft=4b~OyMeQ8Zmo0wfYm64jVOCRZpWrKsdm&mime_type=video_mp4&qs=0&rc=ZDo8ZjdmN2g6ZDZlNjg6aUBpanJsOWg6ZnZpZTMzZjgzM0AxLjYwYi8yNTExMTYtLy8tYSNraGg0cjRfay5gLS1kL2Nzcw%3D%3D&l=202211241459350102170952280BAEA735&btag=80000",
     
     src: "Avicii-WithoutYou",
     img: "ab67616d00001e02a2without6cc58b4d64c2eceyou3376389",
@@ -3381,6 +3457,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FcLeaDZWQAECWTq?format=jpg&name=900x900",
     gallery_img_4: "https://pbs.twimg.com/media/FfGAFbQVEAAlrCy?format=jpg&name=medium",
     gallery_img_5: "https://pbs.twimg.com/media/FgmJ8Y9X0AABbxF?format=jpg&name=large",
+    canvas: "",
 
     album: "AVICI (01)",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02a26cc58b4d64c2ece3376389",
@@ -3431,6 +3508,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+    canvas: "",
 
     album: "The Search",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02942a0c9ac8f1def7c8805044",
@@ -3481,6 +3559,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+    canvas: "",
 
     album: "The Search",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02942a0c9ac8f1def7c8805044",
@@ -3531,6 +3610,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/df5567bacbb98efdf6714d62a1ec87e0/637fd2ae/video/tos/useast2a/tos-useast2a-pve-0068/owr9nPgeQDVSk0GCfeGIXnoC1ojiSDJbgAE8bj/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=1850&bt=925&cs=0&ds=3&ft=4b~OyMeQ8Zmo0XSpm64jVffHZpWrKsdm&mime_type=video_mp4&qs=0&rc=ZTs6Ojc3Ozc0PGY6NmZmNkBpam9sbDY6Znl5ZzMzNzczM0AuYS5gNTNiNi0xLTRiLTVeYSNjLjFscjRfZ2lgLS1kMTZzcw%3D%3D&l=2022112414224201021713521402AAD138&btag=80000",
 
     album: "The Search",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02942a0c9ac8f1def7c8805044",
@@ -3568,7 +3648,7 @@ var allMusic = [
     language: "eng",
     country: "usa",
     artist_id: "22",
-    
+
     src: "NF-Only",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
     style: "Hip-Hop",
@@ -3581,6 +3661,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/778e4a79388dbf258dec4d8c93b0013b/637fd2a9/video/tos/useast2a/tos-useast2a-ve-0068c002/631c869749ea491fa2b089014f796c16/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=1446&bt=723&cs=0&ds=3&ft=4b~OyMeQ8Zmo0XSpm64jVffHZpWrKsdm&mime_type=video_mp4&qs=0&rc=aWZmNmQ6OGU4PDg3OGQ7Z0BpMzRyZDQ6Zm81ZDMzNzczM0AzYTQyYl82Xy4xXi1eMzAyYSNgY3NxcjQwMG1gLS1kMTZzcw%3D%3D&l=2022112414224201021713521402AAD138&btag=80000",
 
     album: "The Search",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02942a0c9ac8f1def7c8805044",
@@ -3631,6 +3712,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+    canvas: "",
 
     album: "The Search",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02942a0c9ac8f1def7c8805044",
@@ -3681,7 +3763,8 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
-
+    canvas: "",
+    
     album: "The Search",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02942a0c9ac8f1def7c8805044",
     album_premiere: "2019",
@@ -3731,7 +3814,8 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
-
+    canvas: "",
+    
     album: "The Search",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02942a0c9ac8f1def7c8805044",
     album_premiere: "2019",
@@ -3781,7 +3865,8 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
-
+    canvas: "",
+    
     album: "The Search",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02942a0c9ac8f1def7c8805044",
     album_premiere: "2019",
@@ -3818,6 +3903,7 @@ var allMusic = [
     language: "eng",
     country: "usa",
     artist_id: "22",
+    canvas: "",
     
     src: "NF-LikeThis",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
@@ -3868,6 +3954,7 @@ var allMusic = [
     language: "eng",
     country: "usa",
     artist_id: "22",
+    canvas: "",
     
     src: "NF-Options",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
@@ -3918,6 +4005,7 @@ var allMusic = [
     language: "eng",
     country: "usa",
     artist_id: "22",
+    canvas: "",
     
     src: "NF-Why",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
@@ -3981,7 +4069,8 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
-
+    canvas: "",
+    
     album: "The Search",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02942a0c9ac8f1def7c8805044",
     album_premiere: "2019",
@@ -4031,7 +4120,8 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
-
+    canvas: "",
+    
     album: "The Search",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02942a0c9ac8f1def7c8805044",
     album_premiere: "2019",
@@ -4081,7 +4171,8 @@ var allMusic = [
     gallery_img_3: "https://i.scdn.co/image/ab6761670000ecd421475314fe7702631b3c4faa",
     gallery_img_4: "https://pbs.twimg.com/media/D-qT4X1X4AMJSwV?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/D2HZsG4WwAAarV7?format=jpg&name=large",
-
+    canvas: "",
+    
     album: "Don't Be So Shy",
     album_cover: "https://i.scdn.co/image/ab67616d00001e029fa97bd8e5926a4d45031497",
     album_premiere: "2016",
@@ -4131,7 +4222,8 @@ var allMusic = [
     gallery_img_3: "https://i.scdn.co/image/ab6761670000ecd421475314fe7702631b3c4faa",
     gallery_img_4: "https://pbs.twimg.com/media/D-qT4X1X4AMJSwV?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/D2HZsG4WwAAarV7?format=jpg&name=large",
-
+    canvas: "",
+    
     album: "Au Revoir",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02633f46784e8a4c40fc22f009",
     album_premiere: "2016",
@@ -4181,7 +4273,8 @@ var allMusic = [
     gallery_img_3: "https://i.scdn.co/image/ab6761670000ecd421475314fe7702631b3c4faa",
     gallery_img_4: "https://pbs.twimg.com/media/D-qT4X1X4AMJSwV?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/D2HZsG4WwAAarV7?format=jpg&name=large",
-
+    canvas: "",
+    
     album: "Time Won't Wait",
     album_cover: "https://i.scdn.co/image/ab67616d00001e0278b7a4e605ab1521ab6b6393",
     album_premiere: "2017",
@@ -4231,7 +4324,8 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/EDfTMqqU4AEBDV1?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FSAL8gpVUAAwaMA?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/EDfNEg2UUAAi_oq?format=jpg&name=medium",
-
+    canvas: "",
+    
     album: "Queen Of The Clouds",
     album_cover: "https://i.scdn.co/image/ab67616d00001e0270cd79659edf4d5fec0840b8",
     album_premiere: "2014",
@@ -4281,7 +4375,8 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FhX0NEXXgAEaDIy?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FgzAdOpXkAAP4ED?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/FgtQNneXoAA_F8e?format=jpg&name=small",
-
+    canvas: "",
+    
     album: "Queen Of The Clouds",
     album_cover: "https://i.scdn.co/image/ab67616d00001e024f0aae4e435a794e0e24d115",
     album_premiere: "2012",
@@ -4331,6 +4426,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FTNDQ-mXsAY1nfm?format=jpg&name=medium",
     gallery_img_4: "https://i.scdn.co/image/ab676186000010162a45993eeac2ce6781643efb",
     gallery_img_5: "https://i.scdn.co/image/ab67706c0000bebbb93e40b1dc4bbc206ae67b2c",
+    canvas: "",
 
     album: "Fensterbank",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02aaa43ad24b4665b7c4985f4b",
@@ -4381,6 +4477,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FgJeh8iWQAEgqD9?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FhR2h-eaAAATKW_?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/Fg4yc3EVEAIqvjo?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/01a4a6ddb16efaba85ce83812978ebc2/637fdc95/video/tos/useast2a/tos-useast2a-ve-0068c004/190b8b4808e94eccb9945c25fbef9852/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=2492&bt=1246&cs=0&ds=3&ft=4b~OyMeQ8Zmo0jcYm64jV91nZpWrKsdm&mime_type=video_mp4&qs=0&rc=ZjMzaTY5PDNpOzk3NTNlNkBpanl4aDQ6ZjxrNzMzNzczM0AwMy9gXjU2NjExMjRjMy9hYSNsaTIucjQwNWZgLS1kMTZzcw%3D%3D&l=202211241504590101921680910AB02A4B&btag=80000",
 
     album: "Future Nostalgia",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02bd26ede1ae69327010d49946",
@@ -4431,6 +4528,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/ElxKwQ_WkAY48TP?format=jpg&name=medium",
     gallery_img_4: "https://i.scdn.co/image/2e5d776f02337d77aac60aa00419b3a16a09ac3f",
     gallery_img_5: "https://pbs.twimg.com/media/FhDMXwKXoAEy2u1?format=jpg&name=large",
+    canvas: "https://v16-webapp.tiktok.com/d1ee728b35bc889331a9696ddbfc7ae0/637fdd06/video/tos/maliva/tos-maliva-ve-0068c799-us/2dfc5a0035ff4e929bff5af815318a32/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=1978&bt=989&cs=0&ds=3&ft=4b~OyMeQ8Zmo0fwYm64jVCRRZpWrKsdm&mime_type=video_mp4&qs=0&rc=O2hoN2czaTU4aGQ3ZjU1OkBpamRrdDQ6ZjNtZDMzZzczNEAvYTM0Y2IvNTYxYy8yNTIuYSNsanBpcjRncm1gLS1kMS9zcw%3D%3D&l=2022112415065001021402901921B07BED&btag=80000",
 
     album: "Bang EP",
     album_cover: "https://i.scdn.co/image/ab67616d00001e0207dd4fdbc93d932ff72a4be0",
@@ -4481,6 +4579,7 @@ var allMusic = [
     gallery_img_3: "https://i.scdn.co/image/5e0abda4046c88ef8a961ce967ada21e39041473",
     gallery_img_4: "https://i.scdn.co/image/13c1a466ea7f5eeb704d5b92eb044473bd950487",
     gallery_img_5: "https://i.scdn.co/image/18163b2ba670daae8ecc04ac0956c5a8b72bb6d4",
+    canvas: "",
 
     album: "Till I Die",
     album_cover: "https://i.scdn.co/image/ab67616d0000b273582f703c73240fe327aa05d6",
@@ -4518,7 +4617,6 @@ var allMusic = [
     language: "eng",
     country: "usa",
     artist_id: "30",
-    
     src: "Meiko-LeaveTheLightsOn",
     img: "ab67616d0lights0001e028febond52b7450b8eleaveba3a0dc51",
     style: "Chill",
@@ -4531,7 +4629,8 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/ETuzCyCXQAAersW?format=jpg&name=medium",
     gallery_img_4: "https://pbs.twimg.com/media/Da7UYM9U8AAQwsX?format=jpg&name=900x900",
     gallery_img_5: "https://pbs.twimg.com/media/DXtX4rtX0AAQYRZ?format=jpg&name=medium",
-
+    canvas: "",
+    
     album: "Leave The Lights On",
     album_cover: "https://i.scdn.co/image/ab67616d00001e028febd52b7450b8eba3a0dc51",
     album_premiere: "2021",
@@ -4581,7 +4680,8 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/Et7eALxVcAEyxo-?format=jpg&name=large",
-
+    canvas: "",
+    
     album: "Past Lives",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02bd92d2e8f66f88864ce5e01e",
     album_premiere: "2018",
@@ -4631,7 +4731,8 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/Et7eALxVcAEyxo-?format=jpg&name=large",
-
+    canvas: "",
+    
     album: "Past Lives",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02bd92d2e8f66f88864ce5e01e",
     album_premiere: "2018",
@@ -4681,7 +4782,8 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/Et7eALxVcAEyxo-?format=jpg&name=large",
-
+    canvas: "",
+    
     album: "Past Lives",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02bd92d2e8f66f88864ce5e01e",
     album_premiere: "2018",
@@ -4731,7 +4833,8 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/Et7eALxVcAEyxo-?format=jpg&name=large",
-
+    canvas: "",
+    
     album: "In Our Bones",
     album_cover: "https://i.scdn.co/image/ab67616d00001e029d92c1661f5a7784808fabdb",
     album_premiere: "2016",
@@ -4768,7 +4871,7 @@ var allMusic = [
     language: "eng",
     country: "usa",
     artist_id: "19",
-
+    
     src: "ImagineDragons-IDontLikeMyself",
     img: "6ef9bclike2988b796965idontf42098c459a8myslef3a6",
     style: "Pop",
@@ -4781,7 +4884,8 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/Fc4GtsiWYAIwTcF?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/Fc4GtshWIAIl2nU?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/Fc4GtsoXwAEudCM?format=jpg&name=large",
-
+    canvas: "",
+    
     album: "Mercury - Acts 1 & 2",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02fc915b69600dce2991a61f13",
     album_premiere: "2022",
@@ -4818,7 +4922,7 @@ var allMusic = [
     language: "eng",
     country: "usa",
     artist_id: "19",
-
+    
     src: "ImagineDragons-Symphony",
     img: "6ef9bc29symphony88b7969bad65f42098liarc459a83a6",
     style: "Pop",
@@ -4831,7 +4935,8 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/Fc4GtsiWYAIwTcF?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/Fc4GtshWIAIl2nU?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/Fc4GtsoXwAEudCM?format=jpg&name=large",
-
+    canvas: "",
+    
     album: "Mercury - Acts 1 & 2",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02fc915b69600dce2991a61f13",
     album_premiere: "2022",
@@ -4868,7 +4973,7 @@ var allMusic = [
     language: "eng",
     country: "usa",
     artist_id: "19",
-
+    
     src: "ImagineDragons-HigherGround",
     img: "6ef92156higer796965f42098cground459a83a6",
     style: "Pop",
@@ -4881,7 +4986,8 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/Fc4GtsiWYAIwTcF?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/Fc4GtshWIAIl2nU?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/Fc4GtsoXwAEudCM?format=jpg&name=large",
-
+    canvas: "",
+    
     album: "Mercury - Acts 1 & 2",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02fc915b69600dce2991a61f13",
     album_premiere: "2022",
@@ -4931,7 +5037,8 @@ var allMusic = [
     gallery_img_3: "https://i.scdn.co/image/ab6761670000ecd4677d0b1a45f847a53add4e6b",
     gallery_img_4: "https://i.scdn.co/image/60b7e46d6daf37a16c4015eecf5b21ebb295b64b",
     gallery_img_5: "https://pbs.twimg.com/media/Fci3uDCXgAIKvC3?format=jpg&name=large",
-
+    canvas: "",
+    
     album: "Far From Normal",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02ab1f263468c61a8c1b67ddd4",
     album_premiere: "2021",

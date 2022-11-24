@@ -10,7 +10,7 @@
     <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="shortcut icon" type="image" href="brandsources\20220320_150124.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="js/script.js" defer></script>
+    <script src="js/app.js" defer></script>
 </head>
 <body class="preference green" onload="checkQuestion()">
 
@@ -143,19 +143,19 @@
             </div>
             <div class="settings-screen-item-input">
               <label class="switch">
-                <input type="checkbox" checked>
+                <input onchange="toggleStopEnd(this)" type="checkbox" checked>
                 <span class="slider round"></span>
               </label>
             </div>
         </div>
         <div class="settings-screen-item" id="input-style">
             <div class="settings-screen-item-description">
-              <h3>Viral Videos</h3>
+              <h3>Canvas</h3>
               <a>Krótkie zapętlone nagrania zamiast artworku</a>
             </div>
             <div class="settings-screen-item-input">
               <label class="switch">
-                <input type="checkbox" class="viral-mode">
+                <input type="checkbox" onclick="canvasToggle()">
                 <span class="slider round"></span>
               </label>
             </div>
@@ -216,7 +216,7 @@
     <h1>Czego szukasz?</h1>
 
     <div class="search-bar" id="search-bar-name">
-      <input type="text" id="search-item" placeholder="Utwory, Wykonwacy, Albumy">
+      <input type="text" id="search-item" placeholder="Utwory, Wykonawcy, Albumy">
       <button type="button" id="clear-input-btn" onclick="search.value='';filterList();clearFilterStatus();resetCustomFilter();"><i class="fa-solid fa-xmark"></i></button>
     </div>
 
@@ -791,6 +791,11 @@
   <div class="main-music-screen">
 
     <div class="background-music-img">
+    </div>
+
+    <div class="background-canvas">
+      <video loop autoplay muted src=""></video>
+      <img src="">
     </div>
 
     <div class="top-controls">

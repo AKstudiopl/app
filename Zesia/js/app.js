@@ -256,6 +256,8 @@ const favoriteContainer = document.querySelector('.library-favorite-container');
 const wrapper = document.querySelector(".main-music"),
 musicImg = wrapper.querySelector(".main-music-header img"),
 musicImgShadow = wrapper.querySelector(".main-music-header .header-shadow img"),
+musicCanvas = wrapper.querySelector(".background-canvas"),
+musicCanvasVideo = wrapper.querySelector(".background-canvas video"),
 musicName = wrapper.querySelector(".main-information-title .name"),
 musicStatusData = wrapper.querySelector(".main-information"),
 musicArtist = wrapper.querySelector(".main-information-title .artist"),
@@ -513,6 +515,20 @@ function loadMusic(indexNumb){
       }
       queueDataLoad();
       overflowingText();
+
+      if(wrapper.classList.contains("canvas")){
+        if(allMusic[indexNumb - 1].canvas != ""){
+          document.querySelector(".background-canvas video").src = allMusic[indexNumb - 1].canvas;
+          document.querySelector(".background-canvas video").style.display="flex";
+          document.querySelector(".background-canvas img").style.display="none";
+          document.querySelector(".background-canvas video").play();
+        }else{
+          document.querySelector(".background-canvas video").style.display="none";
+          document.querySelector(".background-canvas img").src = `images/${allMusic[indexNumb - 1].img}.jpg`;
+          document.querySelector(".background-canvas img").style.display="flex";
+          document.querySelector(".background-canvas video").pause();
+        }
+      }
 }
 
 function queueDataLoad(){
@@ -544,6 +560,7 @@ function playMusic(){
   smallPlayStopbtn.querySelector(".fa-solid").classList.remove("fa-play");
   smallPlayStopbtn.querySelector(".fa-solid").classList.add("fa-stop");
   mainAudio.play();
+  musicCanvasVideo.play();
   setTimeout(() => {
     leftTime.classList.add("active");
     setTimeout(() => {
@@ -559,6 +576,7 @@ function pauseMusic(){
   smallPlayStopbtn.querySelector(".fa-solid").classList.add("fa-play");
   smallPlayStopbtn.querySelector(".fa-solid").classList.remove("fa-stop");
   mainAudio.pause();
+  musicCanvasVideo.pause();
 }
 
 function nextMusic(){
@@ -707,13 +725,20 @@ shuffleBtn.addEventListener("click", ()=>{
 });
 
 mainAudio.addEventListener("ended", ()=>{
-  nextMusic();
-
-  var trackFinished = localStorage.getItem("trSts") || 0;
-  trackFinished++;
-  localStorage.setItem("trSts", trackFinished)
+  if(wrapper.classList.contains("stop-end")){
+    pauseMusic();
+    mainAudio.currentTime=0;
+  }else{
+    nextMusic();
+    var trackFinished = localStorage.getItem("trSts") || 0;
+    trackFinished++;
+    localStorage.setItem("trSts", trackFinished)
+  }
 });
 
+function toggleStopEnd(element){
+  wrapper.classList.toggle("stop-end");
+}
 
 const topOptionBtn = document.getElementsByClassName('top-controls-more-btn')[0]
 const topOptionExit = document.getElementsByClassName('exit-top-more-head')[0]
@@ -1534,15 +1559,7 @@ function shortcutCheck() {
       wrapper.classList.toggle('save-data')
   })
 
-  const viralSwitch = document.getElementsByClassName('viral-mode')[0]
   const musicBackgroundViral = document.getElementsByClassName('background-music-img')[0]
-  viralSwitch.addEventListener('click', () => {
-      wrapper.classList.toggle('viral')
-      musicImg.classList.toggle('viral')
-      musicViral.classList.toggle('viral')
-      musicBackgroundViral.classList.toggle('viral')
-  })
-
   const timerToggle = document.getElementsByClassName('timer-toggle')[0]
   const timerView = document.getElementsByClassName('timer-view')[0]
   const timerExit = document.getElementsByClassName('timer-exit')[0]
@@ -3351,4 +3368,21 @@ function notificationCheck(){
       });
     }
   });
+}
+
+function canvasToggle(){
+  wrapper.classList.toggle("canvas");
+  if(wrapper.classList.contains("canvas")){
+    musicImg.style.display="none";
+    musicImgShadow.style.display="none";
+    musicCanvas.classList.add("active")
+    document.querySelector(".background-canvas video").src = allMusic[indexNumb - 1].canvas;
+    document.querySelector(".background-canvas video").style.display="flex";
+    document.querySelector(".background-canvas img").style.display="none";
+    document.querySelector(".background-canvas video").play();
+  }else{
+    musicImg.style.display="flex";
+    musicImgShadow.style.display="flex";
+    musicCanvas.classList.remove("active")
+  }
 }
