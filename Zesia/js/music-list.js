@@ -4324,7 +4324,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/EDfTMqqU4AEBDV1?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FSAL8gpVUAAwaMA?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/EDfNEg2UUAAi_oq?format=jpg&name=medium",
-    canvas: "",
+    canvas: "https://v16-webapp.tiktok.com/446eb5ed30aad23a383a82a1c2d59a5c/637fee3b/video/tos/useast2a/tos-useast2a-ve-0068c001/23c5f006029b4d98b4509f86a41ee1e1/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=2662&bt=1331&cs=0&ds=3&ft=4b~OyMeQ8Zmo0XaNm64jVVS4ZpWrKsdm&mime_type=video_mp4&qs=0&rc=aTw8ZDdnNzc2ZDxmNDo0OkBpamlkczQ6Zm1yOjMzNzczM0BgYjBfL2EzNjUxNC5fMi01YSMvbHFkcjRvXzRgLS1kMTZzcw%3D%3D&l=2022112416200201021402902712BBE51D&btag=80000",
     
     album: "Queen Of The Clouds",
     album_cover: "https://i.scdn.co/image/ab67616d00001e0270cd79659edf4d5fec0840b8",

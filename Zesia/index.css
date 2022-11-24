@@ -6663,8 +6663,9 @@ width: 100%;
   opacity: 1;
   -webkit-mask-image: -webkit-linear-gradient(transparent 0%, black 10%, black 50%, transparent 95%);
 }
-/* Style_pop_up*/
 
+
+/* Style_pop_up*/
 textarea
 {
   width: 0;
