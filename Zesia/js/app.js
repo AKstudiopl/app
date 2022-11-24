@@ -580,7 +580,6 @@ function pauseMusic(){
 }
 
 function nextMusic(){
-
   if (wrapper.classList.contains("shuffle")) {
     indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
   }
