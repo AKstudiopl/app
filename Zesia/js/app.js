@@ -566,7 +566,11 @@ function playMusic(){
       leftTime.classList.remove("active");
     }, 5000)
   }, 5000)
-  musicCanvasVideo.play();
+  if (!musicCanvasVideo.paused) {
+    musicCanvasVideo.play()
+  }else{
+    musicCanvasVideo.pause()
+  }
 }
 
 function pauseMusic(){
@@ -1241,9 +1245,9 @@ function popularLoad(){
         </div>`
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
-      if(favoritIt[0].canvas != ""){
-        let resultFAV = `<div class="card" data-src='${favoritIt[0].canvas}'>
-        <video onclick="playPauseVideo(this)" src="${favoritIt[0].canvas}">
+      if(favoritIt[i].canvas != ""){
+        let resultFAV = `<div class="card" data-src='${favoritIt[i].canvas}'>
+        <video onclick="playPauseVideo(this)" src="${favoritIt[i].canvas}">
         </div>`
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
