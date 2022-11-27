@@ -4584,6 +4584,14 @@ width: 100%;
   object-fit: cover;
   object-position: center;
 }
+.card video
+{
+  width: 100%;
+  aspect-ratio: 1/1;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
 .btn {
   position: absolute;

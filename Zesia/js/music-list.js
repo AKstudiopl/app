@@ -1175,6 +1175,9 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FeGafYTWAAMNDSQ?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FbWeVmdWYAYn_qp?format=jpg&name=medium",
     gallery_img_5: "https://pbs.twimg.com/media/FYQoYGfWAAMZAdu?format=jpg&name=large",
+    gallery_img_6: "https://pbs.twimg.com/media/FfqhOmlUcAAzUsQ?format=jpg&name=small",
+    gallery_img_7: "https://pbs.twimg.com/media/Ffqbbv9VUAATeaU?format=jpg&name=small",
+    gallery_img_8: "https://pbs.twimg.com/media/FhKepDUVEAEeMXo?format=jpg&name=large",
     canvas: "https://video.twimg.com/ext_tw_video/1595367671612178432/pu/vid/1024x576/5a50P2R7W_vGMrW4.mp4?tag=12",
 
     album: "Me Everything",
@@ -5291,6 +5294,9 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FeGafYTWAAMNDSQ?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FbWeVmdWYAYn_qp?format=jpg&name=medium",
     gallery_img_5: "https://pbs.twimg.com/media/FYQoYGfWAAMZAdu?format=jpg&name=large",
+    gallery_img_6: "https://pbs.twimg.com/media/FfqhOmlUcAAzUsQ?format=jpg&name=small",
+    gallery_img_7: "https://pbs.twimg.com/media/Ffqbbv9VUAATeaU?format=jpg&name=small",
+    gallery_img_8: "https://pbs.twimg.com/media/FhKepDUVEAEeMXo?format=jpg&name=large",
     canvas: "https://video.twimg.com/ext_tw_video/1562358007421435904/pu/vid/1920x666/Sot0jsFzFf7Epl82.mp4?tag=12",
 
     album: "thank u, next",
@@ -5342,6 +5348,9 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FeGafYTWAAMNDSQ?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FbWeVmdWYAYn_qp?format=jpg&name=medium",
     gallery_img_5: "https://pbs.twimg.com/media/FYQoYGfWAAMZAdu?format=jpg&name=large",
+    gallery_img_6: "https://pbs.twimg.com/media/FfqhOmlUcAAzUsQ?format=jpg&name=small",
+    gallery_img_7: "https://pbs.twimg.com/media/Ffqbbv9VUAATeaU?format=jpg&name=small",
+    gallery_img_8: "https://pbs.twimg.com/media/FhKepDUVEAEeMXo?format=jpg&name=large",
     canvas: "https://video.twimg.com/ext_tw_video/1578862553559711744/pu/vid/1280x720/WNAFTnge9u0th9fU.mp4?tag=12",
 
     album: "thank u, next",

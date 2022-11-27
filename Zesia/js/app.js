@@ -1183,33 +1183,70 @@ function popularLoad(){
     var randomnumber = Math.floor(Math.random() * 250000) + 1;
     document.querySelector(".music-artist-bio-stats p").innerText = randomnumber;
 
+    if(document.querySelector(".music-artist-bio-gallery .container .gallery .card video")){
+      document.querySelector(".music-artist-bio-gallery .container .gallery .card video").pause();
+    }
+
     const resultsFAV = document.querySelector(".music-artist-bio-gallery .container .gallery");
     var favoritIt = allMusicView.filter(x => x.artist === artistData);
     resultsFAV.innerHTML = "";
+    let resultFAV =
+    `<div class="card" data-src='${favoritIt[0].avatar}'>
+      <img src="artists/${favoritIt[0].avatar}.jpg" onerror="removeThis(this)">
+     </div>
+     <div class="card" data-src='${favoritIt[0].artist_img}'>
+      <img src="${favoritIt[0].artist_img}" onerror="removeThis(this)">
+     </div>
+     <div class="card" data-src='${favoritIt[0].gallery_img_1}'>
+     <img src="${favoritIt[0].gallery_img_1}" onerror="removeThis(this)">
+     </div>
+     <div class="card" data-src='${favoritIt[0].gallery_img_2}'>
+     <img src="${favoritIt[0].gallery_img_2}" onerror="removeThis(this)">
+     </div>`;
+    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
     for (let i = 0; i < favoritIt.length; i++) {
-      let resultFAV =
-        `<div class="card" data-src='${favoritIt[i].avatar}'>
-          <img src="artists/${favoritIt[i].avatar}.jpg" onerror="removeThis(this)">
-         </div>
-         <div class="card" data-src='${favoritIt[i].artist_img}'>
-          <img src="${favoritIt[i].artist_img}" onerror="removeThis(this)">
-         </div>
-         <div class="card" data-src='${favoritIt[i].gallery_img_1}'>
-         <img src="${favoritIt[i].gallery_img_1}" onerror="removeThis(this)">
-         </div>
-         <div class="card" data-src='${favoritIt[i].gallery_img_2}'>
-         <img src="${favoritIt[i].gallery_img_2}" onerror="removeThis(this)">
-         </div>
-         <div class="card" data-src='${favoritIt[i].gallery_img_3}'>
-         <img src="${favoritIt[i].gallery_img_3}" onerror="removeThis(this)">
-         </div>
-         <div class="card" data-src='${favoritIt[i].gallery_img_4}'>
-         <img src="${favoritIt[i].gallery_img_4}" onerror="removeThis(this)">
-         </div>
-         <div class="card" data-src='${favoritIt[i].gallery_img_5}'>
-         <img src="${favoritIt[i].gallery_img_5}" onerror="removeThis(this)">
-         </div>`;
-      resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+      if(favoritIt[0].gallery_img_3 != ""){
+        let resultFAV = `<div class="card" data-src='${favoritIt[0].gallery_img_3}'>
+        <img src="${favoritIt[0].gallery_img_3}">
+        </div>`
+        resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+      }
+      if(favoritIt[0].gallery_img_4 != ""){
+        let resultFAV = `<div class="card" data-src='${favoritIt[0].gallery_img_4}'>
+        <img src="${favoritIt[0].gallery_img_4}">
+        </div>`
+        resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+      }
+      if(favoritIt[0].gallery_img_5 != ""){
+        let resultFAV = `<div class="card" data-src='${favoritIt[0].gallery_img_5}'>
+        <img src="${favoritIt[0].gallery_img_5}">
+        </div>`
+        resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+      }
+      if(favoritIt[0].gallery_img_6 != null){
+        let resultFAV = `<div class="card" data-src='${favoritIt[0].gallery_img_6}'>
+        <img src="${favoritIt[0].gallery_img_6}">
+        </div>`
+        resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+      }
+      if(favoritIt[0].gallery_img_7 != null){
+        let resultFAV = `<div class="card" data-src='${favoritIt[0].gallery_img_7}'>
+        <img src="${favoritIt[0].gallery_img_7}">
+        </div>`
+        resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+      }
+      if(favoritIt[0].gallery_img_8 != null){
+        let resultFAV = `<div class="card" data-src='${favoritIt[0].gallery_img_7}'>
+        <img src="${favoritIt[0].gallery_img_7}">
+        </div>`
+        resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+      }
+      if(favoritIt[0].canvas != ""){
+        let resultFAV = `<div class="card" data-src='${favoritIt[0].canvas}'>
+        <video onclick="playPauseVideo(this)" src="${favoritIt[0].canvas}">
+        </div>`
+        resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+      }
 
       var productIds={};
       $('.card').each(function(){
@@ -1251,6 +1288,13 @@ function popularLoad(){
 
   }
 
+function playPauseVideo(element){
+  if (!element.paused) {
+    element.pause()
+  }else{
+    element.play()
+  }
+}
 
   const artistContainer = document.querySelector(".music-artist-container"),
   artistItemImg = artistContainer.querySelector(".music-artist-item-title img"),
