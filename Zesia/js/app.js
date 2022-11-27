@@ -560,13 +560,13 @@ function playMusic(){
   smallPlayStopbtn.querySelector(".fa-solid").classList.remove("fa-play");
   smallPlayStopbtn.querySelector(".fa-solid").classList.add("fa-stop");
   mainAudio.play();
-  musicCanvasVideo.play();
   setTimeout(() => {
     leftTime.classList.add("active");
     setTimeout(() => {
       leftTime.classList.remove("active");
     }, 5000)
   }, 5000)
+  musicCanvasVideo.play();
 }
 
 function pauseMusic(){
@@ -1180,6 +1180,9 @@ function popularLoad(){
     artistDataName.innerText = artistData;
     artistDataNameTop.innerText = artistData;
 
+    var randomnumber = Math.floor(Math.random() * 250000) + 1;
+    document.querySelector(".music-artist-bio-stats p").innerText = randomnumber;
+
     const resultsFAV = document.querySelector(".music-artist-bio-gallery .container .gallery");
     var favoritIt = allMusicView.filter(x => x.artist === artistData);
     resultsFAV.innerHTML = "";
@@ -1188,22 +1191,22 @@ function popularLoad(){
         `<div class="card" data-src='${favoritIt[i].avatar}'>
           <img src="artists/${favoritIt[i].avatar}.jpg" onerror="removeThis(this)">
          </div>
-         <div class="card"  data-src='${favoritIt[i].artist_img}'>
+         <div class="card" data-src='${favoritIt[i].artist_img}'>
           <img src="${favoritIt[i].artist_img}" onerror="removeThis(this)">
          </div>
-         <div class="card"  data-src='${favoritIt[i].gallery_img_1}'>
+         <div class="card" data-src='${favoritIt[i].gallery_img_1}'>
          <img src="${favoritIt[i].gallery_img_1}" onerror="removeThis(this)">
          </div>
-         <div class="card"  data-src='${favoritIt[i].gallery_img_2}'>
+         <div class="card" data-src='${favoritIt[i].gallery_img_2}'>
          <img src="${favoritIt[i].gallery_img_2}" onerror="removeThis(this)">
          </div>
-         <div class="card"  data-src='${favoritIt[i].gallery_img_3}'>
+         <div class="card" data-src='${favoritIt[i].gallery_img_3}'>
          <img src="${favoritIt[i].gallery_img_3}" onerror="removeThis(this)">
          </div>
-         <div class="card"  data-src='${favoritIt[i].gallery_img_4}'>
+         <div class="card" data-src='${favoritIt[i].gallery_img_4}'>
          <img src="${favoritIt[i].gallery_img_4}" onerror="removeThis(this)">
          </div>
-         <div class="card"  data-src='${favoritIt[i].gallery_img_5}'>
+         <div class="card" data-src='${favoritIt[i].gallery_img_5}'>
          <img src="${favoritIt[i].gallery_img_5}" onerror="removeThis(this)">
          </div>`;
       resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
@@ -3376,9 +3379,17 @@ function canvasToggle(){
     musicImgShadow.style.display="none";
     musicCanvas.classList.add("active")
     document.querySelector(".background-canvas video").src = allMusic[indexNumb - 1].canvas;
-    document.querySelector(".background-canvas video").style.display="flex";
-    document.querySelector(".background-canvas img").style.display="none";
-    document.querySelector(".background-canvas video").play();
+    if(allMusic[indexNumb - 1].canvas != ""){
+      document.querySelector(".background-canvas video").src = allMusic[indexNumb - 1].canvas;
+      document.querySelector(".background-canvas video").style.display="flex";
+      document.querySelector(".background-canvas img").style.display="none";
+      document.querySelector(".background-canvas video").play();
+    }else{
+      document.querySelector(".background-canvas video").style.display="none";
+      document.querySelector(".background-canvas img").src = `images/${allMusic[indexNumb - 1].img}.jpg`;
+      document.querySelector(".background-canvas img").style.display="flex";
+      document.querySelector(".background-canvas video").pause();
+    }
   }else{
     musicImg.style.display="flex";
     musicImgShadow.style.display="flex";

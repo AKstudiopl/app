@@ -4460,6 +4460,9 @@ body.green .queue-item ul li img
   height: calc(100vh - 121px);
   background: var(--background);
   width: 100%;
+  font-family: 'Darker Grotesque';
+  line-height: 1;
+  letter-spacing: 1px;
   overflow: scroll;
 }
 .music-artist-bio.active
@@ -4503,6 +4506,7 @@ width: 100%;
 .music-artist-bio-data p 
 {
   padding: 10px 0;
+  font-size: 20px;
 }
 .music-artist-bio-data h1
 {
@@ -4529,6 +4533,13 @@ width: 100%;
   margin: 5px;
   line-height: 1;
   display: flex;
+  align-items: center;
+  font-family: 'Darker Grotesque';
+  line-height: 1;
+  letter-spacing: 1px;
+  font-weight: 100;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 .music-artist-bio-social a i 
 {
@@ -6659,7 +6670,7 @@ width: 100%;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  -webkit-mask-image: -webkit-linear-gradient(transparent 0%, black 10%, black 50%, transparent 95%);
+  -webkit-mask-image: -webkit-linear-gradient(270deg, rgba(18,18,18,0.9048723897911833) 35%, rgba(0,0,0,0.4988399071925754) 65%, rgba(0,0,0,0) 100%);
 }
 .background-canvas img
 {
@@ -6669,7 +6680,7 @@ width: 100%;
   width: 100%;
   height: 100%;
   opacity: 1;
-  -webkit-mask-image: -webkit-linear-gradient(transparent 0%, black 10%, black 50%, transparent 95%);
+  -webkit-mask-image: -webkit-linear-gradient(270deg, rgba(18,18,18,0.9048723897911833) 35%, rgba(0,0,0,0.4988399071925754) 65%, rgba(0,0,0,0) 100%);
 }
 
 
