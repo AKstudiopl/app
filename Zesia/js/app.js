@@ -1240,14 +1240,29 @@ function popularLoad(){
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(favoritIt[0].gallery_img_8 != null){
-        let resultFAV = `<div class="card" data-src='${favoritIt[0].gallery_img_7}'>
-        <img src="${favoritIt[0].gallery_img_7}">
+        let resultFAV = `<div class="card" data-src='${favoritIt[0].gallery_img_8}'>
+        <img src="${favoritIt[0].gallery_img_8}">
+        </div>`
+        resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+      }
+      if(favoritIt[0].gallery_img_9 != null){
+        let resultFAV = `<div class="card" data-src='${favoritIt[0].gallery_img_9}'>
+        <img src="${favoritIt[0].gallery_img_9}">
+        </div>`
+        resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+      }
+      if(favoritIt[0].gallery_img_10 != null){
+        let resultFAV = `<div class="card" data-src='${favoritIt[0].gallery_img_10}'>
+        <img src="${favoritIt[0].gallery_img_10}">
         </div>`
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(favoritIt[i].canvas != ""){
         let resultFAV = `<div class="card" data-src='${favoritIt[i].canvas}'>
-        <video onclick="playPauseVideo(this)" src="${favoritIt[i].canvas}">
+        <video onclick="playPauseVideo(this)" src="${favoritIt[i].canvas}"></video>
+          <div class="card-video-controls">
+            <p>Video</p>
+          </div>
         </div>`
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
@@ -1291,6 +1306,7 @@ function popularLoad(){
     }
 
   }
+
 
 function playPauseVideo(element){
   if (!element.paused) {

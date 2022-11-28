@@ -4575,6 +4575,9 @@ width: 100%;
   aspect-ratio: 1/1;
   width: 100%;
   display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
 }
 .card img
 {
@@ -4592,7 +4595,34 @@ width: 100%;
   object-fit: cover;
   object-position: center;
 }
-
+.card-video-controls
+{
+  position: absolute;
+  z-index: 2;
+  bottom: 0px;
+  width: calc(100% - 10px);
+  margin-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.card-video-controls p 
+{
+  color: var(--color);
+  width: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  aspect-ratio: 1/1;
+  font-weight: 900;
+  font-size: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: -10px;
+  filter: drop-shadow(0px 2px 5px #000000);
+}
 .btn {
   position: absolute;
 
