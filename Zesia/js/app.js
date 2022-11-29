@@ -6,6 +6,7 @@ darkMode.addEventListener('click', function(){
     content.classList.toggle('green');
     content.classList.toggle('blue');
     if (content.classList.contains('green')) {
+        localStorage.setItem("user_theme", "green");
         document.documentElement.style.setProperty('--maincolor', '#A1D91F');
         document.documentElement.style.setProperty('--maincolorhover', '#1ed760');
         document.documentElement.style.setProperty('--border', '1px #A1D91F50 solid');
@@ -14,6 +15,7 @@ darkMode.addEventListener('click', function(){
         document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(36,36,36,1) 100%)');
     }
     if (content.classList.contains('blue')) {
+        localStorage.setItem("user_theme", "blue");
         document.documentElement.style.setProperty('--maincolor', '#A1D91F');
         document.documentElement.style.setProperty('--maincolorhover', '#1ed760');
         document.documentElement.style.setProperty('--border', '1px #A1D91F50 solid');
@@ -73,13 +75,13 @@ window.addEventListener("load", function () {
         document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(36,36,36,1) 100%)');
     }
     if (content.classList.contains('blue')) {
-        document.documentElement.style.setProperty('--maincolor', '#1764CC');
-        document.documentElement.style.setProperty('--maincolorhover', '#4C97DE');
-        document.documentElement.style.setProperty('--border', '1px #1764CC50 solid');
-        document.documentElement.style.setProperty('--background', '#040511');
-        document.documentElement.style.setProperty('--backgroundsecond', '#04061a');
-        document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, rgba(23,100,204,1) 0%, rgba(12,18,77,1) 39%, rgba(4,6,26,1) 85%)');
-    }
+      document.documentElement.style.setProperty('--maincolor', '#A1D91F');
+      document.documentElement.style.setProperty('--maincolorhover', '#1ed760');
+      document.documentElement.style.setProperty('--border', '1px #A1D91F50 solid');
+      document.documentElement.style.setProperty('--background', '#484b6a');
+      document.documentElement.style.setProperty('--backgroundsecond', '#9394a5');
+      document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(36,36,36,1) 100%)');
+  }
     randomHomeArtist();
 });
 
@@ -521,12 +523,10 @@ function loadMusic(indexNumb){
           document.querySelector(".background-canvas video").src = allMusic[indexNumb - 1].canvas;
           document.querySelector(".background-canvas video").style.display="flex";
           document.querySelector(".background-canvas img").style.display="none";
-          document.querySelector(".background-canvas video").play();
         }else{
           document.querySelector(".background-canvas video").style.display="none";
           document.querySelector(".background-canvas img").src = `images/${allMusic[indexNumb - 1].img}.jpg`;
           document.querySelector(".background-canvas img").style.display="flex";
-          document.querySelector(".background-canvas video").pause();
         }
       }
 }
@@ -566,11 +566,7 @@ function playMusic(){
       leftTime.classList.remove("active");
     }, 5000)
   }, 5000)
-  if (!musicCanvasVideo.paused) {
-    musicCanvasVideo.play()
-  }else{
-    musicCanvasVideo.pause()
-  }
+  musicCanvasVideo.play();
 }
 
 function pauseMusic(){
@@ -3442,21 +3438,73 @@ function canvasToggle(){
     musicImg.style.display="none";
     musicImgShadow.style.display="none";
     musicCanvas.classList.add("active")
+    localStorage.setItem("user_canvas", "on");
     document.querySelector(".background-canvas video").src = allMusic[indexNumb - 1].canvas;
     if(allMusic[indexNumb - 1].canvas != ""){
       document.querySelector(".background-canvas video").src = allMusic[indexNumb - 1].canvas;
       document.querySelector(".background-canvas video").style.display="flex";
       document.querySelector(".background-canvas img").style.display="none";
-      document.querySelector(".background-canvas video").play();
+      musicCanvasVideo.play();
     }else{
       document.querySelector(".background-canvas video").style.display="none";
       document.querySelector(".background-canvas img").src = `images/${allMusic[indexNumb - 1].img}.jpg`;
       document.querySelector(".background-canvas img").style.display="flex";
-      document.querySelector(".background-canvas video").pause();
+      musicCanvasVideo.pause();
     }
   }else{
     musicImg.style.display="flex";
     musicImgShadow.style.display="flex";
     musicCanvas.classList.remove("active")
+    localStorage.setItem("user_canvas", "off");
   }
+}
+
+function userSettingsLoad(){
+  if(localStorage.getItem("user_canvas") === "on"){
+    canvasToggle();
+    musicCanvasVideo.pause();
+    document.querySelector("#userSettingsCanvas").classList.add("active");
+  }else{
+    wrapper.classList.toggle("canvas");
+    canvasToggle();
+  }
+
+  if(localStorage.getItem("user_theme") === "blue"){
+    content.classList.add("blue");
+    content.classList.remove("amoled");
+    content.classList.remove("green");
+  }
+  if(localStorage.getItem("user_theme") === "green"){
+    content.classList.add("green");
+    content.classList.remove("amoled");
+    content.classList.remove("blue");
+  }
+
+  if (content.classList.contains('green')) {
+    document.documentElement.style.setProperty('--maincolor', '#A1D91F');
+    document.documentElement.style.setProperty('--maincolorhover', '#1ed760');
+    document.documentElement.style.setProperty('--border', '1px #A1D91F50 solid');
+    document.documentElement.style.setProperty('--background', '#121212');
+    document.documentElement.style.setProperty('--backgroundsecond', '#242424');
+    document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(36,36,36,1) 100%)');
+  }
+  if (content.classList.contains('blue')) {
+    darkMode.classList.remove("active");
+    document.documentElement.style.setProperty('--maincolor', '#A1D91F');
+    document.documentElement.style.setProperty('--maincolorhover', '#1ed760');
+    document.documentElement.style.setProperty('--border', '1px #A1D91F50 solid');
+    document.documentElement.style.setProperty('--background', '#484b6a');
+    document.documentElement.style.setProperty('--backgroundsecond', '#9394a5');
+    document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(36,36,36,1) 100%)');
+  }
+}
+
+function settingsBoxToggle(element){
+  element.classList.toggle("active");
+}
+
+userSettingsLoad();
+
+function descriptionPopup(){
+  document.querySelector(".description_popop").classList.toggle("active");
 }

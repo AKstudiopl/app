@@ -20,11 +20,6 @@
       <p>1.9.0</p>
   </div>
 
-  <div class="bad-device">
-    <p>Your Device Don't Support Zesia App</p>
-    <img src="brandsources\20220320_150124.png"/>
-  </div>
-
   <div class="name-ask">
     <h1>Jak masz na imię?</h1>
     <input type="text" id="username" onchange="nameQuestion()" placeholder="- - -">
@@ -72,28 +67,22 @@
         </div>
 
         <div class="settings-screen-item" id="input-style">
-            <div class="settings-screen-item-description">
-              <h3>Save Mode</h3>
-              <a>Ogranicza zużycie danych</a>
-            </div>
-            <div class="settings-screen-item-input">
-              <label class="switch">
-                <input type="checkbox" class="save-data">
-                <span class="slider round"></span>
-              </label>
-            </div>
-        </div>
+          <div class="settings-screen-item-description">
+            <h3>Save Mode</h3>
+            <a>Ogranicza zużycie danych</a>
+          </div>
+          <div class="settings-screen-item-box" onclick="settingsBoxToggle(this)">
+            <div class="settings-screen-item-box-toggle save-data"></div>
+          </div>
+      </div>
 
         <div class="settings-screen-item" id="input-style">
           <div class="settings-screen-item-description">
             <h3>Tryb Ciemny Amoled</h3>
             <a>Zmniejszać zużycie energii</a>
           </div>
-          <div class="settings-screen-item-input">
-            <label class="switch">
-              <input type="checkbox" oninput="amoledMode()" class="save-data">
-              <span class="slider round"></span>
-            </label>
+          <div class="settings-screen-item-box" onclick="settingsBoxToggle(this); amoledMode()">
+            <div class="settings-screen-item-box-toggle save-data"></div>
           </div>
       </div>
 
@@ -107,23 +96,14 @@
               <h3>Tryb Ciemny</h3>
               <a>Tryb przyjazny dla oczu i baterii</a>
             </div>
-            <div class="settings-screen-item-input">
-              <label class="switch">
-                <input onchange="fastLoadingPop()" type="checkbox" id="dark-change" checked>
-                <span class="slider round"></span>
-              </label>
+            <div class="settings-screen-item-box active" id="dark-change" onclick="fastLoadingPop()">
+              <div class="settings-screen-item-box-toggle save-data"></div>
             </div>
         </div>
-        <div class="settings-screen-item" id="input-style">
+        <div class="settings-screen-item" id="input-style" onclick="descriptionPopup()">
           <div class="settings-screen-item-description">
             <h3>Tryb Pełnoekranowy</h3>
             <a>Wyświetla aplikacje w pełnym rozmiarze ekranu</a>
-          </div>
-          <div class="settings-screen-item-input">
-            <label class="switch">
-              <input type="checkbox" onchange="toggleFullScreen(this)">
-              <span class="slider round"></span>
-            </label>
           </div>
       </div>
         <div class="settings-screen-item" id="input-style">
@@ -131,11 +111,8 @@
               <h3>Płynne przejście</h3>
               <a>Pomiędzy utworami</a>
             </div>
-            <div class="settings-screen-item-input">
-              <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-              </label>
+            <div class="settings-screen-item-box" onclick="settingsBoxToggle(this);">
+              <div class="settings-screen-item-box-toggle save-data"></div>
             </div>
         </div>
         <div class="settings-screen-item" id="input-style">
@@ -143,11 +120,8 @@
               <h3>Bez przerw</h3>
               <a>Odtwarzanie bez przerw</a>
             </div>
-            <div class="settings-screen-item-input">
-              <label class="switch">
-                <input onchange="toggleStopEnd(this)" type="checkbox" checked>
-                <span class="slider round"></span>
-              </label>
+            <div class="settings-screen-item-box active" onclick="settingsBoxToggle(this);toggleStopEnd(this);">
+              <div class="settings-screen-item-box-toggle save-data"></div>
             </div>
         </div>
         <div class="settings-screen-item" id="input-style">
@@ -155,11 +129,8 @@
               <h3>Canvas</h3>
               <a>Krótkie zapętlone nagrania zamiast artworku</a>
             </div>
-            <div class="settings-screen-item-input">
-              <label class="switch">
-                <input type="checkbox" onclick="canvasToggle()">
-                <span class="slider round"></span>
-              </label>
+            <div class="settings-screen-item-box" id="userSettingsCanvas" onclick="settingsBoxToggle(this);canvasToggle();">
+              <div class="settings-screen-item-box-toggle save-data"></div>
             </div>
         </div>
 
@@ -173,11 +144,8 @@
               <h3>Profil Prywatny</h3>
               <a>Twoja Aktywność widoczna tylko dla ciebie</a>
             </div>
-            <div class="settings-screen-item-input">
-              <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-              </label>
+            <div class="settings-screen-item-box" onclick="settingsBoxToggle(this);">
+              <div class="settings-screen-item-box-toggle save-data"></div>
             </div>
         </div>
         <div class="settings-screen-item" id="input-style">
@@ -185,11 +153,8 @@
             <h3>Powiadomienia</h3>
             <a>Zezwól na powiadomienia</a>
           </div>
-          <div class="settings-screen-item-input">
-            <label class="switch">
-              <input type="checkbox" onclick="notificationCheck()">
-              <span class="slider round"></span>
-            </label>
+          <div class="settings-screen-item-box" onclick="settingsBoxToggle(this);notificationCheck()">
+            <div class="settings-screen-item-box-toggle save-data"></div>
           </div>
       </div>
       <div class="settings-screen-item" id="input-style">
@@ -1556,6 +1521,18 @@
     <span>This feature is currently not available, try again later</span>
   </div>
   <i onclick="errorPop()" class="fa-solid fa-xmark"></i>
+</div>
+
+<div class="description_popop">
+  <div class="description_popop_content">
+    <p>Tryb Pełnoekranowy</p>
+    <span>Aby ustawić tryb pełnoekranowy, jako domyślny wybór musisz dodać aplikacje do swojego pulpitu na urządzeniu.</span>
+    <span>Dodanie aplikacji wymaga 2 kliknięć, jeśli nie wiesz jak to zrobić skorzystaj z przycisku "Poradnik" poniżej, gdzie krok po krok opisany jest ten proces.</span>
+  </div>
+  <div class="description_popop_action">
+    <a onclick="descriptionPopup()">Zamknij</a>
+    <a href="https://www.howtogeek.com/196087/how-to-add-websites-to-the-home-screen-on-any-smartphone-or-tablet/">Poradnik</a>
+  </div>
 </div>
 
 <div class="fast-loader">
