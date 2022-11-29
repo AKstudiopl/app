@@ -61,6 +61,25 @@
 
     <div class="settings-screen-container">
 
+      <div class="settings-title">
+        <h3>Wiadomości</h3>
+        <i></i>
+      </div>
+
+        <div class="settings-screen-item" id="input-style">
+          <div class="settings-screen-item-description" onclick="errorPop()">
+            <h3>Systemowe</h3>
+            <a>Aktualizacje, zgłoszenia, pomoc</a>
+          </div>
+        </div>
+
+        <div class="settings-screen-item" id="input-style">
+          <div class="settings-screen-item-description" onclick="errorPop()">
+            <h3>Zaproszenia</h3>
+            <a>Znajomii, grupy, polubienia</a>
+          </div>
+        </div>
+
         <div class="settings-title">
           <h3>Oszczędzanie Danych</h3>
           <i></i>
@@ -74,7 +93,7 @@
           <div class="settings-screen-item-box" onclick="settingsBoxToggle(this)">
             <div class="settings-screen-item-box-toggle save-data"></div>
           </div>
-      </div>
+        </div>
 
         <div class="settings-screen-item" id="input-style">
           <div class="settings-screen-item-description">
@@ -84,7 +103,7 @@
           <div class="settings-screen-item-box" onclick="settingsBoxToggle(this); amoledMode()">
             <div class="settings-screen-item-box-toggle save-data"></div>
           </div>
-      </div>
+        </div>
 
         <div class="settings-title">
           <h3>Odtwarzanie</h3>
@@ -169,7 +188,14 @@
           <h3>Pomoc Techniczna</h3>
           <a href="#">Uzyskaj pomoc od nas i forum</a>
         </div>
-    </div>
+      </div>
+
+      <div class="settings-screen-item" id="input-style">
+        <div class="settings-screen-item-description" onclick="default_user()">
+          <h3>Usuń zapisane dane</h3>
+          <a>Polubione utwory, artyści, playlisty itd...</a>
+        </div>
+      </div>
 
     </div>
 

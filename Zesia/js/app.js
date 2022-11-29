@@ -1762,7 +1762,7 @@ function createItemPlaylist(){
     playlistItemTitle.innerText = "Playlista";
   }
 
-  localStorage.setItem('user_playlist_1', playlistTitleData);
+  localStorage.setItem('user_playlist', playlistTitleData);
 
   const date = new Date();
   let day = date.getDate();
@@ -3507,4 +3507,10 @@ userSettingsLoad();
 
 function descriptionPopup(){
   document.querySelector(".description_popop").classList.toggle("active");
+}
+
+function default_user(){
+  localStorage.clear();
+  sessionStorage.clear();
+  window.location.reload();
 }
