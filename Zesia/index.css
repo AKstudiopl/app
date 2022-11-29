@@ -1845,6 +1845,7 @@ input:checked + .slider:before {
   border-radius: 50%;
   position: relative;
   z-index: 5;
+  margin-left: auto;
 }
 .music-icon i
 {
