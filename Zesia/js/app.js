@@ -566,7 +566,9 @@ function playMusic(){
       leftTime.classList.remove("active");
     }, 5000)
   }, 5000)
-  musicCanvasVideo.play();
+  if(musicCanvas.classList.contains("active")){
+    musicCanvasVideo.play();
+  }
 }
 
 function pauseMusic(){

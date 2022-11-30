@@ -1493,6 +1493,19 @@ input:checked + .slider:before {
   justify-content: space-between;
   align-items: center;
 }
+.head-content-top-action
+{
+  display: flex;
+  gap: 20px;
+}
+.head-content-top-action a 
+{
+  transition: 0.3s;
+}
+.head-content-top-action a:active
+{
+  transform: scale(0.9) rotate(25deg);
+}
 .head-content .head-content-top-welcome i
 {
   font-size: 20px;

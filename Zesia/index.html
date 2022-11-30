@@ -61,25 +61,6 @@
 
     <div class="settings-screen-container">
 
-      <div class="settings-title">
-        <h3>Wiadomości</h3>
-        <i></i>
-      </div>
-
-        <div class="settings-screen-item" id="input-style">
-          <div class="settings-screen-item-description" onclick="errorPop()">
-            <h3>Systemowe</h3>
-            <a>Aktualizacje, zgłoszenia, pomoc</a>
-          </div>
-        </div>
-
-        <div class="settings-screen-item" id="input-style">
-          <div class="settings-screen-item-description" onclick="errorPop()">
-            <h3>Zaproszenia</h3>
-            <a>Znajomii, grupy, polubienia</a>
-          </div>
-        </div>
-
         <div class="settings-title">
           <h3>Oszczędzanie Danych</h3>
           <i></i>
@@ -463,11 +444,14 @@
   <div class="head-content-top">
     <div class="head-content-top-welcome">
       <div class="title">
-        <h1><p class="timeZoneData">Witaj,</p> <span id="nameUser"></span></h1>
+        <h1><p class="timeZoneData"></p><span id="nameUser"></span></h1>
       </div>
-      <a>
-        <i class="fa-solid fa-gear settings-action-btn"></i>
-      </a>
+
+      <div class="head-content-top-action">
+        <a><i class="fa-regular fa-bell"></i></a>
+        <a><i class="fa-solid fa-gear settings-action-btn"></i></a>
+      </div>
+
     </div>
     <div class="welcome-search-bar">
       <a onclick="searchBarUse()">
