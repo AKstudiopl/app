@@ -3516,3 +3516,32 @@ function default_user(){
   sessionStorage.clear();
   window.location.reload();
 }
+
+function clickedNotification(element){
+  let linkHref = element.getAttribute('link_to');
+  window.location.href = "#" + linkHref;
+  var indexNumb = linkHref;
+  loadMusic(indexNumb);
+  playMusic();
+  wrapper.classList.add("active")
+}
+
+function notifyToggle(){
+  document.querySelector(".notification_screen").classList.toggle("active");
+}
+
+const notifyUser = document.querySelector(".notification_header_main");
+const notifyReco = document.querySelector(".notification_header_rec");
+const notifyContent = document.querySelector(".notification_content");
+
+notifyUser.addEventListener('click', () => {
+  notifyReco.classList.remove("active");
+  notifyUser.classList.add("active");
+  notifyContent.style.display="flex";
+})
+
+notifyReco.addEventListener('click', () => {
+  notifyReco.classList.add("active");
+  notifyUser.classList.remove("active");
+  notifyContent.style.display="none";
+})
