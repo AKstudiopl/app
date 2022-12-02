@@ -2601,7 +2601,7 @@ var allMusic = [
     gallery_img_6: "https://pbs.twimg.com/media/EwNX9RIWYAMaCpJ?format=jpg&name=large",
     gallery_img_7: "https://pbs.twimg.com/media/Ev0KNpUVIAA8Fd1?format=jpg&name=medium",
     gallery_img_8: "https://pbs.twimg.com/media/Ex1UW0YU4AMy4oF?format=jpg&name=small",
-    gallery_img_9: "https://pbs.twimg.com/media/E2Ke4iQVcAA3eHm?format=jpg&name=small",
+    gallery_img_9: "https://i.scdn.co/image/ab6768640000fe893e7aa5b59f91d89b30e63065",
     gallery_img_10: "https://pbs.twimg.com/media/FimNd2lXkAAD-L-?format=jpg&name=900x900",
     canvas: "https://video.twimg.com/ext_tw_video/1594101667695411200/pu/vid/720x1280/kue168cfSwXtXrxW.mp4?tag=12",
 
