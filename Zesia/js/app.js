@@ -3563,4 +3563,94 @@ function followedArtistsReelsLoad() {
   });
 }
 
-followedArtistsReelsLoad()
+followedArtistsReelsLoad();
+
+const lyricsBox = document.querySelector(".main-music-lyrics-box");
+
+/*
+
+function lyricsMode(){
+  const resultsFAV = lyricsBox;
+  resultsFAV.innerHTML = ``;
+  console.log(mainAudio.currentTime);
+  var favoritIt = allMusicView.filter(x => x.artist_status === "followed");
+  if(allMusic[indexNumb - 1].lyrics.ve1.stamp < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve1.stamp > allMusic[indexNumb - 1].lyrics.ve2.stamp){
+    if(allMusic[indexNumb - 1].lyrics.ve1.ls1 != undefined){
+      let resultFAV = 
+     `<p>${allMusic[indexNumb - 1].lyrics.ve1.ls1}</p>`;
+      resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+    }
+    if(allMusic[indexNumb - 1].lyrics.ve1.ls2 != undefined){
+      let resultFAV = 
+     `<p>${allMusic[indexNumb - 1].lyrics.ve1.ls2}</p>`;
+      resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+    }
+    if(allMusic[indexNumb - 1].lyrics.ve1.ls3 != undefined){
+      let resultFAV = 
+     `<p>${allMusic[indexNumb - 1].lyrics.ve1.ls3}</p>`;
+      resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+    }
+    if(allMusic[indexNumb - 1].lyrics.ve1.ls4 != undefined){
+      let resultFAV = 
+     `<p>${allMusic[indexNumb - 1].lyrics.ve1.ls4}</p>`;
+      resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+    }}
+
+    if(allMusic[indexNumb - 1].lyrics.ve2.stamp < mainAudio.currentTime){
+      resultsFAV.innerHTML = ``;
+      if(allMusic[indexNumb - 1].lyrics.ve2.ls1 != undefined){
+        let resultFAV = 
+       `<p>${allMusic[indexNumb - 1].lyrics.ve2.ls1}</p>`;
+        resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+      }
+      if(allMusic[indexNumb - 1].lyrics.ve2.ls2 != undefined){
+        let resultFAV = 
+       `<p>${allMusic[indexNumb - 1].lyrics.ve2.ls2}</p>`;
+        resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+      }
+      if(allMusic[indexNumb - 1].lyrics.ve2.ls3 != undefined){
+        let resultFAV = 
+       `<p>${allMusic[indexNumb - 1].lyrics.ve2.ls3}</p>`;
+        resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+      }
+      if(allMusic[indexNumb - 1].lyrics.ve2.ls4 != undefined){
+        let resultFAV = 
+       `<p>${allMusic[indexNumb - 1].lyrics.ve2.ls4}</p>`;
+        resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+      }
+      if(allMusic[indexNumb - 1].lyrics.ve2.ls5 != undefined){
+        let resultFAV = 
+       `<p>${allMusic[indexNumb - 1].lyrics.ve2.ls5}</p>`;
+        resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+      }
+      if(allMusic[indexNumb - 1].lyrics.ve2.ls6 != undefined){
+        let resultFAV = 
+       `<p>${allMusic[indexNumb - 1].lyrics.ve2.ls6}</p>`;
+        resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+      }
+      if(allMusic[indexNumb - 1].lyrics.ve2.ls7 != undefined){
+        let resultFAV = 
+       `<p>${allMusic[indexNumb - 1].lyrics.ve2.ls7}</p>`;
+        resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+      }
+      if(allMusic[indexNumb - 1].lyrics.ve2.ls8 != undefined){
+        let resultFAV = 
+       `<p>${allMusic[indexNumb - 1].lyrics.ve2.ls8}</p>`;
+        resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+      }
+      if(allMusic[indexNumb - 1].lyrics.ve2.ls9 != undefined){
+        let resultFAV = 
+       `<p>${allMusic[indexNumb - 1].lyrics.ve2.ls9}</p>`;
+        resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+      }
+      if(allMusic[indexNumb - 1].lyrics.ve2.ls10 != undefined){
+        let resultFAV = 
+       `<p>${allMusic[indexNumb - 1].lyrics.ve2.ls10}</p>`;
+        resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+      }
+    }
+}
+
+var t=setInterval(lyricsMode,1000);
+
+ */

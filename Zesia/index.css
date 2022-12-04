@@ -2448,14 +2448,16 @@ input:checked + .slider:before {
   align-items: flex-start;
   color: var(--color);
   position: absolute;
+  display: none;
   top: 0;
 }
 .main-music-header img.lyrics
 {
   filter: blur(25px);
   transform: scaleX(1.5);
+  opacity: 0;
 }
-.main-music-lyrics-box p:nth-child(4){
+.main-music-lyrics-box p{
   font-size: 25px;
   color: var(--maincolor);
 }
