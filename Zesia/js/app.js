@@ -290,16 +290,6 @@ musicNextTitle = wrapper.querySelector(".main-music-next-music .next-music-title
 
 lyricsDataArtist = wrapper.querySelector(".device-main-audio-data .device-main-audio-data-artist"),
 lyricsDataTitle = wrapper.querySelector(".device-main-audio-data .device-main-audio-data-title"),
-lyricsDataVerse_1 = wrapper.querySelector(".device-lyrics-container .lyrics-item-number-verse-1"),
-lyricsDataVerse_2 = wrapper.querySelector(".device-lyrics-container .lyrics-item-number-verse-2"),
-lyricsDataVerse_3 = wrapper.querySelector(".device-lyrics-container .lyrics-item-number-verse-3"),
-lyricsDataVerse_4 = wrapper.querySelector(".device-lyrics-container .lyrics-item-number-verse-4"),
-lyricsDataVerse_5 = wrapper.querySelector(".device-lyrics-container .lyrics-item-number-verse-5"),
-lyricsDataVerse_6 = wrapper.querySelector(".device-lyrics-container .lyrics-item-number-verse-6"),
-lyricsDataVerse_7 = wrapper.querySelector(".device-lyrics-container .lyrics-item-number-verse-7"),
-lyricsDataVerse_8 = wrapper.querySelector(".device-lyrics-container .lyrics-item-number-verse-8"),
-lyricsNoDataAlert = wrapper.querySelector(".device-lyrics-nolyrics-alert"),
-lyricsAllVerses = wrapper.querySelectorAll(".device-lyrics-container p"),
 
 queueArtist = wrapper.querySelector(".queue-container .artist");
 
@@ -365,27 +355,6 @@ favoritBtn.addEventListener('click', () => {
   }
 })
 
-function lyricsSupport(){
-  lyricsDataVerse_1.innerText = allMusic[indexNumb - 1].lyrics.lyrics_verse_1;
-  lyricsDataVerse_2.innerText = allMusic[indexNumb - 1].lyrics.lyrics_verse_2;
-  lyricsDataVerse_3.innerText = allMusic[indexNumb - 1].lyrics.lyrics_verse_3;
-  lyricsDataVerse_4.innerText = allMusic[indexNumb - 1].lyrics.lyrics_verse_4;
-  lyricsDataVerse_5.innerText = allMusic[indexNumb - 1].lyrics.lyrics_verse_5;
-  lyricsDataVerse_6.innerText = allMusic[indexNumb - 1].lyrics.lyrics_verse_6;
-  lyricsDataVerse_7.innerText = allMusic[indexNumb - 1].lyrics.lyrics_verse_7;
-  lyricsDataVerse_8.innerText = allMusic[indexNumb - 1].lyrics.lyrics_verse_8;
-  if (lyricsDataVerse_1.innerText === ""){
-    lyricsNoDataAlert.classList.add("active");
-    for (lyricsAllVerse of lyricsAllVerses) {
-      lyricsAllVerse.style.display = "none";
-    }
-  }else{
-    lyricsNoDataAlert.classList.remove("active");
-    for (lyricsAllVerse of lyricsAllVerses) {
-      lyricsAllVerse.style.display = "flex";
-    }
-  }
-}
 
 function loadMusic(indexNumb){
   musicName.innerText = allMusic[indexNumb - 1].name;
@@ -855,17 +824,6 @@ function clickedStyleContainer(element){
   }
 }
 
-
-function styleContentAction() {
-}
-
-
-
-
-
-
-
-
 const correctSoundBtn = document.getElementsByClassName('device-screen-btn')[0]
 const correctSoundScreen = document.getElementsByClassName('device-screen')[0]
 const correctSoundExit = document.getElementsByClassName('device-screen-exit')[0]
@@ -873,7 +831,6 @@ const menuLyricsExit = document.getElementsByClassName('device-exit')[0]
 const menuLyricsBtn = document.getElementsByClassName('shortcut-rate-btn')[0]
 correctSoundBtn.addEventListener('click', () => {
   correctSoundScreen.classList.toggle('fullscreen')
-  lyricsSupport();
 })
 correctSoundExit.addEventListener('click', () => {
   correctSoundScreen.classList.remove('fullscreen');
@@ -3545,3 +3502,65 @@ notifyReco.addEventListener('click', () => {
   notifyUser.classList.remove("active");
   notifyContent.style.display="none";
 })
+
+reelsScreen = document.querySelector(".reels-screen");
+reelsHeaderArtist = document.querySelector(".reels-artist p");
+reelsImg = document.querySelector(".reels-content img");
+
+function clickedReels(element){
+  element.querySelector(".reels-img-border").classList.add("viewed");
+  element.querySelector(".reels-item img").classList.add("viewed");
+
+  setTimeout(() => {
+    element.querySelector(".reels-img-border").classList.remove("viewed");
+    element.querySelector(".reels-item img").classList.remove("viewed");
+    reelsScreen.classList.add("active");
+    reelsHeaderArtist.innerText = element.querySelector(".reels-item-data p").innerText;
+    reelsId = element.querySelector(".reels-item-data p").innerText;
+    
+    var favoritIt = allMusicView.filter(x => x.artist === reelsId);
+    reelsImg.src = favoritIt[0].gallery_img_4;
+    for (let i = 0; i < favoritIt.length; i++) {
+      reelsImg.src = favoritIt[i].gallery_img_4;
+    }
+
+    setTimeout(() => {
+      element.classList.add("viewed")
+    }, 500)
+    setTimeout(() => {
+      reelsScreen.classList.remove("active");
+    }, 10000)
+  }, 2000)
+
+}
+
+function reelsExit(){
+  reelsScreen.classList.remove("active");
+}
+
+function followedArtistsReelsLoad() {
+  const resultsFAV = document.querySelector(".head-reels");
+  var favoritIt = allMusicView.filter(x => x.artist_status === "followed");
+  for (let i = 0; i < favoritIt.length; i++) {
+    let resultFAV =
+      `<div class="reels-item" onclick="clickedReels(this)" reels-id="${favoritIt[i].artist_id}">
+        <img src="${favoritIt[i].artist_img}">
+        <div class="reels-img-border"></div>
+          <div class="reels-item-data">
+           <p>${favoritIt[i].artist}</p>
+          </div>
+       </div>`;
+    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+  }
+  var productIds={};
+  $('.reels-item').each(function(){
+      var prodId = $(this).attr('reels-id');
+      if(productIds[prodId]){
+         $(this).remove();
+      }else{
+         productIds[prodId] = true;
+      }
+  });
+}
+
+followedArtistsReelsLoad()
