@@ -463,11 +463,11 @@
         </div>
       </div>
 
-      <div class="reels-item" reels-id="server">
+      <div class="reels-item" reels-id="server" onclick="errorPop()">
         <i class="fa-solid fa-newspaper"></i>
         <div class="reels-img-border"></div>
         <div class="reels-item-data">
-          <p>Nowości</p>
+          <p>Moment Historii</p>
         </div>
       </div>
 
@@ -1641,18 +1641,24 @@
   </div>
 
   <div class="reels-header">
+    <div class="reels-header-background"></div>
+    <i onclick="elementClassActive(this)" class="fa-regular fa-user"></i>
     <div class="reels-artist">
-      <p>Zara Larsson</p>
+      <p></p>
     </div>
-    <i onclick="reelsExit()" class="fa-solid fa-xmark"></i>
+    <i onclick="elementClassActive(this)" class="fa-solid fa-fire"></i>
   </div>
 
   <div class="reels-content">
-    <img src="https://pbs.twimg.com/media/EmL8r9gVgAE6eB-?format=jpg&name=large" alt="">
-    <div class="reels-text-content">
-      <h1>Reel Title</h1>
-      <p>Reels Text Content &#128526; <a>Album Here</a></p>
-      <p>Bottom Reels Text</p>
+    <img src="https://pbs.twimg.com/media/FfimZTCXkAAF95m?format=jpg&name=large">
+  </div>
+
+  <div class="reels-text-content">
+    <h1>Reels Are On!</h1>
+    <p>Reels in prebuild are available</p>
+    <p>Dont miss your chance!</p>
+    <div class="reels-text-content-href">
+      <a>Book Now</a>
     </div>
   </div>
 </div>

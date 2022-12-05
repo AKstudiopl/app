@@ -3519,10 +3519,7 @@ function clickedReels(element){
     reelsId = element.querySelector(".reels-item-data p").innerText;
     
     var favoritIt = allMusicView.filter(x => x.artist === reelsId);
-    reelsImg.src = favoritIt[0].gallery_img_4;
-    for (let i = 0; i < favoritIt.length; i++) {
-      reelsImg.src = favoritIt[i].gallery_img_4;
-    }
+    reelsImg.src = favoritIt[0].gallery_img_5;
 
     setTimeout(() => {
       element.classList.add("viewed")
@@ -3564,6 +3561,10 @@ function followedArtistsReelsLoad() {
 }
 
 followedArtistsReelsLoad();
+
+function elementClassActive(element){
+  element.classList.toggle("active");
+}
 
 const lyricsBox = document.querySelector(".main-music-lyrics-box");
 
