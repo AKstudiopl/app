@@ -25,7 +25,7 @@ $('.content-scroll').scroll(function(){
 });
 
 function backToIndex(){
-    window.location.href="../index.html";
+    history.back();
 }
 
 jQuery(document).ready(function ($) {
@@ -71,5 +71,26 @@ jQuery(document).ready(function ($) {
   
 function movieHref(e){
     let urlSrc = e.getAttribute('url');
-    window.open("movies/" + urlSrc, '_blank').focus();
+    window.location.replace("movies/" + urlSrc);
 }
+
+function popularMainContent() {
+    const resultsData = document.querySelector("#slider ul");
+    var favoritIt = movies;
+    resultsData.innerHTML = "";
+    for (let i = 0; i < favoritIt.length; i++) {
+      let resultData =
+         `<li>
+            <div class="slider-bg" onclick="movieHref(this)" url="${favoritIt[i].pageLink}">
+                <img src="${favoritIt[i].art}">
+            </div>
+            <div class="slider-content">
+                <h3>${favoritIt[i].name}</h3>
+                <p>${favoritIt[i].director}</p>
+            </div>
+         </li>`;
+        resultsData.insertAdjacentHTML("beforeend", resultData);
+    }
+  }
+
+popularMainContent();

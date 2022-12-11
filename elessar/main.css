@@ -126,7 +126,7 @@ body
 }
 .content-gap
 {
-    width: calc(10vw + 10px);
+    width: calc(10vw + 15px);
     max-width: 150px;
     height: 100%;
     background: var(--bg);
@@ -350,15 +350,33 @@ body
 {
     display: flex;
     width: 100%;
+    aspect-ratio: 9/16;
     max-width: 200px;
     flex-direction: column;
     cursor: pointer;
     transition: var(--ts);
+    border-bottom: 1px transparent solid;
+    position: relative;
 }
 .movie-description-item:hover
 {
     transform: scale(0.95);
-    filter: drop-shadow(0px 15px 25px #51586c50)
+    filter: drop-shadow(0px 15px 25px #51586c50);
+    border-bottom: 1px var(--ac) solid;
+}
+.movie-description-item a 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.movie-description-item-data
+{
+    background: linear-gradient(180deg, rgba(11,17,24,0.0) 0%,rgba(11,17,24,0.75) 25%, rgba(11,17,24,0.95) 75%);
+    padding: 20px 10px;
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 20px);
 }
 .movie-description-item h1
 {
@@ -367,14 +385,12 @@ body
     margin-bottom: 0;
     letter-spacing: 1px;
 }
-.movie-description-item p
-{
-    margin-bottom: 10px;
-}
 .movie-description-item img
 {
     width: 100%;
-    border-radius: 15px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
 }
 .movie-description-box
 {
@@ -388,6 +404,9 @@ body
 .movie-description-box.scrolled{
 	opacity: 1;
     filter: blur(0px);
+    animation-name: boxShow;
+    animation-duration: 1s;
+    animation-timing-function: ease;
 }
 .movie-description-gallery
 {
@@ -402,6 +421,9 @@ body
 .movie-description-gallery.scrolled{
 	opacity: 1;
     filter: blur(0px);
+    animation-name: boxShow;
+    animation-duration: 1s;
+    animation-timing-function: ease;
 }
 .movie-description-gallery-item
 {
@@ -672,7 +694,7 @@ body
     background-position: center;
     background-size: cover;
     -webkit-mask-image: linear-gradient(180deg, black 75%, transparent 100%);
-    background-image: url('https://pbs.twimg.com/media/EXw26POWsAA3VMt?format=jpg&name=900x900');
+    background-image: url('https://static.vecteezy.com/system/resources/previews/003/042/243/original/abstract-blue-grunge-texture-background-free-vector.jpg');
 }   
 .search-box
 {
@@ -692,10 +714,26 @@ body
     width: 100%;
     color: var(--wh);
 }
+.search-results-counter
+{
+    color: var(--wh);
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.search-results-counter p span
+{
+    color: var(--ac);
+}
+.search-results-counter p, .search-results-counter i
+{
+    color: var(--gr);
+}
 .search-results
 {
     display: grid;
-    grid-template-columns: repeat(4, 22%);
+    grid-template-columns: repeat(5, 18%);
     justify-content: center;
     gap: 15px;
     width: 100%;
@@ -734,6 +772,13 @@ body
 {
     color: var(--gr);
     margin-left: 10px;
+    width: calc(100% - 20px);
+    display: flex;
+    justify-content: space-between;
+}
+.search-item span
+{
+    color: var(--gr);
 }
 .search-item-data
 {
@@ -752,9 +797,35 @@ body
     z-index: 5;
     height: 100%;
 }
-
-
-
+.under-development
+{
+    height: 100%;
+    width: 100%;
+    border: 1px var(--gr) solid;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--wh);
+    height: 300px;
+    position: relative;
+}
+.under-development img
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    -webkit-mask-image: linear-gradient(0deg, rgba(0,0,0,0.25) 0%, transparent 100%);
+    filter: grayscale(1);
+    z-index: 0;
+    object-fit: cover;
+}
+.under-development h1
+{
+    z-index: 1;
+    text-transform: uppercase;
+}
 /* ANIMATIONS */
 @keyframes showOn {
     0%{
@@ -785,6 +856,19 @@ body
         transform: scale(0.75);
     }
 }
+@keyframes boxShow {
+    0%
+    {
+        transform: translateX(-300px);
+    }
+    100%
+    {
+        transform: translateX(0px);
+    }
+}
+
+
+
 @media only screen and (max-width: 1000px)  {
     .movie-description-gallery
     {
@@ -819,5 +903,34 @@ body
     #slider ul li {
         width: 150px;
         min-width: 150px;
+    }
+    .search-results
+    {
+        grid-template-columns: repeat(3, 30%);
+    }
+    .movie-description-box
+    {
+        display: grid;
+        width: 100%;
+        gap: 15px;
+        grid-template-columns: repeat(2, 45%);
+        justify-content: center;
+        transition: var(--tsSlow);
+        opacity: 0;
+        filter: blur(5px);
+    }
+}
+@media only screen and (min-width: 1600px)  {
+    .search-results
+    {
+        grid-template-columns: repeat(5, 15%);
+    }
+    .search-results-counter
+    {
+        color: var(--wh);
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        justify-content: space-between;
     }
 }
