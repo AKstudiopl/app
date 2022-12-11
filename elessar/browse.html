@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Elessar - Browse</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Movies, Elessar">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="main.js" defer></script>
+    <script src="browse.js" defer></script>
+</head>
+<body>
+
+<div class="loader active">
+    <img src="../assets/main-icon.png" alt="">
+</div>
+
+    <div class="nav">
+        <img onclick="backToIndex()" src="assets/main-icon.png" class="nav-logo">
+        <div class="nav-menu">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#"><i class="fa-regular fa-compass"></i></a>
+            <a href="#"><i class="fa-solid fa-film"></i></a>
+            <a href="#"><i class="fa-solid fa-fire"></i></a>
+        </div>
+        <div class="nav-user">
+            <img src="https://i.scdn.co/image/ab67706c0000da8402899996c615a46a9e8f89b7">
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="content-gap"></div>
+
+        <div class="content-scroll">
+            <div class="search-header">
+                <div class="search-box">
+                    <input id="search-input" oninput="filterListPlaylist()" type="text" placeholder="Szukaj...">
+                </div>
+            </div>
+            <div class="search-results">
+                <div class="search-item">
+                    <img src="https://filman.cc/public/static/poster/big/51423.jpg">
+                    <div class="search-item-data">
+                        <h3>Władca Pierścieni: Dwie wieże</h3>
+                        <p>Peter Jackson</p>
+                    </div>
+                </div>
+                <div class="search-item">
+                    <img src="https://filman.cc/public/static/poster/big/51423.jpg">
+                    <div class="search-item-data">
+                        <h3>Władca Pierścieni: Dwie wieże</h3>
+                        <p>Peter Jackson</p>
+                    </div>
+                </div>
+                <div class="search-item">
+                    <img src="https://filman.cc/public/static/poster/big/51423.jpg">
+                    <div class="search-item-data">
+                        <h3>Władca Pierścieni: Dwie wieże</h3>
+                        <p>Peter Jackson</p>
+                    </div>
+                </div>
+                <div class="search-item">
+                    <img src="https://filman.cc/public/static/poster/big/51423.jpg">
+                    <div class="search-item-data">
+                        <h3>Władca Pierścieni: Dwie wieże</h3>
+                        <p>Peter Jackson</p>
+                    </div>
+                </div>
+                <div class="search-item">
+                    <img src="https://filman.cc/public/static/poster/big/51423.jpg">
+                    <div class="search-item-data">
+                        <h3>Władca Pierścieni: Dwie wieże</h3>
+                        <p>Peter Jackson</p>
+                    </div>
+                </div>
+                <div class="search-item">
+                    <img src="https://filman.cc/public/static/poster/big/51423.jpg">
+                    <div class="search-item-data">
+                        <h3>Władca Pierścieni: Dwie wieże</h3>
+                        <p>Peter Jackson</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<script src="movies.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</body>
+</html>
