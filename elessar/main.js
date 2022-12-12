@@ -11,8 +11,10 @@ function imgHide(){
 $('.content-scroll').scroll(function(){
     if($(this).scrollTop() >0){
         $('.header-controls-bg').css({'webkit-filter':'blur(5px)', 'filter':'blur(5px)', 'transform':'scale(1.1)', 'opacity':'0.5'});
+        $('.header-title').css({'transform':'scale(1.35)'});
     }else{
         $('.header-controls-bg').css({'webkit-filter':'', 'filter':'', 'transform':'scale(1)', 'opacity':'1'});
+        $('.header-title').css({'transform':'scale(1)'});
     }
 });
 
@@ -87,9 +89,14 @@ function popularMainContent() {
             <div class="slider-content">
                 <h3>${favoritIt[i].name}</h3>
                 <p>${favoritIt[i].director}</p>
+                <span>${favoritIt[i].date}</span>
             </div>
          </li>`;
         resultsData.insertAdjacentHTML("beforeend", resultData);
+        
+        $("#slider ul").html($("li").sort(function(){
+            return Math.random()-0.5;
+          }));
     }
   }
 

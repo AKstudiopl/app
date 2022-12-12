@@ -79,4 +79,12 @@ var movies = [
         date: "2005",
         tag: "ADVENTURE",
     },
+    {
+        name: "Assassin's Creed",
+        director: "Justin Kurzel",
+        art: "https://filman.cc/public/static/poster/big/6778.jpg",
+        pageLink: "assasins-creed.html",
+        date: "2016",
+        tag: "ACTION",
+    },
 ]

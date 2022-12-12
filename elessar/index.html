@@ -36,10 +36,16 @@
         <div class="content-scroll">
 
             <div class="header">
-                <div class="header-controls-bg"><img src="https://i.pinimg.com/originals/00/8b/7f/008b7fc4a0649597d797bb05de224f37.jpg"></div>
+                <div class="header-controls-bg"><img src="https://www.themoviedb.org/t/p/w1280/kdbLf3aTQsEXqYlH9vA4fzmnSFz.jpg"></div>
                     <div class="header-title">
-                        <p></p>
-                        <p>Harbor</p>
+                        <p>Furia</p>
+                        <span>Dramat Wojenny</span>
+                        <span>2014</span>
+                    </div>
+                    <div class="header-data">
+                        <a href="#">Watch Later</a>
+                        <span>POPULAR</span>
+                        <a href="#">Watch Now</a>
                     </div>
                 </div>
 
@@ -85,6 +91,70 @@
 
         </div>
     </div>
+
+<style>
+    .header {
+        height: 60vh;
+        border-radius: 0;
+    }
+    .header-title{
+        position: absolute;
+        top: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: 1s;
+    }
+    .header-title p{
+        font-size: 500%;
+    }
+    .header-data
+    {
+        position: absolute;
+        bottom: 5%;
+        width: 95%;
+        justify-content: space-between;
+        height: auto;
+        color: var(--wh);
+        text-transform: uppercase;
+        align-items: center;
+        display: flex;
+    }
+    .header-data span
+    {
+        color: var(--ac);
+        -webkit-mask-image: linear-gradient(180deg, black 25%, transparent 100%);
+        letter-spacing: 2px;
+        font-size: 12px;
+    }
+    .header-data a{
+        color: var(--ac);
+        text-decoration: none;
+        border-radius: 25px;
+        padding: 15px 30px;
+        border: 1px var(--ac) solid;
+        transition: 0.25s;
+    }
+    .header-data a:hover{
+        transform: scale(0.9);
+    }
+    .header-title span{
+        color: var(--wh);
+        letter-spacing: 5px;
+        margin-bottom: -25px;
+        font-size: 10px;
+        -webkit-mask-image: linear-gradient(180deg, black 50%, transparent 100%);
+    }
+    .header-controls-bg{
+        border-radius: 0;
+        -webkit-mask-image: linear-gradient(180deg, black 25%, transparent 100%);
+    }
+    .header-controls-bg img{
+        object-position: center;
+        -webkit-mask-image: linear-gradient(275deg, black 50%, transparent 95%);
+    }
+</style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </body>

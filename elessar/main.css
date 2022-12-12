@@ -611,8 +611,28 @@ body
     height: 100%;
     object-fit: cover;
   }
+  #slider ul li:hover .slider-content
+  {
+    padding-top: 30px;
+  }
+  #slider ul li:hover .slider-content span
+  {
+    opacity: 1;
+    height: auto;
+    margin-bottom: -5px;
+  }
+  .slider-content span 
+  {
+    transition: 0.25s;
+    opacity: 0;
+    color: var(--ac);
+    margin-bottom: -10px;
+    overflow: hidden;
+    margin-top: 5px;
+  }
   .slider-content
   {
+    transition: 0.25s;
     z-index: 5;
     color: var(--wh);
     background: var(--bg);
@@ -918,6 +938,9 @@ body
         transition: var(--tsSlow);
         opacity: 0;
         filter: blur(5px);
+    }
+    .movie-description-item:nth-child(-n+5){
+        display: none;
     }
 }
 @media only screen and (min-width: 1600px)  {
