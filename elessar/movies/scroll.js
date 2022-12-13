@@ -35,3 +35,13 @@ function featuredMovieContent() {
   }
 
 featuredMovieContent();
+
+$('.content-scroll').scroll(function(){
+    if($(this).scrollTop() >0){
+        $('.header-controls-bg').css({'webkit-filter':'blur(5px)', 'filter':'blur(5px)', 'transform':'scale(1.1)', 'opacity':'0.5'});
+        $('.header-title').css({'transform':'scale(1)'});
+    }else{
+        $('.header-controls-bg').css({'webkit-filter':'', 'filter':'', 'transform':'scale(1)', 'opacity':'1'});
+        $('.header-title').css({'transform':'scale(1)'});
+    }
+});
