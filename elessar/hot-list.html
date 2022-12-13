@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Elessar - Home</title>
+    <title>Elessar - Popular</title>
     <meta charset="UTF-8">
     <meta name="description" content="Movies, Elessar">
     <link rel="stylesheet" href="main.css">
@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="main.js" defer></script>
     <script src="movies.js"></script>
+    <script src="hotList.js" defer></script>
 </head>
 <body>
 
@@ -21,7 +22,7 @@
         <img src="assets/main-icon.png" class="nav-logo">
         <div class="nav-menu">
             <a href="browse.html"><i class="fa-solid fa-magnifying-glass"></i></a>
-            <a href="#"><i class="fa-regular fa-compass"></i></a>
+            <a href="../index.html"><i class="fa-regular fa-compass"></i></a>
             <a href="#"><i class="fa-solid fa-film"></i></a>
             <a href="#"><i class="fa-solid fa-fire"></i></a>
         </div>
@@ -36,52 +37,36 @@
         <div class="content-scroll">
 
             <div class="header">
-                <div class="header-controls-bg"><img src="https://www.themoviedb.org/t/p/w1280/kdbLf3aTQsEXqYlH9vA4fzmnSFz.jpg"></div>
+                <div class="header-controls-bg"><img src="https://pbs.twimg.com/media/FjtetPkXEAEt44K?format=jpg&name=large"></div>
                     <div class="header-title">
-                        <p>Furia</p>
-                        <span>Dramat Wojenny</span>
-                        <span>2014</span>
-                    </div>
-                    <div class="header-data">
-                        <a href="#">Watch Later</a>
-                        <span>POPULAR</span>
-                        <a href="#">Watch Now</a>
+                        <p>MOST POPULAR</p>
+                        <span>IN POLAND</span>
                     </div>
                 </div>
 
-            <h1 class="home-title">POPULAR</h1>
-
-            <div class="home-scroll">
-                <div class="slider-box">
-                    <a href="#" class="control_next"><i class="fa-solid fa-angle-right"></i></a>
-                    <a href="#" class="control_prev"><i class="fa-solid fa-angle-left"></i></a>
-                    <div id="slider">
-                        <ul>
-                        </ul>  
-                    </div>
-                </div>
+            <div class="list-header">
+                <i class="fa-solid fa-list-ol"></i>
+                <i class="fa-solid fa-film"></i>
             </div>
-
-            <h1 class="home-title">PREMIER</h1>
-
-            <div class="home-scroll">
-
-                <div class="under-development">
-                    <img src="https://www.convergeone.com/hubfs/Convergeone_September2017_Theme/Images/img-DC.jpg" alt="">
-                    <h1>Under Development</h1>
-                </div>
-
-            </div>
-
             
-            <h1 class="home-title">HALL OF FAME</h1>
+            <div class="list-content">
 
-            <div class="home-scroll">
-
-                <div class="under-development">
-                    <img src="https://www.convergeone.com/hubfs/Convergeone_September2017_Theme/Images/img-DC.jpg" alt="">
-                    <h1>Under Development</h1>
+                <div class="list-item">
+                    <div class="list-cover">
+                        <h3>1</h3>
+                        <img src="https://filman.cc/public/static/poster/big/6778.jpg">
+                    </div>
+                    <div class="list-data">
+                        <p>Assassin's Creed</p>
+                        <span>Justin Kurzel</span>
+                        <span>2016</span>
+                    </div>
+                    <div class="list-action">
+                        <a href="#">OBEJRZYJ POŻNIEJ</a>
+                        <a href="#">ODWTÓRZ</a>
+                    </div>
                 </div>
+
             </div>
 
             <div class="content-scroll-alert active">

@@ -25,10 +25,18 @@ $('.content-scroll').scroll(function(){
         $('.content-scroll-alert').css({'bottom':'0'});
     }
 });
-
 function backToIndex(){
     history.back();
 }
+document.querySelector(".nav-menu .fa-film").addEventListener('click', () => {
+    window.location.replace("../index.html");
+})
+document.querySelector(".nav-menu .fa-compass").addEventListener('click', () => {
+    window.location.replace("../index.html");
+})
+document.querySelector(".nav-menu .fa-fire").addEventListener('click', () => {
+    window.location.replace("../hot-list.html");
+})
 
 jQuery(document).ready(function ($) {
     
