@@ -257,6 +257,7 @@ const favoriteItemsNumber = document.querySelector('.library-favorite-items-numb
 const favoriteContainer = document.querySelector('.library-favorite-container');
 const wrapper = document.querySelector(".main-music"),
 musicImg = wrapper.querySelector(".main-music-header img"),
+musicImgBox = wrapper.querySelector(".main-music-header"),
 musicImgShadow = wrapper.querySelector(".main-music-header .header-shadow img"),
 musicCanvas = wrapper.querySelector(".background-canvas"),
 musicCanvasVideo = wrapper.querySelector(".background-canvas video"),
@@ -709,6 +710,22 @@ mainAudio.addEventListener("ended", ()=>{
 function toggleStopEnd(element){
   wrapper.classList.toggle("stop-end");
 }
+
+
+$(function(){
+  var boxes = $('.pespective_object'),
+      $window = $('.music-artist-item');
+  $window.scroll(function(){
+      var scrollTop = $window.scrollTop();
+      boxes.each(function(){
+      var $this = $(this),
+          scrollspeed = parseInt($this.data('scroll-speed')),
+          val = - scrollTop / scrollspeed / 8;
+      $this.css('transform', 'scale(' + (100 + val * 4) + '%) translateY(' + (val * 20) + 'px)');
+      $this.css('filter', 'blur(' + val + 'px)');
+      });
+  });
+})
 
 const topOptionBtn = document.getElementsByClassName('top-controls-more-btn')[0]
 const topOptionExit = document.getElementsByClassName('exit-top-more-head')[0]
@@ -2077,7 +2094,7 @@ function searchForArtist(){
   for (let i = 0; i < favoritIt.length; i++) {
     let resultData =
       `<div class="search-artist-item" data-id='${favoritIt[i].id}' data-artist='${favoritIt[i].artist}' onclick="artistScreenSearchBar(this);">
-       <img class="search-artist-item-background" src="artists/${favoritIt[i].avatar}.jpg">
+       <img class="search-artist-item-background" src="https://pbs.twimg.com/media/FjtDZH6XgAELCjA?format=jpg&name=small">
        <div class="search-artist-item-img">
           <img src="${favoritIt[i].artist_img}">
         </div>
@@ -2364,8 +2381,8 @@ artistMenuAbout.addEventListener('click', () => {
 
 smallView.addEventListener('touchstart', handleTouchStart, false);        
 smallView.addEventListener('touchmove', handleTouchMove, false);
-musicImg.addEventListener('touchstart', handleTouchStart, false);        
-musicImg.addEventListener('touchmove', handleTouchMove, false);
+musicImgBox.addEventListener('touchstart', handleTouchStart, false);        
+musicImgBox.addEventListener('touchmove', handleTouchMove, false);
 
 var xDown = null;                                                        
 var yDown = null;
@@ -2391,19 +2408,14 @@ function handleTouchMove(evt) {
 
     var xDiff = xDown - xUp;
     var yDiff = yDown - yUp;
+    var xyMinMax = 10;
                                                                          
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
-        if ( xDiff > 0 ) {
+        if ( xDiff > xyMinMax ) {
             nextMusic();
-        } else {
+        } else if ( xDiff < -xyMinMax ) {
             prevMusic();
         }                       
-    } else {
-        if ( yDiff > 0 ) {
-            favoriteLibraryScreen();
-        } else { 
-
-        }                                                                 
     }
     /* reset values */
     xDown = null;
@@ -2802,6 +2814,28 @@ image.addEventListener('load', () => {
   + ")";
 });
 
+function get_average_rgb() {
+  const DOMINANT_COLOR_QUALITY_ARTIST = 5;
+
+  let image = document.querySelector(".music-artist-item-title img");
+  const colorThiefArtist = new ColorThief();
+
+  const getRandomNumber = (max = 10) => Math.round(Math.random() * max);
+
+  const rgbToHex = (r, g, b) => '#' + [r, g, b].map(x => {
+    const hex = x.toString(16)
+    return hex.length === 1 ? '0' + hex : hex
+  }).join('');
+
+  const hexColor = rgbToHex(...colorThiefArtist.getColor(image, DOMINANT_COLOR_QUALITY_ARTIST));
+  document.querySelector(".music-artist-item-title").style.background=hexColor;
+}
+
+artistItemImg.addEventListener('load', () => {
+  get_average_rgb();
+  document.querySelector(".music-artist-item-title-bg").src = artistItemImg.src;
+});
+
 function changeCurrentQueueBySearchBar(element){
   let getLiIndex = element.getAttribute("li-index");
   indexNumb = getLiIndex;
@@ -3110,7 +3144,7 @@ function radioLoad(element){
     wrapper.classList.remove("active");
     topOption.classList.remove('active');
   }else{
-    radioImg.src = element.querySelector("#radio-box-img").src
+    radioImg.src = 'https://pbs.twimg.com/media/Fj80iJHXwAA5suJ?format=jpg&name=900x900';
   }
 
   radioArtistData = element.id;

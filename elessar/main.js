@@ -29,13 +29,13 @@ function backToIndex(){
     history.back();
 }
 document.querySelector(".nav-menu .fa-film").addEventListener('click', () => {
-    window.location.replace("../index.html");
+    window.location.replace("https://akstudiopl.github.io/elessar/");
 })
 document.querySelector(".nav-menu .fa-compass").addEventListener('click', () => {
-    window.location.replace("../index.html");
+    window.location.replace("https://akstudiopl.github.io/elessar/");
 })
 document.querySelector(".nav-menu .fa-fire").addEventListener('click', () => {
-    window.location.replace("../hot-list.html");
+    window.location.replace("https://akstudiopl.github.io/elessar/hot-list.html");
 })
 
 jQuery(document).ready(function ($) {

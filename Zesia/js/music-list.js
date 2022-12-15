@@ -1288,6 +1288,9 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FfsVRTTXEAAHgJO?format=jpg&name=900x900",
     gallery_img_4: "https://pbs.twimg.com/media/FfyJjAiXgAIx90K?format=jpg&name=medium",
     gallery_img_5: "https://pbs.twimg.com/media/FfimZTCXkAAF95m?format=jpg&name=large",
+    gallery_img_6: "https://pbs.twimg.com/media/Fjs7bkcXkAAvFaY?format=jpg&name=medium",
+    gallery_img_7: "https://pbs.twimg.com/media/Fjs7bUDXEAMxjW1?format=jpg&name=medium",
+    gallery_img_8: "https://pbs.twimg.com/media/Fjs7a_hWIAAtfe7?format=jpg&name=medium",
     canvas: "https://video.twimg.com/ext_tw_video/1594092488461017090/pu/vid/720x720/7CX3dP6isI4qxDNy.mp4?tag=12",
 
     album: "lovely",

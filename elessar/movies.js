@@ -26,7 +26,7 @@ var movies = [
     {
         name: "Gladiator",
         director: "Ridley Scott",
-        art: "https://filman.cc/public/static/poster/big/48810.jpg",
+        art: "https://fwcdn.pl/fpo/09/36/936/8022172.6.jpg",
         pageLink: "gladiator.html",
         date: "1999",
         tag: "ACTION",
@@ -58,7 +58,7 @@ var movies = [
     {
         name: "Furia",
         director: "David Ayer",
-        art: "https://filman.cc/public/static/poster/big/39587.jpg",
+        art: "https://fwcdn.pl/fpo/31/80/683180/7641873.6.jpg",
         pageLink: "furia-fury.html",
         date: "2014",
         tag: "ACTION",
@@ -74,7 +74,7 @@ var movies = [
     {
         name: "Opowieści z Narnii: Lew, Czarownica i stara szafa",
         director: "Andrew Adamson",
-        art: "https://filman.cc/public/static/poster/big/38333.jpg",
+        art: "https://fwcdn.pl/fpo/27/61/112761/7527057.6.jpg",
         pageLink: "opowiesci-z-narnii-lew-czarownica-i-stara-szafa.html",
         date: "2005",
         tag: "ADVENTURE",
