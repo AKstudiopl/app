@@ -721,8 +721,8 @@ $(function(){
       var $this = $(this),
           scrollspeed = parseInt($this.data('scroll-speed')),
           val = - scrollTop / scrollspeed / 8;
-      $this.css('transform', 'scale(' + (100 + val * 4) + '%) translateY(' + (val * 20) + 'px)');
-      $this.css('filter', 'blur(' + val + 'px)');
+      $this.css('transform', 'scale(' + (100 + val) + '%) translateY(' + (val * 10) + 'px)');
+      $this.css('filter', 'blur(' + (val / 10) + 'px)');
       });
   });
 })
