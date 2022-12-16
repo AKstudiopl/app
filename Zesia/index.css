@@ -1930,6 +1930,17 @@ input:checked + .slider:before {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
+.music-controls-bg-color
+{
+  position: absolute;
+  z-index: -2;
+  background-size: cover;
+  background-position: bottom;
+  height: 100%;
+  width: 100vw;
+  -webkit-mask-image: -webkit-linear-gradient(180deg,transparent 25%, black 100%);
+  opacity: 0.5;
+}
 
 @keyframes musicControlsBgAnimation {
   50%{
@@ -3805,8 +3816,8 @@ body.green .queue-item ul li img
   width: 100%;
   height: 100%;
   object-fit: cover;
-  top: 0;
-  transition: 0s all;
+  transition: 0s;
+  object-position: top;
 }
 .music-artist-item-content
 {
@@ -7335,7 +7346,7 @@ textarea
   top: 0;
   z-index: 10;
   height: 100%;
-  width: 100%;
+  width: 400px;
   background-color: var(--background);
   display: flex;
   align-items: center;
@@ -7358,13 +7369,20 @@ textarea
   {
     max-height: 100vh;
     position: fixed;
-    background: var(--background);
+  }
+  .main-music.active
+  {
+    display: none;
+  }
+  .main-music.active .main-music-screen
+  {
+    display: none;
   }
   .main-music-screen
   {
     background: var(--background);
-    width: 500px;
-    right: 0;
+    width: 400px;
+    right: 100vw;
     height: auto;
     position: fixed;
     height: 100%;
@@ -7389,11 +7407,13 @@ textarea
   }
   .navbar-bottom, .settings-screen, .music-style-item, .daily_user_mix, .notification_screen, .library-favorite-screen, .music-artist-album-screen, .user_profile_screen, .radio_screen, .music-artist-item, .music-artist-bio, .top_list_hits, .more_from_artists, .user_playlist, .artist-card, .popular-music, .fast-loader
   {
-    width: calc(100% - 500px);
+    width: calc(100% - 90px);
+    margin-left: 90px;
   }
   .head-content, .head-content-container, .personal-container
   {
-    width: calc(100% - 520px);
+    width: calc(100% - 110px);
+    margin-left: 90px;
   }
   .personal-container
   {
@@ -7401,16 +7421,18 @@ textarea
   }
   .center-container
   {
-    width: calc(100% - 500px);
+    width: calc(100% - 90px);
+    margin-left: 90px;
   }
   .music-artist-item-controls
   {
-    width: calc(100% - 540px);
+    width: calc(100% - 130px);
+    margin-left: 90px;
   }
   .search-container
   {
-    width: calc(100% - 500px);
-    right: auto;
+    width: calc(100% - 90px);
+    margin-left: 90px;
     left: 100vw;
   }
   .search-container.active {
@@ -7420,7 +7442,7 @@ textarea
   .music-controls
   {
     display: flex;
-    width: calc(100% - 500px);
+    width: calc(100% - 90px);
     margin: 0;
     border-radius: 0;
     bottom: 63px;
@@ -7455,8 +7477,8 @@ textarea
   }
   .library-container.active
   {
-    right: 500px;
-    width: calc(100% - 500px);
+    left: 90px;
+    width: calc(100% - 90px);
   }
   .library-profile
   {
@@ -7477,7 +7499,7 @@ textarea
     width: 100%;
   }
   .playlist {
-    width: calc(100% - 530px);
+    width: calc(100% - 110px);
   }
   .library-content .center-container
   {
@@ -7633,6 +7655,14 @@ textarea
   .navbar-bottom
   {
     border-radius: 0;
+    width: 90px;
+    left: 0;
+    height: 100vh;
+    z-index: 15;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
   }
   .music-controls-background
   {
@@ -7728,6 +7758,62 @@ textarea
   }
   .music-artist-option a {
     background-color: var(--background);
+  }
+  .welcome-search-bar
+  {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    width: calc(100% - 400px);
+    margin-top: 7px;
+  }
+  .welcome-search-bar a {
+    padding: 10px 0;
+    font-size: 12px;
+  }
+  .music-img img
+  {
+    position: absolute;
+    bottom: 60px;
+    width: 150px;
+    height: 150px;
+  }
+  .music-img
+  {
+    width: 100%;
+    height: 100%;
+  }
+  .music-controls
+  {
+    overflow: visible;
+    left: 90px;
+    bottom: 0;
+    z-index: 10;
+    width: calc(100% - 90px);
+  }
+  .music-controls-progresbar
+  {
+    width: 100%;
+  }
+  .navbar-bottom-btn.active > a::after
+  {
+    bottom: 0;
+    left: -75px;
+    opacity: 0;
+  }
+  .navbar-bottom .navbar-bottom-btn a
+  {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 90%;
+    justify-content: flex-start;
+    gap: 5px;
+  }
+  .music-icon
+  {
+    background: transparent;
   }
 }
 
