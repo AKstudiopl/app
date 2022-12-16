@@ -7571,6 +7571,17 @@ textarea
   {
     opacity: 0.25;
   }
+  .music-controls-bg-color
+  {
+    position: absolute;
+    z-index: -2;
+    background-size: cover;
+    background-position: bottom;
+    height: 100%;
+    width: 100vw;
+    -webkit-mask-image: -webkit-linear-gradient(180deg,transparent 25%, black 100%);
+    opacity: 0.5;
+  }
   .music-artist-item-title img:first-child
   {
     object-fit: cover;

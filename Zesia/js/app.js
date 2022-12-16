@@ -3774,3 +3774,46 @@ function scrollPopularArtistsLeft(){
     behavior: "smooth"
   });
 }
+
+function scrollPlaylistOnTopRight(){
+  let box = document.querySelector("#popularPlaylists");
+  let boxWidth = box.clientWidth;
+
+  box.scrollBy({
+    top: 0,
+    left: boxWidth,
+    behavior: "smooth"
+  });
+}
+function scrollPlaylistOnTopLeft(){
+  let box = document.querySelector("#popularPlaylists");
+  let boxWidth = box.clientWidth;
+
+  box.scrollBy({
+    top: 0,
+    left: -boxWidth,
+    behavior: "smooth"
+  });
+}
+
+function getColorCover() {
+  const DOMINANT_COLOR_QUALITY_ARTIST = 5;
+
+  let image = document.querySelector(".music-img img");
+  const colorThiefArtist = new ColorThief();
+
+  const getRandomNumber = (max = 10) => Math.round(Math.random() * max);
+
+  const rgbToHex = (r, g, b) => '#' + [r, g, b].map(x => {
+    const hex = x.toString(16)
+    return hex.length === 1 ? '0' + hex : hex
+  }).join('');
+
+  const hexColor = rgbToHex(...colorThiefArtist.getColor(image, DOMINANT_COLOR_QUALITY_ARTIST));
+  document.querySelector(".music-controls-bg-color").style.background=hexColor;
+  document.querySelector(".music-controls").style.backdropFilter = "blur(10px)";
+}
+
+document.querySelector(".music-img img").addEventListener('load', () => {
+  getColorCover();
+});
