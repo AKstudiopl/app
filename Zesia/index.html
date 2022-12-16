@@ -17,7 +17,7 @@
 
   <div class="loader">
       <img src="brandsources\IMG_20220320_144711.png"/>
-      <p>1.9.0</p>
+      <p>1.9.9</p>
   </div>
 
   <div class="name-ask">
@@ -548,6 +548,10 @@
 <div class="center-container">
   <div class="ui-title">
     <h1>Polecane na Dziś</h1>
+    <div class="ui-title-action">
+      <i class="fa-solid fa-chevron-left" onclick="scrollRecommendedLeft()"></i>
+      <i class="fa-solid fa-chevron-right" onclick="scrollRecommendedRight()"></i>
+    </div>
   </div>
 
   <div class="center-container-scrollable" id="dailyMixContainer">
@@ -618,9 +622,13 @@
 <div class="center-container favorites-artists-container">
   <div class="ui-title">
     <h1>Ulubieni Wykonwacy</h1>
+    <div class="ui-title-action">
+      <i class="fa-solid fa-chevron-left" onclick="scrollFavArtistsLeft()"></i>
+      <i class="fa-solid fa-chevron-right" onclick="scrollFavArtistsRight()"></i>
+    </div>
   </div>
 
-  <div class="center-container-scrollable">
+  <div class="center-container-scrollable" id="user_container_artistsFav">
     <div class="center-container-item" onclick="viewSearchHomeItems()">
       <i class="fa-solid fa-plus"></i>
       <h2>Dodaj Wykonawce</h2>
@@ -639,9 +647,13 @@
 <div class="center-container active" id="followed-random-artist-content">
   <div class="ui-title">
     <h1>Więcej od <span class="artist-more-profile-data"></span></h1>
+    <div class="ui-title-action">
+      <i class="fa-solid fa-chevron-left" onclick="scrollMoreFromArtistsLeft()"></i>
+      <i class="fa-solid fa-chevron-right" onclick="scrollMoreFromArtistsRight()"></i>
+    </div>
   </div>
 
-  <div class="center-container-scrollable">
+  <div class="center-container-scrollable" id="user_container_artistsMore">
 
     <div class="center-container-item artist-more" onclick="thisIsArtistItem(this)" id="">
       <div class="artist-more-cover">
@@ -684,9 +696,13 @@
 <div class="center-container popular-artists-container">
   <div class="ui-title">
     <h1>Popularni Wykonwacy</h1>
+    <div class="ui-title-action">
+      <i class="fa-solid fa-chevron-left" onclick="scrollPopularArtistsLeft()"></i>
+      <i class="fa-solid fa-chevron-right" onclick="scrollPopularArtistsRight()"></i>
+    </div>
   </div>
 
-  <div class="center-container-scrollable">
+  <div class="center-container-scrollable" id="user_container_popularArtists">
     <div class="center-container-item" onclick="viewSearchHomeItems()">
       <i class="fa-solid fa-plus"></i>
       <h2>Dodaj Wykonawce</h2>
@@ -1567,6 +1583,17 @@
     <p class="notification_header_rec">Rekomendacje</p>
   </div>
   <div class="notification_content">
+
+    <div class="notification_item">
+      <div class="notification_img">
+        <i class="fa-solid fa-terminal"></i>
+      </div>
+      <div class="notification_data">
+        <h2>1.9.9 with Desktop PreBuild Mode</h2>
+        <p>Enjoy Zesia from this day, also on desktop</p>
+        <span><p>Developers</p><p>16/12/2022</p></span>
+      </div>
+    </div>
 
     <div class="notification_item">
       <div class="notification_img">

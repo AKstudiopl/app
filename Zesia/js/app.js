@@ -720,9 +720,9 @@ $(function(){
       boxes.each(function(){
       var $this = $(this),
           scrollspeed = parseInt($this.data('scroll-speed')),
-          val = - scrollTop / scrollspeed / 8;
-      $this.css('transform', 'scale(' + (100 + val) + '%) translateY(' + (val * 10) + 'px)');
-      $this.css('filter', 'blur(' + (val / 10) + 'px)');
+          val = - scrollTop / scrollspeed;
+      $this.css('transform', 'scale(' + (100 + val/10) + '%) translateY(' + (val) + 'px)');
+      $this.css('filter', 'blur(' + (val / 20) + 'px)');
       });
   });
 })
@@ -3689,3 +3689,88 @@ function lyricsMode(){
 var t=setInterval(lyricsMode,1000);
 
  */
+function scrollRecommendedLeft(){
+  let box = document.querySelector("#dailyMixContainer");
+  let boxWidth = box.clientWidth;
+
+  box.scrollBy({
+    top: 0,
+    left: -boxWidth,
+    behavior: "smooth"
+  });
+}
+
+function scrollRecommendedRight(){
+let box = document.querySelector("#dailyMixContainer");
+let boxWidth = box.clientWidth;
+
+box.scrollBy({
+  top: 0,
+  left: boxWidth,
+  behavior: "smooth"
+});
+}
+
+function scrollFavArtistsRight(){
+    let box = document.querySelector("#user_container_artistsFav");
+    let boxWidth = box.clientWidth;
+
+    box.scrollBy({
+      top: 0,
+      left: boxWidth,
+      behavior: "smooth"
+    });
+}
+
+function scrollFavArtistsLeft(){
+  let box = document.querySelector("#user_container_artistsFav");
+  let boxWidth = box.clientWidth;
+
+  box.scrollBy({
+    top: 0,
+    left: -boxWidth,
+    behavior: "smooth"
+  });
+}
+
+function scrollMoreFromArtistsRight(){
+  let box = document.querySelector("#user_container_artistsMore");
+  let boxWidth = box.clientWidth;
+
+  box.scrollBy({
+    top: 0,
+    left: boxWidth,
+    behavior: "smooth"
+  });
+}
+function scrollMoreFromArtistsLeft(){
+  let box = document.querySelector("#user_container_artistsMore");
+  let boxWidth = box.clientWidth;
+
+  box.scrollBy({
+    top: 0,
+    left: -boxWidth,
+    behavior: "smooth"
+  });
+}
+
+function scrollPopularArtistsRight(){
+  let box = document.querySelector("#user_container_popularArtists");
+  let boxWidth = box.clientWidth;
+
+  box.scrollBy({
+    top: 0,
+    left: boxWidth,
+    behavior: "smooth"
+  });
+}
+function scrollPopularArtistsLeft(){
+  let box = document.querySelector("#user_container_popularArtists");
+  let boxWidth = box.clientWidth;
+
+  box.scrollBy({
+    top: 0,
+    left: -boxWidth,
+    behavior: "smooth"
+  });
+}
