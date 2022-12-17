@@ -1930,6 +1930,17 @@ input:checked + .slider:before {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
+.music-controls-bg-color
+{
+  position: absolute;
+  z-index: -2;
+  background-size: cover;
+  background-position: bottom;
+  height: 100%;
+  width: 100vw;
+  -webkit-mask-image: -webkit-linear-gradient(180deg,transparent 25%, black 100%);
+  opacity: 0.5;
+}
 
 @keyframes musicControlsBgAnimation {
   50%{
@@ -7570,17 +7581,6 @@ textarea
   .music-controls-background
   {
     opacity: 0.25;
-  }
-  .music-controls-bg-color
-  {
-    position: absolute;
-    z-index: -2;
-    background-size: cover;
-    background-position: bottom;
-    height: 100%;
-    width: 100vw;
-    -webkit-mask-image: -webkit-linear-gradient(180deg,transparent 25%, black 100%);
-    opacity: 0.5;
   }
   .music-artist-item-title img:first-child
   {
