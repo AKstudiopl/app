@@ -3598,13 +3598,13 @@ const lyricsBox = document.querySelector(".main-music-lyrics-box");
 
 function lyricsMode(){
   const resultsFAV = lyricsBox;
-  resultsFAV.innerHTML = ``;
-  
-  if(wrapper.classList.contains("paused")){
-    lyricsBox.classList.add("animated")
-  }
   
   if(allMusic[indexNumb - 1].lyrics.ve1.stamp < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve1.stamp != ""){
+    resultsFAV.innerHTML = ``;
+    
+    if (!lyricsBox.classList.contains('animated-one')) {
+        lyricsBox.classList.add("animated-one");
+    }
 
     if(allMusic[indexNumb - 1].lyrics.ve1.ls1 != undefined){
       let resultFAV = 
@@ -3659,6 +3659,7 @@ function lyricsMode(){
 
     if(allMusic[indexNumb - 1].lyrics.ve2.stamp < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve2.stamp != ""){
       resultsFAV.innerHTML = ``;
+
       if(allMusic[indexNumb - 1].lyrics.ve2.ls1 != undefined){
         let resultFAV = 
        `<p>${allMusic[indexNumb - 1].lyrics.ve2.ls1}</p>`;

@@ -2468,6 +2468,8 @@ input:checked + .slider:before {
   display: none;
   top: 0;
   z-index: 5;
+  max-height: 100%;
+  overflow: scroll;
 }
 .main-music-lyrics-box.active
 {
@@ -2487,6 +2489,7 @@ input:checked + .slider:before {
   backdrop-filter: blur(5px);
   margin-bottom: 0px;
   overflow: hidden;
+  -webkit-mask-image: -webkit-linear-gradient(90deg, black 90%, transparent 100%);
 }
 .main-music-header.lyrics .main-music-header img 
 {
@@ -2495,6 +2498,7 @@ input:checked + .slider:before {
 .main-music-header.lyrics ~ .main-information
 {
   background: rgba(18, 18, 18, 0.75);
+  backdrop-filter: blur(5px);
   border-radius: 0;
   width: calc(100% - 40px);
   margin: 0;
@@ -2507,6 +2511,7 @@ input:checked + .slider:before {
 .main-music-header.lyrics ~ .progress
 {
   background: rgba(18, 18, 18, 0.75);
+  backdrop-filter: blur(5px);
   width: calc(100% - 40px);
   margin: 0;
   padding: 10px 20px;
@@ -2514,6 +2519,7 @@ input:checked + .slider:before {
 .main-music-header.lyrics ~ .main-music-fast-navigation
 {
   background: rgba(18, 18, 18, 0.75);
+  backdrop-filter: blur(5px);
   width: calc(100% - 40px);
   margin: 0;
   padding: 10px 20px;
@@ -2522,6 +2528,7 @@ input:checked + .slider:before {
 .main-music-header.lyrics ~ .main-music-sec-nav
 {
   background: rgba(18, 18, 18, 0.75);
+  backdrop-filter: blur(5px);
   width: calc(100% - 40px);
   margin: 0;
   padding: 20px 20px;
@@ -2531,26 +2538,39 @@ input:checked + .slider:before {
 {
   margin-top: 0;
 }
+.top-controls.lyrics
+{
+  backdrop-filter: blur(5px);
+}
 .main-music-lyrics-box p{
   font-size: 25px;
   color: var(--color);
   font-family: 'Darker Grotesque';
   font-weight: 900;
   letter-spacing: 1px;
+  filter: drop-shadow(5px 5px 5px var(--background));
 }
-.main-music-lyrics-box.animated 
+.main-music-lyrics-box.animated-one
 {
   animation: lyricsAnimation;
-  animation-duration: 3s;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+.main-music-lyrics-box.animated-two
+{
+  animation: lyricsAnimation;
+  animation-duration: 2s;
   animation-timing-function: ease;
 }
 @keyframes lyricsAnimation {
   0%
   {
     opacity: 0;
+    filter: blur(25px);
   }
   100%
   {
+    filter: blur(0);
     opacity: 1;
   }
 }
@@ -2738,6 +2758,7 @@ input:checked + .slider:before {
   text-decoration: none;
   color: var(--color);
   transition: 0.3s;
+  padding: 5px 0;
 }
 .main-music-sec-nav a:active
 {
@@ -2747,6 +2768,30 @@ input:checked + .slider:before {
 .main-music-sec-nav a.active
 {
   color: var(--maincolor);
+  padding: 5px 20px;
+  border-radius: 15px 0 0 15px;
+  background: var(--backgroundsecond);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Darker Grotesque';
+}
+.main-music-sec-nav a.active::after
+{
+  content: 'ON';
+  width: 100%;
+  margin-left: 190%;
+  z-index: 1;
+  height: 100%;
+  font-weight: 900;
+  color: var(--color);
+  position: absolute;
+  border-radius:0 15px 15px 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background: var(--backgroundsecond);
 }
 .main-music-next-music
 {
