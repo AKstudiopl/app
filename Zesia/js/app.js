@@ -537,7 +537,9 @@ function playMusic(){
     }, 5000)
   }, 5000)
   if(musicCanvas.classList.contains("active")){
-    musicCanvasVideo.play();
+    if(musicCanvasVideo.src.length > 50){
+      musicCanvasVideo.play();
+    }
   }
 }
 
@@ -879,7 +881,6 @@ results.innerHTML=searchMusicContent.map((a,i)=>
 
 // show which item was clicked:
 function clickedSearchResults(o){
-  console.log("Index "+o.getAttribute("li-index")+" was clicked.");
   let getLiIndex = o.getAttribute("li-index");
   indexNumb = getLiIndex;
   loadMusic(indexNumb);
@@ -3600,10 +3601,10 @@ function lyricsMode(){
   resultsFAV.innerHTML = ``;
   
   if(wrapper.classList.contains("paused")){
-    console.log(mainAudio.currentTime);   
+    lyricsBox.classList.add("animated")
   }
   
-  if(allMusic[indexNumb - 1].lyrics.ve1.stamp < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve1.stamp > allMusic[indexNumb - 1].lyrics.ve2.stamp){
+  if(allMusic[indexNumb - 1].lyrics.ve1.stamp < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve1.stamp != ""){
 
     if(allMusic[indexNumb - 1].lyrics.ve1.ls1 != undefined){
       let resultFAV = 
@@ -3624,9 +3625,39 @@ function lyricsMode(){
       let resultFAV = 
      `<p>${allMusic[indexNumb - 1].lyrics.ve1.ls4}</p>`;
       resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+    }
+    if(allMusic[indexNumb - 1].lyrics.ve1.ls5 != undefined){
+      let resultFAV = 
+     `<p>${allMusic[indexNumb - 1].lyrics.ve1.ls5}</p>`;
+      resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+    }
+    if(allMusic[indexNumb - 1].lyrics.ve1.ls6 != undefined){
+      let resultFAV = 
+     `<p>${allMusic[indexNumb - 1].lyrics.ve1.ls6}</p>`;
+      resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+    }
+    if(allMusic[indexNumb - 1].lyrics.ve1.ls7 != undefined){
+      let resultFAV = 
+     `<p>${allMusic[indexNumb - 1].lyrics.ve1.ls7}</p>`;
+      resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+    }
+    if(allMusic[indexNumb - 1].lyrics.ve1.ls8 != undefined){
+      let resultFAV = 
+     `<p>${allMusic[indexNumb - 1].lyrics.ve1.ls8}</p>`;
+      resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+    }
+    if(allMusic[indexNumb - 1].lyrics.ve1.ls9 != undefined){
+      let resultFAV = 
+     `<p>${allMusic[indexNumb - 1].lyrics.ve1.ls9}</p>`;
+      resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+    }
+    if(allMusic[indexNumb - 1].lyrics.ve1.ls10 != undefined){
+      let resultFAV = 
+     `<p>${allMusic[indexNumb - 1].lyrics.ve1.ls10}</p>`;
+      resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
     }}
 
-    if(allMusic[indexNumb - 1].lyrics.ve2.stamp < mainAudio.currentTime){
+    if(allMusic[indexNumb - 1].lyrics.ve2.stamp < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve2.stamp != ""){
       resultsFAV.innerHTML = ``;
       if(allMusic[indexNumb - 1].lyrics.ve2.ls1 != undefined){
         let resultFAV = 
@@ -3681,7 +3712,7 @@ function lyricsMode(){
     }
 
     
-    if(allMusic[indexNumb - 1].lyrics.ve3.stamp < mainAudio.currentTime){
+    if(allMusic[indexNumb - 1].lyrics.ve3.stamp < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve3.stamp != ""){
       resultsFAV.innerHTML = ``;
       if(allMusic[indexNumb - 1].lyrics.ve3.ls1 != undefined){
         let resultFAV = 
@@ -3735,7 +3766,7 @@ function lyricsMode(){
       }
     }
 
-    if(allMusic[indexNumb - 1].lyrics.ve4.stamp < mainAudio.currentTime){
+    if(allMusic[indexNumb - 1].lyrics.ve4.stamp < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve4.stamp != ""){
       resultsFAV.innerHTML = ``;
       if(allMusic[indexNumb - 1].lyrics.ve4.ls1 != undefined){
         let resultFAV = 
@@ -3789,7 +3820,7 @@ function lyricsMode(){
       }
     }
 
-    if(allMusic[indexNumb - 1].lyrics.ve5.stamp < mainAudio.currentTime){
+    if(allMusic[indexNumb - 1].lyrics.ve5.stamp < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve5.stamp != ""){
       resultsFAV.innerHTML = ``;
       if(allMusic[indexNumb - 1].lyrics.ve5.ls1 != undefined){
         let resultFAV = 
@@ -3843,7 +3874,7 @@ function lyricsMode(){
       }
     }
 
-    if(allMusic[indexNumb - 1].lyrics.ve6.stamp < mainAudio.currentTime){
+    if(allMusic[indexNumb - 1].lyrics.ve6.stamp < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve6.stamp != ""){
       resultsFAV.innerHTML = ``;
       if(allMusic[indexNumb - 1].lyrics.ve6.ls1 != undefined){
         let resultFAV = 
@@ -3897,7 +3928,7 @@ function lyricsMode(){
       }
     }
 
-    if(allMusic[indexNumb - 1].lyrics.ve7.stamp < mainAudio.currentTime){
+    if(allMusic[indexNumb - 1].lyrics.ve7.stamp < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve7.stamp != ""){
       resultsFAV.innerHTML = ``;
       if(allMusic[indexNumb - 1].lyrics.ve7.ls1 != undefined){
         let resultFAV = 
@@ -3951,7 +3982,7 @@ function lyricsMode(){
       }
     }
 
-    if(allMusic[indexNumb - 1].lyrics.ve8.stamp < mainAudio.currentTime){
+    if(allMusic[indexNumb - 1].lyrics.ve8.stamp < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve8.stamp != ""){
       resultsFAV.innerHTML = ``;
       if(allMusic[indexNumb - 1].lyrics.ve8.ls1 != undefined){
         let resultFAV = 
@@ -4005,7 +4036,7 @@ function lyricsMode(){
       }
     }
 
-    if(allMusic[indexNumb - 1].lyrics.ve9.stamp < mainAudio.currentTime){
+    if(allMusic[indexNumb - 1].lyrics.ve9.stamp < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve9.stamp != ""){
       resultsFAV.innerHTML = ``;
       if(allMusic[indexNumb - 1].lyrics.ve9.ls1 != undefined){
         let resultFAV = 

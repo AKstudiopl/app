@@ -2444,18 +2444,18 @@ input:checked + .slider:before {
 .main-music-header img.lyrics
 {
   width: calc(100% + 40px);
-  margin-left: -20px;
+  margin-left: 0px;
   position: absolute;
   top: 0;
   height: 100%;
   object-fit: cover;
   z-index: -2;
   opacity: 0.1;
-  border-radius: 25px;
+  border-radius: 0px;
 }
 .main-music-lyrics-box
 {
-  width: calc(100% - 20px);
+  width: calc(100% - 40px);
   padding: 20px;
   height: calc(100% - 40px);
   border-radius: 5px;
@@ -2482,14 +2482,20 @@ input:checked + .slider:before {
   margin-bottom: 0;
   aspect-ratio: unset;
   background: rgba(18, 18, 18, 0.9);
-  backdrop-filter: grayscale(1);
-  border-radius: 25px;
-  margin-bottom: 10px;
+  background: linear-gradient(180deg, rgba(18,18,18,0) 0%, rgba(18,18,18,0.5) 25%, rgba(18,18,18,0.75) 75%); 
+  border-radius: 0px;
+  backdrop-filter: blur(5px);
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+.main-music-header.lyrics .main-music-header img 
+{
+  border-radius: 0px;
 }
 .main-music-header.lyrics ~ .main-information
 {
   background: rgba(18, 18, 18, 0.75);
-  border-radius: 25px 25px 0 0 ;
+  border-radius: 0;
   width: calc(100% - 40px);
   margin: 0;
   padding: 10px 20px;
@@ -2528,7 +2534,25 @@ input:checked + .slider:before {
 .main-music-lyrics-box p{
   font-size: 25px;
   color: var(--color);
-  transition: 0.25s;
+  font-family: 'Darker Grotesque';
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.main-music-lyrics-box.animated 
+{
+  animation: lyricsAnimation;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+}
+@keyframes lyricsAnimation {
+  0%
+  {
+    opacity: 0;
+  }
+  100%
+  {
+    opacity: 1;
+  }
 }
 .main-information
 {
@@ -2877,6 +2901,10 @@ input:checked + .slider:before {
   transition: 0.3s;
   overflow-y: scroll;
   overflow-x: hidden;
+  font-family: 'Darker Grotesque';
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-size: 18px;
 }
 .queue-item li:active
 {
@@ -3875,10 +3903,6 @@ body.green .queue-item ul li img
   object-fit: cover;
   transition: 0s all;
 }
-.music-artist-item-title img:first-child
-{
-
-}
 .music-artist-item-content
 {
   padding-top: 0px;
@@ -3888,7 +3912,7 @@ body.green .queue-item ul li img
   text-align: center;
   margin-top: -80px;
   z-index: 5;
-  position: absolute;
+  position: relative;
 }
 .music-artist-item-content h1 
 {
