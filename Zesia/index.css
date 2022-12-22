@@ -2463,7 +2463,7 @@ input:checked + .slider:before {
   height: calc(100% - 40px);
   border-radius: 5px;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 20px;
   align-items: flex-start;
   color: var(--color);
