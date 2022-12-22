@@ -2450,8 +2450,11 @@ input:checked + .slider:before {
   height: 100%;
   object-fit: cover;
   z-index: -2;
-  opacity: 0.1;
+  opacity: 0.25;
+  filter: blur(5px);
   border-radius: 0px;
+  height: 100%;
+  -webkit-mask-image: -webkit-linear-gradient(black 0%, transparent 100%);
 }
 .main-music-lyrics-box
 {
@@ -2490,10 +2493,6 @@ input:checked + .slider:before {
   margin-bottom: 0px;
   overflow: hidden;
   -webkit-mask-image: -webkit-linear-gradient(90deg, black 90%, transparent 100%);
-}
-.main-music-header.lyrics .main-music-header img 
-{
-  border-radius: 0px;
 }
 .main-music-header.lyrics ~ .main-information
 {
@@ -2534,43 +2533,53 @@ input:checked + .slider:before {
   padding: 20px 20px;
   border-radius: 0 0 25px 25px;
 }
-.main-music-header.lyrics ~ .progress .progress-bar
+.main-music-header.lyrics .header-shadow
 {
-  margin-top: 0;
+  display: none;
 }
 .top-controls.lyrics
 {
   backdrop-filter: blur(5px);
 }
 .main-music-lyrics-box p{
-  font-size: 25px;
+  font-size: 150%;
   color: var(--color);
-  font-family: 'Darker Grotesque';
-  font-weight: 900;
-  letter-spacing: 1px;
   filter: drop-shadow(5px 5px 5px var(--background));
-}
-.main-music-lyrics-box.animated-one
-{
   animation: lyricsAnimation;
-  animation-duration: 1s;
+  animation-duration: 0.75s;
   animation-timing-function: ease;
+  transition: 0.3s;
+  opacity: 0.5;
 }
-.main-music-lyrics-box.animated-two
+.main-music-lyrics-box p:first-child
 {
-  animation: lyricsAnimation;
-  animation-duration: 2s;
-  animation-timing-function: ease;
+  padding-top: 100%;
+}
+.main-music-lyrics-box p.active
+{
+  opacity: 1;
+  letter-spacing: 1px;
+}
+.main-music-lyrics-box > .active
+{
+  margin-top: 50px;
+}
+.main-music-lyrics-box > .active ~ .active
+{
+  margin-top: 0px;
+  border: none;
 }
 @keyframes lyricsAnimation {
   0%
   {
     opacity: 0;
-    filter: blur(25px);
+    filter: blur(25px) drop-shadow(5px 5px 5px var(--background));
+    transform: translateX(250px);
   }
   100%
   {
-    filter: blur(0);
+    filter: blur(0) drop-shadow(5px 5px 5px var(--background));
+    transform: translateX(0px);
     opacity: 1;
   }
 }

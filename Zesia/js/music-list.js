@@ -5912,7 +5912,7 @@ var allMusic = [
         ls2: "",
         ls3: "",
         ls4: "",
-        stamp: "170",
+        stamp: "",
       },
       ve8:{
         ls1: "",
