@@ -2573,12 +2573,12 @@ input:checked + .slider:before {
   0%
   {
     opacity: 0;
-    filter: blur(25px) drop-shadow(5px 5px 5px var(--background));
+    filter: drop-shadow(5px 5px 5px var(--background));
     transform: translateX(250px);
   }
   100%
   {
-    filter: blur(0) drop-shadow(5px 5px 5px var(--background));
+    filter: drop-shadow(5px 5px 5px var(--background));
     transform: translateX(0px);
     opacity: 1;
   }
