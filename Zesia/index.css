@@ -2547,13 +2547,25 @@ input:checked + .slider:before {
   filter: drop-shadow(5px 5px 5px var(--background));
   animation: lyricsAnimation;
   animation-duration: 0.75s;
-  animation-timing-function: ease;
+  animation-timing-function: ease-out;
   transition: 0.3s;
   opacity: 0.5;
 }
+.main-music-lyrics-box span
+{
+  font-weight: 900;
+  font-size: 175%;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: 'Darker Grotesque';
+}
 .main-music-lyrics-box p:first-child
 {
-  padding-top: 100%;
+  padding-top: 325%;
+}
+.main-music-lyrics-box p:hover
+{
+  opacity: 1;
 }
 .main-music-lyrics-box p.active
 {
@@ -2779,7 +2791,6 @@ input:checked + .slider:before {
   color: var(--maincolor);
   padding: 5px 20px;
   border-radius: 15px 0 0 15px;
-  background: var(--backgroundsecond);
   position: relative;
   display: flex;
   align-items: center;
@@ -2800,7 +2811,6 @@ input:checked + .slider:before {
   align-items: center;
   justify-content: center;
   display: flex;
-  background: var(--backgroundsecond);
 }
 .main-music-next-music
 {

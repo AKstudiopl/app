@@ -3603,6 +3603,11 @@ function clearLyricStatus(){
   }
 }
 
+function lyricsStamp(data){
+  let stampValue = data.getAttribute('timeAtr');
+  mainAudio.currentTime = stampValue;
+}
+
 function lyricsMode(){
   const resultsFAV = lyricsBox;
 
@@ -3621,52 +3626,52 @@ if(allMusic[indexNumb - 1].lyrics.ve1 != undefined){
 
     if(allMusic[indexNumb - 1].lyrics.ve1.ls1 != undefined){
       let resultFAV = 
-     `<p class="active">${allMusic[indexNumb - 1].lyrics.ve1.ls1}</p>`;
+     `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve1.stamp}'>${allMusic[indexNumb - 1].lyrics.ve1.ls1}</p>`;
       resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
     }
     if(allMusic[indexNumb - 1].lyrics.ve1.ls2 != undefined){
       let resultFAV = 
-     `<p class="active">${allMusic[indexNumb - 1].lyrics.ve1.ls2}</p>`;
+      `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve1.stamp}'>${allMusic[indexNumb - 1].lyrics.ve1.ls2}</p>`;
       resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
     }
     if(allMusic[indexNumb - 1].lyrics.ve1.ls3 != undefined){
       let resultFAV = 
-     `<p class="active">${allMusic[indexNumb - 1].lyrics.ve1.ls3}</p>`;
+      `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve1.stamp}'>${allMusic[indexNumb - 1].lyrics.ve1.ls3}</p>`;
       resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
     }
     if(allMusic[indexNumb - 1].lyrics.ve1.ls4 != undefined){
       let resultFAV = 
-     `<p class="active">${allMusic[indexNumb - 1].lyrics.ve1.ls4}</p>`;
+      `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve1.stamp}'>${allMusic[indexNumb - 1].lyrics.ve1.ls4}</p>`;
       resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
     }
     if(allMusic[indexNumb - 1].lyrics.ve1.ls5 != undefined){
       let resultFAV = 
-     `<p class="active">${allMusic[indexNumb - 1].lyrics.ve1.ls5}</p>`;
+     `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve1.stamp}'>${allMusic[indexNumb - 1].lyrics.ve1.ls5}</p>`;
       resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
     }
     if(allMusic[indexNumb - 1].lyrics.ve1.ls6 != undefined){
       let resultFAV = 
-     `<p class="active">${allMusic[indexNumb - 1].lyrics.ve1.ls6}</p>`;
+     `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve1.stamp}'>${allMusic[indexNumb - 1].lyrics.ve1.ls6}</p>`;
       resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
     }
     if(allMusic[indexNumb - 1].lyrics.ve1.ls7 != undefined){
       let resultFAV = 
-     `<p class="active">${allMusic[indexNumb - 1].lyrics.ve1.ls7}</p>`;
+     `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve1.stamp}'>${allMusic[indexNumb - 1].lyrics.ve1.ls7}</p>`;
       resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
     }
     if(allMusic[indexNumb - 1].lyrics.ve1.ls8 != undefined){
       let resultFAV = 
-     `<p class="active">${allMusic[indexNumb - 1].lyrics.ve1.ls8}</p>`;
+     `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve1.stamp}'>${allMusic[indexNumb - 1].lyrics.ve1.ls8}</p>`;
       resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
     }
     if(allMusic[indexNumb - 1].lyrics.ve1.ls9 != undefined){
       let resultFAV = 
-     `<p class="active">${allMusic[indexNumb - 1].lyrics.ve1.ls9}</p>`;
+     `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve1.stamp}'>${allMusic[indexNumb - 1].lyrics.ve1.ls9}</p>`;
       resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
     }
     if(allMusic[indexNumb - 1].lyrics.ve1.ls10 != undefined){
       let resultFAV = 
-     `<p class="active">${allMusic[indexNumb - 1].lyrics.ve1.ls10}</p>`;
+     `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve1.stamp}'>${allMusic[indexNumb - 1].lyrics.ve1.ls10}</p>`;
       resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
     }}
 
@@ -3680,52 +3685,52 @@ if(allMusic[indexNumb - 1].lyrics.ve1 != undefined){
 
       if(allMusic[indexNumb - 1].lyrics.ve2.ls1 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve2.ls1}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve2.stamp}'>${allMusic[indexNumb - 1].lyrics.ve2.ls1}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve2.ls2 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve2.ls2}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve2.stamp}'>${allMusic[indexNumb - 1].lyrics.ve2.ls2}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve2.ls3 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve2.ls3}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve2.stamp}'>${allMusic[indexNumb - 1].lyrics.ve2.ls3}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve2.ls4 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve2.ls4}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve2.stamp}'>${allMusic[indexNumb - 1].lyrics.ve2.ls4}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve2.ls5 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve2.ls5}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve2.stamp}'>${allMusic[indexNumb - 1].lyrics.ve2.ls5}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve2.ls6 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve2.ls6}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve2.stamp}'>${allMusic[indexNumb - 1].lyrics.ve2.ls6}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve2.ls7 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve2.ls7}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve2.stamp}'>${allMusic[indexNumb - 1].lyrics.ve2.ls7}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve2.ls8 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve2.ls8}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve2.stamp}'>${allMusic[indexNumb - 1].lyrics.ve2.ls8}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve2.ls9 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve2.ls9}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve2.stamp}'>${allMusic[indexNumb - 1].lyrics.ve2.ls9}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve2.ls10 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve2.ls10}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve2.stamp}'>${allMusic[indexNumb - 1].lyrics.ve2.ls10}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
     }
@@ -3741,52 +3746,52 @@ if(allMusic[indexNumb - 1].lyrics.ve1 != undefined){
 
       if(allMusic[indexNumb - 1].lyrics.ve3.ls1 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve3.ls1}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve3.stamp}'>${allMusic[indexNumb - 1].lyrics.ve3.ls1}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve3.ls2 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve3.ls2}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve3.stamp}'>${allMusic[indexNumb - 1].lyrics.ve3.ls2}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve3.ls3 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve3.ls3}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve3.stamp}'>${allMusic[indexNumb - 1].lyrics.ve3.ls3}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve3.ls4 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve3.ls4}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve3.stamp}'>${allMusic[indexNumb - 1].lyrics.ve3.ls4}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve3.ls5 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve3.ls5}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve3.stamp}'>${allMusic[indexNumb - 1].lyrics.ve3.ls5}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve3.ls6 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve3.ls6}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve3.stamp}'>${allMusic[indexNumb - 1].lyrics.ve3.ls6}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve3.ls7 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve3.ls7}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve3.stamp}'>${allMusic[indexNumb - 1].lyrics.ve3.ls7}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve3.ls8 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve3.ls8}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve3.stamp}'>${allMusic[indexNumb - 1].lyrics.ve3.ls8}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve3.ls9 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve3.ls9}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve3.stamp}'>${allMusic[indexNumb - 1].lyrics.ve3.ls9}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve3.ls10 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve3.ls10}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve3.stamp}'>${allMusic[indexNumb - 1].lyrics.ve3.ls10}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
     }
@@ -3801,52 +3806,52 @@ if(allMusic[indexNumb - 1].lyrics.ve1 != undefined){
 
       if(allMusic[indexNumb - 1].lyrics.ve4.ls1 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve4.ls1}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve4.stamp}'>${allMusic[indexNumb - 1].lyrics.ve4.ls1}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve4.ls2 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve4.ls2}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve4.stamp}'>${allMusic[indexNumb - 1].lyrics.ve4.ls2}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve4.ls3 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve4.ls3}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve4.stamp}'>${allMusic[indexNumb - 1].lyrics.ve4.ls3}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve4.ls4 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve4.ls4}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve4.stamp}'>${allMusic[indexNumb - 1].lyrics.ve4.ls4}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve4.ls5 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve4.ls5}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve4.stamp}'>${allMusic[indexNumb - 1].lyrics.ve4.ls5}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve4.ls6 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve4.ls6}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve4.stamp}'>${allMusic[indexNumb - 1].lyrics.ve4.ls6}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve4.ls7 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve4.ls7}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve4.stamp}'>${allMusic[indexNumb - 1].lyrics.ve4.ls7}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve4.ls8 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve4.ls8}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve4.stamp}'>${allMusic[indexNumb - 1].lyrics.ve4.ls8}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve4.ls9 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve4.ls9}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve4.stamp}'>${allMusic[indexNumb - 1].lyrics.ve4.ls9}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve4.ls10 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve4.ls10}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve4.stamp}'>${allMusic[indexNumb - 1].lyrics.ve4.ls10}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
     }
@@ -3861,52 +3866,52 @@ if(allMusic[indexNumb - 1].lyrics.ve1 != undefined){
 
       if(allMusic[indexNumb - 1].lyrics.ve5.ls1 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve5.ls1}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve5.stamp}'>${allMusic[indexNumb - 1].lyrics.ve5.ls1}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve5.ls2 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve5.ls2}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve5.stamp}'>${allMusic[indexNumb - 1].lyrics.ve5.ls2}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve5.ls3 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve5.ls3}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve5.stamp}'>${allMusic[indexNumb - 1].lyrics.ve5.ls3}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve5.ls4 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve5.ls4}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve5.stamp}'>${allMusic[indexNumb - 1].lyrics.ve5.ls4}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve5.ls5 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve5.ls5}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve5.stamp}'>${allMusic[indexNumb - 1].lyrics.ve5.ls5}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve5.ls6 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve5.ls6}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve5.stamp}'>${allMusic[indexNumb - 1].lyrics.ve5.ls6}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve5.ls7 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve5.ls7}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve5.stamp}'>${allMusic[indexNumb - 1].lyrics.ve5.ls7}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve5.ls8 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve5.ls8}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve5.stamp}'>${allMusic[indexNumb - 1].lyrics.ve5.ls8}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve5.ls9 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve5.ls9}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve5.stamp}'>${allMusic[indexNumb - 1].lyrics.ve5.ls9}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve5.ls10 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve5.ls10}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve5.stamp}'>${allMusic[indexNumb - 1].lyrics.ve5.ls10}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
     }
@@ -3921,52 +3926,52 @@ if(allMusic[indexNumb - 1].lyrics.ve1 != undefined){
 
       if(allMusic[indexNumb - 1].lyrics.ve6.ls1 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve6.ls1}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve6.stamp}'>${allMusic[indexNumb - 1].lyrics.ve6.ls1}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve6.ls2 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve6.ls2}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve6.stamp}'>${allMusic[indexNumb - 1].lyrics.ve6.ls2}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve6.ls3 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve6.ls3}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve6.stamp}'>${allMusic[indexNumb - 1].lyrics.ve6.ls3}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve6.ls4 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve6.ls4}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve6.stamp}'>${allMusic[indexNumb - 1].lyrics.ve6.ls4}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve6.ls5 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve6.ls5}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve6.stamp}'>${allMusic[indexNumb - 1].lyrics.ve6.ls5}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve6.ls6 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve6.ls6}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve6.stamp}'>${allMusic[indexNumb - 1].lyrics.ve6.ls6}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve6.ls7 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve6.ls7}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve6.stamp}'>${allMusic[indexNumb - 1].lyrics.ve6.ls7}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve6.ls8 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve6.ls8}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve6.stamp}'>${allMusic[indexNumb - 1].lyrics.ve6.ls8}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve6.ls9 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve6.ls9}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve6.stamp}'>${allMusic[indexNumb - 1].lyrics.ve6.ls9}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve6.ls10 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve6.ls10}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve6.stamp}'>${allMusic[indexNumb - 1].lyrics.ve6.ls10}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
     }
@@ -3981,52 +3986,52 @@ if(allMusic[indexNumb - 1].lyrics.ve1 != undefined){
 
       if(allMusic[indexNumb - 1].lyrics.ve7.ls1 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve7.ls1}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve7.stamp}'>${allMusic[indexNumb - 1].lyrics.ve7.ls1}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve7.ls2 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve7.ls2}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve7.stamp}'>${allMusic[indexNumb - 1].lyrics.ve7.ls2}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve7.ls3 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve7.ls3}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve7.stamp}'>${allMusic[indexNumb - 1].lyrics.ve7.ls3}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve7.ls4 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve7.ls4}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve7.stamp}'>${allMusic[indexNumb - 1].lyrics.ve7.ls4}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve7.ls5 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve7.ls5}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve7.stamp}'>${allMusic[indexNumb - 1].lyrics.ve7.ls5}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve7.ls6 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve7.ls6}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve7.stamp}'>${allMusic[indexNumb - 1].lyrics.ve7.ls6}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve7.ls7 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve7.ls7}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve7.stamp}'>${allMusic[indexNumb - 1].lyrics.ve7.ls7}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve7.ls8 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve7.ls8}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve7.stamp}'>${allMusic[indexNumb - 1].lyrics.ve7.ls8}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve7.ls9 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve7.ls9}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve7.stamp}'>${allMusic[indexNumb - 1].lyrics.ve7.ls9}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve7.ls10 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve7.ls10}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve7.stamp}'>${allMusic[indexNumb - 1].lyrics.ve7.ls10}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
     }
@@ -4041,52 +4046,52 @@ if(allMusic[indexNumb - 1].lyrics.ve1 != undefined){
 
       if(allMusic[indexNumb - 1].lyrics.ve8.ls1 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve8.ls1}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve8.stamp}'>${allMusic[indexNumb - 1].lyrics.ve8.ls1}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve8.ls2 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve8.ls2}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve8.stamp}'>${allMusic[indexNumb - 1].lyrics.ve8.ls2}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve8.ls3 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve8.ls3}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve8.stamp}'>${allMusic[indexNumb - 1].lyrics.ve8.ls3}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve8.ls4 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve8.ls4}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve8.stamp}'>${allMusic[indexNumb - 1].lyrics.ve8.ls4}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve8.ls5 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve8.ls5}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve8.stamp}'>${allMusic[indexNumb - 1].lyrics.ve8.ls5}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve8.ls6 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve8.ls6}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve8.stamp}'>${allMusic[indexNumb - 1].lyrics.ve8.ls6}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve8.ls7 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve8.ls7}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve8.stamp}'>${allMusic[indexNumb - 1].lyrics.ve8.ls7}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve8.ls8 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve8.ls8}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve8.stamp}'>${allMusic[indexNumb - 1].lyrics.ve8.ls8}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve8.ls9 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve8.ls9}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve8.stamp}'>${allMusic[indexNumb - 1].lyrics.ve8.ls9}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve8.ls10 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve8.ls10}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve8.stamp}'>${allMusic[indexNumb - 1].lyrics.ve8.ls10}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
     }
@@ -4101,52 +4106,52 @@ if(allMusic[indexNumb - 1].lyrics.ve1 != undefined){
 
       if(allMusic[indexNumb - 1].lyrics.ve9.ls1 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve9.ls1}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve9.stamp}'>${allMusic[indexNumb - 1].lyrics.ve9.ls1}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve9.ls2 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve9.ls2}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve9.stamp}'>${allMusic[indexNumb - 1].lyrics.ve9.ls2}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve9.ls3 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve9.ls3}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve9.stamp}'>${allMusic[indexNumb - 1].lyrics.ve9.ls3}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve9.ls4 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve9.ls4}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve9.stamp}'>${allMusic[indexNumb - 1].lyrics.ve9.ls4}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve9.ls5 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve9.ls5}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve9.stamp}'>${allMusic[indexNumb - 1].lyrics.ve9.ls5}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve9.ls6 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve9.ls6}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve9.stamp}'>${allMusic[indexNumb - 1].lyrics.ve9.ls6}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve9.ls7 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve9.ls7}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve9.stamp}'>${allMusic[indexNumb - 1].lyrics.ve9.ls7}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve9.ls8 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve9.ls8}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve9.stamp}'>${allMusic[indexNumb - 1].lyrics.ve9.ls8}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve9.ls9 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve9.ls9}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve9.stamp}'>${allMusic[indexNumb - 1].lyrics.ve9.ls9}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve9.ls10 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve9.ls10}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve9.stamp}'>${allMusic[indexNumb - 1].lyrics.ve9.ls10}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
     }        
@@ -4161,52 +4166,52 @@ if(allMusic[indexNumb - 1].lyrics.ve1 != undefined){
 
       if(allMusic[indexNumb - 1].lyrics.ve10.ls1 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve10.ls1}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve10.stamp}'>${allMusic[indexNumb - 1].lyrics.ve10.ls1}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve10.ls2 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve10.ls2}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve10.stamp}'>${allMusic[indexNumb - 1].lyrics.ve10.ls2}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve10.ls3 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve10.ls3}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve10.stamp}'>${allMusic[indexNumb - 1].lyrics.ve10.ls3}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve10.ls4 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve10.ls4}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve10.stamp}'>${allMusic[indexNumb - 1].lyrics.ve10.ls4}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve10.ls5 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve10.ls5}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve10.stamp}'>${allMusic[indexNumb - 1].lyrics.ve10.ls5}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve10.ls6 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve10.ls6}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve10.stamp}'>${allMusic[indexNumb - 1].lyrics.ve10.ls6}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve10.ls7 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve10.ls7}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve10.stamp}'>${allMusic[indexNumb - 1].lyrics.ve10.ls7}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve10.ls8 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve10.ls8}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve10.stamp}'>${allMusic[indexNumb - 1].lyrics.ve10.ls8}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve10.ls9 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve10.ls9}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve10.stamp}'>${allMusic[indexNumb - 1].lyrics.ve10.ls9}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve10.ls10 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve10.ls10}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve10.stamp}'>${allMusic[indexNumb - 1].lyrics.ve10.ls10}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
     }     
@@ -4221,55 +4226,57 @@ if(allMusic[indexNumb - 1].lyrics.ve1 != undefined){
 
       if(allMusic[indexNumb - 1].lyrics.ve11.ls1 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve11.ls1}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve11.stamp}'>${allMusic[indexNumb - 1].lyrics.ve11.ls1}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve11.ls2 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve11.ls2}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve11.stamp}'>${allMusic[indexNumb - 1].lyrics.ve11.ls2}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve11.ls3 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve11.ls3}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve11.stamp}'>${allMusic[indexNumb - 1].lyrics.ve11.ls3}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve11.ls4 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve11.ls4}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve11.stamp}'>${allMusic[indexNumb - 1].lyrics.ve11.ls4}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve11.ls5 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve11.ls5}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve11.stamp}'>${allMusic[indexNumb - 1].lyrics.ve11.ls5}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve11.ls6 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve11.ls6}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve11.stamp}'>${allMusic[indexNumb - 1].lyrics.ve11.ls6}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve11.ls7 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve11.ls7}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve11.stamp}'>${allMusic[indexNumb - 1].lyrics.ve11.ls7}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve11.ls8 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve11.ls8}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve11.stamp}'>${allMusic[indexNumb - 1].lyrics.ve11.ls8}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve11.ls9 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve11.ls9}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve11.stamp}'>${allMusic[indexNumb - 1].lyrics.ve11.ls9}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       if(allMusic[indexNumb - 1].lyrics.ve11.ls10 != undefined){
         let resultFAV = 
-       `<p class="active">${allMusic[indexNumb - 1].lyrics.ve11.ls10}</p>`;
+       `<p class="active" onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve11.stamp}'>${allMusic[indexNumb - 1].lyrics.ve11.ls10}</p>`;
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
     }     
+  }else{
+    resultsFAV.innerHTML = '<span>Utwór Nie Posiada Wprowadzonego Tekstu</span>'
   }
 }
 
