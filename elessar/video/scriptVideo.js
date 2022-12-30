@@ -15,6 +15,10 @@ pipBtn = container.querySelector(".pic-in-pic span"),
 fullScreenBtn = container.querySelector(".fullscreen i");
 let timer;
 
+window.addEventListener("load", () => {
+    checkSourceStatus();
+})
+
 const hideControls = () => {
     if(mainVideo.paused) return;
     timer = setTimeout(() => {
@@ -155,4 +159,10 @@ function userSource(){
 
     mainVideo.src = videoUserSource;
     mainVideo.play()
+}
+
+function checkSourceStatus(){
+    if(localStorage.getItem('sourceLink') != null){
+        mainVideo.src = localStorage.getItem('sourceLink');
+    }
 }

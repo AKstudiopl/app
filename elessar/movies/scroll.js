@@ -45,3 +45,8 @@ $('.content-scroll').scroll(function(){
         $('.header-title').css({'transform':'scale(1)'});
     }
 });
+
+function setMovieData(e){
+    let sourceData = e.getAttribute('src-data');
+    localStorage.setItem('sourceLink', sourceData)
+}
