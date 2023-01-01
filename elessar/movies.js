@@ -6,6 +6,8 @@ var movies = [
         pageLink: "lord-of-the-rings-the-fellowship-of-the-ring.html",
         date: "2001",
         tag: "ACTION",
+        category: "fantasy",
+        preview: "https://fwcdn.pl/fph/10/65/1065/447265.1.jpg",
     },
     {
         name: "Władca Pierścieni: Dwie wieże",
@@ -14,6 +16,8 @@ var movies = [
         pageLink: "lord-of-the-rings-the-two-towers.html",
         date: "2002",
         tag: "ACTION",
+        category: "fantasy",
+        preview: "https://fwcdn.pl/fph/14/51/31451/448287.1.jpg",
     },
     {
         name: "Władca Pierścieni: Powrót Króla",
@@ -22,6 +26,8 @@ var movies = [
         pageLink: "lord-of-the-rings-the-return-of-the-king.html",
         date: "2003",
         tag: "ACTION",
+        category: "fantasy",
+        preview: "https://fwcdn.pl/fph/18/41/11841/448118.1.jpg",
     },
     {
         name: "Gladiator",
@@ -30,6 +36,7 @@ var movies = [
         pageLink: "gladiator.html",
         date: "1999",
         tag: "ACTION",
+        preview: "https://fwcdn.pl/fph/09/36/936/183174_1.1.jpg",
     },
     {
         name: "Hobbit: Niezwykła Podróż",
@@ -38,6 +45,8 @@ var movies = [
         pageLink: "hobbit-niezwykla-podroz.html",
         date: "2012",
         tag: "ACTION",
+        category: "fantasy",
+        preview: "https://fwcdn.pl/fph/32/17/343217/362853.1.jpg",
     },
     {
         name: "Hobbit: Pustkowie Smauga",
@@ -46,6 +55,8 @@ var movies = [
         pageLink: "hobbit-pustkowie-smauga.html",
         date: "2013",
         tag: "ACTION",
+        category: "fantasy",
+        preview: "https://fwcdn.pl/fph/98/67/469867/434443.1.jpg",
     },
     {
         name: "Hobbit: Bitwa Pięciu Armii",
@@ -54,6 +65,8 @@ var movies = [
         pageLink: "hobbit-bitwa-pieciu-armii.html",
         date: "2014",
         tag: "ACTION",
+        category: "fantasy",
+        preview: "https://fwcdn.pl/fph/22/42/662242/542388_1.1.jpg",
     },
     {
         name: "Furia",
@@ -62,6 +75,7 @@ var movies = [
         pageLink: "furia-fury.html",
         date: "2014",
         tag: "ACTION",
+        preview: "https://fwcdn.pl/fph/31/80/683180/522153_1.1.jpg",
     },
     {
         name: "1917",
@@ -70,6 +84,7 @@ var movies = [
         pageLink: "1917.html",
         date: "2019",
         tag: "ACTION",
+        preview: "https://fwcdn.pl/fph/69/80/816980/868695_1.1.jpg",
     },
     {
         name: "Opowieści z Narnii: Lew, Czarownica i stara szafa",
@@ -78,6 +93,8 @@ var movies = [
         pageLink: "opowiesci-z-narnii-lew-czarownica-i-stara-szafa.html",
         date: "2005",
         tag: "ADVENTURE",
+        category: "fantasy",
+        preview: "https://fwcdn.pl/fph/27/61/112761/217819.1.jpg",
     },
     {
         name: "Assassin's Creed",
@@ -86,6 +103,8 @@ var movies = [
         pageLink: "assasins-creed.html",
         date: "2016",
         tag: "ACTION",
+        category: "fantasy",
+        preview: "https://fwcdn.pl/fph/98/03/659803/669149_1.1.jpg",
     },
     {
         name: "SNAJPER",
@@ -94,6 +113,7 @@ var movies = [
         pageLink: "american-sniper.html",
         date: "2014",
         tag: "ACTION",
+        preview: "https://fwcdn.pl/fph/60/40/656040/542422_1.1.jpg",
     },
     {
         name: "Avatar",
@@ -102,6 +122,8 @@ var movies = [
         pageLink: "avatar-2009.html",
         date: "2009",
         tag: "SCI-FI",
+        category: "fantasy",
+        preview: "https://fwcdn.pl/fph/91/13/299113/167368.1.jpg",
     },
     {
         name: "Ród Smoka",
@@ -110,6 +132,8 @@ var movies = [
         pageLink: "house-of-the-dragon.html",
         date: "2022",
         tag: "ACTION",
+        category: "fantasy",
+        preview: "https://fwcdn.pl/fph/25/83/842583/1100631.1.jpg",
     },
     {
         name: "Gra O Tron",
@@ -118,5 +142,7 @@ var movies = [
         pageLink: "game-of-thrones-2010.html",
         date: "2010",
         tag: "ACTION",
+        category: "fantasy",
+        preview: "https://fwcdn.pl/fph/68/48/476848/882150_1.1.jpg",
     },
 ]

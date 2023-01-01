@@ -28,15 +28,6 @@ $('.content-scroll').scroll(function(){
 function backToIndex(){
     history.back();
 }
-document.querySelector(".nav-menu .fa-film").addEventListener('click', () => {
-    window.location.replace("https://akstudiopl.github.io/elessar/");
-})
-document.querySelector(".nav-menu .fa-compass").addEventListener('click', () => {
-    window.location.replace("https://akstudiopl.github.io/elessar/");
-})
-document.querySelector(".nav-menu .fa-fire").addEventListener('click', () => {
-    window.location.replace("https://akstudiopl.github.io/elessar/hot-list.html");
-})
 
 jQuery(document).ready(function ($) {
     
@@ -84,28 +75,107 @@ function movieHref(e){
     window.location.replace("movies/" + urlSrc);
 }
 
-function popularMainContent() {
-    const resultsData = document.querySelector("#slider ul");
-    var favoritIt = movies;
-    resultsData.innerHTML = "";
+function premierContent() {
+    const resultsData = document.querySelector(".premierBox");
+    var favoritIt = movies.filter(x => x.date >= 2019);
     for (let i = 0; i < favoritIt.length; i++) {
       let resultData =
-         `<li>
-            <div class="slider-bg" onclick="movieHref(this)" url="${favoritIt[i].pageLink}">
-                <img src="${favoritIt[i].art}">
-            </div>
-            <div class="slider-content">
-                <h3>${favoritIt[i].name}</h3>
-                <p>${favoritIt[i].director}</p>
-                <span>${favoritIt[i].date}</span>
-            </div>
-         </li>`;
+         `<div class="content-item" onclick="movieHref(this)" url="${favoritIt[i].pageLink}">
+             <img src="${favoritIt[i].art}">
+                <div class="content-data">
+                    <h3>${favoritIt[i].name}</h3>
+                    <p>${favoritIt[i].director}</p>
+                    <span>${favoritIt[i].date}</span>
+                </div>
+         </div>`;
         resultsData.insertAdjacentHTML("beforeend", resultData);
         
-        $("#slider ul").html($("li").sort(function(){
+        $("#premierBox").html($(".content-item").sort(function(){
             return Math.random()-0.5;
           }));
     }
-  }
+}
+  
+function popularContent() {
+    const resultsData = document.querySelector(".popularBox");
+    var favoritIt = movies;
+    for (let i = 0; i < favoritIt.length; i++) {
+      let resultData =
+         `<div class="content-item" onclick="movieHref(this)" url="${favoritIt[i].pageLink}">
+             <img src="${favoritIt[i].art}">
+                <div class="content-data">
+                    <h3>${favoritIt[i].name}</h3>
+                    <p>${favoritIt[i].director}</p>
+                    <span>${favoritIt[i].date}</span>
+                </div>
+         </div>`;
+        resultsData.insertAdjacentHTML("beforeend", resultData);
+        
+        $("#popularBox").html($(".content-item").sort(function(){
+            return Math.random()-0.5;
+          }));
+    }
+}
 
-popularMainContent();
+function fantasyContent() {
+    const resultsData = document.querySelector(".fantasyBox");
+    var favoritIt = movies.filter(x => x.category === 'fantasy');
+    for (let i = 0; i < favoritIt.length; i++) {
+      let resultData =
+         `<div class="content-item" onclick="movieHref(this)" url="${favoritIt[i].pageLink}">
+             <img src="${favoritIt[i].art}">
+                <div class="content-data">
+                    <h3>${favoritIt[i].name}</h3>
+                    <p>${favoritIt[i].director}</p>
+                    <span>${favoritIt[i].date}</span>
+                </div>
+         </div>`;
+        resultsData.insertAdjacentHTML("beforeend", resultData);
+        
+        $("#popularBox").html($(".content-item").sort(function(){
+            return Math.random()-0.5;
+          }));
+    }
+}
+
+premierContent();
+popularContent();
+fantasyContent();
+loadHeaderContent();
+
+function contentRight(s){
+    let contentBox = s.parentElement.parentElement.querySelector(".content-box");
+    let contentWidth = contentBox.clientWidth / 2;
+
+    contentBox.scrollBy({
+    top: 0,
+    left: contentWidth,
+    behavior: "smooth"
+    });
+}
+function contentLeft(s){
+    let contentBox = s.parentElement.parentElement.querySelector(".content-box");
+    let contentWidth = contentBox.clientWidth / 2;
+
+    contentBox.scrollBy({
+    top: 0,
+    left: -contentWidth,
+    behavior: "smooth"
+    });
+}
+
+function loadHeaderContent(){
+    const headerImg = document.querySelector(".header-controls-bg img");
+    const headerTitle = document.querySelector(".header-title p");
+    const headerCategory = document.querySelector(".header-title span");
+    const headerDate = document.querySelector(".header-title .date");
+    const headerHref = document.querySelector(".header-watch");
+    
+    var randomIndex = Math.floor(Math.random() * movies.length);
+
+    headerImg.src = movies[randomIndex].preview;
+    headerTitle.innerText = movies[randomIndex].name;
+    headerCategory.innerText = movies[randomIndex].category;
+    headerDate.innerText = movies[randomIndex].date;
+    headerHref.href = 'movies/' + movies[randomIndex].pageLink;
+}

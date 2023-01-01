@@ -23,7 +23,7 @@
             <a href="browse.html"><i class="fa-solid fa-magnifying-glass"></i></a>
             <a href="#"><i class="fa-regular fa-compass"></i></a>
             <a href="#"><i class="fa-solid fa-film"></i></a>
-            <a href="#"><i class="fa-solid fa-fire"></i></a>
+            <a href="hot-list.html"><i class="fa-solid fa-fire"></i></a>
         </div>
         <div class="nav-user">
             <img src="https://i.scdn.co/image/ab67706c0000da8402899996c615a46a9e8f89b7">
@@ -40,35 +40,41 @@
                     <div class="header-title">
                         <p>Furia</p>
                         <span>Dramat Wojenny</span>
-                        <span>2014</span>
+                        <span class="date">2014</span>
                     </div>
                     <div class="header-data">
                         <a href="#">Watch Later</a>
                         <span>POPULAR</span>
-                        <a href="#">Watch Now</a>
+                        <a href="#" class="header-watch">Watch Now</a>
                     </div>
                 </div>
 
-            <h1 class="home-title">POPULAR</h1>
+            <h1 class="home-title">POPULARNE</h1>
 
             <div class="home-scroll">
-                <div class="slider-box">
-                    <a href="#" class="control_next"><i class="fa-solid fa-angle-right"></i></a>
-                    <a href="#" class="control_prev"><i class="fa-solid fa-angle-left"></i></a>
-                    <div id="slider">
-                        <ul>
-                        </ul>  
+
+                    <div class="content-box popularBox">
+    
                     </div>
-                </div>
+    
+                    <div class="controls-btn">
+                        <i class="fa-solid fa-angle-left" onclick="contentLeft(this)"></i>
+                        <i class="fa-solid fa-angle-right" onclick="contentRight(this)"></i>
+                    </div>
+
             </div>
 
-            <h1 class="home-title">PREMIER</h1>
+            <h1 class="home-title">PREMIERY</h1>
 
             <div class="home-scroll">
 
-                <div class="under-development">
-                    <img src="https://www.convergeone.com/hubfs/Convergeone_September2017_Theme/Images/img-DC.jpg" alt="">
-                    <h1>Under Development</h1>
+                <div class="content-box premierBox">
+
+                </div>
+
+                <div class="controls-btn">
+                    <i class="fa-solid fa-angle-left" onclick="contentLeft(this)"></i>
+                    <i class="fa-solid fa-angle-right" onclick="contentRight(this)"></i>
                 </div>
 
             </div>
@@ -78,10 +84,15 @@
 
             <div class="home-scroll">
 
-                <div class="under-development">
-                    <img src="https://www.convergeone.com/hubfs/Convergeone_September2017_Theme/Images/img-DC.jpg" alt="">
-                    <h1>Under Development</h1>
+                <div class="content-box fantasyBox">
+
                 </div>
+
+                <div class="controls-btn">
+                    <i class="fa-solid fa-angle-left" onclick="contentLeft(this)"></i>
+                    <i class="fa-solid fa-angle-right" onclick="contentRight(this)"></i>
+                </div>
+
             </div>
 
             <div class="content-scroll-alert active">
