@@ -868,7 +868,7 @@ const [search,filter,results] = ["#search-item",".search-filter",".search-result
 searchMusicContent = allMusicView;
 
 results.innerHTML=searchMusicContent.map((a,i)=>
-`<li li-index="${i + 1}" onclick="resultItemQueue(this);">
+`<li li-index="${i + 1}" onclick="resultItemQueue(this);tracksHistory(this);">
   <div class="result-box">
    <img src="images/${a.img}.jpg">
    <div class="result-box-cover">
@@ -4422,3 +4422,57 @@ function getColorCover() {
 document.querySelector(".music-img img").addEventListener('load', () => {
   getColorCover();
 });
+
+function tracksHistory(data){
+  let data_id = data.getAttribute("li-index");
+
+  let ls_data_1 = localStorage.getItem("track_data_1");
+  let ls_data_2 = localStorage.getItem("track_data_2");
+  let ls_data_3 = localStorage.getItem("track_data_3");
+  let ls_data_4 = localStorage.getItem("track_data_4");
+  let ls_data_5 = localStorage.getItem("track_data_5");
+  let ls_data_6 = localStorage.getItem("track_data_6");
+  let ls_data_7 = localStorage.getItem("track_data_7");
+
+  localStorage.setItem("track_data_1", data_id);
+  localStorage.setItem("track_data_2", ls_data_1);
+  localStorage.setItem("track_data_3", ls_data_2);
+  localStorage.setItem("track_data_4", ls_data_3);
+  localStorage.setItem("track_data_5", ls_data_4);
+  localStorage.setItem("track_data_6", ls_data_5);
+  localStorage.setItem("track_data_7", ls_data_6);
+  localStorage.setItem("track_data_8", ls_data_7);
+}
+
+function recentTracksLoad(){
+
+  const recent_data_1 = localStorage.getItem("track_data_1");
+  const recent_data_2 = localStorage.getItem("track_data_2");
+  const recent_data_3 = localStorage.getItem("track_data_3");
+  const recent_data_4 = localStorage.getItem("track_data_4");
+  const recent_data_5 = localStorage.getItem("track_data_5");
+  const recent_data_6 = localStorage.getItem("track_data_6");
+  const recent_data_7 = localStorage.getItem("track_data_7");
+  const recent_data_8 = localStorage.getItem("track_data_8");
+
+  resultsFAV = document.querySelector(".center-container.recent-tracks-container .center-container-scrollable");
+  var favoritIt = allMusicView.filter(x => x.id === recent_data_1 || x.id === recent_data_2 || x.id === recent_data_3 || x.id === recent_data_4 || x.id === recent_data_5 || x.id === recent_data_6 || x.id === recent_data_7 || x.id === recent_data_8);
+  resultsFAV.innerHTML = "";
+  for (let i = 0; i < favoritIt.length; i++) {
+    let resultFAV =
+      `<div class="center-container-item popular-artist" link_to='${favoritIt[i].id}' onclick="clickedNotification(this);">
+       <img src="images/${favoritIt[i].img}.jpg">
+       <h2>${favoritIt[i].name}</h2>
+       <p>${favoritIt[i].artist}</p>
+       </div>`;
+    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+  }
+
+  if(favoritIt.length > 3){
+    document.querySelector(".center-container.recent-tracks-container").style.display="flex";
+  }else{
+    document.querySelector(".center-container.recent-tracks-container").style.display="none";
+  }
+}
+
+recentTracksLoad();

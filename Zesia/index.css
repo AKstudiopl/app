@@ -7433,6 +7433,10 @@ width: 100%;
     width: 100%;
   }
 }
+.center-container.recent-tracks-container
+{
+  flex-direction: column;
+}
 /* Style_pop_up*/
 textarea
 {

@@ -1131,6 +1131,26 @@ body
 {
     padding: 20px 0;
 }
+.user-featured
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - 8px));
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.featured-box
+{
+    border: 1px solid var(--gr);
+    border-radius: 15px;
+    text-align: center;
+    color: var(--wh);
+    padding: 15px 30px;
+}
+
+
+
+
 @media only screen and (max-width: 1000px)  {
     .movie-description-gallery
     {

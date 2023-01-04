@@ -6191,7 +6191,7 @@ var allMusic = [
     colaboration: "",
     artist_status: "none",
     language: "eng",
-    country: "eng",
+    country: "uk",
     artist_id: "40",
 
     src: "EdSheeran-BadHabits",
@@ -6323,7 +6323,7 @@ var allMusic = [
     colaboration: "",
     artist_status: "none",
     language: "eng",
-    country: "eng",
+    country: "uk",
     artist_id: "40",
 
     src: "EdSheeran-ShapeofYou",
