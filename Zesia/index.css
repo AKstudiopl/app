@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap');
-
-*
-{
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+*{
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -30,7 +28,7 @@
 body
 {
   background: var(--background);
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Rubik', 'PT Sans', sans-serif;
   color: #fff;
   overflow-x: hidden;
 }
@@ -69,9 +67,9 @@ p, span, h1, h3, a, i
 }
 .loader p
 {
-  font-family: 'Darker Grotesque';
-  letter-spacing: 5px;
-  font-weight: 900;
+font-family: 'Rubik';
+  letter-spacing: 10px;
+  font-weight: 100;
   color: var(--color);
   opacity: 0.5;
 }
@@ -287,7 +285,7 @@ p, span, h1, h3, a, i
   transition: 0.3s;
   position: relative;
   z-index: 5;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
   font-weight: 100;
 }
 .navbar-bottom .navbar-bottom-btn i
@@ -373,7 +371,7 @@ p, span, h1, h3, a, i
 }
 .settings-screen .settings-screen-title h1
 {
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
   font-weight: 900;
   letter-spacing: 1px;
   font-size: 20px;
@@ -430,7 +428,7 @@ p, span, h1, h3, a, i
   color: var(--color);
   font-size: 16px;
   width:calc(100% - 15px);
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
 }
 .settings-title i 
 {
@@ -443,7 +441,7 @@ p, span, h1, h3, a, i
   font-size: 18px;
   color: var(--color);
   font-weight: 400;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
   font-weight: 900;
   letter-spacing: 1px;
 }
@@ -458,7 +456,7 @@ p, span, h1, h3, a, i
   text-decoration: none;
   color: #A7A7A775;
   font-size: 14px;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
   font-weight: 100;
 }
 #input-style
@@ -565,7 +563,7 @@ input:checked + .slider:before {
   transition: 0.3s;
   padding: 15px 0;
   margin-top: 3vh;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
   font-weight: 900;
   color: var(--color);
 }
@@ -621,8 +619,7 @@ input:checked + .slider:before {
 }
 .reels-item-data
 {
-  font-family: 'Darker Grotesque';
-  letter-spacing: 1px;
+  font-family: 'Rubik';
   font-size: 14px;
   width: 100%;
   text-align: center;
@@ -633,6 +630,7 @@ input:checked + .slider:before {
   line-clamp: 2; 
   -webkit-box-orient: vertical;
   color: var(--color);
+  margin-top: 4px;
 }
 .reels-item img
 {
@@ -720,14 +718,14 @@ input:checked + .slider:before {
 {
   color: var(--color);
   border: var(--border);
-  padding: 8px 15px;
+  padding: 10px 15px;
+  padding-top: 9px;
   border-radius: 25px;
   flex: 0 0 auto;
   margin-left: 5px;
   background: var(--backgroundsecond);
   transition: 0.3s;
-  font-family: 'Darker Grotesque';
-  letter-spacing: 1px;
+  font-family: 'Rubik';
   font-weight: 900;
 }
 .search-item:last-child
@@ -759,9 +757,6 @@ input:checked + .slider:before {
   width: 100%;
   background: var(--backgroundsecond);
   color: var(--color);
-  font-family: 'Darker Grotesque';
-  letter-spacing: 1px;
-  font-weight: 900;
 }
 .search-content  input[type=text]:focus
 {
@@ -770,8 +765,6 @@ input:checked + .slider:before {
 }
 .search-content h1
 {
-  font-family: 'Darker Grotesque';
-  letter-spacing: 1px;
   font-weight: 100;
   color: var(--color)
 }
@@ -781,9 +774,6 @@ input:checked + .slider:before {
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  font-family: 'Darker Grotesque';
-  letter-spacing: 1px;
-  font-weight: 900;
 }
 .search-option a 
 {
@@ -845,28 +835,28 @@ input:checked + .slider:before {
 }
 .search-results
 {
-  max-height: 58vh;
+  max-height: 62vh;
+  height: 62vh;
   overflow-y: scroll;
-  border-bottom: 1px var(--backgroundsecond) solid;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin-left: 2.5%;
 }
 .search-results li
 {
   list-style-type: none;
-  -webkit-mask-image: -webkit-linear-gradient(360deg, black 75%, transparent 100%);
-  font-family: 'Darker Grotesque';
-  letter-spacing: 1px;
-  font-weight: 900;
+  margin-top: 15px;
 }
-.search-results li:active h1
+.search-results li h1
 {
-  color: var(--maincolor);
-}
-.search-results li:active p
-{
-  opacity: 1;
+  color: var(--color);
+  font-size: 18px;
 }
 .search-results li p
 {
+  font-size: 16px;
+  opacity: 0.5;
   font-weight: 100;
 }
 .search-artist-results
@@ -887,7 +877,7 @@ input:checked + .slider:before {
   transition: 0.25s;
   position: relative;
   line-height: 1;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
   letter-spacing: 1px;
   font-weight: 900;
 }
@@ -953,7 +943,7 @@ input:checked + .slider:before {
   margin-left: 15px;
   margin-top: 25px;
   line-height: 1;
-  font-family: 'Darker Grotesque';
+
   letter-spacing: 1px;
 }
 .search-noresults i
@@ -1006,20 +996,20 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: row;
   align-items: center;
-  border-bottom: var(--border);
 }
 .result-box img
 {
-  height: 58px;
+  height: 50px;
   padding-right:10px;
 }
 .result-box h1
 {
-  font-size: 20px;
+  font-size: 18px;
 }
 .result-box p
 {
   opacity: 0.5;
+  font-size: 16px;
 }
 .library-favorite-search
 {
@@ -1115,8 +1105,6 @@ input:checked + .slider:before {
   right: -120vw;
   overflow-y: scroll;
   z-index: 1;
-  font-family: 'Darker Grotesque';
-  letter-spacing: 1px;
 }
 .library-container.active
 {
@@ -1329,7 +1317,7 @@ input:checked + .slider:before {
   align-items: center;
   height: 100%;
   transition: 0.5s;
-  font-family: 'Darker Grotesque';
+
   line-height: 1;
   font-weight: 900;
   letter-spacing: 1px;
@@ -1503,13 +1491,12 @@ input:checked + .slider:before {
 /* CONTENT STYLE */
 .ui-title h1
 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 100;
   margin: 20px 0;
   line-height: 1;
   margin-left: 10px;
   font-weight: 900;
-  font-family: 'Darker Grotesque';
 }
 .ui-title h1 span
 {
@@ -1563,12 +1550,11 @@ input:checked + .slider:before {
 .title:first-child h1
 {
   display: flex;
-  line-height: 1;
   flex-direction: column;
-  font-weight: 200;
-  font-family: 'Darker Grotesque';
-  font-size: 25px;
+  font-family: 'Rubik';
+  font-size: 20px;
   letter-spacing: 1px;
+  font-weight: 100;
 }
 .title span
 {
@@ -1640,8 +1626,7 @@ input:checked + .slider:before {
   height: 70px;
   z-index: 0;
   user-select: none;
-  font-family: 'Darker Grotesque';
-  letter-spacing: 1px;
+font-family: 'Rubik';
 }
 .head-content-item:first-child {
   grid-column: 1 / 3;
@@ -1849,7 +1834,7 @@ input:checked + .slider:before {
 .center-container .center-container-item h2
 {
   font-size: 16px;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
   font-weight: 900;
   letter-spacing: 1px;
 }
@@ -1858,7 +1843,7 @@ input:checked + .slider:before {
   color: #A7A7A775;
   font-size: 12px;
   font-weight: 900;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
 }
 .center-container .center-container-item img
 {
@@ -1906,7 +1891,7 @@ input:checked + .slider:before {
   z-index: 5;
   filter: drop-shadow(0px 10px 12px #000000);
   transition: 0.3s;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
 }
 .music-controls.news-hide
 {
@@ -2125,7 +2110,7 @@ input:checked + .slider:before {
 .top-more-head-name
 {
   margin-top: 15px;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
   font-weight: 900;
   margin-bottom: -5px;
   letter-spacing: 1px;
@@ -2134,7 +2119,7 @@ input:checked + .slider:before {
 {
   margin-bottom: 15px;
   opacity: 0.5;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
   letter-spacing: 1px;
 }
 .top-more-head-image img
@@ -2148,7 +2133,7 @@ input:checked + .slider:before {
   justify-content: space-between;
   margin-top: 5px;
   border-top: 1px var(--backgroundsecond) solid;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
 }
 .top-shortcut-item a
 {
@@ -2220,7 +2205,7 @@ input:checked + .slider:before {
   border-bottom: 1px var(--backgroundsecond) solid;
   padding: 15px 15px;
   transition: 0.3s;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
 }
 .top-menu-list a span
 {
@@ -2643,7 +2628,7 @@ input:checked + .slider:before {
 {
   font-size: 25px;
   display: inline-block;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
   letter-spacing: 1px;
 }
 .main-information-title h1.animate {
@@ -2671,7 +2656,7 @@ input:checked + .slider:before {
 {
   color: var(--color);
   opacity: 0.5;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
   letter-spacing: 1px;
 }
 .progress
@@ -2791,7 +2776,7 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
 }
 .main-music-sec-nav a.active::after
 {
@@ -2961,7 +2946,7 @@ input:checked + .slider:before {
   transition: 0.3s;
   overflow-y: scroll;
   overflow-x: hidden;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
   font-weight: 900;
   letter-spacing: 1px;
   font-size: 18px;
@@ -3980,7 +3965,7 @@ body.green .queue-item ul li img
   margin-bottom: 20px;
   width: calc(100% - 40px);
   line-height: 1;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
   line-height: 1;
   font-weight: 900;
 }
@@ -4004,7 +3989,7 @@ body.green .queue-item ul li img
   line-height: 1;
   font-size: 15px;
   margin: 0;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
   line-height: 1;
   font-weight: 900;
 }
@@ -4101,7 +4086,7 @@ body.green .queue-item ul li img
   width: calc(100% - 30px);
   margin-bottom: 90px;
   display: none;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
   flex-direction: column;
 }
 .music-artist-menu
@@ -4123,7 +4108,7 @@ body.green .queue-item ul li img
   align-items: center;
   transition: 0.25s;
   font-weight: 100;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
 }
 .music-artist-menu a:active
 {
@@ -4172,7 +4157,7 @@ body.green .queue-item ul li img
   margin: 20px;
   font-weight: 100;
   font-size: 25px;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
   font-weight: 900;
 }
 .music-artist-content-item-data h1
@@ -4199,14 +4184,10 @@ body.green .queue-item ul li img
   width: calc(100% - 5px);
   border-left: 5px var(--maincolor) solid;
 }
-.music-artist-content-item-data
-{
-  line-height: 1;
-}
 .music-artist-content-item-data h1
 {
   color: var(--color);
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
   line-height: 1;
   font-weight: 900;
   font-size: 20px;
@@ -4215,7 +4196,7 @@ body.green .queue-item ul li img
 {
   color: var(--color);
   opacity: 0.5;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
 }
 .music-artist-content-item-featured
 {
@@ -4224,7 +4205,7 @@ body.green .queue-item ul li img
   width: 100%;
   border-bottom: 1px solid var(--backgroundsecond);
   transition: 0.25s;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
 }
 .music-artist-content-item-featured img {
   height: 60px;
@@ -4335,7 +4316,7 @@ body.green .queue-item ul li img
   line-height: 1.5;
   z-index: 5;
   overflow: hidden;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
   font-weight: 900;
   letter-spacing: 1px;
   -webkit-mask-image: -webkit-linear-gradient(black 50%, transparent 100%);
@@ -4357,7 +4338,7 @@ body.green .queue-item ul li img
   display: none;
   flex-direction: column;
   margin-bottom: 90px;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
   font-weight: 900;
 }
 .music-artist-information-box
@@ -4474,7 +4455,7 @@ body.green .queue-item ul li img
   opacity: 0.5;
   font-size: 12px;
   font-weight: 100;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
 }
 .music-artist-album-screen
 {
@@ -4792,7 +4773,7 @@ body.green .queue-item ul li img
   height: calc(100vh - 121px);
   background: var(--background);
   width: 100%;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
   line-height: 1;
   letter-spacing: 1px;
   overflow: scroll;
@@ -4866,7 +4847,7 @@ width: 100%;
   line-height: 1;
   display: flex;
   align-items: center;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
   line-height: 1;
   letter-spacing: 1px;
   font-weight: 100;
@@ -5898,7 +5879,7 @@ width: 100%;
 }
 .user_profile_content_item_song.artist .user_profile_content_item_song_data 
 {
-  padding-left: 15px;
+  padding-left: 22%;
   font-size: 25px;
   color: var(--color);
 }
@@ -5910,11 +5891,10 @@ width: 100%;
 .user_profile_content_item_song.artist img
 {
   height: 100%;
-  aspect-ratio: 3/1;
+  aspect-ratio: 1/1;
   object-fit: cover;
   z-index: -1;
   position: absolute;
-  -webkit-mask-image: -webkit-linear-gradient(320deg,black 0%, transparent 75%);
 }
 .user_profile_content_item_song.active
 {
@@ -5990,7 +5970,7 @@ width: 100%;
   border: 1px var(--backgroundsecond) solid;
   padding: 10px 10px;
   border-radius: 20px;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
   letter-spacing: 1px;
   width: calc(100% - 20px);
   font-size: 20px;
@@ -6004,6 +5984,12 @@ width: 100%;
 {
   grid-column: 1 / 3;
   height: auto;
+}
+.user_profile_content_dailyStats_item:nth-child(4)
+{
+  grid-column: 1 / 3;
+  height: auto;
+  margin-top: 23px;
 }
 .user_profile_content_dailyStats_item span
 {
@@ -6764,7 +6750,7 @@ width: 100%;
   margin-top: -120vh;
   top: 0;
   height: 95vh;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
   letter-spacing: 1px;
   font-weight: 900;
 }
@@ -6869,7 +6855,6 @@ width: 100%;
 }
 .filter-userSelected-data
 {
-  opacity: 0.5;
   display: flex;
   width: calc(100% - 30px);
   margin-left: 15px;
@@ -6877,12 +6862,18 @@ width: 100%;
   padding: 15px 0;
   justify-content: space-between;
   align-items: center;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 100;
+}
+.filter-userSelected-item:active
+{
+  opacity: 1;
 }
 .filter-userSelected-item
 {
   line-height: 1;
+  transition: 0.3s;
+  opacity: 0.5;
 }
 .filter-userSelected-item img
 {
@@ -7066,7 +7057,7 @@ width: 100%;
   justify-content: space-between;
   align-items: center;
   border-top: 1px var(--backgroundsecond) solid;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
   font-weight: 900;
   letter-spacing: 1px;
 }
@@ -7076,7 +7067,7 @@ width: 100%;
   flex-direction: column;
   width: calc(100% - 20px);
   margin-left: 10px;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
   font-weight: 100;
   letter-spacing: 1px;
   margin-bottom: 10px;
@@ -7121,7 +7112,7 @@ width: 100%;
   background: var(--background);
   width: 100%;
   padding: 0 15px;
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
   font-weight: 900;
   letter-spacing: 1px;
   color: var(--color);
@@ -7273,7 +7264,7 @@ width: 100%;
   width: 100%;
   height: 100vh;
   background: var(--background);
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
   z-index: 6;
 }
 .reels-screen.active
@@ -7311,7 +7302,7 @@ width: 100%;
   justify-content: center;
   height: 30px;
   color: var(--color);
-  font-family: 'Darker Grotesque';
+font-family: 'Rubik';
   font-size: 22px;
   letter-spacing: 1px;
 }
@@ -7436,6 +7427,74 @@ width: 100%;
 .center-container.recent-tracks-container
 {
   flex-direction: column;
+}
+
+.search-results-history
+{
+  width: 100%;
+  background: var(--background);
+  max-height: 80vh;
+  height: 80vh;
+  overflow-y: scroll;
+  border-bottom: 1px var(--backgroundsecond) solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  gap: 15px;
+}
+.history-item
+{
+  display: flex;
+  width: 95%;
+  transition: 0.3s;
+}
+.history-item:last-child
+{
+  margin-bottom: 200px;
+}
+.history-item:active
+{
+  transform: scale(0.9);
+}
+.history-item img
+{
+  height: 50px;
+}
+.history-item i 
+{
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+.history-item-data
+{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 10px;
+  color: var(--color);
+}
+.history-item-data p
+{
+  font-size: 18px;
+  font-weight: 900;
+}
+.history-item-data span
+{
+  font-size: 16px;
+  opacity: 0.5;
+  font-weight: 100;
+}
+.search-title
+{
+  text-align: left;
+  width: 95%;
+  color: var(--color);
+  opacity: 0.5;
 }
 /* Style_pop_up*/
 textarea
@@ -7566,7 +7625,7 @@ textarea
     width: calc(100% - 500px);
     margin: 0;
     border-radius: 0;
-    bottom: 63px;
+    bottom: 60px;
   }
   .top-controls-more
   {
@@ -7840,7 +7899,7 @@ textarea
   .ui-title-action
   {
     display: flex;
-    font-family: 'Darker Grotesque';
+  font-family: 'Rubik';
     font-weight: 100;
     letter-spacing: 1px;
     color: var(--maincolor);

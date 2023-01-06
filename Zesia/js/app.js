@@ -975,6 +975,15 @@ function filterList(){
   }else{
     searchNoResults.style.display="none";
   }
+
+  let historyResults = document.querySelector(".search-results-history");
+
+  if(search.value == ""){
+    recentTracksLoad();
+    historyResults.style.display="flex";
+  }else{
+    historyResults.style.display="none";
+  }
   
 }
 // attach filterList() to input event of text-input and click event of style buttons:
@@ -2046,6 +2055,7 @@ const searchFilters = document.querySelector(".search-filter");
 const aristsSearchResults = document.querySelector(".search-artist-results");
 const searchBarArtist = document.querySelector("#search-bar-artist");
 const searchBarName = document.querySelector("#search-bar-name");
+const searchHistory = document.querySelector(".search-results-history");
 
 searchBarArtist.style.display="none";
 
@@ -2064,6 +2074,7 @@ searchTrackFilter.addEventListener('click', () => {
 
 searchArtistFilter.addEventListener('click', () => {
   searchArtistFilter.classList.add('active')
+  searchHistory.style.display="none";
   searchTrackFilter.classList.remove('active')
   searchFilters.style.display="none";
   results.style.display="none";
@@ -2714,6 +2725,10 @@ function createdPlaylistsContent() {
         <p>Ostatni album</p>
         <span class="user_profile_content_dailyStats_item_album">0</span>
       </div>
+      <div class="user_profile_content_dailyStats_item">
+      <p>Ostatnio Szukane</p>
+      <span class="user_profile_content_dailyStats_item_recently">0</span>
+    </div>
       </div>
       <div class="user_profile_content_friends" id="user_friend_list_0">
         <p>Twoja Lista Znajomych Jest Pusta</p>
@@ -2725,6 +2740,7 @@ function createdPlaylistsContent() {
   document.querySelector(".user_profile_content_dailyStats_item_total").innerText = localStorage.getItem("trSts") || 0;
   document.querySelector(".user_profile_content_dailyStats_item_album").innerText = localStorage.getItem("lastViewedAlbum_1") || "Brak Danych";
   document.querySelector(".user_profile_content_dailyStats_item_artists").innerText = allMusicView.filter(x => x.status === "favorite").length;
+  document.querySelector(".user_profile_content_dailyStats_item_recently").innerText = allMusicView[localStorage.getItem("track_data_1")].name +", "+ allMusicView[localStorage.getItem("track_data_2")].name +", "+ allMusicView[localStorage.getItem("track_data_3")].name || "Brak";
 }
 
 function followedArtistsContent() {
@@ -4467,6 +4483,23 @@ function recentTracksLoad(){
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }
+
+  historyBox = document.querySelector(".search-results-history");
+
+  historyBox.innerHTML = "";
+  for (let i = 0; i < favoritIt.length; i++) {
+    let historyItem =
+      `<div class="history-item" link_to='${favoritIt[i].id}' onclick="clickedNotification(this);">
+       <img src="images/${favoritIt[i].img}.jpg">
+        <div class="history-item-data">
+          <p>${favoritIt[i].name}</p>
+          <span>${favoritIt[i].artist}</span>
+        </div>
+       </div>`;
+       historyBox.insertAdjacentHTML("beforeend", historyItem);
+  }
+  let historyTitle = `<p class="search-title">Ostatnio Szukane :</p>`
+  historyBox.insertAdjacentHTML("afterbegin", historyTitle);
 
   if(favoritIt.length > 3){
     document.querySelector(".center-container.recent-tracks-container").style.display="flex";
