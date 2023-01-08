@@ -716,8 +716,7 @@ font-family: 'Rubik';
 {
   color: var(--color);
   border: var(--border);
-  padding: 10px 15px;
-  padding-top: 9px;
+  padding: 9px 15px;
   border-radius: 25px;
   flex: 0 0 auto;
   margin-left: 5px;
@@ -993,6 +992,23 @@ font-family: 'Rubik';
   display: flex;
   flex-direction: row;
   align-items: center;
+  transition: 0.3s;
+}
+.result-box:active
+{
+  opacity: 0.5;
+  transform: scale(0.95);
+}
+.result-box i 
+{
+  margin-left: auto;
+  color: var(--color);
+  opacity: 0.5;
+  padding: 0 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .result-box img
 {
@@ -1459,27 +1475,19 @@ font-family: 'Rubik';
  75% { transform: rotate(-10deg); }
 100% { transform: rotate(360deg) scale(1.5); }
 }
-
-.library-favorite-item:active h1
-{
-  color: var(--maincolor);
-}
-.library-favorite-item:active span
-{
-  color: var(--color);
-  opacity: 1;
-}
 .library-favorite-item li
 {
   list-style-type: none;
 }
 .library-favorite-item h1
 {
-  font-size: 20px;
+  font-size: 18px;
 }
 .library-favorite-item span
 {
   opacity: 0.5;
+  font-size: 14px;
+  font-weight: 100;
 }
 /* CONTENT STYLE */
 .ui-title h1
@@ -2013,7 +2021,7 @@ font-family: 'Rubik';
 }
 .music-title h1
 {
-  font-size: 20px;
+  font-size: 18px;
   color: var(--color);
   margin-bottom: -5px;
   max-width: 45vw;
@@ -2025,6 +2033,7 @@ font-family: 'Rubik';
 {
   color: var(--color);
   opacity: 0.5;
+  font-size: 14px;
   max-width: 5px;
   overflow: hidden;
 }
@@ -5888,6 +5897,10 @@ font-family: 'Rubik';
   z-index: -1;
   position: absolute;
 }
+.user_profile_content_item_song_data p
+{
+  font-weight: 900;
+}
 .user_profile_content_item_song.active
 {
   transform: scaleY(0);
@@ -7212,14 +7225,13 @@ font-family: 'Rubik';
 }
 .notification_item h2
 {
-  line-height: 1;
-  font-size: 25px;
+  font-size: 18px;
 }
 .notification_item p 
 {
-  font-size: 14px;
-  line-height: 1;
+  font-size: 12px;
   max-width: 90%;
+  font-weight: 100;
 }
 .notification_item p a
 {
@@ -7250,7 +7262,7 @@ font-family: 'Rubik';
   width: 100%;
   height: 100vh;
   background: var(--background);
-font-family: 'Rubik';
+  font-family: 'Rubik';
   z-index: 6;
 }
 .reels-screen.active
@@ -7481,6 +7493,10 @@ font-family: 'Rubik';
   width: 95%;
   color: var(--color);
   opacity: 0.5;
+}
+#recent-tracks-container
+{
+  flex-direction: column;
 }
 /* Style_pop_up*/
 textarea

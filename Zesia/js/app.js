@@ -716,15 +716,15 @@ function toggleStopEnd(element){
 
 $(function(){
   var boxes = $('.pespective_object'),
-      $window = $('.music-artist-item');
+      $window = $('.music-artist-container .music-artist-item');
   $window.scroll(function(){
       var scrollTop = $window.scrollTop();
       boxes.each(function(){
       var $this = $(this),
           scrollspeed = parseInt($this.data('scroll-speed')),
           val = - scrollTop / scrollspeed;
-      $this.css('transform', 'translateY(' + val + 'px) scale(' + (100 + val/10) + '%)');
-      $this.css('filter', 'blur(' + (val / 20) + 'px)');
+      $this.css('transform', 'translateY(' + -val + 'px) scale(' + (100 + -val/10) + '%)');
+      $this.css('filter', 'grayscale(' + (val / 2) + '%)');
       });
   });
 })
@@ -876,6 +876,7 @@ results.innerHTML=searchMusicContent.map((a,i)=>
      <p class="result-artist">${a.artist}</p>
      <p class="result-artist" style="display:none;">${a.album}</p>
    </div>
+   <i class="fa-solid fa-ellipsis-vertical"></i>
   </div>
  </li>`).join("\n");
 
@@ -984,7 +985,16 @@ function filterList(){
   }else{
     historyResults.style.display="none";
   }
-  
+
+  let filterCounter = document.querySelectorAll(".search-item.active").length;
+
+  if(filterCounter == 1){
+    document.querySelector(".search-results-history").style.display="none";
+  }else if(search.value != ""){
+    document.querySelector(".search-results-history").style.display="none";
+  }else{
+    document.querySelector(".search-results-history").style.display="flex";
+  }
 }
 // attach filterList() to input event of text-input and click event of style buttons:
 search.addEventListener("input",filterList);
@@ -3311,6 +3321,12 @@ function applyCustomFilter(){
 
   searchMusicContent = allMusicView;
 
+  if(document.querySelectorAll(".filter-menu-option-scrollable-item.active").length > 0){
+    document.querySelector(".search-results-history").style.display="none";
+  }else{
+    document.querySelector(".search-results-history").style.display="flex";
+  }
+
   if (filterCategoryData != null){
     searchMusicContent = searchMusicContent.filter(x => x.style === filterCategoryData.innerText);
   }
@@ -3344,6 +3360,7 @@ function applyCustomFilter(){
       <h1 class="result-name">${a.name}</h1>
       <p class="result-artist">${a.artist}</p>
     </div>
+    <i class="fa-solid fa-ellipsis-vertical"></i>
     </div>
   </li>`).join("\n");
 
@@ -3366,6 +3383,7 @@ function resetCustomFilter(){
        <h1 class="result-name">${a.name}</h1>
        <p class="result-artist">${a.artist}</p>
      </div>
+     <i class="fa-solid fa-ellipsis-vertical"></i>
     </div>
    </li>`).join("\n");
 
@@ -4471,12 +4489,12 @@ function recentTracksLoad(){
   const recent_data_7 = localStorage.getItem("track_data_7");
   const recent_data_8 = localStorage.getItem("track_data_8");
 
-  resultsFAV = document.querySelector(".center-container.recent-tracks-container .center-container-scrollable");
+  resultsFAV = document.querySelector("#recent-tracks-container .center-container-scrollable");
   var favoritIt = allMusicView.filter(x => x.id === recent_data_1 || x.id === recent_data_2 || x.id === recent_data_3 || x.id === recent_data_4 || x.id === recent_data_5 || x.id === recent_data_6 || x.id === recent_data_7 || x.id === recent_data_8);
   resultsFAV.innerHTML = "";
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
-      `<div class="center-container-item popular-artist" link_to='${favoritIt[i].id}' onclick="clickedNotification(this);">
+      `<div class="center-container-item" link_to='${favoritIt[i].id}' onclick="clickedNotification(this);">
        <img src="images/${favoritIt[i].img}.jpg">
        <h2>${favoritIt[i].name}</h2>
        <p>${favoritIt[i].artist}</p>
@@ -4502,9 +4520,9 @@ function recentTracksLoad(){
   historyBox.insertAdjacentHTML("afterbegin", historyTitle);
 
   if(favoritIt.length > 3){
-    document.querySelector(".center-container.recent-tracks-container").style.display="flex";
+    document.querySelector("#recent-tracks-container").style.display="flex";
   }else{
-    document.querySelector(".center-container.recent-tracks-container").style.display="none";
+    document.querySelector("#recent-tracks-container").style.display="none";
   }
 }
 
