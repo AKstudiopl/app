@@ -6650,4 +6650,38 @@ var allMusic = [
     },
     user_playlist_1: "",
   },
+  {
+    name: "I Love This Club",
+    artist: "Minus Manus",
+    colaboration: "",
+    artist_status: "none",
+    language: "eng",
+    country: "uk",
+    artist_id: "46",
+
+    src: "MinusManus-ILoveThisClub",
+    img: "ab67616d0000lovethis1e02club5493def6496e0e9d86e97ff",
+    style: "Chill",
+    status: "nostatus",
+    tag: "",
+    avatar: "ab6761670000ecd438a0270198c54e0d3728673e",
+    artist_img: "https://i.scdn.co/image/ab6761670000ecd4b94d44acf3d19964b4cf9954",
+    gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd4bc3222ea11ae553997b1d44f",
+    gallery_img_2: "https://i.scdn.co/image/ab6761670000ecd47991abbf4e3ccfdd811b1796",
+    canvas: "",
+    
+    album: "I Love This Club",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e02c5493def6496e0e9d86e97ff",
+    album_premiere: "2019",
+    id: "123",
+    lyrics:{
+    },
+    bio: "Whether you’re aware of Minus Manus already or not, the impact of his influence across European pop music can not be denied. Real name Magnus Bertelsen, the young artist has amassed Number One singles in five different countries and over 2 billion worldwide streams through his work as a producer and songwriter. He helped Alan Walker land some huge international hits with the likes of ‘Sing Me To Sleep’, ‘Different World’ and ‘Lily’ (the last one has been in the Billboard EDM top20 for over 20 weeks). But now the Norwegian mastermind has allowed his take on intense, dynamic and infectious dance-pop to blossom as he goes it alone. Taking inspiration from Max Martin’s pop production and mixing it with dance floor ready beats, Minus Manus could soon become as synonymous with main room clubs himself.",
+    social:{
+      instagram: "https://www.instagram.com/minus.manus/",
+      twitter: "",
+      facebook: "",
+    },
+    user_playlist_1: "",
+  },
 ]
