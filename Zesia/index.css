@@ -4493,6 +4493,7 @@ font-family: 'Rubik';
 {
   display: flex;
   width: calc(100% - 40px);
+  position: relative;
   padding: 20px 20px;
   padding-top: 20px;
   border-bottom: 1px var(--backgroundsecond) solid;
@@ -4555,11 +4556,11 @@ font-family: 'Rubik';
 {
   width: 100%;
   position: absolute;
-  height: 120px;
 }
 .music-artist-album-screen-img-background
 {
   width: 100%;
+  height: 100%;
   position: absolute;
   z-index: -1;
   margin-left: -20px;
@@ -6618,7 +6619,7 @@ font-family: 'Rubik';
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top;
+  object-position: center;
   z-index: -1;
   mix-blend-mode: darken;
   filter: grayscale(100%);

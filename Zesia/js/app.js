@@ -376,7 +376,8 @@ function loadMusic(indexNumb){
   lyricsDataArtist.innerText = allMusic[indexNumb - 1].artist;
   lyricsDataTitle.innerText = allMusic[indexNumb - 1].name;
   window.location.hash = allMusic[indexNumb - 1].id;
-
+  document.title = allMusic[indexNumb - 1].name + ' • ' + allMusic[indexNumb - 1].artist; 
+  
   if (localStorage.getItem("user_Volume") != null) {
     mainAudio.volume = localStorage.getItem("user_Volume");
   }
