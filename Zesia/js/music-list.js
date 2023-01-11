@@ -2591,6 +2591,8 @@ var allMusic = [
 
     src: "ZaraLarssonAin'tMyFault",
     img: "ab67616d00001e029e1683774b22648f4f178ed3",
+    img_mini: "https://i.scdn.co/image/ab67616d000048519e1683774b22648f4f178ed3",
+    
     style: "Energic",
     status: "nostatus",
     tag: "Popular",
@@ -2742,6 +2744,8 @@ var allMusic = [
 
     src: "AgainstTheCurrent-Wildfire",
     img: "ab67616d00against001e02e6e663bf89c9e0b748100b77",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851e6e663bf89c9e0b748100b77",
+    
     style: "Rock",
     status: "nostatus",
     tag: "Popular",
@@ -2793,6 +2797,8 @@ var allMusic = [
 
     src: "AgainsttheCurrent-thatwon'tsaveus",
     img: "ab67616d0000aga1e02186660bbf3b0ddcurrent9a5195e182",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851186660bbf3b0dd9a5195e182",
+    
     style: "Rock",
     status: "nostatus",
     tag: "Popular",
@@ -2844,6 +2850,8 @@ var allMusic = [
 
     src: "AgainstTheCurrent-weapon",
     img: "ab67616d0000aga1e02186660bbf3b0ddcurrent9a5195e182",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851186660bbf3b0dd9a5195e182",
+    
     style: "Rock",
     status: "nostatus",
     tag: "Popular",
@@ -2895,6 +2903,8 @@ var allMusic = [
     
     src: "AgainstTheCurrent-again&again",
     img: "ab67616d0000aga1e02186660bbf3b0ddcurrent9a5195e182",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851186660bbf3b0dd9a5195e182",
+    
     style: "Rock",
     status: "nostatus",
     tag: "Popular",
@@ -2946,6 +2956,8 @@ var allMusic = [
 
     src: "AgainstTheCurrent-jump",
     img: "ab67616d0000aga1e02186660bbf3b0ddcurrent9a5195e182",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851186660bbf3b0dd9a5195e182",
+    
     style: "Rock",
     status: "nostatus",
     tag: "Popular",
@@ -2997,6 +3009,8 @@ var allMusic = [
 
     src: "AgainstTheCurrent-shatter",
     img: "ab67616d0000aga1e02186660bbf3b0ddcurrent9a5195e182",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851186660bbf3b0dd9a5195e182",
+    
     style: "Rock",
     status: "nostatus",
     tag: "",
@@ -3048,6 +3062,8 @@ var allMusic = [
 
     src: "AgainstTheCurrent-burnitdown",
     img: "ab67616d0000aga1e02186660bbf3b0ddcurrent9a5195e182",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851186660bbf3b0dd9a5195e182",
+    
     style: "Rock",
     status: "nostatus",
     tag: "",
@@ -3099,6 +3115,8 @@ var allMusic = [
 
     src: "AgainstTheCurrent-lullaby",
     img: "ab67616d0000aga1e02186660bbf3b0ddcurrent9a5195e182",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851186660bbf3b0dd9a5195e182",
+    
     style: "Rock",
     status: "nostatus",
     tag: "Popular",
@@ -3150,6 +3168,8 @@ var allMusic = [
 
     src: "AgainstTheCurrent-weapon-acoustic",
     img: "ab67616d00001e0270aceaa21668839917e839bc",
+    img_mini: "https://i.scdn.co/image/ab67616d0000485170aceaa21668839917e839bc",
+    
     style: "Rock",
     status: "nostatus",
     tag: "Popular",
@@ -3201,6 +3221,8 @@ var allMusic = [
 
     src: "AgainstTheCurrent-LegendsNeverDie",
     img: "ab6761die6d000never01e02cb5ec46d6f1legendsd2cf8d36d3663",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851cb5ec46d6f1d2cf8d36d3663",
+    
     style: "Rock",
     status: "nostatus",
     tag: "Popular",
@@ -3252,6 +3274,8 @@ var allMusic = [
     
     src: "NF-MyStress",
     img: "artnfworks-1sYqk3myIyfIdSfbstresssa-zQVByA-t500x500",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851942a0c9ac8f1def7c8805044",
+    
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
@@ -3304,6 +3328,8 @@ var allMusic = [
 
     src: "NF–TheSearch",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851942a0c9ac8f1def7c8805044",
+    
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
@@ -3355,6 +3381,8 @@ var allMusic = [
     
     src: "NF-LeaveMeAlone",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851942a0c9ac8f1def7c8805044",
+    
     style: "Hip-Hop",
     status: "nostatus",
     tag: "Popular",
@@ -3406,6 +3434,8 @@ var allMusic = [
     
     src: "NF-Change",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851942a0c9ac8f1def7c8805044",
+    
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
@@ -3457,6 +3487,8 @@ var allMusic = [
     
     src: "NF-Nate",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851942a0c9ac8f1def7c8805044",
+    
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
@@ -3559,6 +3591,8 @@ var allMusic = [
 
     src: "Avicii-WithoutYou",
     img: "ab67616d00001e02a2without6cc58b4d64c2eceyou3376389",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851942a0c9ac8f1def7c8805044",
+    
     style: "Energic",
     status: "nostatus",
     tag: "Popular",
@@ -3610,6 +3644,8 @@ var allMusic = [
     
     src: "NF-Time",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851942a0c9ac8f1def7c8805044",
+    
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
@@ -3661,6 +3697,8 @@ var allMusic = [
     
     src: "NF-Returns",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851942a0c9ac8f1def7c8805044",
+    
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
@@ -3712,6 +3750,8 @@ var allMusic = [
     
     src: "NF-WhenIGrowUp",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851942a0c9ac8f1def7c8805044",
+    
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
@@ -3763,6 +3803,8 @@ var allMusic = [
 
     src: "NF-Only",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851942a0c9ac8f1def7c8805044",
+    
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
@@ -3814,6 +3856,8 @@ var allMusic = [
     
     src: "NF-LetMeGo",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851942a0c9ac8f1def7c8805044",
+    
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
@@ -3865,6 +3909,8 @@ var allMusic = [
     
     src: "NF-HateMyself",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851942a0c9ac8f1def7c8805044",
+    
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
@@ -3916,6 +3962,8 @@ var allMusic = [
     
     src: "NF-IMissTheDays",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851942a0c9ac8f1def7c8805044",
+    
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
@@ -3967,6 +4015,8 @@ var allMusic = [
     
     src: "NF-NoExcuses",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851942a0c9ac8f1def7c8805044",
+    
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
@@ -4019,6 +4069,8 @@ var allMusic = [
     
     src: "NF-LikeThis",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851942a0c9ac8f1def7c8805044",
+    
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
@@ -4070,6 +4122,8 @@ var allMusic = [
     
     src: "NF-Options",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851942a0c9ac8f1def7c8805044",
+    
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
@@ -4121,6 +4175,8 @@ var allMusic = [
     
     src: "NF-Why",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851942a0c9ac8f1def7c8805044",
+    
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
@@ -4171,6 +4227,8 @@ var allMusic = [
     
     src: "NF-Thinking",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851942a0c9ac8f1def7c8805044",
+    
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
@@ -4222,6 +4280,8 @@ var allMusic = [
     
     src: "NF-Trauma",
     img: "510searchy7dwNUwnfL._AC_UL60the0_SR600,600_",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851942a0c9ac8f1def7c8805044",
+    
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
@@ -4787,6 +4847,8 @@ var allMusic = [
     
     src: "AgainstTheCurrent-StrangersAgain",
     img: "ab67616dpastlives00001e02bd92d2e8f66f88864ce5e01e",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851bd92d2e8f66f88864ce5e01e",
+    
     style: "Rock",
     status: "nostatus",
     tag: "",
@@ -4838,6 +4900,8 @@ var allMusic = [
     
     src: "AgainstTheCurrent-TheFuss",
     img: "ab67616dpastlives00001e02bd92d2e8f66f88864ce5e01e",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851bd92d2e8f66f88864ce5e01e",
+
     style: "Rock",
     status: "nostatus",
     tag: "",
@@ -4889,6 +4953,8 @@ var allMusic = [
     
     src: "AgainstTheCurrent-ILikeTheWay",
     img: "ab67616dpastlives00001e02bd92d2e8f66f88864ce5e01e",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851bd92d2e8f66f88864ce5e01e",
+
     style: "Rock",
     status: "nostatus",
     tag: "",
@@ -4940,6 +5006,8 @@ var allMusic = [
     
     src: "AgainstTheCurrent-Roses",
     img: "ab67616d00001e029din92c1661f5oura7784808fbonesabdb",
+    img_mini: "https://i.scdn.co/image/ab67616d000048519d92c1661f5a7784808fabdb",
+    
     style: "Rock",
     status: "nostatus",
     tag: "",
@@ -4991,6 +5059,8 @@ var allMusic = [
     
     src: "ImagineDragons-IDontLikeMyself",
     img: "6ef9bclike2988b796965idontf42098c459a8myslef3a6",
+    img_mini: "",
+    
     style: "Pop",
     status: "nostatus",
     tag: "",
@@ -5042,6 +5112,8 @@ var allMusic = [
     
     src: "ImagineDragons-Symphony",
     img: "6ef9bc29symphony88b7969bad65f42098liarc459a83a6",
+    img_mini: "",
+    
     style: "Pop",
     status: "nostatus",
     tag: "",
@@ -5093,6 +5165,8 @@ var allMusic = [
     
     src: "ImagineDragons-HigherGround",
     img: "6ef92156higer796965f42098cground459a83a6",
+    img_mini: "",
+    
     style: "Pop",
     status: "nostatus",
     tag: "",
@@ -5144,6 +5218,8 @@ var allMusic = [
 
     src: "Bazanji-Loner",
     img: "ab67616d00001e0loner2ab1f263468c61a8c1b67ddd4",
+    img_mini: "",
+    
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
@@ -5195,6 +5271,8 @@ var allMusic = [
 
     src: "ROSALÍA-DESPECHÁ",
     img: "ab67616d0000asta1e02efc0ef9dd996312ebaf0bf52",
+    img_mini: "",
+    
     style: "Latino",
     status: "nostatus",
     tag: "Popular",
@@ -5251,6 +5329,8 @@ var allMusic = [
 
     src: "SelenaGomez-Wolves",
     img: "ab67616d00001ewolves02307910d42selena42c0d6b1fedf955",
+    img_mini: "",
+    
     style: "Pop",
     status: "nostatus",
     tag: "Popular",
@@ -5307,6 +5387,8 @@ var allMusic = [
 
     src: "MileyCyrus-MidnightSky",
     img: "ab67616d00001e028cffb7c6c40759eaf8a5a142",
+    img_mini: "",
+    
     style: "Pop",
     status: "nostatus",
     tag: "Popular",
@@ -5363,6 +5445,8 @@ var allMusic = [
 
     src: "Halsey-WithoutMe",
     img: "ab67616d00without001e027636eme231c9e67eaafc9f49aefd",
+    img_mini: "",
+    
     style: "Pop",
     status: "nostatus",
     tag: "Popular",
@@ -5419,6 +5503,8 @@ var allMusic = [
 
     src: "ArianaGrande-7rings",
     img: "rings8asfawf21gsaesseaf-fa237",
+    img_mini: "https://i.scdn.co/image/ab67616d0000485156ac7b86e090f307e218e9c8",
+    
     style: "Pop",
     status: "nostatus",
     tag: "Popular",
@@ -5475,6 +5561,8 @@ var allMusic = [
 
     src: "ArianaGrande-breakup",
     img: "31ysssfafafaruianaP4KLnthankL._SY1000_",
+    img_mini: "",
+    
     style: "Pop",
     status: "nostatus",
     tag: "Popular",
@@ -5531,6 +5619,8 @@ var allMusic = [
 
     src: "Rihanna-RudeBoy",
     img: "ab67616d00001e02130e0bf0483b37d2521ac7da",
+    img_mini: "",
+    
     style: "Pop",
     status: "nostatus",
     tag: "Popular",
@@ -5587,6 +5677,8 @@ var allMusic = [
 
     src: "Eminem-LoseYourself",
     img: "ab67616d00001e02b6ef2ebd34efb08cb76f6eec",
+    img_mini: "",
+    
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
@@ -5643,6 +5735,8 @@ var allMusic = [
 
     src: "Eminem-YouGonLearn",
     img: "ab67616d00001e02b84b0516d901f95461bb5165",
+    img_mini: "",
+    
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
@@ -5699,6 +5793,8 @@ var allMusic = [
 
     src: "AgainstTheCurrent-blindfolded",
     img: "ab67616d00001e026e573ccd18148b0770a67b64",
+    img_mini: "https://i.scdn.co/image/ab67616d000048516e573ccd18148b0770a67b64",
+    
     style: "Rock",
     status: "nostatus",
     tag: "Popular",
@@ -5821,6 +5917,8 @@ var allMusic = [
 
     src: "AvaMax-TheMotto",
     img: "ab67616d00001e026b64f7a7e0e7af3d604ab41e",
+    img_mini: "",
+    
     style: "Pop",
     status: "nostatus",
     tag: "Popular",
@@ -5861,6 +5959,8 @@ var allMusic = [
 
     src: "sanah-TheWolvenStorm",
     img: "ab67616d00001esanah024acacdf5c40e1154c166b454",
+    img_mini: "",
+    
     style: "Soundtrack",
     status: "nostatus",
     tag: "Popular",
@@ -5975,6 +6075,8 @@ var allMusic = [
     
     src: "Happysad-Tańczmy",
     img: "ab67616d00001e02f9788a6458e2ffc0858455d3",
+    img_mini: "",
+    
     style: "Rock",
     status: "nostatus",
     avatar: "14235843737BeNz9sRRfK4jsYeLQ7t32Pg76m86w",
@@ -6090,6 +6192,8 @@ var allMusic = [
     
     src: "HAPPYSAD-NADZYNAMRÓZ",
     img: "ab67616d00001e02fa101a5033d62d89ad9359d7",
+    img_mini: "",
+    
     style: "Rock",
     status: "nostatus",
     avatar: "14235843737BeNz9sRRfK4jsYeLQ7t32Pg76m86w",
@@ -6140,6 +6244,8 @@ var allMusic = [
 
     src: "Rihanna-DontStopTheMusic",
     img: "ab67616d00001e02f9f27162ab1ed45b8d7a7e98",
+    img_mini: "",
+    
     style: "Pop",
     status: "nostatus",
     tag: "Popular",
@@ -6196,6 +6302,8 @@ var allMusic = [
 
     src: "EdSheeran-BadHabits",
     img: "ab67616d00001e02ef24c3fdbf856340d55cfeb2",
+    img_mini: "",
+    
     style: "Pop",
     status: "nostatus",
     tag: "Popular",
@@ -6328,6 +6436,8 @@ var allMusic = [
 
     src: "EdSheeran-ShapeofYou",
     img: "ab67616d00001e02ba5db46f4b838ef6027e6f96",
+    img_mini: "",
+    
     style: "Pop",
     status: "nostatus",
     tag: "Popular",
@@ -6483,6 +6593,8 @@ var allMusic = [
 
     src: "JayDunhan-IGotSummerOnMyMind",
     img: "ab67616d00001summere025ea7a1953ce392b8bd11eb3f",
+    img_mini: "https://i.scdn.co/image/ab67616d000048515ea7a1953ce392b8bd11eb3f",
+
     style: "Pop",
     status: "nostatus",
     tag: "Popular",
@@ -6520,6 +6632,8 @@ var allMusic = [
 
     src: "afterdarkxsweaterweather",
     img: "ab67616d00001e023a756514d392c62bff8d40c3",
+    img_mini: "",
+    
     style: "Chill",
     status: "nostatus",
     tag: "Popular",
@@ -6552,6 +6666,8 @@ var allMusic = [
 
     src: "tinietempah-GirlsLike",
     img: "ab67616d00001e02eca0f3aa02bae1a45a2194f6",
+    img_mini: "",
+    
     style: "Pop",
     status: "nostatus",
     tag: "",
@@ -6589,6 +6705,8 @@ var allMusic = [
 
     src: "crypto-Faded",
     img: "ab67616d00001e02bd9bbf1dc08ca6dec0966950",
+    img_mini: "",
+    
     style: "Pop",
     status: "nostatus",
     tag: "",
@@ -6624,6 +6742,8 @@ var allMusic = [
 
     src: "MoveYourBody-AlanWalkerRemix",
     img: "ab67616d00001e02754b2fddebe7039fdb912837",
+    img_mini: "",
+    
     style: "Pop",
     status: "nostatus",
     tag: "",
@@ -6661,11 +6781,13 @@ var allMusic = [
 
     src: "MinusManus-ILoveThisClub",
     img: "ab67616d0000lovethis1e02club5493def6496e0e9d86e97ff",
+    img_mini: "",
+    
     style: "Chill",
     status: "nostatus",
     tag: "",
     avatar: "ab6761670000ecd438a0270198c54e0d3728673e",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd4b94d44acf3d19964b4cf9954",
+    artist_: "https://i.scdn.co/image/ab6761670000ecd4b94d44acf3d19964b4cf9954",
     gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd4bc3222ea11ae553997b1d44f",
     gallery_img_2: "https://i.scdn.co/image/ab6761670000ecd47991abbf4e3ccfdd811b1796",
     canvas: "",

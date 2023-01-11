@@ -871,7 +871,7 @@ searchMusicContent = allMusicView;
 results.innerHTML=searchMusicContent.map((a,i)=>
 `<li li-index="${i + 1}" onclick="resultItemQueue(this);tracksHistory(this);">
   <div class="result-box">
-   <img src="images/${a.img}.jpg">
+   <img class="lazyload" src="images/${a.img}.jpg">
    <div class="result-box-cover">
      <h1 class="result-name">${a.name}</h1>
      <p class="result-artist">${a.artist}</p>
@@ -3243,6 +3243,73 @@ function moreFromArtists(){
          productIds[prodId] = true;
       }
   });
+
+}
+
+const isMobile = {
+  Android: function() {
+      return navigator.userAgent.match(/Android/i);
+  },
+  BlackBerry: function() {
+      return navigator.userAgent.match(/BlackBerry/i);
+  },
+  iOS: function() {
+      return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+  },
+  Opera: function() {
+      return navigator.userAgent.match(/Opera Mini/i);
+  },
+  Windows: function() {
+      return navigator.userAgent.match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i);
+  },
+  any: function() {
+      return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+  }
+};
+
+function deviceCheck(){
+  if(isMobile.any()){
+    mobileOptimalizationSetup();
+  }
+}
+
+window.addEventListener("load", (event) => {
+  deviceCheck();
+  lazyload();
+});
+
+function mobileOptimalizationSetup(){
+  $('.center-container.popular-artists-container .center-container-scrollable .center-container-item').slice(6).remove()
+  $('.center-container.favorites-artists-container .center-container-scrollable .center-container-item').slice(6).remove()
+  $('.center-container #dailyMixContainer .center-container-item').slice(6).remove()
+  $('.center-container #popularPlaylists .center-container-item').slice(6).remove()
+
+  results.innerHTML=searchMusicContent.map((a,i)=>
+  `<li li-index="${i + 1}" onclick="resultItemQueue(this);tracksHistory(this);">
+    <div class="result-box">
+    <img class="lazyload" src="${a.img_mini || a.album_cover}">
+    <div class="result-box-cover">
+      <h1 class="result-name">${a.name}</h1>
+      <p class="result-artist">${a.artist}</p>
+      <p class="result-artist" style="display:none;">${a.album}</p>
+    </div>
+    <i class="fa-solid fa-ellipsis-vertical"></i>
+    </div>
+  </li>`).join("\n");
+}
+
+function mobileOptimalizationImages(){
+  results.innerHTML=searchMusicContent.map((a,i)=>
+  `<li li-index="${i + 1}" onclick="resultItemQueue(this);tracksHistory(this);">
+    <div class="result-box">
+    <div class="result-box-cover">
+      <h1 class="result-name">${a.name}</h1>
+      <p class="result-artist">${a.artist}</p>
+      <p class="result-artist" style="display:none;">${a.album}</p>
+    </div>
+    <i class="fa-solid fa-ellipsis-vertical"></i>
+    </div>
+  </li>`).join("\n");
 }
 
 function saveUserData(){
