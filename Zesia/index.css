@@ -837,8 +837,8 @@ font-family: 'Rubik';
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
-  width: 95%;
-  margin-left: 2.5%;
+  width: calc(100% - 20px);
+  margin-left: 10px;
 }
 .search-results li
 {
@@ -873,7 +873,7 @@ font-family: 'Rubik';
   align-items: center;
   transition: 0.25s;
   position: relative;
-font-family: 'Rubik';
+  font-family: 'Rubik';
   letter-spacing: 1px;
   font-weight: 900;
 }
@@ -899,7 +899,7 @@ font-family: 'Rubik';
 .search-artist-item img
 {
   height: 80px;
-  border-radius: 5px;
+  border-radius: 2px;
   aspect-ratio: 1/1;
   object-fit: cover;
 }
@@ -993,6 +993,7 @@ font-family: 'Rubik';
   flex-direction: row;
   align-items: center;
   transition: 0.3s;
+  overflow: hidden;
 }
 .result-box:active
 {
@@ -1013,7 +1014,18 @@ font-family: 'Rubik';
 .result-box img
 {
   height: 50px;
-  padding-right:10px;
+  min-height: 50px;
+  width: 50px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  margin-right:10px;
+  opacity: 0;
+  transition: 0.3s;
+}
+img._load
+{
+  opacity: 1;
+  transition-delay: 0.1s;
 }
 .result-box h1
 {
@@ -4551,6 +4563,12 @@ font-family: 'Rubik';
 .music-artist-album-screen-title p 
 {
   color: var(--color);
+  margin-right: 10px;
+}
+.music-artist-album-screen-title i 
+{
+  width: 50px;
+  text-align: center;
 }
 .music-artist-album-screen-img-background
 {
@@ -4565,16 +4583,13 @@ font-family: 'Rubik';
   z-index: -1;
   margin-left: -20px;
   margin-top: -20px;
-  -webkit-mask-image: -webkit-linear-gradient(black 0%, transparent 100%);
-  mask-image: -o-linear-gradient(black 0%, transparent 100%);
-  mask-image: linear-gradient(black 0%, transparent 100%);
 }
 .music-artist-album-screen-img-background img 
 {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  opacity: 0.25;
+  opacity: 0.1;
   filter: grayscale(1);
 }
 .music-artist-album-screen-container
@@ -4586,18 +4601,23 @@ font-family: 'Rubik';
   -webkit-mask-image: -webkit-linear-gradient(black 90%, transparent 100%);
   mask-image: -o-linear-gradient(black 90%, transparent 100%);
   mask-image: linear-gradient(black 90%, transparent 100%);
+  gap: 15px;
 }
 .music-artist-album-item
 {
   display: flex;
   align-items: center;
   width: 100%;
-  border-bottom: 1px solid var(--backgroundsecond);
   transition: 0.25s;
+  height: 50px;
 }
 .music-artist-album-item:last-child
 {
   margin-bottom: 80px;
+}
+.music-artist-album-item:first-child
+{
+  margin-top: 15px;
 }
 .music-artist-album-item:active
 {
@@ -4616,11 +4636,12 @@ font-family: 'Rubik';
   color: var(--color);
   margin-bottom: 5px;
   line-height: 1;
-  font-size: 20px;
+  font-size: 18px;
 }
 .music-artist-album-item-data span {
   color: var(--color);
   opacity: 0.5;
+  font-size: 16px;
 }
 
 
@@ -4660,10 +4681,9 @@ font-family: 'Rubik';
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 25vh;
+  height: 200px;
   position: relative;
   background-color: var(--maincolor);
-  -webkit-mask-image: -webkit-linear-gradient(black, transparent);
 }
 .popular-header-background img
 {
@@ -4679,7 +4699,7 @@ font-family: 'Rubik';
 .popular-header
 {
   position: absolute;
-  height: 25vh;
+  height: 200px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -4688,16 +4708,13 @@ font-family: 'Rubik';
   text-transform: uppercase;
   margin-top: 51px;
   font-size: 50px;
-  font-weight: 100;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px;
-  color: var(--maincolor);
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: var(--color);
 }
 .popular-title
 {
-  border-bottom: 1px var(--backgroundsecond) solid;
-  padding-bottom: 15px;
-  border-top: 1px var(--backgroundsecond) solid;
+  padding-bottom: 5px;
   padding-top: 15px;
   color: var(--color);
   opacity: 1;
@@ -4735,38 +4752,44 @@ font-family: 'Rubik';
 }
 .popular-container
 {
-  width: 100%;
+  width: calc(100% - 20px);
+  margin-left: 10px;
   height: 100%;
   overflow-y: scroll;
   padding-bottom: 100px;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
 }
 .popular-item
 {
   width: 100%;
   display: flex;
   align-items: center;
-  border-bottom: 1px var(--backgroundsecond) solid;
   transition: 0.25s;
 }
+.popular-item:first-child
+{
+  margin-top: 15px;
+}
 .popular-item:active {
-  background-color: var(--backgroundsecond);
-  border-left: 5px solid var(--maincolor);
-  width: calc(100% - 5px);
+  transform: scale(0.95);
 }
 .popular-item img
 {
   padding-right: 15px;
-  height: 60px;
+  height: 50px;
 }
 .popular-item h1
 {
-  font-size: 20px;
+  font-size: 18px;
   color: var(--color);
 }
 .popular-item p 
 {
   color: var(--color);
   opacity: 0.5;
+  font-size: 14px;
 }
 .music-artist-bio
 {
@@ -6001,9 +6024,11 @@ font-family: 'Rubik';
 .user_profile_content_dailyStats_item span
 {
   color: var(--maincolor);
-  font-weight: 900;
+  font-weight: 100;
   border-top: 1px var(--backgroundsecond) solid;
   margin-top: 10px;
+  padding-top: 10px;
+  font-size: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6053,8 +6078,9 @@ font-family: 'Rubik';
   grid-template-columns: repeat(2, 50%);
   height: 25vh;
   max-height: 25vh;
-  -webkit-mask-image: -webkit-linear-gradient(black 0%, transparent 80%);
   background-color: var(--maincolor);
+  opacity: 0.1;
+  filter: blur(2px);
 }
 .daily_user_mix_header_background img
 {
@@ -6068,6 +6094,7 @@ font-family: 'Rubik';
   text-transform: uppercase;
   color: var(--color);
   font-size: 75px;
+  font-weight: 900;
 }
 .daily_user_mix_header span
 {
@@ -6266,10 +6293,11 @@ font-family: 'Rubik';
   line-height: 1;
   text-align: center;
   position: relative;
+  height: 300px;
 }
 .more_from_artists_header img 
 {
-  width: 35vw;
+  width: 150px;
   aspect-ratio: 1/1;
   object-fit: cover;
   margin: 15px 0;
@@ -6281,10 +6309,9 @@ font-family: 'Rubik';
   width: 100%;
   object-fit: cover;
   top: 0;
-  height: 60vw;
-  -webkit-mask-image: -webkit-linear-gradient(black 0%, transparent 100%);
+  height: 300px;
   z-index: -1;
-  filter: blur(1px) grayscale() opacity(0.5);
+  filter: blur(1px) grayscale() opacity(0.1);
 }
 .more_from_artists_header p 
 {
@@ -6400,15 +6427,14 @@ font-family: 'Rubik';
   object-fit: cover;
   top: 0;
   height: 35vw;
-  -webkit-mask-image: -webkit-linear-gradient(black 0%, transparent 100%);
   z-index: -1;
-  filter: blur(1px) grayscale() opacity(0.5);
+  filter: blur(1px) grayscale() opacity(0.25);
 }
 .top_list_hits_header p 
 {
   font-size: 60px;
-  -webkit-mask-image: -webkit-linear-gradient(black 20%, transparent 80%);
   color: var(--maincolor);
+  font-weight: 900;
 }
 .top_list_hits_controls
 {

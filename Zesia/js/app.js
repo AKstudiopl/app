@@ -871,7 +871,7 @@ searchMusicContent = allMusicView;
 results.innerHTML=searchMusicContent.map((a,i)=>
 `<li li-index="${i + 1}" onclick="resultItemQueue(this);tracksHistory(this);">
   <div class="result-box">
-   <img class="lazyload" src="images/${a.img}.jpg">
+   <img data-lazy="${a.img_mini}">
    <div class="result-box-cover">
      <h1 class="result-name">${a.name}</h1>
      <p class="result-artist">${a.artist}</p>
@@ -1481,7 +1481,6 @@ function clickedSingleAlbum(element){
     for (let i = 0; i < favoritIt.length; i++) {
       let resultFAV =
         `<div class="music-artist-album-item" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
-            <img class="music-artist-information-albums-item-img" src="${favoritIt[i].album_cover}">
               <div class="music-artist-album-item-data">
                   <h1>${favoritIt[i].name}</h1>
                   <span>${favoritIt[i].artist}</span>
@@ -1524,7 +1523,6 @@ function clickedSingleAlbumPlaylist(element){
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
       `<div class="music-artist-album-item" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
-          <img class="music-artist-information-albums-item-img" src="${favoritIt[i].album_cover}">
             <div class="music-artist-album-item-data">
                 <h1>${favoritIt[i].name}</h1>
                 <span>${favoritIt[i].artist}</span>
@@ -3020,7 +3018,6 @@ function clickedAlbumFromArtistMore(element){
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
       `<div class="music-artist-album-item" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
-          <img class="music-artist-information-albums-item-img" src="${favoritIt[i].album_cover}">
             <div class="music-artist-album-item-data">
                 <h1>${favoritIt[i].name}</h1>
                 <span>${favoritIt[i].artist}</span>
@@ -3284,33 +3281,30 @@ function mobileOptimalizationSetup(){
   $('.center-container #dailyMixContainer .center-container-item').slice(6).remove()
   $('.center-container #popularPlaylists .center-container-item').slice(6).remove()
 
-  results.innerHTML=searchMusicContent.map((a,i)=>
-  `<li li-index="${i + 1}" onclick="resultItemQueue(this);tracksHistory(this);">
-    <div class="result-box">
-    <img class="lazyload" src="${a.img_mini || a.album_cover}">
-    <div class="result-box-cover">
-      <h1 class="result-name">${a.name}</h1>
-      <p class="result-artist">${a.artist}</p>
-      <p class="result-artist" style="display:none;">${a.album}</p>
-    </div>
-    <i class="fa-solid fa-ellipsis-vertical"></i>
-    </div>
-  </li>`).join("\n");
 }
+const targets = document.querySelectorAll('.search-results img')
 
-function mobileOptimalizationImages(){
-  results.innerHTML=searchMusicContent.map((a,i)=>
-  `<li li-index="${i + 1}" onclick="resultItemQueue(this);tracksHistory(this);">
-    <div class="result-box">
-    <div class="result-box-cover">
-      <h1 class="result-name">${a.name}</h1>
-      <p class="result-artist">${a.artist}</p>
-      <p class="result-artist" style="display:none;">${a.album}</p>
-    </div>
-    <i class="fa-solid fa-ellipsis-vertical"></i>
-    </div>
-  </li>`).join("\n");
-}
+const lazyLoad = target => {
+  const io = new IntersectionObserver((entries, observer) => {
+
+    entries.forEach(entry => {
+      if (entry.isIntersecting){
+        const img = entry.target;
+        const src = img.getAttribute('data-lazy');
+        img.src = src;
+
+        if(!img.classList.contains('_load')){
+          img.classList.add('_load');
+        }
+
+        observer.disconnect();
+      }
+    });
+  });
+  io.observe(target);
+};
+
+targets.forEach(lazyLoad);
 
 function saveUserData(){
   localStorage.setItem("user_Volume", mainAudio.volume);
@@ -4576,7 +4570,7 @@ function recentTracksLoad(){
   for (let i = 0; i < favoritIt.length; i++) {
     let historyItem =
       `<div class="history-item" link_to='${favoritIt[i].id}' onclick="clickedNotification(this);">
-       <img src="images/${favoritIt[i].img}.jpg">
+       <img src="${favoritIt[i].img_mini}">
         <div class="history-item-data">
           <p>${favoritIt[i].name}</p>
           <span>${favoritIt[i].artist}</span>

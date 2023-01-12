@@ -10,6 +10,8 @@ var allMusic = [
 
       src: "C-BooLDJ",
       img: "C-BooLDJ",
+      img_mini: "https://i.scdn.co/image/ab67616d000048514470a94060697a4265fb0e03",
+
       style: "Energic",
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f25bsf",
@@ -60,6 +62,8 @@ var allMusic = [
       
       src: "C-BooL-NeverGoAway",
       img: "C-BooL-NeverGoAway",
+      img_mini: "https://i.scdn.co/image/ab67616d0000485125a6f8a62f4d061ef61169c9",
+
       style: "Energic",
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f25bsf",
@@ -110,6 +114,8 @@ var allMusic = [
 
       src: "KevinRudolf-Champions",
       img: "KevinRudolf-Champions",
+      img_mini: "https://i.scdn.co/image/ab67616d00004851335815746144562adb8455b4",
+
       style: "Workout",
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f31bsf",
@@ -160,6 +166,8 @@ var allMusic = [
       
       src: "DJRegard-Rideit",
       img: "DJRegard-Rideit",
+      img_mini: "https://i.scdn.co/image/ab67616d000048515c27813ae019011fcb370c78",
+
       style: "Energic",
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f21bsf",
@@ -210,6 +218,8 @@ var allMusic = [
       
       src: "twentyonepilots-Choker",
       img: "scaled-and-icy-b-iext104194001",
+      img_mini: "https://i.scdn.co/image/ab67616d0000485120b467550945fd123e00f0a5",
+
       style: "Chill",
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f22bsf",
@@ -260,6 +270,8 @@ var allMusic = [
       
       src: "TwentyOnePilots-TheOutside",
       img: "scaled-and-icy-b-iext104194001",
+      img_mini: "https://i.scdn.co/image/ab67616d0000485120b467550945fd123e00f0a5",
+
       style: "Chill",
       status: "nostatus",
       tag: "Popular",
@@ -311,6 +323,8 @@ var allMusic = [
       
       src: "TwentyOnePilots-ShyAway",
       img: "scaled-and-icy-b-iext104194001",
+      img_mini: "https://i.scdn.co/image/ab67616d0000485120b467550945fd123e00f0a5",
+
       style: "Chill",
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f22bsf",
@@ -361,6 +375,8 @@ var allMusic = [
       
       src: "TwentyOnePilots-Saturday",
       img: "scaled-and-icy-b-iext104194001",
+      img_mini: "https://i.scdn.co/image/ab67616d0000485120b467550945fd123e00f0a5",
+
       style: "Chill",
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f22bsf",
@@ -411,6 +427,8 @@ var allMusic = [
       
       src: "TwentyOnePilots-Redecorate",
       img: "scaled-and-icy-b-iext104194001",
+      img_mini: "https://i.scdn.co/image/ab67616d0000485120b467550945fd123e00f0a5",
+
       style: "Chill",
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f22bsf",
@@ -461,6 +479,8 @@ var allMusic = [
       
       src: "TwentyOnePilots-NeverTakeIt",
       img: "scaled-and-icy-b-iext104194001",
+      img_mini: "https://i.scdn.co/image/ab67616d0000485120b467550945fd123e00f0a5",
+
       style: "Chill",
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f22bsf",
@@ -511,6 +531,8 @@ var allMusic = [
 
       src: "TwentyOnePilots-MulberryStreet",
       img: "scaled-and-icy-b-iext104194001",
+      img_mini: "https://i.scdn.co/image/ab67616d0000485120b467550945fd123e00f0a5",
+
       style: "Chill",
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f22bsf",
@@ -561,6 +583,8 @@ var allMusic = [
 
       src: "TwentyOnePilots-GoodDay",
       img: "scaled-and-icy-b-iext104194001",
+      img_mini: "https://i.scdn.co/image/ab67616d0000485120b467550945fd123e00f0a5",
+
       style: "Chill",
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f22bsf",
@@ -611,6 +635,8 @@ var allMusic = [
 
       src: "Evtis-Kłótnia",
       img: "C-BooL-NeverGoAway",
+      img_mini: "https://i.scdn.co/image/ab67616d00004851602c494b45071500467ce148",
+
       style: "Hip-Hop",
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f106bsf",
@@ -661,6 +687,8 @@ var allMusic = [
 
       src: "donGURALesko-IdziemyPoSwojeSzUstyBlend",
       img: "guralsko",
+      img_mini: "https://i.scdn.co/image/ab67616d00004851602c494b45071500467ce148",
+
       style: "Workout",
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f46bsf",
@@ -711,6 +739,8 @@ var allMusic = [
 
       src: "donGURALesko-LegendaSzUstyBlend",
       img: "guralsko",
+      img_mini: "https://i.scdn.co/image/ab67616d00004851602c494b45071500467ce148",
+
       style: "Workout",
       status: "nostatus",
       tag: "Popular",
@@ -762,6 +792,8 @@ var allMusic = [
 
     src: "PostMalone-Rockstar",
     img: "rockstar-w-iext111232885",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851b1c4b76e23414c9f20242268",
+
     style: "Pop",
     status: "nostatus",
     tag: "Popular",
@@ -813,6 +845,8 @@ var allMusic = [
     
     src: "Happysad-Bezznieczulenia",
     img: "ab67616d00001e021f86dffe512418a230887e69",
+    img_mini: "https://i.scdn.co/image/ab67616d000048514ed4de2da994d4a017f674d2",
+
     style: "Rock",
     status: "nostatus",
     avatar: "14235843737BeNz9sRRfK4jsYeLQ7t32Pg76m86w",
@@ -863,6 +897,8 @@ var allMusic = [
 
     src: "Happysad-Pętla",
     img: "ab67616d00001e021f86dffe512418a230887e69",
+    img_mini: "https://i.scdn.co/image/ab67616d000048511f86dffe512418a230887e69",
+
     style: "Rock",
     status: "nostatus",
     tag: "Popular",
@@ -914,6 +950,8 @@ var allMusic = [
     
     src: "LBONE-TiredBones",
     img: "tired-bones-w-iext52557958",
+    img_mini: "https://i.scdn.co/image/ab67616d000048516370418dbcd0810201697d93",
+
     style: "Energic",
     status: "nostatus",
     avatar: "5cd42c454b86e992d288a65bd8a187b62151",
@@ -964,6 +1002,8 @@ var allMusic = [
 
     src: "TrzeciWymiar-Złapzabroń",
     img: "6341ef2bd3abc2c21c6ee6466cb67d15.510x510x1",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851d922659188234fee83318fe7",
+
     style: "Hip-Hop",
     status: "nostatus",
     avatar: "41aeb62f0-c2321-f24bsf",
@@ -1014,6 +1054,8 @@ var allMusic = [
 
     src: "TheKingsSon-ImNotRich",
     img: "ab67616d0000b27369cdca7b90ca8060e3525196",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851ec999a8391a2dcb970f69cb0",
+
     style: "Chill",
     status: "nostatus",
     avatar: "41aeb62f0=c2321-f56bsf",
@@ -1064,6 +1106,8 @@ var allMusic = [
 
     src: "MGK-Invincible",
     img: "ab67616d0000b273a57d3a2736f815d3cf358e37",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851cfac68443715de902bd7ea53",
+
     style: "Workout",
     status: "nostatus",
     avatar: "41aeb62f0=c2321-f57bsf",
@@ -1114,6 +1158,8 @@ var allMusic = [
 
     src: "BebeRexha-InTheNameOfLove",
     img: "ab67616d0000b2738c77bcf5f5a227d270d23370",
+    img_mini: "https://i.scdn.co/image/ab67616d000048518c77bcf5f5a227d270d23370",
+
     style: "Energic",
     status: "nostatus",
     tag: "Popular",
@@ -1170,6 +1216,8 @@ var allMusic = [
 
     src: "ArianaGrande-OneLastTime",
     img: "e63468347c14c9f580857daae877a005",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851deec12a28d1e336c5052e9aa",
+
     style: "Energic",
     status: "nostatus",
     tag: "Popular",
@@ -1224,9 +1272,10 @@ var allMusic = [
     country: "uk",
     artist_id: "15",
 
-    src: "https://drive.google.com/uc?export=view&id=1RxwKmEO9tK6m3WFxX5BMrZNHTftqi5zG",
     src: "Anne-Marie-Friends",
     img: "ab67616d00001e02569f6annemarie4493ca55cd96fdee412",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851569f64493ca55cd96fdee412",
+
     style: "Energic",
     status: "nostatus",
     tag: "Popular",
@@ -1278,6 +1327,8 @@ var allMusic = [
 
     src: "BillieEilish-Lovely",
     img: "ab67616d00001e028abille3f0a3ca7929dea23cd274cb",
+    img_mini: "https://i.scdn.co/image/ab67616d000048518a3f0a3ca7929dea23cd274c",
+
     style: "Pop",
     status: "nostatus",
     tag: "Popular",
@@ -1332,6 +1383,8 @@ var allMusic = [
 
     src: "CleanBandit-Symphony",
     img: "ab67616d000clean01e0237fb0680110fbb107740de5d",
+    img_mini: "https://i.scdn.co/image/ab67616d0000485137fb0680110fbb107740de5d",
+
     style: "Energic",
     status: "nostatus",
     tag: "",
@@ -1383,6 +1436,8 @@ var allMusic = [
 
     src: "ImagineDragonsRadioactive",
     img: "effimagineR-dragons-5966452-1407607955-4124",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851407bd04707c463bbb3410737",
+
     style: "Pop",
     status: "nostatus",
     tag: "",
@@ -1434,6 +1489,8 @@ var allMusic = [
 
     src: "ImagineDragonsBeliever",
     img: "ab67616d0imagine000b273a57d3adra2736f815d3gonscf358e37",
+    img_mini: "https://i.scdn.co/image/ab67616d000048515675e83f707f1d7271e5cf8a",
+
     style: "Pop",
     status: "nostatus",
     tag: "",
@@ -1485,6 +1542,8 @@ var allMusic = [
 
     src: "ImagineDragonsBleedingOut",
     img: "6ef9bc2988b796965f42098c459a83a6",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851407bd04707c463bbb3410737",
+
     style: "Pop",
     status: "nostatus",
     tag: "",
@@ -1536,6 +1595,8 @@ var allMusic = [
 
     src: "ImagineDragonsBadLiar",
     img: "6ef9bc2988b7969bad65f42098liarc459a83a6",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851da6f73a25f4c79d0e6b4a8bd",
+
     style: "Pop",
     status: "nostatus",
     tag: "Popular",
@@ -1587,6 +1648,8 @@ var allMusic = [
 
     src: "KygoImagineDragonsBornToBeYours",
     img: "ab67616d0000b27337084df74688999caf0cbb9f",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851d355c4cf741193b97849af1a",
+
     style: "Chill",
     status: "nostatus",
     tag: "",
@@ -1636,9 +1699,10 @@ var allMusic = [
     country: "usa",
     artist_id: "4",
 
-
     src: "twentyonepilotsJumpsuit",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851768828c6867cd0472fc84e4d",
+
     style: "Chill",
     status: "nostatus",
     avatar: "41aeb62f0-c2321-f22bsf",
@@ -1689,6 +1753,8 @@ var allMusic = [
 
     src: "TwentyOnePilotsLevitate",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851768828c6867cd0472fc84e4d",
+
     style: "Chill",
     status: "nostatus",
     avatar: "41aeb62f0-c2321-f22bsf",
@@ -1739,6 +1805,8 @@ var allMusic = [
 
     src: "TwentyOnePilotsMorph",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851768828c6867cd0472fc84e4d",
+
     style: "Chill",
     status: "nostatus",
     avatar: "41aeb62f0-c2321-f22bsf",
@@ -1789,6 +1857,8 @@ var allMusic = [
 
     src: "TwentyOnePilotsMyBlood",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851768828c6867cd0472fc84e4d",
+
     style: "Chill",
     status: "nostatus",
     avatar: "41aeb62f0-c2321-f22bsf",
@@ -1839,6 +1909,8 @@ var allMusic = [
 
     src: "twentyonepilotsChlorine",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851768828c6867cd0472fc84e4d",
+
     style: "Chill",
     status: "nostatus",
     avatar: "41aeb62f0-c2321-f22bsf",
@@ -1889,6 +1961,8 @@ var allMusic = [
 
     src: "twentyonepilotsSmithereens",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851768828c6867cd0472fc84e4d",
+
     style: "Chill",
     status: "nostatus",
     avatar: "41aeb62f0-c2321-f22bsf",
@@ -1939,6 +2013,8 @@ var allMusic = [
 
     src: "twentyonepilotsNeonGravestones",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851768828c6867cd0472fc84e4d",
+
     style: "Chill",
     status: "nostatus",
     avatar: "41aeb62f0-c2321-f22bsf",
@@ -1989,6 +2065,8 @@ var allMusic = [
 
     src: "twentyonepilotsTheHype",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851768828c6867cd0472fc84e4d",
+
     style: "Chill",
     status: "nostatus",
     avatar: "41aeb62f0-c2321-f22bsf",
@@ -2039,6 +2117,8 @@ var allMusic = [
 
     src: "twentyonepilotsNicoAndTheNiners",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851768828c6867cd0472fc84e4d",
+
     style: "Chill",
     status: "nostatus",
     avatar: "41aeb62f0-c2321-f22bsf",
@@ -2089,6 +2169,8 @@ var allMusic = [
 
     src: "twentyonepilotsCutMyLip",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851768828c6867cd0472fc84e4d",
+
     style: "Chill",
     status: "nostatus",
     avatar: "41aeb62f0-c2321-f22bsf",
@@ -2139,6 +2221,8 @@ var allMusic = [
 
     src: "twentyonepilotsBandito",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851768828c6867cd0472fc84e4d",
+
     style: "Chill",
     status: "nostatus",
     avatar: "41aeb62f0-c2321-f22bsf",
@@ -2189,6 +2273,8 @@ var allMusic = [
 
     src: "twentyonepilotsPetCheetah",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851768828c6867cd0472fc84e4d",
+
     style: "Chill",
     status: "nostatus",
     avatar: "41aeb62f0-c2321-f22bsf",
@@ -2239,6 +2325,8 @@ var allMusic = [
 
     src: "twentyonepilotsLegend",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851768828c6867cd0472fc84e4d",
+
     style: "Chill",
     status: "nostatus",
     avatar: "41aeb62f0-c2321-f22bsf",
@@ -2289,6 +2377,8 @@ var allMusic = [
 
     src: "twentyonepilotsLeaveTheCity",
     img: "ab67616d00001e02twenty768828c6867cd0472fc84e4d",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851768828c6867cd0472fc84e4d",
+
     style: "Chill",
     status: "nostatus",
     avatar: "41aeb62f0-c2321-f22bsf",
@@ -2339,6 +2429,8 @@ var allMusic = [
 
     src: "CamilaCabelloHavana",
     img: "CamilaCabelloHavana",
+    img_mini: "https://i.scdn.co/image/ab67616d000048516eb0b9e73adcf04e4ed3eca4",
+
     style: "Energic",
     status: "nostatus",
     tag: "Popular",
@@ -2390,6 +2482,8 @@ var allMusic = [
 
     src: "TwentyOnePilotsFormidable",
     img: "scaled-and-icy-b-iext104194001",
+    img_mini: "https://i.scdn.co/image/ab67616d0000485120b467550945fd123e00f0a5",
+
     style: "Chill",
     status: "nostatus",
     avatar: "41aeb62f0-c2321-f22bsf",
@@ -2440,6 +2534,8 @@ var allMusic = [
 
     src: "TwentyOnePilotsBounceMan",
     img: "scaled-and-icy-b-iext104194001",
+    img_mini: "https://i.scdn.co/image/ab67616d0000485120b467550945fd123e00f0a5",
+
     style: "Chill",
     status: "nostatus",
     avatar: "41aeb62f0-c2321-f22bsf",
@@ -2490,6 +2586,8 @@ var allMusic = [
 
     src: "TwentyOnePilotsNoChances",
     img: "scaled-and-icy-b-iext104194001",
+    img_mini: "https://i.scdn.co/image/ab67616d0000485120b467550945fd123e00f0a5",
+
     style: "Chill",
     status: "nostatus",
     avatar: "41aeb62f0-c2321-f22bsf",
@@ -2540,6 +2638,8 @@ var allMusic = [
 
     src: "TwentyOnePilotsHeavydirtysoul",
     img: "ab67616d00001e02de03bfc2991fd5bcfde65ba3",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851de03bfc2991fd5bcfde65ba3",
+
     style: "Chill",
     status: "nostatus",
     tag: "Popular",
@@ -3540,6 +3640,8 @@ var allMusic = [
     
     src: "HowardShore-TheBattleOfThePelennorFields",
     img: "ab67616d00001e02howard2b4d071fshore7824b2c60c3b85cd",
+    img_mini: "https://i.scdn.co/image/ab67616d000048512b4d071f7824b2c60c3b85cd",
+    
     style: "Soundtrack",
     status: "nostatus",
     tag: "",
@@ -4333,6 +4435,8 @@ var allMusic = [
     
     src: "Filatov&Karas-Dontbesoshy",
     img: "ab67616d00001edont029fa97bd8ebeso5926a4d4shy5031497",
+    img_mini: "https://i.scdn.co/image/ab67616d000048519fa97bd8e5926a4d45031497",
+    
     style: "Pop",
     status: "nostatus",
     tag: "",
@@ -4384,6 +4488,8 @@ var allMusic = [
     
     src: "Filatov&Karas-AuRevoir",
     img: "ab67616d0000aurevoir1e02633f46784e8a4c40fc22f009",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851633f46784e8a4c40fc22f009",
+    
     style: "Pop",
     status: "nostatus",
     tag: "",
@@ -4435,6 +4541,8 @@ var allMusic = [
     
     src: "Filatov&Karas-TimeWontWait",
     img: "ab6761wait6d00001e02time78b7a4e605abwont1521ab6b6forus393",
+    img_mini: "https://i.scdn.co/image/ab67616d0000485178b7a4e605ab1521ab6b6393",
+
     style: "Pop",
     status: "nostatus",
     tag: "",
@@ -4486,6 +4594,8 @@ var allMusic = [
     
     src: "ToveLo-Habits",
     img: "fde27675fc056tovelof2e0422c6eahabbits9c603eb9",
+    img_mini: "https://i.scdn.co/image/ab67616d0000485170cd79659edf4d5fec0840b8",
+    
     style: "Pop",
     status: "nostatus",
     tag: "Popular",
@@ -4542,6 +4652,8 @@ var allMusic = [
     
     src: "NickiMinaj-PoundTheAlarm",
     img: "ab67616d00001e0nicki2ef9ad61e2a4f15alarm606fd4ab15",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851ef9ad61e2a4f15606fd4ab15",
+    
     style: "Pop",
     status: "nostatus",
     tag: "",
@@ -4593,6 +4705,8 @@ var allMusic = [
 
     src: "Fensterbank",
     img: "ab67616d000fenster01e02aaa43ad24b4665b7c4985f4b",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851aaa43ad24b4665b7c4985f4b",
+    
     style: "Chill",
     status: "nostatus",
     tag: "Popular",
@@ -4644,6 +4758,8 @@ var allMusic = [
 
     src: "DuaLipa-Physical",
     img: "ab67616d00001e0physical2bd26ede1ae69327010d49946",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851bd26ede1ae69327010d49946",
+    
     style: "Energic",
     status: "nostatus",
     tag: "Newest",
@@ -4695,6 +4811,8 @@ var allMusic = [
     
     src: "RitaOra–BangBang",
     img: "ab67706c0bang000bebb159175f1bang5bfffa26739ca4f3",
+    img_mini: "https://i.scdn.co/image/ab67616d0000485107dd4fdbc93d932ff72a4be0",
+
     style: "Pop",
     status: "nostatus",
     tag: "Popular",
@@ -4746,6 +4864,8 @@ var allMusic = [
     
     src: "TechN9ne-TillIDie",
     img: "6ef9bc2988techb796965fn9ne42098c459tillidiea83a6emi",
+    img_mini: "https://i.scdn.co/image/ab67616d000048516d2fdaba60ee129e1f030441",
+    
     style: "Workout",
     status: "nostatus",
     tag: "Newest",
@@ -4794,8 +4914,11 @@ var allMusic = [
     language: "eng",
     country: "usa",
     artist_id: "30",
+
     src: "Meiko-LeaveTheLightsOn",
     img: "ab67616d0lights0001e028febond52b7450b8eleaveba3a0dc51",
+    img_mini: "https://i.scdn.co/image/ab67616d000048518febd52b7450b8eba3a0dc51",
+    
     style: "Chill",
     status: "nostatus",
     tag: "Popular",
@@ -5059,7 +5182,7 @@ var allMusic = [
     
     src: "ImagineDragons-IDontLikeMyself",
     img: "6ef9bclike2988b796965idontf42098c459a8myslef3a6",
-    img_mini: "",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851fc915b69600dce2991a61f13",
     
     style: "Pop",
     status: "nostatus",
@@ -5112,7 +5235,7 @@ var allMusic = [
     
     src: "ImagineDragons-Symphony",
     img: "6ef9bc29symphony88b7969bad65f42098liarc459a83a6",
-    img_mini: "",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851fc915b69600dce2991a61f13",
     
     style: "Pop",
     status: "nostatus",
@@ -5165,7 +5288,7 @@ var allMusic = [
     
     src: "ImagineDragons-HigherGround",
     img: "6ef92156higer796965f42098cground459a83a6",
-    img_mini: "",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851fc915b69600dce2991a61f13",
     
     style: "Pop",
     status: "nostatus",
@@ -5218,7 +5341,7 @@ var allMusic = [
 
     src: "Bazanji-Loner",
     img: "ab67616d00001e0loner2ab1f263468c61a8c1b67ddd4",
-    img_mini: "",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851ab1f263468c61a8c1b67ddd4",
     
     style: "Hip-Hop",
     status: "nostatus",
@@ -5271,7 +5394,7 @@ var allMusic = [
 
     src: "ROSALÍA-DESPECHÁ",
     img: "ab67616d0000asta1e02efc0ef9dd996312ebaf0bf52",
-    img_mini: "",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851efc0ef9dd996312ebaf0bf52",
     
     style: "Latino",
     status: "nostatus",
@@ -5329,7 +5452,7 @@ var allMusic = [
 
     src: "SelenaGomez-Wolves",
     img: "ab67616d00001ewolves02307910d42selena42c0d6b1fedf955",
-    img_mini: "",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851307910d4242c0d6b1fedf955",
     
     style: "Pop",
     status: "nostatus",
@@ -5387,7 +5510,7 @@ var allMusic = [
 
     src: "MileyCyrus-MidnightSky",
     img: "ab67616d00001e028cffb7c6c40759eaf8a5a142",
-    img_mini: "",
+    img_mini: "https://i.scdn.co/image/ab67616d000048518cffb7c6c40759eaf8a5a142",
     
     style: "Pop",
     status: "nostatus",
@@ -5445,7 +5568,7 @@ var allMusic = [
 
     src: "Halsey-WithoutMe",
     img: "ab67616d00without001e027636eme231c9e67eaafc9f49aefd",
-    img_mini: "",
+    img_mini: "https://i.scdn.co/image/ab67616d000048517636e1c9e67eaafc9f49aefd",
     
     style: "Pop",
     status: "nostatus",
@@ -5561,7 +5684,7 @@ var allMusic = [
 
     src: "ArianaGrande-breakup",
     img: "31ysssfafafaruianaP4KLnthankL._SY1000_",
-    img_mini: "",
+    img_mini: "https://i.scdn.co/image/ab67616d0000485156ac7b86e090f307e218e9c8",
     
     style: "Pop",
     status: "nostatus",
@@ -5619,7 +5742,7 @@ var allMusic = [
 
     src: "Rihanna-RudeBoy",
     img: "ab67616d00001e02130e0bf0483b37d2521ac7da",
-    img_mini: "",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851130e0bf0483b37d2521ac7da",
     
     style: "Pop",
     status: "nostatus",
@@ -5677,7 +5800,7 @@ var allMusic = [
 
     src: "Eminem-LoseYourself",
     img: "ab67616d00001e02b6ef2ebd34efb08cb76f6eec",
-    img_mini: "",
+    img_mini: "https://i.scdn.co/image/ab67616d000048513f66b5b49ccea004a5ef0db2",
     
     style: "Hip-Hop",
     status: "nostatus",
@@ -5735,7 +5858,7 @@ var allMusic = [
 
     src: "Eminem-YouGonLearn",
     img: "ab67616d00001e02b84b0516d901f95461bb5165",
-    img_mini: "",
+    img_mini: "https://i.scdn.co/image/ab67616d000048512f44aec83b20e40f3baef73c",
     
     style: "Hip-Hop",
     status: "nostatus",
@@ -5917,7 +6040,7 @@ var allMusic = [
 
     src: "AvaMax-TheMotto",
     img: "ab67616d00001e026b64f7a7e0e7af3d604ab41e",
-    img_mini: "",
+    img_mini: "https://i.scdn.co/image/ab67616d000048516b64f7a7e0e7af3d604ab41e",
     
     style: "Pop",
     status: "nostatus",
@@ -5959,7 +6082,7 @@ var allMusic = [
 
     src: "sanah-TheWolvenStorm",
     img: "ab67616d00001esanah024acacdf5c40e1154c166b454",
-    img_mini: "",
+    img_mini: "https://i.scdn.co/image/ab67616d000048514acacdf5c40e1154c166b454",
     
     style: "Soundtrack",
     status: "nostatus",
@@ -6075,7 +6198,7 @@ var allMusic = [
     
     src: "Happysad-Tańczmy",
     img: "ab67616d00001e02f9788a6458e2ffc0858455d3",
-    img_mini: "",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851f9788a6458e2ffc0858455d3",
     
     style: "Rock",
     status: "nostatus",
@@ -6192,7 +6315,7 @@ var allMusic = [
     
     src: "HAPPYSAD-NADZYNAMRÓZ",
     img: "ab67616d00001e02fa101a5033d62d89ad9359d7",
-    img_mini: "",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851fa101a5033d62d89ad9359d7",
     
     style: "Rock",
     status: "nostatus",
@@ -6244,7 +6367,7 @@ var allMusic = [
 
     src: "Rihanna-DontStopTheMusic",
     img: "ab67616d00001e02f9f27162ab1ed45b8d7a7e98",
-    img_mini: "",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851f9f27162ab1ed45b8d7a7e98",
     
     style: "Pop",
     status: "nostatus",
@@ -6302,7 +6425,7 @@ var allMusic = [
 
     src: "EdSheeran-BadHabits",
     img: "ab67616d00001e02ef24c3fdbf856340d55cfeb2",
-    img_mini: "",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851ef24c3fdbf856340d55cfeb2",
     
     style: "Pop",
     status: "nostatus",
@@ -6436,7 +6559,7 @@ var allMusic = [
 
     src: "EdSheeran-ShapeofYou",
     img: "ab67616d00001e02ba5db46f4b838ef6027e6f96",
-    img_mini: "",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851ba5db46f4b838ef6027e6f96",
     
     style: "Pop",
     status: "nostatus",
@@ -6632,7 +6755,7 @@ var allMusic = [
 
     src: "afterdarkxsweaterweather",
     img: "ab67616d00001e023a756514d392c62bff8d40c3",
-    img_mini: "",
+    img_mini: "https://i.scdn.co/image/ab67616d000048513a756514d392c62bff8d40c3",
     
     style: "Chill",
     status: "nostatus",
@@ -6666,7 +6789,7 @@ var allMusic = [
 
     src: "tinietempah-GirlsLike",
     img: "ab67616d00001e02eca0f3aa02bae1a45a2194f6",
-    img_mini: "",
+    img_mini: "https://i.scdn.co/image/ab67616d0000485132a7b8f7a3bd4bd9574f289a",
     
     style: "Pop",
     status: "nostatus",
@@ -6705,7 +6828,7 @@ var allMusic = [
 
     src: "crypto-Faded",
     img: "ab67616d00001e02bd9bbf1dc08ca6dec0966950",
-    img_mini: "",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851bd9bbf1dc08ca6dec0966950",
     
     style: "Pop",
     status: "nostatus",
@@ -6742,7 +6865,7 @@ var allMusic = [
 
     src: "MoveYourBody-AlanWalkerRemix",
     img: "ab67616d00001e02754b2fddebe7039fdb912837",
-    img_mini: "",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851754b2fddebe7039fdb912837",
     
     style: "Pop",
     status: "nostatus",
@@ -6781,7 +6904,7 @@ var allMusic = [
 
     src: "MinusManus-ILoveThisClub",
     img: "ab67616d0000lovethis1e02club5493def6496e0e9d86e97ff",
-    img_mini: "",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851c5493def6496e0e9d86e97ff",
     
     style: "Chill",
     status: "nostatus",
