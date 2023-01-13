@@ -1369,14 +1369,19 @@ function playPauseVideo(element){
 
     const resultsFAV = document.querySelector(".music-artist-content-container");
     var favoritIt = allMusicView.filter(x => x.artist === artistNameData);
+
+    favoritIt.sort(function(a, b){
+      return b.album_premiere - a.album_premiere;
+    });
+    
     resultsFAV.innerHTML = "";
     for (let i = 0; i < favoritIt.length; i++) {
       let resultFAV =
         `<div class="music-artist-content-item" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
-          <h1>${i + 1}</h1>
+          <h1 class="music-artist-content-number">${i + 1}</h1>
             <div class="music-artist-content-item-data">
               <h1>${favoritIt[i].name}</h1>
-              <span>${favoritIt[i].artist}</span>
+              <span>${favoritIt[i].album} • ${favoritIt[i].album_premiere}</span>
             </div>
          </div>`;
       resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
@@ -2171,14 +2176,19 @@ function artistScreenSearchBar(element){
   let artistNameData = artistItemTitle.innerText;
   const resultsFAV = document.querySelector(".music-artist-content-container");
   var favoritIt = allMusicView.filter(x => x.artist === artistNameData);
+
+  favoritIt.sort(function(a, b){
+      return b.album_premiere - a.album_premiere;
+  });
+
   resultsFAV.innerHTML = "";
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
       `<div class="music-artist-content-item" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
-        <h1>${i + 1}</h1>
+        <h1 class="music-artist-content-number">${i + 1}</h1>
           <div class="music-artist-content-item-data">
             <h1>${favoritIt[i].name}</h1>
-            <span>${favoritIt[i].artist}</span>
+            <span>${favoritIt[i].album} • ${favoritIt[i].album_premiere}</span>
           </div>
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
@@ -2581,7 +2591,7 @@ function libraryLastPosts(){
   const resultsData = document.querySelector(".last-reviews");
   var favoritIndex = allPosts;
   resultsData.innerHTML = "";
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 1; i++) {
     let resultData =
       `<div class="review-item">
           <img src="${favoritIndex[i].artist_img}">
@@ -3282,7 +3292,7 @@ function mobileOptimalizationSetup(){
   $('.center-container #popularPlaylists .center-container-item').slice(6).remove()
 
 }
-const targets = document.querySelectorAll('.search-results img')
+const targets = document.querySelectorAll('.search-results img');
 
 const lazyLoad = target => {
   const io = new IntersectionObserver((entries, observer) => {

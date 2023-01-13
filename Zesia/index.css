@@ -3916,14 +3916,18 @@ font-family: 'Rubik';
 .music-artist-item
 {
   width: 100vw;
-  height: calc(100vh - 45px);
-  max-height: calc(100vh - 45px);
+  height: calc(100vh - 25px);
+  max-height: calc(100vh - 25px);
   overflow: scroll;
   background: var(--background);
   position: fixed;
   z-index: 5;
   transition: 0.3s;
   top: 150vh;
+}
+.music-artist-content-item:first-child
+{
+  margin-top: 15px;
 }
 .music-artist-item.active
 {
@@ -4096,12 +4100,13 @@ font-family: 'Rubik';
 }
 .music-artist-information-screen
 {
-  margin-left: 15px;
-  width: calc(100% - 30px);
+  width: 100%;
   margin-bottom: 90px;
   display: none;
-font-family: 'Rubik';
+  font-family: 'Rubik';
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .music-artist-menu
 {
@@ -4152,9 +4157,8 @@ font-family: 'Rubik';
   display: none;
   align-items: center;
   width: 100%;
-  border-bottom: 1px solid var(--backgroundsecond);
   transition: 0.25s;
-  height: 60px;
+  height: 50px;
 }
 .music-artist-content-item:nth-child(-n+10)
 {
@@ -4170,9 +4174,14 @@ font-family: 'Rubik';
   opacity: 0.5;
   margin: 20px;
   font-weight: 100;
-  font-size: 25px;
-font-family: 'Rubik';
-  font-weight: 900;
+  font-size: 24px;
+  font-family: 'Rubik';
+  font-weight: 100;
+}
+.music-artist-content-item .music-artist-content-number
+{
+  width: 20px;
+  aspect-ratio: 1/1;
 }
 .music-artist-content-item-data h1
 {
@@ -4190,39 +4199,45 @@ font-family: 'Rubik';
   width: 5px;
 }
 .music-artist-content-item img {
-  height: 60px;
+  height: 50px;
 }
 .music-artist-content-item:active
 {
-  background: var(--backgroundsecond);
-  width: calc(100% - 5px);
-  border-left: 5px var(--maincolor) solid;
+  transform: scale(0.95);
+  opacity: 0.5;
 }
 .music-artist-content-item-data h1
 {
   color: var(--color);
-font-family: 'Rubik';
+  font-family: 'Rubik';
   line-height: 1;
   font-weight: 900;
-  font-size: 20px;
+  font-size: 18px;
 }
 .music-artist-content-item-data span
 {
   color: var(--color);
   opacity: 0.5;
-font-family: 'Rubik';
+  font-family: 'Rubik';
+  font-size: 14px;
 }
 .music-artist-content-item-featured
 {
   display: flex;
   align-items: center;
-  width: 100%;
-  border-bottom: 1px solid var(--backgroundsecond);
+  width: 95%;
   transition: 0.25s;
-font-family: 'Rubik';
+  font-family: 'Rubik';
+}
+.featured-content
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 .music-artist-content-item-featured img {
-  height: 60px;
+  height: 50px;
 }
 .music-artist-content-item-data-featured {
   line-height: 1;
@@ -4231,19 +4246,20 @@ font-family: 'Rubik';
 .music-artist-content-item-data-featured h1 {
   color: var(--color);
   line-height: 1;
-  font-size: 20px;
+  font-size: 18px;
 }
 .music-artist-content-item-data-featured span {
   color: var(--color);
   opacity: 0.5;
+  font-size: 14px;
 }
 
 .music-artist-content-container
 {
   overflow-x: hidden;
-  border-top: 1px var(--backgroundsecond) solid;
   display: flex;
   flex-direction: column;
+  gap: 15px;
 }
 .music-artist-content-screen
 {
@@ -4279,9 +4295,8 @@ font-family: 'Rubik';
 }
 .music-artist-content-item-featured:active
 {
-  background: var(--backgroundsecond);
-  width: calc(100% - 5px);
-  border-left: 5px var(--maincolor) solid;
+  transform: scale(0.95);
+  opacity: 0.5;
 }
 .music-artist-item-featured .music-artist-item-featured-title
 {
@@ -4290,7 +4305,7 @@ font-family: 'Rubik';
   color: var(--color);
   font-weight: 100;
   padding: 20px 0;
-  border-bottom: 1px var(--backgroundsecond) solid;
+  margin: 15px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -4318,7 +4333,7 @@ font-family: 'Rubik';
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  -webkit-mask-image: -webkit-linear-gradient(black 0%, transparent 100%);
+  -webkit-mask-image: -webkit-linear-gradient(transparent 0%, black 50%, transparent 100%);
 }
 .music-artist-item-featured .music-artist-item-featured-title span
 {
@@ -4330,10 +4345,9 @@ font-family: 'Rubik';
   line-height: 1.5;
   z-index: 5;
   overflow: hidden;
-font-family: 'Rubik';
+  font-family: 'Rubik';
   font-weight: 900;
   letter-spacing: 1px;
-  -webkit-mask-image: -webkit-linear-gradient(black 50%, transparent 100%);
 }
 .music-artist-title
 {
@@ -4347,23 +4361,23 @@ font-family: 'Rubik';
 }
 .music-artist-information
 {
-  width: calc(100% - 40px);
-  padding: 0px 20px;
+  width: 100%;
   display: none;
   flex-direction: column;
   margin-bottom: 90px;
-font-family: 'Rubik';
+  font-family: 'Rubik';
   font-weight: 900;
+  align-items: center;
 }
 .music-artist-information-box
 {
-  width: 100%;
+  width: 95%;
   aspect-ratio: 1/1;
   background: var(--backgroundsecond);
   background-position: center;
   background-size: cover;
   border-radius: 25px;
-  transition: 0.5s;
+  transition: 0.3s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -4401,11 +4415,11 @@ font-family: 'Rubik';
 }
 .music-artist-information-bottom
 {
-  background: linear-gradient(180deg, rgba(18,18,18,0) 0%, rgba(18,18,18,0.9) 75%);
-  -webkit-mask-image: -webkit-linear-gradient(transparent 0%, black 35%);
+  background: rgba(18,18,18,0.85);
+  border-radius: 25px 25px 0 0 ;
   backdrop-filter: blur(5px);
   color: var(--color);
-  padding: 15px 15px;
+  padding: 20px;
   color: var(--color);
 }
 .music-artist-information-bottom p {
@@ -4415,23 +4429,27 @@ font-family: 'Rubik';
   white-space: nowrap;
   color: var(--color);
   opacity: 0.5;
+  font-size: 14px;
 }
 .music-artist-information-bottom h1
 {
   color: var(--color);
+  font-size: 18px;
 }
 .music-artist-information-albums
 {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  justify-content: space-around;
   flex-wrap: nowrap;
   overflow-x: auto;
-  width: 100vw;
-  margin-left: -20px;
+  width: 95%;
+  grid-row-gap: 15px;
 }
 .music-artist-information-albums-item
 {
   flex: 0 0 auto;
-  width: 35vw;
+  width: 100%;
   display: inline-block;
   transition: 0.3s;
   margin-right: 15px;
@@ -4441,10 +4459,6 @@ font-family: 'Rubik';
 .music-artist-information-albums-item:active
 {
   transform: scale(0.95);
-}
-.music-artist-information-albums-item:first-child
-{
-  margin-left: 20px;
 }
 .music-artist-information-albums-item:last-child
 {
@@ -4459,7 +4473,7 @@ font-family: 'Rubik';
 .music-artist-information-albums-item p 
 {
   color: var(--color);
-  font-size: 15px;
+  font-size: 18px;
   padding-top: 5px;
   display: flex;
   flex-direction: column;
@@ -4467,9 +4481,9 @@ font-family: 'Rubik';
 .music-artist-information-albums-item p span:last-child
 {
   opacity: 0.5;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 100;
-font-family: 'Rubik';
+  font-family: 'Rubik';
 }
 .music-artist-album-screen
 {
@@ -4845,10 +4859,14 @@ width: 100%;
 .music-artist-bio-data p 
 {
   padding: 10px 0;
-  font-size: 20px;
+  font-size: 14px;
+  line-height: 1.25;
+  font-weight: 100;
+  letter-spacing: 0;
 }
 .music-artist-bio-data h1
 {
+  font-size: 24px;
   color: var(--maincolor);
 }
 .music-artist-bio-stats span
@@ -4873,12 +4891,12 @@ width: 100%;
   line-height: 1;
   display: flex;
   align-items: center;
-font-family: 'Rubik';
+  font-family: 'Rubik';
   line-height: 1;
   letter-spacing: 1px;
   font-weight: 100;
-  font-size: 20px;
-  text-transform: uppercase;
+  font-size: 14px;
+  text-transform: capitalize;
 }
 .music-artist-bio-social a i 
 {
@@ -7151,7 +7169,7 @@ font-family: 'Rubik';
 }
 .notification_controls
 {
-  padding: 10px 0px;
+  padding: 20px 0px;
   width: calc(100% - 30px);
   display: flex;
   justify-content: space-between;
@@ -7210,7 +7228,6 @@ font-family: 'Rubik';
 .notification_item
 { 
   margin-top: 15px;
-  border: 2px var(--backgroundsecond) solid;
   border-radius: 10px;
   display: flex;
   flex-direction: row;
