@@ -420,7 +420,6 @@ font-family: 'Rubik';
 {
   padding: 10px 0;
   border-bottom: 1px var(--backgroundsecond) solid;
-  letter-spacing: 1px;
   margin-top: 15px;
   display: flex;
   justify-content: space-between;
@@ -428,7 +427,7 @@ font-family: 'Rubik';
   color: var(--color);
   font-size: 16px;
   width:calc(100% - 15px);
-font-family: 'Rubik';
+  font-family: 'Rubik';
 }
 .settings-title i 
 {
@@ -440,10 +439,8 @@ font-family: 'Rubik';
 {
   font-size: 18px;
   color: var(--color);
-  font-weight: 400;
-font-family: 'Rubik';
-  font-weight: 900;
-  letter-spacing: 1px;
+  font-family: 'Rubik';
+  font-weight: 100;
 }
 .settings-screen-item img
 {
@@ -456,7 +453,7 @@ font-family: 'Rubik';
   text-decoration: none;
   color: #A7A7A775;
   font-size: 14px;
-font-family: 'Rubik';
+  font-family: 'Rubik';
   font-weight: 100;
 }
 #input-style
@@ -4548,13 +4545,15 @@ font-family: 'Rubik';
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 58px;
+  height: 50px;
   aspect-ratio: 1/1;
+  border-radius: 50%;
   background: var(--background);
   color: var(--maincolor);
   border: 1px var(--maincolor) solid;
   font-size: 16px;
   transition: 0.3s;
+  margin: 5px 15px;
 }
 .music-artist-album-action a:active
 {
@@ -4581,7 +4580,7 @@ font-family: 'Rubik';
 }
 .music-artist-album-screen-title i 
 {
-  width: 50px;
+  width: 100%;
   text-align: center;
 }
 .music-artist-album-screen-img-background
@@ -6097,8 +6096,9 @@ font-family: 'Rubik';
   height: 25vh;
   max-height: 25vh;
   background-color: var(--maincolor);
-  opacity: 0.1;
+  opacity: 0.5;
   filter: blur(2px);
+  -webkit-mask-image: -webkit-linear-gradient(270deg, black 0%, transparent 100%);
 }
 .daily_user_mix_header_background img
 {
@@ -6123,21 +6123,37 @@ font-family: 'Rubik';
 .daily_user_mix_content
 {
   width: 100%;
-  max-height: 61vh;
+  max-height: 70vh;
   overflow: scroll;
+  width: calc(100% - 20px);
+  margin-left: 10px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 .daily_user_mix_content_item
 {
   display: flex;
   align-items: center;
+  transition: 0.3s;
+}
+.daily_user_mix_content_item:active
+{
+  opacity: 0.5;
+  transform: scale(0.95);
 }
 .daily_user_mix_content_item:last-child
 {
-  margin-bottom: 100px;
+  margin-bottom: 160px;
+}
+.daily_user_mix_content_item:first-child
+{
+  margin-top: 15px;
 }
 .daily_user_mix_content_item img
 {
-  height: 60px;
+  height: 50px;
 }
 .daily_user_mix_content_item_data
 {
@@ -6467,15 +6483,29 @@ font-family: 'Rubik';
 }
 .top_list_hits_content
 {
-  width: 100%;
-  max-height: 60vh;
+  width: calc(100% - 20px);
+  margin-left: 10px;
+  max-height: 73vh;
   overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 .top_list_hits_item
 {
   display: flex;
   align-items: center;
   width: 100%;
+  transition: 0.3s;
+}
+.top_list_hits_item:active
+{
+  opacity: 0.5;
+  transform: scale(0.95);
+}
+.top_list_hits_item:first-child
+{
+  margin-top: 15px;
 }
 .top_list_hits_item:last-child
 {
@@ -6483,14 +6513,21 @@ font-family: 'Rubik';
 }
 .top_list_hits_item img
 {
-  height: 60px;
+  height:50px;
   margin-right: 10px;
   object-fit: cover;
   aspect-ratio: 1/1;
 }
-.top_list_hits_data p
+.top_list_hits_item_data p
 {
   color: var(--color);
+  font-size: 18px;
+}
+.top_list_hits_item_data span
+{
+  color: var(--color);
+  font-size: 14px;
+  opacity: 0.5;
 }
 .center-container-scrollable.emo-items .center-container-item
 {
@@ -7543,6 +7580,72 @@ font-family: 'Rubik';
 {
   flex-direction: column;
 }
+.track-options-screen
+{
+  position: absolute;
+  top: 125vh;
+  width: 100%;
+  z-index: 10;
+  transition: 0.3s;
+  height: 100vh;
+  background: var(--background);
+  -webkit-mask-image: -webkit-linear-gradient(#11111190 0%, black 16%);
+}
+.track-options-screen.active
+{
+  top: 0;
+}
+.track-options-controls
+{
+  height: 15vh;
+}
+.track-options-menu
+{
+  display: flex;
+  flex-direction: column;
+}
+.track-options-item
+{
+  display: flex;
+  align-items: center;
+  padding: 15px 15px;
+  transition: 0.3s;
+  font-size: 18px;
+}
+.track-options-item:active
+{
+  opacity: 0.5;
+}
+.track-options-item i {
+  padding-right: 10px;
+}
+.track-options-header
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color);
+}
+.track-options-header img
+{
+  width: 40%;
+}
+.track-options-header p 
+{
+  font-size: 18px;
+  font-weight: 900;
+  margin-top:20px;
+}
+.track-options-header span
+{
+  font-weight: 100;
+  font-size: 14px;
+  opacity: 0.5;
+  margin-bottom:20px;
+}
+
 /* Style_pop_up*/
 textarea
 {

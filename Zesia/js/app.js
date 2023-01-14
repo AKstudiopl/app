@@ -877,7 +877,7 @@ results.innerHTML=searchMusicContent.map((a,i)=>
      <p class="result-artist">${a.artist}</p>
      <p class="result-artist" style="display:none;">${a.album}</p>
    </div>
-   <i class="fa-solid fa-ellipsis-vertical"></i>
+   <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
   </div>
  </li>`).join("\n");
 
@@ -4599,3 +4599,63 @@ function recentTracksLoad(){
 }
 
 recentTracksLoad();
+
+function trackOptions(e){
+  let trackId = e.parentElement.parentElement.getAttribute('li-index');
+
+  var favoritIt = allMusicView.filter(x => x.id === trackId);
+  console.log(favoritIt)
+
+  let placeholder = document.querySelector(".search-options-box");
+  placeholder.innerHTML = '';
+  let element = `
+  <div class="track-options-screen">
+
+    <div class="track-options-controls" onclick="trackHideOptions();">
+    </div>
+
+    <div class="track-options-header">
+      <img src="images/${favoritIt[0].img}.jpg">
+      <p>${favoritIt[0].name}</p>
+      <span>${favoritIt[0].artist}</span>
+    </div>
+
+    <div class="track-options-menu">
+
+      <div class="track-options-item">
+        <i class="fa-solid fa-heart"></i>
+        <p> Dodaj Do Ulubionych</p>
+      </div>
+
+      <div class="track-options-item">
+        <i class="fa-solid fa-user"></i>
+        <p> Wykonawca</p>
+      </div>
+
+      <div class="track-options-item">
+        <i class="fa-solid fa-share-nodes"></i>
+        <p> Udostępnij</p>
+      </div>
+
+      <div class="track-options-item">
+        <i class="fa-regular fa-clock"></i>
+        <p> Ustaw czas odtwarzania</p>
+      </div>
+
+      <div class="track-options-item">
+        <i class="fa-solid fa-tower-broadcast"></i>
+        <p> Radio Wykonawcy</p>
+      </div>
+
+    </div>
+
+  </div>`;
+  placeholder.insertAdjacentHTML("beforeend", element);
+  setTimeout(() => {
+    document.querySelector(".track-options-screen").classList.add("active");
+  }, 100);
+}
+
+function trackHideOptions(){
+  document.querySelector(".track-options-screen").classList.remove("active");
+}
