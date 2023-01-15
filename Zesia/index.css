@@ -834,24 +834,15 @@ font-family: 'Rubik';
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
+  overflow: scroll;
   width: calc(100% - 20px);
   margin-left: 10px;
-}
-.search-results li
-{
-  list-style-type: none;
+  gap: 15px;
   margin-top: 15px;
 }
-.search-results li h1
+.result-box
 {
-  color: var(--color);
-  font-size: 18px;
-}
-.search-results li p
-{
-  font-size: 16px;
-  opacity: 0.5;
-  font-weight: 100;
+  min-height: 50px;
 }
 .search-artist-results
 {
@@ -1424,6 +1415,7 @@ img._load
   -webkit-mask-image: -webkit-linear-gradient(black 90%, transparent 100%);
   mask-image: -o-linear-gradient(black 90%, transparent 100%);
   mask-image: linear-gradient(black 90%, transparent 100%);
+  gap: 15px;
 }
 .library-favorite-data
 {
@@ -1434,6 +1426,10 @@ img._load
 {
   margin-bottom: 70px;
 }
+.library-favorite-item:first-child
+{
+  margin-top: 15px;
+}
 .library-favorite-item
 {
   width: calc(100% - 30px);
@@ -1441,11 +1437,10 @@ img._load
   align-items: center;
   display: flex;
   flex-direction: row;
-  border-bottom: 1px var(--backgroundsecond) solid;
   padding: 0px 15px;
   color: var(--color);
   transition: 0.5s;
-  height: 59px;
+  height: 50px;
 }
 .library-favorite-item.active
 {
@@ -1456,7 +1451,7 @@ img._load
 .library-favorite-item i
 {
   color: var(--maincolor);
-  font-size: 20px;
+  font-size: 24px;
   transition: 0.5s;
 }
 .library-favorite-item i:active
@@ -1904,7 +1899,7 @@ font-family: 'Rubik';
   display: flex;
   flex-direction: row;
   align-items: center;
-  z-index: 5;
+  z-index: 6;
   filter: drop-shadow(0px 10px 12px #000000);
   transition: 0.3s;
   font-family: 'Rubik';
@@ -4185,6 +4180,18 @@ font-family: 'Rubik';
   margin: 0;
   opacity: 1;
 }
+.music-artist-content-item i 
+{
+  margin-left: auto;
+  color: var(--color);
+  opacity: 0.5;
+  padding: 0 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
 .music-artist-content-container::-webkit-scrollbar-track {
   background: var(--background);
 }
@@ -4491,7 +4498,7 @@ font-family: 'Rubik';
   height: 100%;
   max-height: 100%;
   visibility: hidden;
-  z-index: 2;
+  z-index: 5;
   transition: 0.5s;
 }
 .music-artist-album-screen.active
@@ -5870,31 +5877,31 @@ width: 100%;
   max-height: 53vh;
   overflow-y: scroll;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 .user_profile_content .user_profile_content_item_song:last-child
 {
   margin-bottom: 95px;
-  border-bottom: 1px var(--backgroundsecond) solid;
 }
 .user_profile_content_item_song
 {
   display: flex;
-  width: calc(100% - 30px);
-  padding: 10px 15px;
-  border-top: 1px var(--backgroundsecond) solid;
+  width: calc(100% - 20px);
   color: var(--color);
   align-items: center;
   transition: 0.3s;
   justify-content: space-between;
   overflow: hidden;
+  height: 50px;
 }
 .user_profile_content_item_song.artist
 {
   justify-content: flex-start;
-  padding: 0px 15px;
-  margin-left: -15px;
-  padding-right: 30px;
-  height: 73px;
+  max-width: calc(100% - 20px);
+  height: 75px;
   position: relative;
   overflow: hidden;
   -webkit-touch-callout: none; /* iOS Safari */
@@ -5929,7 +5936,7 @@ width: 100%;
 .user_profile_content_item_song.artist i
 {
   margin-left: auto;
-  margin-right: -15px;
+  font-size: 24px;
 }
 .user_profile_content_item_song.artist img
 {
@@ -5941,7 +5948,8 @@ width: 100%;
 }
 .user_profile_content_item_song_data p
 {
-  font-weight: 900;
+  font-weight: 100;
+  font-size: 18px;
 }
 .user_profile_content_item_song.active
 {
@@ -5956,7 +5964,7 @@ width: 100%;
 .user_profile_content_item_song i 
 {
   color: var(--maincolor);
-  font-size: 20px;
+  font-size: 24px;
 }
 .user_profile_content_item_song span
 {
@@ -7582,10 +7590,10 @@ font-family: 'Rubik';
 }
 .track-options-screen
 {
-  position: absolute;
+  position: fixed;
   top: 125vh;
   width: 100%;
-  z-index: 10;
+  z-index: 5;
   transition: 0.3s;
   height: 100vh;
   background: var(--background);
@@ -7612,12 +7620,21 @@ font-family: 'Rubik';
   transition: 0.3s;
   font-size: 18px;
 }
+.track-options-item.active
+{
+  color: var(--maincolor);
+}
+.track-options-item:first-child
+{
+  margin-top: 15px;
+}
 .track-options-item:active
 {
   opacity: 0.5;
+  transform: scale(0.95);
 }
 .track-options-item i {
-  padding-right: 10px;
+  padding-right: 20px;
 }
 .track-options-header
 {
@@ -7627,6 +7644,7 @@ font-family: 'Rubik';
   align-items: center;
   justify-content: center;
   color: var(--color);
+  border-bottom: 1px var(--backgroundsecond) solid;
 }
 .track-options-header img
 {
@@ -7636,14 +7654,14 @@ font-family: 'Rubik';
 {
   font-size: 18px;
   font-weight: 900;
-  margin-top:20px;
+  margin-top:15px;
 }
 .track-options-header span
 {
   font-weight: 100;
   font-size: 14px;
   opacity: 0.5;
-  margin-bottom:20px;
+  margin-bottom:15px;
 }
 
 /* Style_pop_up*/

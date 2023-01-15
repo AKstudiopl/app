@@ -207,7 +207,7 @@ function favoriteLoadItems() {
   resultsFAV.innerHTML = "";
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
-      `<div class="library-favorite-item" li-index='${favoritIt[i].id}' onclick="favoritesQueue();clickedSingle(this)">
+      `<div class="library-favorite-item" li-index='${favoritIt[i].id}' onclick="favoritesQueue(this);clickedSingle(this)">
           <div class="library-favorite-data">
             <h1>${favoritIt[i].name}</h1>
             <span>${favoritIt[i].artist}</span>
@@ -869,8 +869,8 @@ const [search,filter,results] = ["#search-item",".search-filter",".search-result
 searchMusicContent = allMusicView;
 
 results.innerHTML=searchMusicContent.map((a,i)=>
-`<li li-index="${i + 1}" onclick="resultItemQueue(this);tracksHistory(this);">
-  <div class="result-box">
+`
+  <div class="result-box" li-index="${a.id}" onclick="resultItemQueue(this);tracksHistory(this);">
    <img data-lazy="${a.img_mini}">
    <div class="result-box-cover">
      <h1 class="result-name">${a.name}</h1>
@@ -879,7 +879,7 @@ results.innerHTML=searchMusicContent.map((a,i)=>
    </div>
    <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
   </div>
- </li>`).join("\n");
+ `).join("\n");
 
 // show which item was clicked:
 function clickedSearchResults(o){
@@ -891,8 +891,8 @@ function clickedSearchResults(o){
 }
 
 function resultItemQueue(element){
-  let itemNameData = element.querySelector(".result-name").innerText;
-  allMusic = allMusicView.filter(x => x.name === itemNameData);
+  let itemNameData = element.getAttribute('li-index');
+  allMusic = allMusicView.filter(x => x.id === itemNameData);
   indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
   loadMusic(indexNumb);
   playMusic();
@@ -916,12 +916,14 @@ function albumQueue(element){
   playMusic();
 }
 
-function favoritesQueue(){
+function favoritesQueue(element){
   allMusic = allMusicView.filter(x => x.status === "favorite");
   if(allMusic.length < 1){
     allMusic = allMusicView;
   }
-  indexNumb = 1;
+  itemNum = element.getAttribute('li-index');
+  indexNumb = allMusic.findIndex(obj => obj.id == itemNum);
+  indexNumb++;
   loadMusic(indexNumb);
   playMusic();
 }
@@ -1383,6 +1385,7 @@ function playPauseVideo(element){
               <h1>${favoritIt[i].name}</h1>
               <span>${favoritIt[i].album} • ${favoritIt[i].album_premiere}</span>
             </div>
+            <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
          </div>`;
       resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
     }
@@ -1407,6 +1410,7 @@ function playPauseVideo(element){
               <h1>${favoritIt[i].name}</h1>
               <span>${favoritIt[i].artist}, ${favoritIt[i].colaboration}</span>
             </div>
+            <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
          </div>`;
       resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
     }
@@ -2077,7 +2081,7 @@ searchTrackFilter.addEventListener('click', () => {
   searchTrackFilter.classList.add('active')
   searchArtistFilter.classList.remove('active')
   searchFilters.style.display="flex";
-  results.style.display="block";
+  results.style.display="flex";
   aristsSearchResults.style.display="none";
   searchBarArtist.style.display="none";
   searchBarName.style.display="flex";
@@ -2163,8 +2167,6 @@ function artistScreenSearchBar(element){
   currentIndexNumb = indexNumb;
   indexNumb = dataAttribute;
   indexNumb--;
-  
-  
 
   artistItemTitle.innerText = allMusicView[indexNumb].artist;
   artistItemImg.src = `artists/${allMusicView[indexNumb].avatar}.jpg`;
@@ -2190,6 +2192,7 @@ function artistScreenSearchBar(element){
             <h1>${favoritIt[i].name}</h1>
             <span>${favoritIt[i].album} • ${favoritIt[i].album_premiere}</span>
           </div>
+          <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }
@@ -2201,36 +2204,6 @@ function artistScreenSearchBar(element){
 
   $(".music-artist-content-container").html($(".music-artist-content-container .music-artist-content-item").sort(function(){
 }));
-
-function artistsSongsSearchBarFeaturedLoad() {
-  let artistNameData = artistItemTitle.innerText;
-  artistItemFeatured.innerText = document.querySelector(".music-artist-item-data-artist").innerText;
-
-  const resultsFAV = document.querySelector(".featured-content");
-  var favoritIt = allMusicView.filter(x => x.colaboration === artistNameData);
-  resultsFAV.innerHTML = "";
-  for (let i = 0; i < favoritIt.length; i++) {
-    let resultFAV =
-      `<div class="music-artist-content-item-featured" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
-        <img src="images/${favoritIt[i].img}.jpg">
-          <div class="music-artist-content-item-data-featured">
-            <h1>${favoritIt[i].name}</h1>
-            <span>${favoritIt[i].artist}, ${favoritIt[i].colaboration}</span>
-          </div>
-       </div>`;
-    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
-  }
-  const featuredLibrary = document.querySelectorAll(".music-artist-content-item-featured");
-  const featuredContainer = document.querySelector(".music-artist-item-featured");
-
-  if (featuredLibrary.length < 1){
-    featuredContainer.style.visibility="hidden";
-  }else
-  {
-    featuredContainer.style.visibility="visible";
-  }
-};
-
 
   const resultsAlbum = document.querySelector(".music-artist-information-albums");
   var resultsFiltered = allMusicView.filter(x => x.artist === artistNameData);
@@ -2363,6 +2336,7 @@ artistMenuPopular.addEventListener('click', () => {
             <h1>${favoritIt[i].name}</h1>
             <span>${favoritIt[i].artist}, ${favoritIt[i].colaboration}</span>
           </div>
+          <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }
@@ -2650,7 +2624,7 @@ function favoriteLoadItemsProfile() {
   resultsFAV.innerHTML = "";
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
-      `<div class="user_profile_content_item_song" li-index='${favoritIt[i].id}' onclick="favoritesQueue();">
+      `<div class="user_profile_content_item_song" li-index='${favoritIt[i].id}' onclick="favoritesQueue(this);">
           <div class="user_profile_content_item_song_data">
             <p>${favoritIt[i].name}</p>
             <span>${favoritIt[i].artist}</span>
@@ -3425,8 +3399,8 @@ function applyCustomFilter(){
   }
 
   results.innerHTML=searchMusicContent.map((a,i)=>
-  `<li li-index="${i + 1}" onclick="resultItemQueue(this);">
-    <div class="result-box">
+  `
+  <div class="result-box" li-index="${a.id}" onclick="resultItemQueue(this);tracksHistory(this);">
     <img src="images/${a.img}.jpg">
     <div class="result-box-cover">
       <h1 class="result-name">${a.name}</h1>
@@ -3434,7 +3408,7 @@ function applyCustomFilter(){
     </div>
     <i class="fa-solid fa-ellipsis-vertical"></i>
     </div>
-  </li>`).join("\n");
+  `).join("\n");
 
   filterMenu.classList.remove("active");
 }
@@ -3448,8 +3422,8 @@ function resetCustomFilter(){
   }
 
   results.innerHTML=searchMusicContent.map((a,i)=>
-  `<li li-index="${i + 1}" onclick="resultItemQueue(this);">
-    <div class="result-box">
+  `
+  <div class="result-box" li-index="${a.id}" onclick="resultItemQueue(this);tracksHistory(this);">
      <img src="images/${a.img}.jpg">
      <div class="result-box-cover">
        <h1 class="result-name">${a.name}</h1>
@@ -3457,7 +3431,7 @@ function resetCustomFilter(){
      </div>
      <i class="fa-solid fa-ellipsis-vertical"></i>
     </div>
-   </li>`).join("\n");
+   `).join("\n");
 
    clearFilterStatus()
 }
@@ -4601,10 +4575,9 @@ function recentTracksLoad(){
 recentTracksLoad();
 
 function trackOptions(e){
-  let trackId = e.parentElement.parentElement.getAttribute('li-index');
+  let trackId = e.parentElement.getAttribute('li-index');
 
   var favoritIt = allMusicView.filter(x => x.id === trackId);
-  console.log(favoritIt)
 
   let placeholder = document.querySelector(".search-options-box");
   placeholder.innerHTML = '';
@@ -4620,31 +4593,26 @@ function trackOptions(e){
       <span>${favoritIt[0].artist}</span>
     </div>
 
-    <div class="track-options-menu">
+    <div class="track-options-menu" track-data="${favoritIt[0].id}" album-data="${favoritIt[0].album}" album-premiere="${favoritIt[0].album_premiere}" album-img="${favoritIt[0].album_cover}" >
 
-      <div class="track-options-item">
+      <div class="track-options-item" id="trackFavoriteBtn" onclick="trackOption_Favorite(this)">
         <i class="fa-solid fa-heart"></i>
         <p> Dodaj Do Ulubionych</p>
       </div>
 
-      <div class="track-options-item">
+      <div class="track-options-item" onclick="trackOption_Artist(this);trackHideOptions();">
         <i class="fa-solid fa-user"></i>
-        <p> Wykonawca</p>
+        <p> Pokaż Wykonawca</p>
       </div>
 
-      <div class="track-options-item">
+      <div class="track-options-item" onclick="trackOption_Album(this);trackHideOptions();">
+        <i class="fa-solid fa-compact-disc"></i>
+        <p> Pokaż Album</p>
+      </div>
+
+      <div class="track-options-item" onclick="trackOption_Share(this)">
         <i class="fa-solid fa-share-nodes"></i>
         <p> Udostępnij</p>
-      </div>
-
-      <div class="track-options-item">
-        <i class="fa-regular fa-clock"></i>
-        <p> Ustaw czas odtwarzania</p>
-      </div>
-
-      <div class="track-options-item">
-        <i class="fa-solid fa-tower-broadcast"></i>
-        <p> Radio Wykonawcy</p>
       </div>
 
     </div>
@@ -4654,8 +4622,223 @@ function trackOptions(e){
   setTimeout(() => {
     document.querySelector(".track-options-screen").classList.add("active");
   }, 100);
+
+    let trackOptionFavorite = document.querySelector("#trackFavoriteBtn");
+    let trackOptionFavoriteIcon = document.querySelector("#trackFavoriteBtn i");
+    let trackOptionFavoriteText = document.querySelector("#trackFavoriteBtn p");
+
+    let trackID = document.querySelector('.track-options-menu').getAttribute('track-data');
+    trackID--;
+
+    if (allMusicView[trackID].status === "favorite") {
+      trackOptionFavorite.classList.add('active');
+      trackOptionFavoriteIcon.classList.remove('fa-regular')
+      trackOptionFavoriteIcon.classList.add('fa-solid')
+      trackOptionFavoriteText.innerText = " Polubiono";
+    }
+    if (allMusicView[trackID].status === "nostatus") {
+      trackOptionFavorite.classList.remove('active');
+      trackOptionFavoriteIcon.classList.add('fa-regular')
+      trackOptionFavoriteIcon.classList.remove('fa-solid')
+      trackOptionFavoriteText.innerText = " Dodaj Do Ulubionych";
+    }
 }
+
+function trackOption_Album(e){
+   const albumNameData = e.parentElement.getAttribute("album-data");
+   const albumPremiereData = e.parentElement.getAttribute("album-premiere");
+   const albumImgData = e.parentElement.getAttribute("album-img");
+
+   albumScreen.classList.add("active");
+   albumScreenTitle.innerText = albumNameData;
+   albumScreenPremiere.innerText = albumPremiereData;
+   albumScreenAlbumImg.src = albumImgData;
+   albumScreenArtistImg.src = albumImgData;
+
+   let lastViewedAlbum = localStorage.getItem("lastViewedAlbum_1");
+   localStorage.setItem("lastViewedAlbum_2", lastViewedAlbum)
+   localStorage.setItem("lastViewedAlbum_1", albumNameData)
+   
+   if(albumNameData === lastViewedAlbum){
+     localStorage.setItem("lastViewedAlbum_2", "")
+   }
+
+   const resultsFAV = document.querySelector(".music-artist-album-screen-container");
+   var favoritIt = allMusicView.filter(x => x.album === albumNameData);
+   resultsFAV.innerHTML = "";
+   for (let i = 0; i < favoritIt.length; i++) {
+     let resultFAV =
+       `<div class="music-artist-album-item" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
+             <div class="music-artist-album-item-data">
+                 <h1>${favoritIt[i].name}</h1>
+                 <span>${favoritIt[i].artist}</span>
+             </div>
+        </div>`;
+     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+     albumScreenSongsNumber.innerText = $('.music-artist-album-item').length;
+   }
+   let albumNumberSongs = $('.music-artist-album-item').length;
+   if(albumNumberSongs > 1){
+     albumScreenAlbumText.innerText = "Album";
+   }else if(albumNumberSongs = 1){
+     albumScreenAlbumText.innerText = "Singiel";
+   }
+
+   if (localStorage.getItem("lastViewedAlbum_2").length > 0) {
+     uiLastViewedAlbumsLoad();
+   }else{
+       uiLastViewedAlbum_1.style.display="none";
+       uiLastViewedAlbum_2.style.display="none";
+   }
+}
+
+function trackOption_Favorite(data){
+  let trackID = data.parentElement.getAttribute('track-data');
+  trackID--;
+
+  let trackOptionFavorite = document.querySelector("#trackFavoriteBtn");
+  let trackOptionFavoriteIcon = document.querySelector("#trackFavoriteBtn i");
+  let trackOptionFavoriteText = document.querySelector("#trackFavoriteBtn p");
+
+  if (allMusicView[trackID].status === "favorite") {
+    allMusicView[trackID].status = "nostatus";
+  }else if (allMusicView[trackID].status === "nostatus") {
+    allMusicView[trackID].status = "favorite";
+  }
+
+  if (allMusicView[trackID].status === "favorite") {
+    musicTopOptionsFavorite.innerHTML = '<i class="fa-solid fa-heart"></i><span> Polubiono</span>';
+    musicTopOptionsFavorite.classList.add('active')
+    favoritBtn.classList.add('active')
+    favoritBtn.classList.add('fa-solid')
+    favoritBtn.classList.remove('fa-regular')
+    trackOptionFavorite.classList.add('active');
+    trackOptionFavoriteIcon.classList.remove('fa-regular')
+    trackOptionFavoriteIcon.classList.add('fa-solid')
+    trackOptionFavoriteText.innerText = " Polubiono";
+  }
+  if (allMusicView[trackID].status === "nostatus") {
+    musicTopOptionsFavorite.innerHTML = '<i class="fa-solid fa-heart"></i><span> Dodaj Do Ulubionych</span>';
+    musicTopOptionsFavorite.classList.remove('active')
+    favoritBtn.classList.remove('active')
+    favoritBtn.classList.remove('fa-solid')
+    favoritBtn.classList.add('fa-regular')
+    trackOptionFavorite.classList.remove('active');
+    trackOptionFavoriteIcon.classList.add('fa-regular')
+    trackOptionFavoriteIcon.classList.remove('fa-solid')
+    trackOptionFavoriteText.innerText = " Dodaj Do Ulubionych";
+  }
+    
+  favoriteLoadItems();
+}
+
+function trackOption_Share(data){
+  let trackID = data.parentElement.getAttribute('track-data');
+
+  var shareLink = document.createElement('input'),
+  text = "https://akstudiopl.github.io/Zesia/" + "#" + trackID;
+  document.body.appendChild(shareLink);
+  shareLink.value = text;
+  shareLink.select();
+  document.execCommand('copy');
+  document.body.removeChild(shareLink);
+}
+
+function trackOption_Artist(element){
+  var dataAttribute = element.parentElement.getAttribute('track-data');
+  musicArtistScreen.classList.add('active')
+  musicMenuHide.classList.remove('active')
+  albumScreen.classList.remove('active');
+  playlistItemScreen.classList.remove("active");
+  activeLibraryScreen.classList.remove('active')
+  activeSearchScreen.classList.remove('active')
+  activeHomeScreen.classList.add('active')
+  libraryScreen.classList.remove('active');
+  searchScreen.classList.remove('active');
+  newsScreen.classList.remove("active");
+  bioCard.classList.remove("active");
+  userProfile.classList.remove("active");
+  fastLoadingPop();
+  artistSongsDataLoad();
+
+  currentIndexNumb = indexNumb;
+  indexNumb = dataAttribute;
+  indexNumb--;
+
+  artistItemTitle.innerText = allMusicView[indexNumb].artist;
+  artistItemImg.src = `artists/${allMusicView[indexNumb].avatar}.jpg`;
+  artistCardDataName.innerText = allMusicView[indexNumb].artist;
+  artistCardBackgroundImg.style.backgroundImage = `url(${allMusicView[indexNumb].artist_img})`;
+  var randomnumber = Math.floor(Math.random() * 150000) + 1;
+  artistItemFollowers.innerText = randomnumber;
+  
+  let artistNameData = artistItemTitle.innerText;
+  const resultsFAV = document.querySelector(".music-artist-content-container");
+  var favoritIt = allMusicView.filter(x => x.artist === artistNameData);
+
+  favoritIt.sort(function(a, b){
+      return b.album_premiere - a.album_premiere;
+  });
+
+  resultsFAV.innerHTML = "";
+  for (let i = 0; i < favoritIt.length; i++) {
+    let resultFAV =
+      `<div class="music-artist-content-item" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
+        <h1 class="music-artist-content-number">${i + 1}</h1>
+          <div class="music-artist-content-item-data">
+            <h1>${favoritIt[i].name}</h1>
+            <span>${favoritIt[i].album} • ${favoritIt[i].album_premiere}</span>
+          </div>
+          <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
+       </div>`;
+    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+  }
+
+  indexNumb = currentIndexNumb;
+
+  checkFollowStatus();
+  artistsSongsSearchBarFeaturedLoad();
+
+  $(".music-artist-content-container").html($(".music-artist-content-container .music-artist-content-item").sort(function(){
+}));}
 
 function trackHideOptions(){
   document.querySelector(".track-options-screen").classList.remove("active");
 }
+
+function artistsSongsSearchBarFeaturedLoad() {
+  let artistNameData = artistItemTitle.innerText;
+  artistItemFeatured.innerText = document.querySelector(".music-artist-item-data-artist").innerText;
+
+  const resultsFAV = document.querySelector(".featured-content");
+  var favoritIt = allMusicView.filter(x => x.colaboration === artistNameData);
+  resultsFAV.innerHTML = "";
+  for (let i = 0; i < favoritIt.length; i++) {
+    let resultFAV =
+      `<div class="music-artist-content-item-featured" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
+        <img src="images/${favoritIt[i].img}.jpg">
+          <div class="music-artist-content-item-data-featured">
+            <h1>${favoritIt[i].name}</h1>
+            <span>${favoritIt[i].artist}, ${favoritIt[i].colaboration}</span>
+          </div>
+          <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
+       </div>`;
+    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+  }
+  const featuredLibrary = document.querySelectorAll(".music-artist-content-item-featured");
+  const featuredContainer = document.querySelector(".music-artist-item-featured");
+
+  if (featuredLibrary.length < 1){
+    featuredContainer.style.visibility="hidden";
+  }else
+  {
+    featuredContainer.style.visibility="visible";
+  }
+};
+
+$(".result-box i").on("click", function(event){
+  event.stopPropagation();
+});
+$(".music-artist-content-item .fa-ellipsis-vertical").on("click", function(event){
+  event.stopPropagation();
+});
