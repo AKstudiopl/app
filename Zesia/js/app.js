@@ -1093,7 +1093,15 @@ const nameUserScreen = document.querySelector(".user_profile_header_content_date
     artistMenuAbout.classList.remove('active');
     checkFollowStatus();
     bioCard.classList.remove("active");
+
+    loseFocus();
   }
+
+function loseFocus(){
+  $('.music-artist-content-item i').click(function(event) {
+    event.stopPropagation();
+  });
+}
 
   const popularPop = document.querySelector(".popular-music");
   const popularCounter = document.querySelector(".popular-content-length");
@@ -1391,6 +1399,7 @@ function playPauseVideo(element){
     }
 
     artistsSongsFeaturedLoad();
+    loseFocus();
 
     $(".music-artist-content-container").html($(".music-artist-content-container .music-artist-content-item").sort(function(){
   }));
@@ -1414,6 +1423,8 @@ function playPauseVideo(element){
          </div>`;
       resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
     }
+
+    loseFocus();
     
     const featuredLibrary = document.querySelectorAll(".music-artist-content-item-featured");
     const featuredContainer = document.querySelector(".music-artist-item-featured");
@@ -2201,6 +2212,7 @@ function artistScreenSearchBar(element){
 
   checkFollowStatus();
   artistsSongsSearchBarFeaturedLoad();
+  loseFocus();
 
   $(".music-artist-content-container").html($(".music-artist-content-container .music-artist-content-item").sort(function(){
 }));
@@ -2350,6 +2362,9 @@ artistMenuPopular.addEventListener('click', () => {
   {
     featuredContainer.style.visibility="visible";
   }
+
+  loseFocus();
+
   artistMenuPopular.classList.add('active');
   artistMenuAlbums.classList.remove('active');
   artistMenuAbout.classList.remove('active');
@@ -4761,6 +4776,8 @@ function trackOption_Artist(element){
   fastLoadingPop();
   artistSongsDataLoad();
 
+  loseFocus();
+
   currentIndexNumb = indexNumb;
   indexNumb = dataAttribute;
   indexNumb--;
@@ -4834,11 +4851,10 @@ function artistsSongsSearchBarFeaturedLoad() {
   {
     featuredContainer.style.visibility="visible";
   }
+
+  loseFocus();
 };
 
 $(".result-box i").on("click", function(event){
-  event.stopPropagation();
-});
-$(".music-artist-content-item .fa-ellipsis-vertical").on("click", function(event){
   event.stopPropagation();
 });

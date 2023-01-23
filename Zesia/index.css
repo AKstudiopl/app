@@ -4233,6 +4233,17 @@ font-family: 'Rubik';
   transition: 0.25s;
   font-family: 'Rubik';
 }
+.music-artist-content-item-featured i {
+  margin-left: auto;
+  color: var(--color);
+  opacity: 0.5;
+  padding: 0 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
 .featured-content
 {
   display: flex;
@@ -7104,7 +7115,7 @@ font-family: 'Rubik';
   width: 100%;
   height: 100%;
   object-fit: cover;
-  -webkit-mask-image: -webkit-linear-gradient(270deg, rgba(18,18,18,0.9048723897911833) 35%, rgba(0,0,0,0.4988399071925754) 65%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: -webkit-linear-gradient(270deg, rgba(18,18,18,0.90) 35%, rgba(0,0,0,0.50) 65%, rgba(0,0,0,0) 100%);
 }
 .background-canvas img
 {
@@ -7114,7 +7125,7 @@ font-family: 'Rubik';
   width: 100%;
   height: 100%;
   opacity: 1;
-  -webkit-mask-image: -webkit-linear-gradient(270deg, rgba(18,18,18,0.9048723897911833) 35%, rgba(0,0,0,0.4988399071925754) 65%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: -webkit-linear-gradient(270deg, rgba(18,18,18,0.90) 35%, rgba(0,0,0,0.50) 65%, rgba(0,0,0,0) 100%);
 }
 .description_popop
 {
