@@ -1919,8 +1919,7 @@ font-family: 'Rubik';
   width: 100vw;
   background-image: url('images/CamilaCabelloHavana.jpg');
   filter: blur(10px);
-  opacity: 0.5;
-  -webkit-mask-image: -webkit-linear-gradient(160deg,transparent 25%, black 100%);
+  opacity: 0.45;
   transition: 1s;
   animation-name: musicControlsBgAnimation;
   animation-duration: 50s;
@@ -1975,6 +1974,7 @@ font-family: 'Rubik';
   border-radius: 50%;
   position: relative;
   z-index: 5;
+  line-height: 1.1;
   margin-left: auto;
 }
 .music-icon i
@@ -2543,10 +2543,11 @@ font-family: 'Rubik';
   font-size: 150%;
   color: var(--color);
   animation: lyricsAnimation;
-  animation-duration: 0.75s;
+  animation-duration: 0.5s;
   animation-timing-function: ease-out;
   transition: 0.3s;
   opacity: 0.5;
+  padding: 5px 0;
 }
 .main-music-lyrics-box span
 {
@@ -2566,11 +2567,11 @@ font-family: 'Rubik';
 .main-music-lyrics-box p.active
 {
   opacity: 1;
-  letter-spacing: 1px;
+  font-weight: 900;
 }
 .main-music-lyrics-box > .active
 {
-  margin-top: 50px;
+  margin-top: 25px;
 }
 .main-music-lyrics-box > .active ~ .active
 {
@@ -2586,7 +2587,7 @@ font-family: 'Rubik';
   100%
   {
     transform: translateX(0px);
-    opacity: 1;
+    opacity: 0.5;
   }
 }
 .main-information
@@ -3947,7 +3948,7 @@ font-family: 'Rubik';
 {
   width: 100%;
   overflow: hidden;
-  height: 50vh;
+  height: 40vh;
   -webkit-mask-image: -webkit-linear-gradient(top, black 50%, transparent);
 }
 .music-artist-item-title img 
@@ -8113,6 +8114,10 @@ textarea
   {
     text-align: left;
     margin-bottom: 0px !important;
+  }
+  .user_profile_controls
+  {
+    width: calc(100% - 540px);
   }
 }
 

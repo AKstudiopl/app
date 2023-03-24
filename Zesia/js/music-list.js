@@ -6910,7 +6910,7 @@ var allMusic = [
     status: "nostatus",
     tag: "",
     avatar: "ab6761670000ecd438a0270198c54e0d3728673e",
-    artist_: "https://i.scdn.co/image/ab6761670000ecd4b94d44acf3d19964b4cf9954",
+    artist_img: "https://i.scdn.co/image/ab6761670000ecd4b94d44acf3d19964b4cf9954",
     gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd4bc3222ea11ae553997b1d44f",
     gallery_img_2: "https://i.scdn.co/image/ab6761670000ecd47991abbf4e3ccfdd811b1796",
     canvas: "",
@@ -6926,6 +6926,500 @@ var allMusic = [
       instagram: "https://www.instagram.com/minus.manus/",
       twitter: "",
       facebook: "",
+    },
+    user_playlist_1: "",
+  },
+  {
+    name: "MIDDLE OF THE NIGHT",
+    artist: "Elley Duhé",
+    colaboration: "",
+    artist_status: "none",
+    language: "eng",
+    country: "usa",
+    artist_id: "47",
+
+    src: "MIDDLEOFTHENIGHT-elleyduhe",
+    img: "ab67616d00001nighte0253a2e11c1bde700722fecd2e",
+    img_mini: "https://i.scdn.co/image/ab67616d0000485153a2e11c1bde700722fecd2e",
+    
+    style: "Chill",
+    status: "nostatus",
+    tag: "Popular",
+    avatar: "ab6761610000duhee5ebda85e0053elley476e519a22b24e5",
+    artist_img: "https://i.scdn.co/image/ab6761670000ecd4478478c443563ed723e9a96e",
+    gallery_img_1: "https://pbs.twimg.com/media/E0AMiQ5VUAAyEwz?format=jpg&name=large",
+    gallery_img_2: "https://pbs.twimg.com/media/E0AMiQ1VUAA8t22?format=jpg&name=large",
+    gallery_img_3: "https://pbs.twimg.com/media/DuQo7QLVAAACP7z?format=jpg&name=medium",
+    gallery_img_4: "https://pbs.twimg.com/media/DgFHUdVUEAAfNAD?format=jpg&name=large",
+    gallery_img_5: "https://pbs.twimg.com/media/DdCqUGMV4AIOmB7?format=jpg&name=900x900",
+    gallery_img_6: "https://pbs.twimg.com/media/DUBNhpVVoAA2Qgj?format=jpg&name=large",
+    canvas: "https://ssscdn.io/ssstwitter/aHR0cHM6Ly92aWRlby50d2ltZy5jb20vZXh0X3R3X3ZpZGVvLzE1MjIyNjIxMTExODI3Mzc0MTEvcHUvdmlkLzcyMHgxMjgwL0dLS2NGYW5zWHdnbW44YnkubXA0P3RhZz0xMg==",
+    
+    album: "MIDDLE OF THE NIGHT",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e0253a2e11c1bde700722fecd2e",
+    album_premiere: "2020",
+    id: "124",
+
+    lyrics:{
+      ve1:{
+        ls: "I summoned you, please come to me",
+        stamp: "6",
+      },
+      ve2:{
+        ls: "Don't bury thoughts that you really want",
+        stamp: "10",
+      },
+      ve3:{
+        ls: "I fill you up, drink from my cup",
+        stamp: "14",
+      },
+      ve4:{
+        ls: "Within me lies what you really want",
+        stamp: "18",
+      },
+      ve5:{
+        ls: "Come, lay me down",
+        stamp: "22",
+      },
+      ve6:{
+        ls: "'Cause you know this",
+        stamp: "25",
+      },
+      ve7:{
+        ls: "''Cause you know this sound",
+        stamp: "27",
+      },
+      ve8:{
+        ls: "In the middle of the night",
+        stamp: "30",
+      },
+      ve9:{
+        ls: "In the middle of the night",
+        stamp: "32",
+      },
+      ve10:{
+        ls: "Just call my name, I'm yours to tame",
+        stamp: "34",
+      },
+      ve11:{
+        ls: "In the middle of the night",
+        stamp: "38",
+      },
+      ve12:{
+        ls: "In the middle of the night",
+        stamp: "40",
+      },
+      ve13:{
+        ls: "I'm wide awake, I crave your taste",
+        stamp: "42",
+      },
+      ve14:{
+        ls: "All night long 'til morning comes",
+        stamp: "44",
+      },
+      ve15:{
+        ls: "I'm getting what is mine",
+        stamp: "48",
+      },
+      ve16:{
+        ls: "You gon' get yours, oh, no, ooh-ooh",
+        stamp: "51",
+      },
+      ve17:{
+        ls: "In the middle of the night",
+        stamp: "53",
+      },
+      ve18:{
+        ls: "In the middle of the night, oh-oh",
+        stamp: "54",
+      },
+      ve19:{
+        ls: "These burning flames, these crashing waves",
+        stamp: "68",
+      },
+      ve20:{
+        ls: "Wash over me like a hurricane",
+        stamp: "72",
+      },
+      ve21:{
+        ls: "I captivate, you're hypnotized",
+        stamp: "76",
+      },
+      ve22:{
+        ls: "Feel powerful, but it's me again",
+        stamp: "80",
+      },
+      ve23:{
+        ls: "Come, lay me down",
+        stamp: "84",
+      },
+      ve24:{
+        ls: "'Cause I know this",
+        stamp: "87",
+      },
+      ve25:{
+        ls: "'Cause I know this sound",
+        stamp: "89",
+      },
+      ve26:{
+        ls: "In the middle of the night",
+        stamp: "91",
+      },
+      ve27:{
+        ls: "In the middle of the night",
+        stamp: "93",
+      },
+      ve28:{
+        ls: "Just call my name, I'm yours to tame",
+        stamp: "95",
+      },
+      ve29:{
+        ls: "In the middle of the night",
+        stamp: "100",
+      },
+      ve30:{
+        ls: "In the middle of the night",
+        stamp: "102",
+      },
+      ve31:{
+        ls: "I'm wide awake, I crave your taste",
+        stamp: "103",
+      },
+      ve32:{
+        ls: "All night long 'til morning comes",
+        stamp: "108",
+      },
+      ve33:{
+        ls: "I'm getting what is mine",
+        stamp: "110",
+      },
+      ve34:{
+        ls: "You gon' get yours, oh, no, ooh-ooh",
+        stamp: "112",
+      },
+      ve35:{
+        ls: "In the middle of the night",
+        stamp: "114",
+      },
+      ve36:{
+        ls: "In the middle of the night, oh-oh",
+        stamp: "116",
+      },
+      ve37:{
+        ls: "And just call on me, ah",
+        stamp: "131",
+      },
+      ve38:{
+        ls: "Just call my name",
+        stamp: "135",
+      },
+      ve39:{
+        ls: "Like you'll need me",
+        stamp: "138",
+      },
+      ve40:{
+        ls: "In the middle of the night",
+        stamp: "141",
+      },
+      ve41:{
+        ls: "In the middle of the night",
+        stamp: "143",
+      },
+      ve42:{
+        ls: "Just call my name, I'm yours to tame",
+        stamp: "145",
+      },
+      ve43:{
+        ls: "In the middle of the night",
+        stamp: "149",
+      },
+      ve44:{
+        ls: "In the middle of the night",
+        stamp: "151",
+      },
+      ve45:{
+        ls: "I'm wide awake, I crave your taste",
+        stamp: "153",
+      },
+      ve46:{
+        ls: "All night long 'til morning comes",
+        stamp: "157",
+      },
+      ve47:{
+        ls: "I'm getting what is mine",
+        stamp: "160",
+      },
+      ve48:{
+        ls: "In the middle of the night",
+        stamp: "164",
+      },
+      ve49:{
+        ls: "In the middle of the night, oh-oh-whoa",
+        stamp: "166",
+      },
+    },
+
+    bio: "extraterrestrial",
+    social:{
+      instagram: "https://www.instagram.com/elleyduhe/",
+      twitter: "https://twitter.com/elleyduhe",
+      facebook: "https://www.facebook.com/elleyduhemusic",
+    },
+    user_playlist_1: "",
+  },
+  {
+    name: "MONEY ON THE DASH",
+    artist: "Elley Duhé",
+    colaboration: "",
+    artist_status: "none",
+    language: "eng",
+    country: "usa",
+    artist_id: "47",
+
+    src: "MONEYONTHEDASH-elleyduhe",
+    img: "ab67616d00001e02moneyonthedasha33af2e78a60e270aa668f43",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851a33af2e78a60e270aa668f43",
+    
+    style: "Pop",
+    status: "nostatus",
+    tag: "Popular",
+    avatar: "ab6761610000duhee5ebda85e0053elley476e519a22b24e5",
+    artist_img: "https://i.scdn.co/image/ab6761670000ecd4478478c443563ed723e9a96e",
+    gallery_img_1: "https://pbs.twimg.com/media/E0AMiQ5VUAAyEwz?format=jpg&name=large",
+    gallery_img_2: "https://pbs.twimg.com/media/E0AMiQ1VUAA8t22?format=jpg&name=large",
+    gallery_img_3: "https://pbs.twimg.com/media/DuQo7QLVAAACP7z?format=jpg&name=medium",
+    gallery_img_4: "https://pbs.twimg.com/media/DgFHUdVUEAAfNAD?format=jpg&name=large",
+    gallery_img_5: "https://pbs.twimg.com/media/DdCqUGMV4AIOmB7?format=jpg&name=900x900",
+    gallery_img_6: "https://pbs.twimg.com/media/DUBNhpVVoAA2Qgj?format=jpg&name=large",
+    canvas: "",
+    
+    album: "MONEY ON THE DASH",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e02a33af2e78a60e270aa668f43",
+    album_premiere: "2022",
+    id: "125",
+
+    lyrics:{
+    },
+
+    bio: "extraterrestrial",
+    social:{
+      instagram: "https://www.instagram.com/elleyduhe/",
+      twitter: "https://twitter.com/elleyduhe",
+      facebook: "https://www.facebook.com/elleyduhemusic",
+    },
+    user_playlist_1: "",
+  },
+  {
+    name: "Traitor",
+    artist: "Elley Duhé",
+    colaboration: "",
+    artist_status: "none",
+    language: "eng",
+    country: "usa",
+    artist_id: "47",
+
+    src: "Traitor-elleyduhe",
+    img: "ab67616d00001e02traitor395e16b9e5ef489902994d6c",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851395e16b9e5ef489902994d6c",
+    
+    style: "Pop",
+    status: "nostatus",
+    tag: "Popular",
+    avatar: "ab6761610000duhee5ebda85e0053elley476e519a22b24e5",
+    artist_img: "https://i.scdn.co/image/ab6761670000ecd4478478c443563ed723e9a96e",
+    gallery_img_1: "https://pbs.twimg.com/media/E0AMiQ5VUAAyEwz?format=jpg&name=large",
+    gallery_img_2: "https://pbs.twimg.com/media/E0AMiQ1VUAA8t22?format=jpg&name=large",
+    gallery_img_3: "https://pbs.twimg.com/media/DuQo7QLVAAACP7z?format=jpg&name=medium",
+    gallery_img_4: "https://pbs.twimg.com/media/DgFHUdVUEAAfNAD?format=jpg&name=large",
+    gallery_img_5: "https://pbs.twimg.com/media/DdCqUGMV4AIOmB7?format=jpg&name=900x900",
+    gallery_img_6: "https://pbs.twimg.com/media/DUBNhpVVoAA2Qgj?format=jpg&name=large",
+    canvas: "",
+    
+    album: "Traitor",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e02395e16b9e5ef489902994d6c",
+    album_premiere: "2021",
+    id: "126",
+
+    lyrics:{
+      ve1:{
+        ls: "I'm giving it all to take it back",
+        stamp: "7",
+      },
+      ve2:{
+        ls: "You're the only taste in my mouth",
+        stamp: "9",
+      },
+      ve3:{
+        ls: "The fire that we made went and",
+        stamp: "15",
+      },
+      ve4:{
+        ls: "Burned the whole damn place down",
+        stamp: "18",
+      },
+      ve5:{
+        ls: "'Cause everything, yes, it's never too much",
+        stamp: "24",
+      },
+      ve6:{
+        ls: "For you got no borders",
+        stamp: "28",
+      },
+      ve7:{
+        ls: "And inside this bed we make sense again",
+        stamp: "29",
+      },
+      ve8:{
+        ls: "I'm back where I started",
+        stamp: "31",
+      },
+      ve9:{
+        ls: "And you taught me this, so we're playing chess",
+        stamp: "33",
+      },
+      ve10:{
+        ls: "I play your emotions",
+        stamp: "35",
+      },
+      ve11:{
+        ls: "So I'll take my heart and run for good",
+        stamp: "40",
+      },
+      ve12:{
+        ls: "Turn away",
+        stamp: "46",
+      },
+      ve13:{
+        ls: "I will be dead and gone",
+        stamp: "47",
+      },
+      ve14:{
+        ls: "Before you hear a thing",
+        stamp: "52",
+      },
+      ve15:{
+        ls: "I'm giving me up, I'm giving you up",
+        stamp: "56",
+      },
+      ve16:{
+        ls: "I'm giving us up",
+        stamp: "58",
+      },
+      ve17:{
+        ls: "Surrender all, a traitor now",
+        stamp: "61",
+      },
+      ve18:{
+        ls: "A traitor of your love",
+        stamp: "63",
+      },
+      ve19:{
+        ls: "So I'll take my heart and run for good",
+        stamp: "65",
+      },
+      ve20:{
+        ls: "And everything I've done for you",
+        stamp: "76",
+      },
+      ve21:{
+        ls: "Comes with a price, I knew",
+        stamp: "78",
+      },
+      ve22:{
+        ls: "Ooh-oh, it's pulling the trigger with safety off",
+        stamp: "83",
+      },
+      ve23:{
+        ls: "It's loving and lying and switching",
+        stamp: "86",
+      },
+      ve24:{
+        ls: "What side you're on, on",
+        stamp: "88",
+      },
+      ve25:{
+        ls: "'Cause everything, yes, never too much",
+        stamp: "94",
+      },
+      ve26:{
+        ls: "For you got no borders",
+        stamp: "96",
+      },
+      ve27:{
+        ls: "And inside this bed we make sense again",
+        stamp: "98",
+      },
+      ve28:{
+        ls: "I'm back where I started",
+        stamp: "100",
+      },
+      ve29:{
+        ls: "And you taught me this, so we're playing chess",
+        stamp: "102",
+      },
+      ve30:{
+        ls: "I play your emotions, emotionst",
+        stamp: "104",
+      },
+      ve31:{
+        ls: "So I'll take my heart and run for good",
+        stamp: "109",
+      },
+      ve32:{
+        ls: "Turn away",
+        stamp: "115",
+      },
+      ve33:{
+        ls: "I will be dead and gone",
+        stamp: "117",
+      },
+      ve34:{
+        ls: "Before you hear a thing",
+        stamp: "120",
+      },
+      ve35:{
+        ls: "I'm giving me up, I'm giving you up",
+        stamp: "125",
+      },
+      ve36:{
+        ls: "I'm giving us up",
+        stamp: "127",
+      },
+      ve37:{
+        ls: "Surrender all, a traitor now",
+        stamp: "130",
+      },
+      ve38:{
+        ls: "A traitor of your love",
+        stamp: "131",
+      },
+      ve39:{
+        ls: "So I'll take my heart and run for good",
+        stamp: "134",
+      },
+      ve40:{
+        ls: "For good",
+        stamp: "144",
+      },
+      ve41:{
+        ls: "For good",
+        stamp: "152",
+      },
+      ve42:{
+        ls: "For good",
+        stamp: "154",
+      },
+      ve43:{
+        ls: "Good",
+        stamp: "155",
+      },
+    },
+
+    bio: "extraterrestrial",
+    social:{
+      instagram: "https://www.instagram.com/elleyduhe/",
+      twitter: "https://twitter.com/elleyduhe",
+      facebook: "https://www.facebook.com/elleyduhemusic",
     },
     user_playlist_1: "",
   },
