@@ -6102,83 +6102,6 @@ var allMusic = [
     id: "112",
     bio: "Sanah to jedna z najciekawszych wokalistek z nurtu tzw. quality pop na polskiej scenie. W 2019 roku wydała szereg singli, którymi zainteresowała i zdobyła wielu fanów. W roku 2020 roku jej single  ,  i  pokochała cała Polska - na tyle, że debiutancka płyta sanah „Królowa dram” zadebiutowała na 1. miejscu list sprzedaży płyt OLiS i szybko zyskała status Platyny. Rok pozniej sukces ten powtorzyla z hitowym albumem „Irenka” - hity Ale jazz! , etc. (na disco) czy ten Stan ponownie podbiły wszystkie możliwe listy przebojów. Jesienią ukaże się reedycja „Irenki” a na niej m.in. najsłynniejszy nieznany utwór ostatnich miesięcy - Kolońska i szlugi!",
     lyrics:{
-      ve1:{
-        ls1: "Na szlak moich blizn poprowadź palec",
-        ls2: "By nasze drogi spleść gwiazdom na przekór",
-        ls3: "Otwórz te rany, a potem zalecz",
-        ls4: "Aż w zawiły losu ułożą się wzór",
-        stamp: "23",
-      },
-      ve2:{
-        ls1: "Z moich snów uciekasz nad ranem",
-        ls2: "Cierpka jak agrest słodka jak bez",
-        ls3: "Chcę śnić czarne loki splątane",
-        ls4: "Fiołkowe oczy mokre od łez",
-        stamp: "47",
-      },
-      ve3:{
-        ls1: "Za wilczym śladem podążę w zamieć",
-        ls2: "I twoje serce wytropię uparte",
-        ls3: "Przez gniew i smutek, stwardniałe w kamień",
-        ls4: "Rozpalę usta smagane wiatrem", 
-        stamp: "72",
-      },
-      ve4:{
-        ls1: "Z moich snów uciekasz nad ranem",
-        ls2: "Cierpka jak agrest słodka jak bez",
-        ls3: "Chcę śnić czarne loki splątane",
-        ls4: "Fiołkowe oczy mokre od łez",
-        stamp: "96",
-      },
-      ve5:{
-        ls1: "Nie wiem, czy jesteś moim przeznaczeniem",
-        ls2: "Czy przez ślepy traf miłość nas związała",
-        ls3: "Kiedy wyrzekłem moje życzenie",
-        ls4: "Czyś mnie wbrew sobie wtedy pokochała?",
-        stamp: "121",
-      },
-      ve6:{
-        ls1: "Z moich snów uciekasz nad ranem",
-        ls2: "Cierpka jak agrest słodka jak bez",
-        ls3: "Chcę śnić czarne loki splątane",
-        ls4: "Fiołkowe oczy mokre od łez",
-        stamp: "145",
-      },
-      ve7:{
-        ls1: "",
-        ls2: "",
-        ls3: "",
-        ls4: "",
-        stamp: "",
-      },
-      ve8:{
-        ls1: "",
-        ls2: "",
-        ls3: "",
-        ls4: "",
-        stamp: "",
-      },
-      ve9:{
-        ls1: "",
-        ls2: "",
-        ls3: "",
-        ls4: "",
-        stamp: "",
-      },
-      ve10:{
-        ls1: "",
-        ls2: "",
-        ls3: "",
-        ls4: "",
-        stamp: "",
-      },
-      ve11:{
-        ls1: "",
-        ls2: "",
-        ls3: "",
-        ls4: "",
-        stamp: "",
-      },
     },
     social:{
       instagram: "https://www.instagram.com/sanahmusic",
@@ -7157,6 +7080,90 @@ var allMusic = [
         ls: "In the middle of the night, oh-oh-whoa",
         stamp: "166",
       },
+      ve50:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve51:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve52:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve53:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve54:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve55:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve56:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve57:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve58:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve59:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve60:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve61:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve62:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve63:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve64:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve65:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve66:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve67:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve68:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve69:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve70:{
+        ls: "",
+        stamp: "3600",
+      },
     },
 
     bio: "extraterrestrial",
@@ -7413,6 +7420,114 @@ var allMusic = [
         ls: "Good",
         stamp: "155",
       },
+      ve44:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve45:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve46:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve47:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve48:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve49:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve50:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve51:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve52:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve53:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve54:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve55:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve56:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve57:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve58:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve59:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve60:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve61:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve62:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve63:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve64:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve65:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve66:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve67:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve68:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve69:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve70:{
+        ls: "",
+        stamp: "3600",
+      },
     },
 
     bio: "extraterrestrial",
@@ -7420,6 +7535,692 @@ var allMusic = [
       instagram: "https://www.instagram.com/elleyduhe/",
       twitter: "https://twitter.com/elleyduhe",
       facebook: "https://www.facebook.com/elleyduhemusic",
+    },
+    user_playlist_1: "",
+  },
+  {
+    name: "Some Say",
+    artist: "Nea",
+    colaboration: "",
+    artist_status: "none",
+    language: "eng",
+    country: "se",
+    artist_id: "48",
+
+    src: "SomeSay-Nea",
+    img: "ab67616d000some01e0299eb2sayt2c23b13nea20458a150cea",
+    img_mini: "https://i.scdn.co/image/ab67616d0000485199eb22c23b1320458a150cea",
+    
+    style: "Pop",
+    status: "nostatus",
+    tag: "Popular",
+    avatar: "ab6761860000101nea634d109732030f09850412dc4",
+    artist_img: "https://i.scdn.co/image/ab6761670000ecd43ec545cb75ae174c1f418df7",
+    gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd4dd858305628ab7bae19b2d9e",
+    gallery_img_2: "https://i.scdn.co/image/ab6761670000ecd488be2e36268a9e1bfba95804",
+    gallery_img_3: "https://i.scdn.co/image/ab6761670000ecd488effef1f26f50b6d915dffb",
+    gallery_img_4: "https://scontent-vie1-1.xx.fbcdn.net/v/t1.6435-9/154950277_469919684392313_4056966864948683869_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=e3f864&_nc_ohc=ys-uB1463Z8AX8kEq9G&_nc_ht=scontent-vie1-1.xx&oh=00_AfAaGKzvAXA1H8WDLg9uGBOJ53qxaoO1slXmiv6N_SwPDg&oe=644671A8",
+    gallery_img_5: "https://scontent-vie1-1.xx.fbcdn.net/v/t1.6435-9/188918317_527024135348534_194107008319434192_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=e3f864&_nc_ohc=CRw07X45WmwAX9Na_A2&_nc_ht=scontent-vie1-1.xx&oh=00_AfB_rzu3C6O63UYosoUe_VElF923m4XXotNlltLBNPePAg&oe=64466F5E",
+    gallery_img_6: "https://scontent-vie1-1.xx.fbcdn.net/v/t39.30808-6/325210811_908876140115470_7223858663757190689_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=YxLtkcK4TR8AX86Oo_c&_nc_ht=scontent-vie1-1.xx&oh=00_AfC6i4FzXb29nIeytyYkUvZUco43o5SzVZAhqhHdrsNjyg&oe=64245987",
+    canvas: "",
+    
+    album: "Some Say",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e0299eb22c23b1320458a150cea",
+    album_premiere: "2019",
+    id: "127",
+
+    lyrics:{
+    },
+
+    bio: "Artist & songwriter Linnea Nea Södahl stepped into 2023 with over 2 billion streams as a songwriter and several international awards behind her. Now widely regarded as one of Sweden’s most acclaimed writers, Nea’s credits include artists such as Zara Larsson, Skott and Felix Jaehn among numerous others. In 2019 Nea released Some Say, her first song as an artist in her own right, which catapulted her career to new heights. Some Say and Some Say Remix was certified diamond, platinum or gold in 21 countries, reached #1 on airplay in 7 countries and became the 9th most played track on European radio that year. In 2023 Nea will release her debut album “TRANSPARENT”, produced by Daniel Ledinsky. She will also participate in the Swedish edition of Songland as a member of the expert panel together with Carl Falk, Savan Kotecha & Elias Kapari.",
+    social:{
+      instagram: "https://www.instagram.com/neasongs/",
+      twitter: "",
+      facebook: "https://www.facebook.com/neasongs",
+    },
+    user_playlist_1: "",
+  },
+  {
+    name: "Are You Entertained",
+    artist: "Russ",
+    colaboration: "Ed Sheeran",
+    artist_status: "none",
+    language: "eng",
+    country: "usa",
+    artist_id: "49",
+
+    src: "Russ-AreYouEntertained",
+    img: "ab67616d00001e020russareu1d1117cb19a324aa5b1dd1e",
+    img_mini: "https://i.scdn.co/image/ab67616d0000485101d1117cb19a324aa5b1dd1e",
+    
+    style: "Hip-Hop",
+    status: "nostatus",
+    tag: "",
+    avatar: "ab6761670russ000ecd4519a71e464fa8e5890b1528e",
+    artist_img: "https://pbs.twimg.com/media/Frw-0E6XsAAUJ_J?format=jpg&name=large",
+    gallery_img_1: "https://i.scdn.co/image/ab67618600001016b323a7e2dfbae7a4b9059598",
+    gallery_img_2: "https://pbs.twimg.com/media/FqKbd1uaIAE8RIR?format=jpg&name=large",
+    gallery_img_3: "https://pbs.twimg.com/media/Fpm1NLOXwAYu4kB?format=jpg&name=large",
+    gallery_img_4: "https://pbs.twimg.com/media/Fpm1NLSWAAASBcO?format=jpg&name=large",
+    gallery_img_5: "https://pbs.twimg.com/media/Fpm1NLUXsAYmqdV?format=jpg&name=large",
+    gallery_img_6: "https://pbs.twimg.com/media/FoOGFIQXkAE6tba?format=jpg&name=large",
+    canvas: "https://ssscdn.io/ssstwitter/aHR0cHM6Ly92aWRlby50d2ltZy5jb20vZXh0X3R3X3ZpZGVvLzExNDIwMTYyOTM0MjU2MTQ4NDgvcHUvdmlkLzcyMHg3MjAvY2J2bnhkdWo5LWlFTjR5eC5tcDQ/dGFnPTEw",
+    
+    album: "Are You Entertained",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e0201d1117cb19a324aa5b1dd1e",
+    album_premiere: "2022",
+    id: "128",
+
+    lyrics:{
+      ve1:{
+        ls: "Are you not entertained?",
+        stamp: "0",
+      },
+      ve2:{
+        ls: "Are you not entertained?",
+        stamp: "4",
+      },
+      ve3:{
+        ls: "Every time, every night is a loose one",
+        stamp: "7",
+      },
+      ve4:{
+        ls: "And every flight, you know that I put the crew on",
+        stamp: "11",
+      },
+      ve5:{
+        ls: "You say that I dropped off, well, then tell me what you've done",
+        stamp: "14",
+      },
+      ve6:{
+        ls: "I'm still in my winnin' phase, yeah, I been away",
+        stamp: "17",
+      },
+      ve7:{
+        ls: "Are you entertained? I'm gone (yeah)",
+        stamp: "19",
+      },
+      ve8:{
+        ls: "The god in me, that's what I'm constantly summoning",
+        stamp: "21",
+      },
+      ve9:{
+        ls: "I love the climb, I don't care where the summit is",
+        stamp: "23",
+      },
+      ve10:{
+        ls: "Funny when people be sayin' I peaked (ha)",
+        stamp: "25",
+      },
+      ve11:{
+        ls: "Retired my parents, they live at the beach",
+        stamp: "27",
+      },
+      ve12:{
+        ls: "Models and freaks is my track record (yeah)",
+        stamp: "29",
+      },
+      ve13:{
+        ls: "I made my homies my staff members",
+        stamp: "30",
+      },
+      ve14:{
+        ls: "Got myself lit to give y'all the light",
+        stamp: "32",
+      },
+      ve15:{
+        ls: "Usin' my mind to attract better",
+        stamp: "34",
+      },
+      ve16:{
+        ls: "At first, when adversity came, I said, 'Why me?'",
+        stamp: "36",
+      },
+      ve17:{
+        ls: "Now I be staring at doubt sayin', 'Try me'",
+        stamp: "38",
+      },
+      ve18:{
+        ls: "Kyrie, I handle it well",
+        stamp: "39",
+      },
+      ve19:{
+        ls: "They still takin' shots, tryna hand me a L, but I pass on that",
+        stamp: "41",
+      },
+      ve20:{
+        ls: "Anger, I try not to act on that",
+        stamp: "44",
+      },
+      ve21:{
+        ls: "I'ma just transmute it",
+        stamp: "45",
+      },
+      ve22:{
+        ls: "Put it all back in the music",
+        stamp: "47",
+      },
+      ve23:{
+        ls: "It's feeling like I might just be on a roll",
+        stamp: "49",
+      },
+      ve24:{
+        ls: "I'm never sellin' my soul",
+        stamp: "51",
+      },
+      ve25:{
+        ls: "My records are platinum and gold",
+        stamp: "54",
+      },
+      ve26:{
+        ls: "It just keeps happenin', woah",
+        stamp: "55",
+      },
+      ve27:{
+        ls: "It's feeling like I might just be on a roll",
+        stamp: "57",
+      },
+      ve28:{
+        ls: "I'm never sellin' my soul",
+        stamp: "59",
+      },
+      ve29:{
+        ls: "My records are platinum and gold",
+        stamp: "61",
+      },
+      ve30:{
+        ls: "It just keeps happenin', woah",
+        stamp: "63",
+      },
+      ve31:{
+        ls: "Every time, you see me shine and move up (yeah)",
+        stamp: "66",
+      },
+      ve32:{
+        ls: "My seat is reclined, the jet is G5, I blew up",
+        stamp: "70",
+      },
+      ve33:{
+        ls: "You tell me I fell off, but tell me what you've done",
+        stamp: "75",
+      },
+      ve34:{
+        ls: "Are you entertained? I'm gone",
+        stamp: "78",
+      },
+      ve35:{
+        ls: "Well, I'm in the pub with the bros",
+        stamp: "81",
+      },
+      ve36:{
+        ls: "Lightin' up somethin' that goes",
+        stamp: "82",
+      },
+      ve37:{
+        ls: "Nothin' is froze",
+        stamp: "83",
+      },
+      ve38:{
+        ls: "But when I put the kettle on, it's a number that nobody knows",
+        stamp: "84",
+      },
+      ve39:{
+        ls: "I stay off the road, live in the sticks",
+        stamp: "86",
+      },
+      ve40:{
+        ls: "Put my profit into mortar and bricks",
+        stamp: "89",
+      },
+      ve41:{
+        ls: "You know I got good advice from a couple guys",
+        stamp: "90",
+      },
+      ve42:{
+        ls: "To leave more than just stress for my kids",
+        stamp: "92",
+      },
+      ve43:{
+        ls: "Well, isn't it blissful? Baby",
+        stamp: "94",
+      },
+      ve44:{
+        ls: "Sittin' in like we made it",
+        stamp: "98",
+      },
+      ve45:{
+        ls: "It's kinda mad how the game is",
+        stamp: "100",
+      },
+      ve46:{
+        ls: "You celebrate it and hate it",
+        stamp: "101",
+      },
+      ve47:{
+        ls: "But I don't pay no attention to the words",
+        stamp: "103",
+      },
+      ve48:{
+        ls: "Put out another one, let it burn",
+        stamp: "104",
+      },
+      ve49:{
+        ls: "Still on the list, you know what it is",
+        stamp: "106",
+      },
+      ve50:{
+        ls: "They puttin' me first, yeah",
+        stamp: "108",
+      },
+      ve51:{
+        ls: "Met Russ in Carbone in New York",
+        stamp: "110",
+      },
+      ve52:{
+        ls: "Now we here, and I'm killin' the verse",
+        stamp: "111",
+      },
+      ve53:{
+        ls: "And every time, it's gotta be right",
+        stamp: "112",
+      },
+      ve54:{
+        ls: "And you told me 'Teddy, boy, take 'em to church",
+        stamp: "114",
+      },
+      ve55:{
+        ls: "Ooh-ooh",
+        stamp: "117",
+      },
+      ve56:{
+        ls: "When you touch down up in London, you know what?",
+        stamp: "118",
+      },
+      ve57:{
+        ls: "Give me the stage and you're gonna see how it goes off",
+        stamp: "122",
+      },
+      ve58:{
+        ls: "Every time, every night is a loose one",
+        stamp: "125",
+      },
+      ve59:{
+        ls: "My seat is reclined, the jet is G5, I blew up",
+        stamp: "129",
+      },
+      ve60:{
+        ls: "You say that I dropped off, well then tell me what you've done",
+        stamp: "133",
+      },
+      ve61:{
+        ls: "I'm still in my winnin' phase, 'Rari switchin' lanes",
+        stamp: "135",
+      },
+      ve62:{
+        ls: "Are you entertained? I'm gone",
+        stamp: "138",
+      },
+      ve63:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve64:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve65:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve66:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve67:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve68:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve69:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve70:{
+        ls: "",
+        stamp: "3600",
+      },
+    },
+
+    bio: "During the 2010s, Russ Vitale -- a rapper, singer, songwriter, and producer -- emerged from the Atlanta-area underground with dozens of independent singles and albums, all of which were made freely available as downloads. Signing with the majors in 2017, he issued his mainstream breakthrough, the platinum-certified Top Ten album There's Really a Wolf. He also cracked the Top Five of the Billboard 200 with 2018's Zoo and 2020's Shake the Snow Globe, before releasing the companion albums Chomp and Chomp 2. The hit single Handsomer and the EP If Not Now, When?, appeared in 2022",
+    social:{
+      instagram: "https://www.instagram.com/russ/",
+      twitter: "https://twitter.com/russdiemon",
+      facebook: "https://www.facebook.com/russtheone",
+    },
+    user_playlist_1: "",
+  },
+  {
+    name: "Little Hollywood",
+    artist: "Alle Farben",
+    colaboration: "Janieck",
+    artist_status: "none",
+    language: "eng",
+    country: "de",
+    artist_id: "50",
+
+    src: "allefarben-LittleHollywood",
+    img: "ab67616d000hollywood01e0202b5ccda348b1ef45e5ebcfb",
+    img_mini: "https://i.scdn.co/image/ab67616d0000485102b5ccda348b1ef45e5ebcfb",
+    
+    style: "Chill",
+    status: "nostatus",
+    tag: "",
+    avatar: "Fr8XdEallefarben215asadweewdsd6aAAEmomP",
+    artist_img: "https://i.scdn.co/image/10f6d099e40c69c55faa130b63f0d20fe3f11b56",
+    gallery_img_1: "https://pbs.twimg.com/media/EvkiU4JWYAEyb8a?format=jpg&name=large",
+    gallery_img_2: "https://pbs.twimg.com/media/E53b0BgWQAYQt0o?format=jpg&name=medium",
+    gallery_img_3: "https://pbs.twimg.com/media/Et4OTn4XEAA1GwH?format=jpg&name=large",
+    gallery_img_4: "https://pbs.twimg.com/media/EpX7NA5W4AAcvqO?format=jpg&name=4096x4096",
+    gallery_img_5: "https://pbs.twimg.com/media/EWI58rXXkAMG39Z?format=jpg&name=large",
+    gallery_img_6: "https://pbs.twimg.com/media/DK5GQTEX0AAPZ7Y?format=jpg&name=4096x4096",
+    canvas: "",
+    
+    album: "Sticker on My Suitcase",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e0202b5ccda348b1ef45e5ebcfb",
+    album_premiere: "2019",
+    id: "129",
+
+    lyrics:{
+      ve1:{
+        ls: "We're living in our own little Hollywood",
+        stamp: "4",
+      },
+      ve2:{
+        ls: "We're washed up stars",
+        stamp: "8",
+      },
+      ve3:{
+        ls: "Everything's got me good",
+        stamp: "10",
+      },
+      ve4:{
+        ls: "We got everything we need in our neighbourhood",
+        stamp: "12",
+      },
+      ve5:{
+        ls: "No fancy cars",
+        stamp: "16",
+      },
+      ve6:{
+        ls: "Remember when we were 15",
+        stamp: "19",
+      },
+      ve7:{
+        ls: "Smoking in the back",
+        stamp: "20",
+      },
+      ve8:{
+        ls: "Never really noticed you",
+        stamp: "23",
+      },
+      ve9:{
+        ls: "But I was falling hard",
+        stamp: "24",
+      },
+      ve10:{
+        ls: "Remember Jimmy's pick-up",
+        stamp: "26",
+      },
+      ve11:{
+        ls: "Drunk driving in the dark",
+        stamp: "28",
+      },
+      ve12:{
+        ls: "If I think about it now",
+        stamp: "30",
+      },
+      ve13:{
+        ls: "We didn't think at all",
+        stamp: "32",
+      },
+      ve14:{
+        ls: "Home",
+        stamp: "35",
+      },
+      ve15:{
+        ls: "We're living in our own little Hollywood",
+        stamp: "36",
+      },
+      ve16:{
+        ls: "We're washed up stars",
+        stamp: "40",
+      },
+      ve17:{
+        ls: "Everything's got me good",
+        stamp: "41",
+      },
+      ve18:{
+        ls: "We got everything we need in our neighbourhood",
+        stamp: "43",
+      },
+      ve19:{
+        ls: "No fancy cars",
+        stamp: "48",
+      },
+      ve20:{
+        ls: "Everything's got me good",
+        stamp: "49",
+      },
+      ve21:{
+        ls: "I don't wanna know where it's gonna go",
+        stamp: "51",
+      },
+      ve22:{
+        ls: "It's crazy living this life, oh, oh",
+        stamp: "54",
+      },
+      ve23:{
+        ls: "We're living in our own little Hollywood",
+        stamp: "60",
+      },
+      ve24:{
+        ls: "We're washed up stars",
+        stamp: "63",
+      },
+      ve25:{
+        ls: "Everything's got me good",
+        stamp: "65",
+      },
+      ve26:{
+        ls: "Remember getting busted",
+        stamp: "70",
+      },
+      ve27:{
+        ls: "Grafitti on the wall",
+        stamp: "71",
+      },
+      ve28:{
+        ls: "You laughed at me rebelliously",
+        stamp: "73",
+      },
+      ve29:{
+        ls: "With the hands tied up and all",
+        stamp: "75",
+      },
+      ve30:{
+        ls: "I wonder what you've been up to",
+        stamp: "78",
+      },
+      ve31:{
+        ls: "Jimmy's still the same",
+        stamp: "79",
+      },
+      ve32:{
+        ls: "The old tree in our backyard's still scarred by our names",
+        stamp: "82",
+      },
+      ve33:{
+        ls: "I'm hanging on to everyone and all that we did at the time",
+        stamp: "87",
+      },
+      ve34:{
+        ls: "I don't wanna know where it's gonna go",
+        stamp: "95",
+      },
+      ve35:{
+        ls: "It's crazy living this life, oh, oh",
+        stamp: "97",
+      },
+      ve36:{
+        ls: "We're living in our own little Hollywood",
+        stamp: "103",
+      },
+      ve37:{
+        ls: "We're washed up stars",
+        stamp: "107",
+      },
+      ve38:{
+        ls: "Everything's got me good",
+        stamp: "109",
+      },
+      ve39:{
+        ls: "We got everything we need in our neighbourhood",
+        stamp: "110",
+      },
+      ve40:{
+        ls: "No fancy cars",
+        stamp: "114",
+      },
+      ve41:{
+        ls: "Everything's got me good",
+        stamp: "116",
+      },
+      ve42:{
+        ls: "I don't wanna know where it's gonna go",
+        stamp: "119",
+      },
+      ve43:{
+        ls: "It's crazy living this life, oh, oh",
+        stamp: "121",
+      },
+      ve44:{
+        ls: "We're living in our own little Hollywood",
+        stamp: "125",
+      },
+      ve45:{
+        ls: "We're washed up stars",
+        stamp: "130",
+      },
+      ve46:{
+        ls: "Everything's got me good",
+        stamp: "132",
+      },
+      ve47:{
+        ls: "Ooh-ooh-ooh-ooh-ooh",
+        stamp: "135",
+      },
+      ve48:{
+        ls: "Ooh-ooh-ooh-ooh-oh",
+        stamp: "137",
+      },
+      ve49:{
+        ls: "We're washed up stars",
+        stamp: "139",
+      },
+      ve50:{
+        ls: "Everything's got me good",
+        stamp: "140",
+      },
+      ve51:{
+        ls: "Ooh-ooh-ooh-ooh-ooh",
+        stamp: "142",
+      },
+      ve52:{
+        ls: "Ooh-ooh-ooh-ooh-oh",
+        stamp: "144",
+      },
+      ve53:{
+        ls: "We're washed up stars",
+        stamp: "147",
+      },
+      ve54:{
+        ls: "Everything's got me good",
+        stamp: "148",
+      },
+      ve55:{
+        ls: "We're living in our own little Hollywood",
+        stamp: "151",
+      },
+      ve56:{
+        ls: "We're washed up stars",
+        stamp: "154",
+      },
+      ve57:{
+        ls: "Everything's got me good",
+        stamp: "156",
+      },
+      ve58:{
+        ls: "We got everything we need in our neighbourhood",
+        stamp: "158",
+      },
+      ve59:{
+        ls: "No fancy cars",
+        stamp: "162",
+      },
+      ve60:{
+        ls: "Everything's got me good",
+        stamp: "163",
+      },
+      ve61:{
+        ls: "I don't wanna know where it's gonna go",
+        stamp: "165",
+      },
+      ve62:{
+        ls: "It's crazy living this life, oh, oh",
+        stamp: "168",
+      },
+      ve63:{
+        ls: "We're living in our own little Hollywood",
+        stamp: "174",
+      },
+      ve64:{
+        ls: "We're washed up stars",
+        stamp: "178",
+      },
+      ve65:{
+        ls: "Everything's got me good",
+        stamp: "180",
+      },
+      ve66:{
+        ls: "♫ ♫ ♫",
+        stamp: "185",
+      },
+      ve67:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve68:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve69:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve70:{
+        ls: "",
+        stamp: "3600",
+      },
+    },
+
+    bio: "Without a doubt, Berlin based DJ & Producer Alle Farben is one of the most established and successful German Artists in Pop and Dance Music. Playing over 150 live shows yearly, Alle Farben has graced some of Dance Music’s greatest stages such as Tomorrowland, Lollapalooza, Parookaville and Sziget Festival. In the past year Alle Farben has also generated and sold over 5 million downloads and CD’s, counting Germany only. He was nominated for 1Live Krone for „Best Single“ in 2017 as well as for MTV EMA for “Best German Act“, and won the ECHO music award as best „Dance National“ act. Alle Farben currently has over 900 million streams on Spotify with 6,5 million monthly listeners and over 250 million views on YouTube. After having achieved 12x Gold, 8x Platinum, and 1x Diamond awards, more is yet to come!",
+    social:{
+      instagram: "https://www.instagram.com/allefarben_official/",
+      twitter: "https://twitter.com/allefarben",
+      facebook: "https://www.facebook.com/AlleFarbenOfficial/",
     },
     user_playlist_1: "",
   },

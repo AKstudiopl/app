@@ -2784,13 +2784,14 @@ font-family: 'Rubik';
 .main-music-sec-nav a.active
 {
   color: var(--maincolor);
-  padding: 5px 20px;
+  padding: 5px 0px;
+  padding-right: 20px;
   border-radius: 15px 0 0 15px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-font-family: 'Rubik';
+  font-family: 'Rubik';
 }
 .main-music-sec-nav a.active::after
 {
@@ -3004,8 +3005,7 @@ font-family: 'Rubik';
   width: 100%;
   height: 60px;
   background-size: cover;
-  -webkit-mask-image: -webkit-linear-gradient(300deg, transparent 50%, black 100%);
-  opacity: 0.5;
+  opacity: 0.05;
   object-fit: contain;
   z-index: 0;
   filter: blur(1px);
@@ -5941,7 +5941,7 @@ width: 100%;
 }
 .user_profile_content_item_song.artist .user_profile_content_item_song_data 
 {
-  padding-left: 22%;
+  padding-left: 85px;
   font-size: 25px;
   color: var(--color);
 }
@@ -5957,6 +5957,7 @@ width: 100%;
   object-fit: cover;
   z-index: -1;
   position: absolute;
+  border-radius: 25%;
 }
 .user_profile_content_item_song_data p
 {

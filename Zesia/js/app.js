@@ -2986,7 +2986,7 @@ function thisIsArtistItem(element){
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
       `<div class="more_from_artists_item" li-index='${favoritIt[i].id}' onclick="clickedMixItem(this)">
-       <img src="images/${favoritIt[i].img}.jpg">
+       <img src="${favoritIt[i].img_mini}">
           <div class="more_from_artists_item_data">
             <p>${favoritIt[i].name}</p>
             <span>${favoritIt[i].artist}</span>
@@ -3140,7 +3140,7 @@ function topListShow(element){
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
       `<div class="top_list_hits_item" li-index='${favoritIt[i].id}' onclick="clickedMixItem(this)">
-       <img src="images/${favoritIt[i].img}.jpg">
+       <img src="${favoritIt[i].img_mini}">
           <div class="top_list_hits_item_data">
             <p>${favoritIt[i].name}</p>
             <span>${favoritIt[i].artist}</span>
@@ -3181,7 +3181,7 @@ function radioLoad(element){
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
       `<div class="radio_screen_item" li-index='${favoritIt[i].id}' onclick="clickedMixItem(this)">
-       <img src="images/${favoritIt[i].img}.jpg">
+       <img src="${favoritIt[i].img_mini}">
           <div class="radio_screen_item_data">
             <p>${favoritIt[i].name}</p>
             <span>${favoritIt[i].artist}</span>
@@ -3424,7 +3424,7 @@ function applyCustomFilter(){
   results.innerHTML=searchMusicContent.map((a,i)=>
   `
   <div class="result-box" li-index="${a.id}" onclick="resultItemQueue(this);tracksHistory(this);">
-    <img src="images/${a.img}.jpg">
+    <img data-lazy="${a.img_mini}">
     <div class="result-box-cover">
       <h1 class="result-name">${a.name}</h1>
       <p class="result-artist">${a.artist}</p>
@@ -3432,6 +3432,9 @@ function applyCustomFilter(){
     <i class="fa-solid fa-ellipsis-vertical"></i>
     </div>
   `).join("\n");
+
+  let targets = document.querySelectorAll('.search-results img');
+  targets.forEach(lazyLoad);
 
   filterMenu.classList.remove("active");
 }
@@ -3447,7 +3450,7 @@ function resetCustomFilter(){
   results.innerHTML=searchMusicContent.map((a,i)=>
   `
   <div class="result-box" li-index="${a.id}" onclick="resultItemQueue(this);tracksHistory(this);">
-     <img src="images/${a.img}.jpg">
+     <img data-lazy="${a.img_mini}">
      <div class="result-box-cover">
        <h1 class="result-name">${a.name}</h1>
        <p class="result-artist">${a.artist}</p>
@@ -3455,6 +3458,9 @@ function resetCustomFilter(){
      <i class="fa-solid fa-ellipsis-vertical"></i>
     </div>
    `).join("\n");
+
+   let targets = document.querySelectorAll('.search-results img');
+   targets.forEach(lazyLoad);
 
    clearFilterStatus()
 }
@@ -4392,7 +4398,254 @@ function lyricsMode(){
           }}else if(allMusic[indexNumb - 1].lyrics.ve51.stamp - lyricsGap < mainAudio.currentTime){
             let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve51.stamp + '"]');
             lsAtr.classList.add("active");
-          }                       
+          }         
+                                        
+        if(allMusic[indexNumb - 1].lyrics.ve52.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve52.stamp != "" && !lyricsBox.classList.contains('atr-52')){
+
+          lyricsBox.classList.add('atr-52');
+      
+          if(allMusic[indexNumb - 1].lyrics.ve52.ls != undefined){
+            let resultFAV = 
+            `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve52.stamp}'>${allMusic[indexNumb - 1].lyrics.ve52.ls}</p>`;
+              resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+          }}else if(allMusic[indexNumb - 1].lyrics.ve52.stamp - lyricsGap < mainAudio.currentTime){
+            let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve52.stamp + '"]');
+            lsAtr.classList.add("active");
+          } 
+                                               
+        if(allMusic[indexNumb - 1].lyrics.ve53.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve53.stamp != "" && !lyricsBox.classList.contains('atr-53')){
+
+          lyricsBox.classList.add('atr-53');
+      
+          if(allMusic[indexNumb - 1].lyrics.ve53.ls != undefined){
+            let resultFAV = 
+            `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve53.stamp}'>${allMusic[indexNumb - 1].lyrics.ve53.ls}</p>`;
+              resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+          }}else if(allMusic[indexNumb - 1].lyrics.ve53.stamp - lyricsGap < mainAudio.currentTime){
+            let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve53.stamp + '"]');
+            lsAtr.classList.add("active");
+          } 
+                                               
+        if(allMusic[indexNumb - 1].lyrics.ve54.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve54.stamp != "" && !lyricsBox.classList.contains('atr-54')){
+
+          lyricsBox.classList.add('atr-54');
+      
+          if(allMusic[indexNumb - 1].lyrics.ve54.ls != undefined){
+            let resultFAV = 
+            `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve54.stamp}'>${allMusic[indexNumb - 1].lyrics.ve54.ls}</p>`;
+              resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+          }}else if(allMusic[indexNumb - 1].lyrics.ve54.stamp - lyricsGap < mainAudio.currentTime){
+            let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve54.stamp + '"]');
+            lsAtr.classList.add("active");
+          } 
+                                               
+        if(allMusic[indexNumb - 1].lyrics.ve55.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve55.stamp != "" && !lyricsBox.classList.contains('atr-55')){
+
+          lyricsBox.classList.add('atr-55');
+      
+          if(allMusic[indexNumb - 1].lyrics.ve55.ls != undefined){
+            let resultFAV = 
+            `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve55.stamp}'>${allMusic[indexNumb - 1].lyrics.ve55.ls}</p>`;
+              resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+          }}else if(allMusic[indexNumb - 1].lyrics.ve55.stamp - lyricsGap < mainAudio.currentTime){
+            let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve55.stamp + '"]');
+            lsAtr.classList.add("active");
+          } 
+                                               
+        if(allMusic[indexNumb - 1].lyrics.ve56.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve56.stamp != "" && !lyricsBox.classList.contains('atr-56')){
+
+          lyricsBox.classList.add('atr-56');
+      
+          if(allMusic[indexNumb - 1].lyrics.ve56.ls != undefined){
+            let resultFAV = 
+            `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve56.stamp}'>${allMusic[indexNumb - 1].lyrics.ve56.ls}</p>`;
+              resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+          }}else if(allMusic[indexNumb - 1].lyrics.ve56.stamp - lyricsGap < mainAudio.currentTime){
+            let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve56.stamp + '"]');
+            lsAtr.classList.add("active");
+          } 
+                                               
+        if(allMusic[indexNumb - 1].lyrics.ve57.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve57.stamp != "" && !lyricsBox.classList.contains('atr-57')){
+
+          lyricsBox.classList.add('atr-57');
+      
+          if(allMusic[indexNumb - 1].lyrics.ve57.ls != undefined){
+            let resultFAV = 
+            `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve57.stamp}'>${allMusic[indexNumb - 1].lyrics.ve57.ls}</p>`;
+              resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+          }}else if(allMusic[indexNumb - 1].lyrics.ve57.stamp - lyricsGap < mainAudio.currentTime){
+            let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve57.stamp + '"]');
+            lsAtr.classList.add("active");
+          } 
+                                               
+        if(allMusic[indexNumb - 1].lyrics.ve58.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve58.stamp != "" && !lyricsBox.classList.contains('atr-58')){
+
+          lyricsBox.classList.add('atr-58');
+      
+          if(allMusic[indexNumb - 1].lyrics.ve58.ls != undefined){
+            let resultFAV = 
+            `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve58.stamp}'>${allMusic[indexNumb - 1].lyrics.ve58.ls}</p>`;
+              resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+          }}else if(allMusic[indexNumb - 1].lyrics.ve58.stamp - lyricsGap < mainAudio.currentTime){
+            let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve58.stamp + '"]');
+            lsAtr.classList.add("active");
+          } 
+                                               
+        if(allMusic[indexNumb - 1].lyrics.ve59.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve59.stamp != "" && !lyricsBox.classList.contains('atr-59')){
+
+          lyricsBox.classList.add('atr-59');
+      
+          if(allMusic[indexNumb - 1].lyrics.ve59.ls != undefined){
+            let resultFAV = 
+            `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve59.stamp}'>${allMusic[indexNumb - 1].lyrics.ve59.ls}</p>`;
+              resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+          }}else if(allMusic[indexNumb - 1].lyrics.ve59.stamp - lyricsGap < mainAudio.currentTime){
+            let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve59.stamp + '"]');
+            lsAtr.classList.add("active");
+          } 
+                                               
+        if(allMusic[indexNumb - 1].lyrics.ve60.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve60.stamp != "" && !lyricsBox.classList.contains('atr-60')){
+
+          lyricsBox.classList.add('atr-60');
+      
+          if(allMusic[indexNumb - 1].lyrics.ve60.ls != undefined){
+            let resultFAV = 
+            `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve60.stamp}'>${allMusic[indexNumb - 1].lyrics.ve60.ls}</p>`;
+              resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+          }}else if(allMusic[indexNumb - 1].lyrics.ve60.stamp - lyricsGap < mainAudio.currentTime){
+            let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve60.stamp + '"]');
+            lsAtr.classList.add("active");
+          } 
+                                               
+        if(allMusic[indexNumb - 1].lyrics.ve61.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve61.stamp != "" && !lyricsBox.classList.contains('atr-61')){
+
+          lyricsBox.classList.add('atr-61');
+      
+          if(allMusic[indexNumb - 1].lyrics.ve61.ls != undefined){
+            let resultFAV = 
+            `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve61.stamp}'>${allMusic[indexNumb - 1].lyrics.ve61.ls}</p>`;
+              resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+          }}else if(allMusic[indexNumb - 1].lyrics.ve61.stamp - lyricsGap < mainAudio.currentTime){
+            let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve61.stamp + '"]');
+            lsAtr.classList.add("active");
+          } 
+                                               
+        if(allMusic[indexNumb - 1].lyrics.ve62.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve62.stamp != "" && !lyricsBox.classList.contains('atr-62')){
+
+          lyricsBox.classList.add('atr-62');
+      
+          if(allMusic[indexNumb - 1].lyrics.ve62.ls != undefined){
+            let resultFAV = 
+            `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve62.stamp}'>${allMusic[indexNumb - 1].lyrics.ve62.ls}</p>`;
+              resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+          }}else if(allMusic[indexNumb - 1].lyrics.ve62.stamp - lyricsGap < mainAudio.currentTime){
+            let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve62.stamp + '"]');
+            lsAtr.classList.add("active");
+          } 
+                                               
+        if(allMusic[indexNumb - 1].lyrics.ve63.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve63.stamp != "" && !lyricsBox.classList.contains('atr-63')){
+
+          lyricsBox.classList.add('atr-63');
+      
+          if(allMusic[indexNumb - 1].lyrics.ve63.ls != undefined){
+            let resultFAV = 
+            `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve63.stamp}'>${allMusic[indexNumb - 1].lyrics.ve63.ls}</p>`;
+              resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+          }}else if(allMusic[indexNumb - 1].lyrics.ve63.stamp - lyricsGap < mainAudio.currentTime){
+            let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve63.stamp + '"]');
+            lsAtr.classList.add("active");
+          } 
+                                               
+        if(allMusic[indexNumb - 1].lyrics.ve64.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve64.stamp != "" && !lyricsBox.classList.contains('atr-64')){
+
+          lyricsBox.classList.add('atr-64');
+      
+          if(allMusic[indexNumb - 1].lyrics.ve64.ls != undefined){
+            let resultFAV = 
+            `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve64.stamp}'>${allMusic[indexNumb - 1].lyrics.ve64.ls}</p>`;
+              resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+          }}else if(allMusic[indexNumb - 1].lyrics.ve64.stamp - lyricsGap < mainAudio.currentTime){
+            let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve64.stamp + '"]');
+            lsAtr.classList.add("active");
+          } 
+                                               
+        if(allMusic[indexNumb - 1].lyrics.ve65.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve65.stamp != "" && !lyricsBox.classList.contains('atr-65')){
+
+          lyricsBox.classList.add('atr-65');
+      
+          if(allMusic[indexNumb - 1].lyrics.ve65.ls != undefined){
+            let resultFAV = 
+            `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve65.stamp}'>${allMusic[indexNumb - 1].lyrics.ve65.ls}</p>`;
+              resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+          }}else if(allMusic[indexNumb - 1].lyrics.ve65.stamp - lyricsGap < mainAudio.currentTime){
+            let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve65.stamp + '"]');
+            lsAtr.classList.add("active");
+          } 
+                                               
+        if(allMusic[indexNumb - 1].lyrics.ve66.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve66.stamp != "" && !lyricsBox.classList.contains('atr-66')){
+
+          lyricsBox.classList.add('atr-66');
+      
+          if(allMusic[indexNumb - 1].lyrics.ve66.ls != undefined){
+            let resultFAV = 
+            `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve66.stamp}'>${allMusic[indexNumb - 1].lyrics.ve66.ls}</p>`;
+              resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+          }}else if(allMusic[indexNumb - 1].lyrics.ve66.stamp - lyricsGap < mainAudio.currentTime){
+            let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve66.stamp + '"]');
+            lsAtr.classList.add("active");
+          } 
+                                                         
+        if(allMusic[indexNumb - 1].lyrics.ve67.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve67.stamp != "" && !lyricsBox.classList.contains('atr-67')){
+
+          lyricsBox.classList.add('atr-67');
+      
+          if(allMusic[indexNumb - 1].lyrics.ve67.ls != undefined){
+            let resultFAV = 
+            `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve67.stamp}'>${allMusic[indexNumb - 1].lyrics.ve67.ls}</p>`;
+              resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+          }}else if(allMusic[indexNumb - 1].lyrics.ve67.stamp - lyricsGap < mainAudio.currentTime){
+            let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve67.stamp + '"]');
+            lsAtr.classList.add("active");
+          } 
+                                                         
+        if(allMusic[indexNumb - 1].lyrics.ve68.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve68.stamp != "" && !lyricsBox.classList.contains('atr-68')){
+
+          lyricsBox.classList.add('atr-68');
+      
+          if(allMusic[indexNumb - 1].lyrics.ve68.ls != undefined){
+            let resultFAV = 
+            `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve68.stamp}'>${allMusic[indexNumb - 1].lyrics.ve68.ls}</p>`;
+              resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+          }}else if(allMusic[indexNumb - 1].lyrics.ve68.stamp - lyricsGap < mainAudio.currentTime){
+            let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve68.stamp + '"]');
+            lsAtr.classList.add("active");
+          } 
+                                                         
+        if(allMusic[indexNumb - 1].lyrics.ve69.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve69.stamp != "" && !lyricsBox.classList.contains('atr-69')){
+
+          lyricsBox.classList.add('atr-69');
+      
+          if(allMusic[indexNumb - 1].lyrics.ve69.ls != undefined){
+            let resultFAV = 
+            `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve69.stamp}'>${allMusic[indexNumb - 1].lyrics.ve69.ls}</p>`;
+              resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+          }}else if(allMusic[indexNumb - 1].lyrics.ve69.stamp - lyricsGap < mainAudio.currentTime){
+            let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve69.stamp + '"]');
+            lsAtr.classList.add("active");
+          } 
+                                                         
+        if(allMusic[indexNumb - 1].lyrics.ve70.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve70.stamp != "" && !lyricsBox.classList.contains('atr-70')){
+
+          lyricsBox.classList.add('atr-70');
+      
+          if(allMusic[indexNumb - 1].lyrics.ve70.ls != undefined){
+            let resultFAV = 
+            `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve70.stamp}'>${allMusic[indexNumb - 1].lyrics.ve70.ls}</p>`;
+              resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+          }}else if(allMusic[indexNumb - 1].lyrics.ve70.stamp - lyricsGap < mainAudio.currentTime){
+            let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve70.stamp + '"]');
+            lsAtr.classList.add("active");
+          } 
       }else{
     resultsFAV.innerHTML = '<span>Utwór Nie Posiada Wprowadzonego Tekstu</span>'
   }
