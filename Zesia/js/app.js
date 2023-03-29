@@ -719,16 +719,17 @@ function toggleStopEnd(element){
 
 $(function(){
   var boxes = $('.pespective_object'),
-      $window = $('.music-artist-container .music-artist-item');
+      $window = $('.music-artist-item');
   $window.scroll(function(){
-      var scrollTop = $window.scrollTop();
+      var scrollTop = $window.scrollTop() + 1;
       boxes.each(function(){
       var $this = $(this),
           scrollspeed = parseInt($this.data('scroll-speed')),
           val = - scrollTop / scrollspeed;
-      $this.css('transform', 'translateY(' + -val + 'px) scale(' + (100 + -val/10) + '%)');
-      $this.css('filter', 'grayscale(' + (val / 2) + '%)');
-      });
+      $this.css('transform', 'scale(' + (100 + -val/6) + '%) translateY(' + (-val) + 'px)');
+      $this.css('filter', 'blur(' + (-val / 10) + 'px)');
+      $this.css('opacity', '' + (100 + val/5) + '');
+      })
   });
 })
 

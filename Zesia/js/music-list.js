@@ -804,7 +804,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/Fcabj0FWIAAKT6-?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FcVS25OXEAAjjk2?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/EsshuO_W8AEl9xh?format=jpg&name=medium",
-    canvas: "",
+    canvas: "https://ssscdn.io/ssstwitter/aHR0cHM6Ly92aWRlby50d2ltZy5jb20vZXh0X3R3X3ZpZGVvLzE1ODgyMjIzNTQ3NjQ3NDI2NTgvcHUvdmlkLzEyODB4NzE0L1hHeFRubGlNckM5YTVVYlMubXA0P3RhZz0xMg==",
 
     album: "beerbongs & bentleys",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02b1c4b76e23414c9f20242268",

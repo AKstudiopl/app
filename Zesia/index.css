@@ -3951,6 +3951,11 @@ font-family: 'Rubik';
   height: 40vh;
   -webkit-mask-image: -webkit-linear-gradient(top, black 50%, transparent);
 }
+.music-artist-item-title
+{
+  background: url("https://images.unsplash.com/photo-1663305411753-4c305e177ff3?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NDA4ODE&ixlib=rb-1.2.1&q=80");
+  background-size: cover;
+}
 .music-artist-item-title img 
 {
   width: 100%;
