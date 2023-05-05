@@ -703,7 +703,6 @@ input:checked + .slider:before {
   visibility: hidden;
   transition: 0.5s;
   top: 120vh;
-  opacity: 0;
   overflow: scroll;
 }
 .search-container.active
@@ -711,7 +710,6 @@ input:checked + .slider:before {
   visibility: visible;
   top: 0;
   z-index: 5;
-  opacity: 1;
 }
 .search-filter
 {
@@ -1177,13 +1175,11 @@ input:checked + .slider:before {
   top: 120vh;
   overflow-y: scroll;
   z-index: 1;
-  opacity: 0;
 }
 .library-container.active
 {
   visibility: visible;
   top: 0;
-  opacity: 1;
 }
 .library-top
 {
