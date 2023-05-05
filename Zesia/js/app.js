@@ -7,29 +7,29 @@ darkMode.addEventListener('click', function(){
     content.classList.toggle('blue');
     if (content.classList.contains('green')) {
         localStorage.setItem("user_theme", "green");
-        document.documentElement.style.setProperty('--maincolor', '#A1D91F');
-        document.documentElement.style.setProperty('--maincolorhover', '#1ed760');
-        document.documentElement.style.setProperty('--border', '1px #A1D91F50 solid');
-        document.documentElement.style.setProperty('--background', '#121212');
-        document.documentElement.style.setProperty('--backgroundsecond', '#242424');
-        document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(36,36,36,1) 100%)');
+        document.documentElement.style.setProperty('--maincolor', '#ef5466');
+        document.documentElement.style.setProperty('--maincolorhover', '#DB7176');
+        document.documentElement.style.setProperty('--border', '1px #ef546650 solid');
+        document.documentElement.style.setProperty('--background', '#191922');
+        document.documentElement.style.setProperty('--backgroundsecond', '#32323d');
+        document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, var(--background) 0%, var(--backgroundsecond) 100%)');
     }
     if (content.classList.contains('blue')) {
         localStorage.setItem("user_theme", "blue");
-        document.documentElement.style.setProperty('--maincolor', '#A1D91F');
-        document.documentElement.style.setProperty('--maincolorhover', '#1ed760');
-        document.documentElement.style.setProperty('--border', '1px #A1D91F50 solid');
+        document.documentElement.style.setProperty('--maincolor', '#ef5466');
+        document.documentElement.style.setProperty('--maincolorhover', '#DB7176');
+        document.documentElement.style.setProperty('--border', '1px #ef546650 solid');
         document.documentElement.style.setProperty('--background', '#484b6a');
         document.documentElement.style.setProperty('--backgroundsecond', '#9394a5');
-        document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(36,36,36,1) 100%)');
+        document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, var(--background) 0%, var(--backgroundsecond) 100%)');
     }
     if (content.classList.contains('amoled')) {
-      document.documentElement.style.setProperty('--maincolor', '#A1D91F');
-      document.documentElement.style.setProperty('--maincolorhover', '#1ed760');
-      document.documentElement.style.setProperty('--border', '1px #A1D91F50 solid');
+      document.documentElement.style.setProperty('--maincolor', '#ef5466');
+      document.documentElement.style.setProperty('--maincolorhover', '#DB7176');
+      document.documentElement.style.setProperty('--border', '1px #ef546650 solid');
       document.documentElement.style.setProperty('--background', '#000000');
-      document.documentElement.style.setProperty('--backgroundsecond', '#242424');
-      document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(36,36,36,1) 100%)');
+      document.documentElement.style.setProperty('--backgroundsecond', '#32323d');
+      document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, var(--background) 0%, var(--backgroundsecond) 100%)');
   }
 })
 
@@ -38,28 +38,28 @@ function amoledMode(){
   content.classList.toggle('amoled');
 
   if (content.classList.contains('green')) {
-    document.documentElement.style.setProperty('--maincolor', '#A1D91F');
-    document.documentElement.style.setProperty('--maincolorhover', '#1ed760');
-    document.documentElement.style.setProperty('--border', '1px #A1D91F50 solid');
-    document.documentElement.style.setProperty('--background', '#121212');
-    document.documentElement.style.setProperty('--backgroundsecond', '#242424');
-    document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(36,36,36,1) 100%)');
+    document.documentElement.style.setProperty('--maincolor', '#ef5466');
+    document.documentElement.style.setProperty('--maincolorhover', '#DB7176');
+    document.documentElement.style.setProperty('--border', '1px #ef546650 solid');
+    document.documentElement.style.setProperty('--background', '#191922');
+    document.documentElement.style.setProperty('--backgroundsecond', '#32323d');
+    document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, var(--background) 0%, var(--backgroundsecond) 100%)');
   }
   if (content.classList.contains('blue')) {
-      document.documentElement.style.setProperty('--maincolor', '#A1D91F');
-      document.documentElement.style.setProperty('--maincolorhover', '#1ed760');
-      document.documentElement.style.setProperty('--border', '1px #A1D91F50 solid');
+      document.documentElement.style.setProperty('--maincolor', '#ef5466');
+      document.documentElement.style.setProperty('--maincolorhover', '#DB7176');
+      document.documentElement.style.setProperty('--border', '1px #ef546650 solid');
       document.documentElement.style.setProperty('--background', '#484b6a');
       document.documentElement.style.setProperty('--backgroundsecond', '#9394a5');
-      document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(36,36,36,1) 100%)');
+      document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, var(--background) 0%, var(--backgroundsecond) 100%)');
   }
   if (content.classList.contains('amoled')) {
-    document.documentElement.style.setProperty('--maincolor', '#A1D91F');
-    document.documentElement.style.setProperty('--maincolorhover', '#1ed760');
-    document.documentElement.style.setProperty('--border', '1px #A1D91F50 solid');
+    document.documentElement.style.setProperty('--maincolor', '#ef5466');
+    document.documentElement.style.setProperty('--maincolorhover', '#DB7176');
+    document.documentElement.style.setProperty('--border', '1px #ef546650 solid');
     document.documentElement.style.setProperty('--background', '#111111');
-    document.documentElement.style.setProperty('--backgroundsecond', '#242424');
-    document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(36,36,36,1) 100%)');
+    document.documentElement.style.setProperty('--backgroundsecond', '#32323d');
+    document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, var(--background) 0%, var(--backgroundsecond) 100%)');
   }
 }
 
@@ -67,20 +67,20 @@ window.addEventListener("load", function () {
     const loader = document.querySelector(".loader");
     loader.className += " hidden";
     if (content.classList.contains('green')) {
-        document.documentElement.style.setProperty('--maincolor', '#A1D91F');
-        document.documentElement.style.setProperty('--maincolorhover', '#1ed760');
-        document.documentElement.style.setProperty('--border', '1px #A1D91F50 solid');
-        document.documentElement.style.setProperty('--background', '#121212');
-        document.documentElement.style.setProperty('--backgroundsecond', '#242424');
-        document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(36,36,36,1) 100%)');
+        document.documentElement.style.setProperty('--maincolor', '#ef5466');
+        document.documentElement.style.setProperty('--maincolorhover', '#DB7176');
+        document.documentElement.style.setProperty('--border', '1px #ef546650 solid');
+        document.documentElement.style.setProperty('--background', '#191922');
+        document.documentElement.style.setProperty('--backgroundsecond', '#32323d');
+        document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, var(--background) 0%, var(--backgroundsecond) 100%)');
     }
     if (content.classList.contains('blue')) {
-      document.documentElement.style.setProperty('--maincolor', '#A1D91F');
-      document.documentElement.style.setProperty('--maincolorhover', '#1ed760');
-      document.documentElement.style.setProperty('--border', '1px #A1D91F50 solid');
+      document.documentElement.style.setProperty('--maincolor', '#ef5466');
+      document.documentElement.style.setProperty('--maincolorhover', '#DB7176');
+      document.documentElement.style.setProperty('--border', '1px #ef546650 solid');
       document.documentElement.style.setProperty('--background', '#484b6a');
       document.documentElement.style.setProperty('--backgroundsecond', '#9394a5');
-      document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(36,36,36,1) 100%)');
+      document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, var(--background) 0%, var(--backgroundsecond) 100%)');
   }
     randomHomeArtist();
     loadDailyPlaylists();
@@ -2727,21 +2727,21 @@ function userSettingsLoad(){
   }
 
   if (content.classList.contains('green')) {
-    document.documentElement.style.setProperty('--maincolor', '#A1D91F');
-    document.documentElement.style.setProperty('--maincolorhover', '#1ed760');
-    document.documentElement.style.setProperty('--border', '1px #A1D91F50 solid');
-    document.documentElement.style.setProperty('--background', '#121212');
-    document.documentElement.style.setProperty('--backgroundsecond', '#242424');
-    document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(36,36,36,1) 100%)');
+    document.documentElement.style.setProperty('--maincolor', '#ef5466');
+    document.documentElement.style.setProperty('--maincolorhover', '#DB7176');
+    document.documentElement.style.setProperty('--border', '1px #ef546650 solid');
+    document.documentElement.style.setProperty('--background', '#191922');
+    document.documentElement.style.setProperty('--backgroundsecond', '#32323d');
+    document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, var(--background) 0%, var(--backgroundsecond) 100%)');
   }
   if (content.classList.contains('blue')) {
     darkMode.classList.remove("active");
-    document.documentElement.style.setProperty('--maincolor', '#A1D91F');
-    document.documentElement.style.setProperty('--maincolorhover', '#1ed760');
-    document.documentElement.style.setProperty('--border', '1px #A1D91F50 solid');
+    document.documentElement.style.setProperty('--maincolor', '#ef5466');
+    document.documentElement.style.setProperty('--maincolorhover', '#DB7176');
+    document.documentElement.style.setProperty('--border', '1px #ef546650 solid');
     document.documentElement.style.setProperty('--background', '#484b6a');
     document.documentElement.style.setProperty('--backgroundsecond', '#9394a5');
-    document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(36,36,36,1) 100%)');
+    document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, var(--background) 0%, var(--backgroundsecond) 100%)');
   }
 }
 
