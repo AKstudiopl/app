@@ -10012,7 +10012,7 @@ var allMusic = [
     style_img: "https://i.scdn.co/image/ab67706c0000da84672ab214077d7446c6dcd0ed",
 
     album: "Self Portrait",
-    album_cover: "https://i.scdn.co/image/ab67616d000048513799760f7cea778121122718",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e023799760f7cea778121122718",
     album_premiere: "2019",
     album_status: "false",
     id: "147",

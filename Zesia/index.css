@@ -1190,6 +1190,10 @@ input:checked + .slider:before {
   visibility: visible;
   top: 0;
 }
+.library-container .center-container-scrollable
+{
+  gap: 10px;
+}
 .library-top
 {
   display: flex;
@@ -2812,6 +2816,10 @@ font-family: 'Rubik';
   margin-bottom: 10px;
   border-radius: 3px;
 }
+.progress-bar:hover .progress-bar-done::after
+{
+  opacity: 1;
+}
 .progress-bar-done
 {
   background: var(--color);
@@ -2831,6 +2839,7 @@ font-family: 'Rubik';
   position: absolute;
   right: -3px;
   border-radius: 50%;
+  opacity: 0;
 }
 .timer
 {
@@ -4627,6 +4636,7 @@ font-family: 'Rubik';
   border-radius: 15px;
   margin-bottom: 10px;
   object-fit: cover;
+  background: var(--backgroundsecond);
 }
 .music-artist-content-item-data h1
 {
@@ -5162,6 +5172,14 @@ font-family: 'Rubik';
   transition: 0.3s;
   padding: 0 15px;
   gap: 15px;
+}
+.music-artist-album-action i 
+{
+  color: var(--maincolor);
+}
+.music-artist-album-action a.active i
+{
+  color: var(--color);
 }
 .music-artist-album-action a.active
 {
@@ -6054,7 +6072,6 @@ width: 100%;
   overflow: hidden;
   width: 100%;
   position: relative;
-  filter: grayscale(1);
 }
 .user_profile_header_content
 {
@@ -8190,7 +8207,6 @@ textarea
   }
   .center-container-item:hover, .music-artist-information-albums-item:hover
   {
-    transform: scale(0.9);
     opacity: 0.5;
   }
   .library-container.active

@@ -1955,7 +1955,7 @@ function artistProfileFansChoice(track){
       }
   });
 
-  $('.music-artist-content-fanschoice .music-artist-content-item').slice(8).remove()
+  $('.music-artist-content-fanschoice .music-artist-content-item').slice(10).remove()
 }
 
 const uiRandomArtistCard = document.querySelector("#head_content_item")
