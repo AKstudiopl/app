@@ -12,6 +12,7 @@ darkMode.addEventListener('click', function(){
         document.documentElement.style.setProperty('--border', '1px #ef546650 solid');
         document.documentElement.style.setProperty('--background', '#191922');
         document.documentElement.style.setProperty('--backgroundsecond', '#32323d');
+        document.documentElement.style.setProperty('--color', '#DEE4EA');
         document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, var(--background) 0%, var(--backgroundsecond) 100%)');
     }
     if (content.classList.contains('blue')) {
@@ -19,8 +20,9 @@ darkMode.addEventListener('click', function(){
         document.documentElement.style.setProperty('--maincolor', '#ef5466');
         document.documentElement.style.setProperty('--maincolorhover', '#DB7176');
         document.documentElement.style.setProperty('--border', '1px #ef546650 solid');
-        document.documentElement.style.setProperty('--background', '#484b6a');
-        document.documentElement.style.setProperty('--backgroundsecond', '#9394a5');
+        document.documentElement.style.setProperty('--background', '#EAEAEA');
+        document.documentElement.style.setProperty('--backgroundsecond', '#D1D1D6');
+        document.documentElement.style.setProperty('--color', '#191919');
         document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, var(--background) 0%, var(--backgroundsecond) 100%)');
     }
     if (content.classList.contains('amoled')) {
@@ -29,6 +31,7 @@ darkMode.addEventListener('click', function(){
       document.documentElement.style.setProperty('--border', '1px #ef546650 solid');
       document.documentElement.style.setProperty('--background', '#000000');
       document.documentElement.style.setProperty('--backgroundsecond', '#32323d');
+      document.documentElement.style.setProperty('--color', '#DEE4EA');
       document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, var(--background) 0%, var(--backgroundsecond) 100%)');
   }
 })
@@ -43,45 +46,60 @@ function amoledMode(){
     document.documentElement.style.setProperty('--border', '1px #ef546650 solid');
     document.documentElement.style.setProperty('--background', '#191922');
     document.documentElement.style.setProperty('--backgroundsecond', '#32323d');
+    document.documentElement.style.setProperty('--color', '#DEE4EA');
     document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, var(--background) 0%, var(--backgroundsecond) 100%)');
-  }
+}
   if (content.classList.contains('blue')) {
-      document.documentElement.style.setProperty('--maincolor', '#ef5466');
-      document.documentElement.style.setProperty('--maincolorhover', '#DB7176');
-      document.documentElement.style.setProperty('--border', '1px #ef546650 solid');
-      document.documentElement.style.setProperty('--background', '#484b6a');
-      document.documentElement.style.setProperty('--backgroundsecond', '#9394a5');
-      document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, var(--background) 0%, var(--backgroundsecond) 100%)');
-  }
+    document.documentElement.style.setProperty('--maincolor', '#ef5466');
+    document.documentElement.style.setProperty('--maincolorhover', '#DB7176');
+    document.documentElement.style.setProperty('--border', '1px #ef546650 solid');
+    document.documentElement.style.setProperty('--background', '#EAEAEA');
+    document.documentElement.style.setProperty('--backgroundsecond', '#D1D1D6');
+    document.documentElement.style.setProperty('--color', '#191919');
+    document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, var(--background) 0%, var(--backgroundsecond) 100%)');
+}
   if (content.classList.contains('amoled')) {
     document.documentElement.style.setProperty('--maincolor', '#ef5466');
     document.documentElement.style.setProperty('--maincolorhover', '#DB7176');
     document.documentElement.style.setProperty('--border', '1px #ef546650 solid');
-    document.documentElement.style.setProperty('--background', '#111111');
+    document.documentElement.style.setProperty('--background', '#000000');
     document.documentElement.style.setProperty('--backgroundsecond', '#32323d');
+    document.documentElement.style.setProperty('--color', '#DEE4EA');
     document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, var(--background) 0%, var(--backgroundsecond) 100%)');
-  }
+}
 }
 
 window.addEventListener("load", function () {
     const loader = document.querySelector(".loader");
     loader.className += " hidden";
     if (content.classList.contains('green')) {
-        document.documentElement.style.setProperty('--maincolor', '#ef5466');
-        document.documentElement.style.setProperty('--maincolorhover', '#DB7176');
-        document.documentElement.style.setProperty('--border', '1px #ef546650 solid');
-        document.documentElement.style.setProperty('--background', '#191922');
-        document.documentElement.style.setProperty('--backgroundsecond', '#32323d');
-        document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, var(--background) 0%, var(--backgroundsecond) 100%)');
-    }
+      document.documentElement.style.setProperty('--maincolor', '#ef5466');
+      document.documentElement.style.setProperty('--maincolorhover', '#DB7176');
+      document.documentElement.style.setProperty('--border', '1px #ef546650 solid');
+      document.documentElement.style.setProperty('--background', '#191922');
+      document.documentElement.style.setProperty('--backgroundsecond', '#32323d');
+      document.documentElement.style.setProperty('--color', '#DEE4EA');
+      document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, var(--background) 0%, var(--backgroundsecond) 100%)');
+  }
     if (content.classList.contains('blue')) {
       document.documentElement.style.setProperty('--maincolor', '#ef5466');
       document.documentElement.style.setProperty('--maincolorhover', '#DB7176');
       document.documentElement.style.setProperty('--border', '1px #ef546650 solid');
-      document.documentElement.style.setProperty('--background', '#484b6a');
-      document.documentElement.style.setProperty('--backgroundsecond', '#9394a5');
+      document.documentElement.style.setProperty('--background', '#EAEAEA');
+      document.documentElement.style.setProperty('--backgroundsecond', '#D1D1D6');
+      document.documentElement.style.setProperty('--color', '#191919');
       document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, var(--background) 0%, var(--backgroundsecond) 100%)');
   }
+  if (content.classList.contains('amoled')) {
+    document.documentElement.style.setProperty('--maincolor', '#ef5466');
+    document.documentElement.style.setProperty('--maincolorhover', '#DB7176');
+    document.documentElement.style.setProperty('--border', '1px #ef546650 solid');
+    document.documentElement.style.setProperty('--background', '#000000');
+    document.documentElement.style.setProperty('--backgroundsecond', '#32323d');
+    document.documentElement.style.setProperty('--color', '#DEE4EA');
+    document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, var(--background) 0%, var(--backgroundsecond) 100%)');
+  }
+
     randomHomeArtist();
     loadDailyPlaylists();
     loadUserStylePlaylists();
@@ -1200,7 +1218,7 @@ function checkUserData(){
       }
       if(favoritIt[i].canvas != ""){
         let resultFAV = `<div class="card" data-src='${favoritIt[i].canvas}'>
-        <video onclick="playPauseVideo(this)" src="${favoritIt[i].canvas}"></video>
+        <video onclick="playPauseVideo(this)" muted src="${favoritIt[i].canvas}"></video>
           <div class="card-video-controls">
             <p>Video</p>
           </div>
@@ -3832,9 +3850,9 @@ function lyricsMode(){
 
   
   $(document).ready(function(){
-    $(".main-music-lyrics-box p.active").css("transform","scale(1)");
+    $(".main-music-lyrics-box p.active").css("transform","translateX(0px)");
     $(".main-music-lyrics-box p.active").css("padding","5px 0");
-    $(".main-music-lyrics-box p.active").last().css("transform","scale(1.05)");
+    $(".main-music-lyrics-box p.active").last().css("transform","translateX(15px)");
     $(".main-music-lyrics-box p.active").last().css("padding","20px 0");
   });
 }
