@@ -1997,8 +1997,8 @@ font-family: 'Rubik';
   background-position: bottom;
   height: 100%;
   width: 100vw;
-  -webkit-mask-image: -webkit-linear-gradient(180deg,transparent 25%, black 100%);
-  opacity: 0.5;
+  -webkit-mask-image: -webkit-linear-gradient(-90deg, transparent 25%, black 100%);
+  opacity: 0.1;
 }
 
 @keyframes musicControlsBgAnimation {
@@ -2517,6 +2517,10 @@ font-family: 'Rubik';
   border-radius: 25px;
   aspect-ratio: 1/1;
   max-width: 500px;
+}
+.main-music-header .header-shadow img
+{
+  max-width: 100% !important;
 }
 .main-music-header img.lyrics
 {
@@ -5204,6 +5208,7 @@ font-family: 'Rubik';
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  filter: grayscale(1);
   -webkit-mask-image: -webkit-linear-gradient(black 50%, transparent 100%);
 }
 .music-artist-album-screen-img-background img 
@@ -8087,21 +8092,20 @@ textarea
   .main-music-screen
   {
     background: var(--background);
-    width: 470px;
+    width: 100%;
     right: 0;
     height: auto;
-    position: fixed;
     height: 100%;
     overflow: hidden;
     z-index: 5;
-    border-radius: 25px;
-    height: calc(100% - 60px);
-    top: 30px;
-    right: 15px;
+    height: 100%;
+  }
+  .main-music.active .main-music-screen
+  {
+    position: fixed;
   }
   .header-shadow
   {
-    max-width: 500px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -8110,35 +8114,56 @@ textarea
   }
   .background-music-img
   {
-    width: 500px;
+    opacity: 0.25;
+    width: 100%;
   }
-  .navbar-bottom, .settings-screen, .music-style-item, .daily_user_mix, .notification_screen, .library-favorite-screen, .music-artist-album-screen, .user_profile_screen, .radio_screen, .music-artist-item, .music-artist-bio, .top_list_hits, .more_from_artists, .user_playlist, .artist-card, .popular-music, .fast-loader, .music-playlist-album-screen, .history-screen, .track-options-screen, .search-fast-loader, .yourStyle-container
+  .settings-screen, .music-style-item, .daily_user_mix, .notification_screen, .library-favorite-screen, .music-artist-album-screen, .user_profile_screen, .radio_screen, .music-artist-item, .music-artist-bio, .top_list_hits, .more_from_artists, .user_playlist, .artist-card, .popular-music, .fast-loader, .music-playlist-album-screen, .history-screen, .track-options-screen, .search-fast-loader, .yourStyle-container
   {
-    width: calc(100% - 500px);
-    border-top-right-radius: 30px;
+    width: calc(100% - 100px);
+    left: 100px;
   }
   .head-content, .head-content-container, .personal-container
   {
-    width: calc(100% - 520px);
+    width: calc(100% - 150px);
+    float: right;
+    margin-right: 30px;
   }
-  .personal-container
+  .head-content-top
   {
-    
+    width: calc(100% + 15px);
   }
   .search-container
   {
-    width: calc(100% - 500px);
+    width: calc(100% - 100px);
     right: auto;
-    left: 100vw;
+    top: 120vh;
   }
   .search-container.active {
     right: auto;
-    left: 0;
+    left: 100px;
+    top: 0;
   }
   .music-controls
   {
-    width: 400px;
-    display: none;
+    width: calc(100% - 100px);
+    margin-left: 100px;
+    bottom: 0;
+    border-radius: 0;
+    height: 75px;
+    border-top: 1px #32323d solid;
+    cursor: pointer;
+  }
+  .music-img
+  {
+    width: 75px;
+    height: 75px;
+    align-items: center;
+    justify-content: center;
+  }
+  .music-img img
+  {
+    width: 60px;
+    height: 60px;
   }
   .top-controls-more
   {
@@ -8155,10 +8180,6 @@ textarea
     display: flex;
     bottom: 0;
   }
-  .hide-Music-Menu
-  {
-    display: none;
-  }
   a, i, .progress-bar, .center-container-item, .notification_item, .reels-item, .music-artist-information-albums-item, .more_from_artists_item, .main-information
   {
     cursor: pointer !important;
@@ -8170,8 +8191,8 @@ textarea
   }
   .library-container.active
   {
-    right: 500px;
-    width: calc(100% - 500px);
+    left: 100px;
+    width: calc(100% - 100px);
   }
   .library-profile
   {
@@ -8181,7 +8202,6 @@ textarea
   {
     max-height: 75px;
     width: 100%;
-    padding-left: 25px;
   }
   .library-container .center-container-scrollable
   {
@@ -8198,6 +8218,10 @@ textarea
   {
     flex-direction: row;
     align-items: center;
+  }
+  .library-slider .center-container
+  {
+    float: left;
   }
   .user_profile_header_menu, .music-artist-menu
   {
@@ -8265,7 +8289,8 @@ textarea
   .card img 
   {
     max-height: 100%;
-    object-fit: contain;
+    background: linear-gradient(130deg, var(--backgroundsecond), var(--background));
+    object-fit: cover;
   }
   .music-artist-item-title
   {
@@ -8282,6 +8307,7 @@ textarea
   .music-controls-background
   {
     opacity: 0.25;
+    display: none;
   }
   .music-artist-item-title img:first-child
   {
@@ -8303,9 +8329,8 @@ textarea
   }
   .main-music.active
   {
-    max-width: 500px;
-    right: 0;
     margin-left: auto;
+    overflow: hidden;
   }
   .reels-screen
   {
@@ -8330,9 +8355,10 @@ textarea
   .center-container-scrollable::-webkit-scrollbar {
     display: none;
   }
-  .center-container-scrollable
+  .center-container
   {
-    max-width: calc(100% - 500px);
+    max-width: calc(100% - 100px);
+    float: right;
   }
   .search-results {
     max-height: calc(100vh - 220px)
@@ -8345,6 +8371,31 @@ textarea
   {
     border-radius: 0;
     border-top: 3px var(--backgroundsecond) solid;
+    flex-direction: column;
+    width: 99px;
+    height: 100vh;
+    justify-content: flex-start;
+    border-right: 1px #32323d solid;
+    gap: 10px;
+  }
+  .navbar-bottom-btn:first-child
+  {
+    margin-top: 30px;
+  }
+  .navbar-bottom-btn
+  {
+    width: calc(100% - 10px);
+    margin-left: 5px;
+  }
+  .navbar-bottom .navbar-bottom-btn a
+  {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .navbar-bottom-btn.active > a::after
+  {
+    display: none;
   }
   .music-controls-background
   {
@@ -8355,7 +8406,8 @@ textarea
     grid-template-columns: repeat(2, calc(50% - 20px));
     gap: 10px;
     grid-row-gap: none;
-    width: calc(100% - 500px);
+    width: calc(100% - 125px);
+    justify-content: flex-end;
   }
   .welcome-search-bar a
   {
@@ -8367,7 +8419,7 @@ textarea
   }
   .personal-item
   {
-    height: 200px;
+    height: 150px;
   }
   .personal-item h1
   {
@@ -8431,7 +8483,6 @@ textarea
   .ui-title
   {
     display: flex;
-    width: calc(100% - 30px);
     flex-direction: row;
     align-items: center;
     position: relative;
@@ -8448,7 +8499,7 @@ textarea
   }
   .ui-title .music-artist-content-title
   {
-    width: calc(100% - 610px);
+    width: calc(100% - 145px);
   }
   .ui-title
   {
@@ -8461,6 +8512,31 @@ textarea
   }
   .main-music-header.lyrics {
     height: calc(100vh - 410px);
+  }
+  .head-content .head-content-top-welcome
+  {
+    width: calc(100% - 30px);
+    margin: 0 15px;
+  }
+  .center-container .center-container-item:first-child
+  {
+    margin-left: 15px;
+  }
+  #ef3-sadE
+  {
+    margin-bottom: 100px;
+  }
+  .personal-container-items {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-row-gap: 7px;
+  }
+  .music-playlist-album-screen-container .music-artist-album-item:last-child, .music-artist-content-fanschoice, .music-artist-album-screen-featured {
+    margin-bottom: 90px;
+  }
+  .music-artist-album-screen-top .music-artist-album-fast-data-img
+  {
+    max-width: 250px;
   }
 }
 
