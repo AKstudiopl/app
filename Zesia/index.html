@@ -30,19 +30,19 @@
   <div class="navbar-bottom-btn 1 active">
     <a class="navbar-bottom-btn-home">
       <i class="fa-solid fa-house"></i>
-        Home
+        <span>Home</span>
     </a>
   </div>
   <div class="navbar-bottom-btn 2">
     <a class="navbar-bottom-btn-search" onclick="searchInput.value='';searchContentLoad();searchClearButton();">
       <i class="fa-solid fa-magnifying-glass"></i>
-        Search
+        <span>Search</span>
     </a>
   </div>
   <div class="navbar-bottom-btn 3">
     <a class="navbar-bottom-btn-library">
       <i class="fa-solid fa-lines-leaning"></i>
-        Library
+        <span>Library</span>
     </a>
   </div>
 </div>
@@ -1237,14 +1237,38 @@
     <p>Get in touch with <span></span> playlists, songs & artists.</p>
     <p>Its great place to explore new content for ur daily use.</p>
   </div>
-  <p class="music-artist-content-title">Songs<span></span></p>
-  <div class="yourStyle-songs">
+  <div class="yourStyle-box">
+    <div class="ui-title">
+      <p class="music-artist-content-title">Songs<span></span></p>
+      <div class="ui-title-action">
+        <i class="fa-solid fa-chevron-left" onclick="scrolCenterLeft(this)"></i>
+        <i class="fa-solid fa-chevron-right" onclick="scrolCenterRight(this)"></i>
+      </div>
+    </div>
+    <div class="yourStyle-songs center-container-scrollable">
+    </div>
   </div>
-  <p class="music-artist-content-title">Playlists<span></span></p>
-  <div class="yourStyle-playlists">
+  <div class="yourStyle-box">
+    <div class="ui-title">
+      <p class="music-artist-content-title">Playlists<span></span></p>
+      <div class="ui-title-action">
+        <i class="fa-solid fa-chevron-left" onclick="scrolCenterLeft(this)"></i>
+        <i class="fa-solid fa-chevron-right" onclick="scrolCenterRight(this)"></i>
+      </div>
+    </div>
+    <div class="yourStyle-playlists center-container-scrollable">
+    </div>
   </div>
-  <p class="music-artist-content-title">Artists<span></span></p>
-  <div class="yourStyle-artists">
+  <div class="yourStyle-box">
+    <div class="ui-title">
+      <p class="music-artist-content-title">Artists<span></span></p>
+      <div class="ui-title-action">
+        <i class="fa-solid fa-chevron-left" onclick="scrolCenterLeft(this)"></i>
+        <i class="fa-solid fa-chevron-right" onclick="scrolCenterRight(this)"></i>
+      </div>
+    </div>
+    <div class="yourStyle-artists center-container-scrollable">
+    </div>
   </div>
 </div>
 

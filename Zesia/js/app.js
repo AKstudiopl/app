@@ -2432,10 +2432,10 @@ window.addEventListener("load", (event) => {
 });
 
 function mobileOptimalizationSetup(){
-  $('.center-container.popular-artists-container .center-container-scrollable .center-container-item').slice(6).remove()
-  $('.center-container.favorites-artists-container .center-container-scrollable .center-container-item').slice(6).remove()
-  $('.center-container #dailyMixContainer .center-container-item').slice(6).remove()
-  $('.center-container #popularPlaylists .center-container-item').slice(6).remove()
+  $('.center-container.popular-artists-container .center-container-scrollable .center-container-item').slice(10).remove()
+  $('.center-container.favorites-artists-container .center-container-scrollable .center-container-item').slice(10).remove()
+  $('.center-container #dailyMixContainer .center-container-item').slice(10).remove()
+  $('.center-container #popularPlaylists .center-container-item').slice(10).remove()
 
 }
 const targets = document.querySelectorAll('.search-results .music-artist-content-item img');

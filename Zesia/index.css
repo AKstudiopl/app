@@ -3671,7 +3671,7 @@ font-family: 'Rubik';
   color: var(--color);
   font-size: 16px;
 }
-.yourStyle-playlists, .yourStyle-songs, .yourStyle-artists
+.yourStyle-container .center-container-scrollable
 {
   overflow-x: scroll;
   display: flex;
@@ -3712,6 +3712,7 @@ font-family: 'Rubik';
           line-clamp: 1; 
   -webkit-box-orient: vertical;
   overflow: hidden;
+  max-width: 125px;
 }
 .yourStyle-item span
 {
@@ -3723,6 +3724,7 @@ font-family: 'Rubik';
           line-clamp: 1; 
   -webkit-box-orient: vertical;
   overflow: hidden;
+  max-width: 125px;
 }
 /* Artist Menu Display */
 .artist-card
