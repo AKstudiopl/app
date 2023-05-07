@@ -8007,6 +8007,137 @@ font-family: 'Rubik';
   color: var(--maincolor);
   border: 1px var(--maincolor) solid;
 }
+
+.playlist-popup
+{
+  position: fixed;
+  top: 120vh;
+  background-color: var(--background);
+  width: 100%;
+  max-width: 750px;
+  z-index: 6;
+  transition: 0.5s;
+  overflow: visible;
+  width: calc(100% - 20px);
+  border-radius: 25px;
+  padding: 15px 0;
+  padding-top: 0;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.playlist-popup.active
+{
+  top: 50%;
+}
+.playlist-popup-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 30px);
+  padding: 15px;
+  z-index: 1;
+}
+.playlist-popup-controls i {
+  text-decoration: none;
+  color: var(--color);
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  backdrop-filter: blur(5px);
+}
+.playlist-popup-controls a
+{
+  color: var(--maincolor);
+}
+.playlist-popup-head
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 30px);
+  padding:0 15px;
+}
+.playlist-popup-head .img-box
+{
+  background: var(--backgroundsecond);
+  line-height: 0;
+  border-radius: 25px;
+  overflow: hidden;
+  width: 150px;
+}
+.playlist-popup-head .img-box img
+{
+  width: 100%;
+  height: 100%;
+}
+.playlist-popup-data
+{
+  width: calc(100% - 30px);
+  padding:15px;
+}
+.playlist-popup-data input
+{
+  width: calc(100% - 30px);
+  padding:10px 15px;
+  background: var(--backgroundsecond);
+  border: 1px #32323d solid;
+  border-radius: 4px;
+  color: var(--color);
+  font-family: rubik;
+  font-weight: 100;
+}
+.playlist-popup-data input:focus
+{
+  outline: none;
+}
+.playlist-popup-data-item
+{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.playlist-popup-data-item p
+{
+  display: flex;
+  gap: 10px;
+}
+.playlist-popup-data-item i
+{
+  background: var(--backgroundsecond);
+  border-radius: 50%;
+  height: 20px;
+  display: flex;
+  aspect-ratio: 1/1;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+.playlist-popup-data a
+{
+  color: var(--color);
+  padding: 10px 30px;
+  top: 250px;
+  border-radius: 25px;
+  background: var(--maincolor);
+  float: right;
+  transition: 0.25s;
+}
+.playlist-popup-data a:active
+{
+  opacity: 0.5;
+}
+.playlist-popup-data-item .settings-screen-item-box
+{
+  margin-right: 0;
+}
 /* Style_pop_up*/
 textarea
 {

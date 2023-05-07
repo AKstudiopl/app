@@ -5245,3 +5245,13 @@ function loadUserStylePlaylists(){
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }
 }
+
+const playlistPopUp = document.querySelector(".playlist-popup");
+
+function create_Playlist(){
+  playlistPopUp.classList.add("active");
+}
+
+function create_Playlist_Exit(){
+  playlistPopUp.classList.remove("active");
+}

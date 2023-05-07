@@ -226,6 +226,7 @@
         <img src="https://static-cdn.jtvnw.net/user-default-pictures-uv/dbdc9198-def8-11e9-8681-784f43822e80-profile_image-70x70.png">
       </div>
       <div class="library-top-option">
+        <i onclick="create_Playlist()" class="fa-solid fa-plus"></i>
         <i class="fa-solid fa-magnifying-glass"></i>
       </div>
     </div>
@@ -679,7 +680,7 @@
     </div>
 
     <div class="main-information">
-      <i class="fa-solid fa-plus"></i>
+      <i onclick="create_Playlist();" class="fa-solid fa-plus"></i>
       <div class="main-information-title" onclick="artistScreenDataLoad(this)">
         <h1 class="name"></h1>
         <p class="artist"></p>
@@ -1097,7 +1098,7 @@
         <i class="fa-solid fa-terminal"></i>
       </div>
       <div class="notification_data">
-        <h2>2v0.2</h2>
+        <h2>2.0.0</h2>
         <p>Standard verision on application, that will be regulary ubdated</p>
         <span><p>Developers</p><p>30/03/2023</p></span>
       </div>
@@ -1244,6 +1245,28 @@
   </div>
   <p class="music-artist-content-title">Artists<span></span></p>
   <div class="yourStyle-artists">
+  </div>
+</div>
+
+<div class="playlist-popup">
+  <div class="playlist-popup-controls">
+    <span></span>
+    <i onclick="create_Playlist_Exit()" class="fa-solid fa-xmark"></i>
+  </div>
+  <div class="playlist-popup-head">
+    <div class="img-box">
+      <img src="https://e-cdns-images.dzcdn.net/images/playlist/d41d8cd98f00b204e9800998ecf8427e/200x200-000000-80-0-0.jpg">
+    </div>
+  </div>
+  <div class="playlist-popup-data">
+    <input type="text">
+    <div class="playlist-popup-data-item">
+      <p><i class="fa-solid fa-lock"></i>Private</p>
+      <div class="settings-screen-item-box">
+        <div class="settings-screen-item-box-toggle"></div>
+      </div>
+    </div>
+    <a>CREATE</a>
   </div>
 </div>
 
