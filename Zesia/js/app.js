@@ -2313,7 +2313,7 @@ image.addEventListener('load', () => {
   "linear-gradient(" 
   + "rgba("+ colour +" , 1)"
   + ", " 
-  + "rgba("+ colour +" , 0.1)"
+  + "rgba("+ colour +" , 0.25)"
   + ")";
 });
 

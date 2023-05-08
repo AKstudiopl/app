@@ -4429,7 +4429,7 @@ var allMusic = [
     user_playlist_1: "",
   },
   {
-    name: "Hate Myslef",
+    name: "Hate Myself",
     artist: "NF",
     colaboration: "",
     artist_status: "none",

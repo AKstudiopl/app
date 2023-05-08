@@ -8671,7 +8671,7 @@ textarea
     margin-left: 0;
   }
   .main-music-header.lyrics {
-    height: calc(100vh - 410px);
+    height: calc(100vh - 350px);
   }
   .head-content .head-content-top-welcome
   {
@@ -8713,10 +8713,6 @@ textarea
   .main-music-lyrics-box
   {
     width: calc(100% - 100px);
-  }
-  .main-music-sec-nav
-  {
-    padding: 50px 20px !important;
   }
   .main-music-lyrics-box p
   {
