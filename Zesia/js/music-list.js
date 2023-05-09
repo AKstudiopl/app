@@ -6152,7 +6152,7 @@ var allMusic = [
     gallery_img_8: "https://pbs.twimg.com/media/FhKepDUVEAEeMXo?format=jpg&name=large",
     gallery_img_9: "https://pbs.twimg.com/media/FigtCqzWQAElspg?format=jpg&name=small",
     gallery_img_10: "https://pbs.twimg.com/media/FiBcdBBWAAAjovP?format=jpg&name=large",
-    canvas: "",
+    canvas: "https://ssscdn.io/ssstwitter/aHR0cHM6Ly92aWRlby50d2ltZy5jb20vZXh0X3R3X3ZpZGVvLzE2NTI4MDQwNzQyNDMyNzY4MDAvcHUvdmlkLzcyMHg3MjAvdDFPYk01R1JoYi1XRUdmSy5tcDQ/dGFnPTEy",
 
     album: "thank u, next",
     album_cover: "https://i.scdn.co/image/ab67616d00001e0256ac7b86e090f307e218e9c8",

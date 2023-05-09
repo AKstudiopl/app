@@ -807,7 +807,7 @@ $(function(){
       var $this = $(this),
           scrollspeed = parseInt($this.data('scroll-speed')),
           val = - scrollTop / scrollspeed;
-      $this.css('transform', 'scale(' + (125 - (-val/15)) + '%) translateY(' + (-val) + 'px)');
+      $this.css('transform', 'scale(' + (125 - (-val/15)) + '%) translateY(' + (-val * 1.5) + 'px)');
       $this.css('filter', 'blur(' + (-val / 10) + 'px)');
       $this.css('opacity', '' + (100 - (-val/5)) + '%');
       })
@@ -1127,8 +1127,12 @@ function checkUserData(){
   const bioCard = document.querySelector(".music-artist-bio");
 
   function loadBio(){
-    bioCard.classList.toggle("active");
+    bioCard.classList.add("active");
     loadBioData();
+  }
+
+  function exitBio(){
+    bioCard.classList.remove("active");
   }
 
   function removeThis(element){
@@ -2925,7 +2929,7 @@ function lyricsMode(){
     });}
   }
 
-  let lyricsDelay = 10;
+  let lyricsDelay = 15;
   let lyricsGap = -1;
 
   if(allMusic[indexNumb - 1].lyrics.ve1 != undefined){
