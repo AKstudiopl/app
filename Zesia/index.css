@@ -304,6 +304,7 @@ i
   width: calc(100% - 0px);
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  overflow: hidden;
 }
 .navbar-bottom .navbar-bottom-btn
 {
@@ -314,6 +315,10 @@ i
   z-index: 5;
 font-family: 'Rubik';
   font-weight: 100;
+}
+#navbar-profile, #navbar-logo, #navbar-settings
+{
+  display: none;
 }
 .navbar-bottom .navbar-bottom-btn i
 {
@@ -332,7 +337,7 @@ font-family: 'Rubik';
   transition: 0.1s;
   justify-content: space-between;
   align-items: center;
-  width: 10ch;
+  width: 65px;
 }
 .navbar-bottom-btn.active > a
 {
@@ -358,7 +363,7 @@ font-family: 'Rubik';
   position: absolute;
   background: var(--backgroundsecond);
   opacity: 0;
-  filter: drop-shadow(0px -15px 30px var(--maincolor));
+  filter: drop-shadow(0px -50px 50px var(--maincolor));
 }
 .navbar-bottom-btn.active > a::after
 {
@@ -373,7 +378,7 @@ font-family: 'Rubik';
   height: 40px;
   position: absolute;
   background: var(--backgroundsecond);
-  filter: drop-shadow(0px -15px 30px var(--maincolor));
+  filter: drop-shadow(0px -50px 50px var(--maincolor));
 }
 .settings-screen
 {
@@ -1397,6 +1402,7 @@ input:checked + .slider:before {
   align-items: center;
   position: relative;
   overflow: hidden;
+  background: var(--maincolorhover);
 }
 .library-favorite-top-header img
 {
@@ -8534,6 +8540,7 @@ textarea
     justify-content: center;
     border-right: 1px #32323d solid;
     gap: 10px;
+    overflow: visible;
   }
   .navbar-bottom-btn
   {
@@ -8543,8 +8550,8 @@ textarea
   .navbar-bottom-btn:hover span
   {
     opacity: 1;
-    filter: blur(0px) drop-shadow(-6mm 0mm 6mm var(--backgroundsecond));
-    left: 85px;
+    filter: blur(0px) drop-shadow(-3mm 0mm 6mm var(--backgroundsecond));
+    left: 75px;
     transform: scale(1);
   }
   .navbar-bottom .navbar-bottom-btn a
@@ -8749,6 +8756,53 @@ textarea
   .music-controls-progresbar
   {
     width: 100%;
+  }
+  #navbar-profile
+  {
+    display: flex;
+    padding: 0;
+    margin-top: auto;
+  }
+  #navbar-profile a
+  {
+    border-bottom: none;
+  }
+  #navbar-profile img
+  {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    width: 40px;
+    border: 1px var(--backgroundsecond) solid;
+    transition: 0.25s;
+  }
+  #navbar-profile a:hover img
+  {
+    transform: scale(.95);
+  }
+  #navbar-logo
+  {
+    display: flex;
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: auto;
+  }
+  #navbar-settings
+  {
+    display: flex;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+  #navbar-logo a, #navbar-settings a
+  {
+    border-bottom: none;
+  }
+  #navbar-logo img
+  {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 42px;
+    transition: 0.25s;
   }
 }
 

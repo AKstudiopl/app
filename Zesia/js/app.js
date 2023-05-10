@@ -155,6 +155,11 @@ activeSettingsBtn.addEventListener('click', () => {
   activeSettingsScreen.classList.add('active')
 })
 
+const navbarSettings = document.querySelector('#navbar-settings')
+navbarSettings.addEventListener('click', () => {
+  activeSettingsScreen.classList.add('active')
+})
+
 const disableSettingsBtn = document.getElementsByClassName('setting-disable-btn')[0]
 const disableSettingsScreen = document.getElementsByClassName('settings-screen')[0]
 
@@ -5129,6 +5134,8 @@ function clickedPlaylistLoad(data){
        </div>`;
        playlistResult.insertAdjacentHTML("beforeend", resultFAV);
   }
+
+  loseFocus();
 }
 
 function playlistQueue(element){

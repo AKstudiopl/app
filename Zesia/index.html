@@ -27,6 +27,12 @@
 
 
 <div class="navbar-bottom">
+  <div class="navbar-bottom-btn" id="navbar-logo">
+    <a class="navbar-bottom-btn-logo" onclick="fastLoadingPop();loadUserProfile();loseFocus();">
+      <img src="assets/20230402_201236.png">
+        <span>Zesia</span>
+    </a>
+  </div>
   <div class="navbar-bottom-btn 1 active">
     <a class="navbar-bottom-btn-home">
       <i class="fa-solid fa-house"></i>
@@ -45,13 +51,25 @@
         <span>Library</span>
     </a>
   </div>
+  <div class="navbar-bottom-btn" id="navbar-profile">
+    <a class="navbar-bottom-btn-profile" onclick="fastLoadingPop();loadUserProfile();loseFocus();">
+      <img src="https://static-cdn.jtvnw.net/user-default-pictures-uv/dbdc9198-def8-11e9-8681-784f43822e80-profile_image-70x70.png">
+        <span>Profile</span>
+    </a>
+  </div>
+  <div class="navbar-bottom-btn" id="navbar-settings">
+    <a class="navbar-bottom-btn-settings">
+      <i class="fa-solid fa-gear"></i>
+        <span>Settings</span>
+    </a>
+  </div>
 </div>
 
 
 <div class="settings-screen">
     <div class="settings-screen-title">
       <h1>Settings</h1>
-      <a href="#" id="back-settigns-btn" class="setting-disable-btn">
+      <a id="back-settigns-btn" class="setting-disable-btn">
         <i class="fa-solid fa-xmark"></i>
       </a>
     </div>
@@ -999,9 +1017,9 @@
   </div>
 
   <div class="music-artist-bio-social">
-    <a class="music-artist-bio-social-instagram" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
-    <a class="music-artist-bio-social-twitter" href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
-    <a class="music-artist-bio-social-facebook" href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+    <a class="music-artist-bio-social-instagram"><i class="fa-brands fa-instagram"></i> Instagram</a>
+    <a class="music-artist-bio-social-twitter"><i class="fa-brands fa-twitter"></i> Twitter</a>
+    <a class="music-artist-bio-social-facebook"><i class="fa-brands fa-facebook"></i> Facebook</a>
   </div>
 
 </div>
