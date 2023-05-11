@@ -1965,6 +1965,8 @@ function artistProfileFansChoice(track){
   });
 
   $('.music-artist-content-fanschoice .music-artist-content-item').slice(10).remove()
+
+  resultsFAV.scrollLeft = 0;
 }
 
 const uiRandomArtistCard = document.querySelector("#head_content_item")
@@ -4660,9 +4662,13 @@ function recentTracksLoad(){
   const recent_data_6 = localStorage.getItem("track_data_6").split(',')[0];;
   const recent_data_7 = localStorage.getItem("track_data_7").split(',')[0];;
   const recent_data_8 = localStorage.getItem("track_data_8").split(',')[0];;
+  const recent_data_9 = localStorage.getItem("track_data_9").split(',')[0];;
+  const recent_data_10 = localStorage.getItem("track_data_10").split(',')[0];;
+  const recent_data_11 = localStorage.getItem("track_data_11").split(',')[0];;
+  const recent_data_12 = localStorage.getItem("track_data_12").split(',')[0];;
 
   resultsFAV = document.querySelector("#recent-tracks-container .center-container-scrollable");
-  var favoritIt = allMusicView.filter(x => x.id === recent_data_1 || x.id === recent_data_2 || x.id === recent_data_3 || x.id === recent_data_4 || x.id === recent_data_5 || x.id === recent_data_6 || x.id === recent_data_7 || x.id === recent_data_8);
+  var favoritIt = allMusicView.filter(x => x.id === recent_data_1 || x.id === recent_data_2 || x.id === recent_data_3 || x.id === recent_data_4 || x.id === recent_data_5 || x.id === recent_data_6 || x.id === recent_data_7 || x.id === recent_data_8 || x.id === recent_data_9 || x.id === recent_data_10 || x.id === recent_data_11 || x.id === recent_data_12);
   resultsFAV.innerHTML = "";
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =

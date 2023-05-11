@@ -8541,6 +8541,7 @@ textarea
     border-right: 1px #32323d solid;
     gap: 10px;
     overflow: visible;
+    z-index: 10;
   }
   .navbar-bottom-btn
   {
