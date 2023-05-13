@@ -108,6 +108,19 @@ window.addEventListener("load", function () {
 const activeHomeBtn = document.getElementsByClassName('navbar-bottom-btn-home')[0]
 const activeHomeScreen = document.getElementsByClassName('navbar-bottom-btn 1')[0]
 
+function home_fs(){
+  musicMenuHide.classList.remove('active')
+  albumScreen.classList.remove('active');
+  activeLibraryScreen.classList.remove('active')
+  activeSearchScreen.classList.remove('active')
+  activeHomeScreen.classList.add('active')
+  libraryScreen.classList.remove('active');
+  searchScreen.classList.remove('active');
+  favortieScreen.classList.remove('active');
+  playlistScreen.classList.remove('active');
+  userProfile.classList.remove('active');
+}
+
 activeHomeBtn.addEventListener('click', () => {
   activeLibraryScreen.classList.remove('active')
   activeSearchScreen.classList.remove('active')
@@ -130,6 +143,7 @@ activeSearchBtn.addEventListener('click', () => {
   userProfile.classList.remove("active")
   playlistScreen.classList.remove('active');
   yourStyleScreen.classList.remove('active');
+  userProfile.classList.remove('active');
 })
 
 const activeLibraryBtn = document.getElementsByClassName('navbar-bottom-btn-library')[0]
@@ -145,6 +159,7 @@ activeLibraryBtn.addEventListener('click', () => {
   userProfile.classList.remove("active")
   playlistScreen.classList.remove('active');
   yourStyleScreen.classList.remove('active');
+  userProfile.classList.remove('active');
 })
 
 const activeSettingsBtn = document.getElementsByClassName('settings-action-btn')[0]
@@ -153,11 +168,13 @@ const activeSettingsScreen = document.getElementsByClassName('settings-screen')[
 
 activeSettingsBtn.addEventListener('click', () => {
   activeSettingsScreen.classList.add('active')
+  userProfile.classList.remove("active");
 })
 
 const navbarSettings = document.querySelector('#navbar-settings')
 navbarSettings.addEventListener('click', () => {
   activeSettingsScreen.classList.add('active')
+  userProfile.classList.remove("active");
 })
 
 const disableSettingsBtn = document.getElementsByClassName('setting-disable-btn')[0]
@@ -2120,6 +2137,7 @@ function loadUserProfile(){
   userProfileFilterFavorite.classList.add("active");
   userProfileFilterPlaylist.classList.remove("active");
   userProfileFilterFollowed.classList.remove("active");
+  activeSettingsScreen.classList.remove("active");
   favoriteLoadItemsProfile();
   document.querySelector(".user_profile_header_content_name").innerText = localStorage.getItem('personalization-data-name');
 }
@@ -2342,7 +2360,7 @@ function get_average_rgb() {
   const hexColor = rgbToHex(...colorThiefArtist.getColor(image, DOMINANT_COLOR_QUALITY_ARTIST));
   document.querySelector(".music-artist-item-title").style.background=hexColor;
 
-  document.querySelector(".music-artist-option").style.background = 'linear-gradient(' + hexColor + + `75` + ', ' + 'var(--background)' + ')';
+  document.querySelector(".music-artist-option").style.background = 'linear-gradient(' + hexColor + + `90` + ', ' + 'var(--background)' + ')';
 
 }
 
