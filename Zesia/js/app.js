@@ -2342,7 +2342,7 @@ image.addEventListener('load', () => {
   "linear-gradient(" 
   + "rgba("+ colour +" , 1)"
   + ", " 
-  + "rgba("+ colour +" , 0.25)"
+  + "rgba("+ colour +" , 0.5)"
   + ")";
 });
 

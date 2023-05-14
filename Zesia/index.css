@@ -592,7 +592,10 @@ input:checked + .slider:before {
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
-
+.main-music-next-music
+{
+  display: flex;
+}
 /* Rounded sliders */
 .slider.round {
   border-radius: 34px;
@@ -2511,7 +2514,7 @@ font-family: 'Rubik';
   z-index: -1;
   position: absolute;
   left: 0;
-  filter: blur(5px);
+  filter: blur(2px);
   top: 0;
   opacity: 0.25;
   -webkit-mask-image: -webkit-linear-gradient(black 0%, transparent 100%);
@@ -2626,7 +2629,6 @@ font-family: 'Rubik';
   width: calc(100% - 40px);
   margin: 0;
   padding: 20px 20px;
-  border-radius: 0 0 25px 25px;
 }
 .main-music-header.lyrics .header-shadow
 {
@@ -2822,6 +2824,8 @@ font-family: 'Rubik';
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 3px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 .progress-bar:hover .progress-bar-done::after
 {
@@ -2833,7 +2837,9 @@ font-family: 'Rubik';
   width: 0%;
   height: 5px;
   transition: 0.2s;
-  border-radius: 1px;
+  border-radius: 3px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
   position: relative;
 }
 .progress-bar-done::after
@@ -2965,25 +2971,26 @@ font-family: 'Rubik';
 {
   content: 'ON';
   width: 100%;
-  margin-left: 190%;
+  margin-left: 200%;
   z-index: 1;
   height: 100%;
-  font-weight: 900;
-  color: var(--color);
+  font-weight: 100;
   position: absolute;
   border-radius:0 15px 15px 0;
   align-items: center;
   justify-content: center;
   display: flex;
-  font-family: arial;
 }
 .next-music-item
 {
-  width: 100%;
-  margin-top: 20px;
+  width: calc(100% - 30px);
+  margin-bottom: 15px;
+  height: 40px;
   transition: 0.5s;
   opacity: 0;
   transform: translateY(150px);
+  filter: drop-shadow(0px 0px 10px var(--background));
+  border-radius: 15px;
 }
 .next-music-item.active
 {
@@ -3026,7 +3033,8 @@ font-family: 'Rubik';
 .next-music-title
 {
   padding-left: 5px;
-  color: var(--maincolor);
+  color: var(--color);
+  font-weight: 900;
 }
 .queue-container
 {
@@ -7874,6 +7882,7 @@ font-family: 'Rubik';
 {
   width: 40%;
   border-radius: 15px;
+  max-width: 300px;
 }
 .track-options-header p 
 {
@@ -8334,7 +8343,7 @@ textarea
     margin-left: 0px;
     right: 0;
     height: 100%;
-    width: 500px;
+    width: calc(100% - 75px);
     aspect-ratio:9/16;
     display: flex;
     bottom: -110vh;
@@ -8343,6 +8352,10 @@ textarea
   {
     display: flex;
     bottom: 0;
+  }
+  .top-controls-more img
+  {
+    max-width: 300px;
   }
   a, i, .progress-bar, .center-container-item, .notification_item, .reels-item, .music-artist-information-albums-item, .more_from_artists_item, .main-information
   {
@@ -8822,6 +8835,34 @@ textarea
   .navbar-bottom-btn.active a i
   {
     color: var(--background);
+  }
+  .track-options-header
+  {
+    align-items: flex-start;
+    width: calc(100% - 30px);
+    padding: 0 15px;
+  }
+  .main-information, .progress, .main-music-fast-navigation, .main-music-sec-nav, .main-music-next-music, .top-controls
+  {
+    max-width: 600px;
+    width: 600px;
+  }
+  .main-music-header.lyrics ~ .main-information, .main-music-header.lyrics ~ .progress, .main-music-header.lyrics ~ .main-music-fast-navigation, .main-music-header.lyrics ~ .main-music-sec-nav, .main-music-header.lyrics ~ .top-controls
+  {
+    background: var(--background);
+    backdrop-filter: blur(5px);
+    max-width: unset;
+  }
+  .main-music-screen
+  {
+    display: block;
+  }
+  .main-music-screen
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
