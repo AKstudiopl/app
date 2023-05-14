@@ -8572,7 +8572,7 @@ textarea
   {
     flex-direction: row;
     justify-content: center;
-    padding: 10px 0;
+    aspect-ratio: 1/1;
     border-bottom: 1px #32323d solid;
     max-width: calc(100% - 10px);
     transition: .25s;
@@ -8756,7 +8756,7 @@ textarea
   }
   .main-music-lyrics-box p
   {
-    font-size: 36px;
+    font-size: 42px;
   }
   .library-container .center-container-scrollable .center-container-item:first-child
   {
@@ -8863,6 +8863,14 @@ textarea
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .main-music-header.lyrics ~ .main-music-sec-nav
+  {
+    margin-bottom: -55px;
+  }
+  .main-music-header.lyrics ~ .main-information
+  {
+    border-radius: 0;
   }
 }
 
