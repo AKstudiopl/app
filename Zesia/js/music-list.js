@@ -72,12 +72,7 @@ var allMusic = [
       style: "Energic",
       status: "nostatus",
       avatar: "41aeb62f0-c2321-f25bsf",
-      artist_img: "https://pbs.twimg.com/media/Dy4FBQjWwAYVQPm?format=jpg&name=large",
-      gallery_img_1: "https://pbs.twimg.com/media/Dy4FILeWoAAIqn8?format=jpg&name=large",
-      gallery_img_2: "https://pbs.twimg.com/media/D7Bd4x5UIAIQ4IJ?format=jpg&name=900x900",
-      gallery_img_3: "https://pbs.twimg.com/media/FFnM392XEA0h-YH?format=jpg&name=large",
-      gallery_img_4: "",
-      gallery_img_5: "",
+      tag: "",
       canvas: "",
       
       album: "Never Go Away",
@@ -101,12 +96,7 @@ var allMusic = [
         lyrics_verse_13: "",
         lyrics_verse_14: ""
       },
-      bio: "C-BooL (Grzegorz Cebula) was born on May 30, 1981 in Pyskowice in Silesia (Poland). Polish DJ, music producer and owner of C-Wave Records. Associated with club music from an early age. Works as a DJ since 1998 and started producing music in 2002. Diamond, multi platinum and golden records producer of many radio hits like Never Go Away, DJ Is Your Second Name, Magic Symphony, Wonderland, Catch You, Fire In My Head, La La Love and older club classics like Would You Feel and House Baby. Two-time winner of the Eska Music Awards in the hit of the year category (2016 & 2017). No 1 Hits - Shazam Poland, Radio Airplay Poland Top 3 Hits Airplay Russia In his 23-year DJ career C-BooL performed in hundreds of clubs in Poland and abroad. His DJ sets were presented in countries such as Germany, Austria, Italy, Bulgaria & UK",
-      social:{
-        instagram: "",
-        twitter: "",
-        facebook: "https://www.facebook.com/cboolmusic",
-      },
+
       user_playlist_1: "",
   },
   {
@@ -231,7 +221,8 @@ var allMusic = [
       language: "eng",
       country: "usa",
       artist_id: "4",
-      
+      tag: "Popular",
+
       src: "twentyonepilots-Choker",
       img: "scaled-and-icy-b-iext104194001",
       img_mini: "https://i.scdn.co/image/ab67616d0000485120b467550945fd123e00f0a5",
@@ -295,14 +286,6 @@ var allMusic = [
 
       style: "Chill",
       status: "nostatus",
-      tag: "Popular",
-      avatar: "41aeb62f0-c2321-f22bsf",
-      artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
-      gallery_img_1: "https://pbs.twimg.com/media/FfeDi8NVEAAcBE0?format=jpg&name=large",
-      gallery_img_2: "https://pbs.twimg.com/media/FfeDi8JUYAAjoTF?format=jpg&name=large",
-      gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
-      gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
-      gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
       canvas: "",
 
       album: "Scaled And Icy",
@@ -326,12 +309,7 @@ var allMusic = [
         lyrics_verse_13: "",
         lyrics_verse_14: ""
       },
-      bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
-      social:{
-        instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
-        twitter: "https://twitter.com/twentyonepilots",
-        facebook: "https://www.facebook.com/twentyonepilots",
-      },
+
       user_playlist_1: "",
   },
   {
@@ -349,13 +327,6 @@ var allMusic = [
 
       style: "Chill",
       status: "nostatus",
-      avatar: "41aeb62f0-c2321-f22bsf",
-      artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
-      gallery_img_1: "https://pbs.twimg.com/media/FfeDi8NVEAAcBE0?format=jpg&name=large",
-      gallery_img_2: "https://pbs.twimg.com/media/FfeDi8JUYAAjoTF?format=jpg&name=large",
-      gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
-      gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
-      gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
       canvas: "",
 
       album: "Scaled And Icy",
@@ -379,12 +350,7 @@ var allMusic = [
         lyrics_verse_13: "",
         lyrics_verse_14: ""
       },
-      bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
-      social:{
-        instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
-        twitter: "https://twitter.com/twentyonepilots",
-        facebook: "https://www.facebook.com/twentyonepilots",
-      },
+
       user_playlist_1: "",
   },
   {
@@ -402,13 +368,6 @@ var allMusic = [
 
       style: "Chill",
       status: "nostatus",
-      avatar: "41aeb62f0-c2321-f22bsf",
-      artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
-      gallery_img_1: "https://pbs.twimg.com/media/FfeDi8NVEAAcBE0?format=jpg&name=large",
-      gallery_img_2: "https://pbs.twimg.com/media/FfeDi8JUYAAjoTF?format=jpg&name=large",
-      gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
-      gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
-      gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
       canvas: "",
 
       album: "Scaled And Icy",
@@ -432,12 +391,7 @@ var allMusic = [
         lyrics_verse_13: "",
         lyrics_verse_14: ""
       },
-      bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
-      social:{
-        instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
-        twitter: "https://twitter.com/twentyonepilots",
-        facebook: "https://www.facebook.com/twentyonepilots",
-      },
+
       user_playlist_1: "",
   },
   {
@@ -455,13 +409,6 @@ var allMusic = [
 
       style: "Chill",
       status: "nostatus",
-      avatar: "41aeb62f0-c2321-f22bsf",
-      artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
-      gallery_img_1: "https://pbs.twimg.com/media/FfeDi8NVEAAcBE0?format=jpg&name=large",
-      gallery_img_2: "https://pbs.twimg.com/media/FfeDi8JUYAAjoTF?format=jpg&name=large",
-      gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
-      gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
-      gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
       canvas: "",
 
       album: "Scaled And Icy",
@@ -486,11 +433,7 @@ var allMusic = [
         lyrics_verse_14: ""
       },
       bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
-      social:{
-        instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
-        twitter: "https://twitter.com/twentyonepilots",
-        facebook: "https://www.facebook.com/twentyonepilots",
-      },
+
       user_playlist_1: "",
   },
   {
@@ -508,13 +451,6 @@ var allMusic = [
 
       style: "Chill",
       status: "nostatus",
-      avatar: "41aeb62f0-c2321-f22bsf",
-      artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
-      gallery_img_1: "https://pbs.twimg.com/media/FfeDi8NVEAAcBE0?format=jpg&name=large",
-      gallery_img_2: "https://pbs.twimg.com/media/FfeDi8JUYAAjoTF?format=jpg&name=large",
-      gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
-      gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
-      gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
       canvas: "",
 
       album: "Scaled And Icy",
@@ -538,12 +474,7 @@ var allMusic = [
         lyrics_verse_13: "",
         lyrics_verse_14: ""
       },
-      bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
-      social:{
-        instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
-        twitter: "https://twitter.com/twentyonepilots",
-        facebook: "https://www.facebook.com/twentyonepilots",
-      },
+
       user_playlist_1: "",
   },
   {
@@ -561,13 +492,6 @@ var allMusic = [
 
       style: "Chill",
       status: "nostatus",
-      avatar: "41aeb62f0-c2321-f22bsf",
-      artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
-      gallery_img_1: "https://pbs.twimg.com/media/FfeDi8NVEAAcBE0?format=jpg&name=large",
-      gallery_img_2: "https://pbs.twimg.com/media/FfeDi8JUYAAjoTF?format=jpg&name=large",
-      gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
-      gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
-      gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
       canvas: "",
 
       album: "Scaled And Icy",
@@ -591,12 +515,7 @@ var allMusic = [
         lyrics_verse_13: "",
         lyrics_verse_14: ""
       },
-      bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
-      social:{
-        instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
-        twitter: "https://twitter.com/twentyonepilots",
-        facebook: "https://www.facebook.com/twentyonepilots",
-      },
+
       user_playlist_1: "",
   },
   {
@@ -614,13 +533,6 @@ var allMusic = [
 
       style: "Chill",
       status: "nostatus",
-      avatar: "41aeb62f0-c2321-f22bsf",
-      artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
-      gallery_img_1: "https://pbs.twimg.com/media/FfeDi8NVEAAcBE0?format=jpg&name=large",
-      gallery_img_2: "https://pbs.twimg.com/media/FfeDi8JUYAAjoTF?format=jpg&name=large",
-      gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
-      gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
-      gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
       canvas: "",
 
       album: "Scaled And Icy",
@@ -644,12 +556,7 @@ var allMusic = [
         lyrics_verse_13: "",
         lyrics_verse_14: ""
       },
-      bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
-      social:{
-        instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
-        twitter: "https://twitter.com/twentyonepilots",
-        facebook: "https://www.facebook.com/twentyonepilots",
-      },
+
       user_playlist_1: "",
   },
   {
@@ -713,6 +620,7 @@ var allMusic = [
       language: "pl",
       country: "pl",
       artist_id: "6",
+      tag: "Popular",
 
       src: "donGURALesko-IdziemyPoSwojeSzUstyBlend",
       img: "guralsko",
@@ -773,14 +681,6 @@ var allMusic = [
 
       style: "Workout",
       status: "nostatus",
-      tag: "Popular",
-      avatar: "41aeb62f0-c2321-f46bsf",
-      artist_img: "https://i.scdn.co/image/ab6761610000e5eb4b346794a19f7adfcc244ee7",
-      gallery_img_1: "",
-      gallery_img_2: "",
-      gallery_img_3: "",
-      gallery_img_4: "",
-      gallery_img_5: "",
       canvas: "",
 
       album: "Legenda",
@@ -804,12 +704,7 @@ var allMusic = [
         lyrics_verse_13: "",
         lyrics_verse_14: ""
       },
-      bio: "",
-      social:{
-        instagram: "https://www.instagram.com/szustyszesc/",
-        twitter: "",
-        facebook: "https://www.facebook.com/szustyblend",
-      },
+
       user_playlist_1: "",
   },
   {
@@ -1144,11 +1039,12 @@ var allMusic = [
     language: "pl",
     country: "pl",
     artist_id: "8",
-    
+    tag: "Popular",
+
     src: "Happysad-Bezznieczulenia",
     img: "ab67616d00001e021f86dffe512418a230887e69",
     img_mini: "https://i.scdn.co/image/ab67616d000048514ed4de2da994d4a017f674d2",
-
+    
     style: "Rock",
     status: "nostatus",
     avatar: "14235843737BeNz9sRRfK4jsYeLQ7t32Pg76m86w",
@@ -1170,20 +1066,286 @@ var allMusic = [
     album_status: "false",
     id: "17",
     lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
+      ve1:{
+        ls: "Hej, ja przed tobą się rozbieram",
+        stamp: "10",
+      },
+      ve2:{
+        ls: "Zrzucam zmięte, brudne myśli",
+        stamp: "18",
+      },
+      ve3:{
+        ls: "I przed tobą umieram",
+        stamp: "26",
+      },
+      ve4:{
+        ls: "Chore serce otwieram bez znieczulenia",
+        stamp: "31",
+      },
+      ve5:{
+        ls: "Hej, ja przed tobą się rozklejam",
+        stamp: "45",
+      },
+      ve6:{
+        ls: "Wcieraj ciepłe, lepkie wspomnienia",
+        stamp: "52",
+      },
+      ve7:{
+        ls: "Tylko w tobie nadzieja",
+        stamp: "61",
+      },
+      ve8:{
+        ls: "Teraz chore serce otwieraj bez znieczulenia",
+        stamp: "64",
+      },
+      ve9:{
+        ls: "Bo w mojej głowie zamieć",
+        stamp: "78",
+      },
+      ve10:{
+        ls: "Czarne, czarne chmury",
+        stamp: "82",
+      },
+      ve11:{
+        ls: "Zawierucha deszcz do spółki z gradem",
+        stamp: "86",
+      },
+      ve12:{
+        ls: "Jakieś obce znów głosy podpowiadają mi bzdury",
+        stamp: "92",
+      },
+      ve13:{
+        ls: "Tak trudno mi, trudno mi, trudno mi, trudno mi być",
+        stamp: "99",
+      },
+      ve14:{
+        ls: "Hej, ja przed tobą umieram",
+        stamp: "107",
+      },
+      ve15:{
+        ls: "Masuj obolałe niedomówienia",
+        stamp: "114",
+      },
+      ve16:{
+        ls: "Tylko w tobie nadzieja",
+        stamp: "122",
+      },
+      ve17:{
+        ls: "Teraz chore serce otwieraj bez znieczulenia",
+        stamp: "126",
+      },
+      ve18:{
+        ls: "Bo w mojej głowie zamieć",
+        stamp: "140",
+      },
+      ve19:{
+        ls: "Czarne, czarne chmury",
+        stamp: "144",
+      },
+      ve20:{
+        ls: "Zawierucha, deszcz do spółki z gradem",
+        stamp: "148",
+      },
+      ve21:{
+        ls: "Jakieś obce znów głosy podpowiadają mi bzdury",
+        stamp: "154",
+      },
+      ve22:{
+        ls: "Tak trudno mi, trudno mi, trudno mi, trudno mi być z tobą razem",
+        stamp: "162",
+      },
+      ve23:{
+        ls: "Bo w mojej głowie zamieć",
+        stamp: "216",
+      },
+      ve24:{
+        ls: "Czarne, czarne chmury",
+        stamp: "220",
+      },
+      ve25:{
+        ls: "Zawierucha, deszcz do spółki z gradem",
+        stamp: "224",
+      },
+      ve26:{
+        ls: "Jakieś obce znów głosy podpowiadają mi bzdury",
+        stamp: "230",
+      },
+      ve27:{
+        ls: "Tak trudno mi, trudno mi, trudno mi, trudno mi być z tobą razem",
+        stamp: "237",
+      },
+      ve28:{
+        ls: "♪ ♪ ♪",
+        stamp: "250",
+      },
+      ve29:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve30:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve31:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve32:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve33:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve34:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve35:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve36:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve37:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve38:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve39:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve40:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve41:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve42:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve43:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve44:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve45:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve46:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve47:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve48:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve49:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve50:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve51:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve52:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve53:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve54:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve55:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve56:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve57:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve58:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve59:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve60:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve61:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve62:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve63:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve64:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve65:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve66:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve67:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve68:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve69:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve70:{
+        ls: "",
+        stamp: "3600",
+      },
     },
     bio: "Originating in Skarżysko-Kamienna in 2001, Happysad is a popular Polish rock band distinguished by friendly melodies and reggae-influenced rhythms. Their debut album, Wszystko Jedno, was issued by ",
     social:{
@@ -1208,14 +1370,6 @@ var allMusic = [
 
     style: "Rock",
     status: "nostatus",
-    tag: "Popular",
-    avatar: "14235843737BeNz9sRRfK4jsYeLQ7t32Pg76m86w",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5ebd6e4988f56f08add19e0dd7b",
-    gallery_img_1: "https://pbs.twimg.com/media/Ffi44c-WIAEp8dW?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/Ffi44-jXwAMUldz?format=jpg&name=large",
-    gallery_img_3: "https://i.scdn.co/image/ab6761670000ecd41cdc2f67482deca920508a7d",
-    gallery_img_4: "https://i.scdn.co/image/ab6761670000ecd4e13d018bba5753b76bc6716b",
-    gallery_img_5: "https://i.scdn.co/image/1e7662d67812f4b177c3a03e2f2352ab900e16b4",
     canvas: "",
     
     album: "Mów mi dobrze",
@@ -1224,27 +1378,288 @@ var allMusic = [
     album_status: "false",
     id: "18",
     lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
+      ve1:{
+        ls: "Chodż to jeszcze tylko pare ulic stąd",
+        stamp: "24",
+      },
+      ve2:{
+        ls: "Kilkanaście chodnikowych dziur",
+        stamp: "31",
+      },
+      ve3:{
+        ls: "Chodż przyszpieszmy kroku bo dogania nas noc",
+        stamp: "34",
+      },
+      ve4:{
+        ls: "A w nocy lepiej losu tu nie kusić",
+        stamp: "41",
+      },
+      ve5:{
+        ls: "A może uda się nam przeskoczyć",
+        stamp: "45",
+      },
+      ve6:{
+        ls: "A może uda się nam",
+        stamp: "50",
+      },
+      ve7:{
+        ls: "Przeklęte koryta bram",
+        stamp: "53",
+      },
+      ve8:{
+        ls: "I wtedy powiem ci jak bardzo cię chcę",
+        stamp: "56",
+      },
+      ve9:{
+        ls: "I wszystkie moje tajemnice",
+        stamp: "61",
+      },
+      ve10:{
+        ls: "Chodż to jeszcze tylko parę domów stąd",
+        stamp: "75",
+      },
+      ve11:{
+        ls: "Choć nie czuć stóp, choć stopy mowią nam stop",
+        stamp: "82",
+      },
+      ve12:{
+        ls: "A pięty depcze nam ponury los",
+        stamp: "88",
+      },
+      ve13:{
+        ls: "Ponury los tu nos w nieswoje wkłada",
+        stamp: "92",
+      },
+      ve14:{
+        ls: "A może uda się nam przeskoczyć",
+        stamp: "101",
+      },
+      ve15:{
+        ls: "A może uda się nam",
+        stamp: "106",
+      },
+      ve16:{
+        ls: "Przeklęte koryta bram",
+        stamp: "108",
+      },
+      ve17:{
+        ls: "I wtedy powiem ci jak bardzo cię chcę",
+        stamp: "113",
+      },
+      ve18:{
+        ls: "I wszystkie moje tajemnice",
+        stamp: "118",
+      },
+      ve19:{
+        ls: "I wtedy powiem ci jak bardzo cię chcę",
+        stamp: "147",
+      },
+      ve20:{
+        ls: "I wszystkie moje tajemnice",
+        stamp: "152",
+      },
+      ve21:{
+        ls: "O tym mieście co to widać je w tle",
+        stamp: "157",
+      },
+      ve22:{
+        ls: "Jak bardzo go nienawidzę",
+        stamp: "162",
+      },
+      ve23:{
+        ls: "I wtedy powiem ci jak bardzo cię chcę",
+        stamp: "167",
+      },
+      ve24:{
+        ls: "I wszystkie moje tajemnice",
+        stamp: "173",
+      },
+      ve25:{
+        ls: "O tym mieście co to widać je w tle",
+        stamp: "178",
+      },
+      ve26:{
+        ls: "Jak bardzo go nienawidzę",
+        stamp: "182",
+      },
+      ve27:{
+        ls: "♪ ♪ ♪",
+        stamp: "190",
+      },
+      ve28:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve29:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve30:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve31:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve32:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve33:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve34:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve35:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve36:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve37:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve38:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve39:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve40:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve41:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve42:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve43:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve44:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve45:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve46:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve47:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve48:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve49:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve50:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve51:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve52:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve53:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve54:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve55:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve56:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve57:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve58:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve59:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve60:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve61:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve62:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve63:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve64:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve65:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve66:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve67:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve68:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve69:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve70:{
+        ls: "",
+        stamp: "3600",
+      },
     },
-    bio: "Originating in Skarżysko-Kamienna in 2001, Happysad is a popular Polish rock band distinguished by friendly melodies and reggae-influenced rhythms. Their debut album, Wszystko Jedno, was issued by ",
-    social:{
-      instagram: "https://www.instagram.com/happysadpl",
-      twitter: "",
-      facebook: "https://www.facebook.com/happysadpl",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -1692,22 +2107,291 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "26",
+
+
     lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
+      ve1:{
+        ls: "Thought I found a way",
+        stamp: "20",
+      },
+      ve2:{
+        ls: "Thought I found a way out (found)",
+        stamp: "24",
+      },
+      ve3:{
+        ls: "But you never go away (go away)",
+        stamp: "28",
+      },
+      ve4:{
+        ls: "So I guess I gotta stay now",
+        stamp: "32",
+      },
+      ve5:{
+        ls: "Oh, I hope some day I'll make it out of here",
+        stamp: "35",
+      },
+      ve6:{
+        ls: "Even if it takes all night or a hundred years",
+        stamp: "43",
+      },
+      ve7:{
+        ls: "Need a place to hide, but I can't find one near",
+        stamp: "52",
+      },
+      ve8:{
+        ls: "Wanna feel alive, outside I can't fight my fear",
+        stamp: "60",
+      },
+      ve9:{
+        ls: "Isn't it lovely, all alone?",
+        stamp: "70",
+      },
+      ve10:{
+        ls: "Heart made of glass, my mind of stone",
+        stamp: "74",
+      },
+      ve11:{
+        ls: "Tear me to pieces, skin to bone",
+        stamp: "78",
+      },
+      ve12:{
+        ls: "Hello, welcome home",
+        stamp: "83",
+      },
+      ve13:{
+        ls: "Walkin' out of time",
+        stamp: "91",
+      },
+      ve14:{
+        ls: "Lookin' for a better place (Lookin' for a better place)",
+        stamp: "95",
+      },
+      ve15:{
+        ls: "Something's on my mind (mind)",
+        stamp: "98",
+      },
+      ve16:{
+        ls: "Always in my head space",
+        stamp: "104",
+      },
+      ve17:{
+        ls: "But I know some day I'll make it out of here",
+        stamp: "106",
+      },
+      ve18:{
+        ls: "Even if it takes all night or a hundred years",
+        stamp: "114",
+      },
+      ve19:{
+        ls: "Need a place to hide, but I can't find one near",
+        stamp: "123",
+      },
+      ve20:{
+        ls: "Wanna feel alive, outside I can't fight my fear",
+        stamp: "131",
+      },
+      ve21:{
+        ls: "Isn't it lovely, all alone?",
+        stamp: "141",
+      },
+      ve22:{
+        ls: "Heart made of glass, my mind of stone",
+        stamp: "145",
+      },
+      ve23:{
+        ls: "Tear me to pieces, skin to bone",
+        stamp: "149",
+      },
+      ve24:{
+        ls: "Hello, welcome home",
+        stamp: "154",
+      },
+      ve25:{
+        ls: "Whoa, yeah",
+        stamp: "160",
+      },
+      ve26:{
+        ls: "Yeah, ah",
+        stamp: "167",
+      },
+      ve27:{
+        ls: "Whoa, whoa",
+        stamp: "172",
+      },
+      ve28:{
+        ls: "Hello, welcome home",
+        stamp: "187",
+      },
+      ve29:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve30:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve31:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve32:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve33:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve34:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve35:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve36:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve37:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve38:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve39:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve40:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve41:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve42:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve43:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve44:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve45:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve46:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve47:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve48:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve49:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve50:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve51:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve52:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve53:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve54:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve55:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve56:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve57:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve58:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve59:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve60:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve61:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve62:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve63:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve64:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve65:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve66:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve67:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve68:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve69:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve70:{
+        ls: "",
+        stamp: "3600",
+      },
     },
+
     bio: "With the release of her highly anticipated sophomore album ‘Happier Than Ever,’ the 19-year-old Los Angeles native remains one of the biggest stars to emerge in the 21st century. Since the release of her debut single “ocean eyes” in 2015, Eilish continues to shatter the ceiling of music with her genre-defying sound. Fast forward from her humble breakout, her album WHEN WE ALL FALL ASLEEP, WHERE DO WE GO? debuted at No. 1 on the Billboard 200 in the U.S as well as 17 additional countries around the world upon release in 2019, and was the most streamed album of that year. WHEN WE ALL FALL ASLEEP, WHERE DO WE GO? was written, produced and recorded entirely by Billie Eilish and brother FINNEAS in their childhood home of Los Angeles. Billie Eilish went on to make history as the youngest artist to receive nominations and win in all the major categories at the 62nd GRAMMY® Awards, receiving an award for Best New Artist, Album of the Year, Record of the Year, Song of the Year, and Best Pop Vocal Album. Billie Eilish is also the youngest artist to write and record an official James Bond theme song, ‘No Time To Die.’ Most recently, Billie Eilish was nominated for four additional awards at the 63rd Annual GRAMMY Awards in 2021, and took home both Record of the Year for 'everything i wanted,' and Best Song Written For Visual Media for 'No Time To Die.’ Billie Eilish’s latest album ‘Happier Than Ever’ was written by Billie and her brother FINNEAS, who also produced the album.",
     social:{
       instagram: "https://www.instagram.com/billieeilish/",
@@ -1720,6 +2404,7 @@ var allMusic = [
     name: "Symphony",
     artist: "Clean Bandit",
     colaboration: "Zara Larsson",
+    colaboration_id: "20",
     artist_status: "none",
     language: "eng",
     country: "uk",
@@ -1782,6 +2467,7 @@ var allMusic = [
     language: "eng",
     country: "usa",
     artist_id: "18",
+    tag: "Popular",
 
     src: "ImagineDragonsRadioactive",
     img: "effimagineR-dragons-5966452-1407607955-4124",
@@ -1808,22 +2494,290 @@ var allMusic = [
     album_premiere: "2012",
     album_status: "false",
     id: "28",
+
     lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
+      ve1:{
+        ls: "Whoa, oh, oh",
+        stamp: "1",
+      },
+      ve2:{
+        ls: "Whoa, oh, oh",
+        stamp: "7",
+      },
+      ve3:{
+        ls: "Whoa, oh, oh",
+        stamp: "13",
+      },
+      ve4:{
+        ls: "Whoa",
+        stamp: "20",
+      },
+      ve5:{
+        ls: "I'm waking up to ash and dust",
+        stamp: "27",
+      },
+      ve6:{
+        ls: "I wipe my brow and i sweat my rust",
+        stamp: "31",
+      },
+      ve7:{
+        ls: "I'm breathing in the chemicals",
+        stamp: "34",
+      },
+      ve8:{
+        ls: "I'm breaking in, shaping up, then checking out on the prison bus",
+        stamp: "41",
+      },
+      ve9:{
+        ls: "This is it, the apocalypse",
+        stamp: "48",
+      },
+      ve10:{
+        ls: "Whoa",
+        stamp: "52",
+      },
+      ve11:{
+        ls: "I'm waking up, i feel it in my bones",
+        stamp: "54",
+      },
+      ve12:{
+        ls: "Enough to make my systems blow",
+        stamp: "58",
+      },
+      ve13:{
+        ls: "Welcome to the new age, to the new age",
+        stamp: "62",
+      },
+      ve14:{
+        ls: "Welcome to the new age, to the new age",
+        stamp: "65",
+      },
+      ve15:{
+        ls: "Whoa, oh, oh, oh, oh, whoa, oh, oh , oh, I'm radioactive, radioactive",
+        stamp: "69",
+      },
+      ve16:{
+        ls: "Whoa, oh, oh, oh, oh, whoa, oh, oh , oh, I'm radioactive, radioactive",
+        stamp: "76",
+      },
+      ve17:{
+        ls: "I raise my flags, don my clothes",
+        stamp: "83",
+      },
+      ve18:{
+        ls: "It's a revolution i suppose",
+        stamp: "87",
+      },
+      ve19:{
+        ls: "We'll paint it red to fit right it",
+        stamp: "91",
+      },
+      ve20:{
+        ls: "Whoa",
+        stamp: "94",
+      },
+      ve21:{
+        ls: "I'm breaking in, shaping up, then checking out on the prison bus",
+        stamp: "97",
+      },
+      ve22:{
+        ls: "This is it, the apocalypse",
+        stamp: "104",
+      },
+      ve23:{
+        ls: "Whoa",
+        stamp: "108",
+      },
+      ve24:{
+        ls: "I'm waking up, i feel it in my bones",
+        stamp: "111",
+      },
+      ve25:{
+        ls: "Enough to make my systems blow",
+        stamp: "114",
+      },
+      ve26:{
+        ls: "Welcome to the new age, to the new age",
+        stamp: "118",
+      },
+      ve27:{
+        ls: "Welcome to the new age, to the new age",
+        stamp: "121",
+      },
+      ve28:{
+        ls: "Whoa, oh, oh, oh, oh, whoa, oh, oh , oh, I'm radioactive, radioactive",
+        stamp: "125",
+      },
+      ve29:{
+        ls: "Whoa, oh, oh, oh, oh, whoa, oh, oh , oh, I'm radioactive, radioactive",
+        stamp: "132",
+      },
+      ve30:{
+        ls: "All systems go, the sun hasn't died",
+        stamp: "139",
+      },
+      ve31:{
+        ls: "Deep in my bones, straight from inside",
+        stamp: "146",
+      },
+      ve32:{
+        ls: "I'm waking up, i feel it in my bones",
+        stamp: "152",
+      },
+      ve33:{
+        ls: "Enough to make my systems blow",
+        stamp: "156",
+      },
+      ve34:{
+        ls: "Welcome to the new age, to the new age",
+        stamp: "160",
+      },
+      ve35:{
+        ls: "Welcome to the new age, to the new age",
+        stamp: "164",
+      },
+      ve36:{
+        ls: "Whoa, oh, oh, oh, oh, whoa, oh, oh , oh, I'm radioactive, radioactive",
+        stamp: "167",
+      },
+      ve37:{
+        ls: "Whoa, oh, oh, oh, oh, whoa, oh, oh , oh, I'm radioactive, radioactive",
+        stamp: "174",
+      },
+      ve38:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve39:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve40:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve41:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve42:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve43:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve44:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve45:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve46:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve47:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve48:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve49:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve50:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve51:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve52:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve53:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve54:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve55:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve56:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve57:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve58:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve59:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve60:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve61:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve62:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve63:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve64:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve65:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve66:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve67:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve68:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve69:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve70:{
+        ls: "",
+        stamp: "3600",
+      },
     },
+
     bio: "Formed in 2009, Imagine Dragons first revealed their emotionally charged and inventive sensibilities with a series of independently released EPs that earned them grassroots following. Signed to KIDinaKORNER/Interscope by hitmaking producer Alex Da Kid, the band greatly expanded their fanbase with the release of their multi-platinum breakthrough single “It’s Time” (featured on the 2012 EP Continued Silence). With their past hits also including “Radioactive” (a diamond-selling smash that won Best Rock Performance at the 2014 Grammy Awards), Imagine Dragons went on to see Smoke + Mirrors debut at #1 on the Billboard Top 200 album chart upon its release in early 2015.",
     social:{
       instagram: "https://www.instagram.com/imaginedragons/",
@@ -1848,13 +2802,6 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "MC43MzkxNjEwimagineMCAxNjI1Mzg5Njc2sef",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd4b33c0ac2fda166767b9dbc1a",
-    gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd4efe8ca4b5dc7ac9030ce4d59",
-    gallery_img_2: "https://i.scdn.co/image/ab6761670000ecd44e31fd349dd7c17a93cc4598",
-    gallery_img_3: "https://pbs.twimg.com/media/Fc4GtsiWYAIwTcF?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/Fc4GtshWIAIl2nU?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/Fc4GtsoXwAEudCM?format=jpg&name=large",
     canvas: "",
 
     album: "Evolve",
@@ -1878,12 +2825,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Formed in 2009, Imagine Dragons first revealed their emotionally charged and inventive sensibilities with a series of independently released EPs that earned them grassroots following. Signed to KIDinaKORNER/Interscope by hitmaking producer Alex Da Kid, the band greatly expanded their fanbase with the release of their multi-platinum breakthrough single “It’s Time” (featured on the 2012 EP Continued Silence). With their past hits also including “Radioactive” (a diamond-selling smash that won Best Rock Performance at the 2014 Grammy Awards), Imagine Dragons went on to see Smoke + Mirrors debut at #1 on the Billboard Top 200 album chart upon its release in early 2015.",
-    social:{
-      instagram: "https://www.instagram.com/imaginedragons/",
-      twitter: "https://twitter.com/Imaginedragons",
-      facebook: "https://www.facebook.com/ImagineDragons",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -1902,13 +2844,6 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "MC43MzkxNjEwimagineMCAxNjI1Mzg5Njc2sef",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd4b33c0ac2fda166767b9dbc1a",
-    gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd4efe8ca4b5dc7ac9030ce4d59",
-    gallery_img_2: "https://i.scdn.co/image/ab6761670000ecd44e31fd349dd7c17a93cc4598",
-    gallery_img_3: "https://pbs.twimg.com/media/Fc4GtsiWYAIwTcF?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/Fc4GtshWIAIl2nU?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/Fc4GtsoXwAEudCM?format=jpg&name=large",
     canvas: "",
 
     album: "Evolve",
@@ -1932,12 +2867,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Formed in 2009, Imagine Dragons first revealed their emotionally charged and inventive sensibilities with a series of independently released EPs that earned them grassroots following. Signed to KIDinaKORNER/Interscope by hitmaking producer Alex Da Kid, the band greatly expanded their fanbase with the release of their multi-platinum breakthrough single “It’s Time” (featured on the 2012 EP Continued Silence). With their past hits also including “Radioactive” (a diamond-selling smash that won Best Rock Performance at the 2014 Grammy Awards), Imagine Dragons went on to see Smoke + Mirrors debut at #1 on the Billboard Top 200 album chart upon its release in early 2015.",
-    social:{
-      instagram: "https://www.instagram.com/imaginedragons/",
-      twitter: "https://twitter.com/Imaginedragons",
-      facebook: "https://www.facebook.com/ImagineDragons",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -1955,14 +2885,6 @@ var allMusic = [
 
     style: "Pop",
     status: "nostatus",
-    tag: "Popular",
-    avatar: "MC43MzkxNjEwimagineMCAxNjI1Mzg5Njc2sef",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd4b33c0ac2fda166767b9dbc1a",
-    gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd4efe8ca4b5dc7ac9030ce4d59",
-    gallery_img_2: "https://i.scdn.co/image/ab6761670000ecd44e31fd349dd7c17a93cc4598",
-    gallery_img_3: "https://pbs.twimg.com/media/Fc4GtsiWYAIwTcF?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/Fc4GtshWIAIl2nU?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/Fc4GtsoXwAEudCM?format=jpg&name=large",
     canvas: "",
 
     album: "Origins",
@@ -1971,33 +2893,295 @@ var allMusic = [
     album_status: "false",
     id: "31",
     lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
+      ve1:{
+        ls: "Oh, hush, my dear, it's been a difficult year",
+        stamp: "16",
+      },
+      ve2:{
+        ls: "And terrors don't prey on",
+        stamp: "21",
+      },
+      ve3:{
+        ls: "Innocent victims",
+        stamp: "24",
+      },
+      ve4:{
+        ls: "Trust me, darling, trust me darling",
+        stamp: "27",
+      },
+      ve5:{
+        ls: "It's been a loveless year",
+        stamp: "36",
+      },
+      ve6:{
+        ls: "I'm a men of three fears",
+        stamp: "39",
+      },
+      ve7:{
+        ls: "Integrity, faith and",
+        stamp: "42",
+      },
+      ve8:{
+        ls: "Crocodile tears",
+        stamp: "45",
+      },
+      ve9:{
+        ls: "Trust me, darling, trust me, darling",
+        stamp: "48",
+      },
+      ve10:{
+        ls: "So look me in the eyes",
+        stamp: "57",
+      },
+      ve11:{
+        ls: "Tell me what you see",
+        stamp: "59",
+      },
+      ve12:{
+        ls: "Perfect paradise",
+        stamp: "62",
+      },
+      ve13:{
+        ls: "Tearing at the seems",
+        stamp: "65",
+      },
+      ve14:{
+        ls: "I wish I could escape",
+        stamp: "67",
+      },
+      ve15:{
+        ls: "I don't wanna fake it",
+        stamp: "70",
+      },
+      ve16:{
+        ls: "Wish i could erase it",
+        stamp: "73",
+      },
+      ve17:{
+        ls: "Make your heart belive",
+        stamp: "75",
+      },
+      ve18:{
+        ls: "But I'm a bad liar, bad liar",
+        stamp: "77",
+      },
+      ve19:{
+        ls: "Now you know",
+        stamp: "84",
+      },
+      ve20:{
+        ls: "Now you know",
+        stamp: "87",
+      },
+      ve21:{
+        ls: "I'm a bad liar, bad liar",
+        stamp: "88",
+      },
+      ve22:{
+        ls: "Now you know, you're free to go (go)",
+        stamp: "95",
+      },
+      ve23:{
+        ls: "Did all my dreams never mean one thing?",
+        stamp: "101",
+      },
+      ve24:{
+        ls: "Does happiness lie in a diamond ring?",
+        stamp: "106",
+      },
+      ve25:{
+        ls: "Oh, I've been askin'",
+        stamp: "112",
+      },
+      ve26:{
+        ls: "Oh, I've been askin' for problems, problems, problems",
+        stamp: "115",
+      },
+      ve27:{
+        ls: "I wage my war, on the world inside",
+        stamp: "123",
+      },
+      ve28:{
+        ls: "I take my gun to the enemy's side",
+        stamp: "128",
+      },
+      ve29:{
+        ls: "Oh, I've been askin' for (trust me, darling)",
+        stamp: "134",
+      },
+      ve30:{
+        ls: "Oh, I've been askin' for (trust me, darling)",
+        stamp: "137",
+      },
+      ve31:{
+        ls: "Problems, problems, problems",
+        stamp: "139",
+      },
+      ve32:{
+        ls: "So look me in the eyes",
+        stamp: "144",
+      },
+      ve33:{
+        ls: "Tell me what you see",
+        stamp: "146",
+      },
+      ve34:{
+        ls: "Perfect paradise",
+        stamp: "148",
+      },
+      ve35:{
+        ls: "Tearing at the seems",
+        stamp: "151",
+      },
+      ve36:{
+        ls: "I wish I could escape",
+        stamp: "154",
+      },
+      ve37:{
+        ls: "I don't wanna fake it",
+        stamp: "157",
+      },
+      ve38:{
+        ls: "Wish i could erase it",
+        stamp: "159",
+      },
+      ve39:{
+        ls: "Make your heart belive",
+        stamp: "162",
+      },
+      ve40:{
+        ls: "But I'm a bad liar, bad liar",
+        stamp: "164",
+      },
+      ve41:{
+        ls: "Now you know",
+        stamp: "170",
+      },
+      ve42:{
+        ls: "Now you know",
+        stamp: "173",
+      },
+      ve43:{
+        ls: "That I'm a bad liar, bad liar",
+        stamp: "175",
+      },
+      ve44:{
+        ls: "Now you know, you're free to go (go)",
+        stamp: "181",
+      },
+      ve45:{
+        ls: "I can't breath, I can't be",
+        stamp: "188",
+      },
+      ve46:{
+        ls: "I can't be what you want me to be",
+        stamp: "193",
+      },
+      ve47:{
+        ls: "Belive me, this one time",
+        stamp: "200",
+      },
+      ve48:{
+        ls: "Belive me",
+        stamp: "203",
+      },
+      ve49:{
+        ls: "I'm a bad liar, bad liar",
+        stamp: "207",
+      },
+      ve50:{
+        ls: "Now you know",
+        stamp: "213",
+      },
+      ve51:{
+        ls: "Now you know",
+        stamp: "216",
+      },
+      ve52:{
+        ls: "That I'm a bad liar, bad liar",
+        stamp: "218",
+      },
+      ve53:{
+        ls: "Now you know, you're free to go",
+        stamp: "224",
+      },
+      ve54:{
+        ls: "Oh",
+        stamp: "231",
+      },
+      ve55:{
+        ls: "Please belive me",
+        stamp: "243",
+      },
+      ve56:{
+        ls: "Please belive me",
+        stamp: "246",
+      },
+      ve57:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve58:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve59:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve60:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve61:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve62:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve63:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve64:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve65:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve66:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve67:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve68:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve69:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve70:{
+        ls: "",
+        stamp: "3600",
+      },
     },
-    bio: "Formed in 2009, Imagine Dragons first revealed their emotionally charged and inventive sensibilities with a series of independently released EPs that earned them grassroots following. Signed to KIDinaKORNER/Interscope by hitmaking producer Alex Da Kid, the band greatly expanded their fanbase with the release of their multi-platinum breakthrough single “It’s Time” (featured on the 2012 EP Continued Silence). With their past hits also including “Radioactive” (a diamond-selling smash that won Best Rock Performance at the 2014 Grammy Awards), Imagine Dragons went on to see Smoke + Mirrors debut at #1 on the Billboard Top 200 album chart upon its release in early 2015.",
-    social:{
-      instagram: "https://www.instagram.com/imaginedragons/",
-      twitter: "https://twitter.com/Imaginedragons",
-      facebook: "https://www.facebook.com/ImagineDragons",
-    },
+
     user_playlist_1: "",
   },
   {
     name: "Born To Be Yours",
     artist: "Kygo",
     colaboration: "Imagine Dragons",
+    colaboration_id: "18",
     artist_status: "none",
     language: "eng",
     country: "no",
@@ -2067,13 +3251,6 @@ var allMusic = [
 
     style: "Chill",
     status: "nostatus",
-    avatar: "41aeb62f0-c2321-f22bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
-    gallery_img_1: "https://pbs.twimg.com/media/FfeDi8NVEAAcBE0?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/FfeDi8JUYAAjoTF?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
     canvas: "",
 
     album: "Trench",
@@ -2097,12 +3274,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
-    social:{
-      instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
-      twitter: "https://twitter.com/twentyonepilots",
-      facebook: "https://www.facebook.com/twentyonepilots",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -2120,13 +3292,6 @@ var allMusic = [
 
     style: "Chill",
     status: "nostatus",
-    avatar: "41aeb62f0-c2321-f22bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
-    gallery_img_1: "https://pbs.twimg.com/media/FfeDi8NVEAAcBE0?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/FfeDi8JUYAAjoTF?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
     canvas: "",
 
     album: "Trench",
@@ -2150,12 +3315,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
-    social:{
-      instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
-      twitter: "https://twitter.com/twentyonepilots",
-      facebook: "https://www.facebook.com/twentyonepilots",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -2173,13 +3333,6 @@ var allMusic = [
 
     style: "Chill",
     status: "nostatus",
-    avatar: "41aeb62f0-c2321-f22bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
-    gallery_img_1: "https://pbs.twimg.com/media/FfeDi8NVEAAcBE0?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/FfeDi8JUYAAjoTF?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
     canvas: "",
 
     album: "Trench",
@@ -2203,12 +3356,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
-    social:{
-      instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
-      twitter: "https://twitter.com/twentyonepilots",
-      facebook: "https://www.facebook.com/twentyonepilots",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -2226,13 +3374,6 @@ var allMusic = [
 
     style: "Chill",
     status: "nostatus",
-    avatar: "41aeb62f0-c2321-f22bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
-    gallery_img_1: "https://pbs.twimg.com/media/FfeDi8NVEAAcBE0?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/FfeDi8JUYAAjoTF?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
     canvas: "",
 
     album: "Trench",
@@ -2256,12 +3397,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
-    social:{
-      instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
-      twitter: "https://twitter.com/twentyonepilots",
-      facebook: "https://www.facebook.com/twentyonepilots",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -2279,13 +3415,6 @@ var allMusic = [
 
     style: "Chill",
     status: "nostatus",
-    avatar: "41aeb62f0-c2321-f22bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
-    gallery_img_1: "https://pbs.twimg.com/media/FfeDi8NVEAAcBE0?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/FfeDi8JUYAAjoTF?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
     canvas: "",
 
     album: "Trench",
@@ -2309,12 +3438,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
-    social:{
-      instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
-      twitter: "https://twitter.com/twentyonepilots",
-      facebook: "https://www.facebook.com/twentyonepilots",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -2332,13 +3456,6 @@ var allMusic = [
 
     style: "Chill",
     status: "nostatus",
-    avatar: "41aeb62f0-c2321-f22bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
-    gallery_img_1: "https://pbs.twimg.com/media/FfeDi8NVEAAcBE0?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/FfeDi8JUYAAjoTF?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
     canvas: "",
 
     album: "Trench",
@@ -2362,12 +3479,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
-    social:{
-      instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
-      twitter: "https://twitter.com/twentyonepilots",
-      facebook: "https://www.facebook.com/twentyonepilots",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -2385,13 +3497,6 @@ var allMusic = [
 
     style: "Chill",
     status: "nostatus",
-    avatar: "41aeb62f0-c2321-f22bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
-    gallery_img_1: "https://pbs.twimg.com/media/FfeDi8NVEAAcBE0?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/FfeDi8JUYAAjoTF?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
     canvas: "",
 
     album: "Trench",
@@ -2415,12 +3520,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
-    social:{
-      instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
-      twitter: "https://twitter.com/twentyonepilots",
-      facebook: "https://www.facebook.com/twentyonepilots",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -2438,13 +3538,6 @@ var allMusic = [
 
     style: "Chill",
     status: "nostatus",
-    avatar: "41aeb62f0-c2321-f22bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
-    gallery_img_1: "https://pbs.twimg.com/media/FfeDi8NVEAAcBE0?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/FfeDi8JUYAAjoTF?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
     canvas: "",
 
     album: "Trench",
@@ -2468,12 +3561,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
-    social:{
-      instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
-      twitter: "https://twitter.com/twentyonepilots",
-      facebook: "https://www.facebook.com/twentyonepilots",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -2491,13 +3579,6 @@ var allMusic = [
 
     style: "Chill",
     status: "nostatus",
-    avatar: "41aeb62f0-c2321-f22bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
-    gallery_img_1: "https://pbs.twimg.com/media/FfeDi8NVEAAcBE0?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/FfeDi8JUYAAjoTF?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
     canvas: "",
 
     album: "Trench",
@@ -2521,12 +3602,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
-    social:{
-      instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
-      twitter: "https://twitter.com/twentyonepilots",
-      facebook: "https://www.facebook.com/twentyonepilots",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -2544,13 +3620,6 @@ var allMusic = [
 
     style: "Chill",
     status: "nostatus",
-    avatar: "41aeb62f0-c2321-f22bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
-    gallery_img_1: "https://pbs.twimg.com/media/FfeDi8NVEAAcBE0?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/FfeDi8JUYAAjoTF?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
     canvas: "",
 
     album: "Trench",
@@ -2574,12 +3643,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
-    social:{
-      instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
-      twitter: "https://twitter.com/twentyonepilots",
-      facebook: "https://www.facebook.com/twentyonepilots",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -2597,13 +3661,6 @@ var allMusic = [
 
     style: "Chill",
     status: "nostatus",
-    avatar: "41aeb62f0-c2321-f22bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
-    gallery_img_1: "https://pbs.twimg.com/media/FfeDi8NVEAAcBE0?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/FfeDi8JUYAAjoTF?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
     canvas: "",
 
     album: "Trench",
@@ -2627,12 +3684,6 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
-    social:{
-      instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
-      twitter: "https://twitter.com/twentyonepilots",
-      facebook: "https://www.facebook.com/twentyonepilots",
-    },
     user_playlist_1: "",
   },
   {
@@ -2650,13 +3701,6 @@ var allMusic = [
 
     style: "Chill",
     status: "nostatus",
-    avatar: "41aeb62f0-c2321-f22bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
-    gallery_img_1: "https://pbs.twimg.com/media/FfeDi8NVEAAcBE0?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/FfeDi8JUYAAjoTF?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
     canvas: "",
 
     album: "Trench",
@@ -2680,12 +3724,6 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
-    social:{
-      instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
-      twitter: "https://twitter.com/twentyonepilots",
-      facebook: "https://www.facebook.com/twentyonepilots",
-    },
     user_playlist_1: "",
   },
   {
@@ -2703,13 +3741,6 @@ var allMusic = [
 
     style: "Chill",
     status: "nostatus",
-    avatar: "41aeb62f0-c2321-f22bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
-    gallery_img_1: "https://pbs.twimg.com/media/FfeDi8NVEAAcBE0?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/FfeDi8JUYAAjoTF?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
     canvas: "",
 
     album: "Trench",
@@ -2733,12 +3764,6 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
-    social:{
-      instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
-      twitter: "https://twitter.com/twentyonepilots",
-      facebook: "https://www.facebook.com/twentyonepilots",
-    },
     user_playlist_1: "",
   },
   {
@@ -2756,13 +3781,6 @@ var allMusic = [
 
     style: "Chill",
     status: "nostatus",
-    avatar: "41aeb62f0-c2321-f22bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
-    gallery_img_1: "https://pbs.twimg.com/media/FfeDi8NVEAAcBE0?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/FfeDi8JUYAAjoTF?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
     canvas: "",
 
     album: "Trench",
@@ -2785,12 +3803,6 @@ var allMusic = [
       lyrics_verse_12: "",
       lyrics_verse_13: "",
       lyrics_verse_14: ""
-    },
-    bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
-    social:{
-      instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
-      twitter: "https://twitter.com/twentyonepilots",
-      facebook: "https://www.facebook.com/twentyonepilots",
     },
     user_playlist_1: "",
   },
@@ -2867,13 +3879,6 @@ var allMusic = [
 
     style: "Chill",
     status: "nostatus",
-    avatar: "41aeb62f0-c2321-f22bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
-    gallery_img_1: "https://pbs.twimg.com/media/FfeDi8NVEAAcBE0?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/FfeDi8JUYAAjoTF?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
     canvas: "",
 
     album: "Scaled And Icy",
@@ -2897,12 +3902,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
-    social:{
-      instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
-      twitter: "https://twitter.com/twentyonepilots",
-      facebook: "https://www.facebook.com/twentyonepilots",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -2920,13 +3920,6 @@ var allMusic = [
 
     style: "Chill",
     status: "nostatus",
-    avatar: "41aeb62f0-c2321-f22bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
-    gallery_img_1: "https://pbs.twimg.com/media/FfeDi8NVEAAcBE0?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/FfeDi8JUYAAjoTF?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
     canvas: "",
 
     album: "Scaled And Icy",
@@ -2950,12 +3943,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
-    social:{
-      instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
-      twitter: "https://twitter.com/twentyonepilots",
-      facebook: "https://www.facebook.com/twentyonepilots",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -2973,13 +3961,6 @@ var allMusic = [
 
     style: "Chill",
     status: "nostatus",
-    avatar: "41aeb62f0-c2321-f22bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
-    gallery_img_1: "https://pbs.twimg.com/media/FfeDi8NVEAAcBE0?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/FfeDi8JUYAAjoTF?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
     canvas: "",
  
     album: "Scaled And Icy",
@@ -3003,12 +3984,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
-    social:{
-      instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
-      twitter: "https://twitter.com/twentyonepilots",
-      facebook: "https://www.facebook.com/twentyonepilots",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -3026,14 +4002,6 @@ var allMusic = [
 
     style: "Chill",
     status: "nostatus",
-    tag: "Popular",
-    avatar: "41aeb62f0-c2321-f22bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093",
-    gallery_img_1: "https://pbs.twimg.com/media/FfeDi8NVEAAcBE0?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/FfeDi8JUYAAjoTF?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FdSJa6yUAAErdk0?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FcpomMVX0AoD7Bx?format=jpg&name=large",
     canvas: "",
 
     album: "Blurryface",
@@ -3057,12 +4025,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
-    social:{
-      instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
-      twitter: "https://twitter.com/twentyonepilots",
-      facebook: "https://www.facebook.com/twentyonepilots",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -3104,117 +4067,290 @@ var allMusic = [
     album_premiere: "2017",
     album_status: "false",
     id: "52",
+
     lyrics:{
       ve1:{
-        ls1: "Oh my, oh my, oh my",
-        ls2: "Oh my, oh my, oh my",
-        ls3: "Oh my, oh my, oh my, oh my",
+        ls: "Oh my, oh my, oh my",
         stamp: "2",
       },
       ve2:{
-        ls1: "It ain't my fault you keep turnin' me on",
-        ls2: "It ain't my fault you got, got me so gone",
-        ls3: "It ain't my fault I'm not leavin' alone",
-        ls4: "It ain't my fault you keep turnin' me on",
-        stamp: "14",
+        ls: "Oh my, oh my, oh my",
+        stamp: "5",
       },
       ve3:{
-        ls1: "I can't talk right now",
-        ls2: "I'm lookin' and I like what I'm seein'",
-        ls3: "Got me feelin' kinda shocked right now",
-        ls4: "Couldn't stop right now",
-        ls5: "Even if I wanted, gotta get it, get it, get it, when it's hot right now",
-        ls6: "Oh my god, what is this?",
-        ls7: "Want you all in my business",
-        ls8: "Baby, I insist",
-        ls9: "Please don't blame me for what ever happens next", 
-        stamp: "27",
+        ls: "Oh my, oh my, oh my, oh my",
+        stamp: "9",
       },
       ve4:{
-        ls1: "No, I-I-I-I can't be responsible",
-        ls2: "If I-I-I-I get you in trouble now",
-        ls3: "See, you're-'re-'re-'re too irresistible",
-        ls4: "Yeah, that's for sure",
-        ls5: "So, if I put your hands where my eyes can't see",
-        ls6: "Then you're the one who's got a hold on me",
-        ls7: "No, I-I-I-I can't be responsible, responsible",
-        ls8: "It ain't my fault (nope, nope, nope, nope, nope, nope, nope)",
-        ls9: "It ain't my fault (nope, nope, nope, nope, nope, nope, nope)", 
-        ls10: "It ain't my fault",
-        stamp: "40",
+        ls: "It ain't my fault you keep turnin' me on",
+        stamp: "13",
       },
       ve5:{
-        ls1: "It ain't my fault you came here lookin' like that",
-        ls2: "You just made me trip, fall, and land on your lap",
-        ls3: "Certain bad boy smooth",
-        ls4: "Body hotter than the sun",
-        ls5: "I don't mean to be rude, but I'd look so damn good on ya",
-        stamp: "82",
+        ls: "It ain't my fault you got, got me so gone",
+        stamp: "16",
       },
       ve6:{
-        ls1: "Ain't got time right now",
-        ls2: "Missed me with that",
-        ls3: "What's your name, your sign right now",
-        ls4: "It's light outside",
-        ls5: "I just called an Uber and it's right outside",
-        ls6: "Oh my God, what is this?",
-        ls7: "Want you all in my business",
-        ls8: "Baby, I insist",
-        ls9: "Please don't blame me for what ever happens next", 
-        stamp: "95",
+        ls: "It ain't my fault I'm not leavin' alone",
+        stamp: "20",
       },
       ve7:{
-        ls1: "No, I-I-I-I can't be responsible",
-        ls2: "If I-I-I-I get you in trouble now",
-        ls3: "See, you're-'re-'re-'re too irresistible",
-        ls4: "Yeah, that's for sure",
-        ls5: "So, if I put your hands where my eyes can't see",
-        ls6: "Then you're the one who's got a hold on me",
-        ls7: "No, I-I-I-I can't be responsible, responsible",
-        ls8: "It ain't my fault (nope, nope, nope, nope, nope, nope, nope)",
-        ls9: "It ain't my fault (nope, nope, nope, nope, nope, nope, nope)", 
-        ls10: "It ain't my fault",
-        stamp: "110",
+        ls: "It ain't my fault you keep turnin' me on",
+        stamp: "24",
       },
       ve8:{
-        ls1: "Baby, one, two, three",
-        ls2: "Your body's callin' me",
-        ls3: "And I know wherever you're at is exactly where I wanna be",
-        ls4: "But don't blame me",
-        ls5: "It ain't my fault (nope, nope, nope)",
-        ls6: "It ain't my fault (nope, nope, nope)",
-        ls7: "It ain't my fault (nope, nope, nope)",
-        ls8: "Oh my, oh my, oh my, oh my (it ain't my fault)",
-        stamp: "150",
+        ls: "I can't talk right now",
+        stamp: "27",
       },
       ve9:{
-        ls1: "So if I put your hands where my eyes can't see",
-        ls2: "Then you're the one who's got a hold on me",
-        ls3: "No, I-I-I-I can't be responsible, responsible",
-        ls4: "It ain't my fault (nope, nope, nope, nope, nope, nope, nope)",
-        ls5: "No-oh-oh, it ain't my fault",
-        ls6: "No-oh-oh, no-oh-oh, no",
-        ls7: "It ain't my fault",
-        ls8: "It ain't my fault you got me so gone",
-        ls9: "It ain't my fault you got me so gone",
-        ls10: "Well, that's too bad, it ain't my fault",
-        stamp: "177",
+        ls: "I'm lookin' and I like what I'm seein'",
+        stamp: "28",
       },
       ve10:{
-        ls1: "",
-        ls2: "",
-        ls3: "",
-        ls4: "",
-        stamp: "",
+        ls: "Got me feelin' kinda shocked right now",
+        stamp: "30",
       },
       ve11:{
-        ls1: "",
-        ls2: "",
-        ls3: "",
-        ls4: "",
-        stamp: "",
+        ls: "Couldn't stop right now",
+        stamp: "31",
+      },
+      ve12:{
+        ls: "Even if I wanted, gotta get it, get it, get it, when it's hot right now",
+        stamp: "32",
+      },
+      ve13:{
+        ls: "Oh my god, what is this?",
+        stamp: "35",
+      },
+      ve14:{
+        ls:  "Want you all in my business",
+        stamp: "36",
+      },
+      ve15:{
+        ls: "Baby, I insist",
+        stamp: "37",
+      },
+      ve16:{
+        ls: "Please don't blame me for what ever happens next", 
+        stamp: "39",
+      },
+      ve17:{
+        ls: "No, I-I-I-I can't be responsible",
+        stamp: "42",
+      },
+      ve18:{
+        ls: "If I-I-I-I get you in trouble now",
+        stamp: "45",
+      },
+      ve19:{
+        ls: "See, you're-'re-'re-'re too irresistible",
+        stamp: "49",
+      },
+      ve20:{
+        ls: "Yeah, that's for sure",
+        stamp: "52",
+      },
+      ve21:{
+        ls: "So, if I put your hands where my eyes can't see",
+        stamp: "55",
+      },
+      ve22:{
+        ls: "Then you're the one who's got a hold on me",
+        stamp: "58",
+      },
+      ve23:{
+        ls: "No, I-I-I-I can't be responsible, responsible",
+        stamp: "62",
+      },
+      ve24:{
+        ls: "It ain't my fault (nope, nope, nope, nope, nope, nope, nope)",
+        stamp: "68",
+      },
+      ve25:{
+        ls: "It ain't my fault (nope, nope, nope, nope, nope, nope, nope)",
+        stamp: "75",
+      },
+      ve26:{
+        ls: "It ain't my fault",
+        stamp: "81",
+      },
+      ve27:{
+        ls: "It ain't my fault you came here lookin' like that",
+        stamp: "82",
+      },
+      ve28:{
+        ls: "You just made me trip, fall, and land on your lap",
+        stamp: "86",
+      },
+      ve29:{
+        ls: "Certain bad boy smooth",
+        stamp: "89",
+      },
+      ve30:{
+        ls: "Body hotter than the sun",
+        stamp: "90",
+      },
+      ve31:{
+        ls: "I don't mean to be rude, but I'd look so damn good on ya",
+        stamp: "92",
+      },
+      ve32:{
+        ls: "Ain't got time right now",
+        stamp: "96",
+      },
+      ve33:{
+        ls: "Missed me with that",
+        stamp: "97",
+      },
+      ve34:{
+        ls: "What's your name, your sign right now",
+        stamp: "98",
+      },
+      ve35:{
+        ls: "It's light outside",
+        stamp: "99",
+      },
+      ve36:{
+        ls: "I just called an Uber and it's right outside",
+        stamp: "100",
+      },
+      ve37:{
+        ls: "Oh my God, what is this?",
+        stamp: "103",
+      },
+      ve38:{
+        ls: "Want you all in my business",
+        stamp: "104",
+      },
+      ve39:{
+        ls: "Baby, I insist",
+        stamp: "106",
+      },
+      ve40:{
+        ls: "Please don't blame me for what ever happens next", 
+        stamp: "107",
+      },
+      ve41:{
+        ls: "No, I-I-I-I can't be responsible",
+        stamp: "110",
+      },
+      ve42:{
+        ls: "If I-I-I-I get you in trouble now",
+        stamp: "114",
+      },
+      ve43:{
+        ls: "See, you're-'re-'re-'re too irresistible",
+        stamp: "117",
+      },
+      ve44:{
+        ls: "Yeah, that's for sure",
+        stamp: "121",
+      },
+      ve45:{
+        ls: "So, if I put your hands where my eyes can't see",
+        stamp: "123",
+      },
+      ve46:{
+        ls: "Then you're the one who's got a hold on me",
+        stamp: "126",
+      },
+      ve47:{
+        ls: "No, I-I-I-I can't be responsible, responsible",
+        stamp: "130",
+      },
+      ve48:{
+        ls: "It ain't my fault (nope, nope, nope, nope, nope, nope, nope)",
+        stamp: "136",
+      },
+      ve49:{
+        ls: "It ain't my fault (nope, nope, nope, nope, nope, nope, nope)",
+        stamp: "143",
+      },
+      ve50:{
+        ls: "It ain't my fault",
+        stamp: "150",
+      },
+      ve51:{
+        ls: "Baby, one, two, three",
+        stamp: "151",
+      },
+      ve52:{
+        ls: "Your body's callin' me",
+        stamp: "153",
+      },
+      ve53:{
+        ls: "And I know wherever you're at is exactly where I wanna be",
+        stamp: "156",
+      },
+      ve54:{
+        ls: "But don't blame me",
+        stamp: "162",
+      },
+      ve55:{
+        ls: "It ain't my fault (nope, nope, nope)",
+        stamp: "163",
+      },
+      ve56:{
+        ls: "It ain't my fault (nope, nope, nope)",
+        stamp: "170",
+      },
+      ve57:{
+        ls: "It ain't my fault (nope, nope, nope)",
+        stamp: "172",
+      },
+      ve58:{
+        ls: "Oh my, oh my, oh my, oh my (it ain't my fault)",
+        stamp: "174",
+      },
+      ve59:{
+        ls: "So if I put your hands where my eyes can't see",
+        stamp: "178",
+      },
+      ve60:{
+        ls: "Then you're the one who's got a hold on me",
+        stamp: "181",
+      },
+      ve61:{
+        ls: "No, I-I-I-I can't be responsible, responsible",
+        stamp: "185",
+      },
+      ve62:{
+        ls: "It ain't my fault (nope, nope, nope, nope, nope, nope, nope)",
+        stamp: "190",
+      },
+      ve63:{
+        ls: "No-oh-oh, it ain't my fault",
+        stamp: "194",
+      },
+      ve64:{
+        ls: "It ain't my fault",
+        stamp: "197",
+      },
+      ve65:{
+        ls: "No-oh-oh, no-oh-oh, no",
+        stamp: "199",
+      },
+      ve66:{
+        ls: "It ain't my fault you got me so gone",
+        stamp: "205",
+      },
+      ve67:{
+        ls: "It ain't my fault you got me so gone",
+        stamp: "208",
+      },
+      ve68:{
+        ls: "Well, that's too bad, it ain't my fault",
+        stamp: "216",
+      },
+      ve69:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve70:{
+        ls: "",
+        stamp: "3600",
       },
     },
+
     bio: "Swedish hitmaking singer/songwriter Zara Larsson crafts R&B- and club-influenced dance-pop influenced by artists like , , and . After winning a Swedish singing competition at the age of eight, Larsson crashed the mainstream in the mid-2010s with a string of Swedish number ones like Lush Life and Never Forget You, which were certified multi-platinum around the world. Those tracks landed on her 2017 chart-topping, multi-platinum breakthrough So Good, a Top Ten hit across Europe and Australasia. Her third album, Poster Girl, arrived in 2021 and again brought her to the Top Ten in Sweden with the hit Ruin My Life.",
     social:{
       instagram: "https://www.instagram.com/zaralarsson/",
@@ -3280,6 +4416,10 @@ var allMusic = [
       facebook: "https://www.facebook.com/againstthecurrentband",
     },
     user_playlist_1: "",
+
+    tweet_title: "Listen To New Single 'good guy'",
+    tweet_img: "https://i.scdn.co/image/ab67616d000048517d61ea02d658c15bc90022d7",
+    tweet_link: "189"
   },
   {
     name: "that won't save us",
@@ -3296,14 +4436,6 @@ var allMusic = [
     
     style: "Rock",
     status: "nostatus",
-    tag: "Popular",
-    avatar: "3eff83c2098againstbe9b7ebb770bca30ef66current2169515",
-    artist_img: "https://i.scdn.co/image/b0ef3e7a4267895cb785ce4c4723b019b1f90ba6",
-    gallery_img_1: "https://i.scdn.co/image/be889a1f4635f013e13ff6c98253f162559dae96",
-    gallery_img_2: "https://pbs.twimg.com/media/FJevgWXVIAMalXA?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/Et7eALxVcAEyxo-?format=jpg&name=large",
     canvas: "https://video.twimg.com/ext_tw_video/1484211689327267841/pu/vid/1280x720/3uImixviulBeSg6k.mp4?tag=12",
 
     album: "Fever",
@@ -3327,12 +4459,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "The moment you find your voice, you step into yourself and actualize your potential. At this point, expectations no longer matter, fear disappears, and everything changes. Against The Current not only embrace their voice, but project it louder than ever. After hundreds of millions of streams, major collaborations with the likes of Riot Games, and countless packed shows, the trio—Chrissy Costanza [vocals], Dan Gow [guitar], and Will Ferri [drums]—lift themselves up to this moment with their new music. Dan observes, “We dove back into early inspirations like Taking Back Sunday and incorporated those vibes into what we do. It fueled us to keep going.” In the end, Against The Current will stir up the same frenzy and fire in audiences as well with this music. “Musically, it’s back to the three of us in a room together, and you’ll hear it,” adds Will. “In a lot of ways, it’s like we’re just getting started—even though it’s been ten years. It feels good.” “This process was really empowering,” Chrissy concludes. “It also reminded me how much I love rock music and how this band was founded on that love. When you listen to us, I want you to know you’re in control. If you don’t like something, you can make a change. I realized I don’t want to sit around feeling sorry for myself…I want more. I want to inspire everyone to chase their dreams to no end.”",
-    social:{
-      instagram: "https://www.instagram.com/againstthecurrent/",
-      twitter: "https://twitter.com/ATC_BAND",
-      facebook: "https://www.facebook.com/againstthecurrentband",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -3350,14 +4477,6 @@ var allMusic = [
     
     style: "Rock",
     status: "nostatus",
-    tag: "Popular",
-    avatar: "3eff83c2098againstbe9b7ebb770bca30ef66current2169515",
-    artist_img: "https://i.scdn.co/image/b0ef3e7a4267895cb785ce4c4723b019b1f90ba6",
-    gallery_img_1: "https://i.scdn.co/image/be889a1f4635f013e13ff6c98253f162559dae96",
-    gallery_img_2: "https://pbs.twimg.com/media/FJevgWXVIAMalXA?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/Et7eALxVcAEyxo-?format=jpg&name=large",
     canvas: "https://video.twimg.com/ext_tw_video/1484211689327267841/pu/vid/1280x720/3uImixviulBeSg6k.mp4?tag=12",
 
     album: "Fever",
@@ -3381,12 +4500,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "The moment you find your voice, you step into yourself and actualize your potential. At this point, expectations no longer matter, fear disappears, and everything changes. Against The Current not only embrace their voice, but project it louder than ever. After hundreds of millions of streams, major collaborations with the likes of Riot Games, and countless packed shows, the trio—Chrissy Costanza [vocals], Dan Gow [guitar], and Will Ferri [drums]—lift themselves up to this moment with their new music. Dan observes, “We dove back into early inspirations like Taking Back Sunday and incorporated those vibes into what we do. It fueled us to keep going.” In the end, Against The Current will stir up the same frenzy and fire in audiences as well with this music. “Musically, it’s back to the three of us in a room together, and you’ll hear it,” adds Will. “In a lot of ways, it’s like we’re just getting started—even though it’s been ten years. It feels good.” “This process was really empowering,” Chrissy concludes. “It also reminded me how much I love rock music and how this band was founded on that love. When you listen to us, I want you to know you’re in control. If you don’t like something, you can make a change. I realized I don’t want to sit around feeling sorry for myself…I want more. I want to inspire everyone to chase their dreams to no end.”",
-    social:{
-      instagram: "https://www.instagram.com/againstthecurrent/",
-      twitter: "https://twitter.com/ATC_BAND",
-      facebook: "https://www.facebook.com/againstthecurrentband",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -3404,14 +4518,6 @@ var allMusic = [
     
     style: "Rock",
     status: "nostatus",
-    tag: "Popular",
-    avatar: "3eff83c2098againstbe9b7ebb770bca30ef66current2169515",
-    artist_img: "https://i.scdn.co/image/b0ef3e7a4267895cb785ce4c4723b019b1f90ba6",
-    gallery_img_1: "https://i.scdn.co/image/be889a1f4635f013e13ff6c98253f162559dae96",
-    gallery_img_2: "https://pbs.twimg.com/media/FJevgWXVIAMalXA?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/Et7eALxVcAEyxo-?format=jpg&name=large",
     canvas: "https://video.twimg.com/ext_tw_video/1484211689327267841/pu/vid/1280x720/3uImixviulBeSg6k.mp4?tag=12",
 
     album: "Fever",
@@ -3435,12 +4541,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "The moment you find your voice, you step into yourself and actualize your potential. At this point, expectations no longer matter, fear disappears, and everything changes. Against The Current not only embrace their voice, but project it louder than ever. After hundreds of millions of streams, major collaborations with the likes of Riot Games, and countless packed shows, the trio—Chrissy Costanza [vocals], Dan Gow [guitar], and Will Ferri [drums]—lift themselves up to this moment with their new music. Dan observes, “We dove back into early inspirations like Taking Back Sunday and incorporated those vibes into what we do. It fueled us to keep going.” In the end, Against The Current will stir up the same frenzy and fire in audiences as well with this music. “Musically, it’s back to the three of us in a room together, and you’ll hear it,” adds Will. “In a lot of ways, it’s like we’re just getting started—even though it’s been ten years. It feels good.” “This process was really empowering,” Chrissy concludes. “It also reminded me how much I love rock music and how this band was founded on that love. When you listen to us, I want you to know you’re in control. If you don’t like something, you can make a change. I realized I don’t want to sit around feeling sorry for myself…I want more. I want to inspire everyone to chase their dreams to no end.”",
-    social:{
-      instagram: "https://www.instagram.com/againstthecurrent/",
-      twitter: "https://twitter.com/ATC_BAND",
-      facebook: "https://www.facebook.com/againstthecurrentband",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -3458,14 +4559,6 @@ var allMusic = [
     
     style: "Rock",
     status: "nostatus",
-    tag: "Popular",
-    avatar: "3eff83c2098againstbe9b7ebb770bca30ef66current2169515",
-    artist_img: "https://i.scdn.co/image/b0ef3e7a4267895cb785ce4c4723b019b1f90ba6",
-    gallery_img_1: "https://i.scdn.co/image/be889a1f4635f013e13ff6c98253f162559dae96",
-    gallery_img_2: "https://pbs.twimg.com/media/FJevgWXVIAMalXA?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/Et7eALxVcAEyxo-?format=jpg&name=large",
     canvas: "https://video.twimg.com/ext_tw_video/1484211689327267841/pu/vid/1280x720/3uImixviulBeSg6k.mp4?tag=12",
 
     album: "Fever",
@@ -3489,12 +4582,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "The moment you find your voice, you step into yourself and actualize your potential. At this point, expectations no longer matter, fear disappears, and everything changes. Against The Current not only embrace their voice, but project it louder than ever. After hundreds of millions of streams, major collaborations with the likes of Riot Games, and countless packed shows, the trio—Chrissy Costanza [vocals], Dan Gow [guitar], and Will Ferri [drums]—lift themselves up to this moment with their new music. Dan observes, “We dove back into early inspirations like Taking Back Sunday and incorporated those vibes into what we do. It fueled us to keep going.” In the end, Against The Current will stir up the same frenzy and fire in audiences as well with this music. “Musically, it’s back to the three of us in a room together, and you’ll hear it,” adds Will. “In a lot of ways, it’s like we’re just getting started—even though it’s been ten years. It feels good.” “This process was really empowering,” Chrissy concludes. “It also reminded me how much I love rock music and how this band was founded on that love. When you listen to us, I want you to know you’re in control. If you don’t like something, you can make a change. I realized I don’t want to sit around feeling sorry for myself…I want more. I want to inspire everyone to chase their dreams to no end.”",
-    social:{
-      instagram: "https://www.instagram.com/againstthecurrent/",
-      twitter: "https://twitter.com/ATC_BAND",
-      facebook: "https://www.facebook.com/againstthecurrentband",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -3512,14 +4600,6 @@ var allMusic = [
     
     style: "Rock",
     status: "nostatus",
-    tag: "",
-    avatar: "3eff83c2098againstbe9b7ebb770bca30ef66current2169515",
-    artist_img: "https://i.scdn.co/image/b0ef3e7a4267895cb785ce4c4723b019b1f90ba6",
-    gallery_img_1: "https://i.scdn.co/image/be889a1f4635f013e13ff6c98253f162559dae96",
-    gallery_img_2: "https://pbs.twimg.com/media/FJevgWXVIAMalXA?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/Et7eALxVcAEyxo-?format=jpg&name=large",
     canvas: "https://video.twimg.com/ext_tw_video/1484211689327267841/pu/vid/1280x720/3uImixviulBeSg6k.mp4?tag=12",
 
     album: "Fever",
@@ -3543,12 +4623,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "The moment you find your voice, you step into yourself and actualize your potential. At this point, expectations no longer matter, fear disappears, and everything changes. Against The Current not only embrace their voice, but project it louder than ever. After hundreds of millions of streams, major collaborations with the likes of Riot Games, and countless packed shows, the trio—Chrissy Costanza [vocals], Dan Gow [guitar], and Will Ferri [drums]—lift themselves up to this moment with their new music. Dan observes, “We dove back into early inspirations like Taking Back Sunday and incorporated those vibes into what we do. It fueled us to keep going.” In the end, Against The Current will stir up the same frenzy and fire in audiences as well with this music. “Musically, it’s back to the three of us in a room together, and you’ll hear it,” adds Will. “In a lot of ways, it’s like we’re just getting started—even though it’s been ten years. It feels good.” “This process was really empowering,” Chrissy concludes. “It also reminded me how much I love rock music and how this band was founded on that love. When you listen to us, I want you to know you’re in control. If you don’t like something, you can make a change. I realized I don’t want to sit around feeling sorry for myself…I want more. I want to inspire everyone to chase their dreams to no end.”",
-    social:{
-      instagram: "https://www.instagram.com/againstthecurrent/",
-      twitter: "https://twitter.com/ATC_BAND",
-      facebook: "https://www.facebook.com/againstthecurrentband",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -3566,14 +4641,6 @@ var allMusic = [
     
     style: "Rock",
     status: "nostatus",
-    tag: "",
-    avatar: "3eff83c2098againstbe9b7ebb770bca30ef66current2169515",
-    artist_img: "https://i.scdn.co/image/b0ef3e7a4267895cb785ce4c4723b019b1f90ba6",
-    gallery_img_1: "https://i.scdn.co/image/be889a1f4635f013e13ff6c98253f162559dae96",
-    gallery_img_2: "https://pbs.twimg.com/media/FJevgWXVIAMalXA?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/Et7eALxVcAEyxo-?format=jpg&name=large",
     canvas: "https://video.twimg.com/ext_tw_video/1484211689327267841/pu/vid/1280x720/3uImixviulBeSg6k.mp4?tag=12",
 
     album: "Fever",
@@ -3597,12 +4664,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "The moment you find your voice, you step into yourself and actualize your potential. At this point, expectations no longer matter, fear disappears, and everything changes. Against The Current not only embrace their voice, but project it louder than ever. After hundreds of millions of streams, major collaborations with the likes of Riot Games, and countless packed shows, the trio—Chrissy Costanza [vocals], Dan Gow [guitar], and Will Ferri [drums]—lift themselves up to this moment with their new music. Dan observes, “We dove back into early inspirations like Taking Back Sunday and incorporated those vibes into what we do. It fueled us to keep going.” In the end, Against The Current will stir up the same frenzy and fire in audiences as well with this music. “Musically, it’s back to the three of us in a room together, and you’ll hear it,” adds Will. “In a lot of ways, it’s like we’re just getting started—even though it’s been ten years. It feels good.” “This process was really empowering,” Chrissy concludes. “It also reminded me how much I love rock music and how this band was founded on that love. When you listen to us, I want you to know you’re in control. If you don’t like something, you can make a change. I realized I don’t want to sit around feeling sorry for myself…I want more. I want to inspire everyone to chase their dreams to no end.”",
-    social:{
-      instagram: "https://www.instagram.com/againstthecurrent/",
-      twitter: "https://twitter.com/ATC_BAND",
-      facebook: "https://www.facebook.com/againstthecurrentband",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -3620,14 +4682,6 @@ var allMusic = [
     
     style: "Rock",
     status: "nostatus",
-    tag: "Popular",
-    avatar: "3eff83c2098againstbe9b7ebb770bca30ef66current2169515",
-    artist_img: "https://i.scdn.co/image/b0ef3e7a4267895cb785ce4c4723b019b1f90ba6",
-    gallery_img_1: "https://i.scdn.co/image/be889a1f4635f013e13ff6c98253f162559dae96",
-    gallery_img_2: "https://pbs.twimg.com/media/FJevgWXVIAMalXA?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/Et7eALxVcAEyxo-?format=jpg&name=large",
     canvas: "https://video.twimg.com/ext_tw_video/1484211689327267841/pu/vid/1280x720/3uImixviulBeSg6k.mp4?tag=12",
 
     album: "Fever",
@@ -3651,12 +4705,6 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "The moment you find your voice, you step into yourself and actualize your potential. At this point, expectations no longer matter, fear disappears, and everything changes. Against The Current not only embrace their voice, but project it louder than ever. After hundreds of millions of streams, major collaborations with the likes of Riot Games, and countless packed shows, the trio—Chrissy Costanza [vocals], Dan Gow [guitar], and Will Ferri [drums]—lift themselves up to this moment with their new music. Dan observes, “We dove back into early inspirations like Taking Back Sunday and incorporated those vibes into what we do. It fueled us to keep going.” In the end, Against The Current will stir up the same frenzy and fire in audiences as well with this music. “Musically, it’s back to the three of us in a room together, and you’ll hear it,” adds Will. “In a lot of ways, it’s like we’re just getting started—even though it’s been ten years. It feels good.” “This process was really empowering,” Chrissy concludes. “It also reminded me how much I love rock music and how this band was founded on that love. When you listen to us, I want you to know you’re in control. If you don’t like something, you can make a change. I realized I don’t want to sit around feeling sorry for myself…I want more. I want to inspire everyone to chase their dreams to no end.”",
-    social:{
-      instagram: "https://www.instagram.com/againstthecurrent/",
-      twitter: "https://twitter.com/ATC_BAND",
-      facebook: "https://www.facebook.com/againstthecurrentband",
-    },
     user_playlist_1: "",
   },
   {
@@ -3674,14 +4722,6 @@ var allMusic = [
     
     style: "Rock",
     status: "nostatus",
-    tag: "Popular",
-    avatar: "3eff83c2098againstbe9b7ebb770bca30ef66current2169515",
-    artist_img: "https://i.scdn.co/image/b0ef3e7a4267895cb785ce4c4723b019b1f90ba6",
-    gallery_img_1: "https://i.scdn.co/image/be889a1f4635f013e13ff6c98253f162559dae96",
-    gallery_img_2: "https://pbs.twimg.com/media/FJevgWXVIAMalXA?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/Et7eALxVcAEyxo-?format=jpg&name=large",
     canvas: "https://video.twimg.com/ext_tw_video/1484211689327267841/pu/vid/1280x720/3uImixviulBeSg6k.mp4?tag=12",
 
     album: "weapon (acoustic)",
@@ -3705,12 +4745,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "The moment you find your voice, you step into yourself and actualize your potential. At this point, expectations no longer matter, fear disappears, and everything changes. Against The Current not only embrace their voice, but project it louder than ever. After hundreds of millions of streams, major collaborations with the likes of Riot Games, and countless packed shows, the trio—Chrissy Costanza [vocals], Dan Gow [guitar], and Will Ferri [drums]—lift themselves up to this moment with their new music. Dan observes, “We dove back into early inspirations like Taking Back Sunday and incorporated those vibes into what we do. It fueled us to keep going.” In the end, Against The Current will stir up the same frenzy and fire in audiences as well with this music. “Musically, it’s back to the three of us in a room together, and you’ll hear it,” adds Will. “In a lot of ways, it’s like we’re just getting started—even though it’s been ten years. It feels good.” “This process was really empowering,” Chrissy concludes. “It also reminded me how much I love rock music and how this band was founded on that love. When you listen to us, I want you to know you’re in control. If you don’t like something, you can make a change. I realized I don’t want to sit around feeling sorry for myself…I want more. I want to inspire everyone to chase their dreams to no end.”",
-    social:{
-      instagram: "https://www.instagram.com/againstthecurrent/",
-      twitter: "https://twitter.com/ATC_BAND",
-      facebook: "https://www.facebook.com/againstthecurrentband",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -3728,14 +4763,7 @@ var allMusic = [
     
     style: "Rock",
     status: "nostatus",
-    tag: "Popular",
-    avatar: "3eff83c2098againstbe9b7ebb770bca30ef66current2169515",
-    artist_img: "https://i.scdn.co/image/b0ef3e7a4267895cb785ce4c4723b019b1f90ba6",
-    gallery_img_1: "https://i.scdn.co/image/be889a1f4635f013e13ff6c98253f162559dae96",
-    gallery_img_2: "https://pbs.twimg.com/media/FJevgWXVIAMalXA?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/Et7eALxVcAEyxo-?format=jpg&name=large",
+
     canvas: "https://video.twimg.com/ext_tw_video/1484211689327267841/pu/vid/1280x720/3uImixviulBeSg6k.mp4?tag=12",
 
     album: "Legends Never Die",
@@ -3759,12 +4787,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "The moment you find your voice, you step into yourself and actualize your potential. At this point, expectations no longer matter, fear disappears, and everything changes. Against The Current not only embrace their voice, but project it louder than ever. After hundreds of millions of streams, major collaborations with the likes of Riot Games, and countless packed shows, the trio—Chrissy Costanza [vocals], Dan Gow [guitar], and Will Ferri [drums]—lift themselves up to this moment with their new music. Dan observes, “We dove back into early inspirations like Taking Back Sunday and incorporated those vibes into what we do. It fueled us to keep going.” In the end, Against The Current will stir up the same frenzy and fire in audiences as well with this music. “Musically, it’s back to the three of us in a room together, and you’ll hear it,” adds Will. “In a lot of ways, it’s like we’re just getting started—even though it’s been ten years. It feels good.” “This process was really empowering,” Chrissy concludes. “It also reminded me how much I love rock music and how this band was founded on that love. When you listen to us, I want you to know you’re in control. If you don’t like something, you can make a change. I realized I don’t want to sit around feeling sorry for myself…I want more. I want to inspire everyone to chase their dreams to no end.”",
-    social:{
-      instagram: "https://www.instagram.com/againstthecurrent/",
-      twitter: "https://twitter.com/ATC_BAND",
-      facebook: "https://www.facebook.com/againstthecurrentband",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -3782,7 +4805,7 @@ var allMusic = [
     
     style: "Hip-Hop",
     status: "nostatus",
-    tag: "",
+    tag: "Popular",
     avatar: "60979aa78fefc55f0nf1ebfb0cb10b26fb",
     artist_img: "https://i.scdn.co/image/ab6761670000ecd46b7be64dd4d2addd5512010c",
     gallery_img_1: "https://pbs.twimg.com/media/EEc6Qz8XUAEGURS?format=jpg&name=large",
@@ -3824,6 +4847,10 @@ var allMusic = [
       facebook: "https://www.facebook.com/nfrealmusic",
     },
     user_playlist_1: "",
+
+    tweet_title: "Get in touch with 'HAPPY' from MOTTO album",
+    tweet_img: "images/ab67616d00nf001e02fhoepf8a4276b3be31c839557439.jpg",
+    tweet_link: "173"
   },
   {
     name: "The Search",
@@ -3842,13 +4869,7 @@ var allMusic = [
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
-    avatar: "60979aa78fefc55f0nf1ebfb0cb10b26fb",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd46b7be64dd4d2addd5512010c",
-    gallery_img_1: "https://pbs.twimg.com/media/EEc6Qz8XUAEGURS?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/D_zRj_2W4AArt2O?format=jpg&name=900x900",
-    gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+
     canvas: "",
 
     album: "The Search",
@@ -3872,12 +4893,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "NF is the stage name of Michigan rapper and composer Nate Feuerstein, who emerged with his debut album, , in 2015. The raw emotion and honesty in his music continued on , building the foundation of an incredibly strong and loyal fan base. In 2017, Perception gave NF his first No. 1 album on Billboard’s Top 200 Chart, and delivered the multi-platinum hit single, “” which reached #1 at Pop Radio. In the summer of 2019, NF released his fourth album, , earning his second consecutive No. 1 on Billboard’s Top 200 Chart. Now certified Platinum, The Search featured Top 10 Pop radio hit “” and propelled NF to the global stage, selling out 19 dates on “The Search World Tour,” including shows in Australia and Europe. With over 28 RIAA certifications and 18 billion streams, NF earned a spot in the Top 50 most streamed artists of 2020. His fifth album and first ever mixtape,  was released in the Spring of 2021.",
-    social:{
-      instagram: "https://www.instagram.com/nfrealmusic/",
-      twitter: "https://twitter.com/nfrealmusic",
-      facebook: "https://www.facebook.com/nfrealmusic",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -3895,14 +4911,6 @@ var allMusic = [
     
     style: "Hip-Hop",
     status: "nostatus",
-    tag: "Popular",
-    avatar: "60979aa78fefc55f0nf1ebfb0cb10b26fb",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd46b7be64dd4d2addd5512010c",
-    gallery_img_1: "https://pbs.twimg.com/media/EEc6Qz8XUAEGURS?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/D_zRj_2W4AArt2O?format=jpg&name=900x900",
-    gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
     canvas: "",
 
     album: "The Search",
@@ -3926,12 +4934,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "NF is the stage name of Michigan rapper and composer Nate Feuerstein, who emerged with his debut album, , in 2015. The raw emotion and honesty in his music continued on , building the foundation of an incredibly strong and loyal fan base. In 2017, Perception gave NF his first No. 1 album on Billboard’s Top 200 Chart, and delivered the multi-platinum hit single, “” which reached #1 at Pop Radio. In the summer of 2019, NF released his fourth album, , earning his second consecutive No. 1 on Billboard’s Top 200 Chart. Now certified Platinum, The Search featured Top 10 Pop radio hit “” and propelled NF to the global stage, selling out 19 dates on “The Search World Tour,” including shows in Australia and Europe. With over 28 RIAA certifications and 18 billion streams, NF earned a spot in the Top 50 most streamed artists of 2020. His fifth album and first ever mixtape,  was released in the Spring of 2021.",
-    social:{
-      instagram: "https://www.instagram.com/nfrealmusic/",
-      twitter: "https://twitter.com/nfrealmusic",
-      facebook: "https://www.facebook.com/nfrealmusic",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -3950,13 +4953,7 @@ var allMusic = [
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
-    avatar: "60979aa78fefc55f0nf1ebfb0cb10b26fb",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd46b7be64dd4d2addd5512010c",
-    gallery_img_1: "https://pbs.twimg.com/media/EEc6Qz8XUAEGURS?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/D_zRj_2W4AArt2O?format=jpg&name=900x900",
-    gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+
     canvas: "",
 
     album: "The Search",
@@ -3980,12 +4977,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "NF is the stage name of Michigan rapper and composer Nate Feuerstein, who emerged with his debut album, , in 2015. The raw emotion and honesty in his music continued on , building the foundation of an incredibly strong and loyal fan base. In 2017, Perception gave NF his first No. 1 album on Billboard’s Top 200 Chart, and delivered the multi-platinum hit single, “” which reached #1 at Pop Radio. In the summer of 2019, NF released his fourth album, , earning his second consecutive No. 1 on Billboard’s Top 200 Chart. Now certified Platinum, The Search featured Top 10 Pop radio hit “” and propelled NF to the global stage, selling out 19 dates on “The Search World Tour,” including shows in Australia and Europe. With over 28 RIAA certifications and 18 billion streams, NF earned a spot in the Top 50 most streamed artists of 2020. His fifth album and first ever mixtape,  was released in the Spring of 2021.",
-    social:{
-      instagram: "https://www.instagram.com/nfrealmusic/",
-      twitter: "https://twitter.com/nfrealmusic",
-      facebook: "https://www.facebook.com/nfrealmusic",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -4004,13 +4996,7 @@ var allMusic = [
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
-    avatar: "60979aa78fefc55f0nf1ebfb0cb10b26fb",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd46b7be64dd4d2addd5512010c",
-    gallery_img_1: "https://pbs.twimg.com/media/EEc6Qz8XUAEGURS?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/D_zRj_2W4AArt2O?format=jpg&name=900x900",
-    gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+
     canvas: "",
 
     album: "The Search",
@@ -4034,12 +5020,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "NF is the stage name of Michigan rapper and composer Nate Feuerstein, who emerged with his debut album, , in 2015. The raw emotion and honesty in his music continued on , building the foundation of an incredibly strong and loyal fan base. In 2017, Perception gave NF his first No. 1 album on Billboard’s Top 200 Chart, and delivered the multi-platinum hit single, “” which reached #1 at Pop Radio. In the summer of 2019, NF released his fourth album, , earning his second consecutive No. 1 on Billboard’s Top 200 Chart. Now certified Platinum, The Search featured Top 10 Pop radio hit “” and propelled NF to the global stage, selling out 19 dates on “The Search World Tour,” including shows in Australia and Europe. With over 28 RIAA certifications and 18 billion streams, NF earned a spot in the Top 50 most streamed artists of 2020. His fifth album and first ever mixtape,  was released in the Spring of 2021.",
-    social:{
-      instagram: "https://www.instagram.com/nfrealmusic/",
-      twitter: "https://twitter.com/nfrealmusic",
-      facebook: "https://www.facebook.com/nfrealmusic",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -4092,12 +5073,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "NF is the stage name of Michigan rapper and composer Nate Feuerstein, who emerged with his debut album, , in 2015. The raw emotion and honesty in his music continued on , building the foundation of an incredibly strong and loyal fan base. In 2017, Perception gave NF his first No. 1 album on Billboard’s Top 200 Chart, and delivered the multi-platinum hit single, “” which reached #1 at Pop Radio. In the summer of 2019, NF released his fourth album, , earning his second consecutive No. 1 on Billboard’s Top 200 Chart. Now certified Platinum, The Search featured Top 10 Pop radio hit “” and propelled NF to the global stage, selling out 19 dates on “The Search World Tour,” including shows in Australia and Europe. With over 28 RIAA certifications and 18 billion streams, NF earned a spot in the Top 50 most streamed artists of 2020. His fifth album and first ever mixtape,  was released in the Spring of 2021.",
-    social:{
-      instagram: "https://www.instagram.com/nfrealmusic/",
-      twitter: "https://twitter.com/nfrealmusic",
-      facebook: "https://www.facebook.com/nfrealmusic",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -4174,13 +5150,7 @@ var allMusic = [
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
-    avatar: "60979aa78fefc55f0nf1ebfb0cb10b26fb",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd46b7be64dd4d2addd5512010c",
-    gallery_img_1: "https://pbs.twimg.com/media/EEc6Qz8XUAEGURS?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/D_zRj_2W4AArt2O?format=jpg&name=900x900",
-    gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+
     canvas: "",
 
     album: "The Search",
@@ -4204,12 +5174,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "NF is the stage name of Michigan rapper and composer Nate Feuerstein, who emerged with his debut album, , in 2015. The raw emotion and honesty in his music continued on , building the foundation of an incredibly strong and loyal fan base. In 2017, Perception gave NF his first No. 1 album on Billboard’s Top 200 Chart, and delivered the multi-platinum hit single, “” which reached #1 at Pop Radio. In the summer of 2019, NF released his fourth album, , earning his second consecutive No. 1 on Billboard’s Top 200 Chart. Now certified Platinum, The Search featured Top 10 Pop radio hit “” and propelled NF to the global stage, selling out 19 dates on “The Search World Tour,” including shows in Australia and Europe. With over 28 RIAA certifications and 18 billion streams, NF earned a spot in the Top 50 most streamed artists of 2020. His fifth album and first ever mixtape,  was released in the Spring of 2021.",
-    social:{
-      instagram: "https://www.instagram.com/nfrealmusic/",
-      twitter: "https://twitter.com/nfrealmusic",
-      facebook: "https://www.facebook.com/nfrealmusic",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -4228,13 +5193,7 @@ var allMusic = [
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
-    avatar: "60979aa78fefc55f0nf1ebfb0cb10b26fb",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd46b7be64dd4d2addd5512010c",
-    gallery_img_1: "https://pbs.twimg.com/media/EEc6Qz8XUAEGURS?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/D_zRj_2W4AArt2O?format=jpg&name=900x900",
-    gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+
     canvas: "",
 
     album: "The Search",
@@ -4258,12 +5217,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "NF is the stage name of Michigan rapper and composer Nate Feuerstein, who emerged with his debut album, , in 2015. The raw emotion and honesty in his music continued on , building the foundation of an incredibly strong and loyal fan base. In 2017, Perception gave NF his first No. 1 album on Billboard’s Top 200 Chart, and delivered the multi-platinum hit single, “” which reached #1 at Pop Radio. In the summer of 2019, NF released his fourth album, , earning his second consecutive No. 1 on Billboard’s Top 200 Chart. Now certified Platinum, The Search featured Top 10 Pop radio hit “” and propelled NF to the global stage, selling out 19 dates on “The Search World Tour,” including shows in Australia and Europe. With over 28 RIAA certifications and 18 billion streams, NF earned a spot in the Top 50 most streamed artists of 2020. His fifth album and first ever mixtape,  was released in the Spring of 2021.",
-    social:{
-      instagram: "https://www.instagram.com/nfrealmusic/",
-      twitter: "https://twitter.com/nfrealmusic",
-      facebook: "https://www.facebook.com/nfrealmusic",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -4282,13 +5236,7 @@ var allMusic = [
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
-    avatar: "60979aa78fefc55f0nf1ebfb0cb10b26fb",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd46b7be64dd4d2addd5512010c",
-    gallery_img_1: "https://pbs.twimg.com/media/EEc6Qz8XUAEGURS?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/D_zRj_2W4AArt2O?format=jpg&name=900x900",
-    gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+
     canvas: "",
 
     album: "The Search",
@@ -4312,18 +5260,14 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "NF is the stage name of Michigan rapper and composer Nate Feuerstein, who emerged with his debut album, , in 2015. The raw emotion and honesty in his music continued on , building the foundation of an incredibly strong and loyal fan base. In 2017, Perception gave NF his first No. 1 album on Billboard’s Top 200 Chart, and delivered the multi-platinum hit single, “” which reached #1 at Pop Radio. In the summer of 2019, NF released his fourth album, , earning his second consecutive No. 1 on Billboard’s Top 200 Chart. Now certified Platinum, The Search featured Top 10 Pop radio hit “” and propelled NF to the global stage, selling out 19 dates on “The Search World Tour,” including shows in Australia and Europe. With over 28 RIAA certifications and 18 billion streams, NF earned a spot in the Top 50 most streamed artists of 2020. His fifth album and first ever mixtape,  was released in the Spring of 2021.",
-    social:{
-      instagram: "https://www.instagram.com/nfrealmusic/",
-      twitter: "https://twitter.com/nfrealmusic",
-      facebook: "https://www.facebook.com/nfrealmusic",
-    },
+
     user_playlist_1: "",
   },
   {
     name: "Only",
     artist: "NF",
     colaboration: "Sasha Alex Sloan",
+    colaboration_id: "55",
     artist_status: "none",
     language: "eng",
     country: "usa",
@@ -4336,13 +5280,7 @@ var allMusic = [
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
-    avatar: "60979aa78fefc55f0nf1ebfb0cb10b26fb",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd46b7be64dd4d2addd5512010c",
-    gallery_img_1: "https://pbs.twimg.com/media/EEc6Qz8XUAEGURS?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/D_zRj_2W4AArt2O?format=jpg&name=900x900",
-    gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+
     canvas: "",
 
     album: "The Search",
@@ -4366,18 +5304,14 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "NF is the stage name of Michigan rapper and composer Nate Feuerstein, who emerged with his debut album, , in 2015. The raw emotion and honesty in his music continued on , building the foundation of an incredibly strong and loyal fan base. In 2017, Perception gave NF his first No. 1 album on Billboard’s Top 200 Chart, and delivered the multi-platinum hit single, “” which reached #1 at Pop Radio. In the summer of 2019, NF released his fourth album, , earning his second consecutive No. 1 on Billboard’s Top 200 Chart. Now certified Platinum, The Search featured Top 10 Pop radio hit “” and propelled NF to the global stage, selling out 19 dates on “The Search World Tour,” including shows in Australia and Europe. With over 28 RIAA certifications and 18 billion streams, NF earned a spot in the Top 50 most streamed artists of 2020. His fifth album and first ever mixtape,  was released in the Spring of 2021.",
-    social:{
-      instagram: "https://www.instagram.com/nfrealmusic/",
-      twitter: "https://twitter.com/nfrealmusic",
-      facebook: "https://www.facebook.com/nfrealmusic",
-    },
+
     user_playlist_1: "",
   },
   {
     name: "Let Me Go",
     artist: "NF",
     colaboration: "Sasha Alex Sloan",
+    colaboration_id: "55",
     artist_status: "none",
     language: "eng",
     country: "usa",
@@ -4390,13 +5324,7 @@ var allMusic = [
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
-    avatar: "60979aa78fefc55f0nf1ebfb0cb10b26fb",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd46b7be64dd4d2addd5512010c",
-    gallery_img_1: "https://pbs.twimg.com/media/EEc6Qz8XUAEGURS?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/D_zRj_2W4AArt2O?format=jpg&name=900x900",
-    gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+
     canvas: "",
 
     album: "The Search",
@@ -4420,12 +5348,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "NF is the stage name of Michigan rapper and composer Nate Feuerstein, who emerged with his debut album, , in 2015. The raw emotion and honesty in his music continued on , building the foundation of an incredibly strong and loyal fan base. In 2017, Perception gave NF his first No. 1 album on Billboard’s Top 200 Chart, and delivered the multi-platinum hit single, “” which reached #1 at Pop Radio. In the summer of 2019, NF released his fourth album, , earning his second consecutive No. 1 on Billboard’s Top 200 Chart. Now certified Platinum, The Search featured Top 10 Pop radio hit “” and propelled NF to the global stage, selling out 19 dates on “The Search World Tour,” including shows in Australia and Europe. With over 28 RIAA certifications and 18 billion streams, NF earned a spot in the Top 50 most streamed artists of 2020. His fifth album and first ever mixtape,  was released in the Spring of 2021.",
-    social:{
-      instagram: "https://www.instagram.com/nfrealmusic/",
-      twitter: "https://twitter.com/nfrealmusic",
-      facebook: "https://www.facebook.com/nfrealmusic",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -4444,13 +5367,7 @@ var allMusic = [
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
-    avatar: "60979aa78fefc55f0nf1ebfb0cb10b26fb",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd46b7be64dd4d2addd5512010c",
-    gallery_img_1: "https://pbs.twimg.com/media/EEc6Qz8XUAEGURS?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/D_zRj_2W4AArt2O?format=jpg&name=900x900",
-    gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+
     canvas: "",
     
     album: "The Search",
@@ -4474,12 +5391,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "NF is the stage name of Michigan rapper and composer Nate Feuerstein, who emerged with his debut album, , in 2015. The raw emotion and honesty in his music continued on , building the foundation of an incredibly strong and loyal fan base. In 2017, Perception gave NF his first No. 1 album on Billboard’s Top 200 Chart, and delivered the multi-platinum hit single, “” which reached #1 at Pop Radio. In the summer of 2019, NF released his fourth album, , earning his second consecutive No. 1 on Billboard’s Top 200 Chart. Now certified Platinum, The Search featured Top 10 Pop radio hit “” and propelled NF to the global stage, selling out 19 dates on “The Search World Tour,” including shows in Australia and Europe. With over 28 RIAA certifications and 18 billion streams, NF earned a spot in the Top 50 most streamed artists of 2020. His fifth album and first ever mixtape,  was released in the Spring of 2021.",
-    social:{
-      instagram: "https://www.instagram.com/nfrealmusic/",
-      twitter: "https://twitter.com/nfrealmusic",
-      facebook: "https://www.facebook.com/nfrealmusic",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -4498,13 +5410,7 @@ var allMusic = [
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
-    avatar: "60979aa78fefc55f0nf1ebfb0cb10b26fb",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd46b7be64dd4d2addd5512010c",
-    gallery_img_1: "https://pbs.twimg.com/media/EEc6Qz8XUAEGURS?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/D_zRj_2W4AArt2O?format=jpg&name=900x900",
-    gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+
     canvas: "",
     
     album: "The Search",
@@ -4528,12 +5434,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "NF is the stage name of Michigan rapper and composer Nate Feuerstein, who emerged with his debut album, , in 2015. The raw emotion and honesty in his music continued on , building the foundation of an incredibly strong and loyal fan base. In 2017, Perception gave NF his first No. 1 album on Billboard’s Top 200 Chart, and delivered the multi-platinum hit single, “” which reached #1 at Pop Radio. In the summer of 2019, NF released his fourth album, , earning his second consecutive No. 1 on Billboard’s Top 200 Chart. Now certified Platinum, The Search featured Top 10 Pop radio hit “” and propelled NF to the global stage, selling out 19 dates on “The Search World Tour,” including shows in Australia and Europe. With over 28 RIAA certifications and 18 billion streams, NF earned a spot in the Top 50 most streamed artists of 2020. His fifth album and first ever mixtape,  was released in the Spring of 2021.",
-    social:{
-      instagram: "https://www.instagram.com/nfrealmusic/",
-      twitter: "https://twitter.com/nfrealmusic",
-      facebook: "https://www.facebook.com/nfrealmusic",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -4552,13 +5453,7 @@ var allMusic = [
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
-    avatar: "60979aa78fefc55f0nf1ebfb0cb10b26fb",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd46b7be64dd4d2addd5512010c",
-    gallery_img_1: "https://pbs.twimg.com/media/EEc6Qz8XUAEGURS?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/D_zRj_2W4AArt2O?format=jpg&name=900x900",
-    gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+
     canvas: "",
     
     album: "The Search",
@@ -4582,12 +5477,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "NF is the stage name of Michigan rapper and composer Nate Feuerstein, who emerged with his debut album, , in 2015. The raw emotion and honesty in his music continued on , building the foundation of an incredibly strong and loyal fan base. In 2017, Perception gave NF his first No. 1 album on Billboard’s Top 200 Chart, and delivered the multi-platinum hit single, “” which reached #1 at Pop Radio. In the summer of 2019, NF released his fourth album, , earning his second consecutive No. 1 on Billboard’s Top 200 Chart. Now certified Platinum, The Search featured Top 10 Pop radio hit “” and propelled NF to the global stage, selling out 19 dates on “The Search World Tour,” including shows in Australia and Europe. With over 28 RIAA certifications and 18 billion streams, NF earned a spot in the Top 50 most streamed artists of 2020. His fifth album and first ever mixtape,  was released in the Spring of 2021.",
-    social:{
-      instagram: "https://www.instagram.com/nfrealmusic/",
-      twitter: "https://twitter.com/nfrealmusic",
-      facebook: "https://www.facebook.com/nfrealmusic",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -4607,13 +5497,7 @@ var allMusic = [
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
-    avatar: "60979aa78fefc55f0nf1ebfb0cb10b26fb",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd46b7be64dd4d2addd5512010c",
-    gallery_img_1: "https://pbs.twimg.com/media/EEc6Qz8XUAEGURS?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/D_zRj_2W4AArt2O?format=jpg&name=900x900",
-    gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+
 
     album: "The Search",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02942a0c9ac8f1def7c8805044",
@@ -4636,12 +5520,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "NF is the stage name of Michigan rapper and composer Nate Feuerstein, who emerged with his debut album, , in 2015. The raw emotion and honesty in his music continued on , building the foundation of an incredibly strong and loyal fan base. In 2017, Perception gave NF his first No. 1 album on Billboard’s Top 200 Chart, and delivered the multi-platinum hit single, “” which reached #1 at Pop Radio. In the summer of 2019, NF released his fourth album, , earning his second consecutive No. 1 on Billboard’s Top 200 Chart. Now certified Platinum, The Search featured Top 10 Pop radio hit “” and propelled NF to the global stage, selling out 19 dates on “The Search World Tour,” including shows in Australia and Europe. With over 28 RIAA certifications and 18 billion streams, NF earned a spot in the Top 50 most streamed artists of 2020. His fifth album and first ever mixtape,  was released in the Spring of 2021.",
-    social:{
-      instagram: "https://www.instagram.com/nfrealmusic/",
-      twitter: "https://twitter.com/nfrealmusic",
-      facebook: "https://www.facebook.com/nfrealmusic",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -4661,13 +5540,7 @@ var allMusic = [
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
-    avatar: "60979aa78fefc55f0nf1ebfb0cb10b26fb",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd46b7be64dd4d2addd5512010c",
-    gallery_img_1: "https://pbs.twimg.com/media/EEc6Qz8XUAEGURS?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/D_zRj_2W4AArt2O?format=jpg&name=900x900",
-    gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+
 
     album: "The Search",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02942a0c9ac8f1def7c8805044",
@@ -4690,12 +5563,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "NF is the stage name of Michigan rapper and composer Nate Feuerstein, who emerged with his debut album, , in 2015. The raw emotion and honesty in his music continued on , building the foundation of an incredibly strong and loyal fan base. In 2017, Perception gave NF his first No. 1 album on Billboard’s Top 200 Chart, and delivered the multi-platinum hit single, “” which reached #1 at Pop Radio. In the summer of 2019, NF released his fourth album, , earning his second consecutive No. 1 on Billboard’s Top 200 Chart. Now certified Platinum, The Search featured Top 10 Pop radio hit “” and propelled NF to the global stage, selling out 19 dates on “The Search World Tour,” including shows in Australia and Europe. With over 28 RIAA certifications and 18 billion streams, NF earned a spot in the Top 50 most streamed artists of 2020. His fifth album and first ever mixtape,  was released in the Spring of 2021.",
-    social:{
-      instagram: "https://www.instagram.com/nfrealmusic/",
-      twitter: "https://twitter.com/nfrealmusic",
-      facebook: "https://www.facebook.com/nfrealmusic",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -4715,13 +5583,7 @@ var allMusic = [
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
-    avatar: "60979aa78fefc55f0nf1ebfb0cb10b26fb",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd46b7be64dd4d2addd5512010c",
-    gallery_img_1: "https://pbs.twimg.com/media/EEc6Qz8XUAEGURS?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/D_zRj_2W4AArt2O?format=jpg&name=900x900",
-    gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+
 
     album: "The Search",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02942a0c9ac8f1def7c8805044",
@@ -4744,12 +5606,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "NF is the stage name of Michigan rapper and composer Nate Feuerstein, who emerged with his debut album, , in 2015. The raw emotion and honesty in his music continued on , building the foundation of an incredibly strong and loyal fan base. In 2017, Perception gave NF his first No. 1 album on Billboard’s Top 200 Chart, and delivered the multi-platinum hit single, “” which reached #1 at Pop Radio. In the summer of 2019, NF released his fourth album, , earning his second consecutive No. 1 on Billboard’s Top 200 Chart. Now certified Platinum, The Search featured Top 10 Pop radio hit “” and propelled NF to the global stage, selling out 19 dates on “The Search World Tour,” including shows in Australia and Europe. With over 28 RIAA certifications and 18 billion streams, NF earned a spot in the Top 50 most streamed artists of 2020. His fifth album and first ever mixtape,  was released in the Spring of 2021.",
-    social:{
-      instagram: "https://www.instagram.com/nfrealmusic/",
-      twitter: "https://twitter.com/nfrealmusic",
-      facebook: "https://www.facebook.com/nfrealmusic",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -4768,13 +5625,7 @@ var allMusic = [
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
-    avatar: "60979aa78fefc55f0nf1ebfb0cb10b26fb",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd46b7be64dd4d2addd5512010c",
-    gallery_img_1: "https://pbs.twimg.com/media/EEc6Qz8XUAEGURS?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/D_zRj_2W4AArt2O?format=jpg&name=900x900",
-    gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+
     canvas: "",
     
     album: "The Search",
@@ -4798,12 +5649,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "NF is the stage name of Michigan rapper and composer Nate Feuerstein, who emerged with his debut album, , in 2015. The raw emotion and honesty in his music continued on , building the foundation of an incredibly strong and loyal fan base. In 2017, Perception gave NF his first No. 1 album on Billboard’s Top 200 Chart, and delivered the multi-platinum hit single, “” which reached #1 at Pop Radio. In the summer of 2019, NF released his fourth album, , earning his second consecutive No. 1 on Billboard’s Top 200 Chart. Now certified Platinum, The Search featured Top 10 Pop radio hit “” and propelled NF to the global stage, selling out 19 dates on “The Search World Tour,” including shows in Australia and Europe. With over 28 RIAA certifications and 18 billion streams, NF earned a spot in the Top 50 most streamed artists of 2020. His fifth album and first ever mixtape,  was released in the Spring of 2021.",
-    social:{
-      instagram: "https://www.instagram.com/nfrealmusic/",
-      twitter: "https://twitter.com/nfrealmusic",
-      facebook: "https://www.facebook.com/nfrealmusic",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -4822,13 +5668,7 @@ var allMusic = [
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
-    avatar: "60979aa78fefc55f0nf1ebfb0cb10b26fb",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd46b7be64dd4d2addd5512010c",
-    gallery_img_1: "https://pbs.twimg.com/media/EEc6Qz8XUAEGURS?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/D_zRj_2W4AArt2O?format=jpg&name=900x900",
-    gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+
     canvas: "",
     
     album: "The Search",
@@ -4852,12 +5692,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "NF is the stage name of Michigan rapper and composer Nate Feuerstein, who emerged with his debut album, , in 2015. The raw emotion and honesty in his music continued on , building the foundation of an incredibly strong and loyal fan base. In 2017, Perception gave NF his first No. 1 album on Billboard’s Top 200 Chart, and delivered the multi-platinum hit single, “” which reached #1 at Pop Radio. In the summer of 2019, NF released his fourth album, , earning his second consecutive No. 1 on Billboard’s Top 200 Chart. Now certified Platinum, The Search featured Top 10 Pop radio hit “” and propelled NF to the global stage, selling out 19 dates on “The Search World Tour,” including shows in Australia and Europe. With over 28 RIAA certifications and 18 billion streams, NF earned a spot in the Top 50 most streamed artists of 2020. His fifth album and first ever mixtape,  was released in the Spring of 2021.",
-    social:{
-      instagram: "https://www.instagram.com/nfrealmusic/",
-      twitter: "https://twitter.com/nfrealmusic",
-      facebook: "https://www.facebook.com/nfrealmusic",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -4934,13 +5769,6 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "EfilatovAzvsaf-WpW4karasAAe7wN",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd4b4af3e2396d4b9736bc15adf",
-    gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd40eb638ed616218772160bdbe",
-    gallery_img_2: "https://i.scdn.co/image/ab6761670000ecd4d8c5e7f23383d5145264a63c",
-    gallery_img_3: "https://i.scdn.co/image/ab6761670000ecd421475314fe7702631b3c4faa",
-    gallery_img_4: "https://pbs.twimg.com/media/D-qT4X1X4AMJSwV?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/D2HZsG4WwAAarV7?format=jpg&name=large",
     canvas: "",
     
     album: "Au Revoir",
@@ -4964,12 +5792,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "multi-platinum electronic music producers, songwriters and djs based in Moscow. Teamed up in 2012 after more than 10 years of separate work, local awards, solo albums, FM-radioshows, releases on Universal Music, Warner Music, Kontor, Ultra and many more well-known record companies. AS Djs and live band Filatov & Karas performed on top worldwide Festivals like: Tomorrowland, WKND festival, Tinderbox, NRJ Air etc.. In 2015 Filatov & Karas Remix of The Good, The Bad and The Crazy by the French singer Imany took the top position for 11 weeks in the National Charts and became platinum in Russia. The follow-up remix of Don't be So Shy became a huge international hit with the multi-platinum & Diamond status in almost 30 countries. In 2016 it hits Top 5 Shazam Worldwide. Then Tell it to my heart and Wide Awake (with Eric Saade & Gustaf Noren) blew up the charts with millions of streams and views. The single Time Won't Wait became a big hit in Eastern Europe getting more than 85 000 000 views on Youtube. Filatov & Karas got awarded for the local singles Lirika, Ostatsya s toboy(V. Tsoy) and Vozmi Moe Serdce (feat Burito). The latest single Au Au got double Platinum Status in Russia and Gold in Poland!",
-    social:{
-      instagram: "https://www.instagram.com/filatovkaras/",
-      twitter: "https://twitter.com/filatovkaras",
-      facebook: "https://www.facebook.com/filatovkaras/",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -4988,13 +5811,6 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "EfilatovAzvsaf-WpW4karasAAe7wN",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd4b4af3e2396d4b9736bc15adf",
-    gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd40eb638ed616218772160bdbe",
-    gallery_img_2: "https://i.scdn.co/image/ab6761670000ecd4d8c5e7f23383d5145264a63c",
-    gallery_img_3: "https://i.scdn.co/image/ab6761670000ecd421475314fe7702631b3c4faa",
-    gallery_img_4: "https://pbs.twimg.com/media/D-qT4X1X4AMJSwV?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/D2HZsG4WwAAarV7?format=jpg&name=large",
     canvas: "",
     
     album: "Time Won't Wait",
@@ -5018,12 +5834,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "multi-platinum electronic music producers, songwriters and djs based in Moscow. Teamed up in 2012 after more than 10 years of separate work, local awards, solo albums, FM-radioshows, releases on Universal Music, Warner Music, Kontor, Ultra and many more well-known record companies. AS Djs and live band Filatov & Karas performed on top worldwide Festivals like: Tomorrowland, WKND festival, Tinderbox, NRJ Air etc.. In 2015 Filatov & Karas Remix of The Good, The Bad and The Crazy by the French singer Imany took the top position for 11 weeks in the National Charts and became platinum in Russia. The follow-up remix of Don't be So Shy became a huge international hit with the multi-platinum & Diamond status in almost 30 countries. In 2016 it hits Top 5 Shazam Worldwide. Then Tell it to my heart and Wide Awake (with Eric Saade & Gustaf Noren) blew up the charts with millions of streams and views. The single Time Won't Wait became a big hit in Eastern Europe getting more than 85 000 000 views on Youtube. Filatov & Karas got awarded for the local singles Lirika, Ostatsya s toboy(V. Tsoy) and Vozmi Moe Serdce (feat Burito). The latest single Au Au got double Platinum Status in Russia and Gold in Poland!",
-    social:{
-      instagram: "https://www.instagram.com/filatovkaras/",
-      twitter: "https://twitter.com/filatovkaras",
-      facebook: "https://www.facebook.com/filatovkaras/",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -5325,6 +6136,7 @@ var allMusic = [
     name: "Till I Die",
     artist: "Tech N8ne",
     colaboration: "Eminem",
+    colaboration_id: "37",
     artist_status: "none",
     language: "eng",
     country: "usa",
@@ -5453,13 +6265,7 @@ var allMusic = [
     style: "Rock",
     status: "nostatus",
     tag: "",
-    avatar: "3eff83c2098againstbe9b7ebb770bca30ef66current2169515",
-    artist_img: "https://i.scdn.co/image/b0ef3e7a4267895cb785ce4c4723b019b1f90ba6",
-    gallery_img_1: "https://i.scdn.co/image/be889a1f4635f013e13ff6c98253f162559dae96",
-    gallery_img_2: "https://pbs.twimg.com/media/FJevgWXVIAMalXA?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/Et7eALxVcAEyxo-?format=jpg&name=large",
+
     canvas: "https://video.twimg.com/ext_tw_video/1484211689327267841/pu/vid/1280x720/3uImixviulBeSg6k.mp4?tag=12",
     
     album: "Past Lives",
@@ -5483,12 +6289,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "The moment you find your voice, you step into yourself and actualize your potential. At this point, expectations no longer matter, fear disappears, and everything changes. Against The Current not only embrace their voice, but project it louder than ever. After hundreds of millions of streams, major collaborations with the likes of Riot Games, and countless packed shows, the trio—Chrissy Costanza [vocals], Dan Gow [guitar], and Will Ferri [drums]—lift themselves up to this moment with their new music. Dan observes, “We dove back into early inspirations like Taking Back Sunday and incorporated those vibes into what we do. It fueled us to keep going.” In the end, Against The Current will stir up the same frenzy and fire in audiences as well with this music. “Musically, it’s back to the three of us in a room together, and you’ll hear it,” adds Will. “In a lot of ways, it’s like we’re just getting started—even though it’s been ten years. It feels good.” “This process was really empowering,” Chrissy concludes. “It also reminded me how much I love rock music and how this band was founded on that love. When you listen to us, I want you to know you’re in control. If you don’t like something, you can make a change. I realized I don’t want to sit around feeling sorry for myself…I want more. I want to inspire everyone to chase their dreams to no end.”",
-    social:{
-      instagram: "https://www.instagram.com/againstthecurrent/",
-      twitter: "https://twitter.com/ATC_BAND",
-      facebook: "https://www.facebook.com/againstthecurrentband",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -5507,13 +6308,7 @@ var allMusic = [
     style: "Rock",
     status: "nostatus",
     tag: "",
-    avatar: "3eff83c2098againstbe9b7ebb770bca30ef66current2169515",
-    artist_img: "https://i.scdn.co/image/b0ef3e7a4267895cb785ce4c4723b019b1f90ba6",
-    gallery_img_1: "https://i.scdn.co/image/be889a1f4635f013e13ff6c98253f162559dae96",
-    gallery_img_2: "https://pbs.twimg.com/media/FJevgWXVIAMalXA?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/Et7eALxVcAEyxo-?format=jpg&name=large",
+
     canvas: "https://video.twimg.com/ext_tw_video/1484211689327267841/pu/vid/1280x720/3uImixviulBeSg6k.mp4?tag=12",
     
     album: "Past Lives",
@@ -5537,12 +6332,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "The moment you find your voice, you step into yourself and actualize your potential. At this point, expectations no longer matter, fear disappears, and everything changes. Against The Current not only embrace their voice, but project it louder than ever. After hundreds of millions of streams, major collaborations with the likes of Riot Games, and countless packed shows, the trio—Chrissy Costanza [vocals], Dan Gow [guitar], and Will Ferri [drums]—lift themselves up to this moment with their new music. Dan observes, “We dove back into early inspirations like Taking Back Sunday and incorporated those vibes into what we do. It fueled us to keep going.” In the end, Against The Current will stir up the same frenzy and fire in audiences as well with this music. “Musically, it’s back to the three of us in a room together, and you’ll hear it,” adds Will. “In a lot of ways, it’s like we’re just getting started—even though it’s been ten years. It feels good.” “This process was really empowering,” Chrissy concludes. “It also reminded me how much I love rock music and how this band was founded on that love. When you listen to us, I want you to know you’re in control. If you don’t like something, you can make a change. I realized I don’t want to sit around feeling sorry for myself…I want more. I want to inspire everyone to chase their dreams to no end.”",
-    social:{
-      instagram: "https://www.instagram.com/againstthecurrent/",
-      twitter: "https://twitter.com/ATC_BAND",
-      facebook: "https://www.facebook.com/againstthecurrentband",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -5561,13 +6351,7 @@ var allMusic = [
     style: "Rock",
     status: "nostatus",
     tag: "",
-    avatar: "3eff83c2098againstbe9b7ebb770bca30ef66current2169515",
-    artist_img: "https://i.scdn.co/image/b0ef3e7a4267895cb785ce4c4723b019b1f90ba6",
-    gallery_img_1: "https://i.scdn.co/image/be889a1f4635f013e13ff6c98253f162559dae96",
-    gallery_img_2: "https://pbs.twimg.com/media/FJevgWXVIAMalXA?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/Et7eALxVcAEyxo-?format=jpg&name=large",
+
     canvas: "https://video.twimg.com/ext_tw_video/1484211689327267841/pu/vid/1280x720/3uImixviulBeSg6k.mp4?tag=12",
     
     album: "Past Lives",
@@ -5591,12 +6375,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "The moment you find your voice, you step into yourself and actualize your potential. At this point, expectations no longer matter, fear disappears, and everything changes. Against The Current not only embrace their voice, but project it louder than ever. After hundreds of millions of streams, major collaborations with the likes of Riot Games, and countless packed shows, the trio—Chrissy Costanza [vocals], Dan Gow [guitar], and Will Ferri [drums]—lift themselves up to this moment with their new music. Dan observes, “We dove back into early inspirations like Taking Back Sunday and incorporated those vibes into what we do. It fueled us to keep going.” In the end, Against The Current will stir up the same frenzy and fire in audiences as well with this music. “Musically, it’s back to the three of us in a room together, and you’ll hear it,” adds Will. “In a lot of ways, it’s like we’re just getting started—even though it’s been ten years. It feels good.” “This process was really empowering,” Chrissy concludes. “It also reminded me how much I love rock music and how this band was founded on that love. When you listen to us, I want you to know you’re in control. If you don’t like something, you can make a change. I realized I don’t want to sit around feeling sorry for myself…I want more. I want to inspire everyone to chase their dreams to no end.”",
-    social:{
-      instagram: "https://www.instagram.com/againstthecurrent/",
-      twitter: "https://twitter.com/ATC_BAND",
-      facebook: "https://www.facebook.com/againstthecurrentband",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -5615,13 +6394,7 @@ var allMusic = [
     style: "Rock",
     status: "nostatus",
     tag: "",
-    avatar: "3eff83c2098againstbe9b7ebb770bca30ef66current2169515",
-    artist_img: "https://i.scdn.co/image/b0ef3e7a4267895cb785ce4c4723b019b1f90ba6",
-    gallery_img_1: "https://i.scdn.co/image/be889a1f4635f013e13ff6c98253f162559dae96",
-    gallery_img_2: "https://pbs.twimg.com/media/FJevgWXVIAMalXA?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/Et7eALxVcAEyxo-?format=jpg&name=large",
+
     canvas: "https://video.twimg.com/ext_tw_video/1484211689327267841/pu/vid/1280x720/3uImixviulBeSg6k.mp4?tag=12",
     
     album: "In Our Bones",
@@ -5645,12 +6418,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "The moment you find your voice, you step into yourself and actualize your potential. At this point, expectations no longer matter, fear disappears, and everything changes. Against The Current not only embrace their voice, but project it louder than ever. After hundreds of millions of streams, major collaborations with the likes of Riot Games, and countless packed shows, the trio—Chrissy Costanza [vocals], Dan Gow [guitar], and Will Ferri [drums]—lift themselves up to this moment with their new music. Dan observes, “We dove back into early inspirations like Taking Back Sunday and incorporated those vibes into what we do. It fueled us to keep going.” In the end, Against The Current will stir up the same frenzy and fire in audiences as well with this music. “Musically, it’s back to the three of us in a room together, and you’ll hear it,” adds Will. “In a lot of ways, it’s like we’re just getting started—even though it’s been ten years. It feels good.” “This process was really empowering,” Chrissy concludes. “It also reminded me how much I love rock music and how this band was founded on that love. When you listen to us, I want you to know you’re in control. If you don’t like something, you can make a change. I realized I don’t want to sit around feeling sorry for myself…I want more. I want to inspire everyone to chase their dreams to no end.”",
-    social:{
-      instagram: "https://www.instagram.com/againstthecurrent/",
-      twitter: "https://twitter.com/ATC_BAND",
-      facebook: "https://www.facebook.com/againstthecurrentband",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -5669,13 +6437,6 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "MC43MzkxNjEwimagineMCAxNjI1Mzg5Njc2sef",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd4b33c0ac2fda166767b9dbc1a",
-    gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd4efe8ca4b5dc7ac9030ce4d59",
-    gallery_img_2: "https://i.scdn.co/image/ab6761670000ecd44e31fd349dd7c17a93cc4598",
-    gallery_img_3: "https://pbs.twimg.com/media/Fc4GtsiWYAIwTcF?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/Fc4GtshWIAIl2nU?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/Fc4GtsoXwAEudCM?format=jpg&name=large",
     canvas: "",
     
     album: "Mercury - Acts 1 & 2",
@@ -5699,12 +6460,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Formed in 2009, Imagine Dragons first revealed their emotionally charged and inventive sensibilities with a series of independently released EPs that earned them grassroots following. Signed to KIDinaKORNER/Interscope by hitmaking producer Alex Da Kid, the band greatly expanded their fanbase with the release of their multi-platinum breakthrough single “It’s Time” (featured on the 2012 EP Continued Silence). With their past hits also including “Radioactive” (a diamond-selling smash that won Best Rock Performance at the 2014 Grammy Awards), Imagine Dragons went on to see Smoke + Mirrors debut at #1 on the Billboard Top 200 album chart upon its release in early 2015.",
-    social:{
-      instagram: "https://www.instagram.com/imaginedragons/",
-      twitter: "https://twitter.com/Imaginedragons",
-      facebook: "https://www.facebook.com/ImagineDragons",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -5723,13 +6479,6 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "MC43MzkxNjEwimagineMCAxNjI1Mzg5Njc2sef",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd4b33c0ac2fda166767b9dbc1a",
-    gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd4efe8ca4b5dc7ac9030ce4d59",
-    gallery_img_2: "https://i.scdn.co/image/ab6761670000ecd44e31fd349dd7c17a93cc4598",
-    gallery_img_3: "https://pbs.twimg.com/media/Fc4GtsiWYAIwTcF?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/Fc4GtshWIAIl2nU?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/Fc4GtsoXwAEudCM?format=jpg&name=large",
     canvas: "",
     
     album: "Mercury - Acts 1 & 2",
@@ -5753,12 +6502,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Formed in 2009, Imagine Dragons first revealed their emotionally charged and inventive sensibilities with a series of independently released EPs that earned them grassroots following. Signed to KIDinaKORNER/Interscope by hitmaking producer Alex Da Kid, the band greatly expanded their fanbase with the release of their multi-platinum breakthrough single “It’s Time” (featured on the 2012 EP Continued Silence). With their past hits also including “Radioactive” (a diamond-selling smash that won Best Rock Performance at the 2014 Grammy Awards), Imagine Dragons went on to see Smoke + Mirrors debut at #1 on the Billboard Top 200 album chart upon its release in early 2015.",
-    social:{
-      instagram: "https://www.instagram.com/imaginedragons/",
-      twitter: "https://twitter.com/Imaginedragons",
-      facebook: "https://www.facebook.com/ImagineDragons",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -5777,13 +6521,6 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "MC43MzkxNjEwimagineMCAxNjI1Mzg5Njc2sef",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd4b33c0ac2fda166767b9dbc1a",
-    gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd4efe8ca4b5dc7ac9030ce4d59",
-    gallery_img_2: "https://i.scdn.co/image/ab6761670000ecd44e31fd349dd7c17a93cc4598",
-    gallery_img_3: "https://pbs.twimg.com/media/Fc4GtsiWYAIwTcF?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/Fc4GtshWIAIl2nU?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/Fc4GtsoXwAEudCM?format=jpg&name=large",
     canvas: "",
     
     album: "Mercury - Acts 1 & 2",
@@ -5807,12 +6544,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Formed in 2009, Imagine Dragons first revealed their emotionally charged and inventive sensibilities with a series of independently released EPs that earned them grassroots following. Signed to KIDinaKORNER/Interscope by hitmaking producer Alex Da Kid, the band greatly expanded their fanbase with the release of their multi-platinum breakthrough single “It’s Time” (featured on the 2012 EP Continued Silence). With their past hits also including “Radioactive” (a diamond-selling smash that won Best Rock Performance at the 2014 Grammy Awards), Imagine Dragons went on to see Smoke + Mirrors debut at #1 on the Billboard Top 200 album chart upon its release in early 2015.",
-    social:{
-      instagram: "https://www.instagram.com/imaginedragons/",
-      twitter: "https://twitter.com/Imaginedragons",
-      facebook: "https://www.facebook.com/ImagineDragons",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -5934,7 +6666,10 @@ var allMusic = [
       twitter: "",
       facebook: "",
     },
-    user_playlist_1: "",
+    
+    tweet_title: "Buy Tickets Here",
+    tweet_img: "images/ab67616d0000asta1e02efc0ef9dd996312ebaf0bf52.jpg",
+    tweet_href: "https://google.com/"
   },
   {
     name: "Wolves",
@@ -5975,28 +6710,293 @@ var allMusic = [
     album_premiere: "2017",
     id: "102",
     lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
+      ve1:{
+        ls: "In your eyes, there's heavy blue",
+        stamp: "8",
+      },
+      ve2:{
+        ls: "One to love, and one to lose",
+        stamp: "11.5",
+      },
+      ve3:{
+        ls: "Sweet divine, a heavy truth",
+        stamp: "15.5",
+      },
+      ve4:{
+        ls: "Water or wine, don't make me choose",
+        stamp: "19",
+      },
+      ve5:{
+        ls: "I wanna fell the way that we did that summer night, night",
+        stamp: "22",
+      },
+      ve6:{
+        ls: "Drunk on a feeling, alone with the stars in the sky",
+        stamp: "29.5",
+      },
+      ve7:{
+        ls: "I've been running through the jungle",
+        stamp: "36.5",
+      },
+      ve8:{
+        ls: "I've been running with the wolves",
+        stamp: "39",
+      },
+      ve9:{
+        ls: "To get to you, to get to you",
+        stamp: "40.5",
+      },
+      ve10:{
+        ls: "I've been down the darkest alleys ",
+        stamp: "44",
+      },
+      ve11:{
+        ls: "Saw the dark side of the moon",
+        stamp: "47",
+      },
+      ve12:{
+        ls: "To get to you, to get to you",
+        stamp: "49",
+      },
+      ve13:{
+        ls: "I've looked for love in every stranger",
+        stamp: "52",
+      },
+      ve14:{
+        ls: "Took too much to ease the anger",
+        stamp: "54.5",
+      },
+      ve15:{
+        ls: "All for you, yeah, all for you",
+        stamp: "56.5",
+      },
+      ve16:{
+        ls: "I've been running through the jungle",
+        stamp: "60",
+      },
+      ve17:{
+        ls: "I've been crying with the wolves",
+        stamp: "62",
+      },
+      ve18:{
+        ls: "To get to you, to get to you, to get to you",
+        stamp: "64",
+      },
+      ve19:{
+        ls: "Your fingertips trace my skin",
+        stamp: "84.5",
+      },
+      ve20:{
+        ls: "To places, I have never been",
+        stamp: "88",
+      },
+      ve21:{
+        ls: "Blindly, I am following",
+        stamp: "92",
+      },
+      ve22:{
+        ls: "Break down these walls and come on in",
+        stamp: "96",
+      },
+      ve23:{
+        ls: "I wanna fell the way that we did that summer night, night",
+        stamp: "99",
+      },
+      ve24:{
+        ls: "Drunk on a feeling, alone with the stars in the sky",
+        stamp: "106.5",
+      },
+      ve25:{
+        ls: "I've been running through the jungle",
+        stamp: "114",
+      },
+      ve26:{
+        ls: "I've been running with the wolves",
+        stamp: "116",
+      },
+      ve27:{
+        ls: "To get to you, to get to you",
+        stamp: "118",
+      },
+      ve28:{
+        ls: "I've been down the darkest alleys ",
+        stamp: "121",
+      },
+      ve29:{
+        ls: "Saw the dark side of the moon",
+        stamp: "123",
+      },
+      ve30:{
+        ls: "To get to you, to get to you",
+        stamp: "125",
+      },
+      ve31:{
+        ls: "I've looked for love in every stranger",
+        stamp: "129",
+      },
+      ve32:{
+        ls: "Took too much to ease the anger",
+        stamp: "131.5",
+      },
+      ve33:{
+        ls: "All for you, yeah, all for you",
+        stamp: "133",
+      },
+      ve34:{
+        ls: "I've been running through the jungle",
+        stamp: "137",
+      },
+      ve35:{
+        ls: "I've been crying with the wolves",
+        stamp: "139",
+      },
+      ve36:{
+        ls: "To get to you, to get to you, to get to you",
+        stamp: "141",
+      },
+      ve37:{
+        ls: "I've been running through the jungle",
+        stamp: "160",
+      },
+      ve38:{
+        ls: "I've been running with the wolves",
+        stamp: "162",
+      },
+      ve39:{
+        ls: "To get to you, to get to you",
+        stamp: "164",
+      },
+      ve40:{
+        ls: "I've been down the darkest alleys ",
+        stamp: "167.5",
+      },
+      ve41:{
+        ls: "Saw the dark side of the moon",
+        stamp: "169",
+      },
+      ve42:{
+        ls: "To get to you, to get to you",
+        stamp: "171.5",
+      },
+      ve43:{
+        ls: "I've looked for love in every stranger",
+        stamp: "175",
+      },
+      ve44:{
+        ls: "Took too much to ease the anger",
+        stamp: "177",
+      },
+      ve45:{
+        ls: "All for you, yeah, all for you",
+        stamp: "179",
+      },
+      ve46:{
+        ls: "I've been running through the jungle",
+        stamp: "183",
+      },
+      ve47:{
+        ls: "I've been crying with the wolves",
+        stamp: "185",
+      },
+      ve48:{
+        ls: "To get to you, to get to you, to get to you",
+        stamp: "186.5",
+      },
+      ve49:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve50:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve51:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve52:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve53:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve54:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve55:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve56:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve57:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve58:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve59:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve60:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve61:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve62:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve63:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve64:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve65:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve66:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve67:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve68:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve69:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve70:{
+        ls: "",
+        stamp: "3600",
+      },
     },
-    bio: "Selena Gomez is a multi-talented performer with featured roles on the screen, both small and big, and a musical career that reached the summit of the charts from the very beginning and stayed planted there for many years",
+    bio: "Selena Gomez is a multi-talented performer with featured roles on the screen, both small and big, and a musical career that reached the summit of the charts from the very beginning and stayed planted there for many years. In 2013, she released her first album with her band called 'Selena & The Scene', which ranked #9 on the Billboard 200 album charts. Gomez later relased two other albums with her band. In 2013, she released her first solo album 'Stars Dance' and the lead single 'Come & Get It' from the album, became Gomez's first top ten enry on the Billboard Hot 100 list. In 2015 she released her second solo album 'Revival', which debuted #1 on the Billboard 200 list. In 2020 She made her third solo album 'Rare'.",
     social:{
       instagram: "https://www.instagram.com/selenagomez/",
       twitter: "https://twitter.com/selenagomez",
       facebook: "https://www.facebook.com/Selena",
     },
-    user_playlist_1: "",
   },
   {
     name: "Midnight Sky",
@@ -6100,22 +7100,290 @@ var allMusic = [
     album_premiere: "2020",
     album_status: "false",
     id: "104",
+
     lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
+      ve1:{
+        ls: "Found you when your heart was broke",
+        stamp: "14",
+      },
+      ve2:{
+        ls: "I filled your cup until it overflowed",
+        stamp: "17",
+      },
+      ve3:{
+        ls: "Took it so far to keep you close (keep you close)",
+        stamp: "21",
+      },
+      ve4:{
+        ls: "I was afraid to leave you on your own",
+        stamp: "24",
+      },
+      ve5:{
+        ls: "I said I'd catch you if you fail",
+        stamp: "27",
+      },
+      ve6:{
+        ls: "And if they laugh, then fuck'em all (all)",
+        stamp: "30",
+      },
+      ve7:{
+        ls: "And then i got you off your knees",
+        stamp: "34",
+      },
+      ve8:{
+        ls: "Put your right back on your feet",
+        stamp: "36",
+      },
+      ve9:{
+        ls: "Just so you could take advantage of me",
+        stamp: "38",
+      },
+      ve10:{
+        ls: "Tell me how's it feel sittin' up there?",
+        stamp: "40",
+      },
+      ve11:{
+        ls: "Feeling so high but too far away to hold me",
+        stamp: "44",
+      },
+      ve12:{
+        ls: "You know I'm the one who put you up there",
+        stamp: "48",
+      },
+      ve13:{
+        ls: "Name in the sky",
+        stamp: "51",
+      },
+      ve14:{
+        ls: "Does it ever get lonely?",
+        stamp: "53",
+      },
+      ve15:{
+        ls: "Thinking you could live without me",
+        stamp: "55",
+      },
+      ve16:{
+        ls: "Thinking you could live without me",
+        stamp: "59",
+      },
+      ve17:{
+        ls: "Baby, I'm the one who put you up there",
+        stamp: "62",
+      },
+      ve18:{
+        ls: "I don't know why (yeah, I don't' know why)",
+        stamp: "65",
+      },
+      ve19:{
+        ls: "Thinking you could live without me",
+        stamp: "69",
+      },
+      ve20:{
+        ls: "Live without me",
+        stamp: "73",
+      },
+      ve21:{
+        ls: "Baby, I'm the one who put you up there",
+        stamp: "76",
+      },
+      ve22:{
+        ls: "I don't know why (yeah, I don't' know why)",
+        stamp: "79",
+      },
+      ve23:{
+        ls: "Gave love 'bout a hunded tries (hundred tries)",
+        stamp: "84",
+      },
+      ve24:{
+        ls: "Just running from the demons in your mind",
+        stamp: "88",
+      },
+      ve25:{
+        ls: "Then I took yours and made 'em mine (made 'em mine)",
+        stamp: "91",
+      },
+      ve26:{
+        ls: "I didn't notice 'cause my love was blind",
+        stamp: "95",
+      },
+      ve27:{
+        ls: "Said I'd catch you if you fall (fall)",
+        stamp: "98",
+      },
+      ve28:{
+        ls: "And if they laugh, then fuck'em all (all)",
+        stamp: "101",
+      },
+      ve29:{
+        ls: "And then i got you off your knees",
+        stamp: "104",
+      },
+      ve30:{
+        ls: "Put your right back on your feet",
+        stamp: "106",
+      },
+      ve31:{
+        ls: "Just so you could take advantage of me",
+        stamp: "108",
+      },
+      ve32:{
+        ls: "Tell me how's it feel sittin' up there?",
+        stamp: "111",
+      },
+      ve33:{
+        ls: "Feeling so high but too far away to hold me",
+        stamp: "115",
+      },
+      ve34:{
+        ls: "You know I'm the one who put you up there",
+        stamp: "118",
+      },
+      ve35:{
+        ls: "Name in the sky",
+        stamp: "122",
+      },
+      ve36:{
+        ls: "Does it ever get lonely?",
+        stamp: "124",
+      },
+      ve37:{
+        ls: "Thinking you could live without me",
+        stamp: "125",
+      },
+      ve38:{
+        ls: "Thinking you could live without me",
+        stamp: "129",
+      },
+      ve39:{
+        ls: "Baby, I'm the one who put you up there",
+        stamp: "133",
+      },
+      ve40:{
+        ls: "I don't know why (yeah, I don't' know why)",
+        stamp: "135",
+      },
+      ve41:{
+        ls: "Thinking you could live without me",
+        stamp: "139",
+      },
+      ve42:{
+        ls: "Live without me",
+        stamp: "144",
+      },
+      ve43:{
+        ls: "Baby, I'm the one who put you up there",
+        stamp: "147",
+      },
+      ve44:{
+        ls: "I don't know why (yea)",
+        stamp: "150",
+      },
+      ve45:{
+        ls: "You don't have to say just what you did",
+        stamp: "155",
+      },
+      ve46:{
+        ls: "I already know (I know)",
+        stamp: "158",
+      },
+      ve47:{
+        ls: "I had to go and fint out from them",
+        stamp: "160",
+      },
+      ve48:{
+        ls: "So tell me how's it feel (oh-whoa)",
+        stamp: "164",
+      },
+      ve49:{
+        ls: "Tell me how's it feel sittin' up there?",
+        stamp: "168",
+      },
+      ve50:{
+        ls: "Feeling so high but too far away to hold me",
+        stamp: "171",
+      },
+      ve51:{
+        ls: "You know I'm the one who put you up there",
+        stamp: "175",
+      },
+      ve52:{
+        ls: "Name in the sky",
+        stamp: "178",
+      },
+      ve53:{
+        ls: "Does it ever get lonely?",
+        stamp: "180",
+      },
+      ve54:{
+        ls: "Thinking you could live without me",
+        stamp: "182",
+      },
+      ve55:{
+        ls: "Thinking you could live without me",
+        stamp: "185",
+      },
+      ve56:{
+        ls: "Baby, I'm the one who put you up there",
+        stamp: "189",
+      },
+      ve57:{
+        ls: "I don't know why (yeah, I don't' know why)",
+        stamp: "192",
+      },
+      ve58:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve59:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve60:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve61:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve62:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve63:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve64:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve65:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve66:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve67:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve68:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve69:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve70:{
+        ls: "",
+        stamp: "3600",
+      },
     },
+
     bio: "Halsey has amassed more than 31 billion combined global streams to date, including more than 12.5 billion U.S. streams, and sold nearly 17 million adjusted album units worldwide. Their most recent album, If I Can’t Have Love, I Want Power, debuted at No. 1 on Billboard’s Top Current Album Sales and Top Alternative Albums charts in 2021. It follows 2020’s Manic, which also entered the Top Current Album Sales chart at No. 1. Manic was the first album of 2020 to be certified Platinum in the U.S. and is now 2x Platinum. 2017’s hopeless fountain kingdom was recently certified 2x Platinum by the RIAA. Halsey continues to push creative boundaries, exerting an influence and impact beyond music. Her first book, I Would Leave Me If I Could: A Collection of Poetry, debuted on The New York Times Best Sellers list in 2020. Named as one of TIME's 100 Most Influential People of 2020, they have won over 20 awards, including an AMA, MTV VMA, GLAAD Award, the Songwriters Hall of Fame’s Hal David Starlight Award and a CMT Music Award. Halsey recently introduced about-face, a multi-dimensional makeup line for made for everyone. Halsey continues to speak up for important causes such as disenfranchised youth, women’s rights, mental health and the LGBTQ community.",
     social:{
       instagram: "https://www.instagram.com/iamhalsey/",
@@ -6139,19 +7407,6 @@ var allMusic = [
     
     style: "Pop",
     status: "nostatus",
-    tag: "Popular",
-    avatar: "ab67616d30590b273a25d3a2736f815d3cf358e37",
-    artist_img: "https://i.scdn.co/image/d6a339d026361ec7f4daeac7126ce0f90662077a",
-    gallery_img_1: "https://pbs.twimg.com/media/FfwoOn0WQAA7QeN?format=jpg&name=medium",
-    gallery_img_2: "https://pbs.twimg.com/media/FepC6_3WQAQppla?format=jpg&name=medium",
-    gallery_img_3: "https://pbs.twimg.com/media/FeGafYTWAAMNDSQ?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FbWeVmdWYAYn_qp?format=jpg&name=medium",
-    gallery_img_5: "https://pbs.twimg.com/media/FYQoYGfWAAMZAdu?format=jpg&name=large",
-    gallery_img_6: "https://pbs.twimg.com/media/FfqhOmlUcAAzUsQ?format=jpg&name=small",
-    gallery_img_7: "https://pbs.twimg.com/media/Ffqbbv9VUAATeaU?format=jpg&name=small",
-    gallery_img_8: "https://pbs.twimg.com/media/FhKepDUVEAEeMXo?format=jpg&name=large",
-    gallery_img_9: "https://pbs.twimg.com/media/FigtCqzWQAElspg?format=jpg&name=small",
-    gallery_img_10: "https://pbs.twimg.com/media/FiBcdBBWAAAjovP?format=jpg&name=large",
     canvas: "https://ssscdn.io/ssstwitter/aHR0cHM6Ly92aWRlby50d2ltZy5jb20vZXh0X3R3X3ZpZGVvLzE2NTI4MDQwNzQyNDMyNzY4MDAvcHUvdmlkLzcyMHg3MjAvdDFPYk01R1JoYi1XRUdmSy5tcDQ/dGFnPTEy",
 
     album: "thank u, next",
@@ -6175,12 +7430,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Ariana Grande is perhaps the quintessential pop star of the last half of the 2010s, capturing the era's spirit and style. Emerging in 2013 with the hit single The Way, Grande initially appeared to be the heir to the throne of , due in part to her powerhouse vocals. With its  production, her debut Yours Truly underscored her debt to '90s R&B, but Grande quickly incorporated hip-hop and EDM into her music.",
-    social:{
-      instagram: "https://www.instagram.com/arianagrande/",
-      twitter: "",
-      facebook: "https://www.facebook.com/arianagrande",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -6198,19 +7448,6 @@ var allMusic = [
     
     style: "Pop",
     status: "nostatus",
-    tag: "Popular",
-    avatar: "ab67616d30590b273a25d3a2736f815d3cf358e37",
-    artist_img: "https://i.scdn.co/image/d6a339d026361ec7f4daeac7126ce0f90662077a",
-    gallery_img_1: "https://pbs.twimg.com/media/FfwoOn0WQAA7QeN?format=jpg&name=medium",
-    gallery_img_2: "https://pbs.twimg.com/media/FepC6_3WQAQppla?format=jpg&name=medium",
-    gallery_img_3: "https://pbs.twimg.com/media/FeGafYTWAAMNDSQ?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FbWeVmdWYAYn_qp?format=jpg&name=medium",
-    gallery_img_5: "https://pbs.twimg.com/media/FYQoYGfWAAMZAdu?format=jpg&name=large",
-    gallery_img_6: "https://pbs.twimg.com/media/FfqhOmlUcAAzUsQ?format=jpg&name=small",
-    gallery_img_7: "https://pbs.twimg.com/media/Ffqbbv9VUAATeaU?format=jpg&name=small",
-    gallery_img_8: "https://pbs.twimg.com/media/FhKepDUVEAEeMXo?format=jpg&name=large",
-    gallery_img_9: "https://pbs.twimg.com/media/FigtCqzWQAElspg?format=jpg&name=small",
-    gallery_img_10: "https://pbs.twimg.com/media/FiBcdBBWAAAjovP?format=jpg&name=large",
     canvas: "https://video.twimg.com/ext_tw_video/1578862553559711744/pu/vid/1280x720/WNAFTnge9u0th9fU.mp4?tag=12",
     
     album: "thank u, next",
@@ -6234,12 +7471,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Ariana Grande is perhaps the quintessential pop star of the last half of the 2010s, capturing the era's spirit and style. Emerging in 2013 with the hit single The Way, Grande initially appeared to be the heir to the throne of , due in part to her powerhouse vocals. With its  production, her debut Yours Truly underscored her debt to '90s R&B, but Grande quickly incorporated hip-hop and EDM into her music.",
-    social:{
-      instagram: "https://www.instagram.com/arianagrande/",
-      twitter: "",
-      facebook: "https://www.facebook.com/arianagrande",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -6384,18 +7616,6 @@ var allMusic = [
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
-    avatar: "53323ae213b8c859d8dffabef129b04720f5e33f",
-    artist_img: "https://i.scdn.co/image/184c822d252ceb7561539063a904ef433ac43562",
-    gallery_img_1: "https://i.scdn.co/image/c752c25fbe7018c7b652f919798d906f9c26477e",
-    gallery_img_2: "https://i.scdn.co/image/1f03d593018ef738b577d8f7f8ac7b295f6c1a10",
-    gallery_img_3: "https://i.scdn.co/image/e6d871794af6035b115dae1f87b486677be4314f",
-    gallery_img_4: "https://i.scdn.co/image/49545e240ee53b065539b2b77963bfaad111ad0a",
-    gallery_img_5: "https://i.scdn.co/image/bd8898cf3e6a36ad7e85e3a171b74f7258f341cc",
-    gallery_img_6: "https://i.scdn.co/image/3daeba133f50180b45e7d800dab3f264f1befb38",
-    gallery_img_7: "https://i.scdn.co/image/bc16673614535aaffd01a59b5385957f406ea923",
-    gallery_img_8: "https://i.scdn.co/image/2cd30e674651f5f27fba8f604a8720a3381e8d17",
-    gallery_img_9: "https://i.scdn.co/image/6a9671b3222f0dce875420da8a8b27391535ec78",
-    gallery_img_10: "https://i.scdn.co/image/6490f764c1b589b19d9c5286fe90e60c4053cc22",
     canvas: "",
     
     album: "Music To Be Murdered By - Side B (Deluxe Edition)",
@@ -6419,12 +7639,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Eminem is one of the best-selling artists in music history, and easily one of rap's biggest crossover successes. He was the first white rapper since  to garner both sales and critical respect, but his impact has exceeded this confining distinction. On sheer technical skills, Eminem is one of the greatest MCs of his generation: rapid, fluid, dexterous, and unpredictable, capable of pulling off long-form narratives or withering asides.",
-    social:{
-      instagram: "https://www.instagram.com/eminem/",
-      twitter: "https://twitter.com/Eminem",
-      facebook: "",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -6442,14 +7657,6 @@ var allMusic = [
     
     style: "Rock",
     status: "nostatus",
-    tag: "Popular",
-    avatar: "3eff83c2098againstbe9b7ebb770bca30ef66current2169515",
-    artist_img: "https://i.scdn.co/image/b0ef3e7a4267895cb785ce4c4723b019b1f90ba6",
-    gallery_img_1: "https://i.scdn.co/image/be889a1f4635f013e13ff6c98253f162559dae96",
-    gallery_img_2: "https://pbs.twimg.com/media/FJevgWXVIAMalXA?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/Et7eALxVcAEyxo-?format=jpg&name=large",
     canvas: "https://video.twimg.com/ext_tw_video/1593930652965117953/pu/vid/720x1280/Vgsa38pEeyXdDKl1.mp4?tag=12",
 
     album: "blindfolded",
@@ -6458,93 +7665,290 @@ var allMusic = [
     album_status: "false",
     id: "110",
     bio: "The moment you find your voice, you step into yourself and actualize your potential. At this point, expectations no longer matter, fear disappears, and everything changes. Against The Current not only embrace their voice, but project it louder than ever. After hundreds of millions of streams, major collaborations with the likes of Riot Games, and countless packed shows, the trio—Chrissy Costanza [vocals], Dan Gow [guitar], and Will Ferri [drums]—lift themselves up to this moment with their new music. Dan observes, “We dove back into early inspirations like Taking Back Sunday and incorporated those vibes into what we do. It fueled us to keep going.” In the end, Against The Current will stir up the same frenzy and fire in audiences as well with this music. “Musically, it’s back to the three of us in a room together, and you’ll hear it,” adds Will. “In a lot of ways, it’s like we’re just getting started—even though it’s been ten years. It feels good.” “This process was really empowering,” Chrissy concludes. “It also reminded me how much I love rock music and how this band was founded on that love. When you listen to us, I want you to know you’re in control. If you don’t like something, you can make a change. I realized I don’t want to sit around feeling sorry for myself…I want more. I want to inspire everyone to chase their dreams to no end.”",
+    
     lyrics:{
       ve1:{
-        ls1: "Diamonds dripping down my throat",
-        ls2: "Why's it gotta be so addictive?",
-        ls3: "Now I'm chasing after antidotes",
-        ls4: "For anything that tastes like a quick fix",
-        ls5: "Days like this, no, nothing feels right",
-        ls6: "Nothing sticks, I can't get out my mind",
-        ls7: "Tell myself to let it go",
-        ls8: "I wish that I could let it go",
+        ls: "Diamonds dripping down my throat",
         stamp: "5",
       },
       ve2:{
-        ls1: "It's hard to keep it down now",
-        ls2: "But I need to let the fever sweat out",
-        stamp: "32",
+        ls: "Why's it gotta be so addictive?",
+        stamp: "8",
       },
       ve3:{
-        ls1: "Now I can't stand still",
-        ls2: "Should be runnin' free",
-        ls3: "And all these nightmares used to be daydreams",
-        ls4: "I got my eyes wide open", 
-        ls5: "Don't wanna care bout nothin'",
-        ls6: "Wish I could know less, just go back to bed",
-        ls7: "'Cause all my pink skies have been painted red",
-        ls8: "If this is real don't show it",
-        ls9: "I wanna run blindfolded",
-        stamp: "45",
+        ls: "Now I'm chasing after antidotes",
+        stamp: "11.5",
       },
       ve4:{
-        ls1: "Reality's a bitter taste (bitter taste)",
-        ls2: "But fantasy can be so deceiving",
-        ls3: "All my good intentions gone to waste",
-        ls4: "I'll do anything to shut out this feeling",
-        ls5: "I can't go back, no, I've gone too far",
-        ls6: "I miss the way that my eyes filled with stars",
-        ls7: "Tell myself to let it go, but I don't",
-        ls8: "I wish that I could let it go",
-        stamp: "73",
+        ls: "For anything that tastes like a quick fix",
+        stamp: "15.5",
       },
       ve5:{
-        ls1: "Now I can't stand still",
-        ls2: "Should be runnin' free",
-        ls3: "And all these nightmares used to be daydreams",
-        ls4: "I got my eyes wide open",
-        ls5: "Don't wanna care bout nothin'",
-        ls6: "Wish I could know less, just go back to bed",
-        ls7: "'Cause all my pink skies have been painted red",
-        ls8: "If this is real don't show it",
-        ls9: "I wanna run blindfolded",
-        stamp: "100",
+        ls: "Days like this, no, nothing feels right",
+        stamp: "19",
       },
       ve6:{
-        ls1: "Take a sip, have it anyway you want it",
-        ls2: "Drink it in, let us finish what you started",
-        ls3: "Throw a fit, yeah I guess, I shoulda called it",
-        ls4: "Now it's stolen",
-        ls5: "I'm blindfolded",
-        stamp: "121",
+        ls: "Nothing sticks, I can't get out my mind",
+        stamp: "22",
       },
       ve7:{
-        ls1: "Stand still",
-        ls2: "Should be runnin' free",
-        ls3: "And all these nightmares used to be daydreams",
-        ls4: "I got my eyes wide open",
-        ls5: "Don't wanna care bout nothin'",
-        ls6: "Wish I could know less, just go back to bed",
-        ls7: "'Cause all my pink skies have been painted red",
-        ls8: "If this is real don't show it",
-        ls9: "I wanna run blindfolded",
-        stamp: "154",
+        ls: "Tell myself to let it go",
+        stamp: "26",
       },
       ve8:{
-        ls1: "",
-        ls2: "",
-        ls3: "",
-        ls4: "",
-        stamp: "",
+        ls: "I wish that I could let it go",
+        stamp: "29.5",
       },
       ve9:{
-        ls1: "",
-        ls2: "",
-        ls3: "",
-        ls4: "",
-        stamp: "",
+        ls: "It's hard to keep it down now",
+        stamp: "32",
+      },
+      ve10:{
+        ls: "But I need to let the fever sweat out",
+        stamp: "38.5",
+      },
+      ve11:{
+        ls: "Now I can't stand still",
+        stamp: "45.5",
+      },
+      ve12:{
+        ls: "Should be runnin' free",
+        stamp: "47.5",
+      },
+      ve13:{
+        ls: "And all these nightmares used to be daydreams",
+        stamp: "49",
+      },
+      ve14:{
+        ls: "I got my eyes wide open", 
+        stamp: "53",
+      },
+      ve15:{
+        ls: "Don't wanna care bout nothin'",
+        stamp: "55.5",
+      },
+      ve16:{
+        ls: "Wish I could know less, just go back to bed",
+        stamp: "59",
+      },
+      ve17:{
+        ls: "'Cause all my pink skies have been painted red",
+        stamp: "62",
+      },
+      ve18:{
+        ls: "If this is real don't show it",
+        stamp: "66",
+      },
+      ve19:{
+        ls: "I wanna run blindfolded",
+        stamp: "69.5",
+      },
+      ve20:{
+        ls: "Reality's a bitter taste (bitter taste)",
+        stamp: "73",
+      },
+      ve21:{
+        ls: "But fantasy can be so deceiving",
+        stamp: "76.5",
+      },
+      ve22:{
+        ls: "All my good intentions gone to waste",
+        stamp: "79",
+      },
+      ve23:{
+        ls: "I'll do anything to shut out this feeling",
+        stamp: "83",
+      },
+      ve24:{
+        ls: "I can't go back, no, I've gone too far",
+        stamp: "86.5",
+      },
+      ve25:{
+        ls: "I miss the way that my eyes filled with stars",
+        stamp: "89.5",
+      },
+      ve26:{
+        ls: "Tell myself to let it go, but I don't",
+        stamp: "93",
+      },
+      ve27:{
+        ls: "I wish that I could let it go",
+        stamp: "96.5",
+      },
+      ve28:{
+        ls: "Now I can't stand still",
+        stamp: "99",
+      },
+      ve29:{
+        ls: "Should be runnin' free",
+        stamp: "101.5",
+      },
+      ve30:{
+        ls: "And all these nightmares used to be daydreams",
+        stamp: "103.5",
+      },
+      ve31:{
+        ls: "I got my eyes wide open",
+        stamp: "106.5",
+      },
+      ve32:{
+        ls: "Don't wanna care bout nothin'",
+        stamp: "110",
+      },
+      ve33:{
+        ls: "Wish I could know less, just go back to bed",
+        stamp: "113",
+      },
+      ve34:{
+        ls: "'Cause all my pink skies have been painted red",
+        stamp: "116",
+      },
+      ve35:{
+        ls: "If this is real don't show it",
+        stamp: "119.5",
+      },
+      ve36:{
+        ls: "I wanna run blindfolded",
+        stamp: "123",
+      },
+      ve37:{
+        ls: "Take a sip, have it anyway you want it",
+        stamp: "141",
+      },
+      ve38:{
+        ls: "Drink it in, let us finish what you started",
+        stamp: "144.5",
+      },
+      ve39:{
+        ls: "Throw a fit, yeah I guess, I shoulda called it",
+        stamp: "148",
+      },
+      ve40:{
+        ls: "Now it's stolen",
+        stamp: "151",
+      },
+      ve41:{
+        ls: "I'm blindfolded",
+        stamp: "152.5",
+      },
+      ve42:{
+        ls: "Stand still",
+        stamp: "154.5",
+      },
+      ve43:{
+        ls: "Should be runnin' free",
+        stamp: "156",
+      },
+      ve44:{
+        ls: "And all these nightmares used to be daydreams",
+        stamp: "157",
+      },
+      ve45:{
+        ls: "I got my eyes wide open",
+        stamp: "160.5",
+      },
+      ve46:{
+        ls: "Don't wanna care bout nothin'",
+        stamp: "164",
+      },
+      ve47:{
+        ls: "Wish I could know less, just go back to bed",
+        stamp: "167",
+      },
+      ve48:{
+        ls: "'Cause all my pink skies have been painted red",
+        stamp: "170.5",
+      },
+      ve49:{
+        ls: "If this is real don't show it",
+        stamp: "174",
+      },
+      ve50:{
+        ls: "I wanna run blindfolded",
+        stamp: "177.5",
+      },
+      ve51:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve52:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve53:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve54:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve55:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve56:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve57:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve58:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve59:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve60:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve61:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve62:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve63:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve64:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve65:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve66:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve67:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve68:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve69:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve70:{
+        ls: "",
+        stamp: "3600",
       },
     },
+    
     social:{
       instagram: "https://www.instagram.com/againstthecurrent/",
       twitter: "https://twitter.com/ATC_BAND",
@@ -6614,7 +8018,7 @@ var allMusic = [
     img: "ab67616d00001esanah024acacdf5c40e1154c166b454",
     img_mini: "https://i.scdn.co/image/ab67616d000048514acacdf5c40e1154c166b454",
     
-    style: "Soundtrack",
+    style: "Chill",
     status: "nostatus",
     tag: "Popular",
     avatar: "000DIsanahOA61PKNM75pl32022-C122-F4",
@@ -6940,13 +8344,6 @@ var allMusic = [
     
     style: "Rock",
     status: "nostatus",
-    avatar: "14235843737BeNz9sRRfK4jsYeLQ7t32Pg76m86w",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5ebd6e4988f56f08add19e0dd7b",
-    gallery_img_1: "https://pbs.twimg.com/media/Ffi44c-WIAEp8dW?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/Ffi44-jXwAMUldz?format=jpg&name=large",
-    gallery_img_3: "https://i.scdn.co/image/ab6761670000ecd41cdc2f67482deca920508a7d",
-    gallery_img_4: "https://i.scdn.co/image/ab6761670000ecd4e13d018bba5753b76bc6716b",
-    gallery_img_5: "https://i.scdn.co/image/1e7662d67812f4b177c3a03e2f2352ab900e16b4",
     canvas: "",
     
     album: "Jakby Nie Było Jutro",
@@ -6955,159 +8352,465 @@ var allMusic = [
     album_status: "false",
     id: "113",
 
-    lyrics_nonSync: "",
     lyrics:{
       ve1:{
         ls: "My nie boimy się",
-        stamp: "0",
+        stamp: "38",
       },
       ve2:{
         ls: "Burz ni huraganów",
-        stamp: "0",
+        stamp: "42",
       },
       ve3:{
         ls: "Gdy idziemy spać",
-        stamp: "0",
+        stamp: "46",
       },
       ve4:{
         ls: "Ni stumetrowych fal",
-        stamp: "0",
+        stamp: "50",
       },
       ve5:{
         ls: "Ni stumetrowych",
-        stamp: "0",
+        stamp: "55",
       },
       ve6:{
         ls: "Tańczmy",
-        stamp: "0",
+        stamp: "59",
       },
       ve7:{
         ls: "Ile godzin i lat",
-        stamp: "0",
+        stamp: "64",
       },
       ve8:{
         ls: "Tańczmy",
-        stamp: "0",
+        stamp: "66",
       },
       ve9:{
         ls: "Ile godzin i lat",
-        stamp: "0",
+        stamp: "68",
       },
       ve10:{
         ls: "Tańczmy",
-        stamp: "0",
+        stamp: "70",
       },
       ve11:{
         ls: "Tańczmy",
-        stamp: "0",
+        stamp: "74",
       },
       ve12:{
         ls: "Ile godzin i lat",
-        stamp: "0",
+        stamp: "76",
       },
       ve13:{
         ls: "Tańczmy",
-        stamp: "0",
+        stamp: "79",
       },
       ve14:{
         ls: "Nie wiemy co to strach",
-        stamp: "0",
+        stamp: "98",
       },
       ve15:{
         ls: "Gdy zasypiamy",
-        stamp: "0",
+        stamp: "102",
       },
       ve16:{
         ls: "No bo tyle się już znamy",
-        stamp: "0",
+        stamp: "106",
       },
       ve17:{
         ls: "I wiemy na co nas stać",
-        stamp: "0",
+        stamp: "111",
       },
       ve18:{
         ls: "I wiemy na co",
-        stamp: "0",
+        stamp: "115",
       },
       ve19:{
         ls: "Tańczmy",
-        stamp: "0",
+        stamp: "124",
       },
       ve20:{
         ls: "Ile godzin i lat",
-        stamp: "0",
+        stamp: "133",
       },
       ve21:{
         ls: "Tańczmy",
-        stamp: "0",
+        stamp: "136",
       },
       ve22:{
         ls: "Ile godzin i lat",
-        stamp: "0",
+        stamp: "138",
       },
       ve23:{
         ls: "Tańczmy",
-        stamp: "0",
+        stamp: "140",
       },
       ve24:{
         ls: "Tańczmy",
-        stamp: "0",
+        stamp: "144",
       },
       ve25:{
         ls: "Ile godzin i lat",
-        stamp: "0",
+        stamp: "146",
       },
       ve26:{
         ls: "Tańczmy",
-        stamp: "0",
+        stamp: "148",
       },
       ve27:{
         ls: "Lepiej wiecznie szukać",
-        stamp: "0",
+        stamp: "172",
       },
       ve28:{
         ls: "Niż choć raz przed sobą skłamać",
-        stamp: "0",
+        stamp: "176",
       },
       ve29:{
         ls: "Że znalazłem",
-        stamp: "0",
+        stamp: "181",
       },
       ve30:{
         ls: "Że już mam",
-        stamp: "0",
+        stamp: "182",
       },
       ve31:{
         ls: "Że wystarcza",
-        stamp: "0",
+        stamp: "188",
       },
       ve32:{
         ls: "Ile godzin i lat",
-        stamp: "0",
+        stamp: "192",
       },
       ve33:{
         ls: "Tańczmy",
-        stamp: "0",
+        stamp: "195",
       },
       ve34:{
         ls: "Ile godzin i lat",
-        stamp: "0",
+        stamp: "197",
       },
       ve35:{
         ls: "Tańczmy",
-        stamp: "0",
+        stamp: "199",
       },
       ve36:{
         ls: "Tańczmy",
-        stamp: "0",
+        stamp: "203",
       },
       ve37:{
         ls: "Ile godzin i lat",
-        stamp: "0",
+        stamp: "205",
       },
       ve38:{
         ls: "Tańczmy",
-        stamp: "0",
+        stamp: "207",
+      },
+      ve39:{
+        ls: "♪ ♪ ♪",
+        stamp: "210",
+      },
+      ve40:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve41:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve42:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve43:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve44:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve45:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve46:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve47:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve48:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve49:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve50:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve51:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve52:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve53:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve54:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve55:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve56:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve57:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve58:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve59:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve60:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve61:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve62:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve63:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve64:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve65:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve66:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve67:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve68:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve69:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve70:{
+        ls: "",
+        stamp: "3600",
+      },
+    },
+
+    user_playlist_1: "",
+  },
+  {
+    name: "Nadzy na mróz",
+    artist: "Happysad",
+    colaboration: "",
+    artist_status: "none",
+    language: "pl",
+    country: "pl",
+    artist_id: "8",
+    
+    src: "HAPPYSAD-NADZYNAMRÓZ",
+    img: "ab67616d00001e02fa101a5033d62d89ad9359d7",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851fa101a5033d62d89ad9359d7",
+    
+    style: "Rock",
+    status: "nostatus",
+    canvas: "",
+    
+    album: "Ciało Obce",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e02fa101a5033d62d89ad9359d7",
+    album_premiere: "2017",
+    album_status: "false",
+    id: "114",
+    lyrics:{
+      ve1:{
+        ls: "Jacy będziemy",
+        stamp: "110",
+      },
+      ve2:{
+        ls: "Jakie wywiesimy flagi",
+        stamp: "116",
+      },
+      ve3:{
+        ls: "Nad każdym z naszych miast",
+        stamp: "122",
+      },
+      ve4:{
+        ls: "Jaki będzie nasz świat",
+        stamp: "127",
+      },
+      ve5:{
+        ls: "I czy w ogóle będzie nasz",
+        stamp: "131",
+      },
+      ve6:{
+        ls: "I czy w ogóle będzie świat",
+        stamp: "134",
+      },
+      ve7:{
+        ls: "Kiedy pójdziemy",
+        stamp: "142",
+      },
+      ve8:{
+        ls: "Nadzy na mróz",
+        stamp: "148",
+      },
+      ve9:{
+        ls: "Na mróz",
+        stamp: "156",
+      },
+      ve10:{
+        ls: "Nadzy na mróz",
+        stamp: "161",
+      },
+      ve11:{
+        ls: "Na mróz",
+        stamp: "169",
+      },
+      ve12:{
+        ls: "Nadzy na mróz",
+        stamp: "174",
+      },
+      ve13:{
+        ls: "Kto nam zostanie",
+        stamp: "181",
+      },
+      ve14:{
+        ls: "Z tych co za nami murem",
+        stamp: "187",
+      },
+      ve15:{
+        ls: "I za ostatnią z naszych szans",
+        stamp: "193",
+      },
+      ve16:{
+        ls: "Jaki będzie nasz ślad",
+        stamp: "198",
+      },
+      ve17:{
+        ls: "I czy w ogóle będzie nasz",
+        stamp: "203",
+      },
+      ve18:{
+        ls: "Kiedy zgasną nasze słońca",
+        stamp: "206",
+      },
+      ve19:{
+        ls: "Kiedy pójdziemy",
+        stamp: "213",
+      },
+      ve20:{
+        ls: "Kiedy pójdziemy",
+        stamp: "220",
+      },
+      ve21:{
+        ls: "Nadzy na mróz",
+        stamp: "226",
+      },
+      ve22:{
+        ls: "Na mróz",
+        stamp: "234",
+      },
+      ve23:{
+        ls: "Nadzy na mróz",
+        stamp: "239",
+      },
+      ve24:{
+        ls: "Na mróz",
+        stamp: "247",
+      },
+      ve25:{
+        ls: "Nadzy na mróz",
+        stamp: "252",
+      },
+      ve26:{
+        ls: "Na mróz",
+        stamp: "260",
+      },
+      ve27:{
+        ls: "Na zbyt cienki lód",
+        stamp: "264",
+      },
+      ve28:{
+        ls: "Na mróz",
+        stamp: "273",
+      },
+      ve29:{
+        ls: "Nadzy na mróz",
+        stamp: "278",
+      },
+      ve30:{
+        ls: "Na mróz",
+        stamp: "285",
+      },
+      ve31:{
+        ls: "Na zbyt cienki lód",
+        stamp: "291",
+      },
+      ve32:{
+        ls: "Na zbyt cienki lód",
+        stamp: "301",
+      },
+      ve33:{
+        ls: "Na zbyt cienki lód",
+        stamp: "307",
+      },
+      ve34:{
+        ls: "Na zbyt cienki lód",
+        stamp: "313",
+      },
+      ve35:{
+        ls: "♪ ♪ ♪",
+        stamp: "320",
+      },
+      ve36:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve37:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve38:{
+        ls: "",
+        stamp: "3600",
       },
       ve39:{
         ls: "",
@@ -7238,65 +8941,7 @@ var allMusic = [
         stamp: "3600",
       },
     },
-    bio: "Originating in Skarżysko-Kamienna in 2001, Happysad is a popular Polish rock band distinguished by friendly melodies and reggae-influenced rhythms. Their debut album, Wszystko Jedno, was issued by ",
-    social:{
-      instagram: "https://www.instagram.com/happysadpl",
-      twitter: "",
-      facebook: "https://www.facebook.com/happysadpl",
-    },
-    user_playlist_1: "",
-  },
-  {
-    name: "Nadzy na mróz",
-    artist: "Happysad",
-    colaboration: "",
-    artist_status: "none",
-    language: "pl",
-    country: "pl",
-    artist_id: "8",
-    
-    src: "HAPPYSAD-NADZYNAMRÓZ",
-    img: "ab67616d00001e02fa101a5033d62d89ad9359d7",
-    img_mini: "https://i.scdn.co/image/ab67616d00004851fa101a5033d62d89ad9359d7",
-    
-    style: "Rock",
-    status: "nostatus",
-    avatar: "14235843737BeNz9sRRfK4jsYeLQ7t32Pg76m86w",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5ebd6e4988f56f08add19e0dd7b",
-    gallery_img_1: "https://pbs.twimg.com/media/Ffi44c-WIAEp8dW?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/Ffi44-jXwAMUldz?format=jpg&name=large",
-    gallery_img_3: "https://i.scdn.co/image/ab6761670000ecd41cdc2f67482deca920508a7d",
-    gallery_img_4: "https://i.scdn.co/image/ab6761670000ecd4e13d018bba5753b76bc6716b",
-    gallery_img_5: "https://i.scdn.co/image/1e7662d67812f4b177c3a03e2f2352ab900e16b4",
-    canvas: "",
-    
-    album: "Ciało Obce",
-    album_cover: "https://i.scdn.co/image/ab67616d00001e02fa101a5033d62d89ad9359d7",
-    album_premiere: "2017",
-    album_status: "false",
-    id: "114",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
-    bio: "Originating in Skarżysko-Kamienna in 2001, Happysad is a popular Polish rock band distinguished by friendly melodies and reggae-influenced rhythms. Their debut album, Wszystko Jedno, was issued by ",
-    social:{
-      instagram: "https://www.instagram.com/happysadpl",
-      twitter: "",
-      facebook: "https://www.facebook.com/happysadpl",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -7314,19 +8959,6 @@ var allMusic = [
     
     style: "Pop",
     status: "nostatus",
-    tag: "Popular",
-    avatar: "FiRrSE251251ihaFAFAnnaG21AFA2H-XEAQRwiX",
-    artist_img: "https://i.scdn.co/image/ab6772690000dd22d8335ec748a725e7ec715370",
-    gallery_img_1: "https://pbs.twimg.com/media/FiVVaibWYAYOPfF?format=jpg&name=900x900",
-    gallery_img_2: "https://i.scdn.co/image/c6f0ced6952b45d4b0105bea5079b217e037b49d",
-    gallery_img_3: "https://i.scdn.co/image/67ab1011e0a1fdc7cd04d204f6b37170e7a6315c",
-    gallery_img_4: "https://i.scdn.co/image/299cb27cab079f282d83b1966bf5a19488de1c1b",
-    gallery_img_5: "https://pbs.twimg.com/media/FiMXD1JXwBMKfjB?format=jpg&name=small",
-    gallery_img_6: "https://pbs.twimg.com/media/FigqaNBXgAEW1bK?format=jpg&name=small",
-    gallery_img_7: "https://pbs.twimg.com/media/Fiq_zwDWYAEzUaa?format=jpg&name=360x360",
-    gallery_img_8: "https://pbs.twimg.com/media/FirYNz5XEAAWWCY?format=jpg&name=small",
-    gallery_img_9: "https://pbs.twimg.com/media/FiluPLJXkAYfxob?format=jpg&name=medium",
-    gallery_img_10: "https://pbs.twimg.com/media/FiCv6VzWAAEuNGR?format=jpg&name=900x900",
     canvas: "",
     
     album: "Good Girl Gone Bad: Reloaded",
@@ -7350,12 +8982,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Rihanna established her pop credentials in 2005 with Pon de Replay, a boisterous debut single that narrowly missed the top of the Billboard Hot 100 and fast-tracked her to becoming one of the most popular, acclaimed, and dynamic artists in postmillennial contemporary music. Until the Barbados native took a break from releasing music in the late 2010s, she was a near-constant presence in the upper reaches of the pop chart. Through 2017, mixing and matching pop, dancehall, R&B, EDM, and adult contemporary material, she headlined 11 number one hits, including Umbrella and Only Girl (In the World), singles that earned her two of her nine Grammy awards. More than just a singles artist, Rihanna continually pushed ahead stylistically with her LPs, highlighted by the bold Good Girl Gone Bad (2007), the steely Rated R (2009), and the composed Anti (2016), all of which confounded expectations and placed within the Top Ten of the Billboard 200 with eventual multi-platinum certifications.",
-    social:{
-      instagram: "",
-      twitter: "",
-      facebook: "",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -7392,103 +9019,290 @@ var allMusic = [
     album_premiere: "2021",
     album_status: "false",
     id: "116",
+
     lyrics:{
       ve1:{
-        ls1: "One, two, three, four",
-        ls2: "Ooh-ooh, ooh-ooh-ooh",
-        ls3: "Every time you come around, you know I can't say no",
-        ls4: "Every time the sun goes down, I let you take control",
-        ls5: "I can feel the paradise before my world implodes",
-        ls6: "And tonight had something wonderful",
-        stamp: "2",
+        ls: "One, two, three, four",
+        stamp: "0",
       },
       ve2:{
-        ls1: "My bad habits lead to late nights endin' alone",
-        ls2: "Conversations with a stranger I barely know",
-        ls3: "Swearin' this will be the last, but it probably won't",
-        ls4: "I got nothin' left to lose, or use, or do",
-        stamp: "39",
+        ls: "Ooh-ooh, ooh-ooh-ooh",
+        stamp: "2",
       },
       ve3:{
-        ls1: "My bad habits lead to wide eyes stare into space",
-        ls2: "And I know I'll lose control of the things that I say",
-        ls3: "Yeah, I was lookin' for a way out, now I can't escape",
-        ls4: "Nothin' happens after two, it's true",
-        ls5: "It's true, my bad habits lead to you",
-        ls6: "Ooh-ooh, ooh-ooh-ooh",
-        ls7: "My bad habits lead to you",
-        ls8: "Ooh-ooh, ooh-ooh-ooh",
-        ls9: "My bad habits lead to you",
-        stamp: "53",
+        ls: "Every time you come around, you know I can't say no",
+        stamp: "9",
       },
       ve4:{
-        ls1: "Every pure intention ends when the good times start",
-        ls2: "Fallin' over everything to reach the first time's spark",
-        ls3: "It started under neon lights, and then it all got dark",
-        ls4: "I only know how to go too far",
-        ls5: "My bad habits lead to late nights endin' alone",
-        ls6: "Conversations with a stranger I barely know",
-        ls7: "Swearin' this will be the last, but it probably won't",
-        ls8: "I got nothin' left to lose, or use, or do",
-        stamp: "87",
+        ls: "Every time the sun goes down, I let you take control",
+        stamp: "16",
       },
       ve5:{
-        ls1: "My bad habits lead to wide eyes stare into space",
-        ls2: "And I know I'll lose control of the things that I say",
-        ls3: "Yeah, I was lookin' for a way out, now I can't escape",
-        ls4: "Nothin' happens after two, it's true",
-        ls5: "It's true, my bad habits lead to you",
-        ls6: "Ooh-ooh, ooh-ooh-ooh",
-        ls7: "My bad habits lead to you",
-        ls8: "Ooh-ooh, ooh-ooh-ooh",
-        stamp: "131",
+        ls: "I can feel the paradise before my world implodes",
+        stamp: "24",
       },
       ve6:{
-        ls1: "We took the long way 'round",
-        ls2: "And burned 'til the fun ran out, now",
-        ls3: "My bad habits lead to late nights endin' alone",
-        ls4: "Conversations with a stranger I barely know",
-        ls5: "Swearin' this will be the last, but it probably won't",
-        ls6: "I got nothin' left to lose, or use, or do",
-        stamp: "165",
+        ls: "And tonight had something wonderful",
+        stamp: "32",
       },
       ve7:{
-        ls1: "My bad habits lead to wide eyes stare into space",
-        ls2: "And I know I'll lose control of the things that I say",
-        ls3: "Yeah, I was lookin' for a way out, now I can't escape",
-        ls4: "Nothin' happens after two, it's true",
-        ls5: "It's true, my bad habits lead to you",
-        stamp: "192",
+        ls: "My bad habits lead to late nights endin' alone",
+        stamp: "38",
       },
       ve8:{
-        ls1: "Ooh-ooh, ooh-ooh-ooh",
-        ls2: "My bad habits lead to you",
-        ls3: "Ooh-ooh, ooh-ooh-ooh",
-        ls4: "My bad habits lead to you",
-        stamp: "210",
+        ls: "Conversations with a stranger I barely know",
+        stamp: "42",
       },
       ve9:{
-        ls1: "",
-        ls2: "",
-        ls3: "",
-        ls4: "",
-        stamp: "",
+        ls: "Swearin' this will be the last, but it probably won't",
+        stamp: "46",
       },
       ve10:{
-        ls1: "",
-        ls2: "",
-        ls3: "",
-        ls4: "",
-        stamp: "",
+        ls: "I got nothin' left to lose, or use, or do",
+        stamp: "50",
       },
       ve11:{
-        ls1: "",
-        ls2: "",
-        ls3: "",
-        ls4: "",
-        stamp: "",
-      }
+        ls: "My bad habits lead to wide eyes stare into space",
+        stamp: "53",
+      },
+      ve12:{
+        ls: "And I know I'll lose control of the things that I say",
+        stamp: "57",
+      },
+      ve13:{
+        ls: "Yeah, I was lookin' for a way out, now I can't escape",
+        stamp: "62",
+      },
+      ve14:{
+        ls: "Nothin' happens after two, it's true",
+        stamp: "65",
+      },
+      ve15:{
+        ls: "It's true, my bad habits lead to you",
+        stamp: "68",
+      },
+      ve16:{
+        ls: "Ooh-ooh, ooh-ooh-ooh",
+        stamp: "72",
+      },
+      ve17:{
+        ls: "My bad habits lead to you",
+        stamp: "76",
+      },
+      ve18:{
+        ls: "Ooh-ooh, ooh-ooh-ooh",
+        stamp: "79",
+      },
+      ve19:{
+        ls: "My bad habits lead to you",
+        stamp: "84",
+      },
+      ve20:{
+        ls: "Every pure intention ends when the good times start",
+        stamp: "87",
+      },
+      ve21:{
+        ls: "Fallin' over everything to reach the first time's spark",
+        stamp: "94",
+      },
+      ve22:{
+        ls: "It started under neon lights, and then it all got dark",
+        stamp: "103",
+      },
+      ve23:{
+        ls: "I only know how to go too far",
+        stamp: "110",
+      },
+      ve24:{
+        ls: "My bad habits lead to late nights endin' alone",
+        stamp: "116",
+      },
+      ve25:{
+        ls: "Conversations with a stranger I barely know",
+        stamp: "120",
+      },
+      ve26:{
+        ls: "Swearin' this will be the last, but it probably won't",
+        stamp: "124",
+      },
+      ve27:{
+        ls: "I got nothin' left to lose, or use, or do",
+        stamp: "128",
+      },
+      ve28:{
+        ls: "My bad habits lead to wide eyes stare into space",
+        stamp: "131",
+      },
+      ve29:{
+        ls: "And I know I'll lose control of the things that I say",
+        stamp: "136",
+      },
+      ve30:{
+        ls: "Yeah, I was lookin' for a way out, now I can't escape",
+        stamp: "139",
+      },
+      ve31:{
+        ls: "Nothin' happens after two, it's true",
+        stamp: "143",
+      },
+      ve32:{
+        ls: "It's true, my bad habits lead to you",
+        stamp: "146",
+      },
+      ve33:{
+        ls: "Ooh-ooh, ooh-ooh-ooh",
+        stamp: "150",
+      },
+      ve34:{
+        ls: "My bad habits lead to you",
+        stamp: "154",
+      },
+      ve35:{
+        ls: "Ooh-ooh, ooh-ooh-ooh",
+        stamp: "157",
+      },
+      ve36:{
+        ls: "We took the long way 'round",
+        stamp: "164",
+      },
+      ve37:{
+        ls: "And burned 'til the fun ran out, now",
+        stamp: "171",
+      },
+      ve38:{
+        ls: "My bad habits lead to late nights endin' alone",
+        stamp: "177",
+      },
+      ve39:{
+        ls: "Conversations with a stranger I barely know",
+        stamp: "181",
+      },
+      ve40:{
+        ls: "Swearin' this will be the last, but it probably won't",
+        stamp: "185",
+      },
+      ve41:{
+        ls: "I got nothin' left to lose, or use, or do",
+        stamp: "189",
+      },
+      ve42:{
+        ls: "My bad habits lead to wide eyes stare into space",
+        stamp: "192",
+      },
+      ve43:{
+        ls: "And I know I'll lose control of the things that I say",
+        stamp: "196",
+      },
+      ve44:{
+        ls: "Yeah, I was lookin' for a way out, now I can't escape",
+        stamp: "200",
+      },
+      ve45:{
+        ls: "Nothin' happens after two, it's true",
+        stamp: "203",
+      },
+      ve46:{
+        ls: "It's true, my bad habits lead to you",
+        stamp: "207",
+      },
+      ve47:{
+        ls: "Ooh-ooh, ooh-ooh-ooh",
+        stamp: "211",
+      },
+      ve48:{
+        ls: "My bad habits lead to you",
+        stamp: "215",
+      },
+      ve49:{
+        ls: "Ooh-ooh, ooh-ooh-ooh",
+        stamp: "218",
+      },
+      ve50:{
+        ls: "My bad habits lead to you",
+        stamp: "223",
+      },
+      ve51:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve52:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve53:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve54:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve55:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve56:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve57:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve58:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve59:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve60:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve61:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve62:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve63:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve64:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve65:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve66:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve67:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve68:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve69:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve70:{
+        ls: "",
+        stamp: "3600",
+      },
     },
+
     bio: "Ed Sheeran may be the quintessential pop star of the 2010s: a singer/songwriter who seems to acknowledge no boundaries between styles or eras, creating a sound that's idiosyncratic and personal. Sheeran borrows from any style that crosses his path -- elements of folk, hip-hop, pop, dance, soul, and rock can be heard in his big hits The A Team, Sing, Thinking Out Loud, and Shape of You -- which gives him a broad appeal among different demographics. It also helped elevate him to international acclaim not long after the release of his 2011 debut, +. Sheeran maintained his stardom with savvy collaborations -- his 2019 album No. 6 Collaborations Project featured an eclectic roster including Khalid, Camilla Cabello, Cardi B, Justin Biber, Chris Stapleton and Bruno Mars",
     social:{
       instagram: "https://www.instagram.com/teddysphotos/",
@@ -7512,14 +9326,6 @@ var allMusic = [
     
     style: "Pop",
     status: "nostatus",
-    tag: "Popular",
-    avatar: "ED-SHEERAN-1-BY-DAN-MARTENSEN-scaled-1-pfh4q9anbkubjdr9tjg7y9z46ic1fd95a2j4jawk94",
-    artist_img: "https://pbs.twimg.com/media/FkHq4KzXwAUn1zx?format=jpg&name=large",
-    gallery_img_1: "https://pbs.twimg.com/media/FkeNKjXWQAEcJwT?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/FC9kHWiWUAEOxVN?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/E_aVXgMVEAQvqDH?format=jpg&name=medium",
-    gallery_img_4: "https://pbs.twimg.com/media/E_IEbfeXsAYz1BY?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/EWtACzjWkAEEoK2?format=jpg&name=large",
     canvas: "",
     
     album: "÷ (Deluxe)",
@@ -7529,130 +9335,307 @@ var allMusic = [
     id: "117",
     lyrics:{
       ve1:{
-        ls1: "The club isn't the best place to find a lover",
-        ls2: "So the bar is where I go",
-        ls3: "Me and my friends at the table doing shots",
-        ls4: "Drinking fast and then we talk slow",
-        ls5: "And you come over and start up a conversation with just me",
-        ls6: "And trust me I'll give it a chance now",
-        ls7: "Take my hand, stop, put Van the Man on the jukebox",
-        ls8: "And then we start to dance, and now I'm singing like",
+        ls: "The club isn't the best place to find a lover",
         stamp: "9",
       },
       ve2:{
-        ls1: "Girl, you know I want your love",
-        ls2: "Your love was handmade for somebody like me",
-        ls3: "Come on now, follow my lead",
-        ls4: "I may be crazy, don't mind me",
-        ls5: "Say, boy, let's not talk too much",
-        ls6: "Grab on my waist and put that body on me",
-        ls7: "Come on now, follow my lead",
-        ls8: "Come, come on now, follow my lead",
-        stamp: "29",
+        ls: "So the bar is where I go",
+        stamp: "11",
       },
       ve3:{
-        ls1: "I'm in love with the shape of you",
-        ls2: "We push and pull like a magnet do",
-        ls3: "Although my heart is falling too",
-        ls4: "I'm in love with your body",
-        ls5: "And last night you were in my room",
-        ls6: "And now my bedsheets smell like you",
-        ls7: "Every day discovering something brand new",
-        stamp: "50",
+        ls: "Me and my friends at the table doing shots",
+        stamp: "13",
       },
       ve4:{
-        ls1: "I'm in love with your body",
-        ls2: "Oh-I-oh-I-oh-I-oh-I",
-        ls3: "I'm in love with your body",
-        ls4: "Oh-I-oh-I-oh-I-oh-I",
-        ls5: "I'm in love with your body",
-        ls6: "Oh-I-oh-I-oh-I-oh-I",
-        ls7: "I'm in love with your body",
-        ls8: "Every day discovering something brand new",
-        ls9: "I'm in love with the shape of you",
-        stamp: "67",
+        ls: "Drinking fast and then we talk slow",
+        stamp: "16",
       },
       ve5:{
-        ls1: "One week in we let the story begin",
-        ls2: "We're going out on our first date",
-        ls3: "You and me are thrifty, so go all you can eat",
-        ls4: "Fill up your bag and I fill up a plate",
-        ls5: "We talk for hours and hours about the sweet and the sour",
-        ls6: "And how your family is doing okay",
-        ls7: "Leave and get in a taxi, then kiss in the backseat",
-        ls8: "Tell the driver make the radio play, and I'm singing like",
-        stamp: "89",
+        ls: "And you come over and start up a conversation with just me",
+        stamp: "19",
       },
       ve6:{
-        ls1: "Girl, you know I want your love",
-        ls2: "Your love was handmade for somebody like me",
-        ls3: "Come on now, follow my lead",
-        ls4: "I may be crazy, don't mind me",
-        ls5: "Say, boy, let's not talk too much",
-        ls6: "Grab on my waist and put that body on me",
-        ls7: "Come on now, follow my lead",
-        ls8: "Come, come on now, follow my lead",
-        stamp: "110",
+        ls: "And trust me I'll give it a chance now",
+        stamp: "21",
       },
       ve7:{
-        ls1: "I'm in love with the shape of you",
-        ls2: "We push and pull like a magnet do",
-        ls3: "Although my heart is falling too",
-        ls4: "I'm in love with your body",
-        ls5: "And last night you were in my room",
-        ls6: "And now my bedsheets smell like you",
-        ls7: "Every day discovering something brand new",
-        stamp: "130",
+        ls: "Take my hand, stop, put Van the Man on the jukebox",
+        stamp: "23",
       },
       ve8:{
-        ls1: "I'm in love with your body",
-        ls2: "Oh-I-oh-I-oh-I-oh-I",
-        ls3: "I'm in love with your body",
-        ls4: "Oh-I-oh-I-oh-I-oh-I",
-        ls5: "I'm in love with your body",
-        ls6: "Oh-I-oh-I-oh-I-oh-I",
-        ls7: "I'm in love with your body",
-        ls8: "Every day discovering something brand new",
-        ls9: "I'm in love with the shape of you",
-        stamp: "148",
+        ls: "And then we start to dance, and now I'm singing like",
+        stamp: "26",
       },
       ve9:{
-        ls1: "Come on, be my baby, come on",
-        ls2: "Come on, be my baby, come on",
-        ls3: "Come on, be my baby, come on",
-        ls4: "Come on, be my baby, come on",
-        ls5: "Come on, be my baby, come on",
-        ls6: "Come on, be my baby, come on",
-        ls7: "Come on, be my baby, come on",
-        ls8: "Come on, be my baby, come on",
-        stamp: "169",
+        ls: "Girl, you know I want your love",
+        stamp: "28",
       },
       ve10:{
-        ls1: "I'm in love with the shape of you",
-        ls2: "We push and pull like a magnet do",
-        ls3: "Although my heart is falling too",
-        ls4: "I'm in love with your body",
-        ls5: "And last night you were in my room",
-        ls6: "And now my bedsheets smell like you",
-        ls7: "Every day discovering something brand new",
-        stamp: "190",
+        ls: "Your love was handmade for somebody like me",
+        stamp: "31",
       },
       ve11:{
-        ls1: "I'm in love with your body",
-        ls2: "Come on, be my baby, come on",
-        ls3: "( x3 )",
-        ls4: "I'm in love with your body",
-        ls5: "Every day discovering something brand new",
-        ls6: "I'm in love with the shape of you",
-        stamp: "208",
-      }
+        ls: "Come on now, follow my lead",
+        stamp: "35",
+      },
+      ve12:{
+        ls: "I may be crazy, don't mind me",
+        stamp: "36",
+      },
+      ve13:{
+        ls: "Say, boy, let's not talk too much",
+        stamp: "39",
+      },
+      ve14:{
+        ls: "Grab on my waist and put that body on me",
+        stamp: "41",
+      },
+      ve15:{
+        ls: "Come on now, follow my lead",
+        stamp: "44",
+      },
+      ve16:{
+        ls: "Come, come on now, follow my lead",
+        stamp: "47",
+      },
+      ve17:{
+        ls: "I'm in love with the shape of you",
+        stamp: "50",
+      },
+      ve18:{
+        ls: "We push and pull like a magnet do",
+        stamp: "52",
+      },
+      ve19:{
+        ls: "Although my heart is falling too",
+        stamp: "54",
+      },
+      ve20:{
+        ls: "I'm in love with your body",
+        stamp: "57",
+      },
+      ve21:{
+        ls: "And last night you were in my room",
+        stamp: "60",
+      },
+      ve22:{
+        ls: "And now my bedsheets smell like you",
+        stamp: "62",
+      },
+      ve23:{
+        ls: "Every day discovering something brand new",
+        stamp: "64",
+      },
+      ve24:{
+        ls: "I'm in love with your body",
+        stamp: "67",
+      },
+      ve25:{
+        ls: "Oh-I-oh-I-oh-I-oh-I",
+        stamp: "69",
+      },
+      ve26:{
+        ls: "I'm in love with your body",
+        stamp: "72",
+      },
+      ve27:{
+        ls: "Oh-I-oh-I-oh-I-oh-I",
+        stamp: "74",
+      },
+      ve28:{
+        ls: "I'm in love with your body",
+        stamp: "77",
+      },
+      ve29:{
+        ls: "Oh-I-oh-I-oh-I-oh-I",
+        stamp: "79",
+      },
+      ve30:{
+        ls: "I'm in love with your body",
+        stamp: "82",
+      },
+      ve31:{
+        ls: "Every day discovering something brand new",
+        stamp: "84",
+      },
+      ve32:{
+        ls: "I'm in love with the shape of you",
+        stamp: "87",
+      },
+      ve33:{
+        ls: "One week in we let the story begin",
+        stamp: "89",
+      },
+      ve34:{
+        ls: "We're going out on our first date",
+        stamp: "91",
+      },
+      ve35:{
+        ls: "You and me are thrifty, so go all you can eat",
+        stamp: "93",
+      },
+      ve36:{
+        ls: "Fill up your bag and I fill up a plate",
+        stamp: "96",
+      },
+      ve37:{
+        ls: "We talk for hours and hours about the sweet and the sour",
+        stamp: "98",
+      },
+      ve38:{
+        ls: "And how your family is doing okay",
+        stamp: "101",
+      },
+      ve39:{
+        ls: "Leave and get in a taxi, then kiss in the backseat",
+        stamp: "103",
+      },
+      ve40:{
+        ls: "Tell the driver make the radio play, and I'm singing like",
+        stamp: "106",
+      },
+      ve41:{
+        ls: "Girl, you know I want your love",
+        stamp: "109",
+      },
+      ve42:{
+        ls: "Your love was handmade for somebody like me",
+        stamp: "111",
+      },
+      ve43:{
+        ls: "Come on now, follow my lead",
+        stamp: "114",
+      },
+      ve44:{
+        ls: "I may be crazy, don't mind me",
+        stamp: "116",
+      },
+      ve45:{
+        ls: "Say, boy, let's not talk too much",
+        stamp: "119",
+      },
+      ve46:{
+        ls: "Grab on my waist and put that body on me",
+        stamp: "121",
+      },
+      ve47:{
+        ls: "Come on now, follow my lead",
+        stamp: "124",
+      },
+      ve48:{
+        ls: "Come, come on now, follow my lead",
+        stamp: "126",
+      },
+      ve49:{
+        ls: "I'm in love with the shape of you",
+        stamp: "130",
+      },
+      ve50:{
+        ls: "We push and pull like a magnet do",
+        stamp: "132",
+      },
+      ve51:{
+        ls: "Although my heart is falling too",
+        stamp: "135",
+      },
+      ve52:{
+        ls: "I'm in love with your body",
+        stamp: "137",
+      },
+      ve53:{
+        ls: "And last night you were in my room",
+        stamp: "140",
+      },
+      ve54:{
+        ls: "And now my bedsheets smell like you",
+        stamp: "142",
+      },
+      ve55:{
+        ls: "Every day discovering something brand new",
+        stamp: "144",
+      },
+      ve56:{
+        ls: "I'm in love with your body",
+        stamp: "147",
+      },
+      ve57:{
+        ls: "Oh-I-oh-I-oh-I-oh-I",
+        stamp: "149",
+      },
+      ve58:{
+        ls: "I'm in love with your body",
+        stamp: "152",
+      },
+      ve59:{
+        ls: "Oh-I-oh-I-oh-I-oh-I",
+        stamp: "154",
+      },
+      ve60:{
+        ls: "I'm in love with your body",
+        stamp: "157",
+      },
+      ve61:{
+        ls: "Oh-I-oh-I-oh-I-oh-I",
+        stamp: "159",
+      },
+      ve62:{
+        ls: "I'm in love with your body",
+        stamp: "162",
+      },
+      ve63:{
+        ls: "Every day discovering something brand new",
+        stamp: "164",
+      },
+      ve64:{
+        ls: "I'm in love with the shape of you",
+        stamp: "167",
+      },
+      ve65:{
+        ls: "Come on, be my baby, come on (x8)",
+        stamp: "169",
+      },
+      ve66:{
+        ls: "I'm in love with the shape of you",
+        stamp: "190",
+      },
+      ve67:{
+        ls: "We push and pull like a magnet do",
+        stamp: "192",
+      },
+      ve68:{
+        ls: "Although my heart is falling too",
+        stamp: "194",
+      },
+      ve69:{
+        ls: "I'm in love with your body",
+        stamp: "197",
+      },
+      ve70:{
+        ls: "And last night you were in my room",
+        stamp: "199",
+      },
+      ve71:{
+        ls: "And now my bedsheets smell like you",
+        stamp: "202",
+      },
+      ve72:{
+        ls: "Every day discovering something brand new",
+        stamp: "204",
+      },
+      ve73:{
+        ls: "I'm in love with your body, come on, be my baby, come on (x3)",
+        stamp: "209",
+      },
+      ve74:{
+        ls: "Every day discovering something brand new",
+        stamp: "224",
+      },
+      ve75:{
+        ls: "I'm in love with the shape of you",
+        stamp: "227",
+      },
     },
-    bio: "Ed Sheeran may be the quintessential pop star of the 2010s: a singer/songwriter who seems to acknowledge no boundaries between styles or eras, creating a sound that's idiosyncratic and personal. Sheeran borrows from any style that crosses his path -- elements of folk, hip-hop, pop, dance, soul, and rock can be heard in his big hits The A Team, Sing, Thinking Out Loud, and Shape of You -- which gives him a broad appeal among different demographics. It also helped elevate him to international acclaim not long after the release of his 2011 debut, +. Sheeran maintained his stardom with savvy collaborations -- his 2019 album No. 6 Collaborations Project featured an eclectic roster including Khalid, Camilla Cabello, Cardi B, Justin Biber, Chris Stapleton and Bruno Mars",
-    social:{
-      instagram: "https://www.instagram.com/teddysphotos/",
-      twitter: "https://twitter.com/edsheeran",
-      facebook: "https://www.facebook.com/EdSheeranMusic/",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -7741,6 +9724,7 @@ var allMusic = [
     name: "Girls Like",
     artist: "Tinie Tempah",
     colaboration: "Zara Larsson",
+    colaboration_id: "20",
     artist_status: "none",
     language: "eng",
     country: "uk",
@@ -7975,11 +9959,11 @@ var allMusic = [
       },
       ve8:{
         ls: "In the middle of the night",
-        stamp: "30",
+        stamp: "29",
       },
       ve9:{
         ls: "In the middle of the night",
-        stamp: "32",
+        stamp: "31",
       },
       ve10:{
         ls: "Just call my name, I'm yours to tame",
@@ -7987,15 +9971,15 @@ var allMusic = [
       },
       ve11:{
         ls: "In the middle of the night",
-        stamp: "38",
+        stamp: "37",
       },
       ve12:{
         ls: "In the middle of the night",
-        stamp: "40",
+        stamp: "39",
       },
       ve13:{
         ls: "I'm wide awake, I crave your taste",
-        stamp: "42",
+        stamp: "41",
       },
       ve14:{
         ls: "All night long 'til morning comes",
@@ -8015,7 +9999,7 @@ var allMusic = [
       },
       ve18:{
         ls: "In the middle of the night, oh-oh",
-        stamp: "54",
+        stamp: "54.5",
       },
       ve19:{
         ls: "These burning flames, these crashing waves",
@@ -8250,15 +10234,6 @@ var allMusic = [
     
     style: "Pop",
     status: "nostatus",
-    tag: "Popular",
-    avatar: "ab6761610000duhee5ebda85e0053elley476e519a22b24e5",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd4478478c443563ed723e9a96e",
-    gallery_img_1: "https://pbs.twimg.com/media/E0AMiQ5VUAAyEwz?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/E0AMiQ1VUAA8t22?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/DuQo7QLVAAACP7z?format=jpg&name=medium",
-    gallery_img_4: "https://pbs.twimg.com/media/DgFHUdVUEAAfNAD?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/DdCqUGMV4AIOmB7?format=jpg&name=900x900",
-    gallery_img_6: "https://pbs.twimg.com/media/DUBNhpVVoAA2Qgj?format=jpg&name=large",
     canvas: "",
     
     album: "MONEY ON THE DASH",
@@ -8268,14 +10243,288 @@ var allMusic = [
     id: "125",
 
     lyrics:{
+      ve1:{
+        ls: "Take, you're runnin' off the road so get out the way",
+        stamp: "0",
+      },
+      ve2:{
+        ls: "Push the pedal to the floor, blow'em all away",
+        stamp: "3",
+      },
+      ve3:{
+        ls: "Yeah, you see, I'm getting close, I accelarate",
+        stamp: "7",
+      },
+      ve4:{
+        ls: "Goin' faster than fast, hit the gas",
+        stamp: "11",
+      },
+      ve5:{
+        ls: "Lose control. I won't crash, rollin' high",
+        stamp: "14",
+      },
+      ve6:{
+        ls: "Put your money on the dash, throw the dice",
+        stamp: "18",
+      },
+      ve7:{
+        ls: "Lose control, I wont crash, run it all, I won't crash",
+        stamp: "21",
+      },
+      ve8:{
+        ls: "When you slow, I won't crash, running, take, take, take, take",
+        stamp: "26",
+      },
+      ve9:{
+        ls: "Take, you're runnin' off the road so get out the way",
+        stamp: "31",
+      },
+      ve10:{
+        ls: "Push the pedal to the floor, blow'em all away",
+        stamp: "35",
+      },
+      ve11:{
+        ls: "Yeah, you see, I'm getting close, I accelarate",
+        stamp: "39",
+      },
+      ve12:{
+        ls: "Goin' faster than fast, hit the gas",
+        stamp: "43",
+      },
+      ve13:{
+        ls: "Lose control. I won't crash, rollin' high",
+        stamp: "46",
+      },
+      ve14:{
+        ls: "Put your money on the dash, throw the dice",
+        stamp: "50",
+      },
+      ve15:{
+        ls: "Lose control, I wont crash, run it all, I won't crash",
+        stamp: "54",
+      },
+      ve16:{
+        ls: "When you slow, I won't crash, running, take, take, take, take",
+        stamp: "59",
+      },
+      ve17:{
+        ls: "Take, you're runnin' off the road so get out the way",
+        stamp: "63",
+      },
+      ve18:{
+        ls: "Push the pedal to the floor, blow'em all away",
+        stamp: "67",
+      },
+      ve19:{
+        ls: "Yeah, you see, I'm getting close, I accelarate",
+        stamp: "72",
+      },
+      ve20:{
+        ls: "Goin' faster than fast, hit the gas",
+        stamp: "75",
+      },
+      ve21:{
+        ls: "Lose control. I won't crash, rollin' high",
+        stamp: "78",
+      },
+      ve22:{
+        ls: "Put your money on the dash, throw the dice",
+        stamp: "82",
+      },
+      ve23:{
+        ls: "Lose control, I wont crash, run it all, I won't crash",
+        stamp: "87",
+      },
+      ve24:{
+        ls: "When you slow, I won't crash, running, take, take, take, take",
+        stamp: "90",
+      },
+      ve25:{
+        ls: "Take, you're runnin' off the road so get out the way",
+        stamp: "95",
+      },
+      ve26:{
+        ls: "Push the pedal to the floor, blow'em all away",
+        stamp: "99",
+      },
+      ve27:{
+        ls: "Yeah, you see, I'm getting close, I accelarate",
+        stamp: "103",
+      },
+      ve28:{
+        ls: "Goin' faster than fast, hit the gas",
+        stamp: "107",
+      },
+      ve29:{
+        ls: "Lose control. I won't crash, rollin' high",
+        stamp: "110",
+      },
+      ve30:{
+        ls: "Put your money on the dash, throw the dice",
+        stamp: "114",
+      },
+      ve31:{
+        ls: "Lose control, I wont crash, run it all, I won't crash",
+        stamp: "118",
+      },
+      ve32:{
+        ls: "When you slow, I won't crash, running, take, take, take, take",
+        stamp: "122",
+      },
+      ve33:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve34:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve35:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve36:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve37:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve38:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve39:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve40:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve41:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve42:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve43:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve44:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve45:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve46:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve47:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve48:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve49:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve50:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve51:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve52:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve53:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve54:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve55:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve56:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve57:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve58:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve59:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve60:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve61:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve62:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve63:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve64:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve65:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve66:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve67:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve68:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve69:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve70:{
+        ls: "",
+        stamp: "3600",
+      },
     },
 
-    bio: "extraterrestrial",
-    social:{
-      instagram: "https://www.instagram.com/elleyduhe/",
-      twitter: "https://twitter.com/elleyduhe",
-      facebook: "https://www.facebook.com/elleyduhemusic",
-    },
     user_playlist_1: "",
   },
   {
@@ -8293,15 +10542,6 @@ var allMusic = [
     
     style: "Pop",
     status: "nostatus",
-    tag: "Popular",
-    avatar: "ab6761610000duhee5ebda85e0053elley476e519a22b24e5",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd4478478c443563ed723e9a96e",
-    gallery_img_1: "https://pbs.twimg.com/media/E0AMiQ5VUAAyEwz?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/E0AMiQ1VUAA8t22?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/DuQo7QLVAAACP7z?format=jpg&name=medium",
-    gallery_img_4: "https://pbs.twimg.com/media/DgFHUdVUEAAfNAD?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/DdCqUGMV4AIOmB7?format=jpg&name=900x900",
-    gallery_img_6: "https://pbs.twimg.com/media/DUBNhpVVoAA2Qgj?format=jpg&name=large",
     canvas: "",
     
     album: "Traitor",
@@ -8593,12 +10833,6 @@ var allMusic = [
       },
     },
 
-    bio: "extraterrestrial",
-    social:{
-      instagram: "https://www.instagram.com/elleyduhe/",
-      twitter: "https://twitter.com/elleyduhe",
-      facebook: "https://www.facebook.com/elleyduhemusic",
-    },
     user_playlist_1: "",
   },
   {
@@ -8652,6 +10886,7 @@ var allMusic = [
     name: "Are You Entertained",
     artist: "Russ",
     colaboration: "Ed Sheeran",
+    colaboration_id: "40",
     artist_status: "none",
     language: "eng",
     country: "usa",
@@ -8974,6 +11209,10 @@ var allMusic = [
       facebook: "https://www.facebook.com/russtheone",
     },
     user_playlist_1: "",
+
+    tweet_title: "View and preorder tickets on EU tour",
+    tweet_img: "artists/ab6761670russ000ecd4519a71e464fa8e5890b1528e.jpg",
+    tweet_href: "https://google.com/"
   },
   {
     name: "Little Hollywood",
@@ -9318,13 +11557,6 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "41aeb62f0=c2321-f23bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5ebb894ef9fa437b0389c5567cc",
-    gallery_img_1: "https://pbs.twimg.com/media/FdIhyKfWYAUvVfo?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/Fc5YuyNXEAEe_jb?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/Fcabj0FWIAAKT6-?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FcVS25OXEAAjjk2?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/EsshuO_W8AEl9xh?format=jpg&name=medium",
     canvas: "",
 
     album: "beerbongs & bentleys",
@@ -9334,12 +11566,7 @@ var allMusic = [
     id: "130",
     lyrics:{
     },
-    bio: "In 2016, he released the single Go Flex along with his official debut mixtape, August 26th. Months later, his first studio effort arrived. Stoney featured guests ranging from ",
-    social:{
-      instagram: "https://www.instagram.com/postmalone/",
-      twitter: "https://twitter.com/postmalone",
-      facebook: "https://www.facebook.com/postmalone",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -9358,13 +11585,6 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "41aeb62f0=c2321-f23bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5ebb894ef9fa437b0389c5567cc",
-    gallery_img_1: "https://pbs.twimg.com/media/FdIhyKfWYAUvVfo?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/Fc5YuyNXEAEe_jb?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/Fcabj0FWIAAKT6-?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FcVS25OXEAAjjk2?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/EsshuO_W8AEl9xh?format=jpg&name=medium",
     canvas: "",
 
     album: "beerbongs & bentleys",
@@ -9374,12 +11594,7 @@ var allMusic = [
     id: "131",
     lyrics:{
     },
-    bio: "In 2016, he released the single Go Flex along with his official debut mixtape, August 26th. Months later, his first studio effort arrived. Stoney featured guests ranging from ",
-    social:{
-      instagram: "https://www.instagram.com/postmalone/",
-      twitter: "https://twitter.com/postmalone",
-      facebook: "https://www.facebook.com/postmalone",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -9398,13 +11613,6 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "41aeb62f0=c2321-f23bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5ebb894ef9fa437b0389c5567cc",
-    gallery_img_1: "https://pbs.twimg.com/media/FdIhyKfWYAUvVfo?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/Fc5YuyNXEAEe_jb?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/Fcabj0FWIAAKT6-?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FcVS25OXEAAjjk2?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/EsshuO_W8AEl9xh?format=jpg&name=medium",
     canvas: "",
 
     album: "beerbongs & bentleys",
@@ -9414,12 +11622,7 @@ var allMusic = [
     id: "132",
     lyrics:{
     },
-    bio: "In 2016, he released the single Go Flex along with his official debut mixtape, August 26th. Months later, his first studio effort arrived. Stoney featured guests ranging from ",
-    social:{
-      instagram: "https://www.instagram.com/postmalone/",
-      twitter: "https://twitter.com/postmalone",
-      facebook: "https://www.facebook.com/postmalone",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -9438,13 +11641,6 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "41aeb62f0=c2321-f23bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5ebb894ef9fa437b0389c5567cc",
-    gallery_img_1: "https://pbs.twimg.com/media/FdIhyKfWYAUvVfo?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/Fc5YuyNXEAEe_jb?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/Fcabj0FWIAAKT6-?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FcVS25OXEAAjjk2?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/EsshuO_W8AEl9xh?format=jpg&name=medium",
     canvas: "",
 
     album: "beerbongs & bentleys",
@@ -9454,12 +11650,7 @@ var allMusic = [
     id: "133",
     lyrics:{
     },
-    bio: "In 2016, he released the single Go Flex along with his official debut mixtape, August 26th. Months later, his first studio effort arrived. Stoney featured guests ranging from ",
-    social:{
-      instagram: "https://www.instagram.com/postmalone/",
-      twitter: "https://twitter.com/postmalone",
-      facebook: "https://www.facebook.com/postmalone",
-    },
+    
     user_playlist_1: "",
   },
   {
@@ -9478,13 +11669,6 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "41aeb62f0=c2321-f23bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5ebb894ef9fa437b0389c5567cc",
-    gallery_img_1: "https://pbs.twimg.com/media/FdIhyKfWYAUvVfo?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/Fc5YuyNXEAEe_jb?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/Fcabj0FWIAAKT6-?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FcVS25OXEAAjjk2?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/EsshuO_W8AEl9xh?format=jpg&name=medium",
     canvas: "",
 
     album: "beerbongs & bentleys",
@@ -9494,12 +11678,7 @@ var allMusic = [
     id: "134",
     lyrics:{
     },
-    bio: "In 2016, he released the single Go Flex along with his official debut mixtape, August 26th. Months later, his first studio effort arrived. Stoney featured guests ranging from ",
-    social:{
-      instagram: "https://www.instagram.com/postmalone/",
-      twitter: "https://twitter.com/postmalone",
-      facebook: "https://www.facebook.com/postmalone",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -9518,13 +11697,6 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "41aeb62f0=c2321-f23bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5ebb894ef9fa437b0389c5567cc",
-    gallery_img_1: "https://pbs.twimg.com/media/FdIhyKfWYAUvVfo?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/Fc5YuyNXEAEe_jb?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/Fcabj0FWIAAKT6-?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FcVS25OXEAAjjk2?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/EsshuO_W8AEl9xh?format=jpg&name=medium",
     canvas: "",
 
     album: "beerbongs & bentleys",
@@ -9534,12 +11706,7 @@ var allMusic = [
     id: "135",
     lyrics:{
     },
-    bio: "In 2016, he released the single Go Flex along with his official debut mixtape, August 26th. Months later, his first studio effort arrived. Stoney featured guests ranging from ",
-    social:{
-      instagram: "https://www.instagram.com/postmalone/",
-      twitter: "https://twitter.com/postmalone",
-      facebook: "https://www.facebook.com/postmalone",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -9558,13 +11725,6 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "41aeb62f0=c2321-f23bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5ebb894ef9fa437b0389c5567cc",
-    gallery_img_1: "https://pbs.twimg.com/media/FdIhyKfWYAUvVfo?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/Fc5YuyNXEAEe_jb?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/Fcabj0FWIAAKT6-?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FcVS25OXEAAjjk2?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/EsshuO_W8AEl9xh?format=jpg&name=medium",
     canvas: "",
 
     album: "beerbongs & bentleys",
@@ -9574,12 +11734,7 @@ var allMusic = [
     id: "136",
     lyrics:{
     },
-    bio: "In 2016, he released the single Go Flex along with his official debut mixtape, August 26th. Months later, his first studio effort arrived. Stoney featured guests ranging from ",
-    social:{
-      instagram: "https://www.instagram.com/postmalone/",
-      twitter: "https://twitter.com/postmalone",
-      facebook: "https://www.facebook.com/postmalone",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -9598,13 +11753,6 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "41aeb62f0=c2321-f23bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5ebb894ef9fa437b0389c5567cc",
-    gallery_img_1: "https://pbs.twimg.com/media/FdIhyKfWYAUvVfo?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/Fc5YuyNXEAEe_jb?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/Fcabj0FWIAAKT6-?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FcVS25OXEAAjjk2?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/EsshuO_W8AEl9xh?format=jpg&name=medium",
     canvas: "",
 
     album: "beerbongs & bentleys",
@@ -9614,18 +11762,14 @@ var allMusic = [
     id: "137",
     lyrics:{
     },
-    bio: "In 2016, he released the single Go Flex along with his official debut mixtape, August 26th. Months later, his first studio effort arrived. Stoney featured guests ranging from ",
-    social:{
-      instagram: "https://www.instagram.com/postmalone/",
-      twitter: "https://twitter.com/postmalone",
-      facebook: "https://www.facebook.com/postmalone",
-    },
+
     user_playlist_1: "",
   },
   {
     name: "Ball For Me",
     artist: "Post Malone",
     colaboration: "Nicki Minaj",
+    colaboration_id: "25",
     artist_status: "none",
     language: "eng",
     country: "usa",
@@ -9638,13 +11782,6 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "41aeb62f0=c2321-f23bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5ebb894ef9fa437b0389c5567cc",
-    gallery_img_1: "https://pbs.twimg.com/media/FdIhyKfWYAUvVfo?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/Fc5YuyNXEAEe_jb?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/Fcabj0FWIAAKT6-?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FcVS25OXEAAjjk2?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/EsshuO_W8AEl9xh?format=jpg&name=medium",
     canvas: "",
 
     album: "beerbongs & bentleys",
@@ -9654,12 +11791,7 @@ var allMusic = [
     id: "138",
     lyrics:{
     },
-    bio: "In 2016, he released the single Go Flex along with his official debut mixtape, August 26th. Months later, his first studio effort arrived. Stoney featured guests ranging from ",
-    social:{
-      instagram: "https://www.instagram.com/postmalone/",
-      twitter: "https://twitter.com/postmalone",
-      facebook: "https://www.facebook.com/postmalone",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -9678,13 +11810,6 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "41aeb62f0=c2321-f23bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5ebb894ef9fa437b0389c5567cc",
-    gallery_img_1: "https://pbs.twimg.com/media/FdIhyKfWYAUvVfo?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/Fc5YuyNXEAEe_jb?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/Fcabj0FWIAAKT6-?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FcVS25OXEAAjjk2?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/EsshuO_W8AEl9xh?format=jpg&name=medium",
     canvas: "",
 
     album: "beerbongs & bentleys",
@@ -9694,12 +11819,7 @@ var allMusic = [
     id: "139",
     lyrics:{
     },
-    bio: "In 2016, he released the single Go Flex along with his official debut mixtape, August 26th. Months later, his first studio effort arrived. Stoney featured guests ranging from ",
-    social:{
-      instagram: "https://www.instagram.com/postmalone/",
-      twitter: "https://twitter.com/postmalone",
-      facebook: "https://www.facebook.com/postmalone",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -9718,13 +11838,6 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "41aeb62f0=c2321-f23bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5ebb894ef9fa437b0389c5567cc",
-    gallery_img_1: "https://pbs.twimg.com/media/FdIhyKfWYAUvVfo?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/Fc5YuyNXEAEe_jb?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/Fcabj0FWIAAKT6-?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FcVS25OXEAAjjk2?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/EsshuO_W8AEl9xh?format=jpg&name=medium",
     canvas: "",
 
     album: "beerbongs & bentleys",
@@ -9734,12 +11847,7 @@ var allMusic = [
     id: "140",
     lyrics:{
     },
-    bio: "In 2016, he released the single Go Flex along with his official debut mixtape, August 26th. Months later, his first studio effort arrived. Stoney featured guests ranging from ",
-    social:{
-      instagram: "https://www.instagram.com/postmalone/",
-      twitter: "https://twitter.com/postmalone",
-      facebook: "https://www.facebook.com/postmalone",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -9758,13 +11866,6 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "41aeb62f0=c2321-f23bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5ebb894ef9fa437b0389c5567cc",
-    gallery_img_1: "https://pbs.twimg.com/media/FdIhyKfWYAUvVfo?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/Fc5YuyNXEAEe_jb?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/Fcabj0FWIAAKT6-?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FcVS25OXEAAjjk2?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/EsshuO_W8AEl9xh?format=jpg&name=medium",
     canvas: "",
 
     album: "beerbongs & bentleys",
@@ -9774,12 +11875,7 @@ var allMusic = [
     id: "141",
     lyrics:{
     },
-    bio: "In 2016, he released the single Go Flex along with his official debut mixtape, August 26th. Months later, his first studio effort arrived. Stoney featured guests ranging from ",
-    social:{
-      instagram: "https://www.instagram.com/postmalone/",
-      twitter: "https://twitter.com/postmalone",
-      facebook: "https://www.facebook.com/postmalone",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -9798,13 +11894,6 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "41aeb62f0=c2321-f23bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5ebb894ef9fa437b0389c5567cc",
-    gallery_img_1: "https://pbs.twimg.com/media/FdIhyKfWYAUvVfo?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/Fc5YuyNXEAEe_jb?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/Fcabj0FWIAAKT6-?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FcVS25OXEAAjjk2?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/EsshuO_W8AEl9xh?format=jpg&name=medium",
     canvas: "",
 
     album: "beerbongs & bentleys",
@@ -9814,12 +11903,7 @@ var allMusic = [
     id: "142",
     lyrics:{
     },
-    bio: "In 2016, he released the single Go Flex along with his official debut mixtape, August 26th. Months later, his first studio effort arrived. Stoney featured guests ranging from ",
-    social:{
-      instagram: "https://www.instagram.com/postmalone/",
-      twitter: "https://twitter.com/postmalone",
-      facebook: "https://www.facebook.com/postmalone",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -9838,13 +11922,6 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "41aeb62f0=c2321-f23bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5ebb894ef9fa437b0389c5567cc",
-    gallery_img_1: "https://pbs.twimg.com/media/FdIhyKfWYAUvVfo?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/Fc5YuyNXEAEe_jb?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/Fcabj0FWIAAKT6-?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FcVS25OXEAAjjk2?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/EsshuO_W8AEl9xh?format=jpg&name=medium",
     canvas: "",
 
     album: "beerbongs & bentleys",
@@ -9878,13 +11955,6 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "41aeb62f0=c2321-f23bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5ebb894ef9fa437b0389c5567cc",
-    gallery_img_1: "https://pbs.twimg.com/media/FdIhyKfWYAUvVfo?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/Fc5YuyNXEAEe_jb?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/Fcabj0FWIAAKT6-?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FcVS25OXEAAjjk2?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/EsshuO_W8AEl9xh?format=jpg&name=medium",
     canvas: "",
 
     album: "beerbongs & bentleys",
@@ -9894,12 +11964,7 @@ var allMusic = [
     id: "144",
     lyrics:{
     },
-    bio: "In 2016, he released the single Go Flex along with his official debut mixtape, August 26th. Months later, his first studio effort arrived. Stoney featured guests ranging from ",
-    social:{
-      instagram: "https://www.instagram.com/postmalone/",
-      twitter: "https://twitter.com/postmalone",
-      facebook: "https://www.facebook.com/postmalone",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -9918,13 +11983,6 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "41aeb62f0=c2321-f23bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5ebb894ef9fa437b0389c5567cc",
-    gallery_img_1: "https://pbs.twimg.com/media/FdIhyKfWYAUvVfo?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/Fc5YuyNXEAEe_jb?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/Fcabj0FWIAAKT6-?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FcVS25OXEAAjjk2?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/EsshuO_W8AEl9xh?format=jpg&name=medium",
     canvas: "",
 
     album: "beerbongs & bentleys",
@@ -9958,13 +12016,6 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "41aeb62f0=c2321-f23bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5ebb894ef9fa437b0389c5567cc",
-    gallery_img_1: "https://pbs.twimg.com/media/FdIhyKfWYAUvVfo?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/Fc5YuyNXEAEe_jb?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/Fcabj0FWIAAKT6-?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FcVS25OXEAAjjk2?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/EsshuO_W8AEl9xh?format=jpg&name=medium",
     canvas: "",
 
     album: "beerbongs & bentleys",
@@ -9973,12 +12024,6 @@ var allMusic = [
     album_status: "false",
     id: "146",
     lyrics:{
-    },
-    bio: "In 2016, he released the single Go Flex along with his official debut mixtape, August 26th. Months later, his first studio effort arrived. Stoney featured guests ranging from ",
-    social:{
-      instagram: "https://www.instagram.com/postmalone/",
-      twitter: "https://twitter.com/postmalone",
-      facebook: "https://www.facebook.com/postmalone",
     },
     user_playlist_1: "",
   },
@@ -10016,8 +12061,290 @@ var allMusic = [
     album_premiere: "2019",
     album_status: "false",
     id: "147",
+
     lyrics:{
+      ve1:{
+        ls: "Yelling at the sky",
+        stamp: "12",
+      },
+      ve2:{
+        ls: "Screaming at the world",
+        stamp: "15",
+      },
+      ve3:{
+        ls: "Baby, why'd you go away?",
+        stamp: "19",
+      },
+      ve4:{
+        ls: "I'm still your girl",
+        stamp: "21",
+      },
+      ve5:{
+        ls: "Holding on too tight",
+        stamp: "25",
+      },
+      ve6:{
+        ls: "Head up in the clouds",
+        stamp: "28",
+      },
+      ve7:{
+        ls: "Heaven only knows",
+        stamp: "31",
+      },
+      ve8:{
+        ls: "Where you are now",
+        stamp: "34",
+      },
+      ve9:{
+        ls: "How do I love",
+        stamp: "38",
+      },
+      ve10:{
+        ls: "How do I love again?",
+        stamp: "40",
+      },
+      ve11:{
+        ls: "How do I trust",
+        stamp: "45",
+      },
+      ve12:{
+        ls: "How do I trust again?",
+        stamp: "47",
+      },
+      ve13:{
+        ls: "I stay up all night",
+        stamp: "50",
+      },
+      ve14:{
+        ls: "Tell myself I'm alright",
+        stamp: "52",
+      },
+      ve15:{
+        ls: "Baby, you're just harder to see than most",
+        stamp: "56",
+      },
+      ve16:{
+        ls: "I put the record on",
+        stamp: "62",
+      },
+      ve17:{
+        ls: "Wait 'til II hear our song",
+        stamp: "65",
+      },
+      ve18:{
+        ls: "Every night I'm dancing with your ghost",
+        stamp: "68",
+      },
+      ve19:{
+        ls: "Every night I'm dancing with your ghost",
+        stamp: "74",
+      },
+      ve20:{
+        ls: "Never got a chance",
+        stamp: "82",
+      },
+      ve21:{
+        ls: "To say a last goodbye",
+        stamp: "86",
+      },
+      ve22:{
+        ls: "I gotta move on",
+        stamp: "89",
+      },
+      ve23:{
+        ls: "But it hurts to try",
+        stamp: "92",
+      },
+      ve24:{
+        ls: "How do I love",
+        stamp: "96",
+      },
+      ve25:{
+        ls: "How do I love again?",
+        stamp: "98",
+      },
+      ve26:{
+        ls: "How do I trust",
+        stamp: "102",
+      },
+      ve27:{
+        ls: "How do I trust again?",
+        stamp: "104",
+      },
+      ve28:{
+        ls: "I stay up all night",
+        stamp: "107",
+      },
+      ve29:{
+        ls: "Tell myself I'm alright",
+        stamp: "110",
+      },
+      ve30:{
+        ls: "Baby, you're just harder to see than most",
+        stamp: "113",
+      },
+      ve31:{
+        ls: "I put the record on",
+        stamp: "120",
+      },
+      ve32:{
+        ls: "Wait 'til II hear our song",
+        stamp: "123",
+      },
+      ve33:{
+        ls: "Every night I'm dancing with your ghost",
+        stamp: "126",
+      },
+      ve34:{
+        ls: "Every night I'm dancing with your ghost",
+        stamp: "132",
+      },
+      ve35:{
+        ls: "How do I love",
+        stamp: "141",
+      },
+      ve36:{
+        ls: "How do I love again?",
+        stamp: "143",
+      },
+      ve37:{
+        ls: "How do I trust",
+        stamp: "147",
+      },
+      ve38:{
+        ls: "How do I trust again?",
+        stamp: "149",
+      },
+      ve39:{
+        ls: "I stay up all night",
+        stamp: "153",
+      },
+      ve40:{
+        ls: "Tell myself I'm alright",
+        stamp: "155",
+      },
+      ve41:{
+        ls: "Baby, you're just harder to see than most",
+        stamp: "158",
+      },
+      ve42:{
+        ls: "I put the record on",
+        stamp: "165",
+      },
+      ve43:{
+        ls: "Wait 'til II hear our song",
+        stamp: "167",
+      },
+      ve44:{
+        ls: "Every night I'm dancing with your ghost",
+        stamp: "170",
+      },
+      ve45:{
+        ls: "Every night I'm dancing with your ghost",
+        stamp: "177",
+      },
+      ve46:{
+        ls: "Every night I'm dancing with your ghost",
+        stamp: "184",
+      },
+      ve47:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve48:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve49:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve50:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve51:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve52:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve53:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve54:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve55:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve56:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve57:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve58:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve59:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve60:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve61:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve62:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve63:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve64:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve65:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve66:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve67:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve68:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve69:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve70:{
+        ls: "",
+        stamp: "3600",
+      },
     },
+
     bio: "life is a scam<3",
     social:{
       instagram: "https://www.instagram.com/sadgirlsloan/",
@@ -10085,47 +12412,294 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "ab676186000010166e26b86a9f8a8d78b14c2dac",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd4d771ca23a2fb9aff28ce6c2f",
-    gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd452acf9f68db6d08565365d67",
-    gallery_img_2: "https://pbs.twimg.com/media/Fh5QoQMXgAM7kGG?format=jpg&name=medium",
-    gallery_img_3: "https://pbs.twimg.com/media/FX_2TZOXEAMbxRc?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FGGp0QkUcAM5qNl?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FiFhh1QXgAcWXP9?format=jpg&name=4096x4096",
-    gallery_img_6: "https://pbs.twimg.com/media/FiqJFAkXgAEVOuO?format=jpg&name=900x900",
-    gallery_img_7: "https://pbs.twimg.com/media/FiqJFAiXoAEi4WV?format=jpg&name=medium",
-    gallery_img_8: "https://pbs.twimg.com/media/FiC24RvXkAA5fZ8?format=jpg&name=900x900",
-    gallery_img_9: "https://pbs.twimg.com/media/FirCZtAWIAAYuSY?format=jpg&name=360x360",
-    gallery_img_10: "https://pbs.twimg.com/media/FUmiqOPWIAA6or1?format=jpg&name=900x900",
     canvas: "https://video.twimg.com/ext_tw_video/1567547044444635139/pu/vid/1238x720/3vQZiZj5L_vA4fcD.mp4?tag=12",
     
-    album: "Rare",
+    album: "Rare (Deluxe)",
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "149",
     lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
+      ve1:{
+        ls: "You were running through me like water",
+        stamp: "6",
+      },
+      ve2:{
+        ls: "Now the feeling's leaving me dry",
+        stamp: "10.5",
+      },
+      ve3:{
+        ls: "These days we couldn't be further",
+        stamp: "13.5",
+      },
+      ve4:{
+        ls: "So how's it fell to be on the other side?",
+        stamp: "16",
+      },
+      ve5:{
+        ls: "So many wasted (wasted)",
+        stamp: "19",
+      },
+      ve6:{
+        ls: "Nights with (nights with) you (you)",
+        stamp: "22",
+      },
+      ve7:{
+        ls: "I still could taste it (taste it)",
+        stamp: "25.5",
+      },
+      ve8:{
+        ls: "I hate it, wish I could take it back, 'cause",
+        stamp: "28",
+      },
+      ve9:{
+        ls: "We used to be close, but people can go",
+        stamp: "32",
+      },
+      ve10:{
+        ls: "From people you know to people you don't",
+        stamp: "35.5",
+      },
+      ve11:{
+        ls: "And what hurts the most is people can go",
+        stamp: "39",
+      },
+      ve12:{
+        ls: "From people you know to people you don't",
+        stamp: "42",
+      },
+      ve13:{
+        ls: "We used to be close, but people can go",
+        stamp: "45",
+      },
+      ve14:{
+        ls: "From people you know to people you don't",
+        stamp: "48",
+      },
+      ve15:{
+        ls: "And what hurts the most is people can go",
+        stamp: "51.5",
+      },
+      ve16:{
+        ls: "From people you know to people you don't",
+        stamp: "54.5",
+      },
+      ve17:{
+        ls: "When it was good, we were on fire",
+        stamp: "58",
+      },
+      ve18:{
+        ls: "Now I'm breathing asges and dust",
+        stamp: "62.5",
+      },
+      ve19:{
+        ls: "I always wanna get higher",
+        stamp: "64",
+      },
+      ve20:{
+        ls: "I never know when enough is enough",
+        stamp: "67.5",
+      },
+      ve21:{
+        ls: "So many wasted (wasted)",
+        stamp: "71",
+      },
+      ve22:{
+        ls: "Nights with (nights with) you (you)",
+        stamp: "73",
+      },
+      ve23:{
+        ls: "I still could taste it (taste it)",
+        stamp: "77",
+      },
+      ve24:{
+        ls: "I hate it, wish I could take it back, 'cause",
+        stamp: "79",
+      },
+      ve25:{
+        ls: "We used to be close, but people can go",
+        stamp: "83",
+      },
+      ve26:{
+        ls: "From people you know to people you don't",
+        stamp: "86.5",
+      },
+      ve27:{
+        ls: "And what hurts the most is people can go",
+        stamp: "89",
+      },
+      ve28:{
+        ls: "From people you know to people you don't",
+        stamp: "92.5",
+      },
+      ve29:{
+        ls: "We used to be close, but people can go",
+        stamp: "96.5",
+      },
+      ve30:{
+        ls: "From people you know to people you don't",
+        stamp: "100",
+      },
+      ve31:{
+        ls: "And what hurts the most is people can go",
+        stamp: "102.5",
+      },
+      ve32:{
+        ls: "From people you know to people you don't",
+        stamp: "106",
+      },
+      ve33:{
+        ls: "(People you know to people you don't)",
+        stamp: "114",
+      },
+      ve34:{
+        ls: "(People you know to people you don't)",
+        stamp: "120",
+      },
+      ve35:{
+        ls: "From people you know to people you don't",
+        stamp: "125",
+      },
+      ve36:{
+        ls: "From people you know to people you don't",
+        stamp: "131",
+      },
+      ve37:{
+        ls: "We used to be close, but people can go",
+        stamp: "134",
+      },
+      ve38:{
+        ls: "From people you know to people you don't",
+        stamp: "137.5",
+      },
+      ve39:{
+        ls: "And what hurts the most is people can go",
+        stamp: "141",
+      },
+      ve40:{
+        ls: "From people you know to people you don't",
+        stamp: "144",
+      },
+      ve41:{
+        ls: "We used to be close, but people can go",
+        stamp: "147.5",
+      },
+      ve42:{
+        ls: "From people you know to people you don't",
+        stamp: "150.5",
+      },
+      ve43:{
+        ls: "And what hurts the most is people can go",
+        stamp: "154",
+      },
+      ve44:{
+        ls: "From people you know to people you don't",
+        stamp: "163.5",
+      },
+      ve45:{
+        ls: "From people you know to people you don't",
+        stamp: "170",
+      },
+      ve46:{
+        ls: "From people you know to people you don't",
+        stamp: "176",
+      },
+      ve47:{
+        ls: "From people you know to people you don't",
+        stamp: "182",
+      },
+      ve48:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve49:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve50:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve51:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve52:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve53:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve54:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve55:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve56:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve57:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve58:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve59:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve60:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve61:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve62:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve63:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve64:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve65:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve66:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve67:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve68:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve69:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve70:{
+        ls: "",
+        stamp: "3600",
+      },
     },
-    bio: "Selena Gomez is a multi-talented performer with featured roles on the screen, both small and big, and a musical career that reached the summit of the charts from the very beginning and stayed planted there for many years",
-    social:{
-      instagram: "https://www.instagram.com/selenagomez/",
-      twitter: "https://twitter.com/selenagomez",
-      facebook: "https://www.facebook.com/Selena",
-    },
-    user_playlist_1: "",
   },
   {
     name: "Rare",
@@ -10143,21 +12717,9 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "ab676186000010166e26b86a9f8a8d78b14c2dac",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd4d771ca23a2fb9aff28ce6c2f",
-    gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd452acf9f68db6d08565365d67",
-    gallery_img_2: "https://pbs.twimg.com/media/Fh5QoQMXgAM7kGG?format=jpg&name=medium",
-    gallery_img_3: "https://pbs.twimg.com/media/FX_2TZOXEAMbxRc?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FGGp0QkUcAM5qNl?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FiFhh1QXgAcWXP9?format=jpg&name=4096x4096",
-    gallery_img_6: "https://pbs.twimg.com/media/FiqJFAkXgAEVOuO?format=jpg&name=900x900",
-    gallery_img_7: "https://pbs.twimg.com/media/FiqJFAiXoAEi4WV?format=jpg&name=medium",
-    gallery_img_8: "https://pbs.twimg.com/media/FiC24RvXkAA5fZ8?format=jpg&name=900x900",
-    gallery_img_9: "https://pbs.twimg.com/media/FirCZtAWIAAYuSY?format=jpg&name=360x360",
-    gallery_img_10: "https://pbs.twimg.com/media/FUmiqOPWIAA6or1?format=jpg&name=900x900",
     canvas: "https://video.twimg.com/ext_tw_video/1567547044444635139/pu/vid/1238x720/3vQZiZj5L_vA4fcD.mp4?tag=12",
     
-    album: "Rare",
+    album: "Rare (Deluxe)",
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "150",
@@ -10177,13 +12739,6 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Selena Gomez is a multi-talented performer with featured roles on the screen, both small and big, and a musical career that reached the summit of the charts from the very beginning and stayed planted there for many years",
-    social:{
-      instagram: "https://www.instagram.com/selenagomez/",
-      twitter: "https://twitter.com/selenagomez",
-      facebook: "https://www.facebook.com/Selena",
-    },
-    user_playlist_1: "",
   },
   {
     name: "Dance Again",
@@ -10201,21 +12756,9 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "ab676186000010166e26b86a9f8a8d78b14c2dac",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd4d771ca23a2fb9aff28ce6c2f",
-    gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd452acf9f68db6d08565365d67",
-    gallery_img_2: "https://pbs.twimg.com/media/Fh5QoQMXgAM7kGG?format=jpg&name=medium",
-    gallery_img_3: "https://pbs.twimg.com/media/FX_2TZOXEAMbxRc?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FGGp0QkUcAM5qNl?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FiFhh1QXgAcWXP9?format=jpg&name=4096x4096",
-    gallery_img_6: "https://pbs.twimg.com/media/FiqJFAkXgAEVOuO?format=jpg&name=900x900",
-    gallery_img_7: "https://pbs.twimg.com/media/FiqJFAiXoAEi4WV?format=jpg&name=medium",
-    gallery_img_8: "https://pbs.twimg.com/media/FiC24RvXkAA5fZ8?format=jpg&name=900x900",
-    gallery_img_9: "https://pbs.twimg.com/media/FirCZtAWIAAYuSY?format=jpg&name=360x360",
-    gallery_img_10: "https://pbs.twimg.com/media/FUmiqOPWIAA6or1?format=jpg&name=900x900",
     canvas: "https://video.twimg.com/ext_tw_video/1567547044444635139/pu/vid/1238x720/3vQZiZj5L_vA4fcD.mp4?tag=12",
     
-    album: "Rare",
+    album: "Rare (Deluxe)",
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "151",
@@ -10235,13 +12778,6 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Selena Gomez is a multi-talented performer with featured roles on the screen, both small and big, and a musical career that reached the summit of the charts from the very beginning and stayed planted there for many years",
-    social:{
-      instagram: "https://www.instagram.com/selenagomez/",
-      twitter: "https://twitter.com/selenagomez",
-      facebook: "https://www.facebook.com/Selena",
-    },
-    user_playlist_1: "",
   },
   {
     name: "Look At Her Now",
@@ -10259,21 +12795,9 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "ab676186000010166e26b86a9f8a8d78b14c2dac",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd4d771ca23a2fb9aff28ce6c2f",
-    gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd452acf9f68db6d08565365d67",
-    gallery_img_2: "https://pbs.twimg.com/media/Fh5QoQMXgAM7kGG?format=jpg&name=medium",
-    gallery_img_3: "https://pbs.twimg.com/media/FX_2TZOXEAMbxRc?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FGGp0QkUcAM5qNl?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FiFhh1QXgAcWXP9?format=jpg&name=4096x4096",
-    gallery_img_6: "https://pbs.twimg.com/media/FiqJFAkXgAEVOuO?format=jpg&name=900x900",
-    gallery_img_7: "https://pbs.twimg.com/media/FiqJFAiXoAEi4WV?format=jpg&name=medium",
-    gallery_img_8: "https://pbs.twimg.com/media/FiC24RvXkAA5fZ8?format=jpg&name=900x900",
-    gallery_img_9: "https://pbs.twimg.com/media/FirCZtAWIAAYuSY?format=jpg&name=360x360",
-    gallery_img_10: "https://pbs.twimg.com/media/FUmiqOPWIAA6or1?format=jpg&name=900x900",
     canvas: "https://video.twimg.com/ext_tw_video/1567547044444635139/pu/vid/1238x720/3vQZiZj5L_vA4fcD.mp4?tag=12",
     
-    album: "Rare",
+    album: "Rare (Deluxe)",
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "152",
@@ -10293,13 +12817,6 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Selena Gomez is a multi-talented performer with featured roles on the screen, both small and big, and a musical career that reached the summit of the charts from the very beginning and stayed planted there for many years",
-    social:{
-      instagram: "https://www.instagram.com/selenagomez/",
-      twitter: "https://twitter.com/selenagomez",
-      facebook: "https://www.facebook.com/Selena",
-    },
-    user_playlist_1: "",
   },
   {
     name: "Lose You To Love Me",
@@ -10317,21 +12834,9 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "ab676186000010166e26b86a9f8a8d78b14c2dac",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd4d771ca23a2fb9aff28ce6c2f",
-    gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd452acf9f68db6d08565365d67",
-    gallery_img_2: "https://pbs.twimg.com/media/Fh5QoQMXgAM7kGG?format=jpg&name=medium",
-    gallery_img_3: "https://pbs.twimg.com/media/FX_2TZOXEAMbxRc?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FGGp0QkUcAM5qNl?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FiFhh1QXgAcWXP9?format=jpg&name=4096x4096",
-    gallery_img_6: "https://pbs.twimg.com/media/FiqJFAkXgAEVOuO?format=jpg&name=900x900",
-    gallery_img_7: "https://pbs.twimg.com/media/FiqJFAiXoAEi4WV?format=jpg&name=medium",
-    gallery_img_8: "https://pbs.twimg.com/media/FiC24RvXkAA5fZ8?format=jpg&name=900x900",
-    gallery_img_9: "https://pbs.twimg.com/media/FirCZtAWIAAYuSY?format=jpg&name=360x360",
-    gallery_img_10: "https://pbs.twimg.com/media/FUmiqOPWIAA6or1?format=jpg&name=900x900",
     canvas: "https://video.twimg.com/ext_tw_video/1567547044444635139/pu/vid/1238x720/3vQZiZj5L_vA4fcD.mp4?tag=12",
     
-    album: "Rare",
+    album: "Rare (Deluxe)",
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "153",
@@ -10351,13 +12856,6 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Selena Gomez is a multi-talented performer with featured roles on the screen, both small and big, and a musical career that reached the summit of the charts from the very beginning and stayed planted there for many years",
-    social:{
-      instagram: "https://www.instagram.com/selenagomez/",
-      twitter: "https://twitter.com/selenagomez",
-      facebook: "https://www.facebook.com/Selena",
-    },
-    user_playlist_1: "",
   },
   {
     name: "Ring",
@@ -10375,21 +12873,9 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "ab676186000010166e26b86a9f8a8d78b14c2dac",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd4d771ca23a2fb9aff28ce6c2f",
-    gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd452acf9f68db6d08565365d67",
-    gallery_img_2: "https://pbs.twimg.com/media/Fh5QoQMXgAM7kGG?format=jpg&name=medium",
-    gallery_img_3: "https://pbs.twimg.com/media/FX_2TZOXEAMbxRc?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FGGp0QkUcAM5qNl?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FiFhh1QXgAcWXP9?format=jpg&name=4096x4096",
-    gallery_img_6: "https://pbs.twimg.com/media/FiqJFAkXgAEVOuO?format=jpg&name=900x900",
-    gallery_img_7: "https://pbs.twimg.com/media/FiqJFAiXoAEi4WV?format=jpg&name=medium",
-    gallery_img_8: "https://pbs.twimg.com/media/FiC24RvXkAA5fZ8?format=jpg&name=900x900",
-    gallery_img_9: "https://pbs.twimg.com/media/FirCZtAWIAAYuSY?format=jpg&name=360x360",
-    gallery_img_10: "https://pbs.twimg.com/media/FUmiqOPWIAA6or1?format=jpg&name=900x900",
     canvas: "https://video.twimg.com/ext_tw_video/1567547044444635139/pu/vid/1238x720/3vQZiZj5L_vA4fcD.mp4?tag=12",
     
-    album: "Rare",
+    album: "Rare (Deluxe)",
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "154",
@@ -10409,13 +12895,6 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Selena Gomez is a multi-talented performer with featured roles on the screen, both small and big, and a musical career that reached the summit of the charts from the very beginning and stayed planted there for many years",
-    social:{
-      instagram: "https://www.instagram.com/selenagomez/",
-      twitter: "https://twitter.com/selenagomez",
-      facebook: "https://www.facebook.com/Selena",
-    },
-    user_playlist_1: "",
   },
   {
     name: "Vulnerable",
@@ -10433,21 +12912,10 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "ab676186000010166e26b86a9f8a8d78b14c2dac",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd4d771ca23a2fb9aff28ce6c2f",
-    gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd452acf9f68db6d08565365d67",
-    gallery_img_2: "https://pbs.twimg.com/media/Fh5QoQMXgAM7kGG?format=jpg&name=medium",
-    gallery_img_3: "https://pbs.twimg.com/media/FX_2TZOXEAMbxRc?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FGGp0QkUcAM5qNl?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FiFhh1QXgAcWXP9?format=jpg&name=4096x4096",
-    gallery_img_6: "https://pbs.twimg.com/media/FiqJFAkXgAEVOuO?format=jpg&name=900x900",
-    gallery_img_7: "https://pbs.twimg.com/media/FiqJFAiXoAEi4WV?format=jpg&name=medium",
-    gallery_img_8: "https://pbs.twimg.com/media/FiC24RvXkAA5fZ8?format=jpg&name=900x900",
-    gallery_img_9: "https://pbs.twimg.com/media/FirCZtAWIAAYuSY?format=jpg&name=360x360",
     gallery_img_10: "https://pbs.twimg.com/media/FUmiqOPWIAA6or1?format=jpg&name=900x900",
     canvas: "https://video.twimg.com/ext_tw_video/1567547044444635139/pu/vid/1238x720/3vQZiZj5L_vA4fcD.mp4?tag=12",
     
-    album: "Rare",
+    album: "Rare (Deluxe)",
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "155",
@@ -10467,13 +12935,6 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Selena Gomez is a multi-talented performer with featured roles on the screen, both small and big, and a musical career that reached the summit of the charts from the very beginning and stayed planted there for many years",
-    social:{
-      instagram: "https://www.instagram.com/selenagomez/",
-      twitter: "https://twitter.com/selenagomez",
-      facebook: "https://www.facebook.com/Selena",
-    },
-    user_playlist_1: "",
   },
   {
     name: "Let Me Get Me",
@@ -10491,21 +12952,9 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "ab676186000010166e26b86a9f8a8d78b14c2dac",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd4d771ca23a2fb9aff28ce6c2f",
-    gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd452acf9f68db6d08565365d67",
-    gallery_img_2: "https://pbs.twimg.com/media/Fh5QoQMXgAM7kGG?format=jpg&name=medium",
-    gallery_img_3: "https://pbs.twimg.com/media/FX_2TZOXEAMbxRc?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FGGp0QkUcAM5qNl?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FiFhh1QXgAcWXP9?format=jpg&name=4096x4096",
-    gallery_img_6: "https://pbs.twimg.com/media/FiqJFAkXgAEVOuO?format=jpg&name=900x900",
-    gallery_img_7: "https://pbs.twimg.com/media/FiqJFAiXoAEi4WV?format=jpg&name=medium",
-    gallery_img_8: "https://pbs.twimg.com/media/FiC24RvXkAA5fZ8?format=jpg&name=900x900",
-    gallery_img_9: "https://pbs.twimg.com/media/FirCZtAWIAAYuSY?format=jpg&name=360x360",
-    gallery_img_10: "https://pbs.twimg.com/media/FUmiqOPWIAA6or1?format=jpg&name=900x900",
     canvas: "https://video.twimg.com/ext_tw_video/1567547044444635139/pu/vid/1238x720/3vQZiZj5L_vA4fcD.mp4?tag=12",
     
-    album: "Rare",
+    album: "Rare (Deluxe)",
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "156",
@@ -10525,13 +12974,6 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Selena Gomez is a multi-talented performer with featured roles on the screen, both small and big, and a musical career that reached the summit of the charts from the very beginning and stayed planted there for many years",
-    social:{
-      instagram: "https://www.instagram.com/selenagomez/",
-      twitter: "https://twitter.com/selenagomez",
-      facebook: "https://www.facebook.com/Selena",
-    },
-    user_playlist_1: "",
   },
   {
     name: "Crowded Room",
@@ -10549,21 +12991,9 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "ab676186000010166e26b86a9f8a8d78b14c2dac",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd4d771ca23a2fb9aff28ce6c2f",
-    gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd452acf9f68db6d08565365d67",
-    gallery_img_2: "https://pbs.twimg.com/media/Fh5QoQMXgAM7kGG?format=jpg&name=medium",
-    gallery_img_3: "https://pbs.twimg.com/media/FX_2TZOXEAMbxRc?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FGGp0QkUcAM5qNl?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FiFhh1QXgAcWXP9?format=jpg&name=4096x4096",
-    gallery_img_6: "https://pbs.twimg.com/media/FiqJFAkXgAEVOuO?format=jpg&name=900x900",
-    gallery_img_7: "https://pbs.twimg.com/media/FiqJFAiXoAEi4WV?format=jpg&name=medium",
-    gallery_img_8: "https://pbs.twimg.com/media/FiC24RvXkAA5fZ8?format=jpg&name=900x900",
-    gallery_img_9: "https://pbs.twimg.com/media/FirCZtAWIAAYuSY?format=jpg&name=360x360",
-    gallery_img_10: "https://pbs.twimg.com/media/FUmiqOPWIAA6or1?format=jpg&name=900x900",
     canvas: "https://video.twimg.com/ext_tw_video/1567547044444635139/pu/vid/1238x720/3vQZiZj5L_vA4fcD.mp4?tag=12",
     
-    album: "Rare",
+    album: "Rare (Deluxe)",
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "157",
@@ -10583,13 +13013,6 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Selena Gomez is a multi-talented performer with featured roles on the screen, both small and big, and a musical career that reached the summit of the charts from the very beginning and stayed planted there for many years",
-    social:{
-      instagram: "https://www.instagram.com/selenagomez/",
-      twitter: "https://twitter.com/selenagomez",
-      facebook: "https://www.facebook.com/Selena",
-    },
-    user_playlist_1: "",
   },
   {
     name: "Kinda Crazy",
@@ -10607,21 +13030,9 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "ab676186000010166e26b86a9f8a8d78b14c2dac",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd4d771ca23a2fb9aff28ce6c2f",
-    gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd452acf9f68db6d08565365d67",
-    gallery_img_2: "https://pbs.twimg.com/media/Fh5QoQMXgAM7kGG?format=jpg&name=medium",
-    gallery_img_3: "https://pbs.twimg.com/media/FX_2TZOXEAMbxRc?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FGGp0QkUcAM5qNl?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FiFhh1QXgAcWXP9?format=jpg&name=4096x4096",
-    gallery_img_6: "https://pbs.twimg.com/media/FiqJFAkXgAEVOuO?format=jpg&name=900x900",
-    gallery_img_7: "https://pbs.twimg.com/media/FiqJFAiXoAEi4WV?format=jpg&name=medium",
-    gallery_img_8: "https://pbs.twimg.com/media/FiC24RvXkAA5fZ8?format=jpg&name=900x900",
-    gallery_img_9: "https://pbs.twimg.com/media/FirCZtAWIAAYuSY?format=jpg&name=360x360",
-    gallery_img_10: "https://pbs.twimg.com/media/FUmiqOPWIAA6or1?format=jpg&name=900x900",
     canvas: "https://video.twimg.com/ext_tw_video/1567547044444635139/pu/vid/1238x720/3vQZiZj5L_vA4fcD.mp4?tag=12",
     
-    album: "Rare",
+    album: "Rare (Deluxe)",
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "158",
@@ -10641,13 +13052,6 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Selena Gomez is a multi-talented performer with featured roles on the screen, both small and big, and a musical career that reached the summit of the charts from the very beginning and stayed planted there for many years",
-    social:{
-      instagram: "https://www.instagram.com/selenagomez/",
-      twitter: "https://twitter.com/selenagomez",
-      facebook: "https://www.facebook.com/Selena",
-    },
-    user_playlist_1: "",
   },
   {
     name: "Fun",
@@ -10665,21 +13069,9 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "ab676186000010166e26b86a9f8a8d78b14c2dac",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd4d771ca23a2fb9aff28ce6c2f",
-    gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd452acf9f68db6d08565365d67",
-    gallery_img_2: "https://pbs.twimg.com/media/Fh5QoQMXgAM7kGG?format=jpg&name=medium",
-    gallery_img_3: "https://pbs.twimg.com/media/FX_2TZOXEAMbxRc?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FGGp0QkUcAM5qNl?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FiFhh1QXgAcWXP9?format=jpg&name=4096x4096",
-    gallery_img_6: "https://pbs.twimg.com/media/FiqJFAkXgAEVOuO?format=jpg&name=900x900",
-    gallery_img_7: "https://pbs.twimg.com/media/FiqJFAiXoAEi4WV?format=jpg&name=medium",
-    gallery_img_8: "https://pbs.twimg.com/media/FiC24RvXkAA5fZ8?format=jpg&name=900x900",
-    gallery_img_9: "https://pbs.twimg.com/media/FirCZtAWIAAYuSY?format=jpg&name=360x360",
-    gallery_img_10: "https://pbs.twimg.com/media/FUmiqOPWIAA6or1?format=jpg&name=900x900",
     canvas: "https://video.twimg.com/ext_tw_video/1567547044444635139/pu/vid/1238x720/3vQZiZj5L_vA4fcD.mp4?tag=12",
     
-    album: "Rare",
+    album: "Rare (Deluxe)",
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "159",
@@ -10699,13 +13091,6 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Selena Gomez is a multi-talented performer with featured roles on the screen, both small and big, and a musical career that reached the summit of the charts from the very beginning and stayed planted there for many years",
-    social:{
-      instagram: "https://www.instagram.com/selenagomez/",
-      twitter: "https://twitter.com/selenagomez",
-      facebook: "https://www.facebook.com/Selena",
-    },
-    user_playlist_1: "",
   },
   {
     name: "Cut You Off",
@@ -10723,21 +13108,9 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "ab676186000010166e26b86a9f8a8d78b14c2dac",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd4d771ca23a2fb9aff28ce6c2f",
-    gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd452acf9f68db6d08565365d67",
-    gallery_img_2: "https://pbs.twimg.com/media/Fh5QoQMXgAM7kGG?format=jpg&name=medium",
-    gallery_img_3: "https://pbs.twimg.com/media/FX_2TZOXEAMbxRc?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FGGp0QkUcAM5qNl?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FiFhh1QXgAcWXP9?format=jpg&name=4096x4096",
-    gallery_img_6: "https://pbs.twimg.com/media/FiqJFAkXgAEVOuO?format=jpg&name=900x900",
-    gallery_img_7: "https://pbs.twimg.com/media/FiqJFAiXoAEi4WV?format=jpg&name=medium",
-    gallery_img_8: "https://pbs.twimg.com/media/FiC24RvXkAA5fZ8?format=jpg&name=900x900",
-    gallery_img_9: "https://pbs.twimg.com/media/FirCZtAWIAAYuSY?format=jpg&name=360x360",
-    gallery_img_10: "https://pbs.twimg.com/media/FUmiqOPWIAA6or1?format=jpg&name=900x900",
     canvas: "https://video.twimg.com/ext_tw_video/1567547044444635139/pu/vid/1238x720/3vQZiZj5L_vA4fcD.mp4?tag=12",
     
-    album: "Rare",
+    album: "Rare (Deluxe)",
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "160",
@@ -10757,13 +13130,6 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Selena Gomez is a multi-talented performer with featured roles on the screen, both small and big, and a musical career that reached the summit of the charts from the very beginning and stayed planted there for many years",
-    social:{
-      instagram: "https://www.instagram.com/selenagomez/",
-      twitter: "https://twitter.com/selenagomez",
-      facebook: "https://www.facebook.com/Selena",
-    },
-    user_playlist_1: "",
   },
   {
     name: "A Sweeter Place",
@@ -10781,21 +13147,9 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "ab676186000010166e26b86a9f8a8d78b14c2dac",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd4d771ca23a2fb9aff28ce6c2f",
-    gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd452acf9f68db6d08565365d67",
-    gallery_img_2: "https://pbs.twimg.com/media/Fh5QoQMXgAM7kGG?format=jpg&name=medium",
-    gallery_img_3: "https://pbs.twimg.com/media/FX_2TZOXEAMbxRc?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FGGp0QkUcAM5qNl?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FiFhh1QXgAcWXP9?format=jpg&name=4096x4096",
-    gallery_img_6: "https://pbs.twimg.com/media/FiqJFAkXgAEVOuO?format=jpg&name=900x900",
-    gallery_img_7: "https://pbs.twimg.com/media/FiqJFAiXoAEi4WV?format=jpg&name=medium",
-    gallery_img_8: "https://pbs.twimg.com/media/FiC24RvXkAA5fZ8?format=jpg&name=900x900",
-    gallery_img_9: "https://pbs.twimg.com/media/FirCZtAWIAAYuSY?format=jpg&name=360x360",
-    gallery_img_10: "https://pbs.twimg.com/media/FUmiqOPWIAA6or1?format=jpg&name=900x900",
     canvas: "https://video.twimg.com/ext_tw_video/1567547044444635139/pu/vid/1238x720/3vQZiZj5L_vA4fcD.mp4?tag=12",
     
-    album: "Rare",
+    album: "Rare (Deluxe)",
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "161",
@@ -10815,13 +13169,6 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Selena Gomez is a multi-talented performer with featured roles on the screen, both small and big, and a musical career that reached the summit of the charts from the very beginning and stayed planted there for many years",
-    social:{
-      instagram: "https://www.instagram.com/selenagomez/",
-      twitter: "https://twitter.com/selenagomez",
-      facebook: "https://www.facebook.com/Selena",
-    },
-    user_playlist_1: "",
   },
   {
     name: "Too Sad To Cry",
@@ -10838,14 +13185,6 @@ var allMusic = [
 
     style: "Chill",
     status: "nostatus",
-    tag: "Popular",
-    avatar: "ab676186000sashasloan0101624030191c180af23b8a75b0c",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd4e3780440f46324e8920bbec8",
-    gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd419d7be9c118352443f94c56d",
-    gallery_img_2: "https://pbs.twimg.com/media/FIyfc-5UYAES2FZ?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/E8ebxMhXMAAqapI?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/E3h4wVmVcAgZR5G?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/Ez6PPjJXsAEMYdS?format=jpg&name=900x900",
     canvas: "https://ssscdn.io/ssstwitter/aHR0cHM6Ly92aWRlby50d2ltZy5jb20vZXh0X3R3X3ZpZGVvLzE1MTk5MDE3NjQxOTkxNDk1NjgvcHUvdmlkLzcyMHg3MjAvejNwWld2dmhneFExQWFuWC5tcDQ/dGFnPTEy",
 
     album: "Self Portrait",
@@ -10855,12 +13194,7 @@ var allMusic = [
     id: "162",
     lyrics:{
     },
-    bio: "life is a scam<3",
-    social:{
-      instagram: "https://www.instagram.com/sadgirlsloan/",
-      twitter: "https://twitter.com/sadgirlsloan",
-      facebook: "https://facebook.com/sadgirlsloan",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -10879,21 +13213,9 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "ab676186000010166e26b86a9f8a8d78b14c2dac",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd4d771ca23a2fb9aff28ce6c2f",
-    gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd452acf9f68db6d08565365d67",
-    gallery_img_2: "https://pbs.twimg.com/media/Fh5QoQMXgAM7kGG?format=jpg&name=medium",
-    gallery_img_3: "https://pbs.twimg.com/media/FX_2TZOXEAMbxRc?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FGGp0QkUcAM5qNl?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FiFhh1QXgAcWXP9?format=jpg&name=4096x4096",
-    gallery_img_6: "https://pbs.twimg.com/media/FiqJFAkXgAEVOuO?format=jpg&name=900x900",
-    gallery_img_7: "https://pbs.twimg.com/media/FiqJFAiXoAEi4WV?format=jpg&name=medium",
-    gallery_img_8: "https://pbs.twimg.com/media/FiC24RvXkAA5fZ8?format=jpg&name=900x900",
-    gallery_img_9: "https://pbs.twimg.com/media/FirCZtAWIAAYuSY?format=jpg&name=360x360",
-    gallery_img_10: "https://pbs.twimg.com/media/FUmiqOPWIAA6or1?format=jpg&name=900x900",
     canvas: "https://video.twimg.com/ext_tw_video/1567547044444635139/pu/vid/1238x720/3vQZiZj5L_vA4fcD.mp4?tag=12",
     
-    album: "Rare",
+    album: "Rare (Deluxe)",
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "163",
@@ -10913,13 +13235,6 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Selena Gomez is a multi-talented performer with featured roles on the screen, both small and big, and a musical career that reached the summit of the charts from the very beginning and stayed planted there for many years",
-    social:{
-      instagram: "https://www.instagram.com/selenagomez/",
-      twitter: "https://twitter.com/selenagomez",
-      facebook: "https://www.facebook.com/Selena",
-    },
-    user_playlist_1: "",
   },
   {
     name: "Souvenir",
@@ -10937,47 +13252,294 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "ab676186000010166e26b86a9f8a8d78b14c2dac",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd4d771ca23a2fb9aff28ce6c2f",
-    gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd452acf9f68db6d08565365d67",
-    gallery_img_2: "https://pbs.twimg.com/media/Fh5QoQMXgAM7kGG?format=jpg&name=medium",
-    gallery_img_3: "https://pbs.twimg.com/media/FX_2TZOXEAMbxRc?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FGGp0QkUcAM5qNl?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FiFhh1QXgAcWXP9?format=jpg&name=4096x4096",
-    gallery_img_6: "https://pbs.twimg.com/media/FiqJFAkXgAEVOuO?format=jpg&name=900x900",
-    gallery_img_7: "https://pbs.twimg.com/media/FiqJFAiXoAEi4WV?format=jpg&name=medium",
-    gallery_img_8: "https://pbs.twimg.com/media/FiC24RvXkAA5fZ8?format=jpg&name=900x900",
-    gallery_img_9: "https://pbs.twimg.com/media/FirCZtAWIAAYuSY?format=jpg&name=360x360",
-    gallery_img_10: "https://pbs.twimg.com/media/FUmiqOPWIAA6or1?format=jpg&name=900x900",
     canvas: "https://video.twimg.com/ext_tw_video/1567547044444635139/pu/vid/1238x720/3vQZiZj5L_vA4fcD.mp4?tag=12",
     
-    album: "Rare",
+    album: "Rare (Deluxe)",
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "164",
     lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
+      ve1:{
+        ls: "New York back in August, tenth floor balcony",
+        stamp: "7",
+      },
+      ve2:{
+        ls: "Smoke is floating over Jane and Greenwich street",
+        stamp: "11",
+      },
+      ve3:{
+        ls: "Goosebumps from your wild eyes when they're watching me",
+        stamp: "15",
+      },
+      ve4:{
+        ls: "Shivers dance down my spine, head down to my feet",
+        stamp: "20",
+      },
+      ve5:{
+        ls: "Swimming in your eyes, in your eyes, in your eyes",
+        stamp: "24",
+      },
+      ve6:{
+        ls: "Egyptian blue",
+        stamp: "27",
+      },
+      ve7:{
+        ls: "Something I've never had without you",
+        stamp: "29",
+      },
+      ve8:{
+        ls: "You're giving me chills at a hundred degrees",
+        stamp: "32",
+      },
+      ve9:{
+        ls: "It's better than pills how you put me to sleep",
+        stamp: "36",
+      },
+      ve10:{
+        ls: "Calling your name, the only language i can speak",
+        stamp: "40.5",
+      },
+      ve11:{
+        ls: "Taking my breath, a souvenir that you can keep",
+        stamp: "44.5",
+      },
+      ve12:{
+        ls: "Giving me chills",
+        stamp: "49",
+      },
+      ve13:{
+        ls: "Chills",
+        stamp: "54.5",
+      },
+      ve14:{
+        ls: "Sunset Tower lobby, waiting there for me",
+        stamp: "58",
+      },
+      ve15:{
+        ls: "In the elevator, fumble for your key",
+        stamp: "62",
+      },
+      ve16:{
+        ls: "Kissed in every corner, Presidential Suite",
+        stamp: "66",
+      },
+      ve17:{
+        ls: "Opened that Bordeaux from 1993",
+        stamp: "71",
+      },
+      ve18:{
+        ls: "Swimming in your eyes, in your eyes, in your eyes",
+        stamp: "74.5",
+      },
+      ve19:{
+        ls: "Egyptian blue",
+        stamp: "78",
+      },
+      ve20:{
+        ls: "Something I've never had without you",
+        stamp: "80",
+      },
+      ve21:{
+        ls: "You're giving me chills at a hundred degrees",
+        stamp: "83",
+      },
+      ve22:{
+        ls: "It's better than pills how you put me to sleep",
+        stamp: "87",
+      },
+      ve23:{
+        ls: "Calling your name, the only language i can speak",
+        stamp: "91.5",
+      },
+      ve24:{
+        ls: "Taking my breath, a souvenir that you can keep",
+        stamp: "96",
+      },
+      ve25:{
+        ls: "Giving me chills",
+        stamp: "100",
+      },
+      ve26:{
+        ls: "Take my, take-take my breath away just like",
+        stamp: "102",
+      },
+      ve27:{
+        ls: "Take my breath away just like a souvenir",
+        stamp: "105.5",
+      },
+      ve28:{
+        ls: "Take my, take-take my breath away just like",
+        stamp: "110.5",
+      },
+      ve29:{
+        ls: "Take my breath away just like a souvenir",
+        stamp: "114",
+      },
+      ve30:{
+        ls: "You're giving me chills at a hundred degrees (A hundred)",
+        stamp: "119",
+      },
+      ve31:{
+        ls: "It's better than pills how you put me to sleep (Puts me, yeah)",
+        stamp: "123.5",
+      },
+      ve32:{
+        ls: "Calling your name, the only language i can speak",
+        stamp: "128",
+      },
+      ve33:{
+        ls: "Taking my breath, a souvenir that you can keep",
+        stamp: "132",
+      },
+      ve34:{
+        ls: "Giving me chills",
+        stamp: "136",
+      },
+      ve35:{
+        ls: "Take my, take-take my breath away just like (You're giving me chills)",
+        stamp: "138",
+      },
+      ve36:{
+        ls: "Take my breath away just like a souvenir",
+        stamp: "141",
+      },
+      ve37:{
+        ls: "Giving me chills",
+        stamp: "144.5",
+      },
+      ve38:{
+        ls: "Take my, take-take my breath away just like (You're giving me chills)",
+        stamp: "147",
+      },
+      ve39:{
+        ls: "Take my breath away just like a souvenir",
+        stamp: "150",
+      },
+      ve40:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve41:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve42:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve43:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve44:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve45:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve46:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve47:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve48:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve49:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve50:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve51:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve52:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve53:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve54:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve55:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve56:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve57:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve58:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve59:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve60:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve61:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve62:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve63:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve64:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve65:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve66:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve67:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve68:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve69:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve70:{
+        ls: "",
+        stamp: "3600",
+      },
     },
-    bio: "Selena Gomez is a multi-talented performer with featured roles on the screen, both small and big, and a musical career that reached the summit of the charts from the very beginning and stayed planted there for many years",
-    social:{
-      instagram: "https://www.instagram.com/selenagomez/",
-      twitter: "https://twitter.com/selenagomez",
-      facebook: "https://www.facebook.com/Selena",
-    },
-    user_playlist_1: "",
   },
   {
     name: "She",
@@ -10995,21 +13557,9 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "ab676186000010166e26b86a9f8a8d78b14c2dac",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd4d771ca23a2fb9aff28ce6c2f",
-    gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd452acf9f68db6d08565365d67",
-    gallery_img_2: "https://pbs.twimg.com/media/Fh5QoQMXgAM7kGG?format=jpg&name=medium",
-    gallery_img_3: "https://pbs.twimg.com/media/FX_2TZOXEAMbxRc?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FGGp0QkUcAM5qNl?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FiFhh1QXgAcWXP9?format=jpg&name=4096x4096",
-    gallery_img_6: "https://pbs.twimg.com/media/FiqJFAkXgAEVOuO?format=jpg&name=900x900",
-    gallery_img_7: "https://pbs.twimg.com/media/FiqJFAiXoAEi4WV?format=jpg&name=medium",
-    gallery_img_8: "https://pbs.twimg.com/media/FiC24RvXkAA5fZ8?format=jpg&name=900x900",
-    gallery_img_9: "https://pbs.twimg.com/media/FirCZtAWIAAYuSY?format=jpg&name=360x360",
-    gallery_img_10: "https://pbs.twimg.com/media/FUmiqOPWIAA6or1?format=jpg&name=900x900",
     canvas: "https://video.twimg.com/ext_tw_video/1567547044444635139/pu/vid/1238x720/3vQZiZj5L_vA4fcD.mp4?tag=12",
     
-    album: "Rare",
+    album: "Rare (Deluxe)",
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "165",
@@ -11029,13 +13579,6 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Selena Gomez is a multi-talented performer with featured roles on the screen, both small and big, and a musical career that reached the summit of the charts from the very beginning and stayed planted there for many years",
-    social:{
-      instagram: "https://www.instagram.com/selenagomez/",
-      twitter: "https://twitter.com/selenagomez",
-      facebook: "https://www.facebook.com/Selena",
-    },
-    user_playlist_1: "",
   },
   {
     name: "Feel Me",
@@ -11053,21 +13596,9 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    avatar: "ab676186000010166e26b86a9f8a8d78b14c2dac",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd4d771ca23a2fb9aff28ce6c2f",
-    gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd452acf9f68db6d08565365d67",
-    gallery_img_2: "https://pbs.twimg.com/media/Fh5QoQMXgAM7kGG?format=jpg&name=medium",
-    gallery_img_3: "https://pbs.twimg.com/media/FX_2TZOXEAMbxRc?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/FGGp0QkUcAM5qNl?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/FiFhh1QXgAcWXP9?format=jpg&name=4096x4096",
-    gallery_img_6: "https://pbs.twimg.com/media/FiqJFAkXgAEVOuO?format=jpg&name=900x900",
-    gallery_img_7: "https://pbs.twimg.com/media/FiqJFAiXoAEi4WV?format=jpg&name=medium",
-    gallery_img_8: "https://pbs.twimg.com/media/FiC24RvXkAA5fZ8?format=jpg&name=900x900",
-    gallery_img_9: "https://pbs.twimg.com/media/FirCZtAWIAAYuSY?format=jpg&name=360x360",
-    gallery_img_10: "https://pbs.twimg.com/media/FUmiqOPWIAA6or1?format=jpg&name=900x900",
     canvas: "https://video.twimg.com/ext_tw_video/1567547044444635139/pu/vid/1238x720/3vQZiZj5L_vA4fcD.mp4?tag=12",
     
-    album: "Rare",
+    album: "Rare (Deluxe)",
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "166",
@@ -11087,13 +13618,6 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "Selena Gomez is a multi-talented performer with featured roles on the screen, both small and big, and a musical career that reached the summit of the charts from the very beginning and stayed planted there for many years",
-    social:{
-      instagram: "https://www.instagram.com/selenagomez/",
-      twitter: "https://twitter.com/selenagomez",
-      facebook: "https://www.facebook.com/Selena",
-    },
-    user_playlist_1: "",
   },
   {
     name: "God Is A Dancer",
@@ -11235,13 +13759,7 @@ var allMusic = [
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
-    avatar: "60979aa78fefc55f0nf1ebfb0cb10b26fb",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd46b7be64dd4d2addd5512010c",
-    gallery_img_1: "https://pbs.twimg.com/media/EEc6Qz8XUAEGURS?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/D_zRj_2W4AArt2O?format=jpg&name=900x900",
-    gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+
     canvas: "",
     
     album: "HOPE",
@@ -11265,12 +13783,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "NF is the stage name of Michigan rapper and composer Nate Feuerstein, who emerged with his debut album, , in 2015. The raw emotion and honesty in his music continued on , building the foundation of an incredibly strong and loyal fan base. In 2017, Perception gave NF his first No. 1 album on Billboard’s Top 200 Chart, and delivered the multi-platinum hit single, “” which reached #1 at Pop Radio. In the summer of 2019, NF released his fourth album, , earning his second consecutive No. 1 on Billboard’s Top 200 Chart. Now certified Platinum, The Search featured Top 10 Pop radio hit “” and propelled NF to the global stage, selling out 19 dates on “The Search World Tour,” including shows in Australia and Europe. With over 28 RIAA certifications and 18 billion streams, NF earned a spot in the Top 50 most streamed artists of 2020. His fifth album and first ever mixtape,  was released in the Spring of 2021.",
-    social:{
-      instagram: "https://www.instagram.com/nfrealmusic/",
-      twitter: "https://twitter.com/nfrealmusic",
-      facebook: "https://www.facebook.com/nfrealmusic",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -11289,13 +13802,7 @@ var allMusic = [
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
-    avatar: "60979aa78fefc55f0nf1ebfb0cb10b26fb",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd46b7be64dd4d2addd5512010c",
-    gallery_img_1: "https://pbs.twimg.com/media/EEc6Qz8XUAEGURS?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/D_zRj_2W4AArt2O?format=jpg&name=900x900",
-    gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+
     canvas: "",
     
     album: "HOPE",
@@ -11319,12 +13826,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "NF is the stage name of Michigan rapper and composer Nate Feuerstein, who emerged with his debut album, , in 2015. The raw emotion and honesty in his music continued on , building the foundation of an incredibly strong and loyal fan base. In 2017, Perception gave NF his first No. 1 album on Billboard’s Top 200 Chart, and delivered the multi-platinum hit single, “” which reached #1 at Pop Radio. In the summer of 2019, NF released his fourth album, , earning his second consecutive No. 1 on Billboard’s Top 200 Chart. Now certified Platinum, The Search featured Top 10 Pop radio hit “” and propelled NF to the global stage, selling out 19 dates on “The Search World Tour,” including shows in Australia and Europe. With over 28 RIAA certifications and 18 billion streams, NF earned a spot in the Top 50 most streamed artists of 2020. His fifth album and first ever mixtape,  was released in the Spring of 2021.",
-    social:{
-      instagram: "https://www.instagram.com/nfrealmusic/",
-      twitter: "https://twitter.com/nfrealmusic",
-      facebook: "https://www.facebook.com/nfrealmusic",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -11343,13 +13845,7 @@ var allMusic = [
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
-    avatar: "60979aa78fefc55f0nf1ebfb0cb10b26fb",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd46b7be64dd4d2addd5512010c",
-    gallery_img_1: "https://pbs.twimg.com/media/EEc6Qz8XUAEGURS?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/D_zRj_2W4AArt2O?format=jpg&name=900x900",
-    gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+
     canvas: "",
     
     album: "HOPE",
@@ -11373,12 +13869,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "NF is the stage name of Michigan rapper and composer Nate Feuerstein, who emerged with his debut album, , in 2015. The raw emotion and honesty in his music continued on , building the foundation of an incredibly strong and loyal fan base. In 2017, Perception gave NF his first No. 1 album on Billboard’s Top 200 Chart, and delivered the multi-platinum hit single, “” which reached #1 at Pop Radio. In the summer of 2019, NF released his fourth album, , earning his second consecutive No. 1 on Billboard’s Top 200 Chart. Now certified Platinum, The Search featured Top 10 Pop radio hit “” and propelled NF to the global stage, selling out 19 dates on “The Search World Tour,” including shows in Australia and Europe. With over 28 RIAA certifications and 18 billion streams, NF earned a spot in the Top 50 most streamed artists of 2020. His fifth album and first ever mixtape,  was released in the Spring of 2021.",
-    social:{
-      instagram: "https://www.instagram.com/nfrealmusic/",
-      twitter: "https://twitter.com/nfrealmusic",
-      facebook: "https://www.facebook.com/nfrealmusic",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -11397,13 +13888,7 @@ var allMusic = [
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
-    avatar: "60979aa78fefc55f0nf1ebfb0cb10b26fb",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd46b7be64dd4d2addd5512010c",
-    gallery_img_1: "https://pbs.twimg.com/media/EEc6Qz8XUAEGURS?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/D_zRj_2W4AArt2O?format=jpg&name=900x900",
-    gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+
     canvas: "",
     
     album: "HOPE",
@@ -11427,12 +13912,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "NF is the stage name of Michigan rapper and composer Nate Feuerstein, who emerged with his debut album, , in 2015. The raw emotion and honesty in his music continued on , building the foundation of an incredibly strong and loyal fan base. In 2017, Perception gave NF his first No. 1 album on Billboard’s Top 200 Chart, and delivered the multi-platinum hit single, “” which reached #1 at Pop Radio. In the summer of 2019, NF released his fourth album, , earning his second consecutive No. 1 on Billboard’s Top 200 Chart. Now certified Platinum, The Search featured Top 10 Pop radio hit “” and propelled NF to the global stage, selling out 19 dates on “The Search World Tour,” including shows in Australia and Europe. With over 28 RIAA certifications and 18 billion streams, NF earned a spot in the Top 50 most streamed artists of 2020. His fifth album and first ever mixtape,  was released in the Spring of 2021.",
-    social:{
-      instagram: "https://www.instagram.com/nfrealmusic/",
-      twitter: "https://twitter.com/nfrealmusic",
-      facebook: "https://www.facebook.com/nfrealmusic",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -11451,13 +13931,7 @@ var allMusic = [
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
-    avatar: "60979aa78fefc55f0nf1ebfb0cb10b26fb",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd46b7be64dd4d2addd5512010c",
-    gallery_img_1: "https://pbs.twimg.com/media/EEc6Qz8XUAEGURS?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/D_zRj_2W4AArt2O?format=jpg&name=900x900",
-    gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+
     canvas: "https://ssscdn.io/ssstwitter/aHR0cHM6Ly92aWRlby50d2ltZy5jb20vYW1wbGlmeV92aWRlby8xNjQzOTk5MjcwNDEwODI5ODI3L3ZpZC8xMjgweDcyMC94Z2h5Q3pZUUhpQXdQUDczLm1wND90YWc9MTY=",
     
     album: "HOPE",
@@ -11747,12 +14221,7 @@ var allMusic = [
         stamp: "3600",
       },
     },
-    bio: "NF is the stage name of Michigan rapper and composer Nate Feuerstein, who emerged with his debut album, , in 2015. The raw emotion and honesty in his music continued on , building the foundation of an incredibly strong and loyal fan base. In 2017, Perception gave NF his first No. 1 album on Billboard’s Top 200 Chart, and delivered the multi-platinum hit single, “” which reached #1 at Pop Radio. In the summer of 2019, NF released his fourth album, , earning his second consecutive No. 1 on Billboard’s Top 200 Chart. Now certified Platinum, The Search featured Top 10 Pop radio hit “” and propelled NF to the global stage, selling out 19 dates on “The Search World Tour,” including shows in Australia and Europe. With over 28 RIAA certifications and 18 billion streams, NF earned a spot in the Top 50 most streamed artists of 2020. His fifth album and first ever mixtape,  was released in the Spring of 2021.",
-    social:{
-      instagram: "https://www.instagram.com/nfrealmusic/",
-      twitter: "https://twitter.com/nfrealmusic",
-      facebook: "https://www.facebook.com/nfrealmusic",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -11771,13 +14240,7 @@ var allMusic = [
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
-    avatar: "60979aa78fefc55f0nf1ebfb0cb10b26fb",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd46b7be64dd4d2addd5512010c",
-    gallery_img_1: "https://pbs.twimg.com/media/EEc6Qz8XUAEGURS?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/D_zRj_2W4AArt2O?format=jpg&name=900x900",
-    gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+
     canvas: "",
     
     album: "HOPE",
@@ -11801,12 +14264,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "NF is the stage name of Michigan rapper and composer Nate Feuerstein, who emerged with his debut album, , in 2015. The raw emotion and honesty in his music continued on , building the foundation of an incredibly strong and loyal fan base. In 2017, Perception gave NF his first No. 1 album on Billboard’s Top 200 Chart, and delivered the multi-platinum hit single, “” which reached #1 at Pop Radio. In the summer of 2019, NF released his fourth album, , earning his second consecutive No. 1 on Billboard’s Top 200 Chart. Now certified Platinum, The Search featured Top 10 Pop radio hit “” and propelled NF to the global stage, selling out 19 dates on “The Search World Tour,” including shows in Australia and Europe. With over 28 RIAA certifications and 18 billion streams, NF earned a spot in the Top 50 most streamed artists of 2020. His fifth album and first ever mixtape,  was released in the Spring of 2021.",
-    social:{
-      instagram: "https://www.instagram.com/nfrealmusic/",
-      twitter: "https://twitter.com/nfrealmusic",
-      facebook: "https://www.facebook.com/nfrealmusic",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -11825,13 +14283,7 @@ var allMusic = [
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
-    avatar: "60979aa78fefc55f0nf1ebfb0cb10b26fb",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd46b7be64dd4d2addd5512010c",
-    gallery_img_1: "https://pbs.twimg.com/media/EEc6Qz8XUAEGURS?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/D_zRj_2W4AArt2O?format=jpg&name=900x900",
-    gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+
     canvas: "",
     
     album: "HOPE",
@@ -11855,12 +14307,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "NF is the stage name of Michigan rapper and composer Nate Feuerstein, who emerged with his debut album, , in 2015. The raw emotion and honesty in his music continued on , building the foundation of an incredibly strong and loyal fan base. In 2017, Perception gave NF his first No. 1 album on Billboard’s Top 200 Chart, and delivered the multi-platinum hit single, “” which reached #1 at Pop Radio. In the summer of 2019, NF released his fourth album, , earning his second consecutive No. 1 on Billboard’s Top 200 Chart. Now certified Platinum, The Search featured Top 10 Pop radio hit “” and propelled NF to the global stage, selling out 19 dates on “The Search World Tour,” including shows in Australia and Europe. With over 28 RIAA certifications and 18 billion streams, NF earned a spot in the Top 50 most streamed artists of 2020. His fifth album and first ever mixtape,  was released in the Spring of 2021.",
-    social:{
-      instagram: "https://www.instagram.com/nfrealmusic/",
-      twitter: "https://twitter.com/nfrealmusic",
-      facebook: "https://www.facebook.com/nfrealmusic",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -11879,13 +14326,7 @@ var allMusic = [
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
-    avatar: "60979aa78fefc55f0nf1ebfb0cb10b26fb",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd46b7be64dd4d2addd5512010c",
-    gallery_img_1: "https://pbs.twimg.com/media/EEc6Qz8XUAEGURS?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/D_zRj_2W4AArt2O?format=jpg&name=900x900",
-    gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+
     canvas: "",
     
     album: "HOPE",
@@ -11909,12 +14350,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "NF is the stage name of Michigan rapper and composer Nate Feuerstein, who emerged with his debut album, , in 2015. The raw emotion and honesty in his music continued on , building the foundation of an incredibly strong and loyal fan base. In 2017, Perception gave NF his first No. 1 album on Billboard’s Top 200 Chart, and delivered the multi-platinum hit single, “” which reached #1 at Pop Radio. In the summer of 2019, NF released his fourth album, , earning his second consecutive No. 1 on Billboard’s Top 200 Chart. Now certified Platinum, The Search featured Top 10 Pop radio hit “” and propelled NF to the global stage, selling out 19 dates on “The Search World Tour,” including shows in Australia and Europe. With over 28 RIAA certifications and 18 billion streams, NF earned a spot in the Top 50 most streamed artists of 2020. His fifth album and first ever mixtape,  was released in the Spring of 2021.",
-    social:{
-      instagram: "https://www.instagram.com/nfrealmusic/",
-      twitter: "https://twitter.com/nfrealmusic",
-      facebook: "https://www.facebook.com/nfrealmusic",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -11933,13 +14369,7 @@ var allMusic = [
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
-    avatar: "60979aa78fefc55f0nf1ebfb0cb10b26fb",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd46b7be64dd4d2addd5512010c",
-    gallery_img_1: "https://pbs.twimg.com/media/EEc6Qz8XUAEGURS?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/D_zRj_2W4AArt2O?format=jpg&name=900x900",
-    gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+
     canvas: "",
     
     album: "HOPE",
@@ -11963,12 +14393,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "NF is the stage name of Michigan rapper and composer Nate Feuerstein, who emerged with his debut album, , in 2015. The raw emotion and honesty in his music continued on , building the foundation of an incredibly strong and loyal fan base. In 2017, Perception gave NF his first No. 1 album on Billboard’s Top 200 Chart, and delivered the multi-platinum hit single, “” which reached #1 at Pop Radio. In the summer of 2019, NF released his fourth album, , earning his second consecutive No. 1 on Billboard’s Top 200 Chart. Now certified Platinum, The Search featured Top 10 Pop radio hit “” and propelled NF to the global stage, selling out 19 dates on “The Search World Tour,” including shows in Australia and Europe. With over 28 RIAA certifications and 18 billion streams, NF earned a spot in the Top 50 most streamed artists of 2020. His fifth album and first ever mixtape,  was released in the Spring of 2021.",
-    social:{
-      instagram: "https://www.instagram.com/nfrealmusic/",
-      twitter: "https://twitter.com/nfrealmusic",
-      facebook: "https://www.facebook.com/nfrealmusic",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -11987,13 +14412,7 @@ var allMusic = [
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
-    avatar: "60979aa78fefc55f0nf1ebfb0cb10b26fb",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd46b7be64dd4d2addd5512010c",
-    gallery_img_1: "https://pbs.twimg.com/media/EEc6Qz8XUAEGURS?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/D_zRj_2W4AArt2O?format=jpg&name=900x900",
-    gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+
     canvas: "",
     
     album: "HOPE",
@@ -12017,12 +14436,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "NF is the stage name of Michigan rapper and composer Nate Feuerstein, who emerged with his debut album, , in 2015. The raw emotion and honesty in his music continued on , building the foundation of an incredibly strong and loyal fan base. In 2017, Perception gave NF his first No. 1 album on Billboard’s Top 200 Chart, and delivered the multi-platinum hit single, “” which reached #1 at Pop Radio. In the summer of 2019, NF released his fourth album, , earning his second consecutive No. 1 on Billboard’s Top 200 Chart. Now certified Platinum, The Search featured Top 10 Pop radio hit “” and propelled NF to the global stage, selling out 19 dates on “The Search World Tour,” including shows in Australia and Europe. With over 28 RIAA certifications and 18 billion streams, NF earned a spot in the Top 50 most streamed artists of 2020. His fifth album and first ever mixtape,  was released in the Spring of 2021.",
-    social:{
-      instagram: "https://www.instagram.com/nfrealmusic/",
-      twitter: "https://twitter.com/nfrealmusic",
-      facebook: "https://www.facebook.com/nfrealmusic",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -12041,13 +14455,7 @@ var allMusic = [
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
-    avatar: "60979aa78fefc55f0nf1ebfb0cb10b26fb",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd46b7be64dd4d2addd5512010c",
-    gallery_img_1: "https://pbs.twimg.com/media/EEc6Qz8XUAEGURS?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/D_zRj_2W4AArt2O?format=jpg&name=900x900",
-    gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+
     canvas: "",
     
     album: "HOPE",
@@ -12071,12 +14479,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "NF is the stage name of Michigan rapper and composer Nate Feuerstein, who emerged with his debut album, , in 2015. The raw emotion and honesty in his music continued on , building the foundation of an incredibly strong and loyal fan base. In 2017, Perception gave NF his first No. 1 album on Billboard’s Top 200 Chart, and delivered the multi-platinum hit single, “” which reached #1 at Pop Radio. In the summer of 2019, NF released his fourth album, , earning his second consecutive No. 1 on Billboard’s Top 200 Chart. Now certified Platinum, The Search featured Top 10 Pop radio hit “” and propelled NF to the global stage, selling out 19 dates on “The Search World Tour,” including shows in Australia and Europe. With over 28 RIAA certifications and 18 billion streams, NF earned a spot in the Top 50 most streamed artists of 2020. His fifth album and first ever mixtape,  was released in the Spring of 2021.",
-    social:{
-      instagram: "https://www.instagram.com/nfrealmusic/",
-      twitter: "https://twitter.com/nfrealmusic",
-      facebook: "https://www.facebook.com/nfrealmusic",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -12095,13 +14498,7 @@ var allMusic = [
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
-    avatar: "60979aa78fefc55f0nf1ebfb0cb10b26fb",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd46b7be64dd4d2addd5512010c",
-    gallery_img_1: "https://pbs.twimg.com/media/EEc6Qz8XUAEGURS?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/D_zRj_2W4AArt2O?format=jpg&name=900x900",
-    gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+
     canvas: "",
     
     album: "HOPE",
@@ -12125,12 +14522,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "NF is the stage name of Michigan rapper and composer Nate Feuerstein, who emerged with his debut album, , in 2015. The raw emotion and honesty in his music continued on , building the foundation of an incredibly strong and loyal fan base. In 2017, Perception gave NF his first No. 1 album on Billboard’s Top 200 Chart, and delivered the multi-platinum hit single, “” which reached #1 at Pop Radio. In the summer of 2019, NF released his fourth album, , earning his second consecutive No. 1 on Billboard’s Top 200 Chart. Now certified Platinum, The Search featured Top 10 Pop radio hit “” and propelled NF to the global stage, selling out 19 dates on “The Search World Tour,” including shows in Australia and Europe. With over 28 RIAA certifications and 18 billion streams, NF earned a spot in the Top 50 most streamed artists of 2020. His fifth album and first ever mixtape,  was released in the Spring of 2021.",
-    social:{
-      instagram: "https://www.instagram.com/nfrealmusic/",
-      twitter: "https://twitter.com/nfrealmusic",
-      facebook: "https://www.facebook.com/nfrealmusic",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -12149,13 +14541,7 @@ var allMusic = [
     style: "Hip-Hop",
     status: "nostatus",
     tag: "",
-    avatar: "60979aa78fefc55f0nf1ebfb0cb10b26fb",
-    artist_img: "https://i.scdn.co/image/ab6761670000ecd46b7be64dd4d2addd5512010c",
-    gallery_img_1: "https://pbs.twimg.com/media/EEc6Qz8XUAEGURS?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/D_zRj_2W4AArt2O?format=jpg&name=900x900",
-    gallery_img_3: "https://pbs.twimg.com/media/D-opCuAXkAEZlxw?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/D77OvcSXsAER4Cs?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/DgQGPKuW4AEdX9R?format=jpg&name=large",
+
     canvas: "",
     
     album: "HOPE",
@@ -12179,12 +14565,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "NF is the stage name of Michigan rapper and composer Nate Feuerstein, who emerged with his debut album, , in 2015. The raw emotion and honesty in his music continued on , building the foundation of an incredibly strong and loyal fan base. In 2017, Perception gave NF his first No. 1 album on Billboard’s Top 200 Chart, and delivered the multi-platinum hit single, “” which reached #1 at Pop Radio. In the summer of 2019, NF released his fourth album, , earning his second consecutive No. 1 on Billboard’s Top 200 Chart. Now certified Platinum, The Search featured Top 10 Pop radio hit “” and propelled NF to the global stage, selling out 19 dates on “The Search World Tour,” including shows in Australia and Europe. With over 28 RIAA certifications and 18 billion streams, NF earned a spot in the Top 50 most streamed artists of 2020. His fifth album and first ever mixtape,  was released in the Spring of 2021.",
-    social:{
-      instagram: "https://www.instagram.com/nfrealmusic/",
-      twitter: "https://twitter.com/nfrealmusic",
-      facebook: "https://www.facebook.com/nfrealmusic",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -12617,14 +14998,6 @@ var allMusic = [
     
     style: "Rock",
     status: "nostatus",
-    tag: "Popular",
-    avatar: "3eff83c2098againstbe9b7ebb770bca30ef66current2169515",
-    artist_img: "https://i.scdn.co/image/b0ef3e7a4267895cb785ce4c4723b019b1f90ba6",
-    gallery_img_1: "https://i.scdn.co/image/be889a1f4635f013e13ff6c98253f162559dae96",
-    gallery_img_2: "https://pbs.twimg.com/media/FJevgWXVIAMalXA?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/FJPmXzjVEAQUzvn?format=jpg&name=large",
-    gallery_img_4: "https://pbs.twimg.com/media/Ex_H4JlVgAISUKV?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/Et7eALxVcAEyxo-?format=jpg&name=large",
     canvas: "https://ssscdn.io/ssstwitter/aHR0cHM6Ly92aWRlby50d2ltZy5jb20vZXh0X3R3X3ZpZGVvLzE2NTIzNjg2NzQwMjY1NTMzNDUvcHUvdmlkLzcyMHgxMjgwL2d4WHR5RGZJYnZjQ1M0UkYubXA0P3RhZz0xMg==",
 
     thisis_img: "https://thisis-images.scdn.co/37i9dQZF1DZ06evO3RZl6M-default.jpg",
@@ -12652,12 +15025,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "The moment you find your voice, you step into yourself and actualize your potential. At this point, expectations no longer matter, fear disappears, and everything changes. Against The Current not only embrace their voice, but project it louder than ever. After hundreds of millions of streams, major collaborations with the likes of Riot Games, and countless packed shows, the trio—Chrissy Costanza [vocals], Dan Gow [guitar], and Will Ferri [drums]—lift themselves up to this moment with their new music. Dan observes, “We dove back into early inspirations like Taking Back Sunday and incorporated those vibes into what we do. It fueled us to keep going.” In the end, Against The Current will stir up the same frenzy and fire in audiences as well with this music. “Musically, it’s back to the three of us in a room together, and you’ll hear it,” adds Will. “In a lot of ways, it’s like we’re just getting started—even though it’s been ten years. It feels good.” “This process was really empowering,” Chrissy concludes. “It also reminded me how much I love rock music and how this band was founded on that love. When you listen to us, I want you to know you’re in control. If you don’t like something, you can make a change. I realized I don’t want to sit around feeling sorry for myself…I want more. I want to inspire everyone to chase their dreams to no end.”",
-    social:{
-      instagram: "https://www.instagram.com/againstthecurrent/",
-      twitter: "https://twitter.com/ATC_BAND",
-      facebook: "https://www.facebook.com/againstthecurrentband",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -12675,13 +15043,7 @@ var allMusic = [
 
     style: "Energic",
     status: "nostatus",
-    avatar: "41aeb62f0-c2321-f25bsf",
-    artist_img: "https://i.scdn.co/image/ab6761610000e5eb00a89c0f54687319c9a499de",
-    gallery_img_1: "https://pbs.twimg.com/media/Dy4FILeWoAAIqn8?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/D7Bd4x5UIAIQ4IJ?format=jpg&name=900x900",
-    gallery_img_3: "https://pbs.twimg.com/media/FFnM392XEA0h-YH?format=jpg&name=large",
-    gallery_img_4: "",
-    gallery_img_5: "",
+    tag: "",
     canvas: "",
 
     thisis_img: "https://thisis-images.scdn.co/37i9dQZF1DZ06evO3C8hgs-default.jpg",
@@ -12709,12 +15071,7 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-    bio: "C-BooL (Grzegorz Cebula) was born on May 30, 1981 in Pyskowice in Silesia (Poland). Polish DJ, music producer and owner of C-Wave Records. Associated with club music from an early age. Works as a DJ since 1998 and started producing music in 2002. Diamond, multi platinum and golden records producer of many radio hits like Never Go Away, DJ Is Your Second Name, Magic Symphony, Wonderland, Catch You, Fire In My Head, La La Love and older club classics like Would You Feel and House Baby. Two-time winner of the Eska Music Awards in the hit of the year category (2016 & 2017). No 1 Hits - Shazam Poland, Radio Airplay Poland Top 3 Hits Airplay Russia In his 23-year DJ career C-BooL performed in hundreds of clubs in Poland and abroad. His DJ sets were presented in countries such as Germany, Austria, Italy, Bulgaria & UK",
-    social:{
-      instagram: "",
-      twitter: "",
-      facebook: "https://www.facebook.com/cboolmusic",
-    },
+
     user_playlist_1: "",
   },
   {
@@ -12834,5 +15191,311 @@ var allMusic = [
       facebook: "",
     },
     user_playlist_1: "",
+  },
+  {
+    name: "X",
+    artist: "Jonas Brothers",
+    colaboration: "Karol G",
+    artist_status: "none",
+    language: "eng",
+    country: "usa",
+    artist_id: "64",
+    
+    src: "JonasBrothers-X",
+    img: "ab67616d0000b2733b3cd45dfa6f779c01d63fdb",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851de1a3a5eaa0c75bb18e7b597",
+
+    style: "Chill",
+    status: "nostatus",
+    tag: "",
+    canvas: "",
+    
+    album: "X",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e02de1a3a5eaa0c75bb18e7b597",
+    album_premiere: "2020",
+    album_status: "false",
+    id: "193",
+    lyrics:{
+      ve1:{
+        ls: "Yeah",
+        stamp: "6.5",
+      },
+      ve2:{
+        ls: "Ooh-la-la, by the pool, we're singing 'Bailando'",
+        stamp: "7",
+      },
+      ve3:{
+        ls: "Two ni-nights with a view, yeah",
+        stamp: "11",
+      },
+      ve4:{
+        ls: "Keeping those blinds closed (Yeah)",
+        stamp: "13",
+      },
+      ve5:{
+        ls: "She said, 'I wanna find somebody by nightfall'",
+        stamp: "15",
+      },
+      ve6:{
+        ls: "Ooh-na-na, could it be ya",
+        stamp: "19.5",
+      },
+      ve7:{
+        ls: "Baby, I like you",
+        stamp: "20.75",
+      },
+      ve8:{
+        ls: "Oh, watching her move, I was lost in the rhythms",
+        stamp: "23.5",
+      },
+      ve9:{
+        ls: "And she pulled me close by the look in here eyes",
+        stamp: "27.5",
+      },
+      ve10:{
+        ls: "Don't know her name, but I know that I need her",
+        stamp: "31.5",
+      },
+      ve11:{
+        ls: "She said, 'Boy, you won't be lonely tonight'",
+        stamp: "35.75",
+      },
+      ve12:{
+        ls: "She said, 'Ooh-ooh-ooh'",
+        stamp: "39",
+      },
+      ve13:{
+        ls: "Kiss me like your ex is in the room",
+        stamp: "42",
+      },
+      ve14:{
+        ls: "Don't you be afraid of something new",
+        stamp: "46",
+      },
+      ve15:{
+        ls: "If you play it right, you can be that someone",
+        stamp: "49",
+      },
+      ve16:{
+        ls: "Yeah, that someone who",
+        stamp: "51.75",
+      },
+      ve17:{
+        ls: "Won't leave me lonely tonight",
+        stamp: "54",
+      },
+      ve18:{
+        ls: "Yeah, yeah, yeah",
+        stamp: "59.75",
+      },
+      ve19:{
+        ls: "Yeah, yeah, yeah",
+        stamp: "62",
+      },
+      ve20:{
+        ls: "Yeah",
+        stamp: "63.5",
+      },
+      ve21:{
+        ls: "Ooh-la-la, make a move, yeah, baby, by last call",
+        stamp: "64.25",
+      },
+      ve22:{
+        ls: "Full moon night with the lights off",
+        stamp: "68",
+      },
+      ve23:{
+        ls: "Baby, your eyes glow (Yeah)",
+        stamp: "70.5",
+      },
+      ve24:{
+        ls: "Don't know why but i fell like I'ma go psycho (Psycho)",
+        stamp: "72",
+      },
+      ve25:{
+        ls: "Ooh-la-la, if it's cool",
+        stamp: "76.25",
+      },
+      ve26:{
+        ls: "Yeah, baby, I'd like to",
+        stamp: "78",
+      },
+      ve27:{
+        ls: "Oh, watching her move, I was lost in the rhythms",
+        stamp: "80.5",
+      },
+      ve28:{
+        ls: "And she pulled me close by the look in here eyes",
+        stamp: "84.5",
+      },
+      ve29:{
+        ls: "Don't know her name, but I know that I need her",
+        stamp: "88.5",
+      },
+      ve30:{
+        ls: "She said, 'Boy, you won't be lonely tonight'",
+        stamp: "93",
+      },
+      ve31:{
+        ls: "She said, 'Ooh-ooh-ooh' (Ooh-ooh-ooh)",
+        stamp: "96",
+      },
+      ve32:{
+        ls: "Kiss me like your ex is in the room (Ooh-ooh-ooh)",
+        stamp: "98.75",
+      },
+      ve33:{
+        ls: "Don't you be afraid of something new",
+        stamp: "103",
+      },
+      ve34:{
+        ls: "If you play it right, you can be that someone",
+        stamp: "105.75",
+      },
+      ve35:{
+        ls: "Yeah, that someone who (Yeah)",
+        stamp: "108",
+      },
+      ve36:{
+        ls: "Won't leave me lonely tonight",
+        stamp: "111",
+      },
+      ve37:{
+        ls: "Caliente, te pongo caliente (Ah)",
+        stamp: "114",
+      },
+      ve38:{
+        ls: "No te de miedo vivir algo diferente (Eh, eh)",
+        stamp: "117.5",
+      },
+      ve39:{
+        ls: "Las ganas no se equivocan (-vocan; eh)",
+        stamp: "122",
+      },
+      ve40:{
+        ls: "Pon tu lengua en mi boca (-Boca; eh)",
+        stamp: "124.75",
+      },
+      ve41:{
+        ls: "Vive la vida loca, loca, loca, ah",
+        stamp: "127",
+      },
+      ve42:{
+        ls: "Toda la noche bailando contigo",
+        stamp: "129",
+      },
+      ve43:{
+        ls: "Suave y salvaje como un animal",
+        stamp: "133",
+      },
+      ve44:{
+        ls: "Yo se que te gusta, pero esto es prohibido",
+        stamp: "137.5",
+      },
+      ve45:{
+        ls: "Yo me voy contigo, dame la senal",
+        stamp: "141.5",
+      },
+      ve46:{
+        ls: "She said, 'Ooh-ooh-ooh' (Ooh-ooh-ooh)",
+        stamp: "145",
+      },
+      ve47:{
+        ls: "Kiss me like your ex is in the room (Ooh-ooh-ooh)",
+        stamp: "147.5",
+      },
+      ve48:{
+        ls: "Don't you be afraid of something new",
+        stamp: "151.75",
+      },
+      ve49:{
+        ls: "If you play it right, you can be that someone",
+        stamp: "154.75",
+      },
+      ve50:{
+        ls: "Yeah, that someone who (Uh)",
+        stamp: "157",
+      },
+      ve51:{
+        ls: "Won't leave me lonely tonight",
+        stamp: "159.75",
+      },
+      ve52:{
+        ls: "Ooh, ooh, ooh",
+        stamp: "162",
+      },
+      ve53:{
+        ls: "Ooh, ooh, ooh",
+        stamp: "163.5",
+      },
+      ve54:{
+        ls: "Ooh, ooh, ooh",
+        stamp: "167",
+      },
+      ve55:{
+        ls: "Tonight",
+        stamp: "169",
+      },
+      ve56:{
+        ls: "Someone who",
+        stamp: "174",
+      },
+      ve57:{
+        ls: "You won't be lonely tonight",
+        stamp: "175.75",
+      },
+      ve58:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve59:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve60:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve61:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve62:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve63:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve64:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve65:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve66:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve67:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve68:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve69:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve70:{
+        ls: "",
+        stamp: "3600",
+      },
+    },
   },
 ]

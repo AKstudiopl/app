@@ -103,6 +103,7 @@ window.addEventListener("load", function () {
     randomHomeArtist();
     loadDailyPlaylists();
     loadUserStylePlaylists();
+    playlist_HOME_LOAD();
 });
 
 const activeHomeBtn = document.getElementsByClassName('navbar-bottom-btn-home')[0]
@@ -119,6 +120,8 @@ function home_fs(){
   favortieScreen.classList.remove('active');
   playlistScreen.classList.remove('active');
   userProfile.classList.remove('active');
+  wrapper.classList.remove("active");
+  musicArtistScreen.classList.remove('active')
 }
 
 activeHomeBtn.addEventListener('click', () => {
@@ -128,6 +131,7 @@ activeHomeBtn.addEventListener('click', () => {
   userProfile.classList.remove("active")
   playlistScreen.classList.remove('active');
   yourStyleScreen.classList.remove('active');
+  wrapper.classList.remove("active");
 })
 
 const activeSearchBtn = document.getElementsByClassName('navbar-bottom-btn-search')[0]
@@ -144,6 +148,7 @@ activeSearchBtn.addEventListener('click', () => {
   playlistScreen.classList.remove('active');
   yourStyleScreen.classList.remove('active');
   userProfile.classList.remove('active');
+  wrapper.classList.remove("active");
 })
 
 const activeLibraryBtn = document.getElementsByClassName('navbar-bottom-btn-library')[0]
@@ -160,6 +165,7 @@ activeLibraryBtn.addEventListener('click', () => {
   playlistScreen.classList.remove('active');
   yourStyleScreen.classList.remove('active');
   userProfile.classList.remove('active');
+  wrapper.classList.remove("active");
 })
 
 const activeSettingsBtn = document.getElementsByClassName('settings-action-btn')[0]
@@ -169,12 +175,14 @@ const activeSettingsScreen = document.getElementsByClassName('settings-screen')[
 activeSettingsBtn.addEventListener('click', () => {
   activeSettingsScreen.classList.add('active')
   userProfile.classList.remove("active");
+  wrapper.classList.remove("active");
 })
 
 const navbarSettings = document.querySelector('#navbar-settings')
 navbarSettings.addEventListener('click', () => {
   activeSettingsScreen.classList.add('active')
   userProfile.classList.remove("active");
+  wrapper.classList.remove("active");
 })
 
 const disableSettingsBtn = document.getElementsByClassName('setting-disable-btn')[0]
@@ -199,11 +207,9 @@ const musicMenuShowSec = document.getElementsByClassName('music-title')[0]
 
 showMusicMenubtn.addEventListener('click', () => {
   musicMenuShow.classList.toggle('active')
-  toggleSequence();
 })
 musicMenuShowSec.addEventListener('click', () => {
   musicMenuShow.classList.toggle('active')
-  toggleSequence();
 })
 
 function viewSearchHomeItems(){
@@ -214,14 +220,8 @@ function viewSearchHomeItems(){
   libraryScreen.classList.remove('active');
 }
 
-const showFavoriteScreen = document.getElementsByClassName('favorite-library-show')[0]
 const favortieScreen = document.getElementsByClassName('library-favorite-screen')[0]
 const exitFavoriteScreen = document.getElementsByClassName('library-favorite-exit')[0]
-
-showFavoriteScreen.addEventListener('click', () => {
-  favoriteLibraryScreen();
-  checkLocalStorageData();
-})
 
 function favoriteLibraryScreen(){
   favortieScreen.classList.add('active')
@@ -242,7 +242,7 @@ function favoriteLoadItems() {
         <img src="${favoritIt[i].img_mini}">
           <div class="music-artist-content-item-data">
             <h1>${favoritIt[i].name}</h1>
-            <span>${favoritIt[i].album} • ${favoritIt[i].album_premiere}</span>
+            <span><p class="music-artist-content-item-lyrics"> ${Object.keys(favoritIt[i].lyrics).length}</p> ${favoritIt[i].album} • ${favoritIt[i].album_premiere}</span>
           </div>
           <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
        </div>`;
@@ -250,6 +250,7 @@ function favoriteLoadItems() {
   }
 
   loseFocus();
+  lyricsItemCheck();
 
   favoriteItemsNumber.innerText = $('.library-favorite-container .music-artist-content-item').length;
 }
@@ -291,7 +292,7 @@ function clickedSingle(element){
     let filterStyle = itemFilterBar.getAttribute('artist-style');
     let filterArtist = itemFilterBar.getAttribute('artist-data');
     if(filterPlaylistStyle === "Radio"){
-      clickedAllMusic = allMusicView.filter(x => x.artist_id === filterArtist || x.colaboration === filterPlaylistName || x.style === filterStyle).slice(0, 50);
+      clickedAllMusic = allMusicView.filter(x => x.artist_id === filterArtist || x.colaboration_id === filterArtist || x.style === filterStyle).slice(0, 50);
     }
   }
 
@@ -301,7 +302,7 @@ function clickedSingle(element){
     let filterArtist = itemFilterBar.getAttribute('artist-data');
 
     if(filterPlaylistStyle === "Complete"){
-      clickedAllMusic = allMusicView.filter(x => x.artist_id === filterArtist || x.colaboration === filterPlaylistName);
+      clickedAllMusic = allMusicView.filter(x => x.artist_id === filterArtist || x.colaboration_ida === filterArtist);
     }
   }
 
@@ -358,6 +359,7 @@ musicCanvasVideo = wrapper.querySelector(".background-canvas video"),
 musicName = wrapper.querySelector(".main-information-title .name"),
 musicStatusData = wrapper.querySelector(".main-information"),
 musicArtist = wrapper.querySelector(".main-information-title .artist"),
+musicSave = wrapper.querySelector(".main-information #playlistACTION"),
 musicViral = wrapper.querySelector(".main-music-video"),
 mainAudio = wrapper.querySelector("#audio"),
 playstopButton = wrapper.querySelector("#play-stop-main-btn-action"),
@@ -373,22 +375,29 @@ queueCurrentImg = wrapper.querySelector(".queue-current-item img"),
 queueCurrentTrack = wrapper.querySelector(".queue-current-data p"),
 queueCurrentArtist = wrapper.querySelector(".queue-current-data span"),
 queueCurrentBackgroundImg = wrapper.querySelector(".queue-gif img"),
-musicTopOptionsRadio = wrapper.querySelector(".top-menu-list-radio-item"),
 musicBackgroundImage = wrapper.querySelector(".background-music-img img"),
 musicTopOptionsImage = wrapper.querySelector(".top-more-head-image img"),
 musicTopOptionsName = wrapper.querySelector(".top-more-head-name"),
 musicTopOptionsArtist = wrapper.querySelector(".top-more-head-artist"),
 musicTopOptionsFavorite = wrapper.querySelector(".top-menu-list-favorite"),
-musicNextTiptool = wrapper.querySelector(".main-music-next-music"),
 musicImgNext = wrapper.querySelector(".main-music-header-back"),
-musicNextTitle = wrapper.querySelector(".main-music-next-music .next-music-title"),
 musicTopArtistBtn = wrapper.querySelector(".top-menu-list-artist"),
-
+musicVolumeTop = wrapper.querySelector('.top-shortcut-item.shortcut-rate span'),
 lyricsDataArtist = wrapper.querySelector(".device-main-audio-data .device-main-audio-data-artist"),
 lyricsDataTitle = wrapper.querySelector(".device-main-audio-data .device-main-audio-data-title"),
-
 queueArtist = wrapper.querySelector(".queue-container .artist");
 
+const pc_track = document.querySelector(".pc-controls-track-data p");
+const pc_artist = document.querySelector(".pc-controls-track-data span");
+const pc_img = document.querySelector(".pc-controls-track img");
+const pc_timerStart = document.querySelector(".pc-start");
+const pc_timerEnd = document.querySelector(".pc-end");
+const pc_playpauseBtn = document.querySelector("#pc-playpause");
+const pc_repeat = document.querySelector("#pc-repeat");
+const pc_shuffle = document.querySelector("#pc-shuffle");
+const pc_proggres = document.querySelector(".pc-controls-proggres");
+const pc_proggresCompleted = document.querySelector(".pc-controls-proggres-done");
+const musicSavePc = document.querySelector("#pc-controls-playlist-add");
 
 const smallView = document.querySelector(".music-controls"),
 smallBackgroundImg = smallView.querySelector(".music-controls-background"),
@@ -397,28 +406,55 @@ smallName = smallView.querySelector(".music-title .fasttitle"),
 smallArtist = smallView.querySelector(".music-title .fastartist"),
 progressBarNavDone = smallView.querySelector(".music-controls-progresbar-done"),
 progressBarNav = smallView.querySelector(".music-controls-progresbar"),
-leftTime = smallView.querySelector(".music-icon-timer");
 smallPlayStopbtn = smallView.querySelector("#smallplaystop");
 const favoritBtn = document.querySelector('#heartBtnMain');
+const pcfavoritBtn = document.querySelector('.pc-heart-box i');
 const filterData = document.querySelector('.filter-data-bar');
 
 const lyricsBox = document.querySelector(".main-music-lyrics-box");
 
-
-
 var str = window.location.hash;
 const char = str[0];
 const replaced = str.replace(char, '');
-var indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
+var indexNumb = Math.floor((Math.random() * allMusic.length));
 
 var allMusicView = allMusic.filter(x => x.artist !== "");
 var indexNumbAll = allMusicView.length;
+let lastData;
+if(localStorage.getItem("track_data_1")){
+  lastData = localStorage.getItem("track_data_1").split(',')[0];
+  let lastPlayedSong = allMusicView.filter(x => x.id === lastData);
+  let lastPlayedArtist = allMusicView.filter(x => x.artist_id === lastPlayedSong[0].artist_id);
+  let lastPlayedQueue = lastPlayedArtist;
+}
+
+let allQueue;
+allQueue = allMusicView.filter(x => x.id === "#");
+
+if(localStorage.getItem("data_queue")){
+  allQueueLength = localStorage.getItem("data_queue").split(',')[0];
+    for (let i = 1; i <= allQueueLength; i++) {
+      queueMusic = allMusicView.filter(x => x.id === localStorage.getItem("data_queue").split(',')[i]);
+      allQueue = allQueue.concat(queueMusic)
+    }
+}
+
+if(allQueue.length === 0){
+  allMusic = allMusicView;
+}else{
+  allMusic = allQueue;
+  const indexQueue = allQueue.findIndex(object => {
+    return object.id === lastData;
+  });
+  indexNumb = indexQueue + 1;
+}
 
 checkLocalStorageData();
 checkLocalStorageAlbum();
 
 if(replaced){
   var indexNumb = replaced;
+  allMusic = allMusicView;
 }
 
 window.addEventListener("load", ()=>{
@@ -431,6 +467,14 @@ musicImg.addEventListener("click", ()=>{
 });
 
 favoritBtn.addEventListener('click', () => {
+  track_LIKE()
+})
+
+pcfavoritBtn.addEventListener('click', () => {
+  track_LIKE()
+})
+
+function track_LIKE(){
   if (allMusic[indexNumb - 1].status === "favorite") {
     allMusic[indexNumb - 1].status = "nostatus";
     localStorage.setItem(allMusic[indexNumb - 1].id, allMusic[indexNumb - 1].status);
@@ -443,20 +487,40 @@ favoritBtn.addEventListener('click', () => {
     favoritBtn.classList.add('active')
     favoritBtn.classList.add('fa-solid')
     favoritBtn.classList.remove('fa-regular')
+
+    pcfavoritBtn.classList.add('active')
+    pcfavoritBtn.classList.add('fa-solid')
+    pcfavoritBtn.classList.remove('fa-regular')
+  
     musicTopOptionsFavorite.classList.add('active')
     musicTopOptionsFavorite.innerHTML = '<i class="fa-solid fa-heart"></i><span> Liked</span>';
+
+    setTimeout(() => {
+      playlistToolTip.classList.add('on')
+      playlistToolTip.innerText = 'Added To Liked';
+      setTimeout(() => {
+        playlistToolTip.classList.remove('on')
+      }, 2000);
+    }, 300);
   }
   if (allMusic[indexNumb - 1].status === "nostatus") {
     favoritBtn.classList.remove('active')
     favoritBtn.classList.remove('fa-solid')
     favoritBtn.classList.add('fa-regular')
+
+    pcfavoritBtn.classList.remove('active')
+    pcfavoritBtn.classList.remove('fa-solid')
+    pcfavoritBtn.classList.add('fa-regular')
+
     musicTopOptionsFavorite.classList.remove('active')
     musicTopOptionsFavorite.innerHTML = '<i class="fa-regular fa-heart"></i><span> Like</span>';
   }
-})
+}
+
 
 
 function loadMusic(indexNumb){
+  window.location.hash = "";
   musicName.innerText = allMusic[indexNumb - 1].name;
   if(allMusic[indexNumb - 1].colaboration != ""){
   musicArtist.innerText = allMusic[indexNumb - 1].artist + ", " + allMusic[indexNumb - 1].colaboration;}
@@ -470,15 +534,39 @@ function loadMusic(indexNumb){
   musicTopOptionsName.innerText = allMusic[indexNumb - 1].name;
   musicTopOptionsArtist.innerText = allMusic[indexNumb - 1].artist;
   musicTopOptionsImage.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
-  musicTopOptionsRadio.id = allMusic[indexNumb - 1].artist;
   topOption.setAttribute("id", allMusic[indexNumb - 1].id);
   lyricsDataArtist.innerText = allMusic[indexNumb - 1].artist;
   lyricsDataTitle.innerText = allMusic[indexNumb - 1].name;
-  trackTextContainer.setAttribute("id", allMusic[indexNumb - 1].id);
   musicTopArtistBtn.setAttribute("id", allMusic[indexNumb - 1].id);
-  window.location.hash = allMusic[indexNumb - 1].id;
-  document.title = allMusic[indexNumb - 1].name + ' • ' + allMusic[indexNumb - 1].artist; 
+  document.title = allMusic[indexNumb - 1].name + ' • ' + allMusic[indexNumb - 1].artist + ' • ' + 'Zesia'; 
+  musicVolumeTop.innerText = localStorage.getItem("user_Volume")*100 + "%";
+  document.querySelector('.top-menu-list-volume input').value = localStorage.getItem("user_Volume")*100;
+  document.querySelector('.pc-volume-slider input').value = localStorage.getItem("user_Volume")*100;
+  pc_track.innerText = allMusic[indexNumb - 1].name;
+  pc_artist.innerText = allMusic[indexNumb - 1].artist;
+
+  if(allMusic[indexNumb - 1].colaboration != ''){
+    pc_artist.innerHTML = `<span onclick="artistScreenDataLoad(this)" id='${allMusic[indexNumb - 1].id}'>${allMusic[indexNumb - 1].artist}</span><span onclick="artistScreenDataLoad(this)">, ${allMusic[indexNumb - 1].colaboration}</span>`;
+    if(allMusic[indexNumb - 1].colaboration_id){
+      pc_artist.innerHTML = `<span onclick="artistScreenDataLoad(this)" id='${allMusic[indexNumb - 1].id}'>${allMusic[indexNumb - 1].artist}</span><span onclick="artistScreenDataLoad(this)" colab-id='${allMusic[indexNumb - 1].colaboration_id}'>, ${allMusic[indexNumb - 1].colaboration}</span>`;
+    }
+  }else{
+    pc_artist.innerHTML = `<span onclick="artistScreenDataLoad(this)" id='${allMusic[indexNumb - 1].id}'>${allMusic[indexNumb - 1].artist}</span>`;
+  }
+
+  pc_img.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
+  pcBar.style.backgroundImage = `url(images/${allMusic[indexNumb - 1].img}.jpg)`;
   
+  musicName.setAttribute("data-album", allMusic[indexNumb - 1].album);
+  musicName.setAttribute("artist-data", allMusic[indexNumb - 1].artist_id);
+  musicArtist.setAttribute("id", allMusic[indexNumb - 1].id);
+  musicSave.setAttribute("track-data", allMusic[indexNumb - 1].id);
+  musicSavePc.setAttribute("track-data", allMusic[indexNumb - 1].id);
+
+  pc_track.setAttribute("data-album", allMusic[indexNumb - 1].album);
+  pc_track.setAttribute("artist-data", allMusic[indexNumb - 1].artist_id);
+  volumeBLOCK.style.width = localStorage.getItem("user_Volume")*100-3 + 'px';
+
   tracksHistory();
   recentTracksLoad();
   reset_animation();
@@ -526,6 +614,11 @@ function loadMusic(indexNumb){
     favoritBtn.classList.add('active')
     favoritBtn.classList.add('fa-solid')
     favoritBtn.classList.remove('fa-regular')
+
+    pcfavoritBtn.classList.add('active')
+    pcfavoritBtn.classList.add('fa-solid')
+    pcfavoritBtn.classList.remove('fa-regular')
+
     musicTopOptionsFavorite.innerHTML = '<i class="fa-solid fa-heart"></i><span> Liked</span>';
     musicTopOptionsFavorite.classList.add('active')
   }
@@ -533,6 +626,11 @@ function loadMusic(indexNumb){
     favoritBtn.classList.remove('active')
     favoritBtn.classList.remove('fa-solid')
     favoritBtn.classList.add('fa-regular')
+
+    pcfavoritBtn.classList.remove('active')
+    pcfavoritBtn.classList.remove('fa-solid')
+    pcfavoritBtn.classList.add('fa-regular')
+
     musicTopOptionsFavorite.innerHTML = '<i class="fa-solid fa-heart"></i><span> Like</span>';
     musicTopOptionsFavorite.classList.remove('active')
   }
@@ -564,8 +662,6 @@ function loadMusic(indexNumb){
         prevMusic();
       });
 
-      leftTime.classList.remove("active");
-
       queueCurrentImg.parentElement.classList.add("active");
       setTimeout(() => {
         queueCurrentImg.parentElement.classList.remove("active");
@@ -585,6 +681,7 @@ function loadMusic(indexNumb){
             uiLastViewedAlbum_2.style.display="none";
         }
       }
+
       queueDataLoad();
       overflowingText();
 
@@ -594,9 +691,10 @@ function loadMusic(indexNumb){
           document.querySelector(".background-canvas video").style.display="flex";
           document.querySelector(".background-canvas img").style.display="none";
         }else{
-          document.querySelector(".background-canvas video").style.display="none";
-          document.querySelector(".background-canvas img").src = `images/${allMusic[indexNumb - 1].img}.jpg`;
-          document.querySelector(".background-canvas img").style.display="flex";
+          document.querySelector(".background-canvas video").src = "bg-assetFs.webm";
+          document.querySelector(".background-canvas video").style.display="flex";
+          document.querySelector(".background-canvas img").style.display="none";
+          musicCanvasVideo.currentTime = 1;
         }
       }
 
@@ -605,18 +703,53 @@ function loadMusic(indexNumb){
 }
 
 function queueDataLoad(){
-  const resultsFAV = wrapper.querySelector(".queue-item ul");
+  const resultsFAV = wrapper.querySelector(".queue-item");
   resultsFAV.innerHTML = "";
-  for (let i = 0; i < allMusic.length && i < 50; i++) {
-    let resultFAV = `<li li-index="${i + 1}" onclick="clickedQueueItem(this)">
+  for (let i = 0; i < allMusic.length; i++) {
+    let resultFAV = `<div class="queue-box" li-index="${i + 1}" track-id="${allMusic[i].id}" onclick="clickedQueueItem(this)">
     <p>${i + 1}</p>
     <div class="row">
       <span>${allMusic[i].name}</span>
       <p>${allMusic[i].artist}</p>
     </div>
-  </li>`;
+    <i onclick="removeQueueItem(this)" class="fa-solid fa-minus"></i>
+  </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }
+
+  let queueAll = document.querySelectorAll('.queue-item .queue-box');
+  for (i = 0; i < queueAll.length; i++) { 
+    queueAll[i].classList.remove('active')
+  }
+
+  let queueCorrect = document.querySelectorAll('.queue-item .queue-box')[indexNumb - 1];
+  queueCorrect.classList.add('active');
+  queuePos = queueCorrect.offsetTop - 300;
+  resultsFAV.scroll({
+    top: queuePos,
+    behavior: 'auto'
+  })
+
+  let queueSaveData = allMusic.length + ",";
+  for (let i = 0; i < allMusic.length; i++) {
+    queueSaveData = queueSaveData + allMusic[i].id + ',';
+  }
+  localStorage.setItem('data_queue', queueSaveData);
+  
+  $('.queue-box i').click(function(event) {
+    event.stopPropagation();
+  });
+}
+
+function removeQueueItem(element){
+  let queueID = element.parentElement.getAttribute('track-id');
+  let correctedQueue = allMusic.filter(x => x.id !== queueID);
+  element.parentElement.classList.add("delete");
+  console.log(queueID, correctedQueue)
+  allMusic = correctedQueue;
+  setTimeout(() => {
+    queueDataLoad();
+  }, 350);
 }
 
 function clickedQueueItem(element){
@@ -633,17 +766,10 @@ function playMusic(){
   playstopButton.querySelector(".fa-solid").classList.add("fa-stop");
   smallPlayStopbtn.querySelector(".fa-solid").classList.remove("fa-play");
   smallPlayStopbtn.querySelector(".fa-solid").classList.add("fa-stop");
+  pc_playpauseBtn.classList.remove("fa-play");
+  pc_playpauseBtn.classList.add("fa-stop");
   mainAudio.play();
   musicCanvasVideo.play();
-
-  setTimeout(() => {
-    leftTime.classList.add("active");
-    setTimeout(() => {
-      leftTime.classList.remove("active");
-    }, 5000)
-  }, 5000)
-  if(musicCanvas.classList.contains("active")){
-  }
 }
 
 function pauseMusic(){
@@ -652,8 +778,18 @@ function pauseMusic(){
   playstopButton.querySelector(".fa-solid").classList.remove("fa-stop");
   smallPlayStopbtn.querySelector(".fa-solid").classList.add("fa-play");
   smallPlayStopbtn.querySelector(".fa-solid").classList.remove("fa-stop");
+  pc_playpauseBtn.classList.add("fa-play");
+  pc_playpauseBtn.classList.remove("fa-stop");
   mainAudio.pause();
   musicCanvasVideo.pause();
+}
+
+function playpausePc(){
+  if(pc_playpauseBtn.classList.contains("fa-play")){
+    playMusic();
+  }else{
+    pauseMusic();
+  }
 }
 
 function nextMusic(){
@@ -666,22 +802,6 @@ function nextMusic(){
     setTimeout(() => {
       playMusic();
     }, 500)
-
-  toggleSequence(); 
-}
-
-function toggleSequence() {
-  musicNextTiptool.innerHTML = '';
-  i = indexNumb;
-  i++;
-  if(allMusic[i] != undefined){
-  let nextSongInfo = 
-  `<div class="next-music-item active">
-    <p class="next-music-info">Next • </p>
-    <p class="next-music-title">${allMusic[i].name}</p>
-  </div>`
-  musicNextTiptool.insertAdjacentHTML("beforeend", nextSongInfo);  
-  }
 }
 
 function prevMusic(){
@@ -695,8 +815,6 @@ function prevMusic(){
     setTimeout(() => {
       playMusic();
     }, 500)
-
-  toggleSequence();
 }
 
 function randomIndex() {
@@ -729,6 +847,7 @@ mainAudio.addEventListener("timeupdate", (e)=>{
   let progressWidth = (currentTime / duration) * 100;
   progressBar.style.width = `${progressWidth}%`;
   progressBarNavDone.style.width = `${progressWidth}%`;
+  pc_proggresCompleted.style.width = `${progressWidth}%`;
 
   let musicCurrentTime = wrapper.querySelector(".current-time"),
   musicDuartion = wrapper.querySelector(".max-duration");
@@ -740,6 +859,7 @@ mainAudio.addEventListener("timeupdate", (e)=>{
       totalSec = `0${totalSec}`;
     }
     musicDuartion.innerText = `${totalMin}:${totalSec}`;
+    pc_timerEnd.innerText = `${totalMin}:${totalSec}`;
   });
 
   let currentMin = Math.floor(currentTime / 60);
@@ -757,15 +877,17 @@ mainAudio.addEventListener("timeupdate", (e)=>{
   }
   totalMin = `- ${totalMin}`;
   musicCurrentTime.innerText = `${currentMin}:${currentSec}`;
-  if(leftTime.classList.contains("active")){
-    leftTime.innerText = `${totalMin}:${totalSec}`;
-  }else{
-    leftTime.innerText = "-0:00";
-  }
+  pc_timerStart.innerText = `${currentMin}:${currentSec}`;
 
 });
 
 progressBar.addEventListener("timeubdate", (e)=>{
+  const currentTime = e.target.currentTime;
+  const duration = e.target.duration;
+  let progressWidth = (currentTime / duration) * 100;
+})
+
+pc_proggres.addEventListener("timeubdate", (e)=>{
   const currentTime = e.target.currentTime;
   const duration = e.target.duration;
   let progressWidth = (currentTime / duration) * 100;
@@ -786,10 +908,27 @@ progressArea.addEventListener("click", (e)=>{
   }
 });
 
+pc_proggres.addEventListener("click", (e)=>{
+  let progressWidth = pc_proggres.clientWidth;
+  let clickedOffsetX = e.offsetX;
+  let songDuration = mainAudio.duration;
+
+  mainAudio.currentTime = (clickedOffsetX / progressWidth) * songDuration;
+  playMusic();
+
+  if(musicImgBox.classList.contains('lyrics')){
+    lyricsBox.innerHTML = '';
+    lyricsBox.scrollTo(0, lyricsBox.scrollHeight);
+    clearLyricStatus();
+  }
+});
+
 repeatBtn.addEventListener("click", ()=>{
   if (mainAudio.loop == false) {mainAudio.loop = true}
     else {mainAudio.loop = false};
   repeatBtn.classList.toggle('active');
+  pc_repeat.classList.toggle('active');
+  pc_shuffle.classList.remove('active');
   shuffleBtn.classList.remove('active');
   wrapper.classList.remove("shuffle");
   wrapper.classList.toggle("repeat");
@@ -798,6 +937,29 @@ repeatBtn.addEventListener("click", ()=>{
 shuffleBtn.addEventListener("click", ()=>{
   mainAudio.loop = false;
   shuffleBtn.classList.toggle('active');
+  pc_shuffle.classList.toggle('active');
+  pc_repeat.classList.remove('active');
+  repeatBtn.classList.remove('active');
+  wrapper.classList.toggle("shuffle");
+  wrapper.classList.remove("repeat");
+});
+
+pc_repeat.addEventListener("click", ()=>{
+  if (mainAudio.loop == false) {mainAudio.loop = true}
+    else {mainAudio.loop = false};
+  repeatBtn.classList.toggle('active');
+  pc_repeat.classList.toggle('active');
+  pc_shuffle.classList.remove('active');
+  shuffleBtn.classList.remove('active');
+  wrapper.classList.remove("shuffle");
+  wrapper.classList.toggle("repeat");
+});
+
+pc_shuffle.addEventListener("click", ()=>{
+  mainAudio.loop = false;
+  shuffleBtn.classList.toggle('active');
+  pc_shuffle.classList.toggle('active');
+  pc_repeat.classList.remove('active');
   repeatBtn.classList.remove('active');
   wrapper.classList.toggle("shuffle");
   wrapper.classList.remove("repeat");
@@ -829,9 +991,9 @@ $(function(){
       var $this = $(this),
           scrollspeed = parseInt($this.data('scroll-speed')),
           val = - scrollTop / scrollspeed;
-      $this.css('transform', 'scale(' + (125 - (-val/15)) + '%) translateY(' + (-val * 1.5) + 'px)');
+      $this.css('transform', 'scale(' + (125 - (-val/45)) + '%) translateY(' + (-val * 1.75) + 'px)');
       $this.css('filter', 'blur(' + (-val / 10) + 'px)');
-      $this.css('opacity', '' + (100 - (-val/5)) + '%');
+      $this.css('opacity', '' + (100 - (-val/50)) + '%');
       })
   });
 })
@@ -845,8 +1007,9 @@ $(function(){
       var $this = $(this),
           scrollspeed = parseInt($this.data('scroll-speed')),
           val = - scrollTop / scrollspeed;
-      $this.css('transform', 'scale(' + (110 - (-val/15)) + '%) translateY(' + (-val) + 'px)');
-      $this.css('filter', 'blur(' + (5 -val/10) + 'px)');
+          $this.css('transform', 'scale(' + (105 - (-val/15)) + '%) translateY(' + (-val) + 'px)');
+          $this.css('filter', 'blur(' + (-val / 10) + 'px)');
+          $this.css('opacity', '' + (100 - (-val/5)) + '%');
       })
   });
 })
@@ -860,10 +1023,10 @@ $(function(){
         var $this = $(this),
             scrollspeed = parseInt($this.data('scroll-speed')),
             val = - scrollTop / scrollspeed;
-        $this.css('transform', 'scale(' + (125 - (-val/15)) + '%) translateY(' + (-val) + 'px)');
-        $this.css('filter', 'blur(' + (-val / 10) + 'px)');
-        $this.css('opacity', '' + (100 - (-val/5)) + '%');
-        })
+      $this.css('transform', 'scale(' + (105 - (-val/15)) + '%) translateY(' + (-val) + 'px)');
+      $this.css('filter', 'blur(' + (-val / 10) + 'px)');
+      $this.css('opacity', '' + (100 - (-val/5)) + '%');
+      })
     });
   })
 
@@ -968,6 +1131,7 @@ const currentPlaylistBtn = document.getElementsByClassName('current-playlist-btn
 const topQueueMenuShow = document.getElementsByClassName('queue-container')[0]
 currentPlaylistBtn.addEventListener('click', () => {
   topQueueMenuShow.classList.add('active');
+  queueDataLoad();
 })
 
 const topQueue = document.getElementsByClassName('exit-queue')[0]
@@ -1023,18 +1187,19 @@ correctSoundBtn.addEventListener('click', () => {
   trackLyrics();
 })
 
-function resultItemQueue(element){
-  let itemNameData = element.getAttribute('li-index');
-  allMusic = allMusicView.filter(x => x.id === itemNameData);
-  indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
-  loadMusic(indexNumb);
-  playMusic();
+function lyricsShortcut(){
+  if(musicImgBox.classList.contains("lyrics")){
+    correctSoundBtn.classList.add('active');
+    document.querySelector('.pc-additional-buttons .fa-solid.fa-microphone').classList.add('active')
+  }else{
+    correctSoundBtn.classList.remove('active');
+    document.querySelector('.pc-additional-buttons .fa-solid.fa-microphone').classList.remove('active')
+  }
 }
 
 function artistQueue(element){
-  let artistData = element.parentElement.parentElement.parentElement;
-  itemArtistData = artistData.querySelector(".music-artist-item-data-artist").innerText;
-  allMusic = allMusicView.filter(x => x.artist === itemArtistData || x.colaboration === itemArtistData);
+  let itemArtistData = document.querySelector('.music-artist-content-screen .music-artist-content-container').getAttribute('artist-data');
+  allMusic = allMusicView.filter(x => x.artist_id === itemArtistData || x.colaboration_id === itemArtistData);
   indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
   loadMusic(indexNumb);
   playMusic();
@@ -1042,8 +1207,9 @@ function artistQueue(element){
 
 function albumQueue(element){
   let albumData = element.parentElement.parentElement.parentElement;
+  itemAlbumId = document.querySelector(".music-artist-album-screen .music-artist-album-screen-container").getAttribute('artist-data');
   itemAlbumData = albumData.querySelector(".music-artist-album-fast-data-name").innerText;
-  allMusic = allMusicView.filter(x => x.album === itemAlbumData);
+  allMusic = allMusicView.filter(x => x.album === itemAlbumData && x.artist_id === itemAlbumId);
   indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
   loadMusic(indexNumb);
   playMusic();
@@ -1166,7 +1332,7 @@ function checkUserData(){
   function loadBioData(){
     let artistData = artistItemTitle.innerText;
     let artistDataName = document.querySelector(".music-artist-bio-data-name");
-
+    let artistID = bioBox.getAttribute('artist-data');
     artistDataName.innerText = artistData;
 
     var randomnumber = Math.floor(Math.random() * 250000) + 1;
@@ -1177,7 +1343,7 @@ function checkUserData(){
     }
 
     const resultsFAV = document.querySelector(".music-artist-bio-gallery .container .gallery");
-    var favoritIt = allMusicView.filter(x => x.artist === artistData);
+    var favoritIt = allMusicView.filter(x => x.artist_id === artistID);
     resultsFAV.innerHTML = "";
     let resultFAV =
     `<div class="card" data-src='${favoritIt[0].avatar}'>
@@ -1194,49 +1360,49 @@ function checkUserData(){
      </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
     for (let i = 0; i < favoritIt.length; i++) {
-      if(favoritIt[0].gallery_img_3 != ""){
+      if(favoritIt[0].gallery_img_3){
         let resultFAV = `<div class="card" data-src='${favoritIt[0].gallery_img_3}'>
         <img src="${favoritIt[0].gallery_img_3}">
         </div>`
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
-      if(favoritIt[0].gallery_img_4 != ""){
+      if(favoritIt[0].gallery_img_4){
         let resultFAV = `<div class="card" data-src='${favoritIt[0].gallery_img_4}'>
         <img src="${favoritIt[0].gallery_img_4}">
         </div>`
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
-      if(favoritIt[0].gallery_img_5 != ""){
+      if(favoritIt[0].gallery_img_5){
         let resultFAV = `<div class="card" data-src='${favoritIt[0].gallery_img_5}'>
         <img src="${favoritIt[0].gallery_img_5}">
         </div>`
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
-      if(favoritIt[0].gallery_img_6 != null){
+      if(favoritIt[0].gallery_img_6){
         let resultFAV = `<div class="card" data-src='${favoritIt[0].gallery_img_6}'>
         <img src="${favoritIt[0].gallery_img_6}">
         </div>`
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
-      if(favoritIt[0].gallery_img_7 != null){
+      if(favoritIt[0].gallery_img_7){
         let resultFAV = `<div class="card" data-src='${favoritIt[0].gallery_img_7}'>
         <img src="${favoritIt[0].gallery_img_7}">
         </div>`
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
-      if(favoritIt[0].gallery_img_8 != null){
+      if(favoritIt[0].gallery_img_8){
         let resultFAV = `<div class="card" data-src='${favoritIt[0].gallery_img_8}'>
         <img src="${favoritIt[0].gallery_img_8}">
         </div>`
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
-      if(favoritIt[0].gallery_img_9 != null){
+      if(favoritIt[0].gallery_img_9){
         let resultFAV = `<div class="card" data-src='${favoritIt[0].gallery_img_9}'>
         <img src="${favoritIt[0].gallery_img_9}">
         </div>`
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
-      if(favoritIt[0].gallery_img_10 != null){
+      if(favoritIt[0].gallery_img_10){
         let resultFAV = `<div class="card" data-src='${favoritIt[0].gallery_img_10}'>
         <img src="${favoritIt[0].gallery_img_10}">
         </div>`
@@ -1262,31 +1428,31 @@ function checkUserData(){
           }
       });
 
-      if(favoritIt[i].social.instagram === "" ){
+      if(favoritIt[0].social.instagram === "" ){
         artistDataBioInstagram.style.display = "none";
       }else{
         artistDataBioInstagram.style.display = "flex";
-        artistDataBioInstagram.href = favoritIt[i].social.instagram;
+        artistDataBioInstagram.href = favoritIt[0].social.instagram;
       }
       
-      if(favoritIt[i].social.twitter === "" ){
+      if(favoritIt[0].social.twitter === "" ){
         artistDataBioTwitter.style.display = "none";
       }else{
         artistDataBioTwitter.style.display = "flex";
-        artistDataBioTwitter.href = favoritIt[i].social.twitter;
+        artistDataBioTwitter.href = favoritIt[0].social.twitter;
       }
 
-      if(favoritIt[i].social.facebook === "" ){
+      if(favoritIt[0].social.facebook === "" ){
         artistDataBioFacebook.style.display = "none";
       }else{
         artistDataBioFacebook.style.display = "flex";
-        artistDataBioFacebook.href = favoritIt[i].social.facebook;
+        artistDataBioFacebook.href = favoritIt[0].social.facebook;
       }
 
-      if(favoritIt[i].bio === "" ){
+      if(favoritIt[0].bio === "" ){
         artistDataBio.innerText = "";
       }else{
-        artistDataBio.innerText = favoritIt[i].bio;
+        artistDataBio.innerText = favoritIt[0].bio;
       }
     }
 
@@ -1382,6 +1548,7 @@ albumScreenExit.addEventListener('click', () => {
 
 function clickedSingleAlbum(element){
     fastLoadingPop();
+    wrapper.classList.remove("active");
 
     const albumNameData = element.getAttribute("data-album");
     const albumArtistId = element.getAttribute("artist-data");
@@ -1419,7 +1586,7 @@ function clickedSingleAlbum(element){
         `<div class="music-artist-album-item" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
               <div class="music-artist-album-item-data">
                   <h1>${favoritIt[i].name}</h1>
-                  <span>${favoritIt[i].artist}<p>, ${favoritIt[i].colaboration}</p></span>
+                  <span><p class="music-artist-content-item-lyrics"> ${Object.keys(favoritIt[i].lyrics).length}<p>${favoritIt[i].artist}<p>, ${favoritIt[i].colaboration}</p></span>
               </div>
               <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
          </div>`;
@@ -1431,15 +1598,19 @@ function clickedSingleAlbum(element){
 
     let albumNumberSongs = $('.music-artist-album-item').length;
     if(albumNumberSongs > 1){
-      albumScreenPremiere.innerText = favoritIt[0].album_premiere + " • Album";
+      albumScreenArtistName.innerText = favoritIt[0].artist + " • " + favoritIt[0].album_premiere + " • Album";
     }else if(albumNumberSongs = 1){
-      albumScreenPremiere.innerText = favoritIt[0].album_premiere + " • Single";
+      albumScreenArtistName.innerText = favoritIt[0].artist + " • " + favoritIt[0].album_premiere + " • Single";
     } 
-  
+
+    let featured_style = favoritIt[0].style;
+    let featured_name = favoritIt[0].artist_id;
+    let featured_country = favoritIt[0].country;
+
     const featuredBox = document.querySelector(".music-artist-album-screen-featured");
-    var featuredIt = allMusicView.filter(x => x.artist_id === albumArtistId && x.album != albumNameData || x.country === albumArtistCountry && x.album != albumNameData);
-  
-    favoritIt.sort(function(a, b){
+    var featuredIt = allMusicView.filter(x => x.style === featured_style || x.artist_id === albumArtistId || x.country === featured_country || x.colaboration_id === featured_name);
+    featuredIt =  featuredIt.filter(x => x.album != albumNameData);
+    featuredIt.sort(function(a, b){
       var values = [b.id - a.id, b.artist - a.artist, b.artist_id - a.artist_id, b.album_premiere - a.album_premiere],
       valueToUse = values[Math.floor(Math.random() * values.length)];
       return valueToUse;
@@ -1465,7 +1636,7 @@ function clickedSingleAlbum(element){
         }
     });
 
-    $('.music-artist-information-albums-item.featured').slice(6).remove()
+    $('.music-artist-information-albums-item.featured').slice(9).remove()
 
     if (localStorage.getItem("lastViewedAlbum_2").length > 0) {
       setTimeout(() => {
@@ -1478,9 +1649,12 @@ function clickedSingleAlbum(element){
 
     checkAlbumStatus();
     loseFocus();
+    featuredBox.scrollLeft = 0
+
 
     setTimeout(() => {
       collaborationAlbumCheck();
+      lyricsItemCheck();
     }, 200);
 }
 
@@ -1655,12 +1829,16 @@ function copyUrlClipboard(){
 const copyUrlBtn = document.querySelector('.copyUrl')
 const alertCopy = document.querySelector('.copy-alert')
 copyUrlBtn.addEventListener('click', () => {
-    alertCopy.classList.add('active');
-    setTimeout(
-      function() {
-        alertCopy.classList.remove('active');
-      }, 2000);
+    copyAlert();
 })
+
+function copyAlert(){
+  alertCopy.classList.add('active');
+  setTimeout(
+    function() {
+      alertCopy.classList.remove('active');
+    }, 2000);
+}
 
 function alertTimer(){
   const alertTimer = document.querySelector(".timer-alert")
@@ -1678,8 +1856,9 @@ function searchBarUse(){
 }
 
 function shareSong(){
-  var shareLink = document.createElement('input'),
-  text = window.location.href;
+  var shareLink = document.createElement('input')
+  text = '';
+  text = window.location.origin + "/#" + allMusic[indexNumb - 1].id;
   document.body.appendChild(shareLink);
   shareLink.value = text;
   shareLink.select();
@@ -1742,15 +1921,30 @@ if (time > 17){
   timeZoneText.innerText = timeZoneRandomText;
 }
 
+const bioBox = document.querySelector('.music-artist-content-artist-box');
+
 function artistScreenDataLoad(track){
   fastLoadingPop();
 
-  let track_id = track.getAttribute('id');
+  let track_id;
+  let track_View;
+  let track_View_key;
+  
+  if(track.getAttribute('colab-id')){
+    track_View = allMusicView.filter(x => x.artist_id === track.getAttribute('colab-id'));
+    track_id = track_View[0].id;
+  } 
+  if(track.getAttribute('id')){
+    track_id = track.getAttribute('id');
+    track_View_key = allMusicView.filter(x => x.id === track.getAttribute('id'));
+    track_View = allMusicView.filter(x => x.artist_id === track_View_key[0].artist_id);  
+  }
 
-  artistItemTitle.innerText = allMusicView[track_id - 1].artist;
-  artistItemImg.src = `artists/${allMusicView[track_id - 1].avatar}.jpg`;
-  artistCardDataName.innerText = allMusicView[track_id - 1].artist;
-  artistCardBackgroundImg.style.backgroundImage = `url(${allMusicView[track_id - 1].artist_img})`;
+
+  artistItemTitle.innerText = track_View[0].artist;
+  artistItemImg.src = `artists/${track_View[0].avatar}.jpg`;
+  artistCardDataName.innerText = track_View[0].artist;
+  artistCardBackgroundImg.style.backgroundImage = `url(${track_View[0].artist_img})`;
 
   var randomnumber = Math.floor(Math.random() * 150000) + 1;
   artistItemFollowers.innerText = randomnumber;
@@ -1765,29 +1959,29 @@ function artistScreenDataLoad(track){
   searchScreen.classList.remove('active');
   favortieScreen.classList.remove('active');
   playlistScreen.classList.remove('active');
+  bioBox.setAttribute('artist-data', track_View[0].artist_id)
 
   checkFollowStatus();
-
   artistProfilePopular(track_id);
   artistProfileReleases(track_id);
   artistProfileFeat(track_id);
   artistProfileAbout(track_id);
   artistProfileFansChoice(track_id);
   artistProfilePlaylists(track_id);
+  artistProfileTweet(track_id);
 
-  musicArtistScreen.scrollTop = 0;
-
+  setTimeout(() => {
+    musicArtistScreen.scrollTop = 0;
+  }, 250);
   loseFocus();
 }
 
 function artistProfilePopular(track){
-
-  var track_id = allMusicView.filter(x => x.id === track);
-  var profile_id = track_id[0].artist_id;
+  var track_View_key = allMusicView.filter(x => x.id === track);
+  var profile_id = track_View_key[0].artist_id;
 
   const resultsFAV = document.querySelector(".music-artist-content-container");
   var favoritIt = allMusicView.filter(x => x.artist_id === profile_id);
-
   resultsFAV.setAttribute('artist-data', favoritIt[0].artist_id)
 
   favoritIt.sort(function(a, b){
@@ -1806,8 +2000,20 @@ function artistProfilePopular(track){
           <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
-  }
+
+    if(document.querySelectorAll(".music-artist-content-number")[i].innerText.length < 2){
+      document.querySelectorAll(".music-artist-content-number")[i].innerText = 0 +document.querySelectorAll(".music-artist-content-number")[i].innerText;
+    }}
+
   lyricsItemCheck();
+
+  if(favoritIt.length > 10){
+    popBtn.parentElement.style.display="flex";
+  }else{
+    popBtn.parentElement.style.display="none";
+  }
+  popCont.classList.remove("view-all")
+  popBtn.innerHTML = `<i class="fa-solid fa-plus"></i>Show More`
 }
 
 function lyricsItemCheck(){
@@ -1825,9 +2031,8 @@ function lyricsItemCheck(){
 }
 
 function artistProfileReleases(track){
-
-  var track_id = allMusicView.filter(x => x.id === track);
-  var profile_id = track_id[0].artist_id;
+  var track_View_key = allMusicView.filter(x => x.id === track);
+  var profile_id = track_View_key[0].artist_id;
 
   const resultsFAV = document.querySelector(".music-artist-content-album");
   var favoritIt = allMusicView.filter(x => x.artist_id === profile_id);
@@ -1853,15 +2058,24 @@ function artistProfileReleases(track){
          productIds[prodId] = true;
       }
   });
+
+  setTimeout(() => {
+    if(document.querySelectorAll('.music-artist-content-album .music-artist-information-albums-item').length > 3){
+      albBtn.parentElement.style.display="flex";
+    }else{
+      albBtn.parentElement.style.display="none";
+    }
+    albCont.classList.remove("view-all")
+    albBtn.innerHTML = `<i class="fa-solid fa-plus"></i>Show More`
+  }, 100);
 }
 
 function artistProfileFeat(track){
-
-  var track_id = allMusicView.filter(x => x.id === track);
-  var profile_id = track_id[0].artist;
+  var track_View_key = allMusicView.filter(x => x.id === track);
+  var track_View = allMusicView.filter(x => x.artist_id === track_View_key[0].artist_id);
 
   const resultsFAV = document.querySelector(".music-artist-content-feat");
-  var favoritIt = allMusicView.filter(x => x.colaboration === profile_id);
+  var favoritIt = allMusicView.filter(x => x.colaboration === track_View[0].artist);
 
   favoritIt.sort(function(a, b){
       return b.album_premiere - a.album_premiere;
@@ -1894,33 +2108,58 @@ function artistProfileFeat(track){
   lyricsItemCheck();
 }
 
-function artistProfilePlaylists(track){
+function artistProfileTweet(track){
+  var track_View_key = allMusicView.filter(x => x.id === track);
+  var track_View = allMusicView.filter(x => x.artist_id === track_View_key[0].artist_id);
 
-  var track_id = allMusicView.filter(x => x.id === track);
-  var profile_id = track_id[0].artist_id;
-  var favoritIt = allMusicView.filter(x => x.artist_id === profile_id);
+  tweet = document.querySelector('.content-video-item');
+  tweetTitle = document.querySelector('.content-video-item-info p');
+  tweetImg = document.querySelector('.content-video-item img');
+  titleBox = document.querySelector('#artistTweet');
+  contentBox = document.querySelector(".music-artist-content-videos");
+  if(track_View[0].tweet_title){
+    tweetTitle.innerText = track_View[0].tweet_title;
+    tweetImg.src = track_View[0].tweet_img;
+    if(track_View[0].tweet_link){
+      tweet.setAttribute('link_to', track_View[0].tweet_link)
+      tweet.setAttribute('onclick', 'clickedNotification(this)')
+    }else if(track_View[0].tweet_href){
+      tweet.setAttribute('link_to', track_View[0].tweet_href)
+      tweet.setAttribute('onclick', 'clickedRedirection(this)')
+    }
+    titleBox.style.display = 'flex';
+    contentBox.style.display = 'flex';
+  }else{
+    titleBox.style.display = 'none';
+    contentBox.style.display = 'none';
+  }
+}
+
+function artistProfilePlaylists(track){
+  var track_View_key = allMusicView.filter(x => x.id === track);
+  var track_View = allMusicView.filter(x => x.artist_id === track_View_key[0].artist_id);
 
   const resultsFAV = document.querySelector(".music-artist-content-playlists");
   resultsFAV.innerHTML='';
 
   let featuringPlaylist_Complete =
-  `<div class="center-container-item playlist-generator complete" playlist-description="This Is ${favoritIt[0].artist}, contains all the most important songs in one playlist" artist-style="${favoritIt[0].style}" artist-name="${favoritIt[0].artist}" playlist-filter="Complete" onclick="fastLoadingPop(); clickedSinglePlaylist(this)" artist-data="${favoritIt[0].artist_id}" playlist-img="${favoritIt[0].gallery_img_1}" data-album='${favoritIt[0].album}'>
-   <img src="${favoritIt[0].thisis_img}">
-   <h2>This Is ${favoritIt[0].artist}</h2>
+  `<div class="center-container-item playlist-generator complete" playlist-description="This Is ${track_View[0].artist}, contains all the most important songs in one playlist" artist-style="${track_View[0].style}" artist-name="${track_View[0].artist}" playlist-filter="Complete" onclick="fastLoadingPop(); clickedSinglePlaylist(this)" artist-data="${track_View[0].artist_id}" playlist-img="${track_View[0].gallery_img_1}" data-album='${track_View[0].album}'>
+   <img src="${track_View[0].thisis_img}">
+   <h2>This Is ${track_View[0].artist}</h2>
    <p>Playlist</p>
    </div>`;
 
    let featuringPlaylist_Style =
-   `<div class="center-container-item playlist-generator" playlist-description="${favoritIt[0].style} style, songs that will fit every fan of ${favoritIt[0].style} music" artist-style="${favoritIt[0].style}" artist-name="${favoritIt[0].artist}" playlist-style="${favoritIt[0].style}" onclick="fastLoadingPop(); clickedSinglePlaylist(this)" artist-data="${favoritIt[0].artist_id}" playlist-img="${favoritIt[0].gallery_img_2}" data-album='${favoritIt[0].album}'>
-    <img src="${favoritIt[0].style_img}">
-    <h2>${favoritIt[0].style} • Style</h2>
+   `<div class="center-container-item playlist-generator" playlist-description="${track_View[0].style} style, songs that will fit every fan of ${track_View[0].style} music" artist-style="${track_View[0].style}" artist-name="${track_View[0].artist}" playlist-style="${track_View[0].style}" onclick="fastLoadingPop(); clickedSinglePlaylist(this)" artist-data="${track_View[0].artist_id}" playlist-img="${track_View[0].gallery_img_2}" data-album='${track_View[0].album}'>
+    <img src="${track_View[0].style_img}">
+    <h2>${track_View[0].style} • Style</h2>
     <p>Playlist</p>
     </div>`;
 
     let featuringPlaylist_Radio =
-    `<div class="center-container-item playlist-generator" playlist-description="${favoritIt[0].artist} • Radio, is mix of artists, styles, collaborations and much more" artist-style="${favoritIt[0].style}" artist-name="${favoritIt[0].artist}" playlist-filter="Radio" onclick="fastLoadingPop(); clickedSinglePlaylist(this)" artist-data="${favoritIt[0].artist_id}" playlist-img="${favoritIt[0].gallery_img_3}" data-album='${favoritIt[0].album}'>
-     <img src="${favoritIt[0].radio_img}">
-     <h2>${favoritIt[0].artist} • Radio</h2>
+    `<div class="center-container-item playlist-generator" playlist-description="${track_View[0].artist} • Radio, is mix of artists, styles, collaborations and much more" artist-style="${track_View[0].style}" artist-name="${track_View[0].artist}" playlist-filter="Radio" onclick="fastLoadingPop(); clickedSinglePlaylist(this)" artist-data="${track_View[0].artist_id}" playlist-img="${track_View[0].gallery_img_3}" data-album='${track_View[0].album}'>
+     <img src="${track_View[0].radio_img}">
+     <h2>${track_View[0].artist} • Radio</h2>
      <p>Playlist</p>
      </div>`;
 
@@ -1931,27 +2170,24 @@ function artistProfilePlaylists(track){
 }
 
 function artistProfileAbout(track){
+  var track_View_key = allMusicView.filter(x => x.id === track);
+  var track_View = allMusicView.filter(x => x.artist_id === track_View_key[0].artist_id);
 
-  var track_id = allMusicView.filter(x => x.id === track);
-  var profile_id = track_id[0].artist_id;
-
-  const resultsFAV = document.querySelector(".music-artist-content-artist");
-  var favoritIt = allMusicView.filter(x => x.artist_id === profile_id);
-
-  document.querySelector(".music-artist-content-artist-box-img").src = favoritIt[0].gallery_img_1;
-  document.querySelector(".music-artist-content-artist-box h1").innerText = favoritIt[0].artist;
-  document.querySelector(".music-artist-content-artist-box p").innerText = favoritIt[0].bio;
+  document.querySelector(".music-artist-content-artist-box-img").src = track_View[0].gallery_img_1;
+  document.querySelector(".music-artist-content-artist-box h1").innerText = track_View[0].artist;
+  document.querySelector(".music-artist-content-artist-box p").innerText = track_View[0].bio;
 }
 
 function artistProfileFansChoice(track){
+  var track_View_key = allMusicView.filter(x => x.id === track);
+  var track_View = allMusicView.filter(x => x.artist_id === track_View_key[0].artist_id);
 
-  var track_id = allMusicView.filter(x => x.id === track);
-  var profile_style = track_id[0].style;
-  var profile_country = track_id[0].country;
-  var profile_collab = track_id[0].artist;
+  var profile_style = track_View[0].style;
+  var profile_country = track_View[0].country;
+  var profile_collab = track_View[0].artist_id;
 
   const resultsFAV = document.querySelector(".music-artist-content-fanschoice");
-  var favoritIt = allMusicView.filter(x => x.style === profile_style && x.artist != profile_collab || x.country === profile_country && x.artist != profile_collab || x.colaboration === profile_collab && x.artist != profile_collab);
+  var favoritIt = allMusicView.filter(x => x.style === profile_style && x.artist_id != profile_collab || x.country === profile_country && x.artist_id != profile_collab || x.colaboration_id === profile_collab && x.artist_id != profile_collab);
 
   favoritIt.sort(function(a, b){
 
@@ -1991,20 +2227,74 @@ uiRandomArtistCardName = uiRandomArtistCard.querySelector(".head-content-item-na
 uiRandomArtistCardImg = uiRandomArtistCard.querySelector("img");
 
 function randomHomeArtist(){
-  var indexNumb = Math.floor((Math.random() * allMusicView.length) + 1);
-  uiRandomArtistCardName.innerText = allMusicView[indexNumb - 1].artist;
-  uiRandomArtistCardImg.src = allMusicView[indexNumb - 1].artist_img;
-  uiRandomArtistCard.setAttribute("artist-data", allMusicView[indexNumb - 1].artist_id);
-  uiRandomArtistCard.setAttribute("id", allMusicView[indexNumb - 1].id);
+  var indexNumb = localStorage.getItem("fesh4we#da=") || Math.floor((Math.random() * allMusicView.length) + 1);
+  var track_View_key = allMusicView.filter(x => x.id === `${indexNumb}` );
+  var track_View = allMusicView.filter(x => x.artist_id === track_View_key[0].artist_id);
+
+  uiRandomArtistCardName.innerText = track_View[0].artist;
+  uiRandomArtistCardImg.src = `artists/${track_View[0].avatar}.jpg`; 
+  uiRandomArtistCard.setAttribute("artist-data", track_View[0].artist_id);
+  uiRandomArtistCard.setAttribute("id", track_View[0].id);
+
+  localStorage.setItem('fesh4we#da=', indexNumb);
+
+  var today = new Date();
+  var dd = String(today.getDate()).padStart(2, '0');
+  var mm = String(today.getMonth() + 1).padStart(2, '0');
+
+  if(!localStorage.getItem('fesh4we#td=')){
+    localStorage.setItem('fesh4we#td=', dd);
+    localStorage.setItem('fesh4we#tm=', mm);
+  }
+
+  if(localStorage.getItem('fesh4we#td=') != dd || localStorage.getItem('fesh4we#tm=') != mm){
+    indexNumb = Math.floor((Math.random() * allMusicView.length) + 1);
+    localStorage.setItem('fesh4we#da=', indexNumb);
+    localStorage.setItem('fesh4we#td=', dd);
+    localStorage.setItem('fesh4we#tm=', mm);
+    randomHomeArtist();
+  }
+
+  if(uiRandomArtistCardName.innerText.length > 15){
+    uiRandomArtistCardName.style.fontSize = '24px';
+    if(uiRandomArtistCardName.innerText.length > 30){
+      uiRandomArtistCardName.style.fontSize = '16px';
+    }
+  }
 }
 
 const uiLastViewedAlbum_1 = document.querySelector("#head_content_album_1");
 const uiLastViewedAlbum_2 = document.querySelector("#head_content_album_2");
+const uiLastViewedPlaylist = document.querySelector("#head_content_playlist");
 
 function uiLastViewedAlbumsLoad(){
   let lastAlbum_1 = localStorage.getItem("lastViewedAlbum_1");
   let lastAlbum_2 = localStorage.getItem("lastViewedAlbum_2");
+  let lastPlaylist = localStorage.getItem("last_PLAYLIST");
 
+  if(lastPlaylist.includes('playlist_user_')){
+    var lastPlaylistSRC = localStorage.getItem(lastPlaylist);
+    
+    uiLastViewedPlaylist.setAttribute('onclick', 'fastLoadingPop();playlist_SELECT_CLICKED(this);')
+    
+    uiLastViewedPlaylist.querySelector("p").innerText = lastPlaylistSRC.split(',')[0];
+    uiLastViewedPlaylist.querySelector(".data-title").innerText = lastPlaylistSRC.split(',')[0];
+    uiLastViewedPlaylist.querySelector("img").src = lastPlaylistSRC.split(',')[2];
+    uiLastViewedPlaylist.querySelector(".head-content-item-background").src = lastPlaylistSRC.split(',')[2];
+    uiLastViewedPlaylist.setAttribute("playlist-id", lastPlaylist);
+    }
+  else{
+    var lastPlaylistSRC = allPlaylists.filter(x => x.play_id === lastPlaylist);
+
+    uiLastViewedPlaylist.setAttribute('onclick', 'clickedPlaylist(this);')
+
+    uiLastViewedPlaylist.querySelector("p").innerText = lastPlaylistSRC[0].description;
+    uiLastViewedPlaylist.querySelector(".data-title").innerText = lastPlaylistSRC[0].name;
+    uiLastViewedPlaylist.querySelector("img").src = lastPlaylistSRC[0].image;
+    uiLastViewedPlaylist.querySelector(".head-content-item-background").src = lastPlaylistSRC[0].image;
+    uiLastViewedPlaylist.setAttribute("playlist-id", lastPlaylistSRC[0].play_id);
+  }
+  
   uiLastViewedAlbum_1.style.display="flex";
   uiLastViewedAlbum_2.style.display="flex";
 
@@ -2088,6 +2378,10 @@ function favoriteItemOption(){
     favoritBtn.classList.add('active')
     favoritBtn.classList.add('fa-solid')
     favoritBtn.classList.remove('fa-regular')
+
+    pcfavoritBtn.classList.add('active')
+    pcfavoritBtn.classList.add('fa-solid')
+    pcfavoritBtn.classList.remove('fa-regular')
   }
   if (allMusic[indexNumb - 1].status === "nostatus") {
     musicTopOptionsFavorite.innerHTML = '<i class="fa-solid fa-heart"></i><span> Like</span>';
@@ -2095,6 +2389,10 @@ function favoriteItemOption(){
     favoritBtn.classList.remove('active')
     favoritBtn.classList.remove('fa-solid')
     favoritBtn.classList.add('fa-regular')
+
+    pcfavoritBtn.classList.remove('active')
+    pcfavoritBtn.classList.remove('fa-solid')
+    pcfavoritBtn.classList.add('fa-regular')
   }
     
   favoriteLoadItems();
@@ -2137,6 +2435,7 @@ function loadUserProfile(){
   userProfileFilterFavorite.classList.add("active");
   userProfileFilterPlaylist.classList.remove("active");
   userProfileFilterFollowed.classList.remove("active");
+  wrapper.classList.remove("active");
   activeSettingsScreen.classList.remove("active");
   favoriteLoadItemsProfile();
   document.querySelector(".user_profile_header_content_name").innerText = localStorage.getItem('personalization-data-name');
@@ -2154,12 +2453,15 @@ function favoriteLoadItemsProfile() {
           <div class="user_profile_content_item_song_data">
             <p>${favoritIt[i].name}</p>
             <span>${favoritIt[i].artist}</span>
+            <span class="us-yr">${favoritIt[i].album_premiere}</span>
           </div>
           <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }
   favoriteItemsNumber.innerText = $('.library-favorite-item').length;
+
+  loseFocus();
 }
 
 const userProfileActionSearch = document.querySelector(".user_profile_action_search");
@@ -2198,10 +2500,10 @@ function followArtist(){
 
     if (followFilter[i].artist_status === "followed") {
       followFilter[i].artist_status = "none";
-      localStorage.setItem(followFilter[i].artist, followFilter[i].artist_status)
+      localStorage.setItem(followFilter[i].artist + "," + followFilter[i].artist_id, followFilter[i].artist_status)
     }else if (followFilter[i].artist_status === "none") {
       followFilter[i].artist_status = "followed";
-      localStorage.setItem(followFilter[i].artist, followFilter[i].artist_status)
+      localStorage.setItem(followFilter[i].artist + "," + followFilter[i].artist_id, followFilter[i].artist_status)
     }
 
   }
@@ -2301,7 +2603,9 @@ function homeFavortiesArtists() {
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
       `<div class="center-container-item" onclick="artistScreenDataLoad(this);" id='${favoritIt[i].id}' artist-data='${favoritIt[i].artist}'>
+        <div class="img-box">    
           <img src="artists/${favoritIt[i].avatar}.jpg">
+        </div>
           <h2>${favoritIt[i].artist}</h2>
           <p>Verified</p>
        </div>`;
@@ -2323,7 +2627,8 @@ function homeFavortiesArtists() {
 const DOMINANT_COLOR_QUALITY = 5;
 
 const image = document.querySelector(".music-img img");
-const mainMusicBackgroundGradient = document.querySelector(".background-music-img")
+const mainMusicBackgroundGradient = document.querySelector(".background-music-img");
+const pcBar = document.querySelector(".pc-controls-ui");
 const colorThief = new ColorThief();
 
 const getRandomNumber = (max = 10) => Math.round(Math.random() * max);
@@ -2340,7 +2645,7 @@ image.addEventListener('load', () => {
 
   musicBackgroundViral.style.background =
   "linear-gradient(" 
-  + "rgba("+ colour +" , 1)"
+  + "rgba("+ colour +" , 0.75)"
   + ", " 
   + "rgba("+ colour +" , 0.5)"
   + ")";
@@ -2360,7 +2665,7 @@ function get_average_rgb() {
   const hexColor = rgbToHex(...colorThiefArtist.getColor(image, DOMINANT_COLOR_QUALITY_ARTIST));
   document.querySelector(".music-artist-item-title").style.background=hexColor;
 
-  document.querySelector(".music-artist-option").style.background = 'linear-gradient(' + hexColor + + `90` + ', ' + 'var(--background)' + ')';
+  document.querySelector(".music-artist-option").style.background = 'linear-gradient(' + hexColor + + `90` + ', ' + 'rgb(25 25 34 / 75%)' + ')';
 
 }
 
@@ -2407,7 +2712,9 @@ function popularArtistsLoad(){
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
       `<div class="center-container-item popular-artist" id='${favoritIt[i].id}' data-artist='${favoritIt[i].artist}' onclick="artistScreenDataLoad(this)">
-       <img src="artists/${favoritIt[i].avatar}.jpg">
+        <div class="img-box">    
+          <img src="artists/${favoritIt[i].avatar}.jpg">
+        </div>
        <h2>${favoritIt[i].artist}</h2>
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
@@ -2426,6 +2733,8 @@ function popularArtistsLoad(){
          productIds[prodId] = true;
       }
   });
+
+  resultsFAV.scrollLeft = 0;
 }
 
 const isMobile = {
@@ -2517,11 +2826,11 @@ function checkLocalStorageDataArtist(){
 
   for (let i = 0; i < followFilter.length; i++) {
 
-    if (localStorage.getItem(followFilter[i].artist) === null) {
-  
-    }else if (localStorage.getItem(followFilter[i].artist) === "followed"){
+    if (localStorage.getItem(followFilter[i].artist + "," + followFilter[i].artist_id) === null) {
+
+    }else if (localStorage.getItem(followFilter[i].artist + "," + followFilter[i].artist_id) === "followed"){
       followFilter[i].artist_status = "followed";
-    }else if (localStorage.getItem(followFilter[i].artist) === "none"){
+    }else if (localStorage.getItem(followFilter[i].artist + "," + followFilter[i].artist_id) === "none"){
       followFilter[i].artist_status = "none";
     }
 
@@ -2545,7 +2854,9 @@ function featuringLoad(){
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
       `<div class="center-container-item popular-artist" onclick="clickedSingleAlbum(this)" artist-data="${favoritIt[i].artist_id}" data-album='${favoritIt[i].album}'>
-       <img src="${favoritIt[i].album_cover}">
+        <div class="img-box">    
+          <img src="${favoritIt[i].album_cover}">
+        </div>
        <h2>${favoritIt[i].album}</h2>
        <p>${favoritIt[i].album_premiere}</p>
        </div>`;
@@ -2571,21 +2882,27 @@ function featuringLoad(){
 
   let featuringPlaylist_Complete =
   `<div class="center-container-item playlist-generator complete" playlist-description="This Is ${favoritIt[0].artist}, contains all the most important songs in one playlist" artist-style="${favoritIt[0].style}" artist-name="${favoritIt[0].artist}" playlist-filter="Complete" onclick="fastLoadingPop(); clickedSinglePlaylist(this)" artist-data="${favoritIt[0].artist_id}" playlist-img="${favoritIt[0].gallery_img_1}" data-album='${favoritIt[0].album}'>
-   <img src="${favoritIt[0].thisis_img}">
+    <div class="img-box">    
+      <img src="${favoritIt[0].thisis_img}">
+    </div>
    <h2>This Is ${favoritIt[0].artist}</h2>
    <p>Playlist</p>
    </div>`;
 
    let featuringPlaylist_Style =
    `<div class="center-container-item playlist-generator" playlist-description="${favoritIt[0].style} style, songs that will fit every fan of ${favoritIt[0].style} music" artist-style="${favoritIt[0].style}" artist-name="${favoritIt[0].artist}" playlist-style="${favoritIt[0].style}" onclick="fastLoadingPop(); clickedSinglePlaylist(this)" artist-data="${favoritIt[0].artist_id}" playlist-img="${favoritIt[0].gallery_img_2}" data-album='${favoritIt[0].album}'>
-    <img src="${favoritIt[0].style_img}">
+      <div class="img-box">    
+      <img src="${favoritIt[0].style_img}">
+      </div>
     <h2>${favoritIt[0].style} • Style</h2>
     <p>Playlist</p>
     </div>`;
 
     let featuringPlaylist_Radio =
     `<div class="center-container-item playlist-generator" playlist-description="${favoritIt[0].artist} • Radio, is mix of artists, styles, collaborations and much more" artist-style="${favoritIt[0].style}" artist-name="${favoritIt[0].artist}" playlist-filter="Radio" onclick="fastLoadingPop(); clickedSinglePlaylist(this)" artist-data="${favoritIt[0].artist_id}" playlist-img="${favoritIt[0].gallery_img_3}" data-album='${favoritIt[0].album}'>
-     <img src="${favoritIt[0].radio_img}">
+      <div class="img-box">  
+      <img src="${favoritIt[0].radio_img}">
+      </div>
      <h2>${favoritIt[0].artist} • Radio</h2>
      <p>Playlist</p>
      </div>`;
@@ -2629,32 +2946,6 @@ $('.filter-menu-option-scrollable.tag .filter-menu-option-scrollable-item').clic
   $(this).addClass('active');
 });
 
-
-function resetCustomFilter(){
-  searchMusicContent = allMusicView;
-
-  var elements = document.querySelectorAll(".filter-menu-option-scrollable .filter-menu-option-scrollable-item")
-  for (var i = 0; i < elements.length; i++) {
-      elements[i].classList.remove('active');
-  }
-
-  results.innerHTML=searchMusicContent.map((a,i)=>
-  `
-  <div class="result-box" li-index="${a.id}" onclick="resultItemQueue(this);">
-     <img data-lazy="${a.img_mini}">
-     <div class="result-box-cover">
-       <h1 class="result-name">${a.name}</h1>
-       <p class="result-artist">${a.artist}</p>
-     </div>
-     <i class="fa-solid fa-ellipsis-vertical"></i>
-    </div>
-   `).join("\n");
-
-   let targets = document.querySelectorAll('.search-results img');
-   targets.forEach(lazyLoad);
-   clearFilterStatus()
-}
-
 function errorPop(){
   document.querySelector(".error_popup").classList.toggle("active");
 }
@@ -2688,26 +2979,14 @@ function toggleFullScreen(element) {
   }
 }
 
-function volumeDown(){
-  if(mainAudio.volume < 0.15){
-    mainAudio.volume = 0;
-  }else{
-    mainAudio.volume = mainAudio.volume - 0.1;
-  }
+volumeBLOCK = document.querySelector('.input-show-block');
 
-  document.querySelector('.top-menu-list-volume span').innerText = "Volume" + mainAudio.volume + "%"
+function volumeSet(e){
+  let volume_data = e.value;
+  mainAudio.volume = volume_data/100;
+  musicVolumeTop.innerText = volume_data + "%";
   localStorage.setItem("user_Volume", mainAudio.volume);
-}
-
-function volumeUp(){
-  if(mainAudio.volume > 0.95){
-    mainAudio.volume = 1;
-  }else{
-    mainAudio.volume = mainAudio.volume + 0.1;
-  }
-
-  document.querySelector('.top-menu-list-volume span').innerText = "Volume" + mainAudio.volume + "%"
-  localStorage.setItem("user_Volume", mainAudio.volume);
+  volumeBLOCK.style.width=volume_data-3+ 'px';
 }
 
 function notificationCheck(){
@@ -2735,10 +3014,11 @@ function canvasToggle(){
       document.querySelector(".background-canvas img").style.display="none";
       musicCanvasVideo.play();
     }else{
-      document.querySelector(".background-canvas video").style.display="none";
-      document.querySelector(".background-canvas img").src = `images/${allMusic[indexNumb - 1].img}.jpg`;
-      document.querySelector(".background-canvas img").style.display="flex";
-      musicCanvasVideo.pause();
+      document.querySelector(".background-canvas video").src = "bg-assetFs.webm";
+      document.querySelector(".background-canvas video").style.display="flex";
+      document.querySelector(".background-canvas img").style.display="none";
+      musicCanvasVideo.currentTime = 1;
+      musicCanvasVideo.play();
     }
   }else{
     musicImg.style.opacity="1";
@@ -2771,6 +3051,10 @@ function userSettingsLoad(){
 
   if(localStorage.getItem("lyricsAccouracyImprove")){
     document.querySelector("#userSettingsLyricsImprovment").classList.add("active");
+  }
+
+  if(localStorage.getItem("lyricsRender")){
+    document.querySelector("#userSettingsLyricsRender").classList.add("active");
   }
 
   if (content.classList.contains('green')) {
@@ -2810,12 +3094,16 @@ function default_user(){
 
 function clickedNotification(element){
   let linkHref = element.getAttribute('link_to');
-  window.location.href = "#" + linkHref;
-  var indexNumb = linkHref;
-  allMusic = allMusicView;
+  allMusic = allMusicView.filter(x => x.id === linkHref);
+  indexNumb = 1;
   loadMusic(indexNumb);
   playMusic();
   wrapper.classList.add("active")
+}
+
+function clickedRedirection(element){
+  let linkHref = element.getAttribute('link_to');
+  window.location = linkHref;
 }
 
 function notifyToggle(){
@@ -2838,70 +3126,6 @@ notifyReco.addEventListener('click', () => {
   notifyContent.style.display="none";
 })
 
-reelsScreen = document.querySelector(".reels-screen");
-reelsHeaderArtist = document.querySelector(".reels-artist p");
-reelsImg = document.querySelector(".reels-content img");
-
-function clickedReels(element){
-  element.querySelector(".reels-img-border").classList.add("viewed");
-  element.querySelector(".reels-item img").classList.add("viewed");
-
-  setTimeout(() => {
-    element.querySelector(".reels-img-border").classList.remove("viewed");
-    element.querySelector(".reels-item img").classList.remove("viewed");
-    reelsScreen.classList.add("active");
-    reelsHeaderArtist.innerText = element.querySelector(".reels-item-data p").innerText;
-    reelsId = element.querySelector(".reels-item-data p").innerText;
-    
-    var favoritIt = allMusicView.filter(x => x.artist === reelsId);
-    reelsImg.src = favoritIt[0].gallery_img_5;
-    reelsHeaderArtist.setAttribute("id", favoritIt[0].id);
-
-    setTimeout(() => {
-      element.classList.add("viewed")
-    }, 500)
-    setTimeout(() => {
-      reelsScreen.classList.remove("active");
-    }, 10000)
-  }, 2000)
-
-}
-
-function reelsExit(){
-  reelsScreen.classList.remove("active");
-}
-
-function followedArtistsReelsLoad() {
-  const resultsFAV = document.querySelector(".head-reels");
-  var favoritIt = allMusicView.filter(x => x.artist_status === "followed");
-  for (let i = 0; i < favoritIt.length; i++) {
-    let resultFAV =
-      `<div class="reels-item" onclick="clickedReels(this)" reels-id="${favoritIt[i].artist_id}">
-        <img src="${favoritIt[i].artist_img}">
-        <div class="reels-img-border"></div>
-          <div class="reels-item-data">
-           <p>${favoritIt[i].artist}</p>
-          </div>
-       </div>`;
-    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
-  }
-  var productIds={};
-  $('.reels-item').each(function(){
-      var prodId = $(this).attr('reels-id');
-      if(productIds[prodId]){
-         $(this).remove();
-      }else{
-         productIds[prodId] = true;
-      }
-  });
-}
-
-followedArtistsReelsLoad();
-
-function elementClassActive(element){
-  element.classList.toggle("active");
-}
-
 function clearLyricStatus(){
   if(lyricsBox.classList.contains("active")){
     lyricsBox.className = "main-music-lyrics-box lyricsNonSync active";
@@ -2913,6 +3137,7 @@ function clearLyricStatus(){
 function lyricsStamp(data){
   let stampValue = data.getAttribute('timeAtr');
   mainAudio.currentTime = stampValue;
+  mainAudio.currentTime = mainAudio.currentTime + 0.75;
   document.querySelector('.main-music-lyrics-box').style.scrollBehavior = 'auto';
   pauseMusic();
 
@@ -2921,11 +3146,32 @@ function lyricsStamp(data){
     setTimeout(() => {
       document.querySelector('.main-music-lyrics-box').style.scrollBehavior = 'smooth';
     }, 250);
-  }, 750);
+  }, 500);
+  
 
   lyricsBox.innerHTML = '';
+  lyricsSync.classList.remove('active');
   clearLyricStatus();
 }
+
+function lyricsRender(){
+  if(localStorage.getItem('lyricsRender')){
+    localStorage.removeItem('lyricsRender');
+  }else{
+    localStorage.setItem('lyricsRender', 'true');
+  }
+}
+
+const lyricsSync = document.querySelector('.lyric-mode-toggle');
+
+$(lyricsSync).on("click", function(){
+  lyricsBox.classList.toggle('pauseLyrics');
+  if(lyricsBox.classList.contains('pauseLyrics')){
+    lyricsSync.classList.add('active');
+  }else{
+    lyricsSync.classList.remove('active');
+  }
+})
 
 function lyricsMode(){
   const resultsFAV = lyricsBox;
@@ -2939,13 +3185,17 @@ function lyricsMode(){
 
       var divTop = last.offsetTop;
       var lsTop = lyricsBox.offsetHeight;
-      var activeItemPos = divTop - lsTop + 200;
+      var activeItemPos = divTop - lsTop + 350;
     }
     if(allMusic[indexNumb - 1].lyrics_nonSync === ""){
     lyricsBox.classList.remove('lyricsNonSync');
     lyricsBox.scroll({
       behavior: 'auto'
     });}
+    else if(lyricsBox.classList.contains('pauseLyrics')){
+      lyricsBox.scroll({
+        behavior: 'auto'
+      });}
     else{
     lyricsBox.classList.add('lyricsNonSync');
     lyricsBox.scroll({
@@ -2954,8 +3204,14 @@ function lyricsMode(){
     });}
   }
 
-  let lyricsDelay = 15;
+  let lyricsDelay = 30;
   let lyricsGap = -1;
+
+  if(localStorage.getItem('lyricsRender')){
+    lyricsDelay = 3600;
+  }else{
+    lyricsDelay = 30;
+  }
 
   if(allMusic[indexNumb - 1].lyrics.ve1 != undefined){
   
@@ -3873,6 +4129,312 @@ function lyricsMode(){
             let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve70.stamp + '"]');
             lsAtr.classList.add("active");
           } 
+
+          if(allMusic[indexNumb - 1].lyrics.ve71){
+          if(allMusic[indexNumb - 1].lyrics.ve71.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve71.stamp != "" && !lyricsBox.classList.contains('atr-71')){
+
+            lyricsBox.classList.add('atr-71');
+      
+            if(allMusic[indexNumb - 1].lyrics.ve71.ls != undefined){
+              let resultFAV = 
+              `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve71.stamp}'>${allMusic[indexNumb - 1].lyrics.ve71.ls}</p>`;
+              resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+            }}else if(allMusic[indexNumb - 1].lyrics.ve71.stamp - lyricsGap < mainAudio.currentTime){
+              let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve71.stamp + '"]');
+              lsAtr.classList.add("active");
+            }
+          }
+
+          if(allMusic[indexNumb - 1].lyrics.ve72){
+          if(allMusic[indexNumb - 1].lyrics.ve72 && allMusic[indexNumb - 1].lyrics.ve72.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve72.stamp != "" && !lyricsBox.classList.contains('atr-72')){
+
+            lyricsBox.classList.add('atr-72');
+      
+            if(allMusic[indexNumb - 1].lyrics.ve72.ls != undefined){
+              let resultFAV = 
+              `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve72.stamp}'>${allMusic[indexNumb - 1].lyrics.ve27.ls}</p>`;
+              resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+            }}else if(allMusic[indexNumb - 1].lyrics.ve72.stamp - lyricsGap < mainAudio.currentTime){
+              let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve72.stamp + '"]');
+              lsAtr.classList.add("active");
+            }     
+          }
+
+          if(allMusic[indexNumb - 1].lyrics.ve73){
+          if(allMusic[indexNumb - 1].lyrics.ve73 && allMusic[indexNumb - 1].lyrics.ve73.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve73.stamp != "" && !lyricsBox.classList.contains('atr-73')){
+
+            lyricsBox.classList.add('atr-73');
+      
+            if(allMusic[indexNumb - 1].lyrics.ve73.ls != undefined){
+              let resultFAV = 
+              `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve73.stamp}'>${allMusic[indexNumb - 1].lyrics.ve73.ls}</p>`;
+              resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+            }}else if(allMusic[indexNumb - 1].lyrics.ve73.stamp - lyricsGap < mainAudio.currentTime){
+              let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve73.stamp + '"]');
+              lsAtr.classList.add("active");
+            }     
+          }
+
+          if(allMusic[indexNumb - 1].lyrics.ve74){
+          if(allMusic[indexNumb - 1].lyrics.ve74 && allMusic[indexNumb - 1].lyrics.ve74.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve74.stamp != "" && !lyricsBox.classList.contains('atr-74')){
+
+            lyricsBox.classList.add('atr-74');
+      
+            if(allMusic[indexNumb - 1].lyrics.ve74.ls != undefined){
+              let resultFAV = 
+              `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve74.stamp}'>${allMusic[indexNumb - 1].lyrics.ve74.ls}</p>`;
+              resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+            }}else if(allMusic[indexNumb - 1].lyrics.ve74.stamp - lyricsGap < mainAudio.currentTime){
+              let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve74.stamp + '"]');
+              lsAtr.classList.add("active");
+            }
+          }
+
+          if(allMusic[indexNumb - 1].lyrics.ve75){
+          if(allMusic[indexNumb - 1].lyrics.ve75 && allMusic[indexNumb - 1].lyrics.ve75.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve75.stamp != "" && !lyricsBox.classList.contains('atr-75')){
+
+            lyricsBox.classList.add('atr-75');
+      
+            if(allMusic[indexNumb - 1].lyrics.ve75.ls != undefined){
+              let resultFAV = 
+              `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve75.stamp}'>${allMusic[indexNumb - 1].lyrics.ve75.ls}</p>`;
+              resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+            }}else if(allMusic[indexNumb - 1].lyrics.ve75.stamp - lyricsGap < mainAudio.currentTime){
+              let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve75.stamp + '"]');
+              lsAtr.classList.add("active");
+            }            
+          }
+
+          if(allMusic[indexNumb - 1].lyrics.ve76){
+            if(allMusic[indexNumb - 1].lyrics.ve76 && allMusic[indexNumb - 1].lyrics.ve76.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve76.stamp != "" && !lyricsBox.classList.contains('atr-76')){
+  
+              lyricsBox.classList.add('atr-76');
+        
+              if(allMusic[indexNumb - 1].lyrics.ve76.ls != undefined){
+                let resultFAV = 
+                `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve76.stamp}'>${allMusic[indexNumb - 1].lyrics.ve76.ls}</p>`;
+                resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+              }}else if(allMusic[indexNumb - 1].lyrics.ve76.stamp - lyricsGap < mainAudio.currentTime){
+                let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve76.stamp + '"]');
+                lsAtr.classList.add("active");
+              }            
+            }
+
+          if(allMusic[indexNumb - 1].lyrics.ve77){
+          if(allMusic[indexNumb - 1].lyrics.ve77 && allMusic[indexNumb - 1].lyrics.ve77.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve77.stamp != "" && !lyricsBox.classList.contains('atr-77')){
+
+            lyricsBox.classList.add('atr-77');
+      
+            if(allMusic[indexNumb - 1].lyrics.ve77.ls != undefined){
+              let resultFAV = 
+              `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve77.stamp}'>${allMusic[indexNumb - 1].lyrics.ve77.ls}</p>`;
+              resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+            }}else if(allMusic[indexNumb - 1].lyrics.ve77.stamp - lyricsGap < mainAudio.currentTime){
+              let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve77.stamp + '"]');
+              lsAtr.classList.add("active");
+            }            
+          }
+
+          if(allMusic[indexNumb - 1].lyrics.ve78){
+          if(allMusic[indexNumb - 1].lyrics.ve78 && allMusic[indexNumb - 1].lyrics.ve78.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve78.stamp != "" && !lyricsBox.classList.contains('atr-78')){
+
+            lyricsBox.classList.add('atr-78');
+      
+            if(allMusic[indexNumb - 1].lyrics.ve78.ls != undefined){
+              let resultFAV = 
+              `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve78.stamp}'>${allMusic[indexNumb - 1].lyrics.ve78.ls}</p>`;
+              resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+            }}else if(allMusic[indexNumb - 1].lyrics.ve78.stamp - lyricsGap < mainAudio.currentTime){
+              let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve78.stamp + '"]');
+              lsAtr.classList.add("active");
+            }            
+          }          
+          
+          if(allMusic[indexNumb - 1].lyrics.ve79){
+          if(allMusic[indexNumb - 1].lyrics.ve79 && allMusic[indexNumb - 1].lyrics.ve79.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve79.stamp != "" && !lyricsBox.classList.contains('atr-79')){
+  
+              lyricsBox.classList.add('atr-79');
+        
+              if(allMusic[indexNumb - 1].lyrics.ve79.ls != undefined){
+                let resultFAV = 
+                `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve79.stamp}'>${allMusic[indexNumb - 1].lyrics.ve79.ls}</p>`;
+                resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+              }}else if(allMusic[indexNumb - 1].lyrics.ve79.stamp - lyricsGap < mainAudio.currentTime){
+                let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve79.stamp + '"]');
+                lsAtr.classList.add("active");
+              }            
+            }
+          
+          if(allMusic[indexNumb - 1].lyrics.ve80){
+          if(allMusic[indexNumb - 1].lyrics.ve80 && allMusic[indexNumb - 1].lyrics.ve80.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve80.stamp != "" && !lyricsBox.classList.contains('atr-80')){
+  
+              lyricsBox.classList.add('atr-80');
+        
+              if(allMusic[indexNumb - 1].lyrics.ve80.ls != undefined){
+                let resultFAV = 
+                `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve80.stamp}'>${allMusic[indexNumb - 1].lyrics.ve80.ls}</p>`;
+                resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+              }}else if(allMusic[indexNumb - 1].lyrics.ve80.stamp - lyricsGap < mainAudio.currentTime){
+                let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve80.stamp + '"]');
+                lsAtr.classList.add("active");
+              }            
+            }
+                      
+          if(allMusic[indexNumb - 1].lyrics.ve81){
+          if(allMusic[indexNumb - 1].lyrics.ve81 && allMusic[indexNumb - 1].lyrics.ve81.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve81.stamp != "" && !lyricsBox.classList.contains('atr-81')){
+  
+              lyricsBox.classList.add('atr-81');
+        
+              if(allMusic[indexNumb - 1].lyrics.ve81.ls != undefined){
+                let resultFAV = 
+                `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve81.stamp}'>${allMusic[indexNumb - 1].lyrics.ve81.ls}</p>`;
+                resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+              }}else if(allMusic[indexNumb - 1].lyrics.ve81.stamp - lyricsGap < mainAudio.currentTime){
+                let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve81.stamp + '"]');
+                lsAtr.classList.add("active");
+              }            
+            }
+                      
+          if(allMusic[indexNumb - 1].lyrics.ve82){
+          if(allMusic[indexNumb - 1].lyrics.ve82 && allMusic[indexNumb - 1].lyrics.ve82.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve82.stamp != "" && !lyricsBox.classList.contains('atr-82')){
+  
+              lyricsBox.classList.add('atr-82');
+        
+              if(allMusic[indexNumb - 1].lyrics.ve82.ls != undefined){
+                let resultFAV = 
+                `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve82.stamp}'>${allMusic[indexNumb - 1].lyrics.ve82.ls}</p>`;
+                resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+              }}else if(allMusic[indexNumb - 1].lyrics.ve82.stamp - lyricsGap < mainAudio.currentTime){
+                let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve82.stamp + '"]');
+                lsAtr.classList.add("active");
+              }            
+            }
+                      
+          if(allMusic[indexNumb - 1].lyrics.ve83){
+          if(allMusic[indexNumb - 1].lyrics.ve83 && allMusic[indexNumb - 1].lyrics.ve83.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve83.stamp != "" && !lyricsBox.classList.contains('atr-83')){
+  
+              lyricsBox.classList.add('atr-83');
+        
+              if(allMusic[indexNumb - 1].lyrics.ve83.ls != undefined){
+                let resultFAV = 
+                `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve83.stamp}'>${allMusic[indexNumb - 1].lyrics.ve83.ls}</p>`;
+                resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+              }}else if(allMusic[indexNumb - 1].lyrics.ve83.stamp - lyricsGap < mainAudio.currentTime){
+                let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve83.stamp + '"]');
+                lsAtr.classList.add("active");
+              }            
+            }
+                      
+          if(allMusic[indexNumb - 1].lyrics.ve84){
+          if(allMusic[indexNumb - 1].lyrics.ve84 && allMusic[indexNumb - 1].lyrics.ve84.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve84.stamp != "" && !lyricsBox.classList.contains('atr-84')){
+  
+              lyricsBox.classList.add('atr-84');
+        
+              if(allMusic[indexNumb - 1].lyrics.ve84.ls != undefined){
+                let resultFAV = 
+                `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve84.stamp}'>${allMusic[indexNumb - 1].lyrics.ve84.ls}</p>`;
+                resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+              }}else if(allMusic[indexNumb - 1].lyrics.ve84.stamp - lyricsGap < mainAudio.currentTime){
+                let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve84.stamp + '"]');
+                lsAtr.classList.add("active");
+              }            
+            }
+
+                      
+          if(allMusic[indexNumb - 1].lyrics.ve85){
+          if(allMusic[indexNumb - 1].lyrics.ve85 && allMusic[indexNumb - 1].lyrics.ve85.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve85.stamp != "" && !lyricsBox.classList.contains('atr-85')){
+  
+              lyricsBox.classList.add('atr-85');
+        
+              if(allMusic[indexNumb - 1].lyrics.ve85.ls != undefined){
+                let resultFAV = 
+                `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve85.stamp}'>${allMusic[indexNumb - 1].lyrics.ve85.ls}</p>`;
+                resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+              }}else if(allMusic[indexNumb - 1].lyrics.ve85.stamp - lyricsGap < mainAudio.currentTime){
+                let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve85.stamp + '"]');
+                lsAtr.classList.add("active");
+              }            
+            }
+
+                      
+          if(allMusic[indexNumb - 1].lyrics.ve86){
+          if(allMusic[indexNumb - 1].lyrics.ve86 && allMusic[indexNumb - 1].lyrics.ve86.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve86.stamp != "" && !lyricsBox.classList.contains('atr-86')){
+  
+              lyricsBox.classList.add('atr-86');
+        
+              if(allMusic[indexNumb - 1].lyrics.ve86.ls != undefined){
+                let resultFAV = 
+                `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve86.stamp}'>${allMusic[indexNumb - 1].lyrics.ve86.ls}</p>`;
+                resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+              }}else if(allMusic[indexNumb - 1].lyrics.ve86.stamp - lyricsGap < mainAudio.currentTime){
+                let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve86.stamp + '"]');
+                lsAtr.classList.add("active");
+              }            
+            }
+
+                      
+          if(allMusic[indexNumb - 1].lyrics.ve87){
+          if(allMusic[indexNumb - 1].lyrics.ve87 && allMusic[indexNumb - 1].lyrics.ve87.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve87.stamp != "" && !lyricsBox.classList.contains('atr-87')){
+  
+              lyricsBox.classList.add('atr-87');
+        
+              if(allMusic[indexNumb - 1].lyrics.ve87.ls != undefined){
+                let resultFAV = 
+                `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve87.stamp}'>${allMusic[indexNumb - 1].lyrics.ve87.ls}</p>`;
+                resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+              }}else if(allMusic[indexNumb - 1].lyrics.ve87.stamp - lyricsGap < mainAudio.currentTime){
+                let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve87.stamp + '"]');
+                lsAtr.classList.add("active");
+              }            
+            }
+
+                      
+          if(allMusic[indexNumb - 1].lyrics.ve88){
+          if(allMusic[indexNumb - 1].lyrics.ve88 && allMusic[indexNumb - 1].lyrics.ve88.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve88.stamp != "" && !lyricsBox.classList.contains('atr-88')){
+  
+              lyricsBox.classList.add('atr-88');
+        
+              if(allMusic[indexNumb - 1].lyrics.ve88.ls != undefined){
+                let resultFAV = 
+                `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve88.stamp}'>${allMusic[indexNumb - 1].lyrics.ve88.ls}</p>`;
+                resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+              }}else if(allMusic[indexNumb - 1].lyrics.ve88.stamp - lyricsGap < mainAudio.currentTime){
+                let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve88.stamp + '"]');
+                lsAtr.classList.add("active");
+              }            
+            }
+
+                      
+          if(allMusic[indexNumb - 1].lyrics.ve89){
+          if(allMusic[indexNumb - 1].lyrics.ve89 && allMusic[indexNumb - 1].lyrics.ve89.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve89.stamp != "" && !lyricsBox.classList.contains('atr-89')){
+  
+              lyricsBox.classList.add('atr-89');
+        
+              if(allMusic[indexNumb - 1].lyrics.ve89.ls != undefined){
+                let resultFAV = 
+                `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve89.stamp}'>${allMusic[indexNumb - 1].lyrics.ve89.ls}</p>`;
+                resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+              }}else if(allMusic[indexNumb - 1].lyrics.ve89.stamp - lyricsGap < mainAudio.currentTime){
+                let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve89.stamp + '"]');
+                lsAtr.classList.add("active");
+              }            
+            }
+
+                      
+          if(allMusic[indexNumb - 1].lyrics.ve90){
+          if(allMusic[indexNumb - 1].lyrics.ve90 && allMusic[indexNumb - 1].lyrics.ve90.stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics.ve90.stamp != "" && !lyricsBox.classList.contains('atr-90')){
+  
+              lyricsBox.classList.add('atr-90');
+        
+              if(allMusic[indexNumb - 1].lyrics.ve90.ls != undefined){
+                let resultFAV = 
+                `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics.ve90.stamp}'>${allMusic[indexNumb - 1].lyrics.ve90.ls}</p>`;
+                resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+              }}else if(allMusic[indexNumb - 1].lyrics.ve90.stamp - lyricsGap < mainAudio.currentTime){
+                let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics.ve90.stamp + '"]');
+                lsAtr.classList.add("active");
+              }            
+            }
       }else{
     resultsFAV.innerHTML = '<span>Song Doesnt Have Prepered Lyrics Yet, Try Again Later</span>'
   }
@@ -3894,13 +4456,16 @@ function trackLyrics(){
   musicImgBox.classList.toggle("lyrics");
   if(musicImg.classList.contains("lyrics")){
     if(localStorage.lyricsAccouracyImprove){
+      document.querySelector('.top-controls').classList.add('lyrics');
       checkLyricsPerSec = setInterval(lyricsMode,250);
     }else{
       checkLyricsPerSec = setInterval(lyricsMode,500);
     }
   }else{
     clearInterval(checkLyricsPerSec);
+    document.querySelector('.top-controls').classList.remove('lyrics');
   }
+  lyricsShortcut();
 }
 
 function scrolCenterRight(element){
@@ -3956,7 +4521,7 @@ function tracksHistory(data){
   var yyyy = today.getFullYear();
   var track_id = allMusic[indexNumb - 1].id
 
-  if(min < 9){
+  if(min < 10){
     min = '0' + today.getMinutes();
   }
 
@@ -4031,7 +4596,7 @@ function tracksHistory(data){
 }
 
 function trackOptions(e){
-  let trackId = e.parentElement.getAttribute('li-index');
+  let trackId = e.getAttribute('link_to') || e.parentElement.getAttribute('link_to') || e.parentElement.getAttribute('id') || e.parentElement.getAttribute('li-index') || e.getAttribute('li-index');
 
   var favoritIt = allMusicView.filter(x => x.id === trackId);
 
@@ -4045,30 +4610,43 @@ function trackOptions(e){
 
     <div class="track-options-header">
       <img src="images/${favoritIt[0].img}.jpg">
-      <p>${favoritIt[0].name}</p>
-      <span>${favoritIt[0].artist}</span>
+      <div class='track-options-data'>
+        <p>${favoritIt[0].name}</p>
+        <span id="${favoritIt[0].id}" onclick="artistScreenDataLoad(this);trackHideOptions();">By ${favoritIt[0].artist}</span>
+        <span artist-data="${favoritIt[0].artist_id}" data-album="${favoritIt[0].album}" onclick="clickedSingleAlbum(this);trackHideOptions();fastLoadingPop();">From ${favoritIt[0].album} • ${favoritIt[0].album_premiere}</span>
+      </div>
     </div>
 
     <div class="track-options-menu" track-data="${favoritIt[0].id}" album-data="${favoritIt[0].album}" album-premiere="${favoritIt[0].album_premiere}" album-img="${favoritIt[0].album_cover}" >
 
       <div class="track-options-item" id="trackFavoriteBtn" onclick="trackOption_Favorite(this)">
         <i class="fa-solid fa-heart"></i>
-        <p> Dodaj Do Ulubionych</p>
+        <p> Like</p>
       </div>
 
       <div class="track-options-item" id="${favoritIt[0].id}" onclick="artistScreenDataLoad(this);trackHideOptions();">
         <i class="fa-solid fa-user"></i>
-        <p> Pokaż Wykonawca</p>
+        <p> View Artist</p>
       </div>
 
       <div class="track-options-item" artist-data="${favoritIt[0].artist_id}" data-album="${favoritIt[0].album}" onclick="clickedSingleAlbum(this);trackHideOptions();fastLoadingPop();">
         <i class="fa-solid fa-compact-disc"></i>
-        <p> Pokaż Album</p>
+        <p> View Album</p>
       </div>
 
       <div class="track-options-item" onclick="trackOption_Share(this)">
         <i class="fa-solid fa-share-nodes"></i>
-        <p> Udostępnij</p>
+        <p> Share</p>
+      </div>
+
+      <div class="track-options-item" onclick="trackOption_Queue(this)">
+        <i class="fa-solid fa-list-ol"></i>
+        <p>Add To Queue</p>
+      </div>
+
+      <div class="track-options-item" onclick="playlist_SELECT(this);" track-data="${favoritIt[0].id}">
+        <i class="fa-solid fa-bookmark"></i>
+        <p>Add To Playlist</p>
       </div>
 
     </div>
@@ -4090,13 +4668,13 @@ function trackOptions(e){
       trackOptionFavorite.classList.add('active');
       trackOptionFavoriteIcon.classList.remove('fa-regular')
       trackOptionFavoriteIcon.classList.add('fa-solid')
-      trackOptionFavoriteText.innerText = " Polubiono";
+      trackOptionFavoriteText.innerText = " Liked";
     }
     if (allMusicView[trackID].status === "nostatus") {
       trackOptionFavorite.classList.remove('active');
       trackOptionFavoriteIcon.classList.add('fa-regular')
       trackOptionFavoriteIcon.classList.remove('fa-solid')
-      trackOptionFavoriteText.innerText = " Dodaj Do Ulubionych";
+      trackOptionFavoriteText.innerText = " Like";
     }
 }
 
@@ -4172,10 +4750,15 @@ function trackOption_Favorite(data){
     favoritBtn.classList.add('active')
     favoritBtn.classList.add('fa-solid')
     favoritBtn.classList.remove('fa-regular')
+
+    pcfavoritBtn.classList.add('active')
+    pcfavoritBtn.classList.add('fa-solid')
+    pcfavoritBtn.classList.remove('fa-regular')
+
     trackOptionFavorite.classList.add('active');
     trackOptionFavoriteIcon.classList.remove('fa-regular')
     trackOptionFavoriteIcon.classList.add('fa-solid')
-    trackOptionFavoriteText.innerText = " Polubiono";
+    trackOptionFavoriteText.innerText = " Liked";
   }
   if (allMusicView[trackID].status === "nostatus") {
     musicTopOptionsFavorite.innerHTML = '<i class="fa-solid fa-heart"></i><span> Like</span>';
@@ -4183,10 +4766,15 @@ function trackOption_Favorite(data){
     favoritBtn.classList.remove('active')
     favoritBtn.classList.remove('fa-solid')
     favoritBtn.classList.add('fa-regular')
+
+    pcfavoritBtn.classList.remove('active')
+    pcfavoritBtn.classList.remove('fa-solid')
+    pcfavoritBtn.classList.add('fa-regular')
+
     trackOptionFavorite.classList.remove('active');
     trackOptionFavoriteIcon.classList.add('fa-regular')
     trackOptionFavoriteIcon.classList.remove('fa-solid')
-    trackOptionFavoriteText.innerText = " Dodaj Do Ulubionych";
+    trackOptionFavoriteText.innerText = " Like";
   }
 }
 
@@ -4194,67 +4782,22 @@ function trackOption_Share(data){
   let trackID = data.parentElement.getAttribute('track-data');
 
   var shareLink = document.createElement('input'),
-  text = "https://akstudiopl.github.io/Zesia/" + "#" + trackID;
+  text = window.location.origin + "/#" + trackID;
   document.body.appendChild(shareLink);
   shareLink.value = text;
   shareLink.select();
   document.execCommand('copy');
   document.body.removeChild(shareLink);
+
+  copyAlert();
 }
-
-function trackOption_Artist(element){
-  var dataAttribute = element.parentElement.getAttribute('track-data');
-  musicArtistScreen.classList.add('active')
-  musicMenuHide.classList.remove('active')
-  albumScreen.classList.remove('active');
-  activeLibraryScreen.classList.remove('active')
-  activeSearchScreen.classList.remove('active')
-  activeHomeScreen.classList.add('active')
-  libraryScreen.classList.remove('active');
-  searchScreen.classList.remove('active');
-  bioCard.classList.remove("active");
-  userProfile.classList.remove("active");
-  fastLoadingPop();
-
-  currentIndexNumb = indexNumb;
-  indexNumb = dataAttribute;
-  indexNumb--;
-
-  artistItemTitle.innerText = allMusicView[indexNumb].artist;
-  artistItemImg.src = `artists/${allMusicView[indexNumb].avatar}.jpg`;
-  artistCardDataName.innerText = allMusicView[indexNumb].artist;
-  artistCardBackgroundImg.style.backgroundImage = `url(${allMusicView[indexNumb].artist_img})`;
-  var randomnumber = Math.floor(Math.random() * 150000) + 1;
-  artistItemFollowers.innerText = randomnumber;
-  
-  let artistNameData = artistItemTitle.innerText;
-  const resultsFAV = document.querySelector(".music-artist-content-container");
-  var favoritIt = allMusicView.filter(x => x.artist === artistNameData);
-
-  favoritIt.sort(function(a, b){
-      return b.album_premiere - a.album_premiere;
-  });
-
-  resultsFAV.innerHTML = "";
-  for (let i = 0; i < favoritIt.length; i++) {
-    let resultFAV =
-      `<div class="music-artist-content-item" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
-        <h1 class="music-artist-content-number">${i + 1}</h1>
-          <div class="music-artist-content-item-data">
-            <h1>${favoritIt[i].name}</h1>
-            <span>${favoritIt[i].album} • ${favoritIt[i].album_premiere}</span>
-          </div>
-          <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
-       </div>`;
-    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
-  }
-
-  indexNumb = currentIndexNumb;
-
-  checkFollowStatus();
-
-  $(".music-artist-content-container").html($(".music-artist-content-container .music-artist-content-item").sort(function(){
-}));}
+function trackOption_Queue(data){
+  let trackID = data.parentElement.getAttribute('track-data');
+  let trackOBJECT = allMusicView.filter(x => x.id === trackID);
+  allMusic = allMusic.concat(trackOBJECT);
+  queueDataLoad();
+  trackHideOptions();
+}
 
 function trackHideOptions(){
   document.querySelector(".track-options-screen").classList.remove("active");
@@ -4318,8 +4861,10 @@ function homeFavortiesAlbums() {
   resultsFAV.innerHTML = "";
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
-      `<div class="center-container-item" onclick="fastLoadingPop(); clickedSingleAlbum(this)" artist-data='${favoritIt[i].artist_id}' data-album='${favoritIt[i].album}'>
-          <img src="${favoritIt[i].album_cover}">
+      `<div class="center-container-item" onclick="fastLoadingPop(); clickedSingleAlbum(this)" check-atr='${favoritIt[i].artist_id} ${favoritIt[i].album}' artist-data='${favoritIt[i].artist_id}' data-album='${favoritIt[i].album}'>
+          <div class="img-box">    
+            <img src="${favoritIt[i].album_cover}">
+          </div>
           <h2>${favoritIt[i].album}</h2>
           <p>${favoritIt[i].artist}</p>
        </div>`;
@@ -4328,7 +4873,7 @@ function homeFavortiesAlbums() {
 
   var productIds={};
   $('.favorites-albums-container .center-container-scrollable .center-container-item').each(function(){
-      var prodId = $(this).attr('artist-data');
+      var prodId = $(this).attr('check-atr');
       if(productIds[prodId]){
         $(this).remove();
       }else{
@@ -4337,6 +4882,12 @@ function homeFavortiesAlbums() {
   });
 
   $('.favorites-albums-container .center-container-scrollable .center-container-item').slice(6).remove()
+
+  if(document.querySelectorAll('.favorites-albums-container .center-container-scrollable .center-container-item').length <= 1){
+    document.querySelector(".favorites-albums-container").style.display='none';
+  }else{
+    document.querySelector(".favorites-albums-container").style.display='block';
+  }
 }
 
 homeFavortiesAlbums();
@@ -4344,7 +4895,8 @@ homeFavortiesAlbums();
 const playlistScreen = document.querySelector(".music-playlist-album-screen");
 const playlistExit = document.querySelector(".music-playlist-album-screen-exit");
 
-const playlistImg = document.querySelector(".music-playlist-album-screen-img-background img");
+const playlistImg = document.querySelector(".music-playlist-album-screen-img-background #main-img-header");
+const playlistImgBg = document.querySelector(".music-playlist-album-screen-img-background #bg-img-header");
 const playlistTitle = document.querySelector(".music-playlist-album-fast-data-name");
 const playlistTracksCounter = document.querySelector(".music-playlist-album-screen-length");
 const playlistArtist = document.querySelector(".music-playlist-album-screen-option");
@@ -4365,11 +4917,16 @@ function clickedSinglePlaylist(e){
 
   let playlistFilter = e.getAttribute("playlist-filter");
   let playlistStyle = e.getAttribute("playlist-style");
+  playlistResult.setAttribute('queue-long-data', '');
+  playlistResult.setAttribute('playlist-editable', 'false');
+
+  playlistEditBtn.classList.remove('active');
+  playlistEDIT.classList.remove('fs921');
 
   if(playlistFilter){
 
     if(playlistFilter === "Complete"){
-      var favoritIt = allMusicView.filter(x => x.artist_id === playlistData_Artist || x.colaboration === playlistData_ArtistName);
+      var favoritIt = allMusicView.filter(x => x.artist_id === playlistData_Artist || x.colaboration_id === playlistData_Artist);
       playlistTracksCounter.innerText = favoritIt.length;
 
       playlistResult.setAttribute('playlist-filter', playlistFilter)
@@ -4379,7 +4936,7 @@ function clickedSinglePlaylist(e){
       playlistResult.innerHTML = "";
       for (let i = 0; i < favoritIt.length; i++) {
         let resultFAV =
-          `<div class="music-artist-album-item" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
+          `<div class="music-artist-album-item" queue-index='${i+1}' id='${favoritIt[i].id}' onclick="playlist_QUEUE_CLICKED(this)">
           <img src="${favoritIt[i].img_mini}">
                 <div class="music-artist-album-item-data">
                     <h1>${favoritIt[i].name}</h1>
@@ -4388,10 +4945,13 @@ function clickedSinglePlaylist(e){
                 <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
            </div>`;
            playlistResult.insertAdjacentHTML("beforeend", resultFAV);
+
+           actionDataToBeReplaced = playlistResult.getAttribute('queue-long-data');
+           playlistResult.setAttribute('queue-long-data', actionDataToBeReplaced + favoritIt[i].id + ',' )
       }
       
     }else if(playlistFilter === "Radio"){
-      var favoritIt = allMusicView.filter(x => x.artist_id === playlistData_Artist || x.colaboration === playlistData_ArtistName || x.style === playlistData_ArtistStyle).slice(0, 50);
+      var favoritIt = allMusicView.filter(x => x.artist_id === playlistData_Artist || x.colaboration_id === playlistData_Artist || x.style === playlistData_ArtistStyle).slice(0, 50);
       
       playlistResult.setAttribute('playlist-filter', playlistFilter)
       playlistResult.setAttribute('playlist-style', playlistData_ArtistStyle)
@@ -4402,7 +4962,7 @@ function clickedSinglePlaylist(e){
       playlistResult.innerHTML = "";
       for (let i = 0; i < favoritIt.length && i < 50; i++) {
         let resultFAV =
-          `<div class="music-artist-album-item" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
+          `<div class="music-artist-album-item" queue-index='${i+1}' id='${favoritIt[i].id}' onclick="playlist_QUEUE_CLICKED(this)">
           <img src="${favoritIt[i].img_mini}">
                 <div class="music-artist-album-item-data">
                     <h1>${favoritIt[i].name}</h1>
@@ -4411,6 +4971,9 @@ function clickedSinglePlaylist(e){
                 <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
            </div>`;
            playlistResult.insertAdjacentHTML("beforeend", resultFAV);
+
+           actionDataToBeReplaced = playlistResult.getAttribute('queue-long-data');
+           playlistResult.setAttribute('queue-long-data', actionDataToBeReplaced + favoritIt[i].id + ',' )
       }
 
       playlistTracksCounter.innerText = document.querySelectorAll(".music-playlist-album-screen-container .music-artist-album-item").length;
@@ -4427,7 +4990,7 @@ function clickedSinglePlaylist(e){
       playlistResult.innerHTML = "";
       for (let i = 0; i < favoritIt.length; i++) {
         let resultFAV =
-          `<div class="music-artist-album-item" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
+          `<div class="music-artist-album-item" queue-index='${i+1}' id='${favoritIt[i].id}' onclick="playlist_QUEUE_CLICKED(this)">
           <img src="${favoritIt[i].img_mini}">
                 <div class="music-artist-album-item-data">
                     <h1>${favoritIt[i].name}</h1>
@@ -4436,6 +4999,9 @@ function clickedSinglePlaylist(e){
                 <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
            </div>`;
            playlistResult.insertAdjacentHTML("beforeend", resultFAV);
+
+           actionDataToBeReplaced = playlistResult.getAttribute('queue-long-data');
+           playlistResult.setAttribute('queue-long-data', actionDataToBeReplaced + favoritIt[i].id + ',' )
       }
 
       playlistTracksCounter.innerText = document.querySelectorAll(".music-playlist-album-screen-container .music-artist-album-item").length;
@@ -4447,6 +5013,8 @@ function clickedSinglePlaylist(e){
   playlistArtist.innerText = playlistData_Description;
 
   loseFocus();
+  rightClickOptions();
+  playlist_CHECK_IMG();
 }
 
 function historyScreenToggle(){
@@ -4506,7 +5074,7 @@ function historyData(){
 
     for (let i = 0; i < favoritIt.length; i++) {
       let resultFAV =
-        `<div class="music-artist-album-item" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
+        `<div class="music-artist-album-item" link_to='${favoritIt[i].id}' onclick="clickedNotification(this);">
         <img src="${favoritIt[i].img_mini}">
               <div class="music-artist-album-item-data">
                   <h1>${favoritIt[i].name}</h1>
@@ -4518,20 +5086,17 @@ function historyData(){
     }
   }
   loseFocus();
+  rightClickOptions();
 }
 
-const yourStyleData = ['https://celebs.infoseemedia.com/wp-content/uploads/2022/01/Bebe-Rexha.png', 'https://www.pngplay.com/wp-content/uploads/6/Ariana-Grande-PNG.png', 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c8c4f299-4064-433b-8a7c-90baccbc0f4c/dalyen5-220038e0-69ba-40ab-b7d3-878750f483d3.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2M4YzRmMjk5LTQwNjQtNDMzYi04YTdjLTkwYmFjY2JjMGY0Y1wvZGFseWVuNS0yMjAwMzhlMC02OWJhLTQwYWItYjdkMy04Nzg3NTBmNDgzZDMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ys6BFp1BHpTlh8_vrslXSLY-bHTtaVCjuOMN-rnNUeg', 'https://www.pngall.com/wp-content/uploads/5/Dua-Lipa-Singer.png', 'https://i.pinimg.com/originals/41/ec/9b/41ec9bc1aa2956d248874d5b070fbc1d.png', 'https://www.pngarts.com/files/5/Twenty-One-Pilots-PNG-Pic.png', 'https://cdn140.picsart.com/303892030129201.png', 'sources/897-8975430_postmalone-sticker-post-malone.png', 'https://i.pinimg.com/originals/1e/86/14/1e8614488ecf119e1a8bc9fdc03fb5c0.png', 'https://www.nicepng.com/png/full/325-3255450_ed-sheeran-ed-sheeran-no-background.png', 'https://en.picmix.com/stamp/download?stampId=1851919&key=b4cb1', 'https://en.picmix.com/stamp/download?stampId=2009137&key=c2ccd', 'https://en.picmix.com/stamp/download?stampId=2241077&key=ad5b2', 'https://www.pngkey.com/png/full/791-7912347_zara-sticker-zara-larsson.png', 'https://www.pngmart.com/files/2/Rita-Ora-PNG-Photo.png'];
 const yourStyleText = ['Pop', 'Chill', 'Energic', 'Hip-Hop', 'Latino', 'Workout', 'Rock'];
 const personalStyleItem = document.querySelector(".personal-item");
-const personalStyleItem_Img= document.querySelector(".personal-item img");
 const personalStyleItem_Title = document.querySelector(".personal-item h1");
 const personalStyleItem_BackTitle = document.querySelector(".personal-item h1:last-child");
 
 function personalItem(){
-  let randomPersonalIndex = Math.floor((Math.random() * yourStyleData.length));
   let randomPersonalText = Math.floor((Math.random() * yourStyleText.length));
 
-  personalStyleItem_Img.src = yourStyleData[randomPersonalIndex];
   personalStyleItem_Title.innerText = yourStyleText[randomPersonalText];
   personalStyleItem_BackTitle.innerText = yourStyleText[randomPersonalText];
   personalStyleItem.setAttribute('style-data', yourStyleText[randomPersonalText])
@@ -4545,11 +5110,13 @@ function library_load_albums() {
   var favoritIt = allMusicView.filter(x => x.album_status === "true");
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
-      `<div class="center-container-item" onclick="fastLoadingPop();clickedSingleAlbum(this);" artist-data='${favoritIt[i].artist_id}' data-album='${favoritIt[i].album}'>
-          <img src="${favoritIt[i].album_cover}">
+      `<div class="center-container-item album-tag" onclick="fastLoadingPop();clickedSingleAlbum(this);" artist-data='${favoritIt[i].artist_id}' data-album='${favoritIt[i].album}'>
+          <div class="img-box">    
+            <img src="${favoritIt[i].album_cover}">
+          </div>
           <div class="center-container-album-data">
             <h2>${favoritIt[i].album}</h2>
-            <p>${favoritIt[i].artist} • ${favoritIt[i].album_premiere}</p>
+            <p>Album • ${favoritIt[i].artist} • ${favoritIt[i].album_premiere}</p>
           </div>
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
@@ -4571,8 +5138,10 @@ function library_load_artists() {
   var favoritIt = allMusicView.filter(x => x.artist_status === "followed");
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
-      `<div class="center-container-item" onclick="fastLoadingPop();artistScreenDataLoad(this);" id='${favoritIt[i].id}' artist-id='${favoritIt[i].artist_id}' artist-data='${favoritIt[i].artist}'>
-          <img src="artists/${favoritIt[i].avatar}.jpg">
+      `<div class="center-container-item artist-tag" onclick="fastLoadingPop();artistScreenDataLoad(this);" id='${favoritIt[i].id}' artist-id='${favoritIt[i].artist_id}' artist-data='${favoritIt[i].artist}'>
+          <div class="img-box">    
+            <img src="artists/${favoritIt[i].avatar}.jpg">
+          </div>
           <div class="center-container-album-data">
             <h2>${favoritIt[i].artist}</h2>
             <p>Artist • Verified</p>
@@ -4592,8 +5161,41 @@ function library_load_artists() {
   });
 }
 
-library_load_artists();
-library_load_albums();
+function library_load_playlists(){
+  let playlist_DATA = 
+  [localStorage.getItem('playlist_user_1'),
+   localStorage.getItem('playlist_user_2'),
+   localStorage.getItem('playlist_user_3'),
+   localStorage.getItem('playlist_user_4'),
+   localStorage.getItem('playlist_user_5'),
+   localStorage.getItem('playlist_user_6'),
+   localStorage.getItem('playlist_user_7'),
+   localStorage.getItem('playlist_user_8'),
+   localStorage.getItem('playlist_user_9'),
+   localStorage.getItem('playlist_user_10'),];
+
+  let playlist_ARRAY = playlist_DATA.filter(x => x != null);
+  let playlist_COUNT = playlist_ARRAY.length;
+
+  let results = document.querySelector(".library-slider .center-container-scrollable");
+
+  for (let i = 0; i < playlist_COUNT; i++) {
+  tracks_COUNTER = playlist_ARRAY[i].split(',').length-4 + " Tracks";
+
+  let result =
+  `<div class="center-container-item playlist-tag" onclick="fastLoadingPop();playlist_SELECT_CLICKED(this);" playlist-ID="${playlist_ARRAY[i].split(',')[3]}">
+      <div class="img-box">    
+        <img src="${playlist_ARRAY[i].split(',')[2]}">
+      </div>
+      <div class="center-container-album-data">
+        <h2>${playlist_ARRAY[i].split(',')[0]}</h2>
+        <p>Playlist • ${playlist_ARRAY[i].split(',')[1]} • ${tracks_COUNTER}</p>
+      </div>
+   </div>`;
+
+  results.insertAdjacentHTML("beforeend", result);
+  }
+}
 
 function settings_LyricsImprovment(){
   if(localStorage.lyricsAccouracyImprove){
@@ -4668,6 +5270,8 @@ function yourStyleLoad(e){
         productIds[prodId] = true;
       }
   });
+
+  rightClickOptions();
 }
 
 function recentTracksLoad(){
@@ -4691,7 +5295,9 @@ function recentTracksLoad(){
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
       `<div class="center-container-item" link_to='${favoritIt[i].id}' onclick="clickedNotification(this);">
-       <img src="images/${favoritIt[i].img}.jpg">
+        <div class="img-box">    
+          <img src="images/${favoritIt[i].img}.jpg">
+        </div>
        <h2>${favoritIt[i].name}</h2>
        <p>${favoritIt[i].artist}</p>
        </div>`;
@@ -4703,12 +5309,28 @@ function recentTracksLoad(){
   }else{
     document.querySelector("#recent-tracks-container").style.display="none";
   }
+
+  rightClickOptions();
+}
+
+
+function collaborationItemCheck(){
+  const collabBOXES = document.querySelectorAll(".music-artist-content-item.track-box .music-artist-content-item-data p");
+  for(collabBOX of collabBOXES){
+    if(collabBOX.innerText.length <= 4){
+      collabBOX.style.display="none";
+    }else if(collabBOX.innerText.length >= 5){
+      collabBOX.style.display="flex";
+    }
+  }
 }
 
 function searchContentLoad() {
   const resultsFAV = document.querySelector(".search-results");
   resultsFAV.innerHTML = "";
   var favoritIt = allMusicView;
+
+  historyContainer.style.display="flex";
 
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
@@ -4736,11 +5358,11 @@ function searchContentLoad() {
 
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
-      `<div class="music-artist-content-item track-box" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
+      `<div class="music-artist-content-item track-box" li-index='${favoritIt[i].id}' link_to='${favoritIt[i].id}' onclick="clickedNotification(this);historyTrack_OBJECT(this)">
         <img data-lazy="${favoritIt[i].img_mini}">
           <div class="music-artist-content-item-data">
             <h1>${favoritIt[i].name}</h1>
-            <span>${favoritIt[i].artist} ${'• ' + favoritIt[i].colaboration || ''} • ${favoritIt[i].album} • ${favoritIt[i].album_premiere}</span>
+            <span>${favoritIt[i].artist} <p>${' • ' + favoritIt[i].colaboration}</p> • ${favoritIt[i].album} • ${favoritIt[i].album_premiere}</span>
           </div>
           <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
        </div>`;
@@ -4790,6 +5412,7 @@ function searchContentLoad() {
       }
   });
   
+  collaborationItemCheck();
   loseFocus();
   let targets = document.querySelectorAll('.search-results .music-artist-content-item img');
   targets.forEach(lazyLoad);
@@ -4799,6 +5422,8 @@ function searchContentLoad() {
 const searchInput = document.querySelector(".search-input");
 const searchInput_clear = document.querySelector(".search-input-btn");
 const searchResults = document.querySelector('.search-results');
+const historyContainer = document.querySelector(".search-history");
+
 searchInput.addEventListener('input', function(){
   search_Loading();
   setTimeout(() => {
@@ -4815,14 +5440,24 @@ function searchClearButton(){
     searchInput_clear.classList.add('active');
     searchResults.style.display = 'flex';
   }
+
+  historyContainer.style.display="flex";
 }
+
+let search_ui_IMG = document.querySelector(".search-ui-bg img");
 
 function searchFunction(){
   let input = searchInput.value
   input = input.toLowerCase().replace(/ /g,'');
   let x = document.querySelectorAll('.search-results .music-artist-content-item');
   let xData = document.querySelectorAll('.search-results .music-artist-content-item-data');
-    
+  
+  if(input.value === 0){
+    historyContainer.style.display="flex";
+  }else{
+    historyContainer.style.display="none";
+  }
+
   for (i = 0; i < x.length; i++) { 
       if (!xData[i].innerText.toLowerCase().replace(/ /g,'').includes(input)) {
           x[i].style.display="none";
@@ -4834,6 +5469,43 @@ function searchFunction(){
       }
   }
 
+  let ui_IMG = document.querySelectorAll('.search-results .music-artist-content-item.searched');
+
+  for (i = 0; i < ui_IMG.length; i++) { 
+    ui_IMG[i].classList.remove("active");
+  }
+  if(ui_IMG[0]){
+    ui_IMG_DATA = ui_IMG[0].querySelector("img").src;
+    search_ui_IMG.src = ui_IMG_DATA;
+    search_ui_IMG.style.animationName = "none";
+    search_ui_IMG.style.opacity = "0";
+    setTimeout(() => {
+      search_ui_IMG.style.animationName = "ui-bg-fade";
+      search_ui_IMG.style.opacity = ".66";
+    }, 600);
+  }
+
+  if(searchBtn_top.classList.contains("active")){
+    search_Top();
+    collaborationItemCheck();
+  }
+  if(searchBtn_tracks.classList.contains("active")){
+    search_Tracks();
+    collaborationItemCheck();
+  }
+  if(searchBtn_artists.classList.contains("active")){
+    search_Artists();
+    collaborationItemCheck();
+  }
+  if(searchBtn_albums.classList.contains("active")){
+    search_Albums();
+    collaborationItemCheck();
+  }
+  if(searchBtn_playlists.classList.contains("active")){
+    search_Playlists();
+    collaborationItemCheck();
+  }
+
   let artistX = document.querySelectorAll('.search-results .music-artist-content-item.artist-box.searched');
   
   for (i = 0; i < artistX.length; i++) { 
@@ -4843,21 +5515,7 @@ function searchFunction(){
     artistX[0].classList.add("active");
   }
 
-  if(searchBtn_top.classList.contains("active")){
-    search_Top();
-  }
-  if(searchBtn_tracks.classList.contains("active")){
-    search_Tracks();
-  }
-  if(searchBtn_artists.classList.contains("active")){
-    search_Artists();
-  }
-  if(searchBtn_albums.classList.contains("active")){
-    search_Albums();
-  }
-  if(searchBtn_playlists.classList.contains("active")){
-    search_Playlists();
-  }
+  rightClickOptions();
 }
 
 function reset_animation() {
@@ -4921,6 +5579,9 @@ function search_Tracks(){
   const searchAlbums = document.querySelectorAll('.search-results .music-artist-content-item.album-box');
   const searchPlaylists = document.querySelectorAll('.search-results .music-artist-content-item.playlist-box');
 
+  search_ui_IMG.style.animationName = "none";
+  search_ui_IMG.style.opacity = "0";
+
   for (i = 0; i < searchTracks.length; i++) { 
     searchTracks[i].classList.remove('hidden')
   }
@@ -4948,6 +5609,9 @@ function search_Artists(){
   const searchAlbums = document.querySelectorAll('.search-results .music-artist-content-item.album-box');
   const searchPlaylists = document.querySelectorAll('.search-results .music-artist-content-item.playlist-box');
 
+  search_ui_IMG.style.animationName = "none";
+  search_ui_IMG.style.opacity = "0";
+
   for (i = 0; i < searchArtists.length; i++) { 
     searchArtists[i].classList.remove('hidden')
   }
@@ -4970,39 +5634,14 @@ function search_Albums(){
   searchBtn_artists.classList.remove('active');
   searchBtn_albums.classList.add('active');
   searchBtn_playlists.classList.remove('active');
-
-  const searchTracks = document.querySelectorAll('.search-results .music-artist-content-item.track-box');
-  const searchArtists = document.querySelectorAll('.search-results .music-artist-content-item.artist-box');
-  const searchAlbums = document.querySelectorAll('.search-results .music-artist-content-item.album-box');
-  const searchPlaylists = document.querySelectorAll('.search-results .music-artist-content-item.playlist-box');
-
-  for (i = 0; i < searchArtists.length; i++) { 
-    searchArtists[i].classList.add('hidden')
-  }
-  for (i = 0; i < searchAlbums.length; i++) { 
-    searchAlbums[i].classList.remove('hidden')
-  }
-  for (i = 0; i < searchTracks.length; i++) { 
-    searchTracks[i].classList.add('hidden')
-  }
-    for (i = 0; i < searchPlaylists.length; i++) { 
-    searchPlaylists[i].classList.add('hidden')
-  }
-
-  search_Loading();
-}
-
-function search_Albums(){
-  searchBtn_top.classList.remove('active');
-  searchBtn_tracks.classList.remove('active');
-  searchBtn_artists.classList.remove('active');
-  searchBtn_albums.classList.add('active');
-  searchBtn_playlists.classList.remove('active');
   
   const searchTracks = document.querySelectorAll('.search-results .music-artist-content-item.track-box');
   const searchArtists = document.querySelectorAll('.search-results .music-artist-content-item.artist-box');
   const searchAlbums = document.querySelectorAll('.search-results .music-artist-content-item.album-box');
   const searchPlaylists = document.querySelectorAll('.search-results .music-artist-content-item.playlist-box');
+
+  search_ui_IMG.style.animationName = "none";
+  search_ui_IMG.style.opacity = "0";
 
   for (i = 0; i < searchArtists.length; i++) { 
     searchArtists[i].classList.add('hidden')
@@ -5031,6 +5670,9 @@ function search_Playlists(){
   const searchArtists = document.querySelectorAll('.search-results .music-artist-content-item.artist-box');
   const searchAlbums = document.querySelectorAll('.search-results .music-artist-content-item.album-box');
   const searchPlaylists = document.querySelectorAll('.search-results .music-artist-content-item.playlist-box');
+
+  search_ui_IMG.style.animationName = "none";
+  search_ui_IMG.style.opacity = "0";
 
   for (i = 0; i < searchArtists.length; i++) { 
     searchArtists[i].classList.add('hidden')
@@ -5063,18 +5705,22 @@ function search_Loading(){
 function clickedPlaylist(data){
   let playlist_ID = data.getAttribute("playlist-id");
   let playlist_LENGTH = Object.keys(allPlaylists[playlist_ID - 1].content).length;
+
+  localStorage.setItem('last_PLAYLIST', playlist_ID);
   
   searchScreen.classList.remove('active');
   activeSearchScreen.classList.remove('active')
-
   playlistScreen.classList.add('active');
-  activeHomeScreen.classList.add('active')
+  activeHomeScreen.classList.add('active');
+  playlistEditBtn.classList.remove('active');
+  playlistEDIT.classList.remove('fs921');
 
   playlistImg.src = allPlaylists[playlist_ID - 1].image;
   playlistTitle.innerText = allPlaylists[playlist_ID - 1].name;
   playlistArtist.innerText = allPlaylists[playlist_ID - 1].description + ' By ' + allPlaylists[playlist_ID - 1].play_author;
   playlistTracksCounter.innerText = playlist_LENGTH;
 
+  playlist_CHECK_IMG();
   clickedPlaylistLoad(data);
 }
 
@@ -5087,56 +5733,56 @@ function clickedPlaylistLoad(data){
   let playlist_FULL = [];
   playlist_ID--;
 
-  playlist_ITEM_1 = allMusicView[allPlaylists[playlist_ID].content.track_1] || null;
-  playlist_ITEM_2 = allMusicView[allPlaylists[playlist_ID].content.track_2] || playlist_ITEM_1;
-  playlist_ITEM_3 = allMusicView[allPlaylists[playlist_ID].content.track_3] || playlist_ITEM_1;
-  playlist_ITEM_4 = allMusicView[allPlaylists[playlist_ID].content.track_4] || playlist_ITEM_1;
-  playlist_ITEM_5 = allMusicView[allPlaylists[playlist_ID].content.track_5] || playlist_ITEM_1;
-  playlist_ITEM_6 = allMusicView[allPlaylists[playlist_ID].content.track_6] || playlist_ITEM_1;
-  playlist_ITEM_7 = allMusicView[allPlaylists[playlist_ID].content.track_7] || playlist_ITEM_1;
-  playlist_ITEM_8 = allMusicView[allPlaylists[playlist_ID].content.track_8] || playlist_ITEM_1;
-  playlist_ITEM_9 = allMusicView[allPlaylists[playlist_ID].content.track_9] || playlist_ITEM_1;
-  playlist_ITEM_10 = allMusicView[allPlaylists[playlist_ID].content.track_10] || playlist_ITEM_1;
-  playlist_ITEM_11 = allMusicView[allPlaylists[playlist_ID].content.track_11] || playlist_ITEM_1;
-  playlist_ITEM_12 = allMusicView[allPlaylists[playlist_ID].content.track_12] || playlist_ITEM_1;
-  playlist_ITEM_13 = allMusicView[allPlaylists[playlist_ID].content.track_13] || playlist_ITEM_1;
-  playlist_ITEM_14 = allMusicView[allPlaylists[playlist_ID].content.track_14] || playlist_ITEM_1;
-  playlist_ITEM_15 = allMusicView[allPlaylists[playlist_ID].content.track_15] || playlist_ITEM_1;
-  playlist_ITEM_16 = allMusicView[allPlaylists[playlist_ID].content.track_16] || playlist_ITEM_1;
-  playlist_ITEM_17 = allMusicView[allPlaylists[playlist_ID].content.track_17] || playlist_ITEM_1;
-  playlist_ITEM_18 = allMusicView[allPlaylists[playlist_ID].content.track_18] || playlist_ITEM_1;
-  playlist_ITEM_19 = allMusicView[allPlaylists[playlist_ID].content.track_19] || playlist_ITEM_1;
-  playlist_ITEM_20 = allMusicView[allPlaylists[playlist_ID].content.track_20] || playlist_ITEM_1;
-  playlist_ITEM_21 = allMusicView[allPlaylists[playlist_ID].content.track_21] || playlist_ITEM_1;
-  playlist_ITEM_22 = allMusicView[allPlaylists[playlist_ID].content.track_22] || playlist_ITEM_1;
-  playlist_ITEM_23 = allMusicView[allPlaylists[playlist_ID].content.track_23] || playlist_ITEM_1;
-  playlist_ITEM_24 = allMusicView[allPlaylists[playlist_ID].content.track_24] || playlist_ITEM_1;
-  playlist_ITEM_25 = allMusicView[allPlaylists[playlist_ID].content.track_25] || playlist_ITEM_1;
-  playlist_ITEM_26 = allMusicView[allPlaylists[playlist_ID].content.track_26] || playlist_ITEM_1;
-  playlist_ITEM_27 = allMusicView[allPlaylists[playlist_ID].content.track_27] || playlist_ITEM_1;
-  playlist_ITEM_28 = allMusicView[allPlaylists[playlist_ID].content.track_28] || playlist_ITEM_1;
-  playlist_ITEM_29 = allMusicView[allPlaylists[playlist_ID].content.track_29] || playlist_ITEM_1;
-  playlist_ITEM_30 = allMusicView[allPlaylists[playlist_ID].content.track_30] || playlist_ITEM_1;
-  playlist_ITEM_31 = allMusicView[allPlaylists[playlist_ID].content.track_31] || playlist_ITEM_1;
-  playlist_ITEM_32 = allMusicView[allPlaylists[playlist_ID].content.track_32] || playlist_ITEM_1;
-  playlist_ITEM_33 = allMusicView[allPlaylists[playlist_ID].content.track_33] || playlist_ITEM_1;
-  playlist_ITEM_34 = allMusicView[allPlaylists[playlist_ID].content.track_34] || playlist_ITEM_1;
-  playlist_ITEM_35 = allMusicView[allPlaylists[playlist_ID].content.track_35] || playlist_ITEM_1;
-  playlist_ITEM_36 = allMusicView[allPlaylists[playlist_ID].content.track_36] || playlist_ITEM_1;
-  playlist_ITEM_37 = allMusicView[allPlaylists[playlist_ID].content.track_37] || playlist_ITEM_1;
-  playlist_ITEM_38 = allMusicView[allPlaylists[playlist_ID].content.track_38] || playlist_ITEM_1;
-  playlist_ITEM_39 = allMusicView[allPlaylists[playlist_ID].content.track_39] || playlist_ITEM_1;
-  playlist_ITEM_40 = allMusicView[allPlaylists[playlist_ID].content.track_40] || playlist_ITEM_1;
-  playlist_ITEM_41 = allMusicView[allPlaylists[playlist_ID].content.track_41] || playlist_ITEM_1;
-  playlist_ITEM_42 = allMusicView[allPlaylists[playlist_ID].content.track_42] || playlist_ITEM_1;
-  playlist_ITEM_43 = allMusicView[allPlaylists[playlist_ID].content.track_43] || playlist_ITEM_1;
-  playlist_ITEM_44 = allMusicView[allPlaylists[playlist_ID].content.track_44] || playlist_ITEM_1;
-  playlist_ITEM_45 = allMusicView[allPlaylists[playlist_ID].content.track_45] || playlist_ITEM_1;
-  playlist_ITEM_46 = allMusicView[allPlaylists[playlist_ID].content.track_46] || playlist_ITEM_1;
-  playlist_ITEM_47 = allMusicView[allPlaylists[playlist_ID].content.track_47] || playlist_ITEM_1;
-  playlist_ITEM_48 = allMusicView[allPlaylists[playlist_ID].content.track_48] || playlist_ITEM_1;
-  playlist_ITEM_49 = allMusicView[allPlaylists[playlist_ID].content.track_49] || playlist_ITEM_1;
-  playlist_ITEM_50 = allMusicView[allPlaylists[playlist_ID].content.track_50] || playlist_ITEM_1;
+  playlist_ITEM_1 = allMusicView[allPlaylists[playlist_ID].content.track_1 - 1] || null;
+  playlist_ITEM_2 = allMusicView[allPlaylists[playlist_ID].content.track_2 - 1] || playlist_ITEM_1;
+  playlist_ITEM_3 = allMusicView[allPlaylists[playlist_ID].content.track_3 - 1] || playlist_ITEM_1;
+  playlist_ITEM_4 = allMusicView[allPlaylists[playlist_ID].content.track_4 - 1] || playlist_ITEM_1;
+  playlist_ITEM_5 = allMusicView[allPlaylists[playlist_ID].content.track_5 - 1] || playlist_ITEM_1;
+  playlist_ITEM_6 = allMusicView[allPlaylists[playlist_ID].content.track_6 - 1] || playlist_ITEM_1;
+  playlist_ITEM_7 = allMusicView[allPlaylists[playlist_ID].content.track_7 - 1] || playlist_ITEM_1;
+  playlist_ITEM_8 = allMusicView[allPlaylists[playlist_ID].content.track_8 - 1] || playlist_ITEM_1;
+  playlist_ITEM_9 = allMusicView[allPlaylists[playlist_ID].content.track_9 - 1] || playlist_ITEM_1;
+  playlist_ITEM_10 = allMusicView[allPlaylists[playlist_ID].content.track_10 - 1] || playlist_ITEM_1;
+  playlist_ITEM_11 = allMusicView[allPlaylists[playlist_ID].content.track_11 - 1] || playlist_ITEM_1;
+  playlist_ITEM_12 = allMusicView[allPlaylists[playlist_ID].content.track_12 - 1] || playlist_ITEM_1;
+  playlist_ITEM_13 = allMusicView[allPlaylists[playlist_ID].content.track_13 - 1] || playlist_ITEM_1;
+  playlist_ITEM_14 = allMusicView[allPlaylists[playlist_ID].content.track_14 - 1] || playlist_ITEM_1;
+  playlist_ITEM_15 = allMusicView[allPlaylists[playlist_ID].content.track_15 - 1] || playlist_ITEM_1;
+  playlist_ITEM_16 = allMusicView[allPlaylists[playlist_ID].content.track_16 - 1] || playlist_ITEM_1;
+  playlist_ITEM_17 = allMusicView[allPlaylists[playlist_ID].content.track_17 - 1] || playlist_ITEM_1;
+  playlist_ITEM_18 = allMusicView[allPlaylists[playlist_ID].content.track_18 - 1] || playlist_ITEM_1;
+  playlist_ITEM_19 = allMusicView[allPlaylists[playlist_ID].content.track_19 - 1] || playlist_ITEM_1;
+  playlist_ITEM_20 = allMusicView[allPlaylists[playlist_ID].content.track_20 - 1] || playlist_ITEM_1;
+  playlist_ITEM_21 = allMusicView[allPlaylists[playlist_ID].content.track_21 - 1] || playlist_ITEM_1;
+  playlist_ITEM_22 = allMusicView[allPlaylists[playlist_ID].content.track_22 - 1] || playlist_ITEM_1;
+  playlist_ITEM_23 = allMusicView[allPlaylists[playlist_ID].content.track_23 - 1] || playlist_ITEM_1;
+  playlist_ITEM_24 = allMusicView[allPlaylists[playlist_ID].content.track_24 - 1] || playlist_ITEM_1;
+  playlist_ITEM_25 = allMusicView[allPlaylists[playlist_ID].content.track_25 - 1] || playlist_ITEM_1;
+  playlist_ITEM_26 = allMusicView[allPlaylists[playlist_ID].content.track_26 - 1] || playlist_ITEM_1;
+  playlist_ITEM_27 = allMusicView[allPlaylists[playlist_ID].content.track_27 - 1] || playlist_ITEM_1;
+  playlist_ITEM_28 = allMusicView[allPlaylists[playlist_ID].content.track_28 - 1] || playlist_ITEM_1;
+  playlist_ITEM_29 = allMusicView[allPlaylists[playlist_ID].content.track_29 - 1] || playlist_ITEM_1;
+  playlist_ITEM_30 = allMusicView[allPlaylists[playlist_ID].content.track_30 - 1] || playlist_ITEM_1;
+  playlist_ITEM_31 = allMusicView[allPlaylists[playlist_ID].content.track_31 - 1] || playlist_ITEM_1;
+  playlist_ITEM_32 = allMusicView[allPlaylists[playlist_ID].content.track_32 - 1] || playlist_ITEM_1;
+  playlist_ITEM_33 = allMusicView[allPlaylists[playlist_ID].content.track_33 - 1] || playlist_ITEM_1;
+  playlist_ITEM_34 = allMusicView[allPlaylists[playlist_ID].content.track_34 - 1] || playlist_ITEM_1;
+  playlist_ITEM_35 = allMusicView[allPlaylists[playlist_ID].content.track_35 - 1] || playlist_ITEM_1;
+  playlist_ITEM_36 = allMusicView[allPlaylists[playlist_ID].content.track_36 - 1] || playlist_ITEM_1;
+  playlist_ITEM_37 = allMusicView[allPlaylists[playlist_ID].content.track_37 - 1] || playlist_ITEM_1;
+  playlist_ITEM_38 = allMusicView[allPlaylists[playlist_ID].content.track_38 - 1] || playlist_ITEM_1;
+  playlist_ITEM_39 = allMusicView[allPlaylists[playlist_ID].content.track_39 - 1] || playlist_ITEM_1;
+  playlist_ITEM_40 = allMusicView[allPlaylists[playlist_ID].content.track_40 - 1] || playlist_ITEM_1;
+  playlist_ITEM_41 = allMusicView[allPlaylists[playlist_ID].content.track_41 - 1] || playlist_ITEM_1;
+  playlist_ITEM_42 = allMusicView[allPlaylists[playlist_ID].content.track_42 - 1] || playlist_ITEM_1;
+  playlist_ITEM_43 = allMusicView[allPlaylists[playlist_ID].content.track_43 - 1] || playlist_ITEM_1;
+  playlist_ITEM_44 = allMusicView[allPlaylists[playlist_ID].content.track_44 - 1] || playlist_ITEM_1;
+  playlist_ITEM_45 = allMusicView[allPlaylists[playlist_ID].content.track_45 - 1] || playlist_ITEM_1;
+  playlist_ITEM_46 = allMusicView[allPlaylists[playlist_ID].content.track_46 - 1] || playlist_ITEM_1;
+  playlist_ITEM_47 = allMusicView[allPlaylists[playlist_ID].content.track_47 - 1] || playlist_ITEM_1;
+  playlist_ITEM_48 = allMusicView[allPlaylists[playlist_ID].content.track_48 - 1] || playlist_ITEM_1;
+  playlist_ITEM_49 = allMusicView[allPlaylists[playlist_ID].content.track_49 - 1] || playlist_ITEM_1;
+  playlist_ITEM_50 = allMusicView[allPlaylists[playlist_ID].content.track_50 - 1] || playlist_ITEM_1;
 
   playlist_FULL = playlist_FULL.concat(playlist_ITEM_1, playlist_ITEM_2, playlist_ITEM_3, playlist_ITEM_4, playlist_ITEM_5, playlist_ITEM_6, playlist_ITEM_7, playlist_ITEM_8, playlist_ITEM_9, playlist_ITEM_10, playlist_ITEM_11, playlist_ITEM_12, playlist_ITEM_13, playlist_ITEM_14, playlist_ITEM_15, playlist_ITEM_16, playlist_ITEM_17, playlist_ITEM_18, playlist_ITEM_19, playlist_ITEM_20, playlist_ITEM_21, playlist_ITEM_22, playlist_ITEM_23, playlist_ITEM_24, playlist_ITEM_25, playlist_ITEM_26, playlist_ITEM_27, playlist_ITEM_28, playlist_ITEM_29, playlist_ITEM_30, playlist_ITEM_31, playlist_ITEM_32, playlist_ITEM_33, playlist_ITEM_34, playlist_ITEM_35, playlist_ITEM_36, playlist_ITEM_37, playlist_ITEM_38, playlist_ITEM_39, playlist_ITEM_40, playlist_ITEM_41, playlist_ITEM_42, playlist_ITEM_43, playlist_ITEM_44, playlist_ITEM_45, playlist_ITEM_46, playlist_ITEM_47, playlist_ITEM_48, playlist_ITEM_49, playlist_ITEM_50);
   const key = 'id';
@@ -5144,11 +5790,13 @@ function clickedPlaylistLoad(data){
 
   globalThis.playlist_QUEUE = playlist_FULL;
   
+  playlistResult.setAttribute('queue-long-data', '');
+  playlistResult.setAttribute('playlist-editable', 'false');
   favoritIt = playlist_FULL;
   playlistResult.innerHTML = "";
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
-      `<div class="music-artist-album-item" li-index='${favoritIt[i].id}' onclick="playlistQueue(this)">
+      `<div class="music-artist-album-item" queue-index='${i+1}' id='${favoritIt[i].id}'  onclick="playlist_QUEUE_CLICKED(this)">
       <img src="${favoritIt[i].img_mini}">
             <div class="music-artist-album-item-data">
                 <h1>${favoritIt[i].name}</h1>
@@ -5157,9 +5805,15 @@ function clickedPlaylistLoad(data){
             <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
        </div>`;
        playlistResult.insertAdjacentHTML("beforeend", resultFAV);
+
+       actionDataToBeReplaced = playlistResult.getAttribute('queue-long-data');
+       playlistResult.setAttribute('queue-long-data', actionDataToBeReplaced + favoritIt[i].id + ',' )
   }
 
   loseFocus();
+  setTimeout(() => {
+    rightClickOptions();
+  }, 250);
 }
 
 function playlistQueue(element){
@@ -5179,10 +5833,12 @@ function loadDailyPlaylists(){
   resultsFAV = document.querySelector("#popularPlaylists")
   resultsFAV.innerHTML="";
 
-  for (let i = 0; i < allPlaylists.length && i < 5; i++) {
+  for (let i = 0; i < allPlaylists.length && i <= 10; i++) {
     let resultFAV =
       `<div class="center-container-item" onclick="clickedPlaylist(this)" playlist-id="${allPlaylists[i].play_id}">
-        <img src="${allPlaylists[i].image}">
+        <div class="img-box">    
+          <img src="${allPlaylists[i].image}">
+        </div>
         <h2>${allPlaylists[i].name}</h2>
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
@@ -5271,10 +5927,12 @@ function loadUserStylePlaylists(){
 
   playlistsIt = allPlaylists.filter(x => x.play_style === localStorage.getItem('personalization-data-style_1') || x.play_style === localStorage.getItem('personalization-data-style_2'));
 
-  for (let i = 0; i < playlistsIt.length && i < 5; i++) {
+  for (let i = 0; i < playlistsIt.length && i <= 10; i++) {
     let resultFAV =
       `<div class="center-container-item" onclick="clickedPlaylist(this)" playlist-id="${playlistsIt[i].play_id}">
-        <img src="${playlistsIt[i].image}">
+        <div class="img-box">    
+          <img src="${playlistsIt[i].image}">
+        </div>
         <h2>${playlistsIt[i].name}</h2>
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
@@ -5287,6 +5945,576 @@ function create_Playlist(){
   playlistPopUp.classList.add("active");
 }
 
+function create_Playlist_Data_Global(){
+  let playlist_data_name = document.querySelector(".playlist-popup-data #playlistName").value;
+  let playlist_data_img = document.querySelector(".playlist-popup-data #playlistImage").value;
+  let playlist_data_url = document.querySelector(".playlist-popup .img-box img").src;
+
+  if(playlist_data_img.length <= 10){
+    playlist_data_img = playlist_data_url;
+  }
+  var today = new Date();
+
+  if(!localStorage.playlist_user_1){
+    localStorage.setItem('playlist_user_1', playlist_data_name + ',' + today.getFullYear() + ',' + playlist_data_img + ',playlist_user_1')
+  }else if(!localStorage.playlist_user_2){
+    localStorage.setItem('playlist_user_2', playlist_data_name + ',' + today.getFullYear() + ',' + playlist_data_img + ',playlist_user_2')
+  }else if(!localStorage.playlist_user_3){
+    localStorage.setItem('playlist_user_3', playlist_data_name + ',' + today.getFullYear() + ',' + playlist_data_img + ',playlist_user_3')
+  }else if(!localStorage.playlist_user_4){
+    localStorage.setItem('playlist_user_4', playlist_data_name + ',' + today.getFullYear() + ',' + playlist_data_img + ',playlist_user_4')
+  }else if(!localStorage.playlist_user_5){
+    localStorage.setItem('playlist_user_5', playlist_data_name + ',' + today.getFullYear() + ',' + playlist_data_img + ',playlist_user_5')
+  }else if(!localStorage.playlist_user_6){
+    localStorage.setItem('playlist_user_6', playlist_data_name + ',' + today.getFullYear() + ',' + playlist_data_img + ',playlist_user_6')
+  }else if(!localStorage.playlist_user_7){
+    localStorage.setItem('playlist_user_7', playlist_data_name + ',' + today.getFullYear() + ',' + playlist_data_img + ',playlist_user_7')
+  }else if(!localStorage.playlist_user_8){
+    localStorage.setItem('playlist_user_8', playlist_data_name + ',' + today.getFullYear() + ',' + playlist_data_img + ',playlist_user_8')
+  }else if(!localStorage.playlist_user_9){
+    localStorage.setItem('playlist_user_9', playlist_data_name + ',' + today.getFullYear() + ',' + playlist_data_img + ',playlist_user_9')
+  }else if(!localStorage.playlist_user_10){
+    localStorage.setItem('playlist_user_10', playlist_data_name + ',' + today.getFullYear() + ',' + playlist_data_img) + ',playlist_user_10'
+  }
+
+  playlistPopUp.classList.remove("active");
+  playlist_SELECT_LOAD();
+}
+
 function create_Playlist_Exit(){
   playlistPopUp.classList.remove("active");
+}
+
+function artistBio_Toggle(){
+  if(document.querySelector(".gallery").classList.contains("fullscreen")){
+    document.querySelector(".gallery").classList.remove("fullscreen")
+  }else{
+    document.querySelector(".gallery").classList.add("fullscreen")
+  }
+}
+
+function rightClickOptions(){
+  $("#recent-tracks-container .center-container-item").mousedown(function(ev){
+      if(ev.which == 3){
+        trackOptions(this)
+      }
+  });
+
+  $(".music-artist-content-item.track-box").mousedown(function(ev){
+    if(ev.which == 3){
+      trackOptions(this)
+    }
+  });
+
+  $(".music-artist-album-item").mousedown(function(ev){
+    if(ev.which == 3){
+      trackOptions(this)
+    }
+  });
+
+  $(".yourStyle-item").mousedown(function(ev){
+    if(ev.which == 3){
+      trackOptions(this)
+    }
+  });
+}
+
+const popCont = document.querySelector(".music-artist-content-container");
+const popBtn = document.querySelector(".music-artist-content-container-viewAll.t_popular p");
+
+function toggleArtistPopularAll(){
+  if(popCont.classList.contains("view-all")){
+    popCont.classList.remove("view-all")
+    popBtn.innerHTML = `<i class="fa-solid fa-plus"></i>Show More`
+    musicArtistScreen.scrollTop = document.querySelector(".music-artist-item-title").clientHeight;
+  }else{
+    fastLoadingPop();
+    popCont.classList.add("view-all")
+    popBtn.innerHTML = `<i class="fa-solid fa-minus"></i> Show Less`
+  }
+}
+
+const albCont = document.querySelector(".music-artist-content-album");
+const albBtn = document.querySelector(".music-artist-content-container-viewAll.t_album p");
+
+function toggleArtistAlbumsAll(){
+  if(albCont.classList.contains("view-all")){
+    albCont.classList.remove("view-all")
+    albBtn.innerHTML = `<i class="fa-solid fa-plus"></i>Show More`
+    musicArtistScreen.scrollTop = document.querySelector(".music-artist-item-title").clientHeight;
+  }else{
+    fastLoadingPop();
+    albCont.classList.add("view-all")
+    albBtn.innerHTML = `<i class="fa-solid fa-minus"></i> Show Less`
+  }
+}
+
+function historyTrack_OBJECT(object){
+  let historyTrack_DATA = "";
+  if(!object){
+    historyTrack_DATA = localStorage.getItem("historyTrack_DATA_1");
+  }else{
+    historyTrack_DATA = object.getAttribute("li-index");
+  }
+
+  if(historyTrack_DATA === localStorage.getItem("historyTrack_DATA_7") ||
+    historyTrack_DATA === localStorage.getItem("historyTrack_DATA_6") ||
+    historyTrack_DATA === localStorage.getItem("historyTrack_DATA_5") || 
+    historyTrack_DATA === localStorage.getItem("historyTrack_DATA_4") || 
+    historyTrack_DATA === localStorage.getItem("historyTrack_DATA_4") || 
+    historyTrack_DATA === localStorage.getItem("historyTrack_DATA_3") || 
+    historyTrack_DATA === localStorage.getItem("historyTrack_DATA_2") || 
+    historyTrack_DATA === localStorage.getItem("historyTrack_DATA_1")){
+    null;
+  }else{
+    localStorage.setItem("historyTrack_DATA_8", localStorage.getItem("historyTrack_DATA_7") || null);
+    localStorage.setItem("historyTrack_DATA_7", localStorage.getItem("historyTrack_DATA_6") || null);
+    localStorage.setItem("historyTrack_DATA_6", localStorage.getItem("historyTrack_DATA_5") || null);
+    localStorage.setItem("historyTrack_DATA_5", localStorage.getItem("historyTrack_DATA_4") || null);
+    localStorage.setItem("historyTrack_DATA_4", localStorage.getItem("historyTrack_DATA_3") || null);
+    localStorage.setItem("historyTrack_DATA_3", localStorage.getItem("historyTrack_DATA_2") || null);
+    localStorage.setItem("historyTrack_DATA_2", localStorage.getItem("historyTrack_DATA_1") || null);
+    localStorage.setItem("historyTrack_DATA_1", historyTrack_DATA);
+  }
+
+  resultsFAV = document.querySelector(".search-history-container");
+  resultsFAV.innerHTML = "";
+
+  favoritIt = allMusicView.filter(x => x.id === localStorage.getItem("historyTrack_DATA_1") || x.id === localStorage.getItem("historyTrack_DATA_2") || x.id === localStorage.getItem("historyTrack_DATA_3") || x.id === localStorage.getItem("historyTrack_DATA_4") || x.id === localStorage.getItem("historyTrack_DATA_5") || x.id === localStorage.getItem("historyTrack_DATA_6") || x.id === localStorage.getItem("historyTrack_DATA_7") || x.id === localStorage.getItem("historyTrack_DATA_8"));
+  for (let i = 0; i < favoritIt.length; i++) {
+    let resultFAV =
+      `<div class="music-artist-content-item track-box" li-index='${favoritIt[i].id}' onclick="clickedSingle(this);">
+        <img data-lazy="${favoritIt[i].img_mini}">
+          <div class="music-artist-content-item-data">
+            <h1>${favoritIt[i].name}</h1>
+            <span>${favoritIt[i].artist} <p> ${' • ' + favoritIt[i].colaboration} </p> • ${favoritIt[i].album} • ${favoritIt[i].album_premiere}</span>
+          </div>
+          <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
+       </div>`;
+    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+  }
+
+  setTimeout(() => {
+    collaborationItemCheck();
+  }, 250);
+}
+
+function headRight(){
+  document.querySelector(".head-content-container").scrollLeft = 99999
+}
+
+function headLeft(){
+  document.querySelector(".head-content-container").scrollLeft = 0
+}
+
+$(document).on("keypress", function(e){
+
+  if(activeHomeScreen.classList.contains('active') && !playlistSelectWindow.classList.contains('active') && !playlistScreen.classList.contains('active')){
+
+
+    /* SPACE */
+    if(e.which == 32 || e.which == 115){
+      if(wrapper.classList.contains('paused')){
+        pauseMusic();
+      }else{
+        playMusic();
+      }
+    }
+    /* L = LYRICS */
+    if(e.which == 108){
+      if(musicImgBox.classList.contains("lyrics")){
+        if(wrapper.classList.contains('active')){
+          wrapper.classList.remove('active');
+        }else{
+          wrapper.classList.add('active');
+        }
+      }else{
+        wrapper.classList.add('active');
+        trackLyrics();
+      }
+    }
+    /* P = PROFILE */
+    if(e.which == 112){
+      fastLoadingPop();loadUserProfile();loseFocus();
+    }
+    /* D = +10s */
+    if(e.which == 100){
+      mainAudio.currentTime = mainAudio.currentTime + 10;
+    }
+    /* A = -10s */
+    if(e.which == 97){
+      mainAudio.currentTime = mainAudio.currentTime - 10;
+    }
+    /* Q = QUEUE */
+    if(e.which == 113){
+      topQueueMenuShow.classList.toggle('active');
+    }
+
+  }
+});
+
+const playlistSelectWindow = document.querySelector(".playlist-select");
+const playlistEditBtn = document.querySelector('.editPlaylist');
+const playlistToolTip = document.querySelector('.current-ad-box');
+
+function playlist_SELECT(object){
+  let trackID = object.getAttribute('track-data');
+  playlistSelectWindow.classList.add('active');
+  playlistSelectWindow.setAttribute('track-data', trackID);
+  playlist_SELECT_LOAD();
+}
+
+function playlist_SELECT_LOAD(){
+
+  let playlist_DATA = 
+  [localStorage.getItem('playlist_user_1'),
+   localStorage.getItem('playlist_user_2'),
+   localStorage.getItem('playlist_user_3'),
+   localStorage.getItem('playlist_user_4'),
+   localStorage.getItem('playlist_user_5'),
+   localStorage.getItem('playlist_user_6'),
+   localStorage.getItem('playlist_user_7'),
+   localStorage.getItem('playlist_user_8'),
+   localStorage.getItem('playlist_user_9'),
+   localStorage.getItem('playlist_user_10'),];
+
+  let playlist_ARRAY = playlist_DATA.filter(x => x != null);
+  let playlist_COUNT = playlist_ARRAY.length;
+
+  let results = document.querySelector(".playlist-select-content");
+  results.innerHTML="";
+
+  for (let i = 0; i < playlist_COUNT; i++) {
+    let tracks_COUNTER = playlist_ARRAY[i].split(',').length-4 + " Tracks";
+
+    let result = `<div class="playlist-select-item" onclick="playlist_SELECT_ADD(this);" playlist-ID="${playlist_ARRAY[i].split(',')[3]}">
+    <img src="${playlist_ARRAY[i].split(',')[2]}">
+    <div class="playlist-select-item-data">
+      <p>${playlist_ARRAY[i].split(',')[0]}</p>
+      <span><i>Private</i> ${tracks_COUNTER}</span>
+    </div>
+  </div>`
+
+  results.insertAdjacentHTML("beforeend", result);
+  }
+}
+
+function playlist_HOME_LOAD(){
+  let playlist_DATA = 
+  [localStorage.getItem('playlist_user_1'),
+   localStorage.getItem('playlist_user_2'),
+   localStorage.getItem('playlist_user_3'),
+   localStorage.getItem('playlist_user_4'),
+   localStorage.getItem('playlist_user_5'),
+   localStorage.getItem('playlist_user_6'),
+   localStorage.getItem('playlist_user_7'),
+   localStorage.getItem('playlist_user_8'),
+   localStorage.getItem('playlist_user_9'),
+   localStorage.getItem('playlist_user_10'),];
+
+  let playlist_ARRAY = playlist_DATA.filter(x => x != null);
+  let playlist_COUNT = playlist_ARRAY.length;
+
+  let results = document.querySelector("#userPlaylists");
+  results.innerHTML="";
+
+  for (let i = 0; i < playlist_COUNT; i++) {
+    let tracks_COUNTER = playlist_ARRAY[i].split(',').length-4 + " Tracks";
+
+    let result = `<div class="center-container-item" onclick="fastLoadingPop();playlist_SELECT_CLICKED(this);" playlist-ID="${playlist_ARRAY[i].split(',')[3]}">
+          <div class="img-box">    
+            <img src="${playlist_ARRAY[i].split(',')[2]}">
+          </div>
+    <div class="playlist-select-item-data">
+      <h2>${playlist_ARRAY[i].split(',')[0]}</h2>
+      <p>Playlist • ${playlist_ARRAY[i].split(',')[1]} • ${tracks_COUNTER}</p>
+    </div>
+  </div>`
+
+  results.insertAdjacentHTML("beforeend", result);
+  }
+
+  if(playlist_COUNT < 2){
+    results.style.display='none';
+    document.querySelector('.your-playlists').style.display='none';
+  }else{
+    results.style.display='flex';
+    document.querySelector('.your-playlists').style.display='block';
+  }
+}
+
+function playlist_SELECT_CLICKED(item){
+  let item_DATA = item.getAttribute("playlist-ID");
+  let item_DATA_COUNTER = localStorage.getItem(item_DATA).split(',').length-4;
+  playlistResult.setAttribute('queue-long-data', '');
+  playlistResult.setAttribute('playlist-editable', 'true');
+  playlistResult.setAttribute('playlist-id', item_DATA);
+  localStorage.setItem('last_PLAYLIST', item_DATA);
+
+  searchScreen.classList.remove('active');
+  activeSearchScreen.classList.remove('active')
+  activeLibraryScreen.classList.remove('active')
+  libraryScreen.classList.remove('active');
+  playlistScreen.classList.add('active');
+  activeHomeScreen.classList.add('active');
+  playlistSelectWindow.classList.remove('active');
+  wrapper.classList.remove('active');
+
+  playlistEditBtn.classList.remove('active');
+  playlistEDIT.classList.remove('fs921');
+
+  playlistImg.src = localStorage.getItem(item_DATA).split(',')[2];
+  playlistImgBg.src = localStorage.getItem(item_DATA).split(',')[2];
+  playlistTitle.innerText = localStorage.getItem(item_DATA).split(',')[0];;
+  playlistArtist.innerText = 'Private Playlist';
+  playlistTracksCounter.innerText = item_DATA_COUNTER;
+
+  playlistResult.innerHTML = "";
+
+  let allQueue;
+  allQueue = allMusicView.filter(x => x.id === "#");
+
+  allQueueLength = item_DATA_COUNTER+4;
+  for (let i = 4; i < allQueueLength; i++) {
+    queueMusic = allMusicView.filter(x => x.id === localStorage.getItem(item_DATA).split(',')[i]);
+    allQueue = allQueue.concat(queueMusic)
+  }
+
+  for (let i = 0; i < allQueue.length; i++) {
+    let resultFAV =
+      `<div class="music-artist-album-item" queue-index='${i+1}' id='${allQueue[i].id}' onclick="playlist_QUEUE_CLICKED(this)">
+      <img src="${allQueue[i].img_mini}">
+            <div class="music-artist-album-item-data">
+                <h1>${allQueue[i].name}</h1>
+                <span>${allQueue[i].artist}</span>
+            </div>
+            <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
+       </div>`;
+       playlistResult.insertAdjacentHTML("beforeend", resultFAV);
+  
+  actionDataToBeReplaced = playlistResult.getAttribute('queue-long-data');
+  playlistResult.setAttribute('queue-long-data', actionDataToBeReplaced + allQueue[i].id + ',' )
+  }
+
+  loseFocus();
+  playlist_CHECK_IMG();
+}
+
+function playlist_CHECK_IMG(){
+  setTimeout(() => {
+    if(playlistArtist.innerText === 'Private Playlist'){
+      playlistImg.classList.add('s-50');
+    }else{
+      playlistImg.classList.remove('s-50');
+    }
+  }, 150);
+
+  if(playlistResult.getAttribute('playlist-editable') === "true"){
+    playlistEditBtn.style.display="flex";
+  }else{
+    playlistEditBtn.style.display="none";
+  }
+}
+
+function playlist_QUEUE_PLAY(){
+  playlist_DATA = playlistResult.getAttribute('queue-long-data');
+  let playlistQueueLength = playlist_DATA.split(',').length-1;
+  let allQueue;
+
+  allQueue = allMusicView.filter(x => x.id === "#");
+  for (let i = 0; i < playlistQueueLength; i++) {
+    queueMusic = allMusicView.filter(x => x.id === playlist_DATA.split(',')[i]);
+    allQueue = allQueue.concat(queueMusic)
+  }
+
+  allMusic = allQueue;
+  indexNumb=1;
+  loadMusic(indexNumb);
+  playMusic();
+}
+
+function playlist_SELECT_ADD(object){
+  playlistID = object.getAttribute('playlist-id');
+  trackID = document.querySelector('.playlist-select').getAttribute('track-data');
+  playlistLS = localStorage.getItem(playlistID);
+
+  playlistCOUNTER = localStorage.getItem(playlistID).split(',').length;
+  playlistLAST = localStorage.getItem(playlistID).split(',')[playlistCOUNTER - 1]
+  playlistDATA = playlistLS + ',' + trackID;
+
+  if(playlistLAST != trackID){
+    localStorage.setItem(playlistID, playlistDATA);
+    playlistSelectWindow.classList.remove('active');
+  }
+
+  if(document.querySelector(".track-options-screen")){
+    trackHideOptions();
+  }
+
+  setTimeout(() => {
+    playlistToolTip.classList.add('on')
+    playlistToolTip.innerText = 'Added To Playlist';
+    setTimeout(() => {
+      playlistToolTip.classList.remove('on')
+    }, 2000);
+  }, 300);
+}
+
+function playlist_QUEUE_CLICKED(object){
+  playlist_DATA = playlistResult.getAttribute('queue-long-data');
+  let playlistQueueLength = playlist_DATA.split(',').length-1;
+  let allQueue;
+
+  allQueue = allMusicView.filter(x => x.id === "#");
+  for (let i = 0; i < playlistQueueLength; i++) {
+    queueMusic = allMusicView.filter(x => x.id === playlist_DATA.split(',')[i]);
+    allQueue = allQueue.concat(queueMusic)
+  }
+  
+  allMusic = allQueue;
+  queueId = object.getAttribute("queue-index");
+  indexNumb = queueId--;
+  loadMusic(indexNumb);
+  playMusic();
+}
+
+function playlist_SELECT_EXIT(){
+  playlistSelectWindow.classList.remove('active')
+}
+
+function reload_LIBRARY(){
+  document.querySelector(".library-slider .center-container-scrollable").innerHTML=`<div class="center-container-item playlist-tag" onclick="favoriteLibraryScreen();checkLocalStorageData()" artist-data="favorites">
+  <img src="https://e-cdns-images.dzcdn.net/images/misc/679936b577879457668697f0e6f2c755/264x264-none-80-0-0.png">
+  <div class="center-container-album-data">
+    <h2>Liked songs</h2>
+    <p>Playlist • Private</p>
+  </div>
+</div>`;
+  library_load_artists();
+  library_load_albums();
+  library_load_playlists();
+
+  libraryFilter_Artist.classList.remove('active');
+  libraryFilter_Album.classList.remove('active');
+  libraryFilter_Playlist.classList.remove('active');
+}
+
+const libraryFilter_Artist = document.querySelector('.tag-option.artist');
+const libraryFilter_Album = document.querySelector('.tag-option.album');
+const libraryFilter_Playlist = document.querySelector('.tag-option.playlist');
+const libraryFilter_Clear = document.querySelector('.tag-option.clear');
+
+
+function library_FILTER_ARTIST(){
+  libraryFilter_Artist.classList.add('active');
+  libraryFilter_Album.classList.remove('active');
+  libraryFilter_Playlist.classList.remove('active');
+  libraryFilter_Clear.classList.remove('active');
+
+  let objects_ALL = document.querySelectorAll('.library-content .center-container-scrollable .center-container-item');
+  let objects_VISIBLE = document.querySelectorAll('.library-content .center-container-scrollable .center-container-item.artist-tag');
+
+  for(object_ALL of objects_ALL){
+    object_ALL.style.display='none';
+  }
+
+  for(object_VISIBLE of objects_VISIBLE){
+    object_VISIBLE.style.display='flex';
+  }
+}
+
+function library_FILTER_ALBUM(){
+  libraryFilter_Artist.classList.remove('active');
+  libraryFilter_Album.classList.add('active');
+  libraryFilter_Playlist.classList.remove('active');
+  libraryFilter_Clear.classList.remove('active');
+
+  let objects_ALL = document.querySelectorAll('.library-content .center-container-scrollable .center-container-item');
+  let objects_VISIBLE = document.querySelectorAll('.library-content .center-container-scrollable .center-container-item.album-tag');
+
+  for(object_ALL of objects_ALL){
+    object_ALL.style.display='none';
+  }
+
+  for(object_VISIBLE of objects_VISIBLE){
+    object_VISIBLE.style.display='flex';
+  }
+}
+
+function library_FILTER_PLAYLIST(){
+  libraryFilter_Artist.classList.remove('active');
+  libraryFilter_Album.classList.remove('active');
+  libraryFilter_Playlist.classList.add('active');
+  libraryFilter_Clear.classList.remove('active');
+
+  let objects_ALL = document.querySelectorAll('.library-content .center-container-scrollable .center-container-item');
+  let objects_VISIBLE = document.querySelectorAll('.library-content .center-container-scrollable .center-container-item.playlist-tag');
+
+  for(object_ALL of objects_ALL){
+    object_ALL.style.display='none';
+  }
+
+  for(object_VISIBLE of objects_VISIBLE){
+    object_VISIBLE.style.display='flex';
+  }
+}
+
+const playlistEDIT = document.querySelector('.playlist-edit');
+const playlistEDIT_TITLE = document.querySelector('#edit_title');
+const playlistEDIT_IMG = document.querySelector('#edit_img');
+
+function playlist_EDIT(object){
+  playlistEDIT.classList.toggle('fs921');
+  playlistEditBtn.classList.toggle('active');
+
+  playlistEDIT_TITLE.value = playlistTitle.innerText;
+  playlistEDIT_IMG.value = playlistImg.src;
+}
+
+function playlist_EDIT_UBDATE(){
+  newTitle = playlistEDIT_TITLE.value;
+  newImg = playlistEDIT_IMG.value;
+  playlistID = playlistResult.getAttribute('playlist-id');
+  playlistLS = localStorage.getItem(playlistID)
+  playlistCOUNTER = playlistLS.split(',').length - 1;
+
+  newPlaylistInfo = newTitle + ',' + localStorage.getItem(playlistID).split(',')[1] + ',' + newImg + ',' + playlistID;
+
+  for (let i = 4; i <= playlistCOUNTER; i++) {
+    newPlaylistContnentItem = localStorage.getItem(playlistID).split(',')[i];
+    newPlaylistInfo = newPlaylistInfo + ',' + newPlaylistContnentItem;
+  }
+
+  localStorage.setItem(playlistID, newPlaylistInfo);
+  playlistEDIT.classList.remove('fs921');
+  playlistEditBtn.classList.remove('active');
+
+  playlistImg.src = newImg;
+  playlistImgBg.src = newImg;
+  playlistTitle.innerText = newTitle;
+}
+
+function playlist_EDIT_REMOVE(){
+
+  let playlist_DATA = 
+  [localStorage.getItem('playlist_user_1'),
+   localStorage.getItem('playlist_user_2'),
+   localStorage.getItem('playlist_user_3'),
+   localStorage.getItem('playlist_user_4'),
+   localStorage.getItem('playlist_user_5'),
+   localStorage.getItem('playlist_user_6'),
+   localStorage.getItem('playlist_user_7'),
+   localStorage.getItem('playlist_user_8'),
+   localStorage.getItem('playlist_user_9'),
+   localStorage.getItem('playlist_user_10'),];
+
+  let playlist_ARRAY = playlist_DATA.filter(x => x != null);
+  let playlist_COUNT = playlist_ARRAY.length;
+
+  console.log(playlist_COUNT)
+
+  playlistID = playlistResult.getAttribute('playlist-id');
+  localStorage.removeItem(playlistID);
+  playlistScreen.classList.remove('active');
+  playlist_HOME_LOAD();
 }

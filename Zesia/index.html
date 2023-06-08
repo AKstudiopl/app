@@ -16,8 +16,9 @@
 <body class="preference green" oncontextmenu="return false;">
 
   <div class="loader">
+      <i class="loader-tips"><i class="fa-regular fa-bell"></i>Save you music in liked tracks, by clicking heart icon</i>
       <img src="assets/20230402_201236.png"/>
-      <p><span>Loading</span>2.0.0</p>
+      <p><span>loading</span>2.1.0.B</p>
       <div class="loader-shape"></div>
   </div>
 
@@ -40,13 +41,13 @@
     </a>
   </div>
   <div class="navbar-bottom-btn 2">
-    <a class="navbar-bottom-btn-search" onclick="searchInput.value='';searchContentLoad();searchClearButton();">
+    <a class="navbar-bottom-btn-search" onclick="searchInput.value='';searchContentLoad();searchClearButton();search_ui_IMG.src='';historyTrack_OBJECT();loseFocus();">
       <i class="fa-solid fa-magnifying-glass"></i>
         <span>Search</span>
     </a>
   </div>
   <div class="navbar-bottom-btn 3">
-    <a class="navbar-bottom-btn-library">
+    <a class="navbar-bottom-btn-library" onclick="reload_LIBRARY();">
       <i class="fa-solid fa-lines-leaning"></i>
         <span>Library</span>
     </a>
@@ -91,7 +92,7 @@
         <div class="settings-screen-item" id="input-style">
           <div class="settings-screen-item-description">
             <h3>Amoled Dark Mode</h3>
-            <a>Reduce batter usage, (need to rechange dark mode to set)</a>
+            <a>Reduce batter usage</a>
           </div>
           <div class="settings-screen-item-box" onclick="settingsBoxToggle(this); amoledMode()">
             <div class="settings-screen-item-box-toggle save-data"></div>
@@ -150,7 +151,16 @@
           <div class="settings-screen-item-box" id="userSettingsLyricsImprovment" onclick="settings_LyricsImprovment();settingsBoxToggle(this);">
             <div class="settings-screen-item-box-toggle save-data"></div>
           </div>
-      </div>
+        </div>
+        <div class="settings-screen-item" id="input-style">
+          <div class="settings-screen-item-description">
+            <h3>Render Full Lyrics</h3>
+            <a>For deafult lyrics are rendered 30 seconds up front, changing this option can decrease app optymalization</a>
+          </div>
+          <div class="settings-screen-item-box" id="userSettingsLyricsRender" onclick="lyricsRender();settingsBoxToggle(this);">
+            <div class="settings-screen-item-box-toggle save-data"></div>
+          </div>
+        </div>
 
         <p class="music-artist-content-title">Privacy & connection<span></span></p>
 
@@ -182,7 +192,7 @@
       <div class="settings-screen-item" id="input-style">
         <div class="settings-screen-item-description">
           <h3>Support</h3>
-          <a href="#">Report a problem ,a bug or send us a ticket</a>
+          <a href="#">Report a problem or send us a ticket</a>
         </div>
       </div>
 
@@ -190,6 +200,17 @@
         <div class="settings-screen-item-description" onclick="default_user()">
           <h3>Clear Data</h3>
           <a>Favorites songs, artists, albums etc.</a>
+        </div>
+      </div>
+
+      <div class="settings-screen-item" id="input-style">
+        <div style="
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    " class="settings-screen-item-description">
+          <h3>Version</h3>
+          <a>2.1.0F0EAB</a>
         </div>
       </div>
 
@@ -209,7 +230,7 @@
 
      <div class="search-option">
       <a class="search-option-top active" onclick="search_Top()">Top</a>
-      <a class="search-option-track" onclick="search_Tracks()">Songs</a>
+      <a class="search-option-track" onclick="search_Tracks()">Tracks</a>
       <a class="search-option-artist" onclick="search_Artists()">Artists</a>
       <a class="search-option-album" onclick="search_Albums()">Albums</a>
       <a class="search-option-playlist" onclick="search_Playlists()">Playlists</a>
@@ -223,11 +244,15 @@
     <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
   </div>
 
-  <div class="search-noresults">
-    <p>Nie Znaleziono <span>" <span class="search-noresults-keyword"></span> "</span></p>
-    <p>Spróbuj ponownie, sprawdzając pisownie lub próbując innych słów kluczowych</p>
+  <div class="search-ui-bg">
+    <img src="">
   </div>
 
+  <div class="search-history">
+    <p class="search-history-title">Recently Searched :</p>
+    <div class="search-history-container"></div>
+  </div>
+  
 </div>
 
 <div class="search-options-box">
@@ -245,20 +270,27 @@
       </div>
       <div class="library-top-option">
         <i onclick="create_Playlist()" class="fa-solid fa-plus"></i>
-        <i class="fa-solid fa-magnifying-glass"></i>
       </div>
     </div>
 
     <p class="music-artist-content-title">Your library<span></span></p>
 
+    <div class="library-tag-bar">
+      <p onclick="library_FILTER_ARTIST()" class="tag-option artist">Artist</p>
+      <p onclick="library_FILTER_ALBUM()" class="tag-option album">Album</p>
+      <p onclick="library_FILTER_PLAYLIST()" class="tag-option playlist">Playlist</p>
+      <p onclick="reload_LIBRARY();" class="tag-option clear"><i class="fa-solid fa-xmark"></i></p>
+    </div>
+
     <div class="library-slider">
       <div class="center-container">
         <div class="center-container-scrollable">
 
-          <div class="center-container-item favorite-library-show" artist-data="favorites">
+          <div class="center-container-item playlist-tag" onclick="favoriteLibraryScreen();checkLocalStorageData()" artist-data="favorites">
             <img src="https://e-cdns-images.dzcdn.net/images/misc/679936b577879457668697f0e6f2c755/264x264-none-80-0-0.png">
             <div class="center-container-album-data">
               <h2>Liked songs</h2>
+              <p>Playlist • Private</p>
             </div>
           </div>
 
@@ -276,7 +308,10 @@
   </div>
 
   <div class="library-favorite-top-header">
-    <img data-scroll-speed="2" class="pespective_object" src="https://e-cdns-images.dzcdn.net/images/misc/679936b577879457668697f0e6f2c755/264x264-none-80-0-0.png">
+    <img src="https://e-cdns-images.dzcdn.net/images/misc/679936b577879457668697f0e6f2c755/264x264-none-80-0-0.png">
+    <div class="favorite-img-box">
+      <img data-scroll-speed="2" class="pespective_object" src="https://e-cdns-images.dzcdn.net/images/misc/679936b577879457668697f0e6f2c755/264x264-none-80-0-0.png">
+    </div>
     <h1>Liked Songs</h1>
   </div>
 
@@ -303,6 +338,12 @@
 <div class="head-content">
 
   <div class="head_ui_color">
+    <p>EXPLORE
+      EXPLORE
+      EXPLORE
+      EXPLORE
+      EXPLORE
+    </p>
   </div>
 
   <div class="head-content-top">
@@ -313,29 +354,8 @@
 
       <div class="head-content-top-action">
         <a onclick="historyScreenToggle()"><i class="fa-solid fa-clock-rotate-left"></i></a>
-        <a onclick="notifyToggle()"><i class="fa-regular fa-bell"></i></a>
-        <a><i class="fa-solid fa-gear settings-action-btn"></i></a>
-      </div>
-
-    </div>
-
-    <div class="head-reels">
-
-      <div class="reels-item">
-        <i class="fa-solid fa-plus"></i>
-        <div class="reels-item-data">
-          <p>Your Reel</p>
-        </div>
-      </div>
-
-      <div class="reels-item" reels-id="server" onclick="errorPop()">
-        <i class="fa-solid fa-fire"></i>
-        <div class="reels-img-border"></div>
-        <div class="reels-item-data">
-          <p>Hall Of Fame</p>
-        </div>
-      </div>
-
+        <a onclick="fastLoadingPop();notifyToggle()"><i class="fa-regular fa-bell"></i></a>
+        <a class="settings-action-btn"><i class="fa-solid fa-gear"></i></a>
       </div>
 
     </div>
@@ -343,28 +363,29 @@
 
 
   <div class="head-content-container">
-    <div class="head-content-item" id="head_content_item" onclick="artistScreenDataLoad(this)">
+    <div class="head-content-item" onmousemove="headLeft()" id="head_content_item" onclick="artistScreenDataLoad(this)">
       <img src="">
       <span>Artist For Today</span>
       <p class="head-content-item-name">
         Name
       </p>
+      <b class="head-content-item-bg-text">EXPLORE</b>
     </div>
-    <div class="head-content-item" onclick="popularLoad()">
+    <div class="head-content-item" id="head_content_playlist" onmousemove="headLeft()" onclick="clickedPlaylist(this)">
       <img src="https://e-cdns-images.dzcdn.net/images/cover/a074b7ba870c331f13fd579db9e6a439/232x232-none-80-0-0.png">
-      <p class="head-content-item-name">
-        Flow
+      <p class="data-title">
+        Album
       </p>
       <img class="head-content-item-background" src="https://e-cdns-images.dzcdn.net/images/cover/a074b7ba870c331f13fd579db9e6a439/232x232-none-80-0-0.png">
     </div>
-    <div class="head-content-item" onclick="favoriteLibraryScreen(); checkLocalStorageData()">
+    <div class="head-content-item" onmousemove="headLeft()" onclick="favoriteLibraryScreen(); checkLocalStorageData()">
       <img src="https://e-cdns-images.dzcdn.net/images/misc/679936b577879457668697f0e6f2c755/264x264-none-80-0-0.png">
       <p class="head-content-item-name">
         Liked
       </p>
       <img class="head-content-item-background" src="https://e-cdns-images.dzcdn.net/images/misc/679936b577879457668697f0e6f2c755/264x264-none-80-0-0.png">
     </div>
-    <div class="head-content-item" style="display: none;" id="head_content_album_1" onclick="fastLoadingPop(); clickedSingleAlbum(this)">
+    <div class="head-content-item" onmousemove="headRight()" style="display: none;" id="head_content_album_1" onclick="fastLoadingPop(); clickedSingleAlbum(this)">
       <p style="display: none;"></p>
       <img src="https://i.scdn.co/image/ab67616d00001e029d92c1661f5a7784808fabdb">
       <p class="data-title">
@@ -372,7 +393,7 @@
       </p>
       <img class="head-content-item-background" src="">
     </div>
-    <div class="head-content-item" style="display: none;" id="head_content_album_2" onclick="fastLoadingPop(); clickedSingleAlbum(this)">
+    <div class="head-content-item" onmousemove="headRight()" style="display: none;" id="head_content_album_2" onclick="fastLoadingPop(); clickedSingleAlbum(this)">
       <p style="display: none;"></p>
       <img src="https://i.scdn.co/image/ab67616d00001e02bd92d2e8f66f88864ce5e01e">
       <p class="data-title">
@@ -410,24 +431,8 @@
     </div>
   </div>
 
-  <div class="center-container-scrollable" id="dailyMixContainer">
-    <div class="center-container-item" onclick="dailyMixClicked(this)">
-      <img src="https://newjams-images.scdn.co/image/ab676477000033ad/dt/v3/discover-weekly/toHgQwA-pxoBGVDzB9roug==/bHBscGxwbHBscGxwbHBscA==" class="dailyMixCover">
-      <img src="https://i.scdn.co/image/ab67706c0000bebb282fbddcc3f29db9ecbbc1a0" class="dailyMixImg">
-      <h2>Mix 1</h2>
-    </div>
-    <div class="center-container-item" onclick="dailyMixClicked(this)">
-      <img src="https://newjams-images.scdn.co/image/ab676477000033ad/dt/v3/discover-weekly/toHgQwA-pxoBGVDzB9roug==/bHBscGxwbHBscGxwbHBscA==" class="dailyMixCover">
-      <img src="https://i.scdn.co/image/ab67706c0000bebb282fbddcc3f29db9ecbbc1a0" class="dailyMixImg">
-      <h2>Mix 2</h2>
-    </div>
-    <div class="center-container-item" onclick="dailyMixClicked(this)">
-      <img src="https://newjams-images.scdn.co/image/ab676477000033ad/dt/v3/discover-weekly/toHgQwA-pxoBGVDzB9roug==/bHBscGxwbHBscGxwbHBscA==" class="dailyMixCover">
-      <img src="https://i.scdn.co/image/ab67706c0000bebb282fbddcc3f29db9ecbbc1a0" class="dailyMixImg">
-      <h2>Mix 3</h2>
-    </div>
-    
-  </div>
+  <div class="center-container-scrollable" id="dailyMixContainer"></div>
+
 </div>
 
 <div class="center-container" id="recent-tracks-container">
@@ -546,7 +551,7 @@
   </div>
 </div>
 
-<div class="center-container" id="ef3-sadE">
+<div class="center-container">
   <div class="ui-title">
     <p class="music-artist-content-title" style="font-size: 18px;">Best Of Playlists<span></span></p>
     <div class="ui-title-action">
@@ -558,6 +563,20 @@
   <div class="center-container-scrollable" id="popularPlaylists"></div>
   
 </div>
+
+<div class="center-container your-playlists">
+  <div class="ui-title">
+    <p class="music-artist-content-title" style="font-size: 18px;">Your Playlists<span></span></p>
+    <div class="ui-title-action">
+      <i class="fa-solid fa-chevron-left" onclick="scrolCenterLeft(this)"></i>
+      <i class="fa-solid fa-chevron-right" onclick="scrolCenterRight(this)"></i>
+    </div>
+  </div>
+  <div class="center-container-scrollable" id="userPlaylists"></div>
+</div>
+
+<div id="ef3-sadE"></div>
+
 
 
   <div class="music-controls">
@@ -585,10 +604,62 @@
 
       <div class="music-icon">
         <a id="smallplaystop"><i class="fa-solid fa-play"></i></a>
-        <span class="music-icon-timer"></span>
       </div>
 
   </div>
+
+<div class="music-pc-controls">
+
+  <div class="pc-controls-ui"></div>
+
+  <div class="pc-controls-track">
+    <img src="https://e-cdns-images.dzcdn.net/images/playlist/d41d8cd98f00b204e9800998ecf8427e/200x200-000000-80-0-0.jpg">
+    <div class="pc-controls-track-data">
+      <p onclick="clickedSingleAlbum(this)">Name</p>
+      <span>Artist</span>
+    </div>
+  </div>
+
+  <div class="pc-controls-main">
+
+   <div class="pc-controls-proggres">
+    <div class="pc-controls-proggres-done"></div>
+    <div class="pc-controls-proggres-timer">
+      <span class="pc-start">0:00</span>
+      <span class="pc-end">0:00</span>
+    </div>
+   </div> 
+
+   <div class="pc-controls-buttons">
+    
+    <i onclick="playlist_SELECT(this);" id="pc-controls-playlist-add" class="fa-solid fa-plus"></i>
+    <i id="pc-shuffle" class="fa-solid fa-shuffle"></i>
+    <i onclick="prevMusic()" class="fa-solid fa-backward-step"></i>
+    <i onclick="playpausePc()" id="pc-playpause" class="fa-solid fa-play"></i>
+    <i onclick="nextMusic()" class="fa-solid fa-forward-step"></i>
+    <i id="pc-repeat" class="fa-solid fa-repeat"></i>
+    <div class="pc-heart-box"><i class="fa-regular fa-heart"></i></div>
+   </div>
+
+  </div>
+
+  <div class="pc-controls-add">
+    <div class="pc-volume-slider">
+      <i class="fa-solid fa-volume-low"></i>
+      <input onchange="volumeSet(this)" type="range" min="0" max="100" step="1"><div class="input-show-block"></div></input>
+      <i class="fa-solid fa-volume-high"></i>
+    </div>
+    <div class="pc-additional-buttons">
+      <i onclick="wrapper.classList.add('active');trackLyrics();" class="fa-solid fa-microphone"></i>
+      <i onclick="topQueueMenuShow.classList.toggle('active');" class="fa-solid fa-list-ol"></i>
+      <i onclick="wrapper.classList.toggle('active');" class="fa-solid fa-angle-up"></i>
+    </div>
+  </div>
+</div>  
+
+<div class="copy-alert">
+  <h1>Copied!</h1>
+</div>
 
 <div class="main-music">
 
@@ -624,7 +695,7 @@
         </div>
         <div class="top-shortcut-item shortcut-rate">
           <a class="shortcut-rate-btn">
-            <i class="fa-solid fa-angle-up"></i>
+            <span></span>
           </a>
         </div>
         <div class="top-shortcut-item shortcut-shuffle">
@@ -634,17 +705,10 @@
         </div>
       </div>
       <div class="top-menu-list">
-      <a class="top-menu-list-volume"><i onclick="volumeDown()" class="fa-solid fa-volume-low"></i><span> Volume</span><i onclick="volumeUp()" class="fa-solid fa-volume-high"></i></a>
+      <a class="top-menu-list-volume"><i class="fa-solid fa-volume-low"></i><span><input onchange="volumeSet(this)" type="range" step="1" min="0" max="100"></span><i class="fa-solid fa-volume-high"></i></a>
       <a onclick="favoriteItemOption()" class="top-menu-list-favorite"><i class="fa-regular fa-heart"></i><span> Like</span></a>      <a class="top-menu-list-artist" onclick="artistScreenDataLoad(this);topOptionFastExit()"><i class="fa-solid fa-user"></i><span> View Artist</span></a>
       <a class="copyUrl" onclick="shareSong()"><i class="fa-solid fa-share-nodes"></i><span> Share</span></a>
       <a class="timer-toggle"><i class="fa-regular fa-clock"></i><span> Set Timer</span></a>
-      <a class="top-menu-list-radio-item"><i class="fa-solid fa-tower-broadcast"></i><span> Artist Radio</span></a>
-      </div>
-
-      <div class="alert-container">
-          <div class="copy-alert">
-            <h1>Skopiowano!</h1>
-          </div>
       </div>
     </div>
 
@@ -653,30 +717,30 @@
       <div class="timer-title timer-exit">
       </div>
       <div class="timer-title-font">
-        <p>Stop music after</p>
+        <p>Sleep Timer, pause music after</p>
       </div>
       <div class="timer-option-container">
         <div class="timer-item" id="timer10">
-          <a>5 min</a>
+          <a>5 minutes</a>
         </div>
         <div class="timer-item" id="timer20">
-          <a>10 min</a>
+          <a>10 minutes</a>
         </div>
         <div class="timer-item" id="timer30">
-          <a>15 min</a>
+          <a>15 minutes</a>
         </div>
         <div class="timer-item" id="timer40">
-          <a>30 min</a>
+          <a>30 minutes</a>
         </div>
         <div class="timer-item" id="timer50">
-          <a>45 min</a>
+          <a>45 minutes</a>
         </div>
         <div class="timer-item" id="timer60">
-          <a>60 min</a>
+          <a>60 minutes</a>
         </div>
       </div>
       <div class="timer-tip">
-        <p>After selected time, music will stop and play will be frezed</p>
+        <p>After selected time, music will stop and app will be frezed to safe your battery life</p>
       </div>
     </div>
 
@@ -695,13 +759,19 @@
       </div>
     </div>
 
+    <div class="lyric-mode-toggle">
+      <i class="fa-regular fa-clock"></i>
+    </div>
+
     <div class="main-information">
-      <i onclick="create_Playlist();" class="fa-solid fa-plus"></i>
-      <div class="main-information-title" onclick="artistScreenDataLoad(this)">
-        <h1 class="name"></h1>
-        <p class="artist"></p>
+      <i id="playlistACTION" onclick="playlist_SELECT(this);" class="fa-solid fa-plus"></i>
+      <div class="main-information-title">
+        <h1 class="name" onclick="clickedSingleAlbum(this)"></h1>
+        <p class="artist" onclick="artistScreenDataLoad(this)"></p>
       </div>
-      <i id="heartBtnMain" class="fa-regular fa-heart nonactive"></i>
+      <a class="heart-box">
+        <i id="heartBtnMain" class="fa-regular fa-heart nonactive"></i>
+      </a>
     </div>
 
   <div class="progress">
@@ -732,14 +802,8 @@
 
     <div class="main-music-sec-nav">
       <a class="device-screen-btn"><i class="fa-solid fa-microphone"></i></a>
+      <a class="current-ad-box">Added To Playlist</a>
       <a class="current-playlist-btn"><i class="fa-solid fa-list-ol"></i></a>
-    </div>
-
-    <div class="main-music-next-music">
-      <div class="next-music-item">
-        <p class="next-music-info">Next • </p>
-        <p class="next-music-title"></p>
-      </div>
     </div>
 
     <div class="device-screen">
@@ -790,7 +854,7 @@
     </div>
 
     <div class="queue-container-top">
-      <h3>Next From</h3>
+      <h3><i class="fa-solid fa-list-ol"></i>Next From</h3>
     </div>
 
     <div class="queue-item">
@@ -820,7 +884,7 @@
       <img data-scroll-speed="2" class="pespective_object" src="">
 
       <div class="music-artist-item-content">
-        <h1 class="music-artist-item-data-artist">Nazwa</h1>
+        <h1 class="music-artist-item-data-artist">Name</h1>
       </div>
 
     </div>
@@ -829,7 +893,8 @@
       <p class="music-artist-number">Monthly listeners : <span class="music-artist-number-data">0</span></p>
       <div class="music-artist-option-action">
         <a onclick="followArtist();" class="music-artist-like"><i class="fa-regular fa-heart"></i> Follow</a>
-        <a onclick="artistQueue(this);" class="music-artist-queue-btn"><i class="fa-solid fa-play"></i></a>
+        <a onclick="artistQueue(this);" class="music-artist-queue-btn active"><i class="fa-solid fa-play"></i></a>
+        <a class="music-artist-share-btn"><i class="fa-solid fa-share-nodes"></i></a>
       </div>
     </div>
 
@@ -837,9 +902,15 @@
 
       <p class="music-artist-content-title">Popular<span></span></p>
       <div class="music-artist-content-container"></div>
+      <div class="music-artist-content-container-viewAll t_popular">
+        <p onclick="toggleArtistPopularAll()"><i class="fa-solid fa-plus"></i> Show More</p>
+      </div>
 
       <p class="music-artist-content-title">Latest releases<span></span></p>
       <div class="music-artist-content-album"></div>
+      <div class="music-artist-content-container-viewAll t_album">
+        <p onclick="toggleArtistAlbumsAll()"><i class="fa-solid fa-plus"></i> Show More</p>
+      </div>
 
       <p class="music-artist-content-title" id="ApperasOnCheck">Appears On<span></span></p>
       <div class="music-artist-content-feat"></div>
@@ -854,6 +925,19 @@
           <h1></h1>
           <p></p>
         </div>
+      </div>
+
+      <p class="music-artist-content-title" id="artistTweet">Artist Tweet<span></span></p>
+      <div class="music-artist-content-videos">
+
+        <div class="content-video-item" onclick="clickedNotification(this)">
+          <img src="artists/testImgTestImg.jpg">
+          <div class="content-video-item-info">
+            <p></p>
+            <i class="fa-solid fa-play"></i>
+          </div>
+        </div>
+
       </div>
 
       <p class="music-artist-content-title">Fans Also Like<span></span></p>
@@ -911,17 +995,21 @@
 <div class="music-artist-album-screen">
 
   <div class="music-artist-album-screen-controls">
-    <p class="music-artist-album-screen-length-name">Album : <span>DJ Regard</span></p>
+    <p class="music-artist-album-screen-length-name">Album : <span></span></p>
     <a class="music-artist-album-screen-exit"><i class="fa-solid fa-xmark"></i></a>
   </div>
 
   <div class="music-artist-album-screen-top">
 
     <div class="music-artist-album-screen-img-background">
-      <img src="" data-scroll-speed="2" class="pespective_object">
+      <img src="">
     </div>
 
-    <img class="music-artist-album-fast-data-img" src="">
+    <img class="music-artist-album-bg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxwYXRoIGQ9Ik0wIDBoMzAwdjMwMEgweiIgZmlsdGVyPSJ1cmwoI2EpIiBvcGFjaXR5PSIuMDUiLz48L3N2Zz4=">
+
+    <div class="music-artist-album-box">
+      <img data-scroll-speed="2" class="music-artist-album-fast-data-img pespective_object" src="">
+    </div>
 
     <div class="music-artist-album-fast-data">
       <p class="music-artist-album-fast-data-name">DATA</p>
@@ -931,7 +1019,7 @@
 
   <div class="music-artist-album-screen-title">
     <div class="music-artist-album-screen-title-data">
-      <p>Songs : <span class="music-artist-album-screen-length"></span></p>
+      <p>Tracks : <span class="music-artist-album-screen-length"></span></p>
       <p><span class="music-artist-album-screen-option"></span></p>
     </div>
     <div class="music-artist-album-action">
@@ -957,8 +1045,20 @@
 
   <div class="music-playlist-album-screen-top">
 
+    <div class="playlist-edit">
+      <p>Name <span>(3 - 30 characters)</span></p>
+      <input minlength="3" maxlength="30" type="text" id="edit_title">
+      <p>Image link <span>(url)</span></p>
+      <input type="text" id="edit_img">
+      <div class="playlist-edit-action">
+        <a onclick="playlist_EDIT_REMOVE()"><i class="fa-solid fa-trash"></i> Remove</a>
+        <a onclick="playlist_EDIT_UBDATE()"><i class="fa-solid fa-save"></i> Save</a>
+      </div>
+    </div>
+
     <div class="music-playlist-album-screen-img-background">
-      <img src="" data-scroll-speed="2" class="pespective_object">
+      <img id="main-img-header" src="" data-scroll-speed="2" class="pespective_object">
+      <img id="bg-img-header" src="">
     </div>
 
     <img class="music-playlist-album-fast-data-img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxwYXRoIGQ9Ik0wIDBoMzAwdjMwMEgweiIgZmlsdGVyPSJ1cmwoI2EpIiBvcGFjaXR5PSIuMDUiLz48L3N2Zz4=" data-album="Wolves" artist-data="33">
@@ -971,8 +1071,12 @@
 
   <div class="music-artist-album-screen-title">
     <div class="music-artist-album-screen-title-data">
-      <p>Songs : <span class="music-playlist-album-screen-length">1</span></p>
-      <p><span class="music-playlist-album-screen-option">Elley Duhé</span></p>
+      <p>Tracks : <span class="music-playlist-album-screen-length">0</span></p>
+      <p><span class="music-playlist-album-screen-option">Artist</span></p>
+    </div>
+    <div class="music-artist-album-action">
+      <a class="editPlaylist" onclick="playlist_EDIT(this)"><i class="fa-solid fa-pen"></i></a>
+      <a onclick="playlist_QUEUE_PLAY()"><i class="fa-solid fa-play"></i></a>
     </div>
   </div>
 
@@ -1009,6 +1113,9 @@
   <div class="music-artist-bio-stats">
     <p>226 456</p>
     <span>Listeners</span>
+    <div class="bio-fullscreen-toggle" onclick="artistBio_Toggle()">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
   </div>
 
   <div class="music-artist-bio-data">
@@ -1098,6 +1205,28 @@
   </div>
   <div class="notification_content">
 
+    <div class="notification_item">
+      <div class="notification_img">
+        <i class="fa-solid fa-microphone"></i>
+      </div>
+      <div class="notification_data">
+        <h2>Try out our Lyrics, and sing your favorites song's</h2>
+        <p>Just click microphone icon while listening to music, and enjoy it even more!</p>
+        <span><p>Developers</p><p>02/06/2023</p></span>
+      </div>
+    </div>
+
+    <div class="notification_item">
+      <div class="notification_img">
+        <i class="fa-regular fa-heart"></i>
+      </div>
+      <div class="notification_data">
+        <h2>Save ur Tracks, Albums and Artists For Later</h2>
+        <p>Click heart icon and save it to your profile/library</p>
+        <span><p>Developers</p><p>01/06/2023</p></span>
+      </div>
+    </div>
+
     <div class="notification_item" link_to="169" onclick="clickedNotification(this)">
       <div class="notification_img">
         <img src="https://i.scdn.co/image/ab67616d00001e02ff8a4276b3be31c839557439">
@@ -1208,35 +1337,6 @@
       </div>
     </div>
 
-  </div>
-</div>
-
-<div class="reels-screen">
-
-  <div class="reels-bar">
-    <div class="reels-bar-completed"></div>
-  </div>
-
-  <div class="reels-header">
-    <div class="reels-header-background"></div>
-    <i onclick="elementClassActive(this)" class="fa-regular fa-user"></i>
-    <div class="reels-artist">
-      <p onclick="artistScreenDataLoad(this)"></p>
-    </div>
-    <i onclick="elementClassActive(this)" class="fa-solid fa-fire"></i>
-  </div>
-
-  <div class="reels-content">
-    <img src="">
-  </div>
-
-  <div class="reels-text-content">
-    <h1>Reels Are On!</h1>
-    <p>Reels in prebuild are available</p>
-    <p>Dont miss your chance!</p>
-    <div class="reels-text-content-href">
-      <a>Book Now</a>
-    </div>
   </div>
 </div>
 
@@ -1247,7 +1347,7 @@
   <div class="yourStyle-top">
     <img data-scroll-speed="2" src="https://pbs.twimg.com/media/FdSJa6xVEAAelRv?format=jpg&name=large" class="yourStyle-background pespective_object">
     <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxwYXRoIGQ9Ik0wIDBoMzAwdjMwMEgweiIgZmlsdGVyPSJ1cmwoI2EpIiBvcGFjaXR5PSIuMDUiLz48L3N2Zz4=" class="yourStyle-cover">
-    <p></p>
+    <p class="yourStyle-title"></p>
   </div>
   <div class="yourStyle-option">
     <p>Get in touch with <span></span> playlists, songs & artists.</p>
@@ -1288,10 +1388,44 @@
   </div>
 </div>
 
+<div class="playlist-select">
+  <div class="playlist-select-head">
+    <p>Add to <i onclick="playlist_SELECT_EXIT()" class="fa-solid fa-xmark"></i></p>
+    <p class="music-artist-content-title">Create playlist<span></span></p>
+    <p class="playlist-add-button" onclick="create_Playlist();"><i class="fa-solid fa-plus"></i> Create Playlist</p>
+  </div>
+  <p class="music-artist-content-title">Select playlist<span></span></p>
+  <div class="playlist-select-content">
+
+    <div class="playlist-select-item">
+      <img src="https://e-cdns-images.dzcdn.net/images/playlist/d41d8cd98f00b204e9800998ecf8427e/200x200-000000-80-0-0.jpg">
+      <div class="playlist-select-item-data">
+        <p>Playlist #1</p>
+        <span>13 tracks</span>
+      </div>
+    </div>
+
+    <div class="playlist-select-item">
+      <img src="https://e-cdns-images.dzcdn.net/images/playlist/d41d8cd98f00b204e9800998ecf8427e/200x200-000000-80-0-0.jpg">
+      <div class="playlist-select-item-data">
+        <p>Playlist #2</p>
+        <span>89 tracks</span>
+      </div>
+    </div>
+    
+    <div class="playlist-select-item">
+      <img src="https://e-cdns-images.dzcdn.net/images/playlist/d41d8cd98f00b204e9800998ecf8427e/200x200-000000-80-0-0.jpg">
+      <div class="playlist-select-item-data">
+        <p>Playlist #3</p>
+        <span>45 tracks</span>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
 <div class="playlist-popup">
-  <div class="playlist-popup-controls">
-    <span></span>
-    <i onclick="create_Playlist_Exit()" class="fa-solid fa-xmark"></i>
+  <div class="playlist-popup-controls" onclick="create_Playlist_Exit()" >
   </div>
   <div class="playlist-popup-head">
     <div class="img-box">
@@ -1299,21 +1433,22 @@
     </div>
   </div>
   <div class="playlist-popup-data">
-    <input type="text">
+    <p>Name <span>(3 - 30 characters)</span></p>
+    <input minlength="3" maxlength="30" type="text" id="playlistName">
+    <p>Image link <span>(url)</span></p>
+    <input type="text" id="playlistImage">
     <div class="playlist-popup-data-item">
-      <p><i class="fa-solid fa-lock"></i>Private</p>
+      <p>Private</p>
       <div class="settings-screen-item-box">
         <div class="settings-screen-item-box-toggle"></div>
       </div>
     </div>
-    <a>CREATE</a>
+    <a onclick="create_Playlist_Data_Global()">CREATE</a>
   </div>
 </div>
 
 <div class="bottom-gap">
 </div>
-
-<div class="filter-data-bar" style="display: none;">
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
