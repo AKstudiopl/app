@@ -2297,8 +2297,17 @@ function uiLastViewedAlbumsLoad(){
     uiLastViewedPlaylist.querySelector("img").src = lastPlaylistSRC.split(',')[2];
     uiLastViewedPlaylist.querySelector(".head-content-item-background").src = lastPlaylistSRC.split(',')[2];
     uiLastViewedPlaylist.setAttribute("playlist-id", lastPlaylist);
-    }
-  else{
+  }else if(!lastPlaylist){
+    var lastPlaylistSRC = allPlaylists.filter(x => x.play_id === "1");
+
+    uiLastViewedPlaylist.setAttribute('onclick', 'clickedPlaylist(this);')
+
+    uiLastViewedPlaylist.querySelector("p").innerText = lastPlaylistSRC[0].description;
+    uiLastViewedPlaylist.querySelector(".data-title").innerText = lastPlaylistSRC[0].name;
+    uiLastViewedPlaylist.querySelector("img").src = lastPlaylistSRC[0].image;
+    uiLastViewedPlaylist.querySelector(".head-content-item-background").src = lastPlaylistSRC[0].image;
+    uiLastViewedPlaylist.setAttribute("playlist-id", lastPlaylistSRC[0].play_id);
+  }else{
     var lastPlaylistSRC = allPlaylists.filter(x => x.play_id === lastPlaylist);
 
     uiLastViewedPlaylist.setAttribute('onclick', 'clickedPlaylist(this);')

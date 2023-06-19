@@ -15201,7 +15201,7 @@ var allMusic = [
     
     src: "JonasBrothers-X",
     img: "ab67616d0000b2733b3cd45dfa6f779c01d63fdb",
-    img_mini: "https://i.scdn.co/image/ab67616d00004851de1a3a5eaa0c75bb18e7b597",
+    img_mini: "https://i.scdn.co/image/ab67616d000048513b3cd45dfa6f779c01d63fdb",
 
     style: "Chill",
     status: "nostatus",
@@ -15209,7 +15209,7 @@ var allMusic = [
     canvas: "",
     
     album: "X",
-    album_cover: "https://i.scdn.co/image/ab67616d00001e02de1a3a5eaa0c75bb18e7b597",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e023b3cd45dfa6f779c01d63fdb",
     album_premiere: "2020",
     album_status: "false",
     id: "193",
