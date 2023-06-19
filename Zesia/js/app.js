@@ -108,6 +108,7 @@ window.addEventListener("load", function () {
 
 const activeHomeBtn = document.getElementsByClassName('navbar-bottom-btn-home')[0]
 const activeHomeScreen = document.getElementsByClassName('navbar-bottom-btn 1')[0]
+const historyScreen = document.querySelector(".history-screen");
 
 function home_fs(){
   musicMenuHide.classList.remove('active')
@@ -121,7 +122,11 @@ function home_fs(){
   playlistScreen.classList.remove('active');
   userProfile.classList.remove('active');
   wrapper.classList.remove("active");
-  musicArtistScreen.classList.remove('active')
+  musicArtistScreen.classList.remove('active');
+  bioCard.classList.remove('active');
+  playlistPopUp.classList.remove('active');
+  historyScreen.classList.remove('active')
+  document.querySelector(".notification_screen").classList.remove("active");
 }
 
 activeHomeBtn.addEventListener('click', () => {
@@ -132,6 +137,7 @@ activeHomeBtn.addEventListener('click', () => {
   playlistScreen.classList.remove('active');
   yourStyleScreen.classList.remove('active');
   wrapper.classList.remove("active");
+  playlistScreen.classList.remove('active');
 })
 
 const activeSearchBtn = document.getElementsByClassName('navbar-bottom-btn-search')[0]
@@ -149,6 +155,10 @@ activeSearchBtn.addEventListener('click', () => {
   yourStyleScreen.classList.remove('active');
   userProfile.classList.remove('active');
   wrapper.classList.remove("active");
+  bioCard.classList.remove('active');
+  playlistPopUp.classList.remove('active');
+  historyScreen.classList.remove('active')
+  document.querySelector(".notification_screen").classList.remove("active");
 })
 
 const activeLibraryBtn = document.getElementsByClassName('navbar-bottom-btn-library')[0]
@@ -157,6 +167,7 @@ const activeLibraryScreen = document.getElementsByClassName('navbar-bottom-btn 3
 activeLibraryBtn.addEventListener('click', () => {
   activeSearchScreen.classList.remove('active')
   activeHomeScreen.classList.remove('active')
+  historyScreen.classList.remove('active')
   activeLibraryScreen.classList.add('active')
   musicArtistScreen.classList.remove('active')
   albumScreen.classList.remove('active')
@@ -166,6 +177,9 @@ activeLibraryBtn.addEventListener('click', () => {
   yourStyleScreen.classList.remove('active');
   userProfile.classList.remove('active');
   wrapper.classList.remove("active");
+  bioCard.classList.remove('active');
+  playlistPopUp.classList.remove('active');
+  document.querySelector(".notification_screen").classList.remove("active");
 })
 
 const activeSettingsBtn = document.getElementsByClassName('settings-action-btn')[0]
@@ -565,7 +579,8 @@ function loadMusic(indexNumb){
 
   pc_track.setAttribute("data-album", allMusic[indexNumb - 1].album);
   pc_track.setAttribute("artist-data", allMusic[indexNumb - 1].artist_id);
-  volumeBLOCK.style.width = localStorage.getItem("user_Volume")*100-3 + 'px';
+  volumeBLOCK.style.width = localStorage.getItem("user_Volume")*100-5 + 'px';
+  volumeOptions_BLOCK.style.width = localStorage.getItem("user_Volume")*100 + '%';
 
   tracksHistory();
   recentTracksLoad();
@@ -639,13 +654,14 @@ function loadMusic(indexNumb){
     navigator.mediaSession.metadata = new MediaMetadata({
       title: allMusic[indexNumb - 1].name,
       artist: allMusic[indexNumb - 1].artist,
+      album: allMusic[indexNumb - 1].album,
       artwork:  [
-      { src: `images/${allMusic[indexNumb - 1].img}.jpg`, sizes: '96x96',   type: 'image/png' },
-      { src: `images/${allMusic[indexNumb - 1].img}.jpg`, sizes: '128x128', type: 'image/png' },
-      { src: `images/${allMusic[indexNumb - 1].img}.jpg`, sizes: '192x192', type: 'image/png' },
-      { src: `images/${allMusic[indexNumb - 1].img}.jpg`, sizes: '256x256', type: 'image/png' },
-      { src: `images/${allMusic[indexNumb - 1].img}.jpg`, sizes: '384x384', type: 'image/png' },
-      { src: `images/${allMusic[indexNumb - 1].img}.jpg`, sizes: '512x512', type: 'image/png' },
+      { src: `${allMusic[indexNumb - 1].image}`, sizes: '96x96',   type: 'image/jpg' },
+      { src: `${allMusic[indexNumb - 1].image}`, sizes: '128x128', type: 'image/jpg' },
+      { src: `${allMusic[indexNumb - 1].image}`, sizes: '192x192', type: 'image/jpg' },
+      { src: `${allMusic[indexNumb - 1].image}`, sizes: '256x256', type: 'image/jpg' },
+      { src: `${allMusic[indexNumb - 1].image}`, sizes: '384x384', type: 'image/jpg' },
+      { src: `${allMusic[indexNumb - 1].image}`, sizes: '512x512', type: 'image/jpg' },
                 ]
       });
 
@@ -656,12 +672,12 @@ function loadMusic(indexNumb){
         pauseMusic();
       });
       navigator.mediaSession.setActionHandler('previoustrack', function() {
-        nextMusic();
-      });
-      navigator.mediaSession.setActionHandler('nexttrack', function() {
         prevMusic();
       });
-
+      navigator.mediaSession.setActionHandler('nexttrack', function() {
+        nextMusic();
+      });
+      
       queueCurrentImg.parentElement.classList.add("active");
       setTimeout(() => {
         queueCurrentImg.parentElement.classList.remove("active");
@@ -1119,7 +1135,7 @@ topOptionBtn.addEventListener('click', () => {
   shortcutCheck();
 })
 topOptionExit.addEventListener('click', () => {
-  topOption.classList.toggle('active');
+  topOption.classList.remove('active');
   shortcutCheck();
 })
 
@@ -1168,6 +1184,8 @@ homeBtn.addEventListener('click', () => {
   searchScreen.classList.remove('active');
   favortieScreen.classList.remove('active')
   disableSettingsScreen.classList.remove('active');
+  playlistScreen.classList.remove('active');
+  home_fs();
 })
 
 
@@ -1206,11 +1224,10 @@ function artistQueue(element){
 }
 
 function albumQueue(element){
-  let albumData = element.parentElement.parentElement.parentElement;
   itemAlbumId = document.querySelector(".music-artist-album-screen .music-artist-album-screen-container").getAttribute('artist-data');
-  itemAlbumData = albumData.querySelector(".music-artist-album-fast-data-name").innerText;
+  itemAlbumData = document.querySelector(".music-artist-album-screen .music-artist-album-screen-container").getAttribute('data-album');
   allMusic = allMusicView.filter(x => x.album === itemAlbumData && x.artist_id === itemAlbumId);
-  indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
+  indexNumb = 1;
   loadMusic(indexNumb);
   playMusic();
 }
@@ -1828,17 +1845,6 @@ function copyUrlClipboard(){
 
 const copyUrlBtn = document.querySelector('.copyUrl')
 const alertCopy = document.querySelector('.copy-alert')
-copyUrlBtn.addEventListener('click', () => {
-    copyAlert();
-})
-
-function copyAlert(){
-  alertCopy.classList.add('active');
-  setTimeout(
-    function() {
-      alertCopy.classList.remove('active');
-    }, 2000);
-}
 
 function alertTimer(){
   const alertTimer = document.querySelector(".timer-alert")
@@ -1864,6 +1870,15 @@ function shareSong(){
   shareLink.select();
   document.execCommand('copy');
   document.body.removeChild(shareLink);
+  topOptionFastExit();
+
+  setTimeout(() => {
+    playlistToolTip.classList.add('on')
+    playlistToolTip.innerText = 'Copied To Clipboard';
+    setTimeout(() => {
+      playlistToolTip.classList.remove('on')
+    }, 2000);
+  }, 300);
 }
 
 function addFavoriteItem(element){
@@ -1909,13 +1924,13 @@ const timeZoneText = document.querySelector(".timeZoneData");
 
 
 if (time < 18){
-  var array = ["Welcome", "Enjoy Listening", "How are you", "Hope you enjoy"];
+  var array = ["Welcome", "Enjoy Listening", "How are you", "Hope you enjoy", "Nice to see you"];
   var index = Math.floor(Math.random() * array.length);
   var timeZoneRandomText = array[index];
   timeZoneText.innerText = timeZoneRandomText;
 }
 if (time > 17){
-  var array = ["Good Evening", "Enjoy Listening", "Have a nice one", "Hey, there"];
+  var array = ["Good Evening", "Enjoy Listening", "Have a nice one", "Hey there", "Wazzaa"];
   var index = Math.floor(Math.random() * array.length);
   var timeZoneRandomText = array[index];
   timeZoneText.innerText = timeZoneRandomText;
@@ -2604,7 +2619,7 @@ function homeFavortiesArtists() {
     let resultFAV =
       `<div class="center-container-item" onclick="artistScreenDataLoad(this);" id='${favoritIt[i].id}' artist-data='${favoritIt[i].artist}'>
         <div class="img-box">    
-          <img src="artists/${favoritIt[i].avatar}.jpg">
+          <img src="${favoritIt[i].artist_img}">
         </div>
           <h2>${favoritIt[i].artist}</h2>
           <p>Verified</p>
@@ -2713,7 +2728,7 @@ function popularArtistsLoad(){
     let resultFAV =
       `<div class="center-container-item popular-artist" id='${favoritIt[i].id}' data-artist='${favoritIt[i].artist}' onclick="artistScreenDataLoad(this)">
         <div class="img-box">    
-          <img src="artists/${favoritIt[i].avatar}.jpg">
+          <img src="${favoritIt[i].artist_img}">
         </div>
        <h2>${favoritIt[i].artist}</h2>
        </div>`;
@@ -2980,13 +2995,16 @@ function toggleFullScreen(element) {
 }
 
 volumeBLOCK = document.querySelector('.input-show-block');
+volumeOptions_BLOCK = document.querySelector('.volume-show-box');
+const ui_ARTISTHEADER = document.querySelector(".music-artist-item-title");
 
 function volumeSet(e){
   let volume_data = e.value;
   mainAudio.volume = volume_data/100;
   musicVolumeTop.innerText = volume_data + "%";
   localStorage.setItem("user_Volume", mainAudio.volume);
-  volumeBLOCK.style.width=volume_data-3+ 'px';
+  volumeBLOCK.style.width=volume_data-5+ 'px';
+  volumeOptions_BLOCK.style.width=volume_data+ '%';
 }
 
 function notificationCheck(){
@@ -3055,6 +3073,11 @@ function userSettingsLoad(){
 
   if(localStorage.getItem("lyricsRender")){
     document.querySelector("#userSettingsLyricsRender").classList.add("active");
+  }
+
+  if(localStorage.getItem("ui_artist")){
+    document.querySelector("#userSettingsUIArtist").classList.add("active");
+    ui_ARTISTHEADER.classList.add('cfgHIDE');
   }
 
   if (content.classList.contains('green')) {
@@ -4436,7 +4459,7 @@ function lyricsMode(){
               }            
             }
       }else{
-    resultsFAV.innerHTML = '<span>Song Doesnt Have Prepered Lyrics Yet, Try Again Later</span>'
+    resultsFAV.innerHTML = "<span>Song Doesn't Have Prepered Lyrics Yet, Try Again Later</span>"
   }
 
   
@@ -5018,8 +5041,6 @@ function clickedSinglePlaylist(e){
 }
 
 function historyScreenToggle(){
-  const historyScreen = document.querySelector(".history-screen");
-
   historyScreen.classList.toggle('active')
   historyData();
 }
@@ -5140,7 +5161,7 @@ function library_load_artists() {
     let resultFAV =
       `<div class="center-container-item artist-tag" onclick="fastLoadingPop();artistScreenDataLoad(this);" id='${favoritIt[i].id}' artist-id='${favoritIt[i].artist_id}' artist-data='${favoritIt[i].artist}'>
           <div class="img-box">    
-            <img src="artists/${favoritIt[i].avatar}.jpg">
+            <img src="${favoritIt[i].artist_img}">
           </div>
           <div class="center-container-album-data">
             <h2>${favoritIt[i].artist}</h2>
@@ -5381,24 +5402,28 @@ function searchContentLoad() {
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }
 
-  for (let i = 0; i < favoritIt.length; i++) {
-    let artistsFAV =
-      `<div class="music-artist-content-item artist-box" artist-id="${favoritIt[i].artist_id}" artist-data="${favoritIt[i].artist}" id='${favoritIt[i].id}' onclick="artistScreenDataLoad(this);">
-        <img data-lazy="${favoritIt[i].artist_img}">
-          <div class="music-artist-content-item-data">
-            <h1>${favoritIt[i].artist}</h1>
-            <span>Artist • Verified</span>
-          </div>
-       </div>`;
-    resultsFAV.insertAdjacentHTML("afterbegin", artistsFAV);
-  }
-
   const key = 'artist_id';
   const uniqueIt = [...new Map(allMusicView.map(item => [item[key], item])).values()]
+  
+  for (let i = 1; i <= uniqueIt.length; i++) {
 
-  for (let i = 0; i < uniqueIt.length; i++) {
-    if(uniqueIt[i].artist_status === "followed"){
-      document.querySelector('.music-artist-content-item.artist-box[artist-id="' + uniqueIt[i].artist_id + '"] h1').innerHTML = uniqueIt[i].artist + "<p>Followed</p>"; 
+    let breakIt = allMusicView.filter(x => x.artist_id === `${i}`)
+    let artistsFAV =
+    `<div class="music-artist-content-item artist-box" artist-id="${breakIt[0].artist_id}" artist-data="${breakIt[0].artist}" id='${breakIt[0].id}' onclick="artistScreenDataLoad(this);">
+      <img data-lazy="${breakIt[0].artist_img}">
+        <div class="music-artist-content-item-data">
+          <h1>${breakIt[0].artist}</h1>
+          <span>Artist • Verified</span>
+        </div>
+     </div>`;
+  resultsFAV.insertAdjacentHTML("afterbegin", artistsFAV);
+  }
+
+  for (let i = 0; i < allMusicView.length; i++) {
+    if(allMusicView[i].artist_status === "followed"){
+      if(document.querySelector('.music-artist-content-item.artist-box[artist-id="' + allMusicView[i].artist_id + '"] h1')){
+        document.querySelector('.music-artist-content-item.artist-box[artist-id="' + allMusicView[i].artist_id + '"] h1').innerHTML = allMusicView[i].artist + "<p>Followed</p>"; 
+      }
     }
   }
 
@@ -6084,7 +6109,7 @@ function historyTrack_OBJECT(object){
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
       `<div class="music-artist-content-item track-box" li-index='${favoritIt[i].id}' onclick="clickedSingle(this);">
-        <img data-lazy="${favoritIt[i].img_mini}">
+        <img src="${favoritIt[i].img_mini}">
           <div class="music-artist-content-item-data">
             <h1>${favoritIt[i].name}</h1>
             <span>${favoritIt[i].artist} <p> ${' • ' + favoritIt[i].colaboration} </p> • ${favoritIt[i].album} • ${favoritIt[i].album_premiere}</span>
@@ -6517,4 +6542,14 @@ function playlist_EDIT_REMOVE(){
   localStorage.removeItem(playlistID);
   playlistScreen.classList.remove('active');
   playlist_HOME_LOAD();
+}
+
+function ui_ARTIST_TOGGLE(){
+  if(localStorage.getItem('ui_artist')){
+    localStorage.removeItem('ui_artist');
+    ui_ARTISTHEADER.classList.remove('cfgHIDE');
+  }else{
+    localStorage.setItem('ui_artist', 'true');
+    ui_ARTISTHEADER.classList.add('cfgHIDE');
+  }
 }

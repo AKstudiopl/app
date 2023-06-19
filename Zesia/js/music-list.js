@@ -710,7 +710,7 @@ var allMusic = [
   {
     name: "Rockstar",
     artist: "Post Malone",
-    colaboration: "",
+    colaboration: "21 Savage",
     artist_status: "none",
     language: "eng",
     country: "usa",
@@ -5310,7 +5310,7 @@ var allMusic = [
   {
     name: "Let Me Go",
     artist: "NF",
-    colaboration: "Sasha Alex Sloan",
+    colaboration: "",
     colaboration_id: "55",
     artist_status: "none",
     language: "eng",
@@ -5354,7 +5354,7 @@ var allMusic = [
   {
     name: "Hate Myself",
     artist: "NF",
-    colaboration: "",
+    colaboration: "Sasha Alex Sloan",
     artist_status: "none",
     language: "eng",
     country: "usa",
@@ -7598,7 +7598,6 @@ var allMusic = [
       twitter: "https://twitter.com/Eminem",
       facebook: "",
     },
-    user_playlist_1: "",
   },
   {
     name: "You Gon’ Learn",
@@ -7639,8 +7638,6 @@ var allMusic = [
       lyrics_verse_13: "",
       lyrics_verse_14: ""
     },
-
-    user_playlist_1: "",
   },
   {
     name: "blindfolded",
@@ -9815,6 +9812,7 @@ var allMusic = [
     language: "eng",
     country: "au",
     artist_id: "45",
+    colaboration_id: "63",
 
     src: "MoveYourBody-AlanWalkerRemix",
     img: "ab67616d00001e02754b2fddebe7039fdb912837",
@@ -14874,7 +14872,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-    artist_id: "64",
+    artist_id: "19",
     
     src: "Sucker-JonasBrothers",
     img: "ab67616d00001suckere02de1a3a5eaa0c75bb18e7b597",
@@ -14932,7 +14930,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "ca",
-    artist_id: "65",
+    artist_id: "64",
     
     src: "God'sPlan-drake",
     img: "ab67616d00001draee02f907de96b9a4fbc04accc0d5",
@@ -15081,7 +15079,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "de",
-    artist_id: "66",
+    artist_id: "65",
     
     src: "Satellite-lena",
     img: "ab67616d00001e024bbfd947699df39f7a28ab82",
@@ -15139,7 +15137,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "uk",
-    artist_id: "67",
+    artist_id: "66",
     
     src: "Mirrors-NataliaKills",
     img: "ab67616d00001e028d00be64fe9856bdf0e7f50f",
@@ -15199,7 +15197,7 @@ var allMusic = [
     artist_status: "none",
     language: "eng",
     country: "usa",
-    artist_id: "64",
+    artist_id: "19",
     
     src: "JonasBrothers-X",
     img: "ab67616d0000b2733b3cd45dfa6f779c01d63fdb",
@@ -15496,6 +15494,65 @@ var allMusic = [
         ls: "",
         stamp: "3600",
       },
+    },
+  },
+  {
+    name: "I See Fire",
+    artist: "Ed Sheeran",
+    colaboration: "",
+    artist_status: "none",
+    language: "eng",
+    country: "uk",
+    artist_id: "40",
+
+    src: "EdSheeran-ISeeFire",
+    img: "ab67616d00001e0281ef6477bfe32dc55845ef27",
+    img_mini: "https://i.scdn.co/image/ab67616d0000485181ef6477bfe32dc55845ef27",
+    
+    style: "Soundtrack",
+    status: "nostatus",
+    tag: "Popular",
+    canvas: "",
+
+    thisis_img: "https://i.scdn.co/image/ab67706f00000002d7c989820a3155855cc6da87",
+    radio_img: "https://seeded-session-images.scdn.co/v1/img/artist/6eUKZXaKkcviH0Ku9w2n3V/pl",
+    style_img: "https://i.scdn.co/image/ab67706f00000002d0a248246eefcba19136cc4d",
+    
+    album: "Hobbit",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e0281ef6477bfe32dc55845ef27",
+    album_premiere: "2013",
+    album_status: "false",
+    id: "194",
+
+    lyrics:{
+
+    },
+  },
+  {
+    name: "River",
+    artist: "Eminem",
+    colaboration: "Ed Sherran",
+    colaboration_id: "40",
+    artist_status: "none",
+    language: "eng",
+    country: "usa",
+    artist_id: "37",
+
+    src: "Eminem-river",
+    img: "ab67616d00001e02dee6b58d35215322626b5701",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851dee6b58d35215322626b5701",
+    
+    style: "Hip-Hop",
+    status: "nostatus",
+    tag: "",
+    canvas: "",
+    
+    album: "River",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e02dee6b58d35215322626b5701",
+    album_premiere: "2017",
+    album_status: "false",
+    id: "195",
+    lyrics:{
     },
   },
 ]
