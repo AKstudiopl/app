@@ -2211,6 +2211,7 @@ function artistProfileFansChoice(track){
 
     return valueToUse;
   });
+  
 
   resultsFAV.innerHTML = "";
   for (let i = 1; i < favoritIt.length; i++) {
@@ -2287,7 +2288,7 @@ function uiLastViewedAlbumsLoad(){
   let lastAlbum_2 = localStorage.getItem("lastViewedAlbum_2");
   let lastPlaylist = localStorage.getItem("last_PLAYLIST");
 
-  if(lastPlaylist.includes('playlist_user_')){
+  if(lastPlaylist && lastPlaylist.includes('playlist_user_')){
     var lastPlaylistSRC = localStorage.getItem(lastPlaylist);
     
     uiLastViewedPlaylist.setAttribute('onclick', 'fastLoadingPop();playlist_SELECT_CLICKED(this);')
