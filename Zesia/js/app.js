@@ -1007,8 +1007,7 @@ $(function(){
       var $this = $(this),
           scrollspeed = parseInt($this.data('scroll-speed')),
           val = - scrollTop / scrollspeed;
-      $this.css('transform', 'scale(' + (125 - (-val/45)) + '%) translateY(' + (-val * 1.75) + 'px)');
-      $this.css('filter', 'blur(' + (-val / 10) + 'px)');
+      $this.css('filter', 'blur(' + (-val / 5) + 'px)');
       $this.css('opacity', '' + (100 - (-val/50)) + '%');
       })
   });

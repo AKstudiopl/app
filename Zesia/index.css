@@ -489,7 +489,7 @@ font-family: 'Rubik';
 }
 .settings-screen-item:last-child
 {
-  padding-bottom: 150px;
+  margin-bottom: 150px;
 }
 .settings-screen-item:first-child
 {
@@ -10719,7 +10719,7 @@ textarea
   }
   .settings-screen-item:last-child
   {
-    padding-bottom: 120px;
+    margin: 120px;
   }
   .history-contanier .music-artist-album-item:last-child
   {
