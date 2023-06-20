@@ -6690,7 +6690,7 @@ var allMusic = [
     avatar: "ab676186000010166e26b86a9f8a8d78b14c2dac",
     artist_img: "https://i.scdn.co/image/ab6761670000ecd4d771ca23a2fb9aff28ce6c2f",
     gallery_img_1: "https://i.scdn.co/image/ab6761670000ecd452acf9f68db6d08565365d67",
-    gallery_img_2: "https://pbs.twimg.com/media/Fh5QoQMXgAM7kGG?format=jpg&name=medium",
+    gallery_img_2: "https://pbs.twimg.com/media/FzEIeT4XoAEOaS2?format=jpg&name=large",
     gallery_img_3: "https://pbs.twimg.com/media/FX_2TZOXEAMbxRc?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FGGp0QkUcAM5qNl?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/FiFhh1QXgAcWXP9?format=jpg&name=4096x4096",
