@@ -168,7 +168,7 @@ var allPlaylists = [
     {
         name: "Popular",
         description: "Popular songs on Zesia",
-        image: "https://i.scdn.co/image/ab67706f00000002499f158d6dae3c855769a564",
+        image: "https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg",
 
         play_style: "Energic",
         play_id: "6",
@@ -198,7 +198,7 @@ var allPlaylists = [
     {
         name: "Re-Imagination",
         description: "Best of Imagine Dragons",
-        image: "https://i.scdn.co/image/ab67706f00000002499f158d6dae3c855769a564",
+        image: "https://seed-mix-image.spotifycdn.com/v6/img/desc/Imagination/en/default",
 
         play_style: "Chill",
         play_id: "7",
@@ -221,7 +221,7 @@ var allPlaylists = [
     {
         name: "US RAP-MIX",
         description: "Mix of the greatest Rap hits ever produced in United States, Listen to artist such as like Eminem, Post Malone, NF and more",
-        image: "https://i.scdn.co/image/ab67706f00000002499f158d6dae3c855769a564",
+        image: "https://i.scdn.co/image/ab67706c0000da8466f5c47190941f72817489d6",
 
         play_style: "Hip-hop",
         play_id: "8",
@@ -276,7 +276,7 @@ var allPlaylists = [
     {
         name: "Sing IT!",
         description: "Playlist with songs, that are perfect to sing. User your Lyrics Feature and have fun!",
-        image: "https://i.scdn.co/image/ab67706f00000002499f158d6dae3c855769a564",
+        image: "https://seed-mix-image.spotifycdn.com/v6/img/desc/Singing/en/default",
 
         play_style: "Chill",
         play_id: "9",
@@ -315,7 +315,7 @@ var allPlaylists = [
     {
         name: "SUMMER 100%",
         description: "Playlist with songs, that are perfect to sing. User your Lyrics Feature and have fun!",
-        image: "https://i.scdn.co/image/ab67706f00000002499f158d6dae3c855769a564",
+        image: "https://i.scdn.co/image/ab67706c0000da848ea285215d990503fc60d5a4",
 
         play_style: "Energic",
         play_id: "10",
