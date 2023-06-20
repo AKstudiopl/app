@@ -2871,6 +2871,12 @@ function featuringLoad(){
   var followedArtistsData = allMusicView.filter(x => x.artist_status === "followed");
   let randomArtistIndex = Math.floor((Math.random() * followedArtistsData.length));
 
+  if(followedArtistsData.length === 0){
+    document.querySelector('#featuringBox').style.display="none";
+  }else{
+    document.querySelector('#featuringBox').style.display="block";
+  }
+
   if(followedArtistsData.length > 0){
   var favoritIt = allMusicView.filter(x => x.artist_id === followedArtistsData[randomArtistIndex].artist_id);
 
@@ -5750,6 +5756,7 @@ function clickedPlaylist(data){
   playlistEDIT.classList.remove('fs921');
 
   playlistImg.src = allPlaylists[playlist_ID - 1].image;
+  playlistImgBg.src = allPlaylists[playlist_ID - 1].image;
   playlistTitle.innerText = allPlaylists[playlist_ID - 1].name;
   playlistArtist.innerText = allPlaylists[playlist_ID - 1].description + ' By ' + allPlaylists[playlist_ID - 1].play_author;
   playlistTracksCounter.innerText = playlist_LENGTH;
@@ -6336,11 +6343,7 @@ function playlist_SELECT_CLICKED(item){
 
 function playlist_CHECK_IMG(){
   setTimeout(() => {
-    if(playlistArtist.innerText === 'Private Playlist'){
-      playlistImg.classList.add('s-50');
-    }else{
-      playlistImg.classList.remove('s-50');
-    }
+    playlistImg.classList.add('s-50');
   }, 150);
 
   if(playlistResult.getAttribute('playlist-editable') === "true"){

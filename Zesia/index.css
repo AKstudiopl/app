@@ -2152,8 +2152,7 @@ input:checked + .slider:before {
   filter: blur(30px);
   -webkit-mask-image: -webkit-linear-gradient(180deg,transparent 0%, rgba(0,0,0,0.05) 25%,rgba(0,0,0,0.15) 75%, rgba(0,0,0,0.5) 100%);
   overflow: hidden;
-  transition: .25s;
-  transition-delay: .25;
+  transition: .5s;
 }
 .pc-controls-track
 {
