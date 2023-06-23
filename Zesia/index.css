@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@100&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -19,7 +19,7 @@
 body
 {
   background: var(--background);
-  font-family: 'Rubik', 'PT Sans', sans-serif;
+  font-family: 'Pathway Extreme', 'PT Sans', sans-serif;
   color: var(--color);
   overflow-x: hidden;
 }
@@ -333,7 +333,7 @@ i
   transition: 0.3s;
   position: relative;
   z-index: 5;
-font-family: 'Rubik';
+font-family: 'Pathway Extreme';
   font-weight: 100;
 }
 #navbar-profile, #navbar-logo, #navbar-settings
@@ -436,7 +436,7 @@ font-family: 'Rubik';
 }
 .settings-screen .settings-screen-title h1
 {
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
   font-weight: 100;
   letter-spacing: 1px;
   font-size: 16px;
@@ -506,7 +506,7 @@ font-family: 'Rubik';
   color: var(--color);
   font-size: 16px;
   width:calc(100% - 15px);
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
 }
 .settings-title i 
 {
@@ -518,7 +518,7 @@ font-family: 'Rubik';
 {
   font-size: 16px;
   color: var(--color);
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
   font-weight: 100;
 }
 .settings-screen-item img
@@ -533,7 +533,7 @@ font-family: 'Rubik';
   color: var(--color);
   opacity: 0.5;
   font-size: 12px;
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
   font-weight: 100;
   line-height: 1;
 }
@@ -721,7 +721,7 @@ input:checked + .slider:before {
   background: var(--backgroundsecond);
   background: linear-gradient(130deg, var(--backgroundsecond), var(--background));
   transition: 0.3s;
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
   font-weight: 100;
   font-size: 14px;
 }
@@ -758,7 +758,7 @@ input:checked + .slider:before {
   width: 100%;
   background:transparent;
   color: var(--color);
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
   transition: 0.3s;
 }
 .search-content  input[type=text]:focus
@@ -822,7 +822,7 @@ input:checked + .slider:before {
   border-radius: 15px;
   flex: 0 0 auto;
   transition: 0.3s;
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
   font-weight: 100;
   font-size: 14px;
   background-size: 175%;
@@ -962,7 +962,7 @@ input:checked + .slider:before {
   justify-content: center;
   transition: 0.25s;
   position: relative;
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
   letter-spacing: 1px;
   font-weight: 900;
   background: var(--backgroundsecond);
@@ -1736,7 +1736,7 @@ input:checked + .slider:before {
 {
   display: flex;
   flex-direction: column;
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
   font-size: 16px;
   letter-spacing: 1px;
   font-weight: 100;
@@ -1826,7 +1826,7 @@ input:checked + .slider:before {
   z-index: 0;
   user-select: none;
   cursor: pointer;
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
   color: var(--color);
   outline: 1px solid rgb(255 255 255 / 5%);
   outline-offset: -1px;
@@ -2069,7 +2069,7 @@ input:checked + .slider:before {
 .center-container .center-container-item h2
 {
   font-size: 16px;
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
   font-weight: 900;
   letter-spacing: 1px;
   color: var(--color);
@@ -2085,7 +2085,7 @@ input:checked + .slider:before {
   -webkit-line-clamp: 2;
   line-clamp: 2; 
   -webkit-box-orient: vertical;
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
   overflow: hidden;
 }
 .center-container .center-container-item .img-box
@@ -2523,7 +2523,7 @@ input:checked + .slider:before {
   z-index: 6;
   filter: drop-shadow(0px 10px 12px rgba(0,0,0,0.25));
   transition: 0.3s;
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
   line-height: 1.5;
   outline: 1px solid rgb(255 255 255 / 5%);
   outline-offset: -1px;
@@ -2805,7 +2805,7 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
   width: calc(100% - 30px);
   padding:0 15px;
   background-color: rgb(25 25 34 / 95%);
@@ -2858,6 +2858,7 @@ input:checked + .slider:before {
   min-height: 15vh;
   cursor: pointer;
   background: linear-gradient(0deg, rgb(25 25 34 / 95%), rgb(25 25 34 / 50%));
+  user-select: none;
 }
 .top-more-head i
 {
@@ -2895,7 +2896,7 @@ input:checked + .slider:before {
   color: var(--color);
   text-decoration: none;
   transition: 0.3s;
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
   text-decoration: none;
   color: var(--color);
   transition: 0.3s;
@@ -3749,7 +3750,7 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
   width: 60px;
   height: 60px;
   backdrop-filter: blur(5px);
@@ -3936,7 +3937,7 @@ input:checked + .slider:before {
   transition: 0.3s;
   overflow-y: scroll;
   overflow-x: hidden;
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
   font-weight: 100;
   letter-spacing: 1px;
   font-size: 18px;
@@ -5258,7 +5259,7 @@ input:checked + .slider:before {
   line-height: 1;
   font-size: 15px;
   margin: 0;
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
   line-height: 1;
   font-weight: 900;
   backdrop-filter: blur(2px);
@@ -5424,7 +5425,7 @@ input:checked + .slider:before {
   width: 100%;
   margin-bottom: 90px;
   display: none;
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -5448,7 +5449,7 @@ input:checked + .slider:before {
   align-items: center;
   transition: 0.25s;
   font-weight: 100;
-font-family: 'Rubik';
+font-family: 'Pathway Extreme';
 }
 .music-artist-menu a:active
 {
@@ -5541,7 +5542,7 @@ font-family: 'Rubik';
   margin: 20px;
   font-weight: 100;
   font-size: 24px;
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
   font-weight: 100;
 }
 .music-artist-content-item .music-artist-content-number
@@ -5818,7 +5819,7 @@ font-family: 'Rubik';
 .music-artist-content-item-data h1
 {
   color: var(--color);
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
   line-height: 1;
   font-weight: 900;
   font-size: 16px;
@@ -5827,14 +5828,15 @@ font-family: 'Rubik';
 {
   color: var(--color);
   opacity: 0.5;
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
   font-size: 14px;
   display: flex;
   flex-direction: row;
   align-items: center;
   font-weight: 100;
-  margin-top: 2px;
+  margin-top: 3px;
   display: -webkit-box;
+  -webkit-box-align: center;
   -webkit-line-clamp: 1; /* number of lines to show */
           line-clamp: 1; 
   -webkit-box-orient: horizontal;
@@ -5851,7 +5853,7 @@ font-family: 'Rubik';
   align-items: center;
   width: 95%;
   transition: 0.25s;
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
 }
 .music-artist-content-item-featured i {
   margin-left: auto;
@@ -5902,14 +5904,14 @@ font-family: 'Rubik';
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  padding: 2px 5px;
+  padding: 1px 5px;
   font-weight: 900;
   margin-right: 5px;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   line-clamp: 2;
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
 }
 .music-artist-content-container, .music-artist-content-feat
 {
@@ -6129,7 +6131,7 @@ font-family: 'Rubik';
 }
 .music-artist-content-playlists .center-container-item h2 {
   font-size: 14px;
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
   font-weight: 900;
   letter-spacing: 1px;
 }
@@ -6142,7 +6144,7 @@ font-family: 'Rubik';
   -webkit-line-clamp: 2;
   line-clamp: 2;
   -webkit-box-orient: vertical;
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
   overflow: hidden;
 }
 .music-artist-item-featured .music-artist-item-featured-title
@@ -6192,7 +6194,7 @@ font-family: 'Rubik';
   line-height: 1.5;
   z-index: 5;
   overflow: hidden;
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
   font-weight: 900;
   letter-spacing: 1px;
 }
@@ -6212,7 +6214,7 @@ font-family: 'Rubik';
   display: none;
   flex-direction: column;
   margin-bottom: 90px;
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
   font-weight: 900;
   align-items: center;
 }
@@ -6340,7 +6342,7 @@ font-family: 'Rubik';
   opacity: 0.5;
   font-size: 14px;
   font-weight: 100;
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
 }
 .music-artist-information-albums-item-name
 {
@@ -6984,7 +6986,7 @@ font-family: 'Rubik';
   height: calc(100vh - 121px);
   background: var(--background);
   width: 100%;
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
   line-height: 1;
   letter-spacing: 1px;
   overflow: scroll;
@@ -7095,7 +7097,7 @@ width: 100%;
   line-height: 1;
   display: flex;
   align-items: center;
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
   line-height: 1;
   letter-spacing: 1px;
   font-weight: 100;
@@ -7887,7 +7889,7 @@ width: 100%;
   color: var(--color);
   padding: 0px 20px;
   border-radius: 15px;
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
   letter-spacing: 1px;
   width: calc(100% - 40px);
   font-size: 16px;
@@ -8521,7 +8523,7 @@ width: 100%;
   margin-top: -120vh;
   top: 0;
   height: 95vh;
-font-family: 'Rubik';
+font-family: 'Pathway Extreme';
   letter-spacing: 1px;
   font-weight: 900;
 }
@@ -8837,7 +8839,7 @@ font-family: 'Rubik';
   justify-content: space-between;
   align-items: center;
   border-top: 1px var(--backgroundsecond) solid;
-font-family: 'Rubik';
+font-family: 'Pathway Extreme';
   font-weight: 900;
   letter-spacing: 1px;
 }
@@ -8847,7 +8849,7 @@ font-family: 'Rubik';
   flex-direction: column;
   width: calc(100% - 20px);
   margin-left: 10px;
-font-family: 'Rubik';
+font-family: 'Pathway Extreme';
   font-weight: 100;
   letter-spacing: 1px;
   margin-bottom: 10px;
@@ -8892,7 +8894,7 @@ font-family: 'Rubik';
   background: var(--background);
   width: 100%;
   padding: 0 15px;
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
   font-weight: 900;
   letter-spacing: 1px;
   color: var(--color);
@@ -8961,7 +8963,7 @@ font-family: 'Rubik';
   background: var(--backgroundsecond);
   background: linear-gradient(130deg, var(--backgroundsecond), var(--background));
   transition: 0.3s;
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
   font-weight: 100;
   font-size: 16px;
   cursor: pointer;
@@ -9440,7 +9442,7 @@ font-family: 'Rubik';
   border: 1px #32323d solid;
   border-radius: 15px;
   color: var(--color);
-  font-family: rubik;
+  font-family: Pathway Extreme;
   font-weight: 100;
   outline: 1px solid rgb(255 255 255 / 5%);
   outline-offset: -1px;
@@ -9569,7 +9571,7 @@ font-family: 'Rubik';
   border: 1px #32323d solid;
   border-radius:15px;
   color: var(--color);
-  font-family: rubik;
+  font-family: Pathway Extreme;
   font-weight: 100;
 }
 .playlist-popup-data input:focus
@@ -10326,7 +10328,7 @@ textarea
   .ui-title-action
   {
     display: flex;
-  font-family: 'Rubik';
+  font-family: 'Pathway Extreme';
     font-weight: 100;
     letter-spacing: 1px;
     color: var(--maincolor);
