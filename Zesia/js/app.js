@@ -1008,7 +1008,7 @@ $(function(){
           scrollspeed = parseInt($this.data('scroll-speed')),
           val = - scrollTop / scrollspeed;
       $this.css('filter', 'blur(' + (-val / 5) + 'px)');
-      $this.css('opacity', '' + (100 - (-val/50)) + '%');
+      $this.css('opacity', '' + (100 - (-val/4)) + '%');
       })
   });
 })
@@ -2210,13 +2210,20 @@ function artistProfileFansChoice(track){
 
     return valueToUse;
   });
-  
 
   resultsFAV.innerHTML = "";
   for (let i = 1; i < favoritIt.length; i++) {
+    if(favoritIt[i].artist_img === undefined){
+      replacedID = favoritIt[i].artist_id;
+      replacedDATA = allMusicView.filter(x => x.artist_id === replacedID);
+      replacedIMG = replacedDATA[0].artist_img;
+    }else{
+      replacedIMG = favoritIt[i].artist_img;
+    }
+    
     let resultFAV =
       `<div class="music-artist-content-item" artist-id='${favoritIt[i].artist_id}' id='${favoritIt[i].id}' onclick="artistScreenDataLoad(this)">
-          <img src="${favoritIt[i].artist_img}">
+          <img src="${replacedIMG}">
           <p>${favoritIt[i].artist}</p>
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
@@ -2232,7 +2239,7 @@ function artistProfileFansChoice(track){
       }
   });
 
-  $('.music-artist-content-fanschoice .music-artist-content-item').slice(10).remove()
+  $('.music-artist-content-fanschoice .music-artist-content-item').slice(12).remove()
 
   resultsFAV.scrollLeft = 0;
 }

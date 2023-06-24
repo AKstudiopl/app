@@ -325,6 +325,7 @@ i
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   overflow: hidden;
+  min-height: 60px;
 }
 .navbar-bottom .navbar-bottom-btn
 {
@@ -335,6 +336,9 @@ i
   z-index: 5;
 font-family: 'Pathway Extreme';
   font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #navbar-profile, #navbar-logo, #navbar-settings
 {
@@ -355,7 +359,8 @@ font-family: 'Pathway Extreme';
   display: flex;
   flex-direction: column;
   transition: 0.1s;
-  justify-content: space-between;
+  justify-content: center;
+  position: relative;
   align-items: center;
   width: 65px;
 }
@@ -368,6 +373,26 @@ font-family: 'Pathway Extreme';
 .navbar-bottom-btn.active i
 {
   color: var(--maincolor);
+  opacity: 0.5;
+}
+.navbar-bottom-btn.active span
+{
+  transform: scaleY(1);
+  backdrop-filter: blur(15px);
+}
+.navbar-bottom-btn span
+{
+  transform: scaleY(0);
+  overflow: hidden;
+  position: absolute;
+  transition: 0.25s;
+  background-color: rgb(0 0 0 / 20%);
+  z-index: 1;
+  padding: 10px 20px;
+  border: 1px var(--backgroundsecond) solid;
+  border-radius: 15px;
+  backdrop-filter: blur(0px);
+  color: var(--color);
 }
 .navbar-bottom-btn > a::after
 {
@@ -376,7 +401,7 @@ font-family: 'Pathway Extreme';
   position: absolute;
   transform: 0.25s;
   right: 50%;
-  bottom: -55px;
+  bottom: -60px;
   transform: translateX(50%);
   width: 40px;
   height: 40px;
@@ -392,7 +417,7 @@ font-family: 'Pathway Extreme';
   position: absolute;
   transform: 0.25s;
   right: 50%;
-  bottom: -55px;
+  bottom: -60px;
   transform: translateX(50%);
   width: 40px;
   height: 40px;
@@ -535,6 +560,10 @@ font-family: 'Pathway Extreme';
   font-size: 12px;
   font-family: 'Pathway Extreme';
   font-weight: 100;
+  line-height: 1;
+}
+.settings-screen-item-description
+{
   line-height: 1;
 }
 .settings-screen-item-description-box
@@ -806,8 +835,10 @@ input:checked + .slider:before {
 {
   display: flex;
   align-items: center;
-  width:100%;
+  width:calc(100% + 30px);
+  margin-left: -15px;
   gap: 5px;
+  overflow: scroll;
 }
 .search-option a 
 {
@@ -818,7 +849,7 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 15px;
+  padding: 0 25px;
   border-radius: 15px;
   flex: 0 0 auto;
   transition: 0.3s;
@@ -827,6 +858,14 @@ input:checked + .slider:before {
   font-size: 14px;
   background-size: 175%;
   min-width: 30px;
+}
+.search-option a:first-child
+{
+  margin-left: 15px;
+}
+.search-option a:last-child
+{
+  margin-right: 15px;
 }
 .search-option a.active
 {
@@ -2640,7 +2679,6 @@ input:checked + .slider:before {
 {
   animation-name: titleAni;
   animation-duration: 0.3s;
-  font-family: arial;
   font-weight: 900;
   animation-timing-function: ease-in;
 }
