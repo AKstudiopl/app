@@ -2157,21 +2157,21 @@ function artistProfilePlaylists(track){
   resultsFAV.innerHTML='';
 
   let featuringPlaylist_Complete =
-  `<div class="center-container-item playlist-generator complete" playlist-description="This Is ${track_View[0].artist}, contains all the most important songs in one playlist" artist-style="${track_View[0].style}" artist-name="${track_View[0].artist}" playlist-filter="Complete" onclick="fastLoadingPop(); clickedSinglePlaylist(this)" artist-data="${track_View[0].artist_id}" playlist-img="${track_View[0].gallery_img_1}" data-album='${track_View[0].album}'>
+  `<div class="center-container-item playlist-generator complete" playlist-description="This Is ${track_View[0].artist}, contains all the most important songs in one playlist" artist-style="${track_View[0].style}" artist-name="${track_View[0].artist}" playlist-filter="Complete" onclick="fastLoadingPop(); clickedSinglePlaylist(this)" artist-data="${track_View[0].artist_id}" playlist-img="${track_View[0].thisis_img}" data-album='${track_View[0].album}'>
    <img src="${track_View[0].thisis_img}">
    <h2>This Is ${track_View[0].artist}</h2>
    <p>Playlist</p>
    </div>`;
 
    let featuringPlaylist_Style =
-   `<div class="center-container-item playlist-generator" playlist-description="${track_View[0].style} style, songs that will fit every fan of ${track_View[0].style} music" artist-style="${track_View[0].style}" artist-name="${track_View[0].artist}" playlist-style="${track_View[0].style}" onclick="fastLoadingPop(); clickedSinglePlaylist(this)" artist-data="${track_View[0].artist_id}" playlist-img="${track_View[0].gallery_img_2}" data-album='${track_View[0].album}'>
+   `<div class="center-container-item playlist-generator" playlist-description="${track_View[0].style} style, songs that will fit every fan of ${track_View[0].style} music" artist-style="${track_View[0].style}" artist-name="${track_View[0].artist}" playlist-style="${track_View[0].style}" onclick="fastLoadingPop(); clickedSinglePlaylist(this)" artist-data="${track_View[0].artist_id}" playlist-img="${track_View[0].style_img}" data-album='${track_View[0].album}'>
     <img src="${track_View[0].style_img}">
     <h2>${track_View[0].style} • Style</h2>
     <p>Playlist</p>
     </div>`;
 
     let featuringPlaylist_Radio =
-    `<div class="center-container-item playlist-generator" playlist-description="${track_View[0].artist} • Radio, is mix of artists, styles, collaborations and much more" artist-style="${track_View[0].style}" artist-name="${track_View[0].artist}" playlist-filter="Radio" onclick="fastLoadingPop(); clickedSinglePlaylist(this)" artist-data="${track_View[0].artist_id}" playlist-img="${track_View[0].gallery_img_3}" data-album='${track_View[0].album}'>
+    `<div class="center-container-item playlist-generator" playlist-description="${track_View[0].artist} • Radio, is mix of artists, styles, collaborations and much more" artist-style="${track_View[0].style}" artist-name="${track_View[0].artist}" playlist-filter="Radio" onclick="fastLoadingPop(); clickedSinglePlaylist(this)" artist-data="${track_View[0].artist_id}" playlist-img="${track_View[0].radio_img}" data-album='${track_View[0].album}'>
      <img src="${track_View[0].radio_img}">
      <h2>${track_View[0].artist} • Radio</h2>
      <p>Playlist</p>
@@ -2918,7 +2918,7 @@ function featuringLoad(){
   // FEATURING ARTIST AUTOMATIC PLAYLIST GENERATOR //
 
   let featuringPlaylist_Complete =
-  `<div class="center-container-item playlist-generator complete" playlist-description="This Is ${favoritIt[0].artist}, contains all the most important songs in one playlist" artist-style="${favoritIt[0].style}" artist-name="${favoritIt[0].artist}" playlist-filter="Complete" onclick="fastLoadingPop(); clickedSinglePlaylist(this)" artist-data="${favoritIt[0].artist_id}" playlist-img="${favoritIt[0].gallery_img_1}" data-album='${favoritIt[0].album}'>
+  `<div class="center-container-item playlist-generator complete" playlist-description="This Is ${favoritIt[0].artist}, contains all the most important songs in one playlist" artist-style="${favoritIt[0].style}" artist-name="${favoritIt[0].artist}" playlist-filter="Complete" onclick="fastLoadingPop(); clickedSinglePlaylist(this)" artist-data="${favoritIt[0].artist_id}" playlist-img="${favoritIt[0].thisis_img}" data-album='${favoritIt[0].album}'>
     <div class="img-box">    
       <img src="${favoritIt[0].thisis_img}">
     </div>
@@ -2927,7 +2927,7 @@ function featuringLoad(){
    </div>`;
 
    let featuringPlaylist_Style =
-   `<div class="center-container-item playlist-generator" playlist-description="${favoritIt[0].style} style, songs that will fit every fan of ${favoritIt[0].style} music" artist-style="${favoritIt[0].style}" artist-name="${favoritIt[0].artist}" playlist-style="${favoritIt[0].style}" onclick="fastLoadingPop(); clickedSinglePlaylist(this)" artist-data="${favoritIt[0].artist_id}" playlist-img="${favoritIt[0].gallery_img_2}" data-album='${favoritIt[0].album}'>
+   `<div class="center-container-item playlist-generator" playlist-description="${favoritIt[0].style} style, songs that will fit every fan of ${favoritIt[0].style} music" artist-style="${favoritIt[0].style}" artist-name="${favoritIt[0].artist}" playlist-style="${favoritIt[0].style}" onclick="fastLoadingPop(); clickedSinglePlaylist(this)" artist-data="${favoritIt[0].artist_id}" playlist-img="${favoritIt[0].style_img}" data-album='${favoritIt[0].album}'>
       <div class="img-box">    
       <img src="${favoritIt[0].style_img}">
       </div>
@@ -2936,7 +2936,7 @@ function featuringLoad(){
     </div>`;
 
     let featuringPlaylist_Radio =
-    `<div class="center-container-item playlist-generator" playlist-description="${favoritIt[0].artist} • Radio, is mix of artists, styles, collaborations and much more" artist-style="${favoritIt[0].style}" artist-name="${favoritIt[0].artist}" playlist-filter="Radio" onclick="fastLoadingPop(); clickedSinglePlaylist(this)" artist-data="${favoritIt[0].artist_id}" playlist-img="${favoritIt[0].gallery_img_3}" data-album='${favoritIt[0].album}'>
+    `<div class="center-container-item playlist-generator" playlist-description="${favoritIt[0].artist} • Radio, is mix of artists, styles, collaborations and much more" artist-style="${favoritIt[0].style}" artist-name="${favoritIt[0].artist}" playlist-filter="Radio" onclick="fastLoadingPop(); clickedSinglePlaylist(this)" artist-data="${favoritIt[0].artist_id}" playlist-img="${favoritIt[0].radio_img}" data-album='${favoritIt[0].album}'>
       <div class="img-box">  
       <img src="${favoritIt[0].radio_img}">
       </div>
@@ -4960,6 +4960,8 @@ function clickedSinglePlaylist(e){
   let playlistData_Name = e.querySelector("h2").innerText;
   let playlistData_Description = e.getAttribute("playlist-description");
 
+  
+
   let playlistFilter = e.getAttribute("playlist-filter");
   let playlistStyle = e.getAttribute("playlist-style");
   playlistResult.setAttribute('queue-long-data', '');
@@ -4967,6 +4969,7 @@ function clickedSinglePlaylist(e){
 
   playlistEditBtn.classList.remove('active');
   playlistEDIT.classList.remove('fs921');
+  playlistImgBg.src = playlistData_Img;
 
   if(playlistFilter){
 

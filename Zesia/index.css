@@ -377,15 +377,16 @@ font-family: 'Pathway Extreme';
 }
 .navbar-bottom-btn.active span
 {
-  transform: scaleY(1);
   backdrop-filter: blur(15px);
+  opacity: 1;
+  margin-top: 0px;
 }
 .navbar-bottom-btn span
 {
-  transform: scaleY(0);
   overflow: hidden;
   position: absolute;
   transition: 0.25s;
+  opacity: 0;
   background-color: rgb(0 0 0 / 20%);
   z-index: 1;
   padding: 10px 20px;
@@ -393,6 +394,7 @@ font-family: 'Pathway Extreme';
   border-radius: 15px;
   backdrop-filter: blur(0px);
   color: var(--color);
+  margin-top: 75px;
 }
 .navbar-bottom-btn > a::after
 {
