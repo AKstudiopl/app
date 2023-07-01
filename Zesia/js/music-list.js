@@ -5923,7 +5923,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/FhX0NEXXgAEaDIy?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/FgzAdOpXkAAP4ED?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/FgtQNneXoAA_F8e?format=jpg&name=small",
-    canvas: "https://video.twimg.com/ext_tw_video/1594343192865947650/pu/vid/720x1038/NjBAMo7Pu1rfOhVT.mp4?tag=12",
+    canvas: "https://video.twimg.com/tweet_video/FrmUvh3WIAEDKJj.mp4",
     
     thisis_img: "https://i.scdn.co/image/ab67706f000000028e9f5dff119e779060bb38ec",
     radio_img: "https://seeded-session-images.scdn.co/v1/img/artist/0hCNtLu0JehylgoiP8L4Gh/",
@@ -7654,7 +7654,7 @@ var allMusic = [
     
     style: "Rock",
     status: "nostatus",
-    canvas: "https://video.twimg.com/ext_tw_video/1593930652965117953/pu/vid/720x1280/Vgsa38pEeyXdDKl1.mp4?tag=12",
+    canvas: "https://d.rapidcdn.app/snapinsta?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL2luc3RhZ3JhbS5mY2drMjItMS5mbmEuZmJjZG4ubmV0L3YvdDY2LjMwMTAwLTE2LzEwMDAwMDAwXzE3NDMxNzE3NjYxMTU2OTVfMTM1NTg1NzY2Njg5NTczMzU1MV9uLm1wND9fbmNfaHQ9aW5zdGFncmFtLmZjZ2syMi0xLmZuYS5mYmNkbi5uZXQmX25jX2NhdD0xMDcmX25jX29oYz1MYzhwOEVoYWdBWUFYOUtuUlM4JmVkbT1BUF9WMTBFQkFBQUEmY2NiPTctNSZvaD0wMF9BZkFldlJ5LXNQVUhuYVlwQUhUaXRGQmY5UnRhREZFYVY3OE9pVnlrUUl4V1d3Jm9lPTY0OTlBN0M3Jl9uY19zaWQ9ODcyMWNmJmRsPTEiLCJmaWxlbmFtZSI6IlNuYXBpbnN0YS5hcHBfdmlkZW9fMTAwMDAwMDBfMTc0MzE3MTc2NjExNTY5NV8xMzU1ODU3NjY2ODk1NzMzNTUxX24ubXA0In0.LGNxKJSBEIZoGL0jV3kEpfbjvPOBTazJWzou2ZGzjrM&dl=1&dl=1",
 
     album: "blindfolded",
     album_cover: "https://i.scdn.co/image/ab67616d00001e026e573ccd18148b0770a67b64",
@@ -13645,7 +13645,7 @@ var allMusic = [
     gallery_img_8: "https://pbs.twimg.com/media/FNpGfpEXMAEMAe_?format=jpg&name=medium",
     gallery_img_9: "https://pbs.twimg.com/media/FCzMjI2XsAkWvR7?format=jpg&name=large",
     gallery_img_10: "https://pbs.twimg.com/media/FCzMjbbWQAARdVI?format=jpg&name=large",
-    canvas: "",
+    canvas: "https://ssscdn.io/ssstwitter/aHR0cHM6Ly92aWRlby50d2ltZy5jb20vZXh0X3R3X3ZpZGVvLzExNzQwMDM4Mjg3MTIyNTEzOTQvcHUvdmlkLzcyMHg3MjAvNVRMUVlCS1ZHalJqemJoVC5tcDQ/dGFnPTEw",
 
     thisis_img: "https://thisis-images.scdn.co/37i9dQZF1DZ06evO10966Q-default.jpg",
     radio_img: "https://seeded-session-images.scdn.co/v1/img/artist/1MIVXf74SZHmTIp4V4paH4/",
@@ -15188,7 +15188,6 @@ var allMusic = [
       twitter: "",
       facebook: "",
     },
-    user_playlist_1: "",
   },
   {
     name: "X",
@@ -15512,7 +15511,14 @@ var allMusic = [
     style: "Soundtrack",
     status: "nostatus",
     tag: "Popular",
-    canvas: "",
+    avatar: "ED-SHEERAN-1-BY-DAN-MARTENSEN-scaled-1-pfh4q9anbkubjdr9tjg7y9z46ic1fd95a2j4jawk94",
+    artist_img: "https://pbs.twimg.com/media/FkHq4KzXwAUn1zx?format=jpg&name=large",
+    gallery_img_1: "https://pbs.twimg.com/media/FkeNKjXWQAEcJwT?format=jpg&name=large",
+    gallery_img_2: "https://pbs.twimg.com/media/FC9kHWiWUAEOxVN?format=jpg&name=large",
+    gallery_img_3: "https://pbs.twimg.com/media/E_aVXgMVEAQvqDH?format=jpg&name=medium",
+    gallery_img_4: "https://pbs.twimg.com/media/E_IEbfeXsAYz1BY?format=jpg&name=large",
+    gallery_img_5: "https://pbs.twimg.com/media/EWtACzjWkAEEoK2?format=jpg&name=large",
+    canvas: "https://ssscdn.io/ssstwitter/aHR0cHM6Ly92aWRlby50d2ltZy5jb20vZXh0X3R3X3ZpZGVvLzE2NzI2MzcwNTA2NzQzNDgwMzQvcHUvdmlkLzEyODB4NTI4L2tUOEdUcFNEcklEY2VCQnkubXA0P3RhZz0xMg==",
 
     thisis_img: "https://i.scdn.co/image/ab67706f00000002d7c989820a3155855cc6da87",
     radio_img: "https://seeded-session-images.scdn.co/v1/img/artist/6eUKZXaKkcviH0Ku9w2n3V/pl",
@@ -15553,6 +15559,49 @@ var allMusic = [
     album_status: "false",
     id: "195",
     lyrics:{
+    },
+  },
+  {
+    name: "Rescue Me",
+    artist: "OneRepublic",
+    colaboration: "",
+    artist_status: "none",
+    language: "eng",
+    country: "usa",
+    artist_id: "67",
+
+    src: "",
+    img: "oneeasadffsa21q3asd-human",
+    img_mini: "https://resources.tidal.com/images/debf2942/0f33/44c7/89f9/dc9c681f3ffd/80x80.jpg",
+    
+    style: "Pop",
+    status: "nostatus",
+    tag: "Popular",
+    avatar: "ab676186000010164ab56db0de8efdd3498f6476",
+    artist_img: "https://resources.tidal.com/images/4342534f/36a5/4af5/bf2a/795471c52499/750x750.jpg",
+    gallery_img_1: "https://pbs.twimg.com/media/FkeNKjXWQAEcJwT?format=jpg&name=large",
+    gallery_img_2: "https://pbs.twimg.com/media/FC9kHWiWUAEOxVN?format=jpg&name=large",
+    gallery_img_3: "https://pbs.twimg.com/media/E_aVXgMVEAQvqDH?format=jpg&name=medium",
+    gallery_img_4: "https://pbs.twimg.com/media/E_IEbfeXsAYz1BY?format=jpg&name=large",
+    gallery_img_5: "https://pbs.twimg.com/media/EWtACzjWkAEEoK2?format=jpg&name=large",
+    canvas: "",
+
+    thisis_img: "https://thisis-images.scdn.co/37i9dQZF1DZ06evO3QKlpK-default.jpg",
+    radio_img: "https://seeded-session-images.scdn.co/v1/img/artist/6wdvERzX4CUCOXu6hSS95x/",
+    style_img: "https://i.scdn.co/image/ab67706f00000002d8d473fcf275f04f49e59552",
+    
+    album: "Human",
+    album_cover: "https://resources.tidal.com/images/debf2942/0f33/44c7/89f9/dc9c681f3ffd/1280x1280.jpg",
+    album_premiere: "2021",
+    album_status: "false",
+    id: "196",
+    lyrics:{
+    },
+    bio: "Grammy nominated OneRepublic, is comprised of singer/songwriter and lead vocalist Ryan Tedder, guitarists Zach Filkins and Drew Brown, keys Brian Willett, bassist and cellist Brent Kutzle, and drummer Eddie Fisher. The band released their debut set Dreaming Out Loud in 2007. The release included the 20mm selling smash single “Apologize,” which shattered digital sales and airplay records worldwide and received a Grammy nomination. The band’s sophomore album, 2009’s Waking Up, produced the hit singles “All the Right Moves,” “Secrets” and “Good Life.” The certified-platinum album Native followed in 2013, featuring the No.1 hit and 41 million selling single “Counting Stars.” OneRepublic released Oh My My, their fourth full-length album in 2016. OneRepublic has amassed 5B streams on Spotify to date. OneRepublic’s latest album, Human, dropped on August 27, 2021. It features singles, which combined have over 2.5 billion global streams: “Someday”, “Run”, “Somebody To Love”, “Wanted”, “Didn’t I”, “Better Days” and “Rescue Me”. They most recently released their new single, “I Ain’t Worried,” which was featured in Top Gun: Maverick. Earlier this year, they released their single, “West Coast” to rave reviews. Their upcoming North American tour, “Never Ending Summer Tour,” will kick off in July of this year.",
+    social:{
+      instagram: "https://www.instagram.com/onerepublic/",
+      twitter: "https://twitter.com/onerepublic",
+      facebook: "https://www.facebook.com/OneRepublic",
     },
   },
 ]

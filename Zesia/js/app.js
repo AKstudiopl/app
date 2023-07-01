@@ -2102,7 +2102,7 @@ function artistProfileFeat(track){
         <img src="${favoritIt[i].img_mini}">
           <div class="music-artist-content-item-data">
             <h1>${favoritIt[i].name}</h1>
-            <span><p class="music-artist-content-item-lyrics"> ${Object.keys(favoritIt[i].lyrics).length}<p>${favoritIt[i].artist} • ${favoritIt[i].album} • ${favoritIt[i].album_premiere}</span>
+            <span><p class="music-artist-content-item-lyrics">  ${Object.keys(favoritIt[i].lyrics).length}<p>${favoritIt[i].artist} • ${favoritIt[i].album} • ${favoritIt[i].album_premiere}</span>
           </div>
           <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
        </div>`;
@@ -5364,7 +5364,9 @@ function collaborationItemCheck(){
   const collabBOXES = document.querySelectorAll(".music-artist-content-item.track-box .music-artist-content-item-data p");
   for(collabBOX of collabBOXES){
     if(collabBOX.innerText.length <= 4){
-      collabBOX.style.display="none";
+      collabBOX.innerText = '';
+      collabBOX.style.margin="0";
+      collabBOX.style.marginLeft = "3px";
     }else if(collabBOX.innerText.length >= 5){
       collabBOX.style.display="flex";
     }
@@ -5972,11 +5974,30 @@ function firstLoginUser_Exit(){
   }
 }
 
+function shuffle(array) {
+  let currentIndex = array.length,  randomIndex;
+
+  // While there remain elements to shuffle.
+  while (currentIndex != 0) {
+
+    // Pick a remaining element.
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+}
+
 function loadUserStylePlaylists(){
   resultsFAV = document.querySelector("#dailyMixContainer")
   resultsFAV.innerHTML="";
 
   playlistsIt = allPlaylists.filter(x => x.play_style === localStorage.getItem('personalization-data-style_1') || x.play_style === localStorage.getItem('personalization-data-style_2'));
+  shuffle(playlistsIt);
 
   for (let i = 0; i < playlistsIt.length && i <= 10; i++) {
     let resultFAV =

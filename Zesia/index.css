@@ -708,7 +708,7 @@ input:checked + .slider:before {
   left: 0;
   bottom: 0;
   height: calc(100% - 160px);
-  filter: blur(15px);
+  filter: blur(15px) grayscale(1);
   -webkit-mask-image: -webkit-radial-gradient(black 0%, transparent 100%);
 }
 .search-ui-bg img
@@ -965,7 +965,7 @@ input:checked + .slider:before {
   position: fixed;
   bottom: 60px;
   z-index: 6;
-  height: calc(100% - 201px);
+  height: calc(100% - 146px);
   width: 100%;
   background-color: var(--background);
   display: none;
@@ -1598,28 +1598,35 @@ input:checked + .slider:before {
 }
 .library-tag-bar p
 {
-  border-radius: 15px;
-  padding: 0px 20px;
-  height: 45px;
-  background: rgba(0,0,0,0.1);
+  color: var(--color);
+  outline: 1px solid rgb(255 255 255 / 5%);
+  outline-offset: -1px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color);
-  outline: 1px solid rgb(255 255 255 / 10%);
-  outline-offset: -1px;
+  padding: 0 25px;
+  border-radius: 15px;
+  flex: 0 0 auto;
   transition: 0.3s;
+  font-family: 'Pathway Extreme';
+  font-weight: 100;
+  font-size: 14px;
+  background-size: 175%;
+  min-width: 30px;
   cursor: pointer;
 }
 .library-tag-bar p.active
 {
-  background-color: var(--maincolor);
-  transform: scale(.9);
+  background: var(--backgroundsecond);
+  outline: 1px solid rgb(255 255 255 / 10%);
+  outline-offset: -1px;
+  color: var(--color);
 }
 .library-tag-bar p:last-child
 {
-  height: 45px;
-  width: 45px;
+  height: 40px;
+  width: 40px;
   padding: 0;
 }
 .library-favorite-data
@@ -1871,6 +1878,7 @@ input:checked + .slider:before {
   color: var(--color);
   outline: 1px solid rgb(255 255 255 / 5%);
   outline-offset: -1px;
+  line-height: 1;
 }
 .head-content-item-bg-text
 {
@@ -2114,6 +2122,7 @@ input:checked + .slider:before {
   font-weight: 900;
   letter-spacing: 1px;
   color: var(--color);
+  line-height: 1;
 }
 .center-container .center-container-item p
 {
@@ -5211,7 +5220,7 @@ input:checked + .slider:before {
   width: calc(100% - 40px);
   padding: 20px 20px;
   z-index: 10;
-  position:absolute;
+  position: fixed;
 }
 .music-artist-item-controls a
 {
@@ -5229,7 +5238,7 @@ input:checked + .slider:before {
   backdrop-filter: blur(5px);
   transition: 0.3s;
   outline: 1px solid rgb(255 255 255 / 5%);
-  outline-offset: 5px;
+  outline-offset: -1px;
 }
 .music-artist-item-controls a:active
 {
@@ -7060,7 +7069,7 @@ font-family: 'Pathway Extreme';
   float: right;
   backdrop-filter: blur(5px);
   outline: 1px solid rgb(255 255 255 / 5%);
-  outline-offset: 5px;
+  outline-offset: -1px;
 }
 .music-artist-bio-controls a 
 {
@@ -7087,7 +7096,6 @@ width: 100%;
 {
   position: absolute;
   right: 15px;
-  width: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7666,17 +7674,19 @@ width: 100%;
   opacity: 1;
 }
 .user_profile_header_menu p.active span {
-  width: 100%;
-  height: 100%;
+  width: 200%;
+  height: 300%;
 }
 .user_profile_header_menu p span {
-  width: 100%;
+  width: 200%;
+  margin-left: -75%;
   transition: 0.5s;
   height: 0%;
   background-color: var(--maincolor);
   position: absolute;
   bottom: 0;
   z-index: -1;
+  transform: rotate(45deg);
 }
 .user_profile_header_content_action
 {
@@ -7953,14 +7963,13 @@ width: 100%;
   border-bottom: 1px var(--backgroundsecond) solid;
   font-size: 12px;
   padding-bottom: 5px;
-  font-family: arial;
+  width: 100%;
 }
 .user_profile_content_dailyStats_item span
 {
   color: var(--maincolor);
   font-weight: 900;
-  font-family: arial;
-  font-size: 16px;
+  font-size: 12px;
   text-overflow: hidden;
   max-height: 24px;
   display: flex;
@@ -9264,7 +9273,7 @@ font-family: 'Pathway Extreme';
   opacity: 0.5;
 }
 .track-options-item i {
-  padding-right: 20px;
+  padding-right: 15px;
 }
 .track-options-header
 {
@@ -10242,6 +10251,7 @@ textarea
   }
   .navbar-bottom-btn span
   {
+    margin-top: 0;
     transition: .25s;
     opacity: 0;
     position: absolute;
@@ -10252,6 +10262,11 @@ textarea
     padding: 5px 10px;
     border: 1px #32323d solid;
     filter: blur(5px) drop-shadow(-6mm 0mm 4mm var(--backgroundsecond));
+  }
+  .navbar-bottom-btn.active span
+  {
+    opacity: 1;
+    z-index: -1;
   }
   .fasttitle, .fastartist
   {
@@ -10530,7 +10545,7 @@ textarea
     padding: 0;
     margin-bottom: 50px;
   }
-  #navbar-logo a, #navbar-settings a
+  #navbar-logo a
   {
     border: none;
   }
@@ -10556,6 +10571,7 @@ textarea
   .navbar-bottom-btn.active a i
   {
     color: var(--background);
+    opacity: 1;
   }
   .track-options-header
   {
@@ -10776,6 +10792,14 @@ textarea
   .search-container::-webkit-scrollbar-thumb {
     background: var(--backgroundsecond);
     cursor: pointer;
+  }
+  .music-artist-item-controls
+  {
+    text-align: right;
+    width: calc(100% - 115px);
+    padding: 20px 20px;
+    z-index: 10;
+    position: fixed;
   }
 }
 
