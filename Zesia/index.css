@@ -10772,10 +10772,6 @@ textarea
   {
     text-decoration: underline;
   }
-  .settings-screen-item:last-child
-  {
-    margin: 120px;
-  }
   .history-contanier .music-artist-album-item:last-child
   {
     margin-bottom: 120px;
