@@ -1999,8 +1999,7 @@ input:checked + .slider:before {
 }
 .personal-item
 {
-  outline: 2px solid rgb(239 84 102 / 10%);
-  outline-offset: -4px;
+  outline: 2px solid rgb(239 84 102 / 50%);
   background: var(--backgroundsecond);
   background-image: url(https://static.vecteezy.com/system/resources/thumbnails/007/153/281/small/abstract-black-background-with-diagonal-lines-modern-dark-abstract-texture-design-for-presentations-or-business-free-vector.jpg);
   background-blend-mode: soft-light;
