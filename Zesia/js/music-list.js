@@ -6699,7 +6699,7 @@ var allMusic = [
     gallery_img_8: "https://pbs.twimg.com/media/FiC24RvXkAA5fZ8?format=jpg&name=900x900",
     gallery_img_9: "https://pbs.twimg.com/media/FirCZtAWIAAYuSY?format=jpg&name=360x360",
     gallery_img_10: "https://pbs.twimg.com/media/FUmiqOPWIAA6or1?format=jpg&name=900x900",
-    canvas: "https://ssscdn.io/ssstwitter/aHR0cHM6Ly92aWRlby50d2ltZy5jb20vZXh0X3R3X3ZpZGVvLzE2NDE3ODA1MjU3MjY2NjI2NTcvcHUvdmlkLzcyMHg3MjAvaGJtMUxVLVVMWW5BRGZ2WS5tcDQ/dGFnPTEy",
+    canvas: "https://video.twimg.com/ext_tw_video/1687486818646622209/pu/vid/1280x432/rpHQEbRagskXktyH.mp4?tag=12",
 
     thisis_img: "https://i.scdn.co/image/ab67706f000000027cda1a881997b0bb1ca0eb92",
     radio_img: "https://seeded-session-images.scdn.co/v1/img/artist/0C8ZW7ezQVs4URX5aX7Kqx/",
@@ -12715,7 +12715,7 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    canvas: "https://video.twimg.com/ext_tw_video/1567547044444635139/pu/vid/1238x720/3vQZiZj5L_vA4fcD.mp4?tag=12",
+    canvas: "https://ssscdn.io/ssstwitter/aHR0cHM6Ly92aWRlby50d2ltZy5jb20vZXh0X3R3X3ZpZGVvLzE2ODc0OTI1OTQ3OTA0MzY4NjQvcHUvdmlkLzEyODB4NDMyL3o0al9PY0h6eVlRaEFkLWgubXA0P3RhZz0xMg==",
     
     album: "Rare (Deluxe)",
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
@@ -12754,7 +12754,7 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    canvas: "https://video.twimg.com/ext_tw_video/1567547044444635139/pu/vid/1238x720/3vQZiZj5L_vA4fcD.mp4?tag=12",
+    canvas: "https://ssscdn.io/ssstwitter/aHR0cHM6Ly92aWRlby50d2ltZy5jb20vZXh0X3R3X3ZpZGVvLzE2ODc0OTA5Mzk4Mzk3ODI5MTIvcHUvdmlkLzEyODB4NDMyL2NMUWxsLTgwRVcwb1dqcEsubXA0P3RhZz0xMg==",
     
     album: "Rare (Deluxe)",
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
@@ -12793,7 +12793,7 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    canvas: "https://video.twimg.com/ext_tw_video/1567547044444635139/pu/vid/1238x720/3vQZiZj5L_vA4fcD.mp4?tag=12",
+    canvas: "https://ssscdn.io/ssstwitter/aHR0cHM6Ly92aWRlby50d2ltZy5jb20vZXh0X3R3X3ZpZGVvLzE2ODc0ODk1MDQ4NzYxNTA3ODQvcHUvdmlkLzEyODB4NDMyL3o1bXlWUmVQU0VxNlV4RTYubXA0P3RhZz0xMg==",
     
     album: "Rare (Deluxe)",
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
@@ -12832,7 +12832,7 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    canvas: "https://video.twimg.com/ext_tw_video/1567547044444635139/pu/vid/1238x720/3vQZiZj5L_vA4fcD.mp4?tag=12",
+    canvas: "https://ssscdn.io/ssstwitter/aHR0cHM6Ly92aWRlby50d2ltZy5jb20vZXh0X3R3X3ZpZGVvLzE2ODc0ODczMzYzNTgwMzU0NTYvcHUvdmlkLzEyODB4NDMyL3pvTkFoaTlTdFl6MHBqb2cubXA0P3RhZz0xMg==",
     
     album: "Rare (Deluxe)",
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
@@ -13211,7 +13211,7 @@ var allMusic = [
     style: "Pop",
     status: "nostatus",
     tag: "",
-    canvas: "https://video.twimg.com/ext_tw_video/1567547044444635139/pu/vid/1238x720/3vQZiZj5L_vA4fcD.mp4?tag=12",
+    canvas: "https://ssscdn.io/ssstwitter/aHR0cHM6Ly92aWRlby50d2ltZy5jb20vZXh0X3R3X3ZpZGVvLzE2ODc0OTEzOTc2MTg2Mzg4NDgvcHUvdmlkLzEyODB4NDMyL29jVWJjdFhUdzlMV2dTdXcubXA0P3RhZz0xMg==",
     
     album: "Rare (Deluxe)",
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
@@ -15570,7 +15570,7 @@ var allMusic = [
     country: "usa",
     artist_id: "67",
 
-    src: "",
+    src: "OneRepublic-RescueMe",
     img: "oneeasadffsa21q3asd-human",
     img_mini: "https://resources.tidal.com/images/debf2942/0f33/44c7/89f9/dc9c681f3ffd/80x80.jpg",
     

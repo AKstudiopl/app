@@ -3301,6 +3301,7 @@ input:checked + .slider:before {
   margin-left: auto;
   z-index: 1;
   position: relative;
+  margin-top: 15px;
 }
 .main-music-header.lyrics ~ .progress .timer
 {
