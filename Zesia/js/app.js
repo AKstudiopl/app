@@ -1672,6 +1672,10 @@ function clickedSingleAlbum(element){
       collaborationAlbumCheck();
       lyricsItemCheck();
     }, 200);
+
+    setTimeout(() => {
+      albumScreen.scrollTop = 0;
+    }, 250);
 }
 
 function collaborationAlbumCheck(){

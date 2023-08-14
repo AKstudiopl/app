@@ -2100,7 +2100,7 @@ var allMusic = [
 
     thisis_img: "https://i.scdn.co/image/ab67706f00000002df12c206fd3c49ad933943f3",
     radio_img: "https://seeded-session-images.scdn.co/v1/img/artist/6qqNVTkY8uBg9cP3Jd7DAH/",
-    style_img: "https://i.scdn.co/image/ab67706c0000da84471f0a2f011c8a021239d03d",  
+    style_img: "https://t.scdn.co/images/728ed47fc1674feb95f7ac20236eb6d7.jpeg",  
 
     album: "lovely",
     album_cover: "https://i.scdn.co/image/ab67616d00001e028a3f0a3ca7929dea23cd274c",
@@ -6097,6 +6097,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/ElxKwQ_WkAY48TP?format=jpg&name=medium",
     gallery_img_4: "https://i.scdn.co/image/2e5d776f02337d77aac60aa00419b3a16a09ac3f",
     gallery_img_5: "https://pbs.twimg.com/media/FhDMXwKXoAEy2u1?format=jpg&name=large",
+    gallery_img_6: "https://resources.tidal.com/images/c7d46919/e4cc/4b58/9d6f/6690bd776391/750x750.jpg",
     canvas: "https://video.twimg.com/ext_tw_video/1358714079767105536/pu/vid/360x450/Jb4UUzBton3NYQ0v.mp4?tag=10",
 
     thisis_img: "https://i.scdn.co/image/ab67706f000000023a5c7a66f95c32966024d606",

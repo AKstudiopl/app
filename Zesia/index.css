@@ -708,7 +708,7 @@ input:checked + .slider:before {
   left: 0;
   bottom: 0;
   height: calc(100% - 160px);
-  filter: blur(15px) grayscale(1);
+  filter: blur(15px);
   -webkit-mask-image: -webkit-radial-gradient(black 0%, transparent 100%);
 }
 .search-ui-bg img
@@ -7686,7 +7686,7 @@ width: 100%;
   position: absolute;
   bottom: 0;
   z-index: -1;
-  transform: rotate(45deg);
+  transform: rotate(25deg);
 }
 .user_profile_header_content_action
 {
