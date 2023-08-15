@@ -6841,7 +6841,7 @@ font-family: 'Pathway Extreme';
   height: 50px;
   cursor: pointer;
 }
-.music-artist-album-item:active
+.music-artist-album-item:hover
 {
   opacity: 0.5;
 }
@@ -7119,9 +7119,8 @@ width: 100%;
 }
 .music-artist-bio-data h1
 {
-  font-size: 24px;
+  font-size: 32px;
   color: var(--maincolor);
-  font-family: arial;
 }
 .music-artist-bio-stats span
 {

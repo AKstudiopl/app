@@ -2483,7 +2483,7 @@ var allMusic = [
     gallery_img_3: "https://pbs.twimg.com/media/Fc4GtsiWYAIwTcF?format=jpg&name=large",
     gallery_img_4: "https://pbs.twimg.com/media/Fc4GtshWIAIl2nU?format=jpg&name=large",
     gallery_img_5: "https://pbs.twimg.com/media/Fc4GtsoXwAEudCM?format=jpg&name=large",
-    canvas: "",
+    canvas: "https://mp4loop.xyz/videos/imagine-dragons-radioactive_228745.mp4",
 
     thisis_img: "https://i.scdn.co/image/ab67706c0000da84fb20878bffaec12a127e9131",
     radio_img: "https://seeded-session-images.scdn.co/v1/img/artist/53XhwfbYqKCa1cC15pYq2q/",
@@ -7449,7 +7449,7 @@ var allMusic = [
     
     style: "Pop",
     status: "nostatus",
-    canvas: "https://video.twimg.com/ext_tw_video/1578862553559711744/pu/vid/1280x720/WNAFTnge9u0th9fU.mp4?tag=12",
+    canvas: "https://mp4loop.xyz/videos/ariana-grande-break-up-with-your-girlfriend-i-m-bored_690244.mp4",
     
     album: "thank u, next",
     album_cover: "https://i.scdn.co/image/ab67616d00001e0256ac7b86e090f307e218e9c8",

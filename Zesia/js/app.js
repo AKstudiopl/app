@@ -1867,7 +1867,7 @@ function searchBarUse(){
 function shareSong(){
   var shareLink = document.createElement('input')
   text = '';
-  text = window.location.origin + "/#" + allMusic[indexNumb - 1].id;
+  text = window.location.origin + "/zesia/Zesia/#" + allMusic[indexNumb - 1].id;
   document.body.appendChild(shareLink);
   shareLink.value = text;
   shareLink.select();
@@ -4831,15 +4831,15 @@ function trackOption_Share(data){
   let trackID = data.parentElement.getAttribute('track-data');
 
   var shareLink = document.createElement('input'),
-  text = window.location.origin + "/#" + trackID;
+  text = window.location.origin + "/zesia/Zesia/#" + trackID;
   document.body.appendChild(shareLink);
   shareLink.value = text;
   shareLink.select();
   document.execCommand('copy');
   document.body.removeChild(shareLink);
-
-  copyAlert();
+  trackHideOptions();
 }
+
 function trackOption_Queue(data){
   let trackID = data.parentElement.getAttribute('track-data');
   let trackOBJECT = allMusicView.filter(x => x.id === trackID);
