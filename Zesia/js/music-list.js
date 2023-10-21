@@ -6227,21 +6227,288 @@ var allMusic = [
     album_status: "false",
     id: "92",
     lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
+      ve1:{
+        ls: "We're in the dark, it's getting late",
+        stamp: "16",
+      },
+      ve2:{
+        ls: "I really should go, he's waiting for me",
+        stamp: "24",
+      },
+      ve3:{
+        ls: "We both know it's not what it seems",
+        stamp: "32",
+      },
+      ve4:{
+        ls: "We both know what's between the sheets",
+        stamp: "39.5",
+      },
+      ve5:{
+        ls: "I know that it's a secret",
+        stamp: "46.5",
+      },
+      ve6:{
+        ls: "And that I gotta keep it",
+        stamp: "47.5",
+      },
+      ve7:{
+        ls: "But I want the lights on",
+        stamp: "49.5",
+      },
+      ve8:{
+        ls: "Yeah, I want the lights on",
+        stamp: "51",
+      },
+      ve9:{
+        ls: "And I don't want to run away anymore",
+        stamp: "53.5",
+      },
+      ve10:{
+        ls: "Leave the lights on, leave the lights on, leave the lights on",
+        stamp: "58",
+      },
+      ve11:{
+        ls: "What would they say, what would they do?",
+        stamp: "78.5",
+      },
+      ve12:{
+        ls: "Would it be trouble if they knew?",
+        stamp: "87.5",
+      },
+      ve13:{
+        ls: "I'm trying hard to make you see",
+        stamp: "95.5",
+      },
+      ve14:{
+        ls: "All that you are is all that I need",
+        stamp: "102.5",
+      },
+      ve15:{
+        ls: "I know that it's a secret",
+        stamp: "108.5",
+      },
+      ve16:{
+        ls: "And that I gotta keep it",
+        stamp: "111",
+      },
+      ve17:{
+        ls: "But I want the lights on",
+        stamp: "112",
+      },
+      ve18:{
+        ls: "Yeah, I want the lights on",
+        stamp: "115",
+      },
+      ve19:{
+        ls: "And I don't want to run away anymore",
+        stamp: "116.5",
+      },
+      ve20:{
+        ls: "Leave the lights on, leave the lights on",
+        stamp: "120",
+      },
+      ve21:{
+        ls: "I know that it's a secret",
+        stamp: "123",
+      },
+      ve22:{
+        ls: "And that I gotta keep it",
+        stamp: "126",
+      },
+      ve23:{
+        ls: "But I want the lights on",
+        stamp: "128.5",
+      },
+      ve24:{
+        ls: "Yeah, I want the lights on",
+        stamp: "130.5",
+      },
+      ve25:{
+        ls: "And I don't want to run away anymore",
+        stamp: "132",
+      },
+      ve26:{
+        ls: "Leave the lights on, leave the lights on, leave the lights on",
+        stamp: "136.5",
+      },
+      ve27:{
+        ls: "Let it out, let it out, let it out",
+        stamp: "156",
+      },
+      ve28:{
+        ls: "Let it out, let it out, let it out",
+        stamp: "164",
+      },
+      ve29:{
+        ls: "I know that it's a secret",
+        stamp: "171",
+      },
+      ve30:{
+        ls: "And that I gotta keep it",
+        stamp: "173",
+      },
+      ve31:{
+        ls: "But I want the lights on",
+        stamp: "175.5",
+      },
+      ve32:{
+        ls: "Yeah, I want the lights on",
+        stamp: "177.5",
+      },
+      ve33:{
+        ls: "And I don't want to run away anymore",
+        stamp: "179",
+      },
+      ve34:{
+        ls: "Leave the lights on, leave the lights on",
+        stamp: "183",
+      },
+      ve35:{
+        ls: "I know that it's a secret",
+        stamp: "188",
+      },
+      ve36:{
+        ls: "And that I gotta keep it",
+        stamp: "190",
+      },
+      ve37:{
+        ls: "But I want the lights on",
+        stamp: "190.5",
+      },
+      ve38:{
+        ls: "Yeah, I want the lights on",
+        stamp: "192",
+      },
+      ve39:{
+        ls: "And I don't want to run away anymore",
+        stamp: "195",
+      },
+      ve40:{
+        ls: "Leave the lights on, leave the lights on",
+        stamp: "199",
+      },
+      ve41:{
+        ls: "I know that it's a secret",
+        stamp: "203",
+      },
+      ve42:{
+        ls: "And that I gotta keep it",
+        stamp: "205",
+      },
+      ve43:{
+        ls: "But I want the lights on",
+        stamp: "207",
+      },
+      ve44:{
+        ls: "Yeah, I want the lights on",
+        stamp: "209",
+      },
+      ve45:{
+        ls: "And I don't want to run away anymore",
+        stamp: "211",
+      },
+      ve46:{
+        ls: "Leave the lights on, leave the lights on, leave the lights on",
+        stamp: "215",
+      },
+      ve47:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve48:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve49:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve50:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve51:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve52:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve53:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve54:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve55:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve56:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve57:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve58:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve59:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve60:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve61:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve62:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve63:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve64:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve65:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve66:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve67:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve68:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve69:{
+        ls: "",
+        stamp: "3600",
+      },
+      ve70:{
+        ls: "",
+        stamp: "3600",
+      },
     },
+
     bio: "Meiko's songs find common ground between indie pop and coffeehouse folk as her distinctive alto vocals share the spotlight alongside acoustic guitars, pianos, and unique arrangements. A longtime songwriter, Meiko was raised in the small town of Roberta, Georgia, where she discovered her love for public performance after singing at a Southern Baptist church. She then took up the guitar, playing her father's Gibson before receiving her own instrument as a birthday present. At the age of 18, Meiko left home for greener pastures, eventually resettling in Los Angeles and scheduling recurring performances at the Hotel Café, a popular haven for L.A.-based singer/songwriters.",
     social:{
       instagram: "https://www.instagram.com/meikomusic/",
