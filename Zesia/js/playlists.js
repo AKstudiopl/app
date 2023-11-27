@@ -27,7 +27,7 @@ var allPlaylists = [
     {
         name: "Cardio",
         description: "Cardio hits",
-        image: "https://i.scdn.co/image/ab67706f00000002708c623e2e1df4607775381b",
+        image: "https://seed-mix-image.spotifycdn.com/v6/img/desc/Cardio%20Fast/en/default",
 
         play_style: "Pop",
         play_id: "2",
@@ -54,7 +54,7 @@ var allPlaylists = [
     {
         name: "Mixes",
         description: "Mixes hits",
-        image: "https://i.scdn.co/image/ab67706c0000da84ffd13eb43efed7b6166bdbac",
+        image: "https://i.scdn.co/image/ab67706f000000023a0ce8df9f957525f62c9443",
 
         play_style: "Pop",
         play_id: "3",

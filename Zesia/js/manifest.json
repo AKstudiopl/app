@@ -3,6 +3,14 @@
   "theme_color": "#121212",
   "background_color": "#242424",
   "start_url": "../index.html",
-  "display": "fullscreen",
-  "orientation": "portrait"
+  "display": "standalone",
+  "description": "Your Daily Dose Of Music",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "../assets/1698600755221_100px.png",
+      "sizes": "100x100",
+      "type": "image/png"
+    }
+  ]
 }

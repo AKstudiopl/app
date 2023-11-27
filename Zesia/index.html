@@ -6,11 +6,13 @@
     <meta name="description" content="Music Hits Great Chill">
     <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="Destruido-Interior.woff2" as="font" type="font/woff2" crossorigin>
+    <link href="stylesheet.css" rel="stylesheet">
     <meta name="theme-color" content="#242424">
     <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="shortcut icon" type="image" href="assets/20230402_201236.png">
+    <link rel="shortcut icon" type="image" href="assets/1698600755221_100px.png">
     <link rel="manifest" href="js/manifest.json">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="js/app.js" defer></script>
 </head>
 <body class="preference green" oncontextmenu="return false;">
@@ -18,7 +20,7 @@
   <div class="loader">
       <i class="loader-tips"><i class="fa-regular fa-bell"></i>Save you music in liked tracks, by clicking heart icon</i>
       <img src="assets/20230402_201236.png"/>
-      <p><span>loading</span>2v1.0.15</p>
+      <p><span>loading</span>2v1.1</p>
       <div class="loader-shape"></div>
   </div>
 
@@ -108,6 +110,21 @@
 
         <p class="music-artist-content-title">Player config<span></span></p>
 
+        <div class="settings-screen-item" id="input-style" style="cursor: pointer;" onclick="premium_POPUP_OPEN()">
+          <div class="settings-screen-item-description">
+            <h3 style="color: var(--maincolor);">Premium</h3>
+            <a>Unlock All Features With Premium</a>
+          </div>
+          <i style="color: var(--maincolor); width: 40px; display: flex; align-items: center; justify-content: center;" class="fa-solid fa-crown"></i>
+        </div>
+
+        <div class="settings-screen-item" id="input-style" style="cursor: pointer;" onclick="tutorial_POPUP_OPEN()">
+          <div class="settings-screen-item-description">
+            <h3>View Tutorial</h3>
+            <a>Get started with Zesia with some of usefull tips</a>
+          </div>
+        </div>
+
         <div class="settings-screen-item" id="input-style">
             <div class="settings-screen-item-description">
               <h3>Dark Mode</h3>
@@ -152,6 +169,101 @@
         </div>
         <div class="settings-screen-item" id="input-style">
           <div class="settings-screen-item-description">
+            <h3>Disable UI Glass Effect</h3>
+            <a>It will change Artist profile design</a>
+          </div>
+          <div class="settings-screen-item-box" id="userSettingsUIArtist" onclick="ui_ARTIST_TOGGLE();settingsBoxToggle(this);">
+            <div class="settings-screen-item-box-toggle"></div>
+          </div>
+        </div>
+
+        <p class="music-artist-content-title">ZESIAXENGINE<span></span></p>
+
+        <div class="settings-lyrics-box">
+          <div class="settings-lyrics-box-content">
+            <p>In your eyes, there's heavy blue</p>
+            <p>One to love, and one to lose</p>
+            <p>Sweet divine, a heavy truth</p>
+          </div>
+          <div class="settings-lyrics-box-img">
+            <img src="https://i.scdn.co/image/ab67616d00004851307910d4242c0d6b1fedf955">
+          </div>
+          <span>
+            <a onclick="lyrics_customize_select(this)" data="1" class="active">1</a>
+            <a onclick="lyrics_customize_select(this)" data="2">2</a>
+            <a onclick="lyrics_customize_select(this)" data="3">3</a>
+          </span>
+        </div>
+  
+        <div class="settings-screen-item" id="input-style">
+          <div class="settings-screen-item-description">
+            <h3>Font Size</h3>
+            <a>Deafult 32 | Max 40 | Min 20</a>
+          </div>
+          <div class="settings-screen-item-number" data-name="fontSize" data-max="40" data-min="20" data-step="1">
+            <a onclick="lyrics_customize_down(this)"><i class="fa-solid fa-minus"></i></a>
+            <p>32</p>
+            <a onclick="lyrics_customize_up(this)"><i class="fa-solid fa-plus"></i></a>
+          </div>
+        </div>
+  
+        <div class="settings-screen-item" id="input-style">
+          <div class="settings-screen-item-description">
+            <h3>Gap Between Letters</h3>
+            <a>Deafult -1 | Max 5 | Min -5</a>
+          </div>
+          <div class="settings-screen-item-number" data-name="fontGap" data-max="5" data-min="-5" data-step="1">
+            <a onclick="lyrics_customize_down(this)"><i class="fa-solid fa-minus"></i></a>
+            <p>-1</p>
+            <a onclick="lyrics_customize_up(this)"><i class="fa-solid fa-plus"></i></a>
+          </div>
+        </div>
+  
+        <div class="settings-screen-item" id="input-style">
+          <div class="settings-screen-item-description">
+            <h3>Background Cover Blur</h3>
+            <a>Deafult 60 | Max 80 | Min 10</a>
+          </div>
+          <div class="settings-screen-item-number" data-name="bgBlur" data-max="80" data-min="10" data-step="5">
+            <a onclick="lyrics_customize_down(this)"><i class="fa-solid fa-minus"></i></a>
+            <p>60</p>
+            <a onclick="lyrics_customize_up(this)"><i class="fa-solid fa-plus"></i></a>
+          </div>
+        </div>
+
+        <div class="settings-screen-item" id="input-style">
+          <div class="settings-screen-item-description">
+            <h3>Active Up/Down Gap</h3>
+            <a>Deafult 20 | Max 40 | Min 10</a>
+          </div>
+          <div class="settings-screen-item-number" data-name="activeUpDownGap" data-max="40" data-min="10" data-step="10">
+            <a onclick="lyrics_customize_down(this)"><i class="fa-solid fa-minus"></i></a>
+            <p>20</p>
+            <a onclick="lyrics_customize_up(this)"><i class="fa-solid fa-plus"></i></a>
+          </div>
+        </div>
+
+        <div class="settings-screen-item" id="input-style">
+          <div class="settings-screen-item-description">
+            <h3>Active Left Gap</h3>
+            <a>Deafult 15 | Max 30 | Min 10</a>
+          </div>
+          <div class="settings-screen-item-number" data-name="activeLeftGap" data-max="30" data-min="10" data-step="5">
+            <a onclick="lyrics_customize_down(this)"><i class="fa-solid fa-minus"></i></a>
+            <p>15</p>
+            <a onclick="lyrics_customize_up(this)"><i class="fa-solid fa-plus"></i></a>
+          </div>
+        </div>
+
+        <div class="settings-screen-item" id="input-style">
+          <div class="settings-screen-item-description">
+            <h3>Restore To Deafult</h3>
+            <a>Deafult Configuration</a>
+          </div>
+        </div>
+
+        <div class="settings-screen-item" id="input-style">
+          <div class="settings-screen-item-description">
             <h3>Increase Lyrics Accuracy</h3>
             <a>Can decrease app optymalization</a>
           </div>
@@ -162,19 +274,17 @@
         <div class="settings-screen-item" id="input-style">
           <div class="settings-screen-item-description">
             <h3>Render Full Lyrics</h3>
-            <a>For deafult lyrics are rendered 30 seconds up front, changing this option can decrease app optymalization</a>
+            <a>Deafult lyrics are rendered 30 seconds up front, Can decrease app optymalization</a>
           </div>
           <div class="settings-screen-item-box" id="userSettingsLyricsRender" onclick="lyricsRender();settingsBoxToggle(this);">
             <div class="settings-screen-item-box-toggle"></div>
           </div>
         </div>
-        <div class="settings-screen-item" id="input-style">
+  
+        <div class="settings-screen-item" id="input-style" onclick="beta_build_version()">
           <div class="settings-screen-item-description">
-            <h3>Disable UI Glass Effect</h3>
-            <a>It will change Artist profile design</a>
-          </div>
-          <div class="settings-screen-item-box" id="userSettingsUIArtist" onclick="ui_ARTIST_TOGGLE();settingsBoxToggle(this);">
-            <div class="settings-screen-item-box-toggle"></div>
+            <h3>Show Build Version</h3>
+            <a>Refresh To Hide</a>
           </div>
         </div>
 
@@ -214,7 +324,7 @@
 
       <div class="settings-screen-item" id="input-style">
         <div class="settings-screen-item-description" onclick="default_user()">
-          <h3 style="color: var(--maincolor)">Clear Data</h3>
+          <h3>Clear Data</h3>
           <a>Favorites songs, artists, albums etc.</a>
         </div>
       </div>
@@ -226,14 +336,16 @@
         </div>
       </div>
 
-      <div class="settings-screen-item" id="input-style">
+      <div style="
+      width: 100%;
+  " class="settings-screen-item" id="input-style">
         <div style="
         display: flex;
         justify-content: space-between;
         width: 100%;
     " class="settings-screen-item-description">
           <h3>Version</h3>
-          <a>2v1.0.15</a>
+          <a id="version_build">2v1.1</a>
         </div>
       </div>
 
@@ -378,7 +490,7 @@
       <div class="head-content-top-action">
         <a onclick="historyScreenToggle()"><i class="fa-solid fa-clock-rotate-left"></i></a>
         <a onclick="fastLoadingPop();notifyToggle()"><i class="fa-regular fa-bell"></i></a>
-        <a class="settings-action-btn"><i class="fa-solid fa-gear"></i></a>
+        <a class="settings-action-btn" onclick="lyrics_customize_select(this)" data="1"><i class="fa-solid fa-gear"></i></a>
       </div>
 
     </div>
@@ -430,7 +542,7 @@
 
 <div class="personal-container">
   <div class="ui-title">
-    <p class="music-artist-content-title" style="font-size: 18px;">Your Style<span></span></p>
+    <p class="music-artist-content-title" style="font-size: 12px;">Your Style<span></span></p>
   </div>
 
   <div class="personal-container-items">
@@ -660,8 +772,8 @@
     </div>
 
     <div class="top-controls">
-      <a class="hide-Music-Menu"><i class="fa-solid fa-angle-left"></i></a>
-      <a href="zesia/" id="title-sound"><img src="brandsources\IMG_20220320_144711.png"/></a>
+      <a class="hide-Music-Menu"><i class="fa-solid fa-angle-down"></i></a>
+      <a href="zesia/" id="title-sound">ZESIA</a>
       <a class="top-controls-more-btn"><i class="fa-solid fa-ellipsis-vertical"></i></a>
     </div>
 
@@ -692,7 +804,8 @@
       </div>
       <div class="top-menu-list">
       <a class="top-menu-list-volume"><i class="fa-solid fa-volume-low"></i><span><input onchange="volumeSet(this)" value="100" type="range" step="1" min="0" max="100"><b class="volume-show-box"></b></span><i class="fa-solid fa-volume-high"></i></a>
-      <a onclick="favoriteItemOption()" class="top-menu-list-favorite"><i class="fa-regular fa-heart"></i><span> Like</span></a>      <a class="top-menu-list-artist" onclick="artistScreenDataLoad(this);topOptionFastExit()"><i class="fa-solid fa-user"></i><span> View Artist</span></a>
+      <a onclick="favoriteItemOption();" class="top-menu-list-favorite"><i class="fa-regular fa-heart"></i><span> Like</span></a>      <a class="top-menu-list-artist" onclick="artistScreenDataLoad(this);topOptionFastExit()"><i class="fa-solid fa-user"></i><span> View Artist</span></a>
+      <a class="top-menu-view-album" onclick="clickedSingleAlbum(this);fastLoadingPop();topOptionFastExit()"><i class="fa-solid fa-compact-disc"></i><span> View Album</span></a>
       <a class="copyUrl" onclick="shareSong()"><i class="fa-solid fa-share-nodes"></i><span> Share</span></a>
       <a class="timer-toggle"><i class="fa-regular fa-clock"></i><span> Set Timer</span></a>
       </div>
@@ -703,7 +816,7 @@
       <div class="timer-title timer-exit">
       </div>
       <div class="timer-title-font">
-        <p>Sleep Timer, pause music after</p>
+        <p>Stop audio in</p>
       </div>
       <div class="timer-option-container">
         <div class="timer-item" id="timer10">
@@ -926,7 +1039,14 @@
 
       </div>
 
-      <p class="music-artist-content-title">Fans Also Like<span></span></p>
+      <div class="ui-title">
+        <p class="music-artist-content-title">Fans Also Like<span></span></p>
+        <div class="ui-title-action">
+          <i class="fa-solid fa-chevron-left" onclick="scrollArtistLeft()"></i>
+          <i class="fa-solid fa-chevron-right" onclick="scrollArtistRight()"></i>
+        </div>
+      </div>
+
       <div class="music-artist-content-fanschoice"></div>
 
     </div>
@@ -965,12 +1085,12 @@
     <a class="history-option-exit" onclick="historyScreenToggle()"><i class="fa-solid fa-xmark"></i></a>
   </div>
   <div class="history-screen-top">
-    <img loading="lazy" src="https://pbs.twimg.com/media/Fcabj0FWIAAKT6-?format=jpg&name=large" data-scroll-speed="2" class="pespective_object" >
+    <img loading="lazy" src="https://e-cdn-images.dzcdn.net/images/artist/6b0dfef477e8064b714a8ba175bfc7c5/500x500-000000-80-0-0.jpg" data-scroll-speed="2" class="pespective_object" >
     <img class="history-screen-top-effect" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxwYXRoIGQ9Ik0wIDBoMzAwdjMwMEgweiIgZmlsdGVyPSJ1cmwoI2EpIiBvcGFjaXR5PSIuMDUiLz48L3N2Zz4=">
   </div>
   <div class="history-data">
     <span>Recently Played Songs</span>
-    <span>Contains 30 Songs</span>
+    <span>Contains 50 Songs</span>
   </div>
   <p class="music-artist-content-title">History<span></span></p>
   <div class="history-contanier">
@@ -1017,8 +1137,11 @@
   <p class="music-artist-content-title">Tracks<span></span></p>
   <div class="music-artist-album-screen-container"></div>
 
+  <p class="music-artist-content-title album-feat-artist">Featured Artists<span></span></p>
+  <div class="music-artist-album-screen-featured artists"></div>
+
   <p class="music-artist-content-title">You might also like<span></span></p>
-  <div class="music-artist-album-screen-featured"></div>
+  <div class="music-artist-album-screen-featured tracks"></div>
 
 </div>
 
@@ -1089,11 +1212,15 @@
 
       </div>
 
-      <span class="btn prev"><i class="fa-solid fa-chevron-left"></i></span>
-      <span class="btn next"><i class="fa-solid fa-chevron-right"></i></span>
+      <span onclick="scrollToPrevPage(this)" disabled="false" class="btn prev"><i class="fa-solid fa-chevron-left"></i></span>
+      <span onclick="scrollToNextPage(this)" disabled="false" class="btn next"><i class="fa-solid fa-chevron-right"></i></span>
   
     </div>
     
+  </div>
+
+  <div class="music-artist-bio-bg">
+    <img src="https://pbs.twimg.com/media/FzEIeT4XoAEOaS2?format=jpg&name=large">
   </div>
 
   <div class="music-artist-bio-stats">
@@ -1107,11 +1234,12 @@
   <div class="music-artist-bio-data">
     <h1 class="music-artist-bio-data-name"></h1>
     <p class="music-artist-bio-data-about"></p>
+    <a onclick="artistBio_ShowMore()">Show More</a>
   </div>
 
   <div class="music-artist-bio-social">
     <a class="music-artist-bio-social-instagram"><i class="fa-brands fa-instagram"></i> Instagram</a>
-    <a class="music-artist-bio-social-twitter"><i class="fa-brands fa-twitter"></i> Twitter</a>
+    <a class="music-artist-bio-social-twitter"><i class="fa-brands fa-x-twitter"></i> X / Twitter</a>
     <a class="music-artist-bio-social-facebook"><i class="fa-brands fa-facebook"></i> Facebook</a>
   </div>
 
@@ -1132,8 +1260,7 @@
       <img loading="lazy" data-scroll-speed="2" class="pespective_object" src="https://static-cdn.jtvnw.net/user-default-pictures-uv/dbdc9198-def8-11e9-8681-784f43822e80-profile_image-300x300.png">
     </div>
     <div class="user_profile_header_content_search active">
-      <p>Search In Profile</p>
-      <input type="text" placeholder="What do you want to search for?" id="user_profile_search_bar">
+      <input type="text" placeholder="Filter Tracks & Artists" id="user_profile_search_bar">
     </div>
   </div>
 
@@ -1141,8 +1268,9 @@
     <p class="user_profile_header_content_date">Joined : <span>Sunday, October 23th</span></p>
 
     <div class="user_profile_header_content_action">
-      <a onclick="errorPop()"><i class="fa-solid fa-pen"></i> Edit</a>
-      <a class="user_profile_action_search"><i class="fa-solid fa-search"></i> Search</a>
+      <a onclick="profileSettingsOpen()"><i class="fa-solid fa-pen"></i></a>
+      <a class="disabled"><i class="fa-solid fa-trophy"></i></a>
+      <a class="user_profile_action_search"><i class="fa-solid fa-search"></i></a>
     </div>
 
     <div class="user_profile_header_menu">
@@ -1157,15 +1285,19 @@
 
   </div>
 
+  <div class="user-profile-settings">
+
+  </div>
+
 </div>
 
 <div class="error_popup">
-  <i class="fa-solid fa-rocket"></i>
+  <i class="fa-solid fa-ban"></i>
   <div class="error_content">
-    <p>Houston, we have a problem</p>
-    <span>This feature is currently not available, try again later</span>
+    <p>Houston, we have a problem!</p>
+    <span>Your Typed Name Contained Banned Word/s, Please Consider Checking Our TOS To Avoid This Message In Future.</span>
   </div>
-  <i onclick="errorPop()" class="fa-solid fa-xmark"></i>
+  <i onclick="errorPopHide()" class="fa-solid fa-xmark"></i>
 </div>
 
 <div class="description_popop">
@@ -1187,7 +1319,7 @@
   </div>
   <div class="notification_top">
     <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxwYXRoIGQ9Ik0wIDBoMzAwdjMwMEgweiIgZmlsdGVyPSJ1cmwoI2EpIiBvcGFjaXR5PSIuMDUiLz48L3N2Zz4=">
-    <img loading="lazy" data-scroll-speed="2" class="pespective_object" src="https://pbs.twimg.com/media/Fcabj0FWIAAKT6-?format=jpg&name=large">
+    <img loading="lazy" data-scroll-speed="2" class="pespective_object" src="https://e-cdn-images.dzcdn.net/images/artist/6b0dfef477e8064b714a8ba175bfc7c5/500x500-000000-80-0-0.jpg">
   </div>
   <div class="notification_header">
     <p class="notification_header_main active">Followed</p>
@@ -1197,10 +1329,21 @@
 
     <div class="notification_item">
       <div class="notification_img">
+        <i class="fa-solid fa-scroll"></i>
+      </div>
+      <div class="notification_data">
+        <h2>ZesiaSwap official announced</h2>
+        <p>More informations in future</p>
+        <span><p>Developers</p><p>28/08/2023</p></span>
+      </div>
+    </div>
+
+    <div class="notification_item">
+      <div class="notification_img">
         <i class="fa-solid fa-microphone"></i>
       </div>
       <div class="notification_data">
-        <h2>Try out our Lyrics, and sing your favorites song's</h2>
+        <h2>Try out our Lyrics</h2>
         <p>Just click microphone icon while listening to music, and enjoy it even more!</p>
         <span><p>Developers</p><p>02/06/2023</p></span>
       </div>
@@ -1395,7 +1538,7 @@
   </div>
   <div class="playlist-popup-head">
     <div class="img-box">
-      <img src="https://e-cdns-images.dzcdn.net/images/playlist/d41d8cd98f00b204e9800998ecf8427e/200x200-000000-80-0-0.jpg">
+      <img onerror="this.src='https://e-cdns-images.dzcdn.net/images/playlist/d41d8cd98f00b204e9800998ecf8427e/200x200-000000-80-0-0.jpg'" src="">
     </div>
   </div>
   <div class="playlist-popup-data">
@@ -1403,13 +1546,84 @@
     <input minlength="3" maxlength="30" type="text" id="playlistName">
     <p>Image link <span>(url)</span></p>
     <input type="text" id="playlistImage">
-    <div class="playlist-popup-data-item">
-      <p>Private</p>
-      <div class="settings-screen-item-box">
-        <div class="settings-screen-item-box-toggle"></div>
+    <p>Create And Save <span>(Proflie / Library)</span></p>
+    <a onclick="create_Playlist_Data_Global()">Create</a>
+  </div>
+</div>
+
+<div class="premium-popup">
+  <div class="premium-popup-content">
+    <div class="premium-popup-content-img">
+      <div class="premium-popup-content-img-data">
+        <span>> > > > > > > ></span>
+        <p>Unlock All Features With Premium</p>
+      </div>
+      <img src="https://media.istockphoto.com/id/1127542345/photo/close-up-portrait-of-nice-lovely-sweet-attractive-calm-peaceful-conecnrated-focused-girl.jpg?s=612x612&w=0&k=20&c=krUDEb7Xj0qV1c0E-9GZBRU9gigojB-oFvzyS5ngXUw=">
+    </div>
+    <div class="premium-popup-content-text">
+      <div class="premium-popup-content-text-action">
+        <div class="premium-select" onclick="premium_POPUP_OPTION_ACTIVE(this)">
+          <div class="premium-box-icon"></div>
+          <p>Monthly</p>
+          <span>6.99$ <span>/ month</span></span>
+        </div>
+        <div class="premium-select active" onclick="premium_POPUP_OPTION_ACTIVE(this)">
+          <div class="premium-box-icon"></div>
+          <p>Yearly</p>
+          <span>4.99$ <span>/ month</span></span>
+        </div>
+      </div>
+      <div class="premium-popup-content-text-about">
+        <p>Unlock extra features</p>
+        <ul>
+          <li><i class="fa-solid fa-check"></i> Ad-free experience</li>
+          <li><i class="fa-solid fa-check"></i> Acces to exclusive content</li>
+          <li><i class="fa-solid fa-check"></i> Up to 25 playlists slots</li>
+          <li><i class="fa-solid fa-check"></i> Acces to special canvas</li>
+          <li><i class="fa-solid fa-check"></i> Ability to create lyrics</li>
+          <li><i class="fa-solid fa-check"></i> Customized events playlist</li>
+          <li><i class="fa-solid fa-check"></i> Upload Your Own Avatar</li>
+          <li><i class="fa-solid fa-check"></i> Faster support help</li>
+          <li style="opacity: .25;"><i style="color: var(--color); padding-right: 5px;" class="fa-solid fa-question"></i> Cake</li>
+        </ul>
+      </div>
+      <div class="premium-popup-content-text-bottom">
+        <a onclick="premium_POPUP_HIDE()">Maybe later</a>
+        <a>Finalize</a>
       </div>
     </div>
-    <a onclick="create_Playlist_Data_Global()">CREATE</a>
+  </div>
+</div>
+
+<div class="tutorial-popup" slide="1">
+  <div class="preload" style="display: none;">
+    <img src="https://cdn.mos.cms.futurecdn.net/normaSZpamH9ytc63Msjsn.jpg">
+    <img src="https://ds.static.rtbf.be/article/image/1920x1080/9/0/8/691dcb1d65f31967a874d18383b9da75-1604413035.jpg">
+    <img src="https://img.freepik.com/premium-photo/young-pretty-woman-happy-motivated-singing-song-with-microphone-presenting-event-having-party-enjoy-moment_1258-5909.jpg">
+    <img src="https://img.freepik.com/premium-photo/cheerful-attractive-young-woman-smiling-listening-music-from-mobile-phone-outdoors_171337-89529.jpg">
+    <img src="https://thatgrapejuice.net/wp-content/uploads/2021/08/the-weeknd-take-my-breath-tgj-1280x720.jpeg">
+  </div>
+  <div class="tutorial-popup-content">
+    <div class="tutorial-popup-content-img">
+      <img src="">
+    </div>
+    <div class="tutorial-popup-content-text">
+      <div class="tutorial-popup-content-text-top">
+        <p>Get started</p>
+        <span>Get started righ away and Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, perspiciatis excepturi porro inventore accusamus necessitatibus, laborum quaerat cupiditate ipsam cumque doloremque reiciendis maxime sapiente quidem.</span>
+        <div class="tutorial-popup-content-text-top-dots">
+          <div class="top-dot active"></div>
+          <div class="top-dot"></div>
+          <div class="top-dot"></div>
+          <div class="top-dot"></div>
+          <div class="top-dot"></div>
+        </div>
+        <div class="tutorial-popup-content-text-top-action">
+          <a onclick="tutorial_SLIDE_BACK()">Back</a>
+          <a onclick="tutorial_SLIDE_NEXT()">Next</a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
