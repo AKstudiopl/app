@@ -11763,6 +11763,10 @@ textarea
     width: 570px;
     text-align: left;
   }
+  .playlist-popup-data a
+  {
+    width: 570px;
+  }
   .playlist-popup-data
   {
     display: flex;

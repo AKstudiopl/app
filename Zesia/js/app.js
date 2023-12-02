@@ -560,7 +560,7 @@ function loadMusic(indexNumb){
   lyricsDataArtist.innerText = allMusic[indexNumb - 1].artist;
   lyricsDataTitle.innerText = allMusic[indexNumb - 1].name;
   musicTopArtistBtn.setAttribute("id", allMusic[indexNumb - 1].id);
-  document.title = 'Zesia / ' + allMusic[indexNumb - 1].artist + ' / ' + allMusic[indexNumb - 1].name + ' / '; 
+  document.title = allMusic[indexNumb - 1].artist + ' / ' + allMusic[indexNumb - 1].name + ' / '; 
   musicVolumeTop.innerText = Math.floor(localStorage.getItem("user_Volume")*100) + "%";
   document.querySelector('.top-menu-list-volume input').value = localStorage.getItem("user_Volume")*100;
   document.querySelector('.pc-volume-slider input').value = localStorage.getItem("user_Volume")*100;
