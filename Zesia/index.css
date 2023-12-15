@@ -2353,7 +2353,7 @@ input:checked + .slider:before {
 {
   position: absolute;
   top: 85px;
-  right: 5px;
+  right: 7px;
   width: 60px;
   height: 60px;
   border-radius: 15px;
@@ -2383,7 +2383,7 @@ input:checked + .slider:before {
   background: var(--backgroundsecond);
   outline: 1px solid rgb(255 255 255 / 10%);
   outline-offset: -1px;
-  border-radius: 50%;
+  border-radius: 25px;
   color: var(--color);
   align-items: center;
   justify-content: center;
@@ -3062,6 +3062,8 @@ input:checked + .slider:before {
   margin-left: 15px;
   margin-right: 15px;
   padding-top: 15px;
+  z-index: 1;
+  position: relative;
 }
 .top-controls #title-sound img
 {
@@ -3559,6 +3561,12 @@ input:checked + .slider:before {
   opacity: 1;
   visibility: visible;
   -webkit-mask-image: -webkit-linear-gradient(250deg, black 90%, transparent 100%);
+}
+.main-music-header.stretched
+{
+  margin: 0;
+  margin-top: -5px;
+  width: 100%;
 }
 .main-music-header.lyrics ~ .lyric-mode-toggle
 {
@@ -7866,9 +7874,8 @@ font-family: 'Pathway Extreme';
 }
 .music-artist-bio-data
 {
-  width: calc(100% - 60px);
+  width: calc(100% - 30px);
   border-radius: 15px;
-  margin: 15px;
   padding: 15px;
   background: rgba(0, 0, 0, 0.1);
 }
@@ -7881,7 +7888,6 @@ font-family: 'Pathway Extreme';
   letter-spacing: 0;
   overflow: hidden;
   max-height: 90px;
-  max-width: 500px;
 }
 .music-artist-bio-data p.all
 {
@@ -7917,9 +7923,8 @@ font-family: 'Pathway Extreme';
 }
 .music-artist-bio-social
 {
-  width: calc(100% - 60px);
+  width: calc(100% - 30px);
   padding: 15px;
-  margin: 15px;
   display: flex;
   flex-direction: column;
   margin-bottom: 90px;
@@ -7956,6 +7961,17 @@ font-family: 'Pathway Extreme';
 .music-artist-bio-social a i 
 {
   padding-right: 10px;
+}
+.music-artist-bio-main
+{
+  width: calc(100% - 30px);
+  margin: 15px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+  gap: 15px;
 }
 
 /* Scroll styles */
@@ -11167,10 +11183,6 @@ textarea
   {
     height: calc(100vh - 60px);
   }
-  .music-artist-bio-data a
-  {
-    max-width: 500px;
-  }
   .music-artist-content-artist-box, .content-video-item
   {
     max-width: 400px;
@@ -11799,7 +11811,7 @@ textarea
     margin-bottom: 40px;
     display: grid;
     justify-content: space-between;
-    grid-template-columns: repeat(3, 33%);
+    grid-template-columns: repeat(1, 100%);
   }
   .music-artist-content-container-viewAll p
   {
@@ -11889,6 +11901,14 @@ textarea
     padding: 20px 20px;
     z-index: 10;
     position: fixed;
+  }
+  .music-artist-bio-main
+  {
+    flex-direction: row;
+    display: grid;
+    justify-content: flex-start;
+    grid-template-columns: repeat(2, calc(50% - 7.5px));
+    grid-gap: 15px;
   }
 }
 
@@ -12040,4 +12060,32 @@ textarea
   {
     width: 75%;
   }
+}
+
+
+.main-music-header.stretched img {
+    width: 100%;
+    max-width: none;
+    filter: drop-shadow(rgba(25, 25, 34, 0.25) 0px 0px 2px) blur(0px);
+    outline: rgba(255, 255, 255, 0.1) solid 1px;
+    outline-offset: -1px;
+    transition: opacity 0.5s ease 0s;
+    object-fit: cover;
+    -webkit-mask-image: -webkit-linear-gradient(top, transparent 0%,rgba(0,0,0,0.75) 15%,black 75%, transparent 100%);
+    transform: scale(1.25);
+}
+.main-music-header.stretched.lyrics img
+{
+  width: calc(100% + 40px);
+    margin-left: 0px;
+    position: absolute;
+    display: none;
+    top: 0;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+    opacity: 0.25;
+    border-radius: 0px;
+    height: 100%;
+    -webkit-mask-image: -webkit-linear-gradient(black 0%, transparent 100%);
 }

@@ -176,6 +176,15 @@
             <div class="settings-screen-item-box-toggle"></div>
           </div>
         </div>
+        <div class="settings-screen-item" id="input-style">
+          <div class="settings-screen-item-description">
+            <h3>Stretched Track Cover</h3>
+            <a>It will affect player appearance</a>
+          </div>
+          <div class="settings-screen-item-box" id="userSettingsStretched" onclick="settings_StretchedToggle();settingsBoxToggle(this);">
+            <div class="settings-screen-item-box-toggle"></div>
+          </div>
+        </div>
 
         <p class="music-artist-content-title">ZESIAXENGINE<span></span></p>
 
@@ -1231,16 +1240,20 @@
     </div>
   </div>
 
-  <div class="music-artist-bio-data">
-    <h1 class="music-artist-bio-data-name"></h1>
-    <p class="music-artist-bio-data-about"></p>
-    <a onclick="artistBio_ShowMore()">Show More</a>
-  </div>
+  <div class="music-artist-bio-main">
 
-  <div class="music-artist-bio-social">
-    <a class="music-artist-bio-social-instagram"><i class="fa-brands fa-instagram"></i> Instagram</a>
-    <a class="music-artist-bio-social-twitter"><i class="fa-brands fa-x-twitter"></i> X / Twitter</a>
-    <a class="music-artist-bio-social-facebook"><i class="fa-brands fa-facebook"></i> Facebook</a>
+    <div class="music-artist-bio-data">
+      <h1 class="music-artist-bio-data-name"></h1>
+      <p class="music-artist-bio-data-about"></p>
+      <a onclick="artistBio_ShowMore()">Show More</a>
+    </div>
+
+    <div class="music-artist-bio-social">
+      <a class="music-artist-bio-social-instagram"><i class="fa-brands fa-instagram"></i> Instagram</a>
+      <a class="music-artist-bio-social-twitter"><i class="fa-brands fa-x-twitter"></i> X / Twitter</a>
+      <a class="music-artist-bio-social-facebook"><i class="fa-brands fa-facebook"></i> Facebook</a>
+    </div>
+  
   </div>
 
 </div>

@@ -3288,6 +3288,11 @@ function userSettingsLoad(){
     ui_ARTISTHEADER.classList.add('cfgHIDE');
   }
 
+  if(localStorage.getItem("trackCoverStretched")){
+    musicImgBox.classList.add("stretched");
+    document.querySelector("#userSettingsStretched").classList.add('active');
+  }
+
   if (content.classList.contains('green')) {
     document.documentElement.style.setProperty('--maincolor', '#ef5466');
     document.documentElement.style.setProperty('--maincolorhover', '#DB7176');
@@ -8748,4 +8753,16 @@ function quick_Play(e){
   indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
   loadMusic(indexNumb);
   playMusic();
+}
+
+settings_Stretched = document.querySelector("#userSettingsStretched")
+
+function settings_StretchedToggle(){
+  if(musicImgBox.classList.contains("stretched")){
+    localStorage.removeItem("trackCoverStretched")
+    musicImgBox.classList.remove("stretched");
+  }else{
+    localStorage.setItem("trackCoverStretched", "1")
+    musicImgBox.classList.add("stretched");
+  }
 }
