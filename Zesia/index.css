@@ -2352,10 +2352,10 @@ input:checked + .slider:before {
 .center-container .center-container-item .center-container-item-action
 {
   position: absolute;
-  top: 75px;
-  right: 0;
-  width: 150px;
-  height: 150px;
+  top: 85px;
+  right: 5px;
+  width: 60px;
+  height: 60px;
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -2375,7 +2375,7 @@ input:checked + .slider:before {
 {
   font-size: 24px;
   width: 0%;
-  height: 50%;
+  height: 100%;
   display: flex;
   background: none;
   cursor: pointer;
@@ -2397,7 +2397,7 @@ input:checked + .slider:before {
 }
 .center-container-item:hover .center-container-item-action i
 {
-  width: 50%;
+  width: 100%;
   overflow: visible;
 }
 .center-container .center-container-item p
