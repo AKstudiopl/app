@@ -5990,13 +5990,11 @@ input:checked + .slider:before {
 }
 .music-artist-item-title img 
 {
-  width: calc(100% - 20px);
-  height: calc(120% - 20px);
-  border-radius: 25px;
+  width: 100%;
+  height: 120%;
   object-fit: cover;
   transition: 0s all;
   scroll-behavior: unset;
-  margin: 10px;
   object-position: top;
   outline: 2px groove rgb(255 255 255 / 10%);
   outline-offset: -10px;
@@ -11947,6 +11945,13 @@ textarea
   {
     flex-direction: column;
     width: 600px;
+  }
+}
+
+@media (min-width: 600px){
+  .settings-screen-item.pcHide
+  {
+    display: none !important;
   }
 }
 
