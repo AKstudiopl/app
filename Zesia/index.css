@@ -2666,7 +2666,7 @@ input:checked + .slider:before {
 {
   font-size: 16px;
   font-weight: 900;
-  font-family: 'Destruido';
+  font-family: 'Pathway Extreme';
 }
 .pc-controls-track-data span
 {
@@ -11907,6 +11907,40 @@ textarea
     justify-content: flex-start;
     grid-template-columns: repeat(2, calc(50% - 7.5px));
     grid-gap: 15px;
+  }
+  .settings-lyrics-box
+  {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .settings-screen-item:last-child
+  {
+    margin-bottom: 115px;
+  }
+  .user_profile_header_content
+  {
+    justify-content: space-between;
+  }
+  .user-profile-settings-box.images
+  {
+    grid-template-columns: repeat(12, calc(8.33% - 9px));
+  }
+  .user-profile-settings-box.images:last-child
+  {
+    margin-bottom: 115px;
+  }
+  .user-profile-settings-img-box
+  {
+    cursor: pointer;
+  }
+  .user-profile-settings-img-box.disabled
+  {
+    cursor:not-allowed
+  }
+  .music-artist-bio-main
+  {
+    margin-bottom: 55px;
   }
 }
 
