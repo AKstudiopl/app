@@ -2383,7 +2383,7 @@ input:checked + .slider:before {
   background: var(--backgroundsecond);
   outline: 1px solid rgb(255 255 255 / 10%);
   outline-offset: -1px;
-  border-radius: 25px;
+  border-radius: 15px;
   color: var(--color);
   align-items: center;
   justify-content: center;
