@@ -672,12 +672,12 @@ function loadMusic(indexNumb){
       artist: allMusic[indexNumb - 1].artist,
       album: allMusic[indexNumb - 1].album,
       artwork:  [
-      { src: `${allMusic[indexNumb - 1].image}`, sizes: '96x96',   type: 'image/jpg' },
-      { src: `${allMusic[indexNumb - 1].image}`, sizes: '128x128', type: 'image/jpg' },
-      { src: `${allMusic[indexNumb - 1].image}`, sizes: '192x192', type: 'image/jpg' },
-      { src: `${allMusic[indexNumb - 1].image}`, sizes: '256x256', type: 'image/jpg' },
-      { src: `${allMusic[indexNumb - 1].image}`, sizes: '384x384', type: 'image/jpg' },
-      { src: `${allMusic[indexNumb - 1].image}`, sizes: '512x512', type: 'image/jpg' },
+      { src: `${allMusic[indexNumb - 1].img}`, type: 'image/jpg' },
+      { src: `${allMusic[indexNumb - 1].img}`, type: 'image/jpg' },
+      { src: `${allMusic[indexNumb - 1].img}`, type: 'image/jpg' },
+      { src: `${allMusic[indexNumb - 1].img}`, type: 'image/jpg' },
+      { src: `${allMusic[indexNumb - 1].img}`, type: 'image/jpg' },
+      { src: `${allMusic[indexNumb - 1].img}`, type: 'image/jpg' },
                 ]
       });
 
@@ -722,6 +722,9 @@ function loadMusic(indexNumb){
           document.querySelector(".background-canvas video").src = allMusic[indexNumb - 1].canvas;
           document.querySelector(".background-canvas video").style.display="flex";
           document.querySelector(".background-canvas img").style.display="none";
+          document.querySelector(".background-canvas video").addEventListener('error', function(event) {
+            document.querySelector(".background-canvas video").src = "https://static.vecteezy.com/system/resources/previews/032/509/833/mp4/4k-elegant-black-gradient-smooth-animation-background-black-clean-corporate-background-loop-free-video.mp4";
+          }, true);
         }else{
           document.querySelector(".background-canvas video").src = "https://static.vecteezy.com/system/resources/previews/032/509/833/mp4/4k-elegant-black-gradient-smooth-animation-background-black-clean-corporate-background-loop-free-video.mp4";
           document.querySelector(".background-canvas video").style.display="flex";

@@ -14004,7 +14004,7 @@ var allMusic = [
     country: "usa",
     artist_id: "58",
 
-    src: "",
+    src: "PanicAttheDisco-HighHopes",
     img: "ab67616d00001e02c5148520a59be191eea16989",
     img_mini: "https://i.scdn.co/image/ab67616d00004851c5148520a59be191eea16989",
     

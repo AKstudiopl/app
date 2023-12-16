@@ -11325,7 +11325,7 @@ textarea
   .navbar-bottom-btn
   {
     width: calc(100% - 10px);
-    background: rgb(50 50 61 / 75%);
+    background: rgb(50 50 61 / 50%);
   }
   .navbar-bottom-btn a:hover 
   {
@@ -11690,7 +11690,7 @@ textarea
   .navbar-bottom-btn a
   {
     border-radius: 20px;
-    border: 1px solid rgb(50, 50, 61);
+    border: none !important;
   }
   .navbar-bottom-btn.active a
   {
@@ -11983,7 +11983,7 @@ textarea
   }
   .settings-lyrics-box
   {
-    width: 900px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -12184,7 +12184,7 @@ textarea
     margin-bottom: 25px;
     width: 300px !important;
   }
-  .center-container .center-container-item
+  .library-slider .center-container .center-container-item
   {
     margin-top: 0;
   }
