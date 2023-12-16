@@ -297,6 +297,11 @@ function clickedSingle(element){
     clickedAllMusic = clickedAllMusic.filter(x => x.style === filterStyle);
   }
 
+  if(itemFilterBar.getAttribute('collaboration-data')){
+    let filterStyle = itemFilterBar.getAttribute('collaboration-data');
+    clickedAllMusic = clickedAllMusic.filter(x => x.colaboration_id === filterStyle);
+  }
+
   if(itemFilterBar.getAttribute('playlist-style')){
     let filterPlaylistStyle = itemFilterBar.getAttribute('playlist-style');
     let filterArtist = itemFilterBar.getAttribute('artist-data');
@@ -718,7 +723,7 @@ function loadMusic(indexNumb){
           document.querySelector(".background-canvas video").style.display="flex";
           document.querySelector(".background-canvas img").style.display="none";
         }else{
-          document.querySelector(".background-canvas video").src = "bg-assetFs.webm";
+          document.querySelector(".background-canvas video").src = "https://static.vecteezy.com/system/resources/previews/032/509/833/mp4/4k-elegant-black-gradient-smooth-animation-background-black-clean-corporate-background-loop-free-video.mp4";
           document.querySelector(".background-canvas video").style.display="flex";
           document.querySelector(".background-canvas img").style.display="none";
           musicCanvasVideo.currentTime = 1;
@@ -1221,10 +1226,8 @@ correctSoundBtn.addEventListener('click', () => {
 function lyricsShortcut(){
   if(musicImgBox.classList.contains("lyrics")){
     correctSoundBtn.classList.add('active');
-    document.querySelector('.pc-additional-buttons .fa-solid.fa-microphone').classList.add('active')
   }else{
     correctSoundBtn.classList.remove('active');
-    document.querySelector('.pc-additional-buttons .fa-solid.fa-microphone').classList.remove('active')
   }
 }
 
@@ -2252,7 +2255,7 @@ function artistProfileFeat(track){
   var track_View = allMusicView.filter(x => x.artist_id === track_View_key[0].artist_id);
 
   const resultsFAV = document.querySelector(".music-artist-content-feat");
-  var favoritIt = allMusicView.filter(x => x.colaboration === track_View[0].artist);
+  var favoritIt = allMusicView.filter(x => x.colaboration_id === track_View[0].artist_id);
 
   favoritIt.sort(function(a, b){
       return b.album_premiere - a.album_premiere;
@@ -2275,9 +2278,11 @@ function artistProfileFeat(track){
   var feat_title = document.querySelector("#ApperasOnCheck");
 
   if(favoritIt.length === 0){
+    resultsFAV.removeAttribute('collaboration-data');
     resultsFAV.style.display="none";
     feat_title.style.display="none";
   }else{
+    resultsFAV.setAttribute('collaboration-data', favoritIt[0].colaboration_id);
     resultsFAV.style.display="flex";
     feat_title.style.display="flex";
   }
@@ -3240,7 +3245,7 @@ function canvasToggle(){
       document.querySelector(".background-canvas img").style.display="none";
       musicCanvasVideo.play();
     }else{
-      document.querySelector(".background-canvas video").src = "bg-assetFs.webm";
+      document.querySelector(".background-canvas video").src = "https://static.vecteezy.com/system/resources/previews/032/509/833/mp4/4k-elegant-black-gradient-smooth-animation-background-black-clean-corporate-background-loop-free-video.mp4";
       document.querySelector(".background-canvas video").style.display="flex";
       document.querySelector(".background-canvas img").style.display="none";
       musicCanvasVideo.currentTime = 1;
@@ -5427,21 +5432,6 @@ function historyData(){
   rightClickOptions();
 }
 
-const yourStyleText = ['Pop', 'Chill', 'Energic', 'Hip-Hop', 'Latino', 'Workout', 'Rock'];
-const personalStyleItem = document.querySelector(".personal-item");
-const personalStyleItem_Title = document.querySelector(".personal-item h1");
-const personalStyleItem_BackTitle = document.querySelector(".personal-item h1:last-child");
-
-function personalItem(){
-  let randomPersonalText = Math.floor((Math.random() * yourStyleText.length));
-
-  personalStyleItem_Title.innerText = yourStyleText[randomPersonalText];
-  personalStyleItem_BackTitle.innerText = yourStyleText[randomPersonalText];
-  personalStyleItem.setAttribute('style-data', yourStyleText[randomPersonalText])
-}
-
-personalItem();
-
 
 function library_load_albums() {
   const resultsFAV = document.querySelector(".library-slider .center-container-scrollable");
@@ -7303,7 +7293,7 @@ function library_FILTER_ARTIST(){
   }
 
   for(object_VISIBLE of objects_VISIBLE){
-    object_VISIBLE.style.display='flex';
+    object_VISIBLE.style.display='inline-flex';
   }
 }
 
@@ -7321,7 +7311,7 @@ function library_FILTER_ALBUM(){
   }
 
   for(object_VISIBLE of objects_VISIBLE){
-    object_VISIBLE.style.display='flex';
+    object_VISIBLE.style.display='inline-flex';
   }
 }
 
@@ -7339,7 +7329,7 @@ function library_FILTER_PLAYLIST(){
   }
 
   for(object_VISIBLE of objects_VISIBLE){
-    object_VISIBLE.style.display='flex';
+    object_VISIBLE.style.display='inline-flex';
   }
 }
 
@@ -8764,5 +8754,18 @@ function settings_StretchedToggle(){
   }else{
     localStorage.setItem("trackCoverStretched", "1")
     musicImgBox.classList.add("stretched");
+  }
+}
+
+function pc_lyricsToggle(){
+  if(musicImgBox.classList.contains("lyrics")){
+    if(wrapper.classList.contains('active')){
+      wrapper.classList.remove('active');
+    }else{
+      wrapper.classList.add('active');
+    }
+  }else{
+    wrapper.classList.add('active');
+    trackLyrics();
   }
 }

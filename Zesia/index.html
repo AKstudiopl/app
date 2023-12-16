@@ -20,7 +20,7 @@
   <div class="loader">
       <i class="loader-tips"><i class="fa-regular fa-bell"></i>Save you music in liked tracks, by clicking heart icon</i>
       <img src="assets/20230402_201236.png"/>
-      <p><span>loading</span>2v1.1.6</p>
+      <p><span>loading</span>2v1.1.7</p>
       <div class="loader-shape"></div>
   </div>
 
@@ -354,7 +354,7 @@
         width: 100%;
     " class="settings-screen-item-description">
           <h3>Version</h3>
-          <a id="version_build">2v1.1.6</a>
+          <a id="version_build">2v1.1.7</a>
         </div>
       </div>
 
@@ -548,23 +548,6 @@
   </div>
 </div>
 
-
-<div class="personal-container">
-  <div class="ui-title">
-    <p class="music-artist-content-title" style="font-size: 12px;">Your Style<span></span></p>
-  </div>
-
-  <div class="personal-container-items">
-    <div class="personal-item" onclick="fastLoadingPop();yourStyleLoad(this)">
-      <span>EXPLORE</span>
-      <h1>EXPLORE</h1>
-      <h1>EXPLORE</h1>
-    </div>
-  </div>
-
-</div>
-
-
 <div class="center-container">
   <div class="ui-title">
     <p class="music-artist-content-title" style="font-size: 18px;">Recommended For Today<span></span></p>
@@ -757,9 +740,8 @@
       <i class="fa-solid fa-volume-high"></i>
     </div>
     <div class="pc-additional-buttons">
-      <i onclick="wrapper.classList.add('active');trackLyrics();" class="fa-solid fa-microphone"></i>
+      <i onclick="pc_lyricsToggle();" class="fa-solid fa-microphone"></i>
       <i onclick="topQueueMenuShow.classList.toggle('active');" class="fa-solid fa-list-ol"></i>
-      <i onclick="wrapper.classList.toggle('active');" class="fa-solid fa-angle-up"></i>
     </div>
   </div>
 </div>  
