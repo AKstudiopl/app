@@ -2261,7 +2261,6 @@ input:checked + .slider:before {
   display: inline-block;
   transition: 0.3s;
   margin-right: 20px;
-  margin-top: 10px;
   max-width: 150px;
   position: relative;
 }
@@ -2460,7 +2459,7 @@ input:checked + .slider:before {
   right: 0;
   background: var(--background);
   height:100px;
-  z-index: 7;
+  z-index: 11;
   display: none;
   align-items: center;
   border-top: 1px solid var(--backgroundsecond);
@@ -2630,6 +2629,7 @@ input:checked + .slider:before {
 {
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 .pc-controls-track img
 {
@@ -2678,10 +2678,9 @@ input:checked + .slider:before {
 }
 .pc-controls-proggres
 {
-  background: var(--background);
   width: 350px;
-  background: rgb(167 167 167 / 25%);
-  height: 5px;
+  background: rgba(0,0,0,0.1);
+  height: 7px;
   margin-bottom: 5px;
   border-radius: 3px;
   outline: 1px solid rgb(255 255 255 / 5%);
@@ -2694,6 +2693,7 @@ input:checked + .slider:before {
   background: var(--color);
   width: 0;
   height: 5px;
+  margin: 1px 0;
   border-radius: 2px;
   transition: 0.25s;
 }
@@ -2707,9 +2707,9 @@ input:checked + .slider:before {
 .pc-controls-proggres-timer
 {
   position: absolute;
-  top: -6px;
-  left: -30px;
-  width: calc(100% + 60px);
+  bottom: 0;
+  left: 0;
+  width: 410px;
   display: flex;
   align-items: center;
   font-size: 12px;
@@ -2717,6 +2717,7 @@ input:checked + .slider:before {
   opacity: 0.5;
   justify-content: space-between;
   font-family: 'Pathway Extreme';
+  z-index: -1;
 }
 .pc-additional-buttons
 {
@@ -3711,10 +3712,6 @@ input:checked + .slider:before {
   opacity: 0.5;
 }
 
-.top-controls.lyrics
-{
-  backdrop-filter: blur(5px);
-}
 .main-music-lyrics-box p{
   font-size: 32px;
   color: var(--color);
@@ -3899,7 +3896,7 @@ input:checked + .slider:before {
 {
   font-size: 20px;
   display: inline-block;
-  font-family: Arial;
+  font-family: "Pathway Extreme";
   line-height: 1;
   overflow: hidden;
   font-weight: 900;
@@ -3932,7 +3929,7 @@ input:checked + .slider:before {
 {
   color: var(--color);
   opacity: 0.5;
-  font-family: arial;
+  font-family: "Pathway Extreme";
   font-size: 12px;
 }
 .progress
@@ -3986,7 +3983,7 @@ input:checked + .slider:before {
   font-size: 10px;
   color: var(--color);
   font-weight: 100;
-  font-family: Destruido;
+  font-family: "Pathway Extreme";
 }
 .main-music-fast-navigation
 {
@@ -11021,6 +11018,10 @@ textarea
     width: calc(100% - 75px);
     left: 75px;
   }
+  .playlist-popup.active
+  {
+    top: -100px;
+  }
   .error_popup
   {
     width: calc(100% - 130px);
@@ -11632,6 +11633,18 @@ textarea
     transform: scale(.85);
     border-radius: 50%;
   }
+  .navbar-bottom .navbar-bottom-btn i, .navbar-bottom .navbar-bottom-btn img 
+  {
+    transition: .3s;
+  }
+  .navbar-bottom .navbar-bottom-btn:hover img
+  {
+    transform: scale(.85);
+  }
+  .navbar-bottom .navbar-bottom-btn:hover i
+  {
+    transform: scale(.85);
+  }
   #navbar-logo
   {
     display: flex;
@@ -11781,12 +11794,13 @@ textarea
   {
     width: 300px;
     max-width: 300px;
-    text-align: center;
+    text-align: left;
     overflow: hidden;
   }
   .us-yr
   {
     display: block;
+    text-align: left;
   }
   .search-ui-bg img
   {
@@ -12145,6 +12159,21 @@ textarea
   {
     width: 150px;
     height: 150px;
+  }
+  .library-slider .center-container-scrollable .center-container-item .center-container-item-action
+  {
+    top: 95px;
+    right: 25px;
+  }
+  .library-tag-bar
+  {
+    margin-bottom: 0;
+  }
+  .main-music-header.lyrics ~ .main-music-sec-nav .current-ad-box
+  {
+    left: 15px;
+    margin-bottom: 25px;
+    width: 300px !important;
   }
 }
 

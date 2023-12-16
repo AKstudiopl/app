@@ -201,7 +201,7 @@ activeSettingsBtn.addEventListener('click', () => {
 
 const navbarSettings = document.querySelector('#navbar-settings')
 navbarSettings.addEventListener('click', () => {
-  activeSettingsScreen.classList.add('active')
+  activeSettingsScreen.classList.toggle('active')
   userProfile.classList.remove("active");
   wrapper.classList.remove("active");
 })
@@ -2685,25 +2685,16 @@ userProfileActionSearch.addEventListener('click', () => {
 
 const userProfileFilterFavorite = document.querySelector(".user_profile_header_filter_by_favorite");
 const userProfileFilterPlaylist = document.querySelector(".user_profile_header_filter_by_playlist");
-const userProfileFilterFollowed = document.querySelector(".user_profile_header_filter_by_followed");
 
 userProfileFilterFavorite.addEventListener('click', () => {
   userProfileFilterFavorite.classList.add("active");
   userProfileFilterPlaylist.classList.remove("active");
-  userProfileFilterFollowed.classList.remove("active");
   favoriteLoadItemsProfile();
 })
 userProfileFilterPlaylist.addEventListener('click', () => {
   userProfileFilterFavorite.classList.remove("active");
   userProfileFilterPlaylist.classList.add("active");
-  userProfileFilterFollowed.classList.remove("active");
   createdPlaylistsContent();
-})
-userProfileFilterFollowed.addEventListener('click', () => {
-  userProfileFilterFavorite.classList.remove("active");
-  userProfileFilterPlaylist.classList.remove("active");
-  userProfileFilterFollowed.classList.add("active");
-  followedArtistsContent();
 })
 
 function followArtist(){
@@ -3077,6 +3068,7 @@ function featuringLoad(){
         </div>
        <h2>${favoritIt[i].album}</h2>
        <p>Album • ${favoritIt[i].album_premiere}</p>
+       <div class="center-container-item-action"><i onclick="quick_Play(this)" play-type="album" class="fa-solid fa-play"></i></div>
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }
@@ -4676,7 +4668,7 @@ function lyricsMode(){
               }            
             }
       }else{
-    resultsFAV.innerHTML = "<span>Song Doesn't Have Prepered Lyrics Yet, Try Again Later</span>"
+    resultsFAV.innerHTML = "<span>Song Doesn't Have Prepared Lyrics Yet, Try Again Later</span>"
   }
   
   
@@ -5189,6 +5181,7 @@ function homeFavortiesAlbums() {
           </div>
           <h2>${favoritIt[i].album}</h2>
           <p>${favoritIt[i].artist}</p>
+          <div class="center-container-item-action"><i onclick="quick_Play(this)" play-type="album" class="fa-solid fa-play"></i></div>
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }
@@ -5446,6 +5439,7 @@ function library_load_albums() {
             <h2>${favoritIt[i].album}</h2>
             <p>Album • ${favoritIt[i].artist} • ${favoritIt[i].album_premiere}</p>
           </div>
+          <div class="center-container-item-action"><i onclick="quick_Play(this)" play-type="album" class="fa-solid fa-play"></i></div>
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }
@@ -5474,6 +5468,7 @@ function library_load_artists() {
             <h2>${favoritIt[i].artist}</h2>
             <p>Artist • Verified</p>
           </div>
+          <div class="center-container-item-action"><i onclick="quick_Play(this)" class="fa-solid fa-play"></i></div>
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }
@@ -5487,6 +5482,12 @@ function library_load_artists() {
         productIds[prodId] = true;
       }
   });
+
+  setTimeout(() => {
+    $('.library-slider .center-container-scrollable .center-container-item-action i').click(function(event) {
+      event.stopPropagation();
+    });
+  }, 250);
 }
 
 function library_load_playlists(){
@@ -7263,6 +7264,7 @@ function reload_LIBRARY(){
     <h2>Liked songs</h2>
     <p>Playlist • Private</p>
   </div>
+  <div class="center-container-item-action"><i onclick="quick_Play(this)" play-type="liked" class="fa-solid fa-play"></i></div>
 </div>`;
   library_load_artists();
   library_load_albums();
@@ -8738,9 +8740,21 @@ function testingLyrics(){
 }
 
 function quick_Play(e){
+
+  if(e.getAttribute("play-type") === "album"){
+  let itemArtistId = e.parentElement.parentElement.getAttribute('artist-data');
+  let itemAlbum = e.parentElement.parentElement.getAttribute('data-album');
+  allMusic = allMusicView.filter(x => x.artist_id === itemArtistId && x.album === itemAlbum);
+  indexNumb = 1;     
+  }else if(e.getAttribute("play-type") === "liked"){
+    favoritesQueue();
+  }
+  else{
   let itemArtistId = e.parentElement.parentElement.getAttribute('artist-id');
-  allMusic = allMusicView.filter(x => x.artist_id === itemArtistId || x.colaboration_id === itemArtistId);
-  indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
+  allMusic = allMusicView.filter(x => x.artist_id === itemArtistId || x.colaboration_id === itemArtistId); 
+  indexNumb = Math.floor((Math.random() * allMusic.length) + 1);     
+  }
+
   loadMusic(indexNumb);
   playMusic();
 }

@@ -16263,4 +16263,44 @@ var allMusic = [
       facebook: "https://www.facebook.com/amymacdonaldmusic",
     },
   },
+  {
+    name: "Addicted To You",
+    artist: "Shakira",
+    colaboration: "",
+    artist_status: "none",
+    language: "eng",
+    country: "col",
+    artist_id: "73",
+
+    src: "Shakira-AddictedtoYou",
+    img: "500x500sha-000sad000-we80-0-0sad321fsaewhersr",
+    img_mini: "https://i.scdn.co/image/ab67616d000048514214ddc9e33e76de6a8ee888",
+    
+    style: "Latino",
+    status: "nostatus",
+    tag: "",
+    canvas: "",
+    
+    thisis_img: "https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO0jO79m-default.jpg",
+    radio_img: "https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/0EmeFodog0BfCgMzAIvKQp/pl",
+    style_img: "https://i.scdn.co/image/ab67706f000000023ca39fe739f756518cdf27d8",
+
+    album: "Sale el Sol",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e024214ddc9e33e76de6a8ee888",
+    album_premiere: "2010",
+    album_status: "false",
+    id: "204",
+    lyrics:{
+    },
+    bio: "Colombian singer-songwriter Shakira has sold over 80 million records worldwide and won numerous awards including three GRAMMYs and eleven Latin GRAMMYs. At the age of 18, she founded the Pies Descalzos (Barefoot) Foundation which provides education and nutrition to over 6,000 impoverished children in Colombia. In October 2011, Shakira was named a member of President Obama’s Advisory Commission on Educational Excellence for Hispanics. She served as coach on the 4th and 6th season of NBC's hit reality vocal competition series The Voice. Her tenth studio album Shakira was released in 2014, featuring hits such as Can’t Remember to Forget You, with Rihanna and La La La (Brazil 2014) which she performed at the finals of Fifa's World Cup 2014 in Brazil. In 2016, she starred as Gazelle in Disney’s record-breaking film Zootopia, as well as contributing to its soundtrack with Try Everything. She also launched La Bicicleta with fellow Colombian artist Carlos Vives, which remained #1 for 18 consecutive weeks in Colombia. It was followed up by Chantaje feat. Maluma. With over 2 billion views on YouTube, it is one of the platform’s biggest Latin hits in history. In November 2018 she wrapped her hugely successful El Dorado World Tour. 2019 saw the release of the concert film Shakira in Concert: El Dorado World Tour, which was shown in cinemas worldwide for one-night only. She performed at Super Bowl LIV in Miami and is currently working on new music.",
+    social:{
+      instagram: "https://www.instagram.com/shakira",
+      twitter: "https://twitter.com/shakira",
+      facebook: "https://www.facebook.com/shakira",
+    },
+    
+    tweet_title: "Links",
+    tweet_img: "https://pbs.twimg.com/media/FdRHojcXEAIBp3I?format=jpg&name=large",
+    tweet_href: "https://linktr.ee/shakira"
+  },
 ]
