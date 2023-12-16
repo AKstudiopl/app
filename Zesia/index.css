@@ -2263,6 +2263,7 @@ input:checked + .slider:before {
   margin-right: 20px;
   max-width: 150px;
   position: relative;
+  margin-top: 10px;
 }
 .center-container .center-container-item:first-child
 {
@@ -12167,13 +12168,17 @@ textarea
   }
   .library-tag-bar
   {
-    margin-bottom: 0;
+    margin-bottom: 5px;
   }
   .main-music-header.lyrics ~ .main-music-sec-nav .current-ad-box
   {
     left: 15px;
     margin-bottom: 25px;
     width: 300px !important;
+  }
+  .center-container .center-container-item
+  {
+    margin-top: 0;
   }
 }
 
