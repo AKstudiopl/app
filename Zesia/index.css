@@ -10378,7 +10378,7 @@ font-family: 'Pathway Extreme';
 .first-login-user
 {
   position: fixed;
-  z-index: 11;
+  z-index: 12;
   top: 0;
   height: 100%;
   width: 100%;
@@ -11019,9 +11019,17 @@ textarea
     width: calc(100% - 75px);
     left: 75px;
   }
-  .playlist-popup.active
+  .playlist-popup.active, .track-options-screen.active
   {
-    top: -100px;
+    top: -101px;
+  }
+  .queue-container
+  {
+    height: calc(100vh - 101px);
+  }
+  .queue-container.active
+  {
+    bottom: 101px;
   }
   .error_popup
   {
