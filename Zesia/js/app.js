@@ -4673,8 +4673,10 @@ function lyricsMode(){
             }
       }else{
     resultsFAV.innerHTML = "<span>Song Doesn't Have Prepared Lyrics Yet, Try Again Later</span>";
-    clearInterval(checkLyricsPerSec);
-    checkLyricsPerSec = setInterval(lyricsMode, 600000);
+    setTimeout(() => {
+      clearInterval(checkLyricsPerSec);
+      checkLyricsPerSec = setInterval(lyricsMode, 5000);
+    }, 500);
   }
   
   
@@ -5144,6 +5146,8 @@ function albumFavoriteToggle(obj){
     }
 
   }
+
+  navbarQuickBar();
 }
 
 function checkAlbumStatus(){
@@ -8755,6 +8759,22 @@ function quick_Play(e){
   }else if(e.getAttribute("play-type") === "liked"){
     favoritesQueue();
   }
+  else if(e.getAttribute("play-type") === "playlist"){
+    playlist_DATA = playlistResult.getAttribute('queue-long-data');
+    let playlistQueueLength = playlist_DATA.split(',').length-1;
+    let allQueue;
+  
+    allQueue = allMusicView.filter(x => x.id === "#");
+    for (let i = 0; i < playlistQueueLength; i++) {
+      queueMusic = allMusicView.filter(x => x.id === playlist_DATA.split(',')[i]);
+      allQueue = allQueue.concat(queueMusic)
+    }
+
+    allMusic = allQueue;
+    indexNumb=1;
+    loadMusic(indexNumb);
+    playMusic();
+  }
   else{
   let itemArtistId = e.parentElement.parentElement.getAttribute('artist-id');
   allMusic = allMusicView.filter(x => x.artist_id === itemArtistId || x.colaboration_id === itemArtistId); 
@@ -8789,3 +8809,39 @@ function pc_lyricsToggle(){
     trackLyrics();
   }
 }
+
+function navbarQuickBar() {
+  const resultsFAV = document.querySelector(".navbar-bottom-shortcuts");
+  var favoritIt = allMusicView.filter(x => x.album_status === "true");
+  resultsFAV.innerHTML = "";
+  for (let i = 0; i < favoritIt.length; i++) {
+    let resultFAV =
+    `<div class="navbar-shortcut-box" onclick="fastLoadingPop(); clickedSingleAlbum(this)" check-atr='${favoritIt[i].artist_id} ${favoritIt[i].album}' artist-data='${favoritIt[i].artist_id}' data-album='${favoritIt[i].album}'>
+    <p>
+      <img loading="lazy" src="${favoritIt[i].album_cover}">
+      <span>${favoritIt[i].album}</span>
+    </p>
+  </div>`;
+    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+  }
+
+  resultsFAV.insertAdjacentHTML("afterbegin", `<div class="navbar-shortcut-box" onclick="favoriteLibraryScreen(); checkLocalStorageData()">
+  <p>
+    <img loading="lazy" src="https://e-cdns-images.dzcdn.net/images/misc/679936b577879457668697f0e6f2c755/264x264-none-80-0-0.png">
+    <span>Liked</span>
+  </p>
+</div>`)
+
+  var productIds={};
+  $('.navbar-bottom-shortcuts .navbar-shortcut-box').each(function(){
+      var prodId = $(this).attr('check-atr');
+      if(productIds[prodId]){
+        $(this).remove();
+      }else{
+        productIds[prodId] = true;
+      }
+  });
+
+}
+
+navbarQuickBar();

@@ -16303,4 +16303,53 @@ var allMusic = [
     tweet_img: "https://pbs.twimg.com/media/FdRHojcXEAIBp3I?format=jpg&name=large",
     tweet_href: "https://linktr.ee/shakira"
   },
+  {
+    name: "All I Want For Christmas Is You",
+    artist: "Mariah Carey",
+    colaboration: "",
+    artist_status: "none",
+    language: "eng",
+    country: "us",
+    artist_id: "75",
+
+    src: "MariahCarey-AlliWantforChristmasIsYou",
+    img: "ab67616d00001e024246e3158421f5abb75abc4f",
+    img_mini: "https://i.scdn.co/image/ab67616d000048514246e3158421f5abb75abc4f",
+    
+    style: "Pop",
+    status: "nostatus",
+    tag: "Popular",
+    avatar_mini: "https://i.scdn.co/image/ab6761610000f17821b66418f7f3b86967f85bce",
+    avatar: "ab676186000010167b4a96143f83fff78dcb4699",
+    artist_img: "https://i.scdn.co/image/0953e83707e8890bc50197082971b1e3baab974c",
+    gallery_img_1: "https://i.scdn.co/image/c47c5d95df23ecc4bcb69c02bba3f464f9d4e270",
+    gallery_img_2: "https://i.scdn.co/image/4b9e7418276bc1765fd6a1f8a2371db6997d7cbf",
+    gallery_img_3: "https://i.scdn.co/image/ccb7a98a5869c4d6e88f2014a537288b8c7b899b",
+    gallery_img_4: "https://i.scdn.co/image/c6a8cbf16c7a56d97fc8136b21d999817286b321",
+    gallery_img_5: "https://i.scdn.co/image/7a102f0a96ad0882cbf52ae0d11e6bb873d62d53",
+    gallery_img_6: "https://i.scdn.co/image/2a851e5e4ddb107fd6c673a940a2cdaaa3dde014",
+    gallery_img_7: "https://i.scdn.co/image/96b43d464561ac8c969cdb0618af561e6e431ced",
+    gallery_img_8: "https://i.scdn.co/image/09548bf5026f151fc9b3775c8e3a767481943ac9",
+    gallery_img_9: "https://i.scdn.co/image/47da202fc9db4af678fe2c9e8a319dc30e60f44a",
+    gallery_img_10: "https://i.scdn.co/image/88b62fb822be6e9cff7365e663db3e82bccbdd92",
+    canvas: "",
+    
+    thisis_img: "https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO2w0gZW-default.jpg",
+    radio_img: "https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/4iHNK0tOyZPYnBU7nGAgpQ/pl",
+    style_img: "https://i.scdn.co/image/ab67706f00000002a5108016e7309a9e0a40a596",
+
+    album: "Merry Christmas",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e024246e3158421f5abb75abc4f",
+    album_premiere: "1994",
+    album_status: "false",
+    id: "205",
+    lyrics:{
+    },
+    bio: "Mariah Carey is the best-selling female artist of all time with more than 200 million albums sold to date and 19 Billboard Hot 100 #1 singles (18 self-penned), more than any solo artist in history. An inductee to the Songwriters Hall of Fame, Carey is a singer/songwriter/producer recognized with multiple Grammy Awards, American Music Awards, three Guinness World Record titles, Billboard’s “Artist of the Decade” and “Icon Award,” the World Music Award for “World's Best Selling Female Artist of the Millennium,” the Ivor Novello Award for “PRS for Music Special International Award,” and BMI’s “Icon Award” for her outstanding achievements in songwriting, to name a few. Carey’s ongoing impact has transcended the music industry. In 2009, Carey was recognized with the Breakthrough Performance Award at the Palm Spring International Film Festival for her critically acclaimed role in Lee Daniels’ “Precious.” Carey went on to appear in Daniels’ ensemble piece “The Butler” (2013). A Congressional Award recipient, Carey has generously donated her time and energy to a range of philanthropic causes near to her heart including Save the Music, the Make-A-Wish Foundation, World Hunger Relief, and the Elton John AIDS Foundation, among many others. A tremendous supporter of children’s charities, both domestic and international, Carey founded Camp Mariah in partnership with the Fresh Air Fund, a retreat for inner city children to explore career development.",
+    social:{
+      instagram: "https://www.instagram.com/mariahcarey",
+      twitter: "https://twitter.com/mariahcarey",
+      facebook: "https://www.facebook.com/mariahcarey",
+    },
+  },
 ]
