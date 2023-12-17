@@ -397,10 +397,10 @@ repeatBtn = wrapper.querySelector("#repeat"),
 shuffleBtn = wrapper.querySelector("#shuffle"),
 queueName = wrapper.querySelector(".queue-container .name"),
 queueImg = wrapper.querySelector(".queue-container img"),
-queueCurrentImg = wrapper.querySelector(".queue-current-item img"),
-queueCurrentTrack = wrapper.querySelector(".queue-current-data p"),
-queueCurrentArtist = wrapper.querySelector(".queue-current-data span"),
-queueCurrentBackgroundImg = wrapper.querySelector(".queue-gif img"),
+queueCurrentImg = document.querySelector(".queue-current-item img"),
+queueCurrentTrack = document.querySelector(".queue-current-data p"),
+queueCurrentArtist = document.querySelector(".queue-current-data span"),
+queueCurrentBackgroundImg = document.querySelector(".queue-gif img"),
 musicBackgroundImage = wrapper.querySelector(".background-music-img img"),
 musicTopOptionsImage = wrapper.querySelector(".top-more-head-image img"),
 musicTopOptionsName = wrapper.querySelector(".top-more-head-name"),
@@ -694,9 +694,7 @@ function loadMusic(indexNumb){
         nextMusic();
       });
       
-      queueCurrentImg.parentElement.classList.add("active");
       setTimeout(() => {
-        queueCurrentImg.parentElement.classList.remove("active");
         queueCurrentImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
         queueCurrentTrack.innerText = allMusic[indexNumb - 1].name;
         queueCurrentArtist.innerText = allMusic[indexNumb - 1].artist;
@@ -740,7 +738,7 @@ function loadMusic(indexNumb){
 }
 
 function queueDataLoad(){
-  const resultsFAV = wrapper.querySelector(".queue-item");
+  const resultsFAV = document.querySelector(".queue-item");
   resultsFAV.innerHTML = "";
   for (let i = 0; i < allMusic.length; i++) {
     let resultFAV = `<div class="queue-box" li-index="${i + 1}" track-id="${allMusic[i].id}" onclick="clickedQueueItem(this)">
@@ -1430,6 +1428,9 @@ function scrollToPrevPage(t) {
 
   function exitBio(){
     bioCard.classList.remove("active");
+    setTimeout(() => {
+      document.querySelector(".music-artist-bio-gallery .container .gallery").innerHTML = ``;
+    }, 250);
   }
 
   function removeThis(element){
@@ -4671,7 +4672,9 @@ function lyricsMode(){
               }            
             }
       }else{
-    resultsFAV.innerHTML = "<span>Song Doesn't Have Prepared Lyrics Yet, Try Again Later</span>"
+    resultsFAV.innerHTML = "<span>Song Doesn't Have Prepared Lyrics Yet, Try Again Later</span>";
+    clearInterval(checkLyricsPerSec);
+    checkLyricsPerSec = setInterval(lyricsMode, 600000);
   }
   
   

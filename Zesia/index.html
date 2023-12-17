@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Zesia</title>
     <meta charset="UTF-8">
@@ -20,7 +20,7 @@
   <div class="loader">
       <i class="loader-tips"><i class="fa-regular fa-bell"></i>Save you music in liked tracks, by clicking heart icon</i>
       <img src="assets/20230402_201236.png"/>
-      <p><span>loading</span>2v1.1.9</p>
+      <p><span>loading</span>2v1.1.10</p>
       <div class="loader-shape"></div>
   </div>
 
@@ -354,7 +354,7 @@
         width: 100%;
     " class="settings-screen-item-description">
           <h3>Version</h3>
-          <a id="version_build">2v1.1.9</a>
+          <a id="version_build">2v1.1.10</a>
         </div>
       </div>
 
@@ -482,12 +482,7 @@
 <div class="head-content">
 
   <div class="head_ui_color">
-    <p>EXPLORE
-      EXPLORE
-      EXPLORE
-      EXPLORE
-      EXPLORE
-    </p>
+    <img src="https://i.scdn.co/image/ab67616d00001e02186660bbf3b0dd9a5195e182">
   </div>
 
   <div class="head-content-top">
@@ -737,7 +732,7 @@
   <div class="pc-controls-add">
     <div class="pc-volume-slider">
       <i class="fa-solid fa-volume-low"></i>
-      <input onchange="volumeSet(this)" type="range" min="0" max="100" step="1"><div class="input-show-block"></div></input>
+      <input onchange="volumeSet(this)" type="range" value="100" min="0" max="100" step="1"><div class="input-show-block"></div></input>
       <i class="fa-solid fa-volume-high"></i>
     </div>
     <div class="pc-additional-buttons">
@@ -924,42 +919,41 @@
 
   </div>
 
-  <div class="queue-container">
-
-    <div class="queue-head"></div>
-
-    <div class="queue-container-top">
-      <h3>Now Playing</h3>
-      <a class="exit-queue"><i class="fa-solid fa-angle-down"></i></a>
-    </div>
-
-    <div class="queue-current-item">
-      <img src="">
-      <div class="queue-current-data">
-        <p>Title</p>
-        <span>Artist</span>
-      </div>
-      <div class="queue-gif">
-        <img src="">
-      </div>
-    </div>
-
-    <div class="queue-container-top">
-      <h3><i class="fa-solid fa-list-ol"></i>Next From</h3>
-    </div>
-
-    <div class="queue-item"> 
-        <ul>
-        </ul>
-    </div>
-
-  </div>
-
-
   <audio id="audio" src=""></audio>
 
 
 </div>
+</div>
+
+<div class="queue-container">
+
+  <div class="queue-head"></div>
+
+  <div class="queue-container-top">
+    <h3>Now Playing</h3>
+    <a class="exit-queue"><i class="fa-solid fa-angle-down"></i></a>
+  </div>
+
+  <div class="queue-current-item">
+    <img src="">
+    <div class="queue-current-data">
+      <p>Title</p>
+      <span>Artist</span>
+    </div>
+    <div class="queue-gif">
+      <img src="">
+    </div>
+  </div>
+
+  <div class="queue-container-top">
+    <h3><i class="fa-solid fa-list-ol"></i>Next From</h3>
+  </div>
+
+  <div class="queue-item"> 
+      <ul>
+      </ul>
+  </div>
+
 </div>
 
 
