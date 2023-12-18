@@ -2477,6 +2477,7 @@ input:checked + .slider:before {
   align-items: center;
   border-top: 1px solid var(--backgroundsecond);
   overflow: hidden;
+  content-visibility: hidden;
 }
 .pc-controls-ui
 {
@@ -6318,19 +6319,87 @@ font-family: 'Pathway Extreme';
 .music-artist-content-item {
   display: none;
   align-items: center;
-  width: 100%;
+  width: calc(100% - 10px);
+  margin: 0 5px;
   transition: 0.25s;
   height: 50px;
   cursor: pointer;
   transition: 0.3s;
+  border-radius: 15px;
+  position: relative;
 }
-.music-artist-content-item:hover
+.music-artist-content-container .music-artist-content-item::before
 {
-  opacity: 0.5;
+  font-family: "Font Awesome 5 Free";
+  content: "\f04b";
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  aspect-ratio: 1 / 1;
+  font-weight: 900;
+  position: absolute;
+  left: 5px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+  opacity: 0;
+  color: var(--color);
+}
+.music-artist-content-container .music-artist-content-item:hover::before
+{
+  opacity: .5;
+}
+.music-artist-content-item:hover .music-artist-content-number
+{
+  opacity: 0;
+}
+.music-artist-content-container .music-artist-content-item:hover
+{
+  opacity: 1;
+  background: var(--backgroundsecond);
+}
+.music-artist-content-feat .music-artist-content-item::before
+{
+  font-family: "Font Awesome 5 Free";
+  content: "\f04b";
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  aspect-ratio: 1 / 1;
+  font-weight: 900;
+  position: absolute;
+  left: 15px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+  opacity: 0;
+  color: var(--color);
+}
+.music-artist-content-feat .music-artist-content-item:hover::before
+{
+  z-index: 1;
+  opacity: 1;
+}
+.music-artist-content-feat .music-artist-content-item:hover
+{
+  opacity: 1;
+  background: var(--backgroundsecond);
+}
+.music-artist-content-feat .music-artist-content-item:hover img
+{
+  filter: brightness(75%);
 }
 .music-artist-content-item:nth-child(-n+10)
 {
   display: flex;
+}
+.music-artist-content-item:hover
+{
+  opacity: .5;
 }
 .music-artist-information-albums-item:nth-child(-n+3)
 {
@@ -6349,6 +6418,7 @@ font-family: 'Pathway Extreme';
   font-size: 24px;
   font-family: 'Pathway Extreme';
   font-weight: 100;
+  transition: .15s;
 }
 .music-artist-content-item .music-artist-content-number
 {
@@ -6730,7 +6800,7 @@ font-family: 'Pathway Extreme';
   display: -webkit-box;
   -webkit-line-clamp: 2;
   line-clamp: 2;
-  font-family: 'Pathway Extreme';
+  font-family: 'Destruido';
 }
 .music-artist-content-container, .music-artist-content-feat
 {
@@ -11858,6 +11928,7 @@ textarea
   }
   .music-pc-controls
   {
+    content-visibility: visible;
     display: flex;
   }
   .music-playlist-album-screen-top, .history-screen-top, .notification_top, .music-artist-album-screen-top
@@ -12249,10 +12320,29 @@ textarea
     aspect-ratio: 1/1;
     max-height: 300px;
     overflow-y: scroll;
-    min-height: 250px;
+    min-height: 150px;
+    height: auto;
     overflow-x: hidden;
     transition: .3s;
     content-visibility: visible;
+  }
+  .navbar-bottom-shortcuts::after
+  {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    height: 50px;
+    width: 100%;
+    background: var(--backgroundsecond);
+    z-index: 1;
+    -webkit-mask-image: -webkit-linear-gradient(transparent 0%, black 75%);
+    opacity: 1;
+  }
+  .navbar-bottom-shortcuts:hover::after
+  {
+    bottom: -5px;
+    opacity: 0;
+    height: 0px;
   }
   .navbar-bottom-shortcuts:hover
   {

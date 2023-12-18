@@ -8825,13 +8825,6 @@ function navbarQuickBar() {
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }
 
-  resultsFAV.insertAdjacentHTML("afterbegin", `<div class="navbar-shortcut-box" onclick="favoriteLibraryScreen(); checkLocalStorageData()">
-  <p>
-    <img loading="lazy" src="https://e-cdns-images.dzcdn.net/images/misc/679936b577879457668697f0e6f2c755/264x264-none-80-0-0.png">
-    <span>Liked</span>
-  </p>
-</div>`)
-
   var productIds={};
   $('.navbar-bottom-shortcuts .navbar-shortcut-box').each(function(){
       var prodId = $(this).attr('check-atr');
@@ -8842,6 +8835,45 @@ function navbarQuickBar() {
       }
   });
 
+  let playlist_DATA = 
+  [localStorage.getItem('playlist_user_1'),
+   localStorage.getItem('playlist_user_2'),
+   localStorage.getItem('playlist_user_3'),
+   localStorage.getItem('playlist_user_4'),
+   localStorage.getItem('playlist_user_5'),
+   localStorage.getItem('playlist_user_6'),
+   localStorage.getItem('playlist_user_7'),
+   localStorage.getItem('playlist_user_8'),
+   localStorage.getItem('playlist_user_9'),
+   localStorage.getItem('playlist_user_10'),];
+
+  let playlist_ARRAY = playlist_DATA.filter(x => x != null);
+  let playlist_COUNT = playlist_ARRAY.length;
+
+  for (let i = 0; i < playlist_COUNT; i++) {
+  tracks_COUNTER = playlist_ARRAY[i].split(',').length-4 + " Tracks";
+
+  let result =
+  `<div class="navbar-shortcut-box" onclick="fastLoadingPop();playlist_SELECT_CLICKED(this);" playlist-ID="${playlist_ARRAY[i].split(',')[3]}">
+    <p>
+      <img loading="lazy" src="${playlist_ARRAY[i].split(',')[2]}">
+      <span>${playlist_ARRAY[i].split(',')[0]}</span>
+    </p>
+   </div>`;
+
+   resultsFAV.insertAdjacentHTML("afterbegin", result);
+  }
+
+  resultsFAV.insertAdjacentHTML("afterbegin", `<div class="navbar-shortcut-box" onclick="favoriteLibraryScreen(); checkLocalStorageData()">
+  <p>
+    <img loading="lazy" src="https://e-cdns-images.dzcdn.net/images/misc/679936b577879457668697f0e6f2c755/264x264-none-80-0-0.png">
+    <span>Liked</span>
+  </p>
+</div>`)
 }
 
 navbarQuickBar();
+
+function navbarQuickScroll(){
+  document.querySelector(".navbar-bottom-shortcuts").scrollTop = 0
+}
