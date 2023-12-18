@@ -880,9 +880,6 @@ mainAudio.addEventListener("timeupdate", (e)=>{
   const currentTime = e.target.currentTime;
   const duration = e.target.duration;
   let progressWidth = (currentTime / duration) * 100;
-  progressBar.style.width = `${progressWidth}%`;
-  progressBarNavDone.style.width = `${progressWidth}%`;
-  pc_proggresCompleted.style.width = `${progressWidth}%`;
 
   let musicCurrentTime = wrapper.querySelector(".current-time"),
   musicDuartion = wrapper.querySelector(".max-duration");
@@ -893,8 +890,8 @@ mainAudio.addEventListener("timeupdate", (e)=>{
     if(totalSec < 10){
       totalSec = `0${totalSec}`;
     }
-    musicDuartion.innerText = `${totalMin}:${totalSec}`;
     pc_timerEnd.innerText = `${totalMin}:${totalSec}`;
+    musicDuartion.innerText = `${totalMin}:${totalSec}`;
   });
 
   let currentMin = Math.floor(currentTime / 60);
@@ -911,8 +908,16 @@ mainAudio.addEventListener("timeupdate", (e)=>{
     totalSec = `0${totalSec}`;
   }
   totalMin = `- ${totalMin}`;
-  musicCurrentTime.innerText = `${currentMin}:${currentSec}`;
-  pc_timerStart.innerText = `${currentMin}:${currentSec}`;
+
+  if(wrapper.classList.contains('active') && window.innerWidth <= 1000){
+    progressBar.style.width = `${progressWidth}%`;
+    musicCurrentTime.innerText = `${currentMin}:${currentSec}`;
+  }else if(window.innerWidth >= 1000){
+    pc_proggresCompleted.style.width = `${progressWidth}%`;
+    pc_timerStart.innerText = `${currentMin}:${currentSec}`;
+  }else{
+    progressBarNavDone.style.width = `${progressWidth}%`;
+  }
 
 });
 
@@ -1765,11 +1770,12 @@ function clickedSingleAlbum(element){
               <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
          </div>`;
       resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
-      albumScreenSongsNumber.innerText = $('.music-artist-album-screen-container .music-artist-album-item').length;
-    
+
       if(document.querySelectorAll(".music-artist-content-number")[i].innerText.length < 2){
         document.querySelectorAll(".music-artist-content-number")[i].innerText = 0 +document.querySelectorAll(".music-artist-content-number")[i].innerText;
       }
+      albumScreenSongsNumber.innerText = $('.music-artist-album-screen-container .music-artist-album-item').length;
+
     }
   
 
@@ -2164,6 +2170,12 @@ function artistScreenDataLoad(track){
     musicArtistScreen.scrollTop = 0;
   }, 250);
   loseFocus();
+
+  document.querySelector('.music-artist-content-playlists').classList.remove("fade-in")
+  document.querySelector('.music-artist-content-container').classList.remove("fade-in")
+  document.querySelector('.music-artist-content-album').classList.remove("fade-in")
+  document.querySelector('.music-artist-content-artist').classList.remove("fade-in")
+  document.querySelector('.music-artist-content-fanschoice').classList.remove("fade-in")
 }
 
 function artistProfilePopular(track){
@@ -6971,9 +6983,8 @@ $(document).on("keypress", function(e){
 
   if(activeHomeScreen.classList.contains('active') && !playlistSelectWindow.classList.contains('active') && !playlistScreen.classList.contains('active')){
 
-
     /* SPACE */
-    if(e.which == 32 || e.which == 115){
+    if(e.which == 32){
       if(wrapper.classList.contains('paused')){
         pauseMusic();
       }else{
@@ -6996,14 +7007,6 @@ $(document).on("keypress", function(e){
     /* P = PROFILE */
     if(e.which == 112){
       fastLoadingPop();loadUserProfile();loseFocus();
-    }
-    /* D = +10s */
-    if(e.which == 100){
-      mainAudio.currentTime = mainAudio.currentTime + 10;
-    }
-    /* A = -10s */
-    if(e.which == 97){
-      mainAudio.currentTime = mainAudio.currentTime - 10;
     }
     /* Q = QUEUE */
     if(e.which == 113){
@@ -7539,7 +7542,7 @@ function tutorial_SLIDE_LOAD(){
       tutorialPopupImg.classList.remove('fade');
       tutorialPopupImg.src = 'https://ds.static.rtbf.be/article/image/1920x1080/9/0/8/691dcb1d65f31967a874d18383b9da75-1604413035.jpg';
     }, 500);
- 
+ a
   }
   if(tutorialDATA === "3"){
     document.querySelector(".tutorial-popup-content-text-top-dots .top-dot.active").classList.remove('active');
@@ -8889,4 +8892,56 @@ navbarQuickBar();
 
 function navbarQuickScroll(){
   document.querySelector(".navbar-bottom-shortcuts").scrollTop = 0
+}
+
+function callbackFunc(entries, observer)
+{
+  entries.forEach(entry => {
+    if(entry.isIntersecting === true){
+      entry.target.classList.add('fade-in')
+    }
+  });
+}
+
+let options = {
+    root: null,
+    rootMargin: '-75px',
+    threshold: 0
+  };
+
+let observer = new IntersectionObserver(callbackFunc, options);
+
+observer.observe(document.querySelector('.music-artist-content-playlists'));
+observer.observe(document.querySelector('.music-artist-content-container'));
+observer.observe(document.querySelector('.music-artist-content-album'));
+observer.observe(document.querySelector('.music-artist-content-artist'));
+observer.observe(document.querySelector('.music-artist-content-fanschoice'));
+
+function lyricsTEST(){
+  const lyricsLenght = Object.getOwnPropertyNames(allMusic[indexNumb - 1].lyrics).length;
+  
+  if(allMusic[indexNumb - 1].lyrics.ve1){
+    let itest = 1;
+    for(var i = 1; i < lyricsLenght.length; i++){
+      console.log(allMusic[indexNumb - 1].lyrics[`.ve${i}`].ls)
+
+      if(allMusic[indexNumb - 1].lyrics[`ve${i}`].stamp - lyricsDelay < mainAudio.currentTime && allMusic[indexNumb - 1].lyrics[`ve${i}`].stamp != "" && !lyricsBox.classList.contains('atr-' + i)){
+      /*
+        lyricsBox.classList.add('atr-' + i);
+        if(allMusic[indexNumb - 1].lyrics[`ve${i}`].ls != undefined){
+          let resultFAV = 
+          `<p onclick="lyricsStamp(this)" timeAtr='${allMusic[indexNumb - 1].lyrics[`ve${i}`].stamp}'>${allMusic[indexNumb - 1].lyrics[`ve${i}`].ve1}</p>`;
+          resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+        }}else if(allMusic[indexNumb - 1].lyrics[`ve${i}`].stamp - lyricsGap < mainAudio.currentTime){
+          let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics[`ve${i}`].stamp + '"]');
+          lsAtr.classList.add("active");
+        */
+    }
+  }}else{
+    resultsFAV.innerHTML = "<span>Song Doesn't Have Prepared Lyrics Yet, Try Again Later</span>";
+    setTimeout(() => {
+      clearInterval(checkLyricsPerSec);
+      checkLyricsPerSec = setInterval(lyricsMode, 5000);
+    }, 500);
+  }
 }
