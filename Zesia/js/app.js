@@ -219,8 +219,20 @@ const musicMenuHide = document.getElementsByClassName('main-music')[0]
 hideMusicMenubtn.addEventListener('click', () => {
   musicMenuHide.classList.toggle('active')
   topOption.classList.remove('active');
-    topQueueMenuShow.classList.remove('active');
-})
+  topQueueMenuShow.classList.remove('active');
+
+  if(lyricsBox.classList.contains("active") && wrapper.classList.contains('active') === true){
+    if(localStorage.lyricsAccouracyImprove){
+      document.querySelector('.top-controls').classList.add('lyrics');
+      checkLyricsPerSec = setInterval(lyricsMode,250);
+    }else{
+      checkLyricsPerSec = setInterval(lyricsMode,500);
+    }
+    }else if(lyricsBox.classList.contains("active") && wrapper.classList.contains('active') === false){
+      clearInterval(checkLyricsPerSec);
+    }
+  lyricsShortcut();}
+)
 
 const showMusicMenubtn = document.getElementsByClassName('show-Music-Menu')[0]
 const musicMenuShow = document.getElementsByClassName('main-music')[0]
@@ -228,9 +240,31 @@ const musicMenuShowSec = document.getElementsByClassName('music-title')[0]
 
 showMusicMenubtn.addEventListener('click', () => {
   musicMenuShow.classList.toggle('active')
+  if(lyricsBox.classList.contains("active") && wrapper.classList.contains('active') === true){
+    if(localStorage.lyricsAccouracyImprove){
+      document.querySelector('.top-controls').classList.add('lyrics');
+      checkLyricsPerSec = setInterval(lyricsMode,250);
+    }else{
+      checkLyricsPerSec = setInterval(lyricsMode,500);
+    }
+    }else if(lyricsBox.classList.contains("active") && wrapper.classList.contains('active') === false){
+      clearInterval(checkLyricsPerSec);
+    }
+  lyricsShortcut();
 })
 musicMenuShowSec.addEventListener('click', () => {
   musicMenuShow.classList.toggle('active')
+  if(lyricsBox.classList.contains("active") && wrapper.classList.contains('active') === true){
+    if(localStorage.lyricsAccouracyImprove){
+      document.querySelector('.top-controls').classList.add('lyrics');
+      checkLyricsPerSec = setInterval(lyricsMode,250);
+    }else{
+      checkLyricsPerSec = setInterval(lyricsMode,500);
+    }
+    }else if(lyricsBox.classList.contains("active") && wrapper.classList.contains('active') === false){
+      clearInterval(checkLyricsPerSec);
+    }
+  lyricsShortcut();
 })
 
 function viewSearchHomeItems(){
@@ -968,6 +1002,8 @@ pc_proggres.addEventListener("click", (e)=>{
   }
 });
 
+var shuffleIndex;
+
 repeatBtn.addEventListener("click", ()=>{
   if (mainAudio.loop == false) {mainAudio.loop = true}
     else {mainAudio.loop = false};
@@ -993,8 +1029,8 @@ shuffleBtn.addEventListener("click", ()=>{
   for(i=0; i < allMusic.length; i++){
     shuffleArray = shuffleArray.concat(i);
   }
-  var shuffleIndex = shuffle(shuffleArray);
-  console.log(shuffleIndex)
+
+  shuffleIndex = shuffle(shuffleArray);
 });
 
 pc_repeat.addEventListener("click", ()=>{
@@ -7621,8 +7657,18 @@ function pc_lyricsToggle(){
   if(musicImgBox.classList.contains("lyrics")){
     if(wrapper.classList.contains('active')){
       wrapper.classList.remove('active');
+      if(lyricsBox.classList.contains("active") && wrapper.classList.contains('active') === false){
+        clearInterval(checkLyricsPerSec);
+        console.log("off")
+      }
     }else{
       wrapper.classList.add('active');
+      if(localStorage.lyricsAccouracyImprove){
+        document.querySelector('.top-controls').classList.add('lyrics');
+        checkLyricsPerSec = setInterval(lyricsMode,250);
+      }else{
+        checkLyricsPerSec = setInterval(lyricsMode,500);
+      }
     }
   }else{
     wrapper.classList.add('active');
@@ -7720,7 +7766,7 @@ observer.observe(document.querySelector('.music-artist-content-container'));
 observer.observe(document.querySelector('.music-artist-content-album'));
 observer.observe(document.querySelector('.music-artist-content-artist'));
 observer.observe(document.querySelector('.music-artist-content-fanschoice'));
-
+observer.observe(document.querySelector('.music-artist-content-feat'));
 
 observer.observe(document.querySelector('.center-container-scrollable.featuringArtistsBox'));
 observer.observe(document.querySelector('#favoriteAlbums'));

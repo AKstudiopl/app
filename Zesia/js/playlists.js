@@ -357,4 +357,24 @@ var allPlaylists = [
             track_30: "22"
         },
     },
+    {
+        name: "Christmas Pop",
+        description: "All the best in new and classic Christmas Pop!",
+        image: "https://i.scdn.co/image/ab67706f00000002a9631162322d66ffd169a263",
+
+        play_style: "Pop",
+        play_id: "11",
+        play_status: "",
+        play_date: "2023",
+        play_popularity: "1",
+        play_author: "Zesia",
+
+        content:{
+            track_1: "205",
+            track_2: "206",
+            track_3: "207",
+            track_4: "208",
+            track_5: "209",
+        },
+    },
 ]
