@@ -362,6 +362,7 @@ font-family: 'Pathway Extreme';
 #navbar-profile, #navbar-logo, #navbar-settings
 {
   display: none;
+  content-visibility: hidden;
 }
 .navbar-bottom .navbar-bottom-btn i
 {
@@ -2254,6 +2255,16 @@ input:checked + .slider:before {
   filter: drop-shadow(0px 10px 0px rgba(255, 255, 255, 0.5));
   -webkit-mask-image: -webkit-linear-gradient(240deg, transparent 0%, black 40%, black 60%, transparent 100%);
 }
+
+.center-container-scrollable.featuringArtistsBox, #favoriteAlbums, #popularPlaylists, #userPlaylists
+{
+  content-visibility: hidden;
+}
+.center-container-scrollable.featuringArtistsBox.fade-in, #favoriteAlbums.fade-in, #popularPlaylists.fade-in, #userPlaylists.fade-in
+{
+  content-visibility: visible;
+}
+
 .center-container-scrollable
 {
   display: flex;
@@ -3164,7 +3175,6 @@ input:checked + .slider:before {
   display: flex;
   color: var(--color);
   background-color: rgb(25 25 34 / 95%);
-  backdrop-filter: blur(5px);
 }
 .top-more-head-name
 {
@@ -3198,7 +3208,6 @@ input:checked + .slider:before {
   width: calc(100% - 30px);
   padding:0 15px;
   background-color: rgb(25 25 34 / 95%);
-  backdrop-filter: blur(5px);
 }
 .top-shortcut-item a
 {
@@ -3263,7 +3272,6 @@ input:checked + .slider:before {
   justify-content: flex-start;
   width: 100%;
   background-color: rgb(25 25 34 / 95%);
-  backdrop-filter: blur(5px);
   gap: 10px;
 }
 .top-menu-list a i
@@ -3565,9 +3573,7 @@ input:checked + .slider:before {
   overflow: scroll;
   display: flex;
   visibility: hidden;
-}
-.main-music-lyrics-box 
-{
+  will-change: transform;
   opacity: 0;
   transition: 0;
 }
@@ -3742,6 +3748,7 @@ input:checked + .slider:before {
   font-weight: 900;
   letter-spacing: -1px;
   max-width: 90%;
+  will-change: transform;
 }
 .main-music-lyrics-box::after
 {
@@ -6109,10 +6116,13 @@ input:checked + .slider:before {
   display: flex;
   transition: 0.3s !important;
   transform: translateY(25px);
+  content-visibility: hidden;
+  will-change: transform;
 }
 .current-ad-box.on
 {
   opacity: 1;
+  content-visibility: visible;
   transform: translateY(0px);
 }
 .music-artist-option-action
@@ -10982,22 +10992,23 @@ font-family: 'Pathway Extreme';
 {
   margin-right: 0;
 }
-
-
 .playlist-select
 {
   position: fixed;
-  top: 125vh;
+  top: 0;
   transition: 0.3s;
   color: var(--color);
   width: 100%;
   height: 100vh;
   background-color: var(--background);
   z-index: 10;
+  content-visibility: hidden;
+  transform: translateY(120vh);
 }
 .playlist-select.active
 {
-  top: 0;
+  content-visibility: visible;
+  transform: translateY(0);
 }
 .playlist-select-head p
 {
@@ -11882,6 +11893,10 @@ textarea
     transform: scale(.85);
     border-radius: 50%;
   }
+  #navbar-profile, #navbar-logo, #navbar-settings
+  {
+    content-visibility: visible;
+  }
   .navbar-bottom .navbar-bottom-btn i, .navbar-bottom .navbar-bottom-btn img 
   {
     transition: .3s;
@@ -12549,6 +12564,10 @@ textarea
     justify-content: center;
     border-radius: 20px;
     background: var(--background);
+  }
+  .center-container.your-playlists
+  {
+    margin-bottom: 10px;
   }
 }
 

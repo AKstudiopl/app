@@ -33,22 +33,8 @@ var allMusic = [
       album_premiere: "2017",
       album_status: "false",
       id: "1",
-      lyrics:{
-        lyrics_verse_1: "",
-        lyrics_verse_2: "",
-        lyrics_verse_3: "",
-        lyrics_verse_4: "",
-        lyrics_verse_5: "",
-        lyrics_verse_6: "",
-        lyrics_verse_7: "",
-        lyrics_verse_8: "",
-        lyrics_verse_9: "",
-        lyrics_verse_10: "",
-        lyrics_verse_11: "",
-        lyrics_verse_12: "",
-        lyrics_verse_13: "",
-        lyrics_verse_14: ""
-      },
+      lyrics:[
+      ],
       bio: "C-BooL (Grzegorz Cebula) was born on May 30, 1981 in Pyskowice in Silesia (Poland). Polish DJ, music producer and owner of C-Wave Records. Associated with club music from an early age. Works as a DJ since 1998 and started producing music in 2002. Diamond, multi platinum and golden records producer of many radio hits like Never Go Away, DJ Is Your Second Name, Magic Symphony, Wonderland, Catch You, Fire In My Head, La La Love and older club classics like Would You Feel and House Baby. Two-time winner of the Eska Music Awards in the hit of the year category (2016 & 2017). No 1 Hits - Shazam Poland, Radio Airplay Poland Top 3 Hits Airplay Russia In his 23-year DJ career C-BooL performed in hundreds of clubs in Poland and abroad. His DJ sets were presented in countries such as Germany, Austria, Italy, Bulgaria & UK",
       social:{
         instagram: "",
@@ -81,22 +67,8 @@ var allMusic = [
       album_premiere: "2016",
       album_status: "false",
       id: "2",
-      lyrics:{
-        lyrics_verse_1: "",
-        lyrics_verse_2: "",
-        lyrics_verse_3: "",
-        lyrics_verse_4: "",
-        lyrics_verse_5: "",
-        lyrics_verse_6: "",
-        lyrics_verse_7: "",
-        lyrics_verse_8: "",
-        lyrics_verse_9: "",
-        lyrics_verse_10: "",
-        lyrics_verse_11: "",
-        lyrics_verse_12: "",
-        lyrics_verse_13: "",
-        lyrics_verse_14: ""
-      },
+      lyrics:[
+      ],
 
       user_playlist_1: "",
   },
@@ -134,22 +106,8 @@ var allMusic = [
       album_premiere: "2012",
       album_status: "false",
       id: "3",
-      lyrics:{
-        lyrics_verse_1: "",
-        lyrics_verse_2: "",
-        lyrics_verse_3: "",
-        lyrics_verse_4: "",
-        lyrics_verse_5: "",
-        lyrics_verse_6: "",
-        lyrics_verse_7: "",
-        lyrics_verse_8: "",
-        lyrics_verse_9: "",
-        lyrics_verse_10: "",
-        lyrics_verse_11: "",
-        lyrics_verse_12: "",
-        lyrics_verse_13: "",
-        lyrics_verse_14: ""
-      },
+      lyrics:[
+      ],
       bio: "A rocker running in rap circles, singer/songwriter/producer Kevin Rudolf worked on multiple hit songs before making his own bid for stardom as the first rock artist signed to rap label",
       social:{
         instagram: "https://www.instagram.com/kevinrudolf/?theme=dark",
@@ -192,22 +150,8 @@ var allMusic = [
       album_premiere: "2019",
       album_status: "false",
       id: "4",
-      lyrics:{
-        lyrics_verse_1: "Just lose control Ride it, ride it, come touch my soul Ride it, ride it, let me feel you Ride it, turn the lights down low Ride it, from head to toe Ride it, ride it, come touch my soul Ride it, ride it, let me feel you",
-        lyrics_verse_2: "It's been a month and twenty days And we're going 'round and 'round, playing silly games Now you're saying, slow it down, not right now Then you wink at me and walk away Let it be, let it be, let it be known Hold on, don't go Touching and teasing me, telling me no But this time I need to feel you",
-        lyrics_verse_3: "Ride it, we're all alone Ride it, just lose control Ride it, ride it, come touch my soul Ride it, ride it, let me feel you Ride it, turn the lights down low Ride it, from head to toe Ride it, ride it, come touch my soul Ride it, ride it, let me feel you",
-        lyrics_verse_4: "Movida was the club on the Saturday You're actin' like a diva, sayin' you don't wanna pay It's gotta be ya feisty style, raised eyebrow I love it when you look at me that way Now we're in, you order a mojito at the bar Re-apply your lippy 'cause it came off on the glass The DJ plays your favorite song, Kanye's on Now ya beckoning for me to dance Mm, pullin' me, pullin' me, pullin' me close Just close your eyes, girl Whispering, tellin' me, we gotta go Won't you take me home? I wanna",
-        lyrics_verse_5: "Ride it, we're all alone Ride it, just lose control Ride it, ride it, come touch my soul Ride it, ride it, let me feel you Ride it, turn the lights down low Ride it, from head to toe Ride it, ride it, come touch my soul Ride it, ride it, let me feel you",
-        lyrics_verse_6: "Ride it, we're all alone Ride it, just lose control Ride it, ride it, come touch my soul Ride it, ride it, let me feel you Ride it, turn the lights down low Ride it, from head to toe Ride it, ride it, come touch my soul Ride it, ride it, let me feel you",
-        lyrics_verse_7: "Won't you take me home? I wanna, Ride it, we're all alone Ride it, just lose control Ride it, ride it, come touch my soul Ride it, ride it, let me feel you Ride it, turn the lights down low Ride it, from head to toe Ride it, ride it, come touch my soul Ride it, ride it, let me feel you",
-        lyrics_verse_8: "",
-        lyrics_verse_9: "",
-        lyrics_verse_10: "",
-        lyrics_verse_11: "",
-        lyrics_verse_12: "",
-        lyrics_verse_13: "",
-        lyrics_verse_14: ""
-      },
+      lyrics:[
+      ],
       bio: "Kosovan DJ & Producer Regard built up over 1 million Subscribers through his series of deep house mixes, remixes and original tracks in support of LEAF Management signed since of 2012. In July 2019 Regard released his first official single 'Ride It' in the other label at Ministry of Sound and managed by LEAF Management. 'Ride It' became an international hit, taking the internet and TikTok by storm, achieving over ten top 10 single chart placements globally, including #2 in the UK where 'Ride It' is now Certified Multi-Platinum. Regard finished the 'Ride It' campaign with an amazing debut at Capital's Jingle Bell Ball, and on his first TV performance in UK at Top of The Pops. Regard remixing Dua Lipa's hit 'Don't Start Me Now at February. Regard has released the latest record 'Secrets' featuring with Raye by the end of April, while it's running very well as second record by Regard. Regard contacts: ",
       social:{
         instagram: "https://www.instagram.com/djregardofficial/?theme=dark",
@@ -251,22 +195,8 @@ var allMusic = [
       album_premiere: "2021",
       album_status: "false",
       id: "5",
-      lyrics:{
-        lyrics_verse_1: "",
-        lyrics_verse_2: "",
-        lyrics_verse_3: "",
-        lyrics_verse_4: "",
-        lyrics_verse_5: "",
-        lyrics_verse_6: "",
-        lyrics_verse_7: "",
-        lyrics_verse_8: "",
-        lyrics_verse_9: "",
-        lyrics_verse_10: "",
-        lyrics_verse_11: "",
-        lyrics_verse_12: "",
-        lyrics_verse_13: "",
-        lyrics_verse_14: ""
-      },
+      lyrics:[
+      ],
       bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
       social:{
         instagram: "https://www.instagram.com/twentyonepilots/?theme=dark",
@@ -297,22 +227,8 @@ var allMusic = [
       album_premiere: "2021",
       album_status: "false",
       id: "6",
-      lyrics:{
-        lyrics_verse_1: "",
-        lyrics_verse_2: "",
-        lyrics_verse_3: "",
-        lyrics_verse_4: "",
-        lyrics_verse_5: "",
-        lyrics_verse_6: "",
-        lyrics_verse_7: "",
-        lyrics_verse_8: "",
-        lyrics_verse_9: "",
-        lyrics_verse_10: "",
-        lyrics_verse_11: "",
-        lyrics_verse_12: "",
-        lyrics_verse_13: "",
-        lyrics_verse_14: ""
-      },
+      lyrics:[
+      ],
 
       user_playlist_1: "",
   },
@@ -338,22 +254,8 @@ var allMusic = [
       album_premiere: "2021",
       album_status: "false",
       id: "7",
-      lyrics:{
-        lyrics_verse_1: "",
-        lyrics_verse_2: "",
-        lyrics_verse_3: "",
-        lyrics_verse_4: "",
-        lyrics_verse_5: "",
-        lyrics_verse_6: "",
-        lyrics_verse_7: "",
-        lyrics_verse_8: "",
-        lyrics_verse_9: "",
-        lyrics_verse_10: "",
-        lyrics_verse_11: "",
-        lyrics_verse_12: "",
-        lyrics_verse_13: "",
-        lyrics_verse_14: ""
-      },
+      lyrics:[
+      ],
 
       user_playlist_1: "",
   },
@@ -379,22 +281,8 @@ var allMusic = [
       album_premiere: "2021",
       album_status: "false",
       id: "8",
-      lyrics:{
-        lyrics_verse_1: "",
-        lyrics_verse_2: "",
-        lyrics_verse_3: "",
-        lyrics_verse_4: "",
-        lyrics_verse_5: "",
-        lyrics_verse_6: "",
-        lyrics_verse_7: "",
-        lyrics_verse_8: "",
-        lyrics_verse_9: "",
-        lyrics_verse_10: "",
-        lyrics_verse_11: "",
-        lyrics_verse_12: "",
-        lyrics_verse_13: "",
-        lyrics_verse_14: ""
-      },
+      lyrics:[
+      ],
 
       user_playlist_1: "",
   },
@@ -420,22 +308,8 @@ var allMusic = [
       album_premiere: "2021",
       album_status: "false",
       id: "9",
-      lyrics:{
-        lyrics_verse_1: "",
-        lyrics_verse_2: "",
-        lyrics_verse_3: "",
-        lyrics_verse_4: "",
-        lyrics_verse_5: "",
-        lyrics_verse_6: "",
-        lyrics_verse_7: "",
-        lyrics_verse_8: "",
-        lyrics_verse_9: "",
-        lyrics_verse_10: "",
-        lyrics_verse_11: "",
-        lyrics_verse_12: "",
-        lyrics_verse_13: "",
-        lyrics_verse_14: ""
-      },
+      lyrics:[
+      ],
       bio: "Twenty One Pilots shook the world with the release of their 2015 LP BLURRYFACE, an album that would go on to sell over 7 million copies worldwide and earn the band their first ever GRAMMY® Award as they shattered longstanding chart records, and captivated audiences worldwide on sold-out arena runs and at international festivals.  Now three years later, the duo of Tyler Joseph and Josh Dun have returned to write the next chapter of their story with TRENCH, the band’s highly anticipated new studio album.  TRENCH finds Twenty One Pilots fearlessly reimagining the possibilities of their music through the same candid expression and genuine identity that helped to cement their place as one of the largest bands in the world.",
 
       user_playlist_1: "",
@@ -462,22 +336,8 @@ var allMusic = [
       album_premiere: "2021",
       album_status: "false",
       id: "10",
-      lyrics:{
-        lyrics_verse_1: "",
-        lyrics_verse_2: "",
-        lyrics_verse_3: "",
-        lyrics_verse_4: "",
-        lyrics_verse_5: "",
-        lyrics_verse_6: "",
-        lyrics_verse_7: "",
-        lyrics_verse_8: "",
-        lyrics_verse_9: "",
-        lyrics_verse_10: "",
-        lyrics_verse_11: "",
-        lyrics_verse_12: "",
-        lyrics_verse_13: "",
-        lyrics_verse_14: ""
-      },
+      lyrics:[
+      ],
 
       user_playlist_1: "",
   },
@@ -503,22 +363,8 @@ var allMusic = [
       album_premiere: "2021",
       album_status: "false",
       id: "11",
-      lyrics:{
-        lyrics_verse_1: "",
-        lyrics_verse_2: "",
-        lyrics_verse_3: "",
-        lyrics_verse_4: "",
-        lyrics_verse_5: "",
-        lyrics_verse_6: "",
-        lyrics_verse_7: "",
-        lyrics_verse_8: "",
-        lyrics_verse_9: "",
-        lyrics_verse_10: "",
-        lyrics_verse_11: "",
-        lyrics_verse_12: "",
-        lyrics_verse_13: "",
-        lyrics_verse_14: ""
-      },
+      lyrics:[
+      ],
 
       user_playlist_1: "",
   },
@@ -544,22 +390,8 @@ var allMusic = [
       album_premiere: "2021",
       album_status: "false",
       id: "12",
-      lyrics:{
-        lyrics_verse_1: "",
-        lyrics_verse_2: "",
-        lyrics_verse_3: "",
-        lyrics_verse_4: "",
-        lyrics_verse_5: "",
-        lyrics_verse_6: "",
-        lyrics_verse_7: "",
-        lyrics_verse_8: "",
-        lyrics_verse_9: "",
-        lyrics_verse_10: "",
-        lyrics_verse_11: "",
-        lyrics_verse_12: "",
-        lyrics_verse_13: "",
-        lyrics_verse_14: ""
-      },
+      lyrics:[
+      ],
 
       user_playlist_1: "",
   },
@@ -593,22 +425,8 @@ var allMusic = [
       album_premiere: "2013",
       album_status: "false",
       id: "13",
-      lyrics:{
-        lyrics_verse_1: "",
-        lyrics_verse_2: "",
-        lyrics_verse_3: "",
-        lyrics_verse_4: "",
-        lyrics_verse_5: "",
-        lyrics_verse_6: "",
-        lyrics_verse_7: "",
-        lyrics_verse_8: "",
-        lyrics_verse_9: "",
-        lyrics_verse_10: "",
-        lyrics_verse_11: "",
-        lyrics_verse_12: "",
-        lyrics_verse_13: "",
-        lyrics_verse_14: ""
-      },
+      lyrics:[
+      ],
       bio: "",
       social:{
         instagram: "",
@@ -648,22 +466,8 @@ var allMusic = [
       album_premiere: "2009",
       album_status: "false",
       id: "14",
-      lyrics:{
-        lyrics_verse_1: "",
-        lyrics_verse_2: "",
-        lyrics_verse_3: "",
-        lyrics_verse_4: "",
-        lyrics_verse_5: "",
-        lyrics_verse_6: "",
-        lyrics_verse_7: "",
-        lyrics_verse_8: "",
-        lyrics_verse_9: "",
-        lyrics_verse_10: "",
-        lyrics_verse_11: "",
-        lyrics_verse_12: "",
-        lyrics_verse_13: "",
-        lyrics_verse_14: ""
-      },
+      lyrics:[
+      ],
       bio: "",
       social:{
         instagram: "https://www.instagram.com/szustyszesc/",
@@ -694,22 +498,8 @@ var allMusic = [
       album_premiere: "2010",
       album_status: "false",
       id: "15",
-      lyrics:{
-        lyrics_verse_1: "",
-        lyrics_verse_2: "",
-        lyrics_verse_3: "",
-        lyrics_verse_4: "",
-        lyrics_verse_5: "",
-        lyrics_verse_6: "",
-        lyrics_verse_7: "",
-        lyrics_verse_8: "",
-        lyrics_verse_9: "",
-        lyrics_verse_10: "",
-        lyrics_verse_11: "",
-        lyrics_verse_12: "",
-        lyrics_verse_13: "",
-        lyrics_verse_14: ""
-      },
+      lyrics:[
+      ],
 
       user_playlist_1: "",
   },
@@ -748,288 +538,243 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "16",
-    lyrics:{
-      ve1:{
+    lyrics:[
+      {
         ls: "I've been fuckin' hoes and poppin' pillies",
-        stamp: "12",
-      },
-      ve2:{
+        stamp: "12",},
+      {
         ls: "Man, I feel just like a rockstar (ayy, ayy)",
-        stamp: "14",
-      },
-      ve3:{
+        stamp: "14",},
+      {
         ls: "All my brothers got that gas",
-        stamp: "19",
-      },
-      ve4:{
+        stamp: "19",},
+      {
         ls: "And they always be smokin' like a Rasta",
-        stamp: "20",
-      },
-      ve5:{
+        stamp: "20",},
+      {
         ls: "Fuckin' with me, call up on a Uzi",
-        stamp: "25",
-      },
-      ve6:{
+        stamp: "25",},
+      {
         ls: "And show up, man, them the shottas",
-        stamp: "27",
-      },
-      ve7:{
+        stamp: "27",},
+      {
         ls: "When my homies pull up on your block",
-        stamp: "31",
-      },
-      ve8:{
+        stamp: "31",},
+      {
         ls: "They make that thing go grrra-ta-ta-ta (ta, pow, pow, pow, ayy, ayy)",
-        stamp: "32",
-      },
-      ve9:{
+        stamp: "32",},
+      {
         ls: "Switch my whip, came back in black",
-        stamp: "36",
-      },
-      ve10:{
+        stamp: "36",},
+      {
         ls: "I'm startin' sayin', 'Rest in peace to Bon Scott' (Scott, ayy)",
         stamp: "39",
       },
-      ve11:{
+      {
         ls: "Close that door, we blowin' smoke",
         stamp: "43",
       },
-      ve12:{
+      {
         ls: "She ask me light a fire like I'm Morrison ('son, ayy)",
         stamp: "44",
       },
-      ve13:{
+      {
         ls: "Act a fool on stage",
         stamp: "48",
       },
-      ve14:{
+      {
         ls: "Prolly leave my fuckin' show in a cop car (car, ayy)",
         stamp: "50",
       },
-      ve15:{
-        ls: "Shit was legendary",
+      {
+      ls: "Shit was legendary",
         stamp: "54",
       },
-      ve16:{
+      {
         ls: "Threw a TV out the window of the Montage",
         stamp: "56",
       },
-      ve17:{
+      {
         ls: "Cocaine on the table, liquor pourin', don't give a damn",
         stamp: "59",
       },
-      ve18:{
+      {
         ls: "Dude, your girlfriend is a groupie, she just tryna get in",
         stamp: "61",
       },
-      ve19:{
+      {
         ls: "Sayin', I'm with the band (ayy, ayy)",
         stamp: "66",
       },
-      ve20:{
+      {
         ls: "Now she actin' outta pocket, tryna grab up on my pants",
         stamp: "71",
       },
-      ve21:{
+      {
         ls: "Hundred bitches in my trailer say they ain't got a man",
         stamp: "74",
       },
-      ve22:{
+      {
         ls: "And they all brought a friend (yeah, ayy, ayy, ayy)",
         stamp: "79",
       },
-      ve23:{
+      {
         ls: "I've been fuckin' hoes and poppin' pillies",
         stamp: "85",
       },
-      ve24:{
+      {
         ls: "Man, I feel just like a rockstar (ayy, ayy)",
         stamp: "86",
       },
-      ve25:{
+      {
         ls: "All my brothers got that gas",
         stamp: "91",
       },
-      ve26:{
+      {
         ls: "And they always be smokin' like a Rasta",
         stamp: "93",
       },
-      ve27:{
+      {
         ls: "Fuckin' with me, call up on a Uzi",
         stamp: "97",
       },
-      ve28:{
+      {
         ls: "And show up, man, them the shottas",
         stamp: "100",
       },
-      ve29:{
+      {
         ls: "When my homies pull up on your block",
         stamp: "103",
       },
-      ve30:{
+      {
         ls: "They make that thing go grrra-ta-ta-ta (ta, pow, pow, pow)",
         stamp: "105",
       },
-      ve31:{
+      {
         ls: "I've been in the Hills fuckin' superstars",
         stamp: "108",
       },
-      ve32:{
+      {
         ls: "Feelin' like a popstar (21, 21, 21)",
         stamp: "111",
       },
-      ve33:{
+       {
         ls: "Drinkin' Henny, bad bitches jumpin' in the pool",
         stamp: "115",
       },
-      ve34:{
+       {
         ls: "And they ain't got on no bra (bra)",
         stamp: "117",
       },
-      ve35:{
+       {
         ls: "Hit her from the back, pullin' on her tracks",
         stamp: "120",
       },
-      ve36:{
+       {
         ls: "And now she screamin' out, '¡No más!' (yeah, yeah, yeah)",
         stamp: "122",
       },
-      ve37:{
+       {
         ls: "They like, 'Savage, why you got a twelve car garage'",
         stamp: "126",
       },
-      ve38:{
+       {
         ls: "And you only got six cars? '(21)'",
         stamp: "129",
       },
-      ve39:{
+       {
         ls: "I ain't with the cakin', how you kiss that? (kiss that?)",
         stamp: "131",
       },
-      ve40:{
+       {
         ls: "Your wifey say I'm lookin' like a whole snack (big snack)",
         stamp: "135",
       },
-      ve41:{
+       {
         ls: "Green hundreds in my safe, I got old racks (old racks)",
         stamp: "137",
       },
-      ve42:{
+       {
         ls: "L.A. bitches always askin', 'Where the coke at?' (21, 21)",
         stamp: "140",
       },
-      ve43:{
+       {
         ls: "Livin' like a rockstar, smash out on a cop car",
         stamp: "142",
       },
-      ve44:{
+       {
         ls: "Sweeter than a Pop-Tart, you know you are not hard",
         stamp: "145",
       },
-      ve45:{
+       {
         ls: "I done made the hot chart, 'member I used to trap hard",
         stamp: "149",
       },
-      ve46:{
+       {
         ls: "Livin' like a rockstar, I'm livin' like a rockstar (ayy)",
         stamp: "152",
       },
-      ve47:{
+       {
         ls: "I've been fuckin' hoes and poppin' pillies",
         stamp: "157",
       },
-      ve48:{
+       {
         ls: "Man, I feel just like a rockstar (ayy, ayy)",
         stamp: "159",
       },
-      ve49:{
+       {
         ls: "All my brothers got that gas",
         stamp: "163",
       },
-      ve50:{
+       {
         ls: "And they always be smokin' like a Rasta (yeah, yeah, yeah, yeah)",
         stamp: "164",
       },
-      ve51:{
+       {
         ls: "Fuckin' with me, call up on a Uzi",
         stamp: "169",
       },
-      ve52:{
+       {
         ls: "And show up, man, them the shottas",
         stamp: "170",
       },
-      ve53:{
+       {
         ls: "When my homies pull up on your block",
         stamp: "175",
       },
-      ve54:{
+       {
         ls: "They make that thing go grrra-ta-ta-ta (ta, grrra-ta-ta-ta-ta)",
         stamp: "176",
       },
-      ve55:{
+       {
         ls: "Star, star, rockstar, rockstar, star",
         stamp: "181",
       },
-      ve56:{
+       {
         ls: "Rockstar",
         stamp: "187",
       },
-      ve57:{
+       {
         ls: "Rockstar, feel just like a-",
         stamp: "188",
       },
-      ve58:{
+       {
         ls: "Rockstar",
         stamp: "194",
       },
-      ve59:{
+       {
         ls: "Rockstar",
         stamp: "195",
       },
-      ve60:{
+       {
         ls: "Rockstar",
         stamp: "199",
       },
-      ve61:{
+       {
         ls: "Feel just like a",
         stamp: "201",
       },
-      ve62:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve63:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve64:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve65:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve66:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve67:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve68:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve69:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve70:{
-        ls: "",
-        stamp: "3600",
-      },
-    },
+    ],
     bio: "Born in Syracuse, New York, Austin Post (July 24, 1995) moved to Grapevine, Texas, at the age of 9 and grew up absorbing his father's eclectic record collection which included Bob Dylan, Johnny Cash, and Merle Haggard, playing out his rock star dreams on the video game Guitar Hero. He turned to a real guitar when he was 16 and began teaching himself to play with the help of online tutorial videos. He moved on to community college and worked shifts at a fast-food chain, but when his friend Jason Probst found success with a YouTube gaming channel and moved to Los Angeles, Post followed him to begin his musical career. Living in Probst's San Fernando mansion, he turned his bedroom into a studio while tirelessly working on writing songs, developing his guitar and rap skills, and making his own beats. Taking his moniker from a hip-hop name generator, he developed quickly from making mixtapes to playing in hardcore bands and appearing in Probst's videos. After working with producers FKi and Rex Kudo, he came up with his debut single. Two days after recording it, he uploaded 'White Iverson' to SoundCloud and received a huge response, including millions of plays and praise from Wiz Khalifa and Mac Miller. A deal with Republic Records followed and the single reached Number 14 on the US charts, and after playing at Kylie Jenner's 18th birthday party, Post featured on Kanye West's single 'Fade' and became the opening act on Justin Bieber's Purpose World Tour in 2016. His debut album Stoney experimented with genres such as country, electronica, pop, and hip-hop and his single 'Congratulations' made the US Top 10. He scored his first Number 1 single with the trap-inspired 'Rockstar' at the end of 2017 and returned the following year with a second album titled Beerbongs & Bentleys, which featured appearances from Nicki Minaj, Ty Dolla $ign and G-Eazy. In 2018, he collaborated with Swae Lee on the track 'Sunflower' for the soundtrack of Spider-Man: Into the Spider-Verse. The track went to Number 1 on Billboard's Hot R&B/Hip-Hop Songs, Hot 100, and Rhythmic charts. 2019 saw the arrival of 'Goodbyes' featuring Young Thug and 'Circles' before the release of third studio album Hollywood's Bleeding in September of the same year. The album hit number one on the Billboard 200 and the UK Albums Chart. Featuring guest spots from Roddy Ricch, Doja Cat, Gunna, Fleet Foxes, the Kid Laroi, and the Weeknd, his highly-anticipated fourth studio LP Twelve Carat Toothache appeared in 2022 and debuted at Number 2 on the US rap charts. Preceded by the singles 'Chemical' and 'Mourning,' his fifth studio effort Austin hit the shelves in July 2023.",
     social:{
       instagram: "https://www.instagram.com/postmalone/",
@@ -1073,288 +818,120 @@ var allMusic = [
     album_premiere: "2009",
     album_status: "false",
     id: "17",
-    lyrics:{
-      ve1:{
+    lyrics:[
+       {
         ls: "Hej, ja przed tobą się rozbieram",
         stamp: "10",
       },
-      ve2:{
+       {
         ls: "Zrzucam zmięte, brudne myśli",
         stamp: "18",
       },
-      ve3:{
+       {
         ls: "I przed tobą umieram",
         stamp: "26",
       },
-      ve4:{
+       {
         ls: "Chore serce otwieram bez znieczulenia",
         stamp: "31",
       },
-      ve5:{
+       {
         ls: "Hej, ja przed tobą się rozklejam",
         stamp: "45",
       },
-      ve6:{
+       {
         ls: "Wcieraj ciepłe, lepkie wspomnienia",
         stamp: "52",
       },
-      ve7:{
+       {
         ls: "Tylko w tobie nadzieja",
         stamp: "61",
       },
-      ve8:{
+       {
         ls: "Teraz chore serce otwieraj bez znieczulenia",
         stamp: "64",
       },
-      ve9:{
+       {
         ls: "Bo w mojej głowie zamieć",
         stamp: "78",
       },
-      ve10:{
+       {
         ls: "Czarne, czarne chmury",
         stamp: "82",
       },
-      ve11:{
+       {
         ls: "Zawierucha deszcz do spółki z gradem",
         stamp: "86",
       },
-      ve12:{
+       {
         ls: "Jakieś obce znów głosy podpowiadają mi bzdury",
         stamp: "92",
       },
-      ve13:{
+       {
         ls: "Tak trudno mi, trudno mi, trudno mi, trudno mi być",
         stamp: "99",
       },
-      ve14:{
+       {
         ls: "Hej, ja przed tobą umieram",
         stamp: "107",
       },
-      ve15:{
+       {
         ls: "Masuj obolałe niedomówienia",
         stamp: "114",
       },
-      ve16:{
+       {
         ls: "Tylko w tobie nadzieja",
         stamp: "122",
       },
-      ve17:{
+      {
         ls: "Teraz chore serce otwieraj bez znieczulenia",
         stamp: "126",
       },
-      ve18:{
+       {
         ls: "Bo w mojej głowie zamieć",
         stamp: "140",
       },
-      ve19:{
+       {
         ls: "Czarne, czarne chmury",
         stamp: "144",
       },
-      ve20:{
+       {
         ls: "Zawierucha, deszcz do spółki z gradem",
         stamp: "148",
       },
-      ve21:{
+       {
         ls: "Jakieś obce znów głosy podpowiadają mi bzdury",
         stamp: "154",
       },
-      ve22:{
+       {
         ls: "Tak trudno mi, trudno mi, trudno mi, trudno mi być z tobą razem",
         stamp: "162",
       },
-      ve23:{
+       {
         ls: "Bo w mojej głowie zamieć",
         stamp: "216",
       },
-      ve24:{
+       {
         ls: "Czarne, czarne chmury",
         stamp: "220",
       },
-      ve25:{
+       {
         ls: "Zawierucha, deszcz do spółki z gradem",
         stamp: "224",
       },
-      ve26:{
+       {
         ls: "Jakieś obce znów głosy podpowiadają mi bzdury",
         stamp: "230",
       },
-      ve27:{
+       {
         ls: "Tak trudno mi, trudno mi, trudno mi, trudno mi być z tobą razem",
         stamp: "237",
       },
-      ve28:{
+       {
         ls: "♪ ♪ ♪",
         stamp: "250",
       },
-      ve29:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve30:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve31:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve32:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve33:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve34:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve35:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve36:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve37:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve38:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve39:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve40:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve41:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve42:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve43:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve44:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve45:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve46:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve47:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve48:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve49:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve50:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve51:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve52:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve53:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve54:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve55:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve56:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve57:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve58:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve59:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve60:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve61:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve62:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve63:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve64:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve65:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve66:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve67:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve68:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve69:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve70:{
-        ls: "",
-        stamp: "3600",
-      },
-    },
+    ],
     bio: "Originating in Skarżysko-Kamienna in 2001, Happysad is a popular Polish rock band distinguished by friendly melodies and reggae-influenced rhythms. Their debut album, Wszystko Jedno, was issued by ",
     social:{
       instagram: "https://www.instagram.com/happysadpl",
@@ -1385,288 +962,112 @@ var allMusic = [
     album_premiere: "2009",
     album_status: "false",
     id: "18",
-    lyrics:{
-      ve1:{
+    lyrics:[
+       {
         ls: "Chodż to jeszcze tylko pare ulic stąd",
         stamp: "24",
       },
-      ve2:{
+       {
         ls: "Kilkanaście chodnikowych dziur",
         stamp: "31",
       },
-      ve3:{
+       {
         ls: "Chodż przyszpieszmy kroku bo dogania nas noc",
         stamp: "34",
       },
-      ve4:{
+       {
         ls: "A w nocy lepiej losu tu nie kusić",
         stamp: "41",
       },
-      ve5:{
+       {
         ls: "A może uda się nam przeskoczyć",
         stamp: "45",
       },
-      ve6:{
+       {
         ls: "A może uda się nam",
         stamp: "50",
       },
-      ve7:{
+       {
         ls: "Przeklęte koryta bram",
         stamp: "53",
       },
-      ve8:{
+       {
         ls: "I wtedy powiem ci jak bardzo cię chcę",
         stamp: "56",
       },
-      ve9:{
+       {
         ls: "I wszystkie moje tajemnice",
         stamp: "61",
       },
-      ve10:{
+       {
         ls: "Chodż to jeszcze tylko parę domów stąd",
         stamp: "75",
       },
-      ve11:{
+       {
         ls: "Choć nie czuć stóp, choć stopy mowią nam stop",
         stamp: "82",
       },
-      ve12:{
+       {
         ls: "A pięty depcze nam ponury los",
         stamp: "88",
       },
-      ve13:{
+       {
         ls: "Ponury los tu nos w nieswoje wkłada",
         stamp: "92",
       },
-      ve14:{
+       {
         ls: "A może uda się nam przeskoczyć",
         stamp: "101",
       },
-      ve15:{
+       {
         ls: "A może uda się nam",
         stamp: "106",
       },
-      ve16:{
+       {
         ls: "Przeklęte koryta bram",
         stamp: "108",
       },
-      ve17:{
+      {
         ls: "I wtedy powiem ci jak bardzo cię chcę",
         stamp: "113",
       },
-      ve18:{
+       {
         ls: "I wszystkie moje tajemnice",
         stamp: "118",
       },
-      ve19:{
+       {
         ls: "I wtedy powiem ci jak bardzo cię chcę",
         stamp: "147",
       },
-      ve20:{
+       {
         ls: "I wszystkie moje tajemnice",
         stamp: "152",
       },
-      ve21:{
+       {
         ls: "O tym mieście co to widać je w tle",
         stamp: "157",
       },
-      ve22:{
+       {
         ls: "Jak bardzo go nienawidzę",
         stamp: "162",
       },
-      ve23:{
+       {
         ls: "I wtedy powiem ci jak bardzo cię chcę",
         stamp: "167",
       },
-      ve24:{
+       {
         ls: "I wszystkie moje tajemnice",
         stamp: "173",
       },
-      ve25:{
+       {
         ls: "O tym mieście co to widać je w tle",
         stamp: "178",
       },
-      ve26:{
+       {
         ls: "Jak bardzo go nienawidzę",
         stamp: "182",
       },
-      ve27:{
-        ls: "♪ ♪ ♪",
-        stamp: "190",
-      },
-      ve28:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve29:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve30:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve31:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve32:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve33:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve34:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve35:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve36:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve37:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve38:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve39:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve40:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve41:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve42:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve43:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve44:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve45:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve46:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve47:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve48:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve49:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve50:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve51:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve52:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve53:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve54:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve55:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve56:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve57:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve58:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve59:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve60:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve61:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve62:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve63:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve64:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve65:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve66:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve67:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve68:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve69:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve70:{
-        ls: "",
-        stamp: "3600",
-      },
-    },
+    ],
 
     user_playlist_1: "",
   },
@@ -1704,22 +1105,8 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "19",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+    ],
     bio: "Lianny BOUDJADI (L.B.ONE) is a French Electronic DJ-Producer. In 2017 he produce Across The Water feat Laenz and will be #1 radio charts in Russia and Ukraine. French solo artist most playlisted on eastern countries radio, a second single will follow Tired Bones and will be Number one in 15 eastern countries.",
     social:{
       instagram: "https://www.instagram.com/DJLBONE",
@@ -1758,22 +1145,9 @@ var allMusic = [
     album_premiere: "2009",
     album_status: "false",
     id: "20",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "",
     social:{
       instagram: "",
@@ -1816,22 +1190,9 @@ var allMusic = [
     album_premiere: "2015",
     album_status: "false",
     id: "21",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "",
     social:{
       instagram: "",
@@ -1874,22 +1235,9 @@ var allMusic = [
     album_premiere: "2012",
     album_status: "false",
     id: "22",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "Delivering lyrics with the speed of a bullet train, Cleveland rapper Machine Gun Kelly experienced a meteoric rise in late 2011 when he transitioned from grinding out self-released mixtapes to working with major labels. From there, the rapper skyrocketed to superstar status, with each of his albums charting in the Top Ten. A beef with , a film career, and even some reality show appearances would follow as the high-powered lyrical rap style of albums like 2019's Hotel Diablo morphed into a driving emo-rock sound on collaborations with  and on the -produced 2020 album Tickets to My Downfall, which topped the Billboard 200. Kelly worked alongside  again in 2022 on album number six, Mainstream Sellout.",
     social:{
       instagram: "https://www.instagram.com/machinegunkelly/",
@@ -1938,22 +1286,9 @@ var allMusic = [
     album_premiere: "2016",
     album_status: "false",
     id: "23",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "Rising as a songwriter for and , Brooklyn-born Bebe Rexha made her way from the studio to the stage, racking up hit singles with electronic artists (, , ), rappers (, , ), and even country duo , with whom she recorded the 2017 chart-topping country-pop crossover single Meant to Be. Although her work with other musicians has spanned genres, her own material centers on darker pop textures influenced by hip-hop and R&B, as heard on her debut, 2018's Expectations, and its 2021 follow-up Better Mistakes. Born Bleta Rexha in 1989, she began her musical journey at a young age. Performing in musicals from the age of four, she started to hone her skills in her early teens and was named Best Teen Songwriter at the National Academy of Recording Arts and Sciences annual Grammy Day event; she met a whole host of famous producers there. In 2010, Rexha was approached bys  to form the project , intended to reflects more experimental and electronic side. Rexha provided vocals for several EPs before she left the band in 2012 to embark on a solo career. She began uploading demos and acoustic covers to YouTube before signing with  in 2013.",
     social:{
       instagram: "https://www.instagram.com/beberexha",
@@ -2002,22 +1337,9 @@ var allMusic = [
     album_premiere: "2014",
     album_status: "false",
     id: "24",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "Ariana Grande is perhaps the quintessential pop star of the last half of the 2010s, capturing the era's spirit and style. Emerging in 2013 with the hit single The Way, Grande initially appeared to be the heir to the throne of , due in part to her powerhouse vocals. With its  production, her debut Yours Truly underscored her debt to '90s R&B, but Grande quickly incorporated hip-hop and EDM into her music.",
     social:{
       instagram: "https://www.instagram.com/arianagrande/",
@@ -2061,22 +1383,9 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "25",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "Anne-Marie’s rise to stardom has been nothing short of meteoric. A former 3 x world karate champion and West End child star turned multi-platinum-selling artist, Anne-Marie has gone onto become one of the world’s most-loved and successful pop stars of our times",
     social:{
       instagram: "",
@@ -2125,288 +1434,92 @@ var allMusic = [
     id: "26",
 
 
-    lyrics:{
-      ve1:{
+    lyrics:[
+      {
         ls: "Thought I found a way",
-        stamp: "20",
-      },
-      ve2:{
+        stamp: "20",},
+      {
         ls: "Thought I found a way out (found)",
-        stamp: "24",
-      },
-      ve3:{
+        stamp: "24",},
+      {
         ls: "But you never go away (go away)",
-        stamp: "28",
-      },
-      ve4:{
+        stamp: "28",},
+      {
         ls: "So I guess I gotta stay now",
-        stamp: "32",
-      },
-      ve5:{
+        stamp: "32",},
+      {
         ls: "Oh, I hope some day I'll make it out of here",
-        stamp: "35",
-      },
-      ve6:{
+        stamp: "35",},
+      {
         ls: "Even if it takes all night or a hundred years",
-        stamp: "43",
-      },
-      ve7:{
+        stamp: "43",},
+      {
         ls: "Need a place to hide, but I can't find one near",
-        stamp: "52",
-      },
-      ve8:{
+        stamp: "52",},
+      {
         ls: "Wanna feel alive, outside I can't fight my fear",
-        stamp: "60",
-      },
-      ve9:{
+        stamp: "60",},
+      {
         ls: "Isn't it lovely, all alone?",
-        stamp: "70",
-      },
-      ve10:{
+        stamp: "70",},
+      {
         ls: "Heart made of glass, my mind of stone",
-        stamp: "74",
-      },
-      ve11:{
+        stamp: "74",},
+      {
         ls: "Tear me to pieces, skin to bone",
-        stamp: "78",
-      },
-      ve12:{
+        stamp: "78",},
+      {
         ls: "Hello, welcome home",
-        stamp: "83",
-      },
-      ve13:{
+        stamp: "83",},
+      {
         ls: "Walkin' out of time",
-        stamp: "91",
-      },
-      ve14:{
+        stamp: "91",},
+      {
         ls: "Lookin' for a better place (Lookin' for a better place)",
-        stamp: "95",
-      },
-      ve15:{
+        stamp: "95",},
+      {
         ls: "Something's on my mind (mind)",
-        stamp: "98",
-      },
-      ve16:{
+        stamp: "98",},
+      {
         ls: "Always in my head space",
-        stamp: "104",
-      },
-      ve17:{
+        stamp: "104",},
+      {
         ls: "But I know some day I'll make it out of here",
-        stamp: "106",
-      },
-      ve18:{
+        stamp: "106",},
+      {
         ls: "Even if it takes all night or a hundred years",
-        stamp: "114",
-      },
-      ve19:{
+        stamp: "114",},
+      {
         ls: "Need a place to hide, but I can't find one near",
-        stamp: "123",
-      },
-      ve20:{
+        stamp: "123",},
+      {
         ls: "Wanna feel alive, outside I can't fight my fear",
-        stamp: "131",
-      },
-      ve21:{
+        stamp: "131",},
+      {
         ls: "Isn't it lovely, all alone?",
-        stamp: "141",
-      },
-      ve22:{
+        stamp: "141",},
+      {
         ls: "Heart made of glass, my mind of stone",
-        stamp: "145",
-      },
-      ve23:{
+        stamp: "145",},
+      {
         ls: "Tear me to pieces, skin to bone",
-        stamp: "149",
-      },
-      ve24:{
+        stamp: "149",},
+      {
         ls: "Hello, welcome home",
-        stamp: "154",
-      },
-      ve25:{
+        stamp: "154",},
+      {
         ls: "Whoa, yeah",
-        stamp: "160",
-      },
-      ve26:{
+        stamp: "160",},
+      {
         ls: "Yeah, ah",
-        stamp: "167",
-      },
-      ve27:{
+        stamp: "167",},
+      {
         ls: "Whoa, whoa",
-        stamp: "172",
-      },
-      ve28:{
+        stamp: "172",},
+      {
         ls: "Hello, welcome home",
-        stamp: "187",
-      },
-      ve29:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve30:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve31:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve32:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve33:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve34:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve35:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve36:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve37:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve38:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve39:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve40:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve41:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve42:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve43:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve44:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve45:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve46:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve47:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve48:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve49:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve50:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve51:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve52:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve53:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve54:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve55:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve56:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve57:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve58:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve59:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve60:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve61:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve62:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve63:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve64:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve65:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve66:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve67:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve68:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve69:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve70:{
-        ls: "",
-        stamp: "3600",
-      },
-    },
+        stamp: "187",}
+    ],
 
     bio: "With the release of her highly anticipated sophomore album ‘Happier Than Ever,’ the 19-year-old Los Angeles native remains one of the biggest stars to emerge in the 21st century. Since the release of her debut single “ocean eyes” in 2015, Eilish continues to shatter the ceiling of music with her genre-defying sound. Fast forward from her humble breakout, her album WHEN WE ALL FALL ASLEEP, WHERE DO WE GO? debuted at No. 1 on the Billboard 200 in the U.S as well as 17 additional countries around the world upon release in 2019, and was the most streamed album of that year. WHEN WE ALL FALL ASLEEP, WHERE DO WE GO? was written, produced and recorded entirely by Billie Eilish and brother FINNEAS in their childhood home of Los Angeles. Billie Eilish went on to make history as the youngest artist to receive nominations and win in all the major categories at the 62nd GRAMMY® Awards, receiving an award for Best New Artist, Album of the Year, Record of the Year, Song of the Year, and Best Pop Vocal Album. Billie Eilish is also the youngest artist to write and record an official James Bond theme song, ‘No Time To Die.’ Most recently, Billie Eilish was nominated for four additional awards at the 63rd Annual GRAMMY Awards in 2021, and took home both Record of the Year for 'everything i wanted,' and Best Song Written For Visual Media for 'No Time To Die.’ Billie Eilish’s latest album ‘Happier Than Ever’ was written by Billie and her brother FINNEAS, who also produced the album.",
     social:{
@@ -2452,22 +1565,9 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "27",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "British dance group Clean Bandit found crossover success by weaving classical music with dance-pop for a beat-driven yet refined sound -- often delivered with high-profile guest vocalists. After scoring their first hit with the multi-platinum international sensation Rather Be, featuring  (from 2014's New Eyes), they issued a string of U.K. chart-toppers that proved successful around the world, including Rockabye with  and Anne-Marie, Symphony with , and Solo with , all of which were included on 2018's What Is Love? They again reached the U.K. Top Ten with 2020's Tick Tock featuring before releasing 2021's Higher with",
     social:{
       instagram: "https://www.instagram.com/cleanbandit/",
@@ -2513,288 +1613,288 @@ var allMusic = [
     album_status: "false",
     id: "28",
 
-    lyrics:{
-      ve1:{
+    lyrics:[
+       {
         ls: "Whoa, oh, oh",
         stamp: "1",
       },
-      ve2:{
+       {
         ls: "Whoa, oh, oh",
         stamp: "7",
       },
-      ve3:{
+       {
         ls: "Whoa, oh, oh",
         stamp: "13",
       },
-      ve4:{
+       {
         ls: "Whoa",
         stamp: "20",
       },
-      ve5:{
+       {
         ls: "I'm waking up to ash and dust",
         stamp: "27",
       },
-      ve6:{
+       {
         ls: "I wipe my brow and i sweat my rust",
         stamp: "31",
       },
-      ve7:{
+       {
         ls: "I'm breathing in the chemicals",
         stamp: "34",
       },
-      ve8:{
+       {
         ls: "I'm breaking in, shaping up, then checking out on the prison bus",
         stamp: "41",
       },
-      ve9:{
+       {
         ls: "This is it, the apocalypse",
         stamp: "48",
       },
-      ve10:{
+       {
         ls: "Whoa",
         stamp: "52",
       },
-      ve11:{
+       {
         ls: "I'm waking up, i feel it in my bones",
         stamp: "54",
       },
-      ve12:{
+       {
         ls: "Enough to make my systems blow",
         stamp: "58",
       },
-      ve13:{
+       {
         ls: "Welcome to the new age, to the new age",
         stamp: "62",
       },
-      ve14:{
+       {
         ls: "Welcome to the new age, to the new age",
         stamp: "65",
       },
-      ve15:{
+       {
         ls: "Whoa, oh, oh, oh, oh, whoa, oh, oh , oh, I'm radioactive, radioactive",
         stamp: "69",
       },
-      ve16:{
+       {
         ls: "Whoa, oh, oh, oh, oh, whoa, oh, oh , oh, I'm radioactive, radioactive",
         stamp: "76",
       },
-      ve17:{
+      {
         ls: "I raise my flags, don my clothes",
         stamp: "83",
       },
-      ve18:{
+       {
         ls: "It's a revolution i suppose",
         stamp: "87",
       },
-      ve19:{
+       {
         ls: "We'll paint it red to fit right it",
         stamp: "91",
       },
-      ve20:{
+       {
         ls: "Whoa",
         stamp: "94",
       },
-      ve21:{
+       {
         ls: "I'm breaking in, shaping up, then checking out on the prison bus",
         stamp: "97",
       },
-      ve22:{
+       {
         ls: "This is it, the apocalypse",
         stamp: "104",
       },
-      ve23:{
+       {
         ls: "Whoa",
         stamp: "108",
       },
-      ve24:{
+       {
         ls: "I'm waking up, i feel it in my bones",
         stamp: "111",
       },
-      ve25:{
+       {
         ls: "Enough to make my systems blow",
         stamp: "114",
       },
-      ve26:{
+       {
         ls: "Welcome to the new age, to the new age",
         stamp: "118",
       },
-      ve27:{
+       {
         ls: "Welcome to the new age, to the new age",
         stamp: "121",
       },
-      ve28:{
+       {
         ls: "Whoa, oh, oh, oh, oh, whoa, oh, oh , oh, I'm radioactive, radioactive",
         stamp: "125",
       },
-      ve29:{
+       {
         ls: "Whoa, oh, oh, oh, oh, whoa, oh, oh , oh, I'm radioactive, radioactive",
         stamp: "132",
       },
-      ve30:{
+       {
         ls: "All systems go, the sun hasn't died",
         stamp: "139",
       },
-      ve31:{
+       {
         ls: "Deep in my bones, straight from inside",
         stamp: "146",
       },
-      ve32:{
+       {
         ls: "I'm waking up, i feel it in my bones",
         stamp: "152",
       },
-      ve33:{
+       {
         ls: "Enough to make my systems blow",
         stamp: "156",
       },
-      ve34:{
+       {
         ls: "Welcome to the new age, to the new age",
         stamp: "160",
       },
-      ve35:{
+       {
         ls: "Welcome to the new age, to the new age",
         stamp: "164",
       },
-      ve36:{
+       {
         ls: "Whoa, oh, oh, oh, oh, whoa, oh, oh , oh, I'm radioactive, radioactive",
         stamp: "167",
       },
-      ve37:{
+       {
         ls: "Whoa, oh, oh, oh, oh, whoa, oh, oh , oh, I'm radioactive, radioactive",
         stamp: "174",
       },
-      ve38:{
+       {
         ls: "",
         stamp: "3600",
       },
-      ve39:{
+       {
         ls: "",
         stamp: "3600",
       },
-      ve40:{
+       {
         ls: "",
         stamp: "3600",
       },
-      ve41:{
+       {
         ls: "",
         stamp: "3600",
       },
-      ve42:{
+       {
         ls: "",
         stamp: "3600",
       },
-      ve43:{
+       {
         ls: "",
         stamp: "3600",
       },
-      ve44:{
+       {
         ls: "",
         stamp: "3600",
       },
-      ve45:{
+       {
         ls: "",
         stamp: "3600",
       },
-      ve46:{
+       {
         ls: "",
         stamp: "3600",
       },
-      ve47:{
+       {
         ls: "",
         stamp: "3600",
       },
-      ve48:{
+       {
         ls: "",
         stamp: "3600",
       },
-      ve49:{
+       {
         ls: "",
         stamp: "3600",
       },
-      ve50:{
+       {
         ls: "",
         stamp: "3600",
       },
-      ve51:{
+       {
         ls: "",
         stamp: "3600",
       },
-      ve52:{
+       {
         ls: "",
         stamp: "3600",
       },
-      ve53:{
+       {
         ls: "",
         stamp: "3600",
       },
-      ve54:{
+       {
         ls: "",
         stamp: "3600",
       },
-      ve55:{
+       {
         ls: "",
         stamp: "3600",
       },
-      ve56:{
+       {
         ls: "",
         stamp: "3600",
       },
-      ve57:{
+       {
         ls: "",
         stamp: "3600",
       },
-      ve58:{
+       {
         ls: "",
         stamp: "3600",
       },
-      ve59:{
+       {
         ls: "",
         stamp: "3600",
       },
-      ve60:{
+       {
         ls: "",
         stamp: "3600",
       },
-      ve61:{
+       {
         ls: "",
         stamp: "3600",
       },
-      ve62:{
+       {
         ls: "",
         stamp: "3600",
       },
-      ve63:{
+       {
         ls: "",
         stamp: "3600",
       },
-      ve64:{
+       {
         ls: "",
         stamp: "3600",
       },
-      ve65:{
+       {
         ls: "",
         stamp: "3600",
       },
-      ve66:{
+       {
         ls: "",
         stamp: "3600",
       },
-      ve67:{
+       {
         ls: "",
         stamp: "3600",
       },
-      ve68:{
+       {
         ls: "",
         stamp: "3600",
       },
-      ve69:{
+       {
         ls: "",
         stamp: "3600",
       },
-      ve70:{
+       {
         ls: "",
         stamp: "3600",
       },
-    },
+    ],
 
     bio: "Formed in 2009, Imagine Dragons first revealed their emotionally charged and inventive sensibilities with a series of independently released EPs that earned them grassroots following. Signed to KIDinaKORNER/Interscope by hitmaking producer Alex Da Kid, the band greatly expanded their fanbase with the release of their multi-platinum breakthrough single “It’s Time” (featured on the 2012 EP Continued Silence). With their past hits also including “Radioactive” (a diamond-selling smash that won Best Rock Performance at the 2014 Grammy Awards), Imagine Dragons went on to see Smoke + Mirrors debut at #1 on the Billboard Top 200 album chart upon its release in early 2015.",
     social:{
@@ -2827,22 +1927,9 @@ var allMusic = [
     album_premiere: "2017",
     album_status: "false",
     id: "29",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -2869,22 +1956,9 @@ var allMusic = [
     album_premiere: "2017",
     album_status: "false",
     id: "30",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -2910,288 +1984,232 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "31",
-    lyrics:{
-      ve1:{
+    lyrics:[
+       {
         ls: "Oh, hush, my dear, it's been a difficult year",
         stamp: "16",
       },
-      ve2:{
+       {
         ls: "And terrors don't prey on",
         stamp: "21",
       },
-      ve3:{
+       {
         ls: "Innocent victims",
         stamp: "24",
       },
-      ve4:{
+       {
         ls: "Trust me, darling, trust me darling",
         stamp: "27",
       },
-      ve5:{
+       {
         ls: "It's been a loveless year",
         stamp: "36",
       },
-      ve6:{
+       {
         ls: "I'm a men of three fears",
         stamp: "39",
       },
-      ve7:{
+       {
         ls: "Integrity, faith and",
         stamp: "42",
       },
-      ve8:{
+       {
         ls: "Crocodile tears",
         stamp: "45",
       },
-      ve9:{
+       {
         ls: "Trust me, darling, trust me, darling",
         stamp: "48",
       },
-      ve10:{
+       {
         ls: "So look me in the eyes",
         stamp: "57",
       },
-      ve11:{
+       {
         ls: "Tell me what you see",
         stamp: "59",
       },
-      ve12:{
+       {
         ls: "Perfect paradise",
         stamp: "62",
       },
-      ve13:{
+       {
         ls: "Tearing at the seems",
         stamp: "65",
       },
-      ve14:{
+       {
         ls: "I wish I could escape",
         stamp: "67",
       },
-      ve15:{
+       {
         ls: "I don't wanna fake it",
         stamp: "70",
       },
-      ve16:{
+       {
         ls: "Wish i could erase it",
         stamp: "73",
       },
-      ve17:{
+      {
         ls: "Make your heart belive",
         stamp: "75",
       },
-      ve18:{
+       {
         ls: "But I'm a bad liar, bad liar",
         stamp: "77",
       },
-      ve19:{
+       {
         ls: "Now you know",
         stamp: "84",
       },
-      ve20:{
+       {
         ls: "Now you know",
         stamp: "87",
       },
-      ve21:{
+       {
         ls: "I'm a bad liar, bad liar",
         stamp: "88",
       },
-      ve22:{
+       {
         ls: "Now you know, you're free to go (go)",
         stamp: "95",
       },
-      ve23:{
+       {
         ls: "Did all my dreams never mean one thing?",
         stamp: "101",
       },
-      ve24:{
+       {
         ls: "Does happiness lie in a diamond ring?",
         stamp: "106",
       },
-      ve25:{
+       {
         ls: "Oh, I've been askin'",
         stamp: "112",
       },
-      ve26:{
+       {
         ls: "Oh, I've been askin' for problems, problems, problems",
         stamp: "115",
       },
-      ve27:{
+       {
         ls: "I wage my war, on the world inside",
         stamp: "123",
       },
-      ve28:{
+       {
         ls: "I take my gun to the enemy's side",
         stamp: "128",
       },
-      ve29:{
+       {
         ls: "Oh, I've been askin' for (trust me, darling)",
         stamp: "134",
       },
-      ve30:{
+       {
         ls: "Oh, I've been askin' for (trust me, darling)",
         stamp: "137",
       },
-      ve31:{
+       {
         ls: "Problems, problems, problems",
         stamp: "139",
       },
-      ve32:{
+       {
         ls: "So look me in the eyes",
         stamp: "144",
       },
-      ve33:{
+       {
         ls: "Tell me what you see",
         stamp: "146",
       },
-      ve34:{
+       {
         ls: "Perfect paradise",
         stamp: "148",
       },
-      ve35:{
+       {
         ls: "Tearing at the seems",
         stamp: "151",
       },
-      ve36:{
+       {
         ls: "I wish I could escape",
         stamp: "154",
       },
-      ve37:{
+       {
         ls: "I don't wanna fake it",
         stamp: "157",
       },
-      ve38:{
+       {
         ls: "Wish i could erase it",
         stamp: "159",
       },
-      ve39:{
+       {
         ls: "Make your heart belive",
         stamp: "162",
       },
-      ve40:{
+       {
         ls: "But I'm a bad liar, bad liar",
         stamp: "164",
       },
-      ve41:{
+       {
         ls: "Now you know",
         stamp: "170",
       },
-      ve42:{
+       {
         ls: "Now you know",
         stamp: "173",
       },
-      ve43:{
+       {
         ls: "That I'm a bad liar, bad liar",
         stamp: "175",
       },
-      ve44:{
+       {
         ls: "Now you know, you're free to go (go)",
         stamp: "181",
       },
-      ve45:{
+       {
         ls: "I can't breath, I can't be",
         stamp: "188",
       },
-      ve46:{
+       {
         ls: "I can't be what you want me to be",
         stamp: "193",
       },
-      ve47:{
+       {
         ls: "Belive me, this one time",
         stamp: "200",
       },
-      ve48:{
+       {
         ls: "Belive me",
         stamp: "203",
       },
-      ve49:{
+       {
         ls: "I'm a bad liar, bad liar",
         stamp: "207",
       },
-      ve50:{
+       {
         ls: "Now you know",
         stamp: "213",
       },
-      ve51:{
+       {
         ls: "Now you know",
         stamp: "216",
       },
-      ve52:{
+       {
         ls: "That I'm a bad liar, bad liar",
         stamp: "218",
       },
-      ve53:{
+       {
         ls: "Now you know, you're free to go",
         stamp: "224",
       },
-      ve54:{
+       {
         ls: "Oh",
         stamp: "231",
       },
-      ve55:{
+       {
         ls: "Please belive me",
         stamp: "243",
       },
-      ve56:{
+       {
         ls: "Please belive me",
         stamp: "246",
       },
-      ve57:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve58:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve59:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve60:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve61:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve62:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve63:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve64:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve65:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve66:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve67:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve68:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve69:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve70:{
-        ls: "",
-        stamp: "3600",
-      },
-    },
+    ],
 
     user_playlist_1: "",
   },
@@ -3231,22 +2249,9 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "32",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "Whether behind the piano in his studio or headlining a sold-out festival, Kygo quietly reaffirms his status as a prodigious talent, forward-thinking producer, dynamic DJ, and influential global superstar. The Norwegian musician born Kyrre Gørvell-Dahll first introduced himself in 2013 and quietly became one of the most ubiquitous hitmakers in the world while emerging as Spotify’s “Breakout Artist of 2015.” “Firestone” ft. Conrad Sewell and “Stole the Show” ft. Parson James help cement Kygo as “the fastest artist to reach 1 billion streams on Spotify.” In the wake of his chart-topping 2016 full- length debut Cloud Nine, he delivered memorable performances on The Late Late Show with James Corden, Good Morning America, The Tonight Show Starring Jimmy Fallon, and The Ellen DeGeneres Show. Plus, he notably performed “Carry Me” during the Closing Ceremony of the Rio Olympics.",
     social:{
       instagram: "https://www.instagram.com/imaginedragons/",
@@ -3277,22 +2282,9 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "33",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -3318,22 +2310,9 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "34",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -3359,22 +2338,9 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "35",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -3400,22 +2366,9 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "36",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -3441,22 +2394,9 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "37",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -3482,22 +2422,9 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "38",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -3523,22 +2450,9 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "39",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -3564,22 +2478,9 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "40",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -3605,22 +2506,9 @@ var allMusic = [
     album_premiere: "2018",
     id: "41",
     album_status: "false",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -3646,22 +2534,9 @@ var allMusic = [
     album_premiere: "2018",
     id: "42",
     album_status: "false",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -3687,22 +2562,9 @@ var allMusic = [
     album_premiere: "2018",
     id: "43",
     album_status: "false",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     user_playlist_1: "",
   },
   {
@@ -3727,22 +2589,9 @@ var allMusic = [
     album_premiere: "2018",
     id: "44",
     album_status: "false",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     user_playlist_1: "",
   },
   {
@@ -3767,22 +2616,9 @@ var allMusic = [
     album_premiere: "2018",
     id: "45",
     album_status: "false",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     user_playlist_1: "",
   },
   {
@@ -3807,22 +2643,9 @@ var allMusic = [
     album_premiere: "2018",
     id: "46",
     album_status: "false",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     user_playlist_1: "",
   },
   {
@@ -3860,22 +2683,9 @@ var allMusic = [
     album_premiere: "2018",
     id: "47",
     album_status: "false",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "Multi-Grammy nominated Cuban born singer/songwriter Camila Cabello released her debut solo album, CAMILA in January 2018 to rave reviews. It debuted at #1 on the Billboard 200 chart at the same time as her single “Havana” reached #1 on the Billboard Hot 100 chart, making her the first solo artist in nearly 15 years to reach the #1 spot on the Hot 100, Billboard 200 & Artist 100 charts in the same week. CAMILA launched its debut at #1 on 110 iTunes charts around the world, breaking the record for most #1 positions for a debut album in iTunes history. Camila also became the #1 artist on global Spotify. She released her RIAA 9x platinum smash hit “Havana,” in August 2017 where it obtained the #1 spot on the pop radio chart. “Havana” is the first song by a female artist to reach No. 1 on Billboard’s Adult Contemporary, Pop Songs & Rhythmic Songs charts in 22 years, has earned over 1.1 billion on-demand U.S. streams, according to Nielsen Music, & attained the longest run at No. 1 on Pop Songs for any song by a female artist since 2013. Havana became the most streamed song of all time by a female artist & was the number one song of 2018 globally. Her triple-platinum single “Never Be The Same,” was released in January 2018 & peaked in the top 10 of the Billboard Hot 100 chart. Camila became the first artist in history to have two multi-format number one singles as the first two singles from their debut album. In November 2018, she was named the new ambassador for Save the Children.",
     social:{
       instagram: "https://www.instagram.com/camila_cabello/",
@@ -3906,22 +2716,9 @@ var allMusic = [
     album_premiere: "2021",
     album_status: "false",
     id: "48",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -3947,22 +2744,9 @@ var allMusic = [
     album_premiere: "2021",
     album_status: "false",
     id: "49",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -3988,22 +2772,9 @@ var allMusic = [
     album_premiere: "2021",
     album_status: "false",
     id: "50",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -4029,22 +2800,9 @@ var allMusic = [
     album_premiere: "2015",
     album_status: "false",
     id: "51",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -4089,288 +2847,280 @@ var allMusic = [
     album_status: "false",
     id: "52",
 
-    lyrics:{
-      ve1:{
+    lyrics:[
+       {
         ls: "Oh my, oh my, oh my",
         stamp: "2",
       },
-      ve2:{
+       {
         ls: "Oh my, oh my, oh my",
         stamp: "5",
       },
-      ve3:{
+       {
         ls: "Oh my, oh my, oh my, oh my",
         stamp: "9",
       },
-      ve4:{
+       {
         ls: "It ain't my fault you keep turnin' me on",
         stamp: "13",
       },
-      ve5:{
+       {
         ls: "It ain't my fault you got, got me so gone",
         stamp: "16",
       },
-      ve6:{
+       {
         ls: "It ain't my fault I'm not leavin' alone",
         stamp: "20",
       },
-      ve7:{
+       {
         ls: "It ain't my fault you keep turnin' me on",
         stamp: "24",
       },
-      ve8:{
+       {
         ls: "I can't talk right now",
         stamp: "27",
       },
-      ve9:{
+       {
         ls: "I'm lookin' and I like what I'm seein'",
         stamp: "28",
       },
-      ve10:{
+       {
         ls: "Got me feelin' kinda shocked right now",
         stamp: "30",
       },
-      ve11:{
+       {
         ls: "Couldn't stop right now",
         stamp: "31",
       },
-      ve12:{
+       {
         ls: "Even if I wanted, gotta get it, get it, get it, when it's hot right now",
         stamp: "32",
       },
-      ve13:{
+       {
         ls: "Oh my god, what is this?",
         stamp: "35",
       },
-      ve14:{
+       {
         ls:  "Want you all in my business",
         stamp: "36",
       },
-      ve15:{
+       {
         ls: "Baby, I insist",
         stamp: "37",
       },
-      ve16:{
+       {
         ls: "Please don't blame me for what ever happens next", 
         stamp: "39",
       },
-      ve17:{
+      {
         ls: "No, I-I-I-I can't be responsible",
         stamp: "42",
       },
-      ve18:{
+       {
         ls: "If I-I-I-I get you in trouble now",
         stamp: "45",
       },
-      ve19:{
+       {
         ls: "See, you're-'re-'re-'re too irresistible",
         stamp: "49",
       },
-      ve20:{
+       {
         ls: "Yeah, that's for sure",
         stamp: "52",
       },
-      ve21:{
+       {
         ls: "So, if I put your hands where my eyes can't see",
         stamp: "55",
       },
-      ve22:{
+       {
         ls: "Then you're the one who's got a hold on me",
         stamp: "58",
       },
-      ve23:{
+       {
         ls: "No, I-I-I-I can't be responsible, responsible",
         stamp: "62",
       },
-      ve24:{
+       {
         ls: "It ain't my fault (nope, nope, nope, nope, nope, nope, nope)",
         stamp: "68",
       },
-      ve25:{
+       {
         ls: "It ain't my fault (nope, nope, nope, nope, nope, nope, nope)",
         stamp: "75",
       },
-      ve26:{
+       {
         ls: "It ain't my fault",
         stamp: "81",
       },
-      ve27:{
+       {
         ls: "It ain't my fault you came here lookin' like that",
         stamp: "82",
       },
-      ve28:{
+       {
         ls: "You just made me trip, fall, and land on your lap",
         stamp: "86",
       },
-      ve29:{
+       {
         ls: "Certain bad boy smooth",
         stamp: "89",
       },
-      ve30:{
+       {
         ls: "Body hotter than the sun",
         stamp: "90",
       },
-      ve31:{
+       {
         ls: "I don't mean to be rude, but I'd look so damn good on ya",
         stamp: "92",
       },
-      ve32:{
+       {
         ls: "Ain't got time right now",
         stamp: "96",
       },
-      ve33:{
+       {
         ls: "Missed me with that",
         stamp: "97",
       },
-      ve34:{
+       {
         ls: "What's your name, your sign right now",
         stamp: "98",
       },
-      ve35:{
+       {
         ls: "It's light outside",
         stamp: "99",
       },
-      ve36:{
+       {
         ls: "I just called an Uber and it's right outside",
         stamp: "100",
       },
-      ve37:{
+       {
         ls: "Oh my God, what is this?",
         stamp: "103",
       },
-      ve38:{
+       {
         ls: "Want you all in my business",
         stamp: "104",
       },
-      ve39:{
+       {
         ls: "Baby, I insist",
         stamp: "106",
       },
-      ve40:{
+       {
         ls: "Please don't blame me for what ever happens next", 
         stamp: "107",
       },
-      ve41:{
+       {
         ls: "No, I-I-I-I can't be responsible",
         stamp: "110",
       },
-      ve42:{
+       {
         ls: "If I-I-I-I get you in trouble now",
         stamp: "114",
       },
-      ve43:{
+       {
         ls: "See, you're-'re-'re-'re too irresistible",
         stamp: "117",
       },
-      ve44:{
+       {
         ls: "Yeah, that's for sure",
         stamp: "121",
       },
-      ve45:{
+       {
         ls: "So, if I put your hands where my eyes can't see",
         stamp: "123",
       },
-      ve46:{
+       {
         ls: "Then you're the one who's got a hold on me",
         stamp: "126",
       },
-      ve47:{
+       {
         ls: "No, I-I-I-I can't be responsible, responsible",
         stamp: "130",
       },
-      ve48:{
+       {
         ls: "It ain't my fault (nope, nope, nope, nope, nope, nope, nope)",
         stamp: "136",
       },
-      ve49:{
+       {
         ls: "It ain't my fault (nope, nope, nope, nope, nope, nope, nope)",
         stamp: "143",
       },
-      ve50:{
+       {
         ls: "It ain't my fault",
         stamp: "150",
       },
-      ve51:{
+       {
         ls: "Baby, one, two, three",
         stamp: "151",
       },
-      ve52:{
+       {
         ls: "Your body's callin' me",
         stamp: "153",
       },
-      ve53:{
+       {
         ls: "And I know wherever you're at is exactly where I wanna be",
         stamp: "156",
       },
-      ve54:{
+       {
         ls: "But don't blame me",
         stamp: "162",
       },
-      ve55:{
+       {
         ls: "It ain't my fault (nope, nope, nope)",
         stamp: "163",
       },
-      ve56:{
+       {
         ls: "It ain't my fault (nope, nope, nope)",
         stamp: "170",
       },
-      ve57:{
+       {
         ls: "It ain't my fault (nope, nope, nope)",
         stamp: "172",
       },
-      ve58:{
+       {
         ls: "Oh my, oh my, oh my, oh my (it ain't my fault)",
         stamp: "174",
       },
-      ve59:{
+       {
         ls: "So if I put your hands where my eyes can't see",
         stamp: "178",
       },
-      ve60:{
+       {
         ls: "Then you're the one who's got a hold on me",
         stamp: "181",
       },
-      ve61:{
+       {
         ls: "No, I-I-I-I can't be responsible, responsible",
         stamp: "185",
       },
-      ve62:{
+       {
         ls: "It ain't my fault (nope, nope, nope, nope, nope, nope, nope)",
         stamp: "190",
       },
-      ve63:{
+       {
         ls: "No-oh-oh, it ain't my fault",
         stamp: "194",
       },
-      ve64:{
+       {
         ls: "It ain't my fault",
         stamp: "197",
       },
-      ve65:{
+       {
         ls: "No-oh-oh, no-oh-oh, no",
         stamp: "199",
       },
-      ve66:{
+       {
         ls: "It ain't my fault you got me so gone",
         stamp: "205",
       },
-      ve67:{
+       {
         ls: "It ain't my fault you got me so gone",
         stamp: "208",
       },
-      ve68:{
+       {
         ls: "Well, that's too bad, it ain't my fault",
         stamp: "216",
       },
-      ve69:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve70:{
-        ls: "",
-        stamp: "3600",
-      },
-    },
+    ],
 
     bio: "Swedish hitmaking singer/songwriter Zara Larsson crafts R&B- and club-influenced dance-pop influenced by artists like , , and . After winning a Swedish singing competition at the age of eight, Larsson crashed the mainstream in the mid-2010s with a string of Swedish number ones like Lush Life and Never Forget You, which were certified multi-platinum around the world. Those tracks landed on her 2017 chart-topping, multi-platinum breakthrough So Good, a Top Ten hit across Europe and Australasia. Her third album, Poster Girl, arrived in 2021 and again brought her to the Top Ten in Sweden with the hit Ruin My Life.",
     social:{
@@ -4418,22 +3168,9 @@ var allMusic = [
     album_premiere: "2022",
     album_status: "false",
     id: "53",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "The moment you find your voice, you step into yourself and actualize your potential. At this point, expectations no longer matter, fear disappears, and everything changes. Against The Current not only embrace their voice, but project it louder than ever. After hundreds of millions of streams, major collaborations with the likes of Riot Games, and countless packed shows, the trio—Chrissy Costanza [vocals], Dan Gow [guitar], and Will Ferri [drums]—lift themselves up to this moment with their new music. Dan observes, “We dove back into early inspirations like Taking Back Sunday and incorporated those vibes into what we do. It fueled us to keep going.” In the end, Against The Current will stir up the same frenzy and fire in audiences as well with this music. “Musically, it’s back to the three of us in a room together, and you’ll hear it,” adds Will. “In a lot of ways, it’s like we’re just getting started—even though it’s been ten years. It feels good.” “This process was really empowering,” Chrissy concludes. “It also reminded me how much I love rock music and how this band was founded on that love. When you listen to us, I want you to know you’re in control. If you don’t like something, you can make a change. I realized I don’t want to sit around feeling sorry for myself…I want more. I want to inspire everyone to chase their dreams to no end.”",
     social:{
       instagram: "https://www.instagram.com/againstthecurrent/",
@@ -4468,22 +3205,9 @@ var allMusic = [
     album_premiere: "2021",
     album_status: "false",
     id: "54",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -4509,22 +3233,9 @@ var allMusic = [
     album_premiere: "2021",
     album_status: "false",
     id: "55",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -4550,22 +3261,9 @@ var allMusic = [
     album_premiere: "2021",
     album_status: "false",
     id: "56",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -4591,22 +3289,9 @@ var allMusic = [
     album_premiere: "2021",
     album_status: "false",
     id: "57",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -4632,22 +3317,9 @@ var allMusic = [
     album_premiere: "2021",
     album_status: "false",
     id: "58",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -4673,22 +3345,9 @@ var allMusic = [
     album_premiere: "2021",
     album_status: "false",
     id: "59",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -4714,22 +3373,9 @@ var allMusic = [
     album_premiere: "2021",
     album_status: "false",
     id: "60",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     user_playlist_1: "",
   },
   {
@@ -4754,22 +3400,9 @@ var allMusic = [
     album_premiere: "2021",
     album_status: "false",
     id: "61",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -4796,22 +3429,9 @@ var allMusic = [
     album_premiere: "2017",
     album_status: "false",
     id: "62",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -4850,22 +3470,9 @@ var allMusic = [
     album_premiere: "2019",
     album_status: "false",
     id: "63",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "NF is the stage name of Michigan rapper and composer Nate Feuerstein, who emerged with his debut album, , in 2015. The raw emotion and honesty in his music continued on , building the foundation of an incredibly strong and loyal fan base. In 2017, Perception gave NF his first No. 1 album on Billboard’s Top 200 Chart, and delivered the multi-platinum hit single, “” which reached #1 at Pop Radio. In the summer of 2019, NF released his fourth album, , earning his second consecutive No. 1 on Billboard’s Top 200 Chart. Now certified Platinum, The Search featured Top 10 Pop radio hit “” and propelled NF to the global stage, selling out 19 dates on “The Search World Tour,” including shows in Australia and Europe. With over 28 RIAA certifications and 18 billion streams, NF earned a spot in the Top 50 most streamed artists of 2020. His fifth album and first ever mixtape,  was released in the Spring of 2021.",
     social:{
       instagram: "https://www.instagram.com/nfrealmusic/",
@@ -4903,22 +3510,9 @@ var allMusic = [
     album_premiere: "2019",
     album_status: "false",
     id: "64",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -4944,22 +3538,9 @@ var allMusic = [
     album_premiere: "2019",
     album_status: "false",
     id: "65",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -4987,22 +3568,9 @@ var allMusic = [
     album_premiere: "2019",
     album_status: "false",
     id: "66",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -5030,22 +3598,9 @@ var allMusic = [
     album_premiere: "2019",
     album_status: "false",
     id: "67",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -5084,22 +3639,9 @@ var allMusic = [
     album_premiere: "2003",
     album_status: "false",
     id: "68",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -5138,22 +3680,9 @@ var allMusic = [
     album_premiere: "2017",
     album_status: "false",
     id: "69",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "Tim Bergling’s death on April 20, 2018 was a shockwave, the global mourning an equal and opposite reaction to the Swedish producer’s intensely uplifting music and the reach it had during his comet streak of a career. As Avicii, Tim Bergling brought a pop sensibility to the electronic scene and helped redefine the global EDM phenomenon. His biggest tracks -“Levels”,  “Wake Me Up”, “Hey Brother” - were pristinely produced anthems of collective catharsis. His rise to fame and subsequent retirement was chronicled in Avicii: TRUE STORIES, filmed over 3 years and directed by Levan Tsikurishvili.  “I will however never let go of music,” he said at the time. “I will continue to speak to my fans through it. In this period, Bergling returned to place he felt best: the studio. This new project, TIM, is a 12-track collection of some of that new Avicii music. Produced primarily between January and April 2018, these songs represent Bergling’s most recent thoughts and vision. This project comes at the request and with the blessing of Bergling’s parents who wanted to see that Tim’s music was heard.  Albin Nedler and Kristoffer Fogelmark, Vincent Pontare and Salem Al Fakir and Carl Falk, Joakim Berg and Joe Janiak, who collaborated extensively with Bergling throughout his career, were enlisted to complete the tracks. But given how near completion it was, Bergling is still very much the producer of these tracks. While Avicii was Bergling’s brand, TIM is who he really was. ",
     social:{
       instagram: "",
@@ -5186,22 +3715,9 @@ var allMusic = [
     album_premiere: "2019",
     album_status: "false",
     id: "70",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -5229,22 +3745,9 @@ var allMusic = [
     album_premiere: "2019",
     album_status: "false",
     id: "71",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -5272,22 +3775,9 @@ var allMusic = [
     album_premiere: "2019",
     album_status: "false",
     id: "72",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -5316,22 +3806,9 @@ var allMusic = [
     album_premiere: "2019",
     album_status: "false",
     id: "73",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -5359,22 +3836,9 @@ var allMusic = [
     album_premiere: "2019",
     album_status: "false",
     id: "74",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -5403,22 +3867,9 @@ var allMusic = [
     album_premiere: "2019",
     album_status: "false",
     id: "75",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -5446,22 +3897,9 @@ var allMusic = [
     album_premiere: "2019",
     album_status: "false",
     id: "76",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -5489,22 +3927,9 @@ var allMusic = [
     album_premiere: "2019",
     album_status: "false",
     id: "77",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -5532,22 +3957,9 @@ var allMusic = [
     album_premiere: "2019",
     album_status: "false",
     id: "78",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -5575,22 +3987,9 @@ var allMusic = [
     album_premiere: "2019",
     album_status: "false",
     id: "79",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -5618,22 +4017,9 @@ var allMusic = [
     album_premiere: "2019",
     album_status: "false",
     id: "80",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -5661,22 +4047,9 @@ var allMusic = [
     album_premiere: "2019",
     album_status: "false",
     id: "81",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -5704,22 +4077,9 @@ var allMusic = [
     album_premiere: "2019",
     album_status: "false",
     id: "82",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -5758,22 +4118,9 @@ var allMusic = [
     album_premiere: "2016",
     album_status: "false",
     id: "83",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "multi-platinum electronic music producers, songwriters and djs based in Moscow. Teamed up in 2012 after more than 10 years of separate work, local awards, solo albums, FM-radioshows, releases on Universal Music, Warner Music, Kontor, Ultra and many more well-known record companies. AS Djs and live band Filatov & Karas performed on top worldwide Festivals like: Tomorrowland, WKND festival, Tinderbox, NRJ Air etc.. In 2015 Filatov & Karas Remix of The Good, The Bad and The Crazy by the French singer Imany took the top position for 11 weeks in the National Charts and became platinum in Russia. The follow-up remix of Don't be So Shy became a huge international hit with the multi-platinum & Diamond status in almost 30 countries. In 2016 it hits Top 5 Shazam Worldwide. Then Tell it to my heart and Wide Awake (with Eric Saade & Gustaf Noren) blew up the charts with millions of streams and views. The single Time Won't Wait became a big hit in Eastern Europe getting more than 85 000 000 views on Youtube. Filatov & Karas got awarded for the local singles Lirika, Ostatsya s toboy(V. Tsoy) and Vozmi Moe Serdce (feat Burito). The latest single Au Au got double Platinum Status in Russia and Gold in Poland!",
     social:{
       instagram: "https://www.instagram.com/filatovkaras/",
@@ -5805,22 +4152,9 @@ var allMusic = [
     album_premiere: "2016",
     album_status: "false",
     id: "84",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -5847,22 +4181,9 @@ var allMusic = [
     album_premiere: "2017",
     album_status: "false",
     id: "85",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -5906,22 +4227,9 @@ var allMusic = [
     album_premiere: "2014",
     album_status: "false",
     id: "86",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "Award-winning performer and Grammy-nominated songwriter Tove Lo crafts raw, confessional pop shaped by her love of grunge and the pristine sounds of her Swedish homeland. The way her 2013 single Habits (Stay High) swung between joy and despair and frankly depicted drug use and sex made it a distinctive, relatable, multi-platinum hit and a fitting introduction to her uncensored style. She followed it with more uninhibited, confessional music: Her 2014 debut album, Queen of the Clouds, and 2017's BLUE LIPS upheld her reputation for confronting the darker side of love and relationships with thoughtful, provocative, and catchy songwriting. On 2019's Sunshine Kitty, she took a slightly more lighthearted approach without losing any of her edge, while 2022's Dirt Femme lended nuance to her concept of femininity",
     social:{
       instagram: "https://instagram.com/Tovelo",
@@ -5965,22 +4273,9 @@ var allMusic = [
     album_premiere: "2012",
     album_status: "false",
     id: "87",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "Nicki Minaj skyrocketed from mixtape phenom to pop star with a unique combination of ferocity and humor she continues to flaunt with razor-sharp wordplay, mercilessly blunt lyricism, and a vocal style that turns on a dime from sugary to snarling. The rapper's early days included attempts at an acting career and losing her job at Red Lobster for being rude to customers, but she progressed quickly from MySpace demos to nationally adored mixtapes to household-name status. Pink Friday, Minaj's 2010 album debut, saw her appeal to a broader audience with chart-topping reception. Although she has had similar success with later full-lengths such as 2014's The Pinkprint and 2018's Queen, her singles have made an even greater impact.In just over a decade, Minaj has hit the Top 40 over two dozen times as a headliner with singles such as Super Bass, Starships, and Anaconda. These and other highlights were gathered in 2022 for Queen Radio, Vol. 1, an anthology containing the number one hit Super Freaky Girl among its new songs. Her Top 40 entries as a featured artist are even more numerous and include Kanye West's Monster, David Guetta's Turn Me On, and Ariana Grande's Side to Side. Nicki Minaj was born Onika Tanya Maraj in 1982. Born in Saint James, Trinidad and Tobago to parents who were both gospel singers, she lived with her grandmother in Saint James until the age of five, when she joined her mother, who had relocated to Queens, New York. In high school she discovered the performing arts, setting her sights on acting as her main pursuit. She eventually transitioned into music, working as part of a group called the Hood$tars in the early 2000s before going solo. In 2007 she was discovered by Dirty Money Entertainment CEO Big Fendi, who happened upon her demos on MySpace and signed Maraj to the label. At Fendi's suggestion, Maraj took on the stage name Nicki Minaj, jumbling her last name to reflect a more ruthless persona. Dirty Money Entertainment released both her 2007 debut mixtape, Playtime Is Over, and its 2008 follow-up, Sucka Free. Industry buzz was already surrounding Minaj on her earliest releases, and these mixtapes featured guest appearances from stars like Lil Wayne, Gucci Mane, Jadakiss, and Lil' Kim. Throughout the early 2020s, Minaj continued her usual bevy of guest features and collaborations, appearing on tracks by Doja Cat, former Little Mix vocalist Jesy Nelson, BIA, and Elton John. In 2022, she scored more hits as a lead artist with the Lil Baby collaborations Do We Have a Problem? and Bussin, then topped the pop chart with Super Freaky Girl. All three of these singles were included on Queen Radio, Vol. 1, a celebratory anthology released that August. Minaj kicked off 2023 with the flamenco- and trap-inspired Red Ruby da Sleeze, which she followed with a feature on YoungBoy Never Broke Again's WTF. ~ David Jeffries & Fred Thomas",
     social:{
       instagram: "https://www.instagram.com/nickiminaj/",
@@ -6024,22 +4319,9 @@ var allMusic = [
     album_premiere: "2022",
     album_status: "false",
     id: "88",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "genrefluides feuerwerk mit hang zum perlwein",
     social:{
       instagram: "https://www.instagram.com/future___bae/",
@@ -6083,22 +4365,9 @@ var allMusic = [
     album_premiere: "2020",
     album_status: "false",
     id: "89",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "Global pop superstar Dua Lipa released Future Nostalgia, her #1 UK sophomore album, this year to worldwide acclaim. It is one of the best reviewed albums of 2020 and debuted in the top 5 of the Billboard 200 Album Chart. Upon release, Future Nostalgia was the most streamed album in a day by a British female artist globally in Spotify history and has over 4.5 billion streams to date. Dua is the biggest female artist in the world on Spotify and is currently the third biggest artist overall with nearly 60 million monthly listeners. The album’s certified platinum lead single “Don’t Start Now” is a worldwide hit with one billion streams on Spotify alone, and a #2 spot on the Billboard Hot 100, a career high for the pop star. The track also broke her personal best record of weeks at #1 at US Top 40 radio. Dua followed the success of “Don’t Start Now” by releasing smash UK single “Physical,” and her US Top 40 #1 “Break My Heart.” Most recently, Future Nostalgia was shortlisted for UK’s prestigious Mercury Prize. Future Nostalgia is the follow up to Dua’s eponymous 2017 debut, which is certified platinum and spawned 6 platinum tracks. She made BRIT Award history in 2018 by becoming the first female artist to pick up five nominations, with two wins for British Breakthrough Act and British Female Solo Artist, and received two Grammy awards for Best New Artist and Best Dance Recording in early 2019.",
     social:{
       instagram: "https://www.instagram.com/DuaLipa/",
@@ -6143,22 +4412,9 @@ var allMusic = [
     album_premiere: "2021",
     album_status: "false",
     id: "90",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "Rita Ora is an international critically acclaimed singer-songwriter with four #1 UK singles and holds the record for the most Top 10 singles for a British female artist in the UK in history with a total of 13. In 2021, she launched the global collaboration Bang, with GRAMMY nominated Kazakh DJ and record producer Imanbek. Written and produced over Zoom by Rita and Imanbek and featuring David Guetta, Gunna and Argentinian rapper KHEA, the four track EP is a mix of modern pop, 80s and 90s club culture and floor-filling house. The EP is the follow up to her album Phoenix, which has amassed over 3.7 billion streams worldwide, spawned 3 platinum singles and includes “Lonely Together,” her collaboration with Avicii which won “Best Dance” VMA at the MTV Video Music Awards. In addition, her debut album, Ora, debuted at #1 on the UK charts and was certified platinum.",
     social:{
       instagram: "https://www.instagram.com/ritaora/",
@@ -6203,22 +4459,9 @@ var allMusic = [
     album_premiere: "2014",
     album_status: "false",
     id: "91",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "The independent underground would not be what it is today without pioneers like Strange Music co-founder Tech N9ne. Tech’s unparalleled tour schedule and signature rapid-fire “chopper” style combined with the business acumen of Strange Music CEO Travis O’Guin have molded Strange Music into the number one independent hip-hop label in the world.In less than two decades, Tech himself has earned three gold records, sold over two million albums, and made multiple appearances on Forbes’s “Hip-Hop Cash Kings” list. Tech’s multi-faceted skillset has not gone unrecognized by artists of all genres, exemplified by collaborations with such diverse artists as The Doors, Slipknot’s Corey Taylor, Eminem, and Boyz II Men, to name just a few. Everyone from Dwayne “The Rock” Johnson to Elton John has been spotted bumping Tech N9ne records, a testament to constant reinvention and inarguable excellence that has become standard of Tech’s work. It’s by no coincidence that his latest label-wide collaborative project was named Dominion – Tech N9ne will not stop until he and Strange Music have completely dominated the world of hip-hop and beyond.",
     social:{
       instagram: "https://www.instagram.com/therealtechn9ne/",
@@ -6262,288 +4505,192 @@ var allMusic = [
     album_premiere: "2021",
     album_status: "false",
     id: "92",
-    lyrics:{
-      ve1:{
+    lyrics:[
+       {
         ls: "We're in the dark, it's getting late",
         stamp: "16",
       },
-      ve2:{
+       {
         ls: "I really should go, he's waiting for me",
         stamp: "24",
       },
-      ve3:{
+       {
         ls: "We both know it's not what it seems",
         stamp: "32",
       },
-      ve4:{
+       {
         ls: "We both know what's between the sheets",
         stamp: "39.5",
       },
-      ve5:{
+       {
         ls: "I know that it's a secret",
         stamp: "46.5",
       },
-      ve6:{
+       {
         ls: "And that I gotta keep it",
         stamp: "47.5",
       },
-      ve7:{
+       {
         ls: "But I want the lights on",
         stamp: "49.5",
       },
-      ve8:{
+       {
         ls: "Yeah, I want the lights on",
         stamp: "51",
       },
-      ve9:{
+       {
         ls: "And I don't want to run away anymore",
         stamp: "53.5",
       },
-      ve10:{
+       {
         ls: "Leave the lights on, leave the lights on, leave the lights on",
         stamp: "58",
       },
-      ve11:{
+       {
         ls: "What would they say, what would they do?",
         stamp: "78.5",
       },
-      ve12:{
+       {
         ls: "Would it be trouble if they knew?",
         stamp: "87.5",
       },
-      ve13:{
+       {
         ls: "I'm trying hard to make you see",
         stamp: "95.5",
       },
-      ve14:{
+       {
         ls: "All that you are is all that I need",
         stamp: "102.5",
       },
-      ve15:{
+       {
         ls: "I know that it's a secret",
         stamp: "108.5",
       },
-      ve16:{
+       {
         ls: "And that I gotta keep it",
         stamp: "111",
       },
-      ve17:{
+      {
         ls: "But I want the lights on",
         stamp: "112",
       },
-      ve18:{
+       {
         ls: "Yeah, I want the lights on",
         stamp: "115",
       },
-      ve19:{
+       {
         ls: "And I don't want to run away anymore",
         stamp: "116.5",
       },
-      ve20:{
+       {
         ls: "Leave the lights on, leave the lights on",
         stamp: "120",
       },
-      ve21:{
+       {
         ls: "I know that it's a secret",
         stamp: "123",
       },
-      ve22:{
+       {
         ls: "And that I gotta keep it",
         stamp: "126",
       },
-      ve23:{
+       {
         ls: "But I want the lights on",
         stamp: "128.5",
       },
-      ve24:{
+       {
         ls: "Yeah, I want the lights on",
         stamp: "130.5",
       },
-      ve25:{
+       {
         ls: "And I don't want to run away anymore",
         stamp: "132",
       },
-      ve26:{
+       {
         ls: "Leave the lights on, leave the lights on, leave the lights on",
         stamp: "136.5",
       },
-      ve27:{
+       {
         ls: "Let it out, let it out, let it out",
         stamp: "156",
       },
-      ve28:{
+       {
         ls: "Let it out, let it out, let it out",
         stamp: "164",
       },
-      ve29:{
+       {
         ls: "I know that it's a secret",
         stamp: "171",
       },
-      ve30:{
+       {
         ls: "And that I gotta keep it",
         stamp: "173",
       },
-      ve31:{
+       {
         ls: "But I want the lights on",
         stamp: "175.5",
       },
-      ve32:{
+       {
         ls: "Yeah, I want the lights on",
         stamp: "177.5",
       },
-      ve33:{
+       {
         ls: "And I don't want to run away anymore",
         stamp: "179",
       },
-      ve34:{
+       {
         ls: "Leave the lights on, leave the lights on",
         stamp: "183",
       },
-      ve35:{
+       {
         ls: "I know that it's a secret",
         stamp: "188",
       },
-      ve36:{
+       {
         ls: "And that I gotta keep it",
         stamp: "190",
       },
-      ve37:{
+       {
         ls: "But I want the lights on",
         stamp: "190.5",
       },
-      ve38:{
+       {
         ls: "Yeah, I want the lights on",
         stamp: "192",
       },
-      ve39:{
+       {
         ls: "And I don't want to run away anymore",
         stamp: "195",
       },
-      ve40:{
+       {
         ls: "Leave the lights on, leave the lights on",
         stamp: "199",
       },
-      ve41:{
+       {
         ls: "I know that it's a secret",
         stamp: "203",
       },
-      ve42:{
+       {
         ls: "And that I gotta keep it",
         stamp: "205",
       },
-      ve43:{
+       {
         ls: "But I want the lights on",
         stamp: "207",
       },
-      ve44:{
+       {
         ls: "Yeah, I want the lights on",
         stamp: "209",
       },
-      ve45:{
+       {
         ls: "And I don't want to run away anymore",
         stamp: "211",
       },
-      ve46:{
+       {
         ls: "Leave the lights on, leave the lights on, leave the lights on",
         stamp: "215",
       },
-      ve47:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve48:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve49:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve50:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve51:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve52:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve53:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve54:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve55:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve56:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve57:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve58:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve59:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve60:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve61:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve62:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve63:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve64:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve65:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve66:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve67:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve68:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve69:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve70:{
-        ls: "",
-        stamp: "3600",
-      },
-    },
+    ],
 
     bio: "Meiko's songs find common ground between indie pop and coffeehouse folk as her distinctive alto vocals share the spotlight alongside acoustic guitars, pianos, and unique arrangements. A longtime songwriter, Meiko was raised in the small town of Roberta, Georgia, where she discovered her love for public performance after singing at a Southern Baptist church. She then took up the guitar, playing her father's Gibson before receiving her own instrument as a birthday present. At the age of 18, Meiko left home for greener pastures, eventually resettling in Los Angeles and scheduling recurring performances at the Hotel Café, a popular haven for L.A.-based singer/songwriters.",
     social:{
@@ -6577,22 +4724,9 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "93",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -6620,22 +4754,9 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "94",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -6663,22 +4784,9 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "95",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -6706,22 +4814,9 @@ var allMusic = [
     album_premiere: "2016",
     album_status: "false",
     id: "96",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -6748,22 +4843,9 @@ var allMusic = [
     album_premiere: "2022",
     album_status: "false",
     id: "97",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -6790,22 +4872,9 @@ var allMusic = [
     album_premiere: "2022",
     album_status: "false",
     id: "98",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -6832,22 +4901,9 @@ var allMusic = [
     album_premiere: "2022",
     album_status: "false",
     id: "99",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -6886,22 +4942,9 @@ var allMusic = [
     album_premiere: "2021",
     album_status: "false",
     id: "100",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "Bazanji is an American hip-hop artist of Kurdish descent. He was born in England — where his parents had moved from their native Kurdistan — and at the age of six relocated with his family to North Carolina. Bazanji's music began to flourish while pursuing a degree in dentistry, leaving him with difficult decisions to make regarding his future career. After graduating, he decided to pursue music full-time and has been independently validating his path into the music industry with over 300 million streams.",
     social:{
       instagram: "https://www.instagram.com/bazanji/",
@@ -6950,8 +4993,8 @@ var allMusic = [
     album_premiere: "2022",
     album_status: "false",
     id: "101",
-    lyrics:{
-    },
+    lyrics:[
+    ],
     bio: "Rosalía Vila (aka Rosalía) is a Spanish pop and flamenco singer. Involved in the margins of popular and traditional music since her teens, she also delves into other genres such as hip-hop, soul, and trap. Her voice has been described by no less a talent than flamenco guitarist  as sharp and sweet, but with a bite, like the old ones After her 2017 debut album Los Ángeles garnered attention from the U.S. public and earned her a Latin Grammy nomination for Best New Artist, her 2018 follow-up, El Mal Querer, was a major critical and commercial breakthrough, topping Billboard's Latin Pop Albums chart and eventually winning a Grammy. The single La Fema (feat. ) appeared in 2021. Her third long-player, Motomami, offered songwriting collaborations with many artists and producers including  and . The 16-track album was released in March 2022, following a performance of the single Chicken Teriyaki on Saturday Night Live. Rosalía was the first Spanish singer to perform solo on the program. Enthralled by flamenco since childhood, Rosalía began performing as a teenager. She soon assembled an eclectic and intriguing curriculum, including appearances in prestigious Spanish and international festivals and collaborations with other artists, and the theater company La Fura del Baus. She also began posting videos of her performances to YouTube and gained a substantial number of social media followers. 2021 saw Rosalía team with Dominican rapper  on the single Linda. Later that year she issued the electro-bachata track La Fema, the -assisted lead single from her third full-length effort, Motomami. Appearing in March 2022, the long-player's 16 tracks utilized the production talents of Noah Goldstein, Sir Dylan, , Michael Uzowuru, , Sky Rompiendo, and several others. ~ Thom Jurek & Mariano Prunes, Rovi",
     social:{
       instagram: "",
@@ -7002,288 +5045,200 @@ var allMusic = [
     album_cover: "https://i.scdn.co/image/ab67616d00001e02307910d4242c0d6b1fedf955",
     album_premiere: "2017",
     id: "102",
-    lyrics:{
-      ve1:{
+    lyrics:[
+       {
         ls: "In your eyes, there's heavy blue",
         stamp: "8",
       },
-      ve2:{
+       {
         ls: "One to love, and one to lose",
         stamp: "11.5",
       },
-      ve3:{
+       {
         ls: "Sweet divine, a heavy truth",
         stamp: "15.5",
       },
-      ve4:{
+       {
         ls: "Water or wine, don't make me choose",
         stamp: "19",
       },
-      ve5:{
+       {
         ls: "I wanna fell the way that we did that summer night, night",
         stamp: "22",
       },
-      ve6:{
+       {
         ls: "Drunk on a feeling, alone with the stars in the sky",
         stamp: "29.5",
       },
-      ve7:{
+       {
         ls: "I've been running through the jungle",
         stamp: "36.5",
       },
-      ve8:{
+       {
         ls: "I've been running with the wolves",
         stamp: "39",
       },
-      ve9:{
+       {
         ls: "To get to you, to get to you",
         stamp: "40.5",
       },
-      ve10:{
+       {
         ls: "I've been down the darkest alleys ",
         stamp: "44",
       },
-      ve11:{
+       {
         ls: "Saw the dark side of the moon",
         stamp: "47",
       },
-      ve12:{
+       {
         ls: "To get to you, to get to you",
         stamp: "49",
       },
-      ve13:{
+       {
         ls: "I've looked for love in every stranger",
         stamp: "52",
       },
-      ve14:{
+       {
         ls: "Took too much to ease the anger",
         stamp: "54.5",
       },
-      ve15:{
+       {
         ls: "All for you, yeah, all for you",
         stamp: "56.5",
       },
-      ve16:{
+       {
         ls: "I've been running through the jungle",
         stamp: "60",
       },
-      ve17:{
+      {
         ls: "I've been crying with the wolves",
         stamp: "62",
       },
-      ve18:{
+       {
         ls: "To get to you, to get to you, to get to you",
         stamp: "64",
       },
-      ve19:{
+       {
         ls: "Your fingertips trace my skin",
         stamp: "84.5",
       },
-      ve20:{
+       {
         ls: "To places, I have never been",
         stamp: "88",
       },
-      ve21:{
+       {
         ls: "Blindly, I am following",
         stamp: "92",
       },
-      ve22:{
+       {
         ls: "Break down these walls and come on in",
         stamp: "96",
       },
-      ve23:{
+       {
         ls: "I wanna fell the way that we did that summer night, night",
         stamp: "99",
       },
-      ve24:{
+       {
         ls: "Drunk on a feeling, alone with the stars in the sky",
         stamp: "106.5",
       },
-      ve25:{
+       {
         ls: "I've been running through the jungle",
         stamp: "114",
       },
-      ve26:{
+       {
         ls: "I've been running with the wolves",
         stamp: "116",
       },
-      ve27:{
+       {
         ls: "To get to you, to get to you",
         stamp: "118",
       },
-      ve28:{
+       {
         ls: "I've been down the darkest alleys ",
         stamp: "121",
       },
-      ve29:{
+       {
         ls: "Saw the dark side of the moon",
         stamp: "123",
       },
-      ve30:{
+       {
         ls: "To get to you, to get to you",
         stamp: "125",
       },
-      ve31:{
+       {
         ls: "I've looked for love in every stranger",
         stamp: "129",
       },
-      ve32:{
+       {
         ls: "Took too much to ease the anger",
         stamp: "131.5",
       },
-      ve33:{
+       {
         ls: "All for you, yeah, all for you",
         stamp: "133",
       },
-      ve34:{
+       {
         ls: "I've been running through the jungle",
         stamp: "137",
       },
-      ve35:{
+       {
         ls: "I've been crying with the wolves",
         stamp: "139",
       },
-      ve36:{
+       {
         ls: "To get to you, to get to you, to get to you",
         stamp: "141",
       },
-      ve37:{
+       {
         ls: "I've been running through the jungle",
         stamp: "160",
       },
-      ve38:{
+       {
         ls: "I've been running with the wolves",
         stamp: "162",
       },
-      ve39:{
+       {
         ls: "To get to you, to get to you",
         stamp: "164",
       },
-      ve40:{
+       {
         ls: "I've been down the darkest alleys ",
         stamp: "167.5",
       },
-      ve41:{
+       {
         ls: "Saw the dark side of the moon",
         stamp: "169",
       },
-      ve42:{
+       {
         ls: "To get to you, to get to you",
         stamp: "171.5",
       },
-      ve43:{
+       {
         ls: "I've looked for love in every stranger",
         stamp: "175",
       },
-      ve44:{
+       {
         ls: "Took too much to ease the anger",
         stamp: "177",
       },
-      ve45:{
+       {
         ls: "All for you, yeah, all for you",
         stamp: "179",
       },
-      ve46:{
+       {
         ls: "I've been running through the jungle",
         stamp: "183",
       },
-      ve47:{
+       {
         ls: "I've been crying with the wolves",
         stamp: "185",
       },
-      ve48:{
+       {
         ls: "To get to you, to get to you, to get to you",
         stamp: "186.5",
       },
-      ve49:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve50:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve51:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve52:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve53:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve54:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve55:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve56:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve57:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve58:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve59:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve60:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve61:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve62:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve63:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve64:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve65:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve66:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve67:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve68:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve69:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve70:{
-        ls: "",
-        stamp: "3600",
-      },
-    },
+    ],
     bio: "From an Hispanic background, Selena Gomez was mostly raised by her mother - former actress Amanda Teefey - and developed her interest in the stage at a young age. She got her first break when she was 10 in the 2002 TV series Barney & Friends and made her film debut a year later in the movie Spy Kids 3-D Game Over. She went on to play Mikayla in the Disney Channel series Hannah Montana and then took the lead role of Alex Russo in Wizards Of Waverly Place. Her first record was the theme song from the series, Everything Is Not What It Seems. Dating fellow Disney star Nick Jonas at the time, Gomez starred in the video for the Jonas Brothers hit Burnin' Up and recorded her own tracks like Cruella de Vil and Fly To Your Heart (soundtrack to the animated film Tinker Bell). She then sang on the Forever The Sickest Kids single Whoa Oh (Me Vs Everyone) and, on the back of an appearance in the movie Another Cinderella Story, had her first hit in 2009 with Tell Me Something I Don't Know. She also appeared in the reality series Jonas Brothers: Living The Dream and recorded the song One And The Same with her close friend Demi Lovato. She subsequently decided to concentrate on her music, forming the band Selena Gomez & The Scene and recorded her 2009 debut album Kiss & Tell, producing the hit single Naturally and breaking into the US Top 10. Meanwhile she continued her acting career, playing a more adult role in the movie Ramona & Beezus, appeared in various TV commercials and launched her own fashion range before releasing her second album A Year Without Rain. Gomez gained further attention when she started dating Justin Bieber and had another hit in 2013 with Come & Get It before releasing what was billed as her first solo album without The Scene, Stars Dance. Artist biography compiled by BDS/West 10. All rights reserved",
     social:{
       instagram: "https://www.instagram.com/selenagomez/",
@@ -7331,22 +5286,9 @@ var allMusic = [
     album_premiere: "2020",
     album_status: "false",
     id: "103",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "Miley Cyrus is one of the most influential artists in pop culture with about 160 million Instagram followers. She has six #1 albums including her 2013 GRAMMY-nominated album Bangerz, which is also certified 3x platinum in the U.S. In addition, she has had an impressive five sold-out world tours throughout her career. Last summer, Miley released, Midnight Sky, from her seventh album Plastic Hearts. The song went #1 on iTunes in 41 countries, and the self-directed video has amassed 138 million views",
     social:{
       instagram: "https://www.instagram.com/selenagomez/",
@@ -7396,288 +5338,236 @@ var allMusic = [
     album_status: "false",
     id: "104",
 
-    lyrics:{
-      ve1:{
+    lyrics:[
+       {
         ls: "Found you when your heart was broke",
         stamp: "14",
       },
-      ve2:{
+       {
         ls: "I filled your cup until it overflowed",
         stamp: "17",
       },
-      ve3:{
+       {
         ls: "Took it so far to keep you close (keep you close)",
         stamp: "21",
       },
-      ve4:{
+       {
         ls: "I was afraid to leave you on your own",
         stamp: "24",
       },
-      ve5:{
+       {
         ls: "I said I'd catch you if you fail",
         stamp: "27",
       },
-      ve6:{
+       {
         ls: "And if they laugh, then fuck'em all (all)",
         stamp: "30",
       },
-      ve7:{
+       {
         ls: "And then i got you off your knees",
         stamp: "34",
       },
-      ve8:{
+       {
         ls: "Put your right back on your feet",
         stamp: "36",
       },
-      ve9:{
+       {
         ls: "Just so you could take advantage of me",
         stamp: "38",
       },
-      ve10:{
+       {
         ls: "Tell me how's it feel sittin' up there?",
         stamp: "40",
       },
-      ve11:{
+       {
         ls: "Feeling so high but too far away to hold me",
         stamp: "44",
       },
-      ve12:{
+       {
         ls: "You know I'm the one who put you up there",
         stamp: "48",
       },
-      ve13:{
+       {
         ls: "Name in the sky",
         stamp: "51",
       },
-      ve14:{
+       {
         ls: "Does it ever get lonely?",
         stamp: "53",
       },
-      ve15:{
+       {
         ls: "Thinking you could live without me",
         stamp: "55",
       },
-      ve16:{
+       {
         ls: "Thinking you could live without me",
         stamp: "59",
       },
-      ve17:{
+      {
         ls: "Baby, I'm the one who put you up there",
         stamp: "62",
       },
-      ve18:{
+       {
         ls: "I don't know why (yeah, I don't' know why)",
         stamp: "65",
       },
-      ve19:{
+       {
         ls: "Thinking you could live without me",
         stamp: "69",
       },
-      ve20:{
+       {
         ls: "Live without me",
         stamp: "73",
       },
-      ve21:{
+       {
         ls: "Baby, I'm the one who put you up there",
         stamp: "76",
       },
-      ve22:{
+       {
         ls: "I don't know why (yeah, I don't' know why)",
         stamp: "79",
       },
-      ve23:{
+       {
         ls: "Gave love 'bout a hunded tries (hundred tries)",
         stamp: "84",
       },
-      ve24:{
+       {
         ls: "Just running from the demons in your mind",
         stamp: "88",
       },
-      ve25:{
+       {
         ls: "Then I took yours and made 'em mine (made 'em mine)",
         stamp: "91",
       },
-      ve26:{
+       {
         ls: "I didn't notice 'cause my love was blind",
         stamp: "95",
       },
-      ve27:{
+       {
         ls: "Said I'd catch you if you fall (fall)",
         stamp: "98",
       },
-      ve28:{
+       {
         ls: "And if they laugh, then fuck'em all (all)",
         stamp: "101",
       },
-      ve29:{
+       {
         ls: "And then i got you off your knees",
         stamp: "104",
       },
-      ve30:{
+       {
         ls: "Put your right back on your feet",
         stamp: "106",
       },
-      ve31:{
+       {
         ls: "Just so you could take advantage of me",
         stamp: "108",
       },
-      ve32:{
+       {
         ls: "Tell me how's it feel sittin' up there?",
         stamp: "111",
       },
-      ve33:{
+       {
         ls: "Feeling so high but too far away to hold me",
         stamp: "115",
       },
-      ve34:{
+       {
         ls: "You know I'm the one who put you up there",
         stamp: "118",
       },
-      ve35:{
+       {
         ls: "Name in the sky",
         stamp: "122",
       },
-      ve36:{
+       {
         ls: "Does it ever get lonely?",
         stamp: "124",
       },
-      ve37:{
+       {
         ls: "Thinking you could live without me",
         stamp: "125",
       },
-      ve38:{
+       {
         ls: "Thinking you could live without me",
         stamp: "129",
       },
-      ve39:{
+       {
         ls: "Baby, I'm the one who put you up there",
         stamp: "133",
       },
-      ve40:{
+       {
         ls: "I don't know why (yeah, I don't' know why)",
         stamp: "135",
       },
-      ve41:{
+       {
         ls: "Thinking you could live without me",
         stamp: "139",
       },
-      ve42:{
+       {
         ls: "Live without me",
         stamp: "144",
       },
-      ve43:{
+       {
         ls: "Baby, I'm the one who put you up there",
         stamp: "147",
       },
-      ve44:{
+       {
         ls: "I don't know why (yea)",
         stamp: "150",
       },
-      ve45:{
+       {
         ls: "You don't have to say just what you did",
         stamp: "155",
       },
-      ve46:{
+       {
         ls: "I already know (I know)",
         stamp: "158",
       },
-      ve47:{
+       {
         ls: "I had to go and fint out from them",
         stamp: "160",
       },
-      ve48:{
+       {
         ls: "So tell me how's it feel (oh-whoa)",
         stamp: "164",
       },
-      ve49:{
+       {
         ls: "Tell me how's it feel sittin' up there?",
         stamp: "168",
       },
-      ve50:{
+       {
         ls: "Feeling so high but too far away to hold me",
         stamp: "171",
       },
-      ve51:{
+       {
         ls: "You know I'm the one who put you up there",
         stamp: "175",
       },
-      ve52:{
+       {
         ls: "Name in the sky",
         stamp: "178",
       },
-      ve53:{
+       {
         ls: "Does it ever get lonely?",
         stamp: "180",
       },
-      ve54:{
+       {
         ls: "Thinking you could live without me",
         stamp: "182",
       },
-      ve55:{
+       {
         ls: "Thinking you could live without me",
         stamp: "185",
       },
-      ve56:{
+       {
         ls: "Baby, I'm the one who put you up there",
         stamp: "189",
       },
-      ve57:{
+       {
         ls: "I don't know why (yeah, I don't' know why)",
         stamp: "192",
       },
-      ve58:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve59:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve60:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve61:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve62:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve63:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve64:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve65:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve66:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve67:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve68:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve69:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve70:{
-        ls: "",
-        stamp: "3600",
-      },
-    },
+    ],
 
     bio: "Halsey has amassed more than 31 billion combined global streams to date, including more than 12.5 billion U.S. streams, and sold nearly 17 million adjusted album units worldwide. Their most recent album, If I Can’t Have Love, I Want Power, debuted at No. 1 on Billboard’s Top Current Album Sales and Top Alternative Albums charts in 2021. It follows 2020’s Manic, which also entered the Top Current Album Sales chart at No. 1. Manic was the first album of 2020 to be certified Platinum in the U.S. and is now 2x Platinum. 2017’s hopeless fountain kingdom was recently certified 2x Platinum by the RIAA. Halsey continues to push creative boundaries, exerting an influence and impact beyond music. Her first book, I Would Leave Me If I Could: A Collection of Poetry, debuted on The New York Times Best Sellers list in 2020. Named as one of TIME's 100 Most Influential People of 2020, they have won over 20 awards, including an AMA, MTV VMA, GLAAD Award, the Songwriters Hall of Fame’s Hal David Starlight Award and a CMT Music Award. Halsey recently introduced about-face, a multi-dimensional makeup line for made for everyone. Halsey continues to speak up for important causes such as disenfranchised youth, women’s rights, mental health and the LGBTQ community.",
     social:{
@@ -7709,22 +5599,8 @@ var allMusic = [
     album_premiere: "2019",
     album_status: "false",
     id: "105",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+    ],
 
     user_playlist_1: "",
   },
@@ -7750,22 +5626,9 @@ var allMusic = [
     album_premiere: "2019",
     album_status: "false",
     id: "106",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -7809,22 +5672,9 @@ var allMusic = [
     album_premiere: "2019",
     album_status: "false",
     id: "107",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "Rihanna established her pop credentials in 2005 with Pon de Replay, a boisterous debut single that narrowly missed the top of the Billboard Hot 100 and fast-tracked her to becoming one of the most popular, acclaimed, and dynamic artists in postmillennial contemporary music. Until the Barbados native took a break from releasing music in the late 2010s, she was a near-constant presence in the upper reaches of the pop chart. Through 2017, mixing and matching pop, dancehall, R&B, EDM, and adult contemporary material, she headlined 11 number one hits, including Umbrella and Only Girl (In the World), singles that earned her two of her nine Grammy awards. More than just a singles artist, Rihanna continually pushed ahead stylistically with her LPs, highlighted by the bold Good Girl Gone Bad (2007), the steely Rated R (2009), and the composed Anti (2016), all of which confounded expectations and placed within the Top Ten of the Billboard 200 with eventual multi-platinum certifications.",
     social:{
       instagram: "",
@@ -7873,22 +5723,9 @@ var allMusic = [
     album_premiere: "2004",
     album_status: "false",
     id: "108",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "Eminem is one of the best-selling artists in music history, and easily one of rap's biggest crossover successes. He was the first white rapper since  to garner both sales and critical respect, but his impact has exceeded this confining distinction. On sheer technical skills, Eminem is one of the greatest MCs of his generation: rapid, fluid, dexterous, and unpredictable, capable of pulling off long-form narratives or withering asides.",
     social:{
       instagram: "https://www.instagram.com/eminem/",
@@ -7919,22 +5756,8 @@ var allMusic = [
     album_premiere: "2020",
     album_status: "false",
     id: "109",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+    ],
   },
   {
     name: "blindfolded",
@@ -7960,288 +5783,208 @@ var allMusic = [
     id: "110",
     bio: "The moment you find your voice, you step into yourself and actualize your potential. At this point, expectations no longer matter, fear disappears, and everything changes. Against The Current not only embrace their voice, but project it louder than ever. After hundreds of millions of streams, major collaborations with the likes of Riot Games, and countless packed shows, the trio—Chrissy Costanza [vocals], Dan Gow [guitar], and Will Ferri [drums]—lift themselves up to this moment with their new music. Dan observes, “We dove back into early inspirations like Taking Back Sunday and incorporated those vibes into what we do. It fueled us to keep going.” In the end, Against The Current will stir up the same frenzy and fire in audiences as well with this music. “Musically, it’s back to the three of us in a room together, and you’ll hear it,” adds Will. “In a lot of ways, it’s like we’re just getting started—even though it’s been ten years. It feels good.” “This process was really empowering,” Chrissy concludes. “It also reminded me how much I love rock music and how this band was founded on that love. When you listen to us, I want you to know you’re in control. If you don’t like something, you can make a change. I realized I don’t want to sit around feeling sorry for myself…I want more. I want to inspire everyone to chase their dreams to no end.”",
     
-    lyrics:{
-      ve1:{
+    lyrics:[
+       {
         ls: "Diamonds dripping down my throat",
         stamp: "5",
       },
-      ve2:{
+       {
         ls: "Why's it gotta be so addictive?",
         stamp: "8",
       },
-      ve3:{
+       {
         ls: "Now I'm chasing after antidotes",
         stamp: "11.5",
       },
-      ve4:{
+       {
         ls: "For anything that tastes like a quick fix",
         stamp: "15.5",
       },
-      ve5:{
+       {
         ls: "Days like this, no, nothing feels right",
         stamp: "19",
       },
-      ve6:{
+       {
         ls: "Nothing sticks, I can't get out my mind",
         stamp: "22",
       },
-      ve7:{
+       {
         ls: "Tell myself to let it go",
         stamp: "26",
       },
-      ve8:{
+       {
         ls: "I wish that I could let it go",
         stamp: "29.5",
       },
-      ve9:{
+       {
         ls: "It's hard to keep it down now",
         stamp: "32",
       },
-      ve10:{
+       {
         ls: "But I need to let the fever sweat out",
         stamp: "38.5",
       },
-      ve11:{
+       {
         ls: "Now I can't stand still",
         stamp: "45.5",
       },
-      ve12:{
+       {
         ls: "Should be runnin' free",
         stamp: "47.5",
       },
-      ve13:{
+       {
         ls: "And all these nightmares used to be daydreams",
         stamp: "49",
       },
-      ve14:{
+       {
         ls: "I got my eyes wide open", 
         stamp: "53",
       },
-      ve15:{
+       {
         ls: "Don't wanna care bout nothin'",
         stamp: "55.5",
       },
-      ve16:{
+       {
         ls: "Wish I could know less, just go back to bed",
         stamp: "59",
       },
-      ve17:{
+      {
         ls: "'Cause all my pink skies have been painted red",
         stamp: "62",
       },
-      ve18:{
+       {
         ls: "If this is real don't show it",
         stamp: "66",
       },
-      ve19:{
+       {
         ls: "I wanna run blindfolded",
         stamp: "69.5",
       },
-      ve20:{
+       {
         ls: "Reality's a bitter taste (bitter taste)",
         stamp: "73",
       },
-      ve21:{
+       {
         ls: "But fantasy can be so deceiving",
         stamp: "76.5",
       },
-      ve22:{
+       {
         ls: "All my good intentions gone to waste",
         stamp: "79",
       },
-      ve23:{
+       {
         ls: "I'll do anything to shut out this feeling",
         stamp: "83",
       },
-      ve24:{
+       {
         ls: "I can't go back, no, I've gone too far",
         stamp: "86.5",
       },
-      ve25:{
+       {
         ls: "I miss the way that my eyes filled with stars",
         stamp: "89.5",
       },
-      ve26:{
+       {
         ls: "Tell myself to let it go, but I don't",
         stamp: "93",
       },
-      ve27:{
+       {
         ls: "I wish that I could let it go",
         stamp: "96.5",
       },
-      ve28:{
+       {
         ls: "Now I can't stand still",
         stamp: "99",
       },
-      ve29:{
+       {
         ls: "Should be runnin' free",
         stamp: "101.5",
       },
-      ve30:{
+       {
         ls: "And all these nightmares used to be daydreams",
         stamp: "103.5",
       },
-      ve31:{
+       {
         ls: "I got my eyes wide open",
         stamp: "106.5",
       },
-      ve32:{
+       {
         ls: "Don't wanna care bout nothin'",
         stamp: "110",
       },
-      ve33:{
+       {
         ls: "Wish I could know less, just go back to bed",
         stamp: "113",
       },
-      ve34:{
+       {
         ls: "'Cause all my pink skies have been painted red",
         stamp: "116",
       },
-      ve35:{
+       {
         ls: "If this is real don't show it",
         stamp: "119.5",
       },
-      ve36:{
+       {
         ls: "I wanna run blindfolded",
         stamp: "123",
       },
-      ve37:{
+       {
         ls: "Take a sip, have it anyway you want it",
         stamp: "141",
       },
-      ve38:{
+       {
         ls: "Drink it in, let us finish what you started",
         stamp: "144.5",
       },
-      ve39:{
+       {
         ls: "Throw a fit, yeah I guess, I shoulda called it",
         stamp: "148",
       },
-      ve40:{
+       {
         ls: "Now it's stolen",
         stamp: "151",
       },
-      ve41:{
+       {
         ls: "I'm blindfolded",
         stamp: "152.5",
       },
-      ve42:{
+       {
         ls: "Stand still",
         stamp: "154.5",
       },
-      ve43:{
+       {
         ls: "Should be runnin' free",
         stamp: "156",
       },
-      ve44:{
+       {
         ls: "And all these nightmares used to be daydreams",
         stamp: "157",
       },
-      ve45:{
+       {
         ls: "I got my eyes wide open",
         stamp: "160.5",
       },
-      ve46:{
+       {
         ls: "Don't wanna care bout nothin'",
         stamp: "164",
       },
-      ve47:{
+       {
         ls: "Wish I could know less, just go back to bed",
         stamp: "167",
       },
-      ve48:{
+       {
         ls: "'Cause all my pink skies have been painted red",
         stamp: "170.5",
       },
-      ve49:{
+       {
         ls: "If this is real don't show it",
         stamp: "174",
       },
-      ve50:{
+       {
         ls: "I wanna run blindfolded",
         stamp: "177.5",
       },
-      ve51:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve52:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve53:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve54:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve55:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve56:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve57:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve58:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve59:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve60:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve61:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve62:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve63:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve64:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve65:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve66:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve67:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve68:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve69:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve70:{
-        ls: "",
-        stamp: "3600",
-      },
-    },
+   ],
     
     social:{
       instagram: "https://www.instagram.com/againstthecurrent/",
@@ -8292,8 +6035,8 @@ var allMusic = [
     album_status: "false",
     id: "111",
     bio: "Ava Max is ready to take her already extraordinary rise to the pinnacle of pop success to even greater heights with her first new single of 2022, “Maybe You’re The Problem.” With over 11B worldwide streams, an array of smash collaborations, and multiple RIAA gold and platinum certifications in the US alone, she has fast proven a true pop superstar. 2018 saw Max make her explosive arrival with the blockbuster success of the RIAA 3x-platinum certified hit, “Sweet but Psycho.” Currently boasting more than 3.5B global streams, spending three weeks in the top 10 on Billboard’s “Hot 100” while reaching #1 in more than 20 countries.",
-    lyrics:{
-    },
+    lyrics:[
+    ],
     social:{
       instagram: "https://www.instagram.com/avamax/",
       twitter: "https://twitter.com/avamax",
@@ -8337,288 +6080,104 @@ var allMusic = [
     id: "112",
     bio: "Sanah to jedna z najciekawszych wokalistek z nurtu tzw. quality pop na polskiej scenie. W 2019 roku wydała szereg singli, którymi zainteresowała i zdobyła wielu fanów. W roku 2020 roku jej single  ,  i  pokochała cała Polska - na tyle, że debiutancka płyta sanah „Królowa dram” zadebiutowała na 1. miejscu list sprzedaży płyt OLiS i szybko zyskała status Platyny. Rok pozniej sukces ten powtorzyla z hitowym albumem „Irenka” - hity Ale jazz! , etc. (na disco) czy ten Stan ponownie podbiły wszystkie możliwe listy przebojów. Jesienią ukaże się reedycja „Irenki” a na niej m.in. najsłynniejszy nieznany utwór ostatnich miesięcy - Kolońska i szlugi!",
 
-    lyrics:{
-      ve1:{
+    lyrics:[
+       {
         ls: "Na szlak moich blizn poprowadź palec",
         stamp: "22",
       },
-      ve2:{
+       {
         ls: "By nasze drogi spleść gwiazdom na przekór",
         stamp: "28",
       },
-      ve3:{
+       {
         ls: "Otwórz te rany, a potem zalecz",
         stamp: "35",
       },
-      ve4:{
+       {
         ls: "Aż w zawiły losu ułożą się wzór",
         stamp: "41",
       },
-      ve5:{
+       {
         ls: "Z moich snów uciekasz nad ranem",
         stamp: "46",
       },
-      ve6:{
+       {
         ls: "Cierpka jak agrest, słodka jak bez",
         stamp: "52",
       },
-      ve7:{
+       {
         ls: "Chcę śnić czarne loki splątane",
         stamp: "59",
       },
-      ve8:{
+       {
         ls: "Fiołkowe oczy mokre od łez",
         stamp: "65",
       },
-      ve9:{
+       {
         ls: "Za wilczym śladem podążę w zamieć",
         stamp: "71",
       },
-      ve10:{
+       {
         ls: "I twoje serce wytropię uparte",
         stamp: "77",
       },
-      ve11:{
+       {
         ls: "Przez gniew i smutek, stwardniałe w kamień",
         stamp: "84",
       },
-      ve12:{
+       {
         ls: "Rozpalę usta smagane wiatrem",
         stamp: "90",
       },
-      ve13:{
+       {
         ls: "Z moich snów uciekasz nad ranem",
         stamp: "95",
       },
-      ve14:{
+       {
         ls: "Cierpka jak agrest, słodka jak bez",
         stamp: "102",
       },
-      ve15:{
+       {
         ls: "Chcę śnić czarne loki splątane",
         stamp: "107",
       },
-      ve16:{
+       {
         ls: "Fiołkowe oczy mokre od łez",
         stamp: "114",
       },
-      ve17:{
+      {
         ls: "Nie wiem, czy jesteś moim przeznaczeniem",
         stamp: "120",
       },
-      ve18:{
+       {
         ls: "Czy przez ślepy traf miłość nas związała",
         stamp: "126",
       },
-      ve19:{
+       {
         ls: "Kiedy wyrzekłem moje życzenie",
         stamp: "133",
       },
-      ve20:{
+       {
         ls: "Czyś mnie wbrew sobie wtedy pokochała?",
         stamp: "139",
       },
-      ve21:{
+       {
         ls: "Z moich snów uciekasz nad ranem",
         stamp: "144",
       },
-      ve22:{
+       {
         ls: "Cierpka jak agrest, słodka jak bez",
         stamp: "151",
       },
-      ve23:{
+       {
         ls: "Chcę śnić czarne loki splątane",
         stamp: "156",
       },
-      ve24:{
+       {
         ls: "Fiołkowe oczy mokre od łez",
         stamp: "164",
       },
-      ve25:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve26:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve27:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve28:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve29:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve30:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve31:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve32:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve33:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve34:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve35:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve36:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve37:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve38:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve39:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve40:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve41:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve42:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve43:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve44:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve45:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve46:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve47:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve48:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve49:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve50:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve51:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve52:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve53:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve54:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve55:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve56:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve57:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve58:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve59:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve60:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve61:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve62:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve63:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve64:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve65:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve66:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve67:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve68:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve69:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve70:{
-        ls: "",
-        stamp: "3600",
-      },
-    },
+    ],
     social:{
       instagram: "https://www.instagram.com/sanahmusic",
       twitter: "",
@@ -8649,288 +6208,164 @@ var allMusic = [
     album_status: "false",
     id: "113",
 
-    lyrics:{
-      ve1:{
+    lyrics:[
+       {
         ls: "My nie boimy się",
         stamp: "38",
       },
-      ve2:{
+       {
         ls: "Burz ni huraganów",
         stamp: "42",
       },
-      ve3:{
+       {
         ls: "Gdy idziemy spać",
         stamp: "46",
       },
-      ve4:{
+       {
         ls: "Ni stumetrowych fal",
         stamp: "50",
       },
-      ve5:{
+       {
         ls: "Ni stumetrowych",
         stamp: "55",
       },
-      ve6:{
+       {
         ls: "Tańczmy",
         stamp: "59",
       },
-      ve7:{
+       {
         ls: "Ile godzin i lat",
         stamp: "64",
       },
-      ve8:{
+       {
         ls: "Tańczmy",
         stamp: "66",
       },
-      ve9:{
+       {
         ls: "Ile godzin i lat",
         stamp: "68",
       },
-      ve10:{
+       {
         ls: "Tańczmy",
         stamp: "70",
       },
-      ve11:{
+       {
         ls: "Tańczmy",
         stamp: "74",
       },
-      ve12:{
+       {
         ls: "Ile godzin i lat",
         stamp: "76",
       },
-      ve13:{
+       {
         ls: "Tańczmy",
         stamp: "79",
       },
-      ve14:{
+       {
         ls: "Nie wiemy co to strach",
         stamp: "98",
       },
-      ve15:{
+       {
         ls: "Gdy zasypiamy",
         stamp: "102",
       },
-      ve16:{
+       {
         ls: "No bo tyle się już znamy",
         stamp: "106",
       },
-      ve17:{
+      {
         ls: "I wiemy na co nas stać",
         stamp: "111",
       },
-      ve18:{
+       {
         ls: "I wiemy na co",
         stamp: "115",
       },
-      ve19:{
+       {
         ls: "Tańczmy",
         stamp: "124",
       },
-      ve20:{
+       {
         ls: "Ile godzin i lat",
         stamp: "133",
       },
-      ve21:{
+       {
         ls: "Tańczmy",
         stamp: "136",
       },
-      ve22:{
+       {
         ls: "Ile godzin i lat",
         stamp: "138",
       },
-      ve23:{
+       {
         ls: "Tańczmy",
         stamp: "140",
       },
-      ve24:{
+       {
         ls: "Tańczmy",
         stamp: "144",
       },
-      ve25:{
+       {
         ls: "Ile godzin i lat",
         stamp: "146",
       },
-      ve26:{
+       {
         ls: "Tańczmy",
         stamp: "148",
       },
-      ve27:{
+       {
         ls: "Lepiej wiecznie szukać",
         stamp: "172",
       },
-      ve28:{
+       {
         ls: "Niż choć raz przed sobą skłamać",
         stamp: "176",
       },
-      ve29:{
+       {
         ls: "Że znalazłem",
         stamp: "181",
       },
-      ve30:{
+       {
         ls: "Że już mam",
         stamp: "182",
       },
-      ve31:{
+       {
         ls: "Że wystarcza",
         stamp: "188",
       },
-      ve32:{
+       {
         ls: "Ile godzin i lat",
         stamp: "192",
       },
-      ve33:{
+       {
         ls: "Tańczmy",
         stamp: "195",
       },
-      ve34:{
+       {
         ls: "Ile godzin i lat",
         stamp: "197",
       },
-      ve35:{
+       {
         ls: "Tańczmy",
         stamp: "199",
       },
-      ve36:{
+       {
         ls: "Tańczmy",
         stamp: "203",
       },
-      ve37:{
+       {
         ls: "Ile godzin i lat",
         stamp: "205",
       },
-      ve38:{
+       {
         ls: "Tańczmy",
         stamp: "207",
       },
-      ve39:{
+       {
         ls: "♪ ♪ ♪",
         stamp: "210",
       },
-      ve40:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve41:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve42:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve43:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve44:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve45:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve46:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve47:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve48:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve49:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve50:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve51:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve52:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve53:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve54:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve55:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve56:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve57:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve58:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve59:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve60:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve61:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve62:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve63:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve64:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve65:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve66:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve67:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve68:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve69:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve70:{
-        ls: "",
-        stamp: "3600",
-      },
-    },
+    ],
 
     user_playlist_1: "",
   },
@@ -8956,288 +6391,148 @@ var allMusic = [
     album_premiere: "2017",
     album_status: "false",
     id: "114",
-    lyrics:{
-      ve1:{
+    lyrics:[
+       {
         ls: "Jacy będziemy",
         stamp: "110",
       },
-      ve2:{
+       {
         ls: "Jakie wywiesimy flagi",
         stamp: "116",
       },
-      ve3:{
+       {
         ls: "Nad każdym z naszych miast",
         stamp: "122",
       },
-      ve4:{
+       {
         ls: "Jaki będzie nasz świat",
         stamp: "127",
       },
-      ve5:{
+       {
         ls: "I czy w ogóle będzie nasz",
         stamp: "131",
       },
-      ve6:{
+       {
         ls: "I czy w ogóle będzie świat",
         stamp: "134",
       },
-      ve7:{
+       {
         ls: "Kiedy pójdziemy",
         stamp: "142",
       },
-      ve8:{
+       {
         ls: "Nadzy na mróz",
         stamp: "148",
       },
-      ve9:{
+       {
         ls: "Na mróz",
         stamp: "156",
       },
-      ve10:{
+       {
         ls: "Nadzy na mróz",
         stamp: "161",
       },
-      ve11:{
+       {
         ls: "Na mróz",
         stamp: "169",
       },
-      ve12:{
+       {
         ls: "Nadzy na mróz",
         stamp: "174",
       },
-      ve13:{
+       {
         ls: "Kto nam zostanie",
         stamp: "181",
       },
-      ve14:{
+       {
         ls: "Z tych co za nami murem",
         stamp: "187",
       },
-      ve15:{
+       {
         ls: "I za ostatnią z naszych szans",
         stamp: "193",
       },
-      ve16:{
+       {
         ls: "Jaki będzie nasz ślad",
         stamp: "198",
       },
-      ve17:{
+      {
         ls: "I czy w ogóle będzie nasz",
         stamp: "203",
       },
-      ve18:{
+       {
         ls: "Kiedy zgasną nasze słońca",
         stamp: "206",
       },
-      ve19:{
+       {
         ls: "Kiedy pójdziemy",
         stamp: "213",
       },
-      ve20:{
+       {
         ls: "Kiedy pójdziemy",
         stamp: "220",
       },
-      ve21:{
+       {
         ls: "Nadzy na mróz",
         stamp: "226",
       },
-      ve22:{
+       {
         ls: "Na mróz",
         stamp: "234",
       },
-      ve23:{
+       {
         ls: "Nadzy na mróz",
         stamp: "239",
       },
-      ve24:{
+       {
         ls: "Na mróz",
         stamp: "247",
       },
-      ve25:{
+       {
         ls: "Nadzy na mróz",
         stamp: "252",
       },
-      ve26:{
+       {
         ls: "Na mróz",
         stamp: "260",
       },
-      ve27:{
+       {
         ls: "Na zbyt cienki lód",
         stamp: "264",
       },
-      ve28:{
+       {
         ls: "Na mróz",
         stamp: "273",
       },
-      ve29:{
+       {
         ls: "Nadzy na mróz",
         stamp: "278",
       },
-      ve30:{
+       {
         ls: "Na mróz",
         stamp: "285",
       },
-      ve31:{
+       {
         ls: "Na zbyt cienki lód",
         stamp: "291",
       },
-      ve32:{
+       {
         ls: "Na zbyt cienki lód",
         stamp: "301",
       },
-      ve33:{
+       {
         ls: "Na zbyt cienki lód",
         stamp: "307",
       },
-      ve34:{
+       {
         ls: "Na zbyt cienki lód",
         stamp: "313",
       },
-      ve35:{
+       {
         ls: "♪ ♪ ♪",
         stamp: "320",
       },
-      ve36:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve37:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve38:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve39:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve40:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve41:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve42:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve43:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve44:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve45:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve46:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve47:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve48:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve49:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve50:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve51:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve52:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve53:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve54:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve55:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve56:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve57:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve58:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve59:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve60:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve61:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve62:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve63:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve64:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve65:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve66:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve67:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve68:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve69:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve70:{
-        ls: "",
-        stamp: "3600",
-      },
-    },
+    ],
 
     user_playlist_1: "",
   },
@@ -9263,22 +6558,9 @@ var allMusic = [
     album_premiere: "2008",
     album_status: "false",
     id: "115",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -9318,288 +6600,208 @@ var allMusic = [
     album_status: "false",
     id: "116",
 
-    lyrics:{
-      ve1:{
+    lyrics:[
+       {
         ls: "One, two, three, four",
         stamp: "0",
       },
-      ve2:{
+       {
         ls: "Ooh-ooh, ooh-ooh-ooh",
         stamp: "2",
       },
-      ve3:{
+       {
         ls: "Every time you come around, you know I can't say no",
         stamp: "9",
       },
-      ve4:{
+       {
         ls: "Every time the sun goes down, I let you take control",
         stamp: "16",
       },
-      ve5:{
+       {
         ls: "I can feel the paradise before my world implodes",
         stamp: "24",
       },
-      ve6:{
+       {
         ls: "And tonight had something wonderful",
         stamp: "32",
       },
-      ve7:{
+       {
         ls: "My bad habits lead to late nights endin' alone",
         stamp: "38",
       },
-      ve8:{
+       {
         ls: "Conversations with a stranger I barely know",
         stamp: "42",
       },
-      ve9:{
+       {
         ls: "Swearin' this will be the last, but it probably won't",
         stamp: "46",
       },
-      ve10:{
+       {
         ls: "I got nothin' left to lose, or use, or do",
         stamp: "50",
       },
-      ve11:{
+       {
         ls: "My bad habits lead to wide eyes stare into space",
         stamp: "53",
       },
-      ve12:{
+       {
         ls: "And I know I'll lose control of the things that I say",
         stamp: "57",
       },
-      ve13:{
+       {
         ls: "Yeah, I was lookin' for a way out, now I can't escape",
         stamp: "62",
       },
-      ve14:{
+       {
         ls: "Nothin' happens after two, it's true",
         stamp: "65",
       },
-      ve15:{
+       {
         ls: "It's true, my bad habits lead to you",
         stamp: "68",
       },
-      ve16:{
+       {
         ls: "Ooh-ooh, ooh-ooh-ooh",
         stamp: "72",
       },
-      ve17:{
+      {
         ls: "My bad habits lead to you",
         stamp: "76",
       },
-      ve18:{
+       {
         ls: "Ooh-ooh, ooh-ooh-ooh",
         stamp: "79",
       },
-      ve19:{
+       {
         ls: "My bad habits lead to you",
         stamp: "84",
       },
-      ve20:{
+       {
         ls: "Every pure intention ends when the good times start",
         stamp: "87",
       },
-      ve21:{
+       {
         ls: "Fallin' over everything to reach the first time's spark",
         stamp: "94",
       },
-      ve22:{
+       {
         ls: "It started under neon lights, and then it all got dark",
         stamp: "103",
       },
-      ve23:{
+       {
         ls: "I only know how to go too far",
         stamp: "110",
       },
-      ve24:{
+       {
         ls: "My bad habits lead to late nights endin' alone",
         stamp: "116",
       },
-      ve25:{
+       {
         ls: "Conversations with a stranger I barely know",
         stamp: "120",
       },
-      ve26:{
+       {
         ls: "Swearin' this will be the last, but it probably won't",
         stamp: "124",
       },
-      ve27:{
+       {
         ls: "I got nothin' left to lose, or use, or do",
         stamp: "128",
       },
-      ve28:{
+       {
         ls: "My bad habits lead to wide eyes stare into space",
         stamp: "131",
       },
-      ve29:{
+       {
         ls: "And I know I'll lose control of the things that I say",
         stamp: "136",
       },
-      ve30:{
+       {
         ls: "Yeah, I was lookin' for a way out, now I can't escape",
         stamp: "139",
       },
-      ve31:{
+       {
         ls: "Nothin' happens after two, it's true",
         stamp: "143",
       },
-      ve32:{
+       {
         ls: "It's true, my bad habits lead to you",
         stamp: "146",
       },
-      ve33:{
+       {
         ls: "Ooh-ooh, ooh-ooh-ooh",
         stamp: "150",
       },
-      ve34:{
+       {
         ls: "My bad habits lead to you",
         stamp: "154",
       },
-      ve35:{
+       {
         ls: "Ooh-ooh, ooh-ooh-ooh",
         stamp: "157",
       },
-      ve36:{
+       {
         ls: "We took the long way 'round",
         stamp: "164",
       },
-      ve37:{
+       {
         ls: "And burned 'til the fun ran out, now",
         stamp: "171",
       },
-      ve38:{
+       {
         ls: "My bad habits lead to late nights endin' alone",
         stamp: "177",
       },
-      ve39:{
+       {
         ls: "Conversations with a stranger I barely know",
         stamp: "181",
       },
-      ve40:{
+       {
         ls: "Swearin' this will be the last, but it probably won't",
         stamp: "185",
       },
-      ve41:{
+       {
         ls: "I got nothin' left to lose, or use, or do",
         stamp: "189",
       },
-      ve42:{
+       {
         ls: "My bad habits lead to wide eyes stare into space",
         stamp: "192",
       },
-      ve43:{
+       {
         ls: "And I know I'll lose control of the things that I say",
         stamp: "196",
       },
-      ve44:{
+       {
         ls: "Yeah, I was lookin' for a way out, now I can't escape",
         stamp: "200",
       },
-      ve45:{
+       {
         ls: "Nothin' happens after two, it's true",
         stamp: "203",
       },
-      ve46:{
+       {
         ls: "It's true, my bad habits lead to you",
         stamp: "207",
       },
-      ve47:{
+       {
         ls: "Ooh-ooh, ooh-ooh-ooh",
         stamp: "211",
       },
-      ve48:{
+       {
         ls: "My bad habits lead to you",
         stamp: "215",
       },
-      ve49:{
+       {
         ls: "Ooh-ooh, ooh-ooh-ooh",
         stamp: "218",
       },
-      ve50:{
+       {
         ls: "My bad habits lead to you",
         stamp: "223",
       },
-      ve51:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve52:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve53:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve54:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve55:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve56:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve57:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve58:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve59:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve60:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve61:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve62:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve63:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve64:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve65:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve66:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve67:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve68:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve69:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve70:{
-        ls: "",
-        stamp: "3600",
-      },
-    },
+    ],
 
     bio: "Ed Sheeran may be the quintessential pop star of the 2010s: a singer/songwriter who seems to acknowledge no boundaries between styles or eras, creating a sound that's idiosyncratic and personal. Sheeran borrows from any style that crosses his path -- elements of folk, hip-hop, pop, dance, soul, and rock can be heard in his big hits The A Team, Sing, Thinking Out Loud, and Shape of You -- which gives him a broad appeal among different demographics. It also helped elevate him to international acclaim not long after the release of his 2011 debut, +. Sheeran maintained his stardom with savvy collaborations -- his 2019 album No. 6 Collaborations Project featured an eclectic roster including Khalid, Camilla Cabello, Cardi B, Justin Biber, Chris Stapleton and Bruno Mars",
     social:{
@@ -9631,308 +6833,308 @@ var allMusic = [
     album_premiere: "2017",
     album_status: "false",
     id: "117",
-    lyrics:{
-      ve1:{
+    lyrics:[
+       {
         ls: "The club isn't the best place to find a lover",
         stamp: "9",
       },
-      ve2:{
+       {
         ls: "So the bar is where I go",
         stamp: "11",
       },
-      ve3:{
+       {
         ls: "Me and my friends at the table doing shots",
         stamp: "13",
       },
-      ve4:{
+       {
         ls: "Drinking fast and then we talk slow",
         stamp: "16",
       },
-      ve5:{
+       {
         ls: "And you come over and start up a conversation with just me",
         stamp: "19",
       },
-      ve6:{
+       {
         ls: "And trust me I'll give it a chance now",
         stamp: "21",
       },
-      ve7:{
+       {
         ls: "Take my hand, stop, put Van the Man on the jukebox",
         stamp: "23",
       },
-      ve8:{
+       {
         ls: "And then we start to dance, and now I'm singing like",
         stamp: "26",
       },
-      ve9:{
+       {
         ls: "Girl, you know I want your love",
         stamp: "28",
       },
-      ve10:{
+       {
         ls: "Your love was handmade for somebody like me",
         stamp: "31",
       },
-      ve11:{
+       {
         ls: "Come on now, follow my lead",
         stamp: "35",
       },
-      ve12:{
+       {
         ls: "I may be crazy, don't mind me",
         stamp: "36",
       },
-      ve13:{
+       {
         ls: "Say, boy, let's not talk too much",
         stamp: "39",
       },
-      ve14:{
+       {
         ls: "Grab on my waist and put that body on me",
         stamp: "41",
       },
-      ve15:{
+       {
         ls: "Come on now, follow my lead",
         stamp: "44",
       },
-      ve16:{
+       {
         ls: "Come, come on now, follow my lead",
         stamp: "47",
       },
-      ve17:{
+      {
         ls: "I'm in love with the shape of you",
         stamp: "50",
       },
-      ve18:{
+       {
         ls: "We push and pull like a magnet do",
         stamp: "52",
       },
-      ve19:{
+       {
         ls: "Although my heart is falling too",
         stamp: "54",
       },
-      ve20:{
+       {
         ls: "I'm in love with your body",
         stamp: "57",
       },
-      ve21:{
+       {
         ls: "And last night you were in my room",
         stamp: "60",
       },
-      ve22:{
+       {
         ls: "And now my bedsheets smell like you",
         stamp: "62",
       },
-      ve23:{
+       {
         ls: "Every day discovering something brand new",
         stamp: "64",
       },
-      ve24:{
+       {
         ls: "I'm in love with your body",
         stamp: "67",
       },
-      ve25:{
+       {
         ls: "Oh-I-oh-I-oh-I-oh-I",
         stamp: "69",
       },
-      ve26:{
+       {
         ls: "I'm in love with your body",
         stamp: "72",
       },
-      ve27:{
+       {
         ls: "Oh-I-oh-I-oh-I-oh-I",
         stamp: "74",
       },
-      ve28:{
+       {
         ls: "I'm in love with your body",
         stamp: "77",
       },
-      ve29:{
+       {
         ls: "Oh-I-oh-I-oh-I-oh-I",
         stamp: "79",
       },
-      ve30:{
+       {
         ls: "I'm in love with your body",
         stamp: "82",
       },
-      ve31:{
+       {
         ls: "Every day discovering something brand new",
         stamp: "84",
       },
-      ve32:{
+       {
         ls: "I'm in love with the shape of you",
         stamp: "87",
       },
-      ve33:{
+       {
         ls: "One week in we let the story begin",
         stamp: "89",
       },
-      ve34:{
+       {
         ls: "We're going out on our first date",
         stamp: "91",
       },
-      ve35:{
+       {
         ls: "You and me are thrifty, so go all you can eat",
         stamp: "93",
       },
-      ve36:{
+       {
         ls: "Fill up your bag and I fill up a plate",
         stamp: "96",
       },
-      ve37:{
+       {
         ls: "We talk for hours and hours about the sweet and the sour",
         stamp: "98",
       },
-      ve38:{
+       {
         ls: "And how your family is doing okay",
         stamp: "101",
       },
-      ve39:{
+       {
         ls: "Leave and get in a taxi, then kiss in the backseat",
         stamp: "103",
       },
-      ve40:{
+       {
         ls: "Tell the driver make the radio play, and I'm singing like",
         stamp: "106",
       },
-      ve41:{
+       {
         ls: "Girl, you know I want your love",
         stamp: "109",
       },
-      ve42:{
+       {
         ls: "Your love was handmade for somebody like me",
         stamp: "111",
       },
-      ve43:{
+       {
         ls: "Come on now, follow my lead",
         stamp: "114",
       },
-      ve44:{
+       {
         ls: "I may be crazy, don't mind me",
         stamp: "116",
       },
-      ve45:{
+       {
         ls: "Say, boy, let's not talk too much",
         stamp: "119",
       },
-      ve46:{
+       {
         ls: "Grab on my waist and put that body on me",
         stamp: "121",
       },
-      ve47:{
+       {
         ls: "Come on now, follow my lead",
         stamp: "124",
       },
-      ve48:{
+       {
         ls: "Come, come on now, follow my lead",
         stamp: "126",
       },
-      ve49:{
+       {
         ls: "I'm in love with the shape of you",
         stamp: "130",
       },
-      ve50:{
+       {
         ls: "We push and pull like a magnet do",
         stamp: "132",
       },
-      ve51:{
+       {
         ls: "Although my heart is falling too",
         stamp: "135",
       },
-      ve52:{
+       {
         ls: "I'm in love with your body",
         stamp: "137",
       },
-      ve53:{
+       {
         ls: "And last night you were in my room",
         stamp: "140",
       },
-      ve54:{
+       {
         ls: "And now my bedsheets smell like you",
         stamp: "142",
       },
-      ve55:{
+       {
         ls: "Every day discovering something brand new",
         stamp: "144",
       },
-      ve56:{
+       {
         ls: "I'm in love with your body",
         stamp: "147",
       },
-      ve57:{
+       {
         ls: "Oh-I-oh-I-oh-I-oh-I",
         stamp: "149",
       },
-      ve58:{
+       {
         ls: "I'm in love with your body",
         stamp: "152",
       },
-      ve59:{
+       {
         ls: "Oh-I-oh-I-oh-I-oh-I",
         stamp: "154",
       },
-      ve60:{
+       {
         ls: "I'm in love with your body",
         stamp: "157",
       },
-      ve61:{
+       {
         ls: "Oh-I-oh-I-oh-I-oh-I",
         stamp: "159",
       },
-      ve62:{
+       {
         ls: "I'm in love with your body",
         stamp: "162",
       },
-      ve63:{
+       {
         ls: "Every day discovering something brand new",
         stamp: "164",
       },
-      ve64:{
+       {
         ls: "I'm in love with the shape of you",
         stamp: "167",
       },
-      ve65:{
+       {
         ls: "Come on, be my baby, come on (x8)",
         stamp: "169",
       },
-      ve66:{
+       {
         ls: "I'm in love with the shape of you",
         stamp: "190",
       },
-      ve67:{
+       {
         ls: "We push and pull like a magnet do",
         stamp: "192",
       },
-      ve68:{
+       {
         ls: "Although my heart is falling too",
         stamp: "194",
       },
-      ve69:{
+       {
         ls: "I'm in love with your body",
         stamp: "197",
       },
-      ve70:{
+       {
         ls: "And last night you were in my room",
         stamp: "199",
       },
-      ve71:{
+       {
         ls: "And now my bedsheets smell like you",
         stamp: "202",
       },
-      ve72:{
+       {
         ls: "Every day discovering something brand new",
         stamp: "204",
       },
-      ve73:{
+       {
         ls: "I'm in love with your body, come on, be my baby, come on (x3)",
         stamp: "209",
       },
-      ve74:{
+       {
         ls: "Every day discovering something brand new",
         stamp: "224",
       },
-      ve75:{
+       {
         ls: "I'm in love with the shape of you",
         stamp: "227",
       },
-    },
+    ],
 
     user_playlist_1: "",
   },
@@ -9970,8 +7172,8 @@ var allMusic = [
     album_cover: "https://i.scdn.co/image/ab67616d00001e025ea7a1953ce392b8bd11eb3f",
     album_premiere: "2022",
     id: "118",
-    lyrics:{
-    },
+    lyrics:[
+    ],
     bio: "Jay Dunham is here! We know this not by his calm and demur wardrobe, but by the exciting and heart-thumping tracks he’s put out in the last 6 years. Not yet 30, the Brussels-born DJ/producer who teaches music production on the side, has proven that he can cook up dance hits in the EDM and House arena, with the best of them. With an invigorating take on electronic music, Jay offers a welcoming change in the fast-paced music world. This unassuming Algerian-Moroccan, Belgium raised computer whiz kid was introduced to electronic music in 2011 with the advent of Dubstep.",
     social:{
       instagram: "https://www.instagram.com/jaydunhamtv/",
@@ -10010,8 +7212,8 @@ var allMusic = [
     album_premiere: "2022",
     album_status: "false",
     id: "119",
-    lyrics:{
-    },
+    lyrics:[
+    ],
     bio: "DADDY'S GIRL. Made to fulfill your aesthetic needs.",
     social:{
       instagram: "",
@@ -10056,8 +7258,8 @@ var allMusic = [
     album_premiere: "2017",
     album_status: "false",
     id: "120",
-    lyrics:{
-    },
+    lyrics:[
+    ],
     bio: "Everything since Tinie’s astronomical breakout hit ‘Pass Out’ in 2010 might seem like it’s come easy. It’s win after win, number one after number one (3 Top Ten albums and 7 No.1s, to be exact.) Tinie might just have been the catalyst that paved the way for the current explosion of Black music and culture in Britain.",
     social:{
       instagram: "",
@@ -10099,8 +7301,8 @@ var allMusic = [
     album_premiere: "2021",
     album_status: "false",
     id: "121",
-    lyrics:{
-    },
+    lyrics:[
+    ],
     bio: "Did you know Planet Earth has one of the most renowned and prestigious music scenes in the whole universe? It's true. And we all tune into it. Why do you think Elon Musk keeps sending all these satellites into orbit...",
     social:{
       instagram: "https://instagram.com/helloimcrypto",
@@ -10145,8 +7347,8 @@ var allMusic = [
     album_premiere: "2016",
     album_status: "false",
     id: "122",
-    lyrics:{
-    },
+    lyrics:[
+    ],
     bio: "Official",
     social:{
       instagram: "https://www.instagram.com/siamusic/",
@@ -10187,8 +7389,8 @@ var allMusic = [
     album_premiere: "2019",
     album_status: "false",
     id: "123",
-    lyrics:{
-    },
+    lyrics:[
+    ],
     bio: "Whether you’re aware of Minus Manus already or not, the impact of his influence across European pop music can not be denied. Real name Magnus Bertelsen, the young artist has amassed Number One singles in five different countries and over 2 billion worldwide streams through his work as a producer and songwriter. He helped Alan Walker land some huge international hits with the likes of ‘Sing Me To Sleep’, ‘Different World’ and ‘Lily’ (the last one has been in the Billboard EDM top20 for over 20 weeks). But now the Norwegian mastermind has allowed his take on intense, dynamic and infectious dance-pop to blossom as he goes it alone. Taking inspiration from Max Martin’s pop production and mixing it with dance floor ready beats, Minus Manus could soon become as synonymous with main room clubs himself.",
     social:{
       instagram: "https://www.instagram.com/minus.manus/",
@@ -10234,288 +7436,204 @@ var allMusic = [
     album_status: "false",
     id: "124",
 
-    lyrics:{
-      ve1:{
+    lyrics:[
+       {
         ls: "I summoned you, please come to me",
         stamp: "6",
       },
-      ve2:{
+       {
         ls: "Don't bury thoughts that you really want",
         stamp: "10",
       },
-      ve3:{
+       {
         ls: "I fill you up, drink from my cup",
         stamp: "14",
       },
-      ve4:{
+       {
         ls: "Within me lies what you really want",
         stamp: "18",
       },
-      ve5:{
+       {
         ls: "Come, lay me down",
         stamp: "22",
       },
-      ve6:{
+       {
         ls: "'Cause you know this",
         stamp: "25",
       },
-      ve7:{
+       {
         ls: "''Cause you know this sound",
         stamp: "27",
       },
-      ve8:{
+       {
         ls: "In the middle of the night",
         stamp: "29",
       },
-      ve9:{
+       {
         ls: "In the middle of the night",
         stamp: "31",
       },
-      ve10:{
+       {
         ls: "Just call my name, I'm yours to tame",
         stamp: "34",
       },
-      ve11:{
+       {
         ls: "In the middle of the night",
         stamp: "37",
       },
-      ve12:{
+       {
         ls: "In the middle of the night",
         stamp: "39",
       },
-      ve13:{
+       {
         ls: "I'm wide awake, I crave your taste",
         stamp: "41",
       },
-      ve14:{
+       {
         ls: "All night long 'til morning comes",
         stamp: "44",
       },
-      ve15:{
+       {
         ls: "I'm getting what is mine",
         stamp: "48",
       },
-      ve16:{
+       {
         ls: "You gon' get yours, oh, no, ooh-ooh",
         stamp: "51",
       },
-      ve17:{
+      {
         ls: "In the middle of the night",
         stamp: "53",
       },
-      ve18:{
+       {
         ls: "In the middle of the night, oh-oh",
         stamp: "54.5",
       },
-      ve19:{
+       {
         ls: "These burning flames, these crashing waves",
         stamp: "68",
       },
-      ve20:{
+       {
         ls: "Wash over me like a hurricane",
         stamp: "72",
       },
-      ve21:{
+       {
         ls: "I captivate, you're hypnotized",
         stamp: "76",
       },
-      ve22:{
+       {
         ls: "Feel powerful, but it's me again",
         stamp: "80",
       },
-      ve23:{
+       {
         ls: "Come, lay me down",
         stamp: "84",
       },
-      ve24:{
+       {
         ls: "'Cause I know this",
         stamp: "87",
       },
-      ve25:{
+       {
         ls: "'Cause I know this sound",
         stamp: "89",
       },
-      ve26:{
+       {
         ls: "In the middle of the night",
         stamp: "91",
       },
-      ve27:{
+       {
         ls: "In the middle of the night",
         stamp: "93",
       },
-      ve28:{
+       {
         ls: "Just call my name, I'm yours to tame",
         stamp: "95",
       },
-      ve29:{
+       {
         ls: "In the middle of the night",
         stamp: "100",
       },
-      ve30:{
+       {
         ls: "In the middle of the night",
         stamp: "102",
       },
-      ve31:{
+       {
         ls: "I'm wide awake, I crave your taste",
         stamp: "103",
       },
-      ve32:{
+       {
         ls: "All night long 'til morning comes",
         stamp: "108",
       },
-      ve33:{
+       {
         ls: "I'm getting what is mine",
         stamp: "110",
       },
-      ve34:{
+       {
         ls: "You gon' get yours, oh, no, ooh-ooh",
         stamp: "112",
       },
-      ve35:{
+       {
         ls: "In the middle of the night",
         stamp: "114",
       },
-      ve36:{
+       {
         ls: "In the middle of the night, oh-oh",
         stamp: "116",
       },
-      ve37:{
+       {
         ls: "And just call on me, ah",
         stamp: "131",
       },
-      ve38:{
+       {
         ls: "Just call my name",
         stamp: "135",
       },
-      ve39:{
+       {
         ls: "Like you'll need me",
         stamp: "138",
       },
-      ve40:{
+       {
         ls: "In the middle of the night",
         stamp: "141",
       },
-      ve41:{
+       {
         ls: "In the middle of the night",
         stamp: "143",
       },
-      ve42:{
+       {
         ls: "Just call my name, I'm yours to tame",
         stamp: "145",
       },
-      ve43:{
+       {
         ls: "In the middle of the night",
         stamp: "149",
       },
-      ve44:{
+       {
         ls: "In the middle of the night",
         stamp: "151",
       },
-      ve45:{
+       {
         ls: "I'm wide awake, I crave your taste",
         stamp: "153",
       },
-      ve46:{
+       {
         ls: "All night long 'til morning comes",
         stamp: "157",
       },
-      ve47:{
+       {
         ls: "I'm getting what is mine",
         stamp: "160",
       },
-      ve48:{
+       {
         ls: "In the middle of the night",
         stamp: "164",
       },
-      ve49:{
+       {
         ls: "In the middle of the night, oh-oh-whoa",
         stamp: "166",
       },
-      ve50:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve51:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve52:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve53:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve54:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve55:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve56:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve57:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve58:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve59:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve60:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve61:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve62:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve63:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve64:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve65:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve66:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve67:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve68:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve69:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve70:{
-        ls: "",
-        stamp: "3600",
-      },
-    },
+    ],
 
     bio: "Duhé is an old soul new world creative, from an island off the coast of Alabama where she began her journey with music. She infuses styles and emotions from many elements of life. Not one song of the same ingredient.",
     social:{
@@ -10548,288 +7666,136 @@ var allMusic = [
     album_status: "false",
     id: "125",
 
-    lyrics:{
-      ve1:{
+    lyrics:[
+       {
         ls: "Take, you're runnin' off the road so get out the way",
         stamp: "0",
       },
-      ve2:{
+       {
         ls: "Push the pedal to the floor, blow'em all away",
         stamp: "3",
       },
-      ve3:{
+       {
         ls: "Yeah, you see, I'm getting close, I accelarate",
         stamp: "7",
       },
-      ve4:{
+       {
         ls: "Goin' faster than fast, hit the gas",
         stamp: "11",
       },
-      ve5:{
+       {
         ls: "Lose control. I won't crash, rollin' high",
         stamp: "14",
       },
-      ve6:{
+       {
         ls: "Put your money on the dash, throw the dice",
         stamp: "18",
       },
-      ve7:{
+       {
         ls: "Lose control, I wont crash, run it all, I won't crash",
         stamp: "21",
       },
-      ve8:{
+       {
         ls: "When you slow, I won't crash, running, take, take, take, take",
         stamp: "26",
       },
-      ve9:{
+       {
         ls: "Take, you're runnin' off the road so get out the way",
         stamp: "31",
       },
-      ve10:{
+       {
         ls: "Push the pedal to the floor, blow'em all away",
         stamp: "35",
       },
-      ve11:{
+       {
         ls: "Yeah, you see, I'm getting close, I accelarate",
         stamp: "39",
       },
-      ve12:{
+       {
         ls: "Goin' faster than fast, hit the gas",
         stamp: "43",
       },
-      ve13:{
+       {
         ls: "Lose control. I won't crash, rollin' high",
         stamp: "46",
       },
-      ve14:{
+       {
         ls: "Put your money on the dash, throw the dice",
         stamp: "50",
       },
-      ve15:{
+       {
         ls: "Lose control, I wont crash, run it all, I won't crash",
         stamp: "54",
       },
-      ve16:{
+       {
         ls: "When you slow, I won't crash, running, take, take, take, take",
         stamp: "59",
       },
-      ve17:{
+      {
         ls: "Take, you're runnin' off the road so get out the way",
         stamp: "63",
       },
-      ve18:{
+       {
         ls: "Push the pedal to the floor, blow'em all away",
         stamp: "67",
       },
-      ve19:{
+       {
         ls: "Yeah, you see, I'm getting close, I accelarate",
         stamp: "72",
       },
-      ve20:{
+       {
         ls: "Goin' faster than fast, hit the gas",
         stamp: "75",
       },
-      ve21:{
+       {
         ls: "Lose control. I won't crash, rollin' high",
         stamp: "78",
       },
-      ve22:{
+       {
         ls: "Put your money on the dash, throw the dice",
         stamp: "82",
       },
-      ve23:{
+       {
         ls: "Lose control, I wont crash, run it all, I won't crash",
         stamp: "87",
       },
-      ve24:{
+       {
         ls: "When you slow, I won't crash, running, take, take, take, take",
         stamp: "90",
       },
-      ve25:{
+       {
         ls: "Take, you're runnin' off the road so get out the way",
         stamp: "95",
       },
-      ve26:{
+       {
         ls: "Push the pedal to the floor, blow'em all away",
         stamp: "99",
       },
-      ve27:{
+       {
         ls: "Yeah, you see, I'm getting close, I accelarate",
         stamp: "103",
       },
-      ve28:{
+       {
         ls: "Goin' faster than fast, hit the gas",
         stamp: "107",
       },
-      ve29:{
+       {
         ls: "Lose control. I won't crash, rollin' high",
         stamp: "110",
       },
-      ve30:{
+       {
         ls: "Put your money on the dash, throw the dice",
         stamp: "114",
       },
-      ve31:{
+       {
         ls: "Lose control, I wont crash, run it all, I won't crash",
         stamp: "118",
       },
-      ve32:{
+       {
         ls: "When you slow, I won't crash, running, take, take, take, take",
         stamp: "122",
       },
-      ve33:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve34:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve35:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve36:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve37:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve38:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve39:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve40:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve41:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve42:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve43:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve44:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve45:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve46:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve47:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve48:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve49:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve50:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve51:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve52:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve53:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve54:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve55:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve56:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve57:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve58:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve59:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve60:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve61:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve62:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve63:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve64:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve65:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve66:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve67:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve68:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve69:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve70:{
-        ls: "",
-        stamp: "3600",
-      },
-    },
+    ],
 
     user_playlist_1: "",
   },
@@ -10856,288 +7822,180 @@ var allMusic = [
     album_status: "false",
     id: "126",
 
-    lyrics:{
-      ve1:{
+    lyrics:[
+       {
         ls: "I'm giving it all to take it back",
         stamp: "7",
       },
-      ve2:{
+       {
         ls: "You're the only taste in my mouth",
         stamp: "9",
       },
-      ve3:{
+       {
         ls: "The fire that we made went and",
         stamp: "15",
       },
-      ve4:{
+       {
         ls: "Burned the whole damn place down",
         stamp: "18",
       },
-      ve5:{
+       {
         ls: "'Cause everything, yes, it's never too much",
         stamp: "24",
       },
-      ve6:{
+       {
         ls: "For you got no borders",
         stamp: "26",
       },
-      ve7:{
+       {
         ls: "And inside this bed we make sense again",
         stamp: "29",
       },
-      ve8:{
+       {
         ls: "I'm back where I started",
         stamp: "31",
       },
-      ve9:{
+       {
         ls: "And you taught me this, so we're playing chess",
         stamp: "33",
       },
-      ve10:{
+       {
         ls: "I play your emotions",
         stamp: "35",
       },
-      ve11:{
+       {
         ls: "So I'll take my heart and run for good",
         stamp: "40",
       },
-      ve12:{
+       {
         ls: "Turn away",
         stamp: "46",
       },
-      ve13:{
+       {
         ls: "I will be dead and gone",
         stamp: "47",
       },
-      ve14:{
+       {
         ls: "Before you hear a thing",
         stamp: "52",
       },
-      ve15:{
+       {
         ls: "I'm giving me up, I'm giving you up",
         stamp: "56",
       },
-      ve16:{
+       {
         ls: "I'm giving us up",
         stamp: "58",
       },
-      ve17:{
+      {
         ls: "Surrender all, a traitor now",
         stamp: "61",
       },
-      ve18:{
+       {
         ls: "A traitor of your love",
         stamp: "63",
       },
-      ve19:{
+       {
         ls: "So I'll take my heart and run for good",
         stamp: "65",
       },
-      ve20:{
+       {
         ls: "And everything I've done for you",
         stamp: "76",
       },
-      ve21:{
+       {
         ls: "Comes with a price, I knew",
         stamp: "78",
       },
-      ve22:{
+       {
         ls: "Ooh-oh, it's pulling the trigger with safety off",
         stamp: "83",
       },
-      ve23:{
+       {
         ls: "It's loving and lying and switching",
         stamp: "86",
       },
-      ve24:{
+       {
         ls: "What side you're on, on",
         stamp: "88",
       },
-      ve25:{
+       {
         ls: "'Cause everything, yes, never too much",
         stamp: "94",
       },
-      ve26:{
+       {
         ls: "For you got no borders",
         stamp: "96",
       },
-      ve27:{
+       {
         ls: "And inside this bed we make sense again",
         stamp: "98",
       },
-      ve28:{
+       {
         ls: "I'm back where I started",
         stamp: "100",
       },
-      ve29:{
+       {
         ls: "And you taught me this, so we're playing chess",
         stamp: "102",
       },
-      ve30:{
+       {
         ls: "I play your emotions, emotionst",
         stamp: "104",
       },
-      ve31:{
+       {
         ls: "So I'll take my heart and run for good",
         stamp: "109",
       },
-      ve32:{
+       {
         ls: "Turn away",
         stamp: "115",
       },
-      ve33:{
+       {
         ls: "I will be dead and gone",
         stamp: "117",
       },
-      ve34:{
+       {
         ls: "Before you hear a thing",
         stamp: "120",
       },
-      ve35:{
+       {
         ls: "I'm giving me up, I'm giving you up",
         stamp: "125",
       },
-      ve36:{
+       {
         ls: "I'm giving us up",
         stamp: "127",
       },
-      ve37:{
+       {
         ls: "Surrender all, a traitor now",
         stamp: "130",
       },
-      ve38:{
+       {
         ls: "A traitor of your love",
         stamp: "131",
       },
-      ve39:{
+       {
         ls: "So I'll take my heart and run for good",
         stamp: "134",
       },
-      ve40:{
+       {
         ls: "For good",
         stamp: "144",
       },
-      ve41:{
+       {
         ls: "For good",
         stamp: "152",
       },
-      ve42:{
+       {
         ls: "For good",
         stamp: "154",
       },
-      ve43:{
+       {
         ls: "Good",
         stamp: "155",
       },
-      ve44:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve45:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve46:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve47:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve48:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve49:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve50:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve51:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve52:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve53:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve54:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve55:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve56:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve57:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve58:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve59:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve60:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve61:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve62:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve63:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve64:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve65:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve66:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve67:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve68:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve69:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve70:{
-        ls: "",
-        stamp: "3600",
-      },
-    },
+    ],
 
     user_playlist_1: "",
   },
@@ -11178,8 +8036,8 @@ var allMusic = [
     album_status: "false",
     id: "127",
 
-    lyrics:{
-    },
+    lyrics:[
+    ],
 
     bio: "Artist & songwriter Linnea Nea Södahl stepped into 2023 with over 2 billion streams as a songwriter and several international awards behind her. Now widely regarded as one of Sweden’s most acclaimed writers, Nea’s credits include artists such as Zara Larsson, Skott and Felix Jaehn among numerous others. In 2019 Nea released Some Say, her first song as an artist in her own right, which catapulted her career to new heights. Some Say and Some Say Remix was certified diamond, platinum or gold in 21 countries, reached #1 on airplay in 7 countries and became the 9th most played track on European radio that year. In 2023 Nea will release her debut album “TRANSPARENT”, produced by Daniel Ledinsky. She will also participate in the Swedish edition of Songland as a member of the expert panel together with Carl Falk, Savan Kotecha & Elias Kapari.",
     social:{
@@ -11227,288 +8085,256 @@ var allMusic = [
     album_status: "false",
     id: "128",
 
-    lyrics:{
-      ve1:{
+    lyrics:[
+       {
         ls: "Are you not entertained?",
         stamp: "0",
       },
-      ve2:{
+       {
         ls: "Are you not entertained?",
         stamp: "4",
       },
-      ve3:{
+       {
         ls: "Every time, every night is a loose one",
         stamp: "7",
       },
-      ve4:{
+       {
         ls: "And every flight, you know that I put the crew on",
         stamp: "11",
       },
-      ve5:{
+       {
         ls: "You say that I dropped off, well, then tell me what you've done",
         stamp: "14",
       },
-      ve6:{
+       {
         ls: "I'm still in my winnin' phase, yeah, I been away",
         stamp: "17",
       },
-      ve7:{
+       {
         ls: "Are you entertained? I'm gone (yeah)",
         stamp: "19",
       },
-      ve8:{
+       {
         ls: "The god in me, that's what I'm constantly summoning",
         stamp: "21",
       },
-      ve9:{
+       {
         ls: "I love the climb, I don't care where the summit is",
         stamp: "23",
       },
-      ve10:{
+       {
         ls: "Funny when people be sayin' I peaked (ha)",
         stamp: "25",
       },
-      ve11:{
+       {
         ls: "Retired my parents, they live at the beach",
         stamp: "27",
       },
-      ve12:{
+       {
         ls: "Models and freaks is my track record (yeah)",
         stamp: "29",
       },
-      ve13:{
+       {
         ls: "I made my homies my staff members",
         stamp: "30",
       },
-      ve14:{
+       {
         ls: "Got myself lit to give y'all the light",
         stamp: "32",
       },
-      ve15:{
+       {
         ls: "Usin' my mind to attract better",
         stamp: "34",
       },
-      ve16:{
+       {
         ls: "At first, when adversity came, I said, 'Why me?'",
         stamp: "36",
       },
-      ve17:{
+      {
         ls: "Now I be staring at doubt sayin', 'Try me'",
         stamp: "38",
       },
-      ve18:{
+       {
         ls: "Kyrie, I handle it well",
         stamp: "39",
       },
-      ve19:{
+       {
         ls: "They still takin' shots, tryna hand me a L, but I pass on that",
         stamp: "41",
       },
-      ve20:{
+       {
         ls: "Anger, I try not to act on that",
         stamp: "44",
       },
-      ve21:{
+       {
         ls: "I'ma just transmute it",
         stamp: "45",
       },
-      ve22:{
+       {
         ls: "Put it all back in the music",
         stamp: "47",
       },
-      ve23:{
+       {
         ls: "It's feeling like I might just be on a roll",
         stamp: "48",
       },
-      ve24:{
+       {
         ls: "I'm never sellin' my soul",
         stamp: "51",
       },
-      ve25:{
+       {
         ls: "My records are platinum and gold",
         stamp: "54",
       },
-      ve26:{
+       {
         ls: "It just keeps happenin', woah",
         stamp: "55",
       },
-      ve27:{
+       {
         ls: "It's feeling like I might just be on a roll",
         stamp: "57",
       },
-      ve28:{
+       {
         ls: "I'm never sellin' my soul",
         stamp: "59",
       },
-      ve29:{
+       {
         ls: "My records are platinum and gold",
         stamp: "61",
       },
-      ve30:{
+       {
         ls: "It just keeps happenin', woah",
         stamp: "63",
       },
-      ve31:{
+       {
         ls: "Every time, you see me shine and move up (yeah)",
         stamp: "66",
       },
-      ve32:{
+       {
         ls: "My seat is reclined, the jet is G5, I blew up",
         stamp: "70",
       },
-      ve33:{
+       {
         ls: "You tell me I fell off, but tell me what you've done",
         stamp: "75",
       },
-      ve34:{
+       {
         ls: "Are you entertained? I'm gone",
         stamp: "78",
       },
-      ve35:{
+       {
         ls: "Well, I'm in the pub with the bros",
         stamp: "81",
       },
-      ve36:{
+       {
         ls: "Lightin' up somethin' that goes",
         stamp: "82",
       },
-      ve37:{
+       {
         ls: "Nothin' is froze",
         stamp: "83",
       },
-      ve38:{
+       {
         ls: "But when I put the kettle on, it's a number that nobody knows",
         stamp: "84",
       },
-      ve39:{
+       {
         ls: "I stay off the road, live in the sticks",
         stamp: "86",
       },
-      ve40:{
+       {
         ls: "Put my profit into mortar and bricks",
         stamp: "89",
       },
-      ve41:{
+       {
         ls: "You know I got good advice from a couple guys",
         stamp: "90",
       },
-      ve42:{
+       {
         ls: "To leave more than just stress for my kids",
         stamp: "92",
       },
-      ve43:{
+       {
         ls: "Well, isn't it blissful? Baby",
         stamp: "94",
       },
-      ve44:{
+       {
         ls: "Sittin' in like we made it",
         stamp: "98",
       },
-      ve45:{
+       {
         ls: "It's kinda mad how the game is",
         stamp: "100",
       },
-      ve46:{
+       {
         ls: "You celebrate it and hate it",
         stamp: "101",
       },
-      ve47:{
+       {
         ls: "But I don't pay no attention to the words",
         stamp: "103",
       },
-      ve48:{
+       {
         ls: "Put out another one, let it burn",
         stamp: "104",
       },
-      ve49:{
+       {
         ls: "Still on the list, you know what it is",
         stamp: "106",
       },
-      ve50:{
+       {
         ls: "They puttin' me first, yeah",
         stamp: "108",
       },
-      ve51:{
+       {
         ls: "Met Russ in Carbone in New York",
         stamp: "110",
       },
-      ve52:{
+       {
         ls: "Now we here, and I'm killin' the verse",
         stamp: "111",
       },
-      ve53:{
+       {
         ls: "And every time, it's gotta be right",
         stamp: "112",
       },
-      ve54:{
+       {
         ls: "And you told me 'Teddy, boy, take 'em to church",
         stamp: "114",
       },
-      ve55:{
+       {
         ls: "Ooh-ooh",
         stamp: "117",
       },
-      ve56:{
+       {
         ls: "When you touch down up in London, you know what?",
         stamp: "118",
       },
-      ve57:{
+       {
         ls: "Give me the stage and you're gonna see how it goes off",
         stamp: "122",
       },
-      ve58:{
+       {
         ls: "Every time, every night is a loose one",
         stamp: "125",
       },
-      ve59:{
+       {
         ls: "My seat is reclined, the jet is G5, I blew up",
         stamp: "129",
       },
-      ve60:{
+       {
         ls: "You say that I dropped off, well then tell me what you've done",
         stamp: "133",
       },
-      ve61:{
+       {
         ls: "I'm still in my winnin' phase, 'Rari switchin' lanes",
         stamp: "135",
       },
-      ve62:{
+       {
         ls: "Are you entertained? I'm gone",
         stamp: "138",
       },
-      ve63:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve64:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve65:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve66:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve67:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve68:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve69:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve70:{
-        ls: "",
-        stamp: "3600",
-      },
-    },
+    ],
 
     bio: "During the 2010s, Russ Vitale -- a rapper, singer, songwriter, and producer -- emerged from the Atlanta-area underground with dozens of independent singles and albums, all of which were made freely available as downloads. Signing with the majors in 2017, he issued his mainstream breakthrough, the platinum-certified Top Ten album There's Really a Wolf. He also cracked the Top Five of the Billboard 200 with 2018's Zoo and 2020's Shake the Snow Globe, before releasing the companion albums Chomp and Chomp 2. The hit single Handsomer and the EP If Not Now, When?, appeared in 2022",
     social:{
@@ -11559,288 +8385,272 @@ var allMusic = [
     album_status: "false",
     id: "129",
 
-    lyrics:{
-      ve1:{
+    lyrics:[
+       {
         ls: "We're living in our own little Hollywood",
         stamp: "4",
       },
-      ve2:{
+       {
         ls: "We're washed up stars",
         stamp: "8",
       },
-      ve3:{
+       {
         ls: "Everything's got me good",
         stamp: "10",
       },
-      ve4:{
+       {
         ls: "We got everything we need in our neighbourhood",
         stamp: "12",
       },
-      ve5:{
+       {
         ls: "No fancy cars",
         stamp: "16",
       },
-      ve6:{
+       {
         ls: "Remember when we were 15",
         stamp: "19",
       },
-      ve7:{
+       {
         ls: "Smoking in the back",
         stamp: "20",
       },
-      ve8:{
+       {
         ls: "Never really noticed you",
         stamp: "23",
       },
-      ve9:{
+       {
         ls: "But I was falling hard",
         stamp: "24",
       },
-      ve10:{
+       {
         ls: "Remember Jimmy's pick-up",
         stamp: "26",
       },
-      ve11:{
+       {
         ls: "Drunk driving in the dark",
         stamp: "28",
       },
-      ve12:{
+       {
         ls: "If I think about it now",
         stamp: "30",
       },
-      ve13:{
+       {
         ls: "We didn't think at all",
         stamp: "32",
       },
-      ve14:{
+       {
         ls: "Home",
         stamp: "35",
       },
-      ve15:{
+       {
         ls: "We're living in our own little Hollywood",
         stamp: "36",
       },
-      ve16:{
+       {
         ls: "We're washed up stars",
         stamp: "40",
       },
-      ve17:{
+      {
         ls: "Everything's got me good",
         stamp: "41",
       },
-      ve18:{
+       {
         ls: "We got everything we need in our neighbourhood",
         stamp: "43",
       },
-      ve19:{
+       {
         ls: "No fancy cars",
         stamp: "48",
       },
-      ve20:{
+       {
         ls: "Everything's got me good",
         stamp: "49",
       },
-      ve21:{
+       {
         ls: "I don't wanna know where it's gonna go",
         stamp: "51",
       },
-      ve22:{
+       {
         ls: "It's crazy living this life, oh, oh",
         stamp: "54",
       },
-      ve23:{
+       {
         ls: "We're living in our own little Hollywood",
         stamp: "60",
       },
-      ve24:{
+       {
         ls: "We're washed up stars",
         stamp: "63",
       },
-      ve25:{
+       {
         ls: "Everything's got me good",
         stamp: "65",
       },
-      ve26:{
+       {
         ls: "Remember getting busted",
         stamp: "70",
       },
-      ve27:{
+       {
         ls: "Grafitti on the wall",
         stamp: "71",
       },
-      ve28:{
+       {
         ls: "You laughed at me rebelliously",
         stamp: "73",
       },
-      ve29:{
+       {
         ls: "With the hands tied up and all",
         stamp: "75",
       },
-      ve30:{
+       {
         ls: "I wonder what you've been up to",
         stamp: "78",
       },
-      ve31:{
+       {
         ls: "Jimmy's still the same",
         stamp: "79",
       },
-      ve32:{
+       {
         ls: "The old tree in our backyard's still scarred by our names",
         stamp: "82",
       },
-      ve33:{
+       {
         ls: "I'm hanging on to everyone and all that we did at the time",
         stamp: "87",
       },
-      ve34:{
+       {
         ls: "I don't wanna know where it's gonna go",
         stamp: "95",
       },
-      ve35:{
+       {
         ls: "It's crazy living this life, oh, oh",
         stamp: "97",
       },
-      ve36:{
+       {
         ls: "We're living in our own little Hollywood",
         stamp: "103",
       },
-      ve37:{
+       {
         ls: "We're washed up stars",
         stamp: "107",
       },
-      ve38:{
+       {
         ls: "Everything's got me good",
         stamp: "109",
       },
-      ve39:{
+       {
         ls: "We got everything we need in our neighbourhood",
         stamp: "110",
       },
-      ve40:{
+       {
         ls: "No fancy cars",
         stamp: "114",
       },
-      ve41:{
+       {
         ls: "Everything's got me good",
         stamp: "116",
       },
-      ve42:{
+       {
         ls: "I don't wanna know where it's gonna go",
         stamp: "119",
       },
-      ve43:{
+       {
         ls: "It's crazy living this life, oh, oh",
         stamp: "121",
       },
-      ve44:{
+       {
         ls: "We're living in our own little Hollywood",
         stamp: "125",
       },
-      ve45:{
+       {
         ls: "We're washed up stars",
         stamp: "130",
       },
-      ve46:{
+       {
         ls: "Everything's got me good",
         stamp: "132",
       },
-      ve47:{
+       {
         ls: "Ooh-ooh-ooh-ooh-ooh",
         stamp: "135",
       },
-      ve48:{
+       {
         ls: "Ooh-ooh-ooh-ooh-oh",
         stamp: "137",
       },
-      ve49:{
+       {
         ls: "We're washed up stars",
         stamp: "139",
       },
-      ve50:{
+       {
         ls: "Everything's got me good",
         stamp: "140",
       },
-      ve51:{
+       {
         ls: "Ooh-ooh-ooh-ooh-ooh",
         stamp: "142",
       },
-      ve52:{
+       {
         ls: "Ooh-ooh-ooh-ooh-oh",
         stamp: "144",
       },
-      ve53:{
+       {
         ls: "We're washed up stars",
         stamp: "147",
       },
-      ve54:{
+       {
         ls: "Everything's got me good",
         stamp: "148",
       },
-      ve55:{
+       {
         ls: "We're living in our own little Hollywood",
         stamp: "151",
       },
-      ve56:{
+       {
         ls: "We're washed up stars",
         stamp: "154",
       },
-      ve57:{
+       {
         ls: "Everything's got me good",
         stamp: "156",
       },
-      ve58:{
+       {
         ls: "We got everything we need in our neighbourhood",
         stamp: "158",
       },
-      ve59:{
+       {
         ls: "No fancy cars",
         stamp: "162",
       },
-      ve60:{
+       {
         ls: "Everything's got me good",
         stamp: "163",
       },
-      ve61:{
+       {
         ls: "I don't wanna know where it's gonna go",
         stamp: "165",
       },
-      ve62:{
+       {
         ls: "It's crazy living this life, oh, oh",
         stamp: "168",
       },
-      ve63:{
+       {
         ls: "We're living in our own little Hollywood",
         stamp: "174",
       },
-      ve64:{
+       {
         ls: "We're washed up stars",
         stamp: "178",
       },
-      ve65:{
+       {
         ls: "Everything's got me good",
         stamp: "180",
       },
-      ve66:{
+       {
         ls: "♫ ♫ ♫",
         stamp: "185",
       },
-      ve67:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve68:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve69:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve70:{
-        ls: "",
-        stamp: "3600",
-      },
-    },
+    ],
 
     bio: "Without a doubt, Berlin based DJ & Producer Alle Farben is one of the most established and successful German Artists in Pop and Dance Music. Playing over 150 live shows yearly, Alle Farben has graced some of Dance Music’s greatest stages such as Tomorrowland, Lollapalooza, Parookaville and Sziget Festival. In the past year Alle Farben has also generated and sold over 5 million downloads and CD’s, counting Germany only. He was nominated for 1Live Krone for „Best Single“ in 2017 as well as for MTV EMA for “Best German Act“, and won the ECHO music award as best „Dance National“ act. Alle Farben currently has over 900 million streams on Spotify with 6,5 million monthly listeners and over 250 million views on YouTube. After having achieved 12x Gold, 8x Platinum, and 1x Diamond awards, more is yet to come!",
     social:{
@@ -11873,8 +8683,8 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "130",
-    lyrics:{
-    },
+    lyrics:[
+    ],
 
     user_playlist_1: "",
   },
@@ -11901,8 +8711,8 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "131",
-    lyrics:{
-    },
+    lyrics:[
+    ],
 
     user_playlist_1: "",
   },
@@ -11929,8 +8739,8 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "132",
-    lyrics:{
-    },
+    lyrics:[
+    ],
 
     user_playlist_1: "",
   },
@@ -11957,8 +8767,8 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "133",
-    lyrics:{
-    },
+    lyrics:[
+    ],
     
     user_playlist_1: "",
   },
@@ -11985,8 +8795,8 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "134",
-    lyrics:{
-    },
+    lyrics:[
+    ],
 
     user_playlist_1: "",
   },
@@ -12013,8 +8823,8 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "135",
-    lyrics:{
-    },
+    lyrics:[
+    ],
 
     user_playlist_1: "",
   },
@@ -12041,8 +8851,8 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "136",
-    lyrics:{
-    },
+    lyrics:[
+    ],
 
     user_playlist_1: "",
   },
@@ -12069,8 +8879,8 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "137",
-    lyrics:{
-    },
+    lyrics:[
+    ],
 
     user_playlist_1: "",
   },
@@ -12098,8 +8908,8 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "138",
-    lyrics:{
-    },
+    lyrics:[
+    ],
 
     user_playlist_1: "",
   },
@@ -12126,8 +8936,8 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "139",
-    lyrics:{
-    },
+    lyrics:[
+    ],
 
     user_playlist_1: "",
   },
@@ -12154,8 +8964,8 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "140",
-    lyrics:{
-    },
+    lyrics:[
+    ],
 
     user_playlist_1: "",
   },
@@ -12182,8 +8992,8 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "141",
-    lyrics:{
-    },
+    lyrics:[
+    ],
 
     user_playlist_1: "",
   },
@@ -12211,8 +9021,8 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "142",
-    lyrics:{
-    },
+    lyrics:[
+    ],
 
     user_playlist_1: "",
   },
@@ -12239,8 +9049,8 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "143",
-    lyrics:{
-    },
+    lyrics:[
+    ],
     bio: "In 2016, he released the single Go Flex along with his official debut mixtape, August 26th. Months later, his first studio effort arrived. Stoney featured guests ranging from ",
     social:{
       instagram: "https://www.instagram.com/postmalone/",
@@ -12272,8 +9082,8 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "144",
-    lyrics:{
-    },
+    lyrics:[
+    ],
 
     user_playlist_1: "",
   },
@@ -12300,8 +9110,8 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "145",
-    lyrics:{
-    },
+    lyrics:[
+    ],
     bio: "In 2016, he released the single Go Flex along with his official debut mixtape, August 26th. Months later, his first studio effort arrived. Stoney featured guests ranging from ",
     social:{
       instagram: "https://www.instagram.com/postmalone/",
@@ -12333,8 +9143,8 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "146",
-    lyrics:{
-    },
+    lyrics:[
+    ],
     user_playlist_1: "",
   },
   {
@@ -12373,288 +9183,192 @@ var allMusic = [
     album_status: "false",
     id: "147",
 
-    lyrics:{
-      ve1:{
+    lyrics:[
+       {
         ls: "Yelling at the sky",
         stamp: "12",
       },
-      ve2:{
+       {
         ls: "Screaming at the world",
         stamp: "15",
       },
-      ve3:{
+       {
         ls: "Baby, why'd you go away?",
         stamp: "19",
       },
-      ve4:{
+       {
         ls: "I'm still your girl",
         stamp: "21",
       },
-      ve5:{
+       {
         ls: "Holding on too tight",
         stamp: "25",
       },
-      ve6:{
+       {
         ls: "Head up in the clouds",
         stamp: "28",
       },
-      ve7:{
+       {
         ls: "Heaven only knows",
         stamp: "31",
       },
-      ve8:{
+       {
         ls: "Where you are now",
         stamp: "34",
       },
-      ve9:{
+       {
         ls: "How do I love",
         stamp: "38",
       },
-      ve10:{
+       {
         ls: "How do I love again?",
         stamp: "40",
       },
-      ve11:{
+       {
         ls: "How do I trust",
         stamp: "45",
       },
-      ve12:{
+       {
         ls: "How do I trust again?",
         stamp: "47",
       },
-      ve13:{
+       {
         ls: "I stay up all night",
         stamp: "50",
       },
-      ve14:{
+       {
         ls: "Tell myself I'm alright",
         stamp: "52",
       },
-      ve15:{
+       {
         ls: "Baby, you're just harder to see than most",
         stamp: "56",
       },
-      ve16:{
+       {
         ls: "I put the record on",
         stamp: "62",
       },
-      ve17:{
+      {
         ls: "Wait 'til II hear our song",
         stamp: "65",
       },
-      ve18:{
+       {
         ls: "Every night I'm dancing with your ghost",
         stamp: "68",
       },
-      ve19:{
+       {
         ls: "Every night I'm dancing with your ghost",
         stamp: "74",
       },
-      ve20:{
+       {
         ls: "Never got a chance",
         stamp: "82",
       },
-      ve21:{
+       {
         ls: "To say a last goodbye",
         stamp: "86",
       },
-      ve22:{
+       {
         ls: "I gotta move on",
         stamp: "89",
       },
-      ve23:{
+       {
         ls: "But it hurts to try",
         stamp: "92",
       },
-      ve24:{
+       {
         ls: "How do I love",
         stamp: "96",
       },
-      ve25:{
+       {
         ls: "How do I love again?",
         stamp: "98",
       },
-      ve26:{
+       {
         ls: "How do I trust",
         stamp: "102",
       },
-      ve27:{
+       {
         ls: "How do I trust again?",
         stamp: "104",
       },
-      ve28:{
+       {
         ls: "I stay up all night",
         stamp: "107",
       },
-      ve29:{
+       {
         ls: "Tell myself I'm alright",
         stamp: "110",
       },
-      ve30:{
+       {
         ls: "Baby, you're just harder to see than most",
         stamp: "113",
       },
-      ve31:{
+       {
         ls: "I put the record on",
         stamp: "120",
       },
-      ve32:{
+       {
         ls: "Wait 'til II hear our song",
         stamp: "123",
       },
-      ve33:{
+       {
         ls: "Every night I'm dancing with your ghost",
         stamp: "126",
       },
-      ve34:{
+       {
         ls: "Every night I'm dancing with your ghost",
         stamp: "132",
       },
-      ve35:{
+       {
         ls: "How do I love",
         stamp: "141",
       },
-      ve36:{
+       {
         ls: "How do I love again?",
         stamp: "143",
       },
-      ve37:{
+       {
         ls: "How do I trust",
         stamp: "147",
       },
-      ve38:{
+       {
         ls: "How do I trust again?",
         stamp: "149",
       },
-      ve39:{
+       {
         ls: "I stay up all night",
         stamp: "153",
       },
-      ve40:{
+       {
         ls: "Tell myself I'm alright",
         stamp: "155",
       },
-      ve41:{
+       {
         ls: "Baby, you're just harder to see than most",
         stamp: "158",
       },
-      ve42:{
+       {
         ls: "I put the record on",
         stamp: "165",
       },
-      ve43:{
+       {
         ls: "Wait 'til II hear our song",
         stamp: "167",
       },
-      ve44:{
+       {
         ls: "Every night I'm dancing with your ghost",
         stamp: "170",
       },
-      ve45:{
+       {
         ls: "Every night I'm dancing with your ghost",
         stamp: "177",
       },
-      ve46:{
+       {
         ls: "Every night I'm dancing with your ghost",
         stamp: "184",
       },
-      ve47:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve48:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve49:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve50:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve51:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve52:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve53:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve54:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve55:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve56:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve57:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve58:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve59:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve60:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve61:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve62:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve63:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve64:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve65:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve66:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve67:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve68:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve69:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve70:{
-        ls: "",
-        stamp: "3600",
-      },
-    },
+    ],
 
     bio: "life is a scam<3",
     social:{
@@ -12698,8 +9412,8 @@ var allMusic = [
     album_premiere: "2021",
     album_status: "false",
     id: "148",
-    lyrics:{
-    },
+    lyrics:[
+    ],
     bio: "Ja chce dobrze dla muzyki.",
     social:{
       instagram: "https://www.instagram.com/mateuszgibbs/",
@@ -12730,288 +9444,196 @@ var allMusic = [
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "149",
-    lyrics:{
-      ve1:{
+    lyrics:[
+       {
         ls: "You were running through me like water",
         stamp: "6",
       },
-      ve2:{
+       {
         ls: "Now the feeling's leaving me dry",
         stamp: "10.5",
       },
-      ve3:{
+       {
         ls: "These days we couldn't be further",
         stamp: "13.5",
       },
-      ve4:{
+       {
         ls: "So how's it fell to be on the other side?",
         stamp: "16",
       },
-      ve5:{
+       {
         ls: "So many wasted (wasted)",
         stamp: "19",
       },
-      ve6:{
+       {
         ls: "Nights with (nights with) you (you)",
         stamp: "22",
       },
-      ve7:{
+       {
         ls: "I still could taste it (taste it)",
         stamp: "25.5",
       },
-      ve8:{
+       {
         ls: "I hate it, wish I could take it back, 'cause",
         stamp: "28",
       },
-      ve9:{
+       {
         ls: "We used to be close, but people can go",
         stamp: "32",
       },
-      ve10:{
+       {
         ls: "From people you know to people you don't",
         stamp: "35.5",
       },
-      ve11:{
+       {
         ls: "And what hurts the most is people can go",
         stamp: "39",
       },
-      ve12:{
+       {
         ls: "From people you know to people you don't",
         stamp: "42",
       },
-      ve13:{
+       {
         ls: "We used to be close, but people can go",
         stamp: "45",
       },
-      ve14:{
+       {
         ls: "From people you know to people you don't",
         stamp: "48",
       },
-      ve15:{
+       {
         ls: "And what hurts the most is people can go",
         stamp: "51.5",
       },
-      ve16:{
+       {
         ls: "From people you know to people you don't",
         stamp: "54.5",
       },
-      ve17:{
+      {
         ls: "When it was good, we were on fire",
         stamp: "58",
       },
-      ve18:{
+       {
         ls: "Now I'm breathing asges and dust",
         stamp: "62.5",
       },
-      ve19:{
+       {
         ls: "I always wanna get higher",
         stamp: "64",
       },
-      ve20:{
+       {
         ls: "I never know when enough is enough",
         stamp: "67.5",
       },
-      ve21:{
+       {
         ls: "So many wasted (wasted)",
         stamp: "71",
       },
-      ve22:{
+       {
         ls: "Nights with (nights with) you (you)",
         stamp: "73",
       },
-      ve23:{
+       {
         ls: "I still could taste it (taste it)",
         stamp: "77",
       },
-      ve24:{
+       {
         ls: "I hate it, wish I could take it back, 'cause",
         stamp: "79",
       },
-      ve25:{
+       {
         ls: "We used to be close, but people can go",
         stamp: "83",
       },
-      ve26:{
+       {
         ls: "From people you know to people you don't",
         stamp: "86.5",
       },
-      ve27:{
+       {
         ls: "And what hurts the most is people can go",
         stamp: "89",
       },
-      ve28:{
+       {
         ls: "From people you know to people you don't",
         stamp: "92.5",
       },
-      ve29:{
+       {
         ls: "We used to be close, but people can go",
         stamp: "96.5",
       },
-      ve30:{
+       {
         ls: "From people you know to people you don't",
         stamp: "100",
       },
-      ve31:{
+       {
         ls: "And what hurts the most is people can go",
         stamp: "102.5",
       },
-      ve32:{
+       {
         ls: "From people you know to people you don't",
         stamp: "106",
       },
-      ve33:{
+       {
         ls: "(People you know to people you don't)",
         stamp: "114",
       },
-      ve34:{
+       {
         ls: "(People you know to people you don't)",
         stamp: "120",
       },
-      ve35:{
+       {
         ls: "From people you know to people you don't",
         stamp: "125",
       },
-      ve36:{
+       {
         ls: "From people you know to people you don't",
         stamp: "131",
       },
-      ve37:{
+       {
         ls: "We used to be close, but people can go",
         stamp: "134",
       },
-      ve38:{
+       {
         ls: "From people you know to people you don't",
         stamp: "137.5",
       },
-      ve39:{
+       {
         ls: "And what hurts the most is people can go",
         stamp: "141",
       },
-      ve40:{
+       {
         ls: "From people you know to people you don't",
         stamp: "144",
       },
-      ve41:{
+       {
         ls: "We used to be close, but people can go",
         stamp: "147.5",
       },
-      ve42:{
+       {
         ls: "From people you know to people you don't",
         stamp: "150.5",
       },
-      ve43:{
+       {
         ls: "And what hurts the most is people can go",
         stamp: "154",
       },
-      ve44:{
+       {
         ls: "From people you know to people you don't",
         stamp: "163.5",
       },
-      ve45:{
+       {
         ls: "From people you know to people you don't",
         stamp: "170",
       },
-      ve46:{
+       {
         ls: "From people you know to people you don't",
         stamp: "176",
       },
-      ve47:{
+       {
         ls: "From people you know to people you don't",
         stamp: "182",
       },
-      ve48:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve49:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve50:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve51:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve52:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve53:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve54:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve55:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve56:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve57:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve58:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve59:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve60:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve61:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve62:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve63:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve64:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve65:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve66:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve67:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve68:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve69:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve70:{
-        ls: "",
-        stamp: "3600",
-      },
-    },
+    ],
   },
   {
     name: "Rare",
@@ -13035,22 +9657,9 @@ var allMusic = [
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "150",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
   },
   {
     name: "Dance Again",
@@ -13074,22 +9683,9 @@ var allMusic = [
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "151",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
   },
   {
     name: "Look At Her Now",
@@ -13113,22 +9709,9 @@ var allMusic = [
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "152",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
   },
   {
     name: "Lose You To Love Me",
@@ -13152,22 +9735,9 @@ var allMusic = [
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "153",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
   },
   {
     name: "Ring",
@@ -13191,22 +9761,9 @@ var allMusic = [
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "154",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
   },
   {
     name: "Vulnerable",
@@ -13231,22 +9788,9 @@ var allMusic = [
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "155",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
   },
   {
     name: "Let Me Get Me",
@@ -13270,22 +9814,9 @@ var allMusic = [
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "156",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
   },
   {
     name: "Crowded Room",
@@ -13309,22 +9840,9 @@ var allMusic = [
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "157",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
   },
   {
     name: "Kinda Crazy",
@@ -13348,22 +9866,9 @@ var allMusic = [
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "158",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
   },
   {
     name: "Fun",
@@ -13387,22 +9892,9 @@ var allMusic = [
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "159",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
   },
   {
     name: "Cut You Off",
@@ -13426,22 +9918,9 @@ var allMusic = [
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "160",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
   },
   {
     name: "A Sweeter Place",
@@ -13465,22 +9944,9 @@ var allMusic = [
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "161",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
   },
   {
     name: "Too Sad To Cry",
@@ -13504,8 +9970,8 @@ var allMusic = [
     album_premiere: "2019",
     album_status: "false",
     id: "162",
-    lyrics:{
-    },
+    lyrics:[
+    ],
 
     user_playlist_1: "",
   },
@@ -13531,22 +9997,9 @@ var allMusic = [
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "163",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
   },
   {
     name: "Souvenir",
@@ -13570,288 +10023,164 @@ var allMusic = [
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "164",
-    lyrics:{
-      ve1:{
+    lyrics:[
+       {
         ls: "New York back in August, tenth floor balcony",
         stamp: "7",
       },
-      ve2:{
+       {
         ls: "Smoke is floating over Jane and Greenwich street",
         stamp: "11",
       },
-      ve3:{
+       {
         ls: "Goosebumps from your wild eyes when they're watching me",
         stamp: "15",
       },
-      ve4:{
+       {
         ls: "Shivers dance down my spine, head down to my feet",
         stamp: "20",
       },
-      ve5:{
+       {
         ls: "Swimming in your eyes, in your eyes, in your eyes",
         stamp: "24",
       },
-      ve6:{
+       {
         ls: "Egyptian blue",
         stamp: "27",
       },
-      ve7:{
+       {
         ls: "Something I've never had without you",
         stamp: "29",
       },
-      ve8:{
+       {
         ls: "You're giving me chills at a hundred degrees",
         stamp: "32",
       },
-      ve9:{
+       {
         ls: "It's better than pills how you put me to sleep",
         stamp: "36",
       },
-      ve10:{
+       {
         ls: "Calling your name, the only language i can speak",
         stamp: "40.5",
       },
-      ve11:{
+       {
         ls: "Taking my breath, a souvenir that you can keep",
         stamp: "44.5",
       },
-      ve12:{
+       {
         ls: "Giving me chills",
         stamp: "49",
       },
-      ve13:{
+       {
         ls: "Chills",
         stamp: "54.5",
       },
-      ve14:{
+       {
         ls: "Sunset Tower lobby, waiting there for me",
         stamp: "58",
       },
-      ve15:{
+       {
         ls: "In the elevator, fumble for your key",
         stamp: "62",
       },
-      ve16:{
+       {
         ls: "Kissed in every corner, Presidential Suite",
         stamp: "66",
       },
-      ve17:{
+      {
         ls: "Opened that Bordeaux from 1993",
         stamp: "71",
       },
-      ve18:{
+       {
         ls: "Swimming in your eyes, in your eyes, in your eyes",
         stamp: "74.5",
       },
-      ve19:{
+       {
         ls: "Egyptian blue",
         stamp: "78",
       },
-      ve20:{
+       {
         ls: "Something I've never had without you",
         stamp: "80",
       },
-      ve21:{
+       {
         ls: "You're giving me chills at a hundred degrees",
         stamp: "83",
       },
-      ve22:{
+       {
         ls: "It's better than pills how you put me to sleep",
         stamp: "87",
       },
-      ve23:{
+       {
         ls: "Calling your name, the only language i can speak",
         stamp: "91.5",
       },
-      ve24:{
+       {
         ls: "Taking my breath, a souvenir that you can keep",
         stamp: "96",
       },
-      ve25:{
+       {
         ls: "Giving me chills",
         stamp: "100",
       },
-      ve26:{
+       {
         ls: "Take my, take-take my breath away just like",
         stamp: "102",
       },
-      ve27:{
+       {
         ls: "Take my breath away just like a souvenir",
         stamp: "105.5",
       },
-      ve28:{
+       {
         ls: "Take my, take-take my breath away just like",
         stamp: "110.5",
       },
-      ve29:{
+       {
         ls: "Take my breath away just like a souvenir",
         stamp: "114",
       },
-      ve30:{
+       {
         ls: "You're giving me chills at a hundred degrees (A hundred)",
         stamp: "119",
       },
-      ve31:{
+       {
         ls: "It's better than pills how you put me to sleep (Puts me, yeah)",
         stamp: "123.5",
       },
-      ve32:{
+       {
         ls: "Calling your name, the only language i can speak",
         stamp: "128",
       },
-      ve33:{
+       {
         ls: "Taking my breath, a souvenir that you can keep",
         stamp: "132",
       },
-      ve34:{
+       {
         ls: "Giving me chills",
         stamp: "136",
       },
-      ve35:{
+       {
         ls: "Take my, take-take my breath away just like (You're giving me chills)",
         stamp: "138",
       },
-      ve36:{
+       {
         ls: "Take my breath away just like a souvenir",
         stamp: "141",
       },
-      ve37:{
+       {
         ls: "Giving me chills",
         stamp: "144.5",
       },
-      ve38:{
+       {
         ls: "Take my, take-take my breath away just like (You're giving me chills)",
         stamp: "147",
       },
-      ve39:{
+       {
         ls: "Take my breath away just like a souvenir",
         stamp: "150",
       },
-      ve40:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve41:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve42:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve43:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve44:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve45:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve46:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve47:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve48:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve49:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve50:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve51:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve52:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve53:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve54:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve55:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve56:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve57:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve58:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve59:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve60:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve61:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve62:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve63:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve64:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve65:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve66:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve67:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve68:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve69:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve70:{
-        ls: "",
-        stamp: "3600",
-      },
-    },
+    ],
   },
   {
     name: "She",
@@ -13875,22 +10204,9 @@ var allMusic = [
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "165",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
   },
   {
     name: "Feel Me",
@@ -13914,22 +10230,9 @@ var allMusic = [
     album_cover: "https://i.scdn.co/image/ab67616d00001e022abcc266597eb46f897a8666",
     album_premiere: "2020",
     id: "166",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
   },
   {
     name: "God Is A Dancer",
@@ -13971,22 +10274,9 @@ var allMusic = [
     album_cover: "https://i.scdn.co/image/ab67616d00001e021e3f58e2a9d74333ba8f2392",
     album_premiere: "2019",
     id: "167",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "An effortless storyteller with a pure and unfiltered singing talent and songwriting ability, Mabel McVey has an instinctive gift of melody far beyond her twenty three years. Indeed Mabel has made quite the impression since bursting on to the scene in September 2015 with her release‘Know Me Better’. Quietly released onto Mabel’s personal SoundCloud, the single didn’t remain a secret for long, putting the wheels in motion for Mabel to become a fresh and exciting name amongst a brand new generation of r’n’b chanteuses. In the three since, Mabel’s growth (musically, emotionally, visually) has been extraordinary. Her formative material led to the surprise breakthrough of ‘Finders Keepers’ in 2017, which went platinum, spent 5 weeks in the top 10, and saw Mabel nominated for her first BRIT Award (Critics’ Choice). She has gone from playing nervous, intimate shows to touring with Harry Styles, selling out her own dates around the world (including London’s Brixton Academy) and has clocked up increasingly-surreal experiences en route(which includes playing Wembley Stadium in a Burberry catsuit and rainbow flag). Over two million single sales in the UK and over half a billion streams followed. Mabel has emerged as one of the UK’s most positive, candid lyrical voices, with songs that frequently explore everything from identity, the challenges of modern relationships, and working out who you are and what you want.",
     social:{
       instagram: "https://www.instagram.com/mabel/",
@@ -14034,22 +10324,9 @@ var allMusic = [
     album_cover: "https://i.scdn.co/image/ab67616d00001e02c5148520a59be191eea16989",
     album_premiere: "2018",
     id: "168",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "👁️🌙☀️",
     social:{
       instagram: "https://www.instagram.com/panicatthedisco/",
@@ -14082,22 +10359,9 @@ var allMusic = [
     album_premiere: "2023",
     album_status: "false",
     id: "169",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -14125,22 +10389,9 @@ var allMusic = [
     album_premiere: "2023",
     album_status: "false",
     id: "170",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -14168,22 +10419,9 @@ var allMusic = [
     album_premiere: "2023",
     album_status: "false",
     id: "171",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -14211,22 +10449,9 @@ var allMusic = [
     album_premiere: "2023",
     album_status: "false",
     id: "172",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -14254,288 +10479,248 @@ var allMusic = [
     album_premiere: "2023",
     album_status: "false",
     id: "173",
-    lyrics:{
-      ve1:{
+    lyrics:[
+       {
         ls: "Dear God, please, hear me out",
         stamp: "3",
       },
-      ve2:{
+       {
         ls: "I know it's been a couple years",
         stamp: "9",
       },
-      ve3:{
+       {
         ls: "Since I've reached out and said hello",
         stamp: "13",
       },
-      ve4:{
+       {
         ls: "I bet you're wondering",
         stamp: "19",
       },
-      ve5:{
+       {
         ls: "Why I keep",
         stamp: "23",
       },
-      ve6:{
+       {
         ls: "Obsessing on and stressing all the little things",
         stamp: "26",
       },
-      ve7:{
+       {
         ls: "When I should be",
         stamp: "31",
       },
-      ve8:{
+       {
         ls: "Living life and soaking up the memories",
         stamp: "35",
       },
-      ve9:{
+       {
         ls: "I know I've been selfish, I have",
         stamp: "39",
       },
-      ve10:{
+       {
         ls: "No excuse to give you, it's true",
         stamp: "45",
       },
-      ve11:{
+       {
         ls: "Hanging by a thread's how I live",
         stamp: "49",
       },
-      ve12:{
+       {
         ls: "I don't know why, but I feel more comfortable",
         stamp: "53",
       },
-      ve13:{
+       {
         ls: "Living in my agony, watching my self-esteem",
         stamp: "58",
       },
-      ve14:{
+       {
         ls: "Go up in flames, acting like I don't",
         stamp: "63",
       },
-      ve15:{
+       {
         ls: "Care what anyone else thinks, when I know truthfully",
         stamp: "67",
       },
-      ve16:{
+       {
         ls: "That that's the furthest thing from how I",
         stamp: "72",
       },
-      ve17:{
+      {
         ls: "Feel, but I'm too proud to open up and ask ya",
         stamp: "76",
       },
-      ve18:{
+       {
         ls: "To pick me up and pull me out this hole I'm trapped in",
         stamp: "80",
       },
-      ve19:{
+       {
         ls: "The truth is, I need help, but I just can't imagine who",
         stamp: "85",
       },
-      ve20:{
+       {
         ls: "Who I'd be if I was happy",
         stamp: "89",
       },
-      ve21:{
+       {
         ls: "Yeah, been this way so long",
         stamp: "93",
       },
-      ve22:{
+       {
         ls: "It feels like something's off when I'm not depressed",
         stamp: "96",
       },
-      ve23:{
+       {
         ls: "I got some issues that I won't address",
         stamp: "98",
       },
-      ve24:{
+       {
         ls: "I got some baggage I ain't opened yet",
         stamp: "99",
       },
-      ve25:{
+       {
         ls: "I got some demons I should put to rest",
         stamp: "102",
       },
-      ve26:{
+       {
         ls: "I got some traumas that I can't forget",
         stamp: "104",
       },
-      ve27:{
+       {
         ls: "I got some phone calls I been avoiding",
         stamp: "107",
       },
-      ve28:{
+       {
         ls: "Some family members I don't really connect with",
         stamp: "109",
       },
-      ve29:{
+       {
         ls: "Some things I said I wish I would of not let slip",
         stamp: "111",
       },
-      ve30:{
+       {
         ls: "Some hurtful words that never should of left my lips",
         stamp: "113",
       },
-      ve31:{
+       {
         ls: "Some bridges burned, I'm not ready to rebuild yet",
         stamp: "116",
       },
-      ve32:{
+       {
         ls: "Some insecurities I haven't dealt with, yes",
         stamp: "117",
       },
-      ve33:{
+       {
         ls: "I'll be the first to admit that I'm a lonely soul",
         stamp: "120",
       },
-      ve34:{
+       {
         ls: "And the last to admit I need a hand to hold",
         stamp: "122",
       },
-      ve35:{
+       {
         ls: "Losing hope, headed down a dangerous road",
         stamp: "124",
       },
-      ve36:{
+       {
         ls: "Strange, I know, but I feel most at home when I'm",
         stamp: "126",
       },
-      ve37:{
+       {
         ls: "Living in my agony, watching my self-esteem'",
         stamp: "130",
       },
-      ve38:{
+       {
         ls: "Go up in flames acting, like I don't",
         stamp: "135",
       },
-      ve39:{
+       {
         ls: "Care what anyone else thinks, when I know truthfully",
         stamp: "139",
       },
-      ve40:{
+       {
         ls: "That that's the furthest thing from how I",
         stamp: "144",
       },
-      ve41:{
+       {
         ls: "Feel, but I'm too proud to open up and ask ya",
         stamp: "148",
       },
-      ve42:{
+       {
         ls: "To pick me up and pull me out this hole I'm trapped in",
         stamp: "153",
       },
-      ve43:{
+       {
         ls: "The truth is, I need help, but I just can't imagine who",
         stamp: "157",
       },
-      ve44:{
+       {
         ls: "Who I'd be if I was happy",
         stamp: "162",
       },
-      ve45:{
+       {
         ls: "Don't know what's around the bend",
         stamp: "168",
       },
-      ve46:{
+       {
         ls: "Don't know what my future is",
         stamp: "172",
       },
-      ve47:{
+       {
         ls: "But I can't keep on living in",
         stamp: "177",
       },
-      ve48:{
+       {
         ls: "♪ ♪ ♪",
         stamp: "179",
       },
-      ve49:{
+       {
         ls: "Living in my agony, watching my self-esteem",
         stamp: "185",
       },
-      ve50:{
+       {
         ls: "Go up in flames acting, like I don't",
         stamp: "189",
       },
-      ve51:{
+       {
         ls: "Care what anyone else thinks, when I know truthfully",
         stamp: "194",
       },
-      ve52:{
+       {
         ls: "That that's the furthest thing from how I",
         stamp: "198",
       },
-      ve53:{
+       {
         ls: "Feel, but I'm too proud to open up and ask ya",
         stamp: "203",
       },
-      ve54:{
+       {
         ls: "To pick me up and pull me out this hole I'm trapped in",
         stamp: "207",
       },
-      ve55:{
+       {
         ls: "The truth is, I need help, but I just can't imagine who",
         stamp: "212",
       },
-      ve56:{
+       {
         ls: "Who I'd be if I was happy",
         stamp: "216",
       },
-      ve57:{
+       {
         ls: "♪ ♪ ♪",
         stamp: "222",
       },
-      ve58:{
+       {
         ls: "If I was happy",
         stamp: "227",
       },
-      ve59:{
+       {
         ls: "♪ ♪ ♪",
         stamp: "230",
       },
-      ve60:{
+       {
         ls: "If I was happy",
         stamp: "236",
       },
-      ve61:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve62:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve63:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve64:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve65:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve66:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve67:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve68:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve69:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve70:{
-        ls: "",
-        stamp: "3600",
-      },
-    },
+    ],
 
     user_playlist_1: "",
   },
@@ -14563,22 +10748,8 @@ var allMusic = [
     album_premiere: "2023",
     album_status: "false",
     id: "174",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+    ],
 
     user_playlist_1: "",
   },
@@ -14606,22 +10777,8 @@ var allMusic = [
     album_premiere: "2023",
     album_status: "false",
     id: "175",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+    ],
 
     user_playlist_1: "",
   },
@@ -14650,22 +10807,8 @@ var allMusic = [
     album_premiere: "2023",
     album_status: "false",
     id: "176",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+    ],
 
     user_playlist_1: "",
   },
@@ -14693,22 +10836,9 @@ var allMusic = [
     album_premiere: "2023",
     album_status: "false",
     id: "177",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -14736,22 +10866,9 @@ var allMusic = [
     album_premiere: "2023",
     album_status: "false",
     id: "178",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -14779,22 +10896,9 @@ var allMusic = [
     album_premiere: "2023",
     album_status: "false",
     id: "179",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -14822,22 +10926,9 @@ var allMusic = [
     album_premiere: "2023",
     album_status: "false",
     id: "180",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -14865,22 +10956,9 @@ var allMusic = [
     album_premiere: "2023",
     album_status: "false",
     id: "181",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -14922,22 +11000,9 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "182",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "Modern Metal from Germany, The darkest hours make us what we are. We all have this voice inside our head, our very own enemy, keeping us from following our dreams. Sometimes we need to forget the past and start over. Like a Phoenix, we will rise from the flames. We will set the sky on fire. The heat will vaporize our tears and burn our scars to dust. It is always darkest before the dawn. We are the masters of our minds. We are the ENEMY INSIDE. Nastassja Giulia - Vocals // Evan K - Lead Guitars // Dave Hadarik - Rhythm Guitars // Dominik Stotzem - Bass // Fabian Dührssen - Drums",
     social:{
       instagram: "https://www.instagram.com/weareenemyinside/",
@@ -14984,22 +11049,9 @@ var allMusic = [
     album_premiere: "2011",
     album_status: "false",
     id: "183",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "Since the release of her debut album ‘19’, in 2008, Adele has become one of the most successful British artists of her generation. Her critically acclaimed debut album garnered over 6.5 million sales worldwide whilst the album has gone 8x Platinum in the UK. At the age of 19, Adele became the first-ever recipient of the BRITS Critics’ Choice Award. The accolades received by Adele only multiplied as the following year saw her claim Best New Artist and Best Female Pop Vocal Performance at the GRAMMYs As Adele embarks on her next chapter, she holds 15 GRAMMYs, 9 BRITS, 18 Billboard Awards, 2 IVORs, 1 Golden Globe, 1 Academy Award and 5 American Music Awards under her belt. The British singer-songwriter has received 11.5 million Album sales in the UK alone and 48 million Worldwide Album sales.",
     social:{
       instagram: "",
@@ -15046,22 +11098,9 @@ var allMusic = [
     album_premiere: "2014",
     album_status: "false",
     id: "184",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "Taylor Swift is that rarest of pop phenomena: a superstar who managed to completely cross over from country to the mainstream. Others have performed similar moves -- notably, Dolly Parton and Willie Nelson both became enduring pop culture icons based on their 1970s work -- but Swift shed her country roots like they were a second skin; it was a necessary molting to reveal she was perhaps the sharpest, savviest populist singer/songwriter of her generation, one who could harness the zeitgeist, make it personal and, just as impressively, perform the reverse. These skills were evident on her earliest hits, especially the neo-tribute Tim McGraw, but her second album, 2008's Fearless, showcased a songwriter discovering who she was and, in the process, finding a mass audience. Fearless wound up having considerable legs not only in the U.S., where it racked up six platinum singles on the strength of the Top Ten hits Love Story and You Belong with Me, but throughout the world, performing particularly well in the U.K., Canada, and Australia. Speak Now, delivered almost two years later, consolidated that success and moved Swift into the stratosphere of superstardom. Her popularity only increased over her next three albums -- Red (2012), 1989 (2014), Reputation (2017) -- and found her moving assuredly into a pop realm where she already belonged. Even when she scaled back her approach with 2020's stripped-down sibling releases folklore and Evermore, she remained atop the pop world, a position she maintained with re-recordings of her back catalog along with Midnights, a moody album released in 2022.",
     social:{
       instagram: "https://instagram.com/taylorswift",
@@ -15105,22 +11144,9 @@ var allMusic = [
     album_premiere: "2017",
     album_status: "false",
     id: "185",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "Axwell Λ Ingrosso are a Swedish music duo who have enjoyed success in electronic music for well over a decade. In addition, they make up two thirds of the legendary Swedish House Mafia. The first Axwell Λ Ingrosso album, 'More Than You Know' was released in October 2017 and to date has spawned 8 top ten Billboard Dance hits and has amassed over 1 billion streams worldwide. The band are a prolific live act and consistently headline festivals all around the world. On June 29th 2018 they released 'Dancing Alone’.",
     social:{
       instagram: "https://www.instagram.com/axwellingrosso/",
@@ -15164,22 +11190,9 @@ var allMusic = [
     album_premiere: "2018",
     album_status: "false",
     id: "186",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "DJ/Producer phenom Alan Walker captured the imagination of the public with his debut single Faded in 2015, which served as a springboard towards an extensive and dedicated community. Notably, being one of the most followed accounts on Spotify and boasting more than 50 billion audio and video streams. Walker is widely recognized by his melancholic melodies yet optimistic lyrics. At the age of 24, Walker is already on his way to solidify himself as a usual suspect within the sphere of EDM. His successful singles and collaborations include Bruno Mars, Miley Cyrus, Coldplay, Avicii, Sia, Steve Aoki, A$AP Rocky, Ava Max, Kygo, Hans Zimmer, Madison Beer, Imanbek and many more. Inspired by his deep-rooted love for film and music, he has created an elaborate fictional universe, World of Walker, that accompanies his music videos, engaging fans across several mediums. World of Walker blurs the lines between fiction and reality, by inviting the community to grow and interact with an ever-expanding gallery of characters. Walker memorialized his first world tour through his movie, Aviation Movie, released in June 2021. The movie combines footage from his sold-out concert at the Oslo Spektrum stadium, with a storyline from World of Walker. Creating a unique, and interactive experience, that merges the world of cinema and music. Join the World of Walker and be a part of the movement.",
     social:{
       instagram: "https://www.instagram.com/alanwalkermusic/",
@@ -15223,22 +11236,9 @@ var allMusic = [
     album_premiere: "2019",
     album_status: "false",
     id: "187",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "Jonas Brothers’ new single “Waffle House” is out now via Republic Records, launching a new era for the band’s latest full-length record The Album, executive produced by Jon Bellion [Justin Bieber, Maroon 5, Halsey]. The Album is set for release on Friday, May 12th. Kicking off 2023, the band received their Star on the Hollywood Walk of Fame on January 30th, 2023.",
     social:{
       instagram: "https://www.instagram.com/jonasbrothers/",
@@ -15282,22 +11282,9 @@ var allMusic = [
     album_premiere: "2019",
     album_status: "false",
     id: "188",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "Canadian rapper and vocalist Drake sustained a high-level commercial presence shortly after he hit the scene in 2006, whether with his own chart-topping releases or a long string of guest appearances on hits by the likes of Lil Wayne, Rihanna, and A$AP Rocky. Thanks to his introspective rap style, his sensitive R&B crooning, and his golden touch with songwriting, each one of his albums -- from 2011's Take Care to 2018's trap-influenced Scorpion -- topped charts worldwide, and singles like the Grammy-winning Hotline Bling and many of his mixtapes did too. As his star rose, he helped others along, sponsoring the Weeknd's early work, starting the OVO Sound label, and giving features on his records to up-and-coming acts. By the second decade of his career, Drake's constant chart domination, his Grammy wins and nominations, and his meme-worthy cultural presence made him one of the world's most popular musicians, and the release of albums like 2022's Honestly, Nevermind became cultural events.",
     social:{
       instagram: "",
@@ -15332,22 +11319,9 @@ var allMusic = [
     album_premiere: "2023",
     album_status: "false",
     id: "189",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -15378,22 +11352,9 @@ var allMusic = [
     album_premiere: "2019",
     album_status: "false",
     id: "190",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
 
     user_playlist_1: "",
   },
@@ -15432,22 +11393,9 @@ var allMusic = [
     album_premiere: "2010",
     album_status: "false",
     id: "191",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "Jeder im Alter von 5 bis 95 Jahren kennt Lena. Das Mädchen von nebenan, das Vorbild, unser Star von Oslo, die nationale Sensation. Mit ihrer frechen und unverfälschten Art hat sie über Nacht unsere Herzen erobert. Für die einen ist sie dabei arrogant und trotzig. Für andere ist sie unzensiert, ehrlich und direkt. Lena ist all das, gleichzeitig nichts von dem und doch so viel mehr. Am Ende ist Lena nur Lena - eine junge Frau, die von einem Tag auf den anderen in das globale Rampenlicht trat. Sie musste lernen, mit ihren Erfahrungen wachsen und die Autonomie ﬁnden, ihren eigenen Wünschen fernab von äußeren Erwartungshaltungen nachzugehen. In ihrem 5. Studioalbum hat man mehr denn je das Gefühl, dass ihr das gelungen ist. Lena ist nach wie vor Lena und trotzdem anders - befreit, erwachsen und voller Lebensfreude. Ihre Botschaft lautet Only Love und das hört und spürt man in jedem Song.",
     social:{
       instagram: "https://www.instagram.com/lenameyerlandrut/",
@@ -15493,22 +11441,9 @@ var allMusic = [
     album_premiere: "2011",
     album_status: "false",
     id: "192",
-    lyrics:{
-      lyrics_verse_1: "",
-      lyrics_verse_2: "",
-      lyrics_verse_3: "",
-      lyrics_verse_4: "",
-      lyrics_verse_5: "",
-      lyrics_verse_6: "",
-      lyrics_verse_7: "",
-      lyrics_verse_8: "",
-      lyrics_verse_9: "",
-      lyrics_verse_10: "",
-      lyrics_verse_11: "",
-      lyrics_verse_12: "",
-      lyrics_verse_13: "",
-      lyrics_verse_14: ""
-    },
+    lyrics:[
+ 
+    ],
     bio: "Born in Bradford in August 1986, Keery-Fisher landed the part of Sima in the popular BBC sitcom All About Me while still a teenager. Appearances in Coronation Street, The Archers, and Casualty followed, as did the release of Don't Play Nice, which peaked at number 11 on the U.K. charts and seemed to prime Keery-Fisher for a successful singing career. The label went bankrupt after the songs release, thoug",
     social:{
       instagram: "",
@@ -15539,288 +11474,236 @@ var allMusic = [
     album_premiere: "2020",
     album_status: "false",
     id: "193",
-    lyrics:{
-      ve1:{
+    lyrics:[
+       {
         ls: "Yeah",
         stamp: "6.5",
       },
-      ve2:{
+       {
         ls: "Ooh-la-la, by the pool, we're singing 'Bailando'",
         stamp: "7",
       },
-      ve3:{
+       {
         ls: "Two ni-nights with a view, yeah",
         stamp: "11",
       },
-      ve4:{
+       {
         ls: "Keeping those blinds closed (Yeah)",
         stamp: "13",
       },
-      ve5:{
+       {
         ls: "She said, 'I wanna find somebody by nightfall'",
         stamp: "15",
       },
-      ve6:{
+       {
         ls: "Ooh-na-na, could it be ya",
         stamp: "19.5",
       },
-      ve7:{
+       {
         ls: "Baby, I like you",
         stamp: "20.75",
       },
-      ve8:{
+       {
         ls: "Oh, watching her move, I was lost in the rhythms",
         stamp: "23.5",
       },
-      ve9:{
+       {
         ls: "And she pulled me close by the look in here eyes",
         stamp: "27.5",
       },
-      ve10:{
+       {
         ls: "Don't know her name, but I know that I need her",
         stamp: "31.5",
       },
-      ve11:{
+       {
         ls: "She said, 'Boy, you won't be lonely tonight'",
         stamp: "35.75",
       },
-      ve12:{
+       {
         ls: "She said, 'Ooh-ooh-ooh'",
         stamp: "39",
       },
-      ve13:{
+       {
         ls: "Kiss me like your ex is in the room",
         stamp: "42",
       },
-      ve14:{
+       {
         ls: "Don't you be afraid of something new",
         stamp: "46",
       },
-      ve15:{
+       {
         ls: "If you play it right, you can be that someone",
         stamp: "49",
       },
-      ve16:{
+       {
         ls: "Yeah, that someone who",
         stamp: "51.75",
       },
-      ve17:{
+      {
         ls: "Won't leave me lonely tonight",
         stamp: "54",
       },
-      ve18:{
+       {
         ls: "Yeah, yeah, yeah",
         stamp: "59.75",
       },
-      ve19:{
+       {
         ls: "Yeah, yeah, yeah",
         stamp: "62",
       },
-      ve20:{
+       {
         ls: "Yeah",
         stamp: "63.5",
       },
-      ve21:{
+       {
         ls: "Ooh-la-la, make a move, yeah, baby, by last call",
         stamp: "64.25",
       },
-      ve22:{
+       {
         ls: "Full moon night with the lights off",
         stamp: "68",
       },
-      ve23:{
+       {
         ls: "Baby, your eyes glow (Yeah)",
         stamp: "70.5",
       },
-      ve24:{
+       {
         ls: "Don't know why but i fell like I'ma go psycho (Psycho)",
         stamp: "72",
       },
-      ve25:{
+       {
         ls: "Ooh-la-la, if it's cool",
         stamp: "76.25",
       },
-      ve26:{
+       {
         ls: "Yeah, baby, I'd like to",
         stamp: "78",
       },
-      ve27:{
+       {
         ls: "Oh, watching her move, I was lost in the rhythms",
         stamp: "80.5",
       },
-      ve28:{
+       {
         ls: "And she pulled me close by the look in here eyes",
         stamp: "84.5",
       },
-      ve29:{
+       {
         ls: "Don't know her name, but I know that I need her",
         stamp: "88.5",
       },
-      ve30:{
+       {
         ls: "She said, 'Boy, you won't be lonely tonight'",
         stamp: "93",
       },
-      ve31:{
+       {
         ls: "She said, 'Ooh-ooh-ooh' (Ooh-ooh-ooh)",
         stamp: "96",
       },
-      ve32:{
+       {
         ls: "Kiss me like your ex is in the room (Ooh-ooh-ooh)",
         stamp: "98.75",
       },
-      ve33:{
+       {
         ls: "Don't you be afraid of something new",
         stamp: "103",
       },
-      ve34:{
+       {
         ls: "If you play it right, you can be that someone",
         stamp: "105.75",
       },
-      ve35:{
+       {
         ls: "Yeah, that someone who (Yeah)",
         stamp: "108",
       },
-      ve36:{
+       {
         ls: "Won't leave me lonely tonight",
         stamp: "111",
       },
-      ve37:{
+       {
         ls: "Caliente, te pongo caliente (Ah)",
         stamp: "114",
       },
-      ve38:{
+       {
         ls: "No te de miedo vivir algo diferente (Eh, eh)",
         stamp: "117.5",
       },
-      ve39:{
+       {
         ls: "Las ganas no se equivocan (-vocan; eh)",
         stamp: "122",
       },
-      ve40:{
+       {
         ls: "Pon tu lengua en mi boca (-Boca; eh)",
         stamp: "124.75",
       },
-      ve41:{
+       {
         ls: "Vive la vida loca, loca, loca, ah",
         stamp: "127",
       },
-      ve42:{
+       {
         ls: "Toda la noche bailando contigo",
         stamp: "129",
       },
-      ve43:{
+       {
         ls: "Suave y salvaje como un animal",
         stamp: "133",
       },
-      ve44:{
+       {
         ls: "Yo se que te gusta, pero esto es prohibido",
         stamp: "137.5",
       },
-      ve45:{
+       {
         ls: "Yo me voy contigo, dame la senal",
         stamp: "141.5",
       },
-      ve46:{
+       {
         ls: "She said, 'Ooh-ooh-ooh' (Ooh-ooh-ooh)",
         stamp: "145",
       },
-      ve47:{
+       {
         ls: "Kiss me like your ex is in the room (Ooh-ooh-ooh)",
         stamp: "147.5",
       },
-      ve48:{
+       {
         ls: "Don't you be afraid of something new",
         stamp: "151.75",
       },
-      ve49:{
+       {
         ls: "If you play it right, you can be that someone",
         stamp: "154.75",
       },
-      ve50:{
+       {
         ls: "Yeah, that someone who (Uh)",
         stamp: "157",
       },
-      ve51:{
+       {
         ls: "Won't leave me lonely tonight",
         stamp: "159.75",
       },
-      ve52:{
+       {
         ls: "Ooh, ooh, ooh",
         stamp: "162",
       },
-      ve53:{
+       {
         ls: "Ooh, ooh, ooh",
         stamp: "163.5",
       },
-      ve54:{
+       {
         ls: "Ooh, ooh, ooh",
         stamp: "167",
       },
-      ve55:{
+       {
         ls: "Tonight",
         stamp: "169",
       },
-      ve56:{
+       {
         ls: "Someone who",
         stamp: "174",
       },
-      ve57:{
+       {
         ls: "You won't be lonely tonight",
         stamp: "175.75",
       },
-      ve58:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve59:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve60:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve61:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve62:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve63:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve64:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve65:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve66:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve67:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve68:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve69:{
-        ls: "",
-        stamp: "3600",
-      },
-      ve70:{
-        ls: "",
-        stamp: "3600",
-      },
-    },
+    ],
   },
   {
     name: "I See Fire",
@@ -15857,9 +11740,8 @@ var allMusic = [
     album_status: "false",
     id: "194",
 
-    lyrics:{
-
-    },
+    lyrics:[
+    ],
   },
   {
     name: "River",
@@ -15885,8 +11767,8 @@ var allMusic = [
     album_premiere: "2017",
     album_status: "false",
     id: "195",
-    lyrics:{
-    },
+    lyrics:[
+    ],
   },
   {
     name: "Rescue Me",
@@ -15923,8 +11805,8 @@ var allMusic = [
     album_premiere: "2021",
     album_status: "false",
     id: "196",
-    lyrics:{
-    },
+    lyrics:[
+    ],
     bio: "Grammy nominated OneRepublic, is comprised of singer/songwriter and lead vocalist Ryan Tedder, guitarists Zach Filkins and Drew Brown, keys Brian Willett, bassist and cellist Brent Kutzle, and drummer Eddie Fisher. The band released their debut set Dreaming Out Loud in 2007. The release included the 20mm selling smash single “Apologize,” which shattered digital sales and airplay records worldwide and received a Grammy nomination. The band’s sophomore album, 2009’s Waking Up, produced the hit singles “All the Right Moves,” “Secrets” and “Good Life.” The certified-platinum album Native followed in 2013, featuring the No.1 hit and 41 million selling single “Counting Stars.” OneRepublic released Oh My My, their fourth full-length album in 2016. OneRepublic has amassed 5B streams on Spotify to date. OneRepublic’s latest album, Human, dropped on August 27, 2021. It features singles, which combined have over 2.5 billion global streams: “Someday”, “Run”, “Somebody To Love”, “Wanted”, “Didn’t I”, “Better Days” and “Rescue Me”. They most recently released their new single, “I Ain’t Worried,” which was featured in Top Gun: Maverick. Earlier this year, they released their single, “West Coast” to rave reviews. Their upcoming North American tour, “Never Ending Summer Tour,” will kick off in July of this year.",
     social:{
       instagram: "https://www.instagram.com/onerepublic/",
@@ -15967,8 +11849,8 @@ var allMusic = [
     album_premiere: "2019",
     album_status: "false",
     id: "197",
-    lyrics:{
-    },
+    lyrics:[
+    ],
     bio: "Daria Zawiałow - jeden z najmocniejszych głosów na polskiej scenie muzycznej. Autorka tekstów oraz kompozytorka. Swoją charyzmą rozkochała w sobie tysiące fanów i stanęła w szeregu topowych polskich wokalistek. Na scenie jest wulkanem energii. Poza sceną jest skromną, normalną dziewczyną, lecz nadal świadomą i bezkompromisową artystką. W 2016 roku szumnie zaznaczyła swoją obecność na rynku singlami „Malinowy Chruśniak“ i „Kundel Bury“. Na początku 2017 roku zadebiutowała albumem „A kysz!“. Niemal od razu po premierze Daria została okrzyknięta objawieniem roku, a chwilę potem została nagrodzona dwoma Fryderykami. Dwa lata później światło dzienne ujrzał album „Helsinki“. Płyta po kilku miesiącach uzyskała status platynowej i przez 70 tygodni utrzymywała się na OLiS. „Hej, Hej!“ – potrójnie platynowy singiel z płyty – przez 4 tygodnie z rzędu był najczęściej granym utworem w polskich radiach. „Helsinki” również zostały uhonorowane Fryderykiem. W międzyczasie, z fantastycznym zespołem u boku, Daria zagrała setki koncertów na największych scenach w Polsce. Jej ostatnia trasa Helsinki Tour jeszcze przed startem została wyprzedana. W 2019 roku Daria była najczęściej słuchaną polską artystką na Spotify. Rok później została ambasadorką trasy Męskie Granie współtworząc przebój ”Świt”. W czerwcu 2021 roku ukazał się trzeci, bestsellerowy album Darii pt. „Wojny i Noce”. Wszystkie albumy artystka współtworzyła wraz z wieloletnim przyjacielem i producentem - Michałem Kushem.",
     social:{
       instagram: "https://www.instagram.com/zavialovd/",
@@ -16011,8 +11893,8 @@ var allMusic = [
     album_premiere: "2023",
     album_status: "false",
     id: "198",
-    lyrics:{
-    },
+    lyrics:[
+    ],
     bio: "GRAMMY® Award-winning, platinum-certified, international icon, Tiësto has over 8 BILLION global streams across platforms, 36M+ Total Record Sales, 30M+ Social Audience & over 160M TikTok Video Views across users. The DJ and producer is the only artist to ever hold the titles of “The Greatest DJ of All Time” courtesy of Mixmag, “#1 DJ” according to Rolling Stone, and “The Godfather of EDM,” as proclaimed by Billboard. From his underground dance floor bangers to his high-profile Las Vegas residency and crossover success, Tiësto created the blueprint that defines what it means to be a success in today’s dance music world.",
     social:{
       instagram: "https://www.instagram.com/tiesto/",
@@ -16060,8 +11942,8 @@ var allMusic = [
     album_premiere: "2013",
     album_status: "false",
     id: "199",
-    lyrics:{
-    },
+    lyrics:[
+    ],
     bio: "Lana Del Rey is a six-time Grammy nominated American singer/songwriter. Her music has been noted by critics for its stylized cinematic quality, glamour and melancholia and its references to 1950s and 1960s Americana. Her debut album, Born To Die was released in January 2012 and charted at number one on the official UK Album Chart, peaked number two on the US charts and was the fifth best- selling album of 2012. Her extended play Paradise followed that November, garnering her first and second Grammy nomination for Best Pop Vocal Album and Best Song Written for Visual Media. Ultraviolence (2014), her third studio album, became her first album to reach number one in the US. In 2015, she released her fourth studio album, Honeymoon, followed by Lust for Life (2017), Norman Fucking Rockwell! (2019), Chemtrails over the Country Club (2021), and Blue Banisters (2021). Del Rey’s ninth studio album, Did You Know That There’s a Tunnel Under Ocean Blvd. will be released this upcoming March 24th by Interscope and Polydor Records. The album features production by Del Rey, Mike Hermosa, Jack Antonoff, Drew Erickson, Zach Dawes, and Benji, and includes collaborations with Jon Batiste, Bleachers, Father John Misty, Tommy Genesis, SYML & Riopy. The title track, A&W, and The Grants have been released as singles and met with critical acclaim, with A&W being named ‘Best New Track’ by Pitchfork. She was recently the only feature on Taylor Swift’s highly anticipated album Midnights, on the track Snow on the Beach, for which she also co-wrote. Del Rey was recently honored with this year’s Visionary Award at the Billboard Women in Music Awards.",
     social:{
       instagram: "",
@@ -16107,8 +11989,8 @@ var allMusic = [
     album_premiere: "2017",
     album_status: "false",
     id: "200",
-    lyrics:{
-    },
+    lyrics:[
+    ],
     bio: "With his slicked-back hair and leather jacket, G-Eazy was known as 'the James Dean of rap' when he debuted in the late 2000s. Armed with bars that detailed hedonistic excess and conflicted inner turmoil, he steadily climbed the charts in the 2010s on the strength of his hit duet with Bebe Rexha, 'Me, Myself & I,' from his major-label debut, 2014's These Things Happen. He repeated that success in 2017 with third album The Beautiful & Damned, which paired him with Halsey on the platinum 'Him & I,' and A$AP Rocky and Cardi B on the Top Four hit 'No Limit.' Without losing any of his swagger, G-Eazy has matured, even singing and exploring a more introspective sound, as on the 2020 side project Everything's Strange Here and 2021 full-length These Things Happen Too. Born Gerald Earl Gillum in Oakland, California, G-Eazy launched his career while still in college at Loyola University in New Orleans, heading up a hip-hop crew named the Bay Boyz while releasing his solo debut, The Epidemic LP, in 2009. Two years later, his mixtape The Endless Summer landed with the hit redo of Dion's 'Runaround Sue.' In 2012 he released his second LP, Must Be Nice, hitting the road with Hoodie Allen and joining the Vans Warped Tour. In 2014 he returned with his first major-label release, These Things Happen (RCA). As his popularity grew in the following year, he embarked on an extensive international tour and recorded his fourth album. When It's Dark Out was released in late 2015 and included a hit duet with Bebe Rexha, 'Me, Myself & I.' Dark would go on to peak at number five on the Billboard 200 and top the R&B/Hip-Hop chart. In the summer of 2016, while on tour with Logic, YG, and Yo Gotti, Eazy appeared on Britney Spears' comeback single 'Make Me,' which entered the Top 20 of the Hot 100. 'Some Kind of Drug,' his single featuring Marc E. Bassy, arrived at the end of the year and would enter the singles charts in early 2017. At the beginning of the year, G-Eazy also teamed up with Carnage for the EP Step Brothers. By mid-year, he released the single 'No Limit,' which featured A$AP Rocky and Cardi B. The multi-platinum track climbed into the Top Five of the Hot 100, becoming his highest-charting single to date. This was followed by a second platinum chart hit, 'Him & I,' which featured his then-girlfriend Halsey. Both tracks were included on his third studio album, The Beautiful & Damned, which was released in December 2017. The double-disc set peaked at number three on the Billboard 200. In 2018 Eazy teamed up with Yo Gotti and YBN Nahmir for the single '1942,' which appeared on the Uncle Drew soundtrack. Eazy's 2019 output included the EP B-Sides, the single 'West Coast' featuring Blueface, and a bevy of features on tracks by Chris Brown, Carnage, and T-Pain. He closed the year with a second EP, Scary Nights, which recruited Moneybagg Yo, French Montana, Miguel, and others.In 2020, Eazy found inspiration in quarantine during the COVID-19 pandemic, taking the opportunity to try new things and reflect. The results wound up on Everything's Strange Here, a drastic shift in style that set his rap braggadocio aside in favor of introspective indie alternative pop. Singing instead of rapping, he covered the Korgis and David Bowie, while also sampling Pixies. By the end of the year, he had also collaborated with Blackbear on the song 'Hate the Way,' before releasing his seventh studio album, 2021's These Things Happen Too. Included on the album, was the Hot 100 single 'Running Wild (Tumblr Girls 2) featuring Kossisko. There were also guest appearances by Demi Lovato, Lil Wayne, Marc E. Bassy, and others. It reached number 11 on the Top R&B/Hip-hop Albums chart and number 19 on the Billboard 200. After a year-long hiatus, Eazy returned in 2023 with the reflective single Tulips & Roses. David Jeffries & Neil Z. Yeung",
     social:{
       instagram: "",
@@ -16151,8 +12033,8 @@ var allMusic = [
     album_premiere: "2022",
     album_status: "false",
     id: "201",
-    lyrics:{
-    },
+    lyrics:[
+    ],
     bio: "Los Angeles' Julia Michaels is a gifted singer and songwriter with a bent toward R&B-inflected, dance-oriented pop. Before launching her performing career, Michaels had composed songs for Demi Lovato, Selena Gomez, Ed Sheeran, Shakira, and many others. She then transitioned to feature roles, appearing on Jason Derulo's 'Trade Hearts' and Kygo's 'Carry Me.' Michaels released her debut solo single 'Issues' in 2017, which promptly went multi-platinum in the U.S., Australia, and Norway. Her first EP, Nervous System, arrived later that year, cracking the Top 50 of the Billboard 200. She also co-wrote and sang on Clean Bandit's hit single 'I Miss You,' which charted around the globe. Following a Grammy nomination for Best New Artist, she issued a series of EPs titled Inner Monologue in 2019. She also earned a 2020 Grammy nomination for Song of the Year for her duet with JP Saxe on 'If the World Was Ending.' On the heels of that acclaim, she released her debut full-length, 2021's Not in Chronological Order. Born Julia Carin Cavazos in Davenport, Iowa, in 1993 she grew up in Santa Clarita, California, where she began singing and performing around age 12. By her teens, she had adopted the stage name Julia Michaels and was collaborating on music with professional songwriters Joleen Belle and Lindy Robbins. Along with Belle and Robbins, Michaels composed songs for such artists as Demi Lovato, Fifth Harmony, Selena Gomez, Ed Sheeran, Shakira, Linkin Park, and many others. She also launched her own performance career, appearing on songs like Jason Derulo's 'Trade Hearts,' Zedd's 'Straight Into the Fire,' and Kygo's 'Carry Me,' which she performed at the closing ceremony of the 2016 Olympic Games in Rio de Janeiro. Michaels released her debut solo single, 'Issues,' in 2017. The song became a hit on charts around the world, going multi-platinum in the U.S., Australia, and Norway. 'Issues' also appeared on her debut EP, Nervous System, which arrived in the summer of 2017 on Republic. The seven-song set peaked in the Top 50 on the Billboard 200 and earned Michaels Grammy nominations for Best New Artist and Song of the Year for 'Issues.' In late 2017, she co-wrote and sang on U.K. electronic act Clean Bandit's hit single 'I Miss You,' which charted around the globe. The following year, she collaborated with American rapper Trippie Redd on her single 'Jump.'In 2019, Michaels issued the first in a series of EPs titled Inner Monologue, which included the tracks 'Anxiety' featuring Selena Gomez and 'What a Time' featuring Niall Horan. The second volume followed in June, with eight songs written by Michaels. That same year, she scored another hit in the romantic JP Saxe duet 'If the World Was Ending,' which also picked up Grammy nomination for Song of the Year. In January 2020, she joined Diplo and Morgan Wallen for a re-recorded version of their song 'Heartless.' Her own single, 'Lie Like This,' appeared a few months later. In April 2021, Michaels' delivered her debut full-length, Not in Chronological Order, which featured production by the Monsters & Strangerz, G Koop, German, and others. Along with 'Lie Like This,' the Billboard 200-charting album included the rock-driven single 'All Your Exes.' More singles followed, including 2021's 'Only One' with Khea, Becky G, and Di Genius, and 2022's 'Sorry to Me Too.' ~ Matt Collar",
     social:{
       instagram: "https://www.instagram.com/juliamichaels",
@@ -16201,8 +12083,8 @@ var allMusic = [
     album_premiere: "2014",
     album_status: "false",
     id: "202",
-    lyrics:{
-    },
+    lyrics:[
+    ],
     bio: "Colombian singer-songwriter Shakira has sold over 80 million records worldwide and won numerous awards including three GRAMMYs and eleven Latin GRAMMYs. At the age of 18, she founded the Pies Descalzos (Barefoot) Foundation which provides education and nutrition to over 6,000 impoverished children in Colombia. In October 2011, Shakira was named a member of President Obama’s Advisory Commission on Educational Excellence for Hispanics. She served as coach on the 4th and 6th season of NBC's hit reality vocal competition series The Voice. Her tenth studio album Shakira was released in 2014, featuring hits such as Can’t Remember to Forget You, with Rihanna and La La La (Brazil 2014) which she performed at the finals of Fifa's World Cup 2014 in Brazil. In 2016, she starred as Gazelle in Disney’s record-breaking film Zootopia, as well as contributing to its soundtrack with Try Everything. She also launched La Bicicleta with fellow Colombian artist Carlos Vives, which remained #1 for 18 consecutive weeks in Colombia. It was followed up by Chantaje feat. Maluma. With over 2 billion views on YouTube, it is one of the platform’s biggest Latin hits in history. In November 2018 she wrapped her hugely successful El Dorado World Tour. 2019 saw the release of the concert film Shakira in Concert: El Dorado World Tour, which was shown in cinemas worldwide for one-night only. She performed at Super Bowl LIV in Miami and is currently working on new music.",
     social:{
       instagram: "https://www.instagram.com/shakira",
@@ -16254,8 +12136,8 @@ var allMusic = [
     album_premiere: "2012",
     album_status: "false",
     id: "203",
-    lyrics:{
-    },
+    lyrics:[
+    ],
     bio: "Six million album sales. Four top five studio albums, two of which hit the UK number one. World tours in front of 3.3 million people. Over 200 million Spotify streams. A 2007 single, This Is The Life, that went to number one in ten countries. Fifteen years of continued international success, in which she has resolutely and unfailingly gone her own way. And now her best album yet. The Human Demands, produced by Jim Abbiss of Arctic Monkeys / Kasabian fame, reconnects Macdonald with her alternative roots, and her ability to write classic songs that sound like they have always existed, albeit with a new, Bruce Springsteen-like widescreen grandeur and ambition that suits her powerful, resonant contralto. The album also takes on the kind of heavy themes most of us have to deal with sooner or later: falling in love, burning bridges, facing depression, growing up. All this from an acoustic guitar-playing indie rocker who only ever wanted to share a bill with Travis at Scotland’s T In The Park festival. She has weathered fifteen years of major success in music while remaining her own woman, but now, all these years later, Amy Macdonald is back where she began: with an album that captures the essence of who she is. “I’m back to making music I like and just putting it out in a pure way. It has given me a new love for what I do, all over again.”",
     social:{
       instagram: "https://www.instagram.com/amy__macdonald",
@@ -16290,8 +12172,8 @@ var allMusic = [
     album_premiere: "2010",
     album_status: "false",
     id: "204",
-    lyrics:{
-    },
+    lyrics:[
+    ],
     bio: "Colombian singer-songwriter Shakira has sold over 80 million records worldwide and won numerous awards including three GRAMMYs and eleven Latin GRAMMYs. At the age of 18, she founded the Pies Descalzos (Barefoot) Foundation which provides education and nutrition to over 6,000 impoverished children in Colombia. In October 2011, Shakira was named a member of President Obama’s Advisory Commission on Educational Excellence for Hispanics. She served as coach on the 4th and 6th season of NBC's hit reality vocal competition series The Voice. Her tenth studio album Shakira was released in 2014, featuring hits such as Can’t Remember to Forget You, with Rihanna and La La La (Brazil 2014) which she performed at the finals of Fifa's World Cup 2014 in Brazil. In 2016, she starred as Gazelle in Disney’s record-breaking film Zootopia, as well as contributing to its soundtrack with Try Everything. She also launched La Bicicleta with fellow Colombian artist Carlos Vives, which remained #1 for 18 consecutive weeks in Colombia. It was followed up by Chantaje feat. Maluma. With over 2 billion views on YouTube, it is one of the platform’s biggest Latin hits in history. In November 2018 she wrapped her hugely successful El Dorado World Tour. 2019 saw the release of the concert film Shakira in Concert: El Dorado World Tour, which was shown in cinemas worldwide for one-night only. She performed at Super Bowl LIV in Miami and is currently working on new music.",
     social:{
       instagram: "https://www.instagram.com/shakira",
@@ -16343,8 +12225,8 @@ var allMusic = [
     album_premiere: "1994",
     album_status: "false",
     id: "205",
-    lyrics:{
-    },
+    lyrics:[
+    ],
     bio: "Mariah Carey is the best-selling female artist of all time with more than 200 million albums sold to date and 19 Billboard Hot 100 #1 singles (18 self-penned), more than any solo artist in history. An inductee to the Songwriters Hall of Fame, Carey is a singer/songwriter/producer recognized with multiple Grammy Awards, American Music Awards, three Guinness World Record titles, Billboard’s “Artist of the Decade” and “Icon Award,” the World Music Award for “World's Best Selling Female Artist of the Millennium,” the Ivor Novello Award for “PRS for Music Special International Award,” and BMI’s “Icon Award” for her outstanding achievements in songwriting, to name a few. Carey’s ongoing impact has transcended the music industry. In 2009, Carey was recognized with the Breakthrough Performance Award at the Palm Spring International Film Festival for her critically acclaimed role in Lee Daniels’ “Precious.” Carey went on to appear in Daniels’ ensemble piece “The Butler” (2013). A Congressional Award recipient, Carey has generously donated her time and energy to a range of philanthropic causes near to her heart including Save the Music, the Make-A-Wish Foundation, World Hunger Relief, and the Elton John AIDS Foundation, among many others. A tremendous supporter of children’s charities, both domestic and international, Carey founded Camp Mariah in partnership with the Fresh Air Fund, a retreat for inner city children to explore career development.",
     social:{
       instagram: "https://www.instagram.com/mariahcarey",
