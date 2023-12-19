@@ -12287,7 +12287,7 @@ var allMusic = [
     artist_id: "21",
 
     src: "AllIWantForChristmasIsYouAgainstTheCurrent",
-    img: "ab67616d00001e0good27d61ea02d658c15bc90022d7",
+    img: "6ef9bc2against988b7969bad65f42098liarc459a83a6",
     img_mini: "https://resources.tidal.com/images/bca15a2e/3720/4337/bed5/14242ac443c5/160x160.jpg",
     
     style: "Christmas",
