@@ -645,12 +645,11 @@ function loadMusic(indexNumb){
     smallBackgroundImg.classList.remove("active");
   }, 500)
 
-  musicImg.classList.add("animation-next");
-  musicImgShadow.classList.add("animation-next");
   musicBackgroundViral.classList.add("in_Change");
 
   setTimeout(() => {
     musicImg.classList.remove("animation-next");
+    musicImg.classList.remove("animation-prev");
     musicImgShadow.classList.remove("animation-next");
   }, 500)
 
@@ -875,6 +874,9 @@ function nextMusic(){
     setTimeout(() => {
       playMusic();
     }, 500)
+
+  musicImg.classList.add("animation-next");
+  musicImgShadow.classList.add("animation-next");
 }
 
 function prevMusic(){
@@ -888,6 +890,9 @@ function prevMusic(){
     setTimeout(() => {
       playMusic();
     }, 500)
+
+  musicImg.classList.add("animation-prev");
+  musicImgShadow.classList.add("animation-prev");
 }
 
 function randomIndex() {
@@ -4545,6 +4550,19 @@ function searchContentLoad() {
 
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
+      `<div class="music-artist-content-item track-box" li-index='${favoritIt[i].id}' link_to='${favoritIt[i].id}' onclick="clickedNotification(this);historyTrack_OBJECT(this)">
+        <img data-lazy="${favoritIt[i].img_mini}">
+          <div class="music-artist-content-item-data">
+            <h1>${favoritIt[i].name}</h1>
+            <span>${favoritIt[i].artist} <p>${' • ' + favoritIt[i].colaboration}</p> • ${favoritIt[i].album} • ${favoritIt[i].album_premiere}</span>
+          </div>
+          <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
+       </div>`;
+    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+  }
+
+  for (let i = 0; i < favoritIt.length; i++) {
+    let resultFAV =
       `<div class="music-artist-content-item album-box" data-album='${favoritIt[i].album}' artist-data='${favoritIt[i].artist_id}' onclick="clickedSingleAlbum(this)">
         <img data-lazy="${favoritIt[i].album_cover}">
           <div class="music-artist-content-item-data">
@@ -4565,19 +4583,6 @@ function searchContentLoad() {
           productIds[prodName] = true;
         }
     });
-  }
-
-  for (let i = 0; i < favoritIt.length; i++) {
-    let resultFAV =
-      `<div class="music-artist-content-item track-box" li-index='${favoritIt[i].id}' link_to='${favoritIt[i].id}' onclick="clickedNotification(this);historyTrack_OBJECT(this)">
-        <img data-lazy="${favoritIt[i].img_mini}">
-          <div class="music-artist-content-item-data">
-            <h1>${favoritIt[i].name}</h1>
-            <span>${favoritIt[i].artist} <p>${' • ' + favoritIt[i].colaboration}</p> • ${favoritIt[i].album} • ${favoritIt[i].album_premiere}</span>
-          </div>
-          <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
-       </div>`;
-    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }
 
   for (let i = 0; i < allPlaylists.length; i++) {

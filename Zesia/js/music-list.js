@@ -12445,4 +12445,324 @@ var allMusic = [
       facebook: "https://www.facebook.com/Carlyraejepsen",
     },
   },
+  {
+    name: "LOVE ME HARD",
+    artist: "Elley Duhé",
+    colaboration: "",
+    artist_status: "none",
+    language: "eng",
+    country: "usa",
+    artist_id: "47",
+
+    src: "ElleyDuhe-LOVEMEHARD",
+    img: "500x50fwafsa0-sadddddddaw000000-80-0-0elley",
+    img_mini: "https://resources.tidal.com/images/6f32af42/db73/4bf9/bf51/059f5f12008f/80x80.jpg",
+    
+    style: "Pop",
+    status: "nostatus",
+    canvas: "",
+    
+    album: "LOVE ME HARD",
+    album_cover: "https://resources.tidal.com/images/6f32af42/db73/4bf9/bf51/059f5f12008f/640x640.jpg",
+    album_premiere: "2020",
+    album_status: "false",
+    id: "211",
+
+    lyrics:[
+    ],
+
+    user_playlist_1: "",
+  },
+  {
+    name: "Hot N Cold",
+    artist: "Katy Perry",
+    colaboration: "",
+    artist_status: "none",
+    language: "eng",
+    country: "usa",
+    artist_id: "80",
+
+    src: "KatyPerry-HotNCold",
+    img: "ab67616d00sadadperry001e023f97d4244eff5852477d9ee0",
+    img_mini: "https://i.scdn.co/image/ab67616d000048513f97d4244eff5852477d9ee0",
+
+    style: "Energic",
+    status: "nostatus",
+    tag: "",
+    avatar: "3eff83c2098kattybe9b7ebb770bca30ef66c21perry515",
+    avatar_mini: "https://i.scdn.co/image/ab6761610000f178dc9dcb7e4a97b4552e1224d6",
+    artist_img: "https://i.scdn.co/image/ab6761670000ecd4b6f7e0a9c2d7d272489bffb2",
+    gallery_img_1: "https://i.scdn.co/image/bfdf65c6e91e8bd8f68a2bb84b2ed0da7778e711",
+    gallery_img_2: "https://i.scdn.co/image/df77333295d06c9a6adb5802cd7df9a265603bc9",
+    gallery_img_3: "https://i.scdn.co/image/50a19098682d1507a34b839b6b09b1525c2404d4",
+    gallery_img_4: "https://i.scdn.co/image/272fb5f4ab4bd1d05ad66228fc2ee9857b6c8802",
+    gallery_img_5: "https://i.scdn.co/image/539bc4ec1105fffb54128ecaea5d2eb8b45b6e0e",
+    gallery_img_6: "https://i.scdn.co/image/da7759d53aa88cdeaabff802a1fc00f04c695dd2",
+    gallery_img_7: "https://i.scdn.co/image/bf16c3a83c0a1bba4516c9ade8902a77051ab34c",
+    gallery_img_8: "https://i.scdn.co/image/7e785d44f3a26d07294c5dfa86b93facddd1ded2",
+    gallery_img_9: "https://i.scdn.co/image/efda0affcc2ef68250d5905754006f1a6c9ee5b0",
+    gallery_img_10: "https://i.scdn.co/image/53aa05b816e6cfd3ecfb300650629c0503500acb",
+    canvas: "",
+
+    thisis_img: "https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO3Jefw4-default.jpg",
+    radio_img: "https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/6jJ0s89eD6GaHleKKya26X/pl",
+    style_img: "https://i.scdn.co/image/ab67706f00000002d8d473fcf275f04f49e59552",
+
+    album: "Kiss",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e02d3ee4bf67c2ac2154006ad72",
+    album_premiere: "2012",
+    album_status: "false",
+    id: "212",
+    lyrics:[
+ 
+    ],
+    bio: "In her 12 years with Capitol, Katy has racked up a cumulative 50 billion streams alongside worldwide sales of over 47.5 million adjusted albums and 135 million tracks. With the singles “Roar,; “Firework,” and “Dark Horse” each surpassing the 10 million threshold including song sales and streams, Katy became the first artist to earn three RIAA Digital Single Diamond Awards. Katy is one of only five artists in history to have topped 100 million certified units with their digital singles – and the first-ever Capitol Records recording artist to join the elite RIAA 100 Million Certified Songs club. She was the first to reach 100 million followers on Twitter. Katy’s 2015 Super Bowl performance is the highest-rated in the event’s history. Katy was the first female artist to have four videos surpass a billion views each. Her videos for “Firework”, “Last Friday Night” and “Bon Appetit” have over one billion views, while “Dark Horse” has surpassed the two billion mark. “Roar” now has over three billion views. Her summer 2019 single, “Never Really Over,” off her latest album SMILE, is certified PLATINUM and was the biggest streaming launch of Katy’s musical career. 2020’s SMILE release has sold over 1.25 million adjusted albums, with nearly 2 Billion combined streams to date.",
+    social:{
+      instagram: "",
+      twitter: "",
+      facebook: "",
+    },
+  },
+  {
+    name: "I Kissed A Girl",
+    artist: "Katy Perry",
+    colaboration: "",
+    artist_status: "none",
+    language: "eng",
+    country: "usa",
+    artist_id: "80",
+
+    src: "KatyPerry-IKissedAGirl",
+    img: "ab67616d00sadadperry001e023f97d4244eff5852477d9ee0",
+    img_mini: "https://i.scdn.co/image/ab67616d000048513f97d4244eff5852477d9ee0",
+
+    style: "Energic",
+    status: "nostatus",
+    canvas: "",
+
+    album: "Kiss",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e02d3ee4bf67c2ac2154006ad72",
+    album_premiere: "2012",
+    album_status: "false",
+    id: "213",
+    lyrics:[
+ 
+    ],
+  },
+  {
+    name: "A kto wie czy za rogiem",
+    artist: "Margaret",
+    colaboration: "Siemacha",
+    artist_status: "none",
+    language: "pl",
+    country: "pl",
+    artist_id: "81",
+
+    src: "Margaret-AKtoWieCzyZaRogiem",
+    img: "ab67616d00001e021e9a376afbe1697e16788ac3",
+    img_mini: "https://i.scdn.co/image/ab67616d000048511e9a376afbe1697e16788ac3",
+
+    style: "Christmas",
+    status: "nostatus",
+    tag: "",
+    avatar: "ab67618600sad001016697dce93997682d85e72d975",
+    avatar_mini: "https://i.scdn.co/image/ab6761610000f1789ea8383b84ab0683673edaee",
+    artist_img: "https://i.scdn.co/image/ab6761670000ecd4016a644f8625a66ac789a194",
+    gallery_img_1: "https://linkstorage.linkfire.com/medialinks/images/08e7b148-ab9e-4b2c-8d7c-9c43d677acac/artwork-440x440.jpg",
+    gallery_img_2: "https://www.gajahornby.com/przebisniegi.jpg",
+    gallery_img_3: "https://www.gajahornby.com/margaret-cover.jpg",
+    gallery_img_4: "https://www.gajahornby.com/okladkigh/kocha.jpg",
+    gallery_img_5: "https://www.gajahornby.com/okladkigh/vip.jpg",
+    canvas: "",
+
+    thisis_img: "https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO3DN1Wy-default.jpg",
+    radio_img: "https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/6aGmKxXoKrSdovRUn8MBhZ/pl",
+    style_img: "https://i.scdn.co/image/ab67706f00000002a5108016e7309a9e0a40a596",
+
+    album: "Gwiazdy po Kolędzie (Siemacha)",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e021e9a376afbe1697e16788ac3",
+    album_premiere: "2015",
+    album_status: "false",
+    id: "214",
+    lyrics:[
+      {
+        ls: "* Lyrics Are Not Yet Synchronized With Track *",
+        stamp: "-1",
+      },
+      {
+       ls: "Bo kiedy miasto na święta się stroi",
+       stamp: "-1",
+     },
+      {
+       ls: "Niejeden z nas o przyszłość się boi",
+       stamp: "-1",
+     },
+      {
+       ls: "Niejeden z nas w marzenia ucieka",
+       stamp: "-1",
+     },
+      {
+       ls: "Wierząc, że spełnienie gdzieś czeka.",
+       stamp: "-1",
+     },
+      {
+       ls: "A kto wie, czy za rogiem",
+       stamp: "-1",
+     },
+      {
+       ls: "Nie stoją Anioł z Bogiem?",
+       stamp: "-1",
+     },
+      {
+       ls: "I warto mieć marzenia",
+       stamp: "-1",
+     },
+      {
+       ls: "Doczekać ich spełnienia.",
+       stamp: "-1",
+     },
+      {
+       ls: "Kto wie czy za rogiem",
+       stamp: "-1",
+     },
+      {
+       ls: "Nie stoją Anioł z Bogiem?",
+       stamp: "-1",
+     },
+      {
+       ls: "Nie obserwują zdarzeń,",
+       stamp: "-1",
+     },
+      {
+       ls: "I nie spełniają marzeń!!!",
+       stamp: "-1",
+     },
+      {
+       ls: "Kto wie?",
+       stamp: "-1",
+     },
+      {
+       ls: "Kto wie?",
+       stamp: "-1",
+     },
+      {
+       ls: "Niejeden z nas czasem robi jakiś błąd",
+       stamp: "-1",
+     },
+      {
+       ls: "Czasem się zdarza dwa razy pod rząd.",
+       stamp: "-1",
+     },
+     {
+       ls: "Ufa tym, co nie warci ufania,",
+       stamp: "-1",
+     },
+      {
+       ls: "Kocha tych, co nie warci kochania.",
+       stamp: "-1",
+     },
+      {
+       ls: "Ale kto wie, czy za rogiem",
+       stamp: "-1",
+     },
+      {
+       ls: "Nie stoją Anioł z Bogiem?",
+       stamp: "-1",
+     },
+      {
+       ls: "I warto mieć marzenia",
+       stamp: "-1",
+     },
+      {
+       ls: "Doczekać ich spełnienia.",
+       stamp: "-1",
+     },
+      {
+       ls: "Kto wie czy za rogiem",
+       stamp: "-1",
+     },
+      {
+       ls: "Nie stoją Anioł z Bogiem?",
+       stamp: "-1",
+     },
+      {
+       ls: "Nie obserwują zdarzeń,",
+       stamp: "-1",
+     },
+      {
+       ls: "I nie spełniają marzeń!!!",
+       stamp: "-1",
+     },
+      {
+       ls: "Kto wie?",
+       stamp: "-1",
+     },
+      {
+       ls: "Kto wie?",
+       stamp: "-1",
+     },
+      {
+       ls: "Jeśli zrobisz ten właściwy krok",
+       stamp: "-1",
+     },
+      {
+       ls: "Zanim znów upłynie życia rok",
+       stamp: "-1",
+     },
+      {
+       ls: "To wszystko będzie tak jak trzeba",
+       stamp: "-1",
+     },
+      {
+       ls: "Z udziałem lub bez udziału nieba.",
+       stamp: "-1",
+     },
+      {
+       ls: "A kto wie, czy za rogiem",
+       stamp: "-1",
+     },
+      {
+       ls: "Nie stoją Anioł z Bogiem?",
+       stamp: "-1",
+     },
+      {
+       ls: "I warto mieć marzenia",
+       stamp: "-1",
+     },
+      {
+       ls: "Doczekać ich spełnienia.",
+       stamp: "-1",
+     },
+      {
+       ls: "Kto wie czy za rogiem",
+       stamp: "-1",
+     },
+      {
+       ls: "Nie stoją Anioł z Bogiem?",
+       stamp: "-1",
+     },
+      {
+       ls: "Nie obserwują zdarzeń,",
+       stamp: "-1",
+     },
+      {
+       ls: "I nie spełniają marzeń?",
+       stamp: "-1",
+     },
+      {
+       ls: "Kto wie?",
+       stamp: "-1",
+     },
+      {
+       ls: "Kto wie?",
+       stamp: "-1",
+     },
+   ],
+    bio: "...",
+    social:{
+      instagram: "https://www.instagram.com/margaret_official",
+      twitter: "https://twitter.com/margaretofc",
+      facebook: "https://www.facebook.com/MargaretMusicOnline",
+    },
+  },
 ]

@@ -1393,6 +1393,7 @@ input:checked + .slider:before {
   background-size: 175%;
   filter: drop-shadow(0px 5px 15px rgb(239 84 102 / 25%));
   outline: 1px var(--maincolor) solid;
+  transform: scale(1.25);
 }
 .favorites-action a.active 
 {
@@ -1674,7 +1675,7 @@ input:checked + .slider:before {
   background: var(--maincolor);
   width: 25vh;
   height: 25vh;
-  border-radius: 45%;
+  border-radius: 25px;
   transform: scale(1.05);
 }
 .library-favorite-top-header
@@ -1734,13 +1735,13 @@ input:checked + .slider:before {
 }
 .library-favorite-info
 {
-  width: calc(100% - 30px);
-  padding: 20px 15px;
+  width: calc(100% - 40px);
+  padding: 20px 20px;
   line-height: 1;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  background: linear-gradient(#ef546675, var(--background));
+  background: linear-gradient(rgba(239, 84, 102, 0.25), var(--background));
 }
 .library-favorite-info-text
 {
@@ -3117,6 +3118,10 @@ input:checked + .slider:before {
   outline: 1px solid rgb(255 255 255 / 5%);
   outline-offset: -1px;
 }
+.top-controls a .fa-solid.fa-ellipsis-vertical
+{
+  background: none;
+}
 .top-controls.lyrics a
 {
   border-radius: 20px;
@@ -3491,10 +3496,35 @@ input:checked + .slider:before {
 }
 .main-music .main-music-header img.animation-next
 {
-  transform: scale(0.75);
-  filter: drop-shadow(0px 0px 2px rgb(25 25 34 / 25%)) blur(25px);
+  transform: scale(0.8) translateX(-150px);
+  filter: drop-shadow(0px 0px 2px rgb(25 25 34 / 25%)) blur(15px);
   opacity: 0 !important;
   transition: 0.5s;
+  animation: none;
+}
+.main-music .main-music-header img.animation-prev
+{
+  transform: scale(0.8) translateX(150px);
+  filter: drop-shadow(0px 0px 2px rgb(25 25 34 / 25%)) blur(15px);
+  opacity: 0 !important;
+  transition: 0.5s;
+  animation: none;
+}
+.main-music-header img
+{
+  animation: fastShowMe;
+  animation-duration: .5s;
+  animation-timing-function: ease;
+}
+@keyframes fastShowMe {
+  0%{
+    transform: scale(1.25);
+    filter: blur(15px);
+  }
+  100%{
+    filter: blur(0);
+    transform: scale(1);
+  }
 }
 .main-music-header .header-shadow
 {
@@ -3680,6 +3710,7 @@ input:checked + .slider:before {
   border-radius: 5px;
   height: 10px;
   margin-bottom: 0;
+  overflow: hidden;
 }
 .main-music-header.lyrics ~ .progress .progress-bar-done::after
 {
@@ -4371,8 +4402,8 @@ input:checked + .slider:before {
 }
 .queue-item .queue-box.active
 {
-  border-top: 1px solid var(--backgroundsecond);
-  border-bottom: 1px solid var(--backgroundsecond);
+  border-top: 1px solid rgb(255 255 255 / 5%);
+  border-bottom: 1px solid rgb(255 255 255 / 5%);
   color: var(--maincolor);
   height: 48px;
   width: calc(100% + 30px);
@@ -4397,6 +4428,7 @@ input:checked + .slider:before {
   content: '- -';
   color: var(--maincolor);
   position: absolute;
+  font-weight: 900;
 }
 .queue-item .queue-box p:first-child
 {
@@ -7472,6 +7504,7 @@ font-family: 'Pathway Extreme';
   background: linear-gradient(130deg, var(--maincolor), var(--maincolorhover));
   background-size: 175%;
   filter: drop-shadow(0px 5px 15px rgb(239 84 102 / 25%));
+  transform: scale(1.25);
 }
 .music-artist-album-action a:last-child i
 {
@@ -11277,6 +11310,11 @@ textarea
   {
     width: calc(100% - 75px);
     left: 75px;
+  }
+  .search-fast-loader
+  {
+    width: 100%;
+    left: 0;
   }
   .playlist-popup.active, .track-options-screen.active
   {
