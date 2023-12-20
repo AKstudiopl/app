@@ -127,6 +127,7 @@ function home_fs(){
   playlistPopUp.classList.remove('active');
   historyScreen.classList.remove('active')
   document.querySelector(".notification_screen").classList.remove("active");
+  searchResults.innerHTML = '';
 }
 
 activeHomeBtn.addEventListener('click', () => {
@@ -138,6 +139,7 @@ activeHomeBtn.addEventListener('click', () => {
   yourStyleScreen.classList.remove('active');
   wrapper.classList.remove("active");
   playlistScreen.classList.remove('active');
+  searchResults.innerHTML = '';
 })
 
 const activeSearchBtn = document.getElementsByClassName('navbar-bottom-btn-search')[0]
@@ -181,12 +183,13 @@ activeLibraryBtn.addEventListener('click', () => {
   playlistPopUp.classList.remove('active');
   document.querySelector(".notification_screen").classList.remove("active");
 
-  document.querySelector(".user_profile_header_content_name").innerText = localStorage.getItem('personalization-data-name');
   if(localStorage.getItem("personalization-data-avatar")){
     p_avatar.src = localStorage.getItem("personalization-data-avatar");
     p_avatarBg.src = localStorage.getItem("personalization-data-avatar");
     p_avatarSmall.src = localStorage.getItem("personalization-data-avatar");
   }
+
+  searchResults.innerHTML = '';
 })
 
 const activeSettingsBtn = document.getElementsByClassName('settings-action-btn')[0]
@@ -2724,12 +2727,12 @@ function loadUserProfile(){
   userProfile.classList.toggle("active");
   userProfileFilterFavorite.classList.add("active");
   userProfileFilterPlaylist.classList.remove("active");
-  userProfileFilterFollowed.classList.remove("active");
   wrapper.classList.remove("active");
   activeSettingsScreen.classList.remove("active");
   searchProfileBy.parentElement.classList.add("active");
   userProfileActionSearch.classList.remove("active");
   favoriteLoadItemsProfile();
+  document.querySelector(".user_profile_header_content_name").innerText = localStorage.getItem('personalization-data-name');
 }
 
 function favoriteLoadItemsProfile() {
@@ -4514,6 +4517,7 @@ function recentTracksLoad(){
         </div>
        <h2>${favoritIt[i].name}</h2>
        <p>${favoritIt[i].artist}</p>
+       <div class="center-container-item-action"><i onclick="quick_Play(this)" play-type="track" class="fa-solid fa-play"></i></div>
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }
@@ -4606,10 +4610,12 @@ function searchContentLoad() {
     let artistsFAV =
     `<div class="music-artist-content-item artist-box" artist-id="${breakIt[0].artist_id}" artist-data="${breakIt[0].artist}" id='${breakIt[0].id}' onclick="artistScreenDataLoad(this);">
       <img data-lazy="${breakIt[0].avatar_mini}">
+      <div class="music-artist-content-item-bg"><img data-lazy="${breakIt[0].avatar_mini}"></div>
         <div class="music-artist-content-item-data">
           <h1>${breakIt[0].artist}</h1>
           <span>Artist • Verified</span>
         </div>
+        <div class="center-container-item-action"><i onclick="quick_Play(this)" class="fa-solid fa-play"></i></div>
      </div>`;
   resultsFAV.insertAdjacentHTML("afterbegin", artistsFAV);
   }
@@ -4658,7 +4664,7 @@ function searchClearButton(){
     searchResults.style.display = 'none';
   }else{
     searchInput_clear.classList.add('active');
-    searchResults.style.display = 'flex';
+    searchResults.style.display = 'block';
   }
 
   historyContainer.style.display="flex";
@@ -4681,10 +4687,12 @@ function searchFunction(){
   for (i = 0; i < x.length; i++) { 
       if (!xData[i].innerText.latinize().toLowerCase().replace(/ /g,'').includes(input)) {
           x[i].style.display="none";
+          x[i].style.contentVisibility="hidden";   
           x[i].classList.remove("searched")
       }
       else {
-          x[i].style.display="flex";    
+          x[i].style.display="inline-flex";    
+          x[i].style.contentVisibility="visible";   
           x[i].classList.add("searched")             
       }
   }
@@ -7635,6 +7643,8 @@ function quick_Play(e){
     indexNumb=1;
     loadMusic(indexNumb);
     playMusic();
+  }else if(e.getAttribute("play-type") === "track"){
+    clickedNotification(e.parentElement.parentElement)
   }
   else{
   let itemArtistId = e.parentElement.parentElement.getAttribute('artist-id');

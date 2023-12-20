@@ -880,7 +880,6 @@ input:checked + .slider:before {
 .search-ui-bg
 {
   position: absolute;
-  width: 100%;
   z-index: -1;
   overflow: hidden;
   left: 0;
@@ -1115,13 +1114,14 @@ input:checked + .slider:before {
   width: 100%;
   min-height: calc(100% - 160px);
   gap: 15px;
-  margin-top: 15px;
+  margin-top: 5px;
   padding-bottom: 130px;
   background: linear-gradient(rgb(25 25 34 / 75%), rgb(25 25 34 / 100%));
 }
 .search-results .music-artist-content-item
 {
   position: relative;
+  margin-bottom: 20px;
 }
 .search-results .music-artist-content-item {
   display: flex;
@@ -1137,6 +1137,7 @@ input:checked + .slider:before {
   overflow: hidden !important;
   margin-bottom: -15px !important;
   border: none !important;
+  display: none !important;
 }
 .search-fast-loader
 {
@@ -2006,7 +2007,7 @@ input:checked + .slider:before {
 .head-content-top-action
 {
   display: flex;
-  gap: 5px;
+  gap: 10px;
 }
 .head-content-top-action a 
 {
@@ -2810,8 +2811,6 @@ input:checked + .slider:before {
   justify-content: center;
   border-radius: 15px;
   overflow: hidden;
-  outline: 1px solid rgb(255 255 255 / 5%);
-  outline-offset: -1px;
 }
 .pc-controls-buttons .pc-heart-box i.active
 {
@@ -6417,10 +6416,6 @@ font-family: 'Pathway Extreme';
   opacity: 0;
   color: var(--color);
 }
-.music-artist-content-container .music-artist-content-item:hover::before
-{
-  opacity: .5;
-}
 .music-artist-content-item:hover .music-artist-content-number
 {
   opacity: 0;
@@ -6449,6 +6444,11 @@ font-family: 'Pathway Extreme';
   opacity: 0;
   color: var(--color);
 }
+.music-artist-content-container .music-artist-content-item:hover::before
+{
+  z-index: 1;
+  opacity: .5;
+}
 .music-artist-content-feat .music-artist-content-item:hover::before
 {
   z-index: 1;
@@ -6463,7 +6463,14 @@ font-family: 'Pathway Extreme';
 {
   filter: brightness(75%) opacity(.5);
 }
-
+.music-artist-content-feat .music-artist-content-item img
+{
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
 
 
 .music-artist-album-screen-container .music-artist-album-item::before
@@ -6499,16 +6506,9 @@ font-family: 'Pathway Extreme';
 }
 
 
-
-
-
 .music-artist-content-item:nth-child(-n+10)
 {
   display: flex;
-}
-.music-artist-content-item:hover
-{
-  opacity: .5;
 }
 .music-artist-information-albums-item:nth-child(-n+3)
 {
@@ -6577,7 +6577,7 @@ font-family: 'Pathway Extreme';
 }
 .search-results .music-artist-content-item i, .history-contanier .music-artist-album-item i, .music-playlist-album-screen-container .music-artist-album-item i
 {
-  margin-right: 0;
+  margin-right: 5px;
 }
 .fa-solid.fa-ellipsis-vertical
 {
@@ -6628,7 +6628,7 @@ font-family: 'Pathway Extreme';
   height: 100%;
   aspect-ratio: 1/1;
   margin: 0 15px;
-  border-radius: 10px;
+  border-radius: 15px;
   object-fit: cover;
   min-width: 50px;
   background-position: center;
@@ -6638,24 +6638,30 @@ font-family: 'Pathway Extreme';
 }
 .music-artist-content-item.artist-box.active
 {
-  height: 100px;
-  border:1px solid var(--backgroundsecond);
-  border-radius: 25px;
-  background: linear-gradient(130deg, var(--backgroundsecond), var(--background));
+  position: relative;
+  border-radius: 15px;
+}
+.music-artist-content-item.artist-box.active::after {
+  content: '';
+  position: absolute;
+  opacity: 1;
+  width: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 15px;
+  height: 100%;
+  outline: rgba(255, 255, 255, 0.1) solid 1px;
+  outline-offset: -1px;
+  background-color: rgb(50 50 61 / 15%);
 }
 .music-artist-content-item.artist-box.active img
 {
-  border-radius: 25px;
-  border-bottom-right-radius: 0px;
-  width: 100px;
-  min-width: 100px;
-  height: 100px;
+  border-radius: 15px;
 }
-.music-artist-content-item.artist-box.active h1
+.music-artist-content-item.artist-box h1
 {
-  font-size: 22px;
-  line-height: 1.5;
-  gap: 10px;
+  font-size: 16px;
+  margin-top: 5px;
 }
 .music-artist-content-item.artist-box.active h1 p
 {
@@ -6669,17 +6675,125 @@ font-family: 'Pathway Extreme';
 }
 .music-artist-content-item.artist-box h1 p
 {
-  font-size: 10px;
+  font-size: 16px;
   font-weight: 100;
-  background: var(--background);
-  padding: 1px 6px;
+  padding: 3px 6px;
   color: var(--color);
   border-radius: 5px;
-  border: 1px var(--color) solid;
+  outline: rgba(255, 255, 255, 0.25) solid 1px;
+  outline-offset: -1px;
+  background-color: rgb(0 0 0 / 75%);
+  position: absolute;
+  top: -140px;
+  left: 10px;
 }
-.music-artist-content-item:active
+.music-artist-content-item.artist-box span
 {
-  opacity: 0.5;
+  font-size: 12px;
+  opacity: .5;
+}
+.music-artist-content-item.artist-box
+{
+  width: 180px;
+  min-height: 225px;
+  display: inline-flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.music-artist-content-item.artist-box::after {
+  content: '';
+  position: absolute;
+  opacity: 1;
+  width: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 15px;
+  height: 100%;
+  outline: rgba(255, 255, 255, 0.1) solid 1px;
+  outline-offset: -1px;
+  background-color: rgb(50 50 61 / 15%);
+  transition: .3s;
+}
+.music-artist-content-item.artist-box:hover::after
+{
+  background-color: rgba(50, 50, 61, 0.5);
+}
+.music-artist-content-item.artist-box img
+{
+  aspect-ratio: 1/1;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 0;
+  margin-top: 12px;
+  z-index: 1;
+}
+.music-artist-content-item.artist-box .center-container-item-action
+{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+  opacity: 0;
+  transform: scale(0.25);
+  top: 95px;
+  right: 20px;
+  z-index: 1;
+}
+.music-artist-content-item.artist-box:hover .center-container-item-action
+{
+  opacity: 1;
+  transform: scale(1);
+  transition: .3s;
+  transition-delay: .3s;
+}
+.music-artist-content-item.artist-box .center-container-item-action i
+{
+  opacity: 1;
+  background: var(--backgroundsecond);
+    height: 100%;
+    width: auto;
+    font-size: 24px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    background: var(--backgroundsecond);
+    outline: 1px solid rgb(255 255 255 / 10%);
+    outline-offset: -1px;
+    border-radius: 15px;
+    color: var(--color);
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    filter: drop-shadow(5px 5px 10px rgb(25 25 34 / 100%));
+    transition: .3s;
+    backdrop-filter: none;
+}
+.music-artist-content-item.artist-box .music-artist-content-item-bg
+{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.music-artist-content-item.artist-box .music-artist-content-item-bg img
+{
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  filter: blur(15px) opacity(.25);
+  margin-top: 0;
+  -webkit-mask-image: -webkit-linear-gradient(black 75%, transparent 100%);
 }
 .music-artist-content-fanschoice
 {
@@ -6864,10 +6978,12 @@ font-family: 'Pathway Extreme';
   justify-content: center;
   z-index: 5;
 }
-.music-artist-content-item-data
+.music-artist-content-item.artist-box .music-artist-content-item-data
 {
-  min-width: calc(100% - 150px);
-  max-width: calc(100% - 150px);
+  min-width: 150px;
+  z-index: 1;
+  max-width: 150px;
+  position: relative;
 }
 .featured-content
 {
@@ -7881,8 +7997,9 @@ font-family: 'Pathway Extreme';
   background: var(--backgroundsecond);
 }
 .music-artist-album-item img {
-  height: 50px;
-  border-radius: 15px;
+  height: 40px;
+  border-radius: 5px;
+  margin-left: 5px;
   aspect-ratio: 1/1;
   background-color: var(--backgroundsecond);
   background-position: center;
@@ -11686,7 +11803,7 @@ textarea
   .head-content-container {
     display: flex;
     grid-template-columns: repeat(2, calc(50% - 5px));
-    grid-gap: 10px;
+    grid-gap: 20px;
     overflow: scroll;
   }
   .welcome-search-bar a
@@ -11792,7 +11909,7 @@ textarea
     letter-spacing: 1px;
     color: var(--maincolor);
     cursor: pointer;
-    gap: 5px;
+    gap: 10px;
     right: 0;
   }
   .ui-title-action i
@@ -11831,7 +11948,7 @@ textarea
   }
   .ui-title .music-artist-content-title
   {
-    width: calc(100% - 125px);
+    width: calc(100% - 130px);
   }
   .ui-title
   {
