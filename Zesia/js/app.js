@@ -2212,6 +2212,7 @@ function artistScreenDataLoad(track){
   playlistScreen.classList.remove('active');
   activeSettingsScreen.classList.remove("active");
   historyScreen.classList.remove("active");
+  document.querySelector(".notification_screen").classList.remove("active");
   bioBox.setAttribute('artist-data', track_View[0].artist_id)
 
   checkFollowStatus();
@@ -3540,12 +3541,15 @@ function lyricsMode(){
             let lsAtr = document.querySelector('[timeAtr="'+ allMusic[indexNumb - 1].lyrics[i].stamp + '"]');
             lsAtr.classList.add("active");
       }
+      if(allMusic[indexNumb - 1].lyrics[0].ls === "* Lyrics Are Not Yet Synchronized With Track *"){
+        lyricsBox.classList.add('pauseLyrics');
+        lyricsSync.classList.add('active');
+      }else{
+        lyricsBox.classList.remove('pauseLyrics');
+        lyricsSync.classList.remove('active');
+      }
     }}else{
       resultsFAV.innerHTML = "<span>Song Doesn't Have Prepared Lyrics Yet, Hopefully It Will Change Soon</span>";
-      setTimeout(() => {
-        clearInterval(checkLyricsPerSec);
-        checkLyricsPerSec = setInterval(lyricsMode, 5000);
-      }, 500);
     }
 
   
@@ -4716,6 +4720,10 @@ function searchFunction(){
   if(searchBtn_top.classList.contains("active")){
     search_Top();
     collaborationItemCheck();
+    let allArtistsSearched = document.querySelectorAll(".music-artist-content-item.artist-box.searched")
+    for (i = 1; i < allArtistsSearched.length - 2; i++) { 
+      allArtistsSearched[i].style.display="none";
+    }
   }
   if(searchBtn_tracks.classList.contains("active")){
     search_Tracks();

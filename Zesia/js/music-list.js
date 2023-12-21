@@ -6820,6 +6820,7 @@ var allMusic = [
     country: "uk",
     artist_id: "40",
 
+    avatar_mini: "https://e-cdn-images.dzcdn.net/images/artist/9a48125860984a1ae5b96975e040664a/264x264-000000-80-0-0.jpg",
     src: "EdSheeran-ShapeofYou",
     img: "ab67616d00001e02ba5db46f4b838ef6027e6f96",
     img_mini: "https://i.scdn.co/image/ab67616d00004851ba5db46f4b838ef6027e6f96",
@@ -11718,16 +11719,10 @@ var allMusic = [
     img: "ab67616d00001e0281ef6477bfe32dc55845ef27",
     img_mini: "https://i.scdn.co/image/ab67616d0000485181ef6477bfe32dc55845ef27",
     
+    avatar_mini: "https://e-cdn-images.dzcdn.net/images/artist/9a48125860984a1ae5b96975e040664a/264x264-000000-80-0-0.jpg",
     style: "Soundtrack",
     status: "nostatus",
     tag: "Popular",
-    avatar: "ED-SHEERAN-1-BY-DAN-MARTENSEN-scaled-1-pfh4q9anbkubjdr9tjg7y9z46ic1fd95a2j4jawk94",
-    artist_img: "https://pbs.twimg.com/media/FkHq4KzXwAUn1zx?format=jpg&name=large",
-    gallery_img_1: "https://pbs.twimg.com/media/FkeNKjXWQAEcJwT?format=jpg&name=large",
-    gallery_img_2: "https://pbs.twimg.com/media/FC9kHWiWUAEOxVN?format=jpg&name=large",
-    gallery_img_3: "https://pbs.twimg.com/media/E_aVXgMVEAQvqDH?format=jpg&name=medium",
-    gallery_img_4: "https://pbs.twimg.com/media/E_IEbfeXsAYz1BY?format=jpg&name=large",
-    gallery_img_5: "https://pbs.twimg.com/media/EWtACzjWkAEEoK2?format=jpg&name=large",
     canvas: "https://ssscdn.io/ssstwitter/aHR0cHM6Ly92aWRlby50d2ltZy5jb20vZXh0X3R3X3ZpZGVvLzE2NzI2MzcwNTA2NzQzNDgwMzQvcHUvdmlkLzEyODB4NTI4L2tUOEdUcFNEcklEY2VCQnkubXA0P3RhZz0xMg==",
 
     thisis_img: "https://i.scdn.co/image/ab67706f00000002d7c989820a3155855cc6da87",
