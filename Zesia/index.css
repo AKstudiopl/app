@@ -7015,6 +7015,7 @@ font-family: 'Pathway Extreme';
   display: block;
   text-overflow: ellipsis;
   max-width: 80%;
+  font-weight: 100;
 }
 .music-artist-content-item-featured
 {
@@ -7677,7 +7678,6 @@ font-family: 'Pathway Extreme';
   background: linear-gradient(130deg, var(--maincolor), var(--maincolorhover));
   background-size: 175%;
   filter: drop-shadow(0px 5px 15px rgb(239 84 102 / 25%));
-  transform: scale(1.25);
 }
 .music-artist-album-action a:last-child i
 {
