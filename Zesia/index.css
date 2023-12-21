@@ -952,7 +952,7 @@ input:checked + .slider:before {
 }
 .search-content
 {
-  padding: 10px 10px;
+  padding: 15px;
 }
 .search-content  input[type=text] {
   font-size: 18px;
@@ -3074,13 +3074,37 @@ input:checked + .slider:before {
   transition: .5s all, border-radius 1.5s;
   will-change: transform, border-radius, display;
   transform: translateY(105vh);
-  content-visibility: hidden;
 }
 .main-music.active
 {
   transform: translateY(0);
   border-radius: 0;
-  content-visibility: visible;
+}
+.main-music.active .main-music-screen
+{
+  -webkit-animation: contentVisibilityDelay .75s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: contentVisibilityDelay .75s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.main-music .main-music-screen
+{
+  transition: .5s;
+  content-visibility: hidden;
+}
+@keyframes contentVisibilityDelay {
+  0%
+  {
+    content-visibility: hidden;
+  }
+  50%
+  {
+    content-visibility: hidden;
+    opacity: 0;
+  }
+  100%
+  {
+    content-visibility: visible;
+    opacity: 1;
+  }
 }
 .top-controls
 {

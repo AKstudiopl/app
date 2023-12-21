@@ -4682,10 +4682,12 @@ function searchFunction(){
   let x = document.querySelectorAll('.search-results .music-artist-content-item');
   let xData = document.querySelectorAll('.search-results .music-artist-content-item-data');
   
-  if(input.value === 0){
+  if(searchInput.value.length < 2){
     historyContainer.style.display="flex";
+    searchResults.style.display = 'none';
   }else{
     historyContainer.style.display="none";
+    searchResults.style.display = 'block';
   }
 
   for (i = 0; i < x.length; i++) { 
