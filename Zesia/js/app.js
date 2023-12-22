@@ -1486,6 +1486,7 @@ function scrollToPrevPage(t) {
   function loadBio(){
     bioCard.classList.add("active");
     loadBioData();
+    fastLoadingPop();
   }
 
   function exitBio(){
@@ -2739,37 +2740,14 @@ function loadUserProfile(){
   checkLocalStorageData();
   checkLocalStorageDataArtist();
   userProfile.classList.toggle("active");
-  userProfileFilterFavorite.classList.add("active");
-  userProfileFilterPlaylist.classList.remove("active");
   wrapper.classList.remove("active");
   activeSettingsScreen.classList.remove("active");
   searchProfileBy.parentElement.classList.add("active");
   userProfileActionSearch.classList.remove("active");
-  favoriteLoadItemsProfile();
   document.querySelector(".user_profile_header_content_name").innerText = localStorage.getItem('personalization-data-name');
-}
 
-function favoriteLoadItemsProfile() {
-
-  const resultsFAV = document.querySelector(".user_profile_content");
-  var favoritIt = allMusicView.filter(x => x.status === "favorite");
-  resultsFAV.innerHTML = "";
-  for (let i = 0; i < favoritIt.length; i++) {
-    let resultFAV =
-      `<div class="user_profile_content_item_song" queue-index="${i + 1}" li-index='${favoritIt[i].id}' onclick="clickedSingleFavQueue(this)">
-        <img src="${favoritIt[i].img_mini}">
-          <div class="user_profile_content_item_song_data">
-            <p>${favoritIt[i].name}</p>
-            <span>${favoritIt[i].artist}</span>
-            <span class="us-yr">${favoritIt[i].album_premiere}</span>
-          </div>
-          <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
-       </div>`;
-    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
-  }
-  favoriteItemsNumber.innerText = $('.library-favorite-item').length;
-
-  loseFocus();
+  userProfileFilterPlaylist.classList.add("active");
+  createdPlaylistsContent();
 }
 
 const userProfileActionSearch = document.querySelector(".user_profile_action_search");
@@ -2778,16 +2756,9 @@ userProfileActionSearch.addEventListener('click', () => {
   userProfileActionSearch.classList.toggle("active");
 })
 
-const userProfileFilterFavorite = document.querySelector(".user_profile_header_filter_by_favorite");
 const userProfileFilterPlaylist = document.querySelector(".user_profile_header_filter_by_playlist");
 
-userProfileFilterFavorite.addEventListener('click', () => {
-  userProfileFilterFavorite.classList.add("active");
-  userProfileFilterPlaylist.classList.remove("active");
-  favoriteLoadItemsProfile();
-})
 userProfileFilterPlaylist.addEventListener('click', () => {
-  userProfileFilterFavorite.classList.remove("active");
   userProfileFilterPlaylist.classList.add("active");
   createdPlaylistsContent();
 })
@@ -2848,36 +2819,6 @@ function createdPlaylistsContent() {
   document.querySelector(".user_profile_content_dailyStats_item_total").innerText = localStorage.getItem("trSts") || 0;
   document.querySelector(".user_profile_content_dailyStats_item_artists").innerText = allMusicView.filter(x => x.status === "favorite").length;
 }
-
-function followedArtistsContent() {
-
-  const resultsFAV = document.querySelector(".user_profile_content");
-  var favoritIt = allMusicView.filter(x => x.artist_status === "followed");
-  resultsFAV.innerHTML = "";
-  for (let i = 0; i < favoritIt.length; i++) {
-    let resultFAV =
-      `<div class="user_profile_content_item_song artist" onclick="artistScreenDataLoad(this);loadUserProfile();" id="${favoritIt[i].id}" artist-data='${favoritIt[i].artist}'>
-          <img src="${favoritIt[i].artist_img}">
-          <h1>${favoritIt[i].artist}</h1>
-          <div class="user_profile_content_item_song_data">
-            <p>${favoritIt[i].artist}</p>
-          </div>
-         <i class="fa-heart fa-solid"></i>
-       </div>`;
-    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
-  }
-
-  var productIds={};
-  $('.user_profile_content_item_song').each(function(){
-      var prodId = $(this).attr('artist-data');
-      if(productIds[prodId]){
-        $(this).remove();
-      }else{
-        productIds[prodId] = true;
-      }
-  });
-}
-
 
 function homeFavortiesArtists() {
   const resultsFAV = document.querySelector(".favorites-artists-container .center-container-scrollable");
@@ -3134,7 +3075,6 @@ function checkLocalStorageDataArtist(){
     }
 
   }
-  followedArtistsContent();
 }
 
 function featuringLoad(){

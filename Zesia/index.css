@@ -1456,6 +1456,10 @@ input:checked + .slider:before {
   flex-direction: column;
   margin-left: 10px;
 }
+.library-slider .center-container-album-data
+{
+  max-width: calc(100% - 85px);
+}
 .library-top-avatar
 {
   height: 45px;
@@ -12969,6 +12973,10 @@ textarea
   .center-container-item:hover .center-container-item-action
   {
     display: flex;
+  }
+  .background-canvas video
+  {
+    filter: blur(10px);
   }
 }
 
