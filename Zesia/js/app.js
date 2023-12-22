@@ -2302,22 +2302,35 @@ function artistProfileReleases(track){
   resultsFAV.innerHTML = "";
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
-      `<div class="music-artist-information-albums-item" onclick="clickedSingleAlbum(this)" artist-data="${favoritIt[i].artist_id}" data-album='${favoritIt[i].album}'>
-          <img class="music-artist-information-albums-item-img" src="${favoritIt[i].album_cover}">
-          <p><span class="music-artist-information-albums-item-name">${favoritIt[i].album}</span> <span class="data-premiere">${favoritIt[i].album_premiere}</span></p>
+       `<div class="center-container-item album-tag" onclick="fastLoadingPop();clickedSingleAlbum(this);" artist-data="${favoritIt[i].artist_id}" data-duplicate="${favoritIt[i].artist_id} ${favoritIt[i].album}" data-album="${favoritIt[i].album}">
+          <div class="bg-box"><img src="${favoritIt[i].album_cover}"></div>
+          <div class="img-box">    
+            <img src="${favoritIt[i].album_cover}">
+          </div>
+          <div class="center-container-album-data">
+            <h2>${favoritIt[i].album}</h2>
+            <p>Album • ${favoritIt[i].artist} • ${favoritIt[i].album_premiere}</p>
+          </div>
+          <div class="center-container-item-action"><i onclick="quick_Play(this)" play-type="album" class="fa-solid fa-play"></i></div>
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }
 
   var productIds={};
-  $('.music-artist-information-albums-item').each(function(){
-      var prodId = $(this).attr('data-album');
+  $('.music-artist-content-album .center-container-item').each(function(){
+      var prodId = $(this).attr('data-duplicate');
       if(productIds[prodId]){
          $(this).remove();
       }else{
          productIds[prodId] = true;
       }
   });
+
+  setTimeout(() => {
+    $('.center-container-item .center-container-item-action i').click(function(event) {
+      event.stopPropagation();
+    });
+  }, 250);
 
   setTimeout(() => {
     if(document.querySelectorAll('.music-artist-content-album .music-artist-information-albums-item').length > 3){
