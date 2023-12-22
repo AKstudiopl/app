@@ -309,7 +309,7 @@ function favoriteLoadItems() {
 
   loseFocus();
   lyricsItemCheck();
-
+  fastLoadingPop();
   favoriteItemsNumber.innerText = $('.library-favorite-container .music-artist-content-item').length;
 }
 
@@ -2885,7 +2885,7 @@ function homeFavortiesArtists() {
 
   var productIds={};
   $('.favorites-artists-container .center-container-scrollable .center-container-item').each(function(){
-      var prodId = $(this).attr('artist-data');
+      var prodId = $(this).attr('artist-id');
       if(productIds[prodId]){
         $(this).remove();
       }else{
@@ -2984,7 +2984,12 @@ function overflowingText(){
 function popularArtistsLoad(){
 
   resultsFAV = document.querySelector(".center-container.popular-artists-container .center-container-scrollable");
-  var favoritIt = allMusicView.filter(x => x.tag === "Popular");
+  var favoritItNotUnique = allMusicView.filter(x => x.tag === "Popular");
+  const key = 'artist_id';
+  const favoritIt = [...new Map(favoritItNotUnique.map(item => [item[key], item])).values()]
+
+  shuffle(favoritIt);
+
   resultsFAV.innerHTML = "";
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
@@ -2999,13 +3004,9 @@ function popularArtistsLoad(){
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }
 
-  $(".center-container.popular-artists-container .center-container-scrollable").html($(".center-container-item.popular-artist").sort(function(){
-    return Math.random()-0.5;
-}));
-
   var productIds={};
   $('.center-container.popular-artists-container .center-container-scrollable .center-container-item').each(function(){
-      var prodId = $(this).attr('data-artist');
+      var prodId = $(this).attr('artist-id');
       if(productIds[prodId]){
          $(this).remove();
       }else{
@@ -4745,7 +4746,8 @@ function searchFunction(){
   }
 
   let artistX = document.querySelectorAll('.search-results .music-artist-content-item.artist-box.searched');
-  
+  let trackX = document.querySelectorAll('.search-results .music-artist-content-item.track-box.searched');
+
   for (i = 0; i < artistX.length; i++) { 
     artistX[i].classList.remove("active");
   }
@@ -4753,6 +4755,10 @@ function searchFunction(){
     artistX[0].classList.add("active");
   }
 
+  for (i = 3; i < trackX.length - 3; i++) { 
+    trackX[i].style.display="none";
+    trackX[i].style.contentVisibility="hidden";   
+  }
   rightClickOptions();
 }
 
@@ -4960,6 +4966,7 @@ function clickedPlaylist(data){
   playlistTracksCounter.innerText = playlist_LENGTH;
 
   playlist_CHECK_IMG();
+  fastLoadingPop();
   clickedPlaylistLoad(data);
 }
 

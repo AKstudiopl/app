@@ -1933,7 +1933,7 @@ input:checked + .slider:before {
   width: 100%;
   height: 100%;
   opacity: 1;
-  filter: blur(30px) opacity(.75);
+  filter: blur(30px) opacity(.25);
   object-fit: cover;
   top: 0;
 }
@@ -2393,6 +2393,7 @@ input:checked + .slider:before {
   transform: scale(1);
   transition: .3s;
   transition-delay: .3s;
+  display: none;
 }
 .center-container .center-container-item .center-container-item-action i
 {
@@ -6574,6 +6575,14 @@ font-family: 'Pathway Extreme';
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.search-results .music-artist-content-item-data, .search-history-container .music-artist-content-item-data, .library-favorite-container .music-artist-content-item-data
+{
+  max-width: calc(100% - 150px);
+}
+.search-history-container .music-artist-content-item-data span, .search-results .music-artist-content-item-data span,  .library-favorite-container .music-artist-content-item-data span
+{
+  font-weight: 100;
+}
 .music-artist-content-item i 
 {
   margin-left: auto;
@@ -7014,7 +7023,6 @@ font-family: 'Pathway Extreme';
   overflow: hidden;
   display: block;
   text-overflow: ellipsis;
-  max-width: 80%;
   font-weight: 100;
 }
 .music-artist-content-item-featured
@@ -7962,7 +7970,7 @@ font-family: 'Pathway Extreme';
   aspect-ratio: 1 / 1;
   font-weight: 900;
   position: absolute;
-  left: 0;
+  left: 10px;
   top: 0;
   display: flex;
   align-items: center;
@@ -8025,7 +8033,8 @@ font-family: 'Pathway Extreme';
   display: flex;
   align-items: center;
   width: calc(100% - 30px);
-  margin: 0 15px;
+  padding: 0 10px;
+  margin: 0 5px;
   transition: 0.25s;
   height: 50px;
   cursor: pointer;
@@ -12788,6 +12797,10 @@ textarea
   .center-container.your-playlists
   {
     margin-bottom: 10px;
+  }
+  .center-container-item:hover .center-container-item-action
+  {
+    display: flex;
   }
 }
 

@@ -12209,7 +12209,7 @@ var allMusic = [
     gallery_img_8: "https://i.scdn.co/image/09548bf5026f151fc9b3775c8e3a767481943ac9",
     gallery_img_9: "https://i.scdn.co/image/47da202fc9db4af678fe2c9e8a319dc30e60f44a",
     gallery_img_10: "https://i.scdn.co/image/88b62fb822be6e9cff7365e663db3e82bccbdd92",
-    canvas: "https://ssscdn.io/555twitter/aHR0cHM6Ly92aWRlby50d2ltZy5jb20vZXh0X3R3X3ZpZGVvLzE3Mjg1MDAzNjU0MDQ4Mjc2NDgvcHUvdmlkL2F2YzEvOTYweDcyMC82UmVXSlJGdXFPMjMyQkpzLm1wND90YWc9MTI=",
+    canvas: "https://ssscdn.io/555twitter/aHR0cHM6Ly92aWRlby50d2ltZy5jb20vZXh0X3R3X3ZpZGVvLzE3MTI5MzMyMjk5NDExMzc0MDgvcHUvdmlkL2F2YzEvNzIweDEyODAvamprc2VKLTFkdFJ2eTl5NC5tcDQ/dGFnPTEy",
     
     thisis_img: "https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO2w0gZW-default.jpg",
     radio_img: "https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/4iHNK0tOyZPYnBU7nGAgpQ/pl",
@@ -12252,7 +12252,7 @@ var allMusic = [
     gallery_img_2: "https://i.scdn.co/image/b7a1daaf8bf9a906da2881e9b82e6e5f2aac4e8d",
     gallery_img_3: "https://i.scdn.co/image/3b457595c9cf4c1d87e8684cfc146161c2de9c2b",
     gallery_img_4: "https://i.scdn.co/image/ec5fcce28e1df2586f373be30403bbff06a63e72",
-    canvas: "https://drive.google.com/uc?export=download&id=1mRTZ1l9EwOxKxl5OpbKBFaAaZC4Tny5N",
+    canvas: "https://ssscdn.io/555twitter/aHR0cHM6Ly92aWRlby50d2ltZy5jb20vZXh0X3R3X3ZpZGVvLzE3MTU0Njc5Mjk0OTg5MTg5MTIvcHUvdmlkL2F2YzEvNzIweDcyMC9uaHVDancxN3V2anU1ek1tLm1wND90YWc9MTI=",
     
     thisis_img: "https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO38Wlm8-default.jpg",
     radio_img: "https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/5lpH0xAS4fVfLkACg9DAuM/pl",
@@ -12327,7 +12327,7 @@ var allMusic = [
     gallery_img_2: "https://i.scdn.co/image/b7a1daaf8bf9a906da2881e9b82e6e5f2aac4e8d",
     gallery_img_3: "https://i.scdn.co/image/3b457595c9cf4c1d87e8684cfc146161c2de9c2b",
     gallery_img_4: "https://i.scdn.co/image/ec5fcce28e1df2586f373be30403bbff06a63e72",
-    canvas: "https://drive.google.com/uc?export=download&id=1mRTZ1l9EwOxKxl5OpbKBFaAaZC4Tny5N",
+    canvas: "https://ssscdn.io/555twitter/aHR0cHM6Ly92aWRlby50d2ltZy5jb20vZXh0X3R3X3ZpZGVvLzE3MjQ1NTI2MzI5MzE2NDc0ODkvcHUvdmlkL2F2YzEvNzIweDEyODAvYUhlMFM3TE1GbEJ5WWJpby5tcDQ/dGFnPTEy",
     
     thisis_img: "https://i.scdn.co/image/ab67706f00000002b70e0f51ac4cf9d62cee4977",
     radio_img: "https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/38EmEgXkgK51MT2tPY0EoC/pl",
@@ -12370,7 +12370,7 @@ var allMusic = [
     gallery_img_2: "https://i.scdn.co/image/e848bb459cc166b3c454d66bf77519cd2f345a06",
     gallery_img_3: "https://i.scdn.co/image/139a921cd703f6e101d9982e7c16ceb4be660e04",
     gallery_img_4: "https://i.scdn.co/image/e6c057f7c7f8ac2e5acbf37f222c74d3857ec34b",
-    canvas: "https://drive.google.com/uc?export=download&id=1mRTZ1l9EwOxKxl5OpbKBFaAaZC4Tny5N",
+    canvas: "https://ssscdn.io/555twitter/aHR0cHM6Ly92aWRlby50d2ltZy5jb20vZXh0X3R3X3ZpZGVvLzE3MzY5MTY0NTQ0MDk0MTY3MDQvcHUvdmlkL2F2YzEvNTQweDcyMC9Sd056dlBFMEFSSWhRY3drLm1wND90YWc9MTI=",
     
     thisis_img: "https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO0eX0B2-default.jpg",
     radio_img: "https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/0wi4yTYlGtEnbGo4ltZTib/pl",
@@ -12568,7 +12568,7 @@ var allMusic = [
     gallery_img_3: "https://www.gajahornby.com/margaret-cover.jpg",
     gallery_img_4: "https://www.gajahornby.com/okladkigh/kocha.jpg",
     gallery_img_5: "https://www.gajahornby.com/okladkigh/vip.jpg",
-    canvas: "",
+    canvas: "https://ssscdn.io/555twitter/aHR0cHM6Ly92aWRlby50d2ltZy5jb20vZXh0X3R3X3ZpZGVvLzE3MjY3MDI5NjAyMTI5MjIzNjgvcHUvdmlkL2F2YzEvNzIweDcyMC9TUHFvUHpzZUpmcThzbmJ6Lm1wND90YWc9MTI=",
 
     thisis_img: "https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO3DN1Wy-default.jpg",
     radio_img: "https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/6aGmKxXoKrSdovRUn8MBhZ/pl",
@@ -12789,7 +12789,7 @@ var allMusic = [
     gallery_img_8: "https://i.scdn.co/image/9ad8a436c1905f26b97f372e587909aa814fb848",
     gallery_img_9: "https://i.scdn.co/image/831652b51e31ac796ad09c65d1eb3f1c21f66695",
     gallery_img_10: "https://i.scdn.co/image/5f72fd8be4e2b17bfbfadab252273db0c9a6bb78",
-    canvas: "",
+    canvas: "https://ssscdn.io/555twitter/aHR0cHM6Ly92aWRlby50d2ltZy5jb20vZXh0X3R3X3ZpZGVvLzE2OTk4Nzk5MDU5MzUyMTI1NDQvcHUvdmlkL2F2YzEvNzIweDcyMC9PeTVobjhfaWQ4V1NZS0ZDLm1wND90YWc9MTI=",
 
     thisis_img: "https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO1jSuBO-default.jpg",
     radio_img: "https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/2jw70GZXlAI8QzWeY2bgRc/pl",
@@ -12830,7 +12830,7 @@ var allMusic = [
     artist_img: "https://i.scdn.co/image/ab6761670000ecd45054f3b3e95ae6b308e759d6",
     gallery_img_1: "https://pbs.twimg.com/media/F_JRvPFW0AA168b?format=jpg&name=large",
     gallery_img_2: "https://pbs.twimg.com/media/Frv7TwQaUAMTMnJ?format=jpg&name=large",
-    canvas: "",
+    canvas: "https://ssscdn.io/555twitter/aHR0cHM6Ly92aWRlby50d2ltZy5jb20vdHdlZXRfdmlkZW8vRjR6enJDZ1hnQUVzYlo0Lm1wNA==",
 
     thisis_img: "https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO4mwRSU-default.jpg",
     radio_img: "https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/7n2wHs1TKAczGzO7Dd2rGr/pl",
@@ -12866,8 +12866,8 @@ var allMusic = [
 
     style: "Energic",
     status: "nostatus",
-    tag: "",
-    canvas: "",
+    tag: "Popular",
+    canvas: "https://ssscdn.io/555twitter/aHR0cHM6Ly92aWRlby50d2ltZy5jb20vZXh0X3R3X3ZpZGVvLzE3MjUyMDI5Njc5ODc2OTk3MTIvcHUvdmlkL2F2YzEvNDY0eDYwMC9IVmRiWG1SVXBTSlFRbk94Lm1wND90YWc9MTI=",
 
     album: "Señorita",
     album_cover: "https://i.scdn.co/image/ab67616d00001e02e6095c382c2853667c1623eb",
