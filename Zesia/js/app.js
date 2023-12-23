@@ -450,6 +450,8 @@ musicVolumeTop = wrapper.querySelector('.top-shortcut-item.shortcut-rate span'),
 lyricsDataArtist = wrapper.querySelector(".device-main-audio-data .device-main-audio-data-artist"),
 lyricsDataTitle = wrapper.querySelector(".device-main-audio-data .device-main-audio-data-title"),
 queueArtist = wrapper.querySelector(".queue-container .artist");
+topControlsShortcutAvatar = document.querySelector(".top-controls-shortcut img");
+topControlsShortcutArtist = document.querySelector(".top-controls-shortcut span");
 
 const pc_track = document.querySelector(".pc-controls-track-data p");
 const pc_artist = document.querySelector(".pc-controls-track-data span");
@@ -601,6 +603,9 @@ function loadMusic(indexNumb){
   topOption.setAttribute("id", allMusic[indexNumb - 1].id);
   lyricsDataArtist.innerText = allMusic[indexNumb - 1].artist;
   lyricsDataTitle.innerText = allMusic[indexNumb - 1].name;
+  topControlsShortcutArtist.innerText = allMusic[indexNumb - 1].artist;
+  topControlsShortcutAvatar.src = allMusic[indexNumb - 1].img_mini;
+  topControlsShortcutAvatar.parentElement.setAttribute('id', allMusic[indexNumb - 1].id)
   musicTopArtistBtn.setAttribute("id", allMusic[indexNumb - 1].id);
   document.title = allMusic[indexNumb - 1].artist + ' / ' + allMusic[indexNumb - 1].name + ' / ZESIA'; 
   musicVolumeTop.innerText = Math.floor(localStorage.getItem("user_Volume")*100) + "%";

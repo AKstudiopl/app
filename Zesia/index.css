@@ -3127,6 +3127,31 @@ input:checked + .slider:before {
 {
   height: 10px;
 }
+.top-controls-shortcut 
+{
+  position: absolute;
+  width: auto;
+  height: 45px;
+  overflow: hidden;
+  border-radius: 20px;
+  max-width: 220px;
+  background: rgb(0 0 0 / 10%);
+  left: 60px;
+  display: none;
+  font-weight: 900;
+  align-items: center;
+  z-index: 1;
+  padding: 0 5px;
+  padding-right: 10px;
+  transition: .3s;
+  opacity: 0;
+}
+.top-controls-shortcut img
+{
+  border-radius: 50%;
+  margin-right: 5px;
+  height: 35px;
+}
 .top-controls a
 {
   font-size: 16px;
@@ -3153,11 +3178,20 @@ input:checked + .slider:before {
 .top-controls.lyrics a
 {
   border-radius: 20px;
-  height: 60px;
-  width: 60px;
+  height: 45px;
+  width: 45px;
   background: rgba(0,0,0,0.1);
 }
-.top-controls a:nth-child(2){
+.top-controls.lyrics .top-controls-shortcut 
+{
+  opacity: 1;
+  display: flex;
+}
+.top-controls.lyrics #title-sound
+{
+  display: none;
+}
+.top-controls #title-sound{
   background: transparent !important;
   outline: none;
   font-family: Destruido;
@@ -3182,22 +3216,22 @@ input:checked + .slider:before {
   height: 100vh;
   right: 0;
   display: flex;
-  visibility: hidden;
   flex-direction: column;
   justify-content: flex-end;
   width: 100vw; 
-  transition: 0.5s; 
+  transition: 0.3s; 
   padding: 5px 0;
   opacity: 0;
   top: 110vh;
+  content-visibility: hidden;
 }
 .top-controls-more.active
 {
   opacity: 1;
   padding: 0;
   top: 0;
-  transition: 0.5s;
-  visibility: visible;
+  transition: 0.3s;
+  content-visibility: visible;
 }
 .top-more-head-image
 {
@@ -3669,12 +3703,12 @@ input:checked + .slider:before {
   color: var(--color);
   transition: 0.3s;
   width: 45px;
-  background: rgba(0,0,0,0.4);
+  background: rgb(0 0 0 / 10%);
   height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 15px;
+  border-radius: 20px;
   overflow: hidden;
   outline: 1px solid rgb(255 255 255 / 5%);
   outline-offset: -1px;
@@ -3685,6 +3719,7 @@ input:checked + .slider:before {
   color: var(--color);
   outline: 1px solid rgb(255 255 255 / 15%);
   background: transparent;
+  opacity: .5;
 }
 .main-music-header.lyrics
 {
@@ -3728,7 +3763,7 @@ input:checked + .slider:before {
   z-index: 2;
   width: calc(100% - 190px) !important;
   backdrop-filter: blur(10px);
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.2);
 }
 .main-music-header.lyrics ~ .progress .timer
 {
@@ -3774,6 +3809,8 @@ input:checked + .slider:before {
 .main-music-header.lyrics ~ .main-music-fast-navigation a
 {
   display: none;
+  border-radius: 25px !important;
+  background: rgb(0 0 0 / 20%) !important;
 }
 .main-music-header.lyrics ~ #play-stop-main-btn-action
 {
@@ -4209,8 +4246,8 @@ input:checked + .slider:before {
   align-items: center;
   justify-content: center;
   font-size: 20px;
-  border-radius: 20px; 
-  background: rgba(0,0,0,0.4);
+  border-radius: 25px; 
+  background: rgba(0,0,0,0.2);
 }
 .main-music-sec-nav a.active i
 {
@@ -12553,7 +12590,10 @@ textarea
   }
   .top-controls.lyrics a
   {
-    background: rgba(0,0,0,0.4);
+    border-radius: 20px;
+    height: 60px;
+    width: 60px;
+    background: rgba(0,0,0,0.1);
   }
   .bottom-gap
   {
@@ -13026,7 +13066,14 @@ textarea
     transition: opacity 0.5s ease 0s;
     object-fit: cover;
     -webkit-mask-image: -webkit-linear-gradient(top, transparent 0%,rgba(0,0,0,0.75) 15%,black 75%, transparent 100%);
-    transform: scale(1.25);
+}
+.main-music-header.stretched 
+{
+  transform: scale(1.25);
+}
+.main-music-header.stretched.lyrics
+{
+  transform: scale(1);
 }
 .main-music-header.stretched.lyrics img
 {
