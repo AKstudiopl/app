@@ -3545,8 +3545,11 @@ function trackLyrics(){
 
 function scrolCenterRight(element){
   let box = element.parentElement.parentElement.parentElement.querySelector(".center-container-scrollable");
-  let boxWidth = box.clientWidth;
-  boxWidth = boxWidth/2;
+  if(!box){
+    box = document.querySelector(".music-artist-content-album");
+  }else{
+    box = element.parentElement.parentElement.parentElement.querySelector(".center-container-scrollable");
+  }
   box.scrollBy({
     top: 0,
     left: 330,
@@ -3556,8 +3559,11 @@ function scrolCenterRight(element){
 
 function scrolCenterLeft(element){
   let box = element.parentElement.parentElement.parentElement.querySelector(".center-container-scrollable");
-  let boxWidth = box.clientWidth;
-  boxWidth = boxWidth/2;
+  if(!box){
+    box = document.querySelector(".music-artist-content-album");
+  }else{
+    box = element.parentElement.parentElement.parentElement.querySelector(".center-container-scrollable");
+  }
   box.scrollBy({
     top: 0,
     left: -330,
