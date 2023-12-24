@@ -7712,6 +7712,10 @@ font-family: 'Pathway Extreme';
 {
   margin-right: 15px;
 }
+.music-artist-information-albums-item:first-child
+{
+  margin-left: 15px;
+}
 .music-artist-information-albums-item img
 {
   border-radius: 15px;
