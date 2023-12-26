@@ -6264,9 +6264,12 @@ input:checked + .slider:before {
   color: rgb(222 228 234 / 75%);
   font-size: 16px;
   align-items: center;
-  transition: 0.3s;
+  transition: 0.5s all;
   gap: 10px;
-  background: rgb(25 25 34 / 25%);
+  font-weight: 100;
+  background: linear-gradient(130deg, var(--maincolor), transparent);
+  background-position: right;
+  background-size: 1000%;
 }
 .music-artist-option .music-artist-queue-btn {
   text-decoration: none;
@@ -6306,12 +6309,13 @@ input:checked + .slider:before {
 .music-artist-option a.active
 {
   color: var(--color);
-  background: linear-gradient(130deg, var(--maincolor), var(--maincolorhover));
+  background: linear-gradient(130deg, var(--maincolor), transparent);
   animation-name: followAnimation;
+  transition: .5s;
   animation-duration: 1.25s;
   animation-timing-function: ease;
   background-size: 175%;
-  filter: drop-shadow(0px 5px 15px rgb(239 84 102 / 25%));
+  filter: drop-shadow(0px 0px 15px rgb(239 84 102 / 25%));
   outline: 1px var(--maincolor) solid;
 }
 .music-artist-option a.active i
@@ -6324,24 +6328,24 @@ input:checked + .slider:before {
 }
 @keyframes followAnimation {
   0%{
-    filter: saturate(100%) drop-shadow(0px 3px 10px rgb(239 84 102 / 0%));
+    filter: saturate(100%) drop-shadow(0px 0px 10px rgb(239 84 102 / 0%));
   }
   30%
   {
-    padding: 10px 30px;
-    filter: saturate(100%) drop-shadow(0px 3px 10px rgb(239 84 102 / 0%));
+    padding: 12px 30px;
+    filter: saturate(100%) drop-shadow(0px 0px 10px rgb(239 84 102 / 0%));
     background-size: 200%;
   }
   50%
   {
     background-size: 300%;
-    filter: saturate(150%) drop-shadow(0px 3px 10px rgb(239 84 102 / 50%));
-    padding: 10px 45px;
+    filter: saturate(150%) drop-shadow(0px 0px 10px rgb(239 84 102 / 50%));
+    padding: 12px 45px;
   }
   70%
   {
-    padding: 10px 30px;
-    filter: saturate(100%) drop-shadow(0px 5px 15px rgb(239 84 102 / 25%));
+    padding: 12px 30px;
+    filter: saturate(100%) drop-shadow(0px 0px 15px rgb(239 84 102 / 25%));
     background-size: 175%;
   }
 }
@@ -6718,6 +6722,8 @@ font-family: 'Pathway Extreme';
   background-size: cover;
   background-blend-mode: soft-light;
   background-image: url(https://e-cdns-images.dzcdn.net/images/playlist/d41d8cd98f00b204e9800998ecf8427e/200x200-000000-80-0-0.jpg);
+  outline: rgba(255, 255, 255, 0.1) solid 1px;
+  outline-offset: -1px;
 }
 .music-artist-content-item.artist-box.active
 {
@@ -7408,8 +7414,8 @@ font-family: 'Pathway Extreme';
   overflow: hidden;
   cursor: pointer;
   transition: 0.3s;
-  outline: 5px solid rgb(255 255 255 / 10%);
-  outline-offset: -5px;
+  outline: 1px solid rgb(255 255 255 / 10%);
+  outline-offset: -1px;
 }
 .music-artist-content-artist-box:hover
 {
@@ -7523,6 +7529,8 @@ font-family: 'Pathway Extreme';
   background-position: center;
   background-size: cover;
   background-blend-mode: soft-light;
+  outline: rgba(255, 255, 255, 0.1) solid 1px;
+  outline-offset: -1px;
   background-image: url(https://e-cdns-images.dzcdn.net/images/playlist/d41d8cd98f00b204e9800998ecf8427e/200x200-000000-80-0-0.jpg);
 }
 .music-artist-content-playlists .center-container-item h2 {
@@ -8240,6 +8248,9 @@ font-family: 'Pathway Extreme';
   border-radius: 15px;
   margin-bottom: 5px;
   object-fit: cover;
+  outline: 1px solid rgb(255 255 255 / 10%);
+  outline-offset: -1px;
+
 }
 .music-artist-album-item
 {
@@ -12583,8 +12594,8 @@ textarea
   }
   .lyric-mode-toggle i
   {
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     border-radius: 20px;
   }
   .playlist-edit
@@ -12595,9 +12606,17 @@ textarea
   .top-controls.lyrics a
   {
     border-radius: 20px;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     background: rgba(0,0,0,0.1);
+  }
+  .top-controls-shortcut
+  {
+    display: none !important;
+  }
+  #title-sound
+  {
+    display: flex !important;
   }
   .bottom-gap
   {
