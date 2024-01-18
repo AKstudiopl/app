@@ -2286,7 +2286,7 @@ input:checked + .slider:before {
 .center-container .center-container-item
 {
   flex: 0 0 auto;
-  width: 35vw;
+  width: 150px;
   display: inline-block;
   transition: 0.3s;
   margin-right: 20px;
@@ -2384,7 +2384,7 @@ input:checked + .slider:before {
   width: 60px;
   height: 60px;
   border-radius: 15px;
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: center;
   transition: .3s;
@@ -5407,8 +5407,8 @@ input:checked + .slider:before {
   background: var(--maincolor);
 }
 .fade-in {
-  -webkit-animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-          animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  -webkit-animation: fade-in .45s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+          animation: fade-in .45s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 @-webkit-keyframes fade-in {
   0% {
