@@ -13267,4 +13267,31 @@ var allMusic = [
     lyrics:[
     ],
   },
+  {
+    name: "Overcompensate",
+    artist: "Twenty one pilots",
+    colaboration: "",
+    artist_status: "none",
+    language: "eng",
+    country: "usa",
+    artist_id: "4",
+    
+    src: "twentyonepilots-Overcompensate",
+    img: "ab67616d00001e029cf15c7323fb85b7112197d5",
+    img_mini: "https://i.scdn.co/image/ab67616d000048511fb486a6560e0da1061ab66b",
+
+    style: "Chill",
+    status: "nostatus",
+    canvas: "",
+
+    album: "Clancy",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e029cf15c7323fb85b7112197d5",
+    album_premiere: "2024",
+    album_status: "false",
+    id: "233",
+    lyrics:[
+    ],
+
+    user_playlist_1: "",
+},
 ]
