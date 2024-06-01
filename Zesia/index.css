@@ -2264,7 +2264,7 @@ input:checked + .slider:before {
 
 .center-container-scrollable.featuringArtistsBox, #favoriteAlbums, #popularPlaylists, #userPlaylists
 {
-  content-visibility: hidden;
+  content-visibility: visible;
 }
 .center-container-scrollable.featuringArtistsBox.fade-in, #favoriteAlbums.fade-in, #popularPlaylists.fade-in, #userPlaylists.fade-in
 {
@@ -5407,30 +5407,28 @@ input:checked + .slider:before {
   background: var(--maincolor);
 }
 .fade-in {
-  -webkit-animation: fade-in .45s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-          animation: fade-in .45s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  -webkit-animation: fade-in .8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+          animation: fade-in .8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 @-webkit-keyframes fade-in {
   0% {
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
+    opacity: 0;
+  }
+  25% {
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
     opacity: 1;
   }
 }
 @keyframes fade-in {
   0% {
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
+    opacity: 0;
+  }
+  25% {
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
     opacity: 1;
   }
 }
@@ -8323,7 +8321,6 @@ font-family: 'Pathway Extreme';
   flex-direction: column;
   align-items: flex-start;
 }
-
 .popular-music
 {
   position: fixed;
@@ -10179,8 +10176,7 @@ font-family: 'Pathway Extreme';
 }
 .history-contanier
 {
-  width: calc(100% - 30px);
-  margin-left: 15px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -10189,6 +10185,10 @@ font-family: 'Pathway Extreme';
 .history-contanier .music-artist-album-item:last-child
 {
   margin-bottom: 150px;
+}
+.history-contanier .music-artist-album-item
+{
+  gap: 10px;
 }
 .history-screen.active
 {
