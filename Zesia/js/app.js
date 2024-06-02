@@ -1094,7 +1094,6 @@ $(function(){
           scrollspeed = parseInt($this.data('scroll-speed')),
           val = - scrollTop / scrollspeed;
       $this.css('filter', 'blur(' + (-val / 10) + 'px)');
-      $this.css('opacity', '' + (100 - (-val/4)) + '%');
       $this.css('transform', 'translateY(' + (-val/1.5) + 'px)');
       })
   });
@@ -2182,6 +2181,7 @@ const bioContent = document.querySelector(".music-artist-bio-data-about");
 
 function artistScreenDataLoad(track){
   fastLoadingPop();
+  animationReset();
 
   let track_id;
   let track_View;
@@ -7792,7 +7792,6 @@ let options = {
 let observer = new IntersectionObserver(callbackFunc, options);
 
 observer.observe(document.querySelector('.music-artist-content-playlists'));
-observer.observe(document.querySelector('.music-artist-content-container'));
 observer.observe(document.querySelector('.music-artist-content-album'));
 observer.observe(document.querySelector('.music-artist-content-artist'));
 observer.observe(document.querySelector('.music-artist-content-fanschoice'));
@@ -7809,4 +7808,11 @@ function toggleDescription(a){
   }else{
     a.style.webkitLineClamp = "4";
   }
+}
+
+function animationReset(){
+  document.querySelector(".music-artist-item .music-artist-item-title img").style.animation = 'none';
+  setTimeout(() => {
+    document.querySelector(".music-artist-item .music-artist-item-title img").style.animation = 'fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both';
+  }, 375);
 }

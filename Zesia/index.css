@@ -1456,10 +1456,6 @@ input:checked + .slider:before {
   flex-direction: column;
   margin-left: 10px;
 }
-.library-slider .center-container-album-data
-{
-  max-width: calc(100% - 85px);
-}
 .library-top-avatar
 {
   height: 45px;
@@ -2943,6 +2939,7 @@ input:checked + .slider:before {
 
 @keyframes musicControlsBgAnimation {
   50%{
+    transform: rotate(45deg);
     background-position: top;
   }
 }
@@ -6154,7 +6151,12 @@ input:checked + .slider:before {
   object-position: top;
   outline: 2px groove rgb(255 255 255 / 10%);
   outline-offset: -10px;
+  animation: none;
   -webkit-mask-image: -webkit-linear-gradient(90deg,transparent 0%, black 50%);
+}
+.music-artist-item.active .music-artist-item-title img 
+{
+  animation: fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 .music-artist-item-content
 {
@@ -7152,13 +7154,21 @@ font-family: 'Pathway Extreme';
   line-clamp: 2;
   font-family: 'Destruido';
 }
-.music-artist-content-container, .music-artist-content-feat
+.music-artist-content-feat
 {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
   gap: 10px;
   opacity: 0;
+}
+.music-artist-content-container
+{
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 1;
 }
 .music-artist-content-container.view-all .music-artist-content-item
 {
