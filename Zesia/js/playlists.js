@@ -378,4 +378,20 @@ var allPlaylists = [
             track_6: "214"
         },
     },
+    {
+        name: "UEFA EURO 2024 | Official Playlist",
+        description: "The Official UEFA EURO 2024 Playlist - #LightYourFire for #EURO2024 | Updated weekly during the tournament, with specially curated takeovers. Be sure to keep an eye out!",
+        image: "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84ee13518be7a968ff519c8235",
+
+        play_style: "Pop",
+        play_id: "12",
+        play_status: "",
+        play_date: "2024",
+        play_popularity: "1",
+        play_author: "UEFA",
+
+        content:{
+            track_1: "246",
+        },
+    },
 ]

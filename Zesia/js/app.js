@@ -7396,7 +7396,7 @@ function lyrics_customize_down(data){
     mainObject.innerText = mainObjectData;
 
     localStorage.setItem(mainData, mainObjectData)
-    lyrics_customize_ubdate();
+    lyrics_customize_update();
   }
 }
 
@@ -7412,7 +7412,7 @@ function lyrics_customize_up(data){
     mainObject.innerText = mainObjectData;
 
     localStorage.setItem(mainData, mainObjectData)
-    lyrics_customize_ubdate();
+    lyrics_customize_update();
   }
 }
 
@@ -7424,7 +7424,7 @@ let user_lyricsActiveLeftGap;
 
 let settings_lyricsBoxVerse = document.querySelector('.settings-lyrics-box p');
 
-function lyrics_customize_ubdate(){
+function lyrics_customize_update(){
   if(localStorage.getItem("fontSize")){
     user_lyricsFontSize = localStorage.getItem("fontSize");
   }else{
@@ -7473,7 +7473,41 @@ function lyrics_customize_ubdate(){
   document.querySelector("[data-name=activeLeftGap] p").innerText = user_lyricsActiveLeftGap;
 }
 
-lyrics_customize_ubdate();
+function lyrics_customize_reset(){
+  user_lyricsFontSize="32";
+  localStorage.setItem("fontSize", user_lyricsFontSize)
+
+  user_lyricsFontGap="-1";
+  localStorage.setItem("fontGap", user_lyricsFontGap);
+
+  user_lyricsBgBlur="60";
+  localStorage.setItem("bgBlur", user_lyricsBgBlur);
+
+  user_lyricsActiveUpDownGap="20";
+  localStorage.setItem("activeUpDownGap", user_lyricsActiveUpDownGap);
+
+  user_lyricsActiveLeftGap="15";
+  localStorage.setItem("activeLeftGap", user_lyricsActiveLeftGap);
+
+  preview_content_1.style.fontSize = user_lyricsFontSize + "px";
+  preview_content_1.style.letterSpacing = user_lyricsFontGap + "px";
+  preview_content_2.style.fontSize = user_lyricsFontSize + "px";
+  preview_content_2.style.letterSpacing = user_lyricsFontGap + "px";
+  preview_content_3.style.fontSize = user_lyricsFontSize + "px";
+  preview_content_3.style.letterSpacing = user_lyricsFontGap + "px";
+
+  preview_img.style.filter = "blur(" + user_lyricsBgBlur + "px)";
+  preview_content_2.style.padding = user_lyricsActiveUpDownGap + "px 0px"; 
+  preview_content_2.style.transform = "translateX("+ user_lyricsActiveLeftGap +"px)";
+
+  document.querySelector("[data-name=fontSize] p").innerText = user_lyricsFontSize;
+  document.querySelector("[data-name=fontGap] p").innerText = user_lyricsFontGap;
+  document.querySelector("[data-name=bgBlur] p").innerText = user_lyricsBgBlur;
+  document.querySelector("[data-name=activeUpDownGap] p").innerText = user_lyricsActiveUpDownGap;
+  document.querySelector("[data-name=activeLeftGap] p").innerText = user_lyricsActiveLeftGap;
+}
+
+lyrics_customize_update();
 
 function profileSettingsOpen(){
   let profileSettingsScreen = document.querySelector('.user-profile-settings');
@@ -7768,3 +7802,11 @@ observer.observe(document.querySelector('.center-container-scrollable.featuringA
 observer.observe(document.querySelector('#favoriteAlbums'));
 observer.observe(document.querySelector('#popularPlaylists'));
 observer.observe(document.querySelector('#userPlaylists'));
+
+function toggleDescription(a){
+  if(a.style.webkitLineClamp === "4"){
+    a.style.webkitLineClamp = "2";
+  }else{
+    a.style.webkitLineClamp = "4";
+  }
+}

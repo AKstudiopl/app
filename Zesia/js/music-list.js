@@ -13291,7 +13291,346 @@ var allMusic = [
     id: "233",
     lyrics:[
     ],
+  },
+  {
+    name: "Next Semester",
+    artist: "Twenty one pilots",
+    colaboration: "",
+    artist_status: "none",
+    language: "eng",
+    country: "usa",
+    artist_id: "4",
+    
+    src: "twentyonepilots-NextSemester",
+    img: "ab67616d00001e029cf15c7323fb85b7112197d5",
+    img_mini: "https://i.scdn.co/image/ab67616d000048511fb486a6560e0da1061ab66b",
 
-    user_playlist_1: "",
-},
+    style: "Chill",
+    status: "nostatus",
+    canvas: "",
+
+    album: "Clancy",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e029cf15c7323fb85b7112197d5",
+    album_premiere: "2024",
+    album_status: "false",
+    id: "234",
+    lyrics:[
+    ],
+  },
+  {
+    name: "Backslide",
+    artist: "Twenty one pilots",
+    colaboration: "",
+    artist_status: "none",
+    language: "eng",
+    country: "usa",
+    artist_id: "4",
+    
+    src: "twentyonepilots-Backslide",
+    img: "ab67616d00001e029cf15c7323fb85b7112197d5",
+    img_mini: "https://i.scdn.co/image/ab67616d000048511fb486a6560e0da1061ab66b",
+
+    style: "Chill",
+    status: "nostatus",
+    canvas: "",
+
+    album: "Clancy",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e029cf15c7323fb85b7112197d5",
+    album_premiere: "2024",
+    album_status: "false",
+    id: "235",
+    lyrics:[
+    ],
+  },
+  {
+    name: "Midwest Indigo",
+    artist: "Twenty one pilots",
+    colaboration: "",
+    artist_status: "none",
+    language: "eng",
+    country: "usa",
+    artist_id: "4",
+    
+    src: "twentyonepilots-MidwestIndigo",
+    img: "ab67616d00001e029cf15c7323fb85b7112197d5",
+    img_mini: "https://i.scdn.co/image/ab67616d000048511fb486a6560e0da1061ab66b",
+
+    style: "Chill",
+    status: "nostatus",
+    canvas: "",
+
+    album: "Clancy",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e029cf15c7323fb85b7112197d5",
+    album_premiere: "2024",
+    album_status: "false",
+    id: "236",
+    lyrics:[
+    ],
+  },
+  {
+    name: "Routines In The Night",
+    artist: "Twenty one pilots",
+    colaboration: "",
+    artist_status: "none",
+    language: "eng",
+    country: "usa",
+    artist_id: "4",
+    
+    src: "twentyonepilots-RoutinesInTheNight",
+    img: "ab67616d00001e029cf15c7323fb85b7112197d5",
+    img_mini: "https://i.scdn.co/image/ab67616d000048511fb486a6560e0da1061ab66b",
+
+    style: "Chill",
+    status: "nostatus",
+    canvas: "",
+
+    album: "Clancy",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e029cf15c7323fb85b7112197d5",
+    album_premiere: "2024",
+    album_status: "false",
+    id: "237",
+    lyrics:[
+    ],
+  },
+  {
+    name: "Vignette",
+    artist: "Twenty one pilots",
+    colaboration: "",
+    artist_status: "none",
+    language: "eng",
+    country: "usa",
+    artist_id: "4",
+    
+    src: "twentyonepilots-Vignette",
+    img: "ab67616d00001e029cf15c7323fb85b7112197d5",
+    img_mini: "https://i.scdn.co/image/ab67616d000048511fb486a6560e0da1061ab66b",
+
+    style: "Chill",
+    status: "nostatus",
+    canvas: "",
+
+    album: "Clancy",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e029cf15c7323fb85b7112197d5",
+    album_premiere: "2024",
+    album_status: "false",
+    id: "238",
+    lyrics:[
+    ],
+  },
+  {
+    name: "The Craving (Jenna's version)",
+    artist: "Twenty one pilots",
+    colaboration: "",
+    artist_status: "none",
+    language: "eng",
+    country: "usa",
+    artist_id: "4",
+    
+    src: "twentyonepilots-TheCraving",
+    img: "ab67616d00001e029cf15c7323fb85b7112197d5",
+    img_mini: "https://i.scdn.co/image/ab67616d000048511fb486a6560e0da1061ab66b",
+
+    style: "Chill",
+    status: "nostatus",
+    canvas: "",
+
+    album: "Clancy",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e029cf15c7323fb85b7112197d5",
+    album_premiere: "2024",
+    album_status: "false",
+    id: "239",
+    lyrics:[
+    ],
+  },
+  {
+    name: "Lavish",
+    artist: "Twenty one pilots",
+    colaboration: "",
+    artist_status: "none",
+    language: "eng",
+    country: "usa",
+    artist_id: "4",
+    
+    src: "twentyonepilots-Lavish",
+    img: "ab67616d00001e029cf15c7323fb85b7112197d5",
+    img_mini: "https://i.scdn.co/image/ab67616d000048511fb486a6560e0da1061ab66b",
+
+    style: "Chill",
+    status: "nostatus",
+    canvas: "",
+
+    album: "Clancy",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e029cf15c7323fb85b7112197d5",
+    album_premiere: "2024",
+    album_status: "false",
+    id: "240",
+    lyrics:[
+    ],
+  },
+  {
+    name: "Navigating",
+    artist: "Twenty one pilots",
+    colaboration: "",
+    artist_status: "none",
+    language: "eng",
+    country: "usa",
+    artist_id: "4",
+    
+    src: "twentyonepilots-Navigating",
+    img: "ab67616d00001e029cf15c7323fb85b7112197d5",
+    img_mini: "https://i.scdn.co/image/ab67616d000048511fb486a6560e0da1061ab66b",
+
+    style: "Chill",
+    status: "nostatus",
+    canvas: "",
+
+    album: "Clancy",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e029cf15c7323fb85b7112197d5",
+    album_premiere: "2024",
+    album_status: "false",
+    id: "241",
+    lyrics:[
+    ],
+  },
+  {
+    name: "Snap Back",
+    artist: "Twenty one pilots",
+    colaboration: "",
+    artist_status: "none",
+    language: "eng",
+    country: "usa",
+    artist_id: "4",
+    
+    src: "twentyonepilots-SnapBack",
+    img: "ab67616d00001e029cf15c7323fb85b7112197d5",
+    img_mini: "https://i.scdn.co/image/ab67616d000048511fb486a6560e0da1061ab66b",
+
+    style: "Chill",
+    status: "nostatus",
+    canvas: "",
+
+    album: "Clancy",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e029cf15c7323fb85b7112197d5",
+    album_premiere: "2024",
+    album_status: "false",
+    id: "242",
+    lyrics:[
+    ],
+  },
+  {
+    name: "Oldies Station",
+    artist: "Twenty one pilots",
+    colaboration: "",
+    artist_status: "none",
+    language: "eng",
+    country: "usa",
+    artist_id: "4",
+    
+    src: "twentyonepilots-OldiesStation",
+    img: "ab67616d00001e029cf15c7323fb85b7112197d5",
+    img_mini: "https://i.scdn.co/image/ab67616d000048511fb486a6560e0da1061ab66b",
+
+    style: "Chill",
+    status: "nostatus",
+    canvas: "",
+
+    album: "Clancy",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e029cf15c7323fb85b7112197d5",
+    album_premiere: "2024",
+    album_status: "false",
+    id: "243",
+    lyrics:[
+    ],
+  },
+  {
+    name: "At The Risk Of Feeling Dumb",
+    artist: "Twenty one pilots",
+    colaboration: "",
+    artist_status: "none",
+    language: "eng",
+    country: "usa",
+    artist_id: "4",
+    
+    src: "twentyonepilots-AtTheRiskOfFeelingDumb",
+    img: "ab67616d00001e029cf15c7323fb85b7112197d5",
+    img_mini: "https://i.scdn.co/image/ab67616d000048511fb486a6560e0da1061ab66b",
+
+    style: "Chill",
+    status: "nostatus",
+    canvas: "",
+
+    album: "Clancy",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e029cf15c7323fb85b7112197d5",
+    album_premiere: "2024",
+    album_status: "false",
+    id: "244",
+    lyrics:[
+    ],
+  },
+  {
+    name: "Paladin Strait",
+    artist: "Twenty one pilots",
+    colaboration: "",
+    artist_status: "none",
+    language: "eng",
+    country: "usa",
+    artist_id: "4",
+    
+    src: "twentyonepilots-PaladinStrait",
+    img: "ab67616d00001e029cf15c7323fb85b7112197d5",
+    img_mini: "https://i.scdn.co/image/ab67616d000048511fb486a6560e0da1061ab66b",
+
+    style: "Chill",
+    status: "nostatus",
+    canvas: "",
+
+    album: "Clancy",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e029cf15c7323fb85b7112197d5",
+    album_premiere: "2024",
+    album_status: "false",
+    id: "245",
+    lyrics:[
+    ],
+  },
+  {
+    name: "Endless Summer",
+    artist: "Oceana",
+    colaboration: "",
+    artist_status: "none",
+    language: "eng",
+    country: "ger",
+    artist_id: "84",
+    
+    src: "OceanaEndlessSummer",
+    img: "ab67616d00001e02c01b725364f36d31a05197c2",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851c01b725364f36d31a05197c2",
+
+    style: "Pop",
+    status: "nostatus",
+    tag: "",
+    avatar: "ab676186000010oceana1692c546c84abfab543c325d63",
+    avatar_mini: "https://i.scdn.co/image/ab6761610000f17847a0ceea016c23e898f20989",
+    artist_img: "https://i.scdn.co/image/d054d399011dc8ab5ae2ab2583c0af3171e49160",
+    gallery_img_1: "https://i.scdn.co/image/e8ebd1c10b32d71fd0f5b1d3818ab6a14c19331b",
+    gallery_img_2: "https://i.scdn.co/image/1464b6916c953b14659d6a972ef32a31386119b9",
+    canvas: "https://ssscdn.io/ssstwitter/aHR0cHM6Ly92aWRlby50d2ltZy5jb20vZXh0X3R3X3ZpZGVvLzE0MDM0MTIxODg4NjIxODEzNzYvcHUvdmlkLzEyODB4NzIwL2psYlIzMHhFWWduWlh1aFcubXA0P3RhZz0xMg==",
+
+    thisis_img: "https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO4BI0zh-default.jpg",
+    radio_img: "https://pickasso.spotifycdn.com/v1/img/radio/artist/7Mgy9q22qCdNSPQsuL5fjv/pl",
+    style_img: "https://i2o.scdn.co/image/ab67706c0000cfa3d002c4f7e84da8f5b251fc89",
+
+    album: "Endless Summer (Official Song EURO 2012)",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e02c01b725364f36d31a05197c2",
+    album_premiere: "2012",
+    album_status: "false",
+    id: "246",
+    lyrics:[
+    ],
+    bio: "Mixing reggae, R&B, hip-hop, and pop, German singer Oceana came on the world stage in 2012 when her track Endless Summer was selected as the official theme of the 2012 UEFA European Football Championship. Born Oceana Mahlmann near Hamburg, her 2009 single Cry Cry was her first hit, becoming somewhat popular in her homeland while topping the charts in Hungary. Her debut album, Love Supply, would arrive on the  label that same year. Three years later, her single Endless Summer became the 2012 UEFA European Football Championship theme, held that year in Poland and the Ukraine. It was released in both a dance-pop and a reggae mix. ~ David Jeffries, Rovi",
+    social:{
+      instagram: "",
+      twitter: "",
+      facebook: "",
+    },
+  },
 ]

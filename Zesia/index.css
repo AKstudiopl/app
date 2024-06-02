@@ -2901,7 +2901,7 @@ input:checked + .slider:before {
   flex-direction: row;
   align-items: center;
   z-index: 6;
-  filter: drop-shadow(0px 10px 12px rgba(0,0,0,0.25));
+  box-shadow: 0 -6px 24px #0000003d;
   transition: 0.3s;
   font-family: 'Pathway Extreme';
   line-height: 1.5;
@@ -6284,6 +6284,11 @@ input:checked + .slider:before {
   justify-content: center;
   padding: 0;
 }
+.music-artist-option .music-artist-queue-btn.active
+{
+  transition: 0s;
+  animation: none;
+}
 .music-artist-option .music-artist-share-btn{
   text-decoration: none;
   outline: 1px solid rgb(255 255 255 / 5%);
@@ -7952,6 +7957,15 @@ font-family: 'Pathway Extreme';
 {
   width: 100%;
   text-align: center;
+}
+.music-artist-album-screen-title .music-playlist-album-screen-option
+{
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: scroll;
+  transition: .3s;
 }
 .music-artist-album-screen-img-background
 {
@@ -10424,10 +10438,10 @@ font-family: 'Pathway Extreme';
 }
 .error_popup
 {
-  transition: 0.5s;
+  transition: 0.75s;
   z-index: 15;
   position: fixed;
-  bottom: -15vh;
+  bottom: -100vh;
   width: calc(100% - 50px);
   margin-left: 15px;
   background: var(--background);
@@ -10436,14 +10450,14 @@ font-family: 'Pathway Extreme';
   justify-content: space-around;
   align-items: center;
   padding: 0 10px;
-  height: 100px;
+  height: 150px;
   overflow: hidden;
   color: var(--color);
   border: 1px var(--backgroundsecond) solid;
 }
 .error_popup.active
 {
-  bottom: 75px;
+  bottom: 150px;
 }
 .error_content
 {
@@ -10470,7 +10484,7 @@ font-family: 'Pathway Extreme';
 {
   color: var(--background);
   background: linear-gradient(70deg ,var(--backgroundsecond), var(--background) 75%);
-  height: 100px;
+  height: 100%;
   width: 250px;
   left: 0;
   display: flex;
@@ -11386,7 +11400,8 @@ font-family: 'Pathway Extreme';
 .playlist-popup-data input.active
 {
   color: var(--maincolor);
-  border: 1px var(--maincolor) solid;
+  outline: 1px var(--maincolor) solid;
+  outline-offset: -1px;
 }
 .playlist-popup-data input:focus
 {
@@ -11738,7 +11753,14 @@ textarea
   .error_popup
   {
     width: calc(100% - 130px);
-    left: 75px;
+    max-width: 600px;
+    height: 100px;
+    right: 25px;
+    justify-content: space-between;
+  }
+  .error_popup.active
+  {
+    bottom: 125px !important;
   }
   .head-content
   {
@@ -12037,8 +12059,9 @@ textarea
   .navbar-bottom-btn :hover span
   {
     opacity: 1;
-    filter: blur(0px) drop-shadow(-3mm 0mm 6mm var(--backgroundsecond));
-    left: 30px;
+    filter: blur(0px);
+    left: 70px;
+    box-shadow: 0 -6px 24px #0000003d;
     transform: scale(1);
   }
   .navbar-bottom .navbar-bottom-btn a
@@ -12066,12 +12089,14 @@ textarea
     border-radius: 15px;
     height: 30px;
     padding-left: 30px;
+    padding-right: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: -1;
     border: 1px #32323d solid;
-    filter: blur(5px) drop-shadow(-6mm 0mm 4mm var(--backgroundsecond));
+    filter: blur(5px);
+    box-shadow: 0 -6px 24px #0000003d;
   }
   .navbar-bottom-btn.active span
   {
@@ -12523,6 +12548,7 @@ textarea
   {
     content-visibility: visible;
     display: flex;
+    box-shadow: 0 -6px 24px #0000003d;
   }
   .music-playlist-album-screen-top, .history-screen-top, .notification_top, .music-artist-album-screen-top
   {

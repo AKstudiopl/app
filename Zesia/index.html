@@ -20,7 +20,7 @@
   <div class="loader">
       <i class="loader-tips"><i class="fa-regular fa-bell"></i>Save you music in liked tracks, by clicking heart icon</i>
       <img src="assets/20230402_201236.png"/>
-      <p><span>loading</span>2v1.1.19</p>
+      <p><span>loading</span>2v1.1.20</p>
       <div class="loader-shape"></div>
   </div>
 
@@ -266,7 +266,7 @@
           </div>
         </div>
 
-        <div class="settings-screen-item" id="input-style">
+        <div class="settings-screen-item" id="input-style" onclick="lyrics_customize_reset()">
           <div class="settings-screen-item-description">
             <h3>Restore To Deafult</h3>
             <a>Deafult Configuration</a>
@@ -310,6 +310,7 @@
               <div class="settings-screen-item-box-toggle save-data"></div>
             </div>
         </div>
+
         <div class="settings-screen-item" id="input-style">
           <div class="settings-screen-item-description">
             <h3>Notifications</h3>
@@ -319,20 +320,7 @@
             <div class="settings-screen-item-box-toggle save-data"></div>
           </div>
       </div>
-      <div class="settings-screen-item" id="input-style">
-            <div class="settings-screen-item-description">
-              <h3>Link social media accounts</h3>
-              <a href="#">Facebook, Instagram, Twitter</a>
-            </div>
-      </div>
-
-      <div class="settings-screen-item" id="input-style">
-        <div class="settings-screen-item-description">
-          <h3>Support</h3>
-          <a href="#">Report a problem or send us a ticket</a>
-        </div>
-      </div>
-
+      
       <div class="settings-screen-item" id="input-style">
         <div class="settings-screen-item-description" onclick="default_user()">
           <h3>Clear Data</h3>
@@ -343,7 +331,7 @@
       <div class="settings-screen-item" id="input-style">
         <div class="settings-screen-item-description">
           <h3>Privacy Policy</h3>
-          <a>Click to view all</a>
+          <a href="zesia/">Click to view all</a>
         </div>
       </div>
 
@@ -356,7 +344,7 @@
         width: 100%;
     " class="settings-screen-item-description">
           <h3>Version</h3>
-          <a id="version_build">2v1.1.19</a>
+          <a id="version_build">2v1.1.20</a>
         </div>
       </div>
 
@@ -1127,7 +1115,7 @@
   <div class="music-artist-album-screen-title">
     <div class="music-artist-album-screen-title-data">
       <p>Tracks : <span class="music-artist-album-screen-length"></span></p>
-      <p><span class="music-artist-album-screen-option"></span></p>
+      <p><span onclick="toggleDescription(this)" class="music-artist-album-screen-option"></span></p>
     </div>
     <div class="music-artist-album-action">
       <a onclick="albumFavoriteToggle(this)" class="album-favorite-status"><i class="fa-regular fa-heart"></i></a>
@@ -1182,7 +1170,7 @@
   <div class="music-artist-album-screen-title">
     <div class="music-artist-album-screen-title-data">
       <p>Tracks : <span class="music-playlist-album-screen-length">0</span></p>
-      <p><span class="music-playlist-album-screen-option">Artist</span></p>
+      <p><span onclick="toggleDescription(this)" class="music-playlist-album-screen-option">Artist</span></p>
     </div>
     <div class="music-artist-album-action">
       <a class="editPlaylist" onclick="playlist_EDIT(this)"><i class="fa-solid fa-pen"></i></a>
@@ -1435,7 +1423,7 @@
       </div>
       <div class="notification_data">
         <h2>2.0.0</h2>
-        <p>Standard verision on application, that will be regulary ubdated</p>
+        <p>Standard verision on application, that will be regulary updated</p>
         <span><p>Developers</p><p>30/03/2023</p></span>
       </div>
     </div>
