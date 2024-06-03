@@ -209,6 +209,11 @@ activeLibraryBtn.addEventListener('click', () => {
     p_avatarSmall.src = localStorage.getItem("personalization-data-avatar");
   }
 
+  document.querySelector(".library-slider").style.animation = 'none';
+  setTimeout(() => {
+    document.querySelector(".library-slider").style.animation = 'fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both';
+  }, 100);
+
   searchResults.innerHTML = '';
 })
 
@@ -6156,6 +6161,13 @@ function reload_LIBRARY(){
   libraryFilter_Artist.classList.remove('active');
   libraryFilter_Album.classList.remove('active');
   libraryFilter_Playlist.classList.remove('active');
+
+  document.querySelector(".library-slider").style.animation = 'none';
+  document.querySelector(".library-slider").style.opacity = '0';
+  setTimeout(() => {
+    document.querySelector(".library-slider").style.animation = 'fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both';
+    document.querySelector(".library-slider").style.opacity = '1';
+  }, 100);
 }
 
 const libraryFilter_Artist = document.querySelector('.tag-option.artist');
@@ -6180,6 +6192,13 @@ function library_FILTER_ARTIST(){
   for(object_VISIBLE of objects_VISIBLE){
     object_VISIBLE.style.display='inline-flex';
   }
+
+  document.querySelector(".library-slider").style.animation = 'none';
+  document.querySelector(".library-slider").style.opacity = '0';
+  setTimeout(() => {
+    document.querySelector(".library-slider").style.animation = 'fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both';
+    document.querySelector(".library-slider").style.opacity = '1';
+  }, 100);
 }
 
 function library_FILTER_ALBUM(){
@@ -6198,6 +6217,13 @@ function library_FILTER_ALBUM(){
   for(object_VISIBLE of objects_VISIBLE){
     object_VISIBLE.style.display='inline-flex';
   }
+
+  document.querySelector(".library-slider").style.animation = 'none';
+  document.querySelector(".library-slider").style.opacity = '0';
+  setTimeout(() => {
+    document.querySelector(".library-slider").style.animation = 'fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both';
+    document.querySelector(".library-slider").style.opacity = '1';
+  }, 100);
 }
 
 function library_FILTER_PLAYLIST(){
@@ -6216,6 +6242,13 @@ function library_FILTER_PLAYLIST(){
   for(object_VISIBLE of objects_VISIBLE){
     object_VISIBLE.style.display='inline-flex';
   }
+
+  document.querySelector(".library-slider").style.animation = 'none';
+  document.querySelector(".library-slider").style.opacity = '0';
+  setTimeout(() => {
+    document.querySelector(".library-slider").style.animation = 'fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both';
+    document.querySelector(".library-slider").style.opacity = '1';
+  }, 100);
 }
 
 const playlistEDIT = document.querySelector('.playlist-edit');
