@@ -103,22 +103,22 @@ window.addEventListener("load", function () {
   document.querySelector(".music-controls").style.animation = 'none';
   setTimeout(() => {
     document.querySelector(".music-controls").style.animation = 'fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both';
-  }, 550);
+  }, 600);
 
   document.querySelector(".head-content-container").style.animation = 'none';
   setTimeout(() => {
     document.querySelector(".head-content-container").style.animation = 'fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both';
-  }, 550);
+  }, 750);
 
   document.querySelector("#dailyMixContainer").style.animation = 'none';
   setTimeout(() => {
     document.querySelector("#dailyMixContainer").style.animation = 'fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both';
-  }, 700);
+  }, 900);
   
   document.querySelector("#recent-tracks-container").style.animation = 'none';
   setTimeout(() => {
     document.querySelector("#recent-tracks-container").style.animation = 'fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both';
-  }, 850);
+  }, 1000);
 
     randomHomeArtist();
     loadDailyPlaylists();
@@ -7710,12 +7710,14 @@ function pc_lyricsToggle(){
   if(musicImgBox.classList.contains("lyrics")){
     if(wrapper.classList.contains('active')){
       wrapper.classList.remove('active');
+      document.querySelector(".pc-controls-ui").style.opacity=".35";
       if(lyricsBox.classList.contains("active") && wrapper.classList.contains('active') === false){
         clearInterval(checkLyricsPerSec);
         console.log("off")
       }
     }else{
       wrapper.classList.add('active');
+      document.querySelector(".pc-controls-ui").style.opacity="0";
       if(localStorage.lyricsAccouracyImprove){
         document.querySelector('.top-controls').classList.add('lyrics');
         checkLyricsPerSec = setInterval(lyricsMode,250);
@@ -7725,6 +7727,7 @@ function pc_lyricsToggle(){
     }
   }else{
     wrapper.classList.add('active');
+    document.querySelector(".pc-controls-ui").style.opacity="0";
     trackLyrics();
   }
 }
