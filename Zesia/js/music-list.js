@@ -13390,7 +13390,195 @@ var allMusic = [
     album_status: "false",
     id: "237",
     lyrics:[
-    ],
+      {
+       ls: "Walk the layout, routines in the night",
+       stamp: ".5",
+     },
+      {
+       ls: "Some doors have 'Stay out' spray-painted in white",
+       stamp: "4",
+     },
+      {
+       ls: "While all the world's asleep, I walk around instead",
+       stamp: "8",
+     },
+      {
+       ls: "Through the memories, down the halls of my head",
+       stamp: "13",
+     },
+      {
+       ls: "Walk the layout, routines in the night",
+       stamp: "17",
+     },
+      {
+       ls: "Some doors have 'Stay out' spray-painted in white",
+       stamp: "21",
+     },
+      {
+       ls: "While all the world's asleep, I walk around instead",
+       stamp: "25",
+     },
+      {
+       ls: "Through the memories, down the halls of my head",
+       stamp: "30",
+     },
+      {
+       ls: "Here comes a new night, but I'll send it through",
+       stamp: "35",
+     },
+      {
+       ls: "I'll probably jump on the next one",
+       stamp: "39",
+     },
+      {
+       ls: "I'm testing the limits of what a mind can do",
+       stamp: "43.5",
+     },
+      {
+       ls: "I'm keeping my eyelids up no matter what",
+       stamp: "48",
+     },
+      {
+       ls: "So beautiful, the space between",
+       stamp: "52",
+     },
+      {
+       ls:  "A painful reminder and a terrible dream",
+       stamp: "56",
+     },
+      {
+       ls: "I've been here before and I've got time",
+       stamp: "61",
+     },
+      {
+       ls: "I'll give you the tour, show you why I", 
+       stamp: "65",
+     },
+     {
+       ls: "Walk the layout, routines in the night",
+       stamp: "68",
+     },
+      {
+       ls: "Some doors have 'Stay out' spray-painted in white",
+       stamp: "72",
+     },
+      {
+       ls: "While all the world's asleep, I walk around instead",
+       stamp: "77",
+     },
+      {
+       ls: "Through the memories, down the halls of my head",
+       stamp: "81",
+     },
+      {
+       ls: "Reoccurring, keeps comin' around",
+       stamp: "86",
+     },
+      {
+       ls: "REM cycle skip, night psycho trip",
+       stamp: "88",
+     },
+      {
+       ls: "It's reassuring you keep comin' around",
+       stamp: "90",
+     },
+      {
+       ls: "It's tough to find good company",
+       stamp: "91.5",
+     },
+      {
+       ls: "Reoccurring, days blurring",
+       stamp: "94",
+     },
+      {
+       ls: "I'm still learning what this is (what this is, what this is, what this is)",
+       stamp: "96",
+     },
+      {
+       ls: "Just keep me company",
+       stamp: "100",
+     },
+      {
+       ls: "So beautiful, the space between",
+       stamp: "103",
+     },
+      {
+       ls: "A painful reminder and a terrible dream",
+       stamp: "107",
+     },
+      {
+       ls: "I've been here before and I've got time",
+       stamp: "111.5",
+     },
+      {
+       ls: "I'll give you the tour, show you why I",
+       stamp: "116",
+     },
+      {
+       ls: "I'll show you why I",
+       stamp: "122",
+     },
+      {
+       ls: "I'll show you why I",
+       stamp: "126",
+     },
+      {
+       ls: "Walk the layout, routines in the night",
+       stamp: "128",
+     },
+      {
+       ls: "Some doors have 'Stay out' spray-painted in white",
+       stamp: "131",
+     },
+      {
+       ls: "While all the world's asleep, I walk around instead",
+       stamp: "136",
+     },
+      {
+       ls: "Through the memories, down the halls of my head",
+       stamp: "140",
+     },
+      {
+       ls: "Walk the layout, routines in the night",
+       stamp: "145",
+     },
+      {
+       ls: "Some doors have 'Stay out' spray-painted in white",
+       stamp: "148.5",
+     },
+      {
+       ls: "While all the world's asleep, I walk around instead", 
+       stamp: "153",
+     },
+      {
+       ls: "Through the memories, down the halls of my head",
+       stamp: "157",
+     },
+      {
+       ls: "Bring it!",
+       stamp: "161.5",
+     },
+      {
+       ls: "Keeps comin' around, keeps comin' around, keeps comin' around",
+       stamp: "163",
+     },
+      {
+       ls: "Lost in the halls of my head",
+       stamp: "165.5",
+     },
+      {
+       ls: "Bring it!",
+       stamp: "169.5",
+     },
+      {
+       ls: "Keeps comin' around, keeps comin' around, keeps comin' around",
+       stamp: "171",
+     },
+      {
+       ls: "Lost in the halls of my head",
+       stamp: "175",
+     },
+   ],
   },
   {
     name: "Vignette",

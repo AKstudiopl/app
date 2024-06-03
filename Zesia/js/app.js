@@ -100,6 +100,26 @@ window.addEventListener("load", function () {
     document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, var(--background) 0%, var(--backgroundsecond) 100%)');
   }
 
+  document.querySelector(".music-controls").style.animation = 'none';
+  setTimeout(() => {
+    document.querySelector(".music-controls").style.animation = 'fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both';
+  }, 550);
+
+  document.querySelector(".head-content-container").style.animation = 'none';
+  setTimeout(() => {
+    document.querySelector(".head-content-container").style.animation = 'fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both';
+  }, 550);
+
+  document.querySelector("#dailyMixContainer").style.animation = 'none';
+  setTimeout(() => {
+    document.querySelector("#dailyMixContainer").style.animation = 'fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both';
+  }, 700);
+  
+  document.querySelector("#recent-tracks-container").style.animation = 'none';
+  setTimeout(() => {
+    document.querySelector("#recent-tracks-container").style.animation = 'fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both';
+  }, 850);
+
     randomHomeArtist();
     loadDailyPlaylists();
     loadUserStylePlaylists();
@@ -3501,6 +3521,9 @@ function lyricsMode(){
             lsAtr.classList.add("active");
       }
       if(allMusic[indexNumb - 1].lyrics[0].ls === "* Lyrics Are Not Yet Synchronized With Track *"){
+        lyricsBox.classList.add('pauseLyrics');
+        lyricsSync.classList.add('active');
+      }else if(lyricsSync.classList.contains('active')){
         lyricsBox.classList.add('pauseLyrics');
         lyricsSync.classList.add('active');
       }else{
@@ -7792,7 +7815,6 @@ let options = {
 let observer = new IntersectionObserver(callbackFunc, options);
 
 observer.observe(document.querySelector('.music-artist-content-playlists'));
-observer.observe(document.querySelector('.music-artist-content-album'));
 observer.observe(document.querySelector('.music-artist-content-artist'));
 observer.observe(document.querySelector('.music-artist-content-fanschoice'));
 observer.observe(document.querySelector('.music-artist-content-feat'));
@@ -7815,4 +7837,19 @@ function animationReset(){
   setTimeout(() => {
     document.querySelector(".music-artist-item .music-artist-item-title img").style.animation = 'fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both';
   }, 375);
+
+  document.querySelector(".music-artist-number").style.animation = 'none';
+  setTimeout(() => {
+    document.querySelector(".music-artist-number").style.animation = 'fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both';
+  }, 375);
+
+  document.querySelector(".music-artist-content-container").style.animation = 'none';
+  setTimeout(() => {
+    document.querySelector(".music-artist-content-container").style.animation = 'fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both';
+  }, 525);
+
+  document.querySelector(".music-artist-content-album").style.animation = 'none';
+  setTimeout(() => {
+    document.querySelector(".music-artist-content-album").style.animation = 'fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both';
+  }, 675);
 }
