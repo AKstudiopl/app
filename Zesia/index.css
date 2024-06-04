@@ -2089,12 +2089,20 @@ input:checked + .slider:before {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  position: absolute;
+  position: relative;
   z-index: 0;
   mix-blend-mode: darken;
   -webkit-filter: grayscale(100%) contrast(1.2);
   filter: grayscale(100%) contrast(1.2);
   -webkit-mask-image: -webkit-linear-gradient(240deg, transparent 0%, black 40%, black 60%, transparent 100%);
+}
+.head-content-item-imgbox
+{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  background: var(--maincolor);
 }
 .head-content-item:first-child:active img
 {
@@ -3230,33 +3238,39 @@ input:checked + .slider:before {
   padding: 0;
   top: 0;
   transition: 0.3s;
-  content-visibility: visible;
 }
 .top-more-head-image
 {
   width: 100%;
+  padding: 10px 0;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   display: flex;
   color: var(--color);
-  background-color: rgb(25 25 34 / 95%);
+  background: linear-gradient(rgb(25 25 34 / 95%), var(--background));
+}
+.top-more-head-image-data
+{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  margin-left: 10px;
+  width: calc(100% - 195px);
 }
 .top-more-head-name
 {
   margin-top: 15px;
   margin-bottom: -2px;
-  font-family: Destruido;
   font-weight: 900;
   font-size: 20px;
-  text-align: center;
   max-width: 90%;
 }
 .top-more-head-artist
 {
   margin-bottom: 15px;
   opacity: 0.5;
-  font-family: arial;
 }
 .top-more-head-image img
 {
@@ -3273,7 +3287,7 @@ input:checked + .slider:before {
   font-family: 'Pathway Extreme';
   width: calc(100% - 30px);
   padding:0 15px;
-  background-color: rgb(25 25 34 / 95%);
+  background-color: var(--background);
 }
 .top-shortcut-item a
 {
@@ -3337,7 +3351,7 @@ input:checked + .slider:before {
   flex-direction: column;
   justify-content: flex-start;
   width: 100%;
-  background-color: rgb(25 25 34 / 95%);
+  background-color: var(--background);
   gap: 10px;
 }
 .top-menu-list a i
@@ -12173,12 +12187,20 @@ textarea
     font-size: 20px;
     margin: 0;
     transition: 0.3s;
-    width: 150px;
+    width: 130px;
+    max-width: 130px;
     opacity: 0;
     text-align: center;
     transition-delay: 0.15s;
-    min-width: 150px;
+    min-width: 130px;
     z-index: 2;
+    left: 10px;
+  }
+  .head-content-item:first-child p
+  {
+    min-width: 150px;
+    width: 150px;
+    left: auto;
   }
   .head-content-item:first-child p
   {

@@ -1242,10 +1242,14 @@ const topOptionExit = document.getElementsByClassName('exit-top-more-head')[0]
 const topOption = document.getElementsByClassName('top-controls-more')[0]
 topOptionBtn.addEventListener('click', () => {
   topOption.classList.toggle('active')
+  topOption.style.contentVisibility="visible";
   shortcutCheck();
 })
 topOptionExit.addEventListener('click', () => {
   topOption.classList.remove('active');
+  setTimeout(() => {
+    topOption.style.contentVisibility="hidden";
+  }, 250);
   shortcutCheck();
 })
 
@@ -1685,6 +1689,22 @@ function scrollToPrevPage(t) {
       artistDataBioToggle.style.display="flex";
     }
 
+    
+  document.querySelector("#container").style.animation = 'none';
+  setTimeout(() => {
+    document.querySelector("#container").style.animation = 'fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both';
+  }, 350);
+
+  document.querySelector(".music-artist-bio-stats").style.animation = 'none';
+  setTimeout(() => {
+    document.querySelector(".music-artist-bio-stats").style.animation = 'fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both';
+  }, 500);
+
+  document.querySelector(".music-artist-bio-main").style.animation = 'none';
+  setTimeout(() => {
+    document.querySelector(".music-artist-bio-main").style.animation = 'fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both';
+  }, 750);
+
   }
 
 
@@ -1937,6 +1957,17 @@ function clickedSingleAlbum(element){
     setTimeout(() => {
       albumScreen.scrollTop = 0;
     }, 250);
+
+
+    document.querySelector(".music-artist-album-screen-featured.tracks").style.animation = 'none';
+    setTimeout(() => {
+      document.querySelector(".music-artist-album-screen-featured.tracks").style.animation = 'fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both';
+    }, 400);
+
+    document.querySelector(".music-artist-album-screen-featured.artists").style.animation = 'none';
+    setTimeout(() => {
+      document.querySelector(".music-artist-album-screen-featured.artists").style.animation = 'fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both';
+    }, 400);
 }
 
 function collaborationAlbumCheck(){
@@ -3858,6 +3889,13 @@ function trackOptions(e){
       trackOptionFavoriteIcon.classList.remove('fa-solid')
       trackOptionFavoriteText.innerText = " Like";
     }
+
+    document.querySelector(".track-options-data").style.animation = 'none';
+    document.querySelector(".track-options-data").style.opacity = '0';
+    setTimeout(() => {
+      document.querySelector(".track-options-data").style.opacity = '1';
+      document.querySelector(".track-options-data").style.animation = 'fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both';
+    }, 100);
 }
 
 function trackOption_Album(e){
