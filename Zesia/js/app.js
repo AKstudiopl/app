@@ -2888,6 +2888,7 @@ function homeFavortiesArtists() {
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
       `<div class="center-container-item" onclick="artistScreenDataLoad(this);" id='${favoritIt[i].id}' artist-id='${favoritIt[i].artist_id}' artist-data='${favoritIt[i].artist}'>
+        <div class="bg-box"><img src="${favoritIt[i].avatar_mini}"></div>
         <div class="img-box">    
           <img src="${favoritIt[i].avatar_mini}">
         </div>
@@ -3009,7 +3010,8 @@ function popularArtistsLoad(){
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
       `<div class="center-container-item popular-artist" id='${favoritIt[i].id}' data-artist='${favoritIt[i].artist}' artist-id="${favoritIt[i].artist_id}" onclick="artistScreenDataLoad(this)">
-        <div class="img-box">    
+      <div class="bg-box"><img src="${favoritIt[i].avatar_mini}"></div>
+      <div class="img-box">    
           <img src="${favoritIt[i].avatar_mini}">
         </div>
        <h2>${favoritIt[i].artist}</h2>
@@ -3160,7 +3162,8 @@ function featuringLoad(){
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
       `<div class="center-container-item popular-artist" onclick="clickedSingleAlbum(this)" artist-data="${favoritIt[i].artist_id}" data-album='${favoritIt[i].album}'>
-        <div class="img-box">    
+      <div class="bg-box"><img src="${favoritIt[i].album_cover}"></div>
+      <div class="img-box">    
           <img src="${favoritIt[i].album_cover}">
         </div>
        <h2>${favoritIt[i].album}</h2>
@@ -3189,6 +3192,7 @@ function featuringLoad(){
 
   let featuringPlaylist_Complete =
   `<div class="center-container-item playlist-generator complete" playlist-description="This Is ${favoritIt[0].artist}, contains all the most important songs in one playlist" artist-style="${favoritIt[0].style}" artist-name="${favoritIt[0].artist}" playlist-filter="Complete" onclick="fastLoadingPop(); clickedSinglePlaylist(this)" artist-data="${favoritIt[0].artist_id}" playlist-img="${favoritIt[0].thisis_img}" data-album='${favoritIt[0].album}'>
+    <div class="bg-box"><img src="${favoritIt[0].thisis_img}"></div>
     <div class="img-box">    
       <img src="${favoritIt[0].thisis_img}">
     </div>
@@ -3198,7 +3202,8 @@ function featuringLoad(){
 
    let featuringPlaylist_Style =
    `<div class="center-container-item playlist-generator" playlist-description="${favoritIt[0].style} style, songs that will fit every fan of ${favoritIt[0].style} music" artist-style="${favoritIt[0].style}" artist-name="${favoritIt[0].artist}" playlist-style="${favoritIt[0].style}" onclick="fastLoadingPop(); clickedSinglePlaylist(this)" artist-data="${favoritIt[0].artist_id}" playlist-img="${favoritIt[0].style_img}" data-album='${favoritIt[0].album}'>
-      <div class="img-box">    
+    <div class="bg-box"><img src="${favoritIt[0].style_img}"></div>
+    <div class="img-box">    
       <img src="${favoritIt[0].style_img}">
       </div>
     <h2>${favoritIt[0].style} • Style</h2>
@@ -3207,6 +3212,7 @@ function featuringLoad(){
 
     let featuringPlaylist_Radio =
     `<div class="center-container-item playlist-generator" playlist-description="${favoritIt[0].artist} • Radio, is mix of artists, styles, collaborations and much more" artist-style="${favoritIt[0].style}" artist-name="${favoritIt[0].artist}" playlist-filter="Radio" onclick="fastLoadingPop(); clickedSinglePlaylist(this)" artist-data="${favoritIt[0].artist_id}" playlist-img="${favoritIt[0].radio_img}" data-album='${favoritIt[0].album}'>
+      <div class="bg-box"><img src="${favoritIt[0].radio_img}"></div>
       <div class="img-box">  
       <img src="${favoritIt[0].radio_img}">
       </div>
@@ -4089,7 +4095,8 @@ function homeFavortiesAlbums() {
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
       `<div class="center-container-item" onclick="fastLoadingPop(); clickedSingleAlbum(this)" check-atr='${favoritIt[i].artist_id} ${favoritIt[i].album}' artist-data='${favoritIt[i].artist_id}' data-album='${favoritIt[i].album}'>
-          <div class="img-box">    
+        <div class="bg-box"><img src="${favoritIt[i].album_cover}"></div>
+        <div class="img-box">    
             <img src="${favoritIt[i].album_cover}">
           </div>
           <h2>${favoritIt[i].album}</h2>
@@ -4547,6 +4554,7 @@ function recentTracksLoad(){
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
       `<div class="center-container-item" link_to='${favoritIt[i].id}' onclick="clickedNotification(this);">
+        <div class="bg-box"><img src="images/${favoritIt[i].img}.jpg"></div>
         <div class="img-box">    
           <img src="images/${favoritIt[i].img}.jpg">
         </div>
@@ -5112,6 +5120,7 @@ function loadDailyPlaylists(){
   for (let i = 0; i < allPlaylists.length && i <= 10; i++) {
     let resultFAV =
       `<div class="center-container-item" onclick="clickedPlaylist(this)" playlist-id="${allPlaylists[i].play_id}">
+        <div class="bg-box"><img src="${allPlaylists[i].image}"></div>
         <div class="img-box">    
           <img src="${allPlaylists[i].image}">
         </div>
@@ -5225,6 +5234,9 @@ function loadUserStylePlaylists(){
   for (let i = 0; i < playlistsIt.length && i <= 10; i++) {
     let resultFAV =
       `<div class="center-container-item" onclick="clickedPlaylist(this)" playlist-id="${playlistsIt[i].play_id}">
+        <div class="bg-box">
+          <img src="${playlistsIt[i].image}">
+        </div>
         <div class="img-box">    
           <img src="${playlistsIt[i].image}">
         </div>
@@ -6545,6 +6557,9 @@ function tutorial_CHECK(){
 function daily_DISCOVERY(){
   let daily_BOX = 
   `<div class="center-container-item" onclick="clickedPlaylist(this)" playlist-id="10">
+    <div class="bg-box">
+      <img src="https://images.tidal.com/0/EIAFGIAF/CAEQCCIDMjQyKgcjQThGN0MyMAQ?token=aa16f1e4927000a9eed70ec2c88237cd4325dec5">
+    </div>
       <div class="img-box">    
         <img src="https://images.tidal.com/0/EIAFGIAF/CAEQCCIDMjQyKgcjQThGN0MyMAQ?token=aa16f1e4927000a9eed70ec2c88237cd4325dec5">
       </div>
@@ -6556,7 +6571,7 @@ function daily_DISCOVERY(){
 
 setTimeout(() => {
   daily_DISCOVERY();
-}, 2500);
+}, 500);
 
 var Latinise={};Latinise.latin_map={"Á":"A",
 "Ă":"A",

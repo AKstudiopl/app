@@ -2280,8 +2280,10 @@ input:checked + .slider:before {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
+  gap: 15px;
   overflow-y: hidden;
   padding-bottom: 10px;
+  height: 255px;
 }
 .center-container-scrollable::-webkit-scrollbar
 {
@@ -2300,7 +2302,7 @@ input:checked + .slider:before {
 }
 .center-container .center-container-item:first-child
 {
-  margin-left: 15px;
+  margin-left: 25px;
 }
 .center-container .center-container-item.mix
 {
@@ -2344,26 +2346,51 @@ input:checked + .slider:before {
 {
   position: absolute;
   content: '';
-  top: 15%;
-  left: 15%;
-  width: 70%;
-  height: 70%;
+  opacity: 1;
+  width: calc(100% + 20px);
+  left: -10px;
+  top: -10px;
+  height: calc(100% + 30px);
+  outline: 1px solid rgb(255 255 255 / 10%);
+  outline-offset: -1px;
   z-index: -1;
   border-radius: 10px;
   background-color: #32323d6e;
   transition: .2s;
   transition-timing-function: ease;
+}
+.center-container .center-container-item .bg-box
+{
+    position: absolute;
+    z-index: -1;
+    border-radius: 10px;
+    width: calc(100% + 20px);
+    left: -10px;
+    top: -10px;
+    height: calc(100% + 30px);
+    overflow: hidden;
+    display: flex;
+}
+.center-container .center-container-item .bg-box img
+{
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  filter: blur(15px) opacity(.25);
+  -webkit-mask-image: -webkit-linear-gradient(black 75%, transparent 100%);
+}
+.center-container .center-container-item
+{
+  height: 200px;
+  min-height: 225px;
+}
+.library-container .center-container .center-container-item::after
+{
   opacity: 0;
 }
-.center-container-item:hover::after
+.library-container .center-container .center-container-item:hover::after
 {
   opacity: 1;
-  width: calc(100% + 20px);
-  left: -10px;
-  top: -10px;
-  height: calc(100% + 20px);
-  outline: 1px solid rgb(255 255 255 / 10%);
-  outline-offset: -1px;
 }
 .center-container .center-container-item h2
 {
@@ -12198,13 +12225,9 @@ textarea
   }
   .head-content-item:first-child p
   {
-    min-width: 150px;
-    width: 150px;
+    min-width: 290px;
+    width: 290px;
     left: auto;
-  }
-  .head-content-item:first-child p
-  {
-    width: auto;
     z-index: 2;
     opacity: 1;
   }
@@ -12360,7 +12383,7 @@ textarea
   }
   .center-container-scrollable .center-container-item:first-child
   {
-    margin-left: 15px;
+    margin-left: 25px;
   }
   .library-slider .center-container-item
   {
