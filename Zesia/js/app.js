@@ -6032,7 +6032,8 @@ function playlist_HOME_LOAD(){
     let tracks_COUNTER = playlist_ARRAY[i].split(',').length-4 + " Tracks";
 
     let result = `<div class="center-container-item" onclick="fastLoadingPop();playlist_SELECT_CLICKED(this);" playlist-ID="${playlist_ARRAY[i].split(',')[3]}">
-          <div class="img-box">    
+    <div class="bg-box"><img src="${playlist_ARRAY[i].split(',')[2]}"></div>
+    <div class="img-box">    
             <img src="${playlist_ARRAY[i].split(',')[2]}">
           </div>
     <div class="playlist-select-item-data">
