@@ -120,6 +120,13 @@ window.addEventListener("load", function () {
     document.querySelector("#recent-tracks-container").style.animation = 'fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both';
   }, 1000);
 
+  if(localStorage.getItem("personalization-data-avatar")){
+    p_avatar.src = localStorage.getItem("personalization-data-avatar");
+    p_avatarBg.src = localStorage.getItem("personalization-data-avatar");
+    p_avatarSmall.src = localStorage.getItem("personalization-data-avatar");
+    document.querySelector(".navbar-bottom-btn-profile img").src = localStorage.getItem("personalization-data-avatar");
+  }
+
     randomHomeArtist();
     loadDailyPlaylists();
     loadUserStylePlaylists();
@@ -207,6 +214,7 @@ activeLibraryBtn.addEventListener('click', () => {
     p_avatar.src = localStorage.getItem("personalization-data-avatar");
     p_avatarBg.src = localStorage.getItem("personalization-data-avatar");
     p_avatarSmall.src = localStorage.getItem("personalization-data-avatar");
+    document.querySelector(".navbar-bottom-btn-profile img").src = localStorage.getItem("personalization-data-avatar");
   }
 
   document.querySelector(".library-slider").style.animation = 'none';
@@ -1823,8 +1831,12 @@ function clickedSingleAlbum(element){
     for (let i = 0; i < collabArtist.length; i++) {
       let artistItem =
         `<div class="music-artist-information-albums-item featured artist" onclick="artistScreenDataLoad(this)" artist-id="${collabArtist[i].artist_id}" artist-data='${collabArtist[i].name}' id="${collabArtist[i].id}">
-            <img class="music-artist-information-albums-item-img" src="${collabArtist[i].avatar_mini}">
-            <span>${collabArtist[i].artist}</span>
+          <div class="bg-box">
+          <img src="${collabArtist[i].avatar_mini}">
+          </div>
+          <img class="music-artist-information-albums-item-img" src="${collabArtist[i].avatar_mini}">
+            <p>${collabArtist[i].artist}</p>
+            <span>Artist • Collaboration</span>
          </div>`;
          artistsFAV.insertAdjacentHTML("beforeend", artistItem);
     }
@@ -1917,8 +1929,11 @@ function clickedSingleAlbum(element){
     for (let i = 0; i < featuredIt.length; i++) {
       let featuredItem =
         `<div class="music-artist-information-albums-item featured album" onclick="clickedSingleAlbum(this)" artist-data="${featuredIt[i].artist_id}" data-album='${featuredIt[i].album}'>
-            <img class="music-artist-information-albums-item-img" src="${featuredIt[i].album_cover}">
-            <p><span class="music-artist-information-albums-item-name">${featuredIt[i].album}</span> <span class="data-premiere">${featuredIt[i].album_premiere}</span></p>
+        <div class="bg-box">
+          <img src="${featuredIt[i].album_cover}">
+        </div>
+        <img class="music-artist-information-albums-item-img" src="${featuredIt[i].album_cover}">
+            <p><span class="music-artist-information-albums-item-name">${featuredIt[i].album}</span> <span class="data-premiere">${featuredIt[i].album_premiere} • Album</span></p>
          </div>`;
          featuredBox.insertAdjacentHTML("beforeend", featuredItem);
     }
@@ -2550,8 +2565,10 @@ function artistProfileFansChoice(track){
     
     let resultFAV =
       `<div class="music-artist-content-item" artist-id='${favoritIt[i].artist_id}' id='${favoritIt[i].id}' onclick="artistScreenDataLoad(this)">
+        <div class="bg-box"><img src="${replacedIMG}"></div>
           <img src="${replacedIMG}">
-          <p>${favoritIt[i].artist}</p>
+          <h2>${favoritIt[i].artist}</h2>
+          <p>Artist</p>
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }
@@ -7722,6 +7739,7 @@ function profileSelect_Avatar(object){
   p_avatar.src = p_avatar_data;
   p_avatarBg.src = p_avatar_data;
   p_avatarSmall.src = p_avatar_data;
+  document.querySelector(".navbar-bottom-btn-profile img").src = p_avatar_data;
 }
 
 function profileSelect_Name(){
