@@ -2483,23 +2483,26 @@ function artistProfilePlaylists(track){
 
   let featuringPlaylist_Complete =
   `<div class="center-container-item playlist-generator complete" playlist-description="This Is ${track_View[0].artist}, contains all the most important songs in one playlist" artist-style="${track_View[0].style}" artist-name="${track_View[0].artist}" playlist-filter="Complete" onclick="fastLoadingPop(); clickedSinglePlaylist(this)" artist-data="${track_View[0].artist_id}" playlist-img="${track_View[0].thisis_img}" data-album='${track_View[0].album}'>
-   <img src="${track_View[0].thisis_img}">
+    <div class="bg-box"><img src="${track_View[0].thisis_img}"></div>
+    <img src="${track_View[0].thisis_img}">
    <h2>This Is ${track_View[0].artist}</h2>
-   <p>Playlist</p>
+   <p>Playlist • AI Generated</p>
    </div>`;
 
    let featuringPlaylist_Style =
    `<div class="center-container-item playlist-generator" playlist-description="${track_View[0].style} style, songs that will fit every fan of ${track_View[0].style} music" artist-style="${track_View[0].style}" artist-name="${track_View[0].artist}" playlist-style="${track_View[0].style}" onclick="fastLoadingPop(); clickedSinglePlaylist(this)" artist-data="${track_View[0].artist_id}" playlist-img="${track_View[0].style_img}" data-album='${track_View[0].album}'>
+    <div class="bg-box"><img src="${track_View[0].style_img}"></div>
     <img src="${track_View[0].style_img}">
     <h2>${track_View[0].style} • Style</h2>
-    <p>Playlist</p>
+    <p>Playlist • AI Generated</p>
     </div>`;
 
     let featuringPlaylist_Radio =
     `<div class="center-container-item playlist-generator" playlist-description="${track_View[0].artist} • Radio, is mix of artists, styles, collaborations and much more" artist-style="${track_View[0].style}" artist-name="${track_View[0].artist}" playlist-filter="Radio" onclick="fastLoadingPop(); clickedSinglePlaylist(this)" artist-data="${track_View[0].artist_id}" playlist-img="${track_View[0].radio_img}" data-album='${track_View[0].album}'>
-     <img src="${track_View[0].radio_img}">
+      <div class="bg-box"><img src="${track_View[0].radio_img}"></div>
+      <img src="${track_View[0].radio_img}">
      <h2>${track_View[0].artist} • Radio</h2>
-     <p>Playlist</p>
+     <p>Playlist • AI Generated</p>
      </div>`;
 
 
@@ -3197,7 +3200,7 @@ function featuringLoad(){
       <img src="${favoritIt[0].thisis_img}">
     </div>
    <h2>This Is ${favoritIt[0].artist}</h2>
-   <p>Playlist</p>
+   <p>Playlist • AI Generated</p>
    </div>`;
 
    let featuringPlaylist_Style =
@@ -3207,7 +3210,7 @@ function featuringLoad(){
       <img src="${favoritIt[0].style_img}">
       </div>
     <h2>${favoritIt[0].style} • Style</h2>
-    <p>Playlist</p>
+    <p>Playlist • AI Generated</p>
     </div>`;
 
     let featuringPlaylist_Radio =
@@ -3217,7 +3220,7 @@ function featuringLoad(){
       <img src="${favoritIt[0].radio_img}">
       </div>
      <h2>${favoritIt[0].artist} • Radio</h2>
-     <p>Playlist</p>
+     <p>Playlist • AI Generated</p>
      </div>`;
 
 
@@ -4100,7 +4103,7 @@ function homeFavortiesAlbums() {
             <img src="${favoritIt[i].album_cover}">
           </div>
           <h2>${favoritIt[i].album}</h2>
-          <p>${favoritIt[i].artist}</p>
+          <p>${favoritIt[i].artist} • ${favoritIt[i].album_premiere}</p>
           <div class="center-container-item-action"><i onclick="quick_Play(this)" play-type="album" class="fa-solid fa-play"></i></div>
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
@@ -4559,7 +4562,7 @@ function recentTracksLoad(){
           <img src="images/${favoritIt[i].img}.jpg">
         </div>
        <h2>${favoritIt[i].name}</h2>
-       <p>${favoritIt[i].artist}</p>
+       <p>${favoritIt[i].artist} • ${favoritIt[i].album_premiere}</p>
        <div class="center-container-item-action"><i onclick="quick_Play(this)" play-type="track" class="fa-solid fa-play"></i></div>
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
@@ -5125,6 +5128,7 @@ function loadDailyPlaylists(){
           <img src="${allPlaylists[i].image}">
         </div>
         <h2>${allPlaylists[i].name}</h2>
+        <p>Playlist • ${allPlaylists[i].play_author}</p>
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }
@@ -5241,6 +5245,7 @@ function loadUserStylePlaylists(){
           <img src="${playlistsIt[i].image}">
         </div>
         <h2>${playlistsIt[i].name}</h2>
+        <p>Playlist • ${playlistsIt[i].play_author}</p>
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }
@@ -6564,6 +6569,7 @@ function daily_DISCOVERY(){
         <img src="https://images.tidal.com/0/EIAFGIAF/CAEQCCIDMjQyKgcjQThGN0MyMAQ?token=aa16f1e4927000a9eed70ec2c88237cd4325dec5">
       </div>
     <h2>My Daily Discovery</h2>
+    <p>Playlist • AI Generated</p>
   </div>`
 
   document.querySelector("#dailyMixContainer").insertAdjacentHTML("afterbegin", daily_BOX);
