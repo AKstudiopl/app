@@ -20,7 +20,7 @@
   <div class="loader">
       <i class="loader-tips"><i class="fa-regular fa-bell"></i>Save you music in liked tracks, by clicking heart icon</i>
       <img src="assets/20230402_201236.png"/>
-      <p><span>loading</span>2v1.1.28</p>
+      <p><span>loading</span>2v1.1.29</p>
       <div class="loader-shape"></div>
   </div>
 
@@ -344,7 +344,7 @@
         width: 100%;
     " class="settings-screen-item-description">
           <h3>Version</h3>
-          <a id="version_build">2v1.1.28</a>
+          <a id="version_build">2v1.1.29</a>
         </div>
       </div>
 
@@ -1133,7 +1133,13 @@
   <p class="music-artist-content-title album-feat-artist">Featured Artists<span></span></p>
   <div class="music-artist-album-screen-featured artists"></div>
 
-  <p class="music-artist-content-title">You might also like<span></span></p>
+  <div class="ui-title">
+    <p class="music-artist-content-title">You might also like<span></span></p>
+    <div class="ui-title-action">
+      <i class="fa-solid fa-chevron-left" onclick="scrolCenterLeft(this)"></i>
+      <i class="fa-solid fa-chevron-right" onclick="scrolCenterRight(this)"></i>
+    </div>
+  </div>
   <div class="music-artist-album-screen-featured tracks"></div>
 
 </div>

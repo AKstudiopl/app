@@ -1948,7 +1948,7 @@ function clickedSingleAlbum(element){
         }
     });
 
-    $('.music-artist-information-albums-item.featured').slice(9).remove()
+    $('.music-artist-information-albums-item.featured').slice(15).remove()
 
     if (localStorage.getItem("lastViewedAlbum_2").length > 0) {
       setTimeout(() => {
@@ -3017,24 +3017,33 @@ function overflowingText(){
   }
 }
 
+var favoritItUnique = "";
+
 function popularArtistsLoad(){
 
   resultsFAV = document.querySelector(".center-container.popular-artists-container .center-container-scrollable");
   var favoritItNotUnique = allMusicView.filter(x => x.tag === "Popular");
-  const key = 'artist_id';
-  const favoritIt = [...new Map(favoritItNotUnique.map(item => [item[key], item])).values()]
 
-  shuffle(favoritIt);
+  favoritItNotUnique.reduce((destArray, obj) => {
+    if (destArray.findIndex(i => i.artist_id === obj.artist_id) < 0) {
+      favoritItUnique = destArray.concat(obj);
+      return favoritItUnique;
+    } else {
+      return favoritItUnique;
+    }
+  }, []);
+
+  shuffle(favoritItUnique);
 
   resultsFAV.innerHTML = "";
-  for (let i = 0; i < favoritIt.length; i++) {
+  for (let i = 0; i < favoritItUnique.length; i++) {
     let resultFAV =
-      `<div class="center-container-item popular-artist" id='${favoritIt[i].id}' data-artist='${favoritIt[i].artist}' artist-id="${favoritIt[i].artist_id}" onclick="artistScreenDataLoad(this)">
-      <div class="bg-box"><img src="${favoritIt[i].avatar_mini}"></div>
+      `<div class="center-container-item popular-artist" id='${favoritItUnique[i].id}' data-artist='${favoritItUnique[i].artist}' artist-id="${favoritItUnique[i].artist_id}" onclick="artistScreenDataLoad(this)">
+      <div class="bg-box"><img src="${favoritItUnique[i].avatar_mini}"></div>
       <div class="img-box">    
-          <img src="${favoritIt[i].avatar_mini}">
+          <img src="${favoritItUnique[i].avatar_mini}">
         </div>
-       <h2>${favoritIt[i].artist}</h2>
+       <h2>${favoritItUnique[i].artist}</h2>
        <p>Artist</p>
        <div class="center-container-item-action"><i onclick="quick_Play(this)" class="fa-solid fa-play"></i></div>
        </div>`;
@@ -3630,7 +3639,10 @@ function trackLyrics(){
 
 function scrolCenterRight(element){
   let box = element.parentElement.parentElement.parentElement.querySelector(".center-container-scrollable");
-  if(!box){
+  if(element.parentElement.parentElement.parentElement.querySelector(".music-artist-album-screen-featured.tracks")){
+    box = element.parentElement.parentElement.parentElement.querySelector(".music-artist-album-screen-featured.tracks");
+  }
+  else if(!box){
     box = document.querySelector(".music-artist-content-album");
   }else{
     box = element.parentElement.parentElement.parentElement.querySelector(".center-container-scrollable");
@@ -3644,7 +3656,10 @@ function scrolCenterRight(element){
 
 function scrolCenterLeft(element){
   let box = element.parentElement.parentElement.parentElement.querySelector(".center-container-scrollable");
-  if(!box){
+  if(element.parentElement.parentElement.parentElement.querySelector(".music-artist-album-screen-featured.tracks")){
+    box = element.parentElement.parentElement.parentElement.querySelector(".music-artist-album-screen-featured.tracks");
+  }
+  else if(!box){
     box = document.querySelector(".music-artist-content-album");
   }else{
     box = element.parentElement.parentElement.parentElement.querySelector(".center-container-scrollable");
