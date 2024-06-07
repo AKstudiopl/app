@@ -1121,7 +1121,7 @@ input:checked + .slider:before {
 .search-results .music-artist-content-item
 {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .search-results .music-artist-content-item {
   display: flex;
@@ -1320,9 +1320,9 @@ input:checked + .slider:before {
   opacity: 0 !important;
   transform: translateX(-25px);
   transition: 0.3s !important;
-  min-height: 50px;
+  min-height: 40px;
   aspect-ratio: 1/1;
-  min-width: 50px;
+  min-width: 40px;
   margin: 0;
   margin-right: 10px;
 }
@@ -6767,12 +6767,12 @@ font-family: 'Pathway Extreme';
 }
 .music-artist-content-item img {
   background: var(--backgroundsecond);
-  height: 100%;
+  height: 40px;
   aspect-ratio: 1/1;
-  margin: 0 15px;
-  border-radius: 15px;
+  margin: 0 10px;
+  border-radius: 10px;
   object-fit: cover;
-  min-width: 50px;
+  min-width: 40px;
   background-position: center;
   background-size: cover;
   background-blend-mode: soft-light;
@@ -7544,6 +7544,7 @@ font-family: 'Pathway Extreme';
 .music-artist-content-artist
 {
   opacity: 0;
+  position: relative;
 }
 .music-artist-content-artist-box
 {
@@ -7565,6 +7566,18 @@ font-family: 'Pathway Extreme';
   transition: 0.3s;
   outline: 1px solid rgb(255 255 255 / 10%);
   outline-offset: -1px;
+  position: relative;
+}
+.music-artist-content-artist-bg
+{
+  top: -25px;
+  left: -25px;
+  content: '';
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  filter: blur(30px);
+  opacity: .2;
 }
 .music-artist-content-artist-box:hover
 {
@@ -7667,7 +7680,121 @@ font-family: 'Pathway Extreme';
   min-height: 225px;
   height: 200px;
 }
+.music-artist-album-screen-featured .center-container-item-action
+{
+  position: absolute;
+  top: 82px;
+  right: 7px;
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+  opacity: 0;
+  transform: scale(0.25);
+}
+.music-artist-album-screen-featured .music-artist-information-albums-item:hover .center-container-item-action
+{
+  opacity: 1;
+  transform: scale(1);
+  transition: .3s;
+  transition-delay: .3s;
+  display: none;
+  backdrop-filter: blur(15px);
+  overflow: hidden;
+}
+.music-artist-album-screen-featured .music-artist-information-albums-item .center-container-item-action i
+{
+  font-size: 24px;
+  width: 0%;
+  height: 100%;
+  display: flex;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  background: #32323d25;
+  outline: 1px solid rgb(255 255 255 / 10%);
+  outline-offset: -1px;
+  border-radius: 15px;
+  color: var(--color);
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  filter: drop-shadow(5px 5px 10px rgb(25 25 34 / 100%));
+  transition: .15s;
+  margin: 0;
+  opacity: 1;
+}
+.music-artist-album-screen-featured .music-artist-information-albums-item .center-container-item-action i:hover
+{
+  outline: 5px solid rgb(255 255 255 / 10%);
+  transform: scale(.9);
+}
+.music-artist-album-screen-featured .music-artist-information-albums-item:hover .center-container-item-action i
+{
+  width: 100%;
+  overflow: visible;
+}
 
+.music-artist-content-fanschoice .center-container-item-action
+{
+  position: absolute;
+  top: 95px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+  opacity: 0;
+  transform: scale(0.25);
+}
+.music-artist-content-fanschoice .music-artist-content-item:hover .center-container-item-action
+{
+  opacity: 1;
+  transform: scale(1);
+  transition: .3s;
+  transition-delay: .3s;
+  display: none;
+  backdrop-filter: blur(15px);
+  overflow: hidden;
+}
+.music-artist-content-fanschoice .music-artist-content-item .center-container-item-action i
+{
+  font-size: 24px;
+  width: 0%;
+  height: 100%;
+  display: flex;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  background: #32323d25;
+  outline: 1px solid rgb(255 255 255 / 10%);
+  outline-offset: -1px;
+  border-radius: 15px;
+  color: var(--color);
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  filter: drop-shadow(5px 5px 10px rgb(25 25 34 / 100%));
+  transition: .15s;
+  margin: 0;
+  opacity: 1;
+}
+.music-artist-content-fanschoice .music-artist-content-item .center-container-item-action i:hover
+{
+  outline: 5px solid rgb(255 255 255 / 10%);
+  transform: scale(.9);
+}
+.music-artist-content-fanschoice .music-artist-content-item:hover .center-container-item-action i
+{
+  width: 100%;
+  overflow: visible;
+}
 .music-artist-content-playlists .center-container-item {
   flex: 0 0 auto;
   width: 150px;

@@ -1830,13 +1830,14 @@ function clickedSingleAlbum(element){
     artistsFAV.innerHTML = "";
     for (let i = 0; i < collabArtist.length; i++) {
       let artistItem =
-        `<div class="music-artist-information-albums-item featured artist" onclick="artistScreenDataLoad(this)" artist-id="${collabArtist[i].artist_id}" artist-data='${collabArtist[i].name}' id="${collabArtist[i].id}">
+        `<div class="music-artist-information-albums-item featured artist" onclick="artistScreenDataLoad(this)" id="${collabArtist[i].id}" artist-id="${collabArtist[i].artist_id}" artist-data='${collabArtist[i].artist}'>
           <div class="bg-box">
           <img src="${collabArtist[i].avatar_mini}">
           </div>
           <img class="music-artist-information-albums-item-img" src="${collabArtist[i].avatar_mini}">
             <p>${collabArtist[i].artist}</p>
             <span>Artist • Collaboration</span>
+          <div class="center-container-item-action"><i onclick="quick_Play(this)" class="fa-solid fa-play"></i></div>
          </div>`;
          artistsFAV.insertAdjacentHTML("beforeend", artistItem);
     }
@@ -1934,7 +1935,8 @@ function clickedSingleAlbum(element){
         </div>
         <img class="music-artist-information-albums-item-img" src="${featuredIt[i].album_cover}">
             <p><span class="music-artist-information-albums-item-name">${featuredIt[i].album}</span> <span class="data-premiere">${featuredIt[i].album_premiere} • Album</span></p>
-         </div>`;
+         <div class="center-container-item-action"><i onclick="quick_Play(this)" play-type="album" class="fa-solid fa-play"></i></div>
+        </div>`;
          featuredBox.insertAdjacentHTML("beforeend", featuredItem);
     }
   
@@ -1983,6 +1985,12 @@ function clickedSingleAlbum(element){
     setTimeout(() => {
       document.querySelector(".music-artist-album-screen-featured.artists").style.animation = 'fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both';
     }, 400);
+
+    setTimeout(() => {
+      $('.music-artist-information-albums-item .center-container-item-action i').click(function(event) {
+        event.stopPropagation();
+      });
+    }, 250);
 }
 
 function collaborationAlbumCheck(){
@@ -2534,6 +2542,7 @@ function artistProfileAbout(track){
   document.querySelector(".music-artist-content-artist-box-img").src = track_View[0].gallery_img_1;
   document.querySelector(".music-artist-content-artist-box h1").innerText = track_View[0].artist;
   document.querySelector(".music-artist-content-artist-box p").innerText = track_View[0].bio;
+  document.querySelector(".music-artist-content-artist-bg").src = track_View[0].gallery_img_1;
 }
 
 function artistProfileFansChoice(track){
@@ -2569,6 +2578,7 @@ function artistProfileFansChoice(track){
           <img src="${replacedIMG}">
           <h2>${favoritIt[i].artist}</h2>
           <p>Artist</p>
+          <div class="center-container-item-action"><i onclick="quick_Play(this)" class="fa-solid fa-play"></i></div>
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }
