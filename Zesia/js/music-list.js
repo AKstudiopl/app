@@ -13830,7 +13830,7 @@ var allMusic = [
     country: "usa",
     artist_id: "85",
     
-    src: "OceanaEndlessSummer",
+    src: "MakeYouMine-MadisonBeer",
     img: "ab67616d00001e0291465431a3458be9f164af81",
     img_mini: "https://i.scdn.co/image/ab67616d0000485191465431a3458be9f164af81",
 
