@@ -1743,10 +1743,8 @@ function playPauseVideo(element){
     artistItemFollow.classList.toggle('active')
     if (artistItemFollow.classList.contains('active')){
       artistItemFollow.innerHTML = '<i class="fa-solid fa-heart"></i> Following';
-      artistItemFollowers.innerText = +artistItemFollowers.innerText +1;
     } else{
       artistItemFollow.innerHTML = '<i class="fa-regular fa-heart"></i> Follow';
-      artistItemFollowers.innerText = +artistItemFollowers.innerText -1;
     }
   })
 
@@ -2258,6 +2256,12 @@ const bioBox = document.querySelector('.music-artist-content-artist-box');
 const bioMoreBtn = document.querySelector(".music-artist-bio-data a");
 const bioContent = document.querySelector(".music-artist-bio-data-about");
 
+function numberWithSpaces(x) {
+  var parts = x.toString().split(".");
+  parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  return parts.join(".");
+}
+
 function artistScreenDataLoad(track){
   fastLoadingPop();
   animationReset();
@@ -2283,7 +2287,15 @@ function artistScreenDataLoad(track){
   artistCardBackgroundImg.style.backgroundImage = `url(${track_View[0].artist_img})`;
 
   var randomnumber = Math.floor(Math.random() * 150000) + 1;
-  artistItemFollowers.innerText = randomnumber;
+  if(track_View[0].artist_followers){
+    artistItemFollowers.innerText = track_View[0].artist_followers;
+  }else{
+    artistItemFollowers.innerText = randomnumber;
+  }
+
+  setTimeout(() => {
+    artistItemFollowers.innerText = numberWithSpaces(artistItemFollowers.innerText);
+  }, 250);
 
   musicArtistScreen.classList.add('active')
   musicMenuHide.classList.remove('active')
@@ -2879,12 +2891,10 @@ function checkFollowStatus(){
   for (let i = 0; i < followFilter.length; i++) {
     if (followFilter[i].artist_status === "followed") {
       artistItemFollow.innerHTML = '<i class="fa-solid fa-heart"></i> Following';
-      artistItemFollowers.innerText = +artistItemFollowers.innerText +1;
       artistItemFollow.classList.add("active");
     }else if (followFilter[i].artist_status === "none") {
       artistItemFollow.innerHTML = '<i class="fa-regular fa-heart"></i> Follow';
       artistItemFollow.classList.remove("active");
-      artistItemFollowers.innerText = +artistItemFollowers.innerText -1;
     }}
 
 }
@@ -2898,10 +2908,15 @@ function createdPlaylistsContent() {
       <div class="user_profile_content_dailyStats_item">
         <p>Songs listened</p>
         <span class="user_profile_content_dailyStats_item_total">0</span>
-      </div>
+        <div class="user_profile_content_dailyStats_bg">
+          <img src="https://i.scdn.co/image/ab67616d00001e02186660bbf3b0dd9a5195e182">
+        </div>      </div>
       <div class="user_profile_content_dailyStats_item">
         <p>Liked songs</p>
         <span class="user_profile_content_dailyStats_item_artists">0</span>
+        <div class="user_profile_content_dailyStats_bg">
+          <img src="https://i.scdn.co/image/ab67616d00001e02186660bbf3b0dd9a5195e182">
+        </div>
       </div>
     </div>
       </div>`;

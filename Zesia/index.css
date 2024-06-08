@@ -1925,14 +1925,14 @@ input:checked + .slider:before {
 .head_ui_color
 {
   width: 100%;
-  height: 750px;
+  height: 1600px;
   margin-left: -15px;
   position: absolute;
   overflow: hidden;
   z-index: 0;
   top: 0;
   animation-iteration-count: infinite;
-  -webkit-mask-image: -webkit-linear-gradient(275deg,black 0%, transparent 75%);
+  -webkit-mask-image: -webkit-linear-gradient(275deg,black 0%, transparent 100%);
 }
 .head_ui_color img
 {
@@ -1942,6 +1942,7 @@ input:checked + .slider:before {
   filter: blur(30px) opacity(.25);
   object-fit: cover;
   top: 0;
+  background-image: url('https://i.scdn.co/image/ab67616d00001e02186660bbf3b0dd9a5195e182');
 }
 .head_ui_color p
 {
@@ -2318,9 +2319,9 @@ input:checked + .slider:before {
   height: 100%;
   object-fit: cover;
   z-index: 1;
-  -webkit-mask-image: -webkit-linear-gradient(180deg,transparent 0%, black 75%);
   opacity: 0.5;
   filter: blur(25px);
+  transform: scale(1.5);
 }
 .center-container .center-container-item i
 {
@@ -2347,7 +2348,7 @@ input:checked + .slider:before {
   top: -10px;
   height: calc(100% + 30px);
   z-index: -1;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   outline: rgba(255, 255, 255, 0.1) solid 2px;
   outline-offset: -2px;
   background-color: rgb(50 50 61 / 15%);
@@ -2366,7 +2367,7 @@ input:checked + .slider:before {
     height: calc(100% + 30px);
     overflow: hidden;
     display: flex;
-    -webkit-mask-image: -webkit-linear-gradient(black 75%, transparent 100%);
+    -webkit-mask-image: -webkit-linear-gradient(black 50%, transparent 100%);
 }
 .center-container .center-container-item .bg-box img
 {
@@ -2374,7 +2375,7 @@ input:checked + .slider:before {
   height: 100% !important;
   object-fit: cover;
   transform: scale(1.25);
-  filter: blur(15px) opacity(.25);
+  filter: blur(15px) opacity(.25) saturate(2.5);
 }
 .center-container .center-container-item
 {
@@ -7243,7 +7244,7 @@ font-family: 'Pathway Extreme';
 .music-artist-content-item-lyrics
 {
   font-size: 75%;
-  height: 80%;
+  height: 14px;
   display: flex;
   background: var(--color);
   color: var(--background);
@@ -9874,6 +9875,24 @@ font-family: 'Pathway Extreme';
   cursor: pointer;
   position: relative;
 }
+.user_profile_content_dailyStats_bg
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  border-radius: 15px;
+}
+.user_profile_content_dailyStats_bg img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(30px) grayscale(1);
+}
 .user_profile_content_dailyStats_item:hover
 {
   background: rgba(0, 0, 0, 0.2);
@@ -12046,9 +12065,9 @@ textarea
 }
 
 @media (min-width: 1001px) {
-  .bad-device
+  .music-artist-content-item-data p:hover, .music-artist-album-item-data p:hover, .music-artist-album-item-data span:hover
   {
-    visibility: visible;
+    text-decoration: underline;
   }
   .main-music
   {
@@ -13283,14 +13302,14 @@ textarea
     height: calc(100% - 6px);
     overflow: hidden;
     display: flex;
+    -webkit-mask-image: -webkit-linear-gradient(black 50%, transparent 100%);
   }
   .library-slider .center-container .center-container-item .bg-box img
   {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover;
-    filter: blur(15px) opacity(.25);
-    -webkit-mask-image: -webkit-linear-gradient(black 75%, transparent 100%);
+    filter: blur(15px) opacity(.25) saturate(2.5);
   }
   .library-slider .center-container-scrollable .center-container-item .center-container-item-action
   {
@@ -13518,6 +13537,7 @@ textarea
     top: 3px;
     height: calc(100% - 6px);
     overflow: hidden;
+    -webkit-mask-image: -webkit-linear-gradient(black 50%, transparent 100%);
     display: flex;
   }
   .library-slider .center-container .center-container-item .bg-box img
@@ -13525,8 +13545,7 @@ textarea
     width: 100% !important;
     height: 100% !important;
     object-fit: cover;
-    filter: blur(15px) opacity(.25);
-    -webkit-mask-image: -webkit-linear-gradient(black 75%, transparent 100%);
+    filter: blur(15px) opacity(.25) saturate(2.5);
   }
   .library-slider .center-container .center-container-item .center-container-item-action
   {

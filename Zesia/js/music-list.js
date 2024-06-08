@@ -9967,7 +9967,7 @@ var allMusic = [
     canvas: "https://ssscdn.io/ssstwitter/aHR0cHM6Ly92aWRlby50d2ltZy5jb20vZXh0X3R3X3ZpZGVvLzE1MTk5MDE3NjQxOTkxNDk1NjgvcHUvdmlkLzcyMHg3MjAvejNwWld2dmhneFExQWFuWC5tcDQ/dGFnPTEy",
 
     album: "Self Portrait",
-    album_cover: "https://i.scdn.co/image/ab67616d000048513799760f7cea778121122718",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e023799760f7cea778121122718",
     album_premiere: "2019",
     album_status: "false",
     id: "162",
@@ -13829,6 +13829,7 @@ var allMusic = [
     language: "eng",
     country: "usa",
     artist_id: "85",
+    artist_followers: "6599778",
     
     src: "MakeYouMine-MadisonBeer",
     img: "ab67616d00001e0291465431a3458be9f164af81",
