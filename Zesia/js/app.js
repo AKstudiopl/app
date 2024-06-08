@@ -4488,6 +4488,7 @@ function library_load_playlists(){
         <h2>${playlist_ARRAY[i].split(',')[0]}</h2>
         <p>Playlist • ${playlist_ARRAY[i].split(',')[1]} • ${tracks_COUNTER}</p>
       </div>
+      <div class="center-container-item-action"><i onclick="quick_Play(this)" play-type="playlist" class="fa-solid fa-play"></i></div>
    </div>`;
 
   results.insertAdjacentHTML("beforeend", result);
@@ -5171,6 +5172,7 @@ function loadDailyPlaylists(){
         </div>
         <h2>${allPlaylists[i].name}</h2>
         <p>Playlist • ${allPlaylists[i].play_author}</p>
+        <div class="center-container-item-action"><i onclick="quick_Play(this)" play-type="playlist-global" class="fa-solid fa-play"></i></div>
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }
@@ -5288,6 +5290,7 @@ function loadUserStylePlaylists(){
         </div>
         <h2>${playlistsIt[i].name}</h2>
         <p>Playlist • ${playlistsIt[i].play_author}</p>
+        <div class="center-container-item-action"><i onclick="quick_Play(this)" play-type="playlist-global" class="fa-solid fa-play"></i></div>
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }
@@ -6613,6 +6616,7 @@ function daily_DISCOVERY(){
       </div>
     <h2>My Daily Discovery</h2>
     <p>Playlist • AI Generated</p>
+    <div class="center-container-item-action" id="dailyMixPlay"><i onclick="quick_Play(this)" play-type="playlist-global" class="fa-solid fa-play"></i></div>
   </div>`
 
   document.querySelector("#dailyMixContainer").insertAdjacentHTML("afterbegin", daily_BOX);
@@ -6620,6 +6624,11 @@ function daily_DISCOVERY(){
 
 setTimeout(() => {
   daily_DISCOVERY();
+  setTimeout(() => {
+    $('#dailyMixPlay i').click(function(event) {
+      event.stopPropagation();
+    });
+  }, 150);
 }, 500);
 
 var Latinise={};Latinise.latin_map={"Á":"A",
@@ -7817,6 +7826,74 @@ function quick_Play(e){
     indexNumb=1;
     loadMusic(indexNumb);
     playMusic();
+  }else if(e.getAttribute("play-type") === "playlist-global"){
+    let playlist_ID = e.parentElement.parentElement.getAttribute("playlist-id");
+    let playlist_LENGTH = Object.keys(allPlaylists[playlist_ID - 1].content).length;
+    let playlist_ITEM = allPlaylists[playlist_ID - 1];
+    let playlist_FULL = [];
+    playlist_ID--;
+  
+    playlist_ITEM_1 = allMusicView[allPlaylists[playlist_ID].content.track_1 - 1] || null;
+    playlist_ITEM_2 = allMusicView[allPlaylists[playlist_ID].content.track_2 - 1] || playlist_ITEM_1;
+    playlist_ITEM_3 = allMusicView[allPlaylists[playlist_ID].content.track_3 - 1] || playlist_ITEM_1;
+    playlist_ITEM_4 = allMusicView[allPlaylists[playlist_ID].content.track_4 - 1] || playlist_ITEM_1;
+    playlist_ITEM_5 = allMusicView[allPlaylists[playlist_ID].content.track_5 - 1] || playlist_ITEM_1;
+    playlist_ITEM_6 = allMusicView[allPlaylists[playlist_ID].content.track_6 - 1] || playlist_ITEM_1;
+    playlist_ITEM_7 = allMusicView[allPlaylists[playlist_ID].content.track_7 - 1] || playlist_ITEM_1;
+    playlist_ITEM_8 = allMusicView[allPlaylists[playlist_ID].content.track_8 - 1] || playlist_ITEM_1;
+    playlist_ITEM_9 = allMusicView[allPlaylists[playlist_ID].content.track_9 - 1] || playlist_ITEM_1;
+    playlist_ITEM_10 = allMusicView[allPlaylists[playlist_ID].content.track_10 - 1] || playlist_ITEM_1;
+    playlist_ITEM_11 = allMusicView[allPlaylists[playlist_ID].content.track_11 - 1] || playlist_ITEM_1;
+    playlist_ITEM_12 = allMusicView[allPlaylists[playlist_ID].content.track_12 - 1] || playlist_ITEM_1;
+    playlist_ITEM_13 = allMusicView[allPlaylists[playlist_ID].content.track_13 - 1] || playlist_ITEM_1;
+    playlist_ITEM_14 = allMusicView[allPlaylists[playlist_ID].content.track_14 - 1] || playlist_ITEM_1;
+    playlist_ITEM_15 = allMusicView[allPlaylists[playlist_ID].content.track_15 - 1] || playlist_ITEM_1;
+    playlist_ITEM_16 = allMusicView[allPlaylists[playlist_ID].content.track_16 - 1] || playlist_ITEM_1;
+    playlist_ITEM_17 = allMusicView[allPlaylists[playlist_ID].content.track_17 - 1] || playlist_ITEM_1;
+    playlist_ITEM_18 = allMusicView[allPlaylists[playlist_ID].content.track_18 - 1] || playlist_ITEM_1;
+    playlist_ITEM_19 = allMusicView[allPlaylists[playlist_ID].content.track_19 - 1] || playlist_ITEM_1;
+    playlist_ITEM_20 = allMusicView[allPlaylists[playlist_ID].content.track_20 - 1] || playlist_ITEM_1;
+    playlist_ITEM_21 = allMusicView[allPlaylists[playlist_ID].content.track_21 - 1] || playlist_ITEM_1;
+    playlist_ITEM_22 = allMusicView[allPlaylists[playlist_ID].content.track_22 - 1] || playlist_ITEM_1;
+    playlist_ITEM_23 = allMusicView[allPlaylists[playlist_ID].content.track_23 - 1] || playlist_ITEM_1;
+    playlist_ITEM_24 = allMusicView[allPlaylists[playlist_ID].content.track_24 - 1] || playlist_ITEM_1;
+    playlist_ITEM_25 = allMusicView[allPlaylists[playlist_ID].content.track_25 - 1] || playlist_ITEM_1;
+    playlist_ITEM_26 = allMusicView[allPlaylists[playlist_ID].content.track_26 - 1] || playlist_ITEM_1;
+    playlist_ITEM_27 = allMusicView[allPlaylists[playlist_ID].content.track_27 - 1] || playlist_ITEM_1;
+    playlist_ITEM_28 = allMusicView[allPlaylists[playlist_ID].content.track_28 - 1] || playlist_ITEM_1;
+    playlist_ITEM_29 = allMusicView[allPlaylists[playlist_ID].content.track_29 - 1] || playlist_ITEM_1;
+    playlist_ITEM_30 = allMusicView[allPlaylists[playlist_ID].content.track_30 - 1] || playlist_ITEM_1;
+    playlist_ITEM_31 = allMusicView[allPlaylists[playlist_ID].content.track_31 - 1] || playlist_ITEM_1;
+    playlist_ITEM_32 = allMusicView[allPlaylists[playlist_ID].content.track_32 - 1] || playlist_ITEM_1;
+    playlist_ITEM_33 = allMusicView[allPlaylists[playlist_ID].content.track_33 - 1] || playlist_ITEM_1;
+    playlist_ITEM_34 = allMusicView[allPlaylists[playlist_ID].content.track_34 - 1] || playlist_ITEM_1;
+    playlist_ITEM_35 = allMusicView[allPlaylists[playlist_ID].content.track_35 - 1] || playlist_ITEM_1;
+    playlist_ITEM_36 = allMusicView[allPlaylists[playlist_ID].content.track_36 - 1] || playlist_ITEM_1;
+    playlist_ITEM_37 = allMusicView[allPlaylists[playlist_ID].content.track_37 - 1] || playlist_ITEM_1;
+    playlist_ITEM_38 = allMusicView[allPlaylists[playlist_ID].content.track_38 - 1] || playlist_ITEM_1;
+    playlist_ITEM_39 = allMusicView[allPlaylists[playlist_ID].content.track_39 - 1] || playlist_ITEM_1;
+    playlist_ITEM_40 = allMusicView[allPlaylists[playlist_ID].content.track_40 - 1] || playlist_ITEM_1;
+    playlist_ITEM_41 = allMusicView[allPlaylists[playlist_ID].content.track_41 - 1] || playlist_ITEM_1;
+    playlist_ITEM_42 = allMusicView[allPlaylists[playlist_ID].content.track_42 - 1] || playlist_ITEM_1;
+    playlist_ITEM_43 = allMusicView[allPlaylists[playlist_ID].content.track_43 - 1] || playlist_ITEM_1;
+    playlist_ITEM_44 = allMusicView[allPlaylists[playlist_ID].content.track_44 - 1] || playlist_ITEM_1;
+    playlist_ITEM_45 = allMusicView[allPlaylists[playlist_ID].content.track_45 - 1] || playlist_ITEM_1;
+    playlist_ITEM_46 = allMusicView[allPlaylists[playlist_ID].content.track_46 - 1] || playlist_ITEM_1;
+    playlist_ITEM_47 = allMusicView[allPlaylists[playlist_ID].content.track_47 - 1] || playlist_ITEM_1;
+    playlist_ITEM_48 = allMusicView[allPlaylists[playlist_ID].content.track_48 - 1] || playlist_ITEM_1;
+    playlist_ITEM_49 = allMusicView[allPlaylists[playlist_ID].content.track_49 - 1] || playlist_ITEM_1;
+    playlist_ITEM_50 = allMusicView[allPlaylists[playlist_ID].content.track_50 - 1] || playlist_ITEM_1;
+  
+    playlist_FULL = playlist_FULL.concat(playlist_ITEM_1, playlist_ITEM_2, playlist_ITEM_3, playlist_ITEM_4, playlist_ITEM_5, playlist_ITEM_6, playlist_ITEM_7, playlist_ITEM_8, playlist_ITEM_9, playlist_ITEM_10, playlist_ITEM_11, playlist_ITEM_12, playlist_ITEM_13, playlist_ITEM_14, playlist_ITEM_15, playlist_ITEM_16, playlist_ITEM_17, playlist_ITEM_18, playlist_ITEM_19, playlist_ITEM_20, playlist_ITEM_21, playlist_ITEM_22, playlist_ITEM_23, playlist_ITEM_24, playlist_ITEM_25, playlist_ITEM_26, playlist_ITEM_27, playlist_ITEM_28, playlist_ITEM_29, playlist_ITEM_30, playlist_ITEM_31, playlist_ITEM_32, playlist_ITEM_33, playlist_ITEM_34, playlist_ITEM_35, playlist_ITEM_36, playlist_ITEM_37, playlist_ITEM_38, playlist_ITEM_39, playlist_ITEM_40, playlist_ITEM_41, playlist_ITEM_42, playlist_ITEM_43, playlist_ITEM_44, playlist_ITEM_45, playlist_ITEM_46, playlist_ITEM_47, playlist_ITEM_48, playlist_ITEM_49, playlist_ITEM_50);
+    const key = 'id';
+    playlist_FULL = [...new Map(playlist_FULL.map(item => [item[key], item])).values()];
+  
+    globalThis.playlist_QUEUE = playlist_FULL;
+    allMusic = playlist_QUEUE;
+
+    indexNumb=1;
+    loadMusic(indexNumb);
+
   }else if(e.getAttribute("play-type") === "track"){
     clickedNotification(e.parentElement.parentElement)
   }

@@ -1,7 +1,7 @@
 var allPlaylists = [
     {
         name: "Best of decade 10s",
-        description: "Hits from the decade, contains everythink that your could ever ask for",
+        description: "Hits from the decade, contains everything that your could ever ask for",
         image: "https://i.scdn.co/image/ab67706f00000002ba77a2166a7b66e9a300ffaa",
 
         play_style: "Pop",

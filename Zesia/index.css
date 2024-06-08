@@ -2061,7 +2061,7 @@ input:checked + .slider:before {
   transition: 0.3s;
   overflow: hidden;
   position: relative;
-  height: 70px;
+  height: 75px;
   z-index: 0;
   user-select: none;
   cursor: pointer;
@@ -2083,7 +2083,7 @@ input:checked + .slider:before {
 }
 .head-content-item:first-child {
   grid-column: 1 / 3;
-  height: 100px;
+  height: 140px;
   align-items: center;
   justify-content: center;
   background: var(--maincolor);
@@ -2164,7 +2164,7 @@ input:checked + .slider:before {
 }
 .head-content-item img
 {
-  height: 70px;
+  height: 75px;
   border-radius: 15px;
   z-index: 2;
   aspect-ratio: 1/1;
@@ -11126,7 +11126,7 @@ font-family: 'Pathway Extreme';
   color: var(--color);
   border: var(--backgroundsecond) 1px solid;
   padding: 9px 15px;
-  border-radius: 25px;
+  border-radius: 15px;
   flex: 0 0 auto;
   background: var(--backgroundsecond);
   background: linear-gradient(130deg, var(--backgroundsecond), var(--background));
@@ -11138,13 +11138,10 @@ font-family: 'Pathway Extreme';
 }
 .notification_header p.active 
 {
-  background: var(--maincolor);
-  background: linear-gradient(130deg, var(--maincolor), var(--maincolorhover));
-  background-size: 150% 150%;
   color: var(--color);
-  border: 1px var(--maincolor) solid;
-  opacity: 1;
-  background-size: 150%;
+  background: linear-gradient(130deg, var(--maincolor), transparent);
+  background-size: 175%;
+  filter: drop-shadow(0px 0px 15px rgb(239 84 102 / 25%));
 }
 .notification_content
 {
@@ -11162,6 +11159,10 @@ font-family: 'Pathway Extreme';
   transition: 0.3s;
   border-bottom: 1px solid var(--backgroundsecond);
 }
+.notification_item:nth-child(2n)
+{
+  background: var(--backgroundsecond);
+}
 .notification_item:last-child
 {
   margin-bottom: 140px;
@@ -11172,14 +11173,13 @@ font-family: 'Pathway Extreme';
 }
 .notification_img
 {
-  height: 10vh;
-  padding: 10px;
+  height: 100px;
   padding-left: 0;
+  padding-right: 10px;
 }
 .notification_img img
 {
   height: 100%;
-  border-radius: 15px;
   object-fit: cover;
   aspect-ratio: 1/1;
 }
@@ -11187,7 +11187,6 @@ font-family: 'Pathway Extreme';
 {
   height: 100%;
   background: var(--maincolor);
-  border-radius: 15px;
   object-fit: cover;
   display: flex;
   align-items: center;
