@@ -2321,7 +2321,7 @@ input:checked + .slider:before {
   z-index: 1;
   opacity: 0.5;
   filter: blur(25px);
-  transform: scale(1.5);
+  transform: scale(2.5);
 }
 .center-container .center-container-item i
 {
@@ -3649,6 +3649,7 @@ input:checked + .slider:before {
   top: 0;
   opacity: 0.5;
   -webkit-mask-image:-webkit-linear-gradient(black 40%, transparent 100%);
+  transform: scale(1.5);
 }
 .main-music-header .header-shadow img
 {
@@ -12065,7 +12066,7 @@ textarea
 }
 
 @media (min-width: 1001px) {
-  .music-artist-content-item-data p:hover, .music-artist-album-item-data p:hover, .music-artist-album-item-data span:hover
+  .music-artist-content-item-data p:hover, .music-artist-album-item-data p:hover, .music-artist-album-item-data p:hover
   {
     text-decoration: underline;
   }
@@ -13060,6 +13061,11 @@ textarea
   {
     justify-content: center;
     gap: 10px;
+  }
+  .top-more-head-image
+  {
+    max-width: 600px;
+    padding: 10px calc(100% - 300px);
   }
   .top-shortcut-item
   {

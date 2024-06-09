@@ -692,6 +692,7 @@ function loadMusic(indexNumb){
     musicImg.classList.remove("animation-next");
     musicImg.classList.remove("animation-prev");
     musicImgShadow.classList.remove("animation-next");
+    musicImgShadow.classList.remove("animation-prev");
   }, 500)
 
   setTimeout(() => {
@@ -1556,9 +1557,6 @@ function scrollToPrevPage(t) {
     document.querySelector('.music-artist-bio-gallery span.next').setAttribute('onclick', 'scrollToNextPage(this)')
     document.querySelector('.music-artist-bio-gallery span.next').setAttribute('disabled', 'false')
 
-    var randomnumber = Math.floor(Math.random() * 250000) + 1;
-    document.querySelector(".music-artist-bio-stats p").innerText = randomnumber;
-
     if(document.querySelector(".music-artist-bio-gallery .container .gallery .card video")){
       document.querySelector(".music-artist-bio-gallery .container .gallery .card video").pause();
     }
@@ -1648,6 +1646,16 @@ function scrollToPrevPage(t) {
         resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
       }
       */
+
+      var randomnumber = Math.floor(Math.random() * 300000) + 1;
+      if(favoritIt[0].artist_followers){
+        document.querySelector(".music-artist-bio-stats p").innerText = favoritIt[0].artist_followers;
+      }else{
+        document.querySelector(".music-artist-bio-stats p").innerText = randomnumber;
+      }
+      setTimeout(() => {
+        document.querySelector(".music-artist-bio-stats p").innerText = numberWithSpaces(artistItemFollowers.innerText);
+      }, 250);
 
       gallery_bg.src = `artists/${favoritIt[0].avatar}.jpg`;
 
@@ -1883,7 +1891,7 @@ function clickedSingleAlbum(element){
           <h1 class="music-artist-content-number">${i + 1}</h1>
                 <div class="music-artist-album-item-data">
                   <h1>${favoritIt[i].name}</h1>
-                  <span><p class="music-artist-content-item-lyrics"> ${Object.keys(favoritIt[i].lyrics).length}<p>${favoritIt[i].artist}<p>, ${favoritIt[i].colaboration}</p></span>
+                  <span><p class="music-artist-content-item-lyrics">${Object.keys(favoritIt[i].lyrics).length}</p><p id='${favoritIt[i].id}' onclick="artistScreenDataLoad(this)" class="music-artist-content-item-artist" id="${favoritIt[i].id}" onclick="artistScreenDataLoad(this)">${favoritIt[i].artist}<p colab-id='${favoritIt[i].colaboration_id}' onclick="artistScreenDataLoad(this)" class="music-artist-content-item-collaboration">, ${favoritIt[i].colaboration}</p></span>
               </div>
               <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
          </div>`;
@@ -1986,6 +1994,12 @@ function clickedSingleAlbum(element){
 
     setTimeout(() => {
       $('.music-artist-information-albums-item .center-container-item-action i').click(function(event) {
+        event.stopPropagation();
+      });
+      $('.music-artist-content-item-artist').click(function(event) {
+        event.stopPropagation();
+      });
+      $('.music-artist-content-item-collaboration').click(function(event) {
         event.stopPropagation();
       });
     }, 250);
@@ -2286,7 +2300,7 @@ function artistScreenDataLoad(track){
   artistCardDataName.innerText = track_View[0].artist;
   artistCardBackgroundImg.style.backgroundImage = `url(${track_View[0].artist_img})`;
 
-  var randomnumber = Math.floor(Math.random() * 150000) + 1;
+  var randomnumber = Math.floor(Math.random() * 300000) + 1;
   if(track_View[0].artist_followers){
     artistItemFollowers.innerText = track_View[0].artist_followers;
   }else{
@@ -4249,8 +4263,12 @@ function clickedSinglePlaylist(e){
       }
       
     }else if(playlistFilter === "Radio"){
-      var favoritIt = allMusicView.filter(x => x.artist_id === playlistData_Artist || x.colaboration_id === playlistData_Artist || x.style === playlistData_ArtistStyle).slice(0, 50);
-      
+      var artistSimilar = allMusicView.filter(x => x.style === playlistData_ArtistStyle && x.artist_id != playlistData_Artist);
+      var artistContent = shuffle(allMusicView.filter(x => x.artist_id === playlistData_Artist || x.colaboration_id === playlistData_Artist).slice(0, 10));
+      artistSimilar = shuffle(artistSimilar.slice(0, 40))
+
+      var favoritIt = shuffle(artistSimilar.concat(artistContent));
+
       playlistResult.setAttribute('playlist-filter', playlistFilter)
       playlistResult.setAttribute('playlist-style', playlistData_ArtistStyle)
       playlistResult.setAttribute('artist-name', playlistData_ArtistName)
@@ -4284,7 +4302,7 @@ function clickedSinglePlaylist(e){
       playlistResult.setAttribute('playlist-style', playlistData_ArtistStyle)
       playlistResult.setAttribute('artist-data', playlistData_Artist)
 
-      var favoritIt = playlistStyleContent.concat(playlistStyleArtist).slice(0, 50);
+      var favoritIt = shuffle(playlistStyleContent.concat(shuffle(playlistStyleArtist)).slice(0, 50));
       playlistResult.innerHTML = "";
       for (let i = 0; i < favoritIt.length; i++) {
         let resultFAV =
