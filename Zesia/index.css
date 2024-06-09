@@ -6619,7 +6619,7 @@ font-family: 'Pathway Extreme';
   aspect-ratio: 1 / 1;
   font-weight: 900;
   position: absolute;
-  left: 0;
+  left: 5px;
   top: 0;
   display: flex;
   align-items: center;
@@ -7165,7 +7165,7 @@ font-family: 'Pathway Extreme';
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-weight: 900;
+  font-weight: 100;
   margin-top: 3px;
   display: -webkit-box;
   white-space: nowrap;
@@ -7173,6 +7173,10 @@ font-family: 'Pathway Extreme';
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 100%;
+}
+.music-artist-content-item-data-collaboration 
+{
+  margin: 0 3px;
 }
 .search-container .music-artist-content-item-data span p
 {
@@ -7260,6 +7264,10 @@ font-family: 'Pathway Extreme';
   -webkit-line-clamp: 2;
   line-clamp: 2;
   font-family: 'Destruido';
+}
+.music-artist-content-item-artist
+{
+  margin-right: 3px;
 }
 .music-artist-content-feat
 {
@@ -12066,9 +12074,13 @@ textarea
 }
 
 @media (min-width: 1001px) {
-  .music-artist-content-item-data p:hover, .music-artist-album-item-data p:hover, .music-artist-album-item-data p:hover
+  .music-artist-content-item-data p:hover, .music-artist-album-item-data p:hover, .music-artist-album-item-data p:hover, .music-artist-content-item-data-collaboration:hover
   {
     text-decoration: underline;
+  }
+  .music-artist-album-item-data .music-artist-content-item-lyrics:hover
+  {
+    text-decoration: none;
   }
   .main-music
   {

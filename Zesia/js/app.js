@@ -2366,7 +2366,7 @@ function artistProfilePopular(track){
         <h1 class="music-artist-content-number">${i + 1}</h1>
           <div class="music-artist-content-item-data">
             <h1>${favoritIt[i].name}</h1>
-            <span><p class="music-artist-content-item-lyrics"> ${Object.keys(favoritIt[i].lyrics).length}<p>${favoritIt[i].album} • ${favoritIt[i].album_premiere}</span>
+            <span><p class="music-artist-content-item-lyrics"> ${Object.keys(favoritIt[i].lyrics).length}<p>${favoritIt[i].album} • ${favoritIt[i].album_premiere}<p class="music-artist-content-item-data-collaboration" colab-id="${favoritIt[i].colaboration_id}" onclick="artistScreenDataLoad(this)"> • ${favoritIt[i].colaboration}</p></span>
           </div>
           <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
        </div>`;
@@ -2374,7 +2374,17 @@ function artistProfilePopular(track){
 
     if(document.querySelectorAll(".music-artist-content-number")[i].innerText.length < 2){
       document.querySelectorAll(".music-artist-content-number")[i].innerText = 0 +document.querySelectorAll(".music-artist-content-number")[i].innerText;
-    }}
+    }
+    if(document.querySelectorAll(".music-artist-content-item-data-collaboration")[i].innerText.length < 2){
+      document.querySelectorAll(".music-artist-content-item-data-collaboration")[i].innerText = "";
+    }
+  }
+
+  setTimeout(() => {
+    $('.music-artist-content-item-data-collaboration').click(function(event) {
+      event.stopPropagation();
+    });
+  }, 250);
 
   lyricsItemCheck();
 
@@ -2472,12 +2482,21 @@ function artistProfileFeat(track){
         <img src="${favoritIt[i].img_mini}">
           <div class="music-artist-content-item-data">
             <h1>${favoritIt[i].name}</h1>
-            <span><p class="music-artist-content-item-lyrics">  ${Object.keys(favoritIt[i].lyrics).length}<p>${favoritIt[i].artist} • ${favoritIt[i].album} • ${favoritIt[i].album_premiere}</span>
+            <span><p class="music-artist-content-item-lyrics">${Object.keys(favoritIt[i].lyrics).length}</p><p class="music-artist-content-item-artist" onclick="artistScreenDataLoad(this)" id="${favoritIt[i].id}">${favoritIt[i].artist} </p> • ${favoritIt[i].album} • ${favoritIt[i].album_premiere}<p class="music-artist-content-item-data-collaboration" colab-id="${favoritIt[i].colaboration_id}" onclick="artistScreenDataLoad(this)"> • ${favoritIt[i].colaboration}</p></span>
           </div>
           <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }
+
+  setTimeout(() => {
+    $('.music-artist-content-item-data-collaboration').click(function(event) {
+      event.stopPropagation();
+    });
+    $('.music-artist-content-item-artist').click(function(event) {
+      event.stopPropagation();
+    });
+  }, 250);
 
   var feat_title = document.querySelector("#ApperasOnCheck");
 
