@@ -11410,7 +11410,11 @@ font-family: 'Pathway Extreme';
 }
 .track-options-item:hover
 {
-  opacity: 0.5;
+  background: var(--backgroundsecond);
+}
+.track-options-item:active
+{
+  opacity: .5;
 }
 .track-options-item.active
 {
@@ -12078,9 +12082,9 @@ textarea
   {
     text-decoration: underline;
   }
-  .music-artist-album-item-data .music-artist-content-item-lyrics:hover
+  .music-artist-content-item-data .music-artist-content-item-lyrics:hover
   {
-    text-decoration: none;
+    text-decoration: none !important;
   }
   .main-music
   {

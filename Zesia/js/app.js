@@ -907,9 +907,6 @@ function playpausePc(){
 }
 
 function nextMusic(){
-  if (wrapper.classList.contains("shuffle")) {
-    indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
-  }
     indexNumb++;
     indexNumb > allMusic.length ? indexNumb = 1 : indexNumb = indexNumb;
     loadMusic(indexNumb);
@@ -922,10 +919,6 @@ function nextMusic(){
 }
 
 function prevMusic(){
-  
-  if (wrapper.classList.contains("shuffle")) {
-    indexNumb = Math.floor((Math.random() * allMusic.length) + 1);
-  }
     indexNumb--;
     indexNumb < 1 ? indexNumb = allMusic.length : indexNumb = indexNumb;
     loadMusic(indexNumb);
@@ -1050,6 +1043,7 @@ pc_proggres.addEventListener("click", (e)=>{
 });
 
 var shuffleIndex;
+var shuffleArray;
 
 repeatBtn.addEventListener("click", ()=>{
   if (mainAudio.loop == false) {mainAudio.loop = true}
@@ -1071,13 +1065,20 @@ shuffleBtn.addEventListener("click", ()=>{
   wrapper.classList.toggle("shuffle");
   wrapper.classList.remove("repeat");
 
-
-  var shuffleArray = allMusicView.filter(x => x.name === "");
-  for(i=0; i < allMusic.length; i++){
-    shuffleArray = shuffleArray.concat(i);
+  if(wrapper.classList.contains("shuffle")){
+    shuffleArray = allMusic;
+    setTimeout(() => {
+      shuffleIndex = shuffle(allMusic);
+      console.log(shuffleIndex, shuffleArray)
+      allMusic = shuffleIndex;
+      loadMusic(indexNumb);
+      playMusic();
+    }, 100);
+  }else{
+    allMusic = shuffleArray;
+    loadMusic(indexNumb);
+    playMusic();
   }
-
-  shuffleIndex = shuffle(shuffleArray);
 });
 
 pc_repeat.addEventListener("click", ()=>{
@@ -1099,6 +1100,21 @@ pc_shuffle.addEventListener("click", ()=>{
   repeatBtn.classList.remove('active');
   wrapper.classList.toggle("shuffle");
   wrapper.classList.remove("repeat");
+
+  if(wrapper.classList.contains("shuffle")){
+    shuffleArray = allMusic;
+    setTimeout(() => {
+      shuffleIndex = shuffle(allMusic);
+      console.log(shuffleIndex, shuffleArray)
+      allMusic = shuffleIndex;
+      loadMusic(indexNumb);
+      playMusic();
+    }, 100);
+  }else{
+    allMusic = shuffleArray;
+    loadMusic(indexNumb);
+    playMusic();
+  }
 });
 
 mainAudio.addEventListener("ended", ()=>{
@@ -1415,6 +1431,12 @@ function loseFocus(){
     event.stopPropagation();
   });
   $('.results-box i').click(function(event) {
+    event.stopPropagation();
+  });
+  $('.music-artist-album-item-artist').click(function(event) {
+    event.stopPropagation();
+  });
+  $('.music-artist-album-item-collaboration-check').click(function(event) {
     event.stopPropagation();
   });
 }
@@ -4271,7 +4293,7 @@ function clickedSinglePlaylist(e){
           <img src="${favoritIt[i].img_mini}">
                 <div class="music-artist-album-item-data">
                     <h1>${favoritIt[i].name}</h1>
-                    <span>${favoritIt[i].artist}</span>
+                    <span><p class="music-artist-album-item-artist" onclick="artistScreenDataLoad(this)" id="${favoritIt[i].id}">${favoritIt[i].artist}</p><p class="music-artist-album-item-collaboration-check" onclick="artistScreenDataLoad(this)" colab-id="${favoritIt[i].colaboration_id}">, ${favoritIt[i].colaboration}</p></span>
                 </div>
                 <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
            </div>`;
@@ -4279,6 +4301,12 @@ function clickedSinglePlaylist(e){
 
            actionDataToBeReplaced = playlistResult.getAttribute('queue-long-data');
            playlistResult.setAttribute('queue-long-data', actionDataToBeReplaced + favoritIt[i].id + ',' )
+
+           setTimeout(() => {
+            if(document.querySelectorAll(".music-artist-album-item-collaboration-check")[i].innerText.length < 2){
+              document.querySelectorAll(".music-artist-album-item-collaboration-check")[i].innerText = "";
+              }
+           }, 250);
       }
       
     }else if(playlistFilter === "Radio"){
@@ -4301,7 +4329,7 @@ function clickedSinglePlaylist(e){
           <img src="${favoritIt[i].img_mini}">
                 <div class="music-artist-album-item-data">
                     <h1>${favoritIt[i].name}</h1>
-                    <span>${favoritIt[i].artist}</span>
+                    <span><p class="music-artist-album-item-artist" onclick="artistScreenDataLoad(this)" id="${favoritIt[i].id}">${favoritIt[i].artist}</p><p class="music-artist-album-item-collaboration-check" onclick="artistScreenDataLoad(this)" colab-id="${favoritIt[i].colaboration_id}">, ${favoritIt[i].colaboration}</p></span>
                 </div>
                 <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
            </div>`;
@@ -4309,6 +4337,12 @@ function clickedSinglePlaylist(e){
 
            actionDataToBeReplaced = playlistResult.getAttribute('queue-long-data');
            playlistResult.setAttribute('queue-long-data', actionDataToBeReplaced + favoritIt[i].id + ',' )
+
+           setTimeout(() => {
+            if(document.querySelectorAll(".music-artist-album-item-collaboration-check")[i].innerText.length < 2){
+              document.querySelectorAll(".music-artist-album-item-collaboration-check")[i].innerText = "";
+              }
+           }, 250);
       }
 
       playlistTracksCounter.innerText = document.querySelectorAll(".music-playlist-album-screen-container .music-artist-album-item").length;
@@ -4329,7 +4363,7 @@ function clickedSinglePlaylist(e){
           <img src="${favoritIt[i].img_mini}">
                 <div class="music-artist-album-item-data">
                     <h1>${favoritIt[i].name}</h1>
-                    <span>${favoritIt[i].artist}</span>
+                    <span><p class="music-artist-album-item-artist" onclick="artistScreenDataLoad(this)" id="${favoritIt[i].id}">${favoritIt[i].artist}</p><p class="music-artist-album-item-collaboration-check" onclick="artistScreenDataLoad(this)" colab-id="${favoritIt[i].colaboration_id}">, ${favoritIt[i].colaboration}</p></span>
                 </div>
                 <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
            </div>`;
@@ -4337,6 +4371,12 @@ function clickedSinglePlaylist(e){
 
            actionDataToBeReplaced = playlistResult.getAttribute('queue-long-data');
            playlistResult.setAttribute('queue-long-data', actionDataToBeReplaced + favoritIt[i].id + ',' )
+
+           setTimeout(() => {
+            if(document.querySelectorAll(".music-artist-album-item-collaboration-check")[i].innerText.length < 2){
+              document.querySelectorAll(".music-artist-album-item-collaboration-check")[i].innerText = "";
+              }
+           }, 250);
       }
 
       playlistTracksCounter.innerText = document.querySelectorAll(".music-playlist-album-screen-container .music-artist-album-item").length;
@@ -5182,7 +5222,7 @@ function clickedPlaylistLoad(data){
       <img src="${favoritIt[i].img_mini}">
             <div class="music-artist-album-item-data">
                 <h1>${favoritIt[i].name}</h1>
-                <span>${favoritIt[i].artist}</span>
+                <span><p class="music-artist-album-item-artist" onclick="artistScreenDataLoad(this)" id="${favoritIt[i].id}">${favoritIt[i].artist}</p><p class="music-artist-album-item-collaboration-check" onclick="artistScreenDataLoad(this)" colab-id="${favoritIt[i].colaboration_id}">, ${favoritIt[i].colaboration}</p></span>
             </div>
             <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
        </div>`;
@@ -5190,6 +5230,12 @@ function clickedPlaylistLoad(data){
 
        actionDataToBeReplaced = playlistResult.getAttribute('queue-long-data');
        playlistResult.setAttribute('queue-long-data', actionDataToBeReplaced + favoritIt[i].id + ',' )
+
+       setTimeout(() => {
+        if(document.querySelectorAll(".music-artist-album-item-collaboration-check")[i].innerText.length < 2){
+          document.querySelectorAll(".music-artist-album-item-collaboration-check")[i].innerText = "";
+          }
+       }, 250);
   }
 
   loseFocus();
@@ -6201,7 +6247,7 @@ function playlist_SELECT_CLICKED(item){
       <img src="${allQueue[i].img_mini}">
             <div class="music-artist-album-item-data">
                 <h1>${allQueue[i].name}</h1>
-                <span>${allQueue[i].artist}</span>
+                <span><p class="music-artist-album-item-artist" onclick="artistScreenDataLoad(this)" id="${favoritIt[i].id}">${favoritIt[i].artist}</p><p class="music-artist-album-item-collaboration-check" onclick="artistScreenDataLoad(this)" colab-id="${favoritIt[i].colaboration_id}">, ${favoritIt[i].colaboration}</p></span>
             </div>
             <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
        </div>`;
@@ -6209,6 +6255,12 @@ function playlist_SELECT_CLICKED(item){
   
   actionDataToBeReplaced = playlistResult.getAttribute('queue-long-data');
   playlistResult.setAttribute('queue-long-data', actionDataToBeReplaced + allQueue[i].id + ',' )
+
+  setTimeout(() => {
+    if(document.querySelectorAll(".music-artist-album-item-collaboration-check")[i].innerText.length < 2){
+      document.querySelectorAll(".music-artist-album-item-collaboration-check")[i].innerText = "";
+      }
+   }, 250);
   }
 
   loseFocus();
@@ -6416,7 +6468,7 @@ function playlist_EDIT(object){
   playlistEDIT_IMG.value = playlistImg.src;
 }
 
-function playlist_EDIT_UBDATE(){
+function playlist_EDIT_UPDATE(){
   newTitle = playlistEDIT_TITLE.value;
   newImg = playlistEDIT_IMG.value;
   playlistID = playlistResult.getAttribute('playlist-id');
