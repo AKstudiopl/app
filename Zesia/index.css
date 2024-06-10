@@ -7182,6 +7182,10 @@ font-family: 'Pathway Extreme';
 {
   margin: 0 3px;
 }
+.library-favorite-container .music-artist-content-item-data span p
+{
+  margin: 0 3px;
+}
 .music-artist-content-container .music-artist-content-item-data 
 {
   overflow: hidden;
@@ -7264,6 +7268,11 @@ font-family: 'Pathway Extreme';
   -webkit-line-clamp: 2;
   line-clamp: 2;
   font-family: 'Destruido';
+  margin-left: 0 !important;
+}
+.library-favorite-item-artist
+{
+  margin-left: 0 !important;
 }
 .music-artist-content-item-artist
 {
@@ -12078,7 +12087,7 @@ textarea
 }
 
 @media (min-width: 1001px) {
-  .music-artist-content-item-data p:hover, .music-artist-album-item-data p:hover, .music-artist-album-item-data p:hover, .music-artist-content-item-data-collaboration:hover
+  .music-artist-content-item-data p:hover, .music-artist-album-item-data p:hover, .music-artist-album-item-data p:hover, .music-artist-content-item-data-collaboration:hover, .music-artist-content-item-data span p:hover
   {
     text-decoration: underline;
   }

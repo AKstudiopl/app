@@ -333,7 +333,7 @@ function favoriteLoadItems() {
         <img src="${favoritIt[i].img_mini}">
           <div class="music-artist-content-item-data">
             <h1>${favoritIt[i].name}</h1>
-            <span><p class="music-artist-content-item-lyrics"> ${Object.keys(favoritIt[i].lyrics).length}</p> ${favoritIt[i].album} • ${favoritIt[i].album_premiere}</span>
+            <span><p class="music-artist-content-item-lyrics">${Object.keys(favoritIt[i].lyrics).length}</p><p class="library-favorite-item-artist" onclick="artistScreenDataLoad(this)" id='${favoritIt[i].id}'>${favoritIt[i].artist}</p> • <p class="library-favorite-item-album" onclick="clickedSingleAlbum(this)" data-album="${favoritIt[i].album}" artist-data="${favoritIt[i].artist_id}" id='${favoritIt[i].id}'>${favoritIt[i].album}</p></span>
           </div>
           <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
        </div>`;
@@ -1439,6 +1439,12 @@ function loseFocus(){
   $('.music-artist-album-item-collaboration-check').click(function(event) {
     event.stopPropagation();
   });
+  $('.library-favorite-item-artist').click(function(event) {
+    event.stopPropagation();
+  });
+  $('.library-favorite-item-album').click(function(event) {
+    event.stopPropagation();
+  });
 }
 
 function checkUserData(){
@@ -1962,7 +1968,7 @@ function clickedSingleAlbum(element){
           <img src="${featuredIt[i].album_cover}">
         </div>
         <img class="music-artist-information-albums-item-img" src="${featuredIt[i].album_cover}">
-            <p><span class="music-artist-information-albums-item-name">${featuredIt[i].album}</span> <span class="data-premiere">${featuredIt[i].album_premiere} • Album</span></p>
+            <p><span class="music-artist-information-albums-item-name">${featuredIt[i].album}</span> <span class="data-premiere">${featuredIt[i].artist} • ${featuredIt[i].album_premiere}</span></p>
          <div class="center-container-item-action"><i onclick="quick_Play(this)" play-type="album" class="fa-solid fa-play"></i></div>
         </div>`;
          featuredBox.insertAdjacentHTML("beforeend", featuredItem);
@@ -2388,7 +2394,7 @@ function artistProfilePopular(track){
         <h1 class="music-artist-content-number">${i + 1}</h1>
           <div class="music-artist-content-item-data">
             <h1>${favoritIt[i].name}</h1>
-            <span><p class="music-artist-content-item-lyrics"> ${Object.keys(favoritIt[i].lyrics).length}<p>${favoritIt[i].album} • ${favoritIt[i].album_premiere}<p class="music-artist-content-item-data-collaboration" colab-id="${favoritIt[i].colaboration_id}" onclick="artistScreenDataLoad(this)"> • ${favoritIt[i].colaboration}</p></span>
+            <span><p class="music-artist-content-item-lyrics"> ${Object.keys(favoritIt[i].lyrics).length}</p><p class="music-artist-content-item-data-album" onclick="clickedSingleAlbum(this)" data-album="${favoritIt[i].album}" artist-data="${favoritIt[i].artist_id}" >${favoritIt[i].album} • ${favoritIt[i].album_premiere}</p><p class="music-artist-content-item-data-collaboration" colab-id="${favoritIt[i].colaboration_id}" onclick="artistScreenDataLoad(this)"> • ${favoritIt[i].colaboration}</p></span>
           </div>
           <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
        </div>`;
@@ -2404,6 +2410,9 @@ function artistProfilePopular(track){
 
   setTimeout(() => {
     $('.music-artist-content-item-data-collaboration').click(function(event) {
+      event.stopPropagation();
+    });
+    $('.music-artist-content-item-data-album').click(function(event) {
       event.stopPropagation();
     });
   }, 250);
