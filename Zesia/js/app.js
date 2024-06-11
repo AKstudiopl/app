@@ -4132,7 +4132,7 @@ function trackOption_Share(data){
   let trackID = data.parentElement.getAttribute('track-data');
 
   var shareLink = document.createElement('input'),
-  text = window.location.origin + "/zesia/Zesia/#" + trackID;
+  text = window.location.origin + "/app/Zesia/#" + trackID;
   document.body.appendChild(shareLink);
   shareLink.value = text;
   shareLink.select();
