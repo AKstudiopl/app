@@ -11190,6 +11190,7 @@ font-family: 'Pathway Extreme';
 }
 .notification_item
 { 
+  height: 150px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -11210,7 +11211,7 @@ font-family: 'Pathway Extreme';
 }
 .notification_img
 {
-  height: 100px;
+  height: 150px;
   padding-left: 0;
   padding-right: 10px;
 }
@@ -11218,7 +11219,7 @@ font-family: 'Pathway Extreme';
 {
   height: 100%;
   object-fit: cover;
-  aspect-ratio: 1/1;
+  aspect-ratio: 3/4;
 }
 .notification_img i
 {
@@ -11230,7 +11231,7 @@ font-family: 'Pathway Extreme';
   justify-content: center;
   font-size: 250%;
   color: var(--background);
-  aspect-ratio: 1/1;
+  aspect-ratio: 3/4;
 }
 .notification_item h2
 {
@@ -11297,6 +11298,7 @@ font-family: 'Pathway Extreme';
 .notification_data
 {
   width: 100%;
+  height: 100%;
 }
 .center-container.recent-tracks-container
 {

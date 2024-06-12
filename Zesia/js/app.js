@@ -1044,6 +1044,7 @@ pc_proggres.addEventListener("click", (e)=>{
 
 var shuffleIndex;
 var shuffleArray;
+var firstShuffleItem;
 
 repeatBtn.addEventListener("click", ()=>{
   if (mainAudio.loop == false) {mainAudio.loop = true}
@@ -1065,19 +1066,22 @@ shuffleBtn.addEventListener("click", ()=>{
   wrapper.classList.toggle("shuffle");
   wrapper.classList.remove("repeat");
 
+  var shuffleComplete = allMusic.filter(x => x.id === "0");
+
   if(wrapper.classList.contains("shuffle")){
-    shuffleArray = allMusic;
-    setTimeout(() => {
-      shuffleIndex = shuffle(allMusic);
-      console.log(shuffleIndex, shuffleArray)
-      allMusic = shuffleIndex;
-      loadMusic(indexNumb);
-      playMusic();
-    }, 100);
+    firstShuffleItem = allMusic[indexNumb - 1]
+
+    shuffleIndex = shuffle(allMusic.filter(x => x.id != firstShuffleItem.id));
+    console.log(shuffleIndex)
+
+    shuffleComplete = shuffleComplete.concat(firstShuffleItem, shuffleIndex)
+    console.log(shuffleComplete)
+
+    allMusic = shuffleComplete;
+    queueDataLoad();
   }else{
-    allMusic = shuffleArray;
-    loadMusic(indexNumb);
-    playMusic();
+    pauseMusic();
+    queueDataLoad();
   }
 });
 
@@ -1101,19 +1105,22 @@ pc_shuffle.addEventListener("click", ()=>{
   wrapper.classList.toggle("shuffle");
   wrapper.classList.remove("repeat");
 
+  var shuffleComplete = allMusic.filter(x => x.id === "0");
+
   if(wrapper.classList.contains("shuffle")){
-    shuffleArray = allMusic;
-    setTimeout(() => {
-      shuffleIndex = shuffle(allMusic);
-      console.log(shuffleIndex, shuffleArray)
-      allMusic = shuffleIndex;
-      loadMusic(indexNumb);
-      playMusic();
-    }, 100);
+    firstShuffleItem = allMusic[indexNumb - 1]
+
+    shuffleIndex = shuffle(allMusic.filter(x => x.id != firstShuffleItem.id));
+    console.log(shuffleIndex)
+
+    shuffleComplete = shuffleComplete.concat(firstShuffleItem, shuffleIndex)
+    console.log(shuffleComplete)
+
+    allMusic = shuffleComplete;
+    queueDataLoad();
   }else{
-    allMusic = shuffleArray;
-    loadMusic(indexNumb);
-    playMusic();
+    pauseMusic();
+    queueDataLoad();
   }
 });
 

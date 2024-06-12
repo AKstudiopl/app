@@ -1423,7 +1423,7 @@ var allMusic = [
     gallery_img_8: "https://pbs.twimg.com/media/Fjs7a_hWIAAtfe7?format=jpg&name=medium",
     canvas: "https://video.twimg.com/ext_tw_video/1594092488461017090/pu/vid/720x720/7CX3dP6isI4qxDNy.mp4?tag=12",
 
-    thisis_img: "https://i.scdn.co/image/ab67706f00000002df12c206fd3c49ad933943f3",
+    thisis_img: "https://i.scdn.co/image/ab67706f000000027a755a1c415eb319e5d91c50",
     radio_img: "https://seeded-session-images.scdn.co/v1/img/artist/6qqNVTkY8uBg9cP3Jd7DAH/",
     style_img: "https://t.scdn.co/images/728ed47fc1674feb95f7ac20236eb6d7.jpeg",  
 
