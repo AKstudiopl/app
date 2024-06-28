@@ -2771,15 +2771,15 @@ function uiLastViewedAlbumsLoad(){
 
   uiLastViewedAlbum_1.querySelector("p").innerText = lastAlbumImgSrc_1[0].album_premiere;
   uiLastViewedAlbum_1.querySelector(".data-title").innerText = lastAlbum_1;
-  uiLastViewedAlbum_1.querySelector("img").src = lastAlbumImgSrc_1[0].album_cover;
-  uiLastViewedAlbum_1.querySelector(".head-content-item-background").src = lastAlbumImgSrc_1[0].album_cover;
+  uiLastViewedAlbum_1.querySelector("img").src = lastAlbumImgSrc_1[0].img_mini;
+  uiLastViewedAlbum_1.querySelector(".head-content-item-background").src = lastAlbumImgSrc_1[0].img_mini;
   uiLastViewedAlbum_1.setAttribute("data-album", lastAlbum_1);
   uiLastViewedAlbum_1.setAttribute("artist-data", lastAlbumImgSrc_1[0].artist_id);
 
   uiLastViewedAlbum_2.querySelector("p").innerText = lastAlbumImgSrc_2[0].album_premiere;
   uiLastViewedAlbum_2.querySelector(".data-title").innerText = lastAlbum_2;
-  uiLastViewedAlbum_2.querySelector("img").src = lastAlbumImgSrc_2[0].album_cover
-  uiLastViewedAlbum_2.querySelector(".head-content-item-background").src = lastAlbumImgSrc_2[0].album_cover;
+  uiLastViewedAlbum_2.querySelector("img").src = lastAlbumImgSrc_2[0].img_mini
+  uiLastViewedAlbum_2.querySelector(".head-content-item-background").src = lastAlbumImgSrc_2[0].img_mini;
   uiLastViewedAlbum_2.setAttribute("data-album", lastAlbum_2);
   uiLastViewedAlbum_2.setAttribute("artist-data", lastAlbumImgSrc_2[0].artist_id);
 }
@@ -2985,6 +2985,27 @@ function createdPlaylistsContent() {
       <div class="user_profile_content_dailyStats_item">
         <p>Liked songs</p>
         <span class="user_profile_content_dailyStats_item_artists">0</span>
+        <div class="user_profile_content_dailyStats_bg">
+          <img src="https://i.scdn.co/image/ab67616d00001e02186660bbf3b0dd9a5195e182">
+        </div>
+      </div>
+      <div class="user_profile_content_dailyStats_item">
+        <p>Current Level</p>
+        <span class="user_profile_content_dailyStats_item_level">1</span>
+        <div class="user_profile_content_dailyStats_bg">
+          <img src="https://i.scdn.co/image/ab67616d00001e02186660bbf3b0dd9a5195e182">
+        </div>
+      </div>
+      <div class="user_profile_content_dailyStats_item">
+        <p>Total XP</p>
+        <span class="user_profile_content_dailyStats_item_xp">69</span>
+        <div class="user_profile_content_dailyStats_bg">
+          <img src="https://i.scdn.co/image/ab67616d00001e02186660bbf3b0dd9a5195e182">
+        </div>
+      </div>
+      <div class="user_profile_content_dailyStats_item">
+        <p>Current Status</p>
+        <span class="user_profile_content_dailyStats_item_status">FREE+</span>
         <div class="user_profile_content_dailyStats_bg">
           <img src="https://i.scdn.co/image/ab67616d00001e02186660bbf3b0dd9a5195e182">
         </div>
@@ -5408,6 +5429,12 @@ function loadUserStylePlaylists(){
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }
+
+  setTimeout(() => {
+    $('#dailyMixContainer .center-container-item .center-container-item-action i').click(function(event) {
+      event.stopPropagation();
+    });
+  }, 250);
 }
 
 const playlistPopUp = document.querySelector(".playlist-popup");

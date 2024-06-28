@@ -2961,7 +2961,7 @@ input:checked + .slider:before {
   z-index: -1;
   background-size: cover;
   background-position: bottom;
-  height: 100%;
+  aspect-ratio: 1 / 1;
   width: 100%;
   filter: blur(25px);
   opacity: 0.45;
@@ -9500,7 +9500,7 @@ font-family: 'Pathway Extreme';
   text-align: left;
   z-index: 5;
   line-height: 1;
-  outline: 3px solid rgb(255 255 255 / 5%);
+  outline: 1px solid rgb(255 255 255 / 5%);
   outline-offset: 0;
   margin-bottom: 15px;
 }
@@ -9865,20 +9865,19 @@ font-family: 'Pathway Extreme';
 {
   width: calc(100% - 30px);
   flex-direction: column;
-  display: flex;
   align-items: flex-start;
   justify-content: space-between;
   grid-row-gap: 10px;
   grid-auto-flow: row;
   display: grid;
-  grid-template-columns: repeat(1, 100%);
+  grid-template-columns: repeat(2, calc(50% - 5px));
 }
 .user_profile_content_dailyStats_item
 {
   display: flex;
-  justify-content:space-between;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   color: var(--color);
   padding: 0px 20px;
   border-radius: 15px;
@@ -9889,7 +9888,7 @@ font-family: 'Pathway Extreme';
   transition: 0.25s;
   outline: 1px solid rgb(255 255 255 / 10%);
   outline-offset: -1px;
-  height: 50px;
+  height: 100px;
   cursor: pointer;
   position: relative;
 }
@@ -9909,7 +9908,7 @@ font-family: 'Pathway Extreme';
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: blur(30px) grayscale(1);
+  filter: blur(30px) grayscale(1) opacity(.5);
 }
 .user_profile_content_dailyStats_item:hover
 {
@@ -9935,13 +9934,11 @@ font-family: 'Pathway Extreme';
   overflow: hidden;
   font-family: Destruido;
   background: var(--backgroundsecond);
-  position: absolute;
-  right: 0;
   height: 50px;
+  min-height: 50px;
   border-radius: 15px;
   min-width: 50px;
-  margin-bottom: 15px;
-  margin-right: 10px;
+  margin-top: 10px;
 }
 .user-profile-settings 
 {
