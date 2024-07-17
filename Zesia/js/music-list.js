@@ -12402,7 +12402,7 @@ var allMusic = [
 
     src: "CarlyRaeJepsen-CallMeMaybe",
     img: "500callmemaybex500-000000-80-0-0",
-    img_mini: "https://i.scdn.co/image/ab67616d00004851deec12a28d1e336c5052e9aa",
+    img_mini: "https://i.scdn.co/image/ab67616d00004851d3ee4bf67c2ac2154006ad72",
 
     style: "Energic",
     status: "nostatus",
