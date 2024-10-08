@@ -6290,7 +6290,7 @@ function playlist_SELECT_CLICKED(item){
       <img src="${allQueue[i].img_mini}">
             <div class="music-artist-album-item-data">
                 <h1>${allQueue[i].name}</h1>
-                <span><p class="music-artist-album-item-artist" onclick="artistScreenDataLoad(this)" id="${favoritIt[i].id}">${favoritIt[i].artist}</p><p class="music-artist-album-item-collaboration-check" onclick="artistScreenDataLoad(this)" colab-id="${favoritIt[i].colaboration_id}">, ${favoritIt[i].colaboration}</p></span>
+                <span><p class="music-artist-album-item-artist" onclick="artistScreenDataLoad(this)" id="${allQueue[i].id}">${allQueue[i].artist}</p><p class="music-artist-album-item-collaboration-check" onclick="artistScreenDataLoad(this)" colab-id="${allQueue[i].colaboration_id}">, ${allQueue[i].colaboration}</p></span>
             </div>
             <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
        </div>`;
@@ -6732,7 +6732,7 @@ function tutorial_SLIDE_LOAD(){
       tutorialPopupDesc.classList.remove('fade');
       tutorialPopupTitle.classList.remove('fade');
       tutorialPopupTitle.innerText = 'New Emotions With Canvas';
-      tutorialPopupDesc.innerHTML = 'Enable canvas in settings and fell another experienced while listening to your loved music. Not all of songs have uploaded canvas, but we are ubdating it daily so make sure to check it once again in future'
+      tutorialPopupDesc.innerHTML = 'Enable canvas in settings and fell another experienced while listening to your loved music. Not all of songs have uploaded canvas, but we are updating it daily so make sure to check it once again in future'
     }, 350);
 
     tutorialPopupImg.classList.add('fade');
