@@ -381,7 +381,7 @@ var allPlaylists = [
     {
         name: "UEFA EURO 2024 | Official Playlist",
         description: "The Official UEFA EURO 2024 Playlist - #LightYourFire for #EURO2024 | Updated weekly during the tournament, with specially curated takeovers. Be sure to keep an eye out!",
-        image: "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84ee13518be7a968ff519c8235",
+        image: "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8431b1c5cc48bcfb700dcf6f5c",
 
         play_style: "Pop",
         play_id: "12",
