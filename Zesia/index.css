@@ -3373,6 +3373,7 @@ input:checked + .slider:before {
   cursor: pointer;
   background: linear-gradient(0deg, rgb(25 25 34 / 95%), rgb(25 25 34 / 0%));
   user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .top-more-head i
 {
@@ -11412,6 +11413,7 @@ font-family: 'Pathway Extreme';
   height: 100%;
   cursor: pointer;
   background: linear-gradient(0deg, rgb(25 25 34 / 100%), rgb(25 25 34 / 0%));
+  -webkit-tap-highlight-color: transparent;
 }
 .track-options-menu
 {
@@ -11730,6 +11732,7 @@ font-family: 'Pathway Extreme';
   height: calc(100% - 503px);
   z-index: 1;
   background: linear-gradient(0deg, var(--background), rgb(25 25 34 / 50%));
+  -webkit-tap-highlight-color: transparent;
 }
 .playlist-popup-controls i {
   text-decoration: none;
