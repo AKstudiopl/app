@@ -3719,7 +3719,11 @@ function lyricsMode(){
         lyricsSync.classList.remove('active');
       }
     }}else{
-      resultsFAV.innerHTML = "<span>Song Doesn't Have Prepared Lyrics Yet, Hopefully It Will Change Soon</span>";
+      if(allMusic[indexNumb - 1].style === "Audiobook"){
+        resultsFAV.innerHTML = "<span>Audiobook Doesn't Have Prepared Captions Yet, Hopefully It Will Change Soon</span>";
+      }else{
+        resultsFAV.innerHTML = "<span>Song Doesn't Have Prepared Lyrics Yet, Hopefully It Will Change Soon</span>";
+      }
     }
 
   

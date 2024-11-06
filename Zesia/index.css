@@ -11207,6 +11207,7 @@ font-family: 'Pathway Extreme';
   align-items: center;
   transition: 0.3s;
   border-bottom: 1px solid var(--backgroundsecond);
+  overflow: hidden;
 }
 .notification_item:nth-child(2n)
 {
