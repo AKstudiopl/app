@@ -2061,7 +2061,18 @@ function collaborationAlbumCheck(){
 }
 
 function skipprevAB(e){
-  let vwPOSITION = event.clientX;
+  const { touches, changedTouches } = e.originalEvent ?? e;
+  const touch = touches[0] ?? changedTouches[0];
+  let vwPOSITION;
+
+  if(e.type.includes(`touch`)) {
+    const { touches, changedTouches } = e.originalEvent ?? e;
+    const touch = touches[0] ?? changedTouches[0];
+    vwPOSITION = touch.pageX;
+  } else if (e.type.includes(`mouse`)) {
+    vwPOSITION = e.clientX;
+  }
+
   let vwPORT = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
   if(vwPOSITION > vwPORT/2 && !document.querySelector(".skipAB").classList.contains("anim")){
     mainAudio.currentTime = mainAudio.currentTime + 10;
