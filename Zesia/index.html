@@ -6,7 +6,7 @@
     <meta name="description" content="Music Hits Great Chill">
     <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preload" href="Destruido-Interior.woff2" as="font" type="font/woff2" crossorigin>
+    <link href="Destruido-Interior.woff2" as="font" type="font/woff2" crossorigin>
     <link href="stylesheet.css" rel="stylesheet">
     <meta name="theme-color" content="#242424">
     <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -838,12 +838,17 @@
 
 
     <div class="main-music-header">
-      <img src="https://e-cdns-images.dzcdn.net/images/playlist/d41d8cd98f00b204e9800998ecf8427e/200x200-000000-80-0-0.jpg">
+      <img crossOrigin src="https://e-cdns-images.dzcdn.net/images/playlist/d41d8cd98f00b204e9800998ecf8427e/200x200-000000-80-0-0.jpg">
       <div class="header-shadow">
         <img src="" alt="">
       </div>  
       <div class="main-music-lyrics-box">
       </div>
+    </div>
+
+    <div onclick="skipprevAB(this)" class="main-music-header-audiobook">
+      <img class="prevAB" src="https://brandeps.com/icon-download/S/Skip-back-10-icon-vector-01.svg">
+      <img class="skipAB" src="https://brandeps.com/icon-download/S/Skip-forward-10-icon-vector-01.svg">
     </div>
 
     <div class="lyric-mode-toggle">

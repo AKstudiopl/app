@@ -699,6 +699,10 @@ function loadMusic(indexNumb){
     musicBackgroundViral.classList.remove("in_Change");
   }, 1000)
 
+  if(allMusic[indexNumb - 1].style === "Audiobook" && allMusic[indexNumb - 1].id === localStorage.getItem("Ab_id")){
+    mainAudio.currentTime = localStorage.getItem("Ab_time");
+  }
+
 
   if (wrapper.classList.contains('save-data')) {
     musicImg.src="assets/897fb9c3-72da-4ed8-9653-83e65af3768a.png";
@@ -997,7 +1001,11 @@ mainAudio.addEventListener("timeupdate", (e)=>{
   }else{
     progressBarNavDone.style.width = `${progressWidth}%`;
   }
-
+  
+  if(allMusic[indexNumb - 1].style === "Audiobook"){
+    localStorage.setItem("Ab_time", currentTime.toFixed(0))
+    localStorage.setItem("Ab_id", allMusic[indexNumb - 1].id)
+  }
 });
 
 progressBar.addEventListener("timeubdate", (e)=>{
@@ -2052,7 +2060,23 @@ function collaborationAlbumCheck(){
   });
 }
 
-
+function skipprevAB(e){
+  let vwPOSITION = event.clientX;
+  let vwPORT = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+  if(vwPOSITION > vwPORT/2 && !document.querySelector(".skipAB").classList.contains("anim")){
+    mainAudio.currentTime = mainAudio.currentTime + 10;
+    document.querySelector(".skipAB").classList.add("anim");
+    setTimeout(() => {
+      document.querySelector(".skipAB").classList.remove("anim");
+    }, 500);
+  }else if(vwPOSITION < vwPORT/2 && !document.querySelector(".prevAB").classList.contains("anim")){
+    mainAudio.currentTime = mainAudio.currentTime - 10;
+    document.querySelector(".prevAB").classList.add("anim");
+    setTimeout(() => {
+      document.querySelector(".prevAB").classList.remove("anim");
+    }, 500);
+  }
+}
 
 function shortcutCheck() {
   if (wrapper.classList.contains("repeat")) {
@@ -3070,6 +3094,7 @@ const rgbToHex = (r, g, b) => '#' + [r, g, b].map(x => {
 
 
 image.addEventListener('load', () => {
+  image.crossOrigin = "Anonymous";
   const hexColor = colorThief.getColor(image, DOMINANT_COLOR_QUALITY);
   var colour = colorThief.getColor(image, DOMINANT_COLOR_QUALITY);
 
