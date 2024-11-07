@@ -486,6 +486,8 @@ queueArtist = wrapper.querySelector(".queue-container .artist");
 topControlsShortcutAvatar = document.querySelector(".top-controls-shortcut img");
 topControlsShortcutArtist = document.querySelector(".top-controls-shortcut span");
 
+musicImg.crossOrigin = "Anonymous";
+
 const pc_track = document.querySelector(".pc-controls-track-data p");
 const pc_artist = document.querySelector(".pc-controls-track-data span");
 const pc_img = document.querySelector(".pc-controls-track img");
@@ -2060,19 +2062,27 @@ function collaborationAlbumCheck(){
   });
 }
 
-function skipprevAB(e){
-  const { touches, changedTouches } = e.originalEvent ?? e;
-  const touch = touches[0] ?? changedTouches[0];
-  let vwPOSITION;
+function tapHandlerTest(event) {
+    if(!tapedTwice) {
+        tapedTwice = true;
+        setTimeout( function() { tapedTwice = false; }, 300 );
+        return false;
+    }
+    event.preventDefault();
+    track_LIKE();
+ }
 
-  if(e.type.includes(`touch`)) {
-    const { touches, changedTouches } = e.originalEvent ?? e;
-    const touch = touches[0] ?? changedTouches[0];
-    vwPOSITION = touch.pageX;
-  } else if (e.type.includes(`mouse`)) {
-    vwPOSITION = e.clientX;
+document.querySelector(".main-music-header-audiobook").addEventListener("touchstart", skipprevAB);
+var tapedTwiceSkipPrev = false;
+
+function skipprevAB(event){
+  if(!tapedTwiceSkipPrev) {
+    tapedTwiceSkipPrev = true;
+    setTimeout( function() { tapedTwiceSkipPrev = false; }, 300 );
+    return false;
   }
 
+  let vwPOSITION = event.touches[0].clientX;
   let vwPORT = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
   if(vwPOSITION > vwPORT/2 && !document.querySelector(".skipAB").classList.contains("anim")){
     mainAudio.currentTime = mainAudio.currentTime + 10;
@@ -3092,6 +3102,7 @@ function homeFavortiesArtists() {
 const DOMINANT_COLOR_QUALITY = 5;
 
 const image = document.querySelector(".music-img img");
+image.crossOrigin = "Anonymous";
 const mainMusicBackgroundGradient = document.querySelector(".background-music-img");
 const pcBar = document.querySelector(".pc-controls-ui");
 const colorThief = new ColorThief();
@@ -3105,7 +3116,6 @@ const rgbToHex = (r, g, b) => '#' + [r, g, b].map(x => {
 
 
 image.addEventListener('load', () => {
-  image.crossOrigin = "Anonymous";
   const hexColor = colorThief.getColor(image, DOMINANT_COLOR_QUALITY);
   var colour = colorThief.getColor(image, DOMINANT_COLOR_QUALITY);
 
@@ -6720,7 +6730,6 @@ function tutorial_SLIDE_LOAD(){
       tutorialPopupImg.classList.remove('fade');
       tutorialPopupImg.src = 'https://ds.static.rtbf.be/article/image/1920x1080/9/0/8/691dcb1d65f31967a874d18383b9da75-1604413035.jpg';
     }, 500);
- a
   }
   if(tutorialDATA === "3"){
     document.querySelector(".tutorial-popup-content-text-top-dots .top-dot.active").classList.remove('active');
