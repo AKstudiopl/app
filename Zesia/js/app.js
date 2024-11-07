@@ -703,6 +703,19 @@ function loadMusic(indexNumb){
 
   if(allMusic[indexNumb - 1].style === "Audiobook" && allMusic[indexNumb - 1].id === localStorage.getItem("Ab_id")){
     mainAudio.currentTime = localStorage.getItem("Ab_time");
+
+    setTimeout(() => {
+      let abWidth = (localStorage.getItem("Ab_time") / mainAudio.duration) * 100;
+      progressBar.style.width = `${abWidth}%`;
+
+      let currentMin = Math.floor(localStorage.getItem("Ab_time") / 60);
+      let currentSec = Math.floor(localStorage.getItem("Ab_time") % 60);
+      if(window.innerWidth >= 1000){
+        pc_timerStart.innerText = `${currentMin}:${currentSec}`;
+      }else{
+        wrapper.querySelector(".current-time").innerText = `${currentMin}:${currentSec}`;
+      }
+    }, 250);
   }
 
 

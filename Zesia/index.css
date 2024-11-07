@@ -3639,44 +3639,53 @@ input:checked + .slider:before {
   align-items: center;
   justify-content: space-between;
 }
-.main-music-header-audiobook img
+.main-music-header-audiobook .audiobook-item
 {
-  width: 30%;
+  width: 35%;
   padding: 0 5%;
   height: 100%;
-  filter: invert(1);
-  background: linear-gradient(0deg, rgb(16 170 152), rgb(25 25 34 / 0%));
+  background: rgb(25 25 34 / 50%);
   object-fit: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   z-index: 5;
   position: relative;
   opacity: 0;
   transition: .3s;
+  font-size: 20px;
+  color: var(--color);
 }
-.main-music-header-audiobook img.anim 
+.main-music-header-audiobook .audiobook-item i
+{
+  font-size: 24px;
+  color: var(--color);
+}
+.main-music-header-audiobook .audiobook-item.anim 
 {
   animation: quickRF;
   animation-duration: .3s;
   animation-timing-function: ease;
-  filter: invert(1);
   opacity: 1;
 }
 @keyframes quickRF {
   0%{
     transform: scale(1.25);
-    filter: blur(15px) invert(1);
+    filter: blur(15px);
   }
   100%{
-    filter: blur(0) invert(1);
+    filter: blur(0);
     transform: scale(1);
   }
 }
-.main-music-header-audiobook img:nth-child(1)
+.main-music-header-audiobook .audiobook-item:nth-child(1)
 {
   border-radius: 0 50% 50% 0;
 }
-.main-music-header-audiobook img:nth-child(2)
+.main-music-header-audiobook .audiobook-item:nth-child(2)
 {
-  border-radius:50% 0 0 50%;
+  border-radius: 50% 0 0 50%;
 }
 .main-music .main-music-header img.animation-next
 {
@@ -3812,6 +3821,11 @@ input:checked + .slider:before {
 {
   display: flex;
 }
+.main-music-header.lyrics ~ .main-music-header-audiobook
+{
+  display: none;
+}
+
 .lyric-mode-toggle
 {
   position: absolute;
