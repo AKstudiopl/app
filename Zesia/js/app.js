@@ -1966,10 +1966,16 @@ function clickedSingleAlbum(element){
     albumScreenArtistName.innerText = favoritIt[0].artist;
 
     let albumNumberSongs = $('.music-artist-album-item').length;
-    if(albumNumberSongs > 1){
+    if(favoritIt[0].style === "Audiobook"){
+      albumScreenArtistName.innerText = favoritIt[0].artist + " • " + favoritIt[0].album_premiere + " • Audiobook"
+      document.querySelector("#music-artist-content-title-tracks").innerHTML = '<i>#</i>Episodes<span></span>';
+    }
+    else if(albumNumberSongs > 1){
       albumScreenArtistName.innerText = favoritIt[0].artist + " • " + favoritIt[0].album_premiere + " • Album";
+      document.querySelector("#music-artist-content-title-tracks").innerHTML = '<i>#</i>Tracks<span></span>';
     }else if(albumNumberSongs = 1){
       albumScreenArtistName.innerText = favoritIt[0].artist + " • " + favoritIt[0].album_premiere + " • Single";
+      document.querySelector("#music-artist-content-title-tracks").innerHTML = '<i>#</i>Tracks<span></span>';
     } 
 
     let featured_style = favoritIt[0].style;
