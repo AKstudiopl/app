@@ -20,7 +20,7 @@
   <div class="loader">
       <i class="loader-tips"><i class="fa-regular fa-bell"></i>Save you music in liked tracks, by clicking heart icon</i>
       <img src="assets/20230402_201236.png"/>
-      <p><span>loading</span>2v1.2.11</p>
+      <p><span>loading</span>2v1.2.12</p>
       <div class="loader-shape"></div>
   </div>
 
@@ -351,7 +351,7 @@
         width: 100%;
     " class="settings-screen-item-description">
           <h3>Version</h3>
-          <a id="version_build">2v1.2.11</a>
+          <a id="version_build">2v1.2.12</a>
         </div>
       </div>
 
@@ -1530,6 +1530,10 @@
   <div class="tutorial-popup-content">
     <div class="tutorial-popup-content-img">
       <img src="">
+      <audio style="display: none;" src=""></audio>
+      <div class="tutorial-popup-mute" onclick="tutorialToogleMute(this)">
+        <i class="fa-solid fa-volume-high"></i>
+      </div>
     </div>
     <div class="tutorial-popup-content-text">
       <div class="tutorial-popup-content-text-top">
@@ -1537,6 +1541,7 @@
         <span>Get started righ away and Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, perspiciatis excepturi porro inventore accusamus necessitatibus, laborum quaerat cupiditate ipsam cumque doloremque reiciendis maxime sapiente quidem.</span>
         <div class="tutorial-popup-content-text-top-dots">
           <div class="top-dot active"></div>
+          <div class="top-dot"></div>
           <div class="top-dot"></div>
           <div class="top-dot"></div>
           <div class="top-dot"></div>

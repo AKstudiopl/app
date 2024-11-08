@@ -6665,6 +6665,7 @@ function premium_POPUP(){
 
 const tutorialPopup = document.querySelector(".tutorial-popup");
 const tutorialPopupImg = document.querySelector(".tutorial-popup-content-img img");
+const tutorialPopupAudio = document.querySelector(".tutorial-popup-content-img audio");
 const tutorialPopupTitle = document.querySelector(".tutorial-popup-content-text-top p");
 const tutorialPopupDesc = document.querySelector(".tutorial-popup-content-text-top span");
 
@@ -6675,13 +6676,29 @@ function tutorial_POPUP_OPEN(){
 
 function tutorial_POPUP_HIDE(){
   tutorialPopup.classList.remove('active');
+  setTimeout(() => {
+    tutorialPopupAudio.pause();
+  }, 550);
+}
+
+function tutorialToogleMute(e){
+  e.classList.toggle("active")
+  if(e.classList.contains("active")){
+    e.innerHTML='<i class="fa-solid fa-volume-xmark"></i>';
+    tutorialPopupAudio.volume=0;
+    tutorialPopupAudio.pause();
+  }else{
+    e.innerHTML='<i class="fa-solid fa-volume-high"></i>';
+    tutorialPopupAudio.volume=1;
+    tutorialPopupAudio.play();
+  }
 }
 
 function tutorial_SLIDE_NEXT(){
   tutorialDATA = tutorialPopup.getAttribute('slide');
   tutorialDATA++;
 
-  if(tutorialDATA <= 5){
+  if(tutorialDATA <= 6){
     tutorialPopup.setAttribute('slide', tutorialDATA);
   }else{
     tutorial_POPUP_HIDE();
@@ -6729,6 +6746,8 @@ function tutorial_SLIDE_LOAD(){
     setTimeout(() => {
       tutorialPopupImg.classList.remove('fade');
       tutorialPopupImg.src = 'https://cdn.mos.cms.futurecdn.net/normaSZpamH9ytc63Msjsn.jpg';
+      tutorialPopupAudio.src = "assets/ElevenLabs_2024-11-08T13_17_12_Jessica_pre_s50_sb75_se0_b_m2.mp3"
+      tutorialPopupAudio.play();
     }, 500);
   }
   if(tutorialDATA === "2"){
@@ -6748,6 +6767,8 @@ function tutorial_SLIDE_LOAD(){
     setTimeout(() => {
       tutorialPopupImg.classList.remove('fade');
       tutorialPopupImg.src = 'https://ds.static.rtbf.be/article/image/1920x1080/9/0/8/691dcb1d65f31967a874d18383b9da75-1604413035.jpg';
+      tutorialPopupAudio.src = "assets/ElevenLabs_2024-11-08T13_15_45_Jessica_pre_s50_sb75_se0_b_m2.mp3"
+      tutorialPopupAudio.play();
     }, 500);
   }
   if(tutorialDATA === "3"){
@@ -6760,13 +6781,15 @@ function tutorial_SLIDE_LOAD(){
       tutorialPopupDesc.classList.remove('fade');
       tutorialPopupTitle.classList.remove('fade');
       tutorialPopupTitle.innerText = 'Music X Lyrics';
-      tutorialPopupDesc.innerHTML = 'Press <i style="color: var(--maincolor)" class="fa-solid fa-microphone"></i> and see the lyrics of many of your favorite tracks as they’re sung. Lyrics may not be available on all songs. We are adding new Lyrics every day, so you may find it added in the future.'
+      tutorialPopupDesc.innerHTML = 'Press <i style="color: var(--maincolor)" class="fa-solid fa-microphone"></i> and see the lyrics of many of your favorite tracks as they’re sung. Lyrics may not be available for all songs. We are adding new Lyrics every day, so you may find it added in the future.'
     }, 350);
 
     tutorialPopupImg.classList.add('fade');
     setTimeout(() => {
       tutorialPopupImg.classList.remove('fade');
       tutorialPopupImg.src = 'https://img.freepik.com/premium-photo/young-pretty-woman-happy-motivated-singing-song-with-microphone-presenting-event-having-party-enjoy-moment_1258-5909.jpg';
+      tutorialPopupAudio.src = "assets/ElevenLabs_2024-11-08T13_15_05_Jessica_pre_s50_sb75_se0_b_m2.mp3"
+      tutorialPopupAudio.play();
     }, 500);
 
   }
@@ -6780,13 +6803,15 @@ function tutorial_SLIDE_LOAD(){
       tutorialPopupDesc.classList.remove('fade');
       tutorialPopupTitle.classList.remove('fade');
       tutorialPopupTitle.innerText = 'Create Playlists';
-      tutorialPopupDesc.innerHTML = 'To add song or create new playlist press <i style="color: var(--maincolor)" class="fa-solid fa-plus"></i>, then you can change image, name and songs that your playlist contain or will contain'
+      tutorialPopupDesc.innerHTML = 'If you want to add a song or create new playlist press <i style="color: var(--maincolor)" class="fa-solid fa-plus"></i>, then you can change image, name and songs that your playlist contain or will contain'
     }, 350);
 
     tutorialPopupImg.classList.add('fade');
     setTimeout(() => {
       tutorialPopupImg.classList.remove('fade');
       tutorialPopupImg.src = 'https://img.freepik.com/premium-photo/cheerful-attractive-young-woman-smiling-listening-music-from-mobile-phone-outdoors_171337-89529.jpg';
+      tutorialPopupAudio.src = "assets/ElevenLabs_2024-11-08T13_13_57_Jessica_pre_s50_sb75_se0_b_m2.mp3"
+      tutorialPopupAudio.play();
     }, 500);
 
   }
@@ -6807,6 +6832,30 @@ function tutorial_SLIDE_LOAD(){
     setTimeout(() => {
       tutorialPopupImg.classList.remove('fade');
       tutorialPopupImg.src = 'https://thatgrapejuice.net/wp-content/uploads/2021/08/the-weeknd-take-my-breath-tgj-1280x720.jpeg';
+      tutorialPopupAudio.src = "assets/ElevenLabs_2024-11-08T13_11_11_Jessica_pre_s50_sb75_se0_b_m2.mp3"
+      tutorialPopupAudio.play();
+    }, 500);
+
+  }
+  if(tutorialDATA === "6"){
+    document.querySelector(".tutorial-popup-content-text-top-dots .top-dot.active").classList.remove('active');
+    tutorialDOT = document.querySelectorAll(".tutorial-popup-content-text-top-dots .top-dot")[5].classList.add('active');
+    
+    tutorialPopupDesc.classList.add('fade');
+    tutorialPopupTitle.classList.add('fade');
+    setTimeout(() => {
+      tutorialPopupDesc.classList.remove('fade');
+      tutorialPopupTitle.classList.remove('fade');
+      tutorialPopupTitle.innerText = 'Improve Your Experience With Gestures';
+      tutorialPopupDesc.innerHTML = 'If you want to skip 10 seconds of the track or audiobook just double click right side of cover art. Same for rewind 10 seconds, just double click left side of cover art.'
+    }, 350);
+
+    tutorialPopupImg.classList.add('fade');
+    setTimeout(() => {
+      tutorialPopupImg.classList.remove('fade');
+      tutorialPopupImg.src = 'assets/tutorial6.png';
+      tutorialPopupAudio.src = "assets/ElevenLabs_2024-11-08T12_44_39_Jessica_pre_s50_sb75_se0_b_m2.mp3"
+      tutorialPopupAudio.play();
     }, 500);
 
   }
