@@ -8333,3 +8333,8 @@ function animationReset(){
     document.querySelector(".music-artist-content-album").style.animation = 'fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both';
   }, 675);
 }
+
+function notifiView(notification){
+  notification.classList.toggle("view");
+  notification.querySelector(".notification_check").classList.add("check")
+}

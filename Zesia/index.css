@@ -3639,6 +3639,21 @@ input:checked + .slider:before {
   align-items: center;
   justify-content: space-between;
 }
+.main-music-header.stretched ~ .main-music-header-audiobook
+{
+  border-radius: 0;
+  width: 100%;
+  aspect-ratio: 10/9;
+  margin: 80px 0 105px 0;
+}
+.main-music-header.stretched ~ .main-music-header-audiobook .audiobook-item:nth-child(1)
+{
+  border-radius: 0 100% 100% 0;
+}
+.main-music-header.stretched ~ .main-music-header-audiobook .audiobook-item:nth-child(2)
+{
+  border-radius: 100% 0 0 100%;
+}
 .main-music-header-audiobook .audiobook-item
 {
   width: 35%;
@@ -4195,6 +4210,8 @@ input:checked + .slider:before {
   margin-left: 15px;
   margin-right: 15px;
   margin-top: 30px;
+  position: relative;
+  z-index: 1;
 }
 .progress-bar
 {
@@ -11304,16 +11321,40 @@ font-family: 'Pathway Extreme';
   overflow: visible;
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 .notification_item
 { 
-  height: 150px;
+  min-height: 100px;
+  height: fit-content;
+  max-height: 200px;
   display: flex;
   flex-direction: row;
   align-items: center;
   transition: 0.3s;
-  border-bottom: 1px solid var(--backgroundsecond);
+  border: 1px solid var(--backgroundsecond);
   overflow: hidden;
+  background: var(--background);
+  border-radius: 20px;
+  position: relative;
+}
+.notification_check
+{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10px;
+  border-radius: 50%;
+  height: 10px;
+  right: 10px;
+  bottom: 10px;
+  border: 1px solid var(--backgroundsecond);
+  background: var(--maincolor);
+}
+.notification_check.check
+{
+  display: none;
 }
 .notification_item:nth-child(2n)
 {
@@ -11321,15 +11362,52 @@ font-family: 'Pathway Extreme';
 }
 .notification_item:last-child
 {
-  margin-bottom: 140px;
+  margin-bottom: 145px;
 }
 .notification_item:active
 {
   opacity: 0.5;
 }
+.notification_item.view
+{
+  max-height: fit-content;
+  flex-direction: column;
+  background: var(--background);
+}
+.notification_item.view .notification_img
+{
+  width: 100%;
+  height: 100px;
+  padding-right: 0;  
+}
+.notification_item.view .notification_data
+{
+  width: calc(100% - 20px);
+  margin-left: 10px;
+  padding: 10px 0;
+}
+.notification_item.view .notification_data span
+{
+  padding-top: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-top: 1px solid var(--backgroundsecond);
+}
+.notification_item.view .notification_data h2
+{
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--backgroundsecond);
+}
+.notification_item.view .notification_data p
+{
+  display: block;
+}
 .notification_img
 {
-  height: 150px;
+  min-width: 100px;
+  height: 100%;
+  aspect-ratio: 1/1;
   padding-left: 0;
   padding-right: 10px;
 }
@@ -11337,11 +11415,12 @@ font-family: 'Pathway Extreme';
 {
   height: 100%;
   object-fit: cover;
-  aspect-ratio: 3/4;
+  aspect-ratio: 1/1;
 }
 .notification_img i
 {
   height: 100%;
+  width: 100%;
   background: var(--maincolor);
   object-fit: cover;
   display: flex;
@@ -11361,6 +11440,7 @@ font-family: 'Pathway Extreme';
   font-size: 12px;
   max-width: 90%;
   font-weight: 100;
+  display: none;
 }
 .notification_item p a
 {
@@ -11391,7 +11471,6 @@ font-family: 'Pathway Extreme';
   display: flex;
   align-items: center;
   justify-content: center;
-  filter: grayscale(1);
 }
 .notification_top img
 {
@@ -11404,7 +11483,7 @@ font-family: 'Pathway Extreme';
   top: 0;
   z-index: 1;
   width: 100%;
-  height: 100%;
+  height: calc(30vh + 105px);
 }
 .notification_top img:last-child
 {
@@ -11417,6 +11496,10 @@ font-family: 'Pathway Extreme';
 {
   width: 100%;
   height: 100%;
+}
+.notification_data p:nth-child(2)
+{
+  display: block;
 }
 .center-container.recent-tracks-container
 {
@@ -13704,6 +13787,15 @@ textarea
   {
     right: 20px;
     top: 100px;
+  }
+  .top-controls.lyrics .top-controls-shortcut 
+  {
+    opacity: 1;
+    display: flex;
+  }
+  .top-controls.lyrics #title-sound
+  {
+    display: none;
   }
 }
 

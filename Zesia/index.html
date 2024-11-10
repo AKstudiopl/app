@@ -20,7 +20,7 @@
   <div class="loader">
       <i class="loader-tips"><i class="fa-regular fa-bell"></i>Save you music in liked tracks, by clicking heart icon</i>
       <img src="assets/20230402_201236.png"/>
-      <p><span>loading</span>2v1.2.12</p>
+      <p><span>loading</span>2v1.2.13</p>
       <div class="loader-shape"></div>
   </div>
 
@@ -298,13 +298,6 @@
             <div class="settings-screen-item-box-toggle"></div>
           </div>
         </div>
-  
-        <div class="settings-screen-item" id="input-style" onclick="beta_build_version()">
-          <div class="settings-screen-item-description">
-            <h3>Show Build Version</h3>
-            <a>Refresh To Hide</a>
-          </div>
-        </div>
 
         <p class="music-artist-content-title">Privacy & connection<span></span></p>
 
@@ -351,11 +344,21 @@
         width: 100%;
     " class="settings-screen-item-description">
           <h3>Version</h3>
-          <a id="version_build">2v1.2.12</a>
+          <a id="version_build">2v1.2.13</a>
+        </div>
+      </div>
+
+      <p class="music-artist-content-title">Beta Functions<span></span></p>
+
+      <div class="settings-screen-item" id="input-style" onclick="beta_build_version()">
+        <div class="settings-screen-item-description">
+          <h3>Show Build Version</h3>
+          <a>Refresh To Hide</a>
         </div>
       </div>
 
     </div>
+
 
 </div>
 
@@ -1335,7 +1338,7 @@
 
 <div class="notification_screen">
   <div class="notification_controls">
-    <p>Notifications</p>
+    <p></p>
     <i onclick="notifyToggle()" class="fa-solid fa-xmark"></i>
   </div>
   <div class="notification_top">
@@ -1348,31 +1351,37 @@
   </div>
   <div class="notification_content">
 
-    <div class="notification_item">
+    <div class="notification_item" onclick="notifiView(this)">
       <div class="notification_img">
         <i class="fa-solid fa-envelope-open-text"></i>
       </div>
       <div class="notification_data">
         <h2>Audiobooks Are Coming! (Winter Is Coming)</h2>
-        <p>We Are Happy To Announce Freshly Produced Content.</p>
+        <p>Hi there! We Are Happy To Announce Freshly Produced Content.</p>
+        <p>We’re excited to announce that our latest update now includes audiobooks! You can now enjoy your favorite books in audio format, anytime and anywhere. We hope this new feature makes your experience even more enjoyable.</p>
         <p>Our First Audiobook Is One Of The Greatest One</p>
-        <p>• Wiedzmin - Sapkowski & Fonopolis</p>
+        <p>• Wiedzmin - Sezon Burz</p>
+        <p>By Sapkowski & Fonopolis</p>
         <span><p>Developers</p><p>12/06/2024</p></span>
+      </div>
+      <div class="notification_check">
       </div>
     </div>
 
-    <div class="notification_item">
+    <div class="notification_item" onclick="notifiView(this)">
       <div class="notification_img">
         <i class="fa-solid fa-microphone"></i>
       </div>
       <div class="notification_data">
         <h2>Try out our Lyrics</h2>
-        <p>Just click microphone icon while listening to music, and enjoy it even more!</p>
+        <p>Just click microphone icon while listening to music, and enjoy it!</p>
         <span><p>Developers</p><p>02/06/2023</p></span>
+      </div>
+      <div class="notification_check check">
       </div>
     </div>
 
-    <div class="notification_item">
+    <div class="notification_item" onclick="notifiView(this)">
       <div class="notification_img">
         <i class="fa-solid fa-terminal"></i>
       </div>
@@ -1381,9 +1390,11 @@
         <p>Standard verision of the application, that will be regulary updated</p>
         <span><p>Developers</p><p>30/03/2023</p></span>
       </div>
+      <div class="notification_check check">
+      </div>
     </div>
 
-    <div class="notification_item">
+    <div class="notification_item" onclick="notifiView(this)">
       <div class="notification_img">
         <i class="fa-solid fa-users"></i>
       </div>
@@ -1391,6 +1402,8 @@
         <h2>Welcome To Zesia</h2>
         <p>Listen to best music with us!</p>
         <span><p>Developers</p><p>02/12/2022</p></span>
+      </div>
+      <div class="notification_check check">
       </div>
     </div>
 
