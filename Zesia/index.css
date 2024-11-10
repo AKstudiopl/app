@@ -11334,9 +11334,10 @@ font-family: 'Pathway Extreme';
   transition: 0.3s;
   border: 1px solid var(--backgroundsecond);
   overflow: hidden;
-  background: var(--background);
+  background: var(--backgroundsecond);
   border-radius: 20px;
   position: relative;
+  transition: .3s;
 }
 .notification_check
 {
@@ -11401,7 +11402,12 @@ font-family: 'Pathway Extreme';
 }
 .notification_item.view .notification_data p
 {
+  animation: 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0s 1 normal both running fade-in;
   display: block;
+}
+.notification_item.view .notification_data span p
+{
+  animation: none;
 }
 .notification_img
 {
@@ -11414,8 +11420,16 @@ font-family: 'Pathway Extreme';
 .notification_img img
 {
   height: 100%;
+  width: 100%;
+  background: var(--maincolor);
   object-fit: cover;
-  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 250%;
+  color: var(--background);
+  aspect-ratio: 3 / 4;
+  max-height: 100px;
 }
 .notification_img i
 {
@@ -11433,7 +11447,7 @@ font-family: 'Pathway Extreme';
 .notification_item h2
 {
   font-size: 18px;
-  width: 100%;
+  width: 95%;
 }
 .notification_item p 
 {
@@ -12921,7 +12935,7 @@ textarea
   }
   #ef3-sadE
   {
-    margin-bottom: 0px;
+    margin-bottom: 30px;
     width: 100%;
     display: flex;
   }
@@ -13684,6 +13698,11 @@ textarea
   .background-canvas video
   {
     filter: blur(10px);
+  }
+  .notification_content
+  {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
   }
 }
 

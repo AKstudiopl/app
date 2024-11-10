@@ -14508,4 +14508,97 @@ var allMusic = [
     lyrics:[
     ],
   },
+  {
+    name: "Sezon Burz • Część VI",
+    artist: "Fonopolis",
+    colaboration: "Andrzej Sapkowski",
+    colaboration_id: "",
+    artist_status: "none",
+    language: "pl",
+    country: "pl",
+    artist_id: "89",
+    
+    src: "SezonBurz6Wiedzmin",
+    img: "9788375780895-bookbeat-",
+    img_mini: "https://prod-bb-images.akamaized.net/imported-covers/9788375780895-bookbeat-.jpg?w=75",
+
+    style: "Audiobook",
+    status: "nostatus",
+    tag: "",
+    canvas: "",
+
+    thisis_img: "https://yt3.googleusercontent.com/ytc/AIdro_nAMG8zxvHwX0COf9X-gLx-Q-531eZw0JRJKolReQhQNQ=s900-c-k-c0x00ffffff-no-rj",
+    radio_img: "https://resources.tidal.com/images/a6a09d33/833a/49ee/95d0/6982f8b910a5/1080x1080.jpg",
+    style_img: "https://media.licdn.com/dms/image/D4E12AQHbhgSvAQs0iQ/article-cover_image-shrink_720_1280/0/1700434304177?e=2147483647&v=beta&t=g4jrMuP6jOndnPMcMyX3yZfu3VbsNewlzKc5AESohtg",
+
+    album: "Wiedźmin",
+    album_cover: "https://prod-bb-images.akamaized.net/imported-covers/9788375780895-bookbeat-.jpg?w=640",
+    album_premiere: "2024",
+    album_status: "false",
+    id: "266",
+    lyrics:[
+    ],
+  },
+  {
+    name: "Sezon Burz • Część VII",
+    artist: "Fonopolis",
+    colaboration: "Andrzej Sapkowski",
+    colaboration_id: "",
+    artist_status: "none",
+    language: "pl",
+    country: "pl",
+    artist_id: "89",
+    
+    src: "SezonBurz7Wiedzmin",
+    img: "9788375780895-bookbeat-",
+    img_mini: "https://prod-bb-images.akamaized.net/imported-covers/9788375780895-bookbeat-.jpg?w=75",
+
+    style: "Audiobook",
+    status: "nostatus",
+    tag: "",
+    canvas: "",
+
+    thisis_img: "https://yt3.googleusercontent.com/ytc/AIdro_nAMG8zxvHwX0COf9X-gLx-Q-531eZw0JRJKolReQhQNQ=s900-c-k-c0x00ffffff-no-rj",
+    radio_img: "https://resources.tidal.com/images/a6a09d33/833a/49ee/95d0/6982f8b910a5/1080x1080.jpg",
+    style_img: "https://media.licdn.com/dms/image/D4E12AQHbhgSvAQs0iQ/article-cover_image-shrink_720_1280/0/1700434304177?e=2147483647&v=beta&t=g4jrMuP6jOndnPMcMyX3yZfu3VbsNewlzKc5AESohtg",
+
+    album: "Wiedźmin",
+    album_cover: "https://prod-bb-images.akamaized.net/imported-covers/9788375780895-bookbeat-.jpg?w=640",
+    album_premiere: "2024",
+    album_status: "false",
+    id: "267",
+    lyrics:[
+    ],
+  },
+  {
+    name: "Sezon Burz • Część VIII",
+    artist: "Fonopolis",
+    colaboration: "Andrzej Sapkowski",
+    colaboration_id: "",
+    artist_status: "none",
+    language: "pl",
+    country: "pl",
+    artist_id: "89",
+    
+    src: "SezonBurz8Wiedzmin",
+    img: "9788375780895-bookbeat-",
+    img_mini: "https://prod-bb-images.akamaized.net/imported-covers/9788375780895-bookbeat-.jpg?w=75",
+
+    style: "Audiobook",
+    status: "nostatus",
+    tag: "",
+    canvas: "",
+
+    thisis_img: "https://yt3.googleusercontent.com/ytc/AIdro_nAMG8zxvHwX0COf9X-gLx-Q-531eZw0JRJKolReQhQNQ=s900-c-k-c0x00ffffff-no-rj",
+    radio_img: "https://resources.tidal.com/images/a6a09d33/833a/49ee/95d0/6982f8b910a5/1080x1080.jpg",
+    style_img: "https://media.licdn.com/dms/image/D4E12AQHbhgSvAQs0iQ/article-cover_image-shrink_720_1280/0/1700434304177?e=2147483647&v=beta&t=g4jrMuP6jOndnPMcMyX3yZfu3VbsNewlzKc5AESohtg",
+
+    album: "Wiedźmin",
+    album_cover: "https://prod-bb-images.akamaized.net/imported-covers/9788375780895-bookbeat-.jpg?w=640",
+    album_premiere: "2024",
+    album_status: "false",
+    id: "268",
+    lyrics:[
+    ],
+  },
 ]
