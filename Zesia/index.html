@@ -20,7 +20,7 @@
   <div class="loader">
       <i class="loader-tips"><i class="fa-regular fa-bell"></i>Save you music in liked tracks, by clicking heart icon</i>
       <img src="assets/20230402_201236.png"/>
-      <p><span>loading</span>2v1.2.14</p>
+      <p><span>loading</span>2v1.2.15</p>
       <div class="loader-shape"></div>
   </div>
 
@@ -344,7 +344,7 @@
         width: 100%;
     " class="settings-screen-item-description">
           <h3>Version</h3>
-          <a id="version_build">2v1.2.14</a>
+          <a id="version_build">2v1.2.15</a>
         </div>
       </div>
 
@@ -354,6 +354,20 @@
         <div class="settings-screen-item-description">
           <h3>Show Build Version</h3>
           <a>Refresh To Hide</a>
+        </div>
+      </div>
+
+      <div class="settings-screen-item" id="input-style" onclick="">
+        <div class="settings-screen-item-description">
+          <h3>Test PopUp</h3>
+          <a>Testing Popup Message</a>
+        </div>
+      </div>
+
+      <div class="settings-screen-item" id="input-style" onclick="">
+        <div class="settings-screen-item-description">
+          <h3>Test Visibility Change</h3>
+          <a>Test #1</a>
         </div>
       </div>
 
@@ -496,7 +510,7 @@
       <div class="head-content-top-action">
         <a style="display: none;"><i class="fa-solid fa-magnifying-glass"></i></a>
         <a onclick="historyScreenToggle()"><i class="fa-solid fa-clock-rotate-left"></i></a>
-        <a onclick="fastLoadingPop();notifyToggle()"><i class="fa-regular fa-bell"></i></a>
+        <a data-content="0" class="head-content-bell" onclick="fastLoadingPop();notifyToggle()"><i class="fa-regular fa-bell"></i></a>
         <a class="settings-action-btn" onclick="lyrics_customize_select(this)" data="1"><i class="fa-solid fa-gear"></i></a>
       </div>
 
@@ -1358,9 +1372,10 @@
       <div class="notification_data">
         <h2>Wiedzmin Sezon Burz Parts 6,7 & 8 Are Now Available!</h2>
         <p>Don't Waste More Time And Get In to Witcher World!</p>
+        <a onclick="clickedNotification(this)" notifi-data="266">Play</a>
         <span><p>Developers</p><p>10/11/2024</p></span>
       </div>
-      <div class="notification_check">
+      <div class="notification_check check">
       </div>
     </div>
 
@@ -1390,7 +1405,7 @@
         <p>Just click microphone icon while listening to music, and enjoy it!</p>
         <span><p>Developers</p><p>02/06/2023</p></span>
       </div>
-      <div class="notification_check check">
+      <div class="notification_check">
       </div>
     </div>
 
@@ -1403,7 +1418,7 @@
         <p>Standard verision of the application, that will be regulary updated</p>
         <span><p>Developers</p><p>30/03/2023</p></span>
       </div>
-      <div class="notification_check check">
+      <div class="notification_check">
       </div>
     </div>
 
@@ -1416,7 +1431,7 @@
         <p>Listen to best music with us!</p>
         <span><p>Developers</p><p>02/12/2022</p></span>
       </div>
-      <div class="notification_check check">
+      <div class="notification_check">
       </div>
     </div>
 

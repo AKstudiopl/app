@@ -2041,9 +2041,16 @@ input:checked + .slider:before {
 {
   opacity: 0.5;
 }
+.head-content-top-action a.notifications-non:nth-child(3)::after
+{
+  height: 0px;
+  width: 0px;
+  color: transparent;
+  transform: translateY(20px);
+}
 .head-content-top-action a:nth-child(3)::after
 {
-  content: '1';
+  content: attr(data-content);
   position: absolute;
   display: flex;
   align-items: center;
@@ -2055,6 +2062,8 @@ input:checked + .slider:before {
   height: 20px;
   font-size: 12px;
   background: var(--maincolor);
+  transition: .3s;
+  transition-delay: .4s;
 }
 .head-content .head-content-top-welcome i
 {
@@ -11342,7 +11351,7 @@ font-family: 'Pathway Extreme';
 .notification_check
 {
   position: absolute;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   width: 10px;
@@ -11355,7 +11364,7 @@ font-family: 'Pathway Extreme';
 }
 .notification_check.check
 {
-  display: none;
+  display: flex;
 }
 .notification_item:nth-child(2n)
 {
@@ -11375,10 +11384,30 @@ font-family: 'Pathway Extreme';
   flex-direction: column;
   background: var(--background);
 }
+.notification_item a
+{
+  display: none;
+}
+.notification_item.view a
+{
+  display: flex;
+  width: fit-content;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background: var(--maincolor);
+  font-weight: 100;
+  transition: .3s;
+  animation: 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0s 1 normal both running fade-in;
+}
+.notification_item.view a:active
+{
+  transform: scale(.9);
+}
 .notification_item.view .notification_img
 {
   width: 100%;
-  height: 100px;
+  height: 150px;
   padding-right: 0;  
 }
 .notification_item.view .notification_data
@@ -11399,6 +11428,7 @@ font-family: 'Pathway Extreme';
   padding-bottom: 10px;
   margin-bottom: 10px;
   border-bottom: 1px solid var(--backgroundsecond);
+  animation: .5s cubic-bezier(0.39, 0.575, 0.565, 1) 0s 1 normal both running fade-in;
 }
 .notification_item.view .notification_data p
 {
@@ -11416,6 +11446,11 @@ font-family: 'Pathway Extreme';
   aspect-ratio: 1/1;
   padding-left: 0;
   padding-right: 10px;
+}
+.notification_item.view img
+{
+  height: 100%;
+  max-height: fit-content;
 }
 .notification_img img
 {

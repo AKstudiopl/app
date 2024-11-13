@@ -1483,6 +1483,18 @@ function checkUserData(){
   }else{
     nameUserMain.innerText = localStorage.getItem('personalization-data-name');
   }
+
+  /*Notifications Status Data & Load*/
+  notifiData =  document.querySelectorAll(".notification_check.check").length;
+  setTimeout(() => {
+    notifiCounter.setAttribute('data-content', notifiData);
+    if(notifiData === 0){
+      notifiCounter.classList.add("notifications-non")
+    }else{
+      notifiCounter.classList.remove("notifications-non")
+    }
+  }, 250);
+  /*Notifications Status End*/
 }
 
   const gallery = document.querySelector("#container");
@@ -3640,7 +3652,7 @@ function default_user(){
 }
 
 function clickedNotification(element){
-  let linkHref = element.getAttribute('link_to');
+  let linkHref = element.getAttribute('notifi-data');
   allMusic = allMusicView.filter(x => x.id === linkHref);
   indexNumb = 1;
   loadMusic(indexNumb);
@@ -3652,8 +3664,24 @@ function clickedRedirection(element){
   window.location = linkHref;
 }
 
+let notifiData =  document.querySelectorAll(".notification_check.check").length;
+let notifiCounter = document.querySelector(".head-content-bell");
+
 function notifyToggle(){
   document.querySelector(".notification_screen").classList.toggle("active");
+  notifiData =  document.querySelectorAll(".notification_check.check").length;
+  notifiCounter.setAttribute('data-content', notifiData);
+  if(notifiData === 0){
+    notifiCounter.classList.add("notifications-non")
+  }else{
+    notifiCounter.classList.remove("notifications-non")
+  }
+
+    setTimeout(() => {
+    $('.notification_item .notification_data a').click(function(event) {
+      event.stopPropagation();
+    });
+  }, 250);
 }
 
 const notifyUser = document.querySelector(".notification_header_main");
@@ -3663,7 +3691,7 @@ const notifyContent = document.querySelector(".notification_content");
 notifyUser.addEventListener('click', () => {
   notifyReco.classList.remove("active");
   notifyUser.classList.add("active");
-  notifyContent.style.display="flex";
+  notifyContent.style.display="grid";
 })
 
 notifyReco.addEventListener('click', () => {
@@ -8336,5 +8364,5 @@ function animationReset(){
 
 function notifiView(notification){
   notification.classList.toggle("view");
-  notification.querySelector(".notification_check").classList.add("check")
+  notification.querySelector(".notification_check").classList.remove("check")
 }
