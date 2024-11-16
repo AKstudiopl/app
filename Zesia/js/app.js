@@ -131,6 +131,7 @@ window.addEventListener("load", function () {
     loadDailyPlaylists();
     loadUserStylePlaylists();
     playlist_HOME_LOAD();
+    loadPersonalizedTracks();
 });
 
 const activeHomeBtn = document.getElementsByClassName('navbar-bottom-btn-home')[0]
@@ -8365,4 +8366,37 @@ function animationReset(){
 function notifiView(notification){
   notification.classList.toggle("view");
   notification.querySelector(".notification_check").classList.remove("check")
+}
+
+let customPopup = document.querySelector(".custom-popup")
+
+function custompopupToggle(){
+  customPopup.classList.toggle("active")
+}
+
+function loadPersonalizedTracks(){
+  const resultsFAV = document.querySelector(".head-content-track-content")
+  var favoritIt = allMusicView.filter(x => x.style === "Christmas");
+  shuffle(favoritIt);
+  favoritIt = favoritIt.slice(0, 5)
+  resultsFAV.innerHTML = "";
+  for (let i = 0; i < favoritIt.length; i++) {
+    let resultFAV =
+      `<div class="music-artist-album-item" li-index='${favoritIt[i].id}' onclick="clickedSingle(this)">
+            <img src="${favoritIt[i].img_mini}">
+            <div class="music-artist-album-item-data">
+                <h1>${favoritIt[i].name}</h1>
+                <span>${favoritIt[i].artist}</span>
+            </div>
+            <i onclick="trackOptions(this)" class="fa-solid fa-ellipsis-vertical"></i>
+       </div>`;
+    resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
+    albumScreenSongsNumber.innerText = $('.music-artist-album-screen-container .music-artist-album-item').length;
+  }
+
+  setTimeout(() => {
+    $('.head-content-track-content .music-artist-album-item .center-container-item-action i').click(function(event) {
+      event.stopPropagation();
+    });
+  }, 250);
 }
