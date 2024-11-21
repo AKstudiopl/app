@@ -2079,6 +2079,9 @@ function clickedSingleAlbum(element){
       $('.music-artist-content-item-collaboration').click(function(event) {
         event.stopPropagation();
       });
+      $('.head-content-track-content .music-artist-album-item .center-container-item-action i').click(function(event) {
+        event.stopPropagation();
+      });
     }, 250);
 }
 
@@ -8393,10 +8396,4 @@ function loadPersonalizedTracks(){
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
     albumScreenSongsNumber.innerText = $('.music-artist-album-screen-container .music-artist-album-item').length;
   }
-
-  setTimeout(() => {
-    $('.head-content-track-content .music-artist-album-item .center-container-item-action i').click(function(event) {
-      event.stopPropagation();
-    });
-  }, 250);
 }

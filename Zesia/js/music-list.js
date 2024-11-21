@@ -14362,7 +14362,7 @@ var allMusic = [
     radio_img: "https://resources.tidal.com/images/a6a09d33/833a/49ee/95d0/6982f8b910a5/1080x1080.jpg",
     style_img: "https://media.licdn.com/dms/image/D4E12AQHbhgSvAQs0iQ/article-cover_image-shrink_720_1280/0/1700434304177?e=2147483647&v=beta&t=g4jrMuP6jOndnPMcMyX3yZfu3VbsNewlzKc5AESohtg",
 
-    album: "Wiedźmin",
+    album: "Wiedźmin • Sezon Burz",
     album_cover: "https://prod-bb-images.akamaized.net/imported-covers/9788375780895-bookbeat-.jpg?w=640",
     album_premiere: "2024",
     album_status: "false",
@@ -14407,7 +14407,7 @@ var allMusic = [
     radio_img: "https://resources.tidal.com/images/a6a09d33/833a/49ee/95d0/6982f8b910a5/1080x1080.jpg",
     style_img: "https://media.licdn.com/dms/image/D4E12AQHbhgSvAQs0iQ/article-cover_image-shrink_720_1280/0/1700434304177?e=2147483647&v=beta&t=g4jrMuP6jOndnPMcMyX3yZfu3VbsNewlzKc5AESohtg",
 
-    album: "Wiedźmin",
+    album: "Wiedźmin • Sezon Burz",
     album_cover: "https://prod-bb-images.akamaized.net/imported-covers/9788375780895-bookbeat-.jpg?w=640",
     album_premiere: "2024",
     album_status: "false",
@@ -14438,7 +14438,7 @@ var allMusic = [
     radio_img: "https://resources.tidal.com/images/a6a09d33/833a/49ee/95d0/6982f8b910a5/1080x1080.jpg",
     style_img: "https://media.licdn.com/dms/image/D4E12AQHbhgSvAQs0iQ/article-cover_image-shrink_720_1280/0/1700434304177?e=2147483647&v=beta&t=g4jrMuP6jOndnPMcMyX3yZfu3VbsNewlzKc5AESohtg",
 
-    album: "Wiedźmin",
+    album: "Wiedźmin • Sezon Burz",
     album_cover: "https://prod-bb-images.akamaized.net/imported-covers/9788375780895-bookbeat-.jpg?w=640",
     album_premiere: "2024",
     album_status: "false",
@@ -14469,7 +14469,7 @@ var allMusic = [
     radio_img: "https://resources.tidal.com/images/a6a09d33/833a/49ee/95d0/6982f8b910a5/1080x1080.jpg",
     style_img: "https://media.licdn.com/dms/image/D4E12AQHbhgSvAQs0iQ/article-cover_image-shrink_720_1280/0/1700434304177?e=2147483647&v=beta&t=g4jrMuP6jOndnPMcMyX3yZfu3VbsNewlzKc5AESohtg",
 
-    album: "Wiedźmin",
+    album: "Wiedźmin • Sezon Burz",
     album_cover: "https://prod-bb-images.akamaized.net/imported-covers/9788375780895-bookbeat-.jpg?w=640",
     album_premiere: "2024",
     album_status: "false",
@@ -14500,7 +14500,7 @@ var allMusic = [
     radio_img: "https://resources.tidal.com/images/a6a09d33/833a/49ee/95d0/6982f8b910a5/1080x1080.jpg",
     style_img: "https://media.licdn.com/dms/image/D4E12AQHbhgSvAQs0iQ/article-cover_image-shrink_720_1280/0/1700434304177?e=2147483647&v=beta&t=g4jrMuP6jOndnPMcMyX3yZfu3VbsNewlzKc5AESohtg",
 
-    album: "Wiedźmin",
+    album: "Wiedźmin • Sezon Burz",
     album_cover: "https://prod-bb-images.akamaized.net/imported-covers/9788375780895-bookbeat-.jpg?w=640",
     album_premiere: "2024",
     album_status: "false",
@@ -14531,7 +14531,7 @@ var allMusic = [
     radio_img: "https://resources.tidal.com/images/a6a09d33/833a/49ee/95d0/6982f8b910a5/1080x1080.jpg",
     style_img: "https://media.licdn.com/dms/image/D4E12AQHbhgSvAQs0iQ/article-cover_image-shrink_720_1280/0/1700434304177?e=2147483647&v=beta&t=g4jrMuP6jOndnPMcMyX3yZfu3VbsNewlzKc5AESohtg",
 
-    album: "Wiedźmin",
+    album: "Wiedźmin • Sezon Burz",
     album_cover: "https://prod-bb-images.akamaized.net/imported-covers/9788375780895-bookbeat-.jpg?w=640",
     album_premiere: "2024",
     album_status: "false",
@@ -14562,7 +14562,7 @@ var allMusic = [
     radio_img: "https://resources.tidal.com/images/a6a09d33/833a/49ee/95d0/6982f8b910a5/1080x1080.jpg",
     style_img: "https://media.licdn.com/dms/image/D4E12AQHbhgSvAQs0iQ/article-cover_image-shrink_720_1280/0/1700434304177?e=2147483647&v=beta&t=g4jrMuP6jOndnPMcMyX3yZfu3VbsNewlzKc5AESohtg",
 
-    album: "Wiedźmin",
+    album: "Wiedźmin • Sezon Burz",
     album_cover: "https://prod-bb-images.akamaized.net/imported-covers/9788375780895-bookbeat-.jpg?w=640",
     album_premiere: "2024",
     album_status: "false",
@@ -14593,7 +14593,7 @@ var allMusic = [
     radio_img: "https://resources.tidal.com/images/a6a09d33/833a/49ee/95d0/6982f8b910a5/1080x1080.jpg",
     style_img: "https://media.licdn.com/dms/image/D4E12AQHbhgSvAQs0iQ/article-cover_image-shrink_720_1280/0/1700434304177?e=2147483647&v=beta&t=g4jrMuP6jOndnPMcMyX3yZfu3VbsNewlzKc5AESohtg",
 
-    album: "Wiedźmin",
+    album: "Wiedźmin • Sezon Burz",
     album_cover: "https://prod-bb-images.akamaized.net/imported-covers/9788375780895-bookbeat-.jpg?w=640",
     album_premiere: "2024",
     album_status: "false",
