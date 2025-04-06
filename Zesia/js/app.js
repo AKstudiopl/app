@@ -8379,7 +8379,7 @@ function custompopupToggle(){
 
 function loadPersonalizedTracks(){
   const resultsFAV = document.querySelector(".head-content-track-content")
-  var favoritIt = allMusicView.filter(x => x.style === "Christmas");
+  var favoritIt = allMusicView.filter(x => x.tag === "Popular");
   shuffle(favoritIt);
   favoritIt = favoritIt.slice(0, 5)
   resultsFAV.innerHTML = "";
@@ -8395,5 +8395,16 @@ function loadPersonalizedTracks(){
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
     albumScreenSongsNumber.innerText = $('.music-artist-album-screen-container .music-artist-album-item').length;
+  }
+}
+
+function personalizedToggle (e){
+  document.querySelector(".head-content-track").classList.toggle('active');
+  if(document.querySelector(".head-content-track").classList.contains('active')){
+    e.classList.remove('fa-angle-down');
+    e.classList.add('fa-angle-up');
+  }else{
+    e.classList.remove('fa-angle-up');
+    e.classList.add('fa-angle-down');
   }
 }

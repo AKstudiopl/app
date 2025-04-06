@@ -1940,10 +1940,10 @@ input:checked + .slider:before {
   width: 100%;
   height: 100%;
   opacity: 1;
-  filter: blur(30px) opacity(.25);
+  filter: blur(30px) opacity(.3);
   object-fit: cover;
   top: 0;
-  background-image: url('https://t4.ftcdn.net/jpg/01/30/24/67/360_F_130246761_XVWbg4AGgGu7SlcKi2QPR23J03U710mP.jpg');
+  background-image: url('https://i.scdn.co/image/ab67706c0000da8466f5c47190941f72817489d6');
 }
 .head_ui_color p
 {
@@ -2007,7 +2007,6 @@ input:checked + .slider:before {
 }
 .head-content-top::before
 {
-  content: url('https://pngimg.com/d/snow_PNG6.png');
   position: absolute;
   width: calc(100% + 30px);
   height: 750px;
@@ -2233,8 +2232,17 @@ input:checked + .slider:before {
   border-radius: 15px;
   overflow: hidden;
 }
+.head-content-track.active
+{
+  height: 325px;
+}
+.head-content-track.active .head-content-track-content
+{
+  opacity: 1;
+}
 .head-content-track {
-  height: 310px;
+  transition: .3s;
+  height: 70px;
   width: 310px;
   min-width: 310px;
   grid-column-start: 5;
@@ -2242,7 +2250,7 @@ input:checked + .slider:before {
   grid-row-end: 3;
   position: relative;
   outline: 3px solid rgb(255 255 255 / 5%);
-  outline-offset: -3x;
+  outline-offset: -3px;
 }
 .head-content-track-bg
 {
@@ -2282,13 +2290,13 @@ input:checked + .slider:before {
   backdrop-filter: blur(25px);
   background: rgb(255, 255, 255, 0.05);
   overflow: hidden;
+  transition: .3s;
 }
 .head-content-track-title p
 {
   font-weight: 900;
   color: var(--color);
   filter: drop-shadow(0px 5px 5px rgba(62, 58, 79, 1));
-  text-shadow:-1px -1px 0 #32323d3b, 1px -1px 0 #32323d54, -1px 1px 0 #32323d7d, 1px 1px 0 #32323d66;
 } 
 .head-content-track-title span
 {
@@ -2338,8 +2346,9 @@ input:checked + .slider:before {
 .head-content-track-title i
 {
   background: var(--backgroundsecond);
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -2350,13 +2359,7 @@ input:checked + .slider:before {
 }
 .head-content-track-title i:hover
 {
-  color: var(--maincolor);
-}
-.head-content-track-title i:hover ~ span
-{
-  letter-spacing: 5px;
-  opacity: 1;
-  filter: blur(5px);
+  transform: scale(.9);
 }
 .head-content-track-content
 {
@@ -2364,6 +2367,9 @@ input:checked + .slider:before {
   margin-left: 10px;
   max-height: 260px;
   overflow: scroll;
+  opacity: 0;
+  transition: .3s;
+  transition-delay: .2s;
 }
 .head-content-track-content .music-artist-album-item
 {
@@ -13950,7 +13956,7 @@ textarea
   }
   .head_ui_color img
   {
-    filter: blur(25px) opacity(.25);
+    filter: blur(25px) opacity(.3);
   }
   .navbar-bottom-shortcuts
   {
@@ -14070,6 +14076,28 @@ textarea
   {
     display: grid;
     grid-template-columns: repeat(2, 50%);
+  }
+  .head-content-track
+  {
+    height: 150px;
+    outline: 1px solid rgb(255 255 255 / 5%);
+    outline-offset: -1px;
+  }
+  .head-content-track.active
+  {
+    height: 310px;
+  }
+  .head-content-track.active .head-content-track-title
+  {
+    height: 50px;
+  }
+  .head-content-track-title
+  {
+    height: 130px;
+  }
+  .head-content-track-content
+  {
+    max-height: 240px;
   }
 }
 

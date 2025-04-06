@@ -14601,4 +14601,50 @@ var allMusic = [
     lyrics:[
     ],
   },
+  {
+    name: "greedy",
+    artist: "Tate McRae",
+    colaboration: "",
+    colaboration_id: "",
+    artist_status: "none",
+    language: "eng",
+    country: "usa",
+    artist_id: "90",
+    artist_followers: "49153451",
+    
+    src: "TateMcRae-greedy",
+    img: "ab67616d00001e0222fd802bc61db666c7c81aa8",
+    img_mini: "https://i.scdn.co/image/ab67616d0000485122fd802bc61db666c7c81aa8",
+
+    style: "Pop",
+    status: "nostatus",
+    tag: "",
+    avatar: "ab67618600009d802eb641be4c9d90d32e03b976",
+    avatar_mini: "https://i.scdn.co/image/ab6761610000f1784623c7ed9d1e2d2938fae462",
+    artist_img: "https://i.scdn.co/image/ab6761670000ecd403ef34bc30e1eb784a95f52a",
+    gallery_img_1: "https://pbs.twimg.com/media/F976TJkbkAAHQa6?format=jpg&name=medium",
+    gallery_img_2: "https://pbs.twimg.com/media/F6BvXG6asAAaeiT?format=jpg&name=4096x4096",
+    gallery_img_3: "https://pbs.twimg.com/media/FdHMeenWQAA8niK?format=jpg&name=900x900",
+    gallery_img_4: "https://pbs.twimg.com/media/GdkQbfxWkAA9g3E?format=jpg&name=small",
+    gallery_img_5: "https://pbs.twimg.com/media/Gm0AGFVXsAAZzCC?format=jpg&name=large",
+    canvas: "",
+
+    thisis_img: "https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO2nSXaa-default.jpg",
+    radio_img: "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/45dkTj5sMRSjrmBSBeiHym/pl",
+    style_img: "https://i.scdn.co/image/ab67706f0000000294de2713083486c255f31c6d",
+
+    album: "greedy",
+    album_cover: "https://i.scdn.co/image/ab67616d00001e0222fd802bc61db666c7c81aa8",
+    album_premiere: "2023",
+    album_status: "false",
+    id: "269",
+    lyrics:[
+    ],
+    bio: "Singer, songwriter, and dancer triple threat Tate McRae has garnered over 10.8B career streams and multiple #1 Top 40 hits. She’s received countless accolades including Artist Of The Year at the 2024 JUNO Awards, nominations for three MTV VMAs, two Billboard Music Awards, and iHeartRadio Music Awards among others. She’s been featured on Billboard’s 21 Under 21 list for four consecutive years along with Forbes 2021 30 Under 30 list where she was the youngest musician on the list. Tate's 2020 #1 RIAA certified 4x Platinum single “you broke me first” has amassed over 2.2B streams. Her debut album, i used to think i could fly landed at #1 on Spotify’s Global Top Albums Debut Chart and charted in the Top 10 in multiple countries upon its release. It features her certified Platinum single “she’s all i wanna be.” Last year, the Calgary native's sophomore album THINK LATER catapulted Tate into pop stardom. It debuted at #4 on Billboard’s album chart and has garnered over 3.4B streams worldwide. Steeped in pop appeal and infectious toplines, the album features her certified 3x Platinum single “greedy” which earned the star #1 on the Billboard Global 200 chart, Global Excl. US chart, Spotify’s Global chart, and hit #1 at Top 40 radio. Her versatility as a performer has captivated audiences around the world. Whether she's delivering a powerful vocal performance or executing high-energy choreography, Tate brings a unique blend of artistry and authenticity to every stage",
+    social:{
+      instagram: "https://www.instagram.com/tatemcrae",
+      twitter: "https://x.com/tatemcrae",
+      facebook: "https://www.facebook.com/TateMcRaeOfficial/",
+    },
+  },
 ]
