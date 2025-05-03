@@ -7088,7 +7088,11 @@ font-family: 'Pathway Extreme';
   border-radius: 5px;
   margin-left: 20px;
 }
-
+.music-artist-content-feat .music-artist-content-item-data span
+{
+  max-width: calc(100vw - 132px);
+  overflow: hidden;
+}
 
 .music-artist-album-screen-container .music-artist-album-item::before
 {

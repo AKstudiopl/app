@@ -2851,14 +2851,14 @@ function uiLastViewedAlbumsLoad(){
 
   uiLastViewedAlbum_1.querySelector("p").innerText = lastAlbumImgSrc_1[0].album_premiere;
   uiLastViewedAlbum_1.querySelector(".data-title").innerText = lastAlbum_1;
-  uiLastViewedAlbum_1.querySelector("img").src = lastAlbumImgSrc_1[0].img_mini;
+  uiLastViewedAlbum_1.querySelector("img").src = `images/${lastAlbumImgSrc_1[0].img}.jpg`;
   uiLastViewedAlbum_1.querySelector(".head-content-item-background").src = lastAlbumImgSrc_1[0].img_mini;
   uiLastViewedAlbum_1.setAttribute("data-album", lastAlbum_1);
   uiLastViewedAlbum_1.setAttribute("artist-data", lastAlbumImgSrc_1[0].artist_id);
 
   uiLastViewedAlbum_2.querySelector("p").innerText = lastAlbumImgSrc_2[0].album_premiere;
   uiLastViewedAlbum_2.querySelector(".data-title").innerText = lastAlbum_2;
-  uiLastViewedAlbum_2.querySelector("img").src = lastAlbumImgSrc_2[0].img_mini
+  uiLastViewedAlbum_2.querySelector("img").src = `images/${lastAlbumImgSrc_2[0].img}.jpg`;
   uiLastViewedAlbum_2.querySelector(".head-content-item-background").src = lastAlbumImgSrc_2[0].img_mini;
   uiLastViewedAlbum_2.setAttribute("data-album", lastAlbum_2);
   uiLastViewedAlbum_2.setAttribute("artist-data", lastAlbumImgSrc_2[0].artist_id);
@@ -8407,4 +8407,13 @@ function personalizedToggle (e){
     e.classList.remove('fa-angle-up');
     e.classList.add('fa-angle-down');
   }
+}
+
+function show_POPUP(tit,desc,btn,link,image,icon){
+  console.log(tit);
+  console.log(desc);
+  console.log(btn);
+  console.log(link);
+  console.log(image);
+  console.log(icon);
 }
