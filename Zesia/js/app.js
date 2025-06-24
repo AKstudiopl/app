@@ -63,7 +63,7 @@ function amoledMode(){
     document.documentElement.style.setProperty('--maincolorhover', '#DB7176');
     document.documentElement.style.setProperty('--border', '1px #ef546650 solid');
     document.documentElement.style.setProperty('--background', '#000000');
-    document.documentElement.style.setProperty('--backgroundsecond', '#32323d');
+    document.documentElement.style.setProperty('--backgroundsecond', '#282828');
     document.documentElement.style.setProperty('--color', '#DEE4EA');
     document.documentElement.style.setProperty('--gradient', 'radial-gradient(circle, var(--background) 0%, var(--backgroundsecond) 100%)');
 }

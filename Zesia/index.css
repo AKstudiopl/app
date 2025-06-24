@@ -326,9 +326,40 @@ i
 {
   width: 35%;
 }
-
-
-
+body.amoled .music-artist-content-screen
+{
+  background: var(--background);
+}
+body.amoled .music-artist-option
+{
+  background: linear-gradient(rgba(213, 209, 201, 0.565), rgb(0 0 0 / 75%));
+}
+body.amoled .music-controls-background
+{
+  animation-play-state: paused;
+  opacity: 0;
+  content-visibility: hidden;
+}
+body.amoled .music-controls
+{
+  background: linear-gradient(90deg, rgb(0 0 0 / 75%), var(--backgroundsecond))
+}
+body.amoled .music-icon
+{
+  background: var(--background);
+}
+body.amoled .track-options-controls
+{
+  background: linear-gradient(0deg, rgb(0 0 0), rgb(25 25 34 / 0%));
+}
+body.amoled .music-artist-album-screen-img-background img, .main-music-header .header-shadow img
+{
+  opacity: 0.25;
+}
+body.amoled .background-music-img
+{
+  background: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 100%)) !important;
+}
 .navbar-bottom
 {
   position: fixed;
