@@ -360,6 +360,18 @@ body.amoled .background-music-img
 {
   background: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 100%)) !important;
 }
+body.amoled .search-results
+{
+  background: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 100%)) !important;
+}
+body.amoled .music-artist-option
+{
+  background: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 100%)) !important;
+}
+body.amoled .tutorial-popup-content-img img
+{
+  mix-blend-mode: hard-light;
+}
 .navbar-bottom
 {
   position: fixed;
@@ -5993,7 +6005,15 @@ input:checked + .slider:before {
     opacity: 1;
   }
 }
-
+.new_popup
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  background: #00000050;
+  z-index: 10;
+}
 
 .yourStyle-container
 {

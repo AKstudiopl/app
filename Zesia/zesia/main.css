@@ -150,12 +150,27 @@ body
 {
   width: 300px;
 }
+.fs-header span
+{
+  font-family: "Birthstone", cursive;
+  font-weight: 400;
+  font-style: normal;
+  top: -50px;
+  left: 20%;
+  position: relative;
+  color: var(--maincolor);
+}
+.fs-header span b
+{
+  font-weight: 400;
+}
 .fs-header .fs-top
 {
   position: absolute;
   transform: scale(1.25);
   width: 100%;
-  height: 100%;
+  max-width: 700px;
+  height: 80%;
   object-fit: cover;
   z-index: -1;
   mix-blend-mode: luminosity;
@@ -166,11 +181,12 @@ body
 {
   position: absolute;
   transform: scale(1);
+  filter: blur(15px);
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: -2;
-  -webkit-mask-image: -webkit-linear-gradient(-90deg,transparent 25%, black 50%, transparent 75%);
+  -webkit-mask-image: -webkit-linear-gradient(-90deg, black 50%, transparent 75%);
 }
 .fl
 {
@@ -306,10 +322,17 @@ body
   .f-last
   {
     flex-direction: column;
+    align-items: flex-start;
+  }
+  .n-logo
+  {
+    margin-left: 15px;
   }
   .f-last-content
   {
     flex-direction: column;
     margin-top: 10px;
+    align-items: flex-start;
+    margin-left: 15px;
   }
 }

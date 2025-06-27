@@ -8409,11 +8409,27 @@ function personalizedToggle (e){
   }
 }
 
-function show_POPUP(tit,desc,btn,link,image,icon){
+function show_POPUP(tit,desc,btn_y,btn_n,action_y,action_n,link,image,icon){
   console.log(tit);
   console.log(desc);
-  console.log(btn);
+  console.log(btn_y);
+  console.log(btn_n);
+  console.log(action_y);
+  console.log(action_n);
   console.log(link);
   console.log(image);
   console.log(icon);
+
+  let new_POPUP =
+      `<div class="new_popup">
+          <div class="new_popup_title">
+            <p>${tit}</p>
+            <span>${desc}</span>
+          </div>
+          <div class="new_popup_action">
+            <p class="new_popup_n">${btn_n}</p>
+            <p class="new_popup_y">${btn_y}</p>
+          </div>
+       </div>`;
+    document.querySelector("body").insertAdjacentHTML("beforeend", new_POPUP);
 }
