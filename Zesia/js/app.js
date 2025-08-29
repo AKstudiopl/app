@@ -2309,7 +2309,7 @@ function searchBarUse(){
 function shareSong(){
   var shareLink = document.createElement('input')
   text = '';
-  text = window.location.origin + "/zesia/Zesia/#" + allMusic[indexNumb - 1].id;
+  text = window.location.origin + "/app/Zesia/#" + allMusic[indexNumb - 1].id;
   document.body.appendChild(shareLink);
   shareLink.value = text;
   shareLink.select();
@@ -4829,14 +4829,14 @@ function recentTracksLoad(){
   resultsFAV.innerHTML = "";
   for (let i = 0; i < favoritIt.length; i++) {
     let resultFAV =
-      `<div class="center-container-item" link_to='${favoritIt[i].id}' onclick="clickedNotification(this);">
+      `<div class="center-container-item" li-index="${favoritIt[i].id}" artist-data="${favoritIt[i].artist_id}" data-duplicate="${favoritIt[i].artist_id} ${favoritIt[i].album}" data-album="${favoritIt[i].album}" onclick="clickedSingle(this);">
         <div class="bg-box"><img src="images/${favoritIt[i].img}.jpg"></div>
         <div class="img-box">    
           <img src="images/${favoritIt[i].img}.jpg">
         </div>
        <h2>${favoritIt[i].name}</h2>
        <p>${favoritIt[i].artist} • ${favoritIt[i].album_premiere}</p>
-       <div class="center-container-item-action"><i onclick="quick_Play(this)" play-type="track" class="fa-solid fa-play"></i></div>
+       <div class="center-container-item-action"><i onclick="quick_Play(this)" play-type="album" class="fa-solid fa-play"></i></div>
        </div>`;
     resultsFAV.insertAdjacentHTML("beforeend", resultFAV);
   }

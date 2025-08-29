@@ -4173,6 +4173,8 @@ input:checked + .slider:before {
   bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
+  border-radius: 5px;
+  overflow: hidden;
 }
 .main-music-header.lyrics ~ .main-music-sec-nav .current-ad-box
 {
@@ -4201,7 +4203,7 @@ input:checked + .slider:before {
 .main-music-header.lyrics ~ .progress .progress-bar-done
 {
   border-radius: 5px;
-  height: 10px;
+  height: 9px;
 }
 .main-music-header.lyrics ~ .main-music-sec-nav .current-playlist-btn, .current-ad-box
 {
