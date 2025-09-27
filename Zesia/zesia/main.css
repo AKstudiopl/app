@@ -197,6 +197,22 @@ body
   align-items: center;
   justify-content: center;
 }
+.f1-bg
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-height: 700px;
+  z-index: -1;
+}
+.f1-bg img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-mask-image: -webkit-linear-gradient(-90deg, transparent 0%, black 100%);
+  filter: blur(5px);
+}
 .fl-content
 {
   width: 100%;
@@ -206,7 +222,7 @@ body
 {
   display: grid;
   justify-content: center;
-  gap: 15px;
+  gap: 45px;
   grid-template-columns: repeat(3, 32%);
 }
 .fl-header
@@ -227,15 +243,43 @@ body
   padding: 30px 15px;
   background: linear-gradient(-45deg,#171717, transparent 75%);
   transition: .5s;
+  backdrop-filter: blur(5px);
+  z-index: 0;
+  position: relative;
 }
-.fl-item:hover
+.fl-item:nth-child(1):hover
 {
-  transform: rotateY(15deg) rotateX(-15deg) scale(1.05);
+  transform: translateY(45px) rotateY(-25deg) rotateX(-15deg) scale(1.05) scaleX(1.15);
+}
+.fl-item:nth-child(2):hover
+{
+  transform: rotateY(15deg) rotateX(0) scale(1.05) scaleX(1.15);
+}
+.fl-item:nth-child(3):hover
+{
+  transform: translateY(45px) rotateY(25deg) rotateX(-15deg) scale(1.05) scaleX(1.15);
+}
+.fl-item:nth-child(4):hover
+{
+  transform: translateY(45px) rotateY(25deg) rotateX(-15deg) scale(1.05) scaleX(1.15);
+}
+.fl-item:nth-child(5):hover
+{
+  transform: translateY(90px) rotateY(0) rotateX(-15deg) scale(1.05) scaleX(1.15);
+}
+.fl-item:nth-child(6):hover
+{
+  transform: translateY(45px) rotateY(-25deg) rotateX(-15deg) scale(1.05) scaleX(1.15);
 }
 .fl-item i
 {
   color: var(--maincolor);
-  font-size: 30px;
+  font-size: 150px;
+  position: absolute;
+  margin-left: -25px;
+  margin-top:  -35px;
+  z-index: -1;
+  opacity: .5;
 }
 .fl-item p
 {
@@ -248,7 +292,30 @@ body
   color: var(--colornon);
   font-size: 16px;
 }
-
+.fl-item:nth-child(1)
+{
+  transform: translateY(45px);
+}
+.fl-item:nth-child(3)
+{
+  transform: translateY(45px);
+}
+.fl-item:nth-child(4)
+{
+  transform: translateY(45px);
+}
+.fl-item:nth-child(5)
+{
+  transform: translateY(90px);
+}
+.fl-item:nth-child(6)
+{
+  transform: translateY(45px);
+}
+.fl-content-grid
+{
+  padding-bottom: 150px;
+}
 .footer
 {
   width: 100%;
