@@ -57,3 +57,7 @@ var yyyy = today.getFullYear();
 
 today = dd + '/' + mm + '/' + yyyy;
 document.querySelector(".blog-date").innerText = today;
+
+function indexSHRT(){
+    window.location.pathname = "/zesia/index.html";
+}

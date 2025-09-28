@@ -21,10 +21,18 @@
     line-height: 1;
     flex-direction: column;
 }
+.contact-header-primary 
+{
+    display: flex;
+}
 .contact-header p 
 {
     font-size: 40px;
     transform: translateX(-7px);
+}
+.contact-header p:nth-child(2)
+{
+    transform: translateX(7px);
 }
 .contact-header span
 {

@@ -23,6 +23,10 @@
     line-height: 1;
     margin-left: -7px;
 }
+.blog-header p:nth-child(2)
+{
+    transform: translateX(7px);
+}
 .blog-data
 {
     width: 100%;
