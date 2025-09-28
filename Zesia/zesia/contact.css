@@ -24,7 +24,22 @@
 .contact-header-primary 
 {
     display: flex;
+    animation-fill-mode: forwards;
+    animation-name: fadeOut;
+    animation-duration: .75s;
+    opacity: 0;
 }
+@keyframes fadeOut {
+  50%{
+    opacity: 0;
+    visibility: hidden;
+  }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
 .contact-header p 
 {
     font-size: 40px;
@@ -49,6 +64,10 @@
     align-items: center;
     border-top: 1px solid rgb(38, 38, 38);
     color: var(--colornon);
+    animation-fill-mode: forwards;
+    animation-name: fadeOut;
+    animation-duration: 1.25s;
+    opacity: 0;
 }
 .contact-content
 {
@@ -57,6 +76,14 @@
     flex-direction: column;
     row-gap: 25px;
     margin-top: 50px;
+    animation-fill-mode: forwards;
+    animation-name: fadeOut;
+    animation-duration: 1.5s;
+    opacity: 0;
+}
+.contact-content.second, .contact-header-secondary.second, .contact-header-primary.second
+{
+    animation-delay: .75s !important;
 }
 .contact-item
 {

@@ -146,10 +146,30 @@ body
 {
   font-family: Destruido;
   margin-top: -50px;
+  animation-fill-mode: forwards;
+  animation-name: fadeOut;
+  animation-duration: 1.25s;
+  opacity: 0;
 }
+
+@keyframes fadeOut {
+  50%{
+    opacity: 0;
+    visibility: hidden;
+  }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
 .fs-header img
 {
   width: 300px;
+  animation-fill-mode: forwards;
+  animation-name: fadeOut;
+  animation-duration: .75s;
+  opacity: 0;
 }
 .fs-header span
 {
@@ -166,6 +186,10 @@ body
   padding: 5px 20px;
   border-radius: 10px;
   z-index: -1;
+  animation-fill-mode: forwards;
+  animation-name: fadeOut;
+  animation-duration: 1.5s;
+  opacity: 0;
 }
 .fs-header span b
 {

@@ -22,6 +22,10 @@
     font-family: Destruido;
     line-height: 1;
     margin-left: -7px;
+    animation-fill-mode: forwards;
+    animation-name: fadeOut;
+    animation-duration: .75s;
+    opacity: 0;
 }
 .blog-header p:nth-child(2)
 {
@@ -35,6 +39,10 @@
     align-items: center;
     border-top: 1px solid rgb(38, 38, 38);
     color: var(--colornon);
+    animation-fill-mode: forwards;
+    animation-name: fadeOut;
+    animation-duration: 1.25s;
+    opacity: 0;
 }
 .blog-content
 {
@@ -43,7 +51,22 @@
     flex-direction: column;
     row-gap: 50px;
     margin-top: 50px;
+    animation-fill-mode: forwards;
+    animation-name: fadeOut;
+    animation-duration: 1.5s;
+    opacity: 0;
 }
+@keyframes fadeOut {
+  50%{
+    opacity: 0;
+    visibility: hidden;
+  }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
 .blog-post
 {
     width: 100%;
